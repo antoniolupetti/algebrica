@@ -1,5 +1,7 @@
 # Sets
 
+Source: algebrica.org — CC BY-NC 4.0
+
 ## Introduction
 
 A set is a collection of objects called elements that are considered as a whole. They are represented by uppercase letters \\(A\\), \\(B\\), \\(C\\), and their elements by lowercase letters. The notation \\(x \in A\\) indicates that an object \\(x\\) belongs to the set \\(A\\) while \\(x \notin A\\) indicates that \\(x\\) is not an element of \\(A\\). For any given object, it is always possible to determine unambiguously if the object belongs to the collection or not.
