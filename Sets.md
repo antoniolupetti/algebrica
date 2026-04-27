@@ -18,7 +18,7 @@ The previous notation defines $A$ as the set of all integers $x$ such that $x > 
 $$
 A = \{5, 6, 7, 8\}
 $$
-The empty set is the set that contain no elements, is denoted by $\emptyset$ or $\{\}$ and serves a role in set theory analogous to that of zero in arithmetic.
+The empty set is the set that contains no elements and is denoted by $\emptyset$ or $\{\}$ and serves a role in set theory analogous to that of zero in arithmetic.
 
 - - -
 
