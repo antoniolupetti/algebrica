@@ -1,6 +1,7 @@
 # Complex Numbers
 
 Source: algebrica.org — CC BY-NC 4.0
+https://algebrica.org/complex-numbers-introduction/
 
 ## Introduction 
 
