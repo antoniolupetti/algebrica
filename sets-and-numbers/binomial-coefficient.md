@@ -100,8 +100,6 @@ This rule provides a recursive definition for the binomial coefficient and expla
 
 Beyond the core properties, the binomial coefficient satisfies a number of deeper identities that appear repeatedly across combinatorics, probability, and analysis. Each of them reflects a structural truth about how counting works.
 
----
-
 The row sum identity states that the sum of all binomial coefficients in 
 row \\( n \\) of Pascal's triangle equals \\( 2^n \\):
 
