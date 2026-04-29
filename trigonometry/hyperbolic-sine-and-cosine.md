@@ -1,4 +1,3 @@
-
 # Hyperbolic Sine and Cosine
 
 Source: algebrica.org — CC BY-NC 4.0
