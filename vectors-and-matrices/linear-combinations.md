@@ -339,3 +339,24 @@ c_1 v_1 + c_2 v_2 + \dots + c_k v_k
 \\]
 
 where \\( c_1, c_2, \dots, c_k \in \mathbb{F} \\). The field \\( \mathbb{F} \\) may be taken to be \\( \mathbb{R} \\) or \\( \mathbb{C} \\), and the vector space \\( V \\) may be a space of [polynomials](../polynomials/), of [matrices](../matrices/), or of [continuous functions](../continuous-functions/), among many others. In each of these settings, the notions of span and linear independence carry over directly, and the structural results of linear algebra remain valid in full generality.
+
+- - -
+## Affine, conical, and convex combinations
+
+The notion of linear combination is the most general within a family of related operations, all obtained by imposing restrictions on the coefficients. Each restriction selects a different geometric object and a different kind of subset closed under the corresponding operation. If the coefficients are required to sum to one:
+
+\\[
+c_1 + c_2 + \\dots + c_k = 1
+\\]
+
+the resulting expression is called an affine combination. The set of all affine combinations of a given collection of vectors is an affine subspace, that is, a translate of a linear subspace that need not pass through the origin. Lines and planes not containing the origin are typical examples. If the coefficients are required to be nonnegative:
+
+\\[
+c_1, c_2, \\dots, c_k \\geq 0
+\\]
+
+the expression is called a conical combination, and the set of all such combinations forms a convex cone. Quadrants and orthants in \\(\\mathbb{R}^n\\) are simple instances.
+
+If both conditions are imposed simultaneously, that is, nonnegative coefficients summing to one, the expression is called a convex combination. The set of all convex combinations of a finite collection of vectors is a convex polytope, the simplest example being the segment joining two points or the triangle determined by three.
+
+> Vector subspaces are the smallest of these structures: every linear combination is in particular affine, conical, and convex, so a subspace is automatically all three. The converse does not hold, and this is what makes these notions more general.
