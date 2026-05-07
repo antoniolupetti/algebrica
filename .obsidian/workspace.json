@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vectors-and-matrices/linear-combinations.md",
+                "file": "polynomials/vieta-formulas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linear-combinations"
+              "title": "vieta-formulas"
             }
           }
         ]
@@ -199,6 +199,7 @@
   },
   "active": "c918dff824e1ceb6",
   "lastOpenFiles": [
+    "vectors-and-matrices/linear-combinations.md",
     "trigonometry/secant-and-cosecant.md",
     "trigonometry/trigonometric-identities.md",
     "sets-and-numbers/types-of-numbers.md",
@@ -224,7 +225,6 @@
     "limits/remarkable-limits.md",
     "equations/linear-equations.md",
     "equations/equations.md",
-    "equations/factoring-quadratic-equations.md",
     "limits",
     "linear-systems",
     "vectors-and-matrices",
