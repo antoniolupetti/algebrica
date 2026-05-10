@@ -22,6 +22,8 @@ The inclusion of these indicators is primarily an effort toward transparency, bu
 
 **Such variations suggest that these systems may not yet provide a stable or fully reliable measure of authorship. I am also testing other similar tools, but the results remain highly variable and, at least for now, only partially indicative.**
 
+_Any help in making the texts sound more natural in English, while preserving the formal accuracy they would have in Italian, is absolutely welcome!_
+
 ## Repository structure
 
 In the Algebrica GitHub repository I’m progressively releasing not only all the entries in Markdown format, but also all the diagrams and illustrations as open and fully editable SVG files to improve the accessibility and reusability of the content.

@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3e741182ce71f6b9",
+        "id": "fd2180331183da96",
         "type": "tabs",
         "children": [
           {
-            "id": "5c23cfd347437694",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "fe7dd7fcb7cc45e3",
+            "id": "6e4ddcb7baac7cb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,11 +197,11 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "fe7dd7fcb7cc45e3",
+  "active": "6e4ddcb7baac7cb4",
   "lastOpenFiles": [
+    "README.md",
     "integrals/integration-by-parts.md",
     "integrals/integration-by-substitution.md",
-    "README.md",
     "algebraic-structures/modules.md",
     "algebraic-structures/groups.md",
     "algebraic-structures/vector-spaces.md",
