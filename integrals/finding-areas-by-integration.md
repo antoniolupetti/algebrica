@@ -18,7 +18,7 @@ A = \int_a^b [f(x) - g(x)] \\, dx \tag{1}
 
 We want to calculate the area of the gray-shaded region between the curves \\( f(x) \\) and \\( g(x) \\):
 
-![Img. 1](finding-areas-by-integration-1.svg)
+![Img. 1](svg/finding-areas-by-integration-1.svg)
 Intuitively, we can see that the area \\( A \\) is given by the difference between the area under the curve \\( f(x) \\) and the area under the curve \\( g(x) \\). In other words, formally:
 
 \\[
@@ -48,7 +48,7 @@ A compact way to write this without tracking which curve is on top is:
 A = \int_{a}^{b} |f(x) - g(x)| \\, dx
 \\]
 
-![Img. 2](finding-areas-by-integration-2.svg)
+![Img. 2](svg/finding-areas-by-integration-2.svg)
 
 The [absolute value](../absolute-value/) guarantees that each piece of area is counted as positive, regardless of which [function](../functions/) is larger on that subinterval.
 
@@ -59,7 +59,7 @@ The [absolute value](../absolute-value/) guarantees that each piece of area is c
 
 Suppose we want to find the area enclosed between the curves \\(y_1 = e^x\\) and \\(y_2 = x^2 - 1\\) over the interval \\( x \in [-1, 1] \\). Graphically, we have the following situation:
 
-![Img. 3](finding-areas-by-integration-3.svg)
+![Img. 3](svg/finding-areas-by-integration-3.svg)
 
 To calculate the area, we use equation \\((1)\\) and set up the following definite integral:
 
