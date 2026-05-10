@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "integrals/integration-by-parts.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "integration-by-parts"
+              "title": "README"
             }
           }
         ],
@@ -212,10 +212,10 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "864fd0c13cccf3e1",
+  "active": "fe7dd7fcb7cc45e3",
   "lastOpenFiles": [
-    "integrals/integration-by-substitution.md",
     "integrals/integration-by-parts.md",
+    "integrals/integration-by-substitution.md",
     "README.md",
     "algebraic-structures/modules.md",
     "algebraic-structures/groups.md",

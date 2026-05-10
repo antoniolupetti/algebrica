@@ -12,11 +12,11 @@ The editorial aim is to reduce without distorting. University sources are often 
 
 ## Editorial process
 
-The process is iterative. A page that seems complete may be revisited as adjacent entries develop, and inconsistencies in notation or depth often prompt further revision. Entries are progressively released and updated here on GitHub.
+The process is iterative. A page that seems complete may be revisited as adjacent entries develop, and inconsistencies in notation, terminology, or depth often prompt further revision. Entries are progressively released and updated here on GitHub.
 
-To increase transparency, I am also documenting the editorial process and revising content to improve accuracy and reliability. On some pages a quality indicator is now visible, including a [GPTZero](https://gptzero.me/) score (no affiliation), as an additional signal of transparency. The score, expressed as a percentage, represents the system’s level of confidence that the content is human. For example, a score of 92% means that the text is considered human with 92% confidence.
+To increase transparency, I am also documenting the editorial process and continuously revising the content to improve accuracy and reliability. Since I am not a native English speaker, I also rely on [Grammarly Pro](https://grammarly.com) (no affiliation) to support the proofreading of the texts. On some pages a quality indicator is now visible, including a [GPTZero Pro](https://gptzero.me) score (no affiliation), as an additional signal of transparency. The score, expressed as a percentage, represents the system’s level of confidence that the content is human. For example, a score of 92% means that the text is considered human with 92% confidence.
 
-Since I am not a native English speaker, I also rely on [Grammarly](https://www.grammarly.com/) (no affiliation) to support the proofreading of the texts.
+`This should however be interpreted with caution.` The inclusion of these indicators is primarily an effort toward transparency, but the results are often inconsistent and sometimes contradictory. In particular, formal mathematical definitions and the writing style of a non-native English speaker can significantly affect the score. In several cases, extremely small lexical changes have produced large variations in the reported confidence. For example, replacing a simple conjunction such as _"whether"_ with a synonym has in some tests shifted the score from 18% human to 72% human. **Such variations suggest that these systems may not yet provide a stable or fully reliable measure of authorship. I am also testing other similar tools, but the results remain highly variable and, at least for now, only partially indicative.**
 
 ## Repository structure
 
