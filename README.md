@@ -18,7 +18,9 @@ To increase transparency, I am also documenting the editorial process and contin
 
 This should however be interpreted with caution.
 
-The inclusion of these indicators is primarily an effort toward transparency, but the results are often inconsistent and sometimes contradictory. In particular, formal mathematical definitions and the writing style of a non-native English speaker can significantly affect the score. In several cases, extremely small lexical changes have produced large variations in the reported confidence. For example, replacing a simple conjunction such as _"whether"_ with a synonym has in some tests shifted the score from 18% human to 72% human. **Such variations suggest that these systems may not yet provide a stable or fully reliable measure of authorship. I am also testing other similar tools, but the results remain highly variable and, at least for now, only partially indicative.**
+The inclusion of these indicators is primarily an effort toward transparency, but the results are often inconsistent and sometimes contradictory. In particular, formal mathematical definitions and the writing style of a non-native English speaker can significantly affect the score. In several cases, extremely small lexical changes have produced large variations in the reported confidence. For example, replacing a simple conjunction such as _"whether"_ with a synonym has in some tests shifted the score from 18% human to 72% human, even in texts with an extended and coherent contextual structure. 
+
+**Such variations suggest that these systems may not yet provide a stable or fully reliable measure of authorship. I am also testing other similar tools, but the results remain highly variable and, at least for now, only partially indicative.**
 
 ## Repository structure
 
