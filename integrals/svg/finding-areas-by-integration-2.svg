@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="248px" viewBox="0 0 307 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M55.882134,61.6769926 L55.9357878,61.7548694 L60.4357878,69.7548694 C60.5711697,69.9955483 60.4858096,70.3004059 60.2451306,70.4357878 C60.0311938,70.5561272 59.7665479,70.5020533 59.6152959,70.3195146 L59.5642122,70.2451306 L56,63.908 L56,247.5 C56,247.776142 55.7761424,248 55.5,248 C55.2545401,248 55.0503916,247.823125 55.0080557,247.589876 L55,247.5 L55,63.908 L51.4357878,70.2451306 C51.3154483,70.4590675 51.0612021,70.5502832 50.8371522,70.4728292 L50.7548694,70.4357878 C50.5409325,70.3154483 50.4497168,70.0612021 50.5271708,69.8371522 L50.5642122,69.7548694 L55.0642122,61.7548694 C55.2394349,61.4433624 55.6651608,61.4174034 55.882134,61.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.162848,200.527171 L295.245131,200.564212 L303.245131,205.064212 C303.556638,205.239435 303.582597,205.665161 303.323007,205.882134 L303.245131,205.935788 L295.245131,210.435788 C295.004452,210.57117 294.699594,210.48581 294.564212,210.245131 C294.443873,210.031194 294.497947,209.766548 294.680485,209.615296 L294.754869,209.564212 L301.091,206 L3.85379111e-16,206 C-0.276142375,206 -0.5,205.776142 -0.5,205.5 C-0.5,205.25454 -0.323124839,205.050392 -0.0898756324,205.008056 L-3.85379111e-16,205 L301.091,205 L294.754869,201.435788 C294.540933,201.315448 294.449717,201.061202 294.527171,200.837152 L294.564212,200.754869 C294.684552,200.540933 294.938798,200.449717 295.162848,200.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M55,205 L66,180 L80,145 C84.6666667,136.333333 89.6666667,129 95,123 C103,114 106,114 106,114 C113.333333,111.333333 117,110 117,110 C123.666667,110.666667 127,111 127,111 C134.333333,114.333333 138,116 138,116 C146.666667,125.333333 151,130 151,130 C157,138 160,142 160,142 L55,205 Z" fill="#e6e6e6"></path>
+            <polygon fill="#e6e6e6" points="160 142 170 164 178 182 187 204 187 126"></polygon>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="225">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="34.5" y="70">y</tspan>
+            </text>
+            <circle fill="#333333" cx="159.5" cy="205.5" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="77" y="11">The two curves cross at an interior </tspan>
+                <tspan x="77" y="24">point c. The shaded area is computed </tspan>
+                <tspan x="77" y="37">separately over [a, c] and [c, b].</tspan>
+            </text>
+            <line x1="160.5" y1="48.5" x2="160.5" y2="128.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="60.5" y="142">y=f(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="223.5" y="91">y=g(x)</tspan>
+            </text>
+            <line x1="159.5" y1="148.5" x2="159.5" y2="205.5" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="187.5" y1="123.5" x2="187.5" y2="204.423077" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="58" y="222">a</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="178" y="222">b</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="154" y="222">c</tspan>
+            </text>
+            <path d="M40,247 C59.5787448,193.923636 72.8162822,160.587037 79.7126121,146.990202" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M90.5903488,128.912612 C100.560233,116.304204 110.530116,110 120.5,110 C147.333333,110 174.166667,155.666667 201,247" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="25.5" y1="222.5" x2="236.465032" y2="96.4106479" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="265.625177" y1="78.9822445" x2="284" y2="68" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="187.5" cy="205.5" r="2.5"></circle>
+            <circle fill="#333333" cx="159.5" cy="141.5" r="2.5"></circle>
+            <circle fill="#333333" cx="187.5" cy="125.5" r="2.5"></circle>
+            <circle fill="#333333" cx="55.5" cy="205.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

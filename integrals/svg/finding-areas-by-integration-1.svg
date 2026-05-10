@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="250px" viewBox="0 0 307 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-91.000000, -125.000000)">
+            <g transform="translate(92.000000, 125.000000)">
+                <path d="M106.882134,63.6769926 L106.935788,63.7548694 L111.435788,71.7548694 C111.57117,71.9955483 111.48581,72.3004059 111.245131,72.4357878 C111.031194,72.5561272 110.766548,72.5020533 110.615296,72.3195146 L110.564212,72.2451306 L106.999,65.906 L107,249.5 C107,249.776142 106.776142,250 106.5,250 C106.25454,250 106.050392,249.823125 106.008056,249.589876 L106,249.5 L105.999,65.91 L102.435788,72.2451306 C102.315448,72.4590675 102.061202,72.5502832 101.837152,72.4728292 L101.754869,72.4357878 C101.540933,72.3154483 101.449717,72.0612021 101.527171,71.8371522 L101.564212,71.7548694 L106.064212,63.7548694 C106.239435,63.4433624 106.665161,63.4174034 106.882134,63.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M295.162848,206.527171 L295.245131,206.564212 L303.245131,211.064212 C303.556638,211.239435 303.582597,211.665161 303.323007,211.882134 L303.245131,211.935788 L295.245131,216.435788 C295.004452,216.57117 294.699594,216.48581 294.564212,216.245131 C294.443873,216.031194 294.497947,215.766548 294.680485,215.615296 L294.754869,215.564212 L301.091,212 L3.85379111e-16,212 C-0.276142375,212 -0.5,211.776142 -0.5,211.5 C-0.5,211.25454 -0.323124839,211.050392 -0.0898756324,211.008056 L-3.85379111e-16,211 L301.091,211 L294.754869,207.435788 C294.540933,207.315448 294.449717,207.061202 294.527171,206.837152 L294.564212,206.754869 C294.684552,206.540933 294.938798,206.449717 295.162848,206.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <circle fill="#333333" cx="267.5" cy="211.5" r="2.5"></circle>
+                <text font-size="14" font-weight="normal" fill="#BABABA">
+                    <tspan x="296.5" y="231">x</tspan>
+                </text>
+                <text font-size="14" font-weight="normal" fill="#BABABA">
+                    <tspan x="88.5" y="72">y</tspan>
+                </text>
+                <polygon fill="#E6E6E6" points="142 190 173 182 208 164 233 142 245 135 260 137 268 142 268 96 256 87 240 80 224 77 205 80 191 84 176 93 161 105 142 121"></polygon>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="130" y="11">Area between two curves </tspan>
+                    <tspan x="130" y="24">calculated as the difference of </tspan>
+                    <tspan x="130" y="37">the integrals of f(x) and g(x)</tspan>
+                    <tspan x="130" y="50">over the given interval.</tspan>
+                </text>
+                <circle fill="#333333" cx="141.5" cy="211.5" r="2.5"></circle>
+                <path d="M25,152 C31.9519408,155.041416 37.2106299,157.018928 40.7760675,157.932537 M82.5235203,156.83938 C104.107864,150.648342 126.933357,136.035216 151,113 C221,46 270,84 296,134" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M18,183 C27.0488173,185.103676 33.7726855,186.584903 38.1716049,187.443681 M85.4718279,193.493936 C142.953706,196.569015 188.79643,181.737703 223,149 C261.783531,111.87862 277.405312,156.702522 289,179" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                <text font-size="13" font-weight="normal" fill="#000000">
+                    <tspan x="45.5" y="162">y=f(x)</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#000000">
+                    <tspan x="43.5" y="194">y=g(x)</tspan>
+                </text>
+                <line x1="141.5" y1="123.5" x2="141.5" y2="211.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="267.5" y1="98.5" x2="267.5" y2="210.423077" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                    <tspan x="136" y="233">a</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                    <tspan x="263" y="233">b</tspan>
+                </text>
+                <line x1="193.5" y1="117.5" x2="193.5" y2="58.5" stroke="#BABABA" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

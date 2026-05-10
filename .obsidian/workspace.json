@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "1bcdc9887aec6aac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "finding-areas-by-integration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "finding-areas-by-integration"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,10 +212,11 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "6e4ddcb7baac7cb4",
+  "active": "1bcdc9887aec6aac",
   "lastOpenFiles": [
-    "README.md",
     "integrals/integration-by-parts.md",
+    "finding-areas-by-integration.md",
+    "README.md",
     "integrals/integration-by-substitution.md",
     "algebraic-structures/modules.md",
     "algebraic-structures/groups.md",
@@ -230,7 +246,6 @@
     "sets-and-numbers/binomial-coefficient.md",
     "powers-radicals-logarithms/powers.md",
     "polynomials/binomials.md",
-    "polynomials/partial-fraction-decomposition.md",
     "limits",
     "linear-systems",
     "vectors-and-matrices",

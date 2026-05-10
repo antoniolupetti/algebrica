@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="322px" height="286px" viewBox="0 0 322 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.333333, 0.333333)">
+            <path d="M109,161 L117,173 L131,187 C134.776915,190.110766 137.776915,192.110766 140,193 C142.223085,193.889234 145.889751,194.5559 151,195 L164,193 L179,182 L196,161 L196,47 L195.01969,48.9212408 L186,77 L173.608732,97.1103146 L160,115 L142.412867,129.948416 L131,138 L109,148 L109,161 Z" fill="#E9E9E9"></path>
+            <path d="M151.5,11.9801356 L151.935788,12.7548694 L156.435788,20.7548694 L156.680918,21.1906571 L155.809343,21.6809184 L155.564212,21.2451306 L152,14.908 L152,217 L151,217 L151,14.908 L147.435788,21.2451306 L147.190657,21.6809184 L146.319082,21.1906571 L146.564212,20.7548694 L151.064212,12.7548694 L151.5,11.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,157.319082 L295.245131,157.564212 L303.245131,162.064212 L304.019864,162.5 L303.245131,162.935788 L295.245131,167.435788 L294.809343,167.680918 L294.319082,166.809343 L294.754869,166.564212 L301.091,163 L0,163 L0,162 L301.091,162 L294.754869,158.435788 L294.319082,158.190657 L294.809343,157.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="180">x</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="131.5" y="21">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="99.5" y="235">-1</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="192.5" y="235">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="111" y="271">Our goal is to compute the gray-shaded </tspan>
+                <tspan x="111" y="284">area enclosed between the two curves.</tspan>
+            </text>
+            <line x1="170.5" y1="174.5" x2="170.5" y2="254.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M57,33 C89.0666655,141 120.733332,195 152,195 C179.062233,195 205.924694,154.546341 232.587382,73.639022 M238.753108,54.1965142 C240.142121,49.6512441 242.224419,42.5857393 245,33" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="108.5" y1="22.5" x2="108.5" y2="216.458333" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <ellipse fill="#333333" cx="108.25" cy="162.255018" rx="2.75" ry="2.75501825"></ellipse>
+            <line x1="195.5" y1="40.5" x2="195.5" y2="216.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <ellipse fill="#333333" cx="195.25" cy="162.255018" rx="2.75" ry="2.75501825"></ellipse>
+            <path d="M0,161 C16.6315992,161.271834 28.6315992,161.271834 36,161 C85.7351053,159.16518 122.363786,148.363506 148,126 C179.333333,98.6666667 196,64.3333333 198,23" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="224.5" y="68">y=x²−1</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="196.5" y="13">y=e</tspan>
+                <tspan x="217.794" y="13" font-family="Helvetica">ˣ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
