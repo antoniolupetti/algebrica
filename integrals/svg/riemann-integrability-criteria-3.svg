@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="326px" height="279px" viewBox="0 0 326 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-79.000000, -133.000000)">
+            <g transform="translate(80.000000, 134.000000)">
+                <rect fill="#E9E9E9" x="55" y="49" width="61" height="120"></rect>
+                <rect fill="#D4D4D4" x="55" y="89" width="61" height="80"></rect>
+                <path d="M55.882134,24.6769926 L55.9357878,24.7548694 L60.4357878,32.7548694 C60.5711697,32.9955483 60.4858096,33.3004059 60.2451306,33.4357878 C60.0311938,33.5561272 59.7665479,33.5020533 59.6152959,33.3195146 L59.5642122,33.2451306 L55.999,26.906 L56,210.5 C56,210.776142 55.7761424,211 55.5,211 C55.2545401,211 55.0503916,210.823125 55.0080557,210.589876 L55,210.5 L54.999,26.91 L51.4357878,33.2451306 C51.3154483,33.4590675 51.0612021,33.5502832 50.8371522,33.4728292 L50.7548694,33.4357878 C50.5409325,33.3154483 50.4497168,33.0612021 50.5271708,32.8371522 L50.5642122,32.7548694 L55.0642122,24.7548694 C55.2394349,24.4433624 55.6651608,24.4174034 55.882134,24.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <rect fill="#E6E6E6" x="116" y="52" width="61" height="117"></rect>
+                <rect fill="#E6E6E6" x="177" y="111" width="61" height="58"></rect>
+                <rect fill="#E6E6E6" x="238" y="142" width="61" height="27"></rect>
+                <rect fill="#D4D4D4" x="116" y="111" width="61" height="58"></rect>
+                <rect fill="#D4D4D4" x="177" y="144" width="61" height="24"></rect>
+                <rect fill="#D4D4D4" x="238" y="154" width="61" height="14"></rect>
+                <path d="M55.6374792,87.9694183 C69.1122072,64.5121604 83.2330475,51.6349907 98,49.3379092 C143,42.3379092 155,146.337909 297,153.337909" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                <line x1="116.5" y1="168" x2="116.5" y2="26" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="177.5" y1="168" x2="177.5" y2="26" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="238.5" y1="168" x2="238.5" y2="26" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <path d="M315.162848,163.527171 L315.245131,163.564212 L323.245131,168.064212 C323.556638,168.239435 323.582597,168.665161 323.323007,168.882134 L323.245131,168.935788 L315.245131,173.435788 C315.004452,173.57117 314.699594,173.48581 314.564212,173.245131 C314.443873,173.031194 314.497947,172.766548 314.680485,172.615296 L314.754869,172.564212 L321.091,169 L0,169 C-0.276142375,169 -0.5,168.776142 -0.5,168.5 C-0.5,168.25454 -0.323124839,168.050392 -0.0898756324,168.008056 L0,168 L321.091,168 L314.754869,164.435788 C314.540933,164.315448 314.449717,164.061202 314.527171,163.837152 L314.564212,163.754869 C314.684552,163.540933 314.938798,163.449717 315.162848,163.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="72" y="238">With only four subintervals, the gap between the </tspan>
+                    <tspan x="72" y="251">upper and lower sum is clearly visible: the bands </tspan>
+                    <tspan x="72" y="264">leave substantial room between them and the </tspan>
+                    <tspan x="72" y="277">curve.</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="120" y="11">Upper sum</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="194" y="206">Lower sum</tspan>
+                </text>
+                <line x1="87.5" y1="177.5" x2="87.5" y2="220.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="147.5" y1="18.5" x2="147.5" y2="61.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="209.5" y1="192.5" x2="209.5" y2="158.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

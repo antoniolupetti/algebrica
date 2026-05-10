@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="333px" height="269px" viewBox="0 0 333 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-86.000000, -150.000000)">
+            <g transform="translate(87.000000, 150.000000)">
+                <path d="M106.882134,5.67699263 L106.935788,5.75486938 L111.435788,13.7548694 C111.57117,13.9955483 111.48581,14.3004059 111.245131,14.4357878 C111.031194,14.5561272 110.766548,14.5020533 110.615296,14.3195146 L110.564212,14.2451306 L106.999,7.906 L107,191.5 C107,191.776142 106.776142,192 106.5,192 C106.25454,192 106.050392,191.823125 106.008056,191.589876 L106,191.5 L105.999,7.91 L102.435788,14.2451306 C102.315448,14.4590675 102.061202,14.5502832 101.837152,14.4728292 L101.754869,14.4357878 C101.540933,14.3154483 101.449717,14.0612021 101.527171,13.8371522 L101.564212,13.7548694 L106.064212,5.75486938 C106.239435,5.44336236 106.665161,5.41740344 106.882134,5.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M295.162848,148.527171 L295.245131,148.564212 L303.245131,153.064212 C303.556638,153.239435 303.582597,153.665161 303.323007,153.882134 L303.245131,153.935788 L295.245131,158.435788 C295.004452,158.57117 294.699594,158.48581 294.564212,158.245131 C294.443873,158.031194 294.497947,157.766548 294.680485,157.615296 L294.754869,157.564212 L301.093,153.999 L295,154 L3.85379111e-16,154 C-0.276142375,154 -0.5,153.776142 -0.5,153.5 C-0.5,153.25454 -0.323124839,153.050392 -0.0898756324,153.008056 L-3.85379111e-16,153 L295,153 L301.089,152.999 L294.754869,149.435788 C294.540933,149.315448 294.449717,149.061202 294.527171,148.837152 L294.564212,148.754869 C294.684552,148.540933 294.938798,148.449717 295.162848,148.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="14" font-weight="normal" fill="#BABABA">
+                    <tspan x="296.5" y="174">x</tspan>
+                </text>
+                <text font-size="14" font-weight="normal" fill="#BABABA">
+                    <tspan x="88.5" y="14">y</tspan>
+                </text>
+                <path d="M25,126 C34.6268644,129.985542 41.9322368,132.396392 46.916117,133.232552 M91.7532243,127.70829 C110.587155,120.347753 130.33608,106.778323 151,87 C221,20 270,58 296,108" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="52.5" y="136">y=f(x)</tspan>
+                </text>
+                <line x1="141.5" y1="96.5" x2="141.5" y2="153.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="267.5" y1="72.5" x2="267.5" y2="152.423077" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <circle fill="#333333" cx="141.5" cy="153.5" r="2.5"></circle>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="136.5" y="174">a</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="263.5" y="173.164835">b</tspan>
+                </text>
+                <circle fill="#333333" cx="267.5" cy="153.5" r="2.5"></circle>
+                <circle fill="#333333" cx="141.5" cy="95.5" r="2.5"></circle>
+                <circle fill="#333333" cx="267.5" cy="69.5" r="2.5"></circle>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="141.5" y="96.5" width="21" height="57"></rect>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="162.5" y="78.5" width="21" height="75"></rect>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="183.5" y="63.5" width="21" height="90"></rect>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="204.5" y="54.5" width="21" height="99"></rect>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="225.5" y="57.5" width="21" height="96"></rect>
+                <rect stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="246.5" y="71.5" width="21" height="82"></rect>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="139" y="215">The interval [a, b] has been divided </tspan>
+                    <tspan x="139" y="228">into 6 subintervals of width Δx, </tspan>
+                    <tspan x="139" y="241">whose sum provides a lower </tspan>
+                    <tspan x="139" y="254">approximation of the area of the </tspan>
+                    <tspan x="139" y="267">curvilinear trapezoid.</tspan>
+                </text>
+                <line x1="215.5" y1="136" x2="215.5" y2="199.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

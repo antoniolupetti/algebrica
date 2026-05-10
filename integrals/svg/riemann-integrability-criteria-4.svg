@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="325px" height="299px" viewBox="0 0 325 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-76.000000, -130.000000)">
+            <g transform="translate(77.000000, 130.000000)">
+                <g transform="translate(0.000000, 29.000000)">
+                    <rect fill="#E6E6E6" x="56" y="29" width="30" height="115"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="87" y="23" width="30" height="121"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="117" y="27" width="30" height="116"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="148" y="59" width="30" height="84"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="178" y="86" width="31" height="57"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="209" y="107" width="30" height="36"></rect>
+                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="239" y="119" width="30" height="24"></rect>
+                    <rect fill="#D4D4D4" x="56" y="63" width="31" height="80"></rect>
+                    <rect fill="#D4D4D4" x="86" y="29" width="31" height="114"></rect>
+                    <rect fill="#D4D4D4" x="117" y="59" width="31" height="84"></rect>
+                    <rect fill="#D4D4D4" x="147" y="86" width="31" height="57"></rect>
+                    <rect fill="#D4D4D4" x="178" y="107" width="31" height="36"></rect>
+                    <rect fill="#D4D4D4" x="208" y="119" width="31" height="24"></rect>
+                    <rect fill="#D4D4D4" x="239" y="127" width="31" height="16"></rect>
+                    <rect fill="#D4D4D4" x="270" y="127" width="31" height="16"></rect>
+                    <path d="M55.882134,-0.323007375 L55.9357878,-0.24513062 L60.4357878,7.75486938 C60.5711697,7.99554832 60.4858096,8.30040587 60.2451306,8.43578777 C60.0311938,8.55612724 59.7665479,8.50205326 59.6152959,8.31951464 L59.5642122,8.24513062 L55.999,1.906 L56,185.5 C56,185.776142 55.7761424,186 55.5,186 C55.2545401,186 55.0503916,185.823125 55.0080557,185.589876 L55,185.5 L54.999,1.91 L51.4357878,8.24513062 C51.3154483,8.45906745 51.0612021,8.55028324 50.8371522,8.47282918 L50.7548694,8.43578777 C50.5409325,8.3154483 50.4497168,8.06120215 50.5271708,7.83715217 L50.5642122,7.75486938 L55.0642122,-0.24513062 C55.2394349,-0.55663764 55.6651608,-0.582596558 55.882134,-0.323007375 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                    <path d="M306.162848,138.527171 L306.245131,138.564212 L314.245131,143.064212 C314.556638,143.239435 314.582597,143.665161 314.323007,143.882134 L314.245131,143.935788 L306.245131,148.435788 C306.004452,148.57117 305.699594,148.48581 305.564212,148.245131 C305.443873,148.031194 305.497947,147.766548 305.680485,147.615296 L305.754869,147.564212 L312.091,144 L0,144 C-0.276142375,144 -0.5,143.776142 -0.5,143.5 C-0.5,143.25454 -0.323124839,143.050392 -0.0898756324,143.008056 L0,143 L312.091,143 L305.754869,139.435788 C305.540933,139.315448 305.449717,139.061202 305.527171,138.837152 L305.564212,138.754869 C305.684552,138.540933 305.938798,138.449717 306.162848,138.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                    <path d="M55.5572002,66.684292 C69.6569706,40.8689554 84.4712372,26.7534945 100,24.3379092 C145,17.3379092 157,121.337909 299,128.337909" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                    <line x1="86.5" y1="143" x2="86.5" y2="0.627192982" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="116.5" y1="143" x2="116.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="147.5" y1="143" x2="147.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="177.5" y1="143" x2="177.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="208.5" y1="143" x2="208.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="238.5" y1="143" x2="238.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                    <line x1="269.5" y1="143" x2="269.5" y2="1" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+                    <line x1="269.5" y1="143" x2="269.5" y2="1" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                </g>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="208" y="214">Lower sum</tspan>
+                </text>
+                <line x1="223.5" y1="200.5" x2="223.5" y2="166.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="64" y="258">As the partition grows finer, eight subintervals </tspan>
+                    <tspan x="64" y="271">here, the upper and lower sums close in on each </tspan>
+                    <tspan x="64" y="284">other and both converge toward the true area </tspan>
+                    <tspan x="64" y="297">under the curve.</tspan>
+                </text>
+                <line x1="102.5" y1="179.5" x2="102.5" y2="241.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="105" y="11">Upper sum</tspan>
+                </text>
+                <line x1="132.5" y1="18.5" x2="132.5" y2="61.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>
