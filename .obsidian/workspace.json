@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "finding-areas-by-integration.md",
+                "file": "integrals/finding-areas-by-integration.md",
                 "mode": "source",
                 "source": false
               },
@@ -212,10 +212,10 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "1bcdc9887aec6aac",
+  "active": "864fd0c13cccf3e1",
   "lastOpenFiles": [
     "integrals/integration-by-parts.md",
-    "finding-areas-by-integration.md",
+    "integrals/finding-areas-by-integration.md",
     "README.md",
     "integrals/integration-by-substitution.md",
     "algebraic-structures/modules.md",
