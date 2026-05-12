@@ -4,6 +4,7 @@
 
 - the original source files of the entries written for Algebrica in Markdown and LaTeX format;
 - fully editable SVG illustrations, including both vector structures and text elements, which can be modified directly through the source code;
+- a semantic JSON layer containing definitions, properties, lemmas, theorems, and other formal mathematical structures associated with the entries, designed to be portable, reusable, and openly accessible;
 - Markdown-based flowcharts describing the main logical and procedural steps behind common mathematical processes and problem-solving methods.
 
 ## About the content
