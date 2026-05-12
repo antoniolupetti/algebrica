@@ -80,7 +80,7 @@
       "id": "convergent-improper-integral",
       "section": "section-7",
       "term": "Convergent improper integral",
-      "description": "An improper integral is said to converge if the limit defining it exists and is finite."
+      "description": "The improper integral is said to converge if the limit \\(  \\displaystyle \\lim_{t \\to \\infty} \\int_a^t f(x)\\,dx \\) exists and is finite."
     },
 
     {
