@@ -1,0 +1,19 @@
+{
+  "page": "/indefinite-integrals/",
+  "semantic": [
+    {
+      "type": "definition",
+      "id": "primitive",
+      "section": "section-1",
+      "term": "Primitive",
+      "description": "A function \\(F(x)\\) is a primitive of \\(f(x)\\) on an interval \\([a, b]\\) if \\(F\\) is differentiable throughout \\([a, b]\\) and \\(F'(x) = f(x)\\) for all \\(x \\in [a, b]\\)."
+    },
+    {
+      "type": "definition",
+      "id": "indefinite-integral",
+      "section": "section-2",
+      "term": "Indefinite integral",
+      "description": "The indefinite integral of a function \\(f(x)\\) is the set of all its primitives, expressed as \\(F(x) + c\\) for \\(c \\in \\mathbb{R}\\), and denoted \\(\\int f(x)\\, dx = F(x) + c\\)."
+    }
+  ]
+}
