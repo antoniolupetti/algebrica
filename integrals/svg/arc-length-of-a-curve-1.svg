@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="333px" height="200px" viewBox="0 0 333 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-55.000000, -130.000000)">
+            <g transform="translate(55.000000, 130.000000)">
+                <path d="M47.882134,13.6769926 L47.9357878,13.7548694 L52.4357878,21.7548694 C52.5711697,21.9955483 52.4858096,22.3004059 52.2451306,22.4357878 C52.0311938,22.5561272 51.7665479,22.5020533 51.6152959,22.3195146 L51.5642122,22.2451306 L47.999,15.906 L48,199.5 C48,199.776142 47.7761424,200 47.5,200 C47.2545401,200 47.0503916,199.823125 47.0080557,199.589876 L47,199.5 L46.999,15.91 L43.4357878,22.2451306 C43.3154483,22.4590675 43.0612021,22.5502832 42.8371522,22.4728292 L42.7548694,22.4357878 C42.5409325,22.3154483 42.4497168,22.0612021 42.5271708,21.8371522 L42.5642122,21.7548694 L47.0642122,13.7548694 C47.2394349,13.4433624 47.6651608,13.4174034 47.882134,13.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M319.162848,168.527171 L319.245131,168.564212 L327.245131,173.064212 C327.556638,173.239435 327.582597,173.665161 327.323007,173.882134 L327.245131,173.935788 L319.245131,178.435788 C319.004452,178.57117 318.699594,178.48581 318.564212,178.245131 C318.443873,178.031194 318.497947,177.766548 318.680485,177.615296 L318.754869,177.564212 L325.093,173.999 L319,174 L0.5,174 C0.223857625,174 1.23209393e-16,173.776142 0,173.5 C-1.09519461e-16,173.25454 0.176875161,173.050392 0.410124368,173.008056 L0.5,173 L319,173 L325.089,172.999 L318.754869,169.435788 C318.540933,169.315448 318.449717,169.061202 318.527171,168.837152 L318.564212,168.754869 C318.684552,168.540933 318.938798,168.449717 319.162848,168.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="80" y="11">The differential element of arc length is </tspan>
+                    <tspan x="80" y="24">obtained by passing from polygonal </tspan>
+                    <tspan x="80" y="37">segments of length </tspan>
+                    <tspan x="180.254" y="34.7119852" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">ℓ</tspan>
+                    <tspan x="190.349121" y="38.1106415" font-family=".SFNS-Regular, .SF NS">ₖ</tspan>
+                    <tspan x="197.586133" y="37"> to the limiting curve.</tspan>
+                </text>
+                <line x1="114.5" y1="43.5" x2="114.6" y2="106.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="1.5" y="137">y=f(x)</tspan>
+                </text>
+                <line x1="85.5" y1="136.5" x2="85.5" y2="175.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="139.5" y1="98.5" x2="139.5" y2="173.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="193.5" y1="70.5" x2="193.5" y2="173.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="247.5" y1="64.5" x2="247.5" y2="175.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="301.5" y1="107.5" x2="301.5" y2="173.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="59" y="194">a = x₀</tspan>
+                </text>
+                <path d="M1,107 C7.80885466,114.92568 12.8437095,120.499045 16.1045646,123.720095 M37.4549292,140.634418 C49.7265118,147.720722 60.9082021,149.175916 71,145 C100,133 170,66 224,61 C260,57.6666667 292,83.6666667 320,139" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <ellipse fill="#333333" cx="85.4954463" cy="136.5" rx="2.49544627" ry="2.5"></ellipse>
+                <ellipse fill="#333333" cx="139.495446" cy="98.5" rx="2.49544627" ry="2.5"></ellipse>
+                <ellipse fill="#333333" cx="193.495446" cy="69.5" rx="2.49544627" ry="2.5"></ellipse>
+                <ellipse fill="#333333" cx="247.495446" cy="63.5" rx="2.49544627" ry="2.5"></ellipse>
+                <circle fill="#333333" cx="301.5" cy="107.5" r="2.5"></circle>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="135" y="194">x₁</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="298" y="194">x</tspan>
+                    <tspan x="305.605" y="194" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
+                    <tspan x="310.892598" y="194"> = b</tspan>
+                </text>
+                <line x1="85.5" y1="137.5" x2="139.5" y2="99.5" stroke="#333333" stroke-linecap="square"></line>
+                <line x1="139.5" y1="98.5" x2="193.5" y2="69.5" stroke="#333333" stroke-linecap="square"></line>
+                <line x1="193.5" y1="69.5" x2="247.5" y2="63.5" stroke="#333333" stroke-linecap="square"></line>
+                <line x1="247.5" y1="63.5" x2="301.5" y2="107.5" stroke="#333333" stroke-linecap="square"></line>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="190" y="194">x₂</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="243" y="195">x₃</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

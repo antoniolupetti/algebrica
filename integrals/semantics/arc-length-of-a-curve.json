@@ -1,0 +1,33 @@
+{
+  "page": "/arc-length-of-a-curve/",
+  "semantic": [
+    {
+      "type": "definition",
+      "id": "arc-length-cartesian",
+      "section": "section-3",
+      "term": "Arc length in Cartesian form",
+      "description": "Let \\( f \\) be a function with continuous derivative on the closed interval \\( [a,b] \\). The arc length of the graph of \\( f \\) from \\( x = a \\) to \\( x = b \\) is defined by \\( L = \\int_a^b \\sqrt{1 + [f'(x)]^2}\\, dx \\)."
+    },
+    {
+      "type": "definition",
+      "id": "arc-length-element",
+      "section": "section-3",
+      "term": "Arc length element",
+      "description": "The expression \\( ds = \\sqrt{1 + [f'(x)]^2}\\, dx \\) is the arc length element. It represents the infinitesimal length of the curve corresponding to an infinitesimal increment \\( dx \\) of the independent variable, and satisfies the identity \\( ds^2 = dx^2 + dy^2 \\)."
+    },
+    {
+      "type": "definition",
+      "id": "arc-length-parametric",
+      "section": "section-4",
+      "term": "Arc length in parametric form",
+      "description": "Let a planar curve be parametrised by \\( x = x(t) \\), \\( y = y(t) \\) for \\( t \\in [\\alpha, \\beta] \\), where \\( x(t) \\) and \\( y(t) \\) are continuously differentiable on \\( [\\alpha, \\beta] \\). The arc length of the curve is defined by \\( L = \\int_\\alpha^\\beta \\sqrt{[x'(t)]^2 + [y'(t)]^2}\\, dt \\)."
+    },
+    {
+      "type": "definition",
+      "id": "rectifiable-curve",
+      "section": "section-6",
+      "term": "Rectifiable curve",
+      "description": "A curve is said to be rectifiable when the supremum of the lengths of all inscribed polygonal lines is finite. Continuously differentiable curves on a closed bounded interval are rectifiable, and for them the supremum equals the value computed by the integral arc length formulas."
+    }
+  ]
+}

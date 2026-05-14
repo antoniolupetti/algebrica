@@ -1,4 +1,3 @@
-
 # Supremum and Infimum
 
 Source: algebrica.org — CC BY-NC 4.0
