@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="415px" height="260px" viewBox="0 0 415 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect fill="#EBEBEB" x="78" y="74" width="253" height="35" rx="17.5"></rect>
+            <path d="M370.662848,86.5271708 L370.745131,86.5642122 L378.745131,91.0642122 L379.519864,91.5 L378.745131,91.9357878 L370.745131,96.4357878 C370.504452,96.5711697 370.199594,96.4858096 370.064212,96.2451306 C369.943873,96.0311938 369.997947,95.7665479 370.180485,95.6152959 L370.254869,95.5642122 L376.589,92 L38,92 C37.7238576,92 37.5,91.7761424 37.5,91.5 C37.5,91.2545401 37.6768752,91.0503916 37.9101244,91.0080557 L38,91 L376.593,91 L370.254869,87.4357878 C370.040933,87.3154483 369.949717,87.0612021 370.027171,86.8371522 L370.064212,86.7548694 C370.184552,86.5409325 370.438798,86.4497168 370.662848,86.5271708 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="172.5" y1="43.5" x2="172.5" y2="66.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="72.5" y="11">For the open interval A = (0, 1) the supremum and infimum </tspan>
+                <tspan x="72.5" y="24">exist but are not attained. No element of  A equals 0 or 1, </tspan>
+                <tspan x="72.5" y="37">so the maximum and minimum do not exist.</tspan>
+            </text>
+            <line x1="172.5" y1="188.5" x2="172.5" y2="216.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="85.5" y="232">For the closed interval B = [0, 1] the endpoints belong </tspan>
+                <tspan x="85.5" y="245">to the set, so the infimum and supremum are attained </tspan>
+                <tspan x="85.5" y="258">and coincide with the minimum and maximum.</tspan>
+            </text>
+            <circle stroke="#333333" fill="#FFFFFF" cx="78" cy="92" r="2.5"></circle>
+            <circle stroke="#333333" fill="#FFFFFF" cx="331" cy="92" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="48" y="84">inf A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="333" y="84">Sup A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="182" y="115"> A = (0,1)</tspan>
+            </text>
+            <rect fill="#EBEBEB" x="79" y="142" width="253" height="35" rx="17.5"></rect>
+            <path d="M371.662848,154.527171 L371.745131,154.564212 L379.745131,159.064212 L380.519864,159.5 L379.745131,159.935788 L371.745131,164.435788 C371.504452,164.57117 371.199594,164.48581 371.064212,164.245131 C370.943873,164.031194 370.997947,163.766548 371.180485,163.615296 L371.254869,163.564212 L377.591,160 L39,160 C38.7238576,160 38.5,159.776142 38.5,159.5 C38.5,159.25454 38.6768752,159.050392 38.9101244,159.008056 L39,159 L377.591,159 L371.254869,155.435788 C371.040933,155.315448 370.949717,155.061202 371.027171,154.837152 L371.064212,154.754869 C371.184552,154.540933 371.438798,154.449717 371.662848,154.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle stroke="#333333" fill="#333333" cx="79" cy="160" r="2.5"></circle>
+            <ellipse stroke="#333333" fill="#333333" cx="331.998" cy="160.003471" rx="2.498" ry="2.5034708"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="152">inf A = min A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="334" y="152">Sup A = max A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="183" y="183"> B = [0,1]</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
