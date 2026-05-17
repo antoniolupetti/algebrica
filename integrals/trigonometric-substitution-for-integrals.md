@@ -25,7 +25,7 @@ These restrictions are essential, since they determine not only where the integr
 \\[1+\tan^2\theta=\sec^2\theta \\]
 \\[\sec^2\theta-1=\tan^2\theta\\]
 
-> The substitution in each case is chosen so that the term inside the square root matches the left-hand side of one of these identities, which turns the radical into an expression without radicals.
+> The substitution in each case is chosen so that the term inside the square root matches the left-hand side of one of these identities, which turns the radical into an expression without radicals. Integrals involving rational functions of \\( \sin x \\) and \\( \cos x \\) are instead usually treated through the [Weierstrass substitution](../the-weierstrass-substitution/), which transforms trigonometric expressions into rational functions of a new variable.
 
 - - -
 

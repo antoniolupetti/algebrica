@@ -1,0 +1,229 @@
+# The Weierstrass Substitution
+
+Source: algebrica.org — CC BY-NC 4.0
+https://algebrica.org/weierstrass-substitution/
+
+## The class of integrals we want to handle
+
+Many integrals that appear in elementary calculus involve a [rational function](../rational-functions) whose variable is itself a combination of sine and cosine. Expressions such as:
+
+\\[\frac{1}{1 + \sin x} \qquad \frac{1}{5 - 3\cos x} \qquad \frac{1}{\sin x + \cos x}\\]
+
+share a common structure. Numerator and denominator are [polynomials](../polynomials/) in \\( \sin x \\) and \\( \cos x \\). The standard techniques studied for [trigonometric integrals](../integral-of-trigonometric-functions/), based on power-reduction identities or on splitting one factor away from the rest, do not provide a uniform recipe for integrands of this kind, and ad hoc manipulations rarely lead anywhere. What is needed is a single substitution that transforms every rational expression in \\( \sin x \\) and \\( \cos x \\) into an ordinary rational function of a new variable, so that the integration problem reduces to one already mastered, namely the [integral of a rational function](../integral-of-rational-functions/).
+
+The substitution is built on the half-angle \\( x/2 \\) and exploits in a single stroke all the algebraic identities that connect [tangent](../tangent-and-cotangent/), [sine and cosine](../sine-and-cosine/).
+
+- - -
+## The substitution \\( t = \tan(x/2) \\)
+
+We introduce the new variable through the equation:
+
+\\[
+t = \tan\\!\left(\frac{x}{2}\right) \tag{1}
+\\]
+
+For the moment we restrict the angle \\( x \\) to the open [interval](../intervals/) \\( (-\pi, \pi) \\), so that the function \\( \tan(x/2) \\) is well defined and the map \\( x \mapsto t \\) is a bijection onto the real line. The original variable can be recovered from the relation \\( x = 2\arctan t \\), and we shall use this inverse formulation whenever the result must be expressed back in terms of \\( x \\).
+
+The whole strength of the substitution lies in the fact that \\( \sin x \\), \\( \cos x \\), and the differential \\( dx \\) all admit a closed-form rational expression in \\( t \\). To obtain these expressions we make systematic use of the double-angle identities and of the Pythagorean identity](../pythagorean-identity/) \\( \sin^2 \theta + \cos^2 \theta = 1.\\)
+
+- - -
+## Translating sine, cosine, and the differential
+
+We start from the [double-angle identity](../trigonometric-identities/) for the sine:
+
+\\[
+\sin x = 2\sin\\!\left(\frac{x}{2}\right)\cos\\!\left(\frac{x}{2}\right)
+\\]
+
+Writing the right-hand side as \\( 2\tan(x/2)\cos^2(x/2) \\) and using the identity \\( \cos^2(x/2) = 1/(1 + \tan^2(x/2)) \\), the sine takes the form:
+
+\\[
+\sin x = \frac{2t}{1 + t^2} \tag{2}
+\\]
+
+The double-angle identity for the cosine reads \\( \cos x = \cos^2(x/2) - \sin^2(x/2) \\). Dividing the numerator and the denominator (which equals \\( 1 \\) by the Pythagorean identity) by \\( \cos^2(x/2) \\), we arrive at:
+
+\\[
+\cos x = \frac{1 - t^2}{1 + t^2} \tag{3}
+\\]
+
+It remains to express the differential. Differentiating the relation \\( t = \tan(x/2) \\) with respect to \\( x \\), we obtain:
+
+\\[
+\frac{dt}{dx} = \frac{1}{2}\sec^2\\!\left(\frac{x}{2}\right) = \frac{1}{2}\left(1 + \tan^2\\!\left(\frac{x}{2}\right)\right) = \frac{1 + t^2}{2}
+\\]
+
+Solving for \\( dx \\) yields the third fundamental identity:
+
+\\[
+dx = \frac{2}{1 + t^2}\\, dt \tag{4}
+\\]
+
+Formulas \\((2)\\), \\((3)\\), and \\((4)\\) are the three keys of the method. Substituting them into any rational expression in \\( \sin x \\) and \\( \cos x \\) produces a rational expression in \\( t \\), which can then be integrated by the techniques developed for rational functions: polynomial division, decomposition into partial fractions, and integration of elementary blocks.
+
+> The factor \\( 2/(1+t^2) \\) introduced by the differential is the same one that appears in the derivative of \\( \arctan \\). This is not accidental, since the inverse relation between \\( t \\) and \\( x \\) is precisely \\( x = 2\arctan t \\). The presence of \\( 1 + t^2 \\) in every formula reflects this underlying connection.
+
+- - -
+## Example 1
+
+Consider the integral
+
+\\[
+\int \frac{dx}{1 + \sin x}
+\\]
+
+Applying the substitution and using identity \\((2)\\), the denominator becomes:
+
+\\[
+\begin{aligned}
+1 + \sin x &= 1 + \frac{2t}{1+t^2} \\\\[6pt]
+\&= \frac{1 + t^2 + 2t}{1+t^2} \\\\[6pt]
+\&= \frac{(1+t)^2}{1+t^2}
+\end{aligned}
+\\]
+
+Combining this expression with the differential \\((4)\\), the integrand reduces to:
+
+\\[
+\begin{aligned}
+\frac{1}{1+\sin x}\\, dx
+&= \frac{1+t^2}{(1+t)^2}\cdot\frac{2}{1+t^2}\, dt \\\\[6pt]
+&= \frac{2}{(1+t)^2}\\, dt
+\end{aligned}
+\\]
+
+The factor \\( 1 + t^2 \\) cancels exactly, and one is left with the integral of a function of \\( t \\) alone. The [antiderivative](../indefinite-integrals/) is obtained immediately:
+
+\\[
+\int \frac{2}{(1+t)^2}\\, dt = -\frac{2}{1+t} + c
+\\]
+
+Reverting to the original variable through the identity \\( t = \tan(x/2) \\), the final answer is:
+
+\\[
+\int \frac{dx}{1 + \sin x} = -\frac{2}{1 + \tan(x/2)} + c
+\\]
+
+> The result can be checked by direct differentiation, which restores the original integrand after a short computation.
+
+- - -
+## Example 2
+
+We now treat the integral:
+
+\\[
+\int \frac{dx}{5 - 3\cos x}
+\\]
+
+Using identity \\((3)\\), the denominator takes the form:
+
+\\[
+\begin{aligned}
+5 - 3\cos x
+&= 5 - 3\cdot\frac{1 - t^2}{1+t^2} \\\\[6pt]
+&= \frac{5(1+t^2) - 3(1-t^2)}{1+t^2} \\\\[6pt]
+&= \frac{2 + 8t^2}{1+t^2} \\\\[6pt]
+&= \frac{2(1 + 4t^2)}{1+t^2}
+\end{aligned}
+\\]
+
+Combining this with the differential \\((4)\\), the integrand simplifies considerably:
+
+\\[
+\begin{aligned}
+\frac{1}{5-3\cos x}\\, dx
+&= \frac{1+t^2}{2(1+4t^2)}\cdot \frac{2}{1+t^2}\\, dt \\\\[6pt]
+&= \frac{dt}{1 + 4t^2}
+\end{aligned}
+\\]
+
+The cancellation of \\( 1 + t^2 \\) is again the decisive step. The remaining integral is a standard arctangent form, since \\( 1 + 4t^2 = 1 + (2t)^2 \\). Setting \\( u = 2t \\), so that \\( du = 2\\, dt \\), we obtain:
+
+\\[
+\begin{aligned}
+\int \frac{dt}{1 + 4t^2}
+&= \frac{1}{2}\int \frac{du}{1 + u^2} \\\\[6pt]
+&= \frac{1}{2}\arctan u + c \\\\[6pt]
+&= \frac{1}{2}\arctan(2t) + c
+\end{aligned}
+\\]
+
+Going back to the variable \\( x \\), the antiderivative reads:
+
+\\[
+\int \frac{dx}{5 - 3\cos x} = \frac{1}{2}\arctan\\!\bigl(2\tan(x/2)\bigr) + c
+\\]
+
+> This example illustrates the typical pattern: after substitution the integrand becomes a rational function in \\( t \\) that can be reduced to a sum of arctangents and logarithms, the elementary building blocks of integration of rational functions.
+
+- - -
+## Example 3
+
+We finally compute the integral:
+
+\\[
+\int \frac{dx}{2 + \sin x}
+\\]
+
+Applying the substitution to the denominator gives:
+
+\\[
+\begin{aligned}
+2 + \sin x
+&= 2 + \frac{2t}{1+t^2} \\\\[6pt]
+&= \frac{2(1+t^2) + 2t}{1+t^2} \\\\[6pt]
+&= \frac{2(t^2 + t + 1)}{1+t^2}
+\end{aligned}
+\\]
+
+The integrand therefore becomes:
+
+\\[
+\begin{aligned}
+\frac{1}{2+\sin x}\\, dx
+&= \frac{1+t^2}{2(t^2+t+1)}\cdot\frac{2}{1+t^2}\\, dt \\\\[6pt]
+&= \frac{dt}{t^2+t+1}
+\end{aligned}
+\\]
+
+We complete the square in the denominator:
+
+\\[
+t^2 + t + 1 = \left(t + \frac{1}{2}\right)^2 + \frac{3}{4}
+\\]
+
+The integral can now be written as:
+
+\\[
+\int \frac{dt}{\left(t+\frac{1}{2}\right)^2 + \frac{3}{4}}
+\\]
+
+which is of the form \\( \int du/(u^2 + a^2) \\) with \\( u = t + 1/2 \\) and \\( a = \sqrt{3}/2 \\). Using the standard antiderivative for this expression, we obtain:
+
+\\[
+\int \frac{dt}{t^2+t+1} = \frac{2}{\sqrt{3}}\arctan\\!\left(\frac{2t+1}{\sqrt{3}}\right) + c
+\\]
+
+Substituting back \\( t = \tan(x/2) \\), the result is:
+
+\\[
+\int \frac{dx}{2+\sin x} = \frac{2}{\sqrt{3}}\arctan\\!\left(\frac{2\tan(x/2)+1}{\sqrt{3}}\right) + c
+\\]
+
+> The three examples cover the typical behaviour of the method. After the substitution one is left with the integral of a rational function in \\( t \\), and the result is invariably a combination of rational functions, arctangents, and logarithms of the new variable, transposed back at the end through the identity \\( t = \tan(x/2) \\).
+
+- - -
+## Conditions on the domain
+
+The substitution \\( t = \tan(x/2) \\) is defined for every \\( x \\) such that \\( x/2 \neq \pi/2 + k\pi \\), that is, for every \\( x \notin \pi + 2\pi\mathbb{Z} \\). The map \\( x \mapsto t \\) is a smooth bijection from each open interval \\( ((2k-1)\pi, (2k+1)\pi) \\) onto the whole real line. When dealing with an [indefinite integral](../indefinite-integrals), the formulas obtained above are valid on each such interval and the constant of integration may take different values on different intervals.
+
+The situation is more delicate for a definite integral whose endpoints belong to different fundamental intervals. In that case the substitution must be applied separately to each piece of the integration [domain](../determining-the-domain-of-a-function/) over which it is regular, and the contributions must be assembled at the end. A direct mechanical application of the substitution across a point of the form \\( x = (2k+1)\pi \\) leads to incorrect results, because the substitution is not even defined there.
+
+> A second source of caution is the orientation. The map \\( x = 2\arctan t \\) sends the real line to the interval \\( (-\pi, \pi) \\), which means that any antiderivative expressed through \\( \arctan(\cdots\tan(x/2)\cdots) \\) is continuous on each open interval but presents jumps of \\( 2\pi \\) at the points \\( x = (2k+1)\pi \\). The constant of integration must be redefined on each interval if a globally continuous primitive is required.
+
+- - -
+## When to prefer other techniques
+
+The Weierstrass substitution always works on rational integrands in sine and cosine, but it is not always the most efficient route. When the integrand contains only even powers of \\( \sin x \\) and \\( \cos x \\), or when it can be reorganised through the identities \\( \sin^2 x = (1 - \cos 2x)/2 \\) and \\( \cos^2 x = (1 + \cos 2x)/2 \\), the half-angle substitution introduces unnecessary algebraic complications. Similarly, if the integrand has the form \\( R(\sin x)\cos x \\) or \\( R(\cos x)\sin x \\), the direct substitutions \\( u = \sin x \\) or \\( u = \cos x \\) are far quicker, since they bypass the rationalisation altogether.
+
+A useful guideline is therefore the following. If the integrand is a true rational function of \\( \sin x \\) and \\( \cos x \\), with no obvious simplification through [trigonometric identities](../trigonometric-identities/) or direct substitutions, the Weierstrass substitution is the appropriate tool. In the other cases the simpler techniques produce shorter and cleaner computations.
