@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "integrals/the-weierstrass-substitution.md",
+                "file": "integrals/numerical-integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "the-weierstrass-substitution"
+              "title": "numerical-integration"
             }
           }
         ]
@@ -197,10 +197,13 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "864fd0c13cccf3e1",
+  "active": "597fcd41eddd9f74",
   "lastOpenFiles": [
-    "integrals/trigonometric-substitution-for-integrals.md",
+    "integrals/numerical-integration.html",
+    "complex-numbers/fundamental-inequalities-for-complex-numbers.md",
+    "integrals/numerical-integration.md",
     "integrals/the-weierstrass-substitution.md",
+    "integrals/trigonometric-substitution-for-integrals.md",
     "integrals/arc-length-of-a-curve.md",
     "sets-and-numbers/supremum-and-infimum.md",
     "integrals/integral-of-trigonometric-functions.md",
@@ -236,12 +239,8 @@
     "equations/svg/quadratic-equations.svg",
     "LICENSE.md",
     "().md",
-    "limits/remarkable-limits.md",
-    "equations/incomplete-quadratic-equations.md",
     "equations/svg/incomplete-quadratic-equations.svg",
-    "equations/linear-equations.md",
     "equations/svg",
-    "svg",
-    "cartella senza nome"
+    "svg"
   ]
 }
