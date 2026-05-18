@@ -9,7 +9,7 @@ The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provi
 
 A classical example is provided by the following integral which appears in the theory of the [normal distribution](../normal-distribution) and whose integrand has no antiderivative within the elementary functions:
 
-$$\int_0^1 e^{-x^2}\,dx$$
+$$\int_0^1 e^{-x^2}\\\,dx$$
 
 The same difficulty occurs with integrals containing $\sin(x)/x$, with elliptic integrals, and with a wide class of expressions involving combinations of algebraic and transcendental terms.
 
