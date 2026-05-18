@@ -173,7 +173,7 @@ Applying the composite Simpson formula $(4)$, the odd-indexed nodes $x_1$ and $x
 $$
 \begin{aligned}
 S_4
-&= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr]\\[0pt]
+&= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr]\\\\[0pt]
 &= \frac{1}{12}\,(1.367879 + 6.036784 + 1.557602) \\\\[3pt]
 &= 0.746855
 \end{aligned}
