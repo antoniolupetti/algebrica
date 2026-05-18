@@ -9,7 +9,7 @@ The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provi
 
 A classical example is provided by the following integral which appears in the theory of the [normal distribution](../normal-distribution) and whose integrand has no antiderivative within the elementary functions:
 
-$$\int_0^1 e^{-x^2}\\\,dx$$
+$$\int_0^1 e^{-x^2}\;dx$$
 
 The same difficulty occurs with integrals containing $\sin(x)/x$, with elliptic integrals, and with a wide class of expressions involving combinations of algebraic and transcendental terms.
 
@@ -34,7 +34,7 @@ $$
 A quadrature formula approximates the integral by a finite linear combination of values of the integrand at the nodes of the partition:
 
 $$
-\int_a^b f(x)\,dx \approx \sum_{k=0}^{n} w_k\,f(x_k) \tag{1}
+\int_a^b f(x)\\,dx \approx \sum_{k=0}^{n} w_k\\\,f(x_k) \tag{1}
 $$
 
 The coefficients $w_k$ are called weights, and their choice determines the specific method. The simplest schemes arise by interpolating the integrand on each subinterval, or on each group of consecutive subintervals, by a polynomial of low degree, and then integrating that polynomial exactly. The degree of the interpolating polynomial determines both the form of the resulting formula and its order of accuracy.
@@ -54,19 +54,19 @@ $$
 the midpoint rule on a single subinterval reads:
 
 $$
-\int_{x_{k-1}}^{x_k} f(x)\,dx \approx h\,f(\bar{x}_k)
+\int_{x_{k-1}}^{x_k} f(x)\\,dx \approx h\\\,f(\bar{x}_k)
 $$
 
 Summing the local contributions over all subintervals, one obtains the composite midpoint formula:
 
 $$
-\int_a^b f(x)\,dx \approx h \sum_{k=1}^{n} f(\bar{x}_k) \tag{2}
+\int_a^b f(x)\\\,dx \approx h \sum_{k=1}^{n} f(\bar{x}_k) \tag{2}
 $$
 
 **Theorem 1.** When the integrand is of class $C^2$ on $[a,b]$, the error committed by formula $(2)$ satisfies the bound:
 
 $$
-\left| \int_a^b f(x)\,dx - h\sum_{k=1}^{n} f(\bar{x}_k) \right| \le \frac{(b-a)\,h^2}{24} \max_{x \in [a,b]} |f''(x)|
+\left| \int_a^b f(x)\\\,dx - h\sum_{k=1}^{n} f(\bar{x}_k) \right| \le \frac{(b-a)\\\,h^2}{24} \max_{x \in [a,b]} |f''(x)|
 $$
 
 The error therefore decreases as the square of the step size, and halving $h$ reduces the bound by a factor of four. This is already a clear improvement over the left and right rectangle rules, whose error scales linearly with $h$ and which therefore converge much more slowly to the exact value of the integral.
@@ -78,19 +78,19 @@ The error therefore decreases as the square of the step size, and halving $h$ re
 A more accurate approximation is obtained by replacing the integrand on each subinterval not by a constant but by an affine function, namely the segment joining the two graph points $(x_{k-1}, f(x_{k-1}))$ and $(x_k, f(x_k))$. The region underneath this segment is a trapezoid, and its area equals the average of the two ordinates multiplied by the base. The local formula reads:
 
 $$
-\int_{x_{k-1}}^{x_k} f(x)\,dx \approx \frac{h}{2}\bigl[f(x_{k-1}) + f(x_k)\bigr]
+\int_{x_{k-1}}^{x_k} f(x)\\\,dx \approx \frac{h}{2}\bigl[f(x_{k-1}) + f(x_k)\bigr]
 $$
 
 Summing over all subintervals and observing that each internal node belongs to two adjacent subintervals, and therefore appears with multiplicity two in the global sum, one obtains the composite trapezoidal formula:
 
 $$
-\int_a^b f(x)\,dx \approx \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \tag{3}
+\int_a^b f(x)\\\,dx \approx \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \tag{3}
 $$
 
 **Theorem 2.** If the integrand is of class $C^2$ on $[a,b]$, the error of the composite trapezoidal formula admits the bound:
 
 $$
-\left| \int_a^b f(x)\,dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a)\,h^2}{12} \max_{x \in [a,b]} |f''(x)|
+\left| \int_a^b f(x)\\\,dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a)\\,h^2}{12} \max_{x \in [a,b]} |f''(x)|
 $$
 
 The decay is again of order $h^2$, and the asymptotic behaviour coincides with that of the midpoint rule. The constant appearing in the trapezoidal bound is however twice as large as the one for the midpoint rule, so the two methods are comparable in order of convergence but the midpoint rule is slightly more accurate on the leading constant.
@@ -102,19 +102,19 @@ The decay is again of order $h^2$, and the asymptotic behaviour coincides with t
 A substantial gain in accuracy is achieved by approximating the integrand on a pair of consecutive subintervals by a polynomial of degree two, rather than by a piecewise affine function. The construction proceeds as follows. Consider three consecutive equally spaced nodes $x_{k-1}, x_k, x_{k+1}$, and let $P(x)$ denote the unique polynomial of degree at most two passing through the three points $(x_{k-1}, f(x_{k-1}))$, $(x_k, f(x_k))$, $(x_{k+1}, f(x_{k+1}))$. The integral of this polynomial over the pair of subintervals can be computed in closed form, for instance by integrating the Lagrange representation of $P(x)$, and the result reads:
 
 $$
-\int_{x_{k-1}}^{x_{k+1}} P(x)\,dx = \frac{h}{3}\bigl[f(x_{k-1}) + 4 f(x_k) + f(x_{k+1})\bigr]
+\int_{x_{k-1}}^{x_{k+1}} P(x)\\\,dx = \frac{h}{3}\bigl[f(x_{k-1}) + 4 f(x_k) + f(x_{k+1})\bigr]
 $$
 
 Substituting this expression in place of the exact integral one obtains Simpson's formula on a single pair of subintervals. For the composite version, the number of subdivisions $n$ must be even, so that the whole interval can be covered by $n/2$ non-overlapping consecutive pairs. Grouping the nodes accordingly, one arrives at the composite Simpson formula:
 
 $$
-\int_a^b f(x)\,dx \approx \frac{h}{3}\Bigl[f(a) + f(b) + 4 \sum_{k \text{ odd}} f(x_k) + 2 \sum_{k \text{ even}} f(x_k)\Bigr] \tag{4}
+\int_a^b f(x)\\\,dx \approx \frac{h}{3}\Bigl[f(a) + f(b) + 4 \sum_{k \text{ odd}} f(x_k) + 2 \sum_{k \text{ even}} f(x_k)\Bigr] \tag{4}
 $$
 
 where the odd-indexed sum extends over $k = 1, 3, \dots, n-1$ and the even-indexed sum extends over the interior even nodes $k = 2, 4, \dots, n-2$. When the integrand is of class $C^4$ on $[a,b]$, the error of the composite Simpson formula satisfies:
 
 $$
-\left| \int_a^b f(x)\,dx - S_n \right| \le \frac{(b-a)\,h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
+\left| \int_a^b f(x)\\\,dx - S_n \right| \le \frac{(b-a)\\,h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
 $$
 
 where $S_n$ stands for the right-hand side of formula $(4)$. The error now decreases as the fourth power of the step size, and halving $h$ reduces the bound by a factor of sixteen. This represents a dramatic improvement over the second-order behaviour of the trapezoidal and midpoint rules, and it explains why Simpson's formula has historically occupied a central role in numerical quadrature.
@@ -140,7 +140,7 @@ The qualitative consequence is striking. To divide the error by a factor of one 
 We illustrate the use of the trapezoidal and Simpson rules on the integral:
 
 $$
-\int_0^1 e^{-x^2}\,dx
+\int_0^1 e^{-x^2}\\\,dx
 $$
 
 The integrand is the kernel of the Gauss error function and admits no antiderivative expressible in elementary form, so the integral cannot be evaluated by the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) in any direct way. The reference value, obtained with arbitrary precision, is approximately $0.7468241328$, and it provides a yardstick against which our approximations can be tested.
@@ -161,7 +161,7 @@ $$
 \begin{aligned}
 T_4
 &= \frac{0.25}{2}\Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\\\[0pt]
-&= 0.125\,(1.367879 + 4.575994) \\\\[3pt]
+&= 0.125 \; (1.367879 + 4.575994) \\\\[3pt]
 &= 0.742984
 \end{aligned}
 $$
@@ -174,7 +174,7 @@ $$
 \begin{aligned}
 S_4
 &= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr]\\\\[0pt]
-&= \frac{1}{12}\,(1.367879 + 6.036784 + 1.557602) \\\\[3pt]
+&= \frac{1}{12}\\,(1.367879 + 6.036784 + 1.557602) \\\\[3pt]
 &= 0.746855
 \end{aligned}
 $$
