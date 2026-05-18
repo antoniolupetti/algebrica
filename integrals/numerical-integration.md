@@ -158,12 +158,12 @@ We choose $n = 4$ subintervals of equal width $h = 1/4$. The nodes of the partit
 Applying the composite trapezoidal formula $(3)$, the endpoint values contribute with weight one and the three interior values contribute with weight two. A direct substitution gives:
 
 $$
-\begin{align}
+\begin{aligned}
 T_4
-&= \frac{0.25}{2}\Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\[6pt]
-&= 0.125\,(1.367879 + 4.575994) \\[6pt]
+&= \frac{0.25}{2}\Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\\\[0pt]
+&= 0.125\,(1.367879 + 4.575994) \\\\[3pt]
 &= 0.742984
-\end{align}
+\end{aligned}
 $$
 
 The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$, which is consistent with the second-order error bound that governs the trapezoidal rule.
@@ -171,12 +171,12 @@ The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$,
 Applying the composite Simpson formula $(4)$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
 
 $$
-\begin{align}
+\begin{aligned}
 S_4
-&= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr] \\[6pt]
-&= \frac{1}{12}\,(1.367879 + 6.036784 + 1.557602) \\[6pt]
+&= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr]\\[0pt]
+&= \frac{1}{12}\,(1.367879 + 6.036784 + 1.557602) \\\\[3pt]
 &= 0.746855
-\end{align}
+\end{aligned}
 $$
 
 The discrepancy with the reference value is now approximately $3.1 \times 10^{-5}$, more than two orders of magnitude smaller than the trapezoidal error obtained with the same number of nodes. The comparison confirms in a concrete situation the theoretical prediction that Simpson's rule produces results of much higher quality than the trapezoidal rule for the same computational cost.
