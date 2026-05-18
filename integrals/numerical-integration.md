@@ -158,12 +158,12 @@ We choose $n = 4$ subintervals of equal width $h = 1/4$. The nodes of the partit
 Applying the composite trapezoidal formula $(3)$, the endpoint values contribute with weight one and the three interior values contribute with weight two. A direct substitution gives:
 
 $$
-\begin{aligned}
+\begin{align}
 T_4
 &= \frac{0.25}{2}\Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\\\[0pt]
-&= 0.125 \; (1.367879 + 4.575994) \\\\[3pt]
+&= 0.125 \: (1.367879 + 4.575994) \\\\[3pt]
 &= 0.742984
-\end{aligned}
+\end{align}
 $$
 
 The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$, which is consistent with the second-order error bound that governs the trapezoidal rule.
