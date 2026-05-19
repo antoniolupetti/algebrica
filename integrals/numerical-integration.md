@@ -21,6 +21,8 @@ The numerical evaluation of such integrals follows a different conceptual route.
 
 Numerical integration rests on the same construction that defines the [Riemann integral](../riemann-integrability-criteria/): the interval of integration is partitioned into a finite number of subintervals, the integrand is replaced on each subinterval by a simpler function whose integral is known exactly, and the total area is approximated by summing the contributions of the individual pieces. The quality of the approximation is determined by two factors: the width of the subintervals and the order of accuracy of the local rule. 
 
+![IMG. 1](svg/numerical-integration-1.svg)
+
 Consider a uniform partition of the interval $[a,b]$:
 
 $$
@@ -56,7 +58,7 @@ $$
 the midpoint rule on a single subinterval reads:
 
 $$
-\int_{x_{k-1}}^{x_k} f(x)\\,dx \approx h\\\,f(\bar{x}_k)
+\int_{x_{k-1}}^{x_k} f(x)\\\,dx \approx h\\\,f(\bar{x}_k)
 $$
 
 Summing the local contributions over all subintervals, one obtains the composite midpoint formula:
@@ -77,7 +79,11 @@ The error therefore decreases as $h^2$ and halving $h$ reduces the bound by a fa
 
 ## The trapezoidal rule
 
-A more accurate approximation is obtained by replacing the integrand on each subinterval not by a constant but by an affine function, namely the segment joining the two graph points $(x_{k-1}, f(x_{k-1}))$ and $(x_k, f(x_k))$. The region underneath this segment is a trapezoid, and its area equals the average of the two ordinates multiplied by the base. The local formula reads:
+A more accurate approximation is obtained by replacing the integrand on each subinterval not by a constant but by an affine function, namely the segment joining the two graph points $(x_{k-1}, f(x_{k-1}))$ and $(x_k, f(x_k))$. The region underneath this segment is a trapezoid, and its area equals the average of the two ordinates multiplied by the base. 
+
+![IMG. 1](svg/numerical-integration-2.svg)
+
+The local formula reads:
 
 $$
 \int_{x_{k-1}}^{x_k} f(x)\\\,dx \approx \frac{h}{2}\bigl[f(x_{k-1}) + f(x_k)\bigr]
@@ -172,14 +178,12 @@ The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$,
 
 Applying the composite Simpson formula $(4)$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 S_4
 &= \frac{0.25}{3} \, \Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr]\\\\[0pt]
 &= \frac{1}{12} \, (1.367879 + 6.036784 + 1.557602) \\\\[3pt]
 &= 0.746855
-\end{aligned}
-$$
+\end{aligned}$$
 
 The discrepancy with the reference value is now approximately $3.1 \times 10^{-5}$, more than two orders of magnitude smaller than the trapezoidal error obtained with the same number of nodes. The comparison confirms, in a concrete setting, the theoretical prediction that Simpson's rule produces results of much higher quality than the trapezoidal rule at the same computational cost.
 

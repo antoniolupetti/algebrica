@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="292px" viewBox="0 0 334 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M81.882134,72.6769926 L81.9357878,72.7548694 L86.4357878,80.7548694 C86.5711697,80.9955483 86.4858096,81.3004059 86.2451306,81.4357878 C86.0311938,81.5561272 85.7665479,81.5020533 85.6152959,81.3195146 L85.5642122,81.2451306 L81.999,74.906 L82,258.5 C82,258.776142 81.7761424,259 81.5,259 C81.2545401,259 81.0503916,258.823125 81.0080557,258.589876 L81,258.5 L80.999,74.91 L77.4357878,81.2451306 C77.3154483,81.4590675 77.0612021,81.5502832 76.8371522,81.4728292 L76.7548694,81.4357878 C76.5409325,81.3154483 76.4497168,81.0612021 76.5271708,80.8371522 L76.5642122,80.7548694 L81.0642122,72.7548694 C81.2394349,72.4433624 81.6651608,72.4174034 81.882134,72.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.162848,215.527171 L295.245131,215.564212 L303.245131,220.064212 C303.556638,220.239435 303.582597,220.665161 303.323007,220.882134 L303.245131,220.935788 L295.245131,225.435788 C295.004452,225.57117 294.699594,225.48581 294.564212,225.245131 C294.443873,225.031194 294.497947,224.766548 294.680485,224.615296 L294.754869,224.564212 L301.091,221 L3.85379111e-16,221 C-0.276142375,221 -0.5,220.776142 -0.5,220.5 C-0.5,220.25454 -0.323124839,220.050392 -0.0898756324,220.008056 L-3.85379111e-16,220 L301.091,220 L294.754869,216.435788 C294.540933,216.315448 294.449717,216.061202 294.527171,215.837152 L294.564212,215.754869 C294.684552,215.540933 294.938798,215.449717 295.162848,215.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text  font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="241">x</tspan>
+            </text>
+            <text  font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="63.5" y="81">y</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="26.5" y="182">y=f(x)</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="111.5" y="241">a</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="253.5" y="240.164835">b</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="183.5" y="280.164835">h</tspan>
+            </text>
+            <path d="M163.5,112.443967 L163.5,220.5 L116.5,220.5 L116.5,172.173134 L163.5,112.443967 Z" stroke="#BABABA" fill="#E6E6E6"></path>
+            <path d="M210.5,108.521267 L210.5,220.5 L163.5,220.5 L163.5,110.479601 L210.5,108.521267 Z" stroke="#BABABA" fill="#E6E6E6"></path>
+            <path d="M210.5,108.854924 L257.5,135.292424 L257.5,220.5 L210.5,220.5 L210.5,108.854924 Z" stroke="#BABABA" fill="#E6E6E6"></path>
+            <text  font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="71" y="11">Each subinterval generates a trapezoid: h is the </tspan>
+                <tspan x="71" y="24">base, while f(x</tspan>
+                <tspan x="141.243121" y="25.1106415">ₖ₋</tspan>
+                <tspan x="152.239898" y="24">₁) and f(x</tspan>
+                <tspan x="193.25602" y="25.1106415">ₖ</tspan>
+                <tspan x="200.493031" y="24">) are the two heights </tspan>
+                <tspan x="71" y="37">used to approximate the area under the curve.</tspan>
+            </text>
+            <circle fill="#333333" cx="116.5" cy="220.5" r="2.5"></circle>
+            <circle fill="#333333" cx="257.5" cy="220.5" r="2.5"></circle>
+            <circle fill="#333333" cx="116.5" cy="173.5" r="2.5"></circle>
+            <circle fill="#333333" cx="163.5" cy="111.5" r="2.5"></circle>
+            <circle fill="#333333" cx="163.5" cy="111.5" r="2.5"></circle>
+            <circle fill="#333333" cx="210.5" cy="107.5" r="2.5"></circle>
+            <circle fill="#333333" cx="257.5" cy="134.5" r="2.5"></circle>
+            <line x1="116.5" y1="172.5" x2="116.5" y2="220.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="257.5" y1="136.5" x2="257.5" y2="219.423077" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M25,148 C28.2105417,157.932035 30.717193,165.004596 32.5199537,169.217684 M41.4266519,186.229751 C51.2935931,201.409917 63.1513759,209 77,209 C97.9179947,209 114.966555,174.330528 134.356016,144.995062 C146.482084,126.648814 159.523722,110.388795 175,106 C201.815127,98.3957103 236.14846,113.729044 278,152" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M210.5,283 C210.74546,283 210.949608,283.176875 210.991944,283.410124 L211,283.5 L211,291.5 C211,291.776142 210.776142,292 210.5,292 C210.25454,292 210.050392,291.823125 210.008056,291.589876 L210,291.5 L210,288 L164,288 L164,291.5 C164,291.776142 163.776142,292 163.5,292 C163.25454,292 163.050392,291.823125 163.008056,291.589876 L163,291.5 L163,283.5 C163,283.223858 163.223858,283 163.5,283 C163.74546,283 163.949608,283.176875 163.991944,283.410124 L164,283.5 L164,287 L210,287 L210,283.5 C210,283.223858 210.223858,283 210.5,283 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="163.5" y1="279.5" x2="163.5" y2="251.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="279.5" x2="210.5" y2="250.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="205" y="240">x</tspan>
+                <tspan x="212.605" y="240">ₖ</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="202" y="96">f(x</tspan>
+                <tspan x="218.302" y="96">ₖ</tspan>
+                <tspan x="223.215086" y="96">)</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="157" y="240">x</tspan>
+                <tspan x="164.605" y="240">ₖ₋</tspan>
+                <tspan x="173.809102" y="240">₁</tspan>
+            </text>
+            <text  font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="140" y="99">f(x</tspan>
+                <tspan x="156.302" y="99">ₖ₋</tspan>
+                <tspan x="165.506102" y="99">₁)</tspan>
+            </text>
+            <line x1="162.5" y1="43.5" x2="162.5" y2="84.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>
