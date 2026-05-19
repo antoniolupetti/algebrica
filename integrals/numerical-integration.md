@@ -174,8 +174,6 @@ T_4
 \end{align}
 $$
 
-
-
 The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$, which is consistent with the second-order error bound that governs the trapezoidal rule.
 
 Applying the composite Simpson formula $(4)$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
