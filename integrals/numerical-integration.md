@@ -41,7 +41,7 @@ $$
 F_1 = \int_a^b f(x)\\\,dx \approx \sum_{k=0}^{n} w_k\\\,f(x_k)
 $$
 
-The coefficients $w_k$ are called weights, and their choice determines the specific method. The simplest schemes arise by interpolating the integrand on each subinterval, or on each group of consecutive subintervals, by a low-degree polynomial, and then integrating that polynomial exactly. The degree of the interpolating polynomial determines both the form of the resulting formula and its order of accuracy.
+The coefficients $w_k$ are called weights, and their choice determines the specific method. The simplest schemes arise by interpolating the integrand on each subinterval, or on each group of consecutive subintervals, by a low-degree [polynomial](../polynomials/), and then integrating that polynomial exactly. The degree of the interpolating polynomial determines both the form of the resulting formula and its order of accuracy.
 
 **Definition 1.** A quadrature rule is said to have degree of exactness $m$ if it integrates exactly every polynomial of degree at most $m$. 
 
@@ -98,7 +98,7 @@ $$
 **Theorem 2.** If the integrand is of class $C^2$ on $[a,b]$, the error of the composite trapezoidal formula admits the bound:
 
 $$
-\left| \int_a^b f(x)\\\,dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a)\\,h^2}{12} \max_{x \in [a,b]} |f''(x)|
+\left| \int_a^b f(x)\\\,dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a)\,h^2}{12} \max_{x \in [a,b]} |f''(x)|
 $$
 
 The decay is again of order $h^2$, and the asymptotic behaviour coincides with that of the midpoint rule. The constant appearing in the trapezoidal bound is, however, twice as large as that for the midpoint rule, so the two methods are comparable in convergence order, but the midpoint rule is slightly more accurate in the leading constant.
@@ -122,12 +122,12 @@ $$
 where the odd-indexed sum extends over $k = 1, 3, \dots, n-1$ and the even-indexed sum extends over the interior even nodes $k = 2, 4, \dots, n-2$. When the integrand is of class $C^4$ on $[a,b]$, the error of the composite Simpson formula satisfies:
 
 $$
-\left| \int_a^b f(x)\\\,dx - S_n \right| \le \frac{(b-a)\\,h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
+\left| \int_a^b f(x)\\\,dx - S_n \right| \le \frac{(b-a)\,h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
 $$
 
 where $S_n$ stands for the right-hand side of formula $F_4$. The error now decreases as the fourth power of the step size, and halving $h$ reduces the bound by a factor of sixteen. This represents a dramatic improvement over the second-order behaviour of the trapezoidal and midpoint rules, and it explains why Simpson's formula has historically occupied a central role in numerical quadrature.
 
-> Although Simpson's rule is built by interpolating a [polynomial](../polynomials) of degree two, an additional cancellation of symmetric terms in the error expansion makes the rule exact on polynomials of degree three as well. The degree of exactness is therefore three, not two, and the gain of two orders of accuracy with respect to the trapezoidal rule is the manifestation of this fortunate phenomenon.
+> Although Simpson's rule is built by interpolating a polynomial of degree two, an additional cancellation of symmetric terms in the error expansion makes the rule exact on polynomials of degree three as well. The degree of exactness is therefore three, not two, and the gain of two orders of accuracy with respect to the trapezoidal rule is the manifestation of this fortunate phenomenon.
 
 ## Comparison and order of convergence
 
@@ -163,7 +163,7 @@ We choose $n = 4$ subintervals of equal width $h = 1/4$. The nodes of the partit
 | 3   | 0.75        | 0.569783                     |
 | 4   | 1.00        | 0.367879                     |
 
-Applying the composite trapezoidal formula $(3)$, the endpoint values contribute with weight one and the three interior values contribute with weight two. A direct substitution gives:
+Applying the composite trapezoidal formula $F_3$, the endpoint values contribute with weight one and the three interior values contribute with weight two. A direct substitution gives:
 
 $$
 \begin{align}
@@ -176,7 +176,7 @@ $$
 
 The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$, which is consistent with the second-order error bound that governs the trapezoidal rule.
 
-Applying the composite Simpson formula $(4)$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
+Applying the composite Simpson formula $F_4$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
 
 $$
 \begin{align}

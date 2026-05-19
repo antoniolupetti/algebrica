@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8e5a529ecd48613a",
+        "id": "90660489e78b33cd",
         "type": "tabs",
         "children": [
           {
-            "id": "07db3c6eb14c294c",
+            "id": "89f3be2521dba21c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "integrals/numerical-integration.md",
+                "file": "powers-radicals-logarithms/radicals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "numerical-integration"
+              "title": "radicals"
             }
           }
         ]
@@ -197,9 +197,13 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "07db3c6eb14c294c",
+  "active": "89f3be2521dba21c",
   "lastOpenFiles": [
     "integrals/numerical-integration.md",
+    "powers-radicals-logarithms/radicals.md",
+    "powers-radicals-logarithms/powers.md",
+    "CLAUDE.md",
+    "polynomials/polynomials.md",
     "integrals/svg/numerical-integration-2.svg",
     "integrals/svg/numerical-integration-1.svg",
     "integrals/numerical-integration.html",
@@ -237,10 +241,7 @@
     "algebraic-structures/modules.md",
     "algebraic-structures/groups.md",
     "algebraic-structures/vector-spaces.md",
-    "equations/quadratic-equations.md",
     "equations/svg/quadratic-equations.svg",
-    "LICENSE.md",
-    "().md",
     "equations/svg/incomplete-quadratic-equations.svg",
     "equations/svg",
     "svg"

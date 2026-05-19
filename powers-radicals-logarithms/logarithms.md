@@ -269,6 +269,98 @@ The exponential function \\( e^x \\) is defined as the inverse of \\( \ln x \\).
 This construction offers a rigorous analytical foundation for logarithms and accounts for their continuity, differentiability, and structural properties.
 
 - - -
+## Series expansion of the natural logarithm
+
+The integral definition of the natural logarithm provides a direct route to its representation as a power series. Starting from the identity:
+
+\\[
+\ln(1+x) = \int_0^x \frac{1}{1+t} \\, dt
+\\]
+
+the integrand can be expanded as a geometric series. For \\( |t| < 1 \\) one has the following:
+
+\\[
+\frac{1}{1+t} = \sum_{n=0}^{\infty} (-1)^n t^n = 1-t+t^2-t^3+\cdots
+\\]
+
+The series converges uniformly on every closed subinterval of \\( (-1,1) \\), which allows termwise integration. Integrating from \\( 0 \\) to \\( x \\) gives:
+
+\\[
+\ln(1+x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{n+1}\\, x^{n+1} = x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots
+\\]
+
+The series converges for \\( -1 < x \le 1 \\). The case \\( x = -1 \\) is excluded because the corresponding series is the negative of the harmonic series, which diverges. At \\( x = 1 \\) the series converges by the alternating series test and yields the elegant identity:
+
+\\[
+\ln 2 = 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
+\\]
+
+- - -
+
+The series provides a constructive method for computing the natural logarithm and clarifies its local behaviour. Truncating the expansion after the first term gives the linear approximation:
+
+\\[
+\ln(1+x) \approx x \qquad \text{for } x \to 0
+\\]
+
+with an error of order \\( x^2 \\). This approximation is the analytical content of the equivalent statement:
+
+\\[
+\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1
+\\]
+
+which appears in countless calculations involving limits, derivatives, and the analysis of small perturbations. The same idea underlies the use of the natural logarithm in continuously compounded interest, in the approximation of small percentage changes, and in the local linearisation of multiplicative phenomena.
+
+> The series for \\( \ln(1+x) \\) converges slowly when \\( x \\) is close to \\( 1 \\), which makes it impractical for direct numerical computation of values such as \\( \ln 2 \\). The transformation \\( \ln\frac{1+y}{1-y} = 2\left(y+\frac{y^3}{3}+\frac{y^5}{5}+\cdots\right) \\), obtained by combining the series for \\( \ln(1+y) \\) and \\( \ln(1-y) \\), converges much more rapidly and forms the basis of efficient algorithms for computing logarithms.
+
+- - -
+## Logarithmic differentiation
+
+A function of the form \\( y = f(x)^{g(x)} \\), in which both the base and the exponent depend on the variable, cannot be differentiated by direct application of the power rule or the exponential rule. The standard technique to handle such expressions is logarithmic differentiation. The procedure consists of taking the natural logarithm of both sides and then differentiating implicitly.
+
+Applying the logarithm to \\( y = f(x)^{g(x)} \\) and using the power rule for logarithms gives the following:
+
+\\[
+\ln y = g(x)\\,\ln f(x)
+\\]
+
+Differentiating both sides with respect to \\( x \\), and applying the chain rule on the left and the product rule on the right, one obtains:
+
+\\[
+\frac{y'}{y} = g'(x)\\,\ln f(x)+g(x)\\,\frac{f'(x)}{f(x)}
+\\]
+
+Solving for \\( y' \\) and substituting the original expression for \\( y \\) yields the explicit derivative:
+
+\\[
+y' = f(x)^{g(x)}\left[g'(x)\\,\ln f(x)+g(x)\\,\frac{f'(x)}{f(x)}\right]
+\\]
+
+The technique requires the condition \\( f(x) > 0 \\) on the interval of interest, so that the logarithm is well-defined.
+
+- - -
+
+As a concrete illustration, consider the derivative of \\( y = x^x \\) for \\( x > 0 \\). Taking the natural logarithm of both sides gives the following:
+
+\\[
+\ln y = x \ln x
+\\]
+
+Differentiating both sides, the left-hand side becomes \\( y'/y \\) by the chain rule, while the right-hand side is computed using the product rule:
+
+\\[
+\frac{y'}{y} = \ln x+x \cdot \frac{1}{x} = \ln x+1
+\\]
+
+Multiplying both sides by \\( y = x^x \\) yields the result:
+
+\\[
+\frac{d}{dx}\\,x^x = x^x\\,(\ln x+1)
+\\]
+
+The same method applies to any expression in which the variable appears in both the base and the exponent, and is also a convenient tool whenever the function admits a representation as a product of several factors, since the logarithm converts the product into a sum and simplifies the subsequent differentiation.
+
+- - -
 ## The AM-GM inequality via logarithms
 
 The [arithmetic mean](https://algebrica.org/arithmetic-mean/) and the [geometric mean](https://algebrica.org/geometric-mean/) of a finite set of positive real numbers satisfy a fundamental inequality: the arithmetic mean is always greater than or equal to the geometric mean. For positive real numbers \\(x_1, x_2, \ldots, x_n\\), this is stated as:

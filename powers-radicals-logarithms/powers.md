@@ -144,11 +144,89 @@ Applying the quotient rule to the left-hand side gives the following.
 This reasoning establishes that \\( a^0 = 1 \\). The condition \\( a \neq 0 \\) is a direct consequence of the argument, since the expression \\( \frac{a^n}{a^n} \\) is defined only when \\( a \neq 0 \\).
 
 - - -
+## Bernoulli's inequality
+
+Among the elementary results involving integer powers, one of the most useful is the inequality attributed to Jakob Bernoulli. For every real number \\( x \ge -1 \\) and every natural number \\( n \in \mathbb{N} \\) the following holds:
+
+\\[
+(1+x)^n \ge 1+nx
+\\]
+
+The condition \\( x \ge -1 \\) ensures that the base \\( 1+x \\) is non-negative and that the power \\( (1+x)^n \\) is well-defined in \\( \mathbb{R} \\) for every \\( n \\). Equality occurs when \\( n = 0 \\), when \\( n = 1 \\), or when \\( x = 0 \\); in every other case the inequality is strict.
+
+A proof proceeds by induction on \\( n \\). For \\( n = 0 \\) both sides equal \\( 1 \\), and for \\( n = 1 \\) both sides equal \\( 1+x \\). Assume that the inequality holds for some \\( n \ge 1 \\):
+
+\\[
+(1+x)^n \ge 1+nx
+\\]
+
+Multiplying both sides by the non-negative quantity \\( 1+x \\) preserves the direction of the inequality, yielding the following:
+
+\\[
+(1+x)^{n+1} \ge (1+nx)(1+x) = 1+(n+1)x+nx^2
+\\]
+
+The term \\( nx^2 \\) is non-negative for every real \\( x \\), so it can be discarded without violating the inequality:
+
+\\[
+(1+x)^{n+1} \ge 1+(n+1)x
+\\]
+
+This establishes the statement for \\( n+1 \\) and completes the induction.
+
+> The inequality extends to real exponents \\( r \\) with the conventions \\( r \ge 1 \\) or \\( r \le 0 \\), and reverses for \\( 0 < r < 1 \\). These generalisations rely on the convexity properties of the function \\( t \mapsto t^r \\) and are typically established through differential calculus.
+
+- - -
+
+The importance of Bernoulli's inequality stems from its role in obtaining sharp estimates with minimal effort. A classical application is the proof that the sequence \\( a_n = \left(1+\frac{1}{n}\right)^n \\) is monotonically increasing. The argument relies on the ratio of consecutive terms and on a single application of the inequality to control the resulting expression. Since the same sequence is bounded above, it admits a limit, and that limit is precisely [Euler's number](../euler-number-limit-sequence/) \\( e \\):
+
+\\[
+e = \lim_{n \to +\infty}\left(1+\frac{1}{n}\right)^n
+\\]
+
+In this sense Bernoulli's inequality is one of the elementary tools that make the introduction of \\( e \\) possible without recourse to the machinery of analysis.
+
+- - -
 ## Power and exponential
 
 Sometimes, people mistakenly mix up the concepts of power and exponential function. A power is an arithmetic operation in which a base \\(a\\) is multiplied by itself \\(n\\) times, with \\(n\\) referred to as the exponent. The [exponential function](../exponential-function/), by contrast, is a function in which the variable appears in the exponent rather than the base, taking the form:
 \\[f(x) = e^x \quad \text{or} \quad f(x) = a^x\\]
 where \\(a > 0\\) and \\(a \neq 1\\).
+
+- - -
+## Hierarchy of growth rates
+
+A recurring problem in mathematical analysis is the comparison of functions that tend to infinity as the variable becomes arbitrarily large. The functions involving logarithms, powers, and exponentials form a strict ordering in this regard, often called the hierarchy of growth rates or the scale of infinities. The fundamental statement is that for every \\( \alpha > 0 \\) and every \\( a > 1 \\) the following holds:
+
+\\[
+\lim_{x \to +\infty} \frac{\log_a x}{x^{\alpha}} = 0
+\qquad \text{and} \qquad
+\lim_{x \to +\infty} \frac{x^{\alpha}}{a^{x}} = 0
+\\]
+
+The first limit asserts that any positive power of \\( x \\), however small the exponent, eventually dominates the logarithm. The second states that any exponential with base greater than \\( 1 \\) eventually dominates every power of \\( x \\), however large the exponent. Combining the two statements yields a strict three-tier ordering in which logarithms grow more slowly than powers, and powers grow more slowly than exponentials.
+
+> The verb "eventually" carries a precise meaning. For any prescribed threshold \\( \varepsilon > 0 \\), one can find an \\( x_0 \\) such that the corresponding quotient remains below \\( \varepsilon \\) for every \\( x > x_0 \\). The point at which dominance becomes apparent depends on the parameters \\( \alpha \\) and \\( a \\), but the asymptotic behaviour does not.
+
+- - -
+
+Both limits can be reduced to a single fundamental result by elementary substitutions. Setting \\( y = \log_a x \\), so that \\( x = a^y \\), transforms the first limit into the second with adjusted constants. The second limit, in turn, follows from the series expansion of the exponential function. For every \\( a > 1 \\) one can write \\( a^x = e^{x \ln a} \\), and since the exponential function exceeds each of its truncated Taylor polynomials, the following estimate holds for every natural number \\( k \\):
+
+\\[
+e^{u} \ge \frac{u^{k}}{k!} \qquad \forall u \ge 0
+\\]
+
+Choosing \\( k \\) larger than \\( \alpha \\) and setting \\( u = x \ln a \\), one obtains a lower bound on \\( a^x \\) that grows faster than any prescribed power of \\( x \\). The quotient \\( x^{\alpha}/a^{x} \\) is therefore bounded above by an expression that tends to zero, which establishes the limit.
+
+- - -
+
+The practical value of this hierarchy lies in the simplification of asymptotic estimates. Whenever a sum or product involves terms of different growth orders, only the dominant one survives in the leading-order behaviour. For example:
+
+\\[
+\lim_{x \to +\infty} \frac{2^{x}+x^{10}+\ln x}{2^{x}} = 1
+\\]
+
+The contributions of \\( x^{10} \\) and \\( \ln x \\) become negligible compared with \\( 2^{x} \\) as \\( x \\) tends to infinity, even though for moderate values of \\( x \\) the polynomial term may still be numerically larger. The same hierarchy underlies the standard classification of algorithmic complexity, where logarithmic, polynomial, and exponential running times are treated as fundamentally distinct regimes.
 
 - - -
 ## Powers with complex exponents
