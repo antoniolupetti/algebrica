@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d33b6b12bf6b3e49",
+        "id": "8e5a529ecd48613a",
         "type": "tabs",
         "children": [
           {
-            "id": "29f00ad85819eccd",
+            "id": "07db3c6eb14c294c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -197,12 +197,12 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "29f00ad85819eccd",
+  "active": "07db3c6eb14c294c",
   "lastOpenFiles": [
+    "integrals/numerical-integration.md",
     "integrals/svg/numerical-integration-2.svg",
     "integrals/svg/numerical-integration-1.svg",
     "integrals/numerical-integration.html",
-    "integrals/numerical-integration.md",
     "complex-numbers/fundamental-inequalities-for-complex-numbers.md",
     "integrals/the-weierstrass-substitution.md",
     "integrals/trigonometric-substitution-for-integrals.md",
