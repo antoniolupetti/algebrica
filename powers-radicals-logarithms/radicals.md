@@ -1,7 +1,7 @@
 ---
-title: Radicals
-source: https://algebrica.org/radicals/
-license: CC BY-NC 4.0
+Title: Radicals
+Source: https://algebrica.org/radicals/
+License: CC BY-NC 4.0
 tags:
   - "#radicals"
   - irrational-numbers
