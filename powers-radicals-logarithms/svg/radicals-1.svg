@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="319px" height="229px" viewBox="0 0 319 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <rect fill="#E6E6E6" x="10" y="77" width="294" height="21" rx="10.5"></rect>
+                <path d="M310.662848,82.5271708 L310.745131,82.5642122 L318.745131,87.0642122 C319.056638,87.2394349 319.082597,87.6651608 318.823007,87.882134 L318.745131,87.9357878 L310.745131,92.4357878 C310.504452,92.5711697 310.199594,92.4858096 310.064212,92.2451306 C309.943873,92.0311938 309.997947,91.7665479 310.180485,91.6152959 L310.254869,91.5642122 L316.591,88 L0.5,88 C0.223857625,88 0,87.7761424 0,87.5 C0,87.2545401 0.176875161,87.0503916 0.410124368,87.0080557 L0.5,87 L316.591,87 L310.254869,83.4357878 C310.040933,83.3154483 309.949717,83.0612021 310.027171,82.8371522 L310.064212,82.7548694 C310.184552,82.5409325 310.438798,82.4497168 310.662848,82.5271708 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <line x1="128.5" y1="109.5" x2="128.5" y2="64.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="124" y="126">0</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="172" y="114">1</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="217" y="114">2</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="260" y="114">3</tspan>
+                </text>
+                <line x1="83.5" y1="92.625" x2="83.5" y2="81.375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="38.5" y1="92.625" x2="38.5" y2="81.375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="173.5" y1="93.625" x2="173.5" y2="82.375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="218.5" y1="93.625" x2="218.5" y2="82.375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="263.5" y1="93.625" x2="263.5" y2="82.375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="78" y="114">-1</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="32" y="114">-2</tspan>
+                </text>
+                <line x1="153.5" y1="41.5" x2="153.5" y2="88.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+                <line x1="174.5" y1="119.5" x2="174.5" y2="141.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+                <circle fill="#9C9C9C" cx="153.5" cy="88" r="3.5"></circle>
+                <line x1="276.5" y1="41.5" x2="276.5" y2="88.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+                <circle fill="#9C9C9C" cx="277.5" cy="88" r="3.5"></circle>
+                <text font-size="12" font-weight="normal" fill="#636363">
+                    <tspan x="143" y="31">1/3</tspan>
+                </text>
+                <text font-size="14" font-weight="normal" fill="#636363">
+                    <tspan x="269" y="31"> π</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="130" y="11">Rational</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="158.481" y="154">Natural</tspan>
+                </text>
+                <line x1="51.5" y1="41.5" x2="51.5" y2="88.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="39" y="31">−√3</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="28" y="11">Irrational</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="249" y="11">Irrational</tspan>
+                </text>
+                <circle fill="#333333" cx="51" cy="87" r="3.5"></circle>
+            </g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="14" y="188">The real number line illustrating the </tspan>
+                <tspan x="14" y="201">distribution of natural numbers, </tspan>
+                <tspan x="14" y="214">integers, rational numbers, and </tspan>
+                <tspan x="14" y="227">irrational numbers.</tspan>
+            </text>
+            <line x1="65.5" y1="93" x2="65.5" y2="173.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

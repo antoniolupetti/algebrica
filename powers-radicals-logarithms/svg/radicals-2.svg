@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="353px" height="289px" viewBox="0 0 353 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.374930, 0.000000)">
+            <path d="M51,215.5 L220.5,215.5 M238.5,215.5 L337,215.5" stroke="#333333" stroke-width="0.934414995" stroke-linecap="round"></path>
+            <path d="M337.41819,215.94743 C337.41819,137.84857 274.037886,74.5369354 195.854318,74.5369354 C117.670751,74.5369354 54.2904466,137.84857 54.2904466,215.94743 C54.2904466,216.04348 54.2904466,216.139509 54.2904466,216.235514" stroke="#BABABA"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="129" y="235">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="129.896251" y="76.9928244">D</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="49" y="235">C</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="335" y="235">B</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="226.393786" y="218.247824">a</tspan>
+            </text>
+            <line x1="292.399059" y1="258.073365" x2="180.734852" y2="45.9453379" stroke="#BABABA" stroke-width="0.934414995" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.737659979483829" transform="translate(236.566956, 152.009351) rotate(150.000000) translate(-236.566956, -152.009351) "></line>
+            <line x1="26.7904088" y1="187.126974" x2="159.027685" y2="116.332182" stroke="#BABABA" stroke-width="0.934414995" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.737659979483829" transform="translate(93.290409, 151.861805) rotate(150.000000) translate(-93.290409, -151.861805) "></line>
+            <path d="M133.12507,215 L133.12507,165 M133.12507,144 L133.12507,139 L133.12507,92" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="337.5" cy="216" r="3.5"></circle>
+            <circle fill="#333333" cx="132.5" cy="215" r="3.5"></circle>
+            <circle fill="#333333" cx="133.62507" cy="88" r="3.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="125.5" y="158">√a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#636363">
+                <tspan x="35.5" y="260">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#636363">
+                <tspan x="21.5" y="281">1+a</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">Geometric construction of √a: extend a segment </tspan>
+                <tspan x="0" y="24">by 1 unit, draw a semicircle, and obtain √a from </tspan>
+                <tspan x="0" y="37">the perpendicular segment.</tspan>
+            </text>
+            <line x1="88" y1="46.5" x2="88.1250696" y2="111.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle fill="#454545" cx="53.5" cy="216" r="3.5"></circle>
+        </g>
+        <path d="M133.5,254 C133.74546,254 133.949608,254.176875 133.991944,254.410124 L134,254.5 L134,262.5 C134,262.776142 133.776142,263 133.5,263 C133.25454,263 133.050392,262.823125 133.008056,262.589876 L133,262.5 L133,259 L54,259 L54,262.5 C54,262.776142 53.7761424,263 53.5,263 C53.2545401,263 53.0503916,262.823125 53.0080557,262.589876 L53,262.5 L53,254.5 C53,254.223858 53.2238576,254 53.5,254 C53.7454599,254 53.9496084,254.176875 53.9919443,254.410124 L54,254.5 L54,258 L133,258 L133,254.5 C133,254.223858 133.223858,254 133.5,254 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path d="M338.5,273 C338.74546,273 338.949608,273.176875 338.991944,273.410124 L339,273.5 L339,281.5 C339,281.776142 338.776142,282 338.5,282 C338.25454,282 338.050392,281.823125 338.008056,281.589876 L338,281.5 L338,278 L54,278 L54,281.5 C54,281.776142 53.7761424,282 53.5,282 C53.2545401,282 53.0503916,281.823125 53.0080557,281.589876 L53,281.5 L53,273.5 C53,273.223858 53.2238576,273 53.5,273 C53.7454599,273 53.9496084,273.176875 53.9919443,273.410124 L54,273.5 L54,277 L338,277 L338,273.5 C338,273.223858 338.223858,273 338.5,273 Z" fill="#979797" fill-rule="nonzero"></path>
+    </g>
+</svg>
