@@ -420,7 +420,7 @@ $$
 with equality if and only if $x_1 = x_2 = \cdots = x_n$. The key observation is that $\ln$ is a strictly concave function on $(0,+\infty)$, since its second derivative satisfies $\ln x'' = -1/x^2 < 0$ for all $x > 0$. Since $\ln$ is concave, Jensen’s inequality implies that for any positive real numbers $x_1, \ldots, x_n$ we have:
 
 $$
-\frac{1}{n} \sum_{i=1}^{n} \ln x_i \leq \ln \ \left( \frac{1}{n} \sum_{i=1}^{n} x_i \right)
+\frac{1}{n} \sum_{i=1}^{n} \ln x_i \leq \ln \left( \frac{1}{n} \sum_{i=1}^{n} x_i \right)
 $$
 
 The left-hand side is the arithmetic mean of $\ln x_1, \ldots, \ln x_n$, which by the logarithmic form of the [geometric mean](../geometric-mean/) equals $\ln M_g$. The right-hand side is $\ln M_a$, where $M_a$ denotes the [arithmetic mean](h../arithmetic-mean/). Thus, the inequality therefore becomes:
