@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="219px" viewBox="0 0 360 219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g id="NEW-Complex-Numbers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(0.500000, 0.000000)">
+            <text id="The-segment-OP-repre" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="168.5" y="11">The segment OP represents the </tspan>
+                <tspan x="168.5" y="24">modulus of the complex number, </tspan>
+                <tspan x="168.5" y="37">which is the distance from the origin </tspan>
+                <tspan x="168.5" y="50">O to a point P in the complex plane.</tspan>
+            </text>
+            <line x1="200" y1="61.5" x2="200" y2="115.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path id="Line" d="M146.382134,31.6769926 L146.435788,31.7548694 L150.935788,39.7548694 C151.07117,39.9955483 150.98581,40.3004059 150.745131,40.4357878 C150.531194,40.5561272 150.266548,40.5020533 150.115296,40.3195146 L150.064212,40.2451306 L146.5,33.908 L146.5,218.5 C146.5,218.776142 146.276142,219 146,219 C145.75454,219 145.550392,218.823125 145.508056,218.589876 L145.5,218.5 L145.5,33.908 L141.935788,40.2451306 C141.815448,40.4590675 141.561202,40.5502832 141.337152,40.4728292 L141.254869,40.4357878 C141.040933,40.3154483 140.949717,40.0612021 141.027171,39.8371522 L141.064212,39.7548694 L145.564212,31.7548694 C145.739435,31.4433624 146.165161,31.4174034 146.382134,31.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line-2" d="M294.662848,155.527171 L294.745131,155.564212 L302.745131,160.064212 C303.056638,160.239435 303.082597,160.665161 302.823007,160.882134 L302.745131,160.935788 L294.745131,165.435788 C294.504452,165.57117 294.199594,165.48581 294.064212,165.245131 C293.943873,165.031194 293.997947,164.766548 294.180485,164.615296 L294.254869,164.564212 L300.591,161 L0,161 C-0.276142375,161 -0.5,160.776142 -0.5,160.5 C-0.5,160.25454 -0.323124839,160.050392 -0.0898756324,160.008056 L0,160 L300.591,160 L294.254869,156.435788 C294.040933,156.315448 293.949717,156.061202 294.027171,155.837152 L294.064212,155.754869 C294.184552,155.540933 294.438798,155.449717 294.662848,155.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="146" y1="161.5" x2="247" y2="93.5" id="Line-4" stroke="#424242" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="181" y1="155.5" x2="181" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="215" y1="155.5" x2="215" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="248" y1="155.5" x2="248" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="283" y1="155.5" x2="283" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="46" y1="155.5" x2="46" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="80" y1="155.5" x2="80" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="114" y1="155.5" x2="114" y2="166.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="145.5" y1="88" x2="145.5" y2="99" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(145.500000, 93.500000) rotate(90.000000) translate(-145.500000, -93.500000) "></line>
+            <line x1="145" y1="121" x2="145" y2="133" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(145.000000, 127.000000) rotate(90.000000) translate(-145.000000, -127.000000) "></line>
+            <line x1="145.5" y1="190" x2="145.5" y2="201" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(145.500000, 195.500000) rotate(90.000000) translate(-145.500000, -195.500000) "></line>
+            <line x1="145.5" y1="55" x2="145.5" y2="66" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(145.500000, 60.500000) rotate(90.000000) translate(-145.500000, -60.500000) "></line>
+            <path d="M147,160.5 L180.5,160.5 L248,160.5" id="Line-5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M248,93.5 L248,121 L248,132 L248,160" id="Line-5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <text id="|-z-|=OP" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="257" y="97">| z |=OP</tspan>
+            </text>
+            <text id="P" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="239" y="84">P</tspan>
+            </text>
+            <text id="O" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="130" y="157">O</tspan>
+            </text>
+            <text id="Im" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="116" y="42">Im</tspan>
+            </text>
+            <text id="Re" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="287" y="187">Re</tspan>
+            </text>
+            <text id="a" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="193" y="173">a</tspan>
+            </text>
+            <text id="b" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="253" y="131">b</tspan>
+            </text>
+            <circle id="Oval" fill="#000000" cx="248" cy="93" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="146" cy="160" r="3"></circle>
+        </g>
+    </g>
+</svg>

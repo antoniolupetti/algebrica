@@ -1,7 +1,7 @@
 ---
 title: Logarithms
-license: algebrica.org — CC BY-NC 4.0
 source: https://algebrica.org/logarithms/
+license: CC BY-NC 4.0
 tags:
   - logarithms
   - change-of-base

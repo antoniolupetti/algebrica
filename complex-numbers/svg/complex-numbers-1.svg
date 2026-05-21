@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="264px" viewBox="0 0 331 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M173.882134,3.67699263 L173.935788,3.75486938 L178.435788,11.7548694 C178.57117,11.9955483 178.48581,12.3004059 178.245131,12.4357878 C178.031194,12.5561272 177.766548,12.5020533 177.615296,12.3195146 L177.564212,12.2451306 L174,5.908 L174,263.5 C174,263.776142 173.776142,264 173.5,264 C173.25454,264 173.050392,263.823125 173.008056,263.589876 L173,263.5 L173,5.908 L169.435788,12.2451306 C169.315448,12.4590675 169.061202,12.5502832 168.837152,12.4728292 L168.754869,12.4357878 C168.540933,12.3154483 168.449717,12.0612021 168.527171,11.8371522 L168.564212,11.7548694 L173.064212,3.75486938 C173.239435,3.44336236 173.665161,3.41740344 173.882134,3.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M322.162848,128.527171 L322.245131,128.564212 L330.245131,133.064212 C330.556638,133.239435 330.582597,133.665161 330.323007,133.882134 L330.245131,133.935788 L322.245131,138.435788 C322.004452,138.57117 321.699594,138.48581 321.564212,138.245131 C321.443873,138.031194 321.497947,137.766548 321.680485,137.615296 L321.754869,137.564212 L328.091,134 L27.5,134 C27.2238576,134 27,133.776142 27,133.5 C27,133.25454 27.1768752,133.050392 27.4101244,133.008056 L27.5,133 L328.091,133 L321.754869,129.435788 C321.540933,129.315448 321.449717,129.061202 321.527171,128.837152 L321.564212,128.754869 C321.684552,128.540933 321.938798,128.449717 322.162848,128.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="237.5" y="52">z₂ = (2, 3)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="87.5" y="188">z₁ = (−2, −1)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="143.5" y="13">Im</tspan>
+            </text>
+            <line x1="182.5" y1="65.5" x2="275.5" y2="65.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="275.5" y1="65.5" x2="275.5" y2="133.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="112.5" y1="167.5" x2="168.5" y2="167.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="106.5" y1="167.5" x2="106.5" y2="133.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="207.5" y1="128.5" x2="207.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="241.5" y1="128.5" x2="241.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="275.5" y1="128.5" x2="275.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="309.5" y1="128.5" x2="309.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="38.5" y1="128.5" x2="38.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="72.5" y1="128.5" x2="72.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="106.5" y1="128" x2="106.5" y2="139" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="140.5" y1="128.5" x2="140.5" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="172.5" y1="60" x2="172.5" y2="71" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(172.500000, 65.500000) rotate(90.000000) translate(-172.500000, -65.500000) "></line>
+            <line x1="173" y1="95" x2="173" y2="106" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 100.500000) rotate(90.000000) translate(-173.000000, -100.500000) "></line>
+            <line x1="172.5" y1="162" x2="172.5" y2="173" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(172.500000, 167.500000) rotate(90.000000) translate(-172.500000, -167.500000) "></line>
+            <line x1="173.5" y1="27.5" x2="173.5" y2="37.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.500000, 32.500000) rotate(90.000000) translate(-173.500000, -32.500000) "></line>
+            <line x1="173" y1="232" x2="173" y2="243" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 237.500000) rotate(90.000000) translate(-173.000000, -237.500000) "></line>
+            <line x1="173" y1="198" x2="173" y2="209" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 203.500000) rotate(90.000000) translate(-173.000000, -203.500000) "></line>
+            <circle fill="#333333" cx="106.5" cy="166.5" r="3"></circle>
+            <circle fill="#333333" cx="275.5" cy="65.5" r="3"></circle>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="313.5" y="157">Re</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="26.02" y="11.3620148">This represents the </tspan>
+                <tspan x="13.612" y="24.3620148">complex number with </tspan>
+                <tspan x="45.71" y="37.3620148">real part -2 and </tspan>
+                <tspan x="37.031" y="50.3620148">imaginary part -1.</tspan>
+            </text>
+            <line x1="106.5" y1="65.5" x2="106.5" y2="113.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>
