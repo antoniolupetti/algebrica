@@ -50,7 +50,7 @@
             </text>
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                 <tspan x="227" y="322">True for every n in </tspan>
-                <tspan x="227" y="335">the natural set.</tspan>
+                <tspan x="227" y="335">the natural numbers.</tspan>
             </text>
         </g>
     </g>
