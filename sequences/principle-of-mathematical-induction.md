@@ -41,7 +41,7 @@ By definition, the set $A$ is a subset of $\mathbb{N}$. We now ask under which c
 + $p(0)$ is true, that is, $0 \in A$.
 + $p(n) \to p(n+1)$ for every $n \in \mathbb{N}$, that is, if $n \in A$ then $n+1 \in A$.
 
-Under these two conditions, the set $A$ is itself inductive. Since $A \subseteq \mathbb{N}$ and $\mathbb{N}$ is the smallest inductive subset of $\mathbb{R}$, it follows that $\mathbb{N} \subseteq A$ as well, and hence $A = \mathbb{N}$. Therefore, the property $p(n)$ is holds for every $n \in \mathbb{N}$.
+Under these two conditions, the set $A$ is itself inductive. Since $A \subseteq \mathbb{N}$ and $\mathbb{N}$ is the smallest inductive subset of $\mathbb{R}$, it follows that $\mathbb{N} \subseteq A$ as well, and hence $A = \mathbb{N}$. Therefore, the property $p(n)$ holds for every $n \in \mathbb{N}$.
 
 These two conditions correspond to the standard structure of a proof by mathematical induction:
 
@@ -49,6 +49,8 @@ These two conditions correspond to the standard structure of a proof by mathemat
 + The inductive step consists of proving that, whenever $p(n)$ is true for some $n \in \mathbb{N}$, it follows that $p(n+1)$ is also true, thereby ensuring that $n+1 \in A$.
 
 The hypothesis $p(n)$ used in the inductive step is called the inductive hypothesis. It is important to keep in mind that the inductive step does not prove $p(n+1)$ in isolation, but only the conditional implication $p(n) \to p(n+1)$. The actual truth of $p(n+1)$ for every natural number is then secured by the chain of implications starting from the base case.
+
+![IMG. 1](svg/principle-of-mathematical-induction-1.svg)
 
 > If the property is to be proved not for every $n \in \mathbb{N}$, but only for $n \geq n_0$ for some fixed natural number $n_0$, the same scheme applies with $n_0$ in place of $0$ as the base case. The conclusion is then that $p(n)$ holds for every integer $n \geq n_0$.
 
@@ -138,7 +140,7 @@ We show that for any real number $r \neq 1$ and every $n \in \mathbb{N}$:
 
 $$\sum_{i=0}^{n} r^i = \frac{r^{n+1} - 1}{r - 1}$$
 
-This identity is the closed form of the partial sum of a [geometric sequence](../geometric-sequence/), and induction provides a clean wat to verify it. We begin with the base case. For $n = 0$ the left-hand side gives $r^0 = 1$, and the right-hand side gives:
+This identity is the closed form of the partial sum of a [geometric sequence](../geometric-sequence/), and induction provides a clean way to verify it. We begin with the base case. For $n = 0$ the left-hand side gives $r^0 = 1$, and the right-hand side gives:
 
 $$\frac{r^1 - 1}{r - 1} = 1$$
 

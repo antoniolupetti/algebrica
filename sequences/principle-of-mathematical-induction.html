@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Principle of Mathematical Induction</title>
+	<meta name="source" content="https://algebrica.org/principle-of-mathematical-induction"/>
+	<meta name="license" content="CC BY-NC 4.0"/>
+	<meta name="tags" content="- induction - inductive-set - natural-numbers - strong-induction"/>
+</head>
+<body>
+
+<h2 id="inductiveset">Inductive set</h2>
+
+<p>Mathematical induction is the principle that allows us to establish statements that depend on a natural-number parameter. Its validity rests on a structural feature of <span class="math">\(\mathbb{N}\)</span>, namely that the natural numbers form the smallest <a href="../sets/">set</a> that contains <span class="math">\(0\)</span> and is closed under the operation of taking the successor. To make this precise, we begin by isolating the notion of an inductive subset of the real line.</p>
+
+<p><strong>Definition 1.</strong> A subset <span class="math">\(A \subseteq \mathbb{R}\)</span> is said to be inductive if it satisfies the following two conditions:</p>
+
+<ul>
+<li><span class="math">\(0 \in A\)</span>.</li>
+<li><span class="math">\(\forall\, x \in A\)</span> it follows that <span class="math">\(x + 1 \in A\)</span>.</li>
+</ul>
+
+<p>In other words, an inductive set contains the element <span class="math">\(0\)</span> and is closed under the operation of adding <span class="math">\(1\)</span>.</p>
+
+<hr />
+
+<p><strong>Theorem 1.</strong> Let <span class="math">\(A, B \subseteq \mathbb{R}\)</span> be inductive sets. Then their intersection <span class="math">\(A \cap B\)</span> is also an inductive set. Since <span class="math">\(A\)</span> and <span class="math">\(B\)</span> are inductive, we have:</p>
+
+<ul>
+<li><span class="math">\(0 \in A\)</span> and <span class="math">\(0 \in B\)</span>, thus <span class="math">\(0 \in A \cap B\)</span>.</li>
+<li>If <span class="math">\(x \in A \cap B\)</span>, then <span class="math">\(x \in A\)</span> and <span class="math">\(x \in B\)</span>. By the inductive property, <span class="math">\(x + 1 \in A\)</span> and <span class="math">\(x + 1 \in B\)</span>, and therefore <span class="math">\(x + 1 \in A \cap B\)</span>.</li>
+</ul>
+
+<p>Thus <span class="math">\(A \cap B\)</span> satisfies the defining conditions of an inductive set. The same reasoning applies, without change, to the intersection of any non-empty family of inductive sets, since both defining properties are preserved under arbitrary intersections.</p>
+
+<p>The real line <span class="math">\(\mathbb{R}\)</span> is itself trivially inductive, so the family of inductive subsets of <span class="math">\(\mathbb{R}\)</span> is non-empty. We may therefore define the set of <a href="../natural-numbers">natural numbers</a> <span class="math">\(\mathbb{N}\)</span> as the intersection of all inductive subsets of <span class="math">\(\mathbb{R}\)</span>. By construction <span class="math">\(\mathbb{N}\)</span> is inductive, and it is contained in every other inductive subset of <span class="math">\(\mathbb{R}\)</span>. For this reason <span class="math">\(\mathbb{N}\)</span> is called the smallest inductive subset of <span class="math">\(\mathbb{R}\)</span>, and this minimal character is the structural fact on which every proof by induction ultimately rests.</p>
+
+<h2 id="mathematicalinduction">Mathematical induction</h2>
+
+<p>Starting from the formal definition of an inductive set, consider a property <span class="math">\(p(n)\)</span> defined for every natural number <span class="math">\(n\)</span> and the corresponding set of natural numbers for which the property holds:</p>
+
+<p><span class="math">\[A = \{\, n \in \mathbb{N} \mid p(n) \,\}\]</span></p>
+
+<p>By definition, the set <span class="math">\(A\)</span> is a subset of <span class="math">\(\mathbb{N}\)</span>. We now ask under which conditions these two sets coincide. Suppose that the following conditions are satisfied:</p>
+
+<ul>
+<li><span class="math">\(p(0)\)</span> is true, that is, <span class="math">\(0 \in A\)</span>.</li>
+<li><span class="math">\(p(n) \to p(n+1)\)</span> for every <span class="math">\(n \in \mathbb{N}\)</span>, that is, if <span class="math">\(n \in A\)</span> then <span class="math">\(n+1 \in A\)</span>.</li>
+</ul>
+
+<p>Under these two conditions, the set <span class="math">\(A\)</span> is itself inductive. Since <span class="math">\(A \subseteq \mathbb{N}\)</span> and <span class="math">\(\mathbb{N}\)</span> is the smallest inductive subset of <span class="math">\(\mathbb{R}\)</span>, it follows that <span class="math">\(\mathbb{N} \subseteq A\)</span> as well, and hence <span class="math">\(A = \mathbb{N}\)</span>. Therefore, the property <span class="math">\(p(n)\)</span> holds for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<p>These two conditions correspond to the standard structure of a proof by mathematical induction:</p>
+
+<ul>
+<li>The base case consists of verifying that <span class="math">\(p(0)\)</span> holds, meaning that <span class="math">\(0\)</span> belongs to <span class="math">\(A\)</span>.</li>
+<li>The inductive step consists of proving that, whenever <span class="math">\(p(n)\)</span> is true for some <span class="math">\(n \in \mathbb{N}\)</span>, it follows that <span class="math">\(p(n+1)\)</span> is also true, thereby ensuring that <span class="math">\(n+1 \in A\)</span>.</li>
+</ul>
+
+<p>The hypothesis <span class="math">\(p(n)\)</span> used in the inductive step is called the inductive hypothesis. It is important to keep in mind that the inductive step does not prove <span class="math">\(p(n+1)\)</span> in isolation, but only the conditional implication <span class="math">\(p(n) \to p(n+1)\)</span>. The actual truth of <span class="math">\(p(n+1)\)</span> for every natural number is then secured by the chain of implications starting from the base case.</p>
+
+<figure>
+<img src="svg/principle-of-mathematical-induction-1.svg" alt="IMG. 1" />
+<figcaption>IMG. 1</figcaption>
+</figure>
+
+<blockquote>
+<p>If the property is to be proved not for every <span class="math">\(n \in \mathbb{N}\)</span>, but only for <span class="math">\(n \geq n_0\)</span> for some fixed natural number <span class="math">\(n_0\)</span>, the same scheme applies with <span class="math">\(n_0\)</span> in place of <span class="math">\(0\)</span> as the base case. The conclusion is then that <span class="math">\(p(n)\)</span> holds for every integer <span class="math">\(n \geq n_0\)</span>.</p>
+</blockquote>
+
+<h2 id="example:sumofthefirstnaturalnumbers">Example: sum of the first natural numbers</h2>
+
+<p>Let us consider a first application of the principle by proving the following identity, which provides a closed form for the sum of the integers from <span class="math">\(1\)</span> to <span class="math">\(n\)</span>:</p>
+
+<p><span class="math">\[\sum_{i=1}^{n} i = \frac{n(n+1)}{2} \qquad \forall\, n \in \mathbb{N}\]</span></p>
+
+<p>We first consider the base case. For <span class="math">\(n = 0\)</span> the left-hand side is an empty sum, whose value is <span class="math">\(0\)</span> by the standard convention that a sum indexed over an empty range vanishes. The right-hand side gives:</p>
+
+<p><span class="math">\[\frac{0 \cdot (0+1)}{2} = 0\]</span></p>
+
+<p>The formula holds for <span class="math">\(n = 0\)</span>.</p>
+
+<hr />
+
+<p>We now proceed to the inductive step. Assume that the formula holds for some <span class="math">\(k \in \mathbb{N}\)</span>; that is, suppose:</p>
+
+<p><span class="math">\[\sum_{i=1}^{k} i = \frac{k(k+1)}{2}\]</span></p>
+
+<p>Under this assumption, we must prove that the formula also holds for <span class="math">\(k+1\)</span>. We isolate the last term of the sum so that we can apply the inductive hypothesis to the remaining part:</p>
+
+<p>$$
+\sum_{i=1}^{k+1} i = \sum_{i=1}^{k} i + (k+1) = \frac{k(k+1)}{2} + (k+1)
+$$</p>
+
+<p>Combining the two terms over a common denominator yields:</p>
+
+<p>$$
+\frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}
+$$</p>
+
+<p>This is exactly the right-hand side of the formula evaluated at <span class="math">\(n = k+1\)</span>. Since the statement holds for <span class="math">\(n = 0\)</span> and its validity for <span class="math">\(n = k\)</span> implies its validity for <span class="math">\(n = k+1\)</span>, the principle of induction guarantees that the formula is true for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<h2 id="applications:divisibility">Applications: divisibility</h2>
+
+<p>We show that the expression <span class="math">\(n^3 - n\)</span> is divisible by <span class="math">\(3\)</span> for every <span class="math">\(n \in \mathbb{N}\)</span>. We begin with the base case. For <span class="math">\(n = 0\)</span> we have <span class="math">\(0^3 - 0 = 0\)</span>, and <span class="math">\(3 \mid 0\)</span> holds trivially since <span class="math">\(0 = 3 \cdot 0\)</span>.</p>
+
+<p>We now turn to the inductive step. Assume that <span class="math">\(3 \mid k^3 - k\)</span> for some <span class="math">\(k \in \mathbb{N}\)</span>, that is, <span class="math">\(k^3 - k = 3m\)</span> for some integer <span class="math">\(m\)</span>. Under this hypothesis we want to show that divisibility by <span class="math">\(3\)</span> carries over to the next term, meaning that <span class="math">\(3 \mid (k+1)^3 - (k+1)\)</span>. Expanding the expression we obtain:</p>
+
+<p>$$
+\begin{aligned}
+(k+1)<sup>3</sup> - (k+1) &amp;= k<sup>3</sup> + 3k<sup>2</sup> + 3k + 1 - k - 1 \[6pt]
+&amp;= (k<sup>3</sup> - k) + 3k<sup>2</sup> + 3k
+\end{aligned}
+$$</p>
+
+<p>By the inductive hypothesis <span class="math">\(k^3 - k = 3m\)</span>, so the expression becomes:</p>
+
+<p>$$
+\begin{aligned}
+(k+1)<sup>3</sup> - (k+1) &amp;= 3m + 3k<sup>2</sup> + 3k \[6pt]
+&amp;= 3(m + k<sup>2</sup> + k)
+\end{aligned}
+$$</p>
+
+<p>Since <span class="math">\(m + k^2 + k \in \mathbb{Z}\)</span>, it follows that <span class="math">\(3 \mid (k+1)^3 - (k+1)\)</span>. By the principle of induction, the statement holds for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<h2 id="applications:inequality">Applications: inequality</h2>
+
+<p>We prove that <span class="math">\(2^n &gt; n\)</span> for every <span class="math">\(n \in \mathbb{N}\)</span>. This inequality expresses the fact that exponential growth eventually and permanently dominates linear growth, a pattern that induction captures precisely: once the inequality holds at a given step, the multiplicative nature of the left-hand side guarantees that it holds at the next.</p>
+
+<p>We start with the base case. For <span class="math">\(n = 0\)</span> we have <span class="math">\(2^0 = 1 &gt; 0\)</span>, so the inequality holds.</p>
+
+<p>For the inductive step, assume that <span class="math">\(2^k &gt; k\)</span> for some <span class="math">\(k \in \mathbb{N}\)</span>. Our goal is to deduce that <span class="math">\(2^{k+1} &gt; k+1\)</span>. The argument splits naturally into two cases, depending on whether <span class="math">\(k\)</span> is zero or not.</p>
+
+<ul>
+<li>If <span class="math">\(k = 0\)</span>, the conclusion follows directly, since <span class="math">\(2^{k+1} = 2^1 = 2 &gt; 1 = k+1\)</span>.</li>
+<li>If <span class="math">\(k \geq 1\)</span>, we apply the inductive hypothesis to the left-hand side and use the assumption <span class="math">\(k \geq 1\)</span> in the final step:</li>
+</ul>
+
+<p>$$
+\begin{aligned}
+2^{k+1} &amp;= 2 \cdot 2<sup>k</sup> \[6pt]
+&amp;&gt; 2k \[6pt]
+&amp;= k + k \[6pt]
+&amp;\geq k + 1
+\end{aligned}
+$$</p>
+
+<p>In both cases we obtain <span class="math">\(2^{k+1} &gt; k + 1\)</span>, and by the principle of induction the inequality holds for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<blockquote>
+<p>The need to split the inductive step into two cases reflects a genuine subtlety of the argument. The chain <span class="math">\(2 \cdot 2^k &gt; 2k = k + k \geq k + 1\)</span> requires <span class="math">\(k \geq 1\)</span> at the last passage, so the value <span class="math">\(k = 0\)</span> must be treated separately within the inductive step itself. This separate treatment should not be confused with the base case at <span class="math">\(n = 0\)</span>, which only ensures that the property holds at the starting point.</p>
+</blockquote>
+
+<h2 id="applications:geometricseries">Applications: geometric series</h2>
+
+<p>We show that for any real number <span class="math">\(r \neq 1\)</span> and every <span class="math">\(n \in \mathbb{N}\)</span>:</p>
+
+<p><span class="math">\[\sum_{i=0}^{n} r^i = \frac{r^{n+1} - 1}{r - 1}\]</span></p>
+
+<p>This identity is the closed form of the partial sum of a <a href="../geometric-sequence/">geometric sequence</a>, and induction provides a clean way to verify it. We begin with the base case. For <span class="math">\(n = 0\)</span> the left-hand side gives <span class="math">\(r^0 = 1\)</span>, and the right-hand side gives:</p>
+
+<p><span class="math">\[\frac{r^1 - 1}{r - 1} = 1\]</span></p>
+
+<p>Thus, the formula holds for <span class="math">\(n = 0\)</span>. For the inductive step assume that the formula holds for some <span class="math">\(k \in \mathbb{N}\)</span>, that is:</p>
+
+<p><span class="math">\[\sum_{i=0}^{k} r^i = \frac{r^{k+1} - 1}{r - 1}\]</span></p>
+
+<p>We want to show that it also holds for <span class="math">\(k + 1\)</span>. Isolating the last term of the sum and applying the inductive hypothesis we obtain:</p>
+
+<p>$$
+\begin{aligned}
+\sum_{i=0}^{k+1} r<sup>i</sup> &amp;= \sum_{i=0}^{k} r<sup>i</sup> + r^{k+1} \[6pt]
+&amp;= \frac{r^{k+1} - 1}{r - 1} + r^{k+1}
+\end{aligned}
+$$</p>
+
+<p>Combining the two terms over a common denominator gives:</p>
+
+<p>$$
+\begin{aligned}
+\frac{r^{k+1} - 1}{r - 1} + r^{k+1} &amp;= \frac{r^{k+1} - 1 + r^{k+1}(r-1)}{r - 1} \[6pt]
+&amp;= \frac{r^{k+2} - 1}{r - 1}
+\end{aligned}
+$$</p>
+
+<p>This is exactly the right-hand side of the formula evaluated at <span class="math">\(n = k+1\)</span>. By the principle of induction, the identity holds for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<h2 id="stronginduction">Strong induction</h2>
+
+<p>A variant of the principle of induction, often called strong induction or complete induction, replaces the single inductive hypothesis <span class="math">\(p(n)\)</span> with the conjunction of all the preceding cases. The structure of a proof by strong induction is as follows:</p>
+
+<ul>
+<li>Base case: <span class="math">\(p(0)\)</span> is true.</li>
+<li>Inductive step: for every <span class="math">\(n \in \mathbb{N}\)</span>, the conjunction <span class="math">\(p(0) \land p(1) \land \dots \land p(n)\)</span> implies <span class="math">\(p(n+1)\)</span>.</li>
+</ul>
+
+<p>Under these conditions <span class="math">\(p(n)\)</span> holds for every <span class="math">\(n \in \mathbb{N}\)</span>.</p>
+
+<p>Strong induction is logically equivalent to the ordinary induction, in the sense that each can be derived from the other within the standard axiomatic framework for the natural numbers. It is the natural choice whenever the truth of <span class="math">\(p(n+1)\)</span> depends on several earlier instances of the property, rather than only on the immediately preceding one.</p>
+
+<p>A typical example is the proof that every integer <span class="math">\(n \geq 2\)</span> admits a factorisation into prime numbers. There, the inductive hypothesis must be applied to the proper divisors of <span class="math">\(n+1\)</span>, which are in general much smaller than <span class="math">\(n\)</span> itself, so that ordinary induction is not sufficient for the argument.</p>
+
+<blockquote>
+<p>Both forms of induction are equivalent to the well-ordering property of <span class="math">\(\mathbb{N}\)</span>, which asserts that every non-empty subset of <span class="math">\(\mathbb{N}\)</span> has a least element. The three principles can be derived from one another within a suitable axiomatic framework, and each provides an alternative foundation for the same body of results. Proofs based on well-ordering typically proceed by contradiction, assuming the existence of a counterexample and considering the least one, while induction proceeds constructively from the base case upward.</p>
+</blockquote>
+
+</body>
+</html>
+
