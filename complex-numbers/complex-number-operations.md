@@ -164,7 +164,6 @@ $$
 \end{align}
 $$
 
-- - -
 ## Multiplication and division in trigonometric form
 
 The operations of multiplication and division acquire a particularly transparent geometric interpretation when complex numbers are expressed in trigonometric or exponential form. Consider the following complex numbers:
