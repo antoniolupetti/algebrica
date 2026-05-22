@@ -109,3 +109,4 @@ Since \\(F\\) is a field, its only ideals are \\(\\{0\\}\\) and \\(F\\) itself, 
 > A function is injective, or one-to-one, if distinct elements of the domain are mapped to distinct elements of the codomain: \\(\\varphi(a) = \\varphi(b)\\) implies \\(a = b\\). A function is bijective if it is both injective and surjective, meaning it is one-to-one and every element of the codomain is the image of at least one element of the domain.
 
 
+
