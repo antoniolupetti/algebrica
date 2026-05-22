@@ -211,7 +211,7 @@ The solution is therefore:
 - - -
 ## Connection with Euler's formula
 
-The Pythagorean identity admits an especially transparent proof once the trigonometric functions are extended to the complex plane. Euler's formula states that for any real \\(\theta\\), the [complex exponential](../complex-numbers-exponential-form/) satisfies:
+The Pythagorean identity admits an especially transparent proof once the trigonometric functions are extended to the complex plane. [Euler's formula](../euler-formula/) states that for any real \\(\theta\\), the [complex exponential](../complex-numbers-exponential-form/) satisfies:
 
 \\[e^{i\theta} = \cos\theta + i\sin\theta\\]
 

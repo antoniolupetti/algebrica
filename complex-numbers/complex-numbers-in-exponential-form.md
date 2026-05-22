@@ -21,7 +21,7 @@ The quantities appearing in this expression have the following meaning:
 
 ---
 
-The equation \\(z = r e^{i\theta}\\) follows directly from Euler's formula:
+The equation \\(z = r e^{i\theta}\\) follows directly from [Euler's formula](../euler-formula):
 
 \\[e^{i\theta} = \cos\theta + i\sin\theta\\]
 

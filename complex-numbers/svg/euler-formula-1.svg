@@ -1,60 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="397px" height="270px" viewBox="0 0 397 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="307px" height="325px" viewBox="0 0 307 325" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-7.000000, -64.000000)">
-            <g transform="translate(7.000000, 64.500000)">
-                <path d="M267.992773,139.612701 C267.994798,139.52751 267.996406,139.441239 267.997595,139.353877 C267.999196,139.236109 268,148.477309 268,139 C268,129.522691 262.82982,121.252943 255.156099,116.857393 L243,138.5" fill="#E3E3E3"></path>
-                <path d="M242.5,5.48013557 L242.935788,6.25486938 L247.435788,14.2548694 L247.680918,14.6906571 L246.809343,15.1809184 L246.564212,14.7451306 L243,8.408 L243,269.5 L242,269.5 L242,8.408 L238.435788,14.7451306 L238.190657,15.1809184 L237.319082,14.6906571 L237.564212,14.2548694 L242.064212,6.25486938 L242.5,5.48013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
-                <path d="M384.809495,133.819082 L385.245283,134.064212 L393.245283,138.564212 L394.020016,139 L393.245283,139.435788 L385.245283,143.935788 L384.809495,144.180918 L384.319234,143.309343 L384.755021,143.064212 L391.092,139.5 L91,139.5 L91,138.5 L391.092,138.5 L384.755021,134.935788 L384.319234,134.690657 L384.809495,133.819082 Z" fill="#BABABA" fill-rule="nonzero"></path>
-                <path d="M287.5,138 L287.5,107.5 M287.5,91.5 L287.5,57" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></path>
-                <line x1="287.5" y1="56" x2="242" y2="56" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
-                <text font-family="Geist-Italic, Geist" font-size="14" font-style="italic" font-weight="normal" fill="#BABABA">
-                    <tspan x="228" y="152.5">O</tspan>
+        <g transform="translate(-82.000000, -57.000000)">
+            <g transform="translate(82.500000, 57.000000)">
+                <circle stroke="#BABABA" cx="150.5" cy="194" r="94.5"></circle>
+                <path d="M176.492773,195.112701 C176.494798,195.02751 176.496406,194.941239 176.497595,194.853877 C176.499196,194.736109 176.5,203.977309 176.5,194.5 C176.5,185.022691 171.32982,176.752943 163.656099,172.357393 L151.5,194" fill="#E3E3E3"></path>
+                <path d="M151,60.9801356 L151.435788,61.7548694 L155.935788,69.7548694 L156.180918,70.1906571 L155.309343,70.6809184 L155.064212,70.2451306 L151.499,63.906 L151.5,325 L150.5,325 L150.499,63.91 L146.935788,70.2451306 L146.690657,70.6809184 L145.819082,70.1906571 L146.064212,69.7548694 L150.564212,61.7548694 L151,60.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M293.309495,189.319082 L293.745283,189.564212 L301.745283,194.064212 L302.520016,194.5 L301.745283,194.935788 L293.745283,199.435788 L293.309495,199.680918 L292.819234,198.809343 L293.255021,198.564212 L299.592,195 L-0.5,195 L-0.5,194 L299.592,194 L293.255021,190.435788 L292.819234,190.190657 L293.309495,189.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M196,193.5 L196,163 M196,147 L196,112.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></path>
+                <line x1="196" y1="111.5" x2="150.5" y2="111.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+                <text font-size="14" font-style="italic" font-weight="normal" fill="#BABABA">
+                    <tspan x="136.5" y="208">O</tspan>
                 </text>
                 <text font-size="14" font-weight="normal" fill="#BABABA">
-                    <tspan x="217.5" y="14">Im</tspan>
+                    <tspan x="126" y="69.5">Im</tspan>
                 </text>
                 <text font-size="14" font-weight="normal" fill="#BABABA">
-                    <tspan x="378.5" y="159">Re</tspan>
+                    <tspan x="287" y="214.5">Re</tspan>
                 </text>
                 <text font-size="14" font-weight="normal" fill="#333333">
-                    <tspan x="287" y="150.5">x</tspan>
+                    <tspan x="195.5" y="206">x</tspan>
                 </text>
                 <text font-size="12" font-weight="normal" fill="#333333">
-                    <tspan x="341" y="150.5">1</tspan>
+                    <tspan x="249.5" y="206">1</tspan>
                 </text>
                 <text font-size="12" font-weight="normal" fill="#333333">
-                    <tspan x="236" y="39.5">i</tspan>
+                    <tspan x="144.5" y="95">i</tspan>
                 </text>
                 <text font-size="8" font-weight="normal" fill="#333333">
-                    <tspan x="295" y="151.5">p</tspan>
+                    <tspan x="203.5" y="207">p</tspan>
                 </text>
-                <path d="M148.099619,128.266723 C147.703468,131.789768 147.5,135.371123 147.5,139 C147.5,191.467051 190.032949,234 242.5,234 C294.967051,234 337.5,191.467051 337.5,139 C337.5,99.5930303 313.506243,65.7901028 279.330881,51.4033706 M247.092064,44.109037 C245.570478,44.0366202 244.039516,44 242.5,44 C218.871651,44 197.258056,52.6261885 180.636651,66.9011298" stroke="#BABABA" stroke-linecap="round"></path>
+                <text font-family="Helvetica" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="167.5" y="187">θ</tspan>
+                </text>
+                <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="188.5" y="160">sinθ</tspan>
+                </text>
+                <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="159.5" y="105">cosθ</tspan>
+                </text>
+                <path d="M196.731203,111.167585 L196.740521,112.056425 L196.836741,121.234701 L196.841982,121.734673 L195.842037,121.745156 L195.836796,121.245183 L195.76,113.975 L192.839531,119.298367 L151.438333,194.740549 L151.197785,195.178882 L150.321118,194.697785 L150.561667,194.259451 L191.962864,118.81727 L194.884,113.493 L188.710875,117.334617 L188.28632,117.598726 L187.758102,116.749617 L188.182657,116.485508 L195.97644,111.637112 L196.731203,111.167585 Z" fill="#333333" fill-rule="nonzero"></path>
+                <circle fill="#333333" cx="150.5" cy="112" r="2.5"></circle>
+                <circle fill="#333333" cx="150.5" cy="99" r="2.5"></circle>
+                <circle fill="#333333" cx="151" cy="194.5" r="2.5"></circle>
+                <circle fill="#333333" cx="246" cy="194.5" r="2.5"></circle>
                 <text font-size="14" font-weight="normal" fill="#333333">
-                    <tspan x="259" y="131.5">θ</tspan>
-                </text>
-                <text font-size="12" font-weight="normal" fill="#333333">
-                    <tspan x="280" y="104.5">sinθ</tspan>
-                </text>
-                <text font-size="12" font-weight="normal" fill="#333333">
-                    <tspan x="251" y="49.5">cosθ</tspan>
-                </text>
-                <path d="M288.231203,55.6675851 L288.240521,56.5564251 L288.336741,65.7347006 L288.341982,66.2346732 L287.342037,66.245156 L287.336796,65.7451835 L287.26,58.475 L284.339531,63.7983673 L242.938333,139.240549 L242.697785,139.678882 L241.821118,139.197785 L242.061667,138.759451 L283.462864,63.3172696 L286.384,57.993 L280.210875,61.8346169 L279.78632,62.0987259 L279.258102,61.249617 L279.682657,60.9855081 L287.47644,56.1371121 L288.231203,55.6675851 Z" fill="#333333" fill-rule="nonzero"></path>
-                <circle fill="#333333" cx="242" cy="56.5" r="2.5"></circle>
-                <circle fill="#333333" cx="242" cy="43.5" r="2.5"></circle>
-                <circle fill="#333333" cx="242.5" cy="139" r="2.5"></circle>
-                <circle fill="#333333" cx="337.5" cy="139" r="2.5"></circle>
-                <text font-size="14" font-weight="normal" fill="#333333">
-                    <tspan x="224" y="57.5">y</tspan>
-                    <tspan x="231.518" y="57.5">ₚ</tspan>
+                    <tspan x="132.5" y="113">y</tspan>
+                    <tspan x="140.018" y="113">ₚ</tspan>
                 </text>
                 <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
-                    <tspan x="2.876" y="79.8620148">Geometric interpretation of Euler’s </tspan>
-                    <tspan x="2.755" y="92.8620148">formula on the complex unit circle, </tspan>
-                    <tspan x="2.216" y="105.862015">relating circular motion to sine and </tspan>
-                    <tspan x="84.1" y="118.862015">cosine projections.</tspan>
+                    <tspan x="80.5" y="11">Geometric interpretation of Euler’s formula </tspan>
+                    <tspan x="80.5" y="24">on the complex unit circle, relating circular </tspan>
+                    <tspan x="80.5" y="37">motion to sine and cosine projections.</tspan>
                 </text>
-                <line x1="187.5" y1="95" x2="232.5" y2="95" stroke="#BABABA" stroke-linecap="round"></line>
+                <line x1="198" y1="50.5" x2="198" y2="97.5" stroke="#BABABA" stroke-linecap="round"></line>
             </g>
         </g>
     </g>

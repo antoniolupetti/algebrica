@@ -7,7 +7,7 @@ https://algebrica.org/roots-of-unity/
 
 Given a positive integer \\(n\\), a root of unity of order \\(n\\) is a [complex number](../complex-numbers-introduction/)  \\(z\\) satisfying the [equation](../equations/) \\[ z^n = 1 \\] 
 
-There are exactly \\(n\\) such numbers in the complex plane, and they can be described with complete explicitness using Euler's formula which states that:
+There are exactly \\(n\\) such numbers in the complex plane, and they can be described with complete explicitness using [Euler's formula](../euler-formula/) which states that:
 \\[
 e^{i\theta} = \cos\theta + i\\,\sin\theta
 \\]

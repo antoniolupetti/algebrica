@@ -121,7 +121,7 @@ The unit circle admits a natural interpretation in the context of complex number
 
  \\[ z = \cos\theta + i\sin\theta \\]
 
-for some angle \\( \theta \\). This expression coincides with the [exponential form of a complex number](../complex-numbers-exponential-form/), given by Euler's formula:
+for some angle \\( \theta \\). This expression coincides with the [exponential form of a complex number](../complex-numbers-exponential-form/), given by [Euler's formula](../euler-formula/):
 
 \\[
 e^{i\theta} = \cos\theta + i\sin\theta
