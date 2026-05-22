@@ -22,7 +22,7 @@ This relation underlies both the [exponential form](../complex-numbers-exponenti
 + In the first, the complex exponential is defined through its [Taylor series](../taylor-series/) for an arbitrary complex argument, and Euler's identity is then established as a theorem. 
 + In the second, the formula is taken as the very definition of $e^{i\theta}$, and what becomes a theorem is the consistency of this definition with the algebraic properties of the real exponential. 
 
-These viewpoints are equivalent and lead to the same object. In what follows we adopt the first reading, since it places the formula within the broader analytic framework already used in the construction of the [exponential function](../exponential-function/).
+> These viewpoints are equivalent and lead to the same object. In what follows we adopt the first reading, since it places the formula within the broader analytic framework already used in the construction of the [exponential function](../exponential-function/).
 
 ## Statement
 
