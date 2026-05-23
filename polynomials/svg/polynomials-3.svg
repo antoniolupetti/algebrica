@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="329px" height="285px" viewBox="0 0 329 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="New---Polynomials" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <text id="The-graph-illustrate" font-family="SegoeUI, Segoe UI" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="42" y="12">The graph illustrates the typical end behavior </tspan>
+                <tspan x="42" y="25">of an odd–degree polynomial with a positive </tspan>
+                <tspan x="42" y="38">leading coefficient: the curve approaches −∞ </tspan>
+                <tspan x="42" y="51">as x→−∞ and rises toward +∞ as x→+∞.</tspan>
+            </text>
+            <path id="Line-2" d="M319.162848,199.527171 L319.245131,199.564212 L327.245131,204.064212 C327.556638,204.239435 327.582597,204.665161 327.323007,204.882134 L327.245131,204.935788 L319.245131,209.435788 C319.004452,209.57117 318.699594,209.48581 318.564212,209.245131 C318.443873,209.031194 318.497947,208.766548 318.680485,208.615296 L318.754869,208.564212 L325.091,205 L0.5,205 C0.223857625,205 0,204.776142 0,204.5 C0,204.25454 0.176875161,204.050392 0.410124368,204.008056 L0.5,204 L325.091,204 L318.754869,200.435788 C318.540933,200.315448 318.449717,200.061202 318.527171,199.837152 L318.564212,199.754869 C318.684552,199.540933 318.938798,199.449717 319.162848,199.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="319.5" y="226">x</tspan>
+            </text>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="152.5" y="80">y</tspan>
+            </text>
+            <path id="Line-2" d="M173.882134,69.6769926 L173.935788,69.7548694 L178.435788,77.7548694 C178.57117,77.9955483 178.48581,78.3004059 178.245131,78.4357878 C178.031194,78.5561272 177.766548,78.5020533 177.615296,78.3195146 L177.564212,78.2451306 L174,71.908 L174,283.5 C174,283.776142 173.776142,284 173.5,284 C173.25454,284 173.050392,283.823125 173.008056,283.589876 L173,283.5 L173,71.908 L169.435788,78.2451306 C169.315448,78.4590675 169.061202,78.5502832 168.837152,78.4728292 L168.754869,78.4357878 C168.540933,78.3154483 168.449717,78.0612021 168.527171,77.8371522 L168.564212,77.7548694 L173.064212,69.7548694 C173.239435,69.4433624 173.665161,69.4174034 173.882134,69.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="98.5" y1="64.5" x2="98.5" y2="140.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M7,284 C31,197.333333 59,154 91,154 C139,154 146,239 194,239 C226,239 264.333333,193.333333 309,102" id="Path-6" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
