@@ -1,77 +1,65 @@
-# Integration by Parts
-
-Source: algebrica.org — CC BY-NC 4.0
-https://algebrica.org/integration-by-parts/
-
+---
+title: Integration by Parts
+source: https://algebrica.org/integration-by-parts/
+license: CC BY-NC 4.0
+tags:
+  - antiderivative
+  - definite-integral
+  - indefinite-integral
+  - integration
+  - integration-by-parts
+  - liate-rule
+  - product-rule
+  - trigonometric-integrals
+---
 ## The method of integration by parts
 
-The method of integration by parts allows us to rewrite the integral of the product of two [functions](../functions/) in a more convenient form. For [indefinite integrals](../indefinite-integrals), the formula is:
+Integration by parts is a technique that rewrites the integral of the product of two [functions](../functions/) in a more tractable form by transferring a derivative from one factor to the other. For [indefinite integrals](../indefinite-integrals/), the formula reads:
 
-\\[
-\int f(x)g'(x)\\, dx = f(x)g(x) - \int f'(x)g(x)\\, dx + c
-\\]
+$$\int f(x)g'(x) \ dx = f(x)g(x) - \int f'(x)g(x) \ dx + c$$
 
-For [definite integrals](../definite-integrals), the formula extends as:
+For [definite integrals](../definite-integrals/), the formula extends as:
 
-\\[
-\int_a^b f(x)g'(x)\\, dx = \Big[f(x)g(x)\Big]_a^b - \int_a^b f'(x)g(x)\\, dx
-\\]
+$$\int_a^b f(x)g'(x) \ dx = [f(x)g(x)]_a^b - \int_a^b f'(x)g(x) \ dx$$
 
-where \\( \Big[f(x)g(x)\Big]_a^b = f(b)g(b) - f(a)g(a) \\) is the boundary term, which must be evaluated. 
+The bracket $[f(x)g(x)]_a^b = f(b)g(b) - f(a)g(a)$ is the boundary term and must be evaluated explicitly. In both cases, $f$ and $g$ are assumed to be differentiable on the [interval](../intervals/) of integration. The method is conceptually simple, but it requires practice to identify which factor should be differentiated and which should be integrated in order to simplify the expression.
 
-In both cases, \\( f \\) and \\( g \\) are assumed to be differentiable on the [interval](../intervals/) of integration. The method is conceptually simple, but it requires practice to identify which function should be differentiated and which should be integrated in order to simplify the expression.
+> Integration by parts is sometimes applied more than once before the integral resolves. Repeated applications must be carried out with care, since each step increases the length of the computation and the likelihood of sign errors.
 
-> In some cases, integration by parts must be applied more than once to completely evaluate the integral. One should proceed carefully, since repeated applications may increase the length of the computation and make sign errors more likely.
-
-- - -
 ## Derivation of the formula
 
-The integration by parts formula follows directly from the product rule for [derivatives](../derivatives). Start from:
+The integration by parts formula follows from the product rule for [derivatives](../derivatives/). The starting point is the identity:
 
-\\[
-\frac{d}{dx}\big(f(x)g(x)\big) = f'(x)g(x) + f(x)g'(x)
-\\]
+$$\frac{d}{dx}(f(x)g(x)) = f'(x)g(x) + f(x)g'(x)$$
 
-Integrating both sides with respect to \\( x \\):
+Integrating both sides with respect to $x$ gives:
 
-\\[
-\int \frac{d}{dx}\big(f(x)g(x)\big)\\,dx = \int f'(x)g(x)\\,dx + \int f(x)g'(x)\\,dx
-\\]
+$$\int \frac{d}{dx}(f(x)g(x)) \ dx = \int f'(x)g(x) \ dx + \int f(x)g'(x) \ dx$$
 
-The left-hand side is the integral of a derivative, which returns the original function 
-up to a constant:
+The left-hand side is the integral of a derivative, which returns the original function up to a constant:
 
-\\[
-f(x)g(x) = \int f'(x)g(x)\\,dx + \int f(x)g'(x)\\,dx
-\\]
+$$f(x)g(x) = \int f'(x)g(x) \ dx + \int f(x)g'(x) \ dx$$
 
-Rearranging to isolate the second integral on the left:
+Isolating the second integral on the left produces the integration by parts formula:
 
-\\[
-\int f(x)g'(x)\\,dx = f(x)g(x) \\,\\, - \int f'(x)g(x)\\,dx + c
-\\]
+$$\int f(x)g'(x) \ dx = f(x)g(x) - \int f'(x)g(x) \ dx + c$$
 
-This is the integration by parts formula. In the compact notation \\( u = f(x) \\), \\( dv = g'(x)\\,dx \\), it takes the familiar form:
+In the compact notation $u = f(x)$, $dv = g'(x) \ dx$, the formula takes its familiar form:
 
-\\[
-\int u\\,dv = uv \\,\\, - \int v\\,du
-\\]
+$$\int u \ dv = uv - \int v \ du$$
 
-> In practice, integration by parts is useful when differentiating one factor makes it simpler, while the other can still be integrated without difficulty. The method often turns a complicated expression into something more manageable, and in many problems it can be applied repeatedly until the integral is reduced to a standard form.
+> The method is most effective when differentiating one factor makes it simpler, while the other can still be integrated without difficulty. Many problems can be reduced step by step until the residual integral matches a standard form.
 
-- - -
-## How to choose \\(u\\) and \\(dv\\)
+## How to choose $u$ and $dv$
 
-The method is effective only if the new integral \\( \int v\\,du \\) is simpler than 
-the original one. This depends entirely on how \\( u \\) and \\( dv \\) are assigned, 
-so the choice is not arbitrary. A practical strategy is:
+The method is effective only when the new integral $\int v \ du$ is simpler than the original. The outcome depends entirely on the assignment of $u$ and $dv$, so the choice is not arbitrary. A practical strategy is the following:
 
-- Choose \\( u \\) as the factor that becomes simpler when differentiated.
-- Choose \\( dv \\) as the remaining factor, so that \\( v = \int dv \\) is easy to compute.
++ Choose $u$ as the factor that becomes simpler when differentiated.
++ Choose $dv$ as the remaining factor, so that $v = \int dv$ is easy to compute.
 
 - - -
 
-A useful order for selecting \\( u \\) is the hierarchy known by the acronym LIATE:
+A useful order for the selection of $u$ is the hierarchy known by the acronym LIATE:
 
 + Logarithmic functions
 + Inverse trigonometric functions
@@ -79,214 +67,147 @@ A useful order for selecting \\( u \\) is the hierarchy known by the acronym LIA
 + Trigonometric functions
 + Exponential functions
 
-The ordering reflects how these functions behave under differentiation. [Logarithmic](../logarithmic-function/) and inverse trigonometric functions simplify considerably when differentiated, making them natural candidates for \\( u \\). [Exponential functions](../exponential-function/), by contrast, remain essentially unchanged after differentiation and are generally better assigned to \\( dv \\).
+The ordering reflects how these functions behave under differentiation. [Logarithmic](../logarithmic-function/) and inverse trigonometric functions simplify considerably when differentiated, which makes them natural candidates for $u$. [Exponential functions](../exponential-function/), by contrast, remain essentially unchanged after differentiation and are generally better assigned to $dv$.
 
-> Choosing \\( u \\) according to this hierarchy often reduces the complexity of the remaining integral after a single application of the formula
+> Choosing $u$ according to this hierarchy frequently reduces the complexity of the remaining integral after a single application of the formula.
 
-- - -
 ## Most common mistakes
 
-A few recurring mistakes are worth keeping in mind when applying integration by parts.
+A few recurring errors are worth keeping in mind when applying integration by parts.
 
-Choosing \\( dv \\) carelessly, in particular assigning to \\( dv \\) a factor whose integral \\( v \\) is harder to compute than the original integral, often makes the problem worse rather than better. If the resulting \\( \int v\,du \\) is more complex than what you started with, it is worth reconsidering the assignment before proceeding.
+The first error is the careless choice of $dv$. Assigning to $dv$ a factor whose antiderivative $v$ is harder to compute than the original integrand often makes the problem worse rather than better. When the resulting $\int v \ du$ is more complex than the starting integral, the assignment should be reconsidered before proceeding.
 
-In the [definite integral](../definite-integrals/) version of the formula, the boundary term \\( uv \big|\_a^b \\) must be evaluated explicitly. Omitting it is one of the most common sources of incorrect results, particularly when the computation spans several lines and attention drifts toward the integral that follows.
+In the [definite integral](../definite-integrals/) version of the formula, the boundary term $[uv]_a^b$ must be evaluated explicitly. Omitting it is among the most common sources of incorrect results, particularly when the computation spans several lines and attention drifts toward the integral that follows.
 
-Sign errors during differentiation are especially insidious in cyclic cases, where \\( \sin(x) \\) and \\( \cos(x) \\) alternate and a misplaced minus sign propagates through the entire calculation. Keeping track of signs at each step, rather than reconstructing them at the end, saves considerable time.
+Sign errors during differentiation are especially insidious in cyclic cases, where $\sin(x)$ and $\cos(x)$ alternate and a misplaced minus sign propagates through the entire calculation. Tracking signs at each step, rather than reconstructing them at the end, saves considerable time and prevents errors that are difficult to spot in hindsight.
 
-Finally, in the indefinite case, the constant of integration \\( C \\) must appear in the final result. After repeated applications of the formula it is easy to lose track of it, particularly when intermediate integrals are written without it. A reliable habit is to carry \\( C \\) explicitly only in the last step and to confirm its presence before writing the answer.
+In the indefinite case, the constant of integration $c$ must appear in the final result. After repeated applications of the formula the constant is easy to lose, particularly when intermediate integrals are written without it. A reliable habit is to carry $c$ explicitly only in the last step and to confirm its presence before writing the answer.
 
-- - -
 ## Example 1
 
-Let's consider an example by solving the following integral:
+Consider the following integral:
 
-\\[
-\int x^2 \ln(x) \\, dx
-\\]
+$$\int x^2 \ln(x) \ dx$$
 
-The integrand is a product of a logarithmic function and a [power](../powers) of \\( x \\). Following the LIATE hierarchy, \\( \ln(x) \\) takes priority and is assigned to \\( f \\), while \\( x^2 \\) is assigned to \\( g' \\):
+The integrand is a product of a logarithmic function and a [power](../powers/) of $x$. Following the LIATE hierarchy, $\ln(x)$ takes priority and is assigned to $f$, while $x^2$ is assigned to $g'$:
 
-\\[
-f(x) = \ln(x) \quad \rightarrow \quad f'(x) = \frac{1}{x}
-\\]
+$$f(x) = \ln(x) \quad \rightarrow \quad f'(x) = \frac{1}{x}$$
 
-\\[
-g'(x) = x^2 \quad \rightarrow \quad g(x) = \frac{x^3}{3}
-\\]
+$$g'(x) = x^2 \quad \rightarrow \quad g(x) = \frac{x^3}{3}$$
 
-Applying the formula, we obtain:
+Applying the formula gives:
 
-\\[
+$$
 \begin{align}
-\int x^2 \ln(x)\, dx
-&= \ln(x)\cdot\frac{x^3}{3} - \int \frac{1}{x}\cdot\frac{x^3}{3}\\, dx + c \\\\[6pt]
-&= \ln(x)\cdot\frac{x^3}{3} - \int \frac{x^2}{3}\\, dx + c
+\int x^2 \ln(x) \ dx &= \ln(x) \cdot \frac{x^3}{3} - \int \frac{1}{x} \cdot \frac{x^3}{3} \ dx + c \\[6pt]
+                    &= \ln(x) \cdot \frac{x^3}{3} - \int \frac{x^2}{3} \ dx + c
 \end{align}
-\\]
+$$
 
-The remaining integral is a straightforward power rule application, considerably simpler than the original. Completing the calculation we have:
+The remaining integral falls under the power rule and is considerably simpler than the original. Completing the calculation yields:
 
-\\[
-\ln(x)\cdot\frac{x^3}{3} - \frac{x^3}{9} + c
-\\]
+$$\ln(x) \cdot \frac{x^3}{3} - \frac{x^3}{9} + c$$
 
-Factoring out \\( \frac{x^3}{3} \\) gives the final result in compact form:
+Factoring $x^3/3$ produces the final result in compact form:
 
-\\[
-\frac{x^3}{3}\left(\ln(x) - \frac{1}{3}\right) + c
-\\]
+$$\int x^2 \ln(x) \ dx = \frac{x^3}{3}\left(\ln(x) - \frac{1}{3}\right) + c$$
 
-- - -
 ## Example 2
 
-Some integrals do not resolve after a single application of integration by parts. Instead, repeated application leads back to the original integral, a situation that, rather than signaling failure, opens the door to an algebraic resolution. The following example illustrates this technique. Solve the following integral:
+Some integrals do not resolve after a single application of integration by parts. A repeated application can return the original integral, and what looks at first like a failure becomes the starting point for an algebraic resolution. Consider the integral:
 
-\\[
-\int e^x\sin(x)\\,dx
-\\]
+$$\int e^x \sin(x) \ dx$$
 
-Denote the integral by \\( I \\):
+Denote the integral by $I$:
 
-\\[
-I = \int e^x\sin(x)\\,dx
-\\]
+$$I = \int e^x \sin(x) \ dx$$
 
-Following the LIATE hierarchy, the trigonometric function \\( \sin(x) \\) takes priority over the exponential, so we assign \\(u = \sin(x)\\), \\(dv = e^x\\,dx\\) from which:
+Following the LIATE hierarchy, the trigonometric function $\sin(x)$ takes priority over the exponential, so $u = \sin(x)$ and $dv = e^x \ dx$ are the natural assignments, from which:
 
-\\[du = \cos(x)\\,dx\\]
-\\[ v = e^x\\]
+$$du = \cos(x) \ dx \qquad v = e^x$$
 
-Applying the formula, we obtain:
+Applying the formula gives:
 
-\\[
-I = e^x\sin(x) - \int e^x\cos(x)\\,dx
-\\]
+$$I = e^x \sin(x) - \int e^x \cos(x) \ dx$$
 
-The new integral is no simpler in structure than the original. It still involves the product of \\( e^x \\) and a trigonometric function. We apply integration by parts a second time, denoting:
+The new integral is no simpler in structure than the original, since it still involves the product of $e^x$ and a trigonometric function. A second application of integration by parts is needed. Denoting:
 
-\\[
-J = \int e^x\cos(x)\\,dx
-\\]
+$$J = \int e^x \cos(x) \ dx$$
 
-and assigning with the previous choice \\(u = \cos(x)\\) and \\(dv = e^x\\,dx\\). We obtain:
+and keeping consistent with the previous choice, $u = \cos(x)$ and $dv = e^x \ dx$, from which:
 
-\\[du = -\sin(x)\\,dx\\]
-\\[v = e^x\\]
+$$du = -\sin(x) \ dx \qquad v = e^x$$
 
-This gives:
+This yields:
 
-\\[
-J = e^x\cos(x) + \int e^x\sin(x)\\,dx = e^x\cos(x) + I
-\\]
+$$J = e^x \cos(x) + \int e^x \sin(x) \ dx = e^x \cos(x) + I$$
 
-The original integral \\( I \\) has reappeared. Substituting back into the expression 
-for \\( I \\):
+The original integral $I$ has reappeared. Substituting back into the expression for $I$:
 
-\\[
-I = e^x\sin(x) - \bigl(e^x\cos(x) + I\bigr)
-\\]
+$$I = e^x \sin(x) - (e^x \cos(x) + I)$$
 
-Both occurrences of \\( I \\) now appear on the same equation. Collecting them on 
-the left-hand side:
+Both occurrences of $I$ now appear in the same equation. Collecting them on the left-hand side gives:
 
-\\[
-2I = e^x\sin(x) - e^x\cos(x)
-\\]
+$$2I = e^x \sin(x) - e^x \cos(x)$$
 
-Dividing through by \\(2\\) and adding the constant of integration:
+Dividing through by $2$ and adding the constant of integration produces the result:
 
-\\[
-I = \frac{e^x}{2}\bigl(\sin(x) - \cos(x)\bigr) + c
-\\]
+$$I = \frac{e^x}{2}(\sin(x) - \cos(x)) + c$$
 
-> The key observation is that the cyclic structure transforms an apparently endless recursion into a [linear equation](../linear-equations/) in \\( I \\), which can be solved directly. This technique applies whenever repeated integration by parts returns the original integral with a nonzero coefficient.
-
-- - -
+> The cyclic structure converts an apparently endless recursion into a [linear equation](../linear-equations/) in $I$, which can be solved directly. The same technique applies whenever repeated integration by parts returns the original integral with a nonzero coefficient.
 
 ## Example 3
 
-The following example illustrates the definite integral version of the formula. Compute:
+This example illustrates the definite integral version of the formula. Compute:
 
-\\[
-\int_0^1 x\ln(x)\\, dx
-\\]
+$$\int_0^1 x \ln(x) \ dx$$
 
-The integrand is a product of a logarithmic function and a power of \\( x \\). Following the LIATE hierarchy, \\( \ln(x) \\) takes priority and is assigned to \\( f \\), while \\( x \\) is assigned to \\( g' \\):
+The integrand is a product of a logarithmic function and a power of $x$. Following the LIATE hierarchy, $\ln(x)$ takes priority and is assigned to $f$, while $x$ is assigned to $g'$:
 
-\\[
-f(x) = \ln(x) \quad \rightarrow \quad f'(x) = \frac{1}{x}
-\\]
+$$f(x) = \ln(x) \quad \rightarrow \quad f'(x) = \frac{1}{x}$$
 
-\\[
-g'(x) = x \quad \rightarrow \quad g(x) = \frac{x^2}{2}
-\\]
+$$g'(x) = x \quad \rightarrow \quad g(x) = \frac{x^2}{2}$$
 
-Applying the definite integral form of the formula:
+Applying the definite integral form of the formula gives:
 
-\\[
+$$
 \begin{align}
-\int_0^1 x\ln(x)\\, dx
-&= \left[\frac{x^2}{2}\ln(x)\right]_0^1 - \int_0^1 \frac{x^2}{2} \cdot \frac{1}{x}\\, dx \\\\[0.4em]
-&= \left[\frac{x^2}{2}\ln(x)\right]_0^1 - \frac{1}{2}\int_0^1 x\\, dx
+\int_0^1 x \ln(x) \ dx &= \left[\frac{x^2}{2}\ln(x)\right]_0^1 - \int_0^1 \frac{x^2}{2} \cdot \frac{1}{x} \ dx \\[6pt]
+                      &= \left[\frac{x^2}{2}\ln(x)\right]_0^1 - \frac{1}{2}\int_0^1 x \ dx
 \end{align}
-\\]
+$$
 
-The boundary term requires care at \\( x = 0 \\). Since \\( \ln(1) = 0 \\) and \\( x^2\ln(x) \to 0 \\) as \\( x \to 0^+ \\), both endpoints vanish:
+The boundary term requires care at $x = 0$. Since $\ln(1) = 0$ and $x^2\ln(x) \to 0$ as $x \to 0^+$, both endpoints vanish:
 
-\\[
-\left[\frac{x^2}{2}\ln(x)\right]_0^1 = 0
-\\]
+$$\left[\frac{x^2}{2}\ln(x)\right]_0^1 = 0$$
 
-The remaining integral is a standard power rule application:
+The remaining integral falls under the power rule:
 
-\\[
-\frac{1}{2}\int_0^1 x\\, dx = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
-\\]
+$$\frac{1}{2}\int_0^1 x \ dx = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}$$
 
-Therefore:
+The final result is therefore:
 
-\\[
-\int_0^1 x\ln(x)\\, dx = -\frac{1}{4}
-\\]
+$$\int_0^1 x \ln(x) \ dx = -\frac{1}{4}$$
 
-> The [limit](../limits) \\( \lim_{x \to 0^+} x^2 \ln(x) = 0 \\) follows from the fact that [polynomial](../polynomials/) growth dominates [logarithmic](../logarithms/) decay near zero. This kind of boundary analysis is essential whenever the integrand is not defined at one of the endpoints.
+> The [limit](../limits/) $\lim_{x \to 0^+} x^2 \ln(x) = 0$ holds because [polynomial](../polynomials/) growth dominates [logarithmic](../logarithms/) decay near zero. The same boundary analysis is required whenever the integrand is not defined at one of the endpoints.
 
-- - -
-## Flowchart
-- `Integral to solve`
-  - **IF** the integrand is a product of two functions \\( f(x) \cdot g'(x) \\)
-    - _choose u and dv via LIATE_
-      assign \\( u \\) to the factor that appears first in the hierarchy  
-      logarithmic, innverse trigonometric, algebraic, trigonometric, exponential  
-      assign \\( dv \\) to the remaining factor  
-    - _compute \\( f'(x) \\) and \\( g(x) \\)_
-      differentiate \\( u \\) and integrate \\( dv \\)
-    - _apply the formula_
-      \\(\int f\\,g'\\,dx = f(x)g(x) - \int f'(x)g(x)\\,dx + c\\)
-    - **IF** the new integral \\( \int f'g\\,dx \\) is more complex than the original
-      - _swap u and dv and re-apply_
-        the goal is always a simpler remaining integral
-    - `ELSE IF` the original integral reappears (cyclic case)
-      - _collect \\( I \\) on both sides_
-        repeated application leads back to the original integral with a nonzero coefficient
-      - _solve the linear equation in \\( I \\)_
-        divide through by the coefficient and add the constant of integration
-    - `ELSE`
-      - _evaluate \\( \int f'g\\,dx \\)_
-        apply the appropriate standard formula, or repeat integration by parts if needed
-      - **IF** the integral is definite
-        - _evaluate the boundary term \\( \bigl[f(x)g(x)\bigr]\_a^b \\)_
-          compute \\( f(b)g(b) - f(a)g(a) \\) explicitly  
-          omitting this term is a common error
-        - _the result is a number_
-          no further manipulation is needed
-      - `ELSE`
-        - _write the antiderivative_
-          \\( f(x)g(x) - \int f'(x)g(x)\,dx + c \\)
-        - _verify that \\( c \\) is present_
-          after repeated applications it is easy to lose track of the constant; add it explicitly at the last step
-  - `ELSE`
-    - _simplify the integrand first_
-      expand, factor, apply trigonometric identities, or split into partial fractions
-    - _restart_
+## Decision procedure
+
+The following stepwise procedure summarises the application of integration by parts to a generic integral involving a product of two factors.
+
++ Identify the integrand as a product $f(x) \cdot g'(x)$ of two functions. If the integrand is not in this form, simplify it first by expansion, factoring, application of [trigonometric identities](../trigonometric-identities/), or [partial fractions](../partial-fraction-decomposition/), and restart from the simplified expression.
++ Choose $u$ and $dv$ according to the LIATE hierarchy. The factor $u$ is assigned to the function that appears first among logarithmic, inverse trigonometric, algebraic, trigonometric, and exponential functions. The remaining factor is assigned to $dv$.
++ Compute the derivative $f'(x)$ of $u$ and the antiderivative $g(x)$ of $dv$.
++ Apply the formula in its appropriate form:
+
+$$\int f(x)g'(x) \ dx = f(x)g(x) - \int f'(x)g(x) \ dx + c$$
+
++ Examine the new integral $\int f'(x)g(x) \ dx$. Three outcomes are possible:
+
+The first outcome is that the new integral is more complex than the original. In this case, swap the roles of $u$ and $dv$ and reapply the formula. The aim of the method is always to produce a simpler remaining integral.
+
+The second outcome is that the original integral reappears, possibly after a second application of the formula. The integral $I$ then satisfies a [linear equation](../linear-equations/) with a nonzero coefficient on $I$, which can be solved directly by isolating $I$ and dividing by the coefficient.
+
+The third outcome is that the new integral can be evaluated by a standard formula or by a further application of integration by parts. In the definite case, the boundary term $[f(x)g(x)]_a^b = f(b)g(b) - f(a)g(a)$ must be evaluated explicitly, and the final result is a numerical value. In the indefinite case, the antiderivative is written as $f(x)g(x) - \int f'(x)g(x) \ dx + c$, with the constant of integration added explicitly at the last step to avoid omissions.
+
+> When the integrand contains a rational expression in $\sin x$ and $\cos x$ rather than a clear product, integration by parts is often not the right tool. The [Weierstrass substitution](../weierstrass-substitution/) and direct trigonometric substitutions $u = \sin x$ or $u = \cos x$ are typically more efficient in those cases.

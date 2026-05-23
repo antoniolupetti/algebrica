@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="262px" viewBox="0 0 320 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <line x1="239" y1="131.5" x2="146" y2="131.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M146.382134,1.67699263 L146.435788,1.75486938 L150.935788,9.75486938 C151.07117,9.99554832 150.98581,10.3004059 150.745131,10.4357878 C150.531194,10.5561272 150.266548,10.5020533 150.115296,10.3195146 L150.064212,10.2451306 L146.5,3.908 L146.5,261.5 C146.5,261.776142 146.276142,262 146,262 C145.75454,262 145.550392,261.823125 145.508056,261.589876 L145.5,261.5 L145.5,3.908 L141.935788,10.2451306 C141.815448,10.4590675 141.561202,10.5502832 141.337152,10.4728292 L141.254869,10.4357878 C141.040933,10.3154483 140.949717,10.0612021 141.027171,9.83715217 L141.064212,9.75486938 L145.564212,1.75486938 C145.739435,1.44336236 146.165161,1.41740344 146.382134,1.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.662848,126.527171 L294.745131,126.564212 L302.745131,131.064212 C303.056638,131.239435 303.082597,131.665161 302.823007,131.882134 L302.745131,131.935788 L294.745131,136.435788 C294.504452,136.57117 294.199594,136.48581 294.064212,136.245131 C293.943873,136.031194 293.997947,135.766548 294.180485,135.615296 L294.254869,135.564212 L300.591,132 L240.5,132 C240.223858,132 240,131.776142 240,131.5 C240,131.25454 240.176875,131.050392 240.410124,131.008056 L240.5,131 L300.591,131 L294.254869,127.435788 C294.040933,127.315448 293.949717,127.061202 294.027171,126.837152 L294.064212,126.754869 C294.184552,126.540933 294.438798,126.449717 294.662848,126.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="0" y1="131.5" x2="147" y2="131.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="182.5" y="27">The vertices lie on the unit </tspan>
+                <tspan x="182.5" y="40">circle and are separated </tspan>
+                <tspan x="182.5" y="53">by equal central angles of </tspan>
+                <tspan x="182.5" y="66">2π/3 between </tspan>
+                <tspan x="182.5" y="79">consecutive radii.</tspan>
+            </text>
+            <polygon stroke="#333333" points="100 54 100 214 239 132"></polygon>
+            <path d="M175.828201,44.6655795 C166.599723,41.6377313 156.741118,40 146.5,40 C94.5852335,40 52.5,82.0852335 52.5,134 C52.5,185.914766 94.5852335,228 146.5,228 C198.414766,228 240.5,185.914766 240.5,134 C240.5,115.941027 235.407465,99.0714788 226.580123,84.7490847" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="239" cy="131.5" r="3.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="14" fill="#BABABA">
+                <tspan x="119" y="11">Im</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="14" fill="#BABABA">
+                <tspan x="289" y="152">Re</tspan>
+            </text>
+            <line x1="100" y1="53.5" x2="146" y2="131.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="100" y1="214.5" x2="133.670828" y2="155.850115" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="141.552824" y1="140.283172" x2="146" y2="131.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="146.5" cy="131.5" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="155.5" y="120">2π/3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="132" y="153">O</tspan>
+            </text>
+            <circle fill="#333333" cx="99.5" cy="53" r="3.5"></circle>
+            <circle fill="#333333" cx="99.5" cy="214" r="3.5"></circle>
+            <path d="M157,132 C157,131.801098 156.994469,131.603487 156.983554,131.407314 C156.676224,125.884056 152.100088,121.5 146.5,121.5 C144.511955,121.5 142.652955,122.052508 141.068175,123.012351" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" line-spacing="14" fill="#333333">
+                <tspan x="94.5" y="44">z₁</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="14" fill="#333333">
+                <tspan x="87.5" y="231">z₂</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="14" fill="#333333">
+                <tspan x="244.5" y="127">z₀</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
