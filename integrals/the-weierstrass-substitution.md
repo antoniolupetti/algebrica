@@ -1,6 +1,6 @@
 ---
 title: The Weierstrass Substitution
-source: https://algebrica.org/weierstrass-substitution/
+source: https://algebrica.org/the-weierstrass-substitution/
 license: CC BY-NC 4.0
 tags:
   - arctangent
