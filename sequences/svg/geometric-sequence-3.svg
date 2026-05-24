@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="256px" viewBox="0 0 361 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="36.5" y1="102.5" x2="354.5" y2="102.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="19" y="104">0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="152">-200</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="5" y="67">200</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="196">-400</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="183" y="246">5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="342" y="246">10</tspan>
+            </text>
+            <path d="M33.5,229 C33.2238576,229 33,228.776142 33,228.5 C33,228.25454 33.1768752,228.050392 33.4101244,228.008056 L33.5,228 L37,228 L37,35 L33.5,35 C33.2238576,35 33,34.7761424 33,34.5 C33,34.2545401 33.1768752,34.0503916 33.4101244,34.0080557 L33.5,34 L41.5,34 C41.7761424,34 42,34.2238576 42,34.5 C42,34.7454599 41.8231248,34.9496084 41.5898756,34.9919443 L41.5,35 L38,35 L38,228 L41.5,228 C41.7761424,228 42,228.223858 42,228.5 C42,228.74546 41.8231248,228.949608 41.5898756,228.991944 L41.5,229 L33.5,229 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="52" cy="100.5" r="3"></circle>
+            <circle fill="#333333" cx="84" cy="103.5" r="3"></circle>
+            <circle fill="#333333" cx="116" cy="98.5" r="3"></circle>
+            <circle fill="#333333" cx="151" cy="106.5" r="3"></circle>
+            <circle fill="#333333" cx="250" cy="86.5" r="3"></circle>
+            <circle fill="#333333" cx="216" cy="109.5" r="3"></circle>
+            <circle fill="#333333" cx="183" cy="95.5" r="3"></circle>
+            <circle fill="#333333" cx="283" cy="131.5" r="3"></circle>
+            <circle fill="#333333" cx="315" cy="43.5" r="3"></circle>
+            <circle fill="#333333" cx="349" cy="221.5" r="3"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="84" y="11">The terms of the sequence alternate in </tspan>
+                <tspan x="84" y="24">sign and grow in absolute value  </tspan>
+                <tspan x="84" y="37">(which is typical when r ≤ -1).</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="46" y="246">n (index)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="29" y="18.5">aₙ</tspan>
+            </text>
+            <line x1="150.5" y1="46.5" x2="150.5" y2="83" stroke="#BABABA" stroke-linecap="round"></line>
+            <polyline stroke="#333333" points="52 100.5 84 103.5 116 98.5 151 106.5 183 95.5 216 109.5 250 86.5 283 131.5 315 43.5 349 221.5"></polyline>
+            <path d="M360.5,224 C360.74546,224 360.949608,224.176875 360.991944,224.410124 L361,224.5 L361,232.5 C361,232.776142 360.776142,233 360.5,233 C360.25454,233 360.050392,232.823125 360.008056,232.589876 L360,232.5 L360,229 L36.5,229 C36.2238576,229 36,228.776142 36,228.5 C36,228.25454 36.1768752,228.050392 36.4101244,228.008056 L36.5,228 L360,228 L360,224.5 C360,224.223858 360.223858,224 360.5,224 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

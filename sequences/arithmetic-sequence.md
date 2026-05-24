@@ -10,7 +10,7 @@ tags:
   - sum-of-an-arithmetic-progression
 ---
 
-## What is an arithmetic sequence
+## Definition
 
 **Definition 1.** A [sequence](../sequences/) $a_n$ is called an arithmetic sequence (or arithmetic progression) if it consists of numbers arranged in such a way that the difference between any term and the one before it is constant. It is characterized by terms of the form:
 
