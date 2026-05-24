@@ -1,6 +1,6 @@
 ---
 title: Principle of Mathematical Induction
-source: https://algebrica.org/principle-of-mathematical-induction
+source: https://algebrica.org/principle-of-mathematical-induction/
 license: CC BY-NC 4.0
 tags:
   - induction
@@ -8,11 +8,12 @@ tags:
   - natural-numbers
   - strong-induction
 ---
+
 ## Inductive set
 
 Mathematical induction is the principle that allows us to establish statements that depend on a natural-number parameter. Its validity rests on a structural feature of $\mathbb{N}$, namely that the natural numbers form the smallest [set](../sets/) that contains $0$ and is closed under the operation of taking the successor. To make this precise, we begin by isolating the notion of an inductive subset of the real line.
 
-**Definition 1.** A subset $A \subseteq \mathbb{R}$ is said to be inductive if it satisfies the following two conditions:
+Definition 1. A subset $A \subseteq \mathbb{R}$ is said to be inductive if it satisfies the following two conditions:
 
 + $0 \in A$.
 + $\forall\, x \in A$ it follows that $x + 1 \in A$.
@@ -20,15 +21,14 @@ Mathematical induction is the principle that allows us to establish statements t
 In other words, an inductive set contains the element $0$ and is closed under the operation of adding $1$.
 
 - - -
-
-**Theorem 1.** Let $A, B \subseteq \mathbb{R}$ be inductive sets. Then their intersection $A \cap B$ is also an inductive set. Since $A$ and $B$ are inductive, we have:
+Theorem 1. Let $A, B \subseteq \mathbb{R}$ be inductive sets. Then their intersection $A \cap B$ is also an inductive set. Since $A$ and $B$ are inductive, we have:
 
 + $0 \in A$ and $0 \in B$, thus $0 \in A \cap B$.
 + If $x \in A \cap B$, then $x \in A$ and $x \in B$. By the inductive property, $x + 1 \in A$ and $x + 1 \in B$, and therefore $x + 1 \in A \cap B$.
 
 Thus $A \cap B$ satisfies the defining conditions of an inductive set. The same reasoning applies, without change, to the intersection of any non-empty family of inductive sets, since both defining properties are preserved under arbitrary intersections.
 
-The real line $\mathbb{R}$ is itself trivially inductive, so the family of inductive subsets of $\mathbb{R}$ is non-empty. We may therefore define the set of [natural numbers](../natural-numbers) $\mathbb{N}$ as the intersection of all inductive subsets of $\mathbb{R}$. By construction $\mathbb{N}$ is inductive, and it is contained in every other inductive subset of $\mathbb{R}$. For this reason $\mathbb{N}$ is called the smallest inductive subset of $\mathbb{R}$, and this minimal character is the structural fact on which every proof by induction ultimately rests.
+The real line $\mathbb{R}$ is itself trivially inductive, so the family of inductive subsets of $\mathbb{R}$ is non-empty. We may therefore define the set of [natural numbers](../natural-numbers/) $\mathbb{N}$ as the intersection of all inductive subsets of $\mathbb{R}$. By construction $\mathbb{N}$ is inductive, and it is contained in every other inductive subset of $\mathbb{R}$. For this reason $\mathbb{N}$ is called the smallest inductive subset of $\mathbb{R}$, and this minimal character is the structural fact on which every proof by induction ultimately rests.
 
 ## Mathematical induction
 
@@ -67,7 +67,6 @@ $$\frac{0 \cdot (0+1)}{2} = 0$$
 The formula holds for $n = 0$.
 
 - - -
-
 We now proceed to the inductive step. Assume that the formula holds for some $k \in \mathbb{N}$; that is, suppose:
 
 $$\sum_{i=1}^{k} i = \frac{k(k+1)}{2}$$

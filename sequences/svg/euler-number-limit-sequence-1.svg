@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="371px" height="269px" viewBox="0 0 371 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 12</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="20.5" y1="41.5" x2="370.5" y2="41.5" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="1" y="111.5">2.5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="161.5">2.3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="65.5">2.7</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="236.5">2.0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="111" y="260">5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="201" y="260">10</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="286" y="260">15</tspan>
+            </text>
+            <path d="M22,243 L22,242 L25.999,242 L25.999,26 L22,26 L22,25 L31,25 L31,26 L26.999,26 L26.999,242 L31,242 L31,243 L22,243 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M367,247 L366,247 L366,243 L26,243 L26,242 L366,242 L366,238 L367,238 L367,247 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M43,233.5 C43.6666667,174.870622 70.3333333,130.898589 123,101.5839 C163.861389,78.8401234 221.577151,65.7212958 296.147286,62.2274172 C310.510009,61.5544721 333.460913,61.3484411 365,61.6093242" stroke="#333333"></path>
+            <circle fill="#333333" cx="43.5" cy="232.5" r="3"></circle>
+            <circle fill="#333333" cx="57.5" cy="167.5" r="3"></circle>
+            <circle fill="#333333" cx="80.5" cy="134.5" r="3"></circle>
+            <circle fill="#333333" cx="100.5" cy="117.5" r="3"></circle>
+            <circle fill="#333333" cx="152.5" cy="88.5" r="3"></circle>
+            <circle fill="#333333" cx="135.5" cy="95.5" r="3"></circle>
+            <circle fill="#333333" cx="118.5" cy="104.5" r="3"></circle>
+            <circle fill="#333333" cx="170.5" cy="82.5" r="3"></circle>
+            <circle fill="#333333" cx="188.5" cy="77.5" r="3"></circle>
+            <circle fill="#333333" cx="205.5" cy="73.5" r="3"></circle>
+            <circle fill="#333333" cx="223.5" cy="70.5" r="3"></circle>
+            <circle fill="#333333" cx="242.5" cy="67.5" r="3"></circle>
+            <circle fill="#333333" cx="259.5" cy="65.5" r="3"></circle>
+            <circle fill="#333333" cx="277.5" cy="63.5" r="3"></circle>
+            <circle fill="#333333" cx="295.5" cy="62.5" r="3"></circle>
+            <circle fill="#333333" cx="311.5" cy="61.5" r="3"></circle>
+            <circle fill="#333333" cx="329.5" cy="61.5" r="3"></circle>
+            <circle fill="#333333" cx="347.5" cy="61.5" r="3"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="198" y="139.5">For large values of n, the </tspan>
+                <tspan x="198" y="152.5">sequence converges to </tspan>
+                <tspan x="319.11" y="152.5" font-style="italic">e.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="26" y="259">n (index)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="9" y="43">e</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="20" y="13">aₙ</tspan>
+            </text>
+            <line x1="259.5" y1="83" x2="259.5" y2="119.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
