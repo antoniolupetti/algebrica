@@ -17,7 +17,7 @@ tags:
 ---
 ## Definition
 
-A group is one of the most fundamental structures in abstract algebra. The concept arises when one isolates the essential properties shared by many mathematical objects: the [integers](../natural-numbers/) under addition, the nonzero [real numbers](../real-numbers/) under multiplication, the symmetries of a geometric figure, and the invertible [matrices](../matrices/) of a given size all exhibit the same abstract pattern. In formal terms, a group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying the following four axioms:
+A group is one of the most fundamental structures in abstract algebra. The concept arises when one isolates the essential properties shared by many mathematical objects: the [integers](../integers/) under addition, the nonzero [real numbers](../real-numbers/) under multiplication, the symmetries of a geometric figure, and the invertible [matrices](../matrices/) of a given size all exhibit the same abstract pattern. In formal terms, a group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying the following four axioms:
 
 + Closure: for all $a, b \in G$, the element $a \cdot b$ belongs to $G$.
 + Associativity: for all $a, b, c \in G$, the identity $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ holds.
@@ -66,7 +66,7 @@ Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldo
 
 Let $F$ be a [field](../fields/) and let $n$ be a positive integer. The set of all [invertible](../inverse-matrix/) $n \times n$ matrices with entries in $F$, denoted $\operatorname{GL}(n, F)$, forms a group under matrix multiplication. The identity element is the identity matrix $I_n$, and the inverse of a matrix $A$ is its matrix inverse $A^{-1}$. This group is not abelian for $n \geq 2$, since matrix multiplication does not commute in general.
 
-Given a set $\\{\ 1, 2, \ldots, n \ \\}$, a permutation is a bijection from this set to itself. The collection of all such permutations forms a group under [composition of functions](../composite-functions/), denoted $S_n$ and called the symmetric group on $n$ elements. The identity element is the identity permutation, and the inverse of a permutation $\sigma$ is the inverse function $\sigma^{-1}$. The group $S_n$ has order $n!$ and is non-abelian for $n \geq 3$.
+Given a set $\\{\ 1, 2, \ldots, n \ \\}$, a permutation is a bijection from this set to itself. The collection of all such permutations forms a group under [composition of functions](../composite-functions/), denoted $S_n$ and called the symmetric group on $n$ elements. The identity element is the identity permutation, and the inverse of a permutation $\sigma$ is the inverse function $\sigma^{-1}$. The group $S_n$ has order equal to the [factorial](../factorial/) $n!$ and is non-abelian for $n \geq 3$.
 
 As a concrete illustration, consider $S_3$, which has order $6$. Let $\sigma$ be the permutation sending $1 \mapsto 2$, $2 \mapsto 3$, $3 \mapsto 1$, and let $\tau$ be the permutation sending $1 \mapsto 2$, $2 \mapsto 1$, $3 \mapsto 3$:
 

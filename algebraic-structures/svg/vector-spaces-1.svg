@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="277px" viewBox="0 0 270 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(0.333333, 65.333333)">
+                <path d="M52.5,211.5 L61.1552605,194.189479 M68.6765655,179.146869 L153.5,9.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <path d="M85.5,4.98013557 L85.9357878,5.75486938 L90.4357878,13.7548694 L90.6809184,14.1906571 L89.8093429,14.6809184 L89.5642122,14.2451306 L86,7.908 L86,211 L85,211 L85,7.908 L81.4357878,14.2451306 L81.1906571,14.6809184 L80.3190816,14.1906571 L80.5642122,13.7548694 L85.0642122,5.75486938 L85.5,4.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="15" font-weight="normal" fill="#BABABA">
+                    <tspan x="257" y="162">x</tspan>
+                </text>
+                <path d="M256.809343,139.319082 L257.245131,139.564212 L265.245131,144.064212 L266.019864,144.5 L265.245131,144.935788 L257.245131,149.435788 L256.809343,149.680918 L256.319082,148.809343 L256.754869,148.564212 L263.091,145 L0,145 L0,144 L263.091,144 L256.754869,140.435788 L256.319082,140.190657 L256.809343,139.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="15" font-weight="normal" fill="#BABABA">
+                    <tspan x="66" y="15">y</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="119" y="163">1</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="114" y="113">v=(0.5, 1)</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="133" y="81">u=(1,2)</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="148" y="49">u+v=(1.5, 3)</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="71" y="113">1</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="153" y="163">2</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="69" y="81">2</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="69" y="51">3</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="187" y="163">3</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="15" y="189">W : y = 2x</tspan>
+                </text>
+                <line x1="79.5" y1="47.5" x2="85.5" y2="47.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="121.5" y1="144.5" x2="121.5" y2="150.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="157.5" y1="144.5" x2="157.5" y2="150.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="190.5" y1="144.5" x2="190.5" y2="150.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="79.5" y1="77.5" x2="85.5" y2="77.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="79.5" y1="109.5" x2="85.5" y2="109.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="85.6765655" y1="144.146869" x2="103.5" y2="109.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="85.6765655" y1="144.146869" x2="119.5" y2="77.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="85.6765655" y1="144.146869" x2="134.5" y2="47.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <circle fill="#333333" cx="120" cy="77" r="2.5"></circle>
+                <circle fill="#333333" cx="135" cy="46" r="2.5"></circle>
+                <circle fill="#333333" cx="104" cy="109" r="2.5"></circle>
+            </g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="87" y="11">All vectors lie on the line y = 2x, </tspan>
+                <tspan x="87" y="24">illustrating closure under addition </tspan>
+                <tspan x="87" y="37">and scalar multiplication.</tspan>
+            </text>
+            <line x1="119.5" y1="47.5" x2="119.5" y2="118.5" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

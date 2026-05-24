@@ -69,7 +69,7 @@ Let $F$ be a field and let $n$ be a positive integer. The set $\operatorname{M}_
 
 A subset $S$ of a ring $R$ is called a subring when $S$ is itself a ring under the operations inherited from $R$. A nonempty subset $S \subseteq R$ is a subring of $R$ if and only if it is closed under subtraction and under multiplication, that is, for all $a, b \in S$ one has $a - b \in S$ and $a \cdot b \in S$. Closure under subtraction is equivalent to requiring that $S$ be a subgroup of $(R, +)$, and closure under multiplication then ensures that the second operation is also well-defined on $S$. Every ring $R$ contains at least two subrings:
 
-+ the trivial subring $\\{\ 0 \ \\}$,
++ the trivial subring $\\{\ 0 \ \\}$.
 + $R$ itself.
 
 Any subring other than $R$ is called a proper subring.
@@ -106,6 +106,6 @@ The kernel is always an ideal of $R$, and the image is always a subring of $S$. 
 
 A ring homomorphism that is both injective and surjective is called a ring isomorphism. Two rings are isomorphic, written $R \cong S$, when an isomorphism between them exists. Isomorphic rings are structurally identical and share all properties that are intrinsic to their ring structure.
 
-As an example, consider the map $\varphi : \mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ defined by $\varphi(a) = a \bmod n$. This map preserves addition and multiplication, since $(a + b) \bmod n = (a \bmod n) + (b \bmod n)$ and analogously for multiplication. It is therefore a ring homomorphism, and its kernel is precisely $n\mathbb{Z}$, the ideal of multiples of $n$.
+As an example, consider the map $\varphi : \mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ defined by $\varphi(a) = a \bmod n$. This map preserves both operations, since the residue class of a sum coincides with the sum of the residue classes in $\mathbb{Z}/n\mathbb{Z}$, and analogously for the product. It is therefore a ring homomorphism, and its kernel is precisely $n\mathbb{Z}$, the ideal of multiples of $n$.
 
 > Adding the requirement that every nonzero element be invertible promotes a commutative ring with unity to a [field](../fields/), the structure in which linear algebra is developed and on which the theory of [vector spaces](../vector-spaces/) is built.
