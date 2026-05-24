@@ -79,8 +79,9 @@ Now calculate the first few terms:
 + $a_3 = 2 + 2 \cdot 3 = 8$
 + $a_4 = 2 + 3 \cdot 3 = 11$
 + $a_5 = 2 + 4 \cdot 3 = 14$
-T
-he resulting sequence is:  
+
+The resulting sequence is:
+
 $$ 2,\ 5,\ 8,\ 11,\ 14,\ \dots $$
 
 ## Sum of $n$ terms of an arithmetic progression
@@ -91,12 +92,14 @@ $$
 S_n = n \cdot \frac{a_1 + a_n}{2}
 $$
 
-This formula allows you to quickly compute the total sum of a finite number of terms in an arithmetic progression. For example, consider the arithmetic progression of non-negative even numbers:  
+This formula allows you to quickly compute the total sum of a finite number of terms in an arithmetic progression. For example, consider the arithmetic progression of non-negative even numbers:
+
 $$
 2,\ 4,\ 6,\ 8,\ 10
 $$  
 
-We want to calculate the sum of the first 5 terms $(n = 5).$ Using the formula, we have:  
+We want to calculate the sum of the first 5 terms $(n = 5).$ Using the formula, we have:
+
 $$
 S_5 = 5 \cdot \frac{2 + 10}{2} = 5 \cdot 6 = 30
 $$
