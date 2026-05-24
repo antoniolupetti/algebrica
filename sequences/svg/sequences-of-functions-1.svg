@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="377px" height="316px" viewBox="0 0 377 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.832976, 0.000000)">
+            <path d="M294.476366,222.319082 L294.912154,222.564212 L302.912154,227.064212 L303.686888,227.5 L302.912154,227.935788 L294.912154,232.435788 L294.476366,232.680918 L293.986105,231.809343 L294.421893,231.564212 L300.756,228 L-0.332976414,228 L-0.332976414,227 L300.76,227 L294.421893,223.435788 L293.986105,223.190657 L294.476366,222.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="45.6670236" y1="308.5" x2="310.667024" y2="112.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="22.959818" y1="325.856284" x2="287.658295" y2="129.15726" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(155.135904, 227.628751) rotate(16.000000) translate(-155.135904, -227.628751) "></line>
+            <line x1="29.106354" y1="324.890264" x2="282.748643" y2="130.316669" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(156.175309, 227.519948) rotate(23.000000) translate(-156.175309, -227.519948) "></line>
+            <line x1="250.667024" y1="65.5" x2="250.667024" y2="143.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="317" y="116">f₀ </tspan>
+                <tspan x="329.444" y="116" letter-spacing="0.857142857">(</tspan>
+                <tspan x="333.589143" y="116">x) = x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.167024" y="249">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="133.167024" y="82">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="317" y="171">f₁ </tspan>
+                <tspan x="327.644" y="171" letter-spacing="0.857142857">(</tspan>
+                <tspan x="331.789143" y="171">x) = x/2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="317" y="191">f₂ </tspan>
+                <tspan x="328.916" y="191" letter-spacing="0.857142857">(</tspan>
+                <tspan x="333.061143" y="191">x) = x/3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="195.167024" y="11">As the index n increases, the slope </tspan>
+                <tspan x="195.167024" y="24">of the line fₙ</tspan>
+                <tspan x="258.070051" y="24"> (x) progressively </tspan>
+                <tspan x="195.167024" y="37">decreases, approaching the </tspan>
+                <tspan x="195.167024" y="50">constant zero function.</tspan>
+            </text>
+        </g>
+        <path d="M156.5,71.9801356 L156.935788,72.7548694 L161.435788,80.7548694 L161.680918,81.1906571 L160.809343,81.6809184 L160.564212,81.2451306 L157,74.908 L157,305 L156,305 L156,74.908 L152.435788,81.2451306 L152.190657,81.6809184 L151.319082,81.1906571 L151.564212,80.7548694 L156.064212,72.7548694 L156.5,71.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -40,6 +40,7 @@ The graph below illustrates how the terms of the sequence behave as $n$ grows. T
 > Each term $a_n$ is strictly less than $e$, and the gap closes as $n$ grows, though the rate of convergence is slow enough that even large values of $n$ yield only a rough approximation of the limit.
 
 The following table of values illustrates how the sequence behaves for increasing indices.
+
 $$
 \begin{align}
 n = 1:& \quad a_1 = \left(1 + \frac{1}{1}\right)^1 = 2 \\[6pt]
@@ -48,6 +49,7 @@ n = 100:& \quad a_{100} = \left(1 + \frac{1}{100}\right)^{100} \approx 2.70481 \
 n = 1000:& \quad a_{1000} = \left(1 + \frac{1}{1000}\right)^{1000} \approx 2.71692
 \end{align}
 $$
+
 The terms increase steadily and approach $e \approx 2.71828$ from below, with each successive value capturing more decimal places of the limit. The convergence is monotone but slow: even at $n = 1000$, the approximation agrees with $e$ only to the second decimal place.
 
 ## Demonstrating the monotonicity of the sequence
