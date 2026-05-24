@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="347px" height="279px" viewBox="0 0 347 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 11</title>
+    <g id="NEW---Sequences" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11">
+            <line x1="26.5" y1="40.5" x2="328.5" y2="40.5" id="Line-4" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text id="2.0" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="44">2.0</tspan>
+            </text>
+            <text id="1.9" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="90">1.9</tspan>
+            </text>
+            <text id="1.8" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="129">1.8</tspan>
+            </text>
+            <text id="1.7" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="166">1.7</tspan>
+            </text>
+            <text id="1.6" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="204">1.6</tspan>
+            </text>
+            <text id="1.5" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="243">1.5</tspan>
+            </text>
+            <text id="5" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="114" y="269">5</tspan>
+            </text>
+            <text id="10" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="202" y="269">10</tspan>
+            </text>
+            <text id="15" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="294" y="269">15</tspan>
+            </text>
+            <path id="Line" d="M20,250 L20,249 L24,249 L24,26 L20,26 L20,25 L29,25 L29,26 L25,26 L25,249 L29,249 L29,250 L20,250 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line-2" d="M327,254 L326,254 L326,250 L23.5,250 L23.5,249 L326,249 L326,245 L327,245 L327,254 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#000000" cx="43" cy="239" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="62" cy="140" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="80" cy="90" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="98" cy="65" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="118" cy="53" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="137" cy="47" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="156" cy="43" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="175" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="193" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="212" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="230" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="249" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="267" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="286" cy="40.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="304" cy="40.5" r="3"></circle>
+            <text id="The-terms-get-increa" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="136" y="142.5">The terms get increasingly closer to 2, </tspan>
+                <tspan x="136" y="155.5">illustrating the typical behavior of a </tspan>
+                <tspan x="136" y="168.5">Cauchy sequence.</tspan>
+            </text>
+            <text id="n-(index)" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="26" y="269">n (index)</tspan>
+            </text>
+            <text id="aₙ" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="17" y="13">a</tspan>
+                <tspan x="24.163" y="13" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
+            </text>
+            <line x1="212.5" y1="60" x2="212.5" y2="120" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43,239.5 C43,238.833333 49.3333333,205.5 62,139.5 L80,89.5 L98,64.5 L118,52.5 L137,46.5 L156,42.5 L175,40.5 L192,40.5 L211,40.5 L230,40.5 L247,40.5 L266,40.5 L285,40.5 L304,40.5" id="Path-3" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>
