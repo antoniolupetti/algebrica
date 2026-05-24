@@ -147,4 +147,4 @@ $$
 
 the function $\varphi$ preserves the group operation. Since it is also bijective, it is an isomorphism, and therefore $\mathbb{Z}/2\mathbb{Z} \cong \\{\ 1, -1 \ \\}$.
 
-> The notions of kernel, image, and isomorphism extend naturally to the richer settings of [rings](../rings/), [fields](../fields/), [vector spaces](../vector-spaces/), and [modules](../modules/), where the structure-preserving maps acquire additional requirements but the underlying philosophy remains the same.
+> The notions of kernel, image, and isomorphism extend naturally to the richer settings of [rings](../rings/), [fields](../fields/), [vector spaces](../vector-spaces/), and [modules](../modules/), where the structure-preserving maps acquire additional requirements but the underlying philosophy remains the same. A unified discussion that compares the different cases side by side is collected on the page about [homomorphisms and isomorphisms](../homomorphisms-and-isomorphisms/).

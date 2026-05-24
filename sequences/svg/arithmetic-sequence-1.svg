@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="177px" viewBox="0 0 310 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle cx="65" cy="151.5" r="25"></circle>
+        <mask maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle cx="129" cy="151.5" r="25"></circle>
+        <mask maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(7.000000, 0.500000)">
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="29" y="11">The non-negative even numbers form an </tspan>
+                <tspan x="29" y="25">arithmetic progression with a common </tspan>
+                <tspan x="29" y="39">difference d of 2.</tspan>
+            </text>
+            <line x1="98.5" y1="52" x2="98.5" y2="87" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="61.5" y="143.5">2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="125" y="143.5">4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="188.5" y="143.5">6</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="253" y="143.5">8</tspan>
+            </text>
+            <path d="M98,97 C107.67708,97 117.471226,104.767771 127.42047,120.229436 C127.569899,120.461656 127.502783,120.771042 127.270564,120.92047 C127.038344,121.069899 126.728958,121.002783 126.57953,120.770564 C116.795444,105.565562 107.256256,98 98,98 C90.2366746,98 82.5086782,103.321252 74.8391709,114.010092 L74.4797056,114.515063 L71.187,119.589 L77.6253235,116.215223 C77.8427268,116.101266 78.1056571,116.163145 78.2514428,116.350079 L78.3003035,116.425941 C78.4142612,116.643345 78.3523816,116.906275 78.1654483,117.052061 L78.0895856,117.100921 L69.9599596,121.36228 C69.639294,121.530366 69.2624968,121.312729 69.230026,120.969229 L69.2288273,120.887844 L69.8086882,111.727399 C69.8261333,111.451808 70.0636858,111.24254 70.3392765,111.259985 C70.5842461,111.275491 70.7768129,111.46491 70.804329,111.700368 L70.8066908,111.790573 L70.346,119.046 L73.6518565,113.954456 C81.6190558,102.673088 89.7306873,97 98,97 Z" fill="#333333" fill-rule="nonzero"></path>
+            <path d="M294.162848,152.027171 L294.245131,152.064212 L302.245131,156.564212 C302.556638,156.739435 302.582597,157.165161 302.323007,157.382134 L302.245131,157.435788 L294.245131,161.935788 C294.004452,162.07117 293.699594,161.98581 293.564212,161.745131 C293.443873,161.531194 293.497947,161.266548 293.680485,161.115296 L293.754869,161.064212 L300.091,157.5 L0.5,157.5 C0.223857625,157.5 0,157.276142 0,157 C0,156.75454 0.176875161,156.550392 0.410124368,156.508056 L0.5,156.5 L300.091,156.5 L293.754869,152.935788 C293.540933,152.815448 293.449717,152.561202 293.527171,152.337152 L293.564212,152.254869 C293.684552,152.040933 293.938798,151.949717 294.162848,152.027171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="64.5" y1="149" x2="64.5" y2="165" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="128.5" y1="149" x2="128.5" y2="165" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="192.5" y1="149" x2="192.5" y2="165" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="256.5" y1="149" x2="256.5" y2="165" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <use stroke="#BABABA" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+            <use stroke="#BABABA" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-3"></use>
+        </g>
+        <text font-size="11" font-weight="normal" fill="#333333">
+            <tspan x="4" y="144">0</tspan>
+        </text>
+        <line x1="7.5" y1="149.5" x2="7.5" y2="165.5" stroke="#BABABA" stroke-linecap="square"></line>
+    </g>
+</svg>

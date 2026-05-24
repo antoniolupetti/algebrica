@@ -55,7 +55,7 @@
                 <tspan x="23.163" y="13" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
             </text>
             <line x1="158.5" y1="141" x2="158.5" y2="201" stroke="#636363" stroke-linecap="round"></line>
-            <polyline stroke="#333333" stroke-width="1" points="40 241 71 240 102 239 131 238 159 236 188 234 219 226 248 212 276 184 308 128"></polyline>
+            <polyline stroke="#333333" points="40 241 71 240 102 239 131 238 159 236 188 234 219 226 248 212 276 184 308 128"></polyline>
         </g>
     </g>
 </svg>
