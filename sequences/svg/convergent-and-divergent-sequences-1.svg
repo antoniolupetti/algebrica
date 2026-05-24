@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="279px" viewBox="0 0 331 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-29.000000, -120.000000)">
+            <g transform="translate(29.000000, 120.000000)">
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="3" y="53">1.0</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="0" y="92">0.8</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="1" y="131">0.6</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="0" y="168">0.4</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="0" y="206">0.2</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="0" y="245">0.0</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="114" y="269">5</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="202" y="269">10</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#BABABA">
+                    <tspan x="292" y="269">15</tspan>
+                </text>
+                <path d="M24.5,252 C24.2238576,252 24,251.776142 24,251.5 C24,251.25454 24.1768752,251.050392 24.4101244,251.008056 L24.5,251 L28,251 L28,28 L24.5,28 C24.2238576,28 24,27.7761424 24,27.5 C24,27.2545401 24.1768752,27.0503916 24.4101244,27.0080557 L24.5,27 L32.5,27 C32.7761424,27 33,27.2238576 33,27.5 C33,27.7454599 32.8231248,27.9496084 32.5898756,27.9919443 L32.5,28 L29,28 L29,251 L32.5,251 C32.7761424,251 33,251.223858 33,251.5 C33,251.74546 32.8231248,251.949608 32.5898756,251.991944 L32.5,252 L24.5,252 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M330.5,247 C330.74546,247 330.949608,247.176875 330.991944,247.410124 L331,247.5 L331,255.5 C331,255.776142 330.776142,256 330.5,256 C330.25454,256 330.050392,255.823125 330.008056,255.589876 L330,255.5 L330,252 L28,252 C27.7238576,252 27.5,251.776142 27.5,251.5 C27.5,251.25454 27.6768752,251.050392 27.9101244,251.008056 L28,251 L330,251 L330,247.5 C330,247.223858 330.223858,247 330.5,247 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <circle fill="#333333" cx="45" cy="49" r="3"></circle>
+                <circle fill="#333333" cx="64" cy="146" r="3"></circle>
+                <circle fill="#333333" cx="82" cy="178" r="3"></circle>
+                <circle fill="#333333" cx="99" cy="193" r="3"></circle>
+                <circle fill="#333333" cx="119" cy="203" r="3"></circle>
+                <circle fill="#333333" cx="136" cy="209" r="3"></circle>
+                <circle fill="#333333" cx="155" cy="214" r="3"></circle>
+                <circle fill="#333333" cx="173" cy="217" r="3"></circle>
+                <circle fill="#333333" cx="191" cy="220" r="3"></circle>
+                <circle fill="#333333" cx="210" cy="222" r="3"></circle>
+                <circle fill="#333333" cx="228" cy="224" r="3"></circle>
+                <circle fill="#333333" cx="246" cy="225" r="3"></circle>
+                <circle fill="#333333" cx="264" cy="226" r="3"></circle>
+                <circle fill="#333333" cx="283" cy="227" r="3"></circle>
+                <circle fill="#333333" cx="301" cy="228" r="3"></circle>
+                <polyline stroke="#333333" points="45 49 64 146 82 178 99 193 119 203 136 209 155 214 173 217 191 220 210 222 228 224 246 225 264 226 283 227 301 228"></polyline>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="91" y="99.5">The values decrease rapidly at first </tspan>
+                    <tspan x="91" y="112.5">and then flatten out toward zero.</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#636363">
+                    <tspan x="29" y="269">n (index)</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#636363">
+                    <tspan x="20" y="13">a</tspan>
+                    <tspan x="27.163" y="13" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
+                </text>
+                <line x1="121.5" y1="125" x2="121.5" y2="185" stroke="#BABABA" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

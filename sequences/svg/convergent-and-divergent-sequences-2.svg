@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="332px" height="324px" viewBox="0 0 332 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 0.500000)">
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="3" y="265.5">-1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="97.5">+1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="8" y="181.5">0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="154" y="314">5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="277" y="314">10</tspan>
+            </text>
+            <line x1="29.5" y1="178" x2="331.5" y2="178" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="400"></line>
+            <line x1="46.5" y1="96.5" x2="46.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="207.5" y1="179" x2="207.5" y2="259" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="253.5" y1="178.5" x2="253.5" y2="258.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="299.5" y1="179" x2="299.5" y2="259" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="92.5" y1="96.5" x2="92.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="184.5" y1="96.5" x2="184.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="231.5" y1="96.5" x2="231.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="277.5" y1="96.5" x2="277.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="69.5" y1="178.5" x2="69.5" y2="258.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="115.5" y1="178.5" x2="115.5" y2="258.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="161.5" y1="178.5" x2="161.5" y2="258.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="138.5" y1="96.5" x2="138.5" y2="176.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M25.5,296.5 C25.2238576,296.5 25,296.276142 25,296 C25,295.75454 25.1768752,295.550392 25.4101244,295.508056 L25.5,295.5 L29,295.5 L29,72.5 L25.5,72.5 C25.2238576,72.5 25,72.2761424 25,72 C25,71.7545401 25.1768752,71.5503916 25.4101244,71.5080557 L25.5,71.5 L33.5,71.5 C33.7761424,71.5 34,71.7238576 34,72 C34,72.2454599 33.8231248,72.4496084 33.5898756,72.4919443 L33.5,72.5 L30,72.5 L30,295.5 L33.5,295.5 C33.7761424,295.5 34,295.723858 34,296 C34,296.24546 33.8231248,296.449608 33.5898756,296.491944 L33.5,296.5 L25.5,296.5 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M332,300.5 L331,300.5 L331,296.5 L28.5,296.5 L28.5,295.5 L331,295.5 L331,291.5 L332,291.5 L332,300.5 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="46.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="92.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="138.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="184.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="231.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="69" cy="261.5" r="3"></circle>
+            <circle fill="#333333" cx="115.2" cy="261.5" r="3"></circle>
+            <circle fill="#333333" cx="161.4" cy="261.5" r="3"></circle>
+            <circle fill="#333333" cx="253.8" cy="261.5" r="3"></circle>
+            <circle fill="#333333" cx="207.6" cy="261.5" r="3"></circle>
+            <circle fill="#333333" cx="277.5" cy="93.5" r="3"></circle>
+            <circle fill="#333333" cx="300" cy="261.5" r="3"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="44" y="11">The consistent up-and-down pattern illustrates the </tspan>
+                <tspan x="44" y="24">oscillating nature of the sequence. It never settles </tspan>
+                <tspan x="44" y="37">toward a single value, and thus, it does not converge. </tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="30" y="313">n (index)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="21" y="57.5">a</tspan>
+                <tspan x="28.163" y="57.5" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
+            </text>
+            <line x1="138.5" y1="43" x2="138.5" y2="79.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

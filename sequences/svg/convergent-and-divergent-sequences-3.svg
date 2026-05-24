@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="327px" height="281px" viewBox="0 0 327 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="24.5" y1="241.5" x2="326.5" y2="241.5" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="53">1.0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="92">0.8</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="131">0.6</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="168">0.4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="206">0.2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="245">0.0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="110" y="271">5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="198" y="271">10</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="288" y="271">15</tspan>
+            </text>
+            <path d="M20,252 L20,251 L24,251 L24,28 L20,28 L20,27 L29,27 L29,28 L25,28 L25,251 L29,251 L29,252 L20,252 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M327,256 L326,256 L326,252 L23.5,252 L23.5,251 L326,251 L326,247 L327,247 L327,256 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="40" cy="241" r="3"></circle>
+            <circle fill="#333333" cx="71" cy="240" r="3"></circle>
+            <circle fill="#333333" cx="102" cy="239" r="3"></circle>
+            <circle fill="#333333" cx="131" cy="238" r="3"></circle>
+            <circle fill="#333333" cx="159" cy="236" r="3"></circle>
+            <circle fill="#333333" cx="188" cy="234" r="3"></circle>
+            <circle fill="#333333" cx="219" cy="226" r="3"></circle>
+            <circle fill="#333333" cx="248" cy="212" r="3"></circle>
+            <circle fill="#333333" cx="276" cy="184" r="3"></circle>
+            <circle fill="#333333" cx="308" cy="128" r="3"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="87" y="99.5">As n increases, each term doubles the </tspan>
+                <tspan x="87" y="112.5">previous one leading to a rapid </tspan>
+                <tspan x="87" y="125.5">escalation in magnitude.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="25" y="271">n (index)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="16" y="13">a</tspan>
+                <tspan x="23.163" y="13" font-family=".SFNS-Regular, .SF NS">ₙ</tspan>
+            </text>
+            <line x1="158.5" y1="141" x2="158.5" y2="201" stroke="#636363" stroke-linecap="round"></line>
+            <polyline stroke="#333333" stroke-width="1" points="40 241 71 240 102 239 131 238 159 236 188 234 219 226 248 212 276 184 308 128"></polyline>
+        </g>
+    </g>
+</svg>
