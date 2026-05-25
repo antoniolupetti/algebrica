@@ -94,7 +94,7 @@ $$\varphi(a + b) = \varphi(a) \oplus \varphi(b)$$
 
 $$\varphi(a \cdot b) = \varphi(a) \odot \varphi(b)$$
 
-The first condition requires that $\varphi$ be a [group homomorphism](../groups/) between the additive groups, and the second that it preserve multiplication. As a consequence, $\varphi$ maps the additive identity of $R$ to the additive identity of $S$. When both rings are unital, one often additionally requires that $\varphi(1_R) = 1_S$. The kernel and image of a ring homomorphism $\varphi : R \to S$ are defined as in the case of groups:
+The first condition requires that $\varphi$ be a [group homomorphism](../groups/) between the additive groups, and the second that it preserve multiplication. As a consequence, $\varphi$ maps the additive identity of $R$ to the additive identity of $S$. When both rings are unital, one often additionally requires that $\varphi(1_R) = 1_S$. The [kernel](../homomorphisms-and-isomorphisms/) and image of a ring homomorphism $\varphi : R \to S$ are defined as in the case of groups:
 
 $$\ker(\varphi) = \\{\ a \in R : \varphi(a) = 0_S \ \\}$$
 

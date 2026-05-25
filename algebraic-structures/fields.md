@@ -106,7 +106,7 @@ $$\varphi(a + b) = \varphi(a) + \varphi(b)$$
 
 $$\varphi(a \cdot b) = \varphi(a) \cdot \varphi(b)$$
 
-The identity $\varphi(1_F) = 1_K$ holds as well. Every field homomorphism is necessarily injective. To see this, the kernel:
+The identity $\varphi(1_F) = 1_K$ holds as well. Every field homomorphism is necessarily injective. To see this, the [kernel](../homomorphisms-and-isomorphisms/):
 
 $$\ker(\varphi) = \\{\ a \in F : \varphi(a) = 0 \ \\}$$
 

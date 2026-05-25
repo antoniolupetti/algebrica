@@ -17,7 +17,7 @@ tags:
 ---
 ## Definition
 
-A vector space is an algebraic structure that formalises the idea of quantities that can be scaled and [combined linearly](../linear-combinations/). The concept arises wherever one encounters objects that can be added together and multiplied by numbers in a coherent way: geometric arrows in the plane, [polynomials](../polynomials/) with real coefficients, sequences of [real numbers](../properties-of-real-numbers/), and [continuous functions](../continuous-functions/) on an interval all share this common pattern.
+A vector space is an algebraic structure that formalises the idea of quantities that can be scaled and [combined linearly](../linear-combinations/). The concept arises wherever one encounters objects that can be added together and multiplied by numbers in a coherent way: geometric arrows in the plane, [polynomials](../polynomials/) with real coefficients, sequences of [real numbers](../real-numbers/), and [continuous functions](../continuous-functions/) on an interval all share this common pattern.
 
 Unlike a [group](../groups/) or a [ring](../rings/), which are defined on a single set, a vector space involves two distinct sets: a [field](../fields/) $F$, whose elements are called scalars, and a set $V$, whose elements are called [vectors](../vectors/). A vector space over $F$ is a set $V$ together with two operations, vector addition $+ : V \times V \to V$ and scalar multiplication $\cdot : F \times V \to V$, satisfying the following axioms:
 
@@ -73,6 +73,8 @@ A nonempty subset $W \subseteq V$ is called a subspace of $V$ when $W$ is itself
 
 As an example, the set $W = \\{\ (x, y) \in \mathbb{R}^2 : y = 2x \ \\}$ is a subspace of $\mathbb{R}^2$. For any two vectors $(x_1, 2x_1)$ and $(x_2, 2x_2)$ in $W$, their sum $(x_1 + x_2, 2x_1 + 2x_2) = (x_1 + x_2, 2(x_1 + x_2))$ belongs to $W$, and for any scalar $\alpha \in \mathbb{R}$ the vector $\alpha(x_1, 2x_1) = (\alpha x_1, 2\alpha x_1)$ also belongs to $W$. Both conditions are satisfied, so $W$ is a subspace of $\mathbb{R}^2$. Geometrically, $W$ is the line through the origin with slope $2$.
 
+![IMG. 1](svg/vector-spaces-1.svg)
+
 > Any vector in $W$ lies on the line through the origin with slope $2$. Adding two such vectors or multiplying one by a scalar always produces a vector that remains on the same line, confirming that $W$ is closed under both operations.
 
 ## Basis and dimension
@@ -111,7 +113,7 @@ $$\varphi(\alpha \cdot \mathbf{v}) = \alpha \cdot \varphi(\mathbf{v})$$
 
 These two conditions can be combined into the single requirement that $\varphi(\alpha \mathbf{u} + \beta \mathbf{v}) = \alpha\varphi(\mathbf{u}) + \beta\varphi(\mathbf{v})$ for all $\alpha, \beta \in F$ and $\mathbf{u}, \mathbf{v} \in V$. A linear map that is bijective is called a linear isomorphism, and two vector spaces are isomorphic when a linear isomorphism between them exists. A fundamental result states that every $n$-dimensional vector space over $F$ is isomorphic to $F^n$, so finite-dimensional vector spaces are completely classified by their dimension and their scalar field.
 
-The kernel and image of a linear map $\varphi : V \to W$ are defined as follows:
+The [kernel](../homomorphisms-and-isomorphisms/) and image of a linear map $\varphi : V \to W$ are defined as follows:
 
 $$\ker(\varphi) = \\{\ \mathbf{v} \in V : \varphi(\mathbf{v}) = \mathbf{0} \ \\}$$
 
@@ -145,4 +147,4 @@ $$\dim \mathbb{R}^3 = \dim \ker(\varphi) + \dim \operatorname{im}(\varphi) = 1 +
 
 The kernel of $\varphi$ is therefore the line through the origin in direction $(-1, 1, -1)$, while $\operatorname{im}(\varphi) = \mathbb{R}^2$.
 
-> The notions of subspace, basis, dimension, and linear map all carry over, with minor adjustments, to the broader setting of [modules](../modules/) over a ring, where the absence of multiplicative inverses for scalars introduces phenomena that have no counterpart in linear algebra over a field.
+> The notions of subspace, basis, dimension, and linear map all carry over, with minor adjustments, to the broader setting of [modules](../modules/) over a ring, where the absence of multiplicative inverses for scalars introduces phenomena that have no counterpart in linear algebra over a field. The unifying perspective on structure-preserving maps across algebraic structures is collected on the page about [homomorphisms and isomorphisms](../homomorphisms-and-isomorphisms/).

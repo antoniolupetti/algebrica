@@ -15,9 +15,11 @@ tags:
 ---
 ## The general idea
 
-A homomorphism is a [function](../functions/) between two algebraic structures of the same type that preserves the operations defining that type. The notion appears under different names and with slightly different requirements when one moves from groups to rings, from rings to modules, or from modules to vector spaces, yet the underlying principle is uniform: a structure-preserving map between objects of the same kind.
+A homomorphism is a [function](../functions/) between two algebraic structures of the same type that preserves the operations defining that type. The notion appears under different names and with slightly different requirements when one moves from groups to rings, from rings to modules, or from [modules](../modules/) to [vector spaces](../vector-spaces), yet the underlying principle is uniform: a structure-preserving map between objects of the same kind.
 
-The algebraic structures introduced in this section all share a common shape. Each one consists of a set together with one or more binary operations, such as addition, multiplication, or scalar action, and possibly a few distinguished elements such as an identity or a zero. A homomorphism from one such structure to another is a function between the underlying sets that commutes with every operation and respects every distinguished element. The specific axioms attached to a particular family enter the definition only by determining the list of operations that must be preserved.
+The algebraic structures introduced in this section all share a common shape. Each one consists of a set together with one or more binary operations, such as addition, multiplication, or scalar action, and possibly a few distinguished elements such as an identity or a zero. 
+
+A homomorphism from one such structure to another is a function between the underlying [sets](../sets/) that commutes with every operation and respects every distinguished element. The specific axioms attached to a particular family enter the definition only by determining the list of operations that must be preserved.
 
 > A more refined perspective treats homomorphisms as the morphisms of a category whose objects are the algebraic structures themselves. The categorical viewpoint clarifies which constructions, such as kernel, image, and quotient, belong to a single conceptual framework rather than being reformulated separately for each family of structures.
 
@@ -59,7 +61,7 @@ The image of $\varphi$ is defined uniformly for every family of structures:
 
 $$\operatorname{im}(\varphi) = \\{\ \varphi(a) : a \in A \ \\}$$
 
-Both subsets carry intrinsic algebraic meaning. The kernel is always a substructure of $A$ of a specific kind: a normal subgroup when $A$ is a group, an ideal when $A$ is a ring, a submodule when $A$ is a module. The image is always a substructure of $B$ of the same type as $B$ itself. In every case the homomorphism $\varphi$ is injective if and only if its kernel is the trivial substructure, namely the subgroup containing only the identity, the zero ideal, or the zero submodule respectively.
+Both subsets carry intrinsic algebraic meaning. The kernel is always a substructure of $A$ of a specific kind: a normal subgroup when $A$ is a [group](../groups/), an ideal when $A$ is a [ring](../rings/), a submodule when $A$ is a [module](../modules/). The image is always a substructure of $B$ of the same type as $B$ itself. In every case the homomorphism $\varphi$ is injective if and only if its kernel is the trivial substructure, namely the subgroup containing only the identity, the zero ideal, or the zero submodule, respectively.
 
 > The kernel measures the failure of $\varphi$ to be injective. Two elements $a, a' \in A$ have the same image under $\varphi$ if and only if their difference (in the additive case) or their quotient (in the multiplicative case) belongs to $\ker(\varphi)$. The kernel is therefore exactly the information that $\varphi$ discards.
 
@@ -81,7 +83,9 @@ When an isomorphism $\varphi : A \to B$ exists, the structures $A$ and $B$ are s
 
 The composition of two homomorphisms is again a homomorphism. Given $\varphi : A \to B$ and $\psi : B \to C$ of the same type, the composite $\psi \circ \varphi : A \to C$ preserves all the operations involved, because each is preserved separately by $\varphi$ and by $\psi$. The composition of two isomorphisms is an isomorphism, and the inverse of an isomorphism is itself an isomorphism. The relation of being isomorphic is therefore reflexive, symmetric, and transitive, and it partitions any class of structures into isomorphism classes.
 
-For a fixed structure $A$, the collection $\operatorname{End}(A)$ of all endomorphisms of $A$ is closed under composition and contains the identity map $\operatorname{id}_A$. It forms a monoid, that is, an associative structure with an identity element but without inverses in general. Restricting attention to endomorphisms that are bijective yields the set $\operatorname{Aut}(A)$ of automorphisms of $A$, which is closed under composition and under inversion. The structure $(\operatorname{Aut}(A), \circ)$ is a [group](../groups/), called the automorphism group of $A$.
+For a fixed structure $A$, the collection $\operatorname{End}(A)$ of all endomorphisms of $A$ is closed under composition and contains the identity map $\operatorname{id}_A$. It forms a monoid, that is, an associative structure with an identity element but without inverses in general. 
+
+Restricting attention to endomorphisms that are bijective yields the set $\operatorname{Aut}(A)$ of automorphisms of $A$, which is closed under composition and under inversion. The structure $(\operatorname{Aut}(A), \circ)$ is a [group](../groups/), called the automorphism group of $A$.
 
 As a concrete example, consider the additive group $(\mathbb{Z}, +)$. An endomorphism $\varphi : \mathbb{Z} \to \mathbb{Z}$ is determined by the value $\varphi(1)$. For every positive integer $n$ one has:
 
@@ -95,7 +99,7 @@ A theorem of central importance recurs in every family of structures considered 
 
 $$A / \ker(\varphi) \cong \operatorname{im}(\varphi)$$
 
-The meaning of the quotient depends on the family of structures involved. For groups, $A / \ker(\varphi)$ denotes the quotient group by a normal subgroup. For rings, it denotes the quotient ring by an ideal. For modules, it denotes the quotient module by a submodule. In each case the construction is available precisely because the kernel is the kind of substructure that admits a quotient, and the resulting bijection is induced by the assignment $a \cdot \ker(\varphi) \mapsto \varphi(a)$. This map is well-defined because two elements of the same coset have the same image under $\varphi$.
+The meaning of the quotient depends on the family of structures involved. For [groups](../groups/), $A / \ker(\varphi)$ denotes the quotient group by a normal subgroup. For [rings](../rings/), it denotes the quotient ring by an ideal. For [modules](../modules/), it denotes the quotient module by a submodule. In each case the construction is available precisely because the kernel is the kind of substructure that admits a quotient, and the resulting bijection is induced by the assignment $a \cdot \ker(\varphi) \mapsto \varphi(a)$. This map is well-defined because two elements of the same coset have the same image under $\varphi$.
 
 > The first isomorphism theorem reduces the classification of certain quotient structures to the construction of suitable homomorphisms. To show that a given quotient is isomorphic to a particular target, it is often enough to produce a surjective homomorphism whose kernel coincides with the required substructure.
 

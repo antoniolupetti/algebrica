@@ -99,7 +99,7 @@ $$\varphi(\mathbf{u} + \mathbf{v}) = \varphi(\mathbf{u}) + \varphi(\mathbf{v})$$
 
 $$\varphi(r \cdot \mathbf{v}) = r \cdot \varphi(\mathbf{v})$$
 
-These two conditions can be combined into the single requirement that $\varphi(r\mathbf{u} + s\mathbf{v}) = r \varphi(\mathbf{u}) + s \varphi(\mathbf{v})$ for all $r, s \in R$ and $\mathbf{u}, \mathbf{v} \in M$. The kernel and image of a module homomorphism are defined as follows:
+These two conditions can be combined into the single requirement that $\varphi(r\mathbf{u} + s\mathbf{v}) = r \varphi(\mathbf{u}) + s \varphi(\mathbf{v})$ for all $r, s \in R$ and $\mathbf{u}, \mathbf{v} \in M$. The [kernel](../homomorphisms-and-isomorphisms/) and image of a module homomorphism are defined as follows:
 
 $$\ker(\varphi) = \\{\ \mathbf{v} \in M : \varphi(\mathbf{v}) = \mathbf{0} \ \\}$$
 
