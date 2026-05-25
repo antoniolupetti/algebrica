@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="353px" height="233px" viewBox="0 0 353 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <rect fill="#E6E6E6" x="41" y="132" width="278" height="15" rx="7.5"></rect>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="245" y="207">min</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="125" y="53">Max</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="205" y="21">A continuous function on a </tspan>
+                <tspan x="205" y="34">closed and bounded </tspan>
+                <tspan x="205" y="47">interval attains both a </tspan>
+                <tspan x="205" y="60">maximum and a minimum.</tspan>
+            </text>
+            <line x1="255.5" y1="68.5" x2="255.5" y2="136.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M174.5,5.98013557 L174.935788,6.75486938 L179.435788,14.7548694 L179.680918,15.1906571 L178.809343,15.6809184 L178.564212,15.2451306 L175,8.908 L175,233 L174,233 L174,8.908 L170.435788,15.2451306 L170.190657,15.6809184 L169.319082,15.1906571 L169.564212,14.7548694 L174.064212,6.75486938 L174.5,5.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M342.662848,134.527171 L342.745131,134.564212 L350.745131,139.064212 C351.056638,139.239435 351.082597,139.665161 350.823007,139.882134 L350.745131,139.935788 L342.745131,144.435788 C342.504452,144.57117 342.199594,144.48581 342.064212,144.245131 C341.943873,144.031194 341.997947,143.766548 342.180485,143.615296 L342.254869,143.564212 L348.591,140 L0,140 C-0.276142375,140 -0.5,139.776142 -0.5,139.5 C-0.5,139.25454 -0.323124839,139.050392 -0.0898756324,139.008056 L0,139 L348.591,139 L342.254869,135.435788 C342.040933,135.315448 341.949717,135.061202 342.027171,134.837152 L342.064212,134.754869 C342.184552,134.540933 342.438798,134.449717 342.662848,134.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="41.5" y1="183.5" x2="41.5" y2="138.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="319.5" y1="139.5" x2="319.5" y2="101.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M20,232 C45.7079192,173.786406 63.0453165,136.677166 72.0121919,120.672281 M86.9257804,97.3269287 C104.347269,75.1089762 121.372009,64 138,64 C194,64 199,172 245,185 C275.666667,193.666667 300.333333,166 319,102" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="154" y="15">y</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="343" y="160">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="69" y="113">f(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="37" y="131">a</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="317" y="160">b</tspan>
+            </text>
+            <circle fill="#333333" cx="138" cy="64" r="3"></circle>
+            <circle fill="#333333" cx="256" cy="187" r="3"></circle>
+        </g>
+    </g>
+</svg>
