@@ -18,8 +18,12 @@ $$a_{n}x^{n}+a_{n-1}x^{n-1}+\dotsb +a_{1}x+a_{0}$$
 
 $n$ is a non-negative integer and $a_0, a_1, \ldots, a_n \in \mathbb{R}$ are referred to as the coefficients, with $a_n \neq 0$. Each term $a_k x^k$ is known as a monomial of degree $k$. Polynomials are typically denoted by $P(x)$ or $p(x)$. The [set](../sets/) of all polynomials in $x$ with real coefficients is denoted by $\mathbb{R}[x]$. This set forms a [ring](../rings/) under two standard operations. For two polynomials:
 
-$$P(x) = \sum_{k=0}^{n} a_k x^k$$
-$$Q(x) = \sum_{k=0}^{m} b_k x^k$$
+$$
+\begin{align}
+P(x) &= \sum_{k=0}^{n} a_k x^k \\[6pt]
+Q(x) &= \sum_{k=0}^{m} b_k x^k
+\end{align}
+$$
 
 their sum is defined by adding the coefficients of corresponding degrees:
 
@@ -199,6 +203,15 @@ $$
 
 > The leading terms of degree $n=2$ cancel exactly, reducing the result to a polynomial of degree $n-1=1$. This confirms that the degree of a sum or difference can be strictly less than the degree of the summands.
 
+## How to multiply two polynomials
+
+The [product of two polynomials](../multiplying-polynomials/) is obtained by repeated application of the distributive property: every term of one polynomial is multiplied by every term of the other, and the resulting monomials are collected by degree. Given $P(x) = \sum_i a_i x^i$ and $Q(x) = \sum_j b_j x^j$, the product is:
+
+$$
+(P \cdot Q)(x) = \sum_{k=0}^{n+m} \left( \sum_{i=0}^{k} a_i b_{k-i} \right) x^k
+$$
+
+The degree of the product satisfies $\deg(P \cdot Q) = \deg P + \deg Q$ whenever neither factor is the zero polynomial. Together with addition, multiplication endows the set $\mathbb{R}[x]$ with the structure of a commutative ring with unity and, since $\mathbb{R}$ is an integral domain, with no zero divisors. The dedicated page collects worked examples, the multivariate extension, and the connection with [notable products](../notable-products/) and the [FOIL method](../binomials/) for the special case of two [binomials](../binomials/).
 
 ## How to divide two polynomials
 
