@@ -83,21 +83,21 @@ When an isomorphism $\varphi : A \to B$ exists, the structures $A$ and $B$ are s
 
 The composition of two homomorphisms is again a homomorphism. Given $\varphi : A \to B$ and $\psi : B \to C$ of the same type, the composite $\psi \circ \varphi : A \to C$ preserves all the operations involved, because each is preserved separately by $\varphi$ and by $\psi$. The composition of two isomorphisms is an isomorphism, and the inverse of an isomorphism is itself an isomorphism. The relation of being isomorphic is therefore reflexive, symmetric, and transitive, and it partitions any class of structures into isomorphism classes.
 
-For a fixed structure $A$, the collection $\operatorname{End}(A)$ of all endomorphisms of $A$ is closed under composition and contains the identity map $\operatorname{id}_A$. It forms a monoid, that is, an associative structure with an identity element but without inverses in general. 
+For a fixed structure $A$, the collection $\mathrm{End}(A)$ of all endomorphisms of $A$ is closed under composition and contains the identity map $\mathrm{id}_A$. It forms a monoid, that is, an associative structure with an identity element but without inverses in general. 
 
-Restricting attention to endomorphisms that are bijective yields the set $\operatorname{Aut}(A)$ of automorphisms of $A$, which is closed under composition and under inversion. The structure $(\operatorname{Aut}(A), \circ)$ is a [group](../groups/), called the automorphism group of $A$.
+Restricting attention to endomorphisms that are bijective yields the set $\mathrm{Aut}(A)$ of automorphisms of $A$, which is closed under composition and under inversion. The structure $(\mathrm{Aut}(A), \circ)$ is a [group](../groups/), called the automorphism group of $A$.
 
 As a concrete example, consider the additive group $(\mathbb{Z}, +)$. An endomorphism $\varphi : \mathbb{Z} \to \mathbb{Z}$ is determined by the value $\varphi(1)$. For every positive integer $n$ one has:
 
 $$\varphi(n) = \varphi(\underbrace{1 + 1 + \cdots + 1}_{n \text{ summands}}) = n\varphi(1)$$
 
-The same identity extends by additivity to negative integers and to zero, giving $\varphi(n) = n\varphi(1)$ for every $n \in \mathbb{Z}$. The endomorphism $\varphi$ is bijective when $\varphi(1)$ is a generator of $\mathbb{Z}$, that is, when $\varphi(1) = 1$ or $\varphi(1) = -1$. The automorphism group $\operatorname{Aut}(\mathbb{Z})$ therefore consists of exactly two elements, the identity and the map $n \mapsto -n$, and is isomorphic to $\mathbb{Z}/2\mathbb{Z}$.
+The same identity extends by additivity to negative integers and to zero, giving $\varphi(n) = n\varphi(1)$ for every $n \in \mathbb{Z}$. The endomorphism $\varphi$ is bijective when $\varphi(1)$ is a generator of $\mathbb{Z}$, that is, when $\varphi(1) = 1$ or $\varphi(1) = -1$. The automorphism group $\mathrm{Aut}(\mathbb{Z})$ therefore consists of exactly two elements, the identity and the map $n \mapsto -n$, and is isomorphic to $\mathbb{Z}/2\mathbb{Z}$.
 
 ## The first isomorphism theorem
 
 A theorem of central importance recurs in every family of structures considered here, with a statement that takes the same shape in each case. Given a homomorphism $\varphi : A \to B$, the quotient of $A$ by the kernel of $\varphi$ is isomorphic to the image of $\varphi$:
 
-$$A / \ker(\varphi) \cong \operatorname{im}(\varphi)$$
+$$A / \ker(\varphi) \cong \mathrm{im}(\varphi)$$
 
 The meaning of the quotient depends on the family of structures involved. For [groups](../groups/), $A / \ker(\varphi)$ denotes the quotient group by a normal subgroup. For [rings](../rings/), it denotes the quotient ring by an ideal. For [modules](../modules/), it denotes the quotient module by a submodule. In each case the construction is available precisely because the kernel is the kind of substructure that admits a quotient, and the resulting bijection is induced by the assignment $a \cdot \ker(\varphi) \mapsto \varphi(a)$. This map is well-defined because two elements of the same coset have the same image under $\varphi$.
 
