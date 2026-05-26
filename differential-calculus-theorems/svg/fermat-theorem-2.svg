@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="222px" viewBox="0 0 313 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="138.5" y1="78.5" x2="138.5" y2="105.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0.869" y="45">The point x = 0 is a stationary </tspan>
+                <tspan x="0" y="58">point, but it is not a maximum </tspan>
+                <tspan x="88.583" y="71">or minimum.</tspan>
+            </text>
+            <path d="M161.5,5.98013557 L161.935788,6.75486938 L166.435788,14.7548694 L166.680918,15.1906571 L165.809343,15.6809184 L165.564212,15.2451306 L162,8.908 L162,222 L161,222 L161,8.908 L157.435788,15.2451306 L157.190657,15.6809184 L156.319082,15.1906571 L156.564212,14.7548694 L161.064212,6.75486938 L161.5,5.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="142" y="14">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="304" y="134">x</tspan>
+            </text>
+            <path d="M302.809343,108.319082 L303.245131,108.564212 L311.245131,113.064212 L312.019864,113.5 L311.245131,113.935788 L303.245131,118.435788 L302.809343,118.680918 L302.319082,117.809343 L302.754869,117.564212 L309.091,114 L8,114 L8,113 L309.091,113 L302.754869,109.435788 L302.319082,109.190657 L302.809343,108.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M104,221 C113.333333,149.666667 132.333333,114 161,114 C184.756874,114 201.416914,89.5044777 210.98012,40.5134332 M214.010939,21.7864904 C214.42107,18.8883882 215.08409,13.9595581 216,7" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="116.5" y1="113.5" x2="200.5" y2="113.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="93" y1="113.5" x2="227" y2="113.5" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="93" y1="113.5" x2="227" y2="113.5" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="161.5" cy="113.5" r="3"></circle>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="198.5" y="35">y = x³</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

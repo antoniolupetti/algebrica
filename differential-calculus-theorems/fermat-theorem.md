@@ -28,6 +28,8 @@ $$
 
 The following graph illustrates theorem. At a local maximum point $\mu$ within the interval $I$, the derivative of the function is equal to zero.
 
+![IMG. 1](svg/fermat-theorem-1.svg)
+
 > In certain cases, the derivative of a function becomes zero at a point that is neither a maximum nor a minimum. Such points are referred to as stationary points without an extremum, including stationary [inflection points](../maximum-minimum-and-inflection-points/), where the derivative is zero but the function maintains its direction.
 
 ## Proof
@@ -96,11 +98,16 @@ To determine the nature of these points, we examine how the derivative behaves a
 + for $x = 0$, the function transitions from increasing to decreasing, indicating a local maximum;
 + for $x = 2$, the function transitions from decreasing to increasing, indicating a local minimum.
 
+[class="table-sign"]
 
-|         |              | $x = 0$         |              | $x = 2$         |              |
-|:-------:|:------------:|:---------------:|:------------:|:---------------:|:------------:|
-| $f'(x)$ | $+$          | $0$             | $-$          | $0$             | $+$          |
-| $f(x)$  | $\nearrow$   | local max       | $\searrow$   | local min       | $\nearrow$   |
+The sign chart below summarizes the behavior of the derivative and the corresponding monotonicity of the function.
+
+|         |                         |           $0$           |           $2$           |
+| :-----: | :---------------------: | :---------------------: | :---------------------: |
+| $f'(x)$ |    $\boldsymbol{+}$     |    $\boldsymbol{-}$     |    $\boldsymbol{+}$     |
+| $f(x)$  | $\boldsymbol{\nearrow}$ | $\boldsymbol{\searrow}$ | $\boldsymbol{\nearrow}$ |
+
+[/class]
 
 Evaluating the function confirms this classification: $f(0) = 2$ is a local maximum, and $f(2)= -2$ is a local minimum.
 
@@ -109,6 +116,8 @@ Evaluating the function confirms this classification: $f(0) = 2$ is a local maxi
 ## Not all stationary points are extrema
 
 The function $f(x) = x^3$ provides a clear example showing that a zero derivative does not necessarily imply the presence of a local extremum.
+
+![IMG. 2](svg/fermat-theorem-2.svg)
 
 The derivative is:
 
@@ -146,7 +155,7 @@ The function $f(x) = x^3$ illustrates the odd case with $k = 3$: at $x = 0$ we h
 
 ## Stationary points and boundary behavior
 
-The presence of a stationary point—namely, a point at which the derivative vanishes—does not by itself determine whether the function achieves a local maximum or minimum there. The classification of such points requires a more refined analysis of the function in a neighborhood of the candidate point, as well as an understanding of the structure of the domain. Consider, for instance, the [absolute value function](https://algebrica.org/absolute-value-function/)  
+The presence of a stationary point—namely, a point at which the derivative vanishes—does not by itself determine whether the function achieves a local maximum or minimum there. The classification of such points requires a more refined analysis of the function in a neighborhood of the candidate point, as well as an understanding of the structure of the domain. Consider, for instance, the [absolute value function](../absolute-value-function/)  
 
 $$
 y = f(x) = |x| =
@@ -159,7 +168,9 @@ $$
 
 which attains a global minimum at $x = 0$ even though the derivative does not exist at that point.
 
+![IMG. 3](svg/fermat-theorem-3.svg)
+
 
 This example illustrates that extrema may occur not only where the derivative is zero, but also where differentiability fails or at boundary points of the domain. When dealing with closed intervals, a function may reach its extrema at the endpoints regardless of the behavior of the derivative in the interior. 
 
-Conversely, on open intervals or unbounded [domains](../determining-the-domain-of-a-function/), extrema may be absent even if stationary points exist. A complete understanding of maxima and minima therefore requires the combined use of Fermat's condition, the study of differentiability, and the careful analysis of the domain on which the function is defined.
+Conversely, on open intervals or unbounded [domains](../determining-the-domain-of-a-function/), extrema may be absent even if stationary points exist. A complete understanding of [maxima and minima](../maximum-minimum-and-inflection-points/) therefore requires the combined use of Fermat's condition, the study of differentiability, and the careful analysis of the domain on which the function is defined.
