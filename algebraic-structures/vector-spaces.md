@@ -119,11 +119,11 @@ $$\ker(\varphi) = \\{\ \mathbf{v} \in V : \varphi(\mathbf{v}) = \mathbf{0} \ \\}
 
 $$\mathrm{im}(\varphi) = \\{\ \varphi(\mathbf{v}) : \mathbf{v} \in V \ \\}$$
 
-Both $\ker(\varphi)$ and $\operatorname{im}(\varphi)$ are subspaces of $V$ and $W$ respectively. The dimension theorem, also known as the rank-nullity theorem, states that for any linear map between finite-dimensional spaces the following identity holds:
+Both $\ker(\varphi)$ and $\mathrm{im}(\varphi)$ are subspaces of $V$ and $W$ respectively. The dimension theorem, also known as the rank-nullity theorem, states that for any linear map between finite-dimensional spaces the following identity holds:
 
 $$\dim V = \dim \ker(\varphi) + \dim \mathrm{im}(\varphi)$$
 
-The dimension of $\operatorname{im}(\varphi)$ is called the rank of $\varphi$ and the dimension of $\ker(\varphi)$ is called its nullity. The rank-nullity theorem is one of the central results of linear algebra and underlies the theory of [systems of linear equations](../systems-of-linear-equations/), the analysis of [matrices](../matrices/), and the classification of linear maps between finite-dimensional spaces.
+The dimension of $\mathrm{im}(\varphi)$ is called the rank of $\varphi$ and the dimension of $\ker(\varphi)$ is called its nullity. The rank-nullity theorem is one of the central results of linear algebra and underlies the theory of [systems of linear equations](../systems-of-linear-equations/), the analysis of [matrices](../matrices/), and the classification of linear maps between finite-dimensional spaces.
 
 ## Example
 
@@ -145,6 +145,6 @@ for some $y \in \mathbb{R}$, so the kernel is the one-dimensional subspace spann
 
 $$\dim \mathbb{R}^3 = \dim \ker(\varphi) + \dim \mathrm{im}(\varphi) = 1 + 2 = 3$$
 
-The kernel of $\varphi$ is therefore the line through the origin in direction $(-1, 1, -1)$, while $\operatorname{im}(\varphi) = \mathbb{R}^2$.
+The kernel of $\varphi$ is therefore the line through the origin in direction $(-1, 1, -1)$, while $\mathrm{im}(\varphi) = \mathbb{R}^2$.
 
 > The notions of subspace, basis, dimension, and linear map all carry over, with minor adjustments, to the broader setting of [modules](../modules/) over a ring, where the absence of multiplicative inverses for scalars introduces phenomena that have no counterpart in linear algebra over a field. The unifying perspective on structure-preserving maps across algebraic structures is collected on the page about [homomorphisms and isomorphisms](../homomorphisms-and-isomorphisms/).
