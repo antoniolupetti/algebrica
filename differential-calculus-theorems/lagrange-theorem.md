@@ -111,7 +111,7 @@ $$
 f(x) - g(x) = C \quad \forall x \in [a, b]
 $$
 
-Two functions with the same derivative on a connected interval differ therefore by an additive constant. The result is the foundation of the theory of [antiderivatives](../antiderivatives/), where it justifies the appearance of the integration constant in the indefinite integral.
+Two functions with the same derivative on a connected interval differ therefore by an additive constant. The result is the foundation of the theory of [indefinite integrals](../indefinite-integrals/), where it justifies the appearance of the integration constant. The same identity is also the analytic bridge to the [fundamental theorem of calculus](../fundamental-theorem-of-calculus/), which converts this qualitative statement into the explicit rule for computing definite integrals from any antiderivative.
 
 > Connectedness of the domain is essential. On the disjoint union of two intervals, two functions with the same derivative may differ by distinct constants on each component, so the conclusion no longer reduces to a single constant.
 

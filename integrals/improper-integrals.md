@@ -199,7 +199,7 @@ then $\int_a^{+\infty} f(x) \ dx$ and $\int_a^{+\infty} g(x) \ dx$ either both c
 When faced with an improper integral, the following sequence of checks usually settles the question of convergence quickly.
 
 + Identify the source of impropriety: an unbounded interval, an unbounded integrand at an endpoint, or a singularity at an interior point.
-+ If a closed-form antiderivative is available, apply the definition through a limit: replace the infinite bound or the singular endpoint with a parameter and take the limit. The integral converges when the limit is finite and diverges otherwise.
++ If a closed-form antiderivative is available, apply the definition through a limit: replace the infinite bound or the singular endpoint with a parameter and take the limit, using [L'Hôpital's rule](../hopital-rule/) whenever the resulting expression is an indeterminate form. The integral converges when the limit is finite and diverges otherwise.
 + If no antiderivative is available and a pointwise bound $0 \leq f(x) \leq g(x)$ holds for a reference $g$ with known convergence behaviour, apply the direct comparison test.
 + If a pointwise bound is not available, choose a reference function $1/x^p$ that captures the asymptotic behaviour of the integrand and apply the limit comparison test.
 + When the singularity sits at an interior point, split the integral at that point and analyse each half separately, requiring convergence of both pieces.

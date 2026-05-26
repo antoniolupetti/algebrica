@@ -46,7 +46,7 @@ Applying this property to the difference quotient gives:
 
 $$\frac{F(x + h) - F(x)}{h} = \frac{1}{h} \int_x^{x + h} f(t) \ dt$$
 
-Since $f$ is continuous on $[x, x + h]$, the mean value theorem for integrals, discussed in the page on [definite integrals](../definite-integrals/), guarantees the existence of a point $c$ between $x$ and $x + h$ such that:
+Since $f$ is continuous on $[x, x + h]$, the mean value theorem for integrals, discussed in the page on [definite integrals](../definite-integrals/) and itself a direct corollary of [Lagrange's theorem](../lagrange-theorem/), guarantees the existence of a point $c$ between $x$ and $x + h$ such that:
 
 $$\int_x^{x + h} f(t) \ dt = f(c) h$$
 

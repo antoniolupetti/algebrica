@@ -87,6 +87,8 @@ $$
 
 The error therefore decreases as $h^2$ and halving $h$ reduces the bound by a factor of 4. This is already a clear improvement over the left and right rectangle rules, whose error scales linearly with $h$ and which therefore converge much more slowly to the exact value of the integral.
 
+> The error bound, and every analogous bound that appears in the rules below, depends on the maximum of a higher derivative of $f$ over $[a,b]$. The finiteness of this maximum is guaranteed by [Weierstrass' theorem](../weierstrass-theorem/), which ensures that a continuous function on a closed and bounded interval attains its extreme values.
+
 > The midpoint rule integrates exactly every polynomial of degree at most one. The geometric reason is that the area of a rectangle whose base coincides with the subinterval and whose height equals the value of an affine function at the midpoint is exactly the integral of the affine function over the subinterval. This degree of exactness is the source of the second-order convergence.
 
 ## The trapezoidal rule

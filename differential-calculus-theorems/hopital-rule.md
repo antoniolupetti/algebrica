@@ -213,4 +213,6 @@ The limit of the original expression is therefore:
 
 $$\lim_{x \to 0^+} x^x = e^{0} = 1$$
 
+> Beyond the evaluation of plain limits, L'Hôpital's rule is the standard tool for analysing the asymptotic behaviour of an integrand at infinity or near a singular point, and it is therefore the natural entry point for the convergence analysis of [improper integrals](../improper-integrals/).
+
 > L'Hopital's rule rests on [Cauchy's theorem](../cauchy-theorem/), itself a refinement of [Lagrange's theorem](../lagrange-theorem/) and, ultimately, of [Rolle's theorem](../rolle-theorem/). The existence theorems that ground the chain are [Fermat's theorem](../fermat-theorem/) for the location of stationary points and [Weierstrass' theorem](../weierstrass-theorem/) for the attainment of extrema on closed intervals.

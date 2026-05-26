@@ -123,8 +123,9 @@ then there exists some $x \in [a,b]$ such that $f(x) = y$. Putting these two fac
 
 ## Where this theorem is used
 
-The Weierstrass theorem plays a direct role in the proofs of several fundamental theorems of differential calculus.
+The Weierstrass theorem plays a direct role in the proofs of several fundamental results of calculus and integration theory.
 
 + [Fermat's theorem](../fermat-theorem/) relies on it to guarantee that a maximum or minimum actually exists on the interval before concluding that the derivative must vanish at that point.
 + [Rolle's theorem](../rolle-theorem/) uses it to establish that the function attains its maximum and minimum on the closed interval, which is the first step of its proof.
 + [Lagrange's theorem](../lagrange-theorem/) depends on Rolle's theorem and therefore, indirectly, on Weierstrass as well.
++ The [Riemann integrability criteria](../riemann-integrability-criteria/) for continuous functions rest on Weierstrass at a crucial step: the boundedness of a continuous function on a closed and bounded interval, which the theorem provides, is what makes the upper and lower Darboux sums well-defined and finite.
