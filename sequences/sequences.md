@@ -139,3 +139,5 @@ When the rule that generates each term yields a [function](../functions/) rather
 
 The limit $e := \lim_{n \to \infty}(1 + 1/n)^n$ provides a celebrated example of a monotone bounded sequence and is discussed on the page about [Euler's number](../euler-number-limit-sequence/). Many properties of sequences are most efficiently established by the [principle of mathematical induction](../principle-of-mathematical-induction/), which applies whenever a statement is parametrised by a natural number.
 
+For sequences that do not converge but remain bounded, such as oscillating sequences, the ordinary limit does not exist. The [superior and inferior limits](../superior-and-inferior-limits-of-a-sequence/) extend the analysis to this case, identifying the largest and smallest cluster values around which the terms accumulate for arbitrarily large indices.
+

@@ -120,7 +120,7 @@ A group homomorphism is a [function](../functions/) between two groups that pres
 
 $$\varphi(a \cdot b) = \varphi(a) \star \varphi(b)$$
 
-This condition requires that applying $\varphi$ after performing the operation in $G$ yields the same result as first applying $\varphi$ to each element and then performing the operation in $H$. Several basic properties follow from this definition. A homomorphism $\varphi : G \to H$ necessarily maps the identity of $G$ to the identity of $H$, and satisfies $\varphi(a^{-1}) = \varphi(a)^{-1}$ for all $a \in G$. Two particularly important subsets associated with a homomorphism $\varphi : G \to H$ are the kernel and the image. The kernel is defined as:
+This condition requires that applying $\varphi$ after performing the operation in $G$ yields the same result as first applying $\varphi$ to each element and then performing the operation in $H$. Several basic properties follow from this definition. A homomorphism $\varphi : G \to H$ necessarily maps the identity of $G$ to the identity of $H$, and satisfies $\varphi(a^{-1}) = \varphi(a)^{-1}$ for all $a \in G$. Two particularly important subsets associated with a homomorphism $\varphi : G \to H$ are the [kernel](../homomorphisms-and-isomorphisms/) and the image. The kernel is defined as:
 
 $$\ker(\varphi) = \\{\ a \in G : \varphi(a) = e_H \ \\}$$
 

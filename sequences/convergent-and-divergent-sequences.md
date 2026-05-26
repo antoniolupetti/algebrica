@@ -154,7 +154,7 @@ As the index $n$ increases, the terms of the sequence alternate consistently bet
 
 ![IMG. 2](svg/convergent-and-divergent-sequences-2.svg)
 
-This type of sequence does not approach any finite value and is called an oscillating sequence. It does not converge to a finite limit, nor does it diverge to $+\infty$ or $-\infty$, and its terms continue to fluctuate between different values
+This type of sequence does not approach any finite value and is called an oscillating sequence. It does not converge to a finite limit, nor does it diverge to $+\infty$ or $-\infty$, and its terms continue to fluctuate between different values. The extremal values around which the terms cluster for arbitrarily large indices are captured precisely by the [superior and inferior limits](../superior-and-inferior-limits-of-a-sequence/) of the sequence.
 
 ## Geometric sequence
 
@@ -221,7 +221,7 @@ To see this, choose $\varepsilon = \ell/2 > 0$ in the definition of convergence.
 
 ## Subsequences and the Bolzano-Weierstrass theorem
 
-A subsequence of $(a_n)$ is obtained by selecting an increasing collection of indices $n_1 < n_2 < n_3 < \cdots$ and considering the new sequence $(a_{n_k})_{k \in \mathbb{N}}$. Subsequences inherit the convergence of the parent sequence: if $a_n \to \ell$, then every subsequence also converges to $\ell$. This observation provides a frequently used criterion for non-convergence: if two subsequences of $(a_n)$ converge to different limits, then $(a_n)$ does not converge.
+A subsequence of $(a_n)$ is obtained by selecting an increasing collection of indices $n_1 < n_2 < n_3 < \cdots$ and considering the new sequence $(a_{n_k})_{k \in \mathbb{N}}$. Subsequences inherit the convergence of the parent sequence: if $a_n \to \ell$, then every subsequence also converges to $\ell$. This observation provides a frequently used criterion for non-convergence: if two subsequences of $(a_n)$ converge to different limits, then $(a_n)$ does not converge. The [superior and inferior limits](../superior-and-inferior-limits-of-a-sequence/) give a systematic account of this phenomenon, identifying the largest and smallest values that can be obtained as subsequential limits.
 
 The converse question, whether a sequence that fails to converge nevertheless admits a convergent subsequence, is answered by the Bolzano-Weierstrass theorem.
 
