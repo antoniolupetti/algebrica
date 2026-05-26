@@ -116,6 +116,8 @@ These properties are summarised as follows:
 
 A further property, which distinguishes \\(\\mathbb{N}\\) from more general algebraic structures, is the absence of zero divisors. If the product of two natural numbers equals zero, then at least one of the two factors must be zero.
 
+> Closure, associativity, commutativity, and the existence of the additive identity make \\((\\mathbb{N}, +)\\) a commutative monoid, but not a [group](../groups/): the additive inverses required for a group structure are missing, since no positive natural number admits a counterpart whose sum with it is \\(0\\). The extension from \\(\\mathbb{N}\\) to \\(\\mathbb{Z}\\) supplies precisely those inverses, and produces the first example of a [ring](../rings/).
+
 - - -
 ## Order and well-ordering
 

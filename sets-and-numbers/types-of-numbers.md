@@ -44,7 +44,7 @@ Every integer is either positive, negative, or zero. The set \\(\mathbb{Z}\\) ca
 \mathbb{Z} = \mathbb{N} \cup \\{-n : n \in \mathbb{N}^+\\}
 \\]
 
-The passage from \\(\mathbb{N}\\) to \\(\mathbb{Z}\\) makes subtraction always well-defined: for any \\(a, b \in \mathbb{Z}\\) the difference \\(a - b\\) is again an integer. A dedicated entry covers the properties of [integers](../integers/) in detail.
+The passage from \\(\mathbb{N}\\) to \\(\mathbb{Z}\\) makes subtraction always well-defined: for any \\(a, b \in \mathbb{Z}\\) the difference \\(a - b\\) is again an integer. From an algebraic standpoint, \\((\mathbb{Z}, +)\\) is an abelian [group](../groups/) and \\((\mathbb{Z}, +, \cdot)\\) is a commutative [ring](../rings/) with unity, although not a field, since most integers lack a multiplicative inverse. A dedicated entry covers the properties of [integers](../integers/) in detail.
 
 - - -
 ## Rational numbers
@@ -61,7 +61,7 @@ Every integer is rational, since any \\(n \in \mathbb{Z}\\) can be written as \\
 \frac{-5}{4}, \quad \frac{12}{7}, \quad -8, \quad \frac{25}{19}
 \\]
 
-The passage from \\(\mathbb{Z}\\) to \\(\mathbb{Q}\\) makes division by any nonzero integer always well-defined.
+The passage from \\(\mathbb{Z}\\) to \\(\mathbb{Q}\\) makes division by any nonzero integer always well-defined. In algebraic terms, \\(\mathbb{Q}\\) is the smallest [field](../fields/) containing \\(\mathbb{Z}\\), constructed by adjoining a multiplicative inverse to every nonzero integer.
 
 - - -
 ## Irrational numbers

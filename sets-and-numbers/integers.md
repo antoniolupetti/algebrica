@@ -48,7 +48,7 @@ The ring axioms for \\((\mathbb{Z}, +, \cdot)\\) are the following. For all \\(a
 + Closure: the sum and product of any two integers are again integers: \\(a + b \in \mathbb{Z}\\) and \\(ab \in \mathbb{Z}.\\)
 + Associativity: both operations are associative: \\(a + (b+c) = (a+b) + c\\) and \\(a(bc) = (ab)c.\\)
 + Identity elements: there exist neutral elements for both operations: \\(a + 0 = a\\) and \\(a \cdot 1 = a.\\)
-+ Additive inverses: every integer has an opposite: \\(a + (-a) = 0.\\)
++ Additive inverses: every integer has an opposite, so that \\((\mathbb{Z}, +)\\) is an abelian [group](../groups/): \\(a + (-a) = 0.\\)
 + Commutativity of addition: the order of summands does not affect the result: \\(a + b = b + a.\\)
 + Distributivity: multiplication distributes over addition: \\(a(b+c) = ab + ac.\\)
 

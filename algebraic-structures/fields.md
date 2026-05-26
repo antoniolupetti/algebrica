@@ -68,7 +68,7 @@ A field is obtained by imposing one further requirement on a commutative ring wi
 
 The set $\mathbb{Q}$ of rational numbers, equipped with ordinary addition and multiplication, is the smallest field containing the integers. Every nonzero rational number $p/q$ has a multiplicative inverse $q/p$, and all field axioms are satisfied.
 
-The set $\mathbb{R}$ of real numbers is a field extending $\mathbb{Q}$. It admits an ordering compatible with its algebraic structure, a property that distinguishes it within the family of fields and that is responsible for many of the analytic concepts built upon it.
+The set $\mathbb{R}$ of real numbers is a field extending $\mathbb{Q}$. It admits an ordering compatible with its algebraic structure, a property that distinguishes it within the family of fields and that is responsible for many of the analytic concepts built upon it. The complete list of field axioms specialised to $\mathbb{R}$, together with concrete examples, is collected in the page on the [properties of real numbers](../properties-of-real-numbers/).
 
 The set $\mathbb{C}$ of complex numbers is a field extending $\mathbb{R}$. Unlike $\mathbb{R}$, it is algebraically closed: every nonconstant polynomial with coefficients in $\mathbb{C}$ has at least one root in $\mathbb{C}$, a result known as the fundamental theorem of algebra.
 

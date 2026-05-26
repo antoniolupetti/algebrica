@@ -128,6 +128,8 @@ The Bolzano-Weierstrass theorem is a further consequence of completeness. It sta
 
 The real number system is the unique complete ordered field. Any two complete ordered fields are isomorphic as ordered fields, and the isomorphism between them is unique. This means that \\(\mathbb{R}\\) is not merely one among many possible completions of \\(\mathbb{Q}\\) but the only one up to a structure-preserving bijection.
 
+> Beyond its self-contained algebraic structure, \\(\mathbb{R}\\) serves as the prototypical scalar field for linear algebra. The Euclidean spaces \\(\mathbb{R}^n\\) are the basic examples of [vector spaces](../vector-spaces/) over \\(\mathbb{R}\\), and any other field can play the same structural role, although the analytic properties that depend on completeness and order are specific to \\(\mathbb{R}\\).
+
 - - -
 ## Intervals
 

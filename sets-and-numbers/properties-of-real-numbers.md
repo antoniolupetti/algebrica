@@ -64,7 +64,7 @@ a + b = b + a
 a \cdot b = b \cdot a
 \\]
 
-This property is not a computational shortcut but an intrinsic feature of the algebraic structure of \\( \mathbb{R} \\). In fact, the real numbers form a commutative field, meaning that both addition and multiplication are commutative binary operations. It is important to observe that commutativity does not apply to every algebraic operation. Subtraction and division, for instance, are not commutative in general:
+This property is not a computational shortcut but an intrinsic feature of the algebraic structure of \\( \mathbb{R} \\). In fact, the real numbers form a commutative [field](../fields/), meaning that both addition and multiplication are commutative binary operations. It is important to observe that commutativity does not apply to every algebraic operation. Subtraction and division, for instance, are not commutative in general:
 
 \\[
 a - b \neq b - a \quad \text{and} \quad
@@ -212,3 +212,5 @@ a \cdot \frac{1}{a} = 1
 \\]
 
 The number \\( \dfrac{1}{a} \\) is called the multiplicative inverse (or reciprocal) of \\( a \\). It is defined only for \\( a \neq 0 \\), since no real number multiplied by \\( 0 \\) can produce the multiplicative identity \\( 1 \\). As in the additive case, the multiplicative inverse is unique. If a number \\( b \\) satisfies \\(a \cdot b = 1\\) then necessarily \\( b = \dfrac{1}{a} \\).
+
+> The closure, associativity, additive identity, and additive inverse axioms together state that \\((\mathbb{R}, +)\\) is an abelian [group](../groups/). Adjoining the corresponding multiplicative axioms for the nonzero elements, together with the distributive law, promotes the structure to a [field](../fields/), which is the abstract setting that captures the algebraic behaviour of \\(\mathbb{R}\\), \\(\mathbb{Q}\\), and \\(\mathbb{C}\\) at once.

@@ -61,7 +61,7 @@ The set of polynomials with real coefficients, denoted $\mathbb{R}[x]$, forms a 
 
 - - -
 
-Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldots, n - 1 \ \\}$, equipped with addition and multiplication [modulo](../modulo-operator/) $n$, forms a commutative ring with unity. For example, in $\mathbb{Z}/6\mathbb{Z}$ one has $2 \cdot 3 = 0$, so $2$ and $3$ are zero divisors and $\mathbb{Z}/6\mathbb{Z}$ is not an integral domain. When $n$ is prime, however, $\mathbb{Z}/n\mathbb{Z}$ contains no zero divisors and is in fact a field.
+Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldots, n - 1 \ \\}$, equipped with addition and multiplication [modulo](../modulo-operator/) $n$, forms a commutative ring with unity. For example, in $\mathbb{Z}/6\mathbb{Z}$ one has $2 \cdot 3 = 0$, so $2$ and $3$ are zero divisors and $\mathbb{Z}/6\mathbb{Z}$ is not an integral domain. When $n$ is prime, however, $\mathbb{Z}/n\mathbb{Z}$ contains no zero divisors and is in fact a field. The arithmetic of residue classes, together with the addition and multiplication tables that realise these operations concretely, is treated on the page about the [modulo operator](../modulo-operator/).
 
 Let $F$ be a field and let $n$ be a positive integer. The set $\operatorname{M}_n(F)$ of all $n \times n$ [matrices](../matrices/) with entries in $F$ forms a ring under matrix addition and multiplication. The additive identity is the zero matrix, and the multiplicative identity is the identity matrix $I_n$. For $n \geq 2$, this ring is not commutative, since matrix multiplication does not commute in general, and it contains zero divisors.
 

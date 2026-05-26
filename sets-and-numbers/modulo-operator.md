@@ -83,7 +83,7 @@ The multiplication table modulo \\(4\\) is the following:
 
 The behaviour of multiplication is noticeably less regular than that of addition. The row corresponding to \\(2\\) never produces \\(1\\), which means that \\(2\\) does not admit a multiplicative inverse modulo \\(4\\). This is consistent with the fact that \\(\gcd(2, 4) = 2 \neq 1\\). On the other hand, the rows corresponding to \\(1\\) and \\(3\\) do produce \\(1\\) at some point, reflecting the existence of multiplicative inverses for the residues coprime with \\(4\\).
 
-> In group theory, a table of this form is called a Cayley table. It describes a finite group by listing the result of its operation for every ordered pair of elements. The addition table modulo \\(n\\) is precisely the Cayley table of the group \\((\mathbb{Z}/n\mathbb{Z}, +)\\).
+> In group theory, a table of this form is called a Cayley table. It describes a finite [group](../groups/) by listing the result of its operation for every ordered pair of elements. The addition table modulo \\(n\\) is precisely the Cayley table of the cyclic group \\((\mathbb{Z}/n\mathbb{Z}, +)\\).
 
 - - -
 ## Residue classes
@@ -127,4 +127,4 @@ The residue classes modulo \\(n\\) can be added and multiplied in a way that is 
 [a]_n + [b]_n = [a+b]_n \qquad [a]_n \cdot [b]_n = [a \cdot b]_n
 \\]
 
-yields two well-defined operations on \\(\mathbb{Z}/n\mathbb{Z}\\), thanks to the compatibility of congruence with addition and multiplication. Under these operations \\(\mathbb{Z}/n\mathbb{Z}\\) becomes a finite commutative ring, and when \\(n\\) is prime it becomes a field. The modulo operator is therefore not only a computational device but also the arithmetic foundation on which an entire family of finite algebraic structures is built.
+yields two well-defined operations on \\(\mathbb{Z}/n\mathbb{Z}\\), thanks to the compatibility of congruence with addition and multiplication. Under these operations \\(\mathbb{Z}/n\mathbb{Z}\\) becomes a finite commutative [ring](../rings/), and when \\(n\\) is prime it becomes a [field](../fields/). The modulo operator is therefore not only a computational device but also the arithmetic foundation on which an entire family of finite algebraic structures is built.
