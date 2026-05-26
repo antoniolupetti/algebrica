@@ -1,14 +1,14 @@
 ---
-title: Cauchy’s Theorem
+title: Cauchy's Theorem
 source: https://algebrica.org/cauchy-theorem/
 license: CC BY-NC 4.0
 tags:
   - cauchy-theorem
-  - differential-calculus-theorems
-  - polynomials
-  - theorems
   - derivatives
+  - differential-calculus-theorems
+  - mean-value-theorem
 ---
+
 ## Statement
 
 Cauchy's theorem establishes a relationship between the variations of two differentiable functions over a closed interval, expressed through the ratio of their derivatives at a suitable interior point. It generalises [Lagrange's theorem](../lagrange-theorem/) to a pair of functions and provides the analytical basis for the proof of [L'Hôpital's rule](../hopital-rule/).
@@ -23,12 +23,11 @@ Then there exists at least one point $c \in (a, b)$ such that:
 
 $$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}$$
 
-In other words, the ratio of the increments of the two functions over the interval $[a, b]$ coincides with the ratio of their [derivatives](../derivatives) at some interior point.
+In other words, the ratio of the increments of the two functions over the interval $[a, b]$ coincides with the ratio of their [derivatives](../derivatives/) at some interior point.
 
-> The hypothesis $g'(x) \neq 0$ on $(a, b)$ ensures, via [Rolle's theorem](../rolles-theorem/) applied to $g$, that $g(b) \neq g(a)$, so that the denominator on the right-hand side does not vanish. A detailed discussion of this point is given in the last section.
+> The hypothesis $g'(x) \neq 0$ on $(a, b)$ ensures, via [Rolle's theorem](../rolle-theorem/) applied to $g$, that $g(b) \neq g(a)$, so that the denominator on the right-hand side does not vanish. A detailed discussion of this point is given in the last section.
 
 - - -
-
 The choice $g(x) = x$ reduces Cauchy's theorem to [Lagrange's theorem](../lagrange-theorem/). In that case $g'(x) = 1$ and $g(b) - g(a) = b - a$, and the conclusion takes the familiar form:
 
 $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
@@ -56,15 +55,13 @@ $$\lambda = \frac{f(b) - f(a)}{g(b) - g(a)}$$
 The denominator is non-zero because the hypothesis $g'(x) \neq 0$ on $(a, b)$ excludes the case $g(b) = g(a)$, as discussed in the last section.
 
 - - -
-
-The function $\varphi(x)$ is continuous on $[a, b]$ and differentiable on $(a, b)$, since it is a linear combination of $f$ and $g$, which satisfy these regularity properties by hypothesis. Moreover $\varphi(a) = \varphi(b)$ by the very choice of $\lambda$. The hypotheses of [Rolle's theorem](../rolles-theorem/) are therefore satisfied, and there exists at least one point $c \in (a, b)$ such that $\varphi'(c) = 0$. Computing the derivative of $\varphi$ and evaluating it at $c$ gives:
+The function $\varphi(x)$ is continuous on $[a, b]$ and differentiable on $(a, b)$, since it is a linear combination of $f$ and $g$, which satisfy these regularity properties by hypothesis. Moreover $\varphi(a) = \varphi(b)$ by the very choice of $\lambda$. The hypotheses of [Rolle's theorem](../rolle-theorem/) are therefore satisfied, and there exists at least one point $c \in (a, b)$ such that $\varphi'(c) = 0$. Computing the derivative of $\varphi$ and evaluating it at $c$ gives:
 
 $$\varphi'(x) = f'(x) - \lambda g'(x)$$
 
 $$f'(c) = \lambda g'(c)$$
 
 - - -
-
 Substituting the value of $\lambda$ into the previous equality we obtain:
 
 $$f'(c) = \frac{f(b) - f(a)}{g(b) - g(a)} \, g'(c)$$
@@ -83,10 +80,9 @@ $$f(x) = 2x^2 - 4x + 2 \qquad g(x) = x^2$$
 
 on the interval $[1, 3]$, and let us determine the corresponding value of $c$ predicted by the statement.
 
-The two functions are [polynomials](../polynomials), hence continuous and differentiable for every $x \in \mathbb{R}$. The derivative of the denominator is $g'(x) = 2x$, which is non-zero on $[1, 3]$. The hypotheses of the theorem are therefore satisfied.
+The two functions are [polynomials](../polynomials/), hence continuous and differentiable for every $x \in \mathbb{R}$. The derivative of the denominator is $g'(x) = 2x$, which is non-zero on $[1, 3]$. The hypotheses of the theorem are therefore satisfied.
 
 - - -
-
 The theorem guarantees the existence of a point $c \in (1, 3)$ such that:
 
 $$\frac{f'(c)}{g'(c)} = \frac{f(3) - f(1)}{g(3) - g(1)}$$
@@ -102,7 +98,6 @@ The ratio of the increments is therefore:
 $$\frac{f(3) - f(1)}{g(3) - g(1)} = \frac{8 - 0}{9 - 1} = 1$$
 
 - - -
-
 Computing the derivatives we obtain $f'(x) = 4x - 4$ and $g'(x) = 2x$, hence:
 
 $$\frac{f'(c)}{g'(c)} = \frac{4c - 4}{2c}$$
@@ -136,4 +131,6 @@ $$\varphi(x) = f(x) - \lambda g(x)$$
 
 is no longer well defined.
 
-Under the hypotheses of Cauchy's theorem, however, this situation does not arise. Suppose by contradiction that $g(a) = g(b)$. Since $g$ is continuous on $[a, b]$ and differentiable on $(a, b)$, Rolle's theorem applied to $g$ would produce a point $\xi \in (a, b)$ with $g'(\xi) = 0$, contradicting the assumption $g'(x) \neq 0$ on the open interval. Therefore $g(b) \neq g(a)$, the ratio defining $\lambda$ is well posed, and the proof goes through without difficulty.
+Under the hypotheses of Cauchy's theorem, however, this situation does not arise. Suppose by contradiction that $g(a) = g(b)$. Since $g$ is continuous on $[a, b]$ and differentiable on $(a, b)$, [Rolle's theorem](../rolle-theorem/) applied to $g$ would produce a point $\xi \in (a, b)$ with $g'(\xi) = 0$, contradicting the assumption $g'(x) \neq 0$ on the open interval. Therefore $g(b) \neq g(a)$, the ratio defining $\lambda$ is well posed, and the proof goes through without difficulty.
+
+> Cauchy's theorem sits at the top of the differential mean value hierarchy: it is built on [Rolle's theorem](../rolle-theorem/), of which [Lagrange's theorem](../lagrange-theorem/) is a particular case obtained by setting $g(x) = x$, and it provides the analytical core of [L'Hopital's rule](../hopital-rule/). [Fermat's theorem](../fermat-theorem/) and [Weierstrass' theorem](../weierstrass-theorem/) supply the existence results that ultimately underlie the whole chain.
