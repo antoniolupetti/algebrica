@@ -59,7 +59,7 @@ $$\ker(\varphi) = \\{\ a \in A : \varphi(a) = e_B \ \\}$$
 
 The image of $\varphi$ is defined uniformly for every family of structures:
 
-$$\operatorname{im}(\varphi) = \\{\ \varphi(a) : a \in A \ \\}$$
+$$\mathrm{im}(\varphi) = \\{\ \varphi(a) : a \in A \ \\}$$
 
 Both subsets carry intrinsic algebraic meaning. The kernel is always a substructure of $A$ of a specific kind: a normal subgroup when $A$ is a [group](../groups/), an ideal when $A$ is a [ring](../rings/), a submodule when $A$ is a [module](../modules/). The image is always a substructure of $B$ of the same type as $B$ itself. In every case the homomorphism $\varphi$ is injective if and only if its kernel is the trivial substructure, namely the subgroup containing only the identity, the zero ideal, or the zero submodule, respectively.
 
