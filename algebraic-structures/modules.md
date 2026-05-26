@@ -103,7 +103,7 @@ These two conditions can be combined into the single requirement that $\varphi(r
 
 $$\ker(\varphi) = \\{\ \mathbf{v} \in M : \varphi(\mathbf{v}) = \mathbf{0} \ \\}$$
 
-$$\operatorname{im}(\varphi) = \\{\ \varphi(\mathbf{v}) : \mathbf{v} \in M \ \\}$$
+$$\mathrm{im}(\varphi) = \\{\ \varphi(\mathbf{v}) : \mathbf{v} \in M \ \\}$$
 
 The kernel is a submodule of $M$, and the image is a submodule of $N$. A homomorphism is injective if and only if its kernel reduces to the zero submodule.
 
