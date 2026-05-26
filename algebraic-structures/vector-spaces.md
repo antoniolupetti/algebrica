@@ -117,11 +117,11 @@ The [kernel](../homomorphisms-and-isomorphisms/) and image of a linear map $\var
 
 $$\ker(\varphi) = \\{\ \mathbf{v} \in V : \varphi(\mathbf{v}) = \mathbf{0} \ \\}$$
 
-$$\operatorname{im}(\varphi) = \\{\ \varphi(\mathbf{v}) : \mathbf{v} \in V \ \\}$$
+$$\mathrm{im}(\varphi) = \\{\ \varphi(\mathbf{v}) : \mathbf{v} \in V \ \\}$$
 
 Both $\ker(\varphi)$ and $\operatorname{im}(\varphi)$ are subspaces of $V$ and $W$ respectively. The dimension theorem, also known as the rank-nullity theorem, states that for any linear map between finite-dimensional spaces the following identity holds:
 
-$$\dim V = \dim \ker(\varphi) + \dim \operatorname{im}(\varphi)$$
+$$\dim V = \dim \ker(\varphi) + \dim \mathrm{im}(\varphi)$$
 
 The dimension of $\operatorname{im}(\varphi)$ is called the rank of $\varphi$ and the dimension of $\ker(\varphi)$ is called its nullity. The rank-nullity theorem is one of the central results of linear algebra and underlies the theory of [systems of linear equations](../systems-of-linear-equations/), the analysis of [matrices](../matrices/), and the classification of linear maps between finite-dimensional spaces.
 
@@ -141,9 +141,9 @@ hold for all vectors and scalars, which follows immediately from the linearity o
 
 $$(-y, y, -y) = y(-1, 1, -1)$$
 
-for some $y \in \mathbb{R}$, so the kernel is the one-dimensional subspace spanned by $(-1, 1, -1)$. The image is all of $\mathbb{R}^2$, since for any $(a, b) \in \mathbb{R}^2$ the vector $(a, 0, b)$ satisfies $\varphi(a, 0, b) = (a, b)$, which shows that $\varphi$ is surjective and thus $\dim \operatorname{im}(\varphi) = 2$. The rank-nullity theorem is verified:
+for some $y \in \mathbb{R}$, so the kernel is the one-dimensional subspace spanned by $(-1, 1, -1)$. The image is all of $\mathbb{R}^2$, since for any $(a, b) \in \mathbb{R}^2$ the vector $(a, 0, b)$ satisfies $\varphi(a, 0, b) = (a, b)$, which shows that $\varphi$ is surjective and thus $\dim \mathrm{im}(\varphi) = 2$. The rank-nullity theorem is verified:
 
-$$\dim \mathbb{R}^3 = \dim \ker(\varphi) + \dim \operatorname{im}(\varphi) = 1 + 2 = 3$$
+$$\dim \mathbb{R}^3 = \dim \ker(\varphi) + \dim \mathrm{im}(\varphi) = 1 + 2 = 3$$
 
 The kernel of $\varphi$ is therefore the line through the origin in direction $(-1, 1, -1)$, while $\operatorname{im}(\varphi) = \mathbb{R}^2$.
 
