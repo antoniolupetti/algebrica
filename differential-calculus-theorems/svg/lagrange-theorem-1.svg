@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="294px" viewBox="0 0 321 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M54.8855124,51.5035509 L54.9391661,51.5814276 L59.4391661,59.5814276 C59.574548,59.8221066 59.4891879,60.1269641 59.248509,60.262346 C59.0345722,60.3826855 58.7699263,60.3286115 58.6186743,60.1460729 L58.5675906,60.0716889 L55.003,53.735 L55.0033784,292.673442 C55.0033784,292.949584 54.7795208,293.173442 54.5033784,293.173442 C54.2579185,293.173442 54.05377,292.996567 54.011434,292.763317 L54.0033784,292.673442 L54.003,53.735 L50.4391661,60.0716889 C50.3188267,60.2856257 50.0645805,60.3768415 49.8405305,60.2993874 L49.7582478,60.262346 C49.5443109,60.1420066 49.4530951,59.8877604 49.5305492,59.6637104 L49.5675906,59.5814276 L54.0675906,51.5814276 C54.2428133,51.2699206 54.6685391,51.2439617 54.8855124,51.5035509 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M303.16111,242.529736 L303.243405,242.566749 L311.244978,247.063952 C311.556546,247.239066 311.582654,247.664782 311.323141,247.881846 L311.245283,247.935527 L303.246857,252.438324 C303.006225,252.57379 302.701338,252.488536 302.565872,252.247905 C302.445457,252.03401 302.499439,251.769345 302.681925,251.618029 L302.756291,251.56692 L309.092,248 L303.00052,248.002622 L0.440490122,248.108401 C0.164347764,248.108498 -0.059588111,247.884718 -0.0596846541,247.608576 C-0.0597704702,247.363116 0.117033306,247.158906 0.350267698,247.116488 L0.440140509,247.108401 L303.00017,247.002622 L309.091,247 L302.753449,243.438496 C302.53947,243.318231 302.448165,243.064017 302.525541,242.83994 L302.562554,242.757644 C302.682818,242.543665 302.937033,242.452361 303.16111,242.529736 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="28" y="103">f(b)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="30" y="188">f(a)</tspan>
+            </text>
+            <line x1="33.5" y1="239.5" x2="281.5" y2="64.5" stroke="#747474" stroke-linecap="round"></line>
+            <line x1="32.5" y1="217.5" x2="280.5" y2="42.5" stroke="#747474" stroke-linecap="round"></line>
+            <line x1="56" y1="100.5" x2="228.5" y2="100.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="228.5" y1="247.5" x2="228.5" y2="103.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="110.5" y1="247.5" x2="110.5" y2="185.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="56" y1="185.5" x2="228.5" y2="185.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M305,108 C295.75159,105.403955 286.601902,103.446315 277.59205,102.119605 M87.4747959,261.455496 C86.2823622,270.290606 85.4505847,279.473352 85,289" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-dasharray="4"></path>
+            <path d="M281.144557,102.674248 C184.631709,86.7518545 103.423054,142.762594 87.4516009,261.627737" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="157.5" y1="247.5" x2="157.5" y2="127.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="107" y="262">a</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="225" y="262">b</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="154" y="262">c</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="115" y="198">A</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="147" y="124">C</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="227" y="94">B</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="236" y="190">H</tspan>
+            </text>
+            <circle stroke="#333333" fill="#333333" cx="229" cy="101" r="2.5"></circle>
+            <circle fill="#333333" cx="228.5" cy="185.5" r="3"></circle>
+            <circle stroke="#333333" fill="#333333" cx="157.5" cy="128.5" r="2.5"></circle>
+            <circle stroke="#333333" fill="#333333" cx="110" cy="185" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="88" y="11">At the point C, the derivative of the function </tspan>
+                <tspan x="88" y="24">is equal to the slope of the secant line </tspan>
+                <tspan x="88" y="37">connecting A and B.</tspan>
+            </text>
+            <line x1="158.5" y1="114.5" x2="158.5" y2="45.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
