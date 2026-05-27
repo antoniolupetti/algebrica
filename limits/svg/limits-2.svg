@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="351px" viewBox="0 0 356 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="44.5" y1="124.5" x2="44.5" y2="74.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The graph shows opposite </tspan>
+                <tspan x="0" y="24">infinite behaviour on the two </tspan>
+                <tspan x="0" y="37">sides of x=x₀, with the curve </tspan>
+                <tspan x="0" y="50">diverging downward from the </tspan>
+                <tspan x="0" y="63">right and upward from the left.</tspan>
+            </text>
+            <path d="M345.809343,173.319082 L346.245131,173.564212 L354.245131,178.064212 L355.019864,178.5 L354.245131,178.935788 L346.245131,183.435788 L345.809343,183.680918 L345.319082,182.809343 L345.754869,182.564212 L352.091,179 L11,179 L11,178 L352.091,178 L345.754869,174.435788 L345.319082,174.190657 L345.809343,173.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M345.809343,173.319082 L346.245131,173.564212 L354.245131,178.064212 L355.019864,178.5 L354.245131,178.935788 L346.245131,183.435788 L345.809343,183.680918 L345.319082,182.809343 L345.754869,182.564212 L352.091,179 L11,179 L11,178 L352.091,178 L345.754869,174.435788 L345.319082,174.190657 L345.809343,173.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="49.5" y1="178.5" x2="391.5" y2="178.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(220.500000, 178.500000) rotate(-90.000000) translate(-220.500000, -178.500000) "></line>
+            <circle fill="#333333" cx="220.5" cy="178.5" r="3"></circle>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="75" y="146">y=f(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="226" y="172">x₀</tspan>
+            </text>
+            <path d="M11,149 C38.0689473,147.875215 57.4430051,146.786771 69.1221737,145.734668" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M115.434867,139.655919 C151.509708,133.044818 175.031419,123.120296 186,109.882353 C205.333333,86.5490196 215,52.9215686 215,9" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M228,350 C227.333333,298 230.666667,250.666667 238,208 C245.333333,165.333333 283.333333,144 352,144" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="202px" viewBox="0 0 310 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M294.162848,79.5271708 L294.245131,79.5642122 L302.245131,84.0642122 C302.556638,84.2394349 302.582597,84.6651608 302.323007,84.882134 L302.245131,84.9357878 L294.245131,89.4357878 C294.004452,89.5711697 293.699594,89.4858096 293.564212,89.2451306 C293.443873,89.0311938 293.497947,88.7665479 293.680485,88.6152959 L293.754869,88.5642122 L300.091,85 L0.5,85 C0.223857625,85 0,84.7761424 0,84.5 C0,84.2545401 0.176875161,84.0503916 0.410124368,84.0080557 L0.5,84 L300.091,84 L293.754869,80.4357878 C293.540933,80.3154483 293.449717,80.0612021 293.527171,79.8371522 L293.564212,79.7548694 C293.684552,79.5409325 293.938798,79.4497168 294.162848,79.5271708 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="57.5" y1="84.5" x2="232.5" y2="84.5" stroke="#333333" stroke-linecap="square"></line>
+            <circle stroke="#333333" fill="#FFFFFF" cx="236" cy="84.5" r="2.5"></circle>
+            <circle fill="#333333" cx="148" cy="84.5" r="3"></circle>
+            <circle stroke="#333333" fill="#FFFFFF" cx="57" cy="84.5" r="2.5"></circle>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="226" y="108">+</tspan>
+                <tspan x="233.812" y="108" font-family="Helvetica">δ</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="145" y="108">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="48" y="108">-</tspan>
+                <tspan x="53.866" y="108" font-family="Helvetica">δ</tspan>
+            </text>
+            <line x1="185.5" y1="74.5" x2="185.5" y2="35.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="149.5" y1="154.5" x2="149.5" y2="115.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="133" y="174">A neighborhood of x refers to an </tspan>
+                <tspan x="133" y="187">interval consisting of all points </tspan>
+                <tspan x="133" y="200">sufficiently close to x.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="109" y="11">A right neighborhood is given by </tspan>
+                <tspan x="109" y="24">the interval (x, x +</tspan>
+                <tspan x="191.47048" y="23.3005829" font-family="Helvetica">δ</tspan>
+                <tspan x="206.447238" y="24">)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

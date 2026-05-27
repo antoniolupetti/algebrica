@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="354px" height="363px" viewBox="0 0 354 363" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M181.882134,24.6769926 L181.935788,24.7548694 L186.435788,32.7548694 C186.57117,32.9955483 186.48581,33.3004059 186.245131,33.4357878 C186.031194,33.5561272 185.766548,33.5020533 185.615296,33.3195146 L185.564212,33.2451306 L182,26.908 L182,361.5 C182,361.776142 181.776142,362 181.5,362 C181.25454,362 181.050392,361.823125 181.008056,361.589876 L181,361.5 L181,26.908 L177.435788,33.2451306 C177.315448,33.4590675 177.061202,33.5502832 176.837152,33.4728292 L176.754869,33.4357878 C176.540933,33.3154483 176.449717,33.0612021 176.527171,32.8371522 L176.564212,32.7548694 L181.064212,24.7548694 C181.239435,24.4433624 181.665161,24.4174034 181.882134,24.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="189" y="160">L</tspan>
+            </text>
+            <text font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The graph shows a curve </tspan>
+                <tspan x="0" y="24">approaching the same </tspan>
+                <tspan x="0" y="37">horizontal level on both ends, so </tspan>
+                <tspan x="0" y="50">the line y = L describes the </tspan>
+                <tspan x="0" y="63">function’s limiting value as x </tspan>
+                <tspan x="0" y="76">moves toward ±∞.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="75" y="160">y= f(x)</tspan>
+            </text>
+            <path d="M11,164 C38.0689473,162.875215 57.4430051,161.786771 69.1221737,160.734668" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M115.434867,154.655919 C151.509708,148.044818 175.031419,138.120296 186,124.882353 C205.333333,101.54902 215,67.9215686 215,24" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M345.162848,187.527171 L345.245131,187.564212 L353.245131,192.064212 C353.556638,192.239435 353.582597,192.665161 353.323007,192.882134 L353.245131,192.935788 L345.245131,197.435788 C345.004452,197.57117 344.699594,197.48581 344.564212,197.245131 C344.443873,197.031194 344.497947,196.766548 344.680485,196.615296 L344.754869,196.564212 L351.091,193 L10.5,193 C10.2238576,193 10,192.776142 10,192.5 C10,192.25454 10.1768752,192.050392 10.4101244,192.008056 L10.5,192 L351.091,192 L344.754869,188.435788 C344.540933,188.315448 344.449717,188.061202 344.527171,187.837152 L344.564212,187.754869 C344.684552,187.540933 344.938798,187.449717 345.162848,187.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="10.5" y1="168.5" x2="352.5" y2="168.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M229,362 C227,314.291262 229.666667,270.864078 237,231.718447 C244.333333,192.572816 282.333333,173 351,173" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="181.5" cy="168.5" r="3"></circle>
+        </g>
+    </g>
+</svg>

@@ -9,7 +9,6 @@ tags:
   - squeeze-theorem
   - uniqueness-theorem
 ---
-
 ## Uniqueness of the limit
 
 **Theorem 1.** If the [limit](../limits/) of $f(x)$ as $x \to x_0$ exists, then it is unique. The statement, in its general form, asserts that no [function](../functions/) can approach two different values, finite or infinite, as $x$ approaches the same point:
