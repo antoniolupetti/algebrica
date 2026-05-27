@@ -263,7 +263,7 @@ $$
 
 - - -
 
-For the [sign function](../sign-function/) $\operatorname{sgn}(x)$, we have:
+For the [sign function](../sign-function/) $\mathrm{sgn}(x)$, we have:
 
 $$
 \begin{align}
