@@ -11,11 +11,11 @@ tags:
 ---
 ## Introduction to powers
 
-Powers are mathematical operations that indicate how many times a [number](../types-of-numbers/) is to be multiplied by itself. The standard notation for a power is $a^{\large{n}}$ where $a$ is the base and $n \in \mathbb{Z}^+$ is the exponent:
+Powers are mathematical operations that indicate how many times a [number](../types-of-numbers/) is to be multiplied by itself. The standard notation for a power is $a^n$ where $a$ is the base and $n \in \mathbb{Z}^+$ is the exponent:
 
 $$a^n = \underbrace{a \cdot a \cdot a \cdots a}_{n \text{ times}} \qquad a \in \mathbb{R}$$
 
-> From a geometric perspective, for a positive number $a$, the expressions $a^2$ and $a^3$ represents the area of a square whose side length is $a$ while $a^3$ represents the volume of a cube whose edge length is $a$.
+> From a geometric perspective, for a positive number $a$, the expression $a^2$ represents the area of a square whose side length is $a$, while $a^3$ represents the volume of a cube whose edge length is $a$.
 
 - - -
 
@@ -23,7 +23,7 @@ The exponent $n$ can be positive, negative, or zero. A negative exponent indicat
 
 $$a^{-n} = \frac{1}{a^{n}}$$
 
-Thus, that raising a number to a negative exponent is equivalent to taking the reciprocal of the same number raised to the corresponding positive exponent. If the exponent is fractional, for example $n = 1/m$, the power can be rewritten in [radical](../radicals/) form as follows:
+Raising a number to a negative exponent is therefore equivalent to taking the reciprocal of the same number raised to the corresponding positive exponent. If the exponent is fractional, for example $n = 1/m$, the power can be rewritten in [radical](../radicals/) form as follows:
 
 $$a^{\frac{1}{m}} = \sqrt[m]{a}$$
 
@@ -51,7 +51,7 @@ If the base $a$ is negative, the sign of $a^n$ alternates according to the parit
 
 ## Powers with real exponents
 
-The definition of $a^n$ applies only when the exponent $n$ is a positive [integers](../integers/) $n$. However, the idea of repeated multiplication does not extend directly to non-integer exponents. To define powers with [real](../properties-of-real-numbers/) exponents we adopt a different approach based on the [exponential function](../exponential-function/) and the [natural logarithm](../logarithms/). For any positive base $a > 0$ and real exponent $x \in \mathbb{R}$ we define:
+The definition of $a^n$ applies only when the exponent $n$ is a positive [integer](../integers/). However, the idea of repeated multiplication does not extend directly to non-integer exponents. To define powers with [real](../properties-of-real-numbers/) exponents we adopt a different approach based on the [exponential function](../exponential-function/) and the [natural logarithm](../logarithms/). For any positive base $a > 0$ and real exponent $x \in \mathbb{R}$ we define:
 
 $$a^x = e^{x \ln a}$$
 
@@ -59,7 +59,7 @@ When $x$ is a positive integer, this coincides with the usual interpretation as 
 
 $$e^{\frac{p}{q} \ln a} = \left(e^{\ln a}\right)^{\frac{p}{q}} = a^{\frac{p}{q}}$$
 
-This confirms that the exponential definition reduces to the usual radical interpretation when the exponent is rational, and the two notations are fully consistent.The need for this extension is illustrated by the expression $2^{\sqrt{2}}$. Since $\sqrt{2}$ is irrational and cannot be written as a fraction $m/n$, the radical definition does not apply. Using the definition for the real exponent, we obtain:
+This confirms that the exponential definition reduces to the usual radical interpretation when the exponent is rational, and the two notations are fully consistent. The need for this extension is illustrated by the expression $2^{\sqrt{2}}$. Since $\sqrt{2}$ is irrational and cannot be written as a fraction $m/n$, the radical definition does not apply. Using the definition for the real exponent, we obtain:
 
 $$2^{\sqrt{2}} = e^{\sqrt{2} \ln 2} \approx e^{0.9803} \approx 2.665$$
 
@@ -80,7 +80,7 @@ Any power of zero always results in zero because it corresponds to the product o
 
 $$0^n = 0 \quad \text{for } n > 0$$
 
-The condition $n > 0$ is necessary because $0^0$ is an [indeterminate form](../indeterminate-forms/). Depending on the context, it can be approached as a [limit](../limits) in two ways:
+The condition $n > 0$ is necessary because $0^0$ is an [indeterminate form](../indeterminate-forms/). Depending on the context, it can be approached as a [limit](../limits/) in two ways:
 
 $$
 \begin{aligned}
@@ -133,7 +133,7 @@ The quotient of powers with different bases $a$ and $b$ but the same exponent $n
 
 $$\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n$$
 
-> Consider the expression $6^3/2^3$. Since both terms have the same exponent, we can rewrite the quotient as a single power whose bases is the ration of the bases $6^3/2^3 = \left(6/2\right)^3 = 3^3 = 27$.
+> Consider the expression $6^3/2^3$. Since both terms have the same exponent, we can rewrite the quotient as a single power whose base is the ratio of the original bases: $6^3/2^3 = \left(6/2\right)^3 = 3^3 = 27$.
 
 - - -
 
@@ -141,7 +141,7 @@ The power of a power is a power with the same base and exponent equal to the pro
 
 $$(a^m)^n = a^{m \cdot n}$$
 
-> Consider the expression $(2^3)^4$. Applying the rule for a power of a powerwe multiply the exponents: $(2^3)^4 = 2^{3 \cdot 4} = 2^{12}$.
+> Consider the expression $(2^3)^4$. Applying the rule for a power of a power, we multiply the exponents: $(2^3)^4 = 2^{3 \cdot 4} = 2^{12}$.
 
 - - -
 
@@ -204,13 +204,13 @@ This establishes the statement for $n+1$ and completes the induction.
 
 - - -
 
-The importance of Bernoulli's inequality lies in from its ability to provide sharp estimates with minimal effort. A classical application is the proof that the sequence $a_n = \left(1+\frac{1}{n}\right)^n$ is monotonically increasing. The argument is based on the ratio of consecutive terms and on a single application of the inequality to control the resulting expression. Since this sequence is also bounded above, it converges, and its limit is [Euler's number](../euler-number-limit-sequence/) $e$:
+The importance of Bernoulli's inequality lies in its ability to provide sharp estimates with minimal effort. A classical application is the proof that the sequence $a_n = \left(1+\frac{1}{n}\right)^n$ is monotonically increasing. The argument is based on the ratio of consecutive terms and on a single application of the inequality to control the resulting expression. Since this sequence is also bounded above, it converges, and its limit is [Euler's number](../euler-number-limit-sequence/) $e$:
 
 $$
 e = \lim_{n \to +\infty}\left(1+\frac{1}{n}\right)^n
 $$
 
-In this sense Bernoulli's inequality is one of the elementary tools that makes possible to introduce $e$ without resorting to the full machinery of analysis.
+In this sense Bernoulli's inequality is one of the elementary tools that makes it possible to introduce $e$ without resorting to the full machinery of analysis.
 
 
 ## Power and exponential
@@ -238,13 +238,13 @@ The first limit asserts that any positive power of $x$, however small the expone
 
 - - -
 
-Both limits can be derived from a single fundamental result by means of elementary substitutions. Setting $y = \log_a x$, so that $x = a^y$, transforms the first limit into the second  up to suitable changes in the constants. The second limit, then follows from the series expansion of the exponential function. For every $a > 1$ we can write $a^x = e^{x \ln a}$, and since the exponential function dominates each of its truncated Taylor polynomials, the following estimate holds for every natural number $k$:
+Both limits can be derived from a single fundamental result by means of elementary substitutions. Setting $y = \log_a x$, so that $x = a^y$, transforms the first limit into the second up to suitable changes in the constants. The second limit then follows from the series expansion of the exponential function. For every $a > 1$ we can write $a^x = e^{x \ln a}$, and since the exponential function dominates each of its truncated Taylor polynomials, the following estimate holds for every natural number $k$:
 
 $$
 e^{u} \ge \frac{u^{k}}{k!} \qquad \forall \ u \ge 0
 $$
 
-Choosing $k$ larger than $\alpha$ and setting $u = x \ln a$, we obtain a lower bound on $a^x$ that grows faster than any prescribed power of $x$. Consequently the quotient $x^{\alpha}/a^{x}$ is  bounded above by an expression that tends to zero, which establishes the desired limit.
+Choosing $k$ larger than $\alpha$ and setting $u = x \ln a$, we obtain a lower bound on $a^x$ that grows faster than any prescribed power of $x$. Consequently the quotient $x^{\alpha}/a^{x}$ is bounded above by an expression that tends to zero, which establishes the desired limit.
 
 - - -
 
