@@ -270,4 +270,4 @@ $$
 \lim_{x \to -\infty} \mathrm{sgn}(x) &= -1 \\[6pt]
 \lim_{x \to +\infty} \mathrm{sgn}(x) &= 1
 \end{align}
-$$
+$$ 
