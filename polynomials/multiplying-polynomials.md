@@ -14,7 +14,7 @@ tags:
 
 ## Definition and basic properties
 
-Let $R$ be a commutative [ring](../rings/) and $R[x]$ the ring of [polynomials](../polynomials/) in one indeterminate over $R$. Consider two polynomials of degree $n$ and $m$ respectively:
+**Definition 1.** Let $R$ be a commutative [ring](../rings/) and $R[x]$ the ring of [polynomials](../polynomials/) in one indeterminate over $R$. Consider two polynomials of degree $n$ and $m$ respectively:
 
 $$
 P(x) = \sum_{i=0}^{n} a_i x^i \qquad Q(x) = \sum_{j=0}^{m} b_j x^j
@@ -26,7 +26,11 @@ $$
 (P \cdot Q)(x) = \sum_{k=0}^{n+m} \left( \sum_{i=0}^{k} a_i b_{k-i} \right) x^k
 $$
 
-This formula, known as the Cauchy convolution of the coefficient sequences, ensures that polynomial multiplication is well-defined and independent of the representation chosen for $P$ and $Q$. The coefficient indexed by $k$ collects every contribution to the term of degree $k$ that arises from pairing a term of degree $i$ in $P$ with a term of degree $k - i$ in $Q$. The convention $a_i = 0$ for $i > n$ and $b_j = 0$ for $j > m$ extends the sums beyond the actual degree of each polynomial without altering the result.
+This formula, known as the Cauchy convolution of the coefficient sequences, ensures that polynomial multiplication is well-defined and independent of the representation chosen for $P$ and $Q$. 
+
+The coefficient indexed by $k$ collects every contribution to the term of degree $k$ that arises from pairing a term of degree $i$ in $P$ with a term of degree $k - i$ in $Q$. 
+
+The convention $a_i = 0$ for $i > n$ and $b_j = 0$ for $j > m$ extends the sums beyond the actual degree of each polynomial without altering the result.
 
 > Polynomial multiplication is the operation that, together with [addition](../adding-and-subtracting-polynomials/), gives $R[x]$ the structure of a ring. When $R$ is commutative with unity, $R[x]$ is also commutative with unity, and the integral domain property transfers as well: $R[x]$ is an integral domain whenever $R$ is.
 
@@ -189,7 +193,9 @@ $$
 (a + b)(c + d) = ac + ad + bc + bd
 $$
 
-the four monomials in the expansion correspond, in order, to the products of the first terms, the outer terms, the inner terms, and the last terms of the two binomials. The method is a mnemonic device for the systematic application of the distributive property to a product of two binomials. It does not extend to factors with more than two terms, where the general procedure of multiplying every term of one polynomial by every term of the other must be used instead. A dedicated treatment with worked examples appears in the entry on [binomials](../binomials/).
+the four monomials in the expansion correspond, in order, to the products of the first terms, the outer terms, the inner terms, and the last terms of the two binomials. The method is a mnemonic device for the systematic application of the distributive property to a product of two binomials. 
+
+It does not extend to factors with more than two terms, where the general procedure of multiplying every term of one polynomial by every term of the other must be used instead. A dedicated treatment with worked examples appears in the entry on [binomials](../binomials/).
 
 ## Notable products
 
@@ -213,7 +219,9 @@ The general formula that subsumes the powers of a binomial is the [binomial theo
 
 ## Multiplying polynomials in several indeterminates
 
-The definition of the product extends with no essential modification to polynomials in more than one indeterminate. Let $R[x_1, \dots, x_n]$ be the ring of polynomials in $n$ indeterminates over a commutative ring $R$. A polynomial in this ring is a finite sum of monomials of the form $a_{\alpha} x_1^{\alpha_1} \cdots x_n^{\alpha_n}$, indexed by multi-indices $\alpha = (\alpha_1, \dots, \alpha_n)$ of non-negative integers.
+The definition of the product extends with no essential modification to polynomials in more than one indeterminate. 
+
+**Definition 2.** Let $R[x_1, \dots, x_n]$ be the ring of polynomials in $n$ indeterminates over a commutative ring $R$. A polynomial in this ring is a finite sum of monomials of the form $a_{\alpha} x_1^{\alpha_1} \cdots x_n^{\alpha_n}$, indexed by multi-indices $\alpha = (\alpha_1, \dots, \alpha_n)$ of non-negative integers.
 
 Given two such polynomials $P = \sum_{\alpha} a_{\alpha} x^{\alpha}$ and $Q = \sum_{\beta} b_{\beta} x^{\beta}$, the product is defined by:
 
