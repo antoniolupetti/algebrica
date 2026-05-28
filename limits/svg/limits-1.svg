@@ -27,9 +27,7 @@
             </text>
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                 <tspan x="109" y="11">A right neighborhood is given by </tspan>
-                <tspan x="109" y="24">the interval (x, x +</tspan>
-                <tspan x="191.47048" y="23.3005829" font-family="Helvetica">δ</tspan>
-                <tspan x="206.447238" y="24">)</tspan>
+                <tspan x="109" y="24">the interval (x, x + δ)</tspan>
             </text>
         </g>
     </g>
