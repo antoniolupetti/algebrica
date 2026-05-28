@@ -4,8 +4,6 @@
   <p>A Mathematical Knowledge Base</p>
 </div>
 
-<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
-
 <p align="center">
   <a href="https://algebrica.org">Home</a>
   ·
@@ -19,6 +17,7 @@
 <p align="center" style="margin-bottom: 30px">
 If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>.
 </p>
+<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
 
 > [!IMPORTANT]
 > [Algebrica](https://algebrica.org) is a free, ad-free, university-level mathematics knowledge base. This repository hosts the source content of the entries published on the site, released progressively in Markdown format and reusable under a non-commercial license.
