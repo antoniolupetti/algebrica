@@ -1,4 +1,18 @@
-# README
+<div align="center">
+<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readm Algebrica" />
+  <h1 style="font-size: 28px; margin: 10px 0;">GitHub Readme Algebrica</h1>
+  <p>A Mathematical Knowledge Base</p>
+</div>
+
+<p align="center">
+  <a href="https://algebrica.org">Home</a>
+  ·
+  <a href="https://algebrica.org/about">About</a>
+  ·
+  <a href="https://algebrica.org/editorial-process">Editorial Process</a>
+  ·
+  <a href="https://algebrica.org/founding-supporters/">Support</a>
+</p>
 
 [Algebrica](https://algebrica.org) is a free, ad-free, university-level mathematics knowledge base. This repository hosts the source content of the entries published on the site, released progressively in Markdown format and reusable under a non-commercial license.The repository progressively includes:
 
