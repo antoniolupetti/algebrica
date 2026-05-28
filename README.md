@@ -25,8 +25,6 @@ If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/fou
 </p>
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
 
-👋🏻 Hi! I'm [Antonio Lupetti](https://facebook.com/antoniolupetti), an engineer based in Rome, Italy.
-
 ## Introduction
 
 [Algebrica](https://algebrica.org) is a free, ad-free, university-level mathematics knowledge base. This repository hosts the source content of the entries published on the site, released progressively in Markdown format and reusable under a non-commercial license.
@@ -73,6 +71,8 @@ The SVG images can be freely modified, reused, and adapted for educational purpo
 Content is released under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/). It can be reused for non-commercial purposes, with attribution.
 
 ## Links
+
+👋🏻 Hi! I'm [Antonio Lupetti](https://facebook.com/antoniolupetti), an engineer based in Rome, Italy.
 
 - Website: [algebrica.org](https://algebrica.org)
 - X: [@antoniolupetti](https://x.com/antoniolupetti)
