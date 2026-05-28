@@ -1,12 +1,9 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readme Algebrica" style="margin-bottom: 30px;"/>
 
-<p>A Mathematical Knowledge Base</p>
+A Mathematical Knowledge Base
 </div>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/antoniolupetti/algebrica" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star antoniolupetti/algebrica on GitHub">Star</a>
+
 <p align="center">
   <a href="https://algebrica.org">Home</a>
   ·
