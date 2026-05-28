@@ -14,8 +14,8 @@
   <a href="https://algebrica.org/founding-supporters/">Support</a>
 </p>
 
-<p align="center">
-If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>, starring the repository, and sharing it with others.
+<p align="center" style="margin-bottom: 30px">
+If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>, ⭐ starring the repository, and sharing it with others.
 </p>
 
 > [!IMPORTANT]
