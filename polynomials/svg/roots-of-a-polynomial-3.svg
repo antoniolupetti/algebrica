@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="304px" height="251px" viewBox="0 0 304 251" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <ellipse cx="150" cy="118.5" rx="20.5" ry="21.5"></ellipse>
+        <mask maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="43" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M293.309343,114.319082 L293.745131,114.564212 L301.745131,119.064212 L302.519864,119.5 L301.745131,119.935788 L293.745131,124.435788 L293.309343,124.680918 L292.819082,123.809343 L293.254869,123.564212 L299.591,120 L-0.5,120 L-0.5,119 L299.591,119 L293.254869,115.435788 L292.819082,115.190657 L293.309343,114.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M7.5,225 C29.5,154.333333 77.1666667,119 150.5,119 C203.8199,119 243.042221,102.082905 268.166964,68.2487158 M280.263142,48.5344477 C282.902823,43.2979136 286.315109,34.7864311 290.5,23" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M149.995969,3.48014092 L150.43381,4.25371607 L154.955014,12.2417516 L155.2013,12.6768877 L154.331028,13.169459 L154.084742,12.734323 L150.503,6.408 L150.519885,12.4960556 L150.999998,193.498674 L151.001324,193.998672 L150.001328,194.001324 L150.000002,193.501326 L149.519889,12.4987081 L149.503,6.41 L145.956346,12.7558837 L145.712372,13.1923202 L144.839499,12.7043725 L145.083473,12.2679361 L149.562237,4.25602793 L149.995969,3.48014092 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="132" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294" y="138">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="113.5" y="223">A root of multiplicity 3 crosses </tspan>
+                <tspan x="113.5" y="236">the x-axis with an inflexion-</tspan>
+                <tspan x="113.5" y="249">like flattening at the intercept.</tspan>
+            </text>
+            <line x1="166.5" y1="143.5" x2="166.5" y2="204.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="155" y="132">r</tspan>
+            </text>
+            <circle fill="#333333" cx="150" cy="119" r="3"></circle>
+            <use stroke="#999999" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="244" y="62">y = p(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

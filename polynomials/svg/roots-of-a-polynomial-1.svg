@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="243px" viewBox="0 0 303 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+        <ellipse cx="111" cy="131.5" rx="20.5" ry="21.5"></ellipse>
+        <mask maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="43" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M49.882134,3.67699263 L49.9357878,3.75486938 L54.4357878,11.7548694 C54.5711697,11.9955483 54.4858096,12.3004059 54.2451306,12.4357878 C54.0311938,12.5561272 53.7665479,12.5020533 53.6152959,12.3195146 L53.5642122,12.2451306 L50,5.908 L50,240.5 C50,240.776142 49.7761424,241 49.5,241 C49.2545401,241 49.0503916,240.823125 49.0080557,240.589876 L49,240.5 L49,5.908 L45.4357878,12.2451306 C45.3154483,12.4590675 45.0612021,12.5502832 44.8371522,12.4728292 L44.7548694,12.4357878 C44.5409325,12.3154483 44.4497168,12.0612021 44.5271708,11.8371522 L44.5642122,11.7548694 L49.0642122,3.75486938 C49.2394349,3.44336236 49.6651608,3.41740344 49.882134,3.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M293.662848,126.527171 L293.745131,126.564212 L301.745131,131.064212 C302.056638,131.239435 302.082597,131.665161 301.823007,131.882134 L301.745131,131.935788 L293.745131,136.435788 C293.504452,136.57117 293.199594,136.48581 293.064212,136.245131 C292.943873,136.031194 292.997947,135.766548 293.180485,135.615296 L293.254869,135.564212 L299.591,132 L0,132 C-0.276142375,132 -0.5,131.776142 -0.5,131.5 C-0.5,131.25454 -0.323124839,131.050392 -0.0898756324,131.008056 L0,131 L299.591,131 L293.254869,127.435788 C293.040933,127.315448 292.949717,127.061202 293.027171,126.837152 L293.064212,126.754869 C293.184552,126.540933 293.438798,126.449717 293.662848,126.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="31" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="293" y="151">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="173" y="49">y = p(x)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="70.5" y="215">A simple root (multiplicity 1) </tspan>
+                <tspan x="70.5" y="228">corresponds to a transversal </tspan>
+                <tspan x="70.5" y="241">crossing of the x-axis.</tspan>
+            </text>
+            <line x1="110.5" y1="143.5" x2="110.5" y2="196.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M0,233.5 L191.284532,56.9296625 M214.93156,35.1016374 L247,5.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="116" y="143">r</tspan>
+            </text>
+            <circle fill="#333333" cx="110.5" cy="131" r="3"></circle>
+            <use stroke="#bababa" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

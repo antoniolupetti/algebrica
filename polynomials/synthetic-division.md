@@ -19,10 +19,8 @@ The synthetic division (or Ruffini's rule) is a method for dividing a polynomial
 $$
 P(x) = (x - r) Q(x)
 $$
-where $Q(x)$ is a polynomial of degree $n - 1$.
 
-- - -
-Synthetic division is useful for two reasons:
+where $Q(x)$ is a polynomial of degree $n - 1$. Synthetic division is useful for two reasons:
 
 + The method provides a simple way to divide by $(x - r)$, making the factorization of a polynomial almost immediate once a root has been identified.
 
@@ -64,7 +62,7 @@ $$
 P(x) = (x - r) Q(x) + R
 $$
 
-$Q(x)$, the quotient, is a polynomial of degree $n - 1$. $R$ is the remainder (a real constant) and, by the remainder theorem, coincides with the value of $P\(r\)$. Moreover, if $r$ is a root of $P(x)$, the remainder is zero and $(x - r)$ becomes a factor of the polynomial.
+$Q(x)$, the quotient, is a polynomial of degree $n - 1$. $R$ is the remainder (a real constant) and, by the remainder theorem, coincides with the value of $P(r)$. Moreover, if $r$ is a root of $P(x)$, the remainder is zero and $(x - r)$ becomes a factor of the polynomial.
 
 The procedure as a whole is fairly mechanical and follows these steps:
 

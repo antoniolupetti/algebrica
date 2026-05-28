@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="304px" height="304px" viewBox="0 0 304 304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <ellipse cx="172" cy="193.5" rx="20.5" ry="21.5"></ellipse>
+        <mask maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="43" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M49,1.98013557 L49.4357878,2.75486938 L53.9357878,10.7548694 L54.1809184,11.1906571 L53.3093429,11.6809184 L53.0642122,11.2451306 L49.5,4.908 L49.5,233 L48.5,233 L48.5,4.908 L44.9357878,11.2451306 L44.6906571,11.6809184 L43.8190816,11.1906571 L44.0642122,10.7548694 L48.5642122,2.75486938 L49,1.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M293.309343,188.319082 L293.745131,188.564212 L301.745131,193.064212 L302.519864,193.5 L301.745131,193.935788 L293.745131,198.435788 L293.309343,198.680918 L292.819082,197.809343 L293.254869,197.564212 L299.591,194 L-0.5,194 L-0.5,193 L299.591,193 L293.254869,189.435788 L292.819082,189.190657 L293.309343,188.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="212" y="64">y = p(x)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="30" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295" y="213">x</tspan>
+            </text>
+            <path d="M85.5,7 C116.403073,131.666667 145.679669,194 173.329787,194 C195.534378,194 218.001198,153.801307 240.730246,73.4039218 M247.740352,47.3654607 C249.90561,38.9399918 253.158826,25.4848383 257.5,7" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="82.5" y="276">A double root (multiplicity 2) corresponds </tspan>
+                <tspan x="82.5" y="289">to tangency with the x-axis: the graph </tspan>
+                <tspan x="82.5" y="302">touches but does not cross.</tspan>
+            </text>
+            <line x1="172" y1="205.5" x2="172" y2="258" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="177" y="205">r</tspan>
+            </text>
+            <circle fill="#333333" cx="172.5" cy="194" r="3"></circle>
+            <use stroke="#BABABA" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
