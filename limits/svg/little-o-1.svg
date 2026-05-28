@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="378px" height="237px" viewBox="0 0 378 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">As x approaches 0, y=x² </tspan>
+                <tspan x="0" y="24">becomes asymptotically </tspan>
+                <tspan x="0" y="37">negligible compared to y=x.</tspan>
+            </text>
+            <path d="M340.809343,142.319082 L341.245131,142.564212 L349.245131,147.064212 L350.019864,147.5 L349.245131,147.935788 L341.245131,152.435788 L340.809343,152.680918 L340.319082,151.809343 L340.754869,151.564212 L347.091,148 L6,148 L6,147 L347.091,147 L340.754869,143.435788 L340.319082,143.190657 L340.809343,142.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="62.5" y1="118.5" x2="62.5" y2="49.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="282" y="83">y= x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="156.024" y="87">0.1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="147.996" y="220">- 0.1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="89.996" y="165">- 0.1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="235.996" y="165">- 0.1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="334" y="128">y=x²</tspan>
+            </text>
+            <path d="M28,126 C79.4666629,139.333333 130.13333,146 180,146 C229.86667,146 279.200004,139.333333 328,126" stroke="#979797" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M42,236 L277.117969,86.3794745 M299.798819,71.946206 L328,54" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="175.5" y1="82.5" x2="185.5" y2="82.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="175.5" y1="215.5" x2="185.5" y2="215.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="107.5" y1="143.5" x2="107.5" y2="153.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="251.5" y1="143.5" x2="251.5" y2="153.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M180.5,21.9801356 L180.935788,22.7548694 L185.435788,30.7548694 L185.680918,31.1906571 L184.809343,31.6809184 L184.564212,31.2451306 L181,24.908 L181,237 L180,237 L180,24.908 L176.435788,31.2451306 L176.190657,31.6809184 L175.319082,31.1906571 L175.564212,30.7548694 L180.064212,22.7548694 L180.5,21.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

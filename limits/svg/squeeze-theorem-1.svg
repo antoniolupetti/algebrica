@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="291px" viewBox="0 0 360 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="NEW---Limits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <line x1="25.5" y1="81.5" x2="176.5" y2="81.5" id="Line-2" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="175.5" y1="81.5" x2="175.5" y2="148.5" id="Line-2" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text id="The-function-f(x)-is" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="206.642" y="261.362015">The function f(x) is squeezed </tspan>
+                <tspan x="215.42" y="274.362015">between g(x) and h(x), both </tspan>
+                <tspan x="199.162" y="287.362015">approaching the same limit </tspan>
+                <tspan x="338.543" y="285.074" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">ℓ</tspan>
+                <tspan x="351.589" y="287.362015">.</tspan>
+            </text>
+            <path id="Line-2" d="M340.162848,143.527171 L340.245131,143.564212 L348.245131,148.064212 C348.556638,148.239435 348.582597,148.665161 348.323007,148.882134 L348.245131,148.935788 L340.245131,153.435788 C340.004452,153.57117 339.699594,153.48581 339.564212,153.245131 C339.443873,153.031194 339.497947,152.766548 339.680485,152.615296 L339.754869,152.564212 L346.091,149 L5.5,149 C5.22385763,149 5,148.776142 5,148.5 C5,148.25454 5.17687516,148.050392 5.41012437,148.008056 L5.5,148 L346.091,148 L339.754869,144.435788 C339.540933,144.315448 339.449717,144.061202 339.527171,143.837152 L339.564212,143.754869 C339.684552,143.540933 339.938798,143.449717 340.162848,143.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="300.5" y1="244.5" x2="300.5" y2="212.5" id="Line-3" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text id="y=-g(x)" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#979797">
+                <tspan x="64" y="195">y= g(x)</tspan>
+            </text>
+            <text id="y=-f(x)" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="290" y="202">y= f(x)</tspan>
+            </text>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="344" y="167">x</tspan>
+            </text>
+            <text id="ℓ" font-family="HiraginoSans-W3, Hiragino Sans" font-size="17" font-weight="300" fill="#BABABA">
+                <tspan x="0" y="86">ℓ</tspan>
+            </text>
+            <text id="x₀" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="170" y="164">x₀</tspan>
+            </text>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="6" y="14">y</tspan>
+            </text>
+            <text id="y=-h(x)" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#979797">
+                <tspan x="98" y="52">y= h(x)</tspan>
+            </text>
+            <path d="M79,11 C86.5248976,25.6564574 92.4320859,35.9236229 96.721565,41.8014964 M110.099418,57.3144164 C127.076195,73.7714721 147.043056,82 170,82 C208.933331,82 239.266664,58.3333333 261,11" id="Shape" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M62,218 C64.6213006,211.936439 66.5854694,207.447271 67.8925065,204.532496 M78.4236127,182.102242 C111.312844,115.367414 143.17164,82 174,82 C209.933372,82 244.933372,127.333333 279,218" id="Shape" stroke="#979797" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M54,190 C92.8666725,118 132.533339,82 173,82 C213.466661,82 251.466661,118 287,190" id="Path-5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path id="Line-9" d="M24.882134,6.67699263 L24.9357878,6.75486938 L29.4357878,14.7548694 C29.5711697,14.9955483 29.4858096,15.3004059 29.2451306,15.4357878 C29.0311938,15.5561272 28.7665479,15.5020533 28.6152959,15.3195146 L28.5642122,15.2451306 L25,8.908 L25,218.5 C25,218.776142 24.7761424,219 24.5,219 C24.2545401,219 24.0503916,218.823125 24.0080557,218.589876 L24,218.5 L24,8.908 L20.4357878,15.2451306 C20.3154483,15.4590675 20.0612021,15.5502832 19.8371522,15.4728292 L19.7548694,15.4357878 C19.5409325,15.3154483 19.4497168,15.0612021 19.5271708,14.8371522 L19.5642122,14.7548694 L24.0642122,6.75486938 C24.2394349,6.44336236 24.6651608,6.41740344 24.882134,6.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
