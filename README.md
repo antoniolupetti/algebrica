@@ -18,9 +18,9 @@
 If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>.
 </p>
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
+## Introduction
 
-> [!IMPORTANT]
-> [Algebrica](https://algebrica.org) is a free, ad-free, university-level mathematics knowledge base. This repository hosts the source content of the entries published on the site, released progressively in Markdown format and reusable under a non-commercial license.
+[Algebrica](https://algebrica.org) is a free, ad-free, university-level mathematics knowledge base. This repository hosts the source content of the entries published on the site, released progressively in Markdown format and reusable under a non-commercial license.
 
 The repository progressively includes:
 
