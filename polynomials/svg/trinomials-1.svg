@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="311px" height="418px" viewBox="0 0 311 418" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M149,58.9801356 L149.435788,59.7548694 L153.935788,67.7548694 L154.180918,68.1906571 L153.309343,68.6809184 L153.064212,68.2451306 L149.499,61.906 L149.5,359 L148.5,359 L148.499,61.91 L144.935788,68.2451306 L144.690657,68.6809184 L143.819082,68.1906571 L144.064212,67.7548694 L148.564212,59.7548694 L149,58.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M296.309343,215.319082 L296.745131,215.564212 L304.745131,220.064212 L305.519864,220.5 L304.745131,220.935788 L296.745131,225.435788 L296.309343,225.680918 L295.819082,224.809343 L296.254869,224.564212 L302.591,221 L-0.5,221 L-0.5,220 L302.591,220 L296.254869,216.435788 L295.819082,216.190657 L296.309343,215.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="34.5" y="11">Since the coefficient a &gt; 0 the </tspan>
+                <tspan x="34.5" y="24">parabola has its concavity </tspan>
+                <tspan x="34.5" y="37">facing upward.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="164.5" y="390">Since the coefficient a &lt; 0 </tspan>
+                <tspan x="164.5" y="403">the parabola has concavity </tspan>
+                <tspan x="164.5" y="416">facing downward.</tspan>
+            </text>
+            <line x1="65" y1="52.5" x2="65" y2="106.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="228" y1="327.5" x2="228" y2="370.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M32.5,79 C39.766193,96.9182039 45.2312689,109.838799 48.8952277,117.761785 M58.5882095,137.58601 C87.0738641,192.52867 116.377794,220 146.5,220 C185.899967,220 226.2333,173 267.5,79" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M32.5,222 C69.1000331,316 107.100033,363 146.5,363 C176.160685,363 206.350331,336.364031 237.068936,283.092092 M249.186122,260.143105 C252.645055,253.221495 258.749681,240.507126 267.5,222" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-dasharray="4" transform="translate(150.000000, 292.500000) scale(1, -1) translate(-150.000000, -292.500000) "></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="35" y="130">y = ax²</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="225" y="316">y = -ax²</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="129.5" y="67">y</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="297.5" y="240">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
