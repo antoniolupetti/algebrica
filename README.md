@@ -16,8 +16,6 @@
   <a href="https://algebrica.org/about">About</a>
   ·
   <a href="https://algebrica.org/editorial-process">Editorial Process</a>
-  ·
-  <a href="https://algebrica.org/founding-supporters/">Support</a>
 </p>
 
 <p align="center" style="margin-bottom: 30px">
