@@ -4,15 +4,17 @@ source: https://algebrica.org/squeeze-theorem/
 license: CC BY-NC 4.0
 tags:
   - bounded-functions
+  - geometric-proof
   - limits
   - oscillating-functions
+  - remarkable-limits
   - squeeze-theorem
 ---
 ## What is the squeeze theorem
 
 The squeeze theorem, also called the sandwich theorem, provides a method for determining the [limit](../limits/) of a [function](../functions/) when direct evaluation is challenging or when the function exhibits complex oscillatory behaviour near a specific point. The theorem is frequently applied to functions involving [sine and cosine](../sine-and-cosine/), particularly when these trigonometric terms oscillate in such a way that direct limit evaluation is impossible, as in:
 
-$$\sin\left( \frac{1}{x} \right) \quad \text{or} \quad \cos\left( \frac{1}{x} \right)$$
+$$\sin\left( \frac{1}{x} \right) \qquad \frac{\sin}{x} \qquad \cos\left( \frac{1}{x} \right)$$
 
 In these situations, the function is constrained between two other functions with known and equal limits, which makes the evaluation of the target limit accessible.
 
@@ -147,5 +149,63 @@ $$\lim_{x \to 0} x^4 \cdot \cos\left( \frac{2}{x} \right) = 0$$
 The original expression can now be evaluated by applying the sum rule from the [algebra of limits](../algebra-of-limits/):
 
 $$\lim_{x \to 0} \left( x^4 \cdot \cos\left( \frac{2}{x} \right) + 2 \right) = 0 + 2 = 2$$
+
+## Example 4
+
+The squeeze theorem provides the classical justification of the trigonometric fundamental limit:
+
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+
+This limit is the cornerstone of the differentiation of the trigonometric functions and appears among the [remarkable limits](../remarkable-limits/) in standard calculus references. The argument below establishes the limit for $x \to 0^+$, and the case $x \to 0^-$ is then deduced by symmetry.
+
+- - -
+
+Consider an angle $x \in (0, \pi/2)$ together with the [unit circle](../unit-circle/) centred at the origin. Let $O$ denote the centre, $A$ the point $(1, 0)$ on the positive $x$-axis, and $P$ the point on the unit circle determined by the angle $x$ measured counterclockwise from $OA$. Let $T$ be the intersection of the ray $OP$ extended with the vertical tangent line passing through $A$. Three regions are then compared: the triangle $OAP$, the circular sector bounded by $OA$, $OP$, and the arc $AP$, and the triangle $OAT$.
+
+The triangle $OAP$ has base $OA = 1$ and height equal to the ordinate of $P$, which is $\sin x$. Its area is therefore:
+
+$$\mathrm{Area}(OAP) = \frac{1}{2} \sin x$$
+
+The circular sector has radius $1$ and central angle $x$ measured in radians, so its area is:
+
+$$\mathrm{Area}(\text{sector}) = \frac{1}{2} x$$
+
+The triangle $OAT$ has base $OA = 1$ and height $AT = \tan x$, since $T = (1, \tan x)$ by definition of tangent. Its area is:
+
+$$\mathrm{Area}(OAT) = \frac{1}{2} \tan x$$
+
+- - -
+
+The triangle $OAP$ is contained in the circular sector, which is in turn contained in the triangle $OAT$. The corresponding chain of strict inequalities between the three areas is:
+
+$$\frac{1}{2} \sin x < \frac{1}{2} x < \frac{1}{2} \tan x$$
+
+Multiplying every term by $2$ removes the common factor and yields:
+
+$$\sin x < x < \tan x$$
+
+Since $x \in (0, \pi/2)$, the value $\sin x$ is strictly positive, so dividing the chain by $\sin x$ preserves the order of the terms:
+
+$$1 < \frac{x}{\sin x} < \frac{1}{\cos x}$$
+
+Taking the reciprocal of each member reverses the inequality:
+
+$$\cos x < \frac{\sin x}{x} < 1$$
+
+- - -
+
+The function $\sin(x)/x$ is now confined between the lower bound $\cos x$ and the constant upper bound $1$. Both bounds admit a limit as $x \to 0^+$:
+
+$$\lim_{x \to 0^+} \cos x = 1 \qquad \lim_{x \to 0^+} 1 = 1$$
+
+The squeeze theorem applies directly and gives the right-hand limit:
+
+$$\lim_{x \to 0^+} \frac{\sin x}{x} = 1$$
+
+The function $\sin(x)/x$ is even, because $\sin(-x) = -\sin x$ and the denominator changes sign in the same way, leaving the ratio invariant under $x \mapsto -x$. The left-hand limit at $0$ therefore equals the right-hand limit, and the two-sided limit follows:
+
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+
+> The geometric inequality $\sin x < x < \tan x$ on $(0, \pi/2)$ is the central ingredient of this argument. The same inequality underlies the derivation of related trigonometric limits, such as $\lim_{x \to 0} (1 - \cos x)/x^2 = 1/2$, which is obtained from the identity $1 - \cos x = 2 \sin^2(x/2)$ combined with the fundamental limit above.
 
 The squeeze theorem complements the techniques developed for [indeterminate forms](../indeterminate-forms/) and is often the simplest route whenever a function can be controlled between two functions with a common limit.

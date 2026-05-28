@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="204px" viewBox="0 0 224 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="46.5" y1="49.5" x2="46.5" y2="140.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="8.5" y="11">Triangle rule. Place v at the tip of u. </tspan>
+                <tspan x="8.5" y="24">The sum runs from the tail of u</tspan>
+                <tspan x="8.5" y="37">to the tip of v.</tspan>
+            </text>
+            <path d="M16,174.5 L79.1393585,156.742055 M93.6336647,152.665532 L144,138.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16,173.5 L103.863914,122.95463 M130.373574,107.704449 L202,66.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M202.640458,65.1260619 C203.38123,65.1189155 203.85864,65.8840646 203.562873,66.5352864 L203.509673,66.637035 L196.473868,78.4717275 C196.19164,78.9464543 195.578006,79.1025052 195.103279,78.8202769 C194.662462,78.5582077 194.496421,78.0103862 194.700917,77.5533701 L194.75473,77.4496882 L199.838,68.896 L192.749077,72.9754288 L187.744615,75.8543398 C187.265891,76.1297345 186.654558,75.964904 186.379163,75.4861805 C186.123439,75.0416515 186.247298,74.4827801 186.649589,74.184713 L186.747322,74.1207286 L191.751784,71.2418176 L198.843,67.162 L188.892222,67.2587858 C188.37941,67.2637329 187.953034,66.8817881 187.890474,66.3850298 L187.882622,66.268479 C187.877674,65.755667 188.259619,65.3292914 188.756378,65.2667313 L188.872928,65.2588788 L202.640458,65.1260619 Z" fill="#333333" fill-rule="nonzero"></path>
+            <path d="M149,135.5 L169.456208,110.15209 M180.268234,96.7545793 L195,78.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="82.5" y="159">U</tspan>
+            </text>
+            <circle fill="#333333" cx="146.5" cy="137" r="3.5"></circle>
+            <circle fill="#333333" cx="206.5" cy="64" r="3.5"></circle>
+            <circle fill="#333333" cx="17.5" cy="173" r="3.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="152" y="150">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="95" y="117">U + V</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="171.5" y="109">V</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="215" y="68">B</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="184">O</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

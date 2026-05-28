@@ -30,8 +30,6 @@ $$\lim_{x \to a} \frac{f(x)}{g(x)} \to \frac{0}{0}$$
 
 This notation alone does not tell us how the ratio will behave. Depending on how $f(x)$ and $g(x)$ approach zero, the limit could be any finite number, zero, infinity, or it might not exist at all. The indeterminate form does not resolve the problem; it signals that further analysis is required.
 
-- - -
-
 Three considerations should be kept in mind before analysing each form:
 
 + An indeterminate form does not represent a specific number.
@@ -209,21 +207,54 @@ This value coincides with the [remarkable limit](../remarkable-limits/) that def
 
 All seven indeterminate forms share a common feature: the symbolic expression alone does not determine the value of the limit. The decisive factor is always the relative rate at which the quantities involved grow or vanish. Recognising the indeterminate form is only the first step; computing the limit requires a closer analysis of the functions involved.
 
-## Summary
+## A strategy for computing limits
 
-The following table summarizes the principal indeterminate forms and the techniques most commonly used to transform them into computable limits. These reductions often constitute the first step in the evaluation of nontrivial limits.
+Each indeterminate form admits more than one resolution technique, and the choice between them affects how quickly the calculation reaches a determinate expression. A working strategy starts from the recognition of the form, proceeds with the application of a primary technique chosen for its directness on that specific case, and turns to an alternative whenever the first attempt becomes algebraically heavy or fails to produce a conclusion.
+
+For a quotient that reduces to $\dfrac{0}{0}$, the first attempt is algebraic simplification through factoring of numerator and denominator and cancellation of the common vanishing factor. When the simplification is not transparent, [remarkable limits](../remarkable-limits/) provide a direct shortcut, especially in the presence of trigonometric, exponential, or logarithmic expressions near the origin. If neither route is available, [Taylor expansions](../taylor-series/) with [little-o notation](../little-o-notation/) isolate the leading behaviour of numerator and denominator. [L'Hôpital's rule](../hopital-rule/) is reserved for situations in which the preceding methods are inconvenient, since it can hide structural information about the limit.
+
+For a quotient that reduces to $\dfrac{\infty}{\infty}$, the standard move is to factor the dominant term from numerator and denominator and to read the limit from the surviving ratio. When the dominant term is not immediately identifiable, the comparison between growth rates of logarithms, powers, exponentials, and factorials provides the answer. L'Hôpital's rule remains available, but the dominant-term approach is usually faster.
+
+For a product of the form $0 \cdot \infty$, the resolution proceeds by rewriting the product as a quotient. The transformed expression takes either the form $\dfrac{0}{0}$ or the form $\dfrac{\infty}{\infty}$, and the techniques listed above apply.
+
+For a difference of the form $\infty - \infty$, the appropriate step depends on the algebraic structure of the two divergent quantities. When they share a common dominant term, the conjugate produces a cancellation that exposes lower-order behaviour. When the two terms admit a common denominator, the difference reduces to a quotient. In both cases the indeterminacy is converted into a $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ form.
+
+For an exponential form $1^{\infty}$, $0^{0}$, or $\infty^{0}$, the logarithmic transformation reduces the calculation to a product $0 \cdot \infty$, which is then handled by the techniques already listed.
+
+## Resolution techniques
+
+A compact list of the recurring techniques, together with the form on which each is typically deployed, keeps the strategy organised.
+
++ Factoring and cancellation, effective for $\dfrac{0}{0}$ when numerator and denominator share a vanishing factor.
++ Rationalisation by the conjugate, used in $\infty - \infty$ and in $\dfrac{0}{0}$ expressions containing square roots, where the conjugate makes the dominant-term cancellation explicit.
++ Division by the dominant term, the primary tool for $\dfrac{\infty}{\infty}$ involving polynomials, rational functions, or sums of monomials of mixed degree.
++ Substitution, in which a change of variable such as $t = 1/x$ or $t = x - a$ transports the limit into a form where another technique applies more naturally.
++ Remarkable limits, applied through algebraic manipulation of the expression to match a known pattern from the standard catalogue.
++ Taylor expansions with little-o notation, indispensable when numerator and denominator must be compared at higher orders, or when several remarkable limits would otherwise have to be combined.
++ L'Hôpital's rule, a last-resort method for $\dfrac{0}{0}$ and $\dfrac{\infty}{\infty}$, subject to verification of its hypotheses.
+
+The following table associates each indeterminate form with a primary technique and a typical alternative.
 
 [class="table-1"]
 
-|                          |                                                                                                                |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+|                          |                                                                                                                  |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | $\dfrac{0}{0}$           | Factor and simplify, apply [L'Hôpital's rule](../hopital-rule/), or expand by [Taylor series](../taylor-series/) |
-| $\dfrac{\infty}{\infty}$ | Factor out the dominant term, or apply L'Hôpital's rule                                                        |
-| $0 \cdot \infty$         | Rewrite as $\dfrac{0}{1/\infty}$ or $\dfrac{\infty}{1/0}$ to obtain $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ |
-| $\infty - \infty$        | Multiply by the conjugate, or find a common denominator                                                        |
-| $1^{\infty}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                              |
-| $0^{0}$                  | Take the logarithm and reduce to $0 \cdot \infty$                                                              |
-| $\infty^{0}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                              |
+| $\dfrac{\infty}{\infty}$ | Factor out the dominant term, or apply L'Hôpital's rule                                                          |
+| $0 \cdot \infty$         | Rewrite as $\dfrac{0}{1/\infty}$ or $\dfrac{\infty}{1/0}$ to obtain $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$   |
+| $\infty - \infty$        | Multiply by the conjugate, or find a common denominator                                                          |
+| $1^{\infty}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
+| $0^{0}$                  | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
+| $\infty^{0}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
 [/class]
 
 The techniques summarised here build on the [algebra of limits](../algebra-of-limits/) and connect with the [squeeze theorem](../squeeze-theorem/) whenever the function under study can be bounded between two functions with a common limit.
+
+
+## Cautions on L'Hôpital and Taylor
+
+L'Hôpital's rule requires that the limit reduce to $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$, that numerator and denominator be differentiable in a neighbourhood of the point, that the derivative of the denominator be non-zero there, and that the limit of the ratio of the derivatives exist. Applying the rule when the hypotheses fail produces results that are formally derived but logically unjustified. A frequent error is the application of L'Hôpital to a quotient that has already become determinate after a previous algebraic step, with the consequence of reintroducing a spurious indeterminate form into a calculation that no longer required one.
+
+Taylor expansions resolve a limit when the expansions of numerator and denominator are pushed to sufficient order to make the leading non-zero terms visible. Truncating too early produces an apparent cancellation that does not reflect the true behaviour of the function. The order of expansion must therefore be chosen by inspecting the order of vanishing of the dominant term, and not by reflex.
+
+> The choice between L'Hôpital and Taylor often reduces to a matter of perspective. L'Hôpital is procedural and almost mechanical, but it blurs the structure of the functions involved. Taylor exposes that structure and reveals at which order the limit is determined, at the cost of slightly heavier algebra.

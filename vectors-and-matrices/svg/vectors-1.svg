@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="302px" height="232px" viewBox="0 0 302 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M251.809343,203.319082 L252.245131,203.564212 L260.245131,208.064212 L261.019864,208.5 L260.245131,208.935788 L252.245131,213.435788 L251.809343,213.680918 L251.319082,212.809343 L251.754869,212.564212 L258.091,209 L8.5,209 L8.5,208 L258.091,208 L251.754869,204.435788 L251.319082,204.190657 L251.809343,203.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="79.5" y1="166.5" x2="137.986308" y2="137.744232" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="149.159313" y1="132.250838" x2="188.322246" y2="112.995729" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M190.811718,106.271632 L199.9764,106.780157 C200.335754,106.800097 200.547339,107.175751 200.404241,107.486277 L200.360958,107.562308 L195.167264,115.130369 C195.011012,115.358053 194.699771,115.41596 194.472087,115.259709 C194.269701,115.120819 194.20146,114.859467 194.298534,114.643194 L194.342747,114.564532 L198.456,108.569 L193.033901,111.236331 L186.008151,114.690658 C185.760341,114.812498 185.460681,114.710379 185.338841,114.46257 C185.230539,114.242294 185.299192,113.981051 185.48983,113.840144 L185.56693,113.79326 L192.59268,110.338933 L198.015,107.673 L190.756316,107.270096 C190.511233,107.256497 190.317197,107.068583 190.287849,106.833346 L190.284785,106.743163 C190.300084,106.467444 190.536,106.256333 190.811718,106.271632 Z" fill="#333333" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="77.5" cy="167.5" r="3"></circle>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="63.5" y="177">A</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="209.5" y="103">B</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="140.5" y="138">v</tspan>
+            </text>
+            <circle fill="#333333" cx="203.5" cy="105.5" r="3"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="60" y="31">The vector v runs from A to B. Its direction </tspan>
+                <tspan x="60" y="44">follows the arrow. Its magnitude</tspan>
+                <tspan x="60" y="57">equals the length of the segment.</tspan>
+            </text>
+            <line x1="101.5" y1="72.5" x2="101.5" y2="138.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="16">y</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="255" y="228">x</tspan>
+            </text>
+            <path d="M22.5,6.98013557 L22.9357878,7.75486938 L27.4357878,15.7548694 L27.6809184,16.1906571 L26.8093429,16.6809184 L26.5642122,16.2451306 L23,9.908 L23,229 L22,229 L22,9.908 L18.4357878,16.2451306 L18.1906571,16.6809184 L17.3190816,16.1906571 L17.5642122,15.7548694 L22.0642122,7.75486938 L22.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
