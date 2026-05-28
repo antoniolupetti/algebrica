@@ -35,7 +35,7 @@ The function therefore admits the horizontal asymptote $y = 1$. Both branches of
 
 ## Vertical asymptotes
 
-Let $y = f(x)$ be a real-valued function defined on $[a, b] \setminus \\{ x_0 \\}$, where $x_0 \in [a, b]$. The line with equation $x = x_0$ is a vertical asymptote of $f$ if:
+**Definition 2.** Let $y = f(x)$ be a real-valued function defined on $[a, b] \setminus \\{ x_0 \\}$, where $x_0 \in [a, b]$. The line with equation $x = x_0$ is a vertical asymptote of $f$ if:
 
 $$\lim_{x \to x_0^-} f(x) = \pm \infty \quad \text{or} \quad \lim_{x \to x_0^+} f(x) = \pm \infty$$
 
@@ -55,7 +55,7 @@ The function diverges to $-\infty$ when approaching $1$ from the left, and to $+
 
 ## Oblique asymptotes
 
-Let $y = f(x)$ be a real-valued function defined on a half-line of the form $(-\infty, a]$ or $[a, +\infty)$. The line with equation $y = p x + q$ is an oblique asymptote of $f$ if:
+**Definition 3.** Let $y = f(x)$ be a real-valued function defined on a half-line of the form $(-\infty, a]$ or $[a, +\infty)$. The line with equation $y = p x + q$ is an oblique asymptote of $f$ if:
 
 $$
 \begin{align}
