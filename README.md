@@ -15,8 +15,7 @@
 </p>
 
 <p align="center" style="margin-bottom: 30px">
-If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>, ⭐   <a href="https://github.com/antoniolupetti/algebrica/stargazers">
-    <img src="https://img.shields.io/github/stars/antoniolupetti/algebrica?style=for-the-badge" alt="GitHub Stars"></a> the repository, and sharing it with others.
+If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>.
 </p>
 
 > [!IMPORTANT]
