@@ -1,7 +1,6 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readm Algebrica" />
-  <h1 style="font-size: 28px; margin: 10px 0;">GitHub Readme Algebrica</h1>
-  <p>A Mathematical Knowledge Base</p>
+  <p style="color:#929292; font-size: 12px padding: 10px 0;">A Mathematical Knowledge Base</p>
 </div>
 
 <p align="center">
