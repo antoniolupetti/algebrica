@@ -4,6 +4,8 @@
   <p>A Mathematical Knowledge Base</p>
 </div>
 
+<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.svg" width="100%" alt="Algebrica Screenshot" />
+
 <p align="center">
   <a href="https://algebrica.org">Home</a>
   ·
