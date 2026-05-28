@@ -25,7 +25,7 @@ If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/fou
 </p>
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
 
-👋🏻 Hi! I'm [Antonio Lupetti](https://facebook.com/antoniolupetti), an engineer based in Rome, Italy, and the creator of Algebrica, an open mathematical knowledge base.
+👋🏻 Hi! I'm [Antonio Lupetti](https://facebook.com/antoniolupetti), an engineer based in Rome, Italy.
 
 ## Introduction
 
