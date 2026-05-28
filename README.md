@@ -1,20 +1,16 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readme Algebrica"/>
 
-A Mathematical Knowledge Base
+<p>A Mathematical Knowledge Base</p>
 </div>
 
 <div align="center">
 
-<a href="https://algebrica.org">
-  <img src="https://img.shields.io/badge/website-algebrica.org-green" alt="Website">
-</a>
-<a href="https://x.com/antonio_lupetti">
-  <img src="https://img.shields.io/badge/X-@antonio__lupetti-blue" alt="X">
-</a>
-<a href="https://algebrica.org/founding-supporters/">
-  <img src="https://img.shields.io/badge/support-project-orange?style=flat&logo=heart&logoColor=white" alt="Support">
-</a>
+<a href="https://algebrica.org"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-website.png" alt="Website"></a>
+·
+<a href="https://x.com/antonio_lupetti"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-x.png" alt="X"></a>
+·
+<a href="https://algebrica.org/founding-supporters/"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-paypal.png" alt="Support"></a>
 
 </div>
 
