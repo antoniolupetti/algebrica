@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readme Algebrica" style="margin-bottom: 30px;"/>
 
-A Mathematical Knowledge Base
+<p>A Mathematical Knowledge Base</p>
 </div>
 
 <p align="center">
