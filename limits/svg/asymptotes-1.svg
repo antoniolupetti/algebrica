@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="293px" viewBox="0 0 345 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="0.5" y1="154.5" x2="337.5" y2="154.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="1" y="64">The line y = 1 is a </tspan>
+                <tspan x="1" y="77">horizontal asymptote, </tspan>
+                <tspan x="1" y="90">since the function </tspan>
+                <tspan x="1" y="103">approaches it as x → ±∞.</tspan>
+            </text>
+            <path d="M329.809343,172.319082 L330.245131,172.564212 L338.245131,177.064212 L339.019864,177.5 L338.245131,177.935788 L330.245131,182.435788 L329.809343,182.680918 L329.319082,181.809343 L329.754869,181.564212 L336.091,178 L0,178 L0,177 L336.091,177 L329.754869,173.435788 L329.319082,173.190657 L329.809343,172.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M166.882134,5.67699263 L166.935788,5.75486938 L171.435788,13.7548694 C171.57117,13.9955483 171.48581,14.3004059 171.245131,14.4357878 C171.031194,14.5561272 170.766548,14.5020533 170.615296,14.3195146 L170.564212,14.2451306 L167,7.908 L167,292.5 C167,292.776142 166.776142,293 166.5,293 C166.25454,293 166.050392,292.823125 166.008056,292.589876 L166,292.5 L166,7.908 L162.435788,14.2451306 C162.315448,14.4590675 162.061202,14.5502832 161.837152,14.4728292 L161.754869,14.4357878 C161.540933,14.3154483 161.449717,14.0612021 161.527171,13.8371522 L161.564212,13.7548694 L166.064212,5.75486938 C166.239435,5.44336236 166.665161,5.41740344 166.882134,5.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M171,17 C171,76.3333333 175.333333,113 184,127 C185.796273,129.61276 189,137 202,142 C207.868707,144.257195 218.351081,147.576571 235,149 C249.903894,150.274235 282.237227,150.940902 332,151" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M1,158.705756 C1,218.03909 5.33333333,254.705756 14,268.705756 C15.7962728,271.318517 19,278.705756 32,283.705756 C37.8687073,285.962951 48.351081,289.282327 65,290.705756 C79.9038941,291.979991 112.237227,292.313325 162,291.705756" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(81.500000, 225.352878) scale(-1, -1) translate(-81.500000, -225.352878) "></path>
+            <line x1="16.5" y1="114.5" x2="16.5" y2="143.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="329" y="198">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="147" y="14">y</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
