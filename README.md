@@ -7,9 +7,9 @@
 <div align="center">
 
 <a href="https://algebrica.org"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-website.png" alt="Website"></a>
-·
+
 <a href="https://x.com/antonio_lupetti"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-x.png" alt="X"></a>
-·
+
 <a href="https://algebrica.org/founding-supporters/"><img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/button-paypal.png" alt="Support"></a>
 
 </div>
