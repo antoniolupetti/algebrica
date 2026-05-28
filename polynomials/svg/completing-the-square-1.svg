@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="291px" height="320px" viewBox="0 0 291 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="41" y="11">x² represents the area of </tspan>
+                <tspan x="41" y="24">a square with side x.</tspan>
+            </text>
+            <line x1="95.5" y1="33.5" x2="95.5" y2="95.5" stroke="#636363" stroke-linecap="round"></line>
+            <line x1="95.5" y1="33.5" x2="95.5" y2="95.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="95.5" y1="207.5" x2="95.5" y2="269.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <rect fill="#E6E6E6" x="175" y="188" width="40" height="39"></rect>
+            <rect stroke="#333333" stroke-width="2" x="57" y="69" width="118" height="118"></rect>
+            <rect stroke="#333333" x="175.5" y="68.5" width="39" height="119"></rect>
+            <rect stroke="#333333" transform="translate(116.000000, 207.000000) rotate(90.000000) translate(-116.000000, -207.000000) " x="96.5" y="147.5" width="39" height="119"></rect>
+            <text font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="10.319" y="288.362015">6x represents the area of </tspan>
+                <tspan x="14.202" y="301.362015">two identical rectangles, </tspan>
+                <tspan x="48.885" y="314.362015">each with area 3x </tspan>
+            </text>
+            <text font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="192" y="292">9 is the area of a </tspan>
+                <tspan x="192" y="305">small square with </tspan>
+                <tspan x="192" y="318">side 3</tspan>
+            </text>
+            <line x1="195.5" y1="207.5" x2="195.5" y2="269.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
