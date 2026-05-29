@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="298px" viewBox="0 0 334 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.076522, 0.000000)">
+            <path d="M120.367018,203.486827 C125.273608,197.422581 128.100896,190.295442 128.100896,182.669927 C128.100896,160.578537 104.371988,142.669927 75.1008962,142.669927 C45.8298045,142.669927 22.1008962,160.578537 22.1008962,182.669927 C22.1008962,204.761317 45.8298045,222.669927 75.1008962,222.669927 C83.2432809,222.669927 90.9568146,221.28417 97.8500329,218.8081" stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" transform="translate(75.100896, 182.669927) rotate(1.000000) translate(-75.100896, -182.669927) "></path>
+            <path d="M181.196889,190.747761 C181.676078,188.049965 181.923478,185.296785 181.923478,182.5 C181.923478,148.534488 145.434685,121 100.423478,121 C55.4122712,121 18.9234784,148.534488 18.9234784,182.5 C18.9234784,216.465512 55.4122712,244 100.423478,244 C131.475312,244 158.471165,230.89581 172.229065,211.616159" stroke="#BFBFBF" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round" transform="translate(100.423478, 182.500000) rotate(1.000000) translate(-100.423478, -182.500000) "></path>
+            <path d="M217.138198,172.852928 C210.860614,134.600441 167.714904,104.993753 115.423533,104.993753 C58.814346,104.993753 12.9235329,139.691685 12.9235329,182.493753 C12.9235329,225.295821 58.814346,259.993753 115.423533,259.993753 C167.912021,259.993753 211.185767,230.163435 217.207616,191.701623" stroke="#BFBFBF" stroke-width="1.9404" stroke-linecap="round" stroke-linejoin="round" transform="translate(115.065575, 182.493753) rotate(1.000000) translate(-115.065575, -182.493753) "></path>
+            <path d="M246.482543,153.162012 C230.105663,116.435346 184.330982,90 130.423478,90 C62.7685965,90 7.92347835,131.637518 7.92347835,183 C7.92347835,234.362482 62.7685965,276 130.423478,276 C198.07836,276 252.923478,234.362482 252.923478,183 C252.923478,179.50061 252.668895,176.046361 252.173021,172.647347" stroke="#BFBFBF" stroke-width="2.32848" stroke-linecap="round" stroke-linejoin="round" transform="translate(130.423478, 183.000000) rotate(1.000000) translate(-130.423478, -183.000000) "></path>
+            <path d="M280.930373,131.951514 C256.548544,95.7766062 206.81366,71 149.423478,71 C67.9614778,71 1.92347835,120.92025 1.92347835,182.5 C1.92347835,244.07975 67.9614778,294 149.423478,294 C230.885479,294 296.923478,244.07975 296.923478,182.5 C296.923478,171.644662 294.871349,161.151642 291.044349,151.230531" stroke="#BFBFBF" stroke-width="2.794176" stroke-linecap="round" stroke-linejoin="round" transform="translate(149.423478, 182.500000) rotate(1.000000) translate(-149.423478, -182.500000) "></path>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="83.9234784" y="213">Natural</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="152.923478" y="203">Integer</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="192.923478" y="188">Rational</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="237.923478" y="169">Real</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="267.923478" y="147">Complex</tspan>
+            </text>
+            <ellipse stroke="#BFBFBF" stroke-width="1.5" fill="#F3F3F3" transform="translate(195.816125, 138.241408) rotate(13.000000) translate(-195.816125, -138.241408) " cx="195.816125" cy="138.241408" rx="28.75" ry="12.75"></ellipse>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="103.923478" y="11">Irrational: real numbers outside the </tspan>
+                <tspan x="103.923478" y="25">rational subset, defined by non-</tspan>
+                <tspan x="103.923478" y="39">periodic decimal expansion (√2, π, e).</tspan>
+            </text>
+            <line x1="194.423478" y1="47.5" x2="194.423478" y2="134.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
