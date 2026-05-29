@@ -46,7 +46,7 @@ Imposing the further condition that every nonzero element be invertible under mu
 + A ring carries two operations, with inverses guaranteed only for addition.
 + A field carries two operations, with inverses guaranteed for both addition and all nonzero elements under multiplication.
 
-> As an example, the integers $\mathbb{Z}$ form a ring but not a field. The rational numbers $\mathbb{Q}$ form a field. Both extend the group structure by adding a second operation. The construction continues into the world of linear algebra: when scalars are drawn from a field, one obtains a [vector space](../vector-spaces/), and when they are drawn from a ring instead, the resulting structure is a [module](../modules/).
+> As an example, the integers $\mathbb{Z}$ form a ring but not a field. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ form a field. Both extend the group structure by adding a second operation. The construction continues into the world of linear algebra: when scalars are drawn from a field, one obtains a [vector space](../vector-spaces/), and when they are drawn from a ring instead, the resulting structure is a [module](../modules/).
 
 ## Order of an element
 
@@ -92,7 +92,7 @@ Consider the [natural numbers](../natural-numbers/) including zero, $\mathbb{N}_
 
 The [integers](../integers/) with multiplication, $(\mathbb{Z}, \cdot)$, are another example. Closure, associativity, and the identity $1$ are all in place, yet the vast majority of integers lack a multiplicative inverse inside $\mathbb{Z}$. The only elements that admit an inverse are $1$ and $-1$, since for any other integer $n$ the reciprocal $1/n$ is not an integer. Dropping all non-invertible elements would leave only the two-element set $\\{\ 1, -1 \ \\}$, which is a group under multiplication but a much smaller object than the integers.
 
-The real numbers with multiplication, $(\mathbb{R}, \cdot)$, come even closer to being a group. Every real number different from zero has a multiplicative inverse, namely its reciprocal. The obstacle is a single element: zero has no multiplicative inverse, and its presence in the set is enough to disqualify the whole structure. The fix is to remove it. The set of nonzero reals $\mathbb{R} \setminus \\{\ 0 \ \\}$ equipped with ordinary multiplication forms an abelian group, with identity $1$ and inverse $a^{-1} = 1/a$ for every $a \neq 0$.
+The [real numbers](../real-numbers/) with multiplication, $(\mathbb{R}, \cdot)$, come even closer to being a group. Every real number different from zero has a multiplicative inverse, namely its reciprocal. The obstacle is a single element: zero has no multiplicative inverse, and its presence in the set is enough to disqualify the whole structure. The fix is to remove it. The set of nonzero reals $\mathbb{R} \setminus \\{\ 0 \ \\}$ equipped with ordinary multiplication forms an abelian group, with identity $1$ and inverse $a^{-1} = 1/a$ for every $a \neq 0$.
 
 > These three cases each fail a different axiom: inverses for $(\mathbb{N}_0, +)$, inverses for all but two elements in $(\mathbb{Z}, \cdot)$, and the existence of an inverse for the single element $0$ in $(\mathbb{R}, \cdot)$. The last case illustrates a recurring pattern in algebra, in which removing a problematic element produces a legitimate group.
 

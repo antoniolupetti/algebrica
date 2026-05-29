@@ -18,7 +18,7 @@ tags:
 ---
 ## Definition
 
-A field is an algebraic structure in which the operations of addition and multiplication are both fully invertible, subject to the sole exception that division by zero is excluded. The concept arises when one observes that certain number systems, such as the rational numbers, the [real numbers](../real-numbers/), and the [complex numbers](../complex-numbers/), allow not only addition and subtraction but also multiplication and division by any nonzero element, with all the expected algebraic rules in force.
+A field is an algebraic structure in which the operations of addition and multiplication are both fully invertible, subject to the sole exception that division by zero is excluded. The concept arises when one observes that certain number systems, such as the [rational numbers](../rational-numbers/), the [real numbers](../real-numbers/), and the [complex numbers](../complex-numbers/), allow not only addition and subtraction but also multiplication and division by any nonzero element, with all the expected algebraic rules in force.
 
 Formally, a field is a set $F$ together with two binary operations $+$ and $\cdot$ satisfying the following axioms:
 

@@ -51,7 +51,7 @@ When the additional requirement that every nonzero element possess a multiplicat
 + A ring carries two operations, with inverses guaranteed only for addition.
 + A field carries two operations, with inverses guaranteed for both addition and all nonzero elements under multiplication.
 
-> The integers $\mathbb{Z}$ are the most natural example of a ring that is not a field: every integer has an additive inverse, yet $2^{-1}$ does not belong to $\mathbb{Z}$. The rational numbers $\mathbb{Q}$, by contrast, form a field. The same hierarchy reappears in linear algebra: scalars drawn from a ring give rise to a [module](../modules/), and scalars drawn from a field give rise to a [vector space](../vector-spaces/).
+> The integers $\mathbb{Z}$ are the most natural example of a ring that is not a field: every integer has an additive inverse, yet $2^{-1}$ does not belong to $\mathbb{Z}$. The [rational numbers](../rational-numbers/) $\mathbb{Q}$, by contrast, form a field. The same hierarchy reappears in linear algebra: scalars drawn from a ring give rise to a [module](../modules/), and scalars drawn from a field give rise to a [vector space](../vector-spaces/).
 
 ## Examples
 
