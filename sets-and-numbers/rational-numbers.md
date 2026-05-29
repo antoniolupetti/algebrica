@@ -18,8 +18,7 @@ tags:
 ## Definition
 
 The [set](../sets/) of rational numbers, denoted by $\mathbb{Q}$, collects all the quantities that can be expressed as a ratio of two [integers](../integers/) with a nonzero denominator. The standard description is given by:
-$$
-$$
+
 $$
 \mathbb{Q} = \left\{ \frac{p}{q} : p,q \in \mathbb{Z},\ q \neq 0 \right\}
 $$
