@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M101.00079,61.4294051 C111.993865,70.6002439 119,84.4736723 119,100 C119,115.526797 111.993442,129.400594 100.999794,138.571426 C90.0061345,129.399756 83,115.526328 83,100 C83,84.536027 89.9499734,70.7117038 100.866957,61.5401245 Z" fill="#EAEAEA"></path>
+            <rect stroke="#C9C9C9" fill="#EAEAEA" x="0.5" y="0.5" width="199" height="199" rx="9"></rect>
+            <ellipse stroke="#BFBFBF" fill="#F6F6F6" cx="99.5" cy="100" rx="49" ry="49.5"></ellipse>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="95" y="106">A</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="177" y="26">U</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="98" y="182">Aᶜ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

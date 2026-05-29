@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <rect stroke="#C9C9C9" x="0.5" y="0.5" width="199" height="199" rx="9"></rect>
+                <path d="M68.5,50.5 C80.1280703,50.5 90.8099959,54.5916837 99.2104776,61.4279557 C88.3811372,70.6972698 81.5,84.5368411 81.5,100 C81.5,115.464252 88.382097,129.304668 99.2184634,138.567705 C90.8160871,145.405985 80.1313853,149.5 68.5,149.5 C54.9695938,149.5 42.7203423,143.959933 33.8535399,135.003567 C24.9849279,126.045373 19.5,113.669627 19.5,100 C19.5,86.3303731 24.9849279,73.9546272 33.8535399,64.9964332 C42.7203423,56.0400672 54.9695938,50.5 68.5,50.5 Z" stroke="#BFBFBF" fill="#EAEAEA"></path>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="58" y="103">A</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="134" y="103">B</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="177" y="26">U</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="82" y="182">A \ B</tspan>
+                </text>
+            </g>
+            <ellipse stroke="#BFBFBF" cx="68.5" cy="100" rx="49" ry="49.5"></ellipse>
+            <ellipse stroke="#BFBFBF" cx="130.5" cy="100" rx="49" ry="49.5"></ellipse>
+        </g>
+    </g>
+</svg>
