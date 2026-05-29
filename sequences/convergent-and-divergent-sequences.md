@@ -124,7 +124,7 @@ A sequence diverges to $-\infty$ if, for every $M < 0$, there exists an index $n
   $$
 ## Bounded sequence
 
-A bounded sequence is a sequence of numbers whose terms always stay within a fixed, finite interval, no matter how large the index becomes. In formal terms, let $\{a_n\}$ be a sequence. We say that the sequence is bounded if there exists a constant $M > 0$ such that:
+A bounded sequence is a sequence of numbers whose terms always stay within a fixed, finite [interval](../intervals/), no matter how large the index becomes. In formal terms, let $\{a_n\}$ be a sequence. We say that the sequence is bounded if there exists a constant $M > 0$ such that:
 
 $$
 |a_n| \leq M \quad \forall n \in \mathbb{N}

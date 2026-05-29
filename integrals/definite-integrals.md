@@ -204,7 +204,7 @@ $$\int_{-a}^{a} f(x) \ dx = 0$$
 
 ![Img. 6](svg/definite-integrals-6.svg)
 
-In both cases, the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a]$ is obtained by integrating the absolute value of the function. For an even function this coincides with the oriented integral:
+In both cases, the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a]$ is obtained by integrating the [absolute value](../absolute-value/) of the function. For an even function this coincides with the oriented integral:
 
 $$S = 2\int_{0}^{a} f(x) \ dx$$
 

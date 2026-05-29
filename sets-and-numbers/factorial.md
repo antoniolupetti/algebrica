@@ -50,7 +50,7 @@ n! =
 \end{cases}
 $$
 
-The factorial is used to compute the [binomial coefficient](../binomial-coefficient/), which represents the number of ways to select a given number of elements from a larger set.
+The factorial is used to compute the [binomial coefficient](../binomial-coefficient/), which represents the number of ways to select a given number of elements from a larger set. The expression $a_n = n!$ also defines one of the standard examples of a [sequence](../sequences/) of natural numbers.
 
 ## Simplifying factorial ratios
 
@@ -108,7 +108,7 @@ A typical application is the derivation of the mean of the Poisson distribution,
 
 ## Relationship between the factorial and the gamma function
 
-The gamma function can be seen as the natural extension of the factorial. Where the factorial is defined only on the [natural numbers](../natural-numbers/), the gamma function is defined for every positive real value. For any $c \in \mathbb{R}^+$, the gamma function is defined by the following integral:
+The gamma function can be seen as the natural extension of the factorial. Where the factorial is defined only on the [natural numbers](../natural-numbers/), the gamma function is defined for every positive real value. For any $c \in \mathbb{R}^+$, the gamma function is defined by the following [improper integral](../improper-integrals/):
 
 $$
 \Gamma(c) = \int_{0}^{+\infty} x^{c - 1} e^{-x} \ dx

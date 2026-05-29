@@ -35,7 +35,7 @@ $$M_i = \sup_{x \in [x_{i-1}, x_i]} f(x)$$
 
 $$m_i = \inf_{x \in [x_{i-1}, x_i]} f(x)$$
 
-The quantity $M_i$ is the least upper bound of $f$ on that subinterval: the smallest value that is still at least as large as every value $f$ takes there. The quantity $m_i$ is the greatest lower bound: the largest value that is still no greater than any value $f$ takes there.
+The quantity $M_i$ is the [least upper bound](../supremum-and-infimum/) of $f$ on that subinterval: the smallest value that is still at least as large as every value $f$ takes there. The quantity $m_i$ is the greatest lower bound: the largest value that is still no greater than any value $f$ takes there.
 
 ![Img. 1](svg/riemann-integrability-criteria-1.svg)
 

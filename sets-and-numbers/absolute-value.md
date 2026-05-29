@@ -238,4 +238,4 @@ $$
 
 The absolute value $|\cdot|$ satisfies all three conditions. The first holds by definition, since $|x| = 0$ if and only if $x = 0$. The second follows directly from the multiplicative property $|x \cdot y| = |x| \cdot |y|$, applied with $y = \lambda$. The third is precisely the triangle inequality proved above.
 
-> This observation places the absolute value within a broader mathematical structure and clarifies why its properties, in particular the triangle inequality, are not isolated facts but specific instances of general principles that reappear throughout analysis and linear algebra.
+> This observation places the absolute value within a broader mathematical structure and clarifies why its properties, in particular the triangle inequality, are not isolated facts but specific instances of general principles that reappear throughout analysis and linear algebra. The triangle inequality is the standard tool for controlling distances in the $\varepsilon$-definition of convergence used for [sequences](../convergent-and-divergent-sequences/) and [Cauchy sequences](../cauchy-sequence/).

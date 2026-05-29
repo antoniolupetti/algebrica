@@ -20,7 +20,7 @@ $$
 |a_n - a_m| < \varepsilon \quad \forall n, m > \nu
 $$
 
-The condition refers only to the mutual distance between terms and does not involve any external limit. In the real line $\mathbb{R}$, a fundamental theorem (treated in detail below) asserts that a sequence is a Cauchy sequence if and only if it is [convergent](../convergent-and-divergent-sequences/). This equivalence is a structural property of $\mathbb{R}$ known as completeness, and it does not hold in every ordered field: in $\mathbb{Q}$, for example, there are Cauchy sequences of rationals whose limit is irrational.
+The condition refers only to the mutual distance between terms and does not involve any external limit. In the real line $\mathbb{R}$, a fundamental theorem (treated in detail below) asserts that a sequence is a Cauchy sequence if and only if it is [convergent](../convergent-and-divergent-sequences/). This equivalence is a structural property of $\mathbb{R}$ known as completeness, and it does not hold in every ordered field: in $\mathbb{Q}$, for example, there are Cauchy sequences of rationals whose limit is [irrational](../irrational-numbers/).
 
 > The same criterion applies to [series](../series/) and allows convergence to be established without knowing the exact value of the sum. Instead of computing a limit, one checks whether the terms of the sequence of partial sums get arbitrarily close to one another, a strategy developed on the page about the [Cauchy convergence criterion for series](../cauchy-convergence-criterion-series/).
 
@@ -67,7 +67,7 @@ $$
 \forall \varepsilon > 0, \ \exists N \in \mathbb{N} \ \text{such that} \ |x_n - L| < \frac{\varepsilon}{2} \quad \forall  n \geq N
 $$
 
-Now, for any $n, m \geq N$, we apply the triangle inequality:
+Now, for any $n, m \geq N$, we apply the [triangle inequality](../absolute-value/):
 
 $$
 |x_n - x_m| = |x_n - L + L - x_m| \leq |x_n - L| + |x_m - L| < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
@@ -133,7 +133,7 @@ $$
 
 for every $n \geq \nu$, which is precisely the definition of convergence to $L$.
 
-> The same statement fails in the field of rational numbers $\mathbb{Q}$. The sequence of decimal approximations of $\sqrt{2}$, namely $1, 1.4, 1.41, 1.414, \dots$, is a Cauchy sequence in $\mathbb{Q}$ but does not converge in $\mathbb{Q}$, because its limit is irrational. The completion of $\mathbb{Q}$ with respect to Cauchy sequences is one of the classical constructions of the [real numbers](../real-numbers/).
+> The same statement fails in the field of [rational numbers](../rational-numbers/) $\mathbb{Q}$. The sequence of decimal approximations of $\sqrt{2}$, namely $1, 1.4, 1.41, 1.414, \dots$, is a Cauchy sequence in $\mathbb{Q}$ but does not converge in $\mathbb{Q}$, because its limit is [irrational](../irrational-numbers/). The completion of $\mathbb{Q}$ with respect to Cauchy sequences is one of the classical constructions of the [real numbers](../real-numbers/).
 
 ## Why Cauchy sequences matter
 

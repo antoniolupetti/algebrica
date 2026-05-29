@@ -140,7 +140,7 @@ $$\int \left(4x^3 - \frac{3}{\sqrt{x}} + 2\cos x\right) dx = x^4 - 6\sqrt{x} + 2
 
 ## The logarithmic integral
 
-When $a = -1$, the power rule formula produces a zero denominator and does not apply. The integral in this case is given by the [natural logarithm](../logarithms/) of the absolute value:
+When $a = -1$, the power rule formula produces a zero denominator and does not apply. The integral in this case is given by the [natural logarithm](../logarithms/) of the [absolute value](../absolute-value/):
 
 $$\int \frac{1}{x} \ dx = \ln |x| + c$$
 

@@ -31,7 +31,7 @@ The symbol $:=$ indicates that this is a definition: the number $e$ is introduce
 as the value to which the sequence converges. Its decimal expansion begins as
 $e \approx 2.71828$, and $e$ can be shown to be both irrational and transcendental.
 
-Irrationality means that $e$ cannot be expressed as a ratio of two [integers](../integers/). Transcendence is a stronger property: it means that $e$ is not the root of any non-zero [polynomial equation](../polynomial-equations/) with rational coefficients.
+Irrationality means that $e$ cannot be expressed as a ratio of two [integers](../integers/), so $e$ belongs to the set of [irrational numbers](../irrational-numbers/). Transcendence is a stronger property: it means that $e$ is not the root of any non-zero [polynomial equation](../polynomial-equations/) with rational coefficients.
 
 The graph below illustrates how the terms of the sequence behave as $n$ grows. The values increase rapidly for small $n$, then rise more slowly, approaching $e$ from below without ever reaching it.
 
