@@ -31,6 +31,23 @@ The repository progressively includes:
 - a semantic JSON layer containing definitions, properties, lemmas, theorems, and other formal mathematical structures associated with the entries, designed to be portable, reusable, and openly accessible;
 - Markdown-based flowcharts describing the main logical and procedural steps behind common mathematical processes and problem-solving methods.
 
+
+## Current Priorities
+
+> [!IMPORTANT]
+> I started writing Algebrica as a personal project in October 2024.
+> Over time, the website gained visibility, became viral on X, and continued to grow steadily. As of May 2026, Algebrica contains approximately 230 entries covering a wide range of mathematical topics.
+ > Building Algebrica is a long-term effort. Every entry is written, reviewed, and refined by hand, a process that requires considerable time, precision, and attention to detail.
+> Before expanding further, however, the project's relevance led me to shift my focus. Since March 2026, I have been systematically revising, correcting, and extending existing entries to improve their accuracy, consistency, and overall quality.
+
+The current status of Algebrica is summarized below.
+
+- [x] Finalize the underlying infrastructure that supports content publishing, versioning, search, and community contributions
+- [x] Migrate all mathematical entries to Markdown and make them openly available through the GitHub repository
+- [ ] Convert existing graphics to editable SVG format and continue expanding the visual library with new illustrations (IN PROGRESS)
+- [ ] Continue the progressive expansion of the knowledge base with additional mathematical topics and references
+- [ ] Complete the ontological model that defines relationships between mathematical concepts
+- [ ] Build an interactive SKOS-based semantic graph to enable concept exploration, knowledge discovery, and future interoperability with external knowledge systems
 ## About the content
 
 Each entry on Algebrica is written from scratch, drawing on a broad range of sources: university textbooks, lecture notes, and reference works in mathematics. The selection, structure, and presentation of the material are shaped by an engineering background.
