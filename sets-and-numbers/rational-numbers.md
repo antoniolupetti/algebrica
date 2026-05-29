@@ -20,7 +20,7 @@ tags:
 The [set](../sets/) of rational numbers, denoted by $\mathbb{Q}$, collects all the quantities that can be expressed as a ratio of two [integers](../integers/) with a nonzero denominator. The standard description is given by:
 
 $$
-\mathbb{Q} = \left \{\ \frac{p}{q} : p, q \in \mathbb{Z}, \ q \neq 0 \ \right\}
+\mathbb{Q} = \left\{\ \frac{p}{q} : p, q \in \mathbb{Z}, \ q \neq 0 \ \right\}
 $$
 
 In the fraction $p/q$ the integer $p$ is called the numerator and the integer $q$ is called the denominator. The requirement $q \neq 0$ excludes division by zero, which has no meaning within $\mathbb{Z}$ or $\mathbb{Q}$.
