@@ -43,7 +43,7 @@ The repository progressively includes:
 The current status of Algebrica is summarized below.
 
 - [x] Finalize the underlying infrastructure that supports content publishing, versioning, search, and community contributions
-- [x] Migrate all mathematical entries to Markdown and make them openly available through the GitHub repository
+- [ ] Migrate all mathematical entries to Markdown and make them openly available through the GitHub repository (IN PROGRESS)
 - [ ] Convert existing graphics to editable SVG format and continue expanding the visual library with new illustrations (IN PROGRESS)
 - [ ] Continue the progressive expansion of the knowledge base with additional mathematical topics and references
 - [ ] Complete the ontological model that defines relationships between mathematical concepts
