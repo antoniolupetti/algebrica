@@ -3,15 +3,20 @@ title: Integers
 source: https://algebrica.org/integers/
 license: CC BY-NC 4.0
 tags:
+  - absolute-value
   - binary-system
   - commutative-ring
   - decimal-system
+  - divisibility
   - equivalence-class
+  - euclidean-division
   - induction
   - integers
+  - integral-domain
   - modular-arithmetic
   - number-line
   - ordered-pair
+  - total-order
 ---
 
 ## Definition
@@ -22,7 +27,11 @@ $$
 \mathbb{Z} = \\{\ldots,-3,-2,-1,0,1,2,3,\ldots\\}
 $$
 
-The integers form an infinite collection of evenly spaced points along the number line.
+The integers form an infinite collection of evenly spaced points along the number line and embed into the [rational numbers](../rational-numbers/) through the identification $n \mapsto n/1$, which in turn sit inside the [real numbers](../real-numbers/) and the [complex numbers](../complex-numbers/). 
+
+![IMG. 1](svg/integers-1.svg)
+
+The chain of inclusions $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$ traces the successive extensions through which each new system addresses a structural limitation of the previous one.
 
 A rigorous construction models each integer as a class of ordered pairs of natural numbers. Take pairs $(a,b)$ with $a,b \in \mathbb{N}$, and say that two pairs belong to the same class whenever:
 
@@ -56,8 +65,6 @@ $$
 
 Although the components differ, both pairs encode the same overall difference, the integer $-3$.
 
-- - -
-
 ## The integers as an algebraic ring
 
 When we say that the integers form a [ring](../rings/), we mean that the set $\mathbb{Z}$ comes equipped with two operations, addition and multiplication, that interact in a structured and predictable way. The structure ensures that arithmetic with integers behaves consistently, no matter how large or small the numbers involved may be.
@@ -75,7 +82,7 @@ Multiplication in $\mathbb{Z}$ is also commutative, that is, $ab = ba$ for all $
 
 > A [field](../fields/) extends the ring structure by requiring that every non-zero element also has a multiplicative inverse. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ and the [real numbers](../real-numbers/) $\mathbb{R}$ are standard examples; the integers are not, since $2^{-1} \notin \mathbb{Z}$.
 
-- - -
+A further property refines the ring structure of $\mathbb{Z}$. A product of two integers is zero only when at least one of the factors is zero, so $\mathbb{Z}$ contains no zero divisors. A commutative ring with this property is called an integral domain, and the absence of zero divisors is what makes the multiplicative cancellation law valid: from $ab = ac$ with $a \neq 0$ one can conclude $b = c$. The same property fails in more general rings such as $\mathbb{Z}/n\mathbb{Z}$ when $n$ is composite, where products of nonzero classes may vanish.
 
 ## Fundamental properties of the integers
 
@@ -129,7 +136,18 @@ $$
 a + 0 = a \qquad a \cdot 1 = a
 $$
 
-- - -
+## Order on the integers
+
+The set $\mathbb{Z}$ inherits a total order from the [natural numbers](../natural-numbers/) and extends it to the negative range. Given two integers $a, b \in \mathbb{Z}$, the relation $a \leq b$ holds when the difference $b - a$ is a non-negative integer. The relation is reflexive, antisymmetric, transitive, and total, which makes $\mathbb{Z}$ a totally ordered set. The trichotomy law applies: for any $a, b \in \mathbb{Z}$ exactly one of $a < b$, $a = b$, $b < a$ holds.
+
+The order is compatible with the [ring](../rings/) operations. For all $a, b, c \in \mathbb{Z}$:
+
++ If $a \leq b$, then $a + c \leq b + c$.
++ If $a \leq b$ and $c \geq 0$, then $ac \leq bc$.
+
+A structural property distinguishes $\mathbb{Z}$ from $\mathbb{N}$. The natural numbers are well-ordered, in the sense that every non-empty subset of $\mathbb{N}$ admits a least element. The property fails in $\mathbb{Z}$, since the set itself has no smallest element and the negative integers extend without lower bound. Well-ordering is recovered by restricting to subsets of $\mathbb{Z}$ that are bounded below, and this restricted form is the one actually used in elementary number theory.
+
+The notion of distance from zero is captured by the [absolute value](../absolute-value/). For any integer $a$, the value $|a|$ equals $a$ when $a \geq 0$ and $-a$ otherwise. The absolute value provides a non-negative measure of magnitude that allows comparisons between positive and negative integers and plays a central role in the formulation of the Euclidean division.
 
 ## Integers in base 10
 
@@ -154,8 +172,6 @@ $$
 $$
 
 > The same mechanism applies to any integer written in decimal notation. Each digit acts as a coefficient multiplying a specific power of ten, and the integer itself is obtained by summing all the positional contributions.
-
-- - -
 
 ## The binary system
 
@@ -187,7 +203,25 @@ $$
 32 + 16 + 0 + 4 + 0 + 1 = 53
 $$
 
-- - -
+## Divisibility and Euclidean division
+
+Within $\mathbb{Z}$ the operation of division is not always possible without remainder. For two integers $a$ and $b$, with $b \neq 0$, we say that $b$ divides $a$, written $b \mid a$, when there exists an integer $q$ such that:
+
+$$
+a = bq
+$$
+
+The divisibility relation organises the integers into a rich combinatorial structure and provides the entry point for the classical theory of factorisation, prime numbers, and greatest common divisors. The integer $q$ is the quotient of the exact division, and its existence translates the multiplicative structure of $\mathbb{Z}$ into an arithmetic statement about $a$ and $b$.
+
+When $b$ does not divide $a$, the Euclidean division theorem guarantees that the quotient and the remainder still exist in a controlled form. For every pair of integers $a$ and $b$ with $b \neq 0$, there exist unique integers $q$ and $r$ such that:
+
+$$
+a = bq + r \qquad \text{with} \qquad 0 \leq r < |b|
+$$
+
+The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b$. The use of the [absolute value](../absolute-value/) in the bound on $r$ is what allows the statement to cover negative divisors uniformly. The uniqueness of the pair $(q, r)$ is what makes the division algorithm a reliable tool, and the result is the foundation on which the [modulo operator](../modulo-operator/) and modular arithmetic are built. An analogous statement holds for [polynomials](../polynomial-division/) over a field, where the absolute value of the divisor is replaced by its degree.
+
+For example, dividing $17$ by $5$ gives $q = 3$ and $r = 2$, since $17 = 3 \cdot 5 + 2$. Dividing $-17$ by $5$ gives $q = -4$ and $r = 3$, since $-17 = (-4) \cdot 5 + 3$. The remainder is again non-negative, in agreement with the convention $0 \leq r < |b|$.
 
 ## The modulo operator
 
@@ -201,23 +235,9 @@ $$
 5 \times 7 \equiv 11 \pmod{12}
 $$
 
-> In the case of $5 \times 7$, the product is $35 = 24 + 11$. Since $24$ is a multiple of $12$, the value of the product modulo $12$ is the remainder $11$.
+In the case of $5 \times 7$, the product is $35 = 24 + 11$. Since $24$ is a multiple of $12$, the value of the product modulo $12$ is the remainder $11$.
 
-- - -
-
-Modular arithmetic is widely used beyond pure mathematics. In computer science, the modulo operator is essential for extracting remainders, generating cyclic patterns, and keeping values within a bounded range. A familiar example involves the months of the year. Adding $n$ months is naturally handled modulo $12$, since month counts wrap around after December.
-
-In many programming languages, including Java, the modulo operator is written as `%`. The following example computes the month occurring three months after October:
-
-````
-int month = 10; // October
-int result = (month + 3) % 12;
-System.out.println(result);  // Output: 1  (January)
-// Using modulo 12, the expression (month + 3) does not yield 13.
-// Instead, 13 is reduced to its remainder when divided by 12, which is 1.
-````
-
-- - -
+> Modular arithmetic is widely used beyond pure mathematics. In computer science, the modulo operator is essential for extracting remainders, generating cyclic patterns, and keeping values within a bounded range. A familiar example involves the months of the year. Adding $n$ months is naturally handled modulo $12$, since month counts wrap around after December.
 
 ## Integers and the role of induction
 

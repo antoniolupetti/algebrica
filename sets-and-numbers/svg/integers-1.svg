@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="362px" height="241px" viewBox="0 0 362 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 11</title>
+    <g id="NEW---Sets-and-Numbers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" transform="translate(1.000000, 0.000000)">
+            <path id="Line-2" d="M352.662848,78.5271708 L352.745131,78.5642122 L360.745131,83.0642122 C361.056638,83.2394349 361.082597,83.6651608 360.823007,83.882134 L360.745131,83.9357878 L352.745131,88.4357878 C352.504452,88.5711697 352.199594,88.4858096 352.064212,88.2451306 C351.943873,88.0311938 351.997947,87.7665479 352.180485,87.6152959 L352.254869,87.5642122 L358.591,84 L0,84 C-0.276142375,84 -0.5,83.7761424 -0.5,83.5 C-0.5,83.2545401 -0.323124839,83.0503916 -0.0898756324,83.0080557 L0,83 L358.591,83 L352.254869,79.4357878 C352.040933,79.3154483 351.949717,79.0612021 352.027171,78.8371522 L352.064212,78.7548694 C352.184552,78.5409325 352.438798,78.4497168 352.662848,78.5271708 Z" fill="#000000" fill-rule="nonzero"></path>
+            <line x1="170.5" y1="94.625" x2="170.5" y2="73.5" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text id="0" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="166" y="110">0</tspan>
+            </text>
+            <text id="1" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="212" y="110">1</tspan>
+            </text>
+            <text id="2" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="261" y="110">2</tspan>
+            </text>
+            <text id="3" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="302" y="110">3</tspan>
+            </text>
+            <line x1="125.5" y1="88.625" x2="125.5" y2="77.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="80.5" y1="88.625" x2="80.5" y2="77.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="35.5" y1="88.625" x2="35.5" y2="77.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="215.5" y1="89.625" x2="215.5" y2="78.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="260.5" y1="89.625" x2="260.5" y2="78.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="305.5" y1="89.625" x2="305.5" y2="78.375" id="Line-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text id="-1" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="120" y="110">-1</tspan>
+            </text>
+            <text id="-2" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="74" y="110">-2</tspan>
+            </text>
+            <text id="-3" font-family="SegoeUI, Segoe UI" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="28" y="110">-3</tspan>
+            </text>
+            <line x1="195.5" y1="37.5" x2="195.5" y2="84.5" id="Line-4" stroke="#D3D3D3" stroke-linecap="square" stroke-dasharray="4"></line>
+            <circle id="Oval" stroke="#A6A6A6" fill="#F6F6F6" cx="195.5" cy="83.5" r="3.5"></circle>
+            <line x1="318.5" y1="37.5" x2="318.5" y2="84.5" id="Line-4" stroke="#D3D3D3" stroke-linecap="square" stroke-dasharray="4"></line>
+            <circle id="Oval" stroke="#A6A6A6" fill="#F6F6F6" cx="318.5" cy="84.5" r="3.5"></circle>
+            <text id="1/3" font-family="SegoeUI, Segoe UI" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="185" y="27">1/3</tspan>
+            </text>
+            <text id="π" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="309" y="27"> π</tspan>
+            </text>
+            <text id="Rational" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="174" y="11">Rational</tspan>
+            </text>
+            <text id="Natural" font-family="SegoeUI, Segoe UI" font-size="12" font-weight="normal" fill="#636363">
+                <tspan x="318" y="134">Natural</tspan>
+            </text>
+            <text id="Integer" font-family="SegoeUI, Segoe UI" font-size="12" font-weight="normal" fill="#636363">
+                <tspan x="319" y="154">Integer</tspan>
+            </text>
+            <line x1="93.5" y1="37.5" x2="93.5" y2="84.5" id="Line-4" stroke="#D3D3D3" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text id="−√3" font-family="SegoeUI, Segoe UI" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="81" y="27">−√3</tspan>
+            </text>
+            <text id="Irrational" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="71" y="11">Irrational</tspan>
+            </text>
+            <text id="Irrational" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="293" y="11">Irrational</tspan>
+            </text>
+            <path id="Line-7" d="M305.5,147 C305.74546,147 305.949608,147.176875 305.991944,147.410124 L306,147.5 L306,155.5 C306,155.776142 305.776142,156 305.5,156 C305.25454,156 305.050392,155.823125 305.008056,155.589876 L305,155.5 L305,152 L36,152 L36,155.5 C36,155.776142 35.7761424,156 35.5,156 C35.2545401,156 35.0503916,155.823125 35.0080557,155.589876 L35,155.5 L35,147.5 C35,147.223858 35.2238576,147 35.5,147 C35.7454599,147 35.9496084,147.176875 35.9919443,147.410124 L36,147.5 L36,151 L305,151 L305,147.5 C305,147.223858 305.223858,147 305.5,147 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line-7" d="M306.5,127 C306.74546,127 306.949608,127.176875 306.991944,127.410124 L307,127.5 L307,135.5 C307,135.776142 306.776142,136 306.5,136 C306.25454,136 306.050392,135.823125 306.008056,135.589876 L306,135.5 L306,132 L170,132 L170,135.5 C170,135.776142 169.776142,136 169.5,136 C169.25454,136 169.050392,135.823125 169.008056,135.589876 L169,135.5 L169,127.5 C169,127.223858 169.223858,127 169.5,127 C169.74546,127 169.949608,127.176875 169.991944,127.410124 L170,127.5 L170,131 L306,131 L306,127.5 C306,127.223858 306.223858,127 306.5,127 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle id="Oval" stroke="#A6A6A6" fill="#F6F6F6" cx="93.5" cy="82.5" r="3.5"></circle>
+            <text id="Integers-extend-the" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="40.5" y="210">Integers extend the natural numbers by </tspan>
+                <tspan x="40.5" y="224">including negative counterparts, forming a </tspan>
+                <tspan x="40.5" y="238">symmetric set around zero.</tspan>
+            </text>
+            <line x1="72.5" y1="162.5" x2="72.5" y2="193.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
