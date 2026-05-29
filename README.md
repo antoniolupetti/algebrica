@@ -18,9 +18,6 @@
   <a href="https://algebrica.org/editorial-process">Editorial Process</a>
 </p>
 
-<p align="center" style="margin-bottom: 30px">
-If you find Algebrica useful, consider ❤️ <a href="https://algebrica.org/founding-supporters/">supporting the project</a>.
-</p>
 <img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
 
 ## Introduction
