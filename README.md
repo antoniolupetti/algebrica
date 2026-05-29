@@ -35,7 +35,7 @@ The repository progressively includes:
 ## Current Priorities
 
 > [!IMPORTANT]
-> I started writing Algebrica as a personal project in October 2024.
+> I started writing Algebrica as a personal project in October 2023.
 > Over time, the website gained visibility, became viral on X, and continued to grow steadily. As of May 2026, Algebrica contains approximately 230 entries covering a wide range of mathematical topics.
  > Building Algebrica is a long-term effort. Every entry is written, reviewed, and refined by hand, a process that requires considerable time, precision, and attention to detail.
 > Before expanding further, however, the project's relevance led me to shift my focus. Since March 2026, I have been systematically revising, correcting, and extending existing entries to improve their accuracy, consistency, and overall quality.
