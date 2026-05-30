@@ -16,11 +16,7 @@ Loss of roots occurs when an algebraic manipulation eliminates one or more [root
 
 $$x(2x-5) = x$$
 
-A common mistake is to cancel the factor $x$ appearing on both sides:
-
-$$\cancel{x}(2x-5) = \cancel{x}$$
-
-This reduces the equation to a linear equation in $x$:
+A common mistake is to cancel the factor $x$ appearing on both sides. This reduces the equation to a linear equation in $x$:
 
 $$2x - 5 = 1$$
 
