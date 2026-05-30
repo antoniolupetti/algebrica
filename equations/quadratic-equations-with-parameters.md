@@ -193,6 +193,8 @@ The critical points are therefore $a = -1$ and $a = 2$. To determine where the e
 
 [/class]
 
+- - -
+
 The sign chart shows that $(a - 2)(a + 1) < 0$ when the parameter lies between the two roots:
 
 $$-1 < a < 2$$
