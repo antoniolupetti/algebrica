@@ -24,7 +24,7 @@ $$a\sin^2 x + b\sin x\cos x + c\cos^2 x = 0$$
 
 > The definition generalises to the third, fourth, and higher degrees. In every case all terms must involve trigonometric [functions](../functions/) raised to the same degree, so that the equation remains homogeneous.
 
-A homogeneous equation of degree $n$ can be solved by dividing each term by $\cos^n x$, which transforms it into a polynomial equation in $\tan x$.
+A homogeneous equation of degree $n$ can be solved by dividing each term by $\cos^n x$, which transforms it into a [polynomial equation](../polynomial-equations/) in $\tan x$.
 
 ## Dividing by cosine and the case where cosine vanishes
 
