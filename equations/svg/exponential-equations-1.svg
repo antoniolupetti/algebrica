@@ -7,8 +7,8 @@
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                 <tspan x="19.5" y="53">The graph of the </tspan>
                 <tspan x="19.5" y="66">exponential function </tspan>
-                <tspan x="19.5" y="79">always lies above the </tspan>
-                <tspan x="19.5" y="92">x-axis.</tspan>
+                <tspan x="19.5" y="79">with a &gt; 1 always lies </tspan>
+                <tspan x="19.5" y="92">above the  x-axis.</tspan>
             </text>
             <line x1="41" y1="110.5" x2="41" y2="175.5" stroke="#BABABA" stroke-linecap="round"></line>
             <text font-size="14" font-weight="normal" fill="#BABABA">
@@ -18,7 +18,7 @@
                 <tspan x="296.5" y="215">x</tspan>
             </text>
             <path d="M17.5,195.5 C56.1666667,196.833333 98.8333333,184.5 145.5,158.5 C180.327696,139.095998 205.686812,108.923807 221.577348,67.983427 M227.027663,52.3347725 C228.984127,46.0413873 231.474906,36.0964632 234.5,22.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
-            <text font-size="14" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#333333">
                 <tspan x="209" y="64">y = aˣ</tspan>
             </text>
             <text font-size="14" font-weight="normal" fill="#333333">
@@ -28,9 +28,6 @@
                 <tspan x="137" y="214">0</tspan>
             </text>
             <ellipse fill="#333333" cx="147.75" cy="157.255018" rx="2.75" ry="2.75501825"></ellipse>
-            <text font-size="14" font-weight="normal" fill="#333333">
-                <tspan x="190.5" y="176">a &gt; 1</tspan>
-            </text>
         </g>
     </g>
 </svg>

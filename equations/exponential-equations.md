@@ -21,8 +21,6 @@ $$a^x = b$$
 
 We assume that $a$ and $b$ are positive [real numbers](../types-of-numbers/) and that $a \neq 1$. Since $a^x > 0$ for every $x \in \mathbb{R}$ when $a > 0$, an exponential equation is impossible when $b \leq 0$, while it has a unique solution when $b > 0$.
 
-- - -
-
 The behavior of these equations follows directly from the [exponential function](../exponential-function/). When $a > 1$, the graph of $y = a^x$ lies entirely above the $x$-axis, never touches it, always passes through the point $(0, 1)$, and increases from left to right. This monotonic behavior is what guarantees a unique solution whenever $b > 0$.
 
 ![IMG. 1](svg/exponential-equations-1.svg)
