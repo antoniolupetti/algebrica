@@ -64,8 +64,6 @@ $$
 
 Within the interval $[0, 2\pi)$ these reduce to the two values $x = \pi/6$ and $x = 5\pi/6$.
 
-- - -
-
 ## Equations of the form cosine of x equals m
 
 The equation
@@ -92,8 +90,6 @@ $$x_1 = \frac{\pi}{3}, \quad x_2 = \frac{5\pi}{3}$$
 
 > The boundary values again collapse the two families into one: $m = 1$ gives $x = 2k\pi$, $m = -1$ gives $x = \pi + 2k\pi$, and $m = 0$ gives $x = \pi/2 + k\pi$.
 
-- - -
-
 ## Equations of the form tangent of x equals m
 
 The equation
@@ -113,8 +109,6 @@ The value $2$ is not one of the angles with a familiar tangent, so the principal
 $$x = \arctan(2) + k\pi, \quad k \in \mathbb{Z}$$
 
 When the value of the function is not a standard one, the corresponding inverse function provides the principal angle. The same approach applies to the arcsine and the arccosine, which return the principal angle for any admissible value of the sine or cosine.
-
-- - -
 
 ## Equations solved by substitution
 
@@ -156,8 +150,6 @@ x &= \frac{5\pi}{12} + k\pi, \quad k \in \mathbb{Z}
 $$
 
 > Dividing the periodic term by the coefficient of $x$ is what shrinks the period: the angle $u = 2x$ has period $2\pi$, so $x$ has period $\pi$. Forgetting to divide the term $2k\pi$ along with the rest is the most common error in these equations, and it discards half of the solutions.
-
-- - -
 
 ## A complete worked example
 
@@ -207,8 +199,6 @@ $$
 
 These two families describe every value of $x$ that satisfies the original equation.
 
-- - -
-
 ## Equations reducible to an algebraic equation
 
 A broad class of trigonometric equations contains a single trigonometric function, possibly raised to a power, rather than the bare function set equal to a constant. Such equations can be reduced to an ordinary algebraic equation by introducing a new variable equal to the trigonometric function. Once the algebraic equation is solved, each admissible value produces an elementary trigonometric equation of the kind treated above.
@@ -251,8 +241,6 @@ x &= \frac{5\pi}{6} + 2k\pi, \quad k \in \mathbb{Z}
 $$
 
 > A value of the auxiliary variable outside the interval $[-1, 1]$ must be discarded when the function is a sine or cosine, since neither can exceed that range. No such restriction applies when the function is a tangent, whose range is the whole real line.
-
-- - -
 
 ## Equations with mixed functions
 
