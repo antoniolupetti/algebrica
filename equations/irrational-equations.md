@@ -12,8 +12,6 @@ tags:
 
 Irrational equations, also called radical equations, are [equations](../equations/) in which the unknown $x$ appears within a [radical](../radicals/) or is raised to a fractional [exponent](../powers/). They form a distinct class of problems that cannot be addressed through standard algebraic manipulations alone. The presence of roots and non-integer exponents imposes additional constraints on the admissible values of $x$, making [domain analysis](../determining-the-domain-of-a-function/) an essential preliminary step.
 
-- - -
-
 An irrational equation is an equation of the form $F(x) = 0$ in which at least one term contains a fractional power of a function, that is a power whose exponent has a denominator greater than one. Equivalently, these equations contain radical expressions. The defining term takes the form:
 
 $$f(x)^{\frac{p}{q}} \quad \text{with } q > 1$$
@@ -34,13 +32,17 @@ In these expressions $f(x)$ and $g(x)$ are [polynomials](../polynomials/) of arb
 
 ## General forms of irrational equations
 
-Three structural patterns occur most often:
+Three structural patterns occur most often. The following table compares the radical form of each equation with its equivalent exponential form, in which the radical is expressed as a fractional exponent.
 
-$$\sqrt[n]{f(x)} = g(x)$$
+[class="table-1"]
 
-$$\sqrt[n]{f(x)} = k$$
+| | |
+|--------|--------|
+| $$\sqrt[n]{f(x)} = g(x)$$ | $$f(x)^{1/n} = g(x)$$ |
+| $$\sqrt[n]{f(x)} = k$$ | $$f(x)^{1/n} = k$$ |
+| $$\sqrt[n]{x^m}$$ | $$x^{m/n}$$ |
 
-$$f(x)^{1/n} = g(x)$$
+[/class]
 
 > Roots set clear [limits](../limits/) on the [domain](../determining-the-domain-of-a-function/), and after removing radicals the candidate solutions must be checked. Algebraic steps may produce possible answers, but each one must be verified carefully.
 
@@ -48,9 +50,9 @@ $$f(x)^{1/n} = g(x)$$
 
 The strategy depends on the structure of the radical and on the position of the unknown within the expression. Despite these variations, the overall approach follows a few essential steps:
 
-1. Determine the [domain](../determining-the-domain-of-a-function/) by considering whether the index of the root is even or odd, and impose the relevant conditions.
-2. Eliminate the roots by raising both sides of the equation to the appropriate power.
-3. Solve the resulting equation and check the admissibility of each solution by verifying that it belongs to the original domain and satisfies the initial equation.
++ Determine the [domain](../determining-the-domain-of-a-function/) by considering whether the index of the root is even or odd, and impose the relevant conditions.
++ Eliminate the roots by raising both sides of the equation to the appropriate power.
++ Solve the resulting equation and check the admissibility of each solution by verifying that it belongs to the original domain and satisfies the initial equation.
 
 ## A closer look at the general forms
 
@@ -208,8 +210,6 @@ Solve the irrational equation:
 
 $$\sqrt{x^2 - 2} = \sqrt{4x}$$
 
-- - -
-
 The equation has the form $\sqrt[n]{f(x)} = g(x)$ with even index $n$. The admissible set of solutions is determined by solving the [system of inequalities](../systems-of-inequalities/):
 
 $$
@@ -219,8 +219,6 @@ g(x) \geq 0
 \end{cases}
 $$
 
-- - -
-
 Substituting the polynomials under the roots gives:
 
 $$
@@ -229,8 +227,6 @@ x^2 - 2 \geq 0 \\[6pt]
 4x \geq 0
 \end{cases}
 $$
-
-- - -
 
 Solving the [second-degree](../quadratic-equations/) inequality $x^2 - 2 \geq 0$ gives the solutions $x_{1,2} = \pm\sqrt{2}$, so the domain of the first [inequality](../inequalities/) consists of the intervals:
 
