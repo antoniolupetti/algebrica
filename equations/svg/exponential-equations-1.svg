@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="232px" viewBox="0 0 306 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M148,5.98013557 L148.435788,6.75486938 L152.935788,14.7548694 L153.180918,15.1906571 L152.309343,15.6809184 L152.064212,15.2451306 L148.499,8.906 L148.5,232 L147.5,232 L147.499,8.91 L143.935788,15.2451306 L143.690657,15.6809184 L142.819082,15.1906571 L143.064212,14.7548694 L147.564212,6.75486938 L148,5.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.309343,193.319082 L295.745131,193.564212 L303.745131,198.064212 L304.519864,198.5 L303.745131,198.935788 L295.745131,203.435788 L295.309343,203.680918 L294.819082,202.809343 L295.254869,202.564212 L301.591,199 L-0.5,199 L-0.5,198 L301.591,198 L295.254869,194.435788 L294.819082,194.190657 L295.309343,193.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="19.5" y="53">The graph of the </tspan>
+                <tspan x="19.5" y="66">exponential function </tspan>
+                <tspan x="19.5" y="79">always lies above the </tspan>
+                <tspan x="19.5" y="92">x-axis.</tspan>
+            </text>
+            <line x1="41" y1="110.5" x2="41" y2="175.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="127.5" y="15">y</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="215">x</tspan>
+            </text>
+            <path d="M17.5,195.5 C56.1666667,196.833333 98.8333333,184.5 145.5,158.5 C180.327696,139.095998 205.686812,108.923807 221.577348,67.983427 M227.027663,52.3347725 C228.984127,46.0413873 231.474906,36.0964632 234.5,22.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="209" y="64">y = aˣ</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="137" y="155">1</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="137" y="214">0</tspan>
+            </text>
+            <ellipse fill="#333333" cx="147.75" cy="157.255018" rx="2.75" ry="2.75501825"></ellipse>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="190.5" y="176">a &gt; 1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
