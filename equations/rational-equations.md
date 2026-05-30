@@ -39,9 +39,9 @@ This difference is clarified by two examples:
 
 The solution of a rational equation proceeds in three stages:
 
-1. Determine the values that make the denominators vanish. These values must be excluded, since they leave the expression undefined. The set of admissible values, those for which every denominator is nonzero, constitutes the conditions of existence of the equation.
-2. Determine the least common multiple of the [polynomials](../polynomials/) appearing in the denominators, clear the denominators, and solve the resulting polynomial equation in the numerator.
-3. Compare each solution with the conditions of existence, discarding any value that nullifies a denominator, and verify that the remaining solutions satisfy the original equation.
++ Determine the values that make the denominators vanish. These values must be excluded, since they leave the expression undefined. The set of admissible values, those for which every denominator is nonzero, constitutes the conditions of existence of the equation.
++ Determine the least common multiple of the [polynomials](../polynomials/) appearing in the denominators, clear the denominators, and solve the resulting polynomial equation in the numerator.
++ Compare each solution with the conditions of existence, discarding any value that nullifies a denominator, and verify that the remaining solutions satisfy the original equation.
 
 > Comparing the solutions with the conditions of existence is essential. Clearing denominators can produce values that solve the transformed equation while violating the original one. Such values are extraneous solutions and must be discarded, a phenomenon related to the [loss of roots](../loss-of-roots/).
 
