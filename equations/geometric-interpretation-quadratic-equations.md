@@ -22,6 +22,8 @@ $$y = ax^2 + bx + c$$
 
 The pairs $(x, y)$ that satisfy this relation form a [parabola](../parabola/) in the Cartesian plane. Solving the original equation then amounts to asking for which values of $x$ the output $y$ equals zero, so the algebraic problem of finding the roots is translated into the geometric problem of locating the points where the parabola meets the horizontal axis.
 
+![Img. 1](svg/quadratic-equations.svg)
+
 The shape and position of the parabola are governed by the three coefficients.
 
 + The coefficient $a$ controls the direction and the width of the curve. Its sign decides whether the parabola opens upward or downward, while larger values of $|a|$ make the graph narrower and smaller values make it wider.
@@ -42,11 +44,19 @@ The number of intersections with the horizontal axis is governed by the [discrim
 
 $$\Delta = b^2 - 4ac$$
 
-Three configurations arise according to its sign.
+Three cases arise according to its sign.
 
-+ When $\Delta > 0$ the parabola crosses the axis at two distinct points, and the equation has two distinct real roots.
-+ When $\Delta = 0$ the parabola is tangent to the axis at a single point, which is the vertex, and the equation has one real root of multiplicity two.
-+ When $\Delta < 0$ the parabola lies entirely above or entirely below the axis, with no intersection, and the equation has no real root.
+**Case 1.** When $\Delta > 0$ the parabola crosses the axis at two distinct points, and the equation has two distinct real roots.
+
+![IMG. 2](svg/geometric-interpretation-quadratic-equations-1.svg)
+
+**Case 2.** When $\Delta = 0$ the parabola is tangent to the axis at a single point, which is the vertex, and the equation has one real root of multiplicity two.
+
+![IMG. 3](svg/geometric-interpretation-quadratic-equations-2.svg)
+
+**Case 3** When $\Delta < 0$ the parabola lies entirely above or entirely below the axis, with no intersection, and the equation has no real root.
+
+![IMG. 4](svg/geometric-interpretation-quadratic-equations-3.svg)
 
 In the last case the two solutions are a pair of [complex conjugates](../quadratic-equations-with-complex-solutions/), which have no representation as points of the real axis. The discriminant therefore reads, at a glance, the qualitative relationship between the curve and the line $y = 0$.
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="308px" height="273px" viewBox="0 0 308 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M31.882134,57.6769926 L31.9357878,57.7548694 L36.4357878,65.7548694 C36.5711697,65.9955483 36.4858096,66.3004059 36.2451306,66.4357878 C36.0311938,66.5561272 35.7665479,66.5020533 35.6152959,66.3195146 L35.5642122,66.2451306 L32,59.908 L32,272.5 C32,272.776142 31.7761424,273 31.5,273 C31.2545401,273 31.0503916,272.823125 31.0080557,272.589876 L31,272.5 L31,59.908 L27.4357878,66.2451306 C27.3154483,66.4590675 27.0612021,66.5502832 26.8371522,66.4728292 L26.7548694,66.4357878 C26.5409325,66.3154483 26.4497168,66.0612021 26.5271708,65.8371522 L26.5642122,65.7548694 L31.0642122,57.7548694 C31.2394349,57.4433624 31.6651608,57.4174034 31.882134,57.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M281.162848,237.527171 L281.245131,237.564212 L289.245131,242.064212 C289.556638,242.239435 289.582597,242.665161 289.323007,242.882134 L289.245131,242.935788 L281.245131,247.435788 C281.004452,247.57117 280.699594,247.48581 280.564212,247.245131 C280.443873,247.031194 280.497947,246.766548 280.680485,246.615296 L280.754869,246.564212 L287.091,243 L0.5,243 C0.223857625,243 -8.3940517e-17,242.776142 0,242.5 C7.46137929e-17,242.25454 0.176875161,242.050392 0.410124368,242.008056 L0.5,242 L287.091,242 L280.754869,238.435788 C280.540933,238.315448 280.449717,238.061202 280.527171,237.837152 L280.564212,237.754869 C280.684552,237.540933 280.938798,237.449717 281.162848,237.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="10" y="69">y</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="282" y="263">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="115" y="11">The parabola opens upward and </tspan>
+                <tspan x="115" y="24">remains entirely above the x-axis. </tspan>
+                <tspan x="115" y="37">Since Δ &lt; 0, the equation has no real </tspan>
+                <tspan x="115" y="50">roots. The vertex is at (3, 3).</tspan>
+            </text>
+            <line x1="205.5" y1="59.5" x2="205.5" y2="94.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M21,68 C68,182 103.333333,221 144,221 C173.706525,221 205.810915,196.295382 243.750581,118.395212 M253.010684,98.5724123 C256.620252,90.5336059 260.282442,82.0170563 264,73" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="192" y="110">y = x² - 6x + 12</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="53" y="256">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="136" y="256">3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="218" y="256">5</tspan>
+            </text>
+            <line x1="55.5" y1="243.5" x2="55.5" y2="234.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="140" y1="243.5" x2="140" y2="234.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="221.5" y1="242.5" x2="221.5" y2="233.5" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
