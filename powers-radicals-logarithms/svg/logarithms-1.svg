@@ -12,10 +12,8 @@
                     <tspan x="16.5" y="14">y</tspan>
                 </text>
                 <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
-                    <tspan x="93.904" y="15.3620148">Graphical representation of the </tspan>
-                    <tspan x="124.271477" y="28.3620148">function flog</tspan>
-                    <tspan x="181.419957" y="27.6625977" font-family="Helvetica">ₐ</tspan>
-                    <tspan x="192.739" y="28.3620148"> x with a &gt; 1.</tspan>
+                    <tspan x="93.904" y="13.3620148">Graphical representation of the </tspan>
+                    <tspan x="93.904" y="25.6625977">function logₐ x with a &gt; 1.</tspan>
                 </text>
                 <text font-size="11" font-weight="normal" fill="#333333">
                     <tspan x="90.5" y="164">x= 1</tspan>

@@ -13,9 +13,7 @@
                 </text>
                 <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                     <tspan x="70" y="237">Graphical representation of the </tspan>
-                    <tspan x="70" y="250">function flog</tspan>
-                    <tspan x="127.14848" y="249.300583" font-family="Helvetica">ₐ</tspan>
-                    <tspan x="138.467523" y="250"> x with 0 &lt; a &lt; 1.</tspan>
+                    <tspan x="70" y="250">function logₐ x with 0 &lt; a &lt; 1.</tspan>
                 </text>
                 <line x1="127.5" y1="183" x2="127.5" y2="219.5" stroke="#BABABA" stroke-linecap="round"></line>
                 <path d="M37,195 C35.6666667,130.333333 52.6666667,87 88,65 C123.333333,43 171.333333,28.6666667 232,22" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(134.463636, 108.500000) scale(1, -1) translate(-134.463636, -108.500000) "></path>
