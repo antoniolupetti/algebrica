@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="406px" height="296px" viewBox="0 0 406 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M386,190 C374.4386,193.557354 366.925445,201.000805 362.003743,210.536348 C352.539118,228.873569 352.65789,254.94751 352,276" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5" transform="translate(369.000000, 233.000000) scale(-1, 1) translate(-369.000000, -233.000000) "></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="27" y="11">The cotangent function drops sharply near its vertical </tspan>
+                <tspan x="27" y="24">asymptotes and crosses the x-axis at every half-</tspan>
+                <tspan x="27" y="37">integer multiple of π.</tspan>
+            </text>
+            <line x1="90.5" y1="43.5" x2="90.5" y2="78.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M395.309343,184.319082 L395.745131,184.564212 L403.745131,189.064212 L404.519864,189.5 L403.745131,189.935788 L395.745131,194.435788 L395.309343,194.680918 L394.819082,193.809343 L395.254869,193.564212 L401.591,190 L-0.5,190 L-0.5,189 L401.591,189 L395.254869,185.435788 L394.819082,185.190657 L395.309343,184.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M164.5,72.9801356 L164.935788,73.7548694 L169.435788,81.7548694 L169.680918,82.1906571 L168.809343,82.6809184 L168.564212,82.2451306 L165,75.908 L165,278 L164,278 L164,75.908 L160.435788,82.2451306 L160.190657,82.6809184 L159.319082,82.1906571 L159.564212,81.7548694 L164.064212,73.7548694 L164.5,72.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="239.5" y1="88.4947917" x2="239.5" y2="277.505208" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="314.5" y1="88.4947917" x2="314.5" y2="277.505208" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M236,89 C237,166 228,182 202,190 C168.205574,200.398285 169,244 168,276" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(202.037074, 182.500000) scale(-1, 1) translate(-202.037074, -182.500000) "></path>
+            <path d="M161,89 C162,166 153,182 127,190 C93.205574,200.398285 94,244 93,276" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(127.037074, 182.500000) scale(-1, 1) translate(-127.037074, -182.500000) "></path>
+            <path d="M86,89 C87,166 78,182 52,190 C18.205574,200.398285 19,244 18,276" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(52.037074, 182.500000) scale(-1, 1) translate(-52.037074, -182.500000) "></path>
+            <path d="M311,89 C312,166 303,182 277,190 C243.205574,200.398285 244,244 243,276" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(277.037074, 182.500000) scale(-1, 1) translate(-277.037074, -182.500000) "></path>
+            <path d="M374,89 C375,166 366,182 340,190 C329.527523,193.222301 322.376627,199.633139 317.464595,207.899176" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(345.769371, 148.449588) scale(-1, 1) translate(-345.769371, -148.449588) "></path>
+            <line x1="89.5" y1="88.4947917" x2="89.5" y2="277.505208" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="144" y="82">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="395" y="207">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="232.5" y="292">π</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="78.5" y="292">-π</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="161.5" y="292">0</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="304.5" y="292">2π</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

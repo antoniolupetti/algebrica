@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="267px" viewBox="0 0 356 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <polygon fill="#E6E6E6" points="203 144 299 38 299 143"></polygon>
+            <polygon fill="#D1D1D1" points="203 144 267 73 266 143"></polygon>
+            <path d="M203.436917,1.98013557 L203.872715,2.75486376 L208.372818,10.7548058 L208.617954,11.1905904 L207.746385,11.6808629 L207.501249,11.2450782 L203.936,4.906 L203.937034,10.9999808 L203.940315,265.673435 L203.940322,266.173435 L202.940322,266.173448 L202.940315,265.673448 L202.937034,10.9999937 L202.936,4.909 L199.372825,11.245183 L199.1277,11.6809739 L198.256118,11.1907239 L198.501243,10.754933 L203.00114,2.754875 L203.436917,1.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M345.809495,138.319082 L346.245283,138.564212 L354.245283,143.064212 L355.020016,143.5 L354.245283,143.935788 L346.245283,148.435788 L345.809495,148.680918 L345.319234,147.809343 L345.755021,147.564212 L352.092,144 L49,144 L49,143 L352.092,143 L345.755021,139.435788 L345.319234,139.190657 L345.809495,138.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="345" y="161">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="189" y="162">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="184" y="12">y</tspan>
+            </text>
+            <path d="M109.213662,128.773891 C108.415028,133.731378 108,138.817221 108,144 C108,196.467051 150.532949,239 203,239 C255.467051,239 298,196.467051 298,144 C298,91.5329488 255.467051,49 203,49 C190.003063,49 177.615715,51.6099622 166.333481,56.3343619" stroke="#BABABA" stroke-linecap="round"></path>
+            <line x1="298.5" y1="223.5" x2="298.5" y2="20.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="298.5" y1="16.5" x2="298.5" y2="2.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="298.5" y1="239.5" x2="298.5" y2="217.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="266.5" y1="143.5" x2="266.5" y2="74.5" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="267.5" y1="143.5" x2="203.5" y2="143.5" stroke="#333333" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="203.5" y1="143.5" x2="299.5" y2="37.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="298.5" y1="38.5" x2="203.5" y2="38.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="185" y="41">y</tspan>
+            </text>
+            <text font-size="9" font-weight="normal" fill="#333333">
+                <tspan x="193" y="44">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="305" y="43">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="305" y="138">S</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="261" y="64">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="262" y="162">R</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="40.337" y="69">Under the conditions of </tspan>
+                <tspan x="16.764" y="82">similarity between two right </tspan>
+                <tspan x="43.296" y="95">triangles, the following </tspan>
+                <tspan x="0" y="108">properties hold for the ratios of </tspan>
+                <tspan x="28.094" y="121">their corresponding sides.</tspan>
+            </text>
+            <line x1="171.5" y1="97.5" x2="236.5" y2="97.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="298.5" y1="141.5" x2="298.5" y2="37.5" stroke="#333333" stroke-linecap="square"></line>
+            <circle fill="#333333" cx="298.5" cy="38.5" r="2.5"></circle>
+            <circle fill="#333333" cx="298.5" cy="143.5" r="2.5"></circle>
+            <circle fill="#333333" cx="203.5" cy="38.5" r="2.5"></circle>
+            <circle fill="#333333" cx="203" cy="143.5" r="2.5"></circle>
+            <circle fill="#333333" cx="266.5" cy="143.5" r="2.5"></circle>
+            <circle fill="#333333" cx="266" cy="73" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

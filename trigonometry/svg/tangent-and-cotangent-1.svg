@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="272px" viewBox="0 0 306 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 1.000000)">
+            <path d="M186.836674,147.255308 C186.8387,147.170117 186.840308,147.083846 186.841496,146.996484 M186.843901,146.642607 C186.843901,146.335638 186.838477,146.029937 186.82772,145.725593 C186.506352,136.633651 181.425171,128.753178 174,124.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M152,6.48013557 L152.435788,7.25486938 L156.935788,15.2548694 L157.180918,15.6906571 L156.309343,16.1809184 L156.064212,15.7451306 L152.5,9.408 L152.5,270.5 L151.5,270.5 L151.5,9.408 L147.935788,15.7451306 L147.690657,16.1809184 L146.819082,15.6906571 L147.064212,15.2548694 L151.564212,7.25486938 L152,6.48013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.309343,143.319082 L295.745131,143.564212 L303.745131,148.064212 L304.519864,148.5 L303.745131,148.935788 L295.745131,153.435788 L295.309343,153.680918 L294.819082,152.809343 L295.254869,152.564212 L301.591,149 L-0.5,149 L-0.5,148 L301.591,148 L295.254869,144.435788 L294.819082,144.190657 L295.309343,143.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294" y="165.5">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="137" y="163.5">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133" y="16.5">y</tspan>
+            </text>
+            <path d="M56.9016338,135.09061 C56.307206,139.391999 56,143.785124 56,148.25 C56,200.855122 98.6448776,243.5 151.25,243.5 C203.855122,243.5 246.5,200.855122 246.5,148.25 C246.5,95.6448776 203.855122,53 151.25,53 C129.732277,53 109.881058,60.1351555 93.9332543,72.1685566" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="246.5" y1="221" x2="246.5" y2="18" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="246.5" y1="14" x2="246.5" y2="2.0206059e-14" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="246.5" y1="237" x2="246.5" y2="215" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="246.5" y1="147" x2="246.5" y2="42" stroke="#333333" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="188" y="131.5">θ</tspan>
+            </text>
+            <line x1="152" y1="148" x2="246.5" y2="42.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <circle fill="#333333" cx="151.5" cy="43" r="2.5"></circle>
+            <circle fill="#333333" cx="152" cy="148.5" r="2.5"></circle>
+            <circle fill="#333333" cx="215.5" cy="77.5" r="2.5"></circle>
+            <line x1="248" y1="43" x2="153" y2="43" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="132" y="45.5">y</tspan>
+            </text>
+            <text font-size="9" font-weight="normal" fill="#333333">
+                <tspan x="140" y="49.5">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="254.5" y="47.5">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="254.5" y="142.5">S</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="210" y="68.5">P</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="19" y="87.5">The segment ST </tspan>
+                <tspan x="19" y="100.5">represents the length </tspan>
+                <tspan x="19" y="113.5">of the tangent of the </tspan>
+                <tspan x="19" y="126.5">angle θ.</tspan>
+            </text>
+            <circle fill="#333333" cx="246.5" cy="43" r="2.5"></circle>
+            <circle fill="#333333" cx="246" cy="148.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
