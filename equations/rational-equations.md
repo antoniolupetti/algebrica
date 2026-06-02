@@ -14,7 +14,7 @@ Rational equations contain at least one fraction whose numerator and denominator
 
 $$\frac{P(x)}{Q(x)} = 0$$
 
-In this expression $P(x)$ and $Q(x)$ are polynomials with $Q(x) \neq 0$. A polynomial is a combination of [monomials](../monomials/) added or subtracted together, and its general form is the following:
+In this expression $P(x)$ and $Q(x)$ are polynomials with $Q(x) \neq 0$. When the equality is replaced by an inequality sign, the same canonical form underlies a [rational inequality](../rational-inequalities/), solved through a sign analysis of the ratio. A polynomial is a combination of [monomials](../monomials/) added or subtracted together, and its general form is the following:
 
 $$a_nx^n + a_{n-1}x^{n-1} + \dotsb + a_2x^2 + a_1x + a_0$$
 

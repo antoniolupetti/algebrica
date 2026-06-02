@@ -22,6 +22,8 @@ In this expression the symbols have the following meaning:
 + $b \in \mathbb{R}$ is the constant term
 + when $b = 0$, the equation is called homogeneous
 
+An algebraic relation of the same degree in which the equality sign is replaced by an inequality sign defines a [linear inequality](../linear-inequalities/), solved with analogous manipulations.
+
 The adjective linear refers to a precise algebraic property of the left-hand side. If we denote the left-hand side by $L$, so that:
 
 $$L(x_1, \ldots, x_n) = a_1x_1 + \ldots + a_nx_n$$

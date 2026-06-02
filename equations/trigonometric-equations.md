@@ -22,7 +22,7 @@ A second family of equations places a function of the unknown inside the trigono
 
 $$\sin[f(x)] = m, \quad \cos[f(x)] = m, \quad \tan[f(x)] = m$$
 
-The two families are treated below. Because the trigonometric functions are periodic, each solvable equation of this kind admits infinitely many solutions, and the central task is to describe them all through a compact general formula.
+The two families are treated below. Because the trigonometric functions are periodic, each solvable equation of this kind admits infinitely many solutions, and the central task is to describe them all through a compact general formula. Replacing the equality with an inequality sign leads to a [trigonometric inequality](../trigonometric-inequalities/), where the same periodicity produces an infinite union of intervals rather than a discrete family of solutions.
 
 ## Equations of the form sine of x equals m
 

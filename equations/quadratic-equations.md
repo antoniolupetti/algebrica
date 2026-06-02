@@ -21,6 +21,8 @@ In this expression $a$, $b$, and $c$ are real coefficients, $x$ is the unknown, 
 + When $a = 0$ the equation reduces to the [linear equation](../linear-equations/) $bx + c = 0$.
 + If both $a = 0$ and $b = 0$, the equation becomes constant and has either no solution or infinitely many, depending on whether $c \neq 0$ or $c = 0$.
 
+Replacing the equality sign with one of the relations $<$, $>$, $\leq$, or $\geq$ turns the equation into a [quadratic inequality](../quadratic-inequalities/), which is solved by studying the sign of the same quadratic expression.
+
 The quadratic equation is the simplest case of a [trinomial equation](../trinomial-equations/), which has the general form:
 
 $$ax^{2n} + bx^{n} + c = 0$$
