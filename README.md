@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica.svg" width="141" alt="Github Readme Algebrica"/>
+<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-logo.svg" width="70" alt="Github Readme Algebrica"/>
 
 <p>A Mathematical Knowledge Base</p>
 </div>
