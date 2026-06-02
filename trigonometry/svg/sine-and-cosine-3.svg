@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="406px" height="258px" viewBox="0 0 406 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="180.5" y="11">Sine is a periodic function with period 2π. </tspan>
+                <tspan x="180.5" y="24">It completes one full cycle for every </tspan>
+                <tspan x="180.5" y="37">complete revolution on the unit circle.</tspan>
+            </text>
+            <line x1="207.5" y1="49.5" x2="207.5" y2="85.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M395.309343,156.319082 L395.745131,156.564212 L403.745131,161.064212 L404.519864,161.5 L403.745131,161.935788 L395.745131,166.435788 L395.309343,166.680918 L394.819082,165.809343 L395.254869,165.564212 L401.591,162 L-0.5,162 L-0.5,161 L401.591,161 L395.254869,157.435788 L394.819082,157.190657 L395.309343,156.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="207" y1="97.5" x2="170" y2="97.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="287" y1="225.5" x2="170" y2="225.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="152.5" y="102">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="149.5" y="229">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="198" y="176">π/2</tspan>
+            </text>
+            <path d="M47.5,98 C57.5666881,98 65.0382335,107.388809 71.3867983,121.060862 M79.1322454,140.846906 C91.8154548,177.712379 102.057941,225 126.5,225 C146.089537,225 157.600017,193.040154 167.5,162 C177.843078,129.570578 186.56625,98 207.5,98 C248.470703,98 247.5,225 287.5,225 C327.5,225 327.5,98 367.5,98" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="331" y="176">2π</tspan>
+            </text>
+            <line x1="207.5" y1="158.5" x2="207.5" y2="98.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M167.5,162 C177.843078,129.570578 186.56625,98 207.5,98 C248.470703,98 247.5,225 287.5,225 C287.626068,225 286.751739,225 286.877015,224.996223 C306.638131,224.599492 317.823895,193.011314 328.016294,161.442188" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="46.5" y="134">f(x) = sin(x)</tspan>
+            </text>
+            <path d="M166.5,64.9801356 L166.935788,65.7548694 L171.435788,73.7548694 L171.680918,74.1906571 L170.809343,74.6809184 L170.564212,74.2451306 L167,67.908 L167,258 L166,258 L166,67.908 L162.435788,74.2451306 L162.190657,74.6809184 L161.319082,74.1906571 L161.564212,73.7548694 L166.064212,65.7548694 L166.5,64.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="287" cy="225.5" r="2.5"></circle>
+            <circle fill="#333333" cx="207" cy="98" r="3"></circle>
+        </g>
+    </g>
+</svg>
