@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="329px" height="268px" viewBox="0 0 329 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M193.676181,137 C193.676181,136.759949 193.671205,136.521059 193.661352,136.28343 C193.409945,130.220417 189.983011,124.977384 185,122.173782" stroke="#BABABA"></path>
+        <g>
+            <line x1="149.5" y1="69.5" x2="200.5" y2="69.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M175.5,3.98013557 L175.935788,4.75486938 L180.435788,12.7548694 L180.680918,13.1906571 L179.809343,13.6809184 L179.564212,13.2451306 L176,6.908 L176,268 L175,268 L175,6.908 L171.435788,13.2451306 L171.190657,13.6809184 L170.319082,13.1906571 L170.564212,12.7548694 L175.064212,4.75486938 L175.5,3.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M318.809343,132.319082 L319.245131,132.564212 L327.245131,137.064212 L328.019864,137.5 L327.245131,137.935788 L319.245131,142.435788 L318.809343,142.680918 L318.319082,141.809343 L318.754869,141.564212 L325.091,138 L25,138 L25,137 L325.091,137 L318.754869,133.435788 L318.319082,133.190657 L318.809343,132.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="320.5" y="154">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="191.5" y="87">r</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="159.5" y="153">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="156.5" y="12">y</tspan>
+            </text>
+            <path d="M261.006717,96.0546397 C245.612606,64.3535281 213.108386,42.5 175.5,42.5 C167.367981,42.5 159.474607,43.5217601 151.941255,45.4439029 M83.1716183,115.035679 C81.425413,122.237897 80.5,129.760878 80.5,137.5 C80.5,189.967051 123.032949,232.5 175.5,232.5 C227.967051,232.5 270.5,189.967051 270.5,137.5 C270.5,130.677244 269.780763,124.022474 268.413973,117.607375" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="195.5" y="129">θ</tspan>
+            </text>
+            <line x1="176" y1="137.5" x2="222.5" y2="56.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="176" y1="137.5" x2="223" y2="137.5" stroke="#333333"></line>
+            <circle fill="#333333" cx="175.5" cy="137.5" r="3"></circle>
+            <circle fill="#333333" cx="223.5" cy="56" r="3"></circle>
+            <line x1="223.5" y1="136.5" x2="223.5" y2="53.5" stroke="#333333"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="233.5" y="109">y=sin(θ)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="221.5" y="44">P(x,y)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="194.5" y="158">x=cos(θ)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="4.92" y="59.3620148">On the unit circle, the sine </tspan>
+                <tspan x="4.425" y="72.3620148">and cosine define the legs </tspan>
+                <tspan x="13.148" y="85.3620148">of a right triangle whose </tspan>
+                <tspan x="10.321" y="98.3620148">hypotenuse is the radius.</tspan>
+            </text>
+            <circle fill="#333333" cx="223.5" cy="137.5" r="3"></circle>
+        </g>
+    </g>
+</svg>

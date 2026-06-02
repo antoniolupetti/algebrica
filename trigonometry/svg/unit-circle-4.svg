@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="269px" viewBox="0 0 321 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M184.676181,138 C184.676181,137.759949 184.671205,137.521059 184.661352,137.28343 C184.409945,131.220417 180.983011,125.977384 176,123.173782" stroke="#BABABA"></path>
+        <g>
+            <line x1="168" y1="138" x2="215.5" y2="55.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <g transform="translate(0.000000, 6.500000)">
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="35.678" y="54.8620148">The cosine and sine </tspan>
+                    <tspan x="16.725" y="67.8620148">functions identify the x </tspan>
+                    <tspan x="2.348" y="80.8620148">and y coordinates of point </tspan>
+                    <tspan x="38.186" y="93.8620148">P on the unit circle.</tspan>
+                </text>
+                <path d="M167.5,-1.51986443 L167.935788,-0.74513062 L172.435788,7.25486938 L172.680918,7.69065715 L171.809343,8.18091839 L171.564212,7.74513062 L168,1.409 L168,262.5 L167,262.5 L167,1.409 L163.435788,7.74513062 L163.190657,8.18091839 L162.319082,7.69065715 L162.564212,7.25486938 L167.064212,-0.74513062 L167.5,-1.51986443 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M310.809343,126.819082 L311.245131,127.064212 L319.245131,131.564212 L320.019864,132 L319.245131,132.435788 L311.245131,136.935788 L310.809343,137.180918 L310.319082,136.309343 L310.754869,136.064212 L317.091,132.5 L17,132.5 L17,131.5 L317.091,131.5 L310.754869,127.935788 L310.319082,127.690657 L310.809343,126.819082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="182.5" y="80.5">r</tspan>
+                </text>
+                <text font-size="13" font-weight="normal" fill="#333333">
+                    <tspan x="151.5" y="147.5">O</tspan>
+                </text>
+                <path d="M253.006717,90.5546397 C237.612606,58.8535281 205.108386,37 167.5,37 C159.367981,37 151.474607,38.0217601 143.941255,39.9439029 M75.1716183,109.535679 C73.425413,116.737897 72.5,124.260878 72.5,132 C72.5,184.467051 115.032949,227 167.5,227 C219.967051,227 262.5,184.467051 262.5,132 C262.5,125.177244 261.780763,118.522474 260.413973,112.107375" stroke="#BABABA" stroke-linecap="round"></path>
+                <line x1="168" y1="49" x2="216" y2="49" stroke="#BABABA" stroke-dasharray="4"></line>
+                <line x1="215.5" y1="131.5" x2="215.5" y2="46.0000178" stroke="#BABABA" stroke-dasharray="4"></line>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="233.5" y="103.5">y=sin(θ)</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="213.5" y="38.5">P(1/2, √3/2)</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="191.5" y="149.5">x=cos(θ)</tspan>
+                </text>
+                <circle fill="#333333" cx="215.5" cy="49" r="3"></circle>
+            </g>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="187.176181" y="131">θ</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="311.5" y="156">x</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="147.5" y="13">y</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

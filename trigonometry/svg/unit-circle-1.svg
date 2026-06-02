@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="341px" viewBox="0 0 306 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="150" y1="210.5" x2="245" y2="103.5" stroke="#B1B1B1" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M150.5,75.4801356 L150.935788,76.2548694 L155.435788,84.2548694 L155.680918,84.6906571 L154.809343,85.1809184 L154.564212,84.7451306 L151,78.408 L151,340.5 L150,340.5 L150,78.408 L146.435788,84.7451306 L146.190657,85.1809184 L145.319082,84.6906571 L145.564212,84.2548694 L150.064212,76.2548694 L150.5,75.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M172.676181,210 C172.676181,209.759949 172.671205,209.521059 172.661352,209.28343 C172.409945,203.220417 168.983011,197.977384 164,195.173782" stroke="#BABABA"></path>
+            <path d="M293.309343,204.319082 L293.745131,204.564212 L301.745131,209.064212 L302.519864,209.5 L301.745131,209.935788 L293.745131,214.435788 L293.309343,214.680918 L292.819082,213.809343 L293.254869,213.564212 L299.589,210 L-0.5,210 L-0.5,209 L299.593,209 L293.254869,205.435788 L292.819082,205.190657 L293.309343,204.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="292" y="226.260949">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="137" y="227">O</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="130" y="85">y</tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="150.5" cy="209.240876" rx="94.5" ry="94.6733577"></ellipse>
+            <line x1="245.5" y1="339.5" x2="245.5" y2="60.5" stroke="#B1B1B1" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="245.5" y1="206.5" x2="245.5" y2="102.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="214.5" y1="207" x2="214.5" y2="142" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="212" y1="209.5" x2="150" y2="209.5" stroke="#333333" stroke-linecap="square"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="251" y="98.0456204">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="255" y="227">S</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="209" y="227">R</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="208" y="131.083942">P</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="175" y="168.083942">r</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="175" y="202.479927">θ</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="84.5" y="11">The segment OP, which represents the </tspan>
+                <tspan x="84.5" y="24">radius of the circle, lies on the unit circle </tspan>
+                <tspan x="84.5" y="37">and therefore has a length of 1.</tspan>
+            </text>
+            <line x1="189.5" y1="48.5" x2="189.5" y2="150.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle fill="#333333" cx="214.5" cy="139.5" r="3"></circle>
+            <circle fill="#333333" cx="245.5" cy="103" r="3"></circle>
+            <circle fill="#333333" cx="245.5" cy="209" r="3"></circle>
+            <circle fill="#333333" cx="214.5" cy="209.5" r="3"></circle>
+            <circle fill="#333333" cx="150.5" cy="209.5" r="3"></circle>
+        </g>
+    </g>
+</svg>
