@@ -5,25 +5,27 @@ https://algebrica.org/rouche-capelli-theorem/
 
 ## Statement of the theorem
 
-The Rouché-Capelli theorem characterizes the solvability of a [linear system](../systems-of-linear-equations/) in terms of two matrix invariants: the [rank](../rank-of-a-matrix/) of the coefficient matrix and the rank of the augmented matrix. Consider a linear system of \\(m\\) equations in \\(n\\) unknowns written in matrix form:
+The Rouché-Capelli theorem characterizes the solvability of a linear system in terms of two matrix invariants: the [rank](../rank-of-a-matrix/) of the coefficient matrix and the rank of the augmented matrix. Consider a linear system of \\(m\\) equations in \\(n\\) unknowns written in matrix form:
 
 \\[
 A\mathbf{x} = \mathbf{b}
 \\]
 
-Here \\(A \in M_{m,n}(\mathbb{R})\\) is the coefficient matrix, \\(\mathbf{x} \in \mathbb{R}^n\\) is the column of unknowns, and \\(\mathbf{b} \in \mathbb{R}^m\\) is the column of constant terms. The augmented [matrix](../matrices/) \\(A \mid \mathbf{b}\\) is obtained by appending \\(\mathbf{b}\\) as an additional column to \\(A\\), producing a matrix of size \\(m \times (n+1)\\).
+Here \\(A \in M_{m,n}(\mathbb{R})\\) is the coefficient [matrix](../matrices/), \\(\mathbf{x} \in \mathbb{R}^n\\) is the column [vector](../vectors/) of unknowns, and \\(\mathbf{b} \in \mathbb{R}^m\\) is the column vector of constant terms. The augmented matrix \\(A \mid \mathbf{b}\\) is obtained by appending \\(\mathbf{b}\\) as an additional column to \\(A\\), producing a matrix of size \\(m \times (n+1)\\).
 
 The theorem can be stated as follows. Let \\(S\\) be a linear system of \\(m\\) equations in \\(n\\) unknowns with coefficient matrix \\(A\\) and augmented matrix \\(A \mid \mathbf{b}\\). Then:
 
 + the system \\(S\\) is consistent if and only if \\(r(A) = r(A \mid \mathbf{b})\\);
 + when \\(S\\) is consistent and \\(r(A) = r(A \mid \mathbf{b}) = r\\), the system admits a unique solution if \\(r = n\\), and infinitely many solutions depending on \\(n - r\\) free parameters if \\(r < n\\).
 
-The first part of the theorem is a criterion for [consistency](../systems-of-linear-equations/), formulated entirely in terms of the rank. The second part, which presupposes consistency, quantifies the dimension of the solution set as the difference \\(n - r\\) between the number of unknowns and the common value of the two ranks.
+The first part of the theorem is a criterion for consistency, formulated entirely in terms of the rank. The second part, which presupposes consistency, quantifies the dimension of the solution set as the difference \\(n - r\\) between the number of unknowns and the common value of the two ranks.
+
+> Two complementary lines of attack on a square system \\(A\\mathbf{x} = \\mathbf{b}\\) connect the Rouché-Capelli criterion to the rest of matrix theory. When \\(A\\) is square and the [determinant](../determinant/) is nonzero, the system has rank \\(n\\) and is solved in closed form through the [inverse matrix](../inverse-matrix/) as \\(\\mathbf{x} = A^{-1}\\mathbf{b}\\). The vanishing of the determinant is in turn the algebraic counterpart of the rank deficiency that this theorem detects.
 
 - - -
 ## Geometric interpretation
 
-The condition \\(r(A) = r(A \mid \mathbf{b})\\) admits a transparent geometric reading in terms of [linear combinations](https://algebrica.org/linear-combinations/) of the columns of \\(A\\). Denote by \\(C_1, C_2, \ldots, C_n \in \mathbb{R}^m\\) the columns of \\(A\\). The matrix-vector product can be written as:
+The condition \\(r(A) = r(A \mid \mathbf{b})\\) admits a transparent geometric reading in terms of [linear combinations](../linear-combinations/) of the columns of \\(A\\). Denote by \\(C_1, C_2, \ldots, C_n \in \mathbb{R}^m\\) the columns of \\(A\\). The matrix-vector product can be written as:
 
 \\[
 A\mathbf{x} = x_1 C_1 + x_2 C_2 + \cdots + x_n C_n

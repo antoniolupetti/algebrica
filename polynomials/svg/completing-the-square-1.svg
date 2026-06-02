@@ -9,7 +9,7 @@
             <line x1="95.5" y1="33.5" x2="95.5" y2="95.5" stroke="#636363" stroke-linecap="round"></line>
             <line x1="95.5" y1="33.5" x2="95.5" y2="95.5" stroke="#BABABA" stroke-linecap="round"></line>
             <line x1="95.5" y1="207.5" x2="95.5" y2="269.5" stroke="#BABABA" stroke-linecap="round"></line>
-            <rect fill="#E6E6E6" x="175" y="188" width="40" height="39"></rect>
+            <rect fill="#e6e6e6" x="175" y="188" width="40" height="39"></rect>
             <rect stroke="#333333" stroke-width="2" x="57" y="69" width="118" height="118"></rect>
             <rect stroke="#333333" x="175.5" y="68.5" width="39" height="119"></rect>
             <rect stroke="#333333" transform="translate(116.000000, 207.000000) rotate(90.000000) translate(-116.000000, -207.000000) " x="96.5" y="147.5" width="39" height="119"></rect>

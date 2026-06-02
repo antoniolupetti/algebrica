@@ -22,7 +22,7 @@
             <text font-size="11" font-weight="normal" fill="#636363">
                 <tspan x="267.923478" y="147">Complex</tspan>
             </text>
-            <ellipse stroke="#BFBFBF" stroke-width="1.5" fill="#F3F3F3" transform="translate(195.816125, 138.241408) rotate(13.000000) translate(-195.816125, -138.241408) " cx="195.816125" cy="138.241408" rx="28.75" ry="12.75"></ellipse>
+            <ellipse stroke="#BFBFBF" stroke-width="1.5" fill="#F4EFEE" transform="translate(195.816125, 138.241408) rotate(13.000000) translate(-195.816125, -138.241408) " cx="195.816125" cy="138.241408" rx="28.75" ry="12.75"></ellipse>
             <text font-size="11" font-weight="normal" fill="#636363">
                 <tspan x="103.923478" y="11">Irrational: real numbers outside the </tspan>
                 <tspan x="103.923478" y="25">rational subset, defined by non-</tspan>

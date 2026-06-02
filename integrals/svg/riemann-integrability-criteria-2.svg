@@ -28,12 +28,12 @@
                 <circle id="Oval-Copy-2" fill="#333333" cx="267.5" cy="153.5" r="2.5"></circle>
                 <circle id="Oval-Copy-3" fill="#333333" cx="141.5" cy="95.5" r="2.5"></circle>
                 <circle id="Oval-Copy-4" fill="#333333" cx="267.5" cy="69.5" r="2.5"></circle>
-                <rect id="Rectangle-Copy" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="141.5" y="77.5" width="21" height="76"></rect>
-                <rect id="Rectangle-Copy-2" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="162.5" y="63.5" width="21" height="90"></rect>
-                <rect id="Rectangle-Copy-3" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="183.5" y="54.5" width="21" height="99"></rect>
-                <rect id="Rectangle-Copy-4" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="204.5" y="51.5" width="21" height="102"></rect>
-                <rect id="Rectangle-Copy-5" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="225.5" y="51.5" width="21" height="102"></rect>
-                <rect id="Rectangle-Copy-6" stroke="#BABABA" fill="#E6E6E6" style="mix-blend-mode: darken;" x="246.5" y="57.5" width="21" height="96"></rect>
+                <rect id="Rectangle-Copy" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="141.5" y="77.5" width="21" height="76"></rect>
+                <rect id="Rectangle-Copy-2" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="162.5" y="63.5" width="21" height="90"></rect>
+                <rect id="Rectangle-Copy-3" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="183.5" y="54.5" width="21" height="99"></rect>
+                <rect id="Rectangle-Copy-4" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="204.5" y="51.5" width="21" height="102"></rect>
+                <rect id="Rectangle-Copy-5" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="225.5" y="51.5" width="21" height="102"></rect>
+                <rect id="Rectangle-Copy-6" stroke="#BABABA" fill="#e6e6e6" style="mix-blend-mode: darken;" x="246.5" y="57.5" width="21" height="96"></rect>
                 <text id="In-this-case,-we-att" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                     <tspan x="139" y="215">In this case, we attempted to </tspan>
                     <tspan x="139" y="228">calculate the area of the curvilinear </tspan>

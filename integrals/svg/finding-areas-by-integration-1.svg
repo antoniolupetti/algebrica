@@ -12,7 +12,7 @@
                 <text font-size="14" font-weight="normal" fill="#BABABA">
                     <tspan x="88.5" y="72">y</tspan>
                 </text>
-                <polygon fill="#E6E6E6" points="142 190 173 182 208 164 233 142 245 135 260 137 268 142 268 96 256 87 240 80 224 77 205 80 191 84 176 93 161 105 142 121"></polygon>
+                <polygon fill="#e6e6e6" points="142 190 173 182 208 164 233 142 245 135 260 137 268 142 268 96 256 87 240 80 224 77 205 80 191 84 176 93 161 105 142 121"></polygon>
                 <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                     <tspan x="130" y="11">Area between two curves </tspan>
                     <tspan x="130" y="24">calculated as the difference of </tspan>

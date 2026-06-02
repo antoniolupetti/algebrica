@@ -2,7 +2,7 @@
 <svg width="353px" height="233px" viewBox="0 0 353 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(1.000000, 0.000000)">
-            <rect fill="#E6E6E6" x="41" y="132" width="278" height="15" rx="7.5"></rect>
+            <rect fill="#e6e6e6" x="41" y="132" width="278" height="15" rx="7.5"></rect>
             <text font-size="12" font-weight="normal" fill="#333333">
                 <tspan x="245" y="207">min</tspan>
             </text>

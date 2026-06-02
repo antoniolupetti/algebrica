@@ -22,9 +22,9 @@
             <text  font-size="13" font-weight="normal" fill="#333333">
                 <tspan x="183.5" y="280.164835">h</tspan>
             </text>
-            <path d="M163.5,112.443967 L163.5,220.5 L116.5,220.5 L116.5,172.173134 L163.5,112.443967 Z" stroke="#BABABA" fill="#E6E6E6"></path>
-            <path d="M210.5,108.521267 L210.5,220.5 L163.5,220.5 L163.5,110.479601 L210.5,108.521267 Z" stroke="#BABABA" fill="#E6E6E6"></path>
-            <path d="M210.5,108.854924 L257.5,135.292424 L257.5,220.5 L210.5,220.5 L210.5,108.854924 Z" stroke="#BABABA" fill="#E6E6E6"></path>
+            <path d="M163.5,112.443967 L163.5,220.5 L116.5,220.5 L116.5,172.173134 L163.5,112.443967 Z" stroke="#BABABA" fill="#e6e6e6"></path>
+            <path d="M210.5,108.521267 L210.5,220.5 L163.5,220.5 L163.5,110.479601 L210.5,108.521267 Z" stroke="#BABABA" fill="#e6e6e6"></path>
+            <path d="M210.5,108.854924 L257.5,135.292424 L257.5,220.5 L210.5,220.5 L210.5,108.854924 Z" stroke="#BABABA" fill="#e6e6e6"></path>
             <text  font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                 <tspan x="71" y="11">Each subinterval generates a trapezoid: h is the </tspan>
                 <tspan x="71" y="24">base, while f(x</tspan>

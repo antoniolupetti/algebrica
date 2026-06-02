@@ -4,13 +4,13 @@
         <g transform="translate(-76.000000, -130.000000)">
             <g transform="translate(77.000000, 130.000000)">
                 <g transform="translate(0.000000, 29.000000)">
-                    <rect fill="#E6E6E6" x="56" y="29" width="30" height="115"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="87" y="23" width="30" height="121"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="117" y="27" width="30" height="116"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="148" y="59" width="30" height="84"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="178" y="86" width="31" height="57"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="209" y="107" width="30" height="36"></rect>
-                    <rect fill="#E6E6E6" style="mix-blend-mode: multiply;" x="239" y="119" width="30" height="24"></rect>
+                    <rect fill="#e6e6e6" x="56" y="29" width="30" height="115"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="87" y="23" width="30" height="121"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="117" y="27" width="30" height="116"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="148" y="59" width="30" height="84"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="178" y="86" width="31" height="57"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="209" y="107" width="30" height="36"></rect>
+                    <rect fill="#e6e6e6" style="mix-blend-mode: multiply;" x="239" y="119" width="30" height="24"></rect>
                     <rect fill="#D4D4D4" x="56" y="63" width="31" height="80"></rect>
                     <rect fill="#D4D4D4" x="86" y="29" width="31" height="114"></rect>
                     <rect fill="#D4D4D4" x="117" y="59" width="31" height="84"></rect>
