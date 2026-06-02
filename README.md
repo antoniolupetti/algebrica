@@ -18,7 +18,7 @@
   <a href="https://algebrica.org/editorial-process">Editorial Process</a>
 </p>
 
-<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot.png" width="100%" alt="Algebrica Screenshot" />
+<img src="https://raw.githubusercontent.com/antoniolupetti/algebrica/main/github-assets/algebrica-screenshot-1.png" width="100%" alt="Algebrica Screenshot" />
 
 ## Introduction
 
