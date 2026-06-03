@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="339px" height="321px" viewBox="0 0 339 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <line x1="104" y1="82.5" x2="104" y2="50.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="63.5" y="11">The arcsine function is defined only for values </tspan>
+                <tspan x="63.5" y="24">between −1 and 1, since the sine of an angle can </tspan>
+                <tspan x="63.5" y="37">only take values in this range.</tspan>
+            </text>
+            <line x1="96" y1="97.5" x2="237" y2="97.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="96" y1="293.5" x2="237" y2="293.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="66" y="102">π/2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="60" y="297">-π/2</tspan>
+            </text>
+            <line x1="103.936937" y1="96.5208333" x2="104" y2="295.479167" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="237.936937" y1="96.5208333" x2="238" y2="295.479167" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M328.309343,192.319082 L328.745131,192.564212 L336.745131,197.064212 L337.519864,197.5 L336.745131,197.935788 L328.745131,202.435788 L328.309343,202.680918 L327.819082,201.809343 L328.254869,201.564212 L334.591,198 L-0.5,198 L-0.5,197 L334.591,197 L328.254869,193.435788 L327.819082,193.190657 L328.309343,192.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M167,66.9801356 L167.435788,67.7548694 L171.935788,75.7548694 L172.180918,76.1906571 L171.309343,76.6809184 L171.064212,76.2451306 L167.5,69.908 L167.5,297 L166.5,297 L166.5,69.908 L162.935788,76.2451306 L162.690657,76.6809184 L161.819082,76.1906571 L162.064212,75.7548694 L166.564212,67.7548694 L167,66.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M107,291.5 C110,261.833333 131.166667,230 170.5,196 C209.833333,162 231.333333,129.166667 235,97.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="93.5" y="317">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="233.5" y="317">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="148" y="77">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="328" y="216">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

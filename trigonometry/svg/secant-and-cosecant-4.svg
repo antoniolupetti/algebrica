@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="409px" height="337px" viewBox="0 0 409 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="NEW---Trigonometry" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7">
+            <line x1="1.5" y1="110.5" x2="408.5" y2="110.5" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="0.5" y1="158.5" x2="407.5" y2="158.5" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="108.5" y1="290.5" x2="108.5" y2="258.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <text id="The-cosecant-functio" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="42" y="309">The cosecant function features an </tspan>
+                <tspan x="42" y="322">infinite, periodically repeating set of </tspan>
+                <tspan x="42" y="335">vertical asymptotes across its domain.</tspan>
+            </text>
+            <path id="Line-2" d="M396.809343,129.319082 L397.245131,129.564212 L405.245131,134.064212 L406.019864,134.5 L405.245131,134.935788 L397.245131,139.435788 L396.809343,139.680918 L396.319082,138.809343 L396.754869,138.564212 L403.091,135 L1,135 L1,134 L403.091,134 L396.754869,130.435788 L396.319082,130.190657 L396.809343,129.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line" d="M193.5,6.98013557 L193.935788,7.75486938 L198.435788,15.7548694 L198.680918,16.1906571 L197.809343,16.6809184 L197.564212,16.2451306 L194,9.908 L194,247 L193,247 L193,9.908 L189.435788,16.2451306 L189.190657,16.6809184 L188.319082,16.1906571 L188.564212,15.7548694 L193.064212,7.75486938 L193.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="276.436937" y1="21.5885417" x2="276.5" y2="246.411458" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="359.436937" y1="21.5885417" x2="359.5" y2="246.411458" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="108.436937" y1="21.5885417" x2="108.5" y2="246.411458" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="25.4369369" y1="20.5885417" x2="25.5" y2="245.411458" id="Line" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="178" y="15">y</tspan>
+            </text>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="398" y="150">x</tspan>
+            </text>
+            <text id="π" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="271" y="12">π</tspan>
+            </text>
+            <text id="-π" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="98" y="12">-π</tspan>
+            </text>
+            <text id="2π" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="351" y="12">2π</tspan>
+            </text>
+            <path d="" id="Rectangle" stroke="#979797" fill="#D8D8D8"></path>
+            <path d="M198,21 C198.705314,79 210.695652,108 233.971014,108 C257.246377,108 269.589372,79 271,21" id="Path-2" stroke="#000000" stroke-width="2"></path>
+            <path d="M29.9710145,21 C30.6763285,79 42.6666667,108 65.942029,108 C89.2173913,108 101.560386,79 102.971014,21" id="Path-2" stroke="#000000" stroke-width="2" transform="translate(66.471014, 64.500000) scale(-1, 1) translate(-66.471014, -64.500000) "></path>
+            <path d="M364.971014,108 C388.246377,108 400.589372,79 402,21" id="Path" stroke="#000000" stroke-width="2" transform="translate(383.485507, 64.500000) scale(-1, 1) translate(-383.485507, -64.500000) "></path>
+            <path d="M114,160 C114.705314,218 126.695652,247 149.971014,247 C173.246377,247 185.589372,218 187,160" id="Path-2" stroke="#000000" stroke-width="2" transform="translate(150.500000, 203.500000) scale(1, -1) translate(-150.500000, -203.500000) "></path>
+            <path d="M282,160 C282.705314,218 294.695652,247 317.971014,247 C341.246377,247 353.589372,218 355,160" id="Path-2" stroke="#000000" stroke-width="2" transform="translate(318.500000, 203.500000) scale(1, -1) translate(-318.500000, -203.500000) "></path>
+            <text id="-2π" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="14" y="12">-2π</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

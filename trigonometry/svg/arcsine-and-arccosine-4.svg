@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="339px" height="320px" viewBox="0 0 339 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="105.5" y1="85.5" x2="105.5" y2="53.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="64.5" y="11">The arccosine function is defined only for values </tspan>
+                <tspan x="64.5" y="24">between −1 and 1, since the cosine of an angle can </tspan>
+                <tspan x="64.5" y="37">only take values in this range.</tspan>
+            </text>
+            <line x1="104.5" y1="100.520833" x2="104.5" y2="299.479167" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="94" y1="100.5" x2="165" y2="100.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="94" y1="197.5" x2="165" y2="197.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="237.5" y1="100.5" x2="237.5" y2="299.479167" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M168.5,74.9801356 L168.935788,75.7548694 L173.435788,83.7548694 L173.680918,84.1906571 L172.809343,84.6809184 L172.564212,84.2451306 L169,77.908 L169,297 L168,297 L168,77.908 L164.435788,84.2451306 L164.190657,84.6809184 L163.319082,84.1906571 L163.564212,83.7548694 L168.064212,75.7548694 L168.5,74.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="149.5" y="80">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="328.5" y="313">x</tspan>
+            </text>
+            <path d="M107,295.5 C110,265.833333 131.166667,234 170.5,200 C209.833333,166 231.333333,133.166667 235,101.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(171.000000, 198.500000) scale(-1, 1) translate(-171.000000, -198.500000) "></path>
+            <path d="M328.309343,291.319082 L328.745131,291.564212 L336.745131,296.064212 L337.519864,296.5 L336.745131,296.935788 L328.745131,301.435788 L328.309343,301.680918 L327.819082,300.809343 L328.254869,300.564212 L334.591,297 L-0.5,297 L-0.5,296 L334.591,296 L328.254869,292.435788 L327.819082,292.190657 L328.309343,291.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="67" y="201">π/2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="71.5" y="104">2π</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="93.5" y="316">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="233.5" y="316">1</tspan>
+            </text>
+            <circle fill="#333333" cx="168.5" cy="100.5" r="2.5"></circle>
+            <circle fill="#333333" cx="168.5" cy="196.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
