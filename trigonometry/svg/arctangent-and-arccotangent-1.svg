@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="268px" viewBox="0 0 306 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M197.981145,54.7890949 C184.012172,46.6980208 167.795857,42.0675182 150.5,42.0675182 C98.0329488,42.0675182 55.5,84.6780819 55.5,137.240876 C55.5,189.80367 98.0329488,232.414234 150.5,232.414234 C161.21249,232.414234 171.51085,230.637899 181.117613,227.363204" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M236.224838,178.420489 C242.203778,165.958946 245.55349,151.991809 245.55349,137.240876 C245.55349,126.886271 243.902914,116.917883 240.850972,107.585377 M212.5,65.0820724 L232.55349,89" stroke="#BABABA" stroke-linecap="round"></path>
+            <line x1="131.648412" y1="88.6804749" x2="263.147224" y2="88.1217325" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(197.148412, 87.984307) rotate(-44.893843) translate(-197.148412, -87.984307) "></line>
+            <line x1="211.327614" y1="121.795537" x2="277.672386" y2="55.204463" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(244.500000, 88.500000) rotate(-44.893843) translate(-244.500000, -88.500000) "></line>
+            <path d="M292.662848,130.527171 L292.745131,130.564212 L300.745131,135.064212 L301.519864,135.5 L300.745131,135.935788 L292.745131,140.435788 C292.504452,140.57117 292.199594,140.48581 292.064212,140.245131 C291.943873,140.031194 291.997947,139.766548 292.180485,139.615296 L292.254869,139.564212 L298.591,136 L0,136 C-0.276142375,136 -0.5,135.776142 -0.5,135.5 C-0.5,135.25454 -0.323124839,135.050392 -0.0898756324,135.008056 L0,135 L298.591,135 L292.254869,131.435788 C292.040933,131.315448 291.949717,131.061202 292.027171,130.837152 L292.064212,130.754869 C292.184552,130.540933 292.438798,130.449717 292.662848,130.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="130.5" y="154">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="201.5" y="64">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="129" y="12">y</tspan>
+            </text>
+            <path d="M244.991652,134.966102 C244.855255,124.556799 243.0508,114.550675 239.833842,105.203752" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M232.902215,90.7293541 C228.63997,83.120907 223.364352,76.158885 217.25859,70.0268508" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="173" y="130.479927">θ</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="184.5" y="191">The arctangent </tspan>
+                <tspan x="184.5" y="204">expresses the angle θ </tspan>
+                <tspan x="184.5" y="217">whose tangent has a </tspan>
+                <tspan x="184.5" y="230">given value.</tspan>
+            </text>
+            <line x1="217.5" y1="110.5" x2="217.5" y2="171.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle fill="#333333" cx="216" cy="68.5" r="2.5"></circle>
+            <circle stroke="#333333" fill="#333333" cx="245" cy="134.5" r="2"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="253.5" y="45">tan(θ)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="220.5" y="101">arctan(x)</tspan>
+            </text>
+            <circle fill="#333333" cx="244.5" cy="41.5" r="2.5"></circle>
+            <path d="M149.5,2.48013557 L149.935788,3.25486938 L154.435788,11.2548694 C154.57117,11.4955483 154.48581,11.8004059 154.245131,11.9357878 C154.031194,12.0561272 153.766548,12.0020533 153.615296,11.8195146 L153.564212,11.7451306 L150,5.408 L150,267 C150,267.276142 149.776142,267.5 149.5,267.5 C149.25454,267.5 149.050392,267.323125 149.008056,267.089876 L149,267 L149,5.408 L145.435788,11.7451306 C145.315448,11.9590675 145.061202,12.0502832 144.837152,11.9728292 L144.754869,11.9357878 C144.540933,11.8154483 144.449717,11.5612021 144.527171,11.3371522 L144.564212,11.2548694 L149.064212,3.25486938 L149.5,2.48013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="149.5" cy="136.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

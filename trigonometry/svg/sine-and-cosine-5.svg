@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="249px" viewBox="0 0 305 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 12</title>
+    <g id="NEW---Trigonometry" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12">
+            <polygon id="Path-3" fill="#E6E6E6" points="151 135 218 70 229 84 236 97 242 115 246 132 246 135"></polygon>
+            <line x1="139.685894" y1="102.5048" x2="230.880999" y2="102.727839" id="Line-3" stroke="#979797" stroke-linecap="square" stroke-dasharray="4" transform="translate(185.185894, 102.808632) rotate(-44.893843) translate(-185.185894, -102.808632) "></line>
+            <line x1="193.971147" y1="126.896437" x2="240.553647" y2="80.1410023" id="Line-3" stroke="#979797" stroke-linecap="square" stroke-dasharray="4" transform="translate(217.358542, 103.221795) rotate(-44.893843) translate(-217.358542, -103.221795) "></line>
+            <path d="M245.5,136.673358 C245.5,84.1105636 202.967051,41.5 150.5,41.5 C98.0329488,41.5 55.5,84.1105636 55.5,136.673358" id="Path" stroke="#BABABA"></path>
+            <path id="Line" d="M150.5,2.48013557 L150.935788,3.25486938 L155.435788,11.2548694 L155.680918,11.6906571 L154.809343,12.1809184 L154.564212,11.7451306 L151,5.408 L151,137 L150,137 L150,5.408 L146.435788,11.7451306 L146.190657,12.1809184 L145.319082,11.6906571 L145.564212,11.2548694 L150.064212,3.25486938 L150.5,2.48013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line-2" d="M293.809343,130.319082 L294.245131,130.564212 L302.245131,135.064212 L303.019864,135.5 L302.245131,135.935788 L294.245131,140.435788 L293.809343,140.680918 L293.319082,139.809343 L293.754869,139.564212 L300.091,136 L0,136 L0,135 L300.091,135 L293.754869,131.435788 L293.319082,131.190657 L293.809343,130.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="153.260949">x</tspan>
+            </text>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="130.5" y="12">y</tspan>
+            </text>
+            <path d="M244.488299,137.749997 C244.49609,137.24789 244.5,136.744841 244.5,136.240876 C244.5,110.002027 233.901164,86.2431868 216.75859,69.0268508" id="Path" stroke="#000000"></path>
+            <text id="P" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="218.5" y="60.0456204">P</tspan>
+            </text>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="214.5" y="150.04562">x</tspan>
+            </text>
+            <text id="A" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="250" y="150">A</tspan>
+            </text>
+            <text id="O" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="137" y="150">O</tspan>
+            </text>
+            <text id="r" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="175.5" y="98.0839416">r</tspan>
+            </text>
+            <text id="The-shaded-sector-OA" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="83" y="195">The shaded sector OAP has area A(x), </tspan>
+                <tspan x="83" y="208">where A(x) is the function defined above. </tspan>
+                <tspan x="83" y="221">This area, not the length of the arc AP, is </tspan>
+                <tspan x="83" y="234">the quantity used to identify the angle that </tspan>
+                <tspan x="83" y="247">serves as the argument of sin and cos.</tspan>
+            </text>
+            <line x1="192.5" y1="123.5" x2="192.5" y2="179.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle id="Oval" fill="#000000" cx="217.5" cy="69.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="244.5" cy="134.5" r="3"></circle>
+            <circle id="Oval" fill="#000000" cx="150.5" cy="135.5" r="3"></circle>
+        </g>
+    </g>
+</svg>

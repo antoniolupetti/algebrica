@@ -9,7 +9,6 @@ tags:
   - trigonometry
   - unit-circle
 ---
-
 ## Definition
 
 Sine and cosine are the two primary trigonometric functions. Given an oriented angle $\theta$, represented on the [unit circle](../unit-circle/) by a point $P$, the sine and cosine of $\theta$ are defined respectively as the $y$-coordinate and the $x$-coordinate of $P$. The unit circle is the [circle](../circumference/) of radius $1$ centered at the origin, described by the [equation](../equations/):
@@ -40,13 +39,83 @@ $$
 
 > The sine and cosine of an angle are therefore nothing more than the projections of the point $P$ onto the coordinate axes: sine onto the $y$-axis and cosine onto the $x$-axis.
 
+## Definition via the area of a circular sector
+
+The geometric description above introduces sine and cosine as coordinates of a point on the unit circle, but it relies on the intuitive notion of arc length, which has not been defined independently of the trigonometric functions themselves. A rigorous treatment based on integral calculus avoids this logical dependency by measuring an oriented angle through the area of the corresponding circular sector, a quantity that can be computed directly through a [definite integral](../definite-integrals/).
+
+The construction begins with an analytic definition of $\pi$ as twice the area enclosed by the upper half of the unit circle:
+
+$$
+\pi := 2\int_{-1}^{1}\sqrt{1-x^2} \ dx
+$$
+
+In this formulation $\pi$ is identified as a real number determined by a definite integral, without any reference to the length of a curve.
+
+- - -
+
+For $-1 \leq x \leq 1$, let $A(x)$ denote the area of the circular sector bounded by the horizontal axis, by the half-line joining the origin to the point $(x, \sqrt{1-x^2})$, and by the arc of the unit circle connecting this point to $(1, 0)$. The area $A(x)$ decomposes as the sum of the area of a right triangle and the area of a region lying under the upper half of the circle:
+
+$$
+A(x) = \frac{x\sqrt{1-x^2}}{2} + \int_x^1 \sqrt{1-t^2} \ dt
+$$
+
+![IMG. 3](svg/sine-and-cosine-5.svg)
+
+The function $A$ is [continuous](../continuous-functions/) on $[-1, 1]$ and decreases monotonically from $A(-1) = \pi/2$ to $A(1) = 0$. For $-1 < x < 1$, the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) yields the derivative:
+
+$$
+A'(x) = -\frac{1}{2\sqrt{1-x^2}}
+$$
+
+The negative sign confirms that $A$ is strictly decreasing on the interior of its domain.
+
+- - -
+
+The cosine and sine functions on the interval $[0, \pi]$ are now defined as the coordinates of the unique point on the unit circle that bounds a sector of area $\theta/2$. For $0 \leq \theta \leq \pi$, the cosine of $\theta$ is the unique value in $[-1, 1]$ satisfying:
+
+$$
+A(\cos\theta) = \frac{\theta}{2}
+$$
+
+The sine of $\theta$ is then defined by:
+
+$$
+\sin\theta = \sqrt{1 - \cos^2\theta}
+$$
+
+Existence and uniqueness of $\cos\theta$ are guaranteed by the continuity of $A$ on $[-1, 1]$, combined with the intermediate value theorem applied to the values it attains between $0$ and $\pi/2$. The [fundamental trigonometric identity](../pythagorean-identity/) $\sin^2\theta + \cos^2\theta = 1$ holds by construction.
+
+- - -
+
+The extension of $\sin$ and $\cos$ from $[0, \pi]$ to the entire real line proceeds in two stages. For $\pi \leq \theta \leq 2\pi$, the values are obtained by reflection:
+
+$$
+\begin{align}
+\sin\theta &= -\sin(2\pi - \theta) \\[6pt]
+\cos\theta &= \cos(2\pi - \theta)
+\end{align}
+$$
+
+For an arbitrary real number $\theta$, write $\theta = 2k\pi + \theta'$ with $k \in \mathbb{Z}$ and $\theta' \in [0, 2\pi]$, and set:
+
+$$
+\begin{align}
+\sin\theta &= \sin\theta' \\[6pt]
+\cos\theta &= \cos\theta'
+\end{align}
+$$
+
+This procedure produces functions defined on all of $\mathbb{R}$ and periodic of period $2\pi$, in full agreement with the geometric description given earlier.
+
+> Within this analytic framework the [derivatives](../derivatives/) $\sin'(\theta) = \cos\theta$ and $\cos'(\theta) = -\sin\theta$ are not postulated, but obtained as theorems. They follow by recognizing $\cos$ as the inverse of the function $B(x) = 2A(x)$ and applying the differentiation rule for [inverse functions](../inverse-functions/).
+
 ## Fundamental trigonometric identity
 
 The values of sine and cosine satisfy a property known as the [fundamental trigonometric identity](../pythagorean-identity/):
 
 $$ \sin^2\theta + \cos^2\theta = 1 $$
 
-Geometrically, this identity represents the [Pythagorean theorem](../pythagorean-theorem/) applied to the triangle $OPR$ inscribed in the unit circle, where $PR$ and $\overline{OR}$ correspond to the legs, and $\overline{OP}$ is the hypotenuse of unit length.
+Geometrically, this identity represents the [Pythagorean theorem](../pythagorean-theorem/) applied to the triangle $OPR$ inscribed in the unit circle, where $\overline{PR}$ and $\overline{OR}$ correspond to the legs, and $\overline{OP}$ is the hypotenuse of unit length.
 
 ## Trigonometric identities
 
@@ -132,7 +201,7 @@ $$
 
 The [sine function](../sine-function/) $f(x) = \sin(x)$ assigns to each angle $x$, expressed in radians, its corresponding sine value. Its graph is a periodic wave with a period of $2 \pi$ and an amplitude of 1, oscillating between -1 and 1. The function $f(x) = \sin x$ has all real numbers in its [domain](../determining-the-domain-of-a-function/), but its range is $-1 \leq \sin(x) \leq 1$.
 
-![IMG. 3](svg/sine-and-cosine-3.svg)
+![IMG. 4](svg/sine-and-cosine-3.svg)
 
 + Domain: $x \in \mathbb{R}$
 + Range: $y \in \mathbb{R} : -1 \leq y \leq 1$
@@ -143,7 +212,7 @@ The [sine function](../sine-function/) $f(x) = \sin(x)$ assigns to each angle $x
 
 The [cosine function](../cosine-function/) $f(x) = \cos(x)$ assigns to each angle $x$, expressed in radians, its corresponding cosine value. Its graph is a periodic wave with a period of $2 \pi$ and an amplitude of 1, oscillating between -1 and 1. The function $f(x) = \cos x$ has all real numbers in its domain, but its range is $-1 \leq \cos(x) \leq 1$.
 
-![IMG. 4](svg/sine-and-cosine-4.svg)
+![IMG. 5](svg/sine-and-cosine-4.svg)
 
 + Domain: $x \in \mathbb{R}$
 + Range: $y \in \mathbb{R} : -1 \leq y \leq 1$
