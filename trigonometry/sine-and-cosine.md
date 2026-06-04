@@ -134,6 +134,46 @@ $$
 
 > These identities capture the essential relationships between sine and cosine. They follow directly from the geometry of the unit circle and form the foundation of many trigonometric transformations. For a broader overview, refer to the full collection of [trigonometric identities](../trigonometric-identities/).
 
+- - -
+
+For example, starting from the addition formulas for sine and cosine, we want to prove that $\cos(3x) = 4\cos^3(x) - 3\cos(x)$ and obtain an analogous expression for $\sin(3x)$ in terms of $\sin(x)$ alone.
+
+Writing $3x = 2x + x$ and applying the addition formula for the cosine, we obtain:
+
+$$
+\cos(3x) = \cos(2x)\cos(x) - \sin(2x)\sin(x)
+$$
+
+To reach a formula in $\cos(x)$ alone, we replace the double-angle terms with $\cos(2x) = 2\cos^2(x) - 1$ and $\sin(2x) = 2\sin(x)\cos(x)$, and then expand the products:
+
+$$
+\cos(3x) = 2\cos^3(x) - \cos(x) - 2\sin^2(x)\cos(x)
+$$
+
+The residual $\sin^2(x)$ is removed through the [Pythagorean identity](../pythagorean-identity) $\sin^2(x) = 1 - \cos^2(x)$, and collecting like terms yields:
+
+$$
+\cos(3x) = 4\cos^3(x) - 3\cos(x)
+$$
+
+The same strategy applies to $\sin(3x)$. The addition formula for the sine gives:
+
+$$
+\sin(3x) = \sin(2x)\cos(x) + \cos(2x)\sin(x)
+$$
+
+This time the appropriate variant of the double-angle identity is $\cos(2x) = 1 - 2\sin^2(x)$, which already involves $\sin^2(x)$. Substituting it together with $\sin(2x) = 2\sin(x)\cos(x)$ and expanding produces:
+
+$$
+\sin(3x) = 2\sin(x)\cos^2(x) + \sin(x) - 2\sin^3(x)
+$$
+
+Using $\cos^2(x) = 1 - \sin^2(x)$ to eliminate the last residual cosine and simplifying, we arrive at the analogous identity:
+
+$$
+\sin(3x) = 3\sin(x) - 4\sin^3(x)
+$$
+
 ## Periodicity
 
 Sine and cosine take values between $-1$ and $1$ because the lengths of segments $\overline{OR}$ and $\overline{PR}$ cannot exceed the radius, which is equal to 1.

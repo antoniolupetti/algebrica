@@ -24,7 +24,7 @@ $$
 \tanh(x) := \frac{\sinh(x)}{\cosh(x)}
 $$
 
-![IMG. 1](hyperbolic-tangent-and-cotangent-1.svg)
+![IMG. 1](svg/hyperbolic-tangent-and-cotangent-1.svg)
 
 
 > To make the construction more intuitive, consider the unit hyperbola $x^2 - y^2 = 1$ and the point $P = (\cosh x, \sinh x)$, associated with a hyperbolic angle $x$. Draw the [line](../lines/) passing through the origin $O$ and $P$, and consider the vertical line $x = 1$. Their intersection defines the point $T$, which has coordinates $T = (1, \tanh x)$, since the slope of the line $OP$ is $\sinh x/ \cosh x = \tanh x$. The vertical segment joining $(1,0)$ to $T$ therefore represents geometrically the length of the hyperbolic tangent.
@@ -35,7 +35,7 @@ $$
 \coth(x) := \frac{\cosh(x)}{\sinh(x)}
 $$
 
-![IMG. 2](hyperbolic-tangent-and-cotangent-2.svg)
+![IMG. 2](svg/hyperbolic-tangent-and-cotangent-2.svg)
 
 
 > As in the case illustrated above for the hyperbolic tangent, to make the construction more intuitive, consider the unit hyperbola $x^2 - y^2 = 1$ and the point $P = (\cosh x, \sinh x)$, associated with a hyperbolic angle $x$. Draw the [line](../lines/) passing through the origin $O$ and $P$, and consider the horizontal line $y = 1$. Their intersection defines the point $S$, which has coordinates $S = (\coth x, 1)$, since the slope of the line $OP$ is $\sinh x / \cosh x = \tanh x$, and thus its reciprocal gives $\coth x = \cosh x / \sinh x$. The horizontal segment joining $(0,1)$ to $S$ therefore represents geometrically the length of the hyperbolic cotangent.
@@ -85,8 +85,12 @@ $$
 
 Using the analytical expressions of the hyperbolic sine and cosine in terms of the [exponential function](../exponential-function/), we can write the hyperbolic tangent directly. Substituting:
 
-$$ \sinh(x) = \frac{e^{x} - e^{-x}}{2}$$
-$$ \cosh(x) = \frac{e^{x} + e^{-x}}{2}$$
+$$
+\begin{align}
+\sinh(x) &= \frac{e^{x} - e^{-x}}{2} \\[6pt]
+\cosh(x) &= \frac{e^{x} + e^{-x}}{2}
+\end{align}
+$$
 
 into the definition $\tanh(x) = \sinh(x)/\cosh(x)$ and simplifying the factor $1/2$ that appears in both numerator and denominator, we obtain:
 
@@ -106,7 +110,13 @@ $$
 \tanh(x) = \frac{e^{2x} - 1}{e^{2x} + 1}
 $$
 
-All three expressions are equivalent and each makes apparent a different aspect of the function: in the first form, the numerator and denominator are the analytically defined [hyperbolic sine and cosine](../hyperbolic-sine-and-cosine/) themselves. In the latter two, the exponential growth as $x \to +\infty$ or $x \to -\infty$ becomes immediately visible, and from them one can read off at once that the function tends to $1$ and $-1$ respectively.
+A further equivalent form follows from a purely algebraic rearrangement of the last expression. Writing the numerator as $e^{2x} - 1 = (e^{2x} + 1) - 2$ and splitting the fraction, we obtain:
+
+$$
+\tanh(x) = 1 - \frac{2}{e^{2x} + 1}
+$$
+
+All four expressions are equivalent and each makes apparent a different aspect of the function: in the first form, the numerator and denominator are the analytically defined [hyperbolic sine and cosine](../hyperbolic-sine-and-cosine/) themselves. In the second and third, the exponential growth as $x \to +\infty$ or $x \to -\infty$ becomes immediately visible, and from them one can read off at once that the function tends to $1$ and $-1$ respectively. The fourth form displays $\tanh(x)$ as the translate of $1$ by a strictly positive quantity that decreases monotonically with $x$, so that the bound $\tanh(x) < 1$ appears as an algebraic identity rather than as an asymptotic property.
 
 ## Analytical expression of the hyperbolic cotangent
 
@@ -128,7 +138,8 @@ The latter expressions show that for large positive $x$ the function approaches 
 
 The hyperbolic tangent function $f(x) = \tanh(x)$ is defined for all real numbers. Unlike the circular tangent, it does not have vertical [asymptotes](../asymptotes/): its graph is a smooth, monotonically increasing curve that passes through the origin with slope $1$ and remains bounded for all $x$. As $x \to +\infty$ the function approaches $1$ asymptotically, while as $x \to -\infty$ it approaches $-1$, so the range is the open interval $(-1, 1)$.
 
-![IMG. 3](hyperbolic-tangent-and-cotangent-3.svg)
+
+![IMG. 3](svg/hyperbolic-tangent-and-cotangent-3.svg)
 
 + Domain: $x \in \mathbb{R}$
 + Range: $y \in (-1, 1)$
@@ -138,7 +149,8 @@ The hyperbolic tangent function $f(x) = \tanh(x)$ is defined for all real number
 
 The hyperbolic cotangent function $f(x) = \coth(x)$ is defined for all real $x \neq 0$. Its graph consists of two branches: one for $x > 0$, where the function decreases from $+\infty$ toward $1$, and one for $x < 0$, where it increases from $-\infty$ toward $-1$. The origin is a vertical asymptote, and the lines $y = 1$ and $y = -1$ are horizontal asymptotes.
 
-![IMG. 4](hyperbolic-tangent-and-cotangent-4.svg)
+
+![IMG. 4](svg/hyperbolic-tangent-and-cotangent-4.svg)
 
 + Domain: $x \in \mathbb{R},\; x \neq 0$
 + Range: $y \in (-\infty, -1) \cup (1, +\infty)$
