@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="368px" height="339px" viewBox="0 0 368 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.459806, 0.000000)">
+            <path d="M148.540194,237 C148.540194,231.77168 146.179981,227.094617 142.466899,223.976156" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="157.540194" y="11">The sum of the areas of squares S1 and </tspan>
+                <tspan x="157.540194" y="24">S2 is equal to the area of square S3.</tspan>
+            </text>
+            <path d="M233.540194,103 L367.540194,103 L367.540194,237 L233.540194,237 L233.540194,103 Z" fill="#EBEBEB"></path>
+            <path d="M131.540194,237 L233.540194,237 L233.540194,339 L131.540194,339 L131.540194,237 Z" fill="#EBEBEB"></path>
+            <path d="M34.4376195,36.1889877 L200.43762,36.6690677 L198.557836,205.073045 L34.240799,205.589438 L34.4376195,36.1889877 Z" fill="#EBEBEB" transform="translate(117.339209, 120.889213) rotate(37.000000) translate(-117.339209, -120.889213) "></path>
+            <path d="M234.040194,190.5 L234.040194,237.5 L193.040194,237.5 M181.040194,237.5 L132.040194,237.5 L182.825751,170.781719" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M191.698052,159.125951 L234.040194,103.5 L234.040194,172.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <text font-size="12" font-weight="normal" fill="#333">
+                <tspan x="152.040194" y="232">θ</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="183.040194" y="168">c</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="186.040194" y="240">a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="176.040194" y="295">S1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="108.040194" y="127">S3</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="291.040194" y="176">S2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="229.040194" y="185">b</tspan>
+            </text>
+            <line x1="188.040194" y1="81.5" x2="188.040194" y2="31.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
