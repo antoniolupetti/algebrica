@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="278px" viewBox="0 0 315 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M150,173 L240,104 C230.666667,118 226,125 226,125 C218.666667,137.666667 215,144 215,144 C211,152.666667 209,157 209,157 L206,169 L206,173 L150,173 Z" fill="#E6E6E6"></path>
+            <line x1="43.5" y1="73.5" x2="259.5" y2="277.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M42.5,70.5 L157.055533,178.691336 M169.61438,190.55247 L258.5,274.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4" transform="translate(150.500000, 172.500000) scale(-1, 1) translate(-150.500000, -172.500000) "></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="114.253" y="9.36201477">The hyperbolic sine represents</tspan>
+                <tspan x="124.208" y="22.3620148">the y-coordinate of the point</tspan>
+                <tspan x="109.226" y="35.3620148">that determines the sector area</tspan>
+            </text>
+            <line x1="202.5" y1="47.5" x2="202.5" y2="108.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M149,55.9801356 L149.435788,56.7548694 L153.935788,64.7548694 L154.180918,65.1906571 L153.309343,65.6809184 L153.064212,65.2451306 L149.5,58.908 L149.5,273 L148.5,273 L148.5,58.908 L144.935788,65.2451306 L144.690657,65.6809184 L143.819082,65.1906571 L144.064212,64.7548694 L148.564212,56.7548694 L149,55.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M304.309343,168.319082 L304.745131,168.564212 L312.745131,173.064212 L313.519864,173.5 L312.745131,173.935788 L304.745131,178.435788 L304.309343,178.680918 L303.819082,177.809343 L304.254869,177.564212 L310.591,174 L-0.5,174 L-0.5,173 L310.591,173 L304.254869,169.435788 L303.819082,169.190657 L304.309343,168.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="242.5" cy="101.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="130.5" y="65">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="292.5" y="192">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="74.5" y="186">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="185.5" y="164">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="211.5" y="186">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="246.5" y="114">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="133.5" y="187">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="248.5" y="144">sinh(x)</tspan>
+            </text>
+            <path d="M36,77 C74,121.666667 93,154.333333 93,175 C93,195.666667 74,228 36,272" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M206,77 C244,121.666667 263,154.333333 263,175 C263,195.666667 244,228 206,272" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(234.500000, 174.500000) scale(-1, -1) translate(-234.500000, -174.500000) "></path>
+            <circle stroke="#333333" fill="#333333" cx="93" cy="173.5" r="2"></circle>
+            <circle stroke="#333333" fill="#333333" cx="206" cy="173.5" r="2"></circle>
+            <circle stroke="#333333" fill="#333333" cx="149" cy="173.5" r="2"></circle>
+            <line x1="242.5" y1="173.5" x2="242.5" y2="102.5" stroke="#333333"></line>
+        </g>
+    </g>
+</svg>

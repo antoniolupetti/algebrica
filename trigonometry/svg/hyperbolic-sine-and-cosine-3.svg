@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="289px" viewBox="0 0 306 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M153,184 L243,115 C233.666667,129 229,136 229,136 C221.666667,148.666667 218,155 218,155 C214,163.666667 212,168 212,168 L209,180 L209,184 L153,184 Z" fill="#E6E6E6"></path>
+            <line x1="46.5" y1="84.5" x2="262.5" y2="288.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M45.5,81.5 L159.088128,188.777677 M173.515213,202.403257 L261.5,285.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4" transform="translate(153.500000, 183.500000) scale(-1, 1) translate(-153.500000, -183.500000) "></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="122.944" y="9.36201477">The hyperbolic cosine represents</tspan>
+                <tspan x="144.68" y="22.3620148">the x-coordinate of the point</tspan>
+                <tspan x="130.226" y="35.3620148">that determines the sector area</tspan>
+            </text>
+            <line x1="193.5" y1="46.5" x2="193.5" y2="81.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M152,66.9801356 L152.435788,67.7548694 L156.935788,75.7548694 L157.180918,76.1906571 L156.309343,76.6809184 L156.064212,76.2451306 L152.5,69.908 L152.5,284 L151.5,284 L151.5,69.908 L147.935788,76.2451306 L147.690657,76.6809184 L146.819082,76.1906571 L147.064212,75.7548694 L151.564212,67.7548694 L152,66.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.309343,179.319082 L295.745131,179.564212 L303.745131,184.064212 L304.519864,184.5 L303.745131,184.935788 L295.745131,189.435788 L295.309343,189.680918 L294.819082,188.809343 L295.254869,188.564212 L301.591,185 L-0.5,185 L-0.5,184 L301.591,184 L295.254869,180.435788 L294.819082,180.190657 L295.309343,179.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133.5" y="76">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="203">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="77.5" y="197">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="188.5" y="175">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="214.5" y="197">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="249.5" y="125">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="136.5" y="199">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="172.5" y="103">cosh(x)</tspan>
+            </text>
+            <path d="M39,88 C77,132.666667 96,165.333333 96,186 C96,206.666667 77,239 39,283" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M209,88 C247,132.666667 266,165.333333 266,186 C266,206.666667 247,239 209,283" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(237.500000, 185.500000) scale(-1, -1) translate(-237.500000, -185.500000) "></path>
+            <circle fill="#333333" cx="95.5" cy="184.5" r="2.5"></circle>
+            <circle fill="#333333" cx="209" cy="184.5" r="2.5"></circle>
+            <circle fill="#333333" cx="152" cy="184.5" r="2.5"></circle>
+            <circle fill="#333333" cx="245" cy="113.5" r="2.5"></circle>
+            <line x1="153" y1="113.5" x2="245" y2="113.5" stroke="#333333"></line>
+        </g>
+    </g>
+</svg>

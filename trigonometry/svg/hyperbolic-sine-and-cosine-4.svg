@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="276px" height="287px" viewBox="0 0 276 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="53" y="259">sinh(x)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="81" y="11">The hyperbolic sine grows without </tspan>
+                <tspan x="81" y="24">bound as x → +∞ and decreases </tspan>
+                <tspan x="81" y="37">without bound as x → −∞.</tspan>
+            </text>
+            <line x1="163.5" y1="42.5" x2="163.5" y2="77.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M235.309343,182.319082 L235.745131,182.564212 L243.745131,187.064212 L244.519864,187.5 L243.745131,187.935788 L235.745131,192.435788 L235.309343,192.680918 L234.819082,191.809343 L235.254869,191.564212 L241.591,188 L-0.5,188 L-0.5,187 L241.591,187 L235.254869,183.435788 L234.819082,183.190657 L235.309343,182.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M114,56.9801356 L114.435788,57.7548694 L118.935788,65.7548694 L119.180918,66.1906571 L118.309343,66.6809184 L118.064212,66.2451306 L114.5,59.908 L114.5,287 L113.5,287 L113.5,59.908 L109.935788,66.2451306 L109.690657,66.6809184 L108.819082,66.1906571 L109.064212,65.7548694 L113.564212,57.7548694 L114,56.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M66.5,285 C68.2512429,275.503582 69.4946292,268.91153 70.230159,265.223843" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M74.9680573,245.133197 C75.2949883,244.106018 75.6212519,243.142307 75.946848,242.242065 C84.3030916,219.13785 97.4874756,200.723828 115.5,187 C143.5,165.666667 159.5,132 163.5,86" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="145" y="211">2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="180" y="211">4</tspan>
+            </text>
+            <line x1="148.5" y1="187.5" x2="148.5" y2="197.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="183.5" y1="187.5" x2="183.5" y2="197.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="37" y="211">-4</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="73" y="211">-2</tspan>
+            </text>
+            <line x1="47.5" y1="187.5" x2="47.5" y2="197.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="82.5" y1="187.5" x2="82.5" y2="197.5" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

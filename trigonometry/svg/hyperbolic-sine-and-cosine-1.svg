@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="372px" height="310px" viewBox="0 0 372 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M150,210 L240,141 C230.666667,155 226,162 226,162 C218.666667,174.666667 215,181 215,181 C211,189.666667 209,194 209,194 L206,206 L206,210 L150,210 Z" fill="#E6E6E6"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="154.5" y="11">The shaded hyperbolic sector has area </tspan>
+                <tspan x="154.5" y="24">A(X), where A(X) is the function defined </tspan>
+                <tspan x="154.5" y="37">above. This area, not the length of the arc</tspan>
+                <tspan x="154.5" y="50">joining (1,0) to P, is the quantity used to </tspan>
+                <tspan x="154.5" y="63">identify the parameter x that serves as </tspan>
+                <tspan x="154.5" y="76">the argument of sinh and cosh.</tspan>
+            </text>
+            <path d="M149,92.9801356 L149.435788,93.7548694 L153.935788,101.754869 L154.180918,102.190657 L153.309343,102.680918 L153.064212,102.245131 L149.5,95.908 L149.5,310 L148.5,310 L148.5,95.908 L144.935788,102.245131 L144.690657,102.680918 L143.819082,102.190657 L144.064212,101.754869 L148.564212,93.7548694 L149,92.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M304.309343,205.319082 L304.745131,205.564212 L312.745131,210.064212 L313.519864,210.5 L312.745131,210.935788 L304.745131,215.435788 L304.309343,215.680918 L303.819082,214.809343 L304.254869,214.564212 L310.591,211 L-0.5,211 L-0.5,210 L310.591,210 L304.254869,206.435788 L303.819082,206.190657 L304.309343,205.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="130.5" y="102">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="292.5" y="229">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="185.5" y="201">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="234.5" y="133">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="248.5" y="181">sinh(x)</tspan>
+            </text>
+            <path d="M36,114 C74,158.666667 93,191.333333 93,212 C93,232.666667 74,265 36,309" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M206,114 C244,158.666667 263,191.333333 263,212 C263,232.666667 244,265 206,309" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(234.500000, 211.500000) scale(-1, -1) translate(-234.500000, -211.500000) "></path>
+            <line x1="242" y1="210.5" x2="242" y2="139.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="99.5" y="144">cosh(x)</tspan>
+            </text>
+            <line x1="149" y1="140.5" x2="241" y2="140.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="149" y1="210.5" x2="263" y2="123.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="266" y1="121.5" x2="283" y2="109.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="241" cy="140.5" r="2.5"></circle>
+            <circle stroke="#333333" fill="#333333" cx="149" cy="210.5" r="2"></circle>
+            <line x1="190" y1="85.5" x2="190" y2="186.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

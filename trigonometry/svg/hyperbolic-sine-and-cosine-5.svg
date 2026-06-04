@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="246px" height="308px" viewBox="0 0 246 308" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="14" y="11">The hyperbolic cosine grows without </tspan>
+                <tspan x="14" y="24">bound as x → ±∞ and attains its </tspan>
+                <tspan x="14" y="37">minimum at x = 0.</tspan>
+            </text>
+            <line x1="67.5" y1="45.5" x2="67.5" y2="80.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M235.309343,275.319082 L235.745131,275.564212 L243.745131,280.064212 L244.519864,280.5 L243.745131,280.935788 L235.745131,285.435788 L235.309343,285.680918 L234.819082,284.809343 L235.254869,284.564212 L241.591,281 L-0.5,281 L-0.5,280 L241.591,280 L235.254869,276.435788 L234.819082,276.190657 L235.309343,275.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M114.5,75.9801356 L114.935788,76.7548694 L119.435788,84.7548694 L119.680918,85.1906571 L118.809343,85.6809184 L118.564212,85.2451306 L115,78.908 L115,306 L114,306 L114,78.908 L110.435788,85.2451306 L110.190657,85.6809184 L109.319082,85.1906571 L109.564212,84.7548694 L114.064212,76.7548694 L114.5,75.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="145" y="304">2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="180" y="304">4</tspan>
+            </text>
+            <line x1="148.5" y1="280.5" x2="148.5" y2="290.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="183.5" y1="280.5" x2="183.5" y2="290.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="37" y="304">-4</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="73" y="304">-2</tspan>
+            </text>
+            <line x1="47.5" y1="280.5" x2="47.5" y2="290.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="82.5" y1="280.5" x2="82.5" y2="290.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M66.5,90 C77.1666667,209.333333 92.8333333,269 113.5,269 C126.627067,269 138.140317,244.927215 148.039748,196.781646 M151.74955,177.141911 C154.662798,160.063475 158.579615,131.016171 163.5,90" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="136" y="190">cosh(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
