@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="285px" viewBox="0 0 341 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="102" y="212.5">cotangh(x)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="194" y="11">The hyperbolic cotangent is </tspan>
+                <tspan x="194" y="24">unbounded, approaching 1 </tspan>
+                <tspan x="194" y="37">as x → +∞ and −1 as x → −∞.</tspan>
+            </text>
+            <line x1="231.5" y1="45.5" x2="231.5" y2="107.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M300.809343,148.319082 L301.245131,148.564212 L309.245131,153.064212 L310.019864,153.5 L309.245131,153.935788 L301.245131,158.435788 L300.809343,158.680918 L300.319082,157.809343 L300.754869,157.564212 L307.091,154 L27,154 L27,153 L307.091,153 L300.754869,149.435788 L300.319082,149.190657 L300.809343,148.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M168.5,20.9801356 L168.935788,21.7548694 L173.435788,29.7548694 L173.680918,30.1906571 L172.809343,30.6809184 L172.564212,30.2451306 L169,23.908 L169,284 L168,284 L168,23.908 L164.435788,30.2451306 L164.190657,30.6809184 L163.319082,30.1906571 L163.564212,29.7548694 L168.064212,21.7548694 L168.5,20.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="218" y="173">2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="273" y="173">4</tspan>
+            </text>
+            <line x1="221.5" y1="148.5" x2="221.5" y2="158.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="276.5" y1="148.5" x2="276.5" y2="158.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="49" y="173">-4</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="105" y="173">-2</tspan>
+            </text>
+            <line x1="59.5" y1="148.5" x2="59.5" y2="158.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="114.5" y1="148.5" x2="114.5" y2="158.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="27.5" y1="124.5" x2="308.5" y2="124.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="7" y="129">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="183">-1</tspan>
+            </text>
+            <line x1="25.5" y1="180.5" x2="306.5" y2="180.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M173.311366,20.8477099 C174.500711,46.5657596 176.063589,64.616523 178,75 C183.821923,106.218472 196,118 210,120 C224,122 259,121 309,121" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M156.727261,217.882263 C157.916606,243.600313 159.479483,261.651076 161.415895,272.034553 C162.173075,276.094726 163.037769,279.826128 164,283.25" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(160.363631, 250.566131) scale(-1, -1) translate(-160.363631, -250.566131) "></path>
+            <path d="M28.3113664,182.84771 C34.3960307,192.995841 42.0805104,197.648154 50.4099023,198.838067 C64.4099023,200.838067 99.4099023,199.838067 149.409902,199.838067" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(88.860634, 191.467889) scale(-1, -1) translate(-88.860634, -191.467889) "></path>
+        </g>
+    </g>
+</svg>

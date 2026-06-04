@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="276px" viewBox="0 0 323 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="106" y="235.5">tangh(x)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="80" y="11">The hyperbolic tangent is bounded, </tspan>
+                <tspan x="80" y="24">approaching 1 as x → +∞ and −1 as x → −∞.</tspan>
+            </text>
+            <line x1="102.5" y1="33.5" x2="102.5" y2="76.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M299.809343,172.319082 L300.245131,172.564212 L308.245131,177.064212 L309.019864,177.5 L308.245131,177.935788 L300.245131,182.435788 L299.809343,182.680918 L299.319082,181.809343 L299.754869,181.564212 L306.091,178 L26,178 L26,177 L306.091,177 L299.754869,173.435788 L299.319082,173.190657 L299.809343,172.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M166.5,44.9801356 L166.935788,45.7548694 L171.435788,53.7548694 L171.680918,54.1906571 L170.809343,54.6809184 L170.564212,54.2451306 L167,47.908 L167,276 L166,276 L166,47.908 L162.435788,54.2451306 L162.190657,54.6809184 L161.319082,54.1906571 L161.564212,53.7548694 L166.064212,45.7548694 L166.5,44.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="217" y="201">2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="272" y="201">4</tspan>
+            </text>
+            <line x1="220.5" y1="177.5" x2="220.5" y2="187.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="275.5" y1="177.5" x2="275.5" y2="187.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="48" y="201">-4</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="104" y="201">-2</tspan>
+            </text>
+            <line x1="58.5" y1="177.5" x2="58.5" y2="187.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="113.5" y1="177.5" x2="113.5" y2="187.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="26.5" y1="88.5" x2="307.5" y2="88.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="6" y="93">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="267">-1</tspan>
+            </text>
+            <line x1="25.5" y1="264.5" x2="306.5" y2="264.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M26,261 C48,261 71.0875108,261.048555 95.2625325,261.145664 C110.877966,261.207123 123.543423,254.733623 134.387457,242.347975 M147.414662,223.215536 C154.148991,210.911881 160.209682,195.765747 166,178 C173,156 181.629553,113.82102 222,97 C234,92 249,92 308,92" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

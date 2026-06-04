@@ -7,9 +7,9 @@
                 <tspan x="157.540194" y="11">The sum of the areas of squares S1 and </tspan>
                 <tspan x="157.540194" y="24">S2 is equal to the area of square S3.</tspan>
             </text>
-            <path d="M233.540194,103 L367.540194,103 L367.540194,237 L233.540194,237 L233.540194,103 Z" fill="#EBEBEB"></path>
-            <path d="M131.540194,237 L233.540194,237 L233.540194,339 L131.540194,339 L131.540194,237 Z" fill="#EBEBEB"></path>
-            <path d="M34.4376195,36.1889877 L200.43762,36.6690677 L198.557836,205.073045 L34.240799,205.589438 L34.4376195,36.1889877 Z" fill="#EBEBEB" transform="translate(117.339209, 120.889213) rotate(37.000000) translate(-117.339209, -120.889213) "></path>
+            <path d="M233.540194,103 L367.540194,103 L367.540194,237 L233.540194,237 L233.540194,103 Z" fill="#E6E6E6"></path>
+            <path d="M131.540194,237 L233.540194,237 L233.540194,339 L131.540194,339 L131.540194,237 Z" fill="#E6E6E6"></path>
+            <path d="M34.4376195,36.1889877 L200.43762,36.6690677 L198.557836,205.073045 L34.240799,205.589438 L34.4376195,36.1889877 Z" fill="#E6E6E6" transform="translate(117.339209, 120.889213) rotate(37.000000) translate(-117.339209, -120.889213) "></path>
             <path d="M234.040194,190.5 L234.040194,237.5 L193.040194,237.5 M181.040194,237.5 L132.040194,237.5 L182.825751,170.781719" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
             <path d="M191.698052,159.125951 L234.040194,103.5 L234.040194,172.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
             <text font-size="12" font-weight="normal" fill="#333">

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="252px" viewBox="0 0 315 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M150,152 L240,83 C230.666667,97 226,104 226,104 C218.666667,116.666667 215,123 215,123 C211,131.666667 209,136 209,136 L206,148 L206,152 L150,152 Z" fill="#E2E2E2"></path>
+            <path d="M206,36.5 L206,59 M206,85 L206,221.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="178.5" y="11">The point T has </tspan>
+                <tspan x="178.5" y="24">coordinates T = (1, tanh x)</tspan>
+            </text>
+            <path d="M149,34.9801356 L149.435788,35.7548694 L153.935788,43.7548694 L154.180918,44.1906571 L153.309343,44.6809184 L153.064212,44.2451306 L149.5,37.908 L149.5,252 L148.5,252 L148.5,37.908 L144.935788,44.2451306 L144.690657,44.6809184 L143.819082,44.1906571 L144.064212,43.7548694 L148.564212,35.7548694 L149,34.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M304.309343,147.319082 L304.745131,147.564212 L312.745131,152.064212 L313.519864,152.5 L312.745131,152.935788 L304.745131,157.435788 L304.309343,157.680918 L303.819082,156.809343 L304.254869,156.564212 L310.591,153 L-0.5,153 L-0.5,152 L310.591,152 L304.254869,148.435788 L303.819082,148.190657 L304.309343,147.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="130.5" y="44">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="292.5" y="171">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="74.5" y="165">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="185.5" y="143">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="211.5" y="165">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="246.5" y="93">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="195.5" y="105">T</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="133.5" y="165">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="248.5" y="123">sinh(x)</tspan>
+            </text>
+            <path d="M36,56 C74,100.666667 93,133.333333 93,154 C93,174.666667 74,207 36,251" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M206,56 C244,100.666667 263,133.333333 263,154 C263,174.666667 244,207 206,251" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(234.500000, 153.500000) scale(-1, -1) translate(-234.500000, -153.500000) "></path>
+            <circle fill="#333333" cx="93" cy="152" r="2.5"></circle>
+            <circle fill="#333333" cx="206" cy="152.5" r="2.5"></circle>
+            <line x1="241" y1="152.5" x2="241" y2="81.5" stroke="#BABABA"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="176.5" y="74">cosh(x)</tspan>
+            </text>
+            <line x1="149" y1="82.5" x2="241" y2="82.5" stroke="#BABABA"></line>
+            <line x1="149" y1="152.5" x2="263" y2="65.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="266" y1="63.5" x2="283" y2="51.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="241" cy="82.5" r="2.5"></circle>
+            <circle fill="#333333" cx="206" cy="108.5" r="2.5"></circle>
+            <circle fill="#333333" cx="148.5" cy="152.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="196.5" y="240">x=1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

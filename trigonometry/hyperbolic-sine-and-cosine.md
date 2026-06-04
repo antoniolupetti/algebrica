@@ -33,9 +33,11 @@ $$
 $$
 
 Specularly to what has just been shown for the hyperbolic sine, we can introduce the hyperbolic cosine by looking at the same equilateral hyperbola. Once the point:
+
 $$
 P(X_{P}, Y_{P})
 $$
+
 has been identified as the one corresponding to a signed hyperbolic sector of area $x/2$, the hyperbolic cosine of $x$ is defined simply as its horizontal coordinate.
 
 ![IMG. 2](svg/hyperbolic-sine-and-cosine-3.svg)
@@ -288,9 +290,11 @@ The hyperbolic cosine function $f(x) = \cosh(x)$ assigns to each real number $x$
 ## Relation to the circular sine and cosine
 
 Hyperbolic sine and cosine originate from the geometry of the equilateral hyperbola:
+
 $$
 x^{2} - y^{2} = 1
 $$
+
 where a hyperbolic sector determines a parameter $x$. The point on the hyperbola associated with this area has coordinates:
 
 $$
@@ -301,6 +305,7 @@ Y_{P} = \sinh(x) = \frac{e^{x} - e^{-x}}{2}
 $$
 
 In the circular setting, the corresponding quantities arise from the [unit circle](../unit-circle/) of radius $1$, where a central angle $\theta$ determines the circular [sine and cosine](../sine-and-cosine/), identified by the point:
+
 $$
 P(X_{P}, Y_{P}) = P(\cos\theta, \sin\theta)
 $$
