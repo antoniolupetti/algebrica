@@ -53,7 +53,7 @@ In this formulation $\pi$ is identified as a real number determined by a definit
 
 - - -
 
-For $-1 \leq x \leq 1$, let $A(x)$ denote the area of the circular sector bounded by the horizontal axis, by the half-line joining the origin to the point $(x, \sqrt{1-x^2})$, and by the arc of the unit circle connecting this point to $(1, 0)$. The area $A(x)$ decomposes as the sum of the area of a right triangle and the area of a region lying under the upper half of the circle:
+**Definition 3.** For $-1 \leq x \leq 1$, let $A(x)$ denote the area of the circular sector bounded by the horizontal axis, by the half-line joining the origin to the point $(x, \sqrt{1-x^2})$, and by the arc of the unit circle connecting this point to $(1, 0)$. The area $A(x)$ decomposes as the sum of the area of a right triangle and the area of a region lying under the upper half of the circle:
 
 $$
 A(x) = \frac{x\sqrt{1-x^2}}{2} + \int_x^1 \sqrt{1-t^2} \ dt
