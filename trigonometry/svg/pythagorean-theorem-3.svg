@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="290px" viewBox="0 0 195 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="7.003" y="259">The height CH divides the isosceles </tspan>
+                <tspan x="14.3675" y="273">triangle into two congruent right </tspan>
+                <tspan x="73.905" y="287">triangles.</tspan>
+            </text>
+            <line x1="97.5" y1="237.5" x2="97.5" y2="201.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="16" y="192">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="168" y="192">B</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="92.3233533" y="12">C</tspan>
+            </text>
+            <line x1="97.5" y1="21.5" x2="97.5" y2="173.5" stroke="#333333" stroke-dasharray="4"></line>
+            <path d="M97,20.579321 L176.674446,173 L17.3255542,173 L97,20.579321 Z" stroke="#333333"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="92" y="192">H</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
