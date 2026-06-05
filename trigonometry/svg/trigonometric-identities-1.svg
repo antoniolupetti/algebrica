@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="269px" viewBox="0 0 312 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="188">Unit circle representation </tspan>
+                <tspan x="16.6667617" y="201">of the angle π/2 + α in </tspan>
+                <tspan x="2.343" y="214">the second quadrant and </tspan>
+                <tspan x="22.2547617" y="227">its reference angle α.</tspan>
+            </text>
+            <path d="M158.5,3.98104798 L158.935788,4.75578179 L163.435788,12.7557818 L163.680918,13.1915696 L162.809343,13.6818308 L162.564212,13.246043 L159,6.909 L159,269 L158,269 L158,6.909 L154.435788,13.246043 L154.190657,13.6818308 L153.319082,13.1915696 L153.564212,12.7557818 L158.064212,4.75578179 L158.5,3.98104798 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M301.809343,131.319082 L302.245131,131.564212 L310.245131,136.064212 L311.019864,136.5 L310.245131,136.935788 L302.245131,141.435788 L301.809343,141.680918 L301.319082,140.809343 L301.754869,140.564212 L308.091,137 L6,137 L6,136 L308.091,136 L301.754869,132.435788 L301.319082,132.190657 L301.809343,131.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="300.5" y="154.260949">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="139.5" y="12">y</tspan>
+            </text>
+            <path d="M139.506847,230.511814 C145.643814,231.759352 151.995568,232.414234 158.5,232.414234 C210.967051,232.414234 253.5,189.80367 253.5,137.240876 C253.5,84.6780819 210.967051,42.0675182 158.5,42.0675182 C106.032949,42.0675182 63.5,84.6780819 63.5,137.240876 C63.5,149.813005 65.9332474,161.815782 70.3536821,172.802332" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="159" y1="136.979927" x2="243" y2="95.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M95.5656934,115.54562 L113.328802,106.875532 M132.240237,97.6449506 L179.565693,74.5456204" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(137.565693, 95.045620) rotate(90.000000) translate(-137.565693, -95.045620) "></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="187.5" y="134.479927">α</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="260.5" y="132.479927">2π</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="45.5" y="132.479927">π</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="98.5" y="84.479927">π/2 +α</tspan>
+            </text>
+            <line x1="243.5" y1="136.5" x2="243.5" y2="97.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="158.5" y1="52.5" x2="118.5" y2="52.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="243.5" y1="136.5" x2="159.5" y2="136.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="158.5" y1="52.5" x2="158.5" y2="137" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle fill="#333333" cx="243.5" cy="95.5" r="2.5"></circle>
+            <circle fill="#333333" cx="117.5" cy="52.5" r="2.5"></circle>
+            <circle fill="#333333" cx="158.5" cy="137" r="2.5"></circle>
+            <line x1="112.5" y1="166.5" x2="112.5" y2="106.5" stroke="#BABABA" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
