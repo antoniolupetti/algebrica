@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="241px" height="253px" viewBox="0 0 241 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M78.5,185 L78.5,140 M78.5,122 L78.5,69" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M77.5838439,67.8351182 L199.263667,185.5 L19.3056127,185.5 L77.5838439,67.8351182 Z" stroke="#333333"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="58.5" y="11">Each side’s length is proportional </tspan>
+                <tspan x="58.5" y="24">to the sine of its opposite angle.</tspan>
+            </text>
+            <line x1="116.5" y1="35.5" x2="116.5" y2="92.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle stroke="#BABABA" stroke-width="0.5" cx="109" cy="157" r="95.75"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="74" y="53">γ</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="194">α</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="208" y="194">β</tspan>
+            </text>
+            <circle fill="#333333" cx="199" cy="185.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="137" y="116">a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="75" y="135">h</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="26" y="138">b</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="93" y="199">c</tspan>
+            </text>
+            <circle fill="#333333" cx="18" cy="185.5" r="2.5"></circle>
+            <circle fill="#333333" cx="78" cy="66.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
