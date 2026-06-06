@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="301px" height="195px" viewBox="0 0 301 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M147.5,101 L147.5,92.5 L181.5,92.5 L181.5,126.5 L147.5,126.5 L147.5,119" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M181,11.9129546 L181,126.5 L1.71078677,126.5 L181,11.9129546 Z" stroke="#333333"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="58.5" y="11">Hypotenuse</tspan>
+                <tspan x="58.5" y="24">side h</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="34.1385" y="178.362015">Adjacent. Side x </tspan>
+                <tspan x="45.0735098" y="191.362015">relative to θ</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="216.5" y="73">Opposite. Side y </tspan>
+                <tspan x="216.5" y="86">relative to θ</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="18" fill="#333333">
+                <tspan x="140.5" y="113">90°</tspan>
+            </text>
+            <line x1="77" y1="135.5" x2="77" y2="162.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="72" y1="33.5" x2="72" y2="70.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="188" y1="69.5" x2="209" y2="69.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="28.5" y="123">θ</tspan>
+            </text>
+            <path d="M19.9985134,126.246398 C19.9995035,126.164383 20,126.082249 20,126 C20,122.446462 19.073239,119.10938 17.4482309,116.217269" stroke="#333333"></path>
+        </g>
+    </g>
+</svg>

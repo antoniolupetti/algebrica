@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="325px" height="267px" viewBox="0 0 325 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="5.401" y="86.3620148">Ideally, a right triangle </tspan>
+                <tspan x="21.769" y="99.3620148">is represented as a </tspan>
+                <tspan x="0.486019531" y="112.362015">function of the angle θ.</tspan>
+            </text>
+            <path d="M172.5,2.98013557 L172.935788,3.75486938 L177.435788,11.7548694 L177.680918,12.1906571 L176.809343,12.6809184 L176.564212,12.2451306 L173,5.908 L173,267 L172,267 L172,5.908 L168.435788,12.2451306 L168.190657,12.6809184 L167.319082,12.1906571 L167.564212,11.7548694 L172.064212,3.75486938 L172.5,2.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M181.550283,135.029128 C181.551273,134.947114 181.551769,134.86498 181.551769,134.782731 C181.551769,131.229193 180.625008,127.892111 179,125" stroke="#333333"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="154" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="316" y="157">x</tspan>
+            </text>
+            <path d="M315.311183,130.418068 L315.746891,130.663341 L323.745425,135.165947 L324.520016,135.601987 L323.745141,136.037523 L315.743675,140.534916 L315.307807,140.779904 L314.81783,139.908169 L315.253698,139.663181 L321.59,136.101 L315.500311,136.099049 L11.4998371,136 L10.9998371,135.999837 L11.0001629,134.999837 L11.5001629,135 L315.500637,135.099049 L321.591,135.101 L315.256346,131.534757 L314.820638,131.289484 L315.311183,130.418068 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="155.5" y="154">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="193.5" y="147">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="225.5" y="100">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="189.5" y="85">h</tspan>
+            </text>
+            <path d="M78.0223088,125.978325 C77.6770205,129.271703 77.5,132.615179 77.5,136 C77.5,188.467051 120.032949,231 172.5,231 C224.967051,231 267.5,188.467051 267.5,136 C267.5,83.5329488 224.967051,41 172.5,41 C147.743912,41 125.199488,50.4692642 108.29116,65.9833621" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="184.5" y="131">θ</tspan>
+            </text>
+            <line x1="172.5" y1="135.5" x2="219.5" y2="52.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="173.5" y1="135.5" x2="219.5" y2="135.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="218.5" y1="135.5" x2="218.5" y2="54.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="216.5" y1="53.5" x2="173" y2="53.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="131.5" y1="96.5" x2="184.5" y2="96.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle fill="#333333" cx="218.5" cy="53.5" r="2.5"></circle>
+            <circle fill="#333333" cx="172.5" cy="135.5" r="2.5"></circle>
+            <circle fill="#333333" cx="218.5" cy="135.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

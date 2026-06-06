@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="279px" viewBox="0 0 213 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 1.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="7.5" y="250">Geometric construction of the main </tspan>
+                <tspan x="7.5" y="263">trigonometric functions from the unit </tspan>
+                <tspan x="7.5" y="276">circle and its tangent line.</tspan>
+            </text>
+            <line x1="110.5" y1="157.5" x2="110.5" y2="233.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="130.5" y1="109.5" x2="130.5" y2="142.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="81.5" y1="142.5" x2="130.5" y2="109.5" stroke="#333333" stroke-linecap="square"></line>
+            <circle stroke="#BABABA" cx="82" cy="143" r="59.5"></circle>
+            <path d="M188.188446,138.48961 L188.270537,138.527073 L196.247356,143.068039 C196.55796,143.244857 196.581735,143.67071 196.321037,143.886349 L196.242886,143.939603 L188.219915,148.398519 C187.978545,148.532665 187.674129,148.445742 187.539983,148.204372 C187.420742,147.989821 187.476173,147.725456 187.659484,147.575142 L187.734129,147.524441 L194.089,143.992 L188.002496,143.961558 L0.497435931,142.999993 C0.221297187,142.998577 -0.00140952163,142.773575 6.57449229e-06,142.497436 C0.00142267061,142.221297 0.226425325,141.99859 0.502564069,142.000007 L188.007624,142.961571 L194.093,142.993 L187.775813,139.396123 C187.562496,139.274688 187.472585,139.019978 187.551187,138.796328 L187.58865,138.714236 C187.710085,138.500919 187.964796,138.411008 188.188446,138.48961 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M81.882134,-0.323007375 L81.9357878,-0.24513062 L86.4357878,7.75486938 C86.5711697,7.99554832 86.4858096,8.30040587 86.2451306,8.43578777 C86.0311938,8.55612724 85.7665479,8.50205326 85.6152959,8.31951464 L85.5642122,8.24513062 L82,1.908 L82,218.5 C82,218.776142 81.7761424,219 81.5,219 C81.2545401,219 81.0503916,218.823125 81.0080557,218.589876 L81,218.5 L81,1.908 L77.4357878,8.24513062 C77.3154483,8.45906745 77.0612021,8.55028324 76.8371522,8.47282918 L76.7548694,8.43578777 C76.5409325,8.3154483 76.4497168,8.06120215 76.5271708,7.83715217 L76.5642122,7.75486938 L81.0642122,-0.24513062 C81.2394349,-0.55663764 81.6651608,-0.582596558 81.882134,-0.323007375 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="130.5" cy="109.5" r="2.5"></circle>
+            <circle fill="#333333" cx="81.5" cy="31.5" r="2.5"></circle>
+            <circle fill="#333333" cx="151.5" cy="143" r="2.5"></circle>
+            <circle fill="#333333" cx="130.5" cy="143" r="2.5"></circle>
+            <circle fill="#333333" cx="81.5" cy="143" r="2.5"></circle>
+            <line x1="151.5" y1="142.5" x2="81.5" y2="31.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="101" y="122">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="71" y="158">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="126" y="158">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="133" y="106">B</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="153" y="158">D</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="86" y="32">C</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

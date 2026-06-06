@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206px" height="266px" viewBox="0 0 206 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">Splitting an equilateral triangle into two </tspan>
+                <tspan x="0" y="24">congruent right triangles reveals the </tspan>
+                <tspan x="0" y="37">side lengths of a 30°–60°–90° triangle.</tspan>
+            </text>
+            <line x1="52" y1="48.5" x2="52" y2="117.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M89.5055393,76.0287349 C92.5561923,77.9127934 96.1511308,79 100,79 C103.718703,79 107.20036,77.9850872 110.18309,76.2171427" stroke="#BABABA"></path>
+            <path d="M20.4880698,229.697358 C20.4960017,229.465882 20.5,229.233408 20.5,229 C20.5,221.807877 16.7037041,215.502426 11.0056397,211.978174" stroke="#BABABA"></path>
+            <path d="M189.48807,229.697358 C189.496002,229.465882 189.5,229.233408 189.5,229 C189.5,221.807877 185.703704,215.502426 180.00564,211.978174" stroke="#BABABA" transform="translate(184.752820, 220.837766) scale(-1, 1) translate(-184.752820, -220.837766) "></path>
+            <line x1="100" y1="59.5" x2="100" y2="228.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <polyline stroke="#333333" stroke-linecap="round" stroke-linejoin="round" points="123.205583 97.1920693 200 230.2 0 230.2 100 57 115.502224 83.8498528"></polyline>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="47.5" y="261.479927">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="24.5" y="217">60°</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="156.5" y="217">60°</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="107.5" y="95">30°</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="146.5" y="261.479927">1</tspan>
+            </text>
+            <path d="M100,238 C100.24546,238 100.449608,238.176875 100.491944,238.410124 L100.5,238.5 L100.5,246.5 C100.5,246.776142 100.276142,247 100,247 C99.7545401,247 99.5503916,246.823125 99.5080557,246.589876 L99.5,246.5 L99.5,243 L2.5,243 L2.5,246.5 C2.5,246.776142 2.27614237,247 2,247 C1.75454011,247 1.55039163,246.823125 1.50805567,246.589876 L1.5,246.5 L1.5,238.5 C1.5,238.223858 1.72385763,238 2,238 C2.24545989,238 2.44960837,238.176875 2.49194433,238.410124 L2.5,238.5 L2.5,242 L99.5,242 L99.5,238.5 C99.5,238.223858 99.7238576,238 100,238 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M198,238 C198.24546,238 198.449608,238.176875 198.491944,238.410124 L198.5,238.5 L198.5,246.5 C198.5,246.776142 198.276142,247 198,247 C197.75454,247 197.550392,246.823125 197.508056,246.589876 L197.5,246.5 L197.5,243 L100.5,243 L100.5,246.5 C100.5,246.776142 100.276142,247 100,247 C99.7545401,247 99.5503916,246.823125 99.5080557,246.589876 L99.5,246.5 L99.5,238.5 C99.5,238.223858 99.7238576,238 100,238 C100.24546,238 100.449608,238.176875 100.491944,238.410124 L100.5,238.5 L100.5,242 L197.5,242 L197.5,238.5 C197.5,238.223858 197.723858,238 198,238 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
