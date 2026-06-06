@@ -46,7 +46,7 @@ Reversing the perspective, every point on the unit circle can be written in the 
 
 ## Angles on the unit circle
 
-Consider a point $P$ on the unit circle. Its position is uniquely identified by the angle $\theta$ formed between the positive $x$-axis and the segment $\overline{OP}$, where $O$ denotes the origin. The angle is measured counterclockwise from the positive $x$-axis, following the standard convention.
+Consider a point $P$ on the unit circle. Its position is uniquely identified by the angle $\theta$ formed between the positive $x$-axis and the segment $\overline{OP}$, where $O$ denotes the origin. The angle is measured counterclockwise from the positive $x$-axis, following the standard convention. The general treatment of angular measure, including the definition of degrees and radians and the conversion between the two, is developed in the page on [angles and angular measure](../angles-and-angular-measure/).
 
 Angles are typically expressed in degrees according to the sexagesimal system, in which a complete revolution corresponds to $360^\circ$. Since the circle is a closed curve, rotating by $360^\circ$ returns the point $P$ to its original position, so angles are naturally defined [modulo](../modulo-operator/) $360^\circ$. As a result, values exceeding $360^\circ$ represent rotations involving one or more full turns, while negative values indicate clockwise rotation. 
 
