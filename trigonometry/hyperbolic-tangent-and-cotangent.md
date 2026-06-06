@@ -70,12 +70,12 @@ The addition, subtraction, double-argument, and reciprocal relations for the two
 
 $$
 \begin{align}
-\tanh(x+y) &= \frac{\tanh(x) + \tanh(y)}{1 + \tanh(x)\tanh(y)} \\[6pt]
-\tanh(x-y) &= \frac{\tanh(x) - \tanh(y)}{1 - \tanh(x)\tanh(y)} \\[6pt]
-\tanh(2x)  &= \frac{2\tanh(x)}{1 + \tanh^{2}(x)} \\[6pt]
-\coth(x+y) &= \frac{1 + \coth(x)\coth(y)}{\coth(x) + \coth(y)} \\[6pt]
-\coth(x-y) &= \frac{-1 + \coth(x)\coth(y)}{\coth(x) - \coth(y)} \\[6pt]
-\tanh(x)\coth(x) &= 1
+&\tanh(x+y) = \frac{\tanh(x) + \tanh(y)}{1 + \tanh(x)\tanh(y)} \\[8pt]
+&\tanh(x-y) = \frac{\tanh(x) - \tanh(y)}{1 - \tanh(x)\tanh(y)} \\[8pt]
+&\tanh(2x)  = \frac{2\tanh(x)}{1 + \tanh^{2}(x)} \\[6pt]
+&\coth(x+y) = \frac{1 + \coth(x)\coth(y)}{\coth(x) + \coth(y)} \\[8pt]
+&\coth(x-y) = \frac{-1 + \coth(x)\coth(y)}{\coth(x) - \coth(y)} \\[15pt]
+&\tanh(x)\coth(x) = 1
 \end{align}
 $$
 
