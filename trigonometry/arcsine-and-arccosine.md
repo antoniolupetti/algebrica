@@ -11,7 +11,7 @@ tags:
 
 ## Arcsine
 
-The arcsine is the inverse of the [sine](../sine-and-cosine/) function. Given a number $x \in [-1, 1]$ (i.e., the range of values the sine function can attain), $\arcsin(x)$ is defined as the angle $\theta$ in the interval $[-\pi/2, \pi/2]$ whose sine is equal to $x$. In general, an [inverse function](../inverse-function/) reverses the operation of the original: if a function $f$ maps a value $x$ to a value $y$, then its inverse $f^{-1}$ maps $y$ back to $x$. The sine function takes an angle and returns a real number in $[-1, 1]$ and the arcsine does the opposite, returning the angle whose sine equals the given value. This inverse relationship is expressed by the identity:
+The arcsine is the inverse of the [sine](../sine-and-cosine/) function. Given a number $x \in [-1, 1]$ (i.e., the range of values the sine function can attain), $\arcsin(x)$ is defined as the [angle](../angles-and-angular-measure/) $\theta$ in the interval $[-\pi/2, \pi/2]$ whose sine is equal to $x$. In general, an [inverse function](../inverse-function/) reverses the operation of the original: if a function $f$ maps a value $x$ to a value $y$, then its inverse $f^{-1}$ maps $y$ back to $x$. The sine function takes an angle and returns a real number in $[-1, 1]$ and the arcsine does the opposite, returning the angle whose sine equals the given value. This inverse relationship is expressed by the identity:
 
 $$
 \sin(\arcsin(x)) = x \quad \forall x \in [-1, 1]

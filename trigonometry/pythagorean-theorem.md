@@ -16,7 +16,7 @@ $$
 a^2 + b^2 = c^2
 $$
 
-In this relation $c$ denotes the hypotenuse, while $a$ and $b$ denote the two legs. The theorem applies exclusively to right triangles, that is, triangles containing exactly one angle of $90^\circ$.
+In this relation $c$ denotes the hypotenuse, while $a$ and $b$ denote the two legs. The theorem applies exclusively to right triangles, that is, triangles containing exactly one [angle](../angles-and-angular-measure/) of $90^\circ$.
 
 
 ![IMG. 1](svg/pythagorean-theorem-1.svg)

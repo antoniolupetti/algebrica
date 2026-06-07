@@ -11,7 +11,7 @@ tags:
 
 ## Arctangent definition
 
-In the [unit circle](../unit-circle/), the [tangent](../tangent-and-cotangent/) of an angle $\theta$ can be visualised as the length of the segment tangent to the circle at the point where the terminal side meets it, measured along the vertical tangent line at $(1, 0)$. The arctangent performs the reverse process: given a [real number](../properties-of-real-numbers/) $x$, it returns the unique angle $\theta$ in the interval $\left(-\pi/2, \pi/2\right)$ whose tangent equals $x$. This geometric relationship illustrates how the tangent and arctangent are interconnected as a function and its inverse, each reversing the role of angle and ratio.
+In the [unit circle](../unit-circle/), the [tangent](../tangent-and-cotangent/) of an [angle](../angles-and-angular-measure/) $\theta$ can be visualised as the length of the segment tangent to the circle at the point where the terminal side meets it, measured along the vertical tangent line at $(1, 0)$. The arctangent performs the reverse process: given a [real number](../properties-of-real-numbers/) $x$, it returns the unique angle $\theta$ in the interval $\left(-\pi/2, \pi/2\right)$ whose tangent equals $x$. This geometric relationship illustrates how the tangent and arctangent are interconnected as a function and its inverse, each reversing the role of angle and ratio.
 
 ![IMG. 1](svg/arctangent-and-arccotangent-1.svg)
 

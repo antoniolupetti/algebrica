@@ -26,7 +26,7 @@ For the radical to be real-valued, the variable $x$ must lie in the correspondin
 + $\sqrt{x^2 + a^2}$ is defined for every $x \in \mathbb{R}$.
 + $\sqrt{x^2 - a^2}$ requires $x \in (-\infty, -a] \cup [a, +\infty)$.
 
-These restrictions are essential, since they determine not only where the integrand is defined, but also the admissible range of the auxiliary angle $\theta$ introduced in the substitution. In particular, the choice of the [interval](../intervals/) for $\theta$ ensures that inverse trigonometric functions are well defined and that absolute values arising from square roots can be handled consistently. Each of these expressions is naturally linked to a Pythagorean identity:
+These restrictions are essential, since they determine not only where the integrand is defined, but also the admissible range of the auxiliary [angle](../angles-and-angular-measure/) $\theta$ introduced in the substitution. In particular, the choice of the [interval](../intervals/) for $\theta$ ensures that inverse trigonometric functions are well defined and that absolute values arising from square roots can be handled consistently. Each of these expressions is naturally linked to a Pythagorean identity:
 
 $$1 - \sin^2\theta = \cos^2\theta$$
 

@@ -9,7 +9,7 @@ tags:
 
 ## Introduction
 
-A trigonometric identity is an equation involving trigonometric functions that holds for every admissible value of the variables. Unlike a trigonometric equation, which is solved for a specific set of angles, an identity is an equality that holds throughout the common domain of the functions involved. 
+A trigonometric identity is an equation involving trigonometric functions that holds for every admissible value of the variables. Unlike a trigonometric equation, which is solved for a specific set of [angles](../angles-and-angular-measure/), an identity is an equality that holds throughout the common domain of the functions involved. 
 
 The study of these identities organises the algebraic relationships that tie [sine and cosine](../sine-and-cosine/), [tangent and cotangent](../tangent-and-cotangent/) together, and provides the tools needed to manipulate trigonometric expressions into equivalent forms that are easier to evaluate, [differentiate](../derivatives/), [integrate](../indefinite-integrals/), or interpret geometrically.
 

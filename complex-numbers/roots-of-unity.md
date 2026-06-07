@@ -54,7 +54,7 @@ In particular, $\mu_n$ is abelian, and its subgroup structure mirrors that of $\
 
 In the complex plane, the $n$-th roots of unity are located at the vertices of a regular $n$-gon inscribed in the unit circle, with one vertex fixed at the point $1$ on the real axis. The vertices are equally spaced, with an angular separation of $2\pi/n$ between any two consecutive roots.
 
-This regularity is a direct consequence of the uniform spacing of the arguments $2\pi k/n$. As $k$ increases by one unit, the corresponding point on the unit circle advances by a fixed angle. The cases $n = 3, 4, 6$ are particularly natural, since the corresponding regular polygons tile the plane. For $n = 3$, the three vertices form an equilateral triangle and are given by:
+This regularity is a direct consequence of the uniform spacing of the arguments $2\pi k/n$. As $k$ increases by one unit, the corresponding point on the unit circle advances by a fixed [angle](../angles-and-angular-measure/). The cases $n = 3, 4, 6$ are particularly natural, since the corresponding regular polygons tile the plane. For $n = 3$, the three vertices form an equilateral triangle and are given by:
 
 $$
 \begin{align}

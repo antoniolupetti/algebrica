@@ -139,7 +139,7 @@ Hence the fourth power of $z = 2 + 2i$ is the real number $-64$.
 
 ## Deriving trigonometric identities
 
-One of the practical applications of De Moivre's theorem is the derivation of explicit formulas for [sine and cosine](../sine-and-cosine/) of multiple angles. The procedure expands the left-hand side of the theorem using the [binomial theorem](../binomial-theorem/) and then separates the result into real and imaginary parts.
+One of the practical applications of De Moivre's theorem is the derivation of explicit formulas for [sine and cosine](../sine-and-cosine/) of multiple [angles](../angles-and-angular-measure/). The procedure expands the left-hand side of the theorem using the [binomial theorem](../binomial-theorem/) and then separates the result into real and imaginary parts.
 
 For $n = 3$, the theorem gives:
 

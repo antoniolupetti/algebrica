@@ -30,7 +30,7 @@ Consider the equation
 
 $$\sin(x) = m \tag{1}$$
 
-Solving it means determining every angle $x$ whose [sine](../sine-and-cosine/) equals $m$. The sine function takes values in the interval $[-1, 1]$, so a real solution exists only when $-1 \leq m \leq 1$. If $|m| > 1$, equation $(1)$ has no real solution and is called impossible.
+Solving it means determining every [angle](../angles-and-angular-measure/) $x$ whose [sine](../sine-and-cosine/) equals $m$. The sine function takes values in the interval $[-1, 1]$, so a real solution exists only when $-1 \leq m \leq 1$. If $|m| > 1$, equation $(1)$ has no real solution and is called impossible.
 
 On the [unit circle](../unit-circle/), the equation corresponds to the horizontal line $y = m$. When $-1 < m < 1$, this line meets the circle at two distinct points, symmetric with respect to the vertical axis, which produce two angles in $[0, 2\pi)$:
 

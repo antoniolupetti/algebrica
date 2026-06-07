@@ -29,7 +29,7 @@ The new variable is introduced through the equation:
 
 $$t = \tan\left(\frac{x}{2}\right) \tag{1}$$
 
-The angle $x$ is restricted, for the moment, to the open [interval](../intervals/) $(-\pi, \pi)$, so that $\tan(x/2)$ is well defined and the map $x \mapsto t$ is a bijection onto the real line. The original variable is recovered through the inverse relation $x = 2\arctan t$, which uses the [arctangent](../arctangent-and-arccotangent/) function and will appear whenever the result must be expressed back in terms of $x$.
+The [angle](../angles-and-angular-measure/) $x$ is restricted, for the moment, to the open [interval](../intervals/) $(-\pi, \pi)$, so that $\tan(x/2)$ is well defined and the map $x \mapsto t$ is a bijection onto the real line. The original variable is recovered through the inverse relation $x = 2\arctan t$, which uses the [arctangent](../arctangent-and-arccotangent/) function and will appear whenever the result must be expressed back in terms of $x$.
 
 The strength of the substitution lies in the fact that $\sin x$, $\cos x$, and the differential $dx$ all admit a closed-form rational expression in $t$. The derivation of these expressions uses the double-angle identities and the [Pythagorean identity](../pythagorean-identity/) $\sin^2\theta + \cos^2\theta = 1$.
 

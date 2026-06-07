@@ -136,7 +136,7 @@ This identity combines five fundamental constants of mathematics in a single equ
 + the base of the natural exponential $e$
 + the ratio $\pi$ between the [circumference](../circumference/) and the diameter of a circle.
 
-The identity states that the exponential of $i\pi$ produces the antipode of $1$ on the unit circle, that is, the rotation of the unit vector by an angle of $\pi$ radians.
+The identity states that the exponential of $i\pi$ produces the antipode of $1$ on the unit circle, that is, the rotation of the unit vector by an [angle of $\pi$ radians](../angles-and-angular-measure/).
 
 The formula can also be specialized at other notable values of $\theta$ to recover further identities. Setting $\theta = \pi/2$ gives $e^{i\pi/2} = i$, the rotation by a quarter turn that sends $1$ to the imaginary unit. Setting $\theta = 2\pi$ gives $e^{2\pi i} = 1$, the periodicity relation that underpins the theory of [roots of unity](../roots-of-unity/).
 

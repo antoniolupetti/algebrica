@@ -23,7 +23,7 @@ $$z = re^{i\theta}$$
 The two quantities appearing in this expression have a direct geometric meaning:
 
 + $r = |z| = \sqrt{a^2 + b^2}$ is the [modulus](../complex-numbers-introduction/), representing the distance of $z$ from the origin in the complex plane.
-+ $\theta = \arg(z)$ is the argument, the angle in radians between the positive real axis and the [vector](../vectors/) representing $z$.
++ $\theta = \arg(z)$ is the argument, the [angle in radians](../angles-and-angular-measure/) between the positive real axis and the [vector](../vectors/) representing $z$.
 
 
 ![IMG. 1](svg/complex-numbers-trigonometric-form-1.svg)

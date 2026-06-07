@@ -162,7 +162,7 @@ $$|z| = \sqrt{13} \approx 3.61 $$
 
 ## Argument
 
-The argument of a complex number $z = a + bi$ is the angle $\theta$ between the positive real axis and the [line](../lines/) segment from the origin to the point $(a, b)$ in the complex plane. It is measured in radians, counterclockwise from the positive real axis, and is denoted by $\arg(z)$.
+The argument of a complex number $z = a + bi$ is the [angle](../angles-and-angular-measure/) $\theta$ between the positive real axis and the [line](../lines/) segment from the origin to the point $(a, b)$ in the complex plane. It is measured in radians, counterclockwise from the positive real axis, and is denoted by $\arg(z)$.
 
 The argument is not uniquely determined. Any two angles differing by an integer multiple of $2\pi$ represent the same geometric direction. To remove this ambiguity, one usually works with the principal argument, denoted $\mathrm{Arg}(z)$, which is the unique value of $\theta$ satisfying the following condition.
 

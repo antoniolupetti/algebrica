@@ -11,7 +11,7 @@ tags:
 
 ## Definition
 
-The Pythagorean identity is an equation that connects trigonometry and geometry, and it derives directly from the [Pythagorean theorem](../pythagorean-theorem/), which relates the sides of a right triangle. Consider a right triangle whose hypotenuse has length $1$. Placing the triangle on the [unit circle](../unit-circle/) and letting $\theta$ denote an angle at the origin, the two legs have lengths equal to $\sin(\theta)$ and $\cos(\theta)$, respectively.
+The Pythagorean identity is an equation that connects trigonometry and geometry, and it derives directly from the [Pythagorean theorem](../pythagorean-theorem/), which relates the sides of a right triangle. Consider a right triangle whose hypotenuse has length $1$. Placing the triangle on the [unit circle](../unit-circle/) and letting $\theta$ denote an [angle](../angles-and-angular-measure/) at the origin, the two legs have lengths equal to $\sin(\theta)$ and $\cos(\theta)$, respectively.
 
 ![IMG. 1](svg/unit-circle-2.svg)
 

@@ -166,7 +166,7 @@ The triangle $OAP$ has base $OA = 1$ and height equal to the ordinate of $P$, wh
 
 $$\mathrm{Area}(OAP) = \frac{1}{2} \sin x$$
 
-The circular sector has radius $1$ and central angle $x$ measured in radians, so its area is:
+The circular sector has radius $1$ and central [angle](../angles-and-angular-measure/) $x$ measured in radians, so its area is:
 
 $$\mathrm{Area}(\text{sector}) = \frac{1}{2} x$$
 

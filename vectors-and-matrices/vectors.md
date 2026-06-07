@@ -110,7 +110,7 @@ The dot product, also called the scalar product or inner product, is a binary op
 
 $$\mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n$$
 
-The dot product admits an equivalent geometric formulation in terms of the angle $\theta$ between the two vectors.
+The dot product admits an equivalent geometric formulation in terms of the [angle](../angles-and-angular-measure/) $\theta$ between the two vectors.
 
 $$\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos\theta$$
 

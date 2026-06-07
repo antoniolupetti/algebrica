@@ -10,7 +10,7 @@ tags:
 
 ## Definition
 
-The law of cosines relates the sides of any triangle through the angle opposite to one of them. It can be viewed as a generalisation of the [Pythagorean theorem](../pythagorean-theorem/), valid not only for right triangles but for every triangle: the square of a side equals the sum of the squares of the other two sides, minus a corrective term that accounts for how open the angle between them is. For a triangle with sides $a, b, c$ and angle $\theta$ opposite to side $c$ the law states:
+The law of cosines relates the sides of any triangle through the [angle](../angles-and-angular-measure/) opposite to one of them. It can be viewed as a generalisation of the [Pythagorean theorem](../pythagorean-theorem/), valid not only for right triangles but for every triangle: the square of a side equals the sum of the squares of the other two sides, minus a corrective term that accounts for how open the angle between them is. For a triangle with sides $a, b, c$ and angle $\theta$ opposite to side $c$ the law states:
 
 $$
 c^2 = a^2 + b^2 - 2ab \cos(\theta)

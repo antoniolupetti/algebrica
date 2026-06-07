@@ -36,7 +36,7 @@ $$\lim_{x \to 0} \frac{\sin(a x)}{x} = a$$
 
 ## Geometric proof of the trigonometric fundamental limit
 
-The classical justification of this limit relies on a comparison of areas on the unit circle. Fix an angle $x \in (0, \pi/2)$ and consider three regions sharing the vertex at the origin $O$: the triangle $OPA$, where $A = (1, 0)$ and $P = (\cos x, \sin x)$; the circular sector $OPA$; and the triangle $OQA$, where $Q$ is the intersection of the line through $O$ and $P$ with the vertical tangent to the circle at $A$, so that $Q = (1, \tan x)$.
+The classical justification of this limit relies on a comparison of areas on the unit circle. Fix an [angle](../angles-and-angular-measure/) $x \in (0, \pi/2)$ and consider three regions sharing the vertex at the origin $O$: the triangle $OPA$, where $A = (1, 0)$ and $P = (\cos x, \sin x)$; the circular sector $OPA$; and the triangle $OQA$, where $Q$ is the intersection of the line through $O$ and $P$ with the vertical tangent to the circle at $A$, so that $Q = (1, \tan x)$.
 
 The three regions are nested, with the triangle $OPA$ contained in the sector and the sector contained in the larger triangle $OQA$. Computing the corresponding areas one obtains the inequality:
 

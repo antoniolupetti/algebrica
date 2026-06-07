@@ -10,7 +10,7 @@ tags:
 ---
 ## Introduction to hyperbolic sine and cosine
 
-We have seen that the [sine](../sine-and-cosine/) of an angle can be introduced geometrically by looking at how a point moves along the [unit circle](../unit-circle/). The hyperbolic sine, instead, is obtained by relating a point on the right branch of the equilateral [hyperbola](../hyperbola/):
+We have seen that the [sine](../sine-and-cosine/) of an [angle](../angles-and-angular-measure/) can be introduced geometrically by looking at how a point moves along the [unit circle](../unit-circle/). The hyperbolic sine, instead, is obtained by relating a point on the right branch of the equilateral [hyperbola](../hyperbola/):
 
 $$
 X^{2} - Y^{2} = 1
