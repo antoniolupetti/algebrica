@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="268px" viewBox="0 0 320 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 0.520073)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="2.73576172" y="64.8419418">Geometric view of 3π/2 − α: </tspan>
+                <tspan x="19.014" y="77.8419418">how a three-quarter turn </tspan>
+                <tspan x="12.7" y="90.8419418">shifts sine into cosine and </tspan>
+                <tspan x="58.438" y="103.841942">cosine into −sine.</tspan>
+            </text>
+            <path d="M167.5,3.46006258 L167.935788,4.23479639 L172.435788,12.2347964 L172.680918,12.6705842 L171.809343,13.1608454 L171.564212,12.7250576 L168,6.388 L168,267.479927 L167,267.479927 L167,6.388 L163.435788,12.7250576 L163.190657,13.1608454 L162.319082,12.6705842 L162.564212,12.2347964 L167.064212,4.23479639 L167.5,3.46006258 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M309.809495,130.799009 L310.245283,131.044139 L318.245283,135.544139 L319.020016,135.979927 L318.245283,136.415715 L310.245283,140.915715 L309.809495,141.160845 L309.319234,140.28927 L309.755021,140.044139 L316.094,136.479 L15,136.479927 L15,135.479927 L316.09,135.479 L309.755021,131.915715 L309.319234,131.670584 L309.809495,130.799009 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="309" y="153.260949">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="151" y="11">y</tspan>
+            </text>
+            <path d="M73.6123757,118.687914 C72.553594,124.377037 72,130.244189 72,136.240876 C72,188.80367 114.532949,231.414234 167,231.414234 C219.467051,231.414234 262,188.80367 262,136.240876 C262,83.6780819 219.467051,41.0675182 167,41.0675182 C156.343263,41.0675182 146.096356,42.8254114 136.532437,46.0675407" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="167.5" y1="135.979927" x2="251.5" y2="94.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M104,199.611314 L136.302367,183.265538 M154.269589,174.173691 L187,157.611314" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(145.500000, 178.611314) scale(1, -1) rotate(-90.000000) translate(-145.500000, -178.611314) "></path>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="197" y="133.479927">α</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="113" y="180.479927">3/2π-α</tspan>
+            </text>
+            <line x1="251.5" y1="135.979927" x2="251.5" y2="96.979927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="167.5" y1="220.979927" x2="125.5" y2="220.979927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="251.5" y1="135.979927" x2="167.5" y2="135.979927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="167.5" y1="135.979927" x2="167.5" y2="220.479927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M167,153.479927 C166.451444,153.479927 165.909443,153.509723 165.375356,153.567874 C162.974051,153.829326 160.732707,154.663965 158.77472,155.940789 C158.511249,156.112602 158.252909,156.292421 158,156.479927" stroke="#979797" transform="translate(162.500000, 154.979927) scale(1, -1) translate(-162.500000, -154.979927) "></path>
+            <path d="M184.968176,135.464916 C184.989283,135.104058 185,134.740063 185,134.373293 C185,133.157264 184.882188,131.971731 184.658524,130.829947 C184.428822,129.657341 184.087475,128.530879 183.647438,127.464916" stroke="#979797"></path>
+            <circle fill="#333333" cx="251.75" cy="95.229927" r="2.75"></circle>
+            <circle fill="#333333" cx="123.75" cy="221.229927" r="2.75"></circle>
+        </g>
+    </g>
+</svg>

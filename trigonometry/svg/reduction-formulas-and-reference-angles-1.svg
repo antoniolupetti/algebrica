@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="308px" height="271px" viewBox="0 0 308 271" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <g>
+                <path d="M165.968176,139.464916 C165.989283,139.104058 166,138.740063 166,138.373293 C166,137.157264 165.882188,135.971731 165.658524,134.829947 C165.428822,133.657341 165.087475,132.530879 164.647438,131.464916 M150.421566,123.479927 C149.933961,123.479927 149.452183,123.506679 148.977438,123.558889 C146.842945,123.79363 144.850639,124.542999 143.110206,125.689379 C142.87601,125.843638 142.646374,126.005086 142.421566,126.173436" stroke="#979797"></path>
+                <path d="M150.5,5.98104798 L150.935788,6.75578179 L155.435788,14.7557818 L155.680918,15.1915696 L154.809343,15.6818308 L154.564212,15.246043 L151,8.909 L151,271 L150,271 L150,8.909 L146.435788,15.246043 L146.190657,15.6818308 L145.319082,15.1915696 L145.564212,14.7557818 L150.064212,6.75578179 L150.5,5.98104798 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M293.309343,134.319082 L293.745131,134.564212 L301.745131,139.064212 L302.519864,139.5 L301.745131,139.935788 L293.745131,144.435788 L293.309343,144.680918 L292.819082,143.809343 L293.254869,143.564212 L299.591,140 L-0.5,140 L-0.5,139 L299.591,139 L293.254869,135.435788 L292.819082,135.190657 L293.309343,134.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="12" font-weight="normal" fill="#BABABA">
+                    <tspan x="293" y="157.260949">x</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#BABABA">
+                    <tspan x="131" y="14">y</tspan>
+                </text>
+                <path d="M242.039098,166.300374 C244.615912,157.673603 246,148.532196 246,139.067518 C246,86.600467 203.467051,44.0675182 151,44.0675182 C98.5329488,44.0675182 56,86.600467 56,139.067518 C56,191.534569 98.5329488,234.067518 151,234.067518 C154.796488,234.067518 158.540962,233.84482 162.221071,233.411775" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="150.5" y1="138.979927" x2="235" y2="96.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5"></line>
+                <path d="M87.0656934,117.54562 L103.427106,109.559693 M126.780786,98.1608729 L171.065693,76.5456204" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(129.065693, 97.045620) rotate(90.000000) translate(-129.065693, -97.045620) "></path>
+                <text font-family="Helvetica" font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="180" y="135.479927">α</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="102" y="86.479927">π/2+α</tspan>
+                </text>
+                <line x1="235.5" y1="139.5" x2="235.5" y2="99.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="150" y1="54.5" x2="110" y2="54.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="235" y1="139.5" x2="150" y2="139.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="150.5" y1="54.5" x2="150.5" y2="139.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                <circle fill="#333333" cx="108.275" cy="54.275" r="2.775"></circle>
+                <circle fill="#333333" cx="235.275" cy="96.775" r="2.775"></circle>
+            </g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="165.5" y="184.699417">Geometric view of π/2 + α: </tspan>
+                <tspan x="165.5" y="197.699417">how a quarter-turn shift </tspan>
+                <tspan x="165.5" y="210.699417">turns sine into cosine and </tspan>
+                <tspan x="165.5" y="223.699417">introduces a sign change.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

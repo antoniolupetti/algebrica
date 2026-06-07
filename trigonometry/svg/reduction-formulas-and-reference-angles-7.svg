@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="322px" height="269px" viewBox="0 0 322 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="8.75876172" y="69.8419418">Geometric view of 2π − α: </tspan>
+                <tspan x="9.956" y="82.8419418">how a full-turn symmetry </tspan>
+                <tspan x="31.296" y="95.8419418">preserves cosine and </tspan>
+                <tspan x="12.585" y="108.841942">reverses the sign of sine.</tspan>
+            </text>
+            <path d="M169.5,3.46006258 L169.935788,4.23479639 L174.435788,12.2347964 L174.680918,12.6705842 L173.809343,13.1608454 L173.564212,12.7250576 L170,6.388 L170,268.479927 L169,268.479927 L169,6.388 L165.435788,12.7250576 L165.190657,13.1608454 L164.319082,12.6705842 L164.564212,12.2347964 L169.064212,4.23479639 L169.5,3.46006258 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M311.809495,131.319082 L312.245283,131.564212 L320.245283,136.064212 L321.020016,136.5 L320.245283,136.935788 L312.245283,141.435788 L311.809495,141.680918 L311.319234,140.809343 L311.755021,140.564212 L318.094,136.999 L18,137 L18,136 L318.09,135.999 L311.755021,132.435788 L311.319234,132.190657 L311.809495,131.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="311" y="154.260949">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="150" y="11">y</tspan>
+            </text>
+            <path d="M74.4123115,128.314884 C74.1394777,131.25349 74,134.230865 74,137.240876 C74,189.80367 116.532949,232.414234 169,232.414234 C221.467051,232.414234 264,189.80367 264,137.240876 C264,84.6780819 221.467051,42.0675182 169,42.0675182 C156.072855,42.0675182 143.748771,44.6542368 132.515331,49.3391994" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="169.5" y1="136.979927" x2="253.5" y2="95.1113139" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(211.500000, 116.045620) scale(-1, -1) translate(-211.500000, -116.045620) "></line>
+            <path d="M171.5,178.979927 L200.10317,164.678342 M227.549637,150.955108 L253.5,137.979927" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(212.500000, 158.479927) scale(1, -1) translate(-212.500000, -158.479927) "></path>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="199" y="133.479927">α</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="198" y="162.479927">2π-α</tspan>
+            </text>
+            <line x1="253.5" y1="136.979927" x2="253.5" y2="96.979927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="253.5" y1="136.5" x2="170.5" y2="136.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="253.5" y1="177.979927" x2="253.5" y2="136.979927" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M182.826486,144.339615 C184.768155,142.68878 186,140.22821 186,137.479927 C186,134.698991 184.738709,132.212646 182.756979,130.561741" stroke="#979797"></path>
+            <circle fill="#333333" cx="253.75" cy="94.229927" r="2.75"></circle>
+            <circle fill="#333333" cx="253.75" cy="179.229927" r="2.75"></circle>
+        </g>
+    </g>
+</svg>
