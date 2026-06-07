@@ -211,6 +211,7 @@ $$\sin(\theta) = \frac{1}{\sqrt{1 + x^2}}$$
 $$ \cos(\theta) = \frac{x}{\sqrt{1 + x^2}}$$
 
 Reversing these relationships yields two equivalent expressions for the arccotangent:
+
 $$
 \begin{align}
 \mathrm{arccot}(x) &= \arcsin\!\left(\frac{1}{\sqrt{1 + x^2}}\right) \\[6pt]
