@@ -11,7 +11,7 @@ tags:
 ---
 ## Definition
 
-Sine and cosine are the two primary trigonometric functions. Given an oriented angle $\theta$, represented on the [unit circle](../unit-circle/) by a point $P$, the sine and cosine of $\theta$ are defined respectively as the $y$-coordinate and the $x$-coordinate of $P$. The unit circle is the [circle](../circumference/) of radius $1$ centered at the origin, described by the [equation](../equations/):
+Sine and cosine are the two primary trigonometric functions. Given an [oriented angle](../angles-and-angular-measure/) $\theta$, represented on the [unit circle](../unit-circle/) by a point $P$, the sine and cosine of $\theta$ are defined respectively as the $y$-coordinate and the $x$-coordinate of $P$. The unit circle is the [circle](../circumference/) of radius $1$ centered at the origin, described by the [equation](../equations/):
 
 $$
 x^2+y^2=1

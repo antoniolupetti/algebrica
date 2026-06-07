@@ -9,7 +9,7 @@ tags:
 ---
 ## Understanding the sides of a right triangle
 
-Trigonometry studies the relationships between angles and sides of triangles, and the right triangle is where the basic trigonometric functions are usually introduced: [sine](../sine-and-cosine/), [cosine](../sine-and-cosine/), and [tangent](../tangent-and-cotangent/). A right triangle has one interior angle of exactly $90^\circ$. The two sides meeting at the right angle are the legs, and the third side, opposite the right angle, is the hypotenuse, which is always the longest of the three. 
+Trigonometry studies the relationships between [angles](../angles-and-angular-measure/) and sides of triangles, and the right triangle is where the basic trigonometric functions are usually introduced: [sine](../sine-and-cosine/), [cosine](../sine-and-cosine/), and [tangent](../tangent-and-cotangent/). A right triangle has one interior angle of exactly $90^\circ$. The two sides meeting at the right angle are the legs, and the third side, opposite the right angle, is the hypotenuse, which is always the longest of the three. 
 
 Fix an acute angle $\theta$ inside the triangle. The hypotenuse does not depend on the choice of $\theta$, but the two legs do. One lies opposite to $\theta$, the other borders it. The trigonometric functions arise from this asymmetry, as ratios between pairs of sides.
 

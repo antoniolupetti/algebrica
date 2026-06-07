@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="237px" height="232px" viewBox="0 0 237 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="53.5" y="191">The angle represents the rotation </tspan>
+                <tspan x="53.5" y="204">needed to move one side onto the </tspan>
+                <tspan x="53.5" y="217">other while keeping the vertex </tspan>
+                <tspan x="53.5" y="230">fixed.</tspan>
+            </text>
+            <line x1="84.5" y1="140.5" x2="84.5" y2="174.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="141">vertex</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="213" y="96">side</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="138" y="12">side</tspan>
+            </text>
+            <line x1="45.5" y1="137.5" x2="134.5" y2="15.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="45.5" y1="137.5" x2="207.5" y2="95.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="45.5" y1="137.5" x2="185.5" y2="47.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="45.5" y1="137.5" x2="158.5" y2="28.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="45.5" y1="137.5" x2="197.5" y2="73.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M94.2450245,74.3158243 L95.1175848,74.4854176 L104.127754,76.2366589 C104.398824,76.2893447 104.575859,76.5518005 104.523173,76.8228703 C104.476341,77.0638211 104.263765,77.2304731 104.026724,77.2275292 L103.936962,77.2182893 L96.801,75.831 L101.420028,79.757678 C111.263581,89.062326 118.265357,101.009267 121.490912,114.220819 C121.556407,114.489082 121.392032,114.759646 121.123769,114.825142 C120.855506,114.890637 120.584941,114.726262 120.519446,114.457999 C117.397704,101.67165 110.687287,90.0862163 101.278281,81.0040335 L100.752788,80.5020514 L96.154,76.594 L98.6734387,83.4123677 C98.7585391,83.6426034 98.6634121,83.8954122 98.4593075,84.0159893 L98.3777991,84.054705 C98.1475634,84.1398054 97.8947546,84.0446784 97.7741775,83.8405738 L97.7354618,83.7590654 L94.5532002,75.1495816 L94.2450245,74.3158243 Z" fill="#333333" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="45.5" cy="137.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

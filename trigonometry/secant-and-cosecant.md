@@ -11,7 +11,7 @@ tags:
 
 ## Secant
 
-Consider the [unit circle](../unit-circle/) centered at the origin $\text{O} = (0,0)$ with radius $1$. Let $\theta$ be an angle in standard position, and denote by $\text{P}$ the point on the circle where the terminal side of $\theta$ intersects it. Draw the tangent line to the circle at the point $\text{P}$, and let $\text{S}$ be the point where this tangent line meets the $x$-axis. The secant of the angle $\theta$ is defined as the signed length of the segment $\overline{OS}$, that is, the abscissa $x_S$ of the point $\text{S}$:
+Consider the [unit circle](../unit-circle/) centered at the origin $\text{O} = (0,0)$ with radius $1$. Let $\theta$ be an angle in [standard position](../angles-and-angular-measure/), and denote by $\text{P}$ the point on the circle where the terminal side of $\theta$ intersects it. Draw the tangent line to the circle at the point $\text{P}$, and let $\text{S}$ be the point where this tangent line meets the $x$-axis. The secant of the angle $\theta$ is defined as the signed length of the segment $\overline{OS}$, that is, the abscissa $x_S$ of the point $\text{S}$:
 
 $$
 \sec(\theta) = \overline{OS} = x_S

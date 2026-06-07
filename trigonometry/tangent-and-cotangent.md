@@ -21,7 +21,7 @@ Both admit a precise geometric interpretation on the [unit circle](../unit-circl
 
 ## Tangent
 
-**Definition 1.** Consider the unit circle centered at the origin $\text{O} = (0,0)$ with radius 1. Let $\theta$ be an angle in standard position, and denote by $\text{P}$ the point on the circle where the terminal side of $\theta$ intersects it.
+**Definition 1.** Consider the unit circle centered at the origin $\text{O} = (0,0)$ with radius 1. Let $\theta$ be an angle in [standard position](../angles-and-angular-measure/), and denote by $\text{P}$ the point on the circle where the terminal side of $\theta$ intersects it.
 
 + The point $\text{S} = (1, 0)$ is where the circle meets the vertical line $x = 1$. The line through $\text{S}$ perpendicular to the $x$-axis is tangent to the [unit circle](../unit-circle/) at $\text{S}$.
 + Extend the ray from $\text{O}$ through $\text{P}$ until it meets this vertical tangent line at a point $\text{T}$.
