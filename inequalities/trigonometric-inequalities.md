@@ -11,7 +11,7 @@ tags:
 ---
 ## Introduction
 
-A trigonometric inequality is an inequality in which the unknown appears as the argument of one or more trigonometric functions. Unlike algebraic inequalities, the solution set is typically an infinite union of intervals, a consequence of the periodic nature of the functions involved. This page covers the three fundamental cases, involving [sine and cosine](../sine-and-cosine/) and [tangent](../tangent-and-cotangent/), and then examines how more complex expressions can be reduced to these standard forms.
+A trigonometric inequality is an [inequality](../inequalities/) in which the unknown appears as the argument of one or more trigonometric functions. Unlike algebraic inequalities, the solution set is typically an infinite union of intervals, a consequence of the periodic nature of the functions involved. This page covers the three fundamental cases, involving [sine and cosine](../sine-and-cosine/) and [tangent](../tangent-and-cotangent/), and then examines how more complex expressions can be reduced to these standard forms.
 
 - - -
 
