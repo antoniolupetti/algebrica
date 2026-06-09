@@ -13,8 +13,12 @@ tags:
   - distributivity
   - multiplicative-identity
   - multiplicative-inverse
+  - order-relation
+  - ordered-field
   - pemdas
   - real-numbers
+  - transitivity
+  - trichotomy
 ---
 
 ## Order of operations
@@ -214,3 +218,81 @@ $$
 The number $\dfrac{1}{a}$ is called the multiplicative inverse, or reciprocal, of $a$. It is defined only for $a \neq 0$, since no real number multiplied by $0$ can produce the multiplicative identity $1$. As in the additive case, the multiplicative inverse is unique. If a number $b$ satisfies $a \cdot b = 1$, then necessarily $b = \dfrac{1}{a}$.
 
 > The closure, associativity, additive identity, and additive inverse axioms together state that $(\mathbb{R}, +)$ is an abelian [group](../groups/). Adjoining the corresponding multiplicative axioms for the nonzero elements, together with the distributive law, promotes the structure to a [field](../fields/), the abstract setting that captures the algebraic behaviour of $\mathbb{R}$, $\mathbb{Q}$, and $\mathbb{C}$ at once.
+
+## The order relation
+
+In addition to the field operations $+$ and $\cdot$, the real numbers carry an order relation, written $<$, which expresses the fact that one number is smaller than another. The dual symbols are defined in terms of $<$ as follows: $a > b$ means $b < a$, $a \leq b$ means $a < b$ or $a = b$, and $a \geq b$ means $a > b$ or $a = b$. A real number $a$ is called positive when $a > 0$ and negative when $a < 0$.
+
+The order relation is not an additional operation but a binary relation, and its interaction with the field operations is governed by a small number of properties that complement the field axioms listed above. Together, the field properties and the order properties characterise $\mathbb{R}$ as a totally ordered field.
+
+## Trichotomy and transitivity
+
+The first foundational property of the order relation is the trichotomy law. For any real numbers $a$ and $b$, exactly one of the following three conditions holds:
+
+$$a < b \qquad a = b \qquad a > b$$
+
+The trichotomy law guarantees that no real number can satisfy two of these conditions simultaneously, and that no pair of real numbers fails to satisfy at least one of them. The order relation is therefore total, that is, every pair of real numbers is comparable through the relation $<$.
+
+The second foundational property is transitivity. For any real numbers $a$, $b$, and $c$:
+
+$$a < b \text{ and } b < c \quad \Longrightarrow \quad a < c$$
+
+Transitivity is the algebraic counterpart of the geometric intuition that on the real line, if $a$ precedes $b$ and $b$ precedes $c$, then $a$ precedes $c$. It is the property that justifies the chained notation $a < b < c$, in which the third inequality $a < c$ is implicit and need not be stated separately.
+
+> Trichotomy and transitivity together make $\mathbb{R}$ a totally ordered set. They are independent of the field operations and concern only the comparability of pairs of real numbers.
+
+## Compatibility with addition
+
+The order relation interacts with addition in a way that preserves the direction of the relation. For any real numbers $a$, $b$, and $c$:
+
+$$a < b \quad \Longrightarrow \quad a + c < b + c$$
+
+The same statement applies to the symbols $\leq$, $>$, and $\geq$, with the direction of the order relation preserved in every case. Subtracting the same quantity from both sides is a particular case, obtained by adding the opposite $-c$, and the conclusion is again that the direction of the relation is preserved.
+
+A useful corollary is the ability to combine two relations pointing in the same direction. For any real numbers $a$, $b$, $c$, and $d$:
+
+$$a < b \text{ and } c < d \quad \Longrightarrow \quad a + c < b + d$$
+
+The rule is obtained by adding $c$ to both sides of the first relation and adding $b$ to both sides of the second, then combining the two resulting relations through transitivity. The analogous statement for subtraction member by member is not admissible: from $a < b$ and $c < d$ one cannot in general conclude $a - c < b - d$, since the order of the resulting expression depends on the relative magnitudes of the four quantities.
+
+## Compatibility with multiplication
+
+The interaction of the order relation with multiplication is more subtle than the interaction with addition, since the direction of the relation depends on the sign of the multiplier. For any real numbers $a$, $b$, and $c$, two distinct cases arise.
+
+$$a < b \text{ and } c > 0 \quad \Longrightarrow \quad ac < bc$$
+
+$$a < b \text{ and } c < 0 \quad \Longrightarrow \quad ac > bc$$
+
+The first rule states that multiplication by a positive number preserves the direction of the order relation. The second rule states that multiplication by a negative number reverses the direction of the order relation. The two rules together cover the case of any nonzero multiplier and have no analogue in the theory of equalities, where multiplication by any nonzero constant always preserves the equality.
+
+The same statements hold for the symbols $\leq$, $>$, and $\geq$, with the same dependence of the direction on the sign of the multiplier. Division by a positive or negative quantity is treated as multiplication by its reciprocal, and the same rules apply.
+
+> The reversal of the direction upon multiplication by a negative number is the algebraic feature of the order relation that has no counterpart in the equality relation. The operational consequences of this rule and its role in solving [inequalities](../inequalities/) are treated in the corresponding chapter.
+
+## The sign of a product
+
+The combination of the multiplication rules produces a useful classification of the sign of a product of two real numbers. For any real numbers $a$ and $b$:
+
++ If $a$ and $b$ have the same sign (both positive or both negative), their product $ab$ is positive.
++ If $a$ and $b$ have opposite signs, their product $ab$ is negative.
++ If at least one of $a$ and $b$ is zero, their product $ab$ is zero.
+
+The rule extends to a product of any finite number of nonzero real factors by induction. A product is positive when the number of negative factors is even, and negative when the number of negative factors is odd.
+
+## The square rule
+
+A fundamental consequence of the sign rule for a product is the fact that the square of every real number is non-negative. For any real number $a$:
+
+$$a^2 \geq 0$$
+
+The equality $a^2 = 0$ holds if and only if $a = 0$, so the square of a nonzero real number is strictly positive. The proof of this fact is a direct application of the sign rule. When $a > 0$, both factors of $a^2 = a \cdot a$ are positive and the product is positive. When $a < 0$, both factors are negative and the product is positive. When $a = 0$, the product is zero.
+
+The square rule is the algebraic foundation of many order relations involving polynomial expressions. As an illustration, the expression $a^2 + b^2$ is non-negative for every pair of real numbers $a$ and $b$, and it vanishes if and only if both $a$ and $b$ are zero.
+
+The same reasoning applies to even powers $a^{2k}$ for any positive integer $k$, since $a^{2k} = (a^k)^2$ is the square of a real number. The corresponding statement for odd powers does not hold: an odd power preserves the sign of its base, so $a^{2k+1}$ is positive when $a > 0$ and negative when $a < 0$.
+
+## The ordered field structure
+
+The properties presented in the previous sections combine with the field properties to make $\mathbb{R}$ an ordered field, that is, a field in which the order relation is compatible with the field operations. The complete characterisation requires a small number of foundational axioms: the field axioms (closure, associativity, commutativity, distributivity, identity elements, inverse elements) and the order axioms (trichotomy, transitivity, compatibility of $<$ with $+$ and with multiplication by positive numbers). From these axioms, every operational rule for the manipulation of expressions involving the relations $<$, $\leq$, $>$, and $\geq$ can be obtained by a sequence of elementary deductions.
+
+The ordered field structure alone does not single out $\mathbb{R}$ among other number systems. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ also form an ordered field with the same axioms, yet they fail to capture the full structure of the real line because of the presence of gaps. The property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$ is the completeness of the order relation, discussed at the beginning of this entry: every non-empty subset of $\mathbb{R}$ bounded above has a least upper bound in $\mathbb{R}$, while the analogous statement fails in $\mathbb{Q}$. The combination of the ordered field axioms with the completeness axiom characterises $\mathbb{R}$ uniquely.
