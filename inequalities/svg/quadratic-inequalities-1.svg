@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="385px" height="288px" viewBox="0 0 385 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <polygon fill="#E6E6E6" transform="translate(298.500000, 108.500000) scale(-1, 1) translate(-298.500000, -108.500000) " points="269 56 287 95 311 137 328 158 328 161 269 161"></polygon>
+                <polygon fill="#E6E6E6" points="91 56 108.320755 96 130.735849 137 145 158 142.962264 161 91 161"></polygon>
+                <path d="M228.5,11.9801356 L228.935788,12.7548694 L233.435788,20.7548694 L233.680918,21.1906571 L232.809343,21.6809184 L232.564212,21.2451306 L228.999,14.906 L229,238 L228,238 L227.999,14.91 L224.435788,21.2451306 L224.190657,21.6809184 L223.319082,21.1906571 L223.564212,20.7548694 L228.064212,12.7548694 L228.5,11.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M357.809343,155.319082 L358.245131,155.564212 L366.245131,160.064212 L367.019864,160.5 L366.245131,160.935788 L358.245131,165.435788 L357.809343,165.680918 L357.319082,164.809343 L357.754869,164.564212 L364.091,161 L62.5,161 L62.5,160 L364.091,160 L357.754869,156.435788 L357.319082,156.190657 L357.809343,155.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="104" y="145">+</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#BABABA">
+                    <tspan x="210.5" y="20">y</tspan>
+                </text>
+                <circle fill="#333333" cx="146" cy="160.5" r="2.5"></circle>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="139" y="176">x₁</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="266" y="177">x₂</tspan>
+                </text>
+                <circle fill="#333333" cx="267.5" cy="160.5" r="2.5"></circle>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="16.113" y="9.36201477">The highlighted area shows the </tspan>
+                    <tspan x="14.353" y="22.3620148">intervals where the curve takes </tspan>
+                    <tspan x="48.937" y="35.3620148">values greater than zero.</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="60.714" y="245.362015">In this area, the curve takes </tspan>
+                    <tspan x="91.976" y="258.362015">values less than zero.</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="244" y="247">The intersection points </tspan>
+                    <tspan x="244" y="260">with the x-axis represent </tspan>
+                    <tspan x="244" y="273">the solutions of the </tspan>
+                    <tspan x="244" y="286">associated equation.</tspan>
+                </text>
+                <line x1="111.5" y1="46.5" x2="111.5" y2="131.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <line x1="178.5" y1="179.5" x2="178.5" y2="224.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <line x1="271.5" y1="189.5" x2="271.5" y2="224.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <path d="M92,57 C128.600033,151 166.600033,198 206,198 C245.399967,198 285.7333,151 327,57" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="302" y="145">+</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="197" y="145">-</tspan>
+                </text>
+            </g>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="359.5" y="178">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

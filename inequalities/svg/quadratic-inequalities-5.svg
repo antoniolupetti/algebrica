@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="269px" viewBox="0 0 307 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M149.5,65.9801356 L149.935788,66.7548694 L154.435788,74.7548694 L154.680918,75.1906571 L153.809343,75.6809184 L153.564212,75.2451306 L149.999,68.906 L150,265 L149,265 L148.999,68.91 L145.435788,75.2451306 L145.190657,75.6809184 L144.319082,75.1906571 L144.564212,74.7548694 L149.064212,66.7548694 L149.5,65.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M297.309343,243.319082 L297.745131,243.564212 L305.745131,248.064212 L306.519864,248.5 L305.745131,248.935788 L297.745131,253.435788 L297.309343,253.680918 L296.819082,252.809343 L297.254869,252.564212 L303.591,249 L2,249 L2,248 L303.591,248 L297.254869,244.435788 L296.819082,244.190657 L297.309343,243.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295" y="265">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="69.5" y="263">-2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="216.5" y="263">2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="130" y="73">y</tspan>
+            </text>
+            <path d="M18.5,83 C67.5663442,183.666667 115.566344,234 162.5,234 C199.571616,234 236.684625,202.597085 273.839025,139.791254" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M287.412259,115.453543 C290.986738,108.677388 296.349319,97.8595401 303.5,83" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="41.5" y1="48.5" x2="41.5" y2="100.5" stroke="#636363" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The parabola lies entirely above </tspan>
+                <tspan x="0" y="24">the x-axis: the inequality holds for </tspan>
+                <tspan x="0" y="37">every real number.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="228" y="131">3x² - 2x + 5 &gt; 0</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

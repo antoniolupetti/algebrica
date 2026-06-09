@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="317px" height="298px" viewBox="0 0 317 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M40,58 L57.3207547,98 L79.7358491,139 L94,160 L117,186 C125.308351,191.657058 131.641684,195.323725 136,197 C140.358316,198.676275 147.024983,200.009609 156,201 L156,225 L40,225 L40,58 Z" fill="#E6E6E6" style="mix-blend-mode: darken;"></path>
+            <path d="M156,58 L174,97 L198,139 L215,160 C226.987546,173.462299 235.987546,182.462299 242,187 C248.012454,191.537701 259.679121,196.204368 277,201 L277,225 L156,225 L156,58 Z" fill="#E6E6E6" style="mix-blend-mode: darken;" transform="translate(216.500000, 141.500000) scale(-1, 1) translate(-216.500000, -141.500000) "></path>
+            <path d="M197.5,13.9801356 L197.935788,14.7548694 L202.435788,22.7548694 L202.680918,23.1906571 L201.809343,23.6809184 L201.564212,23.2451306 L197.999,16.906 L198,240 L197,240 L196.999,16.91 L193.435788,23.2451306 L193.190657,23.6809184 L192.319082,23.1906571 L192.564212,22.7548694 L197.064212,14.7548694 L197.5,13.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M306.809343,219.319082 L307.245131,219.564212 L315.245131,224.064212 L316.019864,224.5 L315.245131,224.935788 L307.245131,229.435788 L306.809343,229.680918 L306.319082,228.809343 L306.754869,228.564212 L313.091,225 L11.5,225 L11.5,224 L313.091,224 L306.754869,220.435788 L306.319082,220.190657 L306.809343,219.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="61" y="172">+</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="181.5" y="22">y</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11.6994171">When Δ &lt; 0 the curve always </tspan>
+                <tspan x="0" y="24.6994171">takes positive values when a is </tspan>
+                <tspan x="0" y="37.6994171">greater than zero.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="82" y="283">There are no intersection </tspan>
+                <tspan x="82" y="296">points with the x-axis.</tspan>
+            </text>
+            <line x1="60.5" y1="48.5" x2="60.5" y2="133.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="100.5" y1="231.5" x2="100.5" y2="266.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M41,59 C77.6000331,153 115.600033,200 155,200 C194.399967,200 234.7333,153 276,59" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="245" y="172">+</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="308.5" y="245">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

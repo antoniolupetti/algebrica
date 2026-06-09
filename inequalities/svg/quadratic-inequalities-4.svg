@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="229px" viewBox="0 0 306 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <polygon fill="#E6E6E6" transform="translate(235.500000, 117.500000) scale(-1, 1) translate(-235.500000, -117.500000) " points="206 65 224 104 248 146 265 167 265 170 206 170"></polygon>
+            <polygon fill="#E6E6E6" points="28 65 45.3207547 105 67.7358491 146 82 167 79.9622642 170 28 170"></polygon>
+            <path d="M115.5,20.9801356 L115.935788,21.7548694 L120.435788,29.7548694 L120.680918,30.1906571 L119.809343,30.6809184 L119.564212,30.2451306 L115.999,23.906 L116,229 L115,229 L114.999,23.91 L111.435788,30.2451306 L111.190657,30.6809184 L110.319082,30.1906571 L110.564212,29.7548694 L115.064212,21.7548694 L115.5,20.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,164.319082 L295.245131,164.564212 L303.245131,169.064212 L304.019864,169.5 L303.245131,169.935788 L295.245131,174.435788 L294.809343,174.680918 L294.319082,173.809343 L294.754869,173.564212 L301.091,170 L-0.5,170 L-0.5,169 L301.091,169 L294.754869,165.435788 L294.319082,165.190657 L294.809343,164.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="189">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="97.5" y="29">y</tspan>
+            </text>
+            <circle fill="#333333" cx="82.5" cy="169.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="70" y="189">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="205" y="188">3</tspan>
+            </text>
+            <circle fill="#333333" cx="204.5" cy="169.5" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="132.113" y="9.36201477">The highlighted area shows the </tspan>
+                <tspan x="130.353" y="22.3620148">intervals where the curve takes </tspan>
+                <tspan x="164.937" y="35.3620148">values greater than zero.</tspan>
+            </text>
+            <line x1="248.5" y1="45.5" x2="248.5" y2="129.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M29,66 C65.6000331,160 103.600033,207 143,207 C182.399967,207 222.7333,160 264,66" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
