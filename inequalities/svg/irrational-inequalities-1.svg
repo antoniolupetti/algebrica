@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="291px" height="225px" viewBox="0 0 291 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="74" y="54">The function y = √(x) with even index n </tspan>
+                <tspan x="74" y="67">= 2, is strictly increasing on [0, +oo) </tspan>
+                <tspan x="74" y="80">and undefined for x &lt; 0</tspan>
+            </text>
+            <line x1="100.5" y1="93.5" x2="100.5" y2="145.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M20.5,6.98013557 L20.9357878,7.75486938 L25.4357878,15.7548694 L25.6809184,16.1906571 L24.8093429,16.6809184 L24.5642122,16.2451306 L20.999,9.906 L21,222 L20,222 L19.999,9.91 L16.4357878,16.2451306 L16.1906571,16.6809184 L15.3190816,16.1906571 L15.5642122,15.7548694 L20.0642122,7.75486938 L20.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M280.809343,199.319082 L281.245131,199.564212 L289.245131,204.064212 L290.019864,204.5 L289.245131,204.935788 L281.245131,209.435788 L280.809343,209.680918 L280.319082,208.809343 L280.754869,208.564212 L287.091,205 L5,205 L5,204 L287.091,204 L280.754869,200.435788 L280.319082,200.190657 L280.809343,199.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="282" y="221">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="15">y</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="10" y="106">4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="10" y="157">2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="10" y="55">6</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="121" y="222">4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="173" y="222">6</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="225" y="222">8</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="69" y="222">2</tspan>
+            </text>
+            <path d="M21,204 C20.3333333,194 41,181.666667 83,167 C125,152.333333 193.666667,137.666667 289,123" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
