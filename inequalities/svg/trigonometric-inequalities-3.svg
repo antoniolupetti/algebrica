@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="291px" viewBox="0 0 335 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="115.5" y1="225.591241" x2="246.5" y2="89.5912409" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(181.000000, 157.545620) scale(-1, -1) translate(-181.000000, -157.545620) "></line>
+            <path d="M181.5,25.981048 L181.935788,26.7557818 L186.435788,34.7557818 L186.680918,35.1915696 L185.809343,35.6818308 L185.564212,35.246043 L182,28.909 L182,291 L181,291 L181,28.909 L177.435788,35.246043 L177.190657,35.6818308 L176.319082,35.1915696 L176.564212,34.7557818 L181.064212,26.7557818 L181.5,25.981048 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M324.809343,154.319082 L325.245131,154.564212 L333.245131,159.064212 L334.019864,159.5 L333.245131,159.935788 L325.245131,164.435788 L324.809343,164.680918 L324.319082,163.809343 L324.754869,163.564212 L331.091,160 L30,160 L30,159 L331.091,159 L324.754869,155.435788 L324.319082,155.190657 L324.809343,154.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="163.5" y="35">y</tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="181.5" cy="159.240876" rx="94.5" ry="94.6733577"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="251" y="85">α</tspan>
+            </text>
+            <g transform="translate(80.000000, 225.000000)" fill="#333333" font-size="15" font-weight="normal">
+                <text>
+                    <tspan x="0" y="16">α+π</tspan>
+                </text>
+            </g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="17.567" y="11">tan x &gt; k holds wherever </tspan>
+                <tspan x="0" y="24">the unit circle arc lies above </tspan>
+                <tspan x="72.204" y="37">the line y = kx</tspan>
+            </text>
+            <line x1="126.5" y1="43.5" x2="126.5" y2="70.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="325.5" y="178.260949">x</tspan>
+            </text>
+            <path d="M115.350855,227.551104 C132.289362,244.016771 155.33228,254.214971 180.752052,254.411345 C181.001141,254.414234 181.250458,254.414234 181.5,254.414234 M247.021813,90.3263573 C230.128528,74.2011862 207.313937,64.2463185 182.179617,64.0699027 C181.953265,64.0675182 181.726725,64.0675182 181.5,64.0675182" stroke="#333333" stroke-width="2"></path>
+            <circle stroke="#333333" fill="#333333" cx="114" cy="226.5" r="2"></circle>
+            <circle stroke="#333333" fill="#333333" cx="246" cy="89.5" r="2"></circle>
+            <polygon fill="#AEAEAE" fill-rule="nonzero" points="185.196682 69.6709489 186.5 68.3676314 182.803318 64.6709489 186.5 60.9742664 185.196682 59.6709489 181.5 63.3676314 177.803318 59.6709489 176.5 60.9742664 180.196682 64.6709489 176.5 68.3676314 177.803318 69.6709489 181.5 65.9742664"></polygon>
+        </g>
+        <polygon fill="#AEAEAE" fill-rule="nonzero" points="185.196682 259.5 186.5 258.196682 182.803318 254.5 186.5 250.803318 185.196682 249.5 181.5 253.196682 177.803318 249.5 176.5 250.803318 180.196682 254.5 176.5 258.196682 177.803318 259.5 181.5 255.803318"></polygon>
+    </g>
+</svg>

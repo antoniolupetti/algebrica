@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="294px" viewBox="0 0 331 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M177.882134,29.677905 L177.935788,29.7557818 L182.435788,37.7557818 C182.57117,37.9964607 182.48581,38.3013183 182.245131,38.4367002 C182.031194,38.5570396 181.766548,38.5029657 181.615296,38.320427 L181.564212,38.246043 L178,31.909 L178,293.5 C178,293.776142 177.776142,294 177.5,294 C177.25454,294 177.050392,293.823125 177.008056,293.589876 L177,293.5 L177,31.909 L173.435788,38.246043 C173.315448,38.4599799 173.061202,38.5511956 172.837152,38.4737416 L172.754869,38.4367002 C172.540933,38.3163607 172.449717,38.0621146 172.527171,37.8380646 L172.564212,37.7557818 L177.064212,29.7557818 C177.239435,29.4442748 177.665161,29.4183159 177.882134,29.677905 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M321.162848,157.527171 L321.245131,157.564212 L329.245131,162.064212 C329.556638,162.239435 329.582597,162.665161 329.323007,162.882134 L329.245131,162.935788 L321.245131,167.435788 C321.004452,167.57117 320.699594,167.48581 320.564212,167.245131 C320.443873,167.031194 320.497947,166.766548 320.680485,166.615296 L320.754869,166.564212 L327.091,163 L26.5,163 C26.2238576,163 26,162.776142 26,162.5 C26,162.25454 26.1768752,162.050392 26.4101244,162.008056 L26.5,162 L327.091,162 L320.754869,158.435788 C320.540933,158.315448 320.449717,158.061202 320.527171,157.837152 L320.564212,157.754869 C320.684552,157.540933 320.938798,157.449717 321.162848,157.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="159.5" y="38">y</tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="177.5" cy="162.240876" rx="94.5" ry="94.6733577"></ellipse>
+            <path d="M226.541366,80.7128218 C212.225513,72.0514149 195.443722,67.0675182 177.5,67.0675182 C125.032949,67.0675182 82.5,109.678082 82.5,162.240876 C82.5,214.80367 125.032949,257.414234 177.5,257.414234 C195.287888,257.414234 211.93394,252.516527 226.167827,243.993759" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="177.5" y1="162.591241" x2="226" y2="82.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(202.000000, 122.545620) scale(-1, -1) translate(-202.000000, -122.545620) "></line>
+            <line x1="177.5" y1="162.591241" x2="226" y2="242.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(202.000000, 202.545620) scale(-1, -1) translate(-202.000000, -202.545620) "></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="234" y="81">α</tspan>
+            </text>
+            <g transform="translate(234.000000, 240.000000)" fill="#333333" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="13">2π-α</tspan>
+                </text>
+            </g>
+            <line x1="226.5" y1="81.5" x2="177.5" y2="81.5" stroke="#BABABA"></line>
+            <line x1="226.5" y1="242.5" x2="177.5" y2="242.5" stroke="#BABABA"></line>
+            <circle stroke="#333333" fill="#333333" cx="227" cy="242.5" r="2"></circle>
+            <circle stroke="#333333" fill="#333333" cx="227" cy="81.5" r="2"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="16.069" y="9.36201477">cos x &lt; k holds wherever </tspan>
+                <tspan x="0.504" y="22.3620148">the unit circle arc lies to the </tspan>
+                <tspan x="2.979" y="35.3620148">left of the vertical line x = k</tspan>
+            </text>
+            <line x1="122.5" y1="46.5" x2="122.5" y2="73.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="321.5" y="181.260949">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

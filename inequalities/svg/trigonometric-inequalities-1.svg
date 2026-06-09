@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="316px" height="268px" viewBox="0 0 316 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M151,2.98104798 L151.435788,3.75578179 L155.935788,11.7557818 L156.180918,12.1915696 L155.309343,12.6818308 L155.064212,12.246043 L151.5,5.909 L151.5,268 L150.5,268 L150.5,5.909 L146.935788,12.246043 L146.690657,12.6818308 L145.819082,12.1915696 L146.064212,11.7557818 L150.564212,3.75578179 L151,2.98104798 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.309343,131.319082 L294.745131,131.564212 L302.745131,136.064212 L303.519864,136.5 L302.745131,136.935788 L294.745131,141.435788 L294.309343,141.680918 L293.819082,140.809343 L294.254869,140.564212 L300.591,137 L-0.5,137 L-0.5,136 L300.591,136 L294.254869,132.435788 L293.819082,132.190657 L294.309343,131.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="293" y="153.260949">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#AEAEAE">
+                <tspan x="132" y="12">y</tspan>
+            </text>
+            <path d="M241.865171,164.100058 C244.553578,155.288649 246,145.933986 246,136.240876 C246,83.6780819 203.467051,41.0675182 151,41.0675182 C98.5329488,41.0675182 56,83.6780819 56,136.240876 C56,188.80367 98.5329488,231.414234 151,231.414234 C164.952453,231.414234 178.20239,228.400915 190.136763,222.988443" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M236.344607,94.387099 C220.885233,62.8080861 188.476883,41.0675182 151,41.0675182 C113.919606,41.0675182 81.801067,62.350508 66.1517302,93.3881402" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="150.5" y1="136.979927" x2="234.5" y2="95.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(192.500000, 116.045620) scale(-1, -1) translate(-192.500000, -116.045620) "></line>
+            <line x1="67.5" y1="136.979927" x2="151.5" y2="95.979927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(109.500000, 116.045620) scale(1, -1) translate(-109.500000, -116.045620) "></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="242" y="91.479927">α</tspan>
+            </text>
+            <g transform="translate(32.000000, 75.479927)" fill="#333333" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="4" y="16">π-α</tspan>
+                </text>
+            </g>
+            <line x1="236" y1="135.479927" x2="236" y2="95.479927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="66" y1="135.479927" x2="66" y2="93.479927" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(66.000000, 114.479927) scale(1, -1) translate(-66.000000, -114.479927) "></line>
+            <circle stroke="#333333" fill="#333333" cx="67" cy="91.5" r="2"></circle>
+            <circle stroke="#333333" fill="#333333" cx="236" cy="93.5" r="2"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="170.5" y="182">sin x &gt; k holds wherever the </tspan>
+                <tspan x="170.5" y="195">unit circle arc lies above the </tspan>
+                <tspan x="170.5" y="208">horizontal line y = k</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

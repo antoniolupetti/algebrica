@@ -51,18 +51,18 @@ $$\log_a f(x) \ge \log_a g(x)$$
 
 The procedure can be structured into four fundamental steps.
 
-1. Determine the [domain](../determining-the-domain-of-a-function/) of the inequality by imposing the admissibility conditions. The argument of every logarithm must be strictly positive, which for the form above gives the system:
++ Determine the [domain](../determining-the-domain-of-a-function/) of the inequality by imposing the admissibility conditions. The argument of every logarithm must be strictly positive, which for the form above gives the system:
 
 $$\begin{cases}
 f(x) > 0 \\[6pt]
 g(x) > 0
 \end{cases}$$
 
-2. If the inequality involves logarithms with different bases, rewrite all logarithmic terms in a common base using the change-of-base formula, and combine them by means of the [properties of logarithms](../logarithms/), so that the inequality takes the form of a comparison between two logarithms with the same base.
++ If the inequality involves logarithms with different bases, rewrite all logarithmic terms in a common base using the change-of-base formula, and combine them by means of the [properties of logarithms](../logarithms/), so that the inequality takes the form of a comparison between two logarithms with the same base.
 
-3. Use the monotonicity of the [logarithmic function](../logarithmic-function/) to remove the logarithms and reduce the problem to an equivalent algebraic inequality involving $f(x)$ and $g(x)$. If $a > 1$, the logarithmic function is [increasing](../increasing-and-decreasing-functions/) and the inequality preserves its direction when the logarithms are removed. If $0 < a < 1$, the logarithmic function is decreasing and the direction of the inequality must be reversed.
++ Use the monotonicity of the [logarithmic function](../logarithmic-function/) to remove the logarithms and reduce the problem to an equivalent algebraic inequality involving $f(x)$ and $g(x)$. If $a > 1$, the logarithmic function is [increasing](../increasing-and-decreasing-functions/) and the inequality preserves its direction when the logarithms are removed. If $0 < a < 1$, the logarithmic function is decreasing and the direction of the inequality must be reversed.
 
-4. Solve the resulting algebraic inequality and intersect its solution set with the domain previously determined, discarding any values that do not satisfy the original logarithmic conditions.
++ Solve the resulting algebraic inequality and intersect its solution set with the domain previously determined, discarding any values that do not satisfy the original logarithmic conditions.
 
 - - -
 
@@ -70,7 +70,7 @@ The role played by the base of the logarithm follows from the behavior of the lo
 
 When $0 < a < 1$ the function is strictly decreasing, so larger arguments produce smaller logarithms and the comparison between arguments is reversed. In both cases the function is defined only for $x > 0$, has a vertical asymptote along the $y$-axis, and takes the value $0$ at $x = 1$, so the two graphs intersect at the point $(1, 0)$.
 
-> Since the logarithmic function is strictly monotonic, hence injective, removing the logarithms produces an inequality that is equivalent to the original one within the domain. No solutions are gained or lost, provided the intersection with the domain is carried out.
+> Since the logarithmic function is strictly monotonic, hence injective, removing the logarithms produces an inequality that is equivalent to the original one within the domain. No solutions are gained or lost, provided that the intersection with the domain is performed.
 
 ## Comparing a logarithm with a constant
 
@@ -84,7 +84,7 @@ As an illustration, consider the inequality:
 
 $$\log_2(x - 1) < 3$$
 
-The domain requires $x - 1 > 0$, that is $x > 1$. Writing $3 = \log_2 8$, the inequality becomes $\log_2(x - 1) < \log_2 8$. Since the base satisfies $2 > 1$, the function is increasing and the direction is preserved, which gives $x - 1 < 8$, that is $x < 9$. Intersecting with the domain, the solution set is the interval $(1, 9)$.
+The domain requires $x - 1 > 0$, that is $x > 1$. Writing $3 = \log_2 8$, the inequality becomes $\log_2(x - 1) < \log_2 8$. Since the base satisfies $2 > 1$, the function is increasing and the direction is preserved, which gives $x - 1 < 8$, that is $x < 9$. Intersecting with the domain, the solution set is the [interval](../intervals/) $(1, 9)$.
 
 > The intersection with the domain is essential in this type of inequality. The condition $x - 1 < 8$ alone would admit values such as $x = 0$, for which the original logarithm is not defined.
 
@@ -107,9 +107,7 @@ Next, we examine the base. Since $3 > 1$, the logarithmic function is strictly i
 
 $$2x - 1 > x + 1$$
 
-Solving this [linear inequality](../linear-inequalities/) gives $x > 2$. Intersecting with the domain $x > 1/2$ leaves the condition unchanged, since every value with $x > 2$ already satisfies $x > 1/2$.
-
-Hence the solution set of the logarithmic inequality is the following.
+Solving this [linear inequality](../linear-inequalities/) gives $x > 2$. Intersecting with the domain $x > 1/2$ leaves the condition unchanged, since every value with $x > 2$ already satisfies $x > 1/2$. Hence the solution set of the logarithmic inequality is the following.
 
 $$x > 2$$
 
@@ -160,11 +158,7 @@ We now solve the resulting algebraic inequality. Subtracting $x$ from both sides
 
 $$x \ge 4$$
 
-Finally, we intersect this result with the domain previously determined. Since every value with $x \ge 4$ also satisfies $x > 1/2$, the intersection leaves the condition unchanged.
-
-Hence, the solution set of the logarithmic inequality is:
-
-$$x \ge 4$$
+Finally, we intersect this result with the domain previously determined. Since every value with $x \ge 4$ also satisfies $x > 1/2$, the intersection leaves the condition unchanged. Hence, the solution set of the logarithmic inequality is $x \ge 4$.
 
 ## Example 3
 
@@ -267,6 +261,4 @@ The base conditions require $x > 0$ and $x \neq 1$. Writing $1 = \log_x x$, the 
 
 When $x > 1$ the logarithm is increasing, so the direction is preserved and the inequality reduces to $4 \ge x$. Combined with $x > 1$, this case gives $1 < x \le 4$.
 
-When $0 < x < 1$ the logarithm is decreasing, so the direction is reversed and the inequality becomes $4 \le x$. This is incompatible with $0 < x < 1$, so this case contributes no solution.
-
-Collecting the two cases, the solution set is the interval $(1, 4]$.
+When $0 < x < 1$ the logarithm is decreasing, so the direction is reversed and the inequality becomes $4 \le x$. This is incompatible with $0 < x < 1$, so this case contributes no solution. Collecting the two cases, the solution set is the interval $(1, 4]$.
