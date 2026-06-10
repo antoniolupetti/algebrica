@@ -50,7 +50,7 @@ Consider the following simple inequality:
 
 $$|x - 3| \leq 5$$
 
-Applying the fundamental property for the case $\leq$, one obtains a [compound inequality](../compound-inequalities/), equivalent to a [system](../systems-of-inequalities/) of two simultaneous conditions:
+Applying the fundamental property for the case $\leq$, one obtains a compound inequality, equivalent to a [system](../systems-of-inequalities/) of two simultaneous conditions:
 
 $$-5 \leq x - 3 \leq 5$$
 

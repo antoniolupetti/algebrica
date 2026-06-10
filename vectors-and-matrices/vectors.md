@@ -21,6 +21,8 @@ Two directed segments that have the same length and the same direction are consi
 
 ![IMG. 2](svg/vectors-2.svg)
 
+When a fixed origin $O$ is chosen, every point $P$ in the plane or in space determines a vector, the directed segment from $O$ to $P$, called the position vector of $P$. This correspondence identifies points with vectors applied at the origin, and it provides the link between the geometric description of space and the algebraic description by coordinates developed in the next section. A free vector describes a displacement independent of any particular point, whereas a position vector singles out a specific location relative to the origin.
+
 It is standard to denote vectors using boldface letters such as $\mathbf{v}$, or alternatively with an arrow notation $\vec{v}$. The zero vector, denoted $\mathbf{0}$, has zero magnitude and no defined direction; it plays the role of the additive identity in vector arithmetic.
 
 ## Components and coordinate representation
@@ -37,7 +39,9 @@ $$\mathbf{v} = (v_1, v_2, v_3) \in \mathbb{R}^3$$
 
 ![IMG. 4](svg/vectors-4.svg)
 
-The [real numbers](../properties-of-real-numbers/) $v_1, v_2, v_3$ are called the components of $\mathbf{v}$ with respect to the chosen coordinate system. The standard basis vectors in $\mathbb{R}^3$ are defined as follows.
+The [real numbers](../properties-of-real-numbers/) $v_1, v_2, v_3$ are called the components of $\mathbf{v}$ with respect to the chosen coordinate system. More generally, a vector in $\mathbb{R}^n$ is an ordered $n$-tuple of real numbers $(v_1, v_2, \ldots, v_n)$, and the operations defined in this entry extend to this general setting, with the exception of the cross product, which is specific to $\mathbb{R}^3$. Two vectors are equal when they belong to the same space and their corresponding components coincide, so the equality $\mathbf{u} = \mathbf{v}$ in $\mathbb{R}^n$ amounts to the $n$ scalar equalities $u_1 = v_1, \ldots, u_n = v_n$.
+
+The standard basis vectors in $\mathbb{R}^3$ are defined as follows.
 
 $$\mathbf{i} = (1, 0, 0) \qquad \mathbf{j} = (0, 1, 0) \qquad \mathbf{k} = (0, 0, 1)$$
 
@@ -45,7 +49,11 @@ Every vector in $\mathbb{R}^3$ can be expressed as a [linear combination](../lin
 
 $$\mathbf{v} = v_1\mathbf{i} + v_2\mathbf{j} + v_3\mathbf{k}$$
 
-In this expression, each scalar coefficient selects the contribution of the corresponding basis vector: $v_1$ scales $\mathbf{i}$ along the $x$-axis, $v_2$ scales $\mathbf{j}$ along the $y$-axis, and $v_3$ scales $\mathbf{k}$ along the $z$-axis. The sum of these three scaled basis vectors reconstructs $\mathbf{v}$ exactly. For example, the vector $(3, -1, 2)$ is written as $3\mathbf{i} - \mathbf{j} + 2\mathbf{k}$, meaning a displacement of three units in the $x$-direction, one unit in the negative $y$-direction, and two units in the $z$-direction. This representation makes explicit the decomposition of $\mathbf{v}$ into contributions along each coordinate direction.
+In this expression, each scalar coefficient selects the contribution of the corresponding basis vector: $v_1$ scales $\mathbf{i}$ along the $x$-axis, $v_2$ scales $\mathbf{j}$ along the $y$-axis, and $v_3$ scales $\mathbf{k}$ along the $z$-axis. The sum of these three scaled basis vectors reconstructs $\mathbf{v}$ exactly. 
+
+For example, the vector $(3, -1, 2)$ is written as $3\mathbf{i} - \mathbf{j} + 2\mathbf{k}$, meaning a displacement of three units in the $x$-direction, one unit in the negative $y$-direction, and two units in the $z$-direction. This representation makes explicit the decomposition of $\mathbf{v}$ into contributions along each coordinate direction.
+
+> In $\mathbb{R}^n$ the same role is played by the standard unit vectors $\mathbf{e}_1, \ldots, \mathbf{e}_n$, where $\mathbf{e}_i$ has $i$-th component equal to $1$ and all other components equal to $0$. Every vector $\mathbf{v} \in \mathbb{R}^n$ decomposes as $\mathbf{v} = v_1\mathbf{e}_1 + \cdots + v_n\mathbf{e}_n$, and the vectors $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ correspond to $\mathbf{e}_1$, $\mathbf{e}_2$, $\mathbf{e}_3$.
 
 ## Vector operations
 
@@ -66,6 +74,8 @@ Scalar multiplication by a real number $\lambda \in \mathbb{R}$ scales each comp
 $$\lambda\mathbf{v} = (\lambda v_1,\ \lambda v_2,\ \lambda v_3)$$
 
 When $\lambda > 0$, the resulting vector has the same direction as $\mathbf{v}$ and magnitude scaled by $\lambda$. When $\lambda < 0$, the direction is reversed. When $\lambda = 0$, the result is the zero vector. Subtraction is defined by combining the two preceding operations: $\mathbf{u} - \mathbf{v} = \mathbf{u} + (-1)\mathbf{v}$, which yields $(u_1-v_1, u_2-v_2, u_3-v_3)$.
+
+The difference $\mathbf{u} - \mathbf{v}$ also admits a direct geometric reading. When the two vectors are drawn from a common initial point, $\mathbf{u} - \mathbf{v}$ is the vector that joins the terminal point of $\mathbf{v}$ to the terminal point of $\mathbf{u}$, since adding $\mathbf{v}$ to it returns $\mathbf{u}$. In the parallelogram determined by the two vectors, the sum corresponds to one diagonal and the difference to the other. In particular, if two points $P$ and $Q$ have position vectors $\mathbf{p}$ and $\mathbf{q}$, the difference $\mathbf{p} - \mathbf{q}$ represents the displacement from $Q$ to $P$.
 
 ## Algebraic properties
 

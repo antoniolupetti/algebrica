@@ -153,4 +153,4 @@ f_k(x_1, x_2, \ldots, x_m) \geq 0
 \end{cases}
 $$
 
-In this setting the solution set is a region of $\mathbb{R}^m$ rather than a union of intervals, and its determination requires more advanced methods, such as graphical techniques, sign analysis, linear programming, and various numerical procedures. The two-variable case is treated in the entries on [linear inequalities in two variables](../linear-inequalities-in-two-variables/) and [systems of linear inequalities in two variables](../systems-of-linear-inequalities-in-two-variables/).
+In this setting the solution set is a region of $\mathbb{R}^m$ rather than a union of intervals, and its determination requires more advanced methods, such as graphical techniques, sign analysis, linear programming, and various numerical procedures. The two-variable case is treated in the entries on linear inequalities in two variables and systems of linear inequalities in two variables.

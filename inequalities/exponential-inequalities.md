@@ -213,7 +213,7 @@ The left condition is satisfied by every real $x$, since the exponential is alwa
 
 $$(-\infty, 1)$$
 
-> Multiplying an inequality by an expression whose sign is unknown would require a case distinction, as discussed in the entry on [loss of solutions](../loss-of-solutions/). The substitution avoids this difficulty here, because $t = 2^x$ is positive for every real $x$.
+> Multiplying an inequality by an expression whose sign is unknown would require a case distinction, as discussed in the entry on [loss of solutions](../loss-of-solutions-in-inequalities/). The substitution avoids this difficulty here, because $t = 2^x$ is positive for every real $x$.
 
 ## Existence and structure of the solution set
 

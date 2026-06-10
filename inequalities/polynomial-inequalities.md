@@ -96,7 +96,7 @@ The three real roots are $x = -1$, $x = 2$, and $x = 3$, all of multiplicity one
 
 The polynomial is non-negative on the intervals $[-1, 2]$ and $[3, +\infty)$. Since the inequality is non-strict, the roots are included in the solution set. The complete solution is the following.
 
-$$[-1, 2] \cup [3, +\infty)$$
+$$[-1, 2] \cup 3, +\infty)$$
 
 ## Example 2
 
@@ -118,7 +118,7 @@ Determine the values of $x$ that satisfy the following inequality.
 
 $$x^4 + x^2 - 6 \geq 0$$
 
-This is a [trinomial inequality](../trinomial-inequalities/) of degree four, since the polynomial contains only terms of degree $4$, $2$, and $0$. Setting $y = x^2$ transforms the associated equation into a quadratic in $y$.
+This is a [trinomial inequality of degree four, since the polynomial contains only terms of degree $4$, $2$, and $0$. Setting $y = x^2$ transforms the associated equation into a quadratic in $y$.
 
 $$y^2 + y - 6 = 0 \quad \rightarrow \quad (y - 2)(y + 3) = 0$$
 
