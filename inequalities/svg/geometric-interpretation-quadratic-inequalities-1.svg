@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="342px" viewBox="0 0 303 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <polygon fill="#E6E6E6" points="278 220 278 66 265 97 253 125 232 164 218 191 204 212 197 219"></polygon>
+            <path d="M0,219 C0,117 0,66 0,66 C10.6666667,92 16,105 16,105 C32.6666667,139 41,156 41,156 C59,186 68,201 68,201 L81,220" fill="#E6E6E6"></path>
+            <path d="M31.882134,34.6769926 L31.9357878,34.7548694 L36.4357878,42.7548694 C36.5711697,42.9955483 36.4858096,43.3004059 36.2451306,43.4357878 C36.0311938,43.5561272 35.7665479,43.5020533 35.6152959,43.3195146 L35.5642122,43.2451306 L32,36.908 L32,249.5 C32,249.776142 31.7761424,250 31.5,250 C31.2545401,250 31.0503916,249.823125 31.0080557,249.589876 L31,249.5 L31,36.908 L27.4357878,43.2451306 C27.3154483,43.4590675 27.0612021,43.5502832 26.8371522,43.4728292 L26.7548694,43.4357878 C26.5409325,43.3154483 26.4497168,43.0612021 26.5271708,42.8371522 L26.5642122,42.7548694 L31.0642122,34.7548694 C31.2394349,34.4433624 31.6651608,34.4174034 31.882134,34.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M281.162848,214.527171 L281.245131,214.564212 L289.245131,219.064212 C289.556638,219.239435 289.582597,219.665161 289.323007,219.882134 L289.245131,219.935788 L281.245131,224.435788 C281.004452,224.57117 280.699594,224.48581 280.564212,224.245131 C280.443873,224.031194 280.497947,223.766548 280.680485,223.615296 L280.754869,223.564212 L287.091,220 L0.5,220 C0.223857625,220 -8.3940517e-17,219.776142 0,219.5 C7.46137929e-17,219.25454 0.176875161,219.050392 0.410124368,219.008056 L0.5,219 L287.091,219 L280.754869,215.435788 C280.540933,215.315448 280.449717,215.061202 280.527171,214.837152 L280.564212,214.754869 C280.684552,214.540933 280.938798,214.449717 281.162848,214.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="10" y="46">y</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="282" y="240">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="76" y="11">The parabola opens upward because </tspan>
+                <tspan x="76" y="24">the coefficient of x² is positive. It </tspan>
+                <tspan x="76" y="37">intersects the x-axis at two distinct </tspan>
+                <tspan x="76" y="50">real roots, x = 3 − √2 and x = 3 + √2.</tspan>
+            </text>
+            <line x1="213.5" y1="58.5" x2="213.5" y2="93.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="250.5" y1="207.5" x2="250.5" y2="285.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M0,66 C52.6666667,193.333333 99.3333333,257 140,257 C174.849957,257 213.616666,210.243774 256.300126,116.731322" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M265.01789,97.1078381 C267.877084,90.5020141 272.204454,80.1327348 278,66" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="204" y="113">y = x² - 6x + 7</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="53" y="233">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="135" y="233">3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="218" y="233">5</tspan>
+            </text>
+            <line x1="55.5" y1="220.5" x2="55.5" y2="211.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="138.5" y1="220.5" x2="138.5" y2="211.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="221.5" y1="219.5" x2="221.5" y2="210.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <ellipse fill="#333333" cx="81.25" cy="218.755018" rx="2.75" ry="2.75501825"></ellipse>
+            <ellipse fill="#333333" cx="197.25" cy="218.755018" rx="2.75" ry="2.75501825"></ellipse>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="134" y="303">The shaded regions are where </tspan>
+                <tspan x="134" y="316">the curve satisfies the inequality </tspan>
+                <tspan x="134" y="329">y = x² − 6x + 7 &gt; 0.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

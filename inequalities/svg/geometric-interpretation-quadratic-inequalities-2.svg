@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="292px" height="326px" viewBox="0 0 292 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <polygon fill="#E6E6E6" points="17 57 17 207 128 207 106 198 88 182 73 163 53 132 37 100"></polygon>
+                <polyline fill="#E6E6E6" points="140 207 147.606094 207.063384 260 207 260 59 249 85 237 112 222 140 200 172 177 194 161 203"></polyline>
+                <path d="M31.882134,21.6769926 L31.9357878,21.7548694 L36.4357878,29.7548694 C36.5711697,29.9955483 36.4858096,30.3004059 36.2451306,30.4357878 C36.0311938,30.5561272 35.7665479,30.5020533 35.6152959,30.3195146 L35.5642122,30.2451306 L32,23.908 L32,236.5 C32,236.776142 31.7761424,237 31.5,237 C31.2545401,237 31.0503916,236.823125 31.0080557,236.589876 L31,236.5 L31,23.908 L27.4357878,30.2451306 C27.3154483,30.4590675 27.0612021,30.5502832 26.8371522,30.4728292 L26.7548694,30.4357878 C26.5409325,30.3154483 26.4497168,30.0612021 26.5271708,29.8371522 L26.5642122,29.7548694 L31.0642122,21.7548694 C31.2394349,21.4433624 31.6651608,21.4174034 31.882134,21.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M281.162848,201.527171 L281.245131,201.564212 L289.245131,206.064212 C289.556638,206.239435 289.582597,206.665161 289.323007,206.882134 L289.245131,206.935788 L281.245131,211.435788 C281.004452,211.57117 280.699594,211.48581 280.564212,211.245131 C280.443873,211.031194 280.497947,210.766548 280.680485,210.615296 L280.754869,210.564212 L287.091,207 L0.5,207 C0.223857625,207 -8.3940517e-17,206.776142 0,206.5 C7.46137929e-17,206.25454 0.176875161,206.050392 0.410124368,206.008056 L0.5,206 L287.091,206 L280.754869,202.435788 C280.540933,202.315448 280.449717,202.061202 280.527171,201.837152 L280.564212,201.754869 C280.684552,201.540933 280.938798,201.449717 281.162848,201.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                    <tspan x="10" y="33">y</tspan>
+                </text>
+                <text font-size="14" font-weight="normal" line-spacing="13" fill="#BABABA">
+                    <tspan x="282" y="227">x</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="51" y="11">The parabola opens upward because the </tspan>
+                    <tspan x="51" y="24">coefficient of x² is positive. It touches the x-</tspan>
+                    <tspan x="51" y="37">axis at x = 3, which is a double real root (</tspan>
+                    <tspan x="248.80548" y="36.3005829" font-family="Helvetica">Δ</tspan>
+                    <tspan x="265.006848" y="37"> = 0).</tspan>
+                </text>
+                <line x1="213.5" y1="45.5" x2="213.5" y2="80.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <path d="M17,54 C64,168 99.3333333,207 140,207 C169.706525,207 201.810915,182.295382 239.750581,104.395212" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M249.010684,84.5724123 C252.620252,76.5336059 256.282442,68.0170563 260,59" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                    <tspan x="204" y="100">y = x² - 6x + 9</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="53" y="220">1</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="136" y="220">3</tspan>
+                </text>
+                <text font-size="11" font-weight="normal" fill="#333333">
+                    <tspan x="218" y="220">5</tspan>
+                </text>
+                <line x1="55.5" y1="207.5" x2="55.5" y2="198.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="140" y1="207.5" x2="140" y2="198.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <line x1="221.5" y1="206.5" x2="221.5" y2="197.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <circle fill="#333333" cx="140" cy="207.5" r="2.5"></circle>
+            </g>
+            <line x1="240.5" y1="191.5" x2="240.5" y2="269.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="124" y="287">The shaded regions are where </tspan>
+                <tspan x="124" y="300">the curve satisfies the inequality </tspan>
+                <tspan x="124" y="313">y = x² − 6x + 9 &gt; 0.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
