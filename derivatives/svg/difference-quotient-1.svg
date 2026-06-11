@@ -39,11 +39,7 @@
             <circle fill="#000000" cx="228.5" cy="185.5" r="3"></circle>
             <circle stroke="#000000" fill="#000000" cx="110" cy="185" r="2.5"></circle>
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
-                <tspan x="85" y="11.6994171">The difference quotient </tspan>
-                <tspan x="198.49048" y="11" font-family="Helvetica">Δ</tspan>
-                <tspan x="214.691848" y="11.6994171">x / </tspan>
-                <tspan x="223.649328" y="11" font-family="Helvetica">Δ</tspan>
-                <tspan x="239.850695" y="11.6994171">y represents </tspan>
+                <tspan x="85" y="11.6994171">The difference quotient Δy/Δx represents </tspan>
                 <tspan x="85" y="24.6994171">the slope of the secant line between two</tspan>
                 <tspan x="85" y="37.6994171">points on the graph of a function.</tspan>
             </text>

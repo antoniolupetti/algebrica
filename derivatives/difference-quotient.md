@@ -55,7 +55,14 @@ This ratio is the average velocity of the object over the interval. Taking the l
 
 For example, suppose an object moves along a straight line according to the law $s(t) = 5t^2$, where $s$ is measured in meters and $t$ in seconds. The average velocity over the interval $[2, 2+h]$ is:
 
-$$\frac{s(2+h) - s(2)}{h} = \frac{5(2+h)^2 - 20}{h} = \frac{20h + 5h^2}{h} = 20 + 5h$$
+$$
+\begin{align}
+\frac{s(2+h)-s(2)}{h}
+&= \frac{5(2+h)^2-20}{h} \\[6pt]
+&= \frac{20h+5h^2}{h} \\[14pt]
+&= 20+5h
+\end{align}
+$$
 
 Over the interval $[2, 3]$, corresponding to $h = 1$, the average velocity is $25$ meters per second, while over $[2, 2.1]$, corresponding to $h = 0.1$, it drops to $20.5$ meters per second. As $h \to 0$, the average velocity approaches $20$ meters per second, which is the instantaneous velocity of the object at $t = 2$.
 
