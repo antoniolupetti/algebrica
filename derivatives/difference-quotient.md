@@ -12,11 +12,11 @@ tags:
 ---
 ## What is the difference quotient
 
-Consider a function $y = f(x)$ defined on the interval $[a, b]$, and two real numbers $c$ and $c + h$ with $h \neq 0$, both lying within the interval $[a, b]$. The difference quotient of $f$ at the point $c$ is defined as the ratio:
+Consider a function $y = f(x)$ defined on the interval $[a, b]$, and two [real numbers](../real-numbers/) $c$ and $c + h$ with $h \neq 0$, both lying within the [interval](../intervals/) $[a, b]$. The difference quotient of $f$ at the point $c$ is defined as the ratio:
 
 $$\frac{\Delta y}{\Delta x} = \frac{f(c+h)-f(c)}{h}$$
 
-The geometric meaning of this ratio emerges by considering the two points on the graph of the function:
+The geometric meaning of this ratio emerges by considering the two points on the graph of the [function](../functions/):
 
 + $A(c, f(c))$
 + $B(c+h, f(c+h))$
