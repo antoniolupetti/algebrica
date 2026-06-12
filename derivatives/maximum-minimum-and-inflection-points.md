@@ -132,11 +132,11 @@ The point $x_0$ is a horizontal inflection point for a function $f(x)$ if $f'(x_
 
 Given a continuous function, to find the local maximum and minimum points, we analyze the sign of the first derivative. The procedure involves the following steps:
 
-1. Compute the derivative $f'(x)$ and determine its domain to identify points where the function is not differentiable, such as cusps and corners, which are discussed in the entry on [points of non-differentiability](../points-of-non-differentiability/).
-2. Study the sign of the derivative by analyzing where $f'(x)$ is positive, negative, or zero.
-3. Identify local maxima and minima. A point $x_0$ is a local maximum point if $f'(x)$ changes from positive to negative around $x_0$, while it is a local minimum point if $f'(x)$ changes from negative to positive around $x_0$.
++ Compute the derivative $f'(x)$ and determine its domain to identify points where the function is not differentiable, such as cusps and corners, which are discussed in the entry on [points of non-differentiability](../points-of-non-differentiability/).
++ Study the sign of the derivative by analyzing where $f'(x)$ is positive, negative, or zero.
++ Identify local maxima and minima. A point $x_0$ is a local maximum point if $f'(x)$ changes from positive to negative around $x_0$, while it is a local minimum point if $f'(x)$ changes from negative to positive around $x_0$.
 
-> The criterion based on the sign change of $f'$ applies to interior points of the domain. If the function is defined on a closed interval, the endpoints must be examined separately, since only one-sided behavior of the derivative is available there.
+The criterion based on the sign change of $f'$ applies to interior points of the domain. If the function is defined on a closed interval, the endpoints must be examined separately, since only one-sided behavior of the derivative is available there.
 
 > When the function admits a second derivative, an alternative criterion based on the sign of $f''$ at the stationary points, known as the second derivative test, is presented in the entry on [higher-order derivatives](../higher-order-derivatives/).
 
