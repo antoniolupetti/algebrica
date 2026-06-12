@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="316px" height="246px" viewBox="0 0 316 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10</title>
+    <g id="NEW---Derivatives" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10">
+            <text id="The-point-x₀-is-an-o" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="126" y="11">The point x₀ is an oblique inflection </tspan>
+                <tspan x="126" y="24">point. The tangent at x₀ is neither </tspan>
+                <tspan x="126" y="37">horizontal nor vertical.</tspan>
+            </text>
+            <line x1="185.5" y1="47.5" x2="185.5" y2="98.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <path id="Line" d="M43.882134,30.6769926 L43.9357878,30.7548694 L48.4357878,38.7548694 C48.5711697,38.9955483 48.4858096,39.3004059 48.2451306,39.4357878 C48.0311938,39.5561272 47.7665479,39.5020533 47.6152959,39.3195146 L47.5642122,39.2451306 L44,32.908 L44,245.5 C44,245.776142 43.7761424,246 43.5,246 C43.2545401,246 43.0503916,245.823125 43.0080557,245.589876 L43,245.5 L43,32.908 L39.4357878,39.2451306 C39.3154483,39.4590675 39.0612021,39.5502832 38.8371522,39.4728292 L38.7548694,39.4357878 C38.5409325,39.3154483 38.4497168,39.0612021 38.5271708,38.8371522 L38.5642122,38.7548694 L43.0642122,30.7548694 C43.2394349,30.4433624 43.6651608,30.4174034 43.882134,30.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="24" y="39">y</tspan>
+            </text>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="300" y="227">x</tspan>
+            </text>
+            <path id="Line-2" d="M296.162848,202.527171 L296.245131,202.564212 L304.245131,207.064212 C304.556638,207.239435 304.582597,207.665161 304.323007,207.882134 L304.245131,207.935788 L296.245131,212.435788 C296.004452,212.57117 295.699594,212.48581 295.564212,212.245131 C295.443873,212.031194 295.497947,211.766548 295.680485,211.615296 L295.754869,211.564212 L302.091,208 L0.5,208 C0.223857625,208 0,207.776142 0,207.5 C0,207.25454 0.176875161,207.050392 0.410124368,207.008056 L0.5,207 L302.091,207 L295.754869,203.435788 C295.540933,203.315448 295.449717,203.061202 295.527171,202.837152 L295.564212,202.754869 C295.684552,202.540933 295.938798,202.449717 296.162848,202.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M57,55 C84.3333333,110.333333 113,138 143,138 C188,138 174,105 219,105 C240.863823,105 258.478519,116.508051 271.844089,139.524154" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M280.472041,158.284486 C281.416795,160.632289 282.926115,164.53746 285,170" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text id="y=fx)" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="270.5" y="152.312925">y=fx)</tspan>
+            </text>
+            <line x1="107.5" y1="189.5" x2="125.775685" y2="172.621182" id="Path" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="248.008649" y1="59.8072983" x2="268.5" y2="40.1" id="Path" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="124.5" y1="173.5" x2="248.5" y2="59.5" id="Line-7" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="186.5" y1="207.5" x2="186.5" y2="116.5" id="Line-5" stroke="#000000" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text id="x₀" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="181" y="222">x₀</tspan>
+            </text>
+            <circle id="Oval" fill="#000000" cx="186.5" cy="115.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

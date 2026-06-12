@@ -13,7 +13,7 @@ tags:
 
 In the entry on [derivatives](../derivatives/), we saw that if a function $f(x)$ is differentiable at a point $c$, then the function is [continuous](../continuous-functions/) at that point. However, there are cases where a function is continuous at $c$ but not differentiable. For a function continuous at $c$, non-differentiability occurs when:
 
-+ The right-hand and left-hand [limits](../limits/) of the [difference quotient](../difference-quotient/) exist and are finite but are not equal, that is, $f_{-}'(c) \neq f_{+}'(c)$.
++ The right-hand and left-hand [limits](../limits/) of the [difference quotient](../difference-quotient/) exist and are finite but are not equal, that is, $f_{-}'(c) \neq f_{+}'(c).$
 + At least one of the two one-sided limits of the difference quotient is infinite.
 + At least one of the two one-sided limits of the difference quotient does not exist, neither as a finite value nor as an infinite one.
 

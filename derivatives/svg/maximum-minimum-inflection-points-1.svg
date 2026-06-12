@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="250px" viewBox="0 0 306 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="89" y="230">x₀</tspan>
+            </text>
+            <line x1="93.5" y1="103.5" x2="93.5" y2="210.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M40.5,62.9801356 L40.9357878,63.7548694 L45.4357878,71.7548694 L45.6809184,72.1906571 L44.8093429,72.6809184 L44.5642122,72.2451306 L40.999,65.906 L41,250 L40,250 L39.999,65.91 L36.4357878,72.2451306 L36.1906571,72.6809184 L35.3190816,72.1906571 L35.5642122,71.7548694 L40.0642122,63.7548694 L40.5,62.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="21" y="71">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.395" y="232">x</tspan>
+            </text>
+            <path d="M294.809343,206.319082 L295.245131,206.564212 L303.245131,211.064212 L304.019864,211.5 L303.245131,211.935788 L295.245131,216.435788 L294.809343,216.680918 L294.319082,215.809343 L294.754869,215.564212 L301.093,211.999 L295,212 L3.85379111e-16,212 L-0.5,212 L-0.5,211 L-3.85379111e-16,211 L295,211 L301.089,210.999 L294.754869,207.435788 L294.319082,207.190657 L294.809343,206.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="93.5" cy="211.5" r="2.5"></circle>
+            <circle fill="#333333" cx="93.5" cy="103.5" r="2.5"></circle>
+            <path d="M6,249 C30.6666667,157 58,108.666667 88,104 C116.938847,99.4984016 132.230248,140.901845 177.224666,172.891951" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M202.135108,187.718268 C223.96334,198.391291 251.395134,206.244831 287,208" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <line x1="75.5" y1="45" x2="75.5" y2="74.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="52" y="11">M is an absolute maximum point because </tspan>
+                <tspan x="52" y="24">the function cannot take any value </tspan>
+                <tspan x="52" y="37">greater than M on its entire domain.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="167.5" y="185">y=f(x)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="69.5" y="94">M = f(x₀)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

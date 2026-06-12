@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="260px" viewBox="0 0 313 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="19" y="54">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="297" y="242">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="114" y="11">Point where the concavity of the </tspan>
+                <tspan x="114" y="24">curve changes from concave down </tspan>
+                <tspan x="114" y="37">to concave up.</tspan>
+            </text>
+            <line x1="164.5" y1="50.5" x2="164.5" y2="114.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43.5,43.9801356 L43.9357878,44.7548694 L48.4357878,52.7548694 L48.6809184,53.1906571 L47.8093429,53.6809184 L47.5642122,53.2451306 L44,46.908 L44,260 L43,260 L43,46.908 L39.4357878,53.2451306 L39.1906571,53.6809184 L38.3190816,53.1906571 L38.5642122,52.7548694 L43.0642122,44.7548694 L43.5,43.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.809343,216.319082 L296.245131,216.564212 L304.245131,221.064212 L305.019864,221.5 L304.245131,221.935788 L296.245131,226.435788 L295.809343,226.680918 L295.319082,225.809343 L295.754869,225.564212 L302.091,222 L0,222 L0,221 L302.091,221 L295.754869,217.435788 L295.319082,217.190657 L295.809343,216.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="165.5" y1="221.5" x2="165.5" y2="130.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M92,202 C92,196.221328 93.0158783,190.632287 95.0476348,185.232877" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M105.94406,167.520951 C118.207288,153.504067 138.559267,140.997083 167,130" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M167,130 C217,110.666667 242,85.6666667 242,55" stroke="#333333" stroke-linecap="round"></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="159" y="238">x₀</tspan>
+            </text>
+            <circle fill="#333333" cx="165.5" cy="130.5" r="2.5"></circle>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="95.5" y="178.312925">y=f(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

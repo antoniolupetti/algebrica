@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="311px" height="268px" viewBox="0 0 311 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="72" y="253">In the neighborhood of x₀, f(x) always </tspan>
+                <tspan x="72" y="266">takes values less than those of f(t).</tspan>
+            </text>
+            <line x1="142.5" y1="205.5" x2="142.5" y2="237.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43.882134,3.67699263 L43.9357878,3.75486938 L48.4357878,11.7548694 C48.5711697,11.9955483 48.4858096,12.3004059 48.2451306,12.4357878 C48.0311938,12.5561272 47.7665479,12.5020533 47.6152959,12.3195146 L47.5642122,12.2451306 L44,5.908 L44,218.5 C44,218.776142 43.7761424,219 43.5,219 C43.2545401,219 43.0503916,218.823125 43.0080557,218.589876 L43,218.5 L43,5.908 L39.4357878,12.2451306 C39.3154483,12.4590675 39.0612021,12.5502832 38.8371522,12.4728292 L38.7548694,12.4357878 C38.5409325,12.3154483 38.4497168,12.0612021 38.5271708,11.8371522 L38.5642122,11.7548694 L43.0642122,3.75486938 C43.2394349,3.44336236 43.6651608,3.41740344 43.882134,3.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M296.162848,175.527171 L296.245131,175.564212 L304.245131,180.064212 C304.556638,180.239435 304.582597,180.665161 304.323007,180.882134 L304.245131,180.935788 L296.245131,185.435788 C296.004452,185.57117 295.699594,185.48581 295.564212,185.245131 C295.443873,185.031194 295.497947,184.766548 295.680485,184.615296 L295.754869,184.564212 L302.091,181 L0.5,181 C0.223857625,181 0,180.776142 0,180.5 C0,180.25454 0.176875161,180.050392 0.410124368,180.008056 L0.5,180 L302.091,180 L295.754869,176.435788 C295.540933,176.315448 295.449717,176.061202 295.527171,175.837152 L295.564212,175.754869 C295.684552,175.540933 295.938798,175.449717 296.162848,175.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="17" y="13">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295" y="201">x</tspan>
+            </text>
+            <path d="M244.946095,144.427829 C248.275051,132.468537 250.959686,123.903758 253,118.733494" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(248.973048, 131.580661) scale(-1, 1) translate(-248.973048, -131.580661) "></path>
+            <path d="M65,96.9139446 C81.5612176,70.9073161 105.067835,59.8579139 135.519851,63.7657381 C180.519851,69.5404653 213.353184,117.761162 234.019851,208.427829" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(149.509926, 135.713914) scale(-1, 1) translate(-149.509926, -135.713914) "></path>
+            <line x1="54.5" y1="111.5" x2="224.315595" y2="28.6835275" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="228.5" y="29">y=t(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="216.5" y="112">y=fx)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="21" y="95">f(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="21" y="121">f(t)</tspan>
+            </text>
+            <line x1="95.5" y1="91.5" x2="43.5" y2="91.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="142.5" cy="69.5" r="2.5"></circle>
+            <line x1="94.5" y1="118.5" x2="43.5" y2="118.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="142.5" y1="180.5" x2="142.5" y2="69.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="137" y="196">x₀</tspan>
+            </text>
+            <circle fill="#333333" cx="95.5" cy="118.5" r="2.5"></circle>
+            <circle fill="#333333" cx="96.5" cy="91.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

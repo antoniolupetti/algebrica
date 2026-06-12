@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="294px" viewBox="0 0 306 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="90" y="122">x₀</tspan>
+            </text>
+            <line x1="93.5" y1="132.5" x2="93.5" y2="168.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M40.5,3.98013557 L40.9357878,4.75486938 L45.4357878,12.7548694 L45.6809184,13.1906571 L44.8093429,13.6809184 L44.5642122,13.2451306 L40.999,6.906 L41,207 L40,207 L39.999,6.91 L36.4357878,13.2451306 L36.1906571,13.6809184 L35.3190816,13.1906571 L35.5642122,12.7548694 L40.0642122,4.75486938 L40.5,3.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,127.319082 L295.245131,127.564212 L303.245131,132.064212 L304.019864,132.5 L303.245131,132.935788 L295.245131,137.435788 L294.809343,137.680918 L294.319082,136.809343 L294.754869,136.564212 L301.093,132.999 L295,133 L3.85379111e-16,133 L-0.5,133 L-0.5,132 L-3.85379111e-16,132 L295,132 L301.089,131.999 L294.754869,128.435788 L294.319082,128.190657 L294.809343,127.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="93.5" cy="132.5" r="2.5"></circle>
+            <circle fill="#333333" cx="93.5" cy="169.5" r="2.5"></circle>
+            <path d="M6,170 C30.6666667,78 58,29.6666667 88,25 C117.70425,20.3793388 133.029586,64.1241178 180.857977,96.4094917" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(93.428989, 97.331045) scale(1, -1) translate(-93.428989, -97.331045) "></path>
+            <path d="M209.591363,65.6620908 C230.134939,74.5632872 255.335363,80.947518 287,82.5084508" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(248.295681, 74.085271) scale(1, -1) translate(-248.295681, -74.085271) "></path>
+            <line x1="77.5" y1="234.5" x2="77.5" y2="201.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="31" y="253">m is an absolute minimum point </tspan>
+                <tspan x="31" y="266">because the function cannot take any </tspan>
+                <tspan x="31" y="279">value less than m on its entire domain.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="174.5" y="93">y=f(x)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="71.5" y="192">m = f(x₀)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="21" y="13">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.395" y="153">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

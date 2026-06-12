@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="207px" viewBox="0 0 306 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <polygon fill="#E6E6E6" points="43 98 57.6363636 91 66 93 75 98 86 112 86 169 34 169 34 110"></polygon>
+            <line x1="59.5" y1="90.5" x2="59.5" y2="167.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="57" y="185">x₀</tspan>
+            </text>
+            <path d="M23.5,36.9801356 L23.9357878,37.7548694 L28.4357878,45.7548694 L28.6809184,46.1906571 L27.8093429,46.6809184 L27.5642122,46.2451306 L23.999,39.906 L24,207 L23,207 L22.999,39.91 L19.4357878,46.2451306 L19.1906571,46.6809184 L18.3190816,46.1906571 L18.5642122,45.7548694 L23.0642122,37.7548694 L23.5,36.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,163.319082 L295.245131,163.564212 L303.245131,168.064212 L304.019864,168.5 L303.245131,168.935788 L295.245131,173.435788 L294.809343,173.680918 L294.319082,172.809343 L294.754869,172.564212 L301.091,169 L-0.5,169 L-0.5,168 L301.091,168 L294.754869,164.435788 L294.319082,164.190657 L294.809343,163.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M6,191 C22.2392567,124.333333 39.7560976,91 58.5505226,91 C86.7421603,91 93.0470383,152 129.015679,151 C164.984321,150 170,67 199.480836,67 C216.869089,67 225.253616,100.3967 240.37657,127.794319" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M256.224924,149.762127 C264.365555,157.774645 274.299154,163 287,163" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <circle fill="#333333" cx="59.5" cy="168.5" r="2.5"></circle>
+            <circle fill="#333333" cx="59.5" cy="90.5" r="2.5"></circle>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="222.5" y="143">y=f(x)</tspan>
+            </text>
+            <line x1="60.5" y1="33.5" x2="60.5" y2="65.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="31" y="12">L is an local maximum point in the </tspan>
+                <tspan x="31" y="25">neighborhood of the interval I.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="49.5" y="81">L=f(x₀)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="6" y="45">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296.395" y="185">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

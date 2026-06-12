@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="267px" viewBox="0 0 312 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="55" y="11">In the neighborhood of x₀, f(x) </tspan>
+                <tspan x="55" y="24">always takes values greater </tspan>
+                <tspan x="55" y="37">than those of f(t).</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="18" y="60">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296" y="248">x</tspan>
+            </text>
+            <line x1="84.5" y1="47.5" x2="84.5" y2="95.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43.5,50.9801356 L43.9357878,51.7548694 L48.4357878,59.7548694 L48.6809184,60.1906571 L47.8093429,60.6809184 L47.5642122,60.2451306 L44,53.908 L44,267 L43,267 L43,53.908 L39.4357878,60.2451306 L39.1906571,60.6809184 L38.3190816,60.1906571 L38.5642122,59.7548694 L43.0642122,51.7548694 L43.5,50.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.809343,223.319082 L296.245131,223.564212 L304.245131,228.064212 L305.019864,228.5 L304.245131,228.935788 L296.245131,233.435788 L295.809343,233.680918 L295.319082,232.809343 L295.754869,232.564212 L302.091,229 L0,229 L0,228 L302.091,228 L295.754869,224.435788 L295.319082,224.190657 L295.809343,223.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M65,105.425104 C66.9944731,97.9196984 68.561847,92.4446637 69.7021218,89" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(67.351061, 97.212552) scale(1, -1) translate(-67.351061, -97.212552) "></path>
+            <path d="M76.6726014,72.3135505 C93.3098615,36.7584379 119.252328,21.2425004 154.5,25.7657381 C199.5,31.5404653 232.333333,79.7611622 253,170.427829" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(164.836301, 97.713914) scale(1, -1) translate(-164.836301, -97.713914) "></path>
+            <line x1="82.5" y1="210.5" x2="230.425984" y2="138.358757" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle fill="#333333" cx="110.5" cy="196.5" r="2.5"></circle>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="238.5" y="136">y=t(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="62.5" y="118">y=fx)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="17" y="166">f(x)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="17" y="200">f(t)</tspan>
+            </text>
+            <circle fill="#333333" cx="109.5" cy="162.5" r="2.5"></circle>
+            <circle fill="#333333" cx="174.5" cy="164.5" r="2.5"></circle>
+            <line x1="106.5" y1="162.5" x2="45.5" y2="162.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="106.5" y1="196.5" x2="45.5" y2="196.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="174.5" y1="228.5" x2="174.5" y2="164.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="170" y="243">x₀</tspan>
+            </text>
+    </g>
+</svg>
