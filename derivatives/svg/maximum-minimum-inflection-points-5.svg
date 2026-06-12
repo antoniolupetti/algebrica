@@ -26,10 +26,10 @@
                 <tspan x="62.5" y="118">y=fx)</tspan>
             </text>
             <text font-size="13" font-weight="normal" fill="#333333">
-                <tspan x="17" y="166">f(x)</tspan>
+                <tspan x="17" y="166">f(t)</tspan>
             </text>
             <text font-size="13" font-weight="normal" fill="#333333">
-                <tspan x="17" y="200">f(t)</tspan>
+                <tspan x="17" y="200">f(x)</tspan>
             </text>
             <circle fill="#333333" cx="109.5" cy="162.5" r="2.5"></circle>
             <circle fill="#333333" cx="174.5" cy="164.5" r="2.5"></circle>

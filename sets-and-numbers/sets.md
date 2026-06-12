@@ -23,7 +23,7 @@ A set is a collection of objects called elements that are considered as a whole.
 A set can be described by enumeration or by set-builder notation. Enumeration consists in explicitly listing each element of the set, and is practical when the cardinality of the set is finite and small:
 
 $$
-A = \\{a_1, a_2, a_3, a_4\\}
+A = \{a_1, a_2, a_3, a_4\}
 $$
 
 When the elements are numerous or infinite, set-builder notation becomes preferable. In this case the set is described by the property that each element must satisfy in order to belong to it:
@@ -35,7 +35,7 @@ $$
 The previous notation defines $A$ as the set of all [integers](../integers/) $x$ such that $x > 4$ and $x \leq 8$, that is, the following set:
 
 $$
-A = \\{5, 6, 7, 8\\}
+A = \{5, 6, 7, 8\}
 $$
 
 The empty set contains no elements, is denoted by $\emptyset$ or $\\{\\}$, and plays a role in set theory analogous to that of zero in arithmetic.
@@ -105,7 +105,7 @@ If $A \subseteq B$ and $A \neq B$, then $A$ is a proper subset of $B$, denoted $
 The power set of a set $A$ is the set of all subsets of $A$, denoted $\mathcal{P}(A)$. It includes the empty set $\emptyset$ and the set $A$ itself. If $A$ has $n$ elements, then $\mathcal{P}(A)$ has $2^n$ elements. For example, if $A = \\{a, b, c\\}$, then the power set contains $2^3 = 8$ elements:
 
 $$
-\mathcal{P}(A) = \\{\emptyset, \ \\{a\\}, \ \\{b\\}, \ \\{c\\}, \ \\{a,b\\}, \ \\{a,c\\}, \ \\{b,c\\}, \ \\{a,b,c\\}\\}
+\mathcal{P}(A) = \{\emptyset, \ \{a\}, \ \{b\}, \ \{c\}, \ \{a,b\}, \ \{a,c\}, \ \{b,c\}, \ \{a,b,c\}\}
 $$
 
 
@@ -115,8 +115,8 @@ A partition of a set $A$ is a family of non-empty subsets $\\{A_i\\}_{i \in I}$ 
 
 $$
 \begin{align}
-&A_i \neq \emptyset \quad \forall \ i \in I \\[6pt]
-&A_i \cap A_j = \emptyset \quad \forall \ i \neq j \\[6pt]
+&A_i \neq \emptyset \quad \forall \ i \in I \\[10pt]
+&A_i \cap A_j = \emptyset \quad \forall \ i \neq j \\[8pt]
 & \bigcup_{i \in I} A_i = A
 \end{align}
 $$

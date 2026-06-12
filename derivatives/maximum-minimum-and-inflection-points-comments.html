@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader Comments — Maximum, Minimum, and Inflection Points</title>
+<script>
+window.MathJax = { tex: { inlineMath: [['$', '$']] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Georgia, 'Times New Roman', serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem; color: #222; line-height: 1.65; background: #fdfdfc; }
+h1 { font-size: 1.5rem; font-weight: normal; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; }
+p.page-ref { font-size: 0.9rem; color: #666; }
+p.page-ref a { color: #2a5d8f; }
+.comment { border: 1px solid #e3e0da; border-radius: 6px; padding: 1rem 1.25rem; margin: 1.5rem 0; background: #fff; }
+.comment .section-ref { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; color: #8a6d3b; margin-bottom: 0.5rem; }
+.comment p { margin: 0.4rem 0; }
+</style>
+</head>
+<body>
+<h1>Reader comments</h1>
+<p class="page-ref">On the page <a href="https://algebrica.org/maximum-minimum-and-inflection-points/">Maximum, Minimum, and Inflection Points</a></p>
+
+<div class="comment">
+<div class="section-ref">Re: Global maximum and minimum points</div>
+<p>Worth keeping in mind that Weierstrass's theorem gives sufficient conditions, not necessary ones. The function $f(x) = \sin x$ on the open interval $(0, 2\pi)$ attains both a global maximum and a global minimum even though the interval is not closed. Conversely, continuity cannot be dropped: take $f(x) = x$ on $[0, 1)$ extended with $f(1) = 0$. The function is bounded on $[0,1]$ and its supremum is $1$, yet no point of the domain achieves it. The theorem identifies a setting where existence is guaranteed, while outside it each case has to be examined directly.</p>
+</div>
+
+<div class="comment">
+<div class="section-ref">Re: Local maximum and minimum points (first derivative criterion)</div>
+<p>The sign-change criterion is sufficient but not necessary, and the gap is real even for differentiable functions. The standard example is $f(x) = x^2(2 + \sin(1/x))$ for $x \neq 0$, with $f(0) = 0$. Since $x^2 \leq f(x) \leq 3x^2$, the origin is a strict local minimum, but $f'$ changes sign infinitely many times in every neighbourhood of $0$, so the derivative has no constant sign on either side. The criterion covers the cases met in practice, but a stationary point can be an extremum without any clean sign pattern around it.</p>
+</div>
+
+<div class="comment">
+<div class="section-ref">Re: Fermat's theorem and stationary points</div>
+<p>It may help to state explicitly that Fermat's theorem is not invertible: $f'(x_0) = 0$ does not imply an extremum. The simplest case is $f(x) = x^3$ at the origin, where the derivative vanishes but the function is strictly increasing on all of $\mathbb{R}$. This is exactly the horizontal inflection described later in the page, with $f'(x) = 3x^2 > 0$ on both sides of $0$, matching the sign chart given there. Stationary points should be treated as candidates, to be classified by the behaviour of $f'$ around them.</p>
+</div>
+
+<div class="comment">
+<div class="section-ref">Re: Inflection points and change in concavity</div>
+<p>When searching for inflection points it is not enough to solve $f''(x) = 0$; the points where $f''$ fails to exist must be examined as well. Consider $f(x) = x\lvert x \rvert$, equal to $x^2$ for $x \geq 0$ and to $-x^2$ for $x < 0$. Here $f'(x) = 2\lvert x \rvert$ is continuous and $f'(0) = 0$, but $f''$ jumps from $-2$ to $2$ at the origin and is undefined there. The concavity changes from downward to upward, so the origin is an inflection point (horizontal, since the tangent is the $x$-axis) that the equation $f''(x) = 0$ would never produce. The complete list of candidates consists of the zeros of $f''$ together with the points where $f''$ does not exist.</p>
+</div>
+
+<div class="comment">
+<div class="section-ref">Re: Identifying inflection points</div>
+<p>A caveat on the condition $f''(x_0) = 0$: it is necessary when $f''$ exists, but never sufficient on its own. For $f(x) = x^4$ we have $f''(0) = 0$, yet the origin is a global minimum and the concavity never changes. When the sign analysis of $f''$ is awkward, the higher-order derivative test settles the matter: if the first non-vanishing derivative at $x_0$ has even order, the point is an extremum (minimum if positive, maximum if negative); if it has odd order at least $3$, the point is an inflection. For $x^4$ the first non-zero derivative is $f^{(4)}(0) = 24 > 0$, confirming the minimum; for $x^3$ it is $f'''(0) = 6$, of odd order, confirming the inflection.</p>
+</div>
+
+</body>
+</html>

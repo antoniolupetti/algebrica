@@ -11,7 +11,7 @@ tags:
 ---
 ## Global maximum and minimum points
 
-The maximum and minimum of a function $f(x)$ represent, respectively, the highest and lowest values that the function can attain within its [domain](../determining-the-domain-of-a-function/). In other words, they indicate the extreme points of the function, showing where $f(x)$ reaches its greatest possible value or its smallest possible value for all permissible values of $x$ in the given domain.
+The maximum and minimum of a function $f(x)$ represent, respectively, the highest and lowest values that the function can attain within its [domain](../determining-the-domain-of-a-function/). In other words, they indicate the extreme points of the [function](../functions/), showing where $f(x)$ reaches its greatest possible value or its smallest possible value for all permissible values of $x$ in the given domain.
 
 Given a function $y = f(x)$ with domain $D$, a point $x_0 \in D$ is a global maximum point if $f(x_0) \geq f(x)$ for every $x \in D$. The value $f(x_0) = M$ is the global maximum of the function.
 
@@ -191,7 +191,7 @@ If at $x_0$ we have $f''(x_0) \neq 0$, then:
 + The function is concave upward if $f''(x_0) > 0$.
 + The function is concave downward if $f''(x_0) < 0$.
 
-## Example 2
+- - -
 
 Let us consider the function from Example 1 and determine its [convexity and concavity](../convexity-and-concavity-of-functions/):
 
@@ -209,18 +209,20 @@ The sign chart provides the intervals in which the function is concave upward or
 
 [class="table-sign"]
 
-|             |               | $\dfrac{1}{6}$ |
-| :---------: | :-----------: | :-----------: |
-| $f''(x)$    | $-$           | $+$           |
-| $f(x)$      | $\bigcap$     | $\bigcup$     |
-| Concavity   | Downward      | Upward        |
+|           |           |   $1/6$   |
+| :-------: | :-------: | :-------: |
+| $f''(x)$  |    $-$    |    $+$    |
+|  $f(x)$   | $\bigcap$ | $\bigcup$ |
+| Concavity | Downward  |  Upward   |
 [/class]
 
-The function is therefore concave downward for $x < \dfrac{1}{6}$ and concave upward for $x > \dfrac{1}{6}$. Since the second derivative changes sign at $x = \dfrac{1}{6}$, the function has an inflection point there. The corresponding ordinate is:
+- - - 
+
+The function is therefore concave downward for $x < 1/6$ and concave upward for $x > 1/6$. Since the second derivative changes sign at $x = 1/6$, the function has an inflection point there. The corresponding ordinate is:
 
 $$f\left( \dfrac{1}{6} \right) = \dfrac{1}{216} - \dfrac{1}{2} \cdot \dfrac{1}{36} = \dfrac{1}{216} - \dfrac{3}{216} = -\dfrac{1}{108}$$
 
-Since $f'\left( \frac{1}{6} \right) = \dfrac{3}{36} - \dfrac{1}{6} = -\dfrac{1}{12} \neq 0$, the tangent line at the inflection point is neither horizontal nor vertical, and the point $\left( \dfrac{1}{6}, -\dfrac{1}{108} \right)$ is an oblique inflection point.
+Since $f'\left( \dfrac{1}{6} \right) = \dfrac{3}{36} - \dfrac{1}{6} = -\dfrac{1}{12} \neq 0$, the tangent line at the inflection point is neither horizontal nor vertical, and the point $\left( \dfrac{1}{6}, -\dfrac{1}{108} \right)$ is an oblique inflection point.
 
 ## Identifying inflection points
 
