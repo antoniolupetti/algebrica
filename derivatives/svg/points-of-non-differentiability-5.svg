@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="258px" viewBox="0 0 306 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="84" y="218">The function has a corner point at (2,0).
+</tspan>
+                <tspan x="84" y="231">The one-sided derivatives exist but are different:
+</tspan>
+                <tspan x="84" y="244">f′₋(2) = −1, f′₊(2) = 1.</tspan>
+            </text>
+            <line x1="194.5" y1="119.5" x2="194.5" y2="202.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="167">x</tspan>
+            </text>
+            <path d="M60.5,6.98013557 L60.9357878,7.75486938 L65.4357878,15.7548694 L65.6809184,16.1906571 L64.8093429,16.6809184 L64.5642122,16.2451306 L61,9.908 L61,181 L60,181 L60,9.908 L56.4357878,16.2451306 L56.1906571,16.6809184 L55.3190816,16.1906571 L55.5642122,15.7548694 L60.0642122,7.75486938 L60.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,142.319082 L295.245131,142.564212 L303.245131,147.064212 L304.019864,147.5 L303.245131,147.935788 L295.245131,152.435788 L294.809343,152.680918 L294.319082,151.809343 L294.754869,151.564212 L301.091,148 L-0.5,148 L-0.5,147 L301.091,147 L294.754869,143.435788 L294.319082,143.190657 L294.809343,142.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="17" y1="22" x2="144" y2="148" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <path d="M145,22 L166.912736,43.7401944 M189.847533,66.494403 L272,148" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(208.500000, 85.000000) scale(-1, 1) translate(-208.500000, -85.000000) "></path>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="217.5" y="60">y=|x-2|</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="132.5" y="167">x=2</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="40.5" y="15">y</tspan>
+            </text>
+            <circle fill="#333333" cx="144.5" cy="147.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

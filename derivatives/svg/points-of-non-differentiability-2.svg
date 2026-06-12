@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="287px" viewBox="0 0 312 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M62.5,181 C61.1666667,144.333333 70.1666667,113.666667 89.5,89 C108.833333,64.3333333 146.833333,42.3333333 203.5,23" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="71" y1="250.5" x2="71" y2="205.187075" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43,3.66721069 L43.4357878,4.4419445 L47.9357878,12.4419445 L48.1809184,12.8777323 L47.3093429,13.3679935 L47.0642122,12.9322057 L43.5,6.595 L43.5,219.687075 L42.5,219.687075 L42.5,6.595 L38.9357878,12.9322057 L38.6906571,13.3679935 L37.8190816,12.8777323 L38.0642122,12.4419445 L42.5642122,4.4419445 L43,3.66721069 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="21.5" y="13">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="201">x</tspan>
+            </text>
+            <path d="M295.309343,176.319082 L295.745131,176.564212 L303.745131,181.064212 L304.519864,181.5 L303.745131,181.935788 L295.745131,186.435788 L295.309343,186.680918 L294.819082,185.809343 L295.254869,185.564212 L301.591,182 L-0.5,182 L-0.5,181 L301.591,181 L295.254869,177.435788 L294.819082,177.190657 L295.309343,176.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M62,219.5 L62,177 M62,26 L62,5.18707512" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="62" y1="181.5" x2="62" y2="27.1870751" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle fill="#BABABA" cx="62" cy="181.187075" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="67" y="196">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="29.5" y="267.687075">Inflection point at (1,0) with a vertical tangent.</tspan>
+                <tspan x="29.5" y="280.687075">As x → 1, both one-sided derivatives tend to +∞.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="211" y="25">y=f(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

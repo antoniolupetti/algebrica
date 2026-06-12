@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="322px" viewBox="0 0 312 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.687075)">
+            <line x1="175" y1="106.812925" x2="175" y2="47.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43,104.980136 L43.4357878,105.754869 L47.9357878,113.754869 L48.1809184,114.190657 L47.3093429,114.680918 L47.0642122,114.245131 L43.5,107.908 L43.5,321 L42.5,321 L42.5,107.908 L38.9357878,114.245131 L38.6906571,114.680918 L37.8190816,114.190657 L38.0642122,113.754869 L42.5642122,105.754869 L43,104.980136 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="21.5" y="114.312925">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="302.312925">x</tspan>
+            </text>
+            <path d="M295.309343,277.632006 L295.745131,277.877137 L303.745131,282.377137 L304.519864,282.812925 L303.745131,283.248713 L295.745131,287.748713 L295.309343,287.993843 L294.819082,287.122268 L295.254869,286.877137 L301.593,283.312 L-0.5,283.312925 L-0.5,282.312925 L301.589,282.312 L295.254869,278.748713 L294.819082,278.503582 L295.309343,277.632006 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M72.5,262.812925 C114.427484,253.994331 135.242689,228.456349 134.945613,186.198979 C135.981871,142.608276 154.833333,119.479592 191.5,116.812925" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M135,320.812925 L135,278.312925 M135,127.312925 L135,106.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="135" y1="282.812925" x2="135" y2="128.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle stroke="#333333" fill="#333333" cx="135" cy="185.5" r="2"></circle>
+            <circle fill="#BABABA" cx="135" cy="282.5" r="2.5"></circle>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="139" y="295.312925">c</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="79.5" y="11">Point of inflection with a vertical tangent. </tspan>
+                <tspan x="79.5" y="24">The tangent to the graph of the function </tspan>
+                <tspan x="79.5" y="37">at point c is vertical, parallel to the y-axis.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="200" y="118.312925">y=f(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

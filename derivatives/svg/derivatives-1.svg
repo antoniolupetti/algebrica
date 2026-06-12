@@ -33,11 +33,11 @@
             <text font-size="11" font-weight="normal" fill="#333333">
                 <tspan x="227" y="93">B</tspan>
             </text>
-            <text font-family="Helvetica" font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#333333">
                 <tspan x="220" y="146">Δy</tspan>
             </text>
-            <text font-family="Helvetica" font-size="13" font-weight="normal" fill="#333333">
-                <tspan x="160" y="184">Δx</tspan>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="160" y="187">Δx</tspan>
             </text>
             <circle stroke="#333333" fill="#333333" cx="229" cy="100" r="2.5"></circle>
             <circle fill="#333333" cx="228.5" cy="184.5" r="3"></circle>
@@ -45,7 +45,7 @@
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
                 <tspan x="146" y="11">When the point B approaches the </tspan>
                 <tspan x="146" y="24">point A, the line AB becomes the </tspan>
-                <tspan x="146" y="37">tangent line to the curve at point.</tspan>
+                <tspan x="146" y="37">tangent line to the curve at point A.</tspan>
             </text>
             <line x1="229.5" y1="76.5" x2="229.5" y2="44.5" stroke="#BABABA" stroke-linecap="round"></line>
         </g>

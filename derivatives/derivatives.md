@@ -116,7 +116,7 @@ Computing a derivative directly from the definition is often laborious. For this
 
 > The first two formulas have an immediate geometric justification. The graph of the constant function $f(x) = c$ is a line parallel to the $x$-axis, so its slope is $0$ at every point. The graph of $f(x) = x$ is the bisector of the first and third quadrants, whose slope is $1$ at every point. The power rule $f(x) = x^a$, with derivative $f'(x) = ax^{a-1}$, contains as particular cases both $f(x) = x$, obtained for $a = 1$, and $f(x) = \sqrt{x}$, obtained for $a = \frac{1}{2}$.
 
-## Operations with derivatives
+## Differentiation Rules
 
 The derivative of the product of a constant $c$ and a differentiable function $f(x)$ is equal to the product of the constant and the derivative of the function:
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="297px" viewBox="0 0 312 297" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.687075)">
+            <line x1="96" y1="81.8129249" x2="96" y2="51.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M43,79.9801356 L43.4357878,80.7548694 L47.9357878,88.7548694 L48.1809184,89.1906571 L47.3093429,89.6809184 L47.0642122,89.2451306 L43.5,82.908 L43.5,296 L42.5,296 L42.5,82.908 L38.9357878,89.2451306 L38.6906571,89.6809184 L37.8190816,89.1906571 L38.0642122,88.7548694 L42.5642122,80.7548694 L43,79.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="21.5" y="89.3129249">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="277.312925">x</tspan>
+            </text>
+            <path d="M295.309343,252.632006 L295.745131,252.877137 L303.745131,257.377137 L304.519864,257.812925 L303.745131,258.248713 L295.745131,262.748713 L295.309343,262.993843 L294.819082,262.122268 L295.254869,261.877137 L301.593,258.312 L-0.5,258.312925 L-0.5,257.312925 L301.589,257.312 L295.254869,253.748713 L294.819082,253.503582 L295.309343,252.632006 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="175" y1="257.812925" x2="175" y2="201.812925" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="172" y="274.312925">c</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="80.5" y="11">At the corner point, the values of the </tspan>
+                <tspan x="80.5" y="24">right-hand and left-hand derivatives </tspan>
+                <tspan x="80.5" y="37">exist but are not equal.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="261" y="103.312925">y=f(x)</tspan>
+            </text>
+            <line x1="180.386144" y1="198.39182" x2="181.642696" y2="97.5654837" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(180.987680, 147.588538) rotate(5.000000) translate(-180.987680, -147.588538) "></line>
+            <line x1="187.23483" y1="94.9615529" x2="187.5548" y2="73.2576864" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(187.394815, 84.109620) rotate(5.000000) translate(-187.394815, -84.109620) "></line>
+            <line x1="176.698645" y1="196.724445" x2="82.3094229" y2="184.906035" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(129.528534, 190.767888) rotate(5.000000) translate(-129.528534, -190.767888) "></line>
+            <line x1="83.5240293" y1="180.128076" x2="63.8552574" y2="177.665362" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(73.689643, 178.896719) rotate(5.000000) translate(-73.689643, -178.896719) "></line>
+            <path d="M95.5,93.3129249 C103.5,155.979592 130.166667,191.312925 175.5,199.312925 C175.5,155.312925 201.833333,119.979592 254.5,93.3129249" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <circle stroke="#333333" fill="#333333" cx="175" cy="199.5" r="2"></circle>
+            <circle fill="#BABABA" cx="175" cy="257.812925" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
