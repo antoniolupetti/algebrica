@@ -34,7 +34,7 @@ Several consequences follow from the previous axioms. If $a \cdot b = a \cdot c$
 
 $$(a \cdot b)^{-1} = b^{-1} \cdot a^{-1}$$
 
-This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. The order of a group $G$, denoted $|G|$, is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
+This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. Applying inversion twice returns the original element, since $a$ satisfies the defining relation for the inverse of $a^{-1}$, which gives $(a^{-1})^{-1} = a$. The order of a group $G$, denoted $|G|$, is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
 
 ## Algebraic hierarchy
 
@@ -48,9 +48,23 @@ Imposing the further condition that every nonzero element be invertible under mu
 
 > As an example, the integers $\mathbb{Z}$ form a ring but not a field. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ form a field. Both extend the group structure by adding a second operation. The construction continues into the world of linear algebra: when scalars are drawn from a field, one obtains a [vector space](../vector-spaces/), and when they are drawn from a ring instead, the resulting structure is a [module](../modules/).
 
+## Powers of an element
+
+Once a group operation is fixed, repeated application of it to a single element produces the powers of that element. For an element $a \in G$ and a positive integer $n$, the $n$-th power is defined recursively by setting $a^1 = a$ and $a^n = a^{n-1} \cdot a$. The definition extends to the remaining integers by taking the zeroth power to be the identity and the negative powers to be powers of the inverse:
+
+$$a^0 = e \qquad a^{-n} = (a^{-1})^n$$
+
+With this convention the symbol $a^n$ is meaningful for every integer exponent. The powers of a fixed element obey the same formal rules as the exponents of real numbers, so that for all integers $m$ and $n$:
+
+$$a^m \cdot a^n = a^{m+n} \qquad (a^m)^n = a^{mn}$$
+
+These identities follow by induction on the exponents, starting from the recursive definition. When the group operation is written additively, the multiplicative power $a^n$ is replaced by the multiple $na$, and the two laws above read $ma + na = (m + n)a$ and $n(ma) = (mn)a$.
+
+> The mixed rule $(a \cdot b)^n = a^n \cdot b^n$ holds only when $a$ and $b$ commute. In a non-abelian group the two factors cannot be interchanged, so this identity generally fails.
+
 ## Order of an element
 
-The order of an element $a$ in a group $G$ is the smallest positive integer $n$ such that $a^n = e$, where $e$ is the identity element and the notation $a^n$ denotes the product of $a$ with itself $n$ times. When no such integer exists, the element is said to have infinite order. The order of $a$ is denoted $\operatorname{ord}(a)$.
+The order of an element $a$ in a group $G$ is the smallest positive integer $n$ such that $a^n = e$, where $e$ is the identity element and the notation $a^n$ denotes the product of $a$ with itself $n$ times. When no such integer exists, the element is said to have infinite order. The order of $a$ is denoted $\mathrm{ord}(a)$.
 
 As an example, consider the group $(\mathbb{Z}/6\mathbb{Z}, +)$. The element $2$ has order $3$, since $2 + 2 + 2 = 6 \equiv 0 \pmod{6}$ and neither $2$ nor $2 + 2 = 4$ is congruent to $0$. The element $1$ has order $6$, since $1$ must be added to itself six times to obtain $0$. In the group $(\mathbb{Z}, +)$ every nonzero element has infinite order, because no finite sum of a fixed nonzero integer can equal $0$.
 
@@ -64,7 +78,7 @@ Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldo
 
 - - -
 
-Let $F$ be a [field](../fields/) and let $n$ be a positive integer. The set of all [invertible](../inverse-matrix/) $n \times n$ matrices with entries in $F$, denoted $\operatorname{GL}(n, F)$, forms a group under matrix multiplication. The identity element is the identity matrix $I_n$, and the inverse of a matrix $A$ is its matrix inverse $A^{-1}$. This group is not abelian for $n \geq 2$, since matrix multiplication does not commute in general.
+Let $F$ be a [field](../fields/) and let $n$ be a positive integer. The set of all [invertible](../inverse-matrix/) $n \times n$ matrices with entries in $F$, denoted $\mathrm{GL}(n, F)$, forms a group under matrix multiplication. The identity element is the identity matrix $I_n$, and the inverse of a matrix $A$ is its matrix inverse $A^{-1}$. This group is not abelian for $n \geq 2$, since matrix multiplication does not commute in general.
 
 Given a set $\\{\ 1, 2, \ldots, n \ \\}$, a permutation is a bijection from this set to itself. The collection of all such permutations forms a group under [composition of functions](../composite-functions/), denoted $S_n$ and called the symmetric group on $n$ elements. The identity element is the identity permutation, and the inverse of a permutation $\sigma$ is the inverse function $\sigma^{-1}$. The group $S_n$ has order equal to the [factorial](../factorial/) $n!$ and is non-abelian for $n \geq 3$.
 
@@ -108,11 +122,15 @@ The group $(\mathbb{Z}/6\mathbb{Z}, +)$ is cyclic with generator $1$, since ever
 
 ## Subgroups
 
-A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G$. Rather than verifying all four group axioms separately, the following criterion is usually more convenient: a nonempty subset $H \subseteq G$ is a subgroup of $G$ if and only if for all $a, b \in H$ the element $a \cdot b^{-1}$ belongs to $H$. This condition encodes closure under the operation and under taking inverses, and the presence of the identity follows from setting $a = b$. The notation $H \leq G$ indicates that $H$ is a subgroup of $G$.
+A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G$. Rather than verifying all four group axioms separately, the following criterion is usually more convenient. 
+
+A nonempty subset $H \subseteq G$ is a subgroup of $G$ if and only if for all $a, b \in H$ the element $a \cdot b^{-1}$ belongs to $H$. This condition encodes closure under the operation and under taking inverses, and the presence of the identity follows from setting $a = b$. The notation $H \leq G$ indicates that $H$ is a subgroup of $G$.
 
 Every group $G$ has at least two subgroups: the trivial subgroup $\\{\ e \ \\}$ and $G$ itself. Any subgroup other than $G$ is called a proper subgroup.
 
 As an example, consider the set of even integers $2\mathbb{Z} = \\{\ \ldots, -4, -2, 0, 2, 4, \ldots \ \\}$ as a subset of $(\mathbb{Z}, +)$. Taking any two even integers $a = 2m$ and $b = 2k$, the inverse of $b$ in $\mathbb{Z}$ is $-b = -2k$, so $a + (-b) = 2(m - k)$, which is again even. The subgroup criterion is therefore satisfied, and $2\mathbb{Z}$ is a subgroup of $\mathbb{Z}$.
+
+Subgroups are stable under intersection. If $H$ and $K$ are subgroups of $G$, then $H \cap K$ is again a subgroup. The identity belongs to both, so the intersection is nonempty, and whenever $a$ and $b$ lie in $H \cap K$, the element $a \cdot b^{-1}$ lies in $H$ and in $K$ separately, hence in their intersection. The same argument applies to the intersection of any family of subgroups, however large.
 
 ## Group homomorphisms and isomorphisms
 
@@ -126,7 +144,7 @@ $$\ker(\varphi) = \\{\ a \in G : \varphi(a) = e_H \ \\}$$
 
 where $e_H$ denotes the identity of $H$, and the image is defined as:
 
-$$\operatorname{im}(\varphi) = \\{\ \varphi(a) : a \in G \ \\}$$
+$$\mathrm{im}(\varphi) = \\{\ \varphi(a) : a \in G \ \\}$$
 
 The kernel is always a subgroup of $G$, and the image is always a subgroup of $H$. Moreover, a homomorphism is injective if and only if its kernel contains only the identity element of $G$.
 
@@ -146,5 +164,11 @@ $$
 $$
 
 the function $\varphi$ preserves the group operation. Since it is also bijective, it is an isomorphism, and therefore $\mathbb{Z}/2\mathbb{Z} \cong \\{\ 1, -1 \ \\}$.
+
+A second example connects two familiar infinite groups. Let $\mathbb{R}^{+}$ denote the positive real numbers under multiplication and let $\mathbb{R}$ denote the real numbers under addition. The [logarithm](../logarithms/) $\log : \mathbb{R}^{+} \to \mathbb{R}$ satisfies $\log(xy) = \log(x) + \log(y)$, which is exactly the homomorphism condition with multiplication on the source and addition on the target. The map is bijective, with inverse the exponential function, so it is an isomorphism and $\mathbb{R}^{+} \cong \mathbb{R}$. A multiplicative group and an additive group are in this way revealed to share the same abstract structure.
+
+Two further terms apply when the source and target of a homomorphism coincide. A homomorphism from a group to itself is called an endomorphism, and an endomorphism that is also an isomorphism is called an automorphism. The identity map is the simplest automorphism of any group. The composition of two homomorphisms is again a homomorphism, since the structure-preserving property passes through the two maps in turn. 
+
+When an isomorphism $\varphi : G \to H$ is inverted, the resulting map $\varphi^{-1} : H \to G$ is again an isomorphism, because the inverse of a bijection is a bijection and the homomorphism condition transfers to it. Isomorphism is therefore a symmetric relation between groups, in agreement with the view of isomorphic groups as indistinguishable.
 
 > The notions of kernel, image, and isomorphism extend naturally to the richer settings of [rings](../rings/), [fields](../fields/), [vector spaces](../vector-spaces/), and [modules](../modules/), where the structure-preserving maps acquire additional requirements but the underlying philosophy remains the same. A unified discussion that compares the different cases side by side is collected on the page about [homomorphisms and isomorphisms](../homomorphisms-and-isomorphisms/).

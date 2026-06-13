@@ -132,7 +132,7 @@ The reduction to a common denominator in the final line produces the standard fo
 
 ## Example 1
 
-Consider the function obtained as a product of a power and a logarithm:
+Consider the function obtained as a product of a [power](../powers/) and a [logarithm](../logarithms/):
 
 $$f(x) = x^3 \ln(x)$$
 
