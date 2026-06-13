@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="353px" viewBox="0 0 352 353" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.500000)">
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="137.5">y = f(</tspan>
+                <tspan x="26.952" y="137.5" letter-spacing="0.342857143">x₀</tspan>
+                <tspan x="39.3617143" y="137.5">)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="337" y="100.5">dy</tspan>
+            </text>
+            <line x1="207" y1="292" x2="207" y2="251" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="154" y="128.5">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="238" y="48.5">C</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="252" y="150.5">B</tspan>
+            </text>
+            <path d="M49,25.4801356 L49.4357878,26.2548694 L53.9357878,34.2548694 L54.1809184,34.6906571 L53.3093429,35.1809184 L53.0642122,34.7451306 L49.5,28.408 L49.5,261.5 L48.5,261.5 L48.5,28.408 L44.9357878,34.7451306 L44.6906571,35.1809184 L43.8190816,34.6906571 L44.0642122,34.2548694 L48.5642122,26.2548694 L49,25.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M321.309343,229.819082 L321.745131,230.064212 L329.745131,234.564212 L330.519864,235 L329.745131,235.435788 L321.745131,239.935788 L321.309343,240.180918 L320.819082,239.309343 L321.254869,239.064212 L327.591,235.5 L8,235.5 L8,234.5 L327.591,234.5 L321.254869,230.935788 L320.819082,230.690657 L321.309343,229.819082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="30.5" y="33.5">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="321.895" y="254.5">x</tspan>
+            </text>
+            <line x1="72" y1="225" x2="276" y2="27" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="279.295745" y1="23.9588677" x2="304" y2="0" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="46.2957453" y1="248.958868" x2="71" y2="225" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M25.5,214.5 C25.5,214.5 62.4578924,249.541034 98.9390935,214.5 C130.865885,183.833581 169.590652,107.5 213.953258,107.5 C243.528329,107.5 273.377243,137.166667 303.5,196.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="320" y1="135" x2="49" y2="135" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="320" y1="58" x2="246" y2="58" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="164" y1="235" x2="164" y2="135" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="246" y1="235" x2="246" y2="57" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="164" cy="136" r="2.5"></circle>
+            <circle fill="#333333" cx="246" cy="57" r="2.5"></circle>
+            <circle fill="#333333" cx="246" cy="135" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="158.5" y="249.5">x₀</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="233.5" y="249.5">x₀+Δx</tspan>
+            </text>
+            <path d="M324,135.5 C323.723858,135.5 323.5,135.276142 323.5,135 C323.5,134.75454 323.676875,134.550392 323.910124,134.508056 L324,134.5 L327.5,134.5 L327.5,58.5 L324,58.5 C323.723858,58.5 323.5,58.2761424 323.5,58 C323.5,57.7545401 323.676875,57.5503916 323.910124,57.5080557 L324,57.5 L332,57.5 C332.276142,57.5 332.5,57.7238576 332.5,58 C332.5,58.2454599 332.323125,58.4496084 332.089876,58.4919443 L332,58.5 L328.5,58.5 L328.5,134.5 L332,134.5 C332.276142,134.5 332.5,134.723858 332.5,135 C332.5,135.24546 332.323125,135.449608 332.089876,135.491944 L332,135.5 L324,135.5 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="139.5" y="311.5">A geometric interpretation of the </tspan>
+                <tspan x="139.5" y="324.5">differential dy as the vertical change </tspan>
+                <tspan x="139.5" y="337.5">predicted by the tangent line for a </tspan>
+                <tspan x="139.5" y="350.5">horizontal increment Δx.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
