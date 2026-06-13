@@ -39,7 +39,7 @@ Consider the polynomial function:
 
 $$f(x) = 2x^4 - 5x^3 + 3x - 7$$
 
-Applying the power rule term by term, each differentiation lowers the degree of the polynomial by one:
+Applying the power rule together with the linearity of the [differentiation rules](../differentiation-rules/) term by term, each differentiation lowers the degree of the polynomial by one:
 
 $$
 \begin{align}
@@ -79,7 +79,7 @@ The formula can be verified by induction. For $n = 1$ it gives $-\frac{2!}{x^3} 
 
 The first derivative measures the rate of change of the function, and the second derivative measures the rate of change of the slope. When $f''(x) > 0$ on an interval, the slope of the tangent line increases as $x$ increases, and the graph is concave upward. When $f''(x) < 0$, the slope decreases and the graph is concave downward. The points where the concavity changes are the inflection points, studied in detail in the entry on [maximum, minimum, and inflection points](../maximum-minimum-and-inflection-points/).
 
-In physics, if $s(t)$ denotes the position of a particle at time $t$, the first derivative $s'(t)$ is the velocity and the second derivative $s''(t)$ is the acceleration. Newton's second law relates force to the second derivative of position, which explains why second derivatives appear throughout the differential equations of mechanics.
+In physics, if $s(t)$ denotes the position of a particle at time $t$, the first derivative $s'(t)$ is the [velocity](../velocity/) and the second derivative $s''(t)$ is the acceleration. Newton's second law relates force to the second derivative of position, which explains why second derivatives appear throughout the differential equations of mechanics.
 
 > The third derivative of position with respect to time also has a physical name, the jerk, which measures how abruptly the acceleration itself changes.
 

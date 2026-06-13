@@ -182,7 +182,7 @@ $$D\left[\frac{1}{3x + 1}\right] = -\frac{3}{(3x + 1)^2}$$
 
 - - -
 
-When differentiating a composition of two functions, these rules are not sufficient. In that case, it is necessary to apply the [chain rule](../chain-rule/), which expresses the derivative of a composite function in terms of the derivatives of its components.
+When differentiating a composition of two functions, these rules are not sufficient. In that case, it is necessary to apply the [chain rule](../chain-rule/), which expresses the derivative of a composite function in terms of the derivatives of its components. A self-contained treatment of the rules introduced above, together with their proofs from the definition of the derivative, is given in the entry on [differentiation rules](../differentiation-rules/).
 
 ## Higher-order derivatives
 

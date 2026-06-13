@@ -10,7 +10,7 @@ tags:
 ---
 ## Definition
 
-Consider a [differentiable](../derivatives/) function $f(x)$ on the interval $[a,b]$. Since the function is differentiable, it is also [continuous](../continuous-functions/) on the given [interval](../intervals/). Let us consider two points $x$ and $x + \Delta x \in [a,b]$.
+Consider a [differentiable](../derivatives/) function $f(x)$ on the interval $[a,b]$. Since the function is differentiable, it is also [continuous](../continuous-functions/) on the given [interval](../intervals/). Let us consider two points $x$ and $x + \Delta x \in [a,b]$, separated by the same increment that appears in the [difference quotient](../difference-quotient/).
 
 The differential of the function $f(x)$, relative to the point $x$ and the increment $\Delta x$, is defined as the product of the derivative of the function evaluated at $x$ and the increment $\Delta x$:
 

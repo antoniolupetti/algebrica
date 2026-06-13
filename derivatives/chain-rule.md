@@ -122,7 +122,7 @@ We conclude that the derivative of $y = \sqrt{x^2 + 1}$ is $\dfrac{x}{\sqrt{x^2 
 
 ## Combining with the product rule
 
-In most computations the chain rule operates together with the product or quotient rule rather than alone. Consider the function:
+In most computations the chain rule operates together with the product or quotient rule rather than alone. The basic [differentiation rules](../differentiation-rules/) handle the algebraic structure of an expression, while the chain rule handles the nesting of one function inside another. Consider the function:
 
 $$y = x^2 e^{\sin(x)}$$
 

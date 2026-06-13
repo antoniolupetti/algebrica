@@ -10,7 +10,7 @@ tags:
 ---
 ## Composite power functions
 
-We have previously introduced how to calculate the [derivative](../derivatives/) of a function at a point using the definition of the [difference quotient](../difference-quotient/), and how to differentiate composite functions through the [chain rule](../chain-rule/). A separate technique is required for power functions in which both the base and the exponent depend on the variable, that is, functions of the form:
+We have previously introduced how to calculate the [derivative](../derivatives/) of a function at a point using the definition of the [difference quotient](../difference-quotient/), how to combine derivatives through the basic [differentiation rules](../differentiation-rules/), and how to differentiate composite functions through the [chain rule](../chain-rule/). A separate technique is required for power functions in which both the base and the exponent depend on the variable, that is, functions of the form:
 
 $$y = f(x)^{g(x)}$$
 

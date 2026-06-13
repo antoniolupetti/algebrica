@@ -52,7 +52,7 @@ $$
 \end{align}
 $$
 
-> The first expression results from differentiating $f$ with respect to $x$ while keeping $y$ constant. The second expression is obtained by differentiating with respect to $y$ while keeping $x$ constant. In both cases, standard differentiation rules such as the power rule and [chain rule](../chain-rule/) apply as they do in the single-variable context.
+> The first expression results from differentiating $f$ with respect to $x$ while keeping $y$ constant. The second expression is obtained by differentiating with respect to $y$ while keeping $x$ constant. In both cases, the standard [differentiation rules](../differentiation-rules/), such as the power rule and the [chain rule](../chain-rule/), apply as they do in the single-variable context.
 
 ## Example 1
 
