@@ -17,7 +17,7 @@ tags:
 ---
 ## Definition
 
-A group is one of the most fundamental structures in abstract algebra. The concept arises when one isolates the essential properties shared by many mathematical objects: the [integers](../integers/) under addition, the nonzero [real numbers](../real-numbers/) under multiplication, the symmetries of a geometric figure, and the invertible [matrices](../matrices/) of a given size all exhibit the same abstract pattern. In formal terms, a group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying the following four axioms:
+A group describes the structure shared by many different mathematical objects, such as the [integers](../integers/) under addition, nonzero [real numbers](../real-numbers/) under multiplication, geometric symmetries, and invertible [matrices](../matrices/). A group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying four axioms:
 
 + Closure: for all $a, b \in G$, the element $a \cdot b$ belongs to $G$.
 + Associativity: for all $a, b, c \in G$, the identity $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ holds.
@@ -26,19 +26,27 @@ A group is one of the most fundamental structures in abstract algebra. The conce
 
 A group $(G, \cdot)$ is called abelian, or commutative, if in addition $a \cdot b = b \cdot a$ for all $a, b \in G$.
 
-> The identity element and the inverse of each element are unique. Both facts follow directly from the axioms and are standard early results in any treatment of group theory.
+> The identity element and each inverse are unique. These results follow directly from the axioms and are established early in group theory.
 
 ## Properties
 
-Several consequences follow from the previous axioms. If $a \cdot b = a \cdot c$ for some $a, b, c \in G$, then multiplying both sides on the left by $a^{-1}$ gives $b = c$. This is the left cancellation law. The right cancellation law holds by an analogous argument. Together they imply that the equation $a \cdot x = b$ has a unique solution $x = a^{-1} \cdot b$ in $G$ for any given $a, b \in G$. The inverse of a product satisfies the following identity:
+Several consequences follow from the previous axioms. 
+
+If $a \cdot b = a \cdot c$ for some $a, b, c \in G$, then multiplying both sides on the left by $a^{-1}$ gives $b = c$. This is the left cancellation law. 
+
+The right cancellation law holds by an analogous argument. Together they imply that the equation $a \cdot x = b$ has a unique solution $x = a^{-1} \cdot b$ in $G$ for any given $a, b \in G$. 
+
+The inverse of a product satisfies the following identity:
 
 $$(a \cdot b)^{-1} = b^{-1} \cdot a^{-1}$$
 
-This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. Applying inversion twice returns the original element, since $a$ satisfies the defining relation for the inverse of $a^{-1}$, which gives $(a^{-1})^{-1} = a$. The order of a group $G$, denoted $|G|$, is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
+This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. Applying inversion twice returns the original element, since $a$ satisfies the defining relation for the inverse of $a^{-1}$, which gives $(a^{-1})^{-1} = a$. 
+
+The order of a group $G$, denoted $|G|$, is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
 
 ## Algebraic hierarchy
 
-Groups are the most elementary objects in the hierarchy of algebraic structures. A group consists of a set equipped with a single binary operation satisfying closure, associativity, the existence of an identity element, and the existence of inverses. When a second operation is introduced and required to distribute over the first, the resulting structure is a [ring](../rings/).
+Groups are the most elementary objects in the hierarchy of algebraic structures. A group is a set equipped with a single binary operation that satisfies closure, associativity, the existence of an identity element, and the existence of inverses. When a second operation is introduced and required to distribute over the first, the resulting structure is a [ring](../rings/).
 
 Imposing the further condition that every nonzero element be invertible under multiplication then yields a [field](../fields/). The three structures form a chain of increasing rigidity:
 
@@ -122,7 +130,7 @@ The group $(\mathbb{Z}/6\mathbb{Z}, +)$ is cyclic with generator $1$, since ever
 
 ## Subgroups
 
-A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G$. Rather than verifying all four group axioms separately, the following criterion is usually more convenient. 
+A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G$. Rather than verifying all four group axioms separately, the following criterion is usually more convenient.
 
 A nonempty subset $H \subseteq G$ is a subgroup of $G$ if and only if for all $a, b \in H$ the element $a \cdot b^{-1}$ belongs to $H$. This condition encodes closure under the operation and under taking inverses, and the presence of the identity follows from setting $a = b$. The notation $H \leq G$ indicates that $H$ is a subgroup of $G$.
 
@@ -150,7 +158,7 @@ The kernel is always a subgroup of $G$, and the image is always a subgroup of $H
 
 - - -
 
-A homomorphism $\varphi : G \to H$ that is both injective and surjective is called an isomorphism. When an isomorphism exists between $G$ and $H$, the two groups are said to be isomorphic, written $G \cong H$. Isomorphic groups are structurally identical: they differ only in the names of their elements and their operation, and not in any property that is intrinsic to their group structure.
+A homomorphism $\varphi : G \to H$ that is both injective and surjective is called an isomorphism. When an isomorphism exists between $G$ and $H$, the two groups are said to be isomorphic, written $G \cong H$. Isomorphic groups are structurally identical, differing only in the names of their elements and their operation, not in any property intrinsic to their group structure.
 
 As an example, consider the group $(\mathbb{Z}/2\mathbb{Z}, +)$ and the group $(\\{\ 1, -1 \ \\}, \times)$ under ordinary multiplication. Define $\varphi : \mathbb{Z}/2\mathbb{Z} \to \\{\ 1, -1 \ \\}$ by setting $\varphi(0) = 1$ and $\varphi(1) = -1$. Since:
 
@@ -167,7 +175,7 @@ the function $\varphi$ preserves the group operation. Since it is also bijective
 
 A second example connects two familiar infinite groups. Let $\mathbb{R}^{+}$ denote the positive real numbers under multiplication and let $\mathbb{R}$ denote the real numbers under addition. The [logarithm](../logarithms/) $\log : \mathbb{R}^{+} \to \mathbb{R}$ satisfies $\log(xy) = \log(x) + \log(y)$, which is exactly the homomorphism condition with multiplication on the source and addition on the target. The map is bijective, with inverse the exponential function, so it is an isomorphism and $\mathbb{R}^{+} \cong \mathbb{R}$. A multiplicative group and an additive group are in this way revealed to share the same abstract structure.
 
-Two further terms apply when the source and target of a homomorphism coincide. A homomorphism from a group to itself is called an endomorphism, and an endomorphism that is also an isomorphism is called an automorphism. The identity map is the simplest automorphism of any group. The composition of two homomorphisms is again a homomorphism, since the structure-preserving property passes through the two maps in turn. 
+Two further terms apply when the source and target of a homomorphism coincide. A homomorphism from a group to itself is called an endomorphism, and an endomorphism that is also an isomorphism is called an automorphism. The identity map is the simplest automorphism of any group. The composition of two homomorphisms is again a homomorphism, since the structure-preserving property passes through the two maps in turn.
 
 When an isomorphism $\varphi : G \to H$ is inverted, the resulting map $\varphi^{-1} : H \to G$ is again an isomorphism, because the inverse of a bijection is a bijection and the homomorphism condition transfers to it. Isomorphism is therefore a symmetric relation between groups, in agreement with the view of isomorphic groups as indistinguishable.
 
