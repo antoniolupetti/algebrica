@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="208px" viewBox="0 0 284 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <polygon fill="#E9E9E9" points="55 180 133 180 133 103 114 91 98 83 77 75 55 68"></polygon>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="251" y="157">y=f(x)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="51" y="197">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="126" y="197">n</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="89" y="196">…</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="255" y="197">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="15" y="25">y</tspan>
+            </text>
+            <path d="M34.882134,15.6769926 L34.9357878,15.7548694 L39.4357878,23.7548694 C39.5711697,23.9955483 39.4858096,24.3004059 39.2451306,24.4357878 C39.0311938,24.5561272 38.7665479,24.5020533 38.6152959,24.3195146 L38.5642122,24.2451306 L34.999,17.906 L35,207.5 C35,207.776142 34.7761424,208 34.5,208 C34.2545401,208 34.0503916,207.823125 34.0080557,207.589876 L34,207.5 L33.999,17.91 L30.4357878,24.2451306 C30.3154483,24.4590675 30.0612021,24.5502832 29.8371522,24.4728292 L29.7548694,24.4357878 C29.5409325,24.3154483 29.4497168,24.0612021 29.5271708,23.8371522 L29.5642122,23.7548694 L34.0642122,15.7548694 C34.2394349,15.4433624 34.6651608,15.4174034 34.882134,15.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="107.5" y1="78.5" x2="107.5" y2="45.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="65" y="11">This shaded area illustrates the </tspan>
+                <tspan x="65" y="24">improper integral used to test </tspan>
+                <tspan x="65" y="37">the convergence of the series.</tspan>
+            </text>
+            <line x1="54.5" y1="179" x2="54.5" y2="71" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="74.5" y1="179" x2="74.5" y2="75" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="94.5" y1="179" x2="94.5" y2="83" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="113.5" y1="179" x2="113.5" y2="91" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="132.5" y1="179" x2="132.5" y2="103" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="152.5" y1="179" x2="152.5" y2="116" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="171.5" y1="179" x2="171.5" y2="125" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="190.5" y1="179" x2="190.5" y2="139" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="179" x2="210.5" y2="148" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="229.5" y1="179" x2="229.5" y2="154" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M253.162848,174.527171 L253.245131,174.564212 L261.245131,179.064212 C261.556638,179.239435 261.582597,179.665161 261.323007,179.882134 L261.245131,179.935788 L253.245131,184.435788 C253.004452,184.57117 252.699594,184.48581 252.564212,184.245131 C252.443873,184.031194 252.497947,183.766548 252.680485,183.615296 L252.754869,183.564212 L259.091,180 L6.17863248e-16,180 C-0.276142375,180 -0.5,179.776142 -0.5,179.5 C-0.5,179.25454 -0.323124839,179.050392 -0.0898756324,179.008056 L-6.17863248e-16,179 L259.091,179 L252.754869,175.435788 C252.540933,175.315448 252.449717,175.061202 252.527171,174.837152 L252.564212,174.754869 C252.684552,174.540933 252.938798,174.449717 253.162848,174.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M35,68 C66.3333333,67.3333333 103.333333,81.6666667 146,111 C188.666667,140.333333 221.333333,154.666667 244,154" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

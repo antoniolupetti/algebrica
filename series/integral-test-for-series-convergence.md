@@ -34,6 +34,8 @@ The first part is a finite sum of finite terms, so it cannot affect convergence.
 
 The test comes from reading the series as an estimate of the area under the curve $y = f(x)$. On each interval $[n, n+1]$ we draw a rectangle of width $1$, taking the value of $f$ at one endpoint as the height. The sum of the rectangle areas is a series, and comparing it with the exact area under the curve connects the two notions of convergence.
 
+![IMG. 1](svg/integral-test-for-series-convergence-1.svg)
+
 + the curve $f(x)$ is the graph of the continuous [function](../functions/)
 + the shaded region is part of the improper integral, the area under the curve from $x = 1$ to some $x = n$
 + the rectangles represent the terms $f(n)$, each with base $1$ and height $f(n)$
