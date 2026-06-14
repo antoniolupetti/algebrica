@@ -36,7 +36,7 @@ $$
 \sum_{k=1}^{\infty} \frac{1}{k} = 1 + \frac{1}{2} + \left( \frac{1}{3} + \frac{1}{4} \right) + \left( \frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8} \right) + \cdots
 $$
 
-Each group contains twice as many terms as the previous one. By observing that each group adds at least $\frac{1}{2}$ to the sum, we conclude that the overall series grows without bound:
+Each group contains twice as many terms as the previous one. By observing that each group adds at least $1/2$ to the sum, we conclude that the overall series grows without bound:
 
 $$
 \sum_{k=1}^{\infty} \frac{1}{k} = \infty
