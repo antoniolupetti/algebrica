@@ -95,20 +95,17 @@ The [limit](../limits/) has the form $\frac{1}{\infty}$, so it equals zero, and 
 
 $$ \frac{1}{n^2 + 2n + 1} < \frac{1}{n^2} $$
 
-since the denominator in the first expression is greater than the denominator in the second. With
+since the denominator in the first expression is greater than the denominator in the second. With:
 
 $$ a_n = \frac{1}{n^2 + 2n + 1} \quad \text{and} \quad b_n = \frac{1}{n^2} $$
 
-we have
+we have:
 
 $$ a_n < b_n $$
 
-The series 
+The following series is a [generalized harmonic series](../harmonic-series/), which is known to converge when the exponent in the denominator satisfies the condition $p > 1$: 
 
 $$ \sum_{n=1}^{\infty} b_n = \sum_{n=1}^{\infty} \frac{1}{n^2} $$ 
-
-is a [generalized harmonic series](../harmonic-series/), which is known to converge when the exponent in the denominator satisfies the condition $p > 1$. 
-
 Hence, by the comparison test, since the series $\sum b_n$ converges, the series $\sum a_n$ also converges.
 
 > Determining the nature of a positive-term series with the comparison test is straightforward, and choosing the right comparison and justifying the inequality requires practice.
