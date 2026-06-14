@@ -43,13 +43,7 @@ $$
 |s_{n+p} - s_n| = \left| \sum_{k=n+1}^{n+p} a_k \right|
 $$
 
-The Cauchy criterion for sequences requires that:
-
-$$
-|s_{n+p} - s_n| < \varepsilon
-$$
-
-for all $p \in \mathbb{N}$, provided that $n$ is large enough. In our case, the expression:
+The Cauchy criterion for sequences requires that $|s_{n+p} - s_n| < \varepsilon$ for all $p \in \mathbb{N}$, provided that $n$ is large enough. In our case, the expression:
 
 $$
 \left| \sum_{k=n+1}^{n+p} a_k \right|
