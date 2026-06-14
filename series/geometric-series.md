@@ -22,6 +22,7 @@ $$
 $$
 
 If $r = 1$, the series diverges, because the sequence of partial sums grows without bound:
+
 $$
 s_n = 1 + 1 + \dots + 1 = n + 1 \quad \rightarrow \quad \lim_{n \to \infty} s_n = \infty
 $$
