@@ -2,7 +2,7 @@
 <svg width="284px" height="208px" viewBox="0 0 284 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(1.000000, 0.000000)">
-            <polygon fill="#E9E9E9" points="55 180 133 180 133 103 114 91 98 83 77 75 55 68"></polygon>
+            <polygon fill="#e6e6e6" points="55 180 133 180 133 103 114 91 98 83 77 75 55 68"></polygon>
             <text font-size="12" font-weight="normal" fill="#333333">
                 <tspan x="251" y="157">y=f(x)</tspan>
             </text>
