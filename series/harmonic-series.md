@@ -54,8 +54,8 @@ $$
 
 Unlike the standard harmonic series, its convergence depends on the exponent $a$:
 
-+ If $a > 1$, the series converges.
-+ If $a \leq 1$, the series diverges.
++ If $a > 1$ the series converges.
++ If $a \leq 1$ the series diverges.
 
 - - -
 
