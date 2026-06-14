@@ -10,13 +10,13 @@ tags:
 ---
 ## Definition
 
-The geometric series is defined as the following sum:
+A geometric series is based on a [geometric sequence](../geometric-sequence/), where each term is obtained by multiplying the previous term by a constant ratio. It is defined as the following sum:
 
 $$
 \sum_{n=0}^{\infty} r^n
 $$
 
-$r$ is the factor by which each term is multiplied to obtain the next. If $r = 0$, the geometric series converges and its sum is $1$, since all terms after the first are zero:
+The value $r$ is the constant factor used to multiply each term to produce the next. If $r = 0$, the series converges to $1$, because all subsequent terms are zero:
 $$
 \sum_{n=0}^{\infty} 0^n = 1 + 0 + 0 + \dots = 1
 $$
@@ -27,13 +27,7 @@ $$
 s_n = 1 + 1 + \dots + 1 = n + 1 \quad \rightarrow \quad \lim_{n \to \infty} s_n = \infty
 $$
 
-> While a geometric series focuses on the sum of terms, it is built upon the underlying structure of a [geometric sequence](../geometric-sequence/), an ordered list where each term is obtained by multiplying the previous one by a constant ratio.
-
-- - - 
-
-The geometric series serves as a reference model for analyzing more complex series, because its behavior is well understood and precisely characterized. For [series with positive terms](../series-with-positive-terms/), it can be used in comparison tests to determine convergence or divergence.
-
-> If a given series can be bounded above or below by a geometric series, we can often deduce the nature of the series by analogy.
+The geometric series serves as a reference model for analyzing more complex series, because its behavior is well understood and defined. For [series with positive terms](../series-with-positive-terms/), it is used in comparison tests to determine convergence or divergence. If a given series can be bounded above or below by a geometric series, we can often deduce the nature of the series by analogy.
 
 - - -
 
@@ -108,9 +102,7 @@ $$
 \sum_{n=0}^{\infty} ar^n = \frac{a}{1 - r}
 $$
 
-A nonzero constant $a$ scales every term by the same factor, so it changes the value of the limit but not whether the series converges.
-
-In general, when the index starts at a value $n > 0$, for example $\alpha$, the formula for the sum of the geometric series becomes:
+A nonzero constant $a$ scales every term by the same factor, so it changes the value of the limit but not whether the series converges. In general, when the index starts at a value $n > 0$, for example $\alpha$, the formula for the sum of the geometric series becomes:
 
 $$
 \sum_{n=\alpha}^{\infty} r^n = \frac{r^{\alpha}}{1 - r}
