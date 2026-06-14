@@ -58,6 +58,28 @@ $$
 \lim_{n \to \infty} (s_n - s_{n-1}) = \lim_{n \to \infty} a_n = S - S = 0
 $$
 
+## Partial remainder
+
+The partial remainder of order $n$, written $R_n$, collects the terms of a series that follow the index $n$:
+
+$$
+R_n = \sum_{k=n+1}^{\infty} a_k
+$$
+
+When the series converges with sum $S$, the remainder is the difference between the total sum and the partial sum of order $n$:
+
+$$
+R_n = S - s_n
+$$
+
+This identity makes $R_n$ the error committed when the partial sum $s_n$ is used to approximate the sum of the series. If the series $\sum a_n$ converges, then the remainder tends to zero:
+
+$$
+\lim_{n \to \infty} R_n = 0
+$$
+
+The partial sums $s_n$ tend to $S$ by definition of convergence, so the difference $S - s_n$ tends to $S - S = 0$. The vanishing of the remainder expresses the same fact as convergence, the contribution of the discarded tail becomes negligible as more terms are retained.
+
 ## Linear properties of series
 
 Let $\sum_{k=1}^{\infty} a_k$ be a convergent series, and let $\lambda \in \mathbb{R}$, $\lambda \ne 0$. Then the series $\sum_{k=1}^{\infty} \lambda a_k$ also converges, and its sum is:
@@ -100,7 +122,7 @@ When both series converge only conditionally, the product series may fail to con
 
 A few series recur so frequently that they serve as reference cases, both as standard examples and as terms of comparison for the convergence tests applied to other series. The arithmetic series, the harmonic series, the geometric series, and the telescoping series are the most representative.
 
-The arithmetic series sums the terms of an arithmetic progression, in which each term differs from the previous one by a fixed amount $d$ called the common difference:
+The [arithmetic series](../arithmetic-series/) sums the terms of an arithmetic progression, in which each term differs from the previous one by a fixed amount $d$ called the common difference:
 
 $$
 \sum_{n=1}^{\infty} a_n, \qquad a_n = a_1 + (n-1)d
@@ -153,7 +175,7 @@ When the series converges, its sum has the closed form $\frac{1}{1-q}$.
 
 - - -
 
-The telescoping series is built from terms that split so that consecutive contributions cancel:
+The [telescoping series](../telescoping-series/) is built from terms that split so that consecutive contributions cancel:
 
 $$
 \sum_{n=1}^{\infty} \frac{1}{n(n+1)} = \frac{1}{2} + \frac{1}{6} + \cdots + \frac{1}{n(n+1)} + \cdots

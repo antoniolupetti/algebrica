@@ -22,7 +22,7 @@ $$
 \sum_{k=1}^{\infty} a_k \quad \text{with } a_k > 0
 $$
 
-the series converges if and only if the sequence of partial sums $(S_n)$ is bounded. This property makes positive-term series suitable for convergence tests such as the comparison test, the integral test, and the ratio test, all of which require non-negative terms.
+the series converges if and only if the sequence of partial sums $(S_n)$ is bounded. This property makes positive-term series suitable for convergence tests such as the comparison test, the [integral test](../integral-test-for-series-convergence/), and the [ratio test](../ratio-test-for-series-convergence/), all of which require non-negative terms.
 
 - - -
 
@@ -109,3 +109,15 @@ $$ \sum_{n=1}^{\infty} b_n = \sum_{n=1}^{\infty} \frac{1}{n^2} $$
 Hence, by the comparison test, since the series $\sum b_n$ converges, the series $\sum a_n$ also converges.
 
 > Determining the nature of a positive-term series with the comparison test is straightforward, and choosing the right comparison and justifying the inequality requires practice.
+
+## Extension to series of definite sign
+
+The convergence tests built for positive-term series, the comparison test above together with the [asymptotic comparison test](../asymptotic-comparison-test/), the [ratio test](../ratio-test-for-series-convergence/), and the [root test](../root-test-for-series-convergence/), need only that the terms be non-negative from some index onward. Since altering finitely many terms does not change the nature of a series, these tests apply unchanged to a series whose terms are definitively non-negative, that is $a_n \geq 0$ for all $n \geq N$.
+
+A series with non-positive terms reduces to this case by factoring out a minus sign:
+
+$$
+\sum_{n=0}^{\infty} a_n = -\sum_{n=0}^{\infty} (-a_n)
+$$
+
+The series $\sum (-a_n)$ has non-negative terms, so the tests decide its nature, and the overall factor $-1$ leaves convergence and divergence unchanged. The same reduction handles a series that is only definitively non-positive.

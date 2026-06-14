@@ -152,7 +152,7 @@ $$
 \sum_{n=0}^{\infty} x^n = \frac{1}{1 - x} \quad \text{for } |x| < 1
 $$
 
-This is the simplest power series, the one whose coefficients are all equal to $1$, and the condition $|x| < 1$ gives it a radius of convergence equal to $1$. The same identity supports the ratio test and the [root test](../root-test-for-series-convergence/), which establish the convergence of a general series by comparing it to a geometric one.
+This is the simplest power series, the one whose coefficients are all equal to $1$, and the condition $|x| < 1$ gives it a radius of convergence equal to $1$. The same identity supports the [ratio test](../ratio-test-for-series-convergence/) and the [root test](../root-test-for-series-convergence/), which establish the convergence of a general series by comparing it to a geometric one.
 
 ## Example
 
