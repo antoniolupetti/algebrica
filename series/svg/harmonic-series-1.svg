@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="256px" viewBox="0 0 284 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 0.500000)">
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="0" y="101.5">4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="0" y="141.5">3</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="0" y="61.5">5</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="0" y="222.5">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="0" y="182.5">2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="135.5" y="245.5">50</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="265" y="245.5">100</tspan>
+            </text>
+            <path d="M12.002505,22.4779474 L12.502499,22.4803984 L16.002457,22.4975551 L16.502,22.5 L20.5024029,22.5196136 L21.0023969,22.5220646 L20.997495,23.5220526 L20.497501,23.5196016 L16.997,23.502 L15.999994,227.002451 L15.997543,227.502445 L14.9975551,227.497543 L15.000006,226.997549 L15.998,23.497 L12.4975971,23.4803864 L11.9976031,23.4779354 L12.002505,22.4779474 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="87" y="11">The partial sums of the harmonic </tspan>
+                <tspan x="87" y="24">series increase without bound. </tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="13" y="245.5">n (index)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#636363">
+                <tspan x="10" y="14.5">Sₙ</tspan>
+            </text>
+            <line x1="147.5" y1="34.5" x2="147.5" y2="71" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M17,226.5 C17,177.833333 38.6666667,140.833333 82,115.5 C116.55631,95.2978495 175.490005,77.8514034 258.801085,63.1606617" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M275.5,222.5 C275.74546,222.5 275.949608,222.676875 275.991944,222.910124 L276,223 L276,231 C276,231.276142 275.776142,231.5 275.5,231.5 C275.25454,231.5 275.050392,231.323125 275.008056,231.089876 L275,231 L275,227.5 L15.5,227.5 C15.2238576,227.5 15,227.276142 15,227 C15,226.75454 15.1768752,226.550392 15.4101244,226.508056 L15.5,226.5 L275,226.5 L275,223 C275,222.723858 275.223858,222.5 275.5,222.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
