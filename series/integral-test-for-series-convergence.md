@@ -179,7 +179,13 @@ $$
 The [derivative](../derivatives/) vanishes at $x = \frac{1}{\sqrt{2}}$, is positive before this point, and is negative after it. The function increases on $[0, \frac{1}{\sqrt{2}}]$ and decreases on $[\frac{1}{\sqrt{2}}, +\infty)$, so it is eventually decreasing, which is enough to apply the test. We evaluate the improper integral with the substitution $u = -x^2$, so $du = -2x \ dx$.
 
 $$
-\int_0^{\infty} xe^{-x^2} \ dx = \lim_{t \to \infty} \left[ -\frac{1}{2} e^{-x^2} \right]_0^t = \lim_{t \to \infty} \left( \frac{1}{2} - \frac{1}{2}e^{-t^2} \right) = \frac{1}{2}
+\begin{align}
+\int_0^{\infty} xe^{-x^2}\,dx
+&= \lim_{t\to\infty}\int_0^t xe^{-x^2}\,dx \\[6pt]
+&= \lim_{t\to\infty}\left[-\frac{1}{2}e^{-x^2}\right]_0^t \\[6pt]
+&= \lim_{t\to\infty}\left(\frac{1}{2}-\frac{1}{2}e^{-t^2}\right) \\[7pt]
+&= \frac{1}{2}
+\end{align}
 $$
 
 The integral converges, so the series converges by the integral test.
