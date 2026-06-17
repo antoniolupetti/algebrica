@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="148px" viewBox="0 0 330 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect fill="#E6E6E6" x="0" y="28" width="68" height="40"></rect>
+            <rect fill="#E6E6E6" x="249" y="28" width="68" height="40"></rect>
+            <line x1="67.5" y1="20.5" x2="67.5" y2="74.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="248.5" y1="20.5" x2="248.5" y2="74.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="202.5" y1="55.5" x2="202.5" y2="101.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="34.5" y="120">Along the real axis, the series converges for |z-z₀|&lt;R, </tspan>
+                <tspan x="34.5" y="133">diverges for |z-z₀|&gt;R, and the endpoint cases |z-z₀|=R </tspan>
+                <tspan x="34.5" y="146">must be examined separately.</tspan>
+            </text>
+            <path d="M320.662848,42.5271708 L320.745131,42.5642122 L328.745131,47.0642122 L329.519864,47.5 L328.745131,47.9357878 L320.745131,52.4357878 C320.504452,52.5711697 320.199594,52.4858096 320.064212,52.2451306 C319.943873,52.0311938 319.997947,51.7665479 320.180485,51.6152959 L320.254869,51.5642122 L326.591,48 L0.5,48 C0.223857625,48 0,47.7761424 0,47.5 C0,47.2545401 0.176875161,47.0503916 0.410124368,47.0080557 L0.5,47 L326.591,47 L320.254869,43.4357878 C320.040933,43.3154483 319.949717,43.0612021 320.027171,42.8371522 L320.064212,42.7548694 C320.184552,42.5409325 320.438798,42.4497168 320.662848,42.5271708 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="159.5" y1="47.5" x2="248.5" y2="47.5" stroke="#333333" stroke-linecap="square"></line>
+            <circle stroke="#333333" fill="#F4EFEE" cx="67" cy="48" r="2.5"></circle>
+            <ellipse stroke="#333333" fill="#F4EFEE" cx="248.998" cy="48.0034708" rx="2.498" ry="2.5034708"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="51" y="12">z₀ - R</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="153" y="68">z₀</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="199" y="40">R</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="239" y="12">z₀ + R</tspan>
+            </text>
+            <ellipse stroke="#333333" fill="#333333" cx="157.998" cy="48.0034708" rx="2.498" ry="2.5034708"></ellipse>
+        </g>
+    </g>
+</svg>

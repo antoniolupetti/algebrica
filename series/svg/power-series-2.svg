@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="286px" viewBox="0 0 305 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="97.25" cy="189.75" r="95.25"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="190.5" height="190.5" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(-0.000000, 0.500000)">
+            <path d="M45.003173,43.9801389 L45.4373424,44.7557808 L49.9206312,52.7651579 L50.1648515,53.2014565 L49.2922543,53.6898971 L49.048034,53.2535985 L45.496,46.91 L45.4843456,52.998983 L44.9999989,285.001044 L44.9989551,285.501043 L43.9989573,285.498955 L44.0000011,284.998956 L44.4843478,52.9968954 L44.496,46.908 L40.9196273,53.236629 L40.6735874,53.671904 L39.8030373,53.1798243 L40.0490772,52.7445492 L44.5657688,44.7539612 L45.003173,43.9801389 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M280.309343,242.819082 L280.745131,243.064212 L288.745131,247.564212 L289.519864,248 L288.745131,248.435788 L280.745131,252.935788 L280.309343,253.180918 L279.819082,252.309343 L280.254869,252.064212 L286.591,248.5 L2,248.5 L2,247.5 L286.591,247.5 L280.254869,243.935788 L279.819082,243.690657 L280.309343,242.819082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="262" y="269">Re(z)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="54">Im (z)</tspan>
+            </text>
+            <use stroke="#BABABA" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+            <path d="M97.5,192 L123.932495,160.451538 M134.908955,147.350602 L159.5,118" id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#000000" cx="97.5" cy="192" r="2.5"></circle>
+            <circle fill="#000000" cx="159.5" cy="118" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" fill="#000000">
+                <tspan x="125" y="157">R</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="72" y="11">The power series converges for complex </tspan>
+                <tspan x="72" y="24">numbers z satisfying |z − z₀| &lt; R and diverges </tspan>
+                <tspan x="72" y="37">for |z − z₀| &gt; R, where |z − z₀| is the modulus </tspan>
+                <tspan x="72" y="50">of z − z₀, that is, the distance from z to the </tspan>
+                <tspan x="72" y="63">centre z₀ in the complex plane.</tspan>
+            </text>
+            <line x1="136.5" y1="75" x2="136.5" y2="126" id="Line-4" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
