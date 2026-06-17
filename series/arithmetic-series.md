@@ -25,6 +25,14 @@ $$
 
 For example, the sequence $1, 3, 5, 7, 9, \dots$ is arithmetic with first term $a = 1$ and common difference $d = 2$, so the sum of its first $n$ terms is an arithmetic series.
 
+The constant difference gives a local description of the sequence. A sequence is arithmetic exactly when each interior term equals the arithmetic mean of its two neighbors:
+
+$$
+a_k = \frac{a_{k-1} + a_{k+1}}{2}
+$$
+
+The two neighbors sit at equal distance $d$ below and above $a_k$, so their average returns $a_k$. The condition is equivalent to a constant difference, because it forces $a_{k+1} - a_k = a_k - a_{k-1}$ at every interior index. This mean property is the source of the name.
+
 ## Sum of a finite arithmetic series
 
 The partial sum with first term $a$ and common difference $d$ has a closed form:
@@ -62,6 +70,14 @@ S_n = \frac{n(a+z)}{2}
 $$
 
 This form reads as the number of terms times the average of the first and last term. The two expressions are interchangeable, and the choice between them depends on whether the common difference or the final term is the known quantity.
+
+The most familiar instance is the sum of the first $n$ positive integers, obtained by setting $a = 1$ and $d = 1$, so that the final term is $z = n$. The compact form gives:
+
+$$
+1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+$$
+
+These totals are the triangular numbers, the running sums of the natural numbers, and they appear as soon as a quantity accumulates in equal unit steps.
 
 ## Behavior of the infinite series
 
