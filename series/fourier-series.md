@@ -231,7 +231,7 @@ When $L = \pi$ these reduce to the formulas on $[-\pi,\pi]$. The discrete freque
 
 ## Convergence of Fourier series
 
-The definition of the Fourier series does not by itself guarantee convergence to the original function. A classical sufficient condition, due to Dirichlet, requires that $f$ be periodic and that $f$ together with its derivative $f'$ be piecewise continuous on a period. Concretely, on $[-\pi,\pi]$ the function should satisfy:
+The definition of the Fourier series does not by itself guarantee convergence to the original function. A sufficient condition requires that $f$ be periodic and that $f$ together with its derivative $f'$ be piecewise continuous on a period. Concretely, on $[-\pi,\pi]$ the function should satisfy:
 
 + $f$ is bounded with finitely many maxima and minima
 + $f$ has finitely many discontinuities, all of jump type
