@@ -10,7 +10,7 @@ tags:
 ---
 ## What is the ratio test
 
-The ratio test decides whether an infinite [series](../series/) with positive terms converges or diverges by examining the limit of the quotient between consecutive terms. It is the natural choice when the general term contains factorials or exponentials, where the ratio $\frac{a_{n+1}}{a_n}$ simplifies more than the $n$-th root used by the [root test](../root-test-for-series-convergence/). Suppose we have a series with positive terms:
+The ratio test decides whether an infinite [series](../series/) with positive terms converges or diverges by examining the limit of the quotient between consecutive terms. It is the natural choice when the general term contains [factorials](../factorial/) or exponentials, where the ratio $\frac{a_{n+1}}{a_n}$ simplifies more than the $n$-th root used by the [root test](../root-test-for-series-convergence/). Suppose we have a series with positive terms:
 
 $$
 \sum_{n=0}^{\infty} a_n, \qquad a_n > 0
@@ -84,7 +84,7 @@ $$
 \end{align}
 $$
 
-The remaining limit is a standard exponential limit, which we rewrite through the exponential function:
+The remaining limit is a standard [exponential limit](../euler-number-limit-sequence/), which we rewrite through the exponential function:
 
 $$
 \lim_{n \to \infty} \left(\frac{n}{n+1}\right)^n = \lim_{n \to \infty} e^{n\log\left(\frac{n}{n+1}\right)}

@@ -65,7 +65,7 @@ $$
 S_n \leq T_n \quad \text{for all } n \geq N
 $$
 
-If the series $\sum b_k$ converges, then $T_n$ has a finite limit and is bounded above. Since $S_n \leq T_n$, the sequence of partial sums $S_n$ is also bounded above. A non-decreasing and bounded sequence converges, so $\sum a_k$ also converges.
+If the series $\sum b_k$ converges, then $T_n$ has a finite limit and is bounded above. Since $S_n \leq T_n$, the sequence of partial sums $S_n$ is also bounded above. A non-decreasing and bounded [sequence converges](../monotone-sequences/), so $\sum a_k$ also converges.
 
 If $\sum a_k$ diverges, then $S_n \to \infty$. But since $S_n \leq T_n$, the only way this inequality can hold is if $T_n$ also grows without bound. Therefore, $\sum b_k$ also diverges.
 

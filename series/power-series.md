@@ -65,7 +65,7 @@ At $x = 2$ it becomes a [geometric series](../geometric-series/) of ratio $2/3$,
 
 ## Interval and radius of convergence
 
-Let $E$ be the set of real $x$ at which the power series converges. This set always contains $x = 0$, so it is non-empty, and the radius of convergence is its supremum in absolute value:
+Let $E$ be the set of real $x$ at which the power series converges. This set always contains $x = 0$, so it is non-empty, and the radius of convergence is its [supremum](../supremum-and-infimum/) in absolute value:
 
 $$
 r = \sup\{\ |x| : x \in E \ \}

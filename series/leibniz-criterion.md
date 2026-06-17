@@ -18,8 +18,8 @@ $$
 
 In this expression $a_n \geq 0$ for every $n \in \mathbb{N}$. Leibniz’s criterion states that the series converges if the following conditions are satisfied:
 
-+ the [sequence](../sequence/) $\{a_n\}$ is infinitesimal, so its [limit](../limits/) is zero, $\lim_{n \to +\infty} a_n = 0$
-+ the sequence $\{a_n\}$ is eventually non-increasing, so there exists an index $n_0$ such that $a_{n+1} \leq a_n$ for every $n \geq n_0$
++ the [sequence](../sequences/) $\{a_n\}$ is infinitesimal, so its [limit](../limits/) is zero, $\lim_{n \to +\infty} a_n = 0$
++ the sequence $\{a_n\}$ is eventually [non-increasing](../monotone-sequences/), so there exists an index $n_0$ such that $a_{n+1} \leq a_n$ for every $n \geq n_0$
 
 In practice, the criterion allows one to establish the convergence of a series based solely on the verification of the above conditions. However, the test is not generalizable and applies only to alternating series. If the series
 
@@ -47,7 +47,7 @@ $$
 
 The convergence guaranteed by the criterion is in general conditional and not absolute. The alternating [harmonic series](../harmonic-series/) makes this clear, since it converges while the corresponding series of [absolute values](../absolute-value/), the harmonic series, diverges. Leibniz’s criterion therefore establishes convergence in cases where every test based on absolute values fails.
 
-> Leibniz’s criterion only tells us whether an alternating series converges, it provides no information about the actual sum of the series. To compute the sum, one must use other tools such as Taylor or Maclaurin series expansions, when available.
+> Leibniz’s criterion only tells us whether an alternating series converges, it provides no information about the actual sum of the series. To compute the sum, one must use other tools such as [Taylor](../taylor-series/) or Maclaurin series expansions, when available.
 
 ## Proof
 

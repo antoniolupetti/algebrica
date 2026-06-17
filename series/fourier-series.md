@@ -201,7 +201,7 @@ $$
 
 ## Functions of arbitrary period
 
-The construction extends to any period through a change of scale. Let $f$ be periodic with period $2L$ and integrable on $[-L,L]$. The substitution $x = \frac{Lt}{\pi}$ maps $[-L,L]$ onto $[-\pi,\pi]$ and turns $f$ into a function of $t$ with period $2\pi$, to which the previous formulas apply. Translating the result back to $x$ gives the Fourier series:
+The construction extends to any period through a change of scale. Let $f$ be periodic with period $2L$ and integrable on $[-L,L]$. The [substitution](../integration-by-substitution/) $x = \frac{Lt}{\pi}$ maps $[-L,L]$ onto $[-\pi,\pi]$ and turns $f$ into a function of $t$ with period $2\pi$, to which the previous formulas apply. Translating the result back to $x$ gives the Fourier series:
 
 $$
 f(x) \sim

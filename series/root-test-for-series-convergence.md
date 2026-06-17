@@ -22,7 +22,7 @@ $$
 \limsup_{n \to \infty} \sqrt[n]{|a_n|} = L
 $$
 
-We use $\limsup$ because it is always defined for real sequences that are bounded from below. This makes the root test reliable even when the usual limit $\lim_{n \to \infty} \sqrt[n]{|a_n|}$ does not exist. By taking the limit superior, the test can still detect the long-term behavior of the sequence and determine whether the series converges or diverges.
+We use $\limsup$ because it is always defined for real sequences that are bounded from below. This makes the root test reliable even when the usual limit $\lim_{n \to \infty} \sqrt[n]{|a_n|}$ does not exist. By taking the [limit superior](../superior-and-inferior-limits-of-a-sequence/), the test can still detect the long-term behavior of the sequence and determine whether the series converges or diverges.
 
 If the limit $L$ exists, three cases can occur:
 
@@ -146,7 +146,7 @@ $$
 \sqrt[n]{a_n} = \frac{n}{3} \tan \frac{1}{n}
 $$
 
-As $n \to \infty$ the argument $\frac{1}{n}$ tends to zero, where $\tan \frac{1}{n} \sim \frac{1}{n}$. The limit of the root is therefore:
+As $n \to \infty$ the argument $\frac{1}{n}$ tends to zero, where $\tan \frac{1}{n} \sim \frac{1}{n}$ is a [remarkable limit](../remarkable-limits/). The limit of the root is therefore:
 
 $$
 \lim_{n \to \infty} \frac{n}{3} \tan \frac{1}{n} = \lim_{n \to \infty} \frac{n}{3} \cdot \frac{1}{n} = \frac{1}{3}

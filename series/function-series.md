@@ -254,7 +254,7 @@ $$
 s'(x) = \sum_{n=0}^{\infty} f_n'(x) \qquad \forall x \in [a, b]
 $$
 
-The derivative of the sum coincides with the sum of the derivatives. Behind the extra hypothesis lies the mean value theorem, applied to the differences $f_m - f_n$ to connect increments of the partial sums with their derivatives.
+The derivative of the sum coincides with the sum of the derivatives. Behind the extra hypothesis lies the [mean value theorem](../lagrange-theorem/), applied to the differences $f_m - f_n$ to connect increments of the partial sums with their derivatives.
 
 Differentiating the geometric series produces a new closed form. Fix an interval $[-\rho, \rho]$ with $0 \leq \rho < 1$. The differentiated terms satisfy $|nx^{n-1}| \leq n\rho^{n-1}$, and $\sum_{n=1}^{\infty} n\rho^{n-1}$ converges, so $\sum_{n=1}^{\infty} nx^{n-1}$ converges uniformly on that interval. 
 

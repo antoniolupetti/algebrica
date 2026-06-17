@@ -116,7 +116,7 @@ The factor $\frac{1}{2}$ from the decomposition multiplies the whole result, a s
 
 Telescoping is not restricted to fractions. Consider the sequence $a_k = (k^2 + 1) \, k!$ and the partial sums $b_k = a_1 + a_2 + \dots + a_k$. We find a closed form for $b_k$.
 
-The key step rewrites the general term as a difference of consecutive multiples of [factorials](../factorials/). Starting from $a_k$ and using $k \cdot k! = (k+1)! - k!$, we get:
+The key step rewrites the general term as a difference of consecutive multiples of [factorials](../factorial/). Starting from $a_k$ and using $k \cdot k! = (k+1)! - k!$, we get:
 
 $$
 \begin{align}

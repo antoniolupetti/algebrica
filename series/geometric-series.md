@@ -197,4 +197,4 @@ $$
 0.\overline{12} = \frac{\frac{12}{100}}{1 - \frac{1}{100}} = \frac{\frac{12}{100}}{\frac{99}{100}} = \frac{12}{99} = \frac{4}{33}
 $$
 
-The same procedure rewrites any repeating decimal as a fraction, which shows that every such number is rational.
+The same procedure rewrites any repeating decimal as a fraction, which shows that every such number is [rational](../rational-numbers/).

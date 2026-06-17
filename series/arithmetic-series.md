@@ -77,7 +77,7 @@ $$
 1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
 $$
 
-These totals are the triangular numbers, the running sums of the natural numbers, and they appear as soon as a quantity accumulates in equal unit steps.
+These totals are the triangular numbers, the running sums of the [natural numbers](../natural-numbers/), and they appear as soon as a quantity accumulates in equal unit steps.
 
 ## Behavior of the infinite series
 

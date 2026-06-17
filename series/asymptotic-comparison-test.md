@@ -46,7 +46,7 @@ $$
 \sum_{n=1}^{\infty} \frac{e^{\sin^3\left(\frac{1}{\sqrt[3]{n}}\right)} - 1}{\sqrt[3]{n}}
 $$
 
-The terms are positive for every $n \geq 1$, so a comparison with a positive-term model is legitimate. As $n \to +\infty$ the argument $\frac{1}{\sqrt[3]{n}}$ tends to zero, which lets us replace each factor by its leading-order behavior. Using $\sin x \sim x$ and $e^x - 1 \sim x$ for $x \to 0$, the numerator satisfies:
+The terms are positive for every $n \geq 1$, so a comparison with a positive-term model is legitimate. As $n \to +\infty$ the argument $\frac{1}{\sqrt[3]{n}}$ tends to zero, which lets us replace each factor by its leading-order behavior. Using the [remarkable limits](../remarkable-limits/) $\sin x \sim x$ and $e^x - 1 \sim x$ for $x \to 0$, the numerator satisfies:
 
 $$
 e^{\sin^3\left(\frac{1}{\sqrt[3]{n}}\right)} - 1 \sim \sin^3\left(\frac{1}{\sqrt[3]{n}}\right) \sim \left(\frac{1}{\sqrt[3]{n}}\right)^3 = \frac{1}{n}

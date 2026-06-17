@@ -138,7 +138,7 @@ Unless every term is zero, the general term does not tend to zero, either becaus
 
 - - -
 
-The harmonic series is the sum of the reciprocals of the natural numbers:
+The harmonic series is the sum of the reciprocals of the [natural numbers](../natural-numbers/):
 
 $$
 \sum_{n=1}^{\infty} \frac{1}{n} = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} + \cdots

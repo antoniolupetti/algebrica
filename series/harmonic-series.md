@@ -75,7 +75,7 @@ Hence, the series diverges because its general term does not tend to zero.
 
 - - -
 
-When $a > 1$, we apply the [integral test](../integral-test-for-series-convergence/) to determine whether the series converges. We consider the corresponding improper integral:
+When $a > 1$, we apply the [integral test](../integral-test-for-series-convergence/) to determine whether the series converges. We consider the corresponding [improper integral](../improper-integrals/):
 
 $$
 \int_1^{\infty} \frac{1}{x^a} \ dx
@@ -142,7 +142,7 @@ $$
 f(x) = \frac{1}{x (\log x)^q}
 $$
 
-which is positive, [continuous](../continuous-functions/), and [decreasing](../increasing-and-decreasing-functions/) for $x \geq 2$. Using the substitution $u = \log x$, the improper integral becomes:
+which is positive, [continuous](../continuous-functions/), and [decreasing](../increasing-and-decreasing-functions/) for $x \geq 2$. Using the [substitution](../integration-by-substitution/) $u = \log x$, the improper integral becomes:
 
 $$
 \int_2^{\infty} \frac{1}{x (\log x)^q} \ dx = \int_{\log 2}^{\infty} \frac{1}{u^q} \ du

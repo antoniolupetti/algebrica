@@ -137,7 +137,7 @@ $$
 e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots
 $$
 
-To establish convergence for every real $x$ it suffices to apply the ratio test to the absolute values of the terms:
+To establish convergence for every real $x$ it suffices to apply the [ratio test](../ratio-test-for-series-convergence/) to the absolute values of the terms:
 
 $$
 \lim_{n \to \infty} \left| \frac{x^{n+1}/(n+1)!}{x^n/n!} \right| = \lim_{n \to \infty} \frac{|x|}{n+1} = 0
@@ -153,7 +153,7 @@ $$
 e = \sum_{k=0}^{\infty} \frac{1}{k!}
 $$
 
-This representation leads to a short proof that $e$ is irrational, and the argument rests on a sharp estimate of the tail of the series. For every integer $q \geq 1$ the terms beyond the $q$-th can be bounded by a geometric series:
+This representation leads to a short proof that $e$ is [irrational](../irrational-numbers/), and the argument rests on a sharp estimate of the tail of the series. For every integer $q \geq 1$ the terms beyond the $q$-th can be bounded by a geometric series:
 
 $$
 \sum_{k=q+1}^{\infty} \frac{1}{k!} = \frac{1}{(q+1)!}\left(1 + \frac{1}{q+2} + \frac{1}{(q+2)(q+3)} + \cdots\right) < \frac{1}{(q+1)!} \sum_{k=0}^{\infty} \frac{1}{(q+2)^k}
@@ -235,7 +235,7 @@ $$
 
 ## The binomial series
 
-A further fundamental example is provided by the function $f(x) = (1+x)^{\alpha}$, where $\alpha$ is an arbitrary real exponent. When $\alpha$ is a non-negative [integer](../integers/) the function is a polynomial and the Maclaurin series reduces to the binomial expansion of Newton. For a general real exponent the situation is more interesting, since the series is infinite and its convergence depends on the magnitude of $x$. Successive differentiation gives:
+A further fundamental example is provided by the function $f(x) = (1+x)^{\alpha}$, where $\alpha$ is an arbitrary real exponent. When $\alpha$ is a non-negative [integer](../integers/) the function is a polynomial and the Maclaurin series reduces to the [binomial expansion](../binomial-theorem/) of Newton. For a general real exponent the situation is more interesting, since the series is infinite and its convergence depends on the magnitude of $x$. Successive differentiation gives:
 
 $$
 f^{(n)}(x) = \alpha (\alpha - 1) \cdots (\alpha - n + 1) (1+x)^{\alpha - n}
@@ -333,7 +333,7 @@ Yet the function itself takes strictly positive values for every $x \neq 0$. The
 
 ## Applications
 
-Three classes of problems deserve to be mentioned at least briefly. The first concerns the computation of [limits of indeterminate form](../indeterminate-forms/). Replacing each factor of an expression by a Taylor polynomial of suitable order often reveals the dominant behaviour and resolves indeterminacies of type $0/0$ without recourse to repeated applications of de [l'Hôpital's rule](../hopital-rule). For instance, the well-known limit $\lim_{x \to 0} (\sin x)/x = 1$ follows immediately from the Maclaurin series of the sine, since $(\sin x)/x = 1 - x^2/6 + O(x^4)$ tends to $1$ as $x \to 0$.
+Three classes of problems deserve to be mentioned at least briefly. The first concerns the computation of [limits of indeterminate form](../indeterminate-forms/). Replacing each factor of an expression by a Taylor polynomial of suitable order often reveals the dominant behaviour and resolves indeterminacies of type $0/0$ without recourse to repeated applications of de [l'Hôpital's rule](../hopital-rule/). For instance, the well-known limit $\lim_{x \to 0} (\sin x)/x = 1$ follows immediately from the Maclaurin series of the sine, since $(\sin x)/x = 1 - x^2/6 + O(x^4)$ tends to $1$ as $x \to 0$.
 
 The second class concerns the integration of functions whose antiderivatives cannot be expressed in elementary terms. The following [integrals](../integrals/) have no representation in closed form:
 
