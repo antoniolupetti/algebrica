@@ -10,7 +10,7 @@ tags:
 ---
 ## Definition
 
-A telescoping series is a [series](../series/) whose general term can be written as the difference of two consecutive values of an auxiliary sequence. When the terms are added, each negative part cancels the positive part of the following term, and the partial sum collapses to a few surviving terms. The name comes from a hand telescope, which folds down to a fraction of its extended length when the inner tubes slide into one another.
+A telescoping series is a [series](../series/) whose general term can be written as the difference of two consecutive values of an auxiliary [sequence](../sequences/). When the terms are added, each negative part cancels the positive part of the following term, and the partial sum collapses to a few surviving terms. The name comes from a hand telescope, which folds down to a fraction of its extended length when the inner tubes slide into one another.
 
 Suppose the general term of a series has the form:
 
