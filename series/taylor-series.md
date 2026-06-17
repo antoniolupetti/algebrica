@@ -14,8 +14,6 @@ The idea behind a Taylor series is to replace a function with an infinite [polyn
 
 Throughout this page we shall assume familiarity with the notion of [derivative](../derivatives/) of arbitrary order and with the basic theory of power series, in particular with the notion of radius of convergence.
 
-## Analytic functions and the motivating problem
-
 Let $f$ be a real function defined on an open interval containing the point $a$. The question we want to address is whether it is possible to represent $f$ on a neighbourhood of $a$ by means of an expression of the form:
 
 $$
