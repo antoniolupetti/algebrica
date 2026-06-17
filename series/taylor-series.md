@@ -22,9 +22,7 @@ $$
 
 The coefficients $c_n$ are [real numbers](../real-numbers/) and the series converges in some [interval](../intervals/) centred at $a$. When such a representation exists with positive radius of convergence, the function is said to be analytic at $a$.
 
-- - -
-
-The class of analytic functions is rich and includes nearly every elementary function on its [domain](../determining-the-domain-of-a-function/): polynomials, [exponentials](../exponential-function/), [logarithms](../logarithmic-function/) on the positive half-line, trigonometric and hyperbolic functions, [rational functions](../rational-functions/) away from their poles, and roots away from branch points. The functions that fail to be analytic at a given point are those that exhibit a singular behaviour there, such as a vertical tangent, an infinite value, or some form of irregular oscillation.
+The class of analytic functions includes nearly every elementary function on its [domain](../determining-the-domain-of-a-function/): polynomials, [exponentials](../exponential-function/), [logarithms](../logarithmic-function/) on the positive half-line, trigonometric and hyperbolic functions, [rational functions](../rational-functions/) away from their poles, and roots away from branch points. The functions that fail to be analytic at a given point are those that exhibit a singular behaviour there, such as a vertical tangent, an infinite value, or some form of irregular oscillation.
 
 ## Determination of the coefficients
 
