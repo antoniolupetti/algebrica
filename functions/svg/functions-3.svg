@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="285px" viewBox="0 0 309 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <line x1="60" y1="169.5" x2="60" y2="129.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M150,35.9601356 L150.435788,36.7348694 L154.935788,44.7348694 L155.180918,45.1706571 L154.309343,45.6609184 L154.064212,45.2251306 L150.5,38.888 L150.5,253.02 L149.5,253.02 L149.5,38.888 L145.935788,45.2251306 L145.690657,45.6609184 L144.819082,45.1706571 L145.064212,44.7348694 L149.564212,36.7348694 L150,35.9601356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.309343,164.319082 L295.745131,164.564212 L303.745131,169.064212 L304.519864,169.5 L303.745131,169.935788 L295.745131,174.435788 L295.309343,174.680918 L294.819082,173.809343 L295.254869,173.564212 L301.591,170 L-0.5,170 L-0.5,169 L301.591,169 L295.254869,165.435788 L294.819082,165.190657 L295.309343,164.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="60" y1="129.5" x2="150" y2="129.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M14.5,253 C14.5,246 52,103 89.5,103 C114.5,103 139.5,153 164.5,253" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M157.5,187 C157.5,180 195,37 232.5,37 C257.5,37 282.5,87 307.5,187" stroke="#BABABA" stroke-width="2" stroke-linecap="round" transform="translate(232.500000, 112.000000) rotate(-90.000000) translate(-232.500000, -112.000000) "></path>
+            <line x1="59" y1="112.5" x2="59" y2="60.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="245" y1="212.5" x2="245" y2="180.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="15.5" y="11">This curve is a </tspan>
+                <tspan x="15.5" y="24">function since each x </tspan>
+                <tspan x="15.5" y="37">corresponds to </tspan>
+                <tspan x="15.5" y="50">exactly one y.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="197.5" y="231">This curve is not a </tspan>
+                <tspan x="197.5" y="244">function since some </tspan>
+                <tspan x="197.5" y="257">x correspond to </tspan>
+                <tspan x="197.5" y="270">more than one y</tspan>
+            </text>
+            <line x1="214" y1="168.5" x2="214" y2="64.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="150" y1="66.5" x2="214" y2="66.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="150" y1="156.5" x2="214" y2="156.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="56.5" y="182">x₁</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="212.5" y="182">x₂</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="37.5" y="130">y₁</tspan>
+            </text>
+            <circle fill="#000000" cx="59.5" cy="129" r="3"></circle>
+            <circle fill="#BABABA" cx="214" cy="66.5" r="3"></circle>
+            <circle fill="#BABABA" cx="214" cy="156.5" r="3"></circle>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="218.882281" y="76">yᵦ</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#636363">
+                <tspan x="219.012652" y="151">yᵩ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

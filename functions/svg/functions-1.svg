@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="260px" viewBox="0 0 305 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="67.5" y1="68.5" x2="67.5" y2="36.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="45" y="16">Domain of </tspan>
+                <tspan x="45" y="30">the function</tspan>
+            </text>
+            <line x1="247.5" y1="69.5" x2="247.5" y2="31.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="215" y="11">Codomain of </tspan>
+                <tspan x="215" y="25">the function</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="230.7255" y="253">Range</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="20.5" y="74.2609489">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="202.5" y="69.2609489">B</tspan>
+            </text>
+            <ellipse fill="#E6E6E6" transform="translate(245.684403, 148.669038) rotate(-1.000000) translate(-245.684403, -148.669038) " cx="245.684403" cy="148.669038" rx="33.5" ry="42.5"></ellipse>
+            <path d="M64.498808,101.999915 L64.5886873,102.007928 L229.262523,131.687515 L235.2,132.757 L229.598569,128.126442 C229.40937,127.970064 229.364697,127.70367 229.480664,127.496911 L229.531713,127.422503 C229.688091,127.233304 229.954485,127.188631 230.161244,127.304598 L230.235652,127.355647 L237.310613,133.20329 C237.588027,133.43258 237.53542,133.860501 237.235974,134.025531 L237.156018,134.061045 L228.484684,137.070693 C228.223809,137.161238 227.938926,137.023157 227.848381,136.762281 C227.767897,136.530391 227.868055,136.279533 228.074527,136.163057 L228.156793,136.125978 L235.025,133.742 L229.085148,132.671658 L64.4113127,102.992072 C64.139549,102.943091 63.9589476,102.683076 64.0079283,102.411313 C64.0460244,102.199941 64.211783,102.043717 64.4114391,102.007768 L64.498808,101.999915 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M63.5408007,119.00158 L63.6296898,119.017112 L231.386926,164.071913 L237.269,165.652 L232.074117,160.565954 C231.898716,160.394242 231.876568,160.125038 232.009485,159.928746 L232.066602,159.858887 C232.238313,159.683486 232.507518,159.661338 232.70381,159.794256 L232.773668,159.851372 L239.332663,166.272399 C239.589846,166.524171 239.501495,166.946165 239.18925,167.08547 L239.106594,167.114145 L230.213182,169.385097 C229.945625,169.453418 229.673342,169.291906 229.605021,169.024348 C229.544291,168.78652 229.665158,168.544957 229.880681,168.446228 L229.965769,168.416187 L237.011,166.617 L231.127547,165.037688 L63.3703102,119.982888 C63.1036186,119.911262 62.9454866,119.637002 63.0171123,119.37031 C63.0728212,119.162883 63.2511115,119.021128 63.453081,119.00207 L63.5408007,119.00158 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M17.3810485,79.1616043 C6.59973791,93.9074443 0,113.71791 0,135.5 C0,181.063492 28.8776336,218 64.5,218 C100.122366,218 129,181.063492 129,135.5 C129,89.9365081 100.122366,53 64.5,53 C52.3293577,53 40.9460263,57.3115884 31.2327003,64.8057372" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="64" cy="102" r="3"></circle>
+            <circle fill="#333333" cx="64" cy="119" r="3"></circle>
+            <circle fill="#333333" cx="64" cy="141" r="3"></circle>
+            <circle fill="#333333" cx="64" cy="168" r="3"></circle>
+            <path d="M197.90204,71.3890065 C183.320048,86.5146424 174,109.615173 174,135.5 C174,181.063492 202.877634,218 238.5,218 C274.122366,218 303,181.063492 303,135.5 C303,89.9365081 274.122366,53 238.5,53 C229.937533,53 221.764754,55.1340673 214.289037,59.0090494" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" transform="translate(244.000000, 168.000000) scale(1, -1) translate(-244.000000, -168.000000) " cx="244" cy="168" r="3"></circle>
+            <circle fill="#333333" transform="translate(244.000000, 151.000000) scale(1, -1) translate(-244.000000, -151.000000) " cx="244" cy="151" r="3"></circle>
+            <circle fill="#333333" transform="translate(244.000000, 134.000000) scale(1, -1) translate(-244.000000, -134.000000) " cx="244" cy="134" r="3"></circle>
+            <circle fill="#333333" transform="translate(244.000000, 93.000000) scale(1, -1) translate(-244.000000, -93.000000) " cx="244" cy="93" r="3"></circle>
+            <line x1="246.5" y1="235.5" x2="246.5" y2="183.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="253" y="98">y₀</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="253" y="137">y₁</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="253" y="155">y₂</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="253" y="171">yₙ</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="42" y="102">x₀</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="42" y="120">x₁</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="42" y="140">x₂</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="42" y="169">xₙ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
