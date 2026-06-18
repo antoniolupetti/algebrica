@@ -55,6 +55,20 @@ $$V = \int_c^d \pi \big(g(y)\big)^2 \ dy$$
 
 The roles of the two variables are exchanged, while the principle is unchanged: integrate the area of a variable circular cross section along the axis of rotation.
 
+## Conditions for applicability
+
+The volume formula rests on assumptions that decide when the disc method can be used and when a different construction is needed.
+
+The first assumption is the continuity of $f$ on $[a, b]$. Continuity makes $f$ [integrable](../riemann-integrability-criteria/), so the Riemann sum built from the slabs converges to a definite integral. Without it the limit that defines the volume may fail to exist, and the passage from the approximating sum to the integral is no longer justified.
+
+The second assumption concerns the position of the axis. The disc method applies when the axis of revolution forms one side of the rotated region, so that each cross section perpendicular to the axis is a full disc. When a gap separates the region from the axis, rotation opens a cavity along the axis and the cross sections become annuli rather than discs. The volume is then a difference of two integrals, one for the outer radius and one for the inner radius, which is the content of the washer method.
+
+The sign of $f$ does not affect the result. The radius of each disc is the distance from the axis to the curve, equal to $|f(x)|$, and this distance enters the volume through its square. 
+
+Since $\big(f(x)\big)^2 = \big(|f(x)|\big)^2$, the formula holds whether $f$ is positive or negative on part of the interval. The condition $f(x) \geq 0$ serves only to describe the region conveniently and is not required for the formula itself.
+
+> The same reasoning extends to rotation about any line parallel to a coordinate axis. If the region turns about the horizontal line $y = c$ with $f(x) \geq c$, the radius at position $x$ is the distance $f(x) - c$, and the volume becomes $\int_a^b \pi\big(f(x) - c\big)^2 \ dx$. The structure of the formula is preserved, with the radius measured from the actual axis of rotation.
+
 ## Example
 
 Consider the curve $y = \sqrt{x}$ on the interval $0 \leq x \leq 4$, together with the region $R$ that lies between this curve and the $x$-axis. Rotating $R$ about the $x$-axis generates a solid whose silhouette widens as $x$ increases, since the radius $\sqrt{x}$ grows with $x$. This solid is a paraboloid of revolution, the shape of a smooth bowl.
