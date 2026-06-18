@@ -85,12 +85,7 @@ $$V = \int_0^4 \pi x \ dx = \pi \int_0^4 x \ dx$$
 
 The [antiderivative](../indefinite-integrals/) of $x$ is $x^2/2$, so by the [fundamental theorem of calculus](../fundamental-theorem-of-calculus/) we evaluate
 
-$$
-\begin{align}
-V &= \pi \left[ \frac{x^2}{2} \right]_0^4 \\[6pt]
-  &= \pi \left( \frac{16}{2} - \frac{0}{2} \right) \\[6pt]
-  &= 8\pi
-\end{align}
+$$V = \pi \left[ \frac{x^2}{2} \right]_0^4 = \pi \left( \frac{16}{2} - \frac{0}{2} \right) = 8\pi
 $$
 
 The paraboloid bowl obtained by rotating $y = \sqrt{x}$ over $[0, 4]$ about the $x$-axis has volume $8\pi$ cubic units.
