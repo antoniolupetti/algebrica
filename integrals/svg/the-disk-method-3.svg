@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="323px" viewBox="0 0 313 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="77.5" y1="47.5" x2="77.5" y2="94.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="99.5" y1="193.5" x2="99.5" y2="90.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M31.882134,31.6769926 L31.9357878,31.7548694 L36.4357878,39.7548694 C36.5711697,39.9955483 36.4858096,40.3004059 36.2451306,40.4357878 C36.0311938,40.5561272 35.7665479,40.5020533 35.6152959,40.3195146 L35.5642122,40.2451306 L31.999,33.906 L32,322.5 C32,322.776142 31.7761424,323 31.5,323 C31.2545401,323 31.0503916,322.823125 31.0080557,322.589876 L31,322.5 L30.999,33.91 L27.4357878,40.2451306 C27.3154483,40.4590675 27.0612021,40.5502832 26.8371522,40.4728292 L26.7548694,40.4357878 C26.5409325,40.3154483 26.4497168,40.0612021 26.5271708,39.8371522 L26.5642122,39.7548694 L31.0642122,31.7548694 C31.2394349,31.4433624 31.6651608,31.4174034 31.882134,31.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="302.5" y="215">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="13.5" y="40">y</tspan>
+            </text>
+            <path d="M295.162848,189.527171 L295.245131,189.564212 L303.245131,194.064212 C303.556638,194.239435 303.582597,194.665161 303.323007,194.882134 L303.245131,194.935788 L295.245131,199.435788 C295.004452,199.57117 294.699594,199.48581 294.564212,199.245131 C294.443873,199.031194 294.497947,198.766548 294.680485,198.615296 L294.754869,198.564212 L301.091,195 L3.85379111e-16,195 C-0.276142375,195 -0.5,194.776142 -0.5,194.5 C-0.5,194.25454 -0.323124839,194.050392 -0.0898756324,194.008056 L-3.85379111e-16,194 L301.091,194 L294.754869,190.435788 C294.540933,190.315448 294.449717,190.061202 294.527171,189.837152 L294.564212,189.754869 C294.684552,189.540933 294.938798,189.449717 295.162848,189.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M32,195 C30.9760712,175.033388 39.191434,154.280453 56.6460884,132.741195" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M70.613057,117.294459 C72.036123,115.866313 73.4984373,114.434827 75,113 C83.0761542,105.282786 88.3697227,98.8796147 96.8807054,91.7904862" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M32,298.550026 C30.6666667,272.550026 45,245.216692 75,216.550026 C83.2055533,208.709164 88.6355435,202.192488 97.2899708,195" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(64.602432, 246.775013) scale(1, -1) translate(-64.602432, -246.775013) "></path>
+            <ellipse stroke="#333333" cx="100.5" cy="195.25" rx="21" ry="104.75"></ellipse>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="95" y="211">4</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="40" y="127">y = √x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="55" y="11">Rotating the region bounded by y = √x </tspan>
+                <tspan x="55" y="24">and the x-axis on 0 ≤ x ≤ 4 produces a </tspan>
+                <tspan x="55" y="37">paraboloid of revolution.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="239px" viewBox="0 0 307 239" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M27.882134,43.6769926 L27.9357878,43.7548694 L32.4357878,51.7548694 C32.5711697,51.9955483 32.4858096,52.3004059 32.2451306,52.4357878 C32.0311938,52.5561272 31.7665479,52.5020533 31.6152959,52.3195146 L31.5642122,52.2451306 L27.999,45.906 L28,238.5 C28,238.776142 27.7761424,239 27.5,239 C27.2545401,239 27.0503916,238.823125 27.0080557,238.589876 L27,238.5 L26.999,45.91 L23.4357878,52.2451306 C23.3154483,52.4590675 23.0612021,52.5502832 22.8371522,52.4728292 L22.7548694,52.4357878 C22.5409325,52.3154483 22.4497168,52.0612021 22.5271708,51.8371522 L22.5642122,51.7548694 L27.0642122,43.7548694 C27.2394349,43.4433624 27.6651608,43.4174034 27.882134,43.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.162848,144.527171 L295.245131,144.564212 L303.245131,149.064212 C303.556638,149.239435 303.582597,149.665161 303.323007,149.882134 L303.245131,149.935788 L295.245131,154.435788 C295.004452,154.57117 294.699594,154.48581 294.564212,154.245131 C294.443873,154.031194 294.497947,153.766548 294.680485,153.615296 L294.754869,153.564212 L301.091,150 L215.644662,150 C215.36852,150 215.144662,149.776142 215.144662,149.5 C215.144662,149.25454 215.321537,149.050392 215.554786,149.008056 L215.644662,149 L301.091,149 L294.754869,145.435788 C294.540933,145.315448 294.449717,145.061202 294.527171,144.837152 L294.564212,144.754869 C294.684552,144.540933 294.938798,144.449717 295.162848,144.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="64.2966567" y1="149.5" x2="215" y2="149.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="170">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="9.5" y="52">y</tspan>
+            </text>
+            <path d="M80.5,238 C89.6126984,238 97,198.3772 97,149.5 C97,100.6228 89.6126984,61 80.5,61" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5"></path>
+            <path d="M80.5,61 C71.3873016,61 64,100.6228 64,149.5 C64,198.3772 71.3873016,238 80.5,238" stroke="#333333"></path>
+            <path d="M84,63 C97.3333333,85 113.666667,99 133,105 C152.333333,111 179.333333,114 214,114" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" fill="#000000">
+                <tspan x="111.5" y="127.164835">S</tspan>
+            </text>
+            <line x1="163.5" y1="49.5" x2="163.5" y2="126.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M84,185 C97.3333333,207 113.666667,221 133,227 C152.333333,233 179.333333,236 214,236" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(149.000000, 210.500000) scale(1, -1) translate(-149.000000, -210.500000) "></path>
+            <ellipse stroke="#333333" cx="214" cy="149.5" rx="10.5" ry="35.5"></ellipse>
+            <line x1="0" y1="149.5" x2="64" y2="149.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="63" y="11">Rotating the region R about the x-axis </tspan>
+                <tspan x="63" y="24">produces a solid S whose cross sections </tspan>
+                <tspan x="63" y="37">perpendicular to the axis are circular discs.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
