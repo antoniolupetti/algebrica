@@ -89,8 +89,6 @@ $$
 f(x) = g(x) \quad \forall \ x \in D
 $$
 
-- - -
-
 A real number $a \in \mathbb{R}$ is a zero of the function $y = f(x)$ if the function vanishes at that point:
 
 $$
@@ -115,8 +113,6 @@ A function can stay within fixed limits across its domain, never rising above a 
 + Upper bounded if there exists $M \in \mathbb{R}$ such that $f(x) \leq M$ for all $x \in A$.
 + Lower bounded if there exists $m \in \mathbb{R}$ such that $m \leq f(x)$ for all $x \in A$.
 + Bounded if it satisfies both conditions, so that $m \leq f(x) \leq M$ for all $x \in A$.
-
-- - -
 
 A bounded function differs from one that attains a [maximum or minimum](../maximum-minimum-and-inflection-points/). Boundedness does not imply that the function actually reaches a maximal or minimal value, globally or locally; it only means that the values remain confined within a finite interval $[m, M]$.
 
@@ -327,6 +323,8 @@ $$
 
 we define the common domain $X = X_1 \cap X_2$, on which the following operations can be performed.
 
+- - -
+
 The sum of two functions $f$ and $g$ is defined by:
 
 $$
@@ -335,11 +333,15 @@ $$
 
 The resulting function assigns to each $x \in X$ the sum of the corresponding values of $f$ and $g$.
 
+- - -
+
 The difference of two functions is:
 
 $$
 (f - g)(x) = f(x) - g(x)
 $$
+
+- - -
 
 The product of two functions is:
 
@@ -349,6 +351,8 @@ $$
 
 The resulting function is the pointwise product of the two values.
 
+- - -
+
 The quotient of two functions is:
 
 $$
@@ -356,5 +360,7 @@ $$
 $$
 
 and is defined only for those $x \in X$ where $g(x) \neq 0$. Its domain is obtained by excluding from $X$ all points that make the denominator vanish.
+
+- - -
 
 The composition of two functions, written $(g \circ f)(x) = g(f(x))$, is another fundamental operation, treated in detail on the dedicated page on [composite functions](../composite-functions/).
