@@ -10,11 +10,7 @@ tags:
 ---
 ## Behavior of a function
 
-When analyzing the behavior of a [function](../functions/), it is useful to investigate whether it exhibits symmetry with respect to the coordinate axes. In this context functions are classified as even, showing symmetry with respect to the $y$-axis, or odd, showing symmetry with respect to the origin. In general, a function can be:
-
-+ even
-+ odd
-+ neither even nor odd
+When analysing the behavior of a [function](../functions/), it is useful to investigate whether it exhibits symmetry with respect to the coordinate axes. In this context, functions are classified as even, showing symmetry with respect to the $y$-axis, or odd, showing symmetry with respect to the origin. In general, a function can be even, odd, or neither even nor odd.
 
 ## Even function
 
