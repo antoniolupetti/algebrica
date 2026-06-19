@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="314px" height="267px" viewBox="0 0 314 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="173" y="11">The function y = x² is even, </tspan>
+                <tspan x="173" y="25">as it is symmetric with </tspan>
+                <tspan x="173" y="39">respect to the y-axis.</tspan>
+            </text>
+            <path d="M144.5,40.9801356 L144.935788,41.7548694 L149.435788,49.7548694 L149.680918,50.1906571 L148.809343,50.6809184 L148.564212,50.2451306 L145,43.908 L145,267 L144,267 L144,43.908 L140.435788,50.2451306 L140.190657,50.6809184 L139.319082,50.1906571 L139.564212,49.7548694 L144.064212,41.7548694 L144.5,40.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,228.319082 L295.245131,228.564212 L303.245131,233.064212 L304.019864,233.5 L303.245131,233.935788 L295.245131,238.435788 L294.809343,238.680918 L294.319082,237.809343 L294.754869,237.564212 L301.091,234 L-0.5,234 L-0.5,233 L301.091,233 L294.754869,229.435788 L294.319082,229.190657 L294.809343,228.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="218.5" y1="49.5" x2="218.5" y2="79" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M77,90 C98.9600199,184 121.76002,231 145.4,231 C166.048893,231 187.125056,195.141082 208.62849,123.423245" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M214.425655,103.055867 C215.152976,100.424155 216.344425,96.0721992 218,90" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="197.5" y="116">y = x²</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="127" y="50">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="296" y="250">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

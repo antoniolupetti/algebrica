@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="406px" height="238px" viewBox="0 0 406 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="183.5" y="11">The function y = sin(x) is odd, as it is </tspan>
+                <tspan x="183.5" y="24">symmetric with respect to the origin.</tspan>
+            </text>
+            <line x1="207.5" y1="29.5" x2="207.5" y2="65.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M395.309343,136.319082 L395.745131,136.564212 L403.745131,141.064212 L404.519864,141.5 L403.745131,141.935788 L395.745131,146.435788 L395.309343,146.680918 L394.819082,145.809343 L395.254869,145.564212 L401.591,142 L-0.5,142 L-0.5,141 L401.591,141 L395.254869,137.435788 L394.819082,137.190657 L395.309343,136.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="207" y1="77.5" x2="170" y2="77.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="287" y1="205.5" x2="170" y2="205.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="152.5" y="82">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="149.5" y="209">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="198" y="156">π/2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="331" y="156">2π</tspan>
+            </text>
+            <line x1="207.5" y1="138.5" x2="207.5" y2="78.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="46.5" y="114">f(x) = sin(x)</tspan>
+            </text>
+            <path d="M166.5,44.9801356 L166.935788,45.7548694 L171.435788,53.7548694 L171.680918,54.1906571 L170.809343,54.6809184 L170.564212,54.2451306 L167,47.908 L167,238 L166,238 L166,47.908 L162.435788,54.2451306 L162.190657,54.6809184 L161.319082,54.1906571 L161.564212,53.7548694 L166.064212,45.7548694 L166.5,44.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M79.1322454,120.846906 C91.8154548,157.712379 102.057941,205 126.5,205 C146.089537,205 157.600017,173.040154 167.5,142 C177.843078,109.570578 186.56625,78 207.5,78 C248.470703,78 247.5,205 287.5,205 C327.5,205 327.5,78 367.5,78" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M47.5,78 C57.5666881,78 65.0382335,87.3888092 71.3867983,101.060862" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="207" cy="78" r="3"></circle>
+            <circle fill="#333333" cx="287" cy="205.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
