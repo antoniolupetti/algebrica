@@ -25,7 +25,7 @@ $$
 ![IMG. 1](svg/increasing-and-decreasing-functions-1.svg)
 
 
-As the input $x$ increases within the interval $I$, the output $f(x)$ also strictly increases, without any flat or decreasing segments.
+As the input $x$ increases within the [interval](../intervals/) $I$, the output $f(x)$ also strictly increases, without any flat or decreasing segments.
 
 - - -
 
@@ -95,11 +95,11 @@ By multiplying the signs of the two factors, we obtain the intervals where the d
 
 [class="table-sign"]
 
-|               |                  |       $-1$       |       $0$        |       $1$        |
-| :-----------: | :--------------: | :--------------: | :--------------: | :--------------: |
-|    $x > 0$    | $\boldsymbol{-}$ | $\boldsymbol{-}$ | $\boldsymbol{+}$ | $\boldsymbol{+}$ |
-| $x^2 - 1 > 0$ | $\boldsymbol{+}$ | $\boldsymbol{-}$ | $\boldsymbol{-}$ | $\boldsymbol{+}$ |
-|    $f'(x)$    | $\boldsymbol{-}$ | $\boldsymbol{+}$ | $\boldsymbol{-}$ | $\boldsymbol{+}$ |
+|               |     | $-1$ | $0$ | $1$ |
+| :-----------: | :-: | :--: | :-: | :-: |
+|    $x > 0$    | $-$ | $-$  | $+$ | $+$ |
+| $x^2 - 1 > 0$ | $+$ | $-$  | $-$ | $+$ |
+|    $f'(x)$    | $-$ | $+$  | $-$ | $+$ |
 [/class]
 
 Therefore, the derivative $x(x^2 - 1)$ is positive for $x \in (-1,0) \cup (1,+\infty).$
@@ -108,7 +108,7 @@ Therefore, the derivative $x(x^2 - 1)$ is positive for $x \in (-1,0) \cup (1,+\i
 
 - - -
 
-Reading the sign of the derivative through the definition of monotonicity, $f$ is strictly increasing on each of the intervals $(-1, 0)$ and $(1, +\infty)$, where $f'(x) > 0$, and strictly decreasing on each of the intervals $(-\infty, -1)$ and $(0, 1)$, where $f'(x) < 0$.
+Reading the sign of the derivative through the definition of monotonicity, $f$ is strictly increasing on each of the intervals $(-1, 0)$ and $(1, +\infty)$, where $f'(x) > 0$, and strictly decreasing on each of the intervals $(-\infty, -1)$ and $(0, 1)$, where $f'(x) < 0.$
 
 > The function is not increasing on the union $(-1, 0) \cup (1, +\infty)$ taken as a single set. Monotonicity must be read on each interval separately, since comparing a point of $(-1, 0)$ with a point of $(1, +\infty)$ crosses the decreasing stretch $(0, 1)$ that lies between them.
 
@@ -118,13 +118,13 @@ A strictly monotonic function is injective. Suppose $f$ is strictly increasing o
 
 A strictly monotonic function therefore admits an [inverse](../inverse-function/) on its image, and the inverse keeps the same direction of monotonicity.
 
-> Wide-sense monotonicity is not enough for injectivity. A function that is increasing with the condition $f(x_1) \leq f(x_2)$ may stay constant on a subinterval, where it takes one value at infinitely many points.
+> Wide-sense monotonicity is not enough for injectivity. A function that is increasing with the condition $f(x_1) \leq f(x_2)$ may remain constant on a subinterval, taking a single value at infinitely many points.
 
 ## One-sided limits of a monotonic function
 
 Monotonicity constrains the local behavior of a function strongly enough to force the existence of both one-sided [limits](../limits/) at every interior point, even where the function is discontinuous.
 
-**Definition 3.** Let $f$ be increasing on an open interval $(a, b)$. For every $x_0 \in (a, b)$ both one-sided limits exist and satisfy:
+**Definition 3.** Let $f$ be increasing on an open [interval](../intervals/) $(a, b)$. For every $x_0 \in (a, b)$ both one-sided limits exist and satisfy:
 
 $$
 \sup_{a < t < x_0} f(t) = f(x_0^-) \leq f(x_0) \leq f(x_0^+) = \inf_{x_0 < t < b} f(t)
