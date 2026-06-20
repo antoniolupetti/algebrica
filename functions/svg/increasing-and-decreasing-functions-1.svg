@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="308px" height="202px" viewBox="0 0 308 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <polygon fill="#e6e6e6" points="196 106 220 95 229 92 240 89 240 91.5384615 240 150 179 150 179 116"></polygon>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="14" y="85">y=f(x)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="175" y="166">x₁</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="238" y="166">x₂</tspan>
+            </text>
+            <line x1="178.5" y1="119.5" x2="178.5" y2="149.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="240.5" y1="90.5" x2="240.5" y2="149.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M55.5,8.98013557 L55.9357878,9.75486938 L60.4357878,17.7548694 L60.6809184,18.1906571 L59.8093429,18.6809184 L59.5642122,18.2451306 L55.999,11.906 L56,202 L55,202 L54.999,11.91 L51.4357878,18.2451306 L51.1906571,18.6809184 L50.3190816,18.1906571 L50.5642122,17.7548694 L55.0642122,9.75486938 L55.5,8.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="38" y="17">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295" y="166">x</tspan>
+            </text>
+            <path d="M294.809343,144.319082 L295.245131,144.564212 L303.245131,149.064212 L304.019864,149.5 L303.245131,149.935788 L295.245131,154.435788 L294.809343,154.680918 L294.319082,153.809343 L294.754869,153.564212 L301.093,149.999 L295,150 L3.85379111e-16,150 L-0.5,150 L-0.5,149 L-3.85379111e-16,149 L295,149 L301.089,148.999 L294.754869,145.435788 L294.319082,145.190657 L294.809343,144.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M6,187 C9.81292788,173.253272 12.6903234,163.233058 14.6321867,156.939357 M21.4564333,136.068489 C41.9494904,77.0691685 64.1306793,45.7130054 88,42 C133,35 145,139 287,146" stroke="#BABABA" stroke-width="2" stroke-linecap="round" transform="translate(146.500000, 114.331045) scale(1, -1) translate(-146.500000, -114.331045) "></path>
+            <path d="M178.46311,89.1548085 C194.702719,100.499699 214.769801,110.583386 240.630191,116.897315" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(209.546650, 103.026062) scale(1, -1) translate(-209.546650, -103.026062) "></path>
+            <line x1="200.5" y1="96.5" x2="200.5" y2="59.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="144" y="11">The function is strictly </tspan>
+                <tspan x="144" y="24">increasing throughout the </tspan>
+                <tspan x="144" y="37">interval, exhibiting neither flat </tspan>
+                <tspan x="144" y="50">nor decreasing behavior.</tspan>
+            </text>
+            <circle fill="#333333" cx="178.5" cy="116.5" r="2.5"></circle>
+            <circle fill="#333333" cx="240.5" cy="89.5" r="2.5"></circle>
+            <circle fill="#333333" cx="240.5" cy="149.5" r="2.5"></circle>
+            <circle fill="#333333" cx="178.5" cy="149.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
