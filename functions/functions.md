@@ -136,19 +136,13 @@ This function always stays between $-1$ and $1$, so it is bounded. Yet it has ne
 
 ## Periodic functions
 
-A function is periodic when its values repeat after a fixed horizontal shift. If $X \subseteq \mathbb{R}$ and $T > 0$ satisfies $x + T \in X$ whenever $x \in X$, the function:
-
-$$
-f : X \to \mathbb{R}
-$$
-
-is periodic with period $T$ when $T$ is the smallest positive number for which:
+A function is periodic when its values repeat after a fixed horizontal shift. Let $X \subseteq \mathbb{R}$ be a set with $x + T \in X$ whenever $x \in X$, for some $T > 0$. A function $f : X \to \mathbb{R}$ is periodic with period $T$ when its values repeat after a shift by $T$:
 
 $$
 f(x + T) = f(x)
 $$
 
-holds for all $x$ in the domain. As an illustration, the [sine](../sine-and-cosine/) and [cosine](../sine-and-cosine/) functions are periodic, both repeating their entire pattern after an interval of length $2\pi$.
+The period $T$ is the smallest positive number for which this identity holds for all $x$ in the domain. The [sine](../sine-and-cosine/) and [cosine](../sine-and-cosine/) functions are periodic, both repeating their entire pattern after an interval of length $2\pi$.
 
 ## Classification of functions
 
@@ -315,13 +309,13 @@ For the trigonometric functions, the following domains apply:
 
 ## Operations between functions
 
-When two real functions are defined on the same domain, we can combine them through the usual algebraic operations to obtain new functions. This extends the arithmetic of real numbers to functions, where each operation is applied pointwise for every $x$ in the domain. Given:
+When two real functions are defined on the same domain, we can combine them through the usual algebraic operations to obtain new functions. This extends the arithmetic of real numbers to functions, where each operation is applied pointwise for every $x$ in the domain. Consider two functions
 
 $$
 f : X_1 \subseteq \mathbb{R} \to \mathbb{R} \quad \text{and} \quad g : X_2 \subseteq \mathbb{R} \to \mathbb{R}
 $$
 
-we define the common domain $X = X_1 \cap X_2$, on which the following operations can be performed.
+On the common domain $X = X_1 \cap X_2$ the following operations can be performed.
 
 - - -
 
@@ -359,7 +353,7 @@ $$
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}
 $$
 
-and is defined only for those $x \in X$ where $g(x) \neq 0$. Its domain is obtained by excluding from $X$ all points that make the denominator vanish.
+It is defined only for those $x \in X$ where $g(x) \neq 0$. Its domain is obtained by excluding from $X$ all points that make the denominator vanish.
 
 - - -
 
