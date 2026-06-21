@@ -119,10 +119,10 @@ A bounded function differs from one that attains a [maximum or minimum](../maxim
 If a function has a global maximum, then it is bounded from above, and a global minimum ensures that it is bounded from below. The converse fails, since a function may be bounded without attaining any maxima or minima. An example is:
 
 $$
-f(x) = \sin\!\left(\frac{1}{x}\right), \quad x \neq 0
+f(x) = \arctan x
 $$
 
-This function always stays between $-1$ and $1$, so it is bounded. Yet it has neither a global maximum nor a global minimum, because as $x$ approaches $0$ the oscillations become arbitrarily rapid and the function never settles on its extreme values.
+This function satisfies $-\frac{\pi}{2} < \arctan x < \frac{\pi}{2}$ for every real $x$, so it is bounded. It has neither a global maximum nor a global minimum, because the values $\pm\frac{\pi}{2}$ are approached as $x \to \pm\infty$ but never reached.
 
 ## Monotone functions
 
