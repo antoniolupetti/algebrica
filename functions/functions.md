@@ -29,7 +29,7 @@ $$
 
 - - -
 
-A function $f : A \to B$ from a domain $A$ to a codomain $B$ can be classified as:
+A function $f : A \to B$ can be classified as:
 
 + Injective if every element of $B$ is the image of at most one element of $A$, that is, if for any $x_1, x_2 \in A$ with $x_1 \neq x_2$ we have $f(x_1) \neq f(x_2)$. Equivalently, for every $y \in B$ there is at most one $x \in A$ such that $f(x) = y$.
 + Surjective if every element of $B$ is the image of at least one element of $A$, that is, if for every $y \in B$ there exists at least one $x \in A$ such that $f(x) = y$.
@@ -95,11 +95,11 @@ $$
 f(a) = 0
 $$
 
-The graph of the function then intersects the $x$-axis at the point $(a, 0)$. Identifying the zeros of a function is important for analyzing its behavior, solving [equations](../equations/), and determining where the function changes [sign](../sign-analysis-in-inequalities/).
+The graph of the function then intersects the $x$-axis at the point $(a, 0)$. The zeros of a function are used to analyze its behavior, to solve [equations](../equations/), and to determine where the function changes [sign](../sign-analysis-in-inequalities/).
 
 ## Symmetric functions
 
-The behavior of a function under reflection about the origin leads to the distinction between [even and odd functions](../even-and-odd-functions/). Let $A \subseteq \mathbb{R}$ be a domain symmetric with respect to the origin, meaning $x \in A \Rightarrow -x \in A$. A function $f : A \to \mathbb{R}$ is said to be:
+[Even and odd functions](../even-and-odd-functions/) describe the behavior of a function under reflection about the origin. Let $A \subseteq \mathbb{R}$ be a domain symmetric with respect to the origin, meaning $x \in A \Rightarrow -x \in A$. A function $f : A \to \mathbb{R}$ is said to be:
 
 + Even if $f(-x) = f(x)$ for all $x \in A$.
 + Odd if $f(-x) = -f(x)$ for all $x \in A$.
@@ -116,7 +116,7 @@ A function can stay within fixed limits across its domain, never rising above a 
 
 A bounded function differs from one that attains a [maximum or minimum](../maximum-minimum-and-inflection-points/). Boundedness does not imply that the function actually reaches a maximal or minimal value, globally or locally; it only means that the values remain confined within a finite interval $[m, M]$.
 
-If a function has a global maximum, then it is bounded from above, and a global minimum ensures that it is bounded from below. The converse fails: a function may be bounded without attaining any maxima or minima. A typical example is:
+If a function has a global maximum, then it is bounded from above, and a global minimum ensures that it is bounded from below. The converse fails, since a function may be bounded without attaining any maxima or minima. An example is:
 
 $$
 f(x) = \sin\!\left(\frac{1}{x}\right), \quad x \neq 0
@@ -126,7 +126,7 @@ This function always stays between $-1$ and $1$, so it is bounded. Yet it has ne
 
 ## Monotone functions
 
-Whether a function increases, decreases, or keeps a consistent directional behavior is described by [increasing, decreasing, and monotone functions](../increasing-and-decreasing-functions/), which capture how the output evolves as the input grows. Let $A \subseteq \mathbb{R}$ and let $x_1, x_2 \in A$ with $x_1 < x_2$. A function $f : A \to \mathbb{R}$ is said to be:
+[Increasing, decreasing, and monotone functions](../increasing-and-decreasing-functions/) describe how the output of a function changes as the input grows. Let $A \subseteq \mathbb{R}$ and let $x_1, x_2 \in A$ with $x_1 < x_2$. A function $f : A \to \mathbb{R}$ is said to be:
 
 + Increasing if $f(x_1) \leq f(x_2)$.
 + Strictly increasing if $f(x_1) < f(x_2)$.
@@ -162,7 +162,7 @@ Transcendental functions go beyond algebraic operations and include expressions 
 
 ## Domain of the main functions
 
-The most common elementary functions have domains that follow directly from their expressions. Many functions encountered in practice are far more intricate, and their domains cannot be read off at a glance. For those situations we refer to the [systematic method](../determining-the-domain-of-a-function/) for determining the domain of more complex functions.
+The most common elementary functions have domains that follow directly from their expressions. Many functions encountered in practice are more complex, and their domains cannot be read off at a glance. For those situations we refer to the [systematic method](../determining-the-domain-of-a-function/) for determining the domain of more complex functions.
 
 - - -
 
@@ -311,11 +311,11 @@ For the trigonometric functions, the following domains apply:
 + $y = \arcsin x$ and $y = \arccos x$ have domain $[-1, 1]$.
 + $y = \arctan x$ and $y = \mathrm{arccot}\ x$ have domain $\mathbb{R}$.
 
-> Understanding the domain is a crucial first step in solving [equations](../equations/), [inequalities](../inequalities/), and in [analyzing the graph of a function](../analyzing-the-graphs-of-functions/). For expressions that combine several elementary functions, the [systematic method](../determining-the-domain-of-a-function/) shows how to handle the restrictions one layer at a time.
+> The domain is the first step in solving [equations](../equations/), [inequalities](../inequalities/), and [analyzing the graph of a function](../analyzing-the-graphs-of-functions/). For expressions that combine several elementary functions, the [systematic method](../determining-the-domain-of-a-function/) shows how to handle the restrictions one layer at a time.
 
 ## Operations between functions
 
-When two real functions are defined on the same domain, we can combine them through the usual algebraic operations, obtaining new functions. This extends the arithmetic of real numbers to functions, where each operation is applied pointwise for every $x$ in the domain. Given:
+When two real functions are defined on the same domain, we can combine them through the usual algebraic operations to obtain new functions. This extends the arithmetic of real numbers to functions, where each operation is applied pointwise for every $x$ in the domain. Given:
 
 $$
 f : X_1 \subseteq \mathbb{R} \to \mathbb{R} \quad \text{and} \quad g : X_2 \subseteq \mathbb{R} \to \mathbb{R}
