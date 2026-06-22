@@ -13,7 +13,7 @@ tags:
 A composite function applies one [function](../functions/) to the result of another. Given two functions $f(x)$ and $g(x),$ the composition evaluates $g$ at the output of $f,$ denoted by:
 
 $$
-g \circ f = g(f(x))
+(g \circ f)(x) = g(f(x))
 $$
 
 We first apply $f$ to the input $x,$ then apply $g$ to the result.
@@ -65,7 +65,7 @@ g(x) &= x^2
 \end{align}
 $$
 
-We want to define the composite function $g \circ f = g(f(x)).$ We start by evaluating $f(x)$:
+We want to define the composite function $g \circ f.$ We start by evaluating $f(x)$:
 
 $$
 f(x) = 2x + 3
@@ -80,23 +80,24 @@ $$
 Therefore, the composite function is:
 
 $$
-g \circ f = (2x + 3)^2
+(g \circ f)(x) = (2x + 3)^2
 $$
 
 ## Composition with the inverse function
 
-If a function $f$ is composed with its [inverse](../inverse-function/) $f^{-1},$ the result is the identity function, which maps each element of a set to itself:
+If a function $f$ is invertible, composing it with its [inverse](../inverse-function/) $f^{-1}$ returns the identity function, and the order of composition determines the domain on which each equality holds:
 
 $$
-f(f^{-1}(x)) = f^{-1}(f(x)) = x
+\begin{align}
+f^{-1}(f(x)) &= x \\[6pt]
+f(f^{-1}(y)) &= y
+\end{align}
 $$
 
-> This operation is valid only if the function $f$ is invertible, meaning that it is both injective (one-to-one) and surjective (onto) over its domain.
-
-When the composition between two functions is well-defined, that is, when the output of the first function lies within the domain of the second, we can write:
+The first equality holds for every $x$ in the domain of $f,$ the second for every $y$ in its image. Invertibility requires $f$ to be both injective (one-to-one) and surjective (onto) over its domain. When the composition between two functions is well-defined, that is, when the output of the first function lies within the domain of the second, we can write:
 
 $$
-g(f(x)) \equiv g \circ f \quad \text{and} \quad f(g(x)) \equiv f \circ g
+(g \circ f)(x) = g(f(x)) \quad \text{and} \quad (f \circ g)(x) = f(g(x))
 $$
 
 Function composition is not commutative. In general the order of composition affects the result, and the following holds:
@@ -119,13 +120,13 @@ $$
 We compute $f \circ g,$ applying $f$ to the output of $g$:
 
 $$
-f \circ g = f(g(x)) = f(x + 1) = e^{x + 1}
+(f \circ g)(x) = f(g(x)) = f(x + 1) = e^{x + 1}
 $$
 
 We then compute $g \circ f,$ applying $g$ to the output of $f$:
 
 $$
-g \circ f = g(f(x)) = g(e^x) = e^x + 1
+(g \circ f)(x) = g(f(x)) = g(e^x) = e^x + 1
 $$
 
 Comparing the two results, we have:
