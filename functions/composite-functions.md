@@ -38,19 +38,19 @@ $$
 g \circ f \colon x \in A \rightarrow g(f(x)) \in C
 $$
 
-The function $g \circ f$ maps each element $x$ in the [domain](../determining-the-domain-of-a-function/) $A$ to the value $g(f(x)),$ provided that the image of $f$ is contained in the domain of $g.$ This containment condition $f(A) \subseteq B$ guarantees that $g$ can be evaluated at every output of $f.$ The containment is not required in general. Any two functions $f$ and $g$ can be composed, and the domain of $g \circ f$ is the set of inputs in the domain of $f$ whose image under $f$ lies in the domain of $g,$
+The function $g \circ f$ maps each element $x$ in the [domain](../determining-the-domain-of-a-function/) $A$ to the value $g(f(x)),$ provided that the image of $f$ is contained in the domain of $g.$ This condition $f(A) \subseteq B$ ensures that $g$ is defined at every output of $f.$ The containment is not required in general. Any two functions $f$ and $g$ can be composed, and the domain of $g \circ f$ is the set of inputs in the domain of $f$ whose image under $f$ lies in the domain of $g$:
 
 $$
 \{\ x \in \mathrm{dom}(f) \mid f(x) \in \mathrm{dom}(g)\ \}
 $$
 
-Composition is associative. For three functions $f,$ $g,$ and $h,$ the two ways of grouping the operations give the same result,
+Composition is associative. For three functions $f,$ $g,$ and $h,$ grouping the operations either way gives the same result:
 
 $$
 (h \circ g) \circ f = h \circ (g \circ f)
 $$
 
-so the composite function can be written $h \circ g \circ f$ without ambiguity.
+The common value can therefore be written $h \circ g \circ f$ without ambiguity.
 
 ## Example 1
 
