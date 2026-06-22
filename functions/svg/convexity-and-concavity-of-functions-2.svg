@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="302px" viewBox="0 0 306 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="118" y="11">The graph illustrates how the </tspan>
+                <tspan x="118" y="24">concavity of the function ensures </tspan>
+                <tspan x="118" y="37">that every secant line lies below </tspan>
+                <tspan x="118" y="50">the curve.</tspan>
+            </text>
+            <line x1="158.5" y1="55.5" x2="158.5" y2="138.5" stroke="#636363" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="61.5" y="121">(a, f(a))</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="239.5" y="174">(b, f(b))</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="262.5" y="203">(k, f(k))</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="94" y="279">a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="248" y="279">k</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="232" y="279">b</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="278">x</tspan>
+            </text>
+            <path d="M294.809343,253.319082 L295.245131,253.564212 L303.245131,258.064212 L304.019864,258.5 L303.245131,258.935788 L295.245131,263.435788 L294.809343,263.680918 L294.319082,262.809343 L294.754869,262.564212 L301.091,259 L-0.5,259 L-0.5,258 L301.091,258 L294.754869,254.435788 L294.319082,254.190657 L294.809343,253.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="64.5" y="86">y</tspan>
+            </text>
+            <path d="M84.882134,76.1769926 L84.9357878,76.2548694 L89.4357878,84.2548694 C89.5711697,84.4955483 89.4858096,84.8004059 89.2451306,84.9357878 C89.0311938,85.0561272 88.7665479,85.0020533 88.6152959,84.8195146 L88.5642122,84.7451306 L85,78.408 L85,106 C85,106.276142 84.7761424,106.5 84.5,106.5 C84.2545401,106.5 84.0503916,106.323125 84.0080557,106.089876 L84,106 L84,78.408 L80.4357878,84.7451306 C80.3154483,84.9590675 80.0612021,85.0502832 79.8371522,84.9728292 L79.7548694,84.9357878 C79.5409325,84.8154483 79.4497168,84.5612021 79.5271708,84.3371522 L79.5642122,84.2548694 L84.0642122,76.2548694 C84.2394349,75.9433624 84.6651608,75.9174034 84.882134,76.1769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M0,173 C61.3333333,228.333333 115.666667,252.666667 163,246 C210.333333,239.333333 246.333333,198.666667 271,124" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(135.500000, 185.537634) scale(1, -1) translate(-135.500000, -185.537634) "></path>
+            <line x1="95.5" y1="133.5" x2="233.5" y2="171.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="98.5" y1="134.5" x2="250.5" y2="198.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="97.5" cy="133.5" r="2.5"></circle>
+            <circle fill="#333333" cx="234.5" cy="171.5" r="2.5"></circle>
+            <circle fill="#333333" cx="250.5" cy="198.5" r="2.5"></circle>
+            <line x1="97.5" y1="253.5" x2="97.5" y2="264.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="235.5" y1="253.5" x2="235.5" y2="264.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="251.5" y1="253.5" x2="251.5" y2="264.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="84.5" y1="128" x2="84.5" y2="301" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>
