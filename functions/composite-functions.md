@@ -16,13 +16,11 @@ $$
 (g \circ f)(x) = g(f(x))
 $$
 
-We first apply $f$ to the input $x,$ then apply $g$ to the result.
+The diagram illustrates a composite function. The input $x$ from set $A$ is first mapped to $f(x)$ in set $B,$ then $f(x)$ is mapped to $g(f(x))$ in set $C,$ producing the composition $g \circ f.$
+
 
 ![IMG.1](svg/composite-functions-1.svg)
 
-> The diagram illustrates a composite function. The input $x$ from set $A$ is first mapped to $f(x)$ in set $B,$ then $f(x)$ is mapped to $g(f(x))$ in set $C,$ producing the composition $g \circ f.$
-
-- - -
 
 More formally, let two functions $f(x)$ and $g(x)$ be given such that:
 
