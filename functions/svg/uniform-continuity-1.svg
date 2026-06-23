@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="321px" viewBox="0 0 342 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect fill="#EEEEEE" x="91" y="190" width="248" height="45"></rect>
+            <rect fill="#DFDFDF" opacity="0.551013765" x="153" y="82" width="82" height="175"></rect>
+            <line x1="178.5" y1="203.5" x2="178.5" y2="249.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="178.5" y1="203.5" x2="91.5" y2="203.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="223.5" x2="90.5" y2="223.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="221.5" x2="210.5" y2="254.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="321.5" y1="179.5" x2="321.5" y2="257.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="134" y="10">δ depends only on  ε, not on the </tspan>
+                <tspan x="142.25752" y="23.6994171" >particular choice of x and y. Once ε is </tspan>
+                <tspan x="142.25752" y="36.6994171" >fixed, the same δ must work uniformly </tspan>
+                <tspan x="142.25752" y="49.6994171" >across the entire domain A.</tspan>
+            </text>
+            <line x1="194.5" y1="91.5" x2="194.5" y2="56.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M331.809343,252.319082 L332.245131,252.564212 L340.245131,257.064212 L341.019864,257.5 L340.245131,257.935788 L332.245131,262.435788 L331.809343,262.680918 L331.319082,261.809343 L331.754869,261.564212 L338.091,258 L70,258 L70,257 L338.091,257 L331.754869,253.435788 L331.319082,253.190657 L331.809343,252.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="22.2941719" y="193">f(x)+ε</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="24.5381719" y="236">f(y)-ε</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="183.664" y="198">f(x)</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="216.24" y="218">f(y)</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="174.49" y="274">x</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="207.778" y="274">y</tspan>
+            </text>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="316.992" y="280">A</tspan>
+            </text>
+            <circle fill="#333333" cx="178.5" cy="257.5" r="2.5"></circle>
+            <circle fill="#333333" cx="210.5" cy="257.5" r="2.5"></circle>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="145.310961" y="313">x-δ</tspan>
+            </text>
+            <line x1="154.5" y1="295.5" x2="154.5" y2="263.5" stroke="#CFCFCF" stroke-linecap="square"></line>
+            <line x1="90.5" y1="190.5" x2="68.5" y2="190.5" stroke="#CFCFCF" stroke-linecap="square"></line>
+            <line x1="90.5" y1="234.5" x2="68.5" y2="234.5" stroke="#CFCFCF" stroke-linecap="square"></line>
+            <text  font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="225.598961" y="313">y-δ</tspan>
+            </text>
+            <line x1="235.5" y1="295.5" x2="235.5" y2="263.5" stroke="#CFCFCF" stroke-linecap="square"></line>
+            <path d="M91,117 C156.191519,190.76744 206.489399,230.2093 241.89364,235.32558 C277.29788,240.44186 303.666667,221.666667 321,179" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <circle fill="#333333" cx="178.5" cy="202.5" r="2.5"></circle>
+            <circle fill="#333333" cx="210.5" cy="223.5" r="2.5"></circle>
+            <path d="M90.5,54.9801356 L90.9357878,55.7548694 L95.4357878,63.7548694 L95.6809184,64.1906571 L94.8093429,64.6809184 L94.5642122,64.2451306 L91,57.908 L91,281 L90,281 L90,57.908 L86.4357878,64.2451306 L86.1906571,64.6809184 L85.3190816,64.1906571 L85.5642122,63.7548694 L90.0642122,55.7548694 L90.5,54.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
