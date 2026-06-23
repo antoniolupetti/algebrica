@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="299px" viewBox="0 0 323 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 65</title>
+    <g id="NEW---Functions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-65">
+            <line x1="151.5" y1="142.5" x2="301.5" y2="142.5" id="Line-17" stroke="#000000" stroke-linecap="round"></line>
+            <line x1="0.5" y1="260.5" x2="150.5" y2="260.5" id="Line-17" stroke="#000000" stroke-linecap="round"></line>
+            <path id="Line" d="M151.5,87.4801356 L151.935788,88.2548694 L156.435788,96.2548694 L156.680918,96.6906571 L155.809343,97.1809184 L155.564212,96.7451306 L152,90.408 L152,299 L151,299 L151,90.408 L147.435788,96.7451306 L147.190657,97.1809184 L146.319082,96.6906571 L146.564212,96.2548694 L151.064212,88.2548694 L151.5,87.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path id="Line-2" d="M294.309343,198.319082 L294.745131,198.564212 L302.745131,203.064212 L303.519864,203.5 L302.745131,203.935788 L294.745131,208.435788 L294.309343,208.680918 L293.819082,207.809343 L294.254869,207.564212 L300.591,204 L0.5,204 L0.5,203 L300.591,203 L294.254869,199.435788 L293.819082,199.190657 L294.309343,198.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="The-graph-of-the-sig" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="142" y="11">The graph of the sign function </tspan>
+                <tspan x="142" y="24">consists of two horizontal rays and </tspan>
+                <tspan x="142" y="37">an isolated point at the origin.</tspan>
+            </text>
+            <line x1="224.5" y1="52" x2="224.5" y2="129.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <text id="y" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133.5" y="97">y</tspan>
+            </text>
+            <text id="1" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="136.5" y="145">1</tspan>
+            </text>
+            <text id="x" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="224">x</tspan>
+            </text>
+            <text id="-1" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="159.5" y="265">-1</tspan>
+            </text>
+            <circle id="Oval" fill="#000000" cx="151.5" cy="203.5" r="3.5"></circle>
+            <circle id="Oval" stroke="#000000" fill="#F4EFEE" cx="151.5" cy="142.5" r="3"></circle>
+            <circle id="Oval" stroke="#000000" fill="#F4EFEE" cx="151.5" cy="260.5" r="3"></circle>
+        </g>
+    </g>
+</svg>

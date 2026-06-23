@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="282px" viewBox="0 0 315 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The graph of a second-degree </tspan>
+                <tspan x="0" y="24">polynomial is a continuous parabola, </tspan>
+                <tspan x="0" y="37">with no jumps or interruptions.</tspan>
+            </text>
+            <line x1="2.9022082" y1="81" x2="2.5" y2="43.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M304.866415,252.319082 L305.302203,252.564212 L313.302203,257.064212 L314.076936,257.5 L313.302203,257.935788 L305.302203,262.435788 L304.866415,262.680918 L304.376154,261.809343 L304.811941,261.564212 L311.148,258 L9.09434752,258 L9.09434752,257 L311.148,257 L304.811941,253.435788 L304.376154,253.190657 L304.866415,252.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="113" y="65">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="307" y="276">x</tspan>
+            </text>
+            <path d="M3.09463722,88 C48.822343,200.666667 94.0183326,257 138.682606,257 C173.898801,257 208.894625,221.978901 243.670077,151.936704 M251.780359,134.624974 C255.601119,126.028101 262.211662,110.486443 271.611987,88" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="200.293943" y="146">f(x) = x² + 2x + 1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="201.513237" y="276">5</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="255.010132" y="276">10</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="26.8906498" y="276">-10</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="90.4915457" y="276">-5</tspan>
+            </text>
+            <path d="M138.5,56.9801356 L138.935788,57.7548694 L143.435788,65.7548694 L143.680918,66.1906571 L142.809343,66.6809184 L142.564212,66.2451306 L139,59.908 L139,281 L138,281 L138,59.908 L134.435788,66.2451306 L134.190657,66.6809184 L133.319082,66.1906571 L133.564212,65.7548694 L138.064212,57.7548694 L138.5,56.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

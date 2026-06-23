@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="292px" viewBox="0 0 345 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M334.809343,184.319082 L335.245131,184.564212 L343.245131,189.064212 L344.019864,189.5 L343.245131,189.935788 L335.245131,194.435788 L334.809343,194.680918 L334.319082,193.809343 L334.754869,193.564212 L341.091,190 L0,190 L0,189 L341.091,189 L334.754869,185.435788 L334.319082,185.190657 L334.809343,184.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="119.5" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="334.5" y="206">x</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="194.776" y="208">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="121.191" y="86">2</tspan>
+            </text>
+            <line x1="142.5" y1="135.5" x2="248.5" y2="135.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(195.500000, 135.500000) rotate(90.000000) translate(-195.500000, -135.500000) "></line>
+            <line x1="166.75" y1="108.25" x2="166.75" y2="56.25" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(166.500000, 82.250000) rotate(90.000000) translate(-166.500000, -82.250000) "></line>
+            <line x1="195.5" y1="82.5" x2="324.5" y2="82.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="1.5" y1="189.5" x2="195.5" y2="189.5" stroke="#333333" stroke-linecap="square"></line>
+            <circle stroke="#333333" fill="#F4EFEE" cx="195.5" cy="189.5" r="3"></circle>
+            <circle fill="#333333" cx="195.5" cy="82.5" r="3.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="174" y="259">The function presents </tspan>
+                <tspan x="174" y="272">a jump at x = 1</tspan>
+            </text>
+            <line x1="196.5" y1="241.5" x2="196.5" y2="215.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M139.882134,4.67699263 L139.935788,4.75486938 L144.435788,12.7548694 C144.57117,12.9955483 144.48581,13.3004059 144.245131,13.4357878 C144.031194,13.5561272 143.766548,13.5020533 143.615296,13.3195146 L143.564212,13.2451306 L140,6.908 L140,216.5 C140,216.776142 139.776142,217 139.5,217 C139.25454,217 139.050392,216.823125 139.008056,216.589876 L139,216.5 L139,6.908 L135.435788,13.2451306 C135.315448,13.4590675 135.061202,13.5502832 134.837152,13.4728292 L134.754869,13.4357878 C134.540933,13.3154483 134.449717,13.0612021 134.527171,12.8371522 L134.564212,12.7548694 L139.064212,4.75486938 C139.239435,4.44336236 139.665161,4.41740344 139.882134,4.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
