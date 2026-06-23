@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="281px" viewBox="0 0 345 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M171.882134,3.67699263 L171.935788,3.75486938 L176.435788,11.7548694 C176.57117,11.9955483 176.48581,12.3004059 176.245131,12.4357878 C176.031194,12.5561272 175.766548,12.5020533 175.615296,12.3195146 L175.564212,12.2451306 L172,5.908 L172,279.5 C172,279.776142 171.776142,280 171.5,280 C171.25454,280 171.050392,279.823125 171.008056,279.589876 L171,279.5 L171,5.908 L167.435788,12.2451306 C167.315448,12.4590675 167.061202,12.5502832 166.837152,12.4728292 L166.754869,12.4357878 C166.540933,12.3154483 166.449717,12.0612021 166.527171,11.8371522 L166.564212,11.7548694 L171.064212,3.75486938 C171.239435,3.44336236 171.665161,3.41740344 171.882134,3.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M334.809343,170.319082 L335.245131,170.564212 L343.245131,175.064212 L344.019864,175.5 L343.245131,175.935788 L335.245131,180.435788 L334.809343,180.680918 L334.319082,179.809343 L334.754869,179.564212 L341.091,176 L0,176 L0,175 L341.091,175 L334.754869,171.435788 L334.319082,171.190657 L334.809343,170.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="133.5" y1="279.5" x2="200.790744" y2="73.7155156" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="208.413321" y1="50.4046114" x2="219.5" y2="16.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="159" y1="142" x2="226" y2="142" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(192.500000, 142.000000) rotate(-90.000000) translate(-192.500000, -142.000000) "></line>
+            <line x1="180" y1="110" x2="180" y2="93" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(180.000000, 101.500000) rotate(-90.000000) translate(-180.000000, -101.500000) "></line>
+            <line x1="125.5" y1="86.5" x2="125.5" y2="59.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="65.004" y="36.3620148">The value of the </tspan>
+                <tspan x="64.311" y="49.3620148">limit at x = 2 is 7</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="183.536" y="191">x=2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="200.198" y="65">y=3x+1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="119.744" y="105">f(2) = 7</tspan>
+            </text>
+            <circle fill="#333333" cx="171.5" cy="101.5" r="2.5"></circle>
+            <circle fill="#333333" cx="191.5" cy="101.5" r="2.5"></circle>
+            <circle fill="#333333" cx="192.5" cy="175.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="153" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="335" y="195">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
