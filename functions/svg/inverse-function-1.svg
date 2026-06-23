@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="275px" viewBox="0 0 335 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M146.5,2.98013557 L146.935788,3.75486938 L151.435788,11.7548694 L151.680918,12.1906571 L150.809343,12.6809184 L150.564212,12.2451306 L147,5.908 L147,229 L146,229 L146,5.908 L142.435788,12.2451306 L142.190657,12.6809184 L141.319082,12.1906571 L141.564212,11.7548694 L146.064212,3.75486938 L146.5,2.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,188.319082 L295.245131,188.564212 L303.245131,193.064212 L304.019864,193.5 L303.245131,193.935788 L295.245131,198.435788 L294.809343,198.680918 L294.319082,197.809343 L294.754869,197.564212 L301.091,194 L-0.5,194 L-0.5,193 L301.091,193 L294.754869,189.435788 L294.319082,189.190657 L294.809343,188.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="163" y="234">The graph of a function and its </tspan>
+                <tspan x="163" y="247">inverse are symmetric with </tspan>
+                <tspan x="163" y="260">respect to the bisector of the </tspan>
+                <tspan x="163" y="273">first and third quadrants</tspan>
+            </text>
+            <line x1="211.5" y1="155.5" x2="211.5" y2="215.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M78,52 C99.9600199,146 122.76002,193 146.4,193 C170.03998,193 194.23998,146 219,52" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M180.150325,225.998252 C180.233539,226 180.316764,226 180.4,226 C204.03998,226 228.23998,179 253,85" stroke="#999999" stroke-width="2" stroke-linecap="round" transform="translate(216.575162, 155.500000) scale(-1, 1) rotate(-90.000000) translate(-216.575162, -155.500000) "></path>
+            <path d="M146.150325,192.998252 C146.233539,193 146.316764,193 146.4,193 C170.03998,193 194.23998,146 219,52" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="127" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="296" y="212">x</tspan>
+            </text>
+            <line x1="44.2659813" y1="154.734019" x2="324.265981" y2="154.734019" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(184.265981, 154.734019) rotate(-45.000000) translate(-184.265981, -154.734019) "></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="208" y="43">y= x²</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="295" y="120">y= √x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
