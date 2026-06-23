@@ -190,7 +190,7 @@ $$
 
 A standard example is the [absolute value function](../absolute-value-function/), which is continuous at $x = 0$ but not differentiable there, producing a corner in its graph. Every discontinuity implies non-differentiability, while not every point of non-differentiability comes from a discontinuity.
 
-## A particular case: essential discontinuity
+## Essential discontinuity
 
 A further category, the essential discontinuity, is sometimes recognised, though not universally adopted as a formal class. It arises when the limit does not exist and is not infinite. Unlike a jump discontinuity, where both one-sided limits exist but differ, and unlike an infinite discontinuity, where the function diverges in a given direction, an essential discontinuity reflects irregular behaviour that does not reduce to either simpler form.
 
