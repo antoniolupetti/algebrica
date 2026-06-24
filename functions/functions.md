@@ -29,6 +29,16 @@ $$
 
 - - -
 
+The graph of $f$ is the set of pairs that match each input with its output,
+
+$$
+G_f = \{\ (x, f(x)) \mid x \in A \ \}
+$$
+
+so $G_f$ is a subset of $A \times B$. Each $x \in A$ belongs to exactly one pair, which is the geometric form of the rule that assigns a single output to every input.
+
+- - -
+
 A function $f : A \to B$ can be classified as:
 
 + Injective if every element of $B$ is the image of at most one element of $A$, that is, if for any $x_1, x_2 \in A$ with $x_1 \neq x_2$ we have $f(x_1) \neq f(x_2)$. Equivalently, for every $y \in B$ there is at most one $x \in A$ such that $f(x) = y$.
@@ -37,14 +47,38 @@ A function $f : A \to B$ can be classified as:
 
 - - -
 
+The identity function and the constant function are the two simplest cases. The identity function on a set $A$ sends every element to itself,
+
+$$
+\mathrm{id}_A \colon A \to A, \quad \mathrm{id}_A(x) = x
+$$
+
+and it is bijective, since distinct inputs give distinct outputs and every element of $A$ is attained. A constant function sends every element of its domain to one fixed value $c$,
+
+$$
+f \colon A \to B, \quad f(x) = c
+$$
+
+A constant function is not injective when $A$ has more than one element, and it is surjective only when $B$ reduces to the single value $c$.
+
+- - -
+
 An alternative definition states that a function $f : A \to B$ is bijective if and only if there exists a function $g : B \to A$ such that:
 
 $$(g \circ f)(x) = x, \quad \forall \ x \in A$$
 $$(f \circ g)(y) = y, \quad \forall \ y \in B$$
 
-Whenever such a function $g$ exists, it is uniquely determined. In this case $g$ is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}$.
+The right-hand sides are the identity functions on $A$ and on $B$, so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B$. Whenever such a function $g$ exists, it is uniquely determined. In this case $g$ is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}$.
 
 > An example is the [logarithmic function](../logarithms/), which is the inverse of the [exponential function](../exponential-function/), and conversely.
+
+A function that is not injective on all of $A$ can still be inverted on a smaller domain. Given $E \subseteq A$, the restriction $f|_E$ is the function that agrees with $f$ at every point of $E$,
+
+$$
+f|_E \colon E \to B, \quad f|_E(x) = f(x)
+$$
+
+If $f$ is injective on $E$, then $f|_E$ is invertible there. The sine function shows this behavior, since it is not injective on $\mathbb{R}$, but its restriction to $\left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]$ is injective and has inverse $\arcsin$.
 
 ## What is not a function
 
@@ -80,6 +114,20 @@ The figure shows that the curve on the left, a [parabola](../parabola/), is a fu
 The codomain is the set we declare as the potential target of the outputs of a function. It is stated explicitly in the definition, since in a function written $f: A \to B$ the set $B$ is the codomain.
 
 The range (or image) is the actual set of outputs that the function attains over its domain. It collects all values $f(x)$ for $x \in A$, and it is always a subset of the codomain.
+
+More generally, the image of a subset $E \subseteq A$ is the set of outputs produced by the points of $E$,
+
+$$
+f(E) = \{\ f(x) \mid x \in E \ \}
+$$
+
+so the range is the image of the whole domain, $f(A)$. In the opposite direction, the preimage of a subset $F \subseteq B$ collects the inputs whose output lands in $F$,
+
+$$
+f^{-1}(F) = \{\ x \in A \mid f(x) \in F \ \}
+$$
+
+The notation $f^{-1}(F)$ refers to a set and does not require $f$ to be invertible. Restricting the codomain to the range turns any function into a surjective one, since every element of $f(A)$ is attained by construction.
 
 ## Function equality and zeros
 

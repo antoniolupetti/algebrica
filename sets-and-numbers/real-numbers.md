@@ -9,6 +9,7 @@ tags:
   - completeness
   - dedekind-cut
   - density
+  - nested-intervals
   - ordered-field
   - real-line
   - real-numbers
@@ -135,13 +136,23 @@ The rational numbers are dense in $\mathbb{R}$: between any two distinct real nu
 
 Despite the density of $\mathbb{Q}$ in $\mathbb{R}$, the two sets differ in cardinality. The rational numbers are countable, that is, their elements can be placed in a one-to-one correspondence with the natural numbers. The real numbers are uncountable, since no such correspondence exists. This result implies that the [irrational numbers](../irrational-numbers/), which form the set $\mathbb{R} \setminus \mathbb{Q}$, constitute the overwhelming majority of the real line.
 
+The nested interval theorem supplies the argument behind this uncountability. A sequence of closed intervals $I_n = [a_n, b_n]$ is nested when $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$. Completeness guarantees that their intersection contains at least one point:
+
+$$
+\bigcap_{n=1}^{\infty} I_n \neq \emptyset
+$$
+
+The left endpoints form a non-decreasing sequence bounded above by every $b_m$, so they admit a supremum $x = \sup_n a_n$ satisfying $a_n \leq x \leq b_n$ for all $n$. The point $x$ then lies in every interval. When the lengths $b_n - a_n$ tend to zero, the intersection reduces to this single point. The rational numbers fail the property: a sequence of nested intervals with rational endpoints shrinking around $\sqrt{2}$ has empty intersection in $\mathbb{Q}$.
+
+The uncountability of $\mathbb{R}$ follows by contradiction. Suppose the real numbers in $[0, 1]$ could be arranged in a list $x_1, x_2, x_3, \ldots$. Choose a closed interval $I_1 \subseteq [0, 1]$ that excludes $x_1$, then a closed interval $I_2 \subseteq I_1$ that excludes $x_2$, and continue so that $x_n \notin I_n$ at every step. The nested interval theorem provides a point $x \in \bigcap_n I_n$. This $x$ differs from each $x_n$ and therefore escapes the list, contradicting the assumption that the list was complete.
+
 The Bolzano-Weierstrass theorem is a further consequence of completeness. Every bounded sequence of real numbers has a convergent subsequence. The result guarantees that bounded infinite sets cannot spread indefinitely without accumulating somewhere, and it underpins the theory of [limits](../limits/), continuous functions, and compactness in $\mathbb{R}$.
 
 ## Uniqueness of $\mathbb{R}$
 
-The real number system is the unique complete ordered field. Any two complete ordered fields are isomorphic as ordered fields, and the isomorphism between them is unique. The result means that $\mathbb{R}$ is not merely one among many possible completions of $\mathbb{Q}$, but the only one up to a structure-preserving bijection.
+The real number system is the unique complete ordered field. Any two complete ordered fields are isomorphic as ordered fields, and the isomorphism between them is unique. Up to a structure-preserving bijection, $\mathbb{R}$ is the unique completion of $\mathbb{Q}$.
 
-> Beyond its self-contained algebraic structure, $\mathbb{R}$ serves as the prototypical scalar field for linear algebra. The Euclidean spaces $\mathbb{R}^n$ are the basic examples of [vector spaces](../vector-spaces/) over $\mathbb{R}$, and any other field can play the same structural role, although the analytic properties that depend on completeness and order are specific to $\mathbb{R}$.
+> Beyond its self-contained algebraic structure, $\mathbb{R}$ is the prototypical scalar field for linear algebra. The Euclidean spaces $\mathbb{R}^n$ are the basic examples of [vector spaces](../vector-spaces/) over $\mathbb{R}$, and any other field can play the same structural role, although the analytic properties that depend on completeness and order are specific to $\mathbb{R}$.
 
 ## Intervals
 

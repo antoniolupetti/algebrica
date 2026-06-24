@@ -86,7 +86,7 @@ $$
 a - b \neq b - a \quad \text{and} \quad \frac{a}{b} \neq \frac{b}{a}
 $$
 
-Commutativity characterizes specific operations and plays a fundamental role in simplifying expressions and rearranging terms. Let $a = 3$ and $b = 7$. Then $3 + 7 = 10$ and $7 + 3 = 10$. Similarly, $3 \cdot 7 = 21$ and $7 \cdot 3 = 21$. The equality of the results illustrates that the order of the operands does not affect the outcome.
+Commutativity holds for specific operations and is used in simplifying expressions and rearranging terms. Let $a = 3$ and $b = 7$. Then $3 + 7 = 10$ and $7 + 3 = 10$. Similarly, $3 \cdot 7 = 21$ and $7 \cdot 3 = 21$. The equality of the results illustrates that the order of the operands does not affect the outcome.
 
 > In algebraic manipulation, commutativity allows us to reorder terms within sums or products. For example $2x + 5 = 5 + 2x$, which may be useful when grouping like terms or arranging expressions into a standard form.
 
