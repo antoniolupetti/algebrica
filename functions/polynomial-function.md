@@ -52,6 +52,13 @@ where $m \neq 0$ is the slope and $q$ is the y-intercept. Its graph is a straigh
 + The function is bijective from $\mathbb{R}$ to $\mathbb{R}.$
 + It has no maximum or minimum points.
 
+The graphs below show degree 1 polynomial functions. Each is a straight line, and the sign of the slope determines whether the function is strictly increasing or strictly decreasing.
+
+
+![IMG. 1](svg/polynomial-function-1.svg)
+
+The graph confirms the properties of a degree 1 function. Since each line is defined for every real value of $x,$ the domain is all of $\mathbb{R},$ and the curve is continuous, with no breaks or discontinuities. The slope is constant, so the first derivative equals $m$ at every point and the second derivative is zero throughout, which means the graph has no concavity and no turning points. The range is again all of $\mathbb{R},$ since the line rises or falls without bound at both ends.
+
 ## Degree 2: quadratic functions
 
 A polynomial function of degree 2 takes the form:
@@ -71,6 +78,13 @@ The sign of $a$ fixes the concavity of the graph. When $a > 0$ the parabola open
 + Domain: $\mathbb{R}$
 + Range: $\left[ y_v, +\infty \right)$ if $a > 0$; $\left( -\infty, y_v \right]$ if $a < 0$
 + The function is not monotone over all of $\mathbb{R},$ but it is strictly monotone on each of the two half-lines separated by the vertex.
+
+The graphs below show degree 2 polynomial functions for the two signs of the leading coefficient $a.$
+
+
+![IMG. 2](svg/polynomial-function-2.svg)
+
+Each graph shows the vertex as the single turning point, where the range reaches its bound $y_v$ and the two branches meet the axis of symmetry $x = x_v.$
 
 ## Degree 3: cubic functions
 
@@ -97,6 +111,13 @@ When $a < 0$ both limits are reversed. The number of stationary points of a cubi
 + It has either zero or two turning points, together with exactly one [inflection point](../maximum-minimum-and-inflection-points/).
 
 Every cubic graph is symmetric under a rotation of $180^\circ$ about its inflection point, whatever the values of the coefficients.
+
+The graph below shows a degree 3 polynomial function with two turning points.
+
+
+![IMG. 3](svg/polynomial-function-3.svg)
+
+The graph runs from one infinite end to the other, so the range is all of $\mathbb{R}.$ The local maximum and the local minimum are the two turning points, and the inflection point between them is the centre of the $180^\circ$ rotational symmetry.
 
 > The sections that follow hold for every degree, so a separate treatment of quartics, quintics, and higher functions is not needed. The bounds on intercepts, turning points, and inflection points, together with the end behavior, already describe their graphs. Finding the roots is a different matter, since explicit formulas in terms of radicals exist only up to degree four, and the general case is treated for [polynomial equations](../polynomial-equations/).
 

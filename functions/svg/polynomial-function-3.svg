@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="290px" viewBox="0 0 315 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="132" y="11">The graph of y = 2x³ − 5x² + x + 2 </tspan>
+                <tspan x="132" y="24">has one local maximum, one local </tspan>
+                <tspan x="132" y="37">minimum, and one inflection point.</tspan>
+            </text>
+            <line x1="209.5" y1="44" x2="209.5" y2="69.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M150.5,78.4801356 L150.935788,79.2548694 L155.435788,87.2548694 L155.680918,87.6906571 L154.809343,88.1809184 L154.564212,87.7451306 L151,81.408 L151,290 L150,290 L150,81.408 L146.435788,87.7451306 L146.190657,88.1809184 L145.319082,87.6906571 L145.564212,87.2548694 L150.064212,79.2548694 L150.5,78.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M293.309343,189.319082 L293.745131,189.564212 L301.745131,194.064212 L302.519864,194.5 L301.745131,194.935788 L293.745131,199.435788 L293.309343,199.680918 L292.819082,198.809343 L293.254869,198.564212 L299.591,195 L-0.5,195 L-0.5,194 L299.591,194 L293.254869,190.435788 L292.819082,190.190657 L293.309343,189.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M131,282 C137.056376,202.569472 143.723042,158.236139 151,149 C161.915437,135.145792 176,235 188,216 C191.698791,210.143581 195.255071,197.304125 198.668839,177.481631" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M201.230027,161.100334 C203.297988,146.410595 206.221312,119.37715 210,80" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="196" y="172">y=2x³−5x²+x+2</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
