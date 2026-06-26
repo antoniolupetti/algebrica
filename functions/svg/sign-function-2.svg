@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="278px" viewBox="0 0 309 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M294.662848,234.527171 L294.745131,234.564212 L302.745131,239.064212 C303.056638,239.239435 303.082597,239.665161 302.823007,239.882134 L302.745131,239.935788 L294.745131,244.435788 C294.504452,244.57117 294.199594,244.48581 294.064212,244.245131 C293.943873,244.031194 293.997947,243.766548 294.180485,243.615296 L294.254869,243.564212 L300.591,240 L1,240 C0.723857625,240 0.5,239.776142 0.5,239.5 C0.5,239.25454 0.676875161,239.050392 0.910124368,239.008056 L1,239 L300.591,239 L294.254869,235.435788 C294.040933,235.315448 293.949717,235.061202 294.027171,234.837152 L294.064212,234.754869 C294.184552,234.540933 294.438798,234.449717 294.662848,234.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="151.5" y1="121.5" x2="301.5" y2="121.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="0.5" y1="239.5" x2="150.5" y2="239.5" stroke="#333333" stroke-linecap="round"></line>
+            <path d="M151.5,66.4801356 L151.935788,67.2548694 L156.435788,75.2548694 L156.680918,75.6906571 L155.809343,76.1809184 L155.564212,75.7451306 L152,69.408 L152,278 L151,278 L151,69.408 L147.435788,75.7451306 L147.190657,76.1809184 L146.319082,75.6906571 L146.564212,75.2548694 L151.064212,67.2548694 L151.5,66.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="170" y="11">The graph of the Heaviside </tspan>
+                <tspan x="170" y="24">step function. The value at </tspan>
+                <tspan x="170" y="37">the origin is H(0) = 1/2 by </tspan>
+                <tspan x="170" y="50">convention.</tspan>
+            </text>
+            <line x1="198.5" y1="62" x2="198.5" y2="105.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133.5" y="76">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="162.5" y="187">0.5</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="134" y="127">1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="260">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="134" y="229">0</tspan>
+            </text>
+            <circle fill="#333333" cx="151.5" cy="182.5" r="3.5"></circle>
+            <circle stroke="#333333" fill="#F4EFEE" cx="151.5" cy="121.5" r="3"></circle>
+            <circle stroke="#333333" fill="#F4EFEE" cx="151.5" cy="239.5" r="3"></circle>
+    </g>
+</svg>
