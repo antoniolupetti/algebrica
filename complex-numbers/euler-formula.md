@@ -26,7 +26,7 @@ This relation underlies both the [exponential form](../complex-numbers-exponenti
 
 ## Statement
 
-**Definition 1.** For every real number $\theta$ the following identity holds:
+For every real number $\theta$ the following identity holds:
 
 $$e^{i\theta} = \cos\theta + i\sin\theta$$
 
@@ -34,11 +34,11 @@ The left-hand side is the complex exponential evaluated at the imaginary argumen
 
 ![IMG. 1](svg/euler-formula-1.svg)
 
-**Definition 2.** An immediate consequence concerns the modulus of $e^{i\theta}$. Computing directly from its algebraic form we obtain:
+An immediate consequence concerns the modulus of $e^{i\theta}$. Computing directly from its algebraic form we obtain:
 
 $$|e^{i\theta}|^2 = \cos^2\theta + \sin^2\theta = 1$$
 
-For every real $\theta$ the value $e^{i\theta}$ has unit modulus, and as $\theta$ varies over $\mathbb{R}$ the function traces the unit circle counterclockwise. The period of this motion is $2\pi$, reflecting the common period of [sine and cosine](../sine-and-cosine).
+For every real $\theta$ the value $e^{i\theta}$ has unit modulus, and as $\theta$ varies over $\mathbb{R}$ the function traces the unit circle counterclockwise. The period of this motion is $2\pi$, the common period of [sine and cosine](../sine-and-cosine/).
 
 ## Proof via Taylor series
 
@@ -54,7 +54,7 @@ $$\sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}$$
 
 The extension of the exponential to complex arguments is obtained by inserting a complex variable in place of the real one. For every $z \in \mathbb{C}$ we define:
 
-$$e^z \\ := \\ \sum_{n=0}^{\infty} \frac{z^n}{n!}$$
+$$e^z := \sum_{n=0}^{\infty} \frac{z^n}{n!}$$
 
 This series converges absolutely for every $z$, because $\sum_{n=0}^{\infty} |z|^n / n!$ equals $e^{|z|}$, which is finite. With this definition, we evaluate $e^{i\theta}$ by substituting $z = i\theta$ into the series:
 
@@ -120,7 +120,7 @@ and the initial value is $g(0) = 1$. Two solutions of the same first-order linea
 
 ## Euler's identity
 
-Specialising Euler's formula at $\theta = \pi$ yields what is know to as Euler's identity. Substituting the value of the argument and computing the trigonometric functions gives:
+Specialising Euler's formula at $\theta = \pi$ yields what is known as Euler's identity. Substituting the value of the argument and computing the trigonometric functions gives:
 
 $$e^{i\pi} = \cos\pi + i\sin\pi = -1$$
 
@@ -172,7 +172,7 @@ The trigonometric identities become, in this perspective, consequences of the [h
 
 ## Connection with the trigonometric and exponential forms
 
-Euler's formula underlies behind the equivalence between the [trigonometric form](../complex-numbers-trigonometric-form/) and the [exponential form](../complex-numbers-exponential-form/) of a complex number. A nonzero complex number $z = a + bi$, written in trigonometric form as $z = r(\cos\theta + i\sin\theta)$ with $r = |z|$ and $\theta = \arg(z)$, can be rewritten directly using Euler's formula. The resulting equality is:
+Euler's formula underlies the equivalence between the [trigonometric form](../complex-numbers-trigonometric-form/) and the [exponential form](../complex-numbers-exponential-form/) of a complex number. A nonzero complex number $z = a + bi$, written in trigonometric form as $z = r(\cos\theta + i\sin\theta)$ with $r = |z|$ and $\theta = \arg(z)$, can be rewritten directly using Euler's formula. The resulting equality is:
 
 $$
 \begin{align}
@@ -187,7 +187,7 @@ The identity also clarifies the effect of complex conjugation in the exponential
 
 $$\overline{z} = re^{-i\theta}$$
 
-In exponential form, conjugation simply changes the sign of the argument, while the modulus unchanged. This matches with the geometric description of $\overline{z}$ as the reflection of $z$ across the real axis in the complex plane.
+In exponential form, conjugation simply changes the sign of the argument, while the modulus is unchanged. This matches the geometric description of $\overline{z}$ as the reflection of $z$ across the real axis in the complex plane.
 
 
 ## Periodicity and the complex exponential
@@ -196,7 +196,7 @@ The periodicity of sine and cosine, both having common period $2\pi$, carries ov
 
 $$e^{i(\theta + 2k\pi)} = \cos(\theta + 2k\pi) + i\sin(\theta + 2k\pi) = e^{i\theta}$$
 
-Thus, the complex exponential, when restricted to purely imaginary arguments, is  periodic with imaginary period $2\pi i$. This periodicity is the analytic source of the non-uniqueness of the [argument](../complex-numbers-introduction/) of a complex number, and it is what necessitates the introduction of branch cuts in the definition of the complex logarithm.å
+Thus, the complex exponential, when restricted to purely imaginary arguments, is periodic with imaginary period $2\pi i$. This periodicity is the analytic source of the non-uniqueness of the [argument](../complex-numbers-introduction/) of a complex number, and it is what necessitates the introduction of branch cuts in the definition of the complex logarithm.
 
 When the argument is fully complex, the relation extends without difficulty. For $z = x + iy$ with $x, y \in \mathbb{R}$, the multiplicative property of the exponential combined with Euler's formula gives:
 
@@ -212,4 +212,4 @@ The complex exponential is thus completely determined by two pieces of informati
 
 $$|e^z| = e^x \qquad \arg(e^z) = y + 2k\pi \quad k \in \mathbb{Z}$$
 
-This decomposition is the gateway to the analytic theory of the complex exponential as an entire function on $\mathbb{C}$, and it makes precise the sense in which Euler's formula is the first instance of a broader structural correspondence between exponential growth and circular motion.
+This decomposition underlies the analytic theory of the complex exponential as an entire function on $\mathbb{C}$, in which the real exponential $e^x$ governs the modulus and the imaginary part $y$ governs the argument.

@@ -66,21 +66,21 @@ $$
 
 ![IMG. 1](svg/roots-of-unity-1.svg)
 
-> For $n = 6$ the six roots are the vertices of a regular hexagon, and they include as a subset the roots for $n = 2$ and $n = 3$, reflecting the divisibilities $2 \mid 6$ and $3 \mid 6$ and the corresponding subgroup inclusions $\mu_2, \mu_3 \subset \mu_6$.
+> For $n = 6$ the six roots are the vertices of a regular hexagon, and they include as a subset the roots for $n = 2$ and $n = 3$, a consequence of the divisibilities $2 \mid 6$ and $3 \mid 6$ and the corresponding subgroup inclusions $\mu_2, \mu_3 \subset \mu_6$.
 
 ## Primitive roots
 
 A root of unity $z_k \in \mu_n$ is called primitive if its order in the group is exactly $n$, meaning that $z_k^m \neq 1$ for every positive integer $m < n$. Equivalently, $z_k$ is a generator of $\mu_n$: every element of the group can be written as a power of $z_k$. Since $z_k = z_1^k$, the order of $z_k$ in the cyclic group $\mu_n$ is $n / \gcd(k, n)$, and $z_k$ is primitive if and only if $\gcd(k, n) = 1$.
 
-The number of primitive $n$-th roots of unity is therefore equal to the number of integers in $\\{1, 2, \ldots, n\\}$ coprime to $n$, which is by definition Euler's totient function $\varphi(n)$.
+The number of primitive $n$-th roots of unity is therefore equal to the number of integers in $\{1, 2, \ldots, n\}$ coprime to $n$, which is by definition Euler's totient function $\varphi(n)$.
 
 - - -
 
-For example, when $n = 6$ one has $\varphi(6) = 2$, and the primitive roots are $z_1 = e^{\pi i/3}$ and $z_5 = e^{5\pi i/3}$, corresponding to $k = 1$ and $k = 5$. When $n$ is prime, every root except $z_0 = 1$ is primitive, since $\gcd(k, n) = 1$ for every $k \in \\{1, \ldots, n-1\\}$, and consequently $\varphi(n) = n - 1$.
+For example, when $n = 6$ one has $\varphi(6) = 2$, and the primitive roots are $z_1 = e^{\pi i/3}$ and $z_5 = e^{5\pi i/3}$, corresponding to $k = 1$ and $k = 5$. When $n$ is prime, every root except $z_0 = 1$ is primitive, since $\gcd(k, n) = 1$ for every $k \in \{1, \ldots, n-1\}$, and consequently $\varphi(n) = n - 1$.
 
 If $\zeta$ is any primitive $n$-th root of unity, then the full set $\mu_n$ is recovered as the orbit of $\zeta$ under exponentiation:
 
-$$\mu_n = \\{1, \zeta, \zeta^2, \ldots, \zeta^{n-1}\\}$$
+$$\mu_n = \{1, \zeta, \zeta^2, \ldots, \zeta^{n-1}\}$$
 
 The choice of a specific primitive root is therefore a matter of convention rather than mathematical substance, since all primitive roots generate the same group.
 

@@ -30,7 +30,7 @@ Defining the logarithm as the inverse of the exponential is the elementary appro
 
 ## Properties
 
-The main properties of the logarithmic function follow from its definition as the inverse of the exponential function.
+These all follow from the definition of the logarithm as the inverse of the exponential function.
 
 + Domain: $(0, +\infty)$
 + Range: $\mathbb{R}$
@@ -46,7 +46,7 @@ $$f'(x) = \frac{1}{x\ln(a)}$$
 
 ## Limits, derivatives, and integrals
 
-The [limits](../limits/) of the logarithmic function describe its behavior near zero and at infinity. For a base $a > 1,$ the logarithm decreases without bound as $x$ approaches zero from the right, and grows without bound as $x$ tends to infinity:
+The [limits](../limits/) near zero and at infinity depend on the base. For a base $a > 1,$ the logarithm decreases without bound as $x$ approaches zero from the right, and grows without bound as $x$ tends to infinity:
 
 $$\lim_{x \to 0^+} \log_a x = -\infty$$
 
@@ -148,17 +148,13 @@ This is again an improper integral, since $\ln(x)$ is not defined at $x = 0.$ It
 
 ## Binary search and the logarithmic function
 
-One use of logarithms is the analysis of algorithmic complexity. The logarithmic function describes the growth of information in binary decisions. Each step of a binary search answers one yes/no question, which corresponds to one binary bit. For this reason logarithms appear in computer science and information theory.
+One use of logarithms is the analysis of algorithmic complexity. Each step of a binary search answers one yes/no question, which corresponds to one binary bit, so the logarithm counts the binary decisions needed to locate an item.
 
 Suppose we want to find an item in a sorted list of $N$ elements. Checking the elements one by one, with the target in the $n$-th position, may require up to $n$ steps. This approach is linear search, and its worst-case [time complexity](../big-o-notation/) is:
 
 $$\mathcal{O}(n)$$
 
-Linear search is inefficient for large lists. An algorithm that reduces the search space at each step performs better. Binary search has logarithmic complexity:
-
-$$\mathcal{O}(\log n)$$
-
-Binary search finds a target element in a sorted list. At each step the algorithm divides the list in half and keeps only the half that may contain the target. This continues until the element is found or the list can no longer be divided.
+Linear search is inefficient for large lists. Binary search reduces the search space at each step. It finds a target element in a sorted list by dividing the list in half and keeping only the half that may contain the target. This continues until the element is found or the list can no longer be divided.
 
 At each step the search space is divided by $2.$ If the initial list has $n$ elements, the number of steps is proportional to the number of times $n$ can be divided by $2$ before reaching $1,$ which is the base-$2$ logarithm:
 
@@ -168,7 +164,7 @@ The time complexity of binary search is therefore:
 
 $$\mathcal{O}(\log n)$$
 
-This shows how logarithmic functions describe processes that involve repeated halving, such as divide-and-conquer algorithms and decision trees. If a list contains $1{,}000{,}000$ elements, binary search finds any element in at most:
+The same pattern of repeated halving appears in other divide-and-conquer algorithms and in decision trees. If a list contains $1{,}000{,}000$ elements, binary search finds any element in at most:
 
 $$\log_2(1{,}000{,}000) \approx 19.9$$
 

@@ -30,7 +30,7 @@ The procedure is valid for any integer exponent, but it becomes increasingly cum
 
 ## Statement and exponential reformulation
 
-**Theorem 1.** Consider a complex number $z$ raised to an integer power $n \in \mathbb{Z}$, that is the expression:
+Consider a complex number $z$ raised to an integer power $n \in \mathbb{Z}$, that is the expression:
 
 $$z^n \qquad n \in \mathbb{Z}$$
 
@@ -103,7 +103,7 @@ Consider the complex number $z = 2 + 2i$ and compute $z^4$. The modulus of $z$ i
 
 $$|z| = \sqrt{2^2 + 2^2} = \sqrt{8} = 2\sqrt{2}$$
 
-> The modulus of a complex number represents its distance from the origin in the complex plane and is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to its real and imaginary parts.
+> The modulus of a complex number is its distance from the origin in the complex plane and is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to its real and imaginary parts.
 
 - - -
 

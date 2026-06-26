@@ -13,7 +13,7 @@ tags:
 ---
 ## Introduction
 
-Complex numbers arise to overcome certain limitations of the set of [real numbers](../types-of-numbers) $\mathbb{R}$, in particular, the impossibility of taking even-indexed roots of negative numbers. An important consequence of this restriction is that some [quadratic equation](../quadratic-equations) with a negative [discriminant](../quadratic-formula) have no solution in $\mathbb{R}$.
+Complex numbers arise to overcome certain limitations of the set of [real numbers](../types-of-numbers/) $\mathbb{R}$, in particular, the impossibility of taking even-indexed roots of negative numbers. A consequence of this restriction is that some [quadratic equations](../quadratic-equations/) with a negative [discriminant](../quadratic-formula/) have no solution in $\mathbb{R}$.
 
 In the set of [real numbers](../properties-of-real-numbers/) $\mathbb{R}$, there is no number whose square is $-1$, because the square of any real number is always non-negative. Consequently, the equation $p(x) = x^2 + 1 = 0$ has no solutions in $\mathbb{R}$. Indeed, solving it would require $x^2 = -1$, which is never satisfied in the set of real numbers $\mathbb{R}$.
 
@@ -25,21 +25,21 @@ With this definition, the equation $x^2 + 1 = 0$ now has two distinct complex [r
 
 ## Construction of the complex numbers
 
-The introduction of complex numbers is sometimes treated as a matter of convenient notation, as though the symbol $i$ were simply declared to satisfy $i^2 = -1$ and the matter were settled.This approach leaves an important question unanswered: does such an object actually exist, and if so, in what mathematical sense? Answering this requires a short excursion into the construction of $\mathbb{C}$ from the [real numbers](../real-numbers).
+The introduction of complex numbers is sometimes treated as a matter of convenient notation, as though the symbol $i$ were simply declared to satisfy $i^2 = -1$ and the matter were settled. This approach leaves an important question unanswered: does such an object actually exist, and if so, in what mathematical sense? Answering this requires a short excursion into the construction of $\mathbb{C}$ from the [real numbers](../real-numbers/).
 
 The starting point is the Cartesian product $\mathbb{R}^2$, the set of all ordered pairs of real numbers. Each element of this set is a pair of the form $(a, b)$ with $a, b \in \mathbb{R}$. This [set](../sets/) is the familiar Euclidean plane, but here we want to equip it with an algebraic structure that makes it a [field](../fields/). To do so, we must define addition and multiplication on $\mathbb{R}^2$.
 
 Addition is defined componentwise. Given two pairs $(a, b)$ and $(c, d)$, their sum is:
 
 $$
-(a, b) + (c, d) \ = \  (a + c, \\\ b + d)
+(a, b) + (c, d) \ = \ (a + c, \ b + d)
 $$
 
 This is the natural extension of [vector](../vectors/) addition in the plane and presents no difficulty.
 
 - - -
 
-Multiplication is more subtle, and it is precisely here that the algebraic structure of the complex numbers diverges from that of $\mathbb{R}^2$ viewed merely as a [vector space](../vector-spaces/). The product of two pairs is defined by.
+Multiplication is more subtle, and it is precisely here that the algebraic structure of the complex numbers diverges from that of $\mathbb{R}^2$ viewed merely as a [vector space](../vector-spaces/). The product of two pairs is defined by:
 
 $$
 (a, b) \cdot (c, d) \ = \ (ac - bd, \ ad + bc)
@@ -47,7 +47,7 @@ $$
 
 This rule is the unique multiplication that turns $\mathbb{R}^2$ into a field extending $\mathbb{R}$, as will become apparent once we make the connection with the standard algebraic notation explicit. The set $\mathbb{R}^2$ equipped with these two operations is denoted $\mathbb{C}$ and its elements are called complex numbers.
 
-The real numbers embed into $\mathbb{C}$ via the identification $a \mapsto (a, 0)$. One can verify directly that this map preserves both addition and multiplication, so $\mathbb{R}$ sits inside $\mathbb{C}$ as a subfield in a precise algebraic sense. The element $(0, 1)$, which has no counterpart in this embedded copy of $\mathbb{R}$ plays a distinguished role. Computing its square using the multiplication rule yelds:
+The real numbers embed into $\mathbb{C}$ via the identification $a \mapsto (a, 0)$. One can verify directly that this map preserves both addition and multiplication, so $\mathbb{R}$ sits inside $\mathbb{C}$ as a subfield in a precise algebraic sense. The element $(0, 1)$ has no counterpart in this embedded copy of $\mathbb{R}$. Computing its square using the multiplication rule yields:
 
 $$
 (0, 1) \cdot (0, 1) \ = \ (0 \cdot 0 - 1 \cdot 1,\ 0 \cdot 1 + 1 \cdot 0) \ =\ (-1,0)
@@ -58,11 +58,11 @@ Under the identification above, the pair $(-1, 0)$ corresponds to the real numbe
 With this notation in place, every complex number $(a, b)$ can be decomposed as a combination of the two basis elements $(1, 0)$ and $(0, 1)$, which correspond to $1$ and $i$ respectively. The decomposition takes the familiar form $a + bi$, since the following chain of equalities holds:
 
 $$
-\begin{aligned}
+\begin{align}
 (a, \ b) &= (a,\ 0) + (0,\ b) \\[6pt]
-&= a\cdot(1,\ 0) + b\cdot(0,  1) \\[6pt]
+&= a\cdot(1,\ 0) + b\cdot(0,\ 1) \\[6pt]
 &= a + bi
-\end{aligned}
+\end{align}
 $$
 
 The notation $z = a + bi$ is thus a compact encoding of the ordered pair $(a, b)$, with $a$ called the real part and $b$ the imaginary part of $z$. These are written as $\mathrm{Re}(z) = a$ and $\mathrm{Im}(z) = b$. Note that the imaginary part is the real number $b$, not the quantity $bi$.
@@ -104,13 +104,13 @@ $$
 + The complex number $z = 2 + 3i$ has real part of $2$ and imaginary part $3$.
 + Numbers of the form $z = ib$ are purely imaginary numbers.
 
-While the algebraic form is the most familiar representation of complex numbers, an alternative and often more powerful way to express them is through their polar [trigonometric form](../complex-numbers-trigonometric-form):
+While the algebraic form is the most familiar representation of complex numbers, an alternative and often more convenient way to express them is through their polar [trigonometric form](../complex-numbers-trigonometric-form/):
 
-$$z = r (\cos\theta + i\sin\theta) $$
+$$z = r(\cos\theta + i\sin\theta)$$
 
 Another widely used representation is the [exponential form](../complex-numbers-exponential-form/):
 
-$$z = r e^{i\theta} $$
+$$z = re^{i\theta}$$
 
 ## Complex plane
 
@@ -129,7 +129,7 @@ Given a complex number $z = a + bi$ its conjugate is defined as the complex numb
 
 $$ \overline{z} = a - bi $$
 
-Geometrically, $\overline{z}$ is the reflection of $x$ across the real $x$-axis in the complex plane.
+Geometrically, $\overline{z}$ is the reflection of $z$ across the real axis in the complex plane.
 
 ![IMG. 2](svg/complex-numbers-2.svg)
 
@@ -140,7 +140,7 @@ $$
 |z| = \sqrt{a^2 + b^2}
 $$
 
-It represents the distance from the origin to the point $(a, b)$ in the complex plane. This follows directly from the [Pythagorean theorem](../pythagorean-theorem/), since the modulus is the length of the hypotenuse of a right triangle whose legs have lengths $|a|$ and $|b|$:
+It is the distance from the origin to the point $(a, b)$ in the complex plane. This follows directly from the [Pythagorean theorem](../pythagorean-theorem/), since the modulus is the length of the hypotenuse of a right triangle whose legs have lengths $|a|$ and $|b|$:
 
 $$
 |z|^2 = a^2 + b^2
@@ -157,7 +157,7 @@ Thus, the modulus of $z = 3 + 2i$ is:
 
 $$|z| = \sqrt{13} \approx 3.61 $$
 
-> This value represents the distance of $z$ from the origin in the complex plane for the complex number $3 + 2i$.
+> This value is the distance of $z = 3 + 2i$ from the origin in the complex plane.
 
 
 ## Argument
@@ -170,27 +170,27 @@ $$
 -\pi < \mathrm{Arg}(z) \leq \pi
 $$
 
-Computing the argument requires care, because the naive formula $\theta = \arctan(b/a)$ is inadequate. The [arctangent function](../arctangent-function/) returns values only in the interval $(-\pi/2,\, \pi/2)$, which covers only the right half of the complex plane and is undefined when $a = 0$. The correct value of $\theta$ depends on the quadrant containing $(a, b)$ and must be determined case by case.
+Computing the argument requires care, because the naive formula $\theta = \arctan(b/a)$ is inadequate. The [arctangent function](../arctangent-function/) returns values only in the interval $(-\pi/2, \pi/2)$, which covers only the right half of the complex plane and is undefined when $a = 0$. The correct value of $\theta$ depends on the quadrant containing $(a, b)$ and must be determined case by case.
 
-**Case 1:** When $a > 0$, the point lies in the right half-plane and the principal argument is given by the [arctangent](../arctangent-and-arccotangent/):
+When $a > 0$, the point lies in the right half-plane and the principal argument is given by the [arctangent](../arctangent-and-arccotangent/):
 
 $$
 \mathrm{Arg}(z) = \arctan \left(\frac{b}{a}\right)
 $$
 
-**Case 2:** When $a < 0$ and $b \geq 0$, the point lies in the second quadrant, and a correction of $\pi$ must be added to bring the angle into the correct range.
+When $a < 0$ and $b \geq 0$, the point lies in the second quadrant, and a correction of $\pi$ must be added to bring the angle into the correct range:
 
 $$
 \mathrm{Arg}(z) = \arctan \left(\frac{b}{a}\right) + \pi
 $$
 
-**Case 3:** When $a < 0$ and $b < 0$, the point lies in the third quadrant, and the correction is $-\pi$.
+When $a < 0$ and $b < 0$, the point lies in the third quadrant, and the correction is $-\pi$:
 
 $$
 \mathrm{Arg}(z) = \arctan \left(\frac{b}{a}\right) - \pi
 $$
 
-**Case 4:** When $a = 0$, the point lies on the imaginary axis and the arctangent is undefined. In this case the argument is determined directly from the sign of $b$: if $b > 0$ then $\mathrm{Arg}(z) = \pi/2$, and if $b < 0$ then $\mathrm{Arg}(z) = -\pi/2$. The case $z = 0$ is excluded, since the argument of the origin is undefined.
+When $a = 0$, the point lies on the imaginary axis and the arctangent is undefined. In this case the argument is determined directly from the sign of $b$: if $b > 0$ then $\mathrm{Arg}(z) = \pi/2$, and if $b < 0$ then $\mathrm{Arg}(z) = -\pi/2$. The case $z = 0$ is excluded, since the argument of the origin is undefined.
 
 As an illustration, consider the complex number $z = -1 + i$. Its real part is negative and its imaginary part is positive, so the point lies in the second quadrant. Applying the arctangent to the ratio $b/a = 1/(-1) = -1$ gives $\arctan(-1) = -\pi/4$, which lies in the fourth quadrant and therefore does not represent the correct argument. Since $a < 0$ and $b \geq 0$, we must apply the correction of $+\pi$:
 
@@ -198,12 +198,12 @@ $$
 \mathrm{Arg}(z) = -\frac{\pi}{4} + \pi = \frac{3\pi}{4}
 $$
 
-> This value agree with the geometric position of $z = -1 + i$: the point is equidistant from both axes in the second quadrant, forming an angle of $135°$ with the positive real axis.
+> This value agrees with the geometric position of $z = -1 + i$: the point is equidistant from both axes in the second quadrant, forming an angle of $135°$ with the positive real axis.
 
 
 ## Properties of $\mathbb{C}$
 
-The [sum and product](../complex-number-operations) of complex numbers satisfy the associative, commutative, and distributive properties, just as the real numbers do.
+The [sum and product](../complex-number-operations/) of complex numbers satisfy the associative, commutative, and distributive properties, just as the real numbers do.
 
 Associative property for sum and product: when adding or multiplying complex numbers, the way in which the numbers are grouped does not affect the result.
 
@@ -256,7 +256,7 @@ $$\frac{1}{z} = \frac{a}{a^2 + b^2} - \frac{b}{a^2 + b^2} i $$
 
 Complex numbers of the form $z = a + 0i$, where the imaginary part is zero, are precisely the real numbers.
 
-The set of complex numbers $\mathbb{C}$ cannot be ordered in a way that is compatible with addition and multiplication. Suppose there existed a total order $\leq$ on $\mathbb{C}$, hat behaved well with these operations. Then we should be able to compare $i$ with $0$. There are two possible cases:  
+The set of complex numbers $\mathbb{C}$ cannot be ordered in a way that is compatible with addition and multiplication. Suppose there existed a total order $\leq$ on $\mathbb{C}$ that behaved well with these operations. Then we should be able to compare $i$ with $0$. There are two possible cases:  
 
 + If $i > 0$, multiplying both sides by $i$ gives $i^2 = -1 > 0$, which is a contradiction.  
 + If $i < 0$, multiplying both sides by $i$ again leads to $-1 > 0$, the same contradiction.

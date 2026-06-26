@@ -12,7 +12,7 @@ tags:
 ---
 ## Definition
 
-The algebraic form $z = a + bi$ represents a [complex number](../complex-numberss/) through its real and imaginary components. Every nonzero complex number can also be described by two geometric quantities, its distance from the origin and its angular position in the complex plane. This leads to the trigonometric (or polar) form of a complex number:
+The algebraic form $z = a + bi$ expresses a [complex number](../complex-numbers-introduction/) through its real and imaginary components. Every nonzero complex number can also be described by two geometric quantities, its distance from the origin and its angular position in the complex plane. This leads to the trigonometric (or polar) form of a complex number:
 
 $$z = r(\cos\theta + i\sin\theta)$$
 
@@ -41,7 +41,7 @@ z = (a, b) &= a + ib \\[6pt]
 \end{align}
 $$
 
-The trigonometric form is closely related with the [exponential form](../complex-numbers-exponential-form/) of a complex number. By [Euler's formula](../eulers-formula/), the identity $e^{i\theta} = \cos(\theta) + i\sin(\theta)$ show that the two representations are equivalent, so the same complex number can be written equivalently as:
+The trigonometric form is closely related with the [exponential form](../complex-numbers-exponential-form/) of a complex number. By [Euler's formula](../eulers-formula/), the identity $e^{i\theta} = \cos(\theta) + i\sin(\theta)$ shows that the two representations are equivalent, so the same complex number can be written equivalently as:
 
 $$z = re^{i\theta}$$
 
@@ -67,7 +67,7 @@ $$z_1 z_2 = r_1 r_2[\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2)]$$
 
 Geometrically, [multiplying two complex numbers](../complex-number-operations/) corresponds to scaling their distances from the origin by the product of their moduli and rotating the result by the sum of their arguments, combining a dilation and a rotation in a single operation.
 
-> This interpretation extends naturally to integer powers through [De Moivre's theorem](../de-moivre-theorem/), and becomes algebraically transparent in the [exponential form](../complex-numbers-exponential-form/), where the rule $e^{i\theta_1} \cdot e^{i\theta_2} = e^{i(\theta_1 + \theta_2)}$ reduces multiplication to the addition of arguments.
+> This interpretation extends to integer powers through [De Moivre's theorem](../de-moivre-theorem/), and becomes algebraically transparent in the [exponential form](../complex-numbers-exponential-form/), where the rule $e^{i\theta_1} \cdot e^{i\theta_2} = e^{i(\theta_1 + \theta_2)}$ reduces multiplication to the addition of arguments.
 
 - - -
 
@@ -95,7 +95,7 @@ When $x < 0$, a correction of $\pm\pi$ must be applied depending on the sign of 
 
 ## Modulus and argument
 
-The modulus $r$ of a complex number represents its distance from the origin in the complex plane. It is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to the real and imaginary components, and its value is always non-negative.
+The modulus $r$ of a complex number is its distance from the origin in the complex plane. It is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to the real and imaginary components, and its value is always non-negative.
 
 $$r = |z| = \sqrt{a^2 + b^2} \geq 0$$
 
@@ -121,17 +121,17 @@ In this case all arguments are taken as non-negative. Both conventions are equal
 
 The procedure consists of three steps, applied to a complex number $z = a + bi$ given in algebraic form.
 
-**Step 1.** Compute the modulus of $z$ using the following formula.
+First, compute the modulus of $z$ using the following formula.
 
 $$r = \sqrt{a^2 + b^2}$$
 
-**Step 2.** Determine the argument $\theta$ by identifying the quadrant of the point $(a, b)$ in the complex plane.
+Next, determine the argument $\theta$ by identifying the quadrant of the point $(a, b)$ in the complex plane.
 
 + When $a > 0$, the argument is given by $\theta = \arctan(b/a)$.
 + When $a < 0$, a correction of $\pm\pi$ must be added depending on the sign of $b$.
 + When $a = 0$, the argument is $\pi/2$ if $b > 0$ and $-\pi/2$ if $b < 0$.
 
-**Step 3.** Substitute $r$ and $\theta$ into the trigonometric form.
+Finally, substitute $r$ and $\theta$ into the trigonometric form.
 
 $$z = r(\cos\theta + i\sin\theta)$$
 

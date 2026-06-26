@@ -136,7 +136,7 @@ Setting $\sigma = \sum_{k=1}^{n} a_k \overline{b_k}$ and expanding the squared m
 
 $$
 \begin{align}
-P(t) &= \sum_{k=1}^{n} (a_k - t b_k)\bigl(\overline{a_k} - \overline{t}\,\overline{b_k}\bigr) \\[6pt]
+P(t) &= \sum_{k=1}^{n} (a_k - t b_k)\bigl(\overline{a_k} - \overline{t}\overline{b_k}\bigr) \\[6pt]
      &= \sum_{k=1}^{n} |a_k|^2 - t\overline{\sigma} - \overline{t}\sigma + |t|^2 \sum_{k=1}^{n} |b_k|^2
 \end{align}
 $$
@@ -181,4 +181,4 @@ A third application uses the Cauchy-Schwarz inequality directly. Given complex n
 
 $$\left|\sum_{k=1}^{n} z_k\right|^2 \leq n \sum_{k=1}^{n} |z_k|^2$$
 
-This estimate compares the squared modulus of a sum of $n$ terms with the sum of the squared moduli, weighted by the number of summands. Unlike the generalized triangle inequality, which involves the linear sum of moduli, the bound on the right depends on the quadratic average of the $|z_k|$, and grows only as $\sqrt{n}$ when the moduli remain uniformly bounded. This sharper behaviour is one of the reasons why Cauchy-Schwarz plays a central role in the analysis of orthogonal sums and in the convergence of Fourier expansions.
+This estimate compares the squared modulus of a sum of $n$ terms with the sum of the squared moduli, weighted by the number of summands. Unlike the generalized triangle inequality, which involves the linear sum of moduli, the bound on the right depends on the quadratic average of the $|z_k|$, and grows only as $\sqrt{n}$ when the moduli remain uniformly bounded. This sharper behaviour is one of the reasons why Cauchy-Schwarz is central to the analysis of orthogonal sums and the convergence of Fourier expansions.

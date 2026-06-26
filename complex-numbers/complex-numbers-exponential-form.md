@@ -43,7 +43,7 @@ Multiplying both sides by $r$ shows that the exponential representation coincide
 
 $$z = r(\cos\theta + i\sin\theta)$$
 
-Euler's formula itself can be established by expanding $e^{ix}$, $\cos x$, and $\sin x$ as [Taylor series](../taylor-series/) and observing that the series for $e^{ix}$ splits naturally into a real and an imaginary part:
+Euler's formula itself can be established by expanding $e^{ix}$, $\cos x$, and $\sin x$ as [Taylor series](../taylor-series/) and observing that the series for $e^{ix}$ splits into a real and an imaginary part:
 
 $$e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \cos x + i\sin x$$
 
@@ -71,7 +71,7 @@ $$r = \sqrt{a^2 + b^2}$$
 
 + Determine the argument $\theta$, that is, the angle that the [vector](../vectors/) representing $z$ forms with the positive real axis. When $a > 0$, the argument can be obtained directly from the arctangent formula:
 
-$$\theta = \tan^{-1}\left(\frac{b}{a}\right)$$
+$$\theta = \arctan\left(\frac{b}{a}\right)$$
 
 When $a \leq 0$, the quadrant of $z$ in the complex plane must be taken into account in order to select the correct value of $\theta$.
 
@@ -106,7 +106,7 @@ $$
 
 The argument $\theta$ is the angle that the vector representing $z$ forms with the positive real axis. Since $a = 2 > 0$, the number lies in the first quadrant and the arctangent formula applies without any correction:
 
-$$\theta = \tan^{-1}\left(\frac{b}{a}\right) = \tan^{-1}\left(\frac{3}{2}\right) \approx 0.98 \text{ rad}$$
+$$\theta = \arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{3}{2}\right) \approx 0.98 \text{ rad}$$
 
 Substituting $r = \sqrt{13}$ and $\theta \approx 0.98$ into the exponential form, the result is:
 
@@ -126,7 +126,7 @@ $$
 
 The argument requires more care. Since $a = -1 < 0$ and $b = 1 > 0$, the number lies in the second quadrant. The arctangent formula taken in isolation would give:
 
-$$\tan^{-1}\left(\frac{b}{a}\right) = \tan^{-1}\left(\frac{1}{-1}\right) = \tan^{-1}(-1) = -\frac{\pi}{4}$$
+$$\arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{1}{-1}\right) = \arctan(-1) = -\frac{\pi}{4}$$
 
 This value corresponds to the fourth quadrant and is therefore not the correct argument of $z$. The actual argument is obtained by adding $\pi$ to compensate for the sign of $a$:
 

@@ -17,13 +17,13 @@ A [complex number](../complex-numbers-introduction/) $z$ is an expression of the
 
 The [real number](../real-numbers/) $a$ is called the real part of $z$ and is denoted by $\mathrm{Re}(z)$. The real number $b$ is called the imaginary part and is denoted $\mathrm{Im}(z)$. The set of all complex numbers is defined as follows:
 
-$$\mathbb{C} := \\{\ z = a + bi \mid a, b \in \mathbb{R} \ \\}$$
+$$\mathbb{C} := \{\ z = a + bi \mid a, b \in \mathbb{R} \ \}$$
 
 Every real number $a \in \mathbb{R}$ can be identified with the complex number $a + 0i$, so $\mathbb{R}$ embeds naturally into $\mathbb{C}$ as a subfield.
 
 - - -
 
-The [set](/..sets/) $\mathbb{C}$, equipped with the addition and multiplication defined in the sections below, forms a [field](../fields/). Before examining these operations, it is useful to recall the field axioms that govern the arithmetic of complex numbers.
+The [set](../sets/) $\mathbb{C}$, equipped with the addition and multiplication defined in the sections below, forms a [field](../fields/). Before examining these operations, it is useful to recall the field axioms that govern the arithmetic of complex numbers.
 
 + Closure: for any $z_1, z_2 \in \mathbb{C}$, the sum $z_1 + z_2$ and the product $z_1 \cdot z_2$ both belong to $\mathbb{C}$.
 + Commutativity and associativity: addition and multiplication are commutative and associative, in strict analogy with $\mathbb{R}$.
@@ -75,7 +75,7 @@ $$
 From a geometric point of view, complex numbers can be interpreted as [vectors](../vectors/) in the complex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part. Given two complex numbers $z_1$ and $z_2$, represented as vectors from the origin, their sum $z_1 + z_2$ corresponds to vector addition by the parallelogram rule.
 
 + The vector corresponding to $z_2$ is translated so that its tail coincides with the tip of the vector corresponding to $z_1$.
-+ The vector drawn from the origin to the new tip represents the resulting complex number $z_1 + z_2$.
++ The vector drawn from the origin to the new tip is the resulting complex number $z_1 + z_2$.
 
 ![IMG. 1](svg/complex-number-operations-1.svg)
 
@@ -119,7 +119,7 @@ These identities show that conjugation is a field automorphism of $\mathbb{C}$. 
 
 $$z \cdot \overline{z} = a^2 + b^2 = |z|^2$$
 
-This last identity is the key step in the computation of both the reciprocal and the quotient of complex numbers: multiplying the denominator by its conjugate produces the real number $|z|^2$, which can then be divided out without leaving any imaginary part.
+This last identity underlies the computation of both the reciprocal and the quotient of complex numbers. Multiplying the denominator by its conjugate produces the real number $|z|^2$, which can then be divided out without leaving any imaginary part.
 
 > A field automorphism is a bijective map from a field to itself that preserves addition and multiplication. Conjugation satisfies this condition, and since it fixes every real number, it is an automorphism of $\mathbb{C}$ over $\mathbb{R}$.
 

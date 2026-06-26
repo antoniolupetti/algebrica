@@ -24,7 +24,7 @@ $$
 \quad \forall \ x \in \mathbb{R}
 $$
 
-The function returns $-1$ for negative values, $0$ when $x = 0,$ and $1$ for positive values. It does not quantify the magnitude of $x$ but indicates the position of $x$ relative to zero. Applying the definition we have:
+Applying the definition we have:
 
 $$
 \mathrm{sgn}(-7) = -1 \qquad \mathrm{sgn}(0) = 0 \qquad \mathrm{sgn}(4) = 1
@@ -42,7 +42,7 @@ $$
 \mathrm{sgn}(-x) = -\mathrm{sgn}(x) \quad \forall \ x \in \mathbb{R}
 $$
 
-The sign function is one of the simplest examples of a discontinuous function. It appears in absolute values, piecewise definitions, distribution theory, and differential equations.
+The sign function is one of the simplest examples of a discontinuous function.
 
 ## Properties
 
@@ -136,7 +136,7 @@ $$
 |x| = x \cdot \mathrm{sgn}(x)
 $$
 
-This identity holds for all $x \in \mathbb{R},$ including $x = 0,$ where both sides are zero. The two identities show that $|x|$ and $\mathrm{sgn}(x)$ are complementary, since the absolute value keeps magnitude and omits sign, whereas the sign function keeps sign and omits magnitude.
+This identity holds for all $x \in \mathbb{R},$ including $x = 0,$ where both sides are zero.
 
 - - -
 
@@ -181,4 +181,4 @@ $$
 H(x) = \frac{1 + \mathrm{sgn}(x)}{2}
 $$
 
-Converting between these representations can simplify calculations. The Heaviside function maps $(-\infty, 0)$ to $0$ and $(0, +\infty)$ to $1,$ and may therefore be read as a shifted and rescaled form of the sign function.
+The Heaviside function maps $(-\infty, 0)$ to $0$ and $(0, +\infty)$ to $1,$ and may therefore be read as a shifted and rescaled form of the sign function.
