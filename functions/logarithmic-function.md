@@ -12,21 +12,21 @@ tags:
 ---
 ## Introduction
 
-The logarithmic function has the form $y = \log_a x,$ with $a > 0,$ $a \neq 1,$ for every $x \in \mathbb{R}^+,$ and is the [inverse](../inverse-function/) of the [exponential function](../exponential-function/), so its [domain](../determining-the-domain-of-a-function/) and range are exchanged relative to it.
+The logarithmic function has the form $y = \log_a x,$ with $a > 0,$ $a \neq 1,$ for every $x \in \mathbb{R}^+.$ It is the [inverse](../inverse-function/) of the [exponential function](../exponential-function/), so its [domain](../determining-the-domain-of-a-function/) and range are exchanged relative to it.
 
-If the base $a > 1,$ the function is increasing, so it grows as $x$ increases.
+If the base $a > 1,$ the function is increasing.
 
 ![IMG. 1](../powers-radicals-logarithms/svg/logarithms-1.svg)
 
-If $0 < a < 1,$ the function is decreasing, so it decreases as $x$ increases.
+If $0 < a < 1,$ the function is decreasing.
 
 ![IMG. 2](../powers-radicals-logarithms/svg/logarithms-2.svg)
 
-In both cases the only point where the function takes the value $0$ is $x = 1,$ since $\log_a(1) = 0.$ This holds because $a^0 = 1$ by the [properties of powers](../powers/). The line $x = 0$ is a vertical [asymptote](../asymptotes/), since the function diverges as $x$ approaches zero from the right.
+The only point where the function takes the value $0$ is $x = 1,$ since $\log_a(1) = 0.$ This holds because $a^0 = 1$ by the [properties of powers](../powers/). The line $x = 0$ is a vertical [asymptote](../asymptotes/), since the function diverges as $x$ approaches zero from the right.
 
 Defining the logarithm as the inverse of the exponential is the elementary approach, and it assumes that $a^x$ has already been constructed for every real exponent. The section on the natural logarithm below gives a rigorous definition via an integral, in which the exponential is defined as the inverse of the logarithm.
 
-> The value of the base determines the behavior of the function. For [logarithmic inequalities](../logarithmic-inequalities/), a base between $0$ and $1$ requires reversing the direction of the inequality, because the function is decreasing.
+> The value of the base determines whether the function is increasing or decreasing. For [logarithmic inequalities](../logarithmic-inequalities/), a base between $0$ and $1$ requires reversing the direction of the inequality, because the function is decreasing.
 
 ## Properties
 
@@ -38,11 +38,11 @@ The main properties of the logarithmic function follow from its definition as th
 + The function is strictly [increasing](../increasing-and-decreasing-functions/) on $(0,+\infty)$ when $a > 1,$ and strictly decreasing when $0 < a < 1.$
 + The function is neither even nor odd, since it is not defined for negative $x.$
 + The function is [continuous](../continuous-functions/) on $(0, +\infty).$
-+ The function is differentiable on its whole domain, with derivative 
++ As the inverse of the differentiable exponential function, the function is differentiable on its whole domain, with derivative:
 
 $$f'(x) = \frac{1}{x\ln(a)}$$
 
-+ The function has no [maximum or minimum](../maximum-minimum-and-inflection-points/) on its domain.
++ The function has no [maximum or minimum](../maximum-minimum-and-inflection-points/) on its domain, since it is unbounded both near zero and at infinity.
 
 ## Limits, derivatives, and integrals
 
@@ -86,7 +86,7 @@ The [fundamental theorem of calculus](../fundamental-theorem-of-calculus/) gives
 
 $$\frac{d}{dx}\ln(x) = \frac{1}{x}$$
 
-The additive property of the logarithm is also a consequence of the integral form. Fix $y > 0$ and set $g(x) = \ln(xy).$ The [chain rule](../chain-rule/) gives:
+The additive property of the logarithm also follows from the integral form, by comparing derivatives and using the chain rule. Fix $y > 0$ and set $g(x) = \ln(xy).$ The [chain rule](../chain-rule/) gives:
 
 $$g'(x) = \frac{1}{xy}\cdot y = \frac{1}{x}$$
 
@@ -98,7 +98,7 @@ The base of the natural logarithm is the [Euler number](../euler-number-limit-se
 
 $$\ln(e) = \int_{1}^{e} \frac{1}{t} \ dt = 1$$
 
-This condition places $e$ between $2$ and $4,$ because the two integrals that bound the value $1$ are themselves logarithms. On $[1,2]$ the constant $1$ bounds $1/t$ from above, so the corresponding integral stays below $1$:
+This condition places $e$ between $2$ and $4,$ because bounding the value $1$ above and below by integrals of $1/t$ is the same as comparing $1$ to $\ln(2)$ and $\ln(4).$ On $[1,2]$ the constant $1$ bounds $1/t$ from above, so the corresponding integral stays below $1$:
 
 $$\ln(2) = \int_{1}^{2} \frac{1}{t} \ dt < 1$$
 
@@ -148,7 +148,7 @@ This is again an improper integral, since $\ln(x)$ is not defined at $x = 0.$ It
 
 ## Binary search and the logarithmic function
 
-One use of logarithms is the analysis of algorithmic complexity. The logarithmic function describes the growth of information in binary decisions. Each step of a binary search answers one yes/no question, which corresponds to one binary bit. This is why logarithms appear in computer science and information theory.
+One use of logarithms is the analysis of algorithmic complexity. The logarithmic function describes the growth of information in binary decisions. Each step of a binary search answers one yes/no question, which corresponds to one binary bit. For this reason logarithms appear in computer science and information theory.
 
 Suppose we want to find an item in a sorted list of $N$ elements. Checking the elements one by one, with the target in the $n$-th position, may require up to $n$ steps. This approach is linear search, and its worst-case [time complexity](../big-o-notation/) is:
 
@@ -168,7 +168,7 @@ The time complexity of binary search is therefore:
 
 $$\mathcal{O}(\log n)$$
 
-This shows how logarithmic functions describe processes that involve repeated halving, such as decision trees, divide-and-conquer algorithms, and exponential decay. If a list contains $1{,}000{,}000$ elements, binary search finds any element in at most:
+This shows how logarithmic functions describe processes that involve repeated halving, such as divide-and-conquer algorithms and decision trees. If a list contains $1{,}000{,}000$ elements, binary search finds any element in at most:
 
 $$\log_2(1{,}000{,}000) \approx 19.9$$
 
