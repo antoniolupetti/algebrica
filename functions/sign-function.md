@@ -53,6 +53,7 @@ The sign function is one of the simplest examples of a discontinuous function. I
 + The function is constant on $(-\infty, 0)$ and on $(0, +\infty),$ so it never decreases on either piece, which makes it [non-decreasing](../increasing-and-decreasing-functions/) over $\mathbb{R}.$
 + The function has a [jump discontinuity](../discontinuities-of-real-functions/) at $x = 0$ and is [continuous](../continuous-functions/) everywhere else.
 + The function is not differentiable at $x = 0.$ It is differentiable, with zero [derivative](../derivatives/), at every other point.
++ The function is multiplicative, since $\mathrm{sgn}(xy) = \mathrm{sgn}(x)\mathrm{sgn}(y)$ for all $x, y \in \mathbb{R}.$ Restricted to $\mathbb{R} \setminus \{0\},$ it is a homomorphism from the multiplicative group $(\mathbb{R}^*, \cdot)$ onto $\{-1, 1\}.$
 
 The two one-sided limits at the origin are:
 
