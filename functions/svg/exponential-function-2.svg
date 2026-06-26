@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="274px" viewBox="0 0 313 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M147.5,6.98013557 L147.935788,7.75486938 L152.435788,15.7548694 L152.680918,16.1906571 L151.809343,16.6809184 L151.564212,16.2451306 L147.999,9.906 L148,223 L147,223 L146.999,9.91 L143.435788,16.2451306 L143.190657,16.6809184 L142.319082,16.1906571 L142.564212,15.7548694 L147.064212,7.75486938 L147.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.309343,190.319082 L294.745131,190.564212 L302.745131,195.064212 L303.519864,195.5 L302.745131,195.935788 L294.745131,200.435788 L294.309343,200.680918 L293.819082,199.809343 L294.254869,199.564212 L300.591,196 L-0.5,196 L-0.5,195 L300.591,195 L294.254869,191.435788 L293.819082,191.190657 L294.309343,190.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="129.5" y="259">When the base  a is between 0 and </tspan>
+                <tspan x="129.5" y="272">1, the function is decreasing.</tspan>
+            </text>
+            <line x1="236.5" y1="206.5" x2="236.5" y2="238.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="126.5" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="214">x</tspan>
+            </text>
+            <path d="M60.5,193 C99.1666667,194.333333 141.833333,182 188.5,156 C224.755557,135.800475 250.750237,103.931716 266.484038,60.3937235 M272.998213,38.6693462 C273.925738,35.0592557 275.426334,28.8361403 277.5,20" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(169.000000, 106.548780) scale(-1, 1) translate(-169.000000, -106.548780) "></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="63" y="53">y = aˣ</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="154" y="152">1</tspan>
+            </text>
+            <circle fill="#333333" cx="147.5" cy="154.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

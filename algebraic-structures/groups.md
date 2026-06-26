@@ -19,12 +19,12 @@ tags:
 
 A group describes the structure shared by many different mathematical objects, such as the [integers](../integers/) under addition, nonzero [real numbers](../real-numbers/) under multiplication, geometric symmetries, and invertible [matrices](../matrices/). A group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying four axioms:
 
-+ Closure: for all $a, b \in G$, the element $a \cdot b$ belongs to $G$.
-+ Associativity: for all $a, b, c \in G$, the identity $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ holds.
-+ Identity element: there exists an element $e \in G$ such that $a \cdot e = e \cdot a = a$ for all $a \in G$.
-+ Inverses: for every $a \in G$ there exists an element $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e$.
++ Closure: for all $a, b \in G,$ the element $a \cdot b$ belongs to $G.$
++ Associativity: for all $a, b, c \in G,$ the identity $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ holds.
++ Identity element: there exists an element $e \in G$ such that $a \cdot e = e \cdot a = a$ for all $a \in G.$
++ Inverses: for every $a \in G$ there exists an element $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e.$
 
-A group $(G, \cdot)$ is called abelian, or commutative, if in addition $a \cdot b = b \cdot a$ for all $a, b \in G$.
+A group $(G, \cdot)$ is called abelian, or commutative, if in addition $a \cdot b = b \cdot a$ for all $a, b \in G.$
 
 > The identity element and each inverse are unique. These results follow directly from the axioms and are established early in group theory.
 
@@ -32,17 +32,17 @@ A group $(G, \cdot)$ is called abelian, or commutative, if in addition $a \cdot 
 
 Several consequences follow from the previous axioms. 
 
-If $a \cdot b = a \cdot c$ for some $a, b, c \in G$, then multiplying both sides on the left by $a^{-1}$ gives $b = c$. This is the left cancellation law. 
+If $a \cdot b = a \cdot c$ for some $a, b, c \in G,$ then multiplying both sides on the left by $a^{-1}$ gives $b = c.$ This is the left cancellation law. 
 
-The right cancellation law holds by an analogous argument. Together they imply that the equation $a \cdot x = b$ has a unique solution $x = a^{-1} \cdot b$ in $G$ for any given $a, b \in G$. 
+The right cancellation law holds by an analogous argument. Together they imply that the equation $a \cdot x = b$ has a unique solution $x = a^{-1} \cdot b$ in $G$ for any given $a, b \in G.$ 
 
 The inverse of a product satisfies the following identity:
 
 $$(a \cdot b)^{-1} = b^{-1} \cdot a^{-1}$$
 
-This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. Applying inversion twice returns the original element, since $a$ satisfies the defining relation for the inverse of $a^{-1}$, which gives $(a^{-1})^{-1} = a$. 
+This reversal of order is a consequence of the associativity axiom and is sometimes called the "sock-shoe" property. To undo the operation of first putting on a sock and then a shoe, one must first remove the shoe and then the sock. Applying inversion twice returns the original element, since $a$ satisfies the defining relation for the inverse of $a^{-1},$ which gives $(a^{-1})^{-1} = a.$ 
 
-The order of a group $G$, denoted $|G|$, is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
+The order of a group $G,$ denoted $|G|,$ is the cardinality of the underlying set. A group with finitely many elements is called a finite group, otherwise it is infinite.
 
 ## Algebraic hierarchy
 
@@ -58,7 +58,7 @@ Imposing the further condition that every nonzero element be invertible under mu
 
 ## Powers of an element
 
-Once a group operation is fixed, repeated application of it to a single element produces the powers of that element. For an element $a \in G$ and a positive integer $n$, the $n$-th power is defined recursively by setting $a^1 = a$ and $a^n = a^{n-1} \cdot a$. The definition extends to the remaining integers by taking the zeroth power to be the identity and the negative powers to be powers of the inverse:
+Once a group operation is fixed, repeated application of it to a single element produces the powers of that element. For an element $a \in G$ and a positive integer $n,$ the $n$-th power is defined recursively by setting $a^1 = a$ and $a^n = a^{n-1} \cdot a.$ The definition extends to the remaining integers by taking the zeroth power to be the identity and the negative powers to be powers of the inverse:
 
 $$a^0 = e \qquad a^{-n} = (a^{-1})^n$$
 
@@ -66,35 +66,35 @@ With this convention the symbol $a^n$ is meaningful for every integer exponent. 
 
 $$a^m \cdot a^n = a^{m+n} \qquad (a^m)^n = a^{mn}$$
 
-These identities follow by induction on the exponents, starting from the recursive definition. When the group operation is written additively, the multiplicative power $a^n$ is replaced by the multiple $na$, and the two laws above read $ma + na = (m + n)a$ and $n(ma) = (mn)a$.
+These identities follow by induction on the exponents, starting from the recursive definition. When the group operation is written additively, the multiplicative power $a^n$ is replaced by the multiple $na,$ and the two laws above read $ma + na = (m + n)a$ and $n(ma) = (mn)a.$
 
 > The mixed rule $(a \cdot b)^n = a^n \cdot b^n$ holds only when $a$ and $b$ commute. In a non-abelian group the two factors cannot be interchanged, so this identity generally fails.
 
 ## Order of an element
 
-The order of an element $a$ in a group $G$ is the smallest positive integer $n$ such that $a^n = e$, where $e$ is the identity element and the notation $a^n$ denotes the product of $a$ with itself $n$ times. When no such integer exists, the element is said to have infinite order. The order of $a$ is denoted $\mathrm{ord}(a)$.
+The order of an element $a$ in a group $G$ is the smallest positive integer $n$ such that $a^n = e,$ where $e$ is the identity element and the notation $a^n$ denotes the product of $a$ with itself $n$ times. When no such integer exists, the element is said to have infinite order. The order of $a$ is denoted $\mathrm{ord}(a).$
 
-As an example, consider the group $(\mathbb{Z}/6\mathbb{Z}, +)$. The element $2$ has order $3$, since $2 + 2 + 2 = 6 \equiv 0 \pmod{6}$ and neither $2$ nor $2 + 2 = 4$ is congruent to $0$. The element $1$ has order $6$, since $1$ must be added to itself six times to obtain $0$. In the group $(\mathbb{Z}, +)$ every nonzero element has infinite order, because no finite sum of a fixed nonzero integer can equal $0$.
+As an example, consider the group $(\mathbb{Z}/6\mathbb{Z}, +).$ The element $2$ has order $3,$ since $2 + 2 + 2 = 6 \equiv 0 \pmod{6}$ and neither $2$ nor $2 + 2 = 4$ is congruent to $0.$ The element $1$ has order $6,$ since $1$ must be added to itself six times to obtain $0.$ In the group $(\mathbb{Z}, +)$ every nonzero element has infinite order, because no finite sum of a fixed nonzero integer can equal $0.$
 
-> The modulo operator $a \bmod n$ returns the remainder of the division of $a$ by $n$. For example, $7 \bmod 5 = 2$ since $7 = 1 \cdot 5 + 2$. The systematic treatment is given on the page on the [modulo operator](../modulo-operator/).
+> The modulo operator $a \bmod n$ returns the remainder of the division of $a$ by $n.$ For example, $7 \bmod 5 = 2$ since $7 = 1 \cdot 5 + 2.$ The systematic treatment is given on the page on the [modulo operator](../modulo-operator/).
 
 ## Examples
 
-The set $\mathbb{Z}$ equipped with ordinary addition forms an abelian group. The identity element is $0$, and the inverse of an integer $n$ is $-n$. This is an infinite group and arguably the most natural example of a group in elementary mathematics.
+The set $\mathbb{Z}$ equipped with ordinary addition forms an abelian group. The identity element is $0,$ and the inverse of an integer $n$ is $-n.$ This is an infinite group and arguably the most natural example of a group in elementary mathematics.
 
-Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldots, n - 1 \ \\}$ equipped with addition [modulo](../modulo-operator/) $n$ forms a finite abelian group of order $n$. For example, in $\mathbb{Z}/5\mathbb{Z}$ one has $3 + 4 = 2$, since $7 \equiv 2 \pmod{5}$. The identity element is $0$ and the inverse of $k$ is $n - k$.
+Let $n$ be a positive integer. The set $\mathbb{Z}/n\mathbb{Z} = \\{\ 0, 1, \ldots, n - 1 \ \\}$ equipped with addition [modulo](../modulo-operator/) $n$ forms a finite abelian group of order $n.$ For example, in $\mathbb{Z}/5\mathbb{Z}$ one has $3 + 4 = 2,$ since $7 \equiv 2 \pmod{5}.$ The identity element is $0$ and the inverse of $k$ is $n - k.$
 
 - - -
 
-Let $F$ be a [field](../fields/) and let $n$ be a positive integer. The set of all [invertible](../inverse-matrix/) $n \times n$ matrices with entries in $F$, denoted $\mathrm{GL}(n, F)$, forms a group under matrix multiplication. The identity element is the identity matrix $I_n$, and the inverse of a matrix $A$ is its matrix inverse $A^{-1}$. This group is not abelian for $n \geq 2$, since matrix multiplication does not commute in general.
+Let $F$ be a [field](../fields/) and let $n$ be a positive integer. The set of all [invertible](../inverse-matrix/) $n \times n$ matrices with entries in $F,$ denoted $\mathrm{GL}(n, F),$ forms a group under matrix multiplication. The identity element is the identity matrix $I_n,$ and the inverse of a matrix $A$ is its matrix inverse $A^{-1}.$ This group is not abelian for $n \geq 2,$ since matrix multiplication does not commute in general.
 
-Given a set $\\{\ 1, 2, \ldots, n \ \\}$, a permutation is a bijection from this set to itself. The collection of all such permutations forms a group under [composition of functions](../composite-functions/), denoted $S_n$ and called the symmetric group on $n$ elements. The identity element is the identity permutation, and the inverse of a permutation $\sigma$ is the inverse function $\sigma^{-1}$. The group $S_n$ has order equal to the [factorial](../factorial/) $n!$ and is non-abelian for $n \geq 3$.
+Given a set $\\{\ 1, 2, \ldots, n \ \\},$ a permutation is a bijection from this set to itself. The collection of all such permutations forms a group under [composition of functions](../composite-functions/), denoted $S_n$ and called the symmetric group on $n$ elements. The identity element is the identity permutation, and the inverse of a permutation $\sigma$ is the inverse function $\sigma^{-1}.$ The group $S_n$ has order equal to the [factorial](../factorial/) $n!$ and is non-abelian for $n \geq 3.$
 
-As a concrete illustration, consider $S_3$, which has order $6$. Let $\sigma$ be the permutation sending $1 \mapsto 2$, $2 \mapsto 3$, $3 \mapsto 1$, and let $\tau$ be the permutation sending $1 \mapsto 2$, $2 \mapsto 1$, $3 \mapsto 3$:
+As a concrete illustration, consider $S_3,$ which has order $6.$ Let $\sigma$ be the permutation sending $1 \mapsto 2,$ $2 \mapsto 3,$ $3 \mapsto 1,$ and let $\tau$ be the permutation sending $1 \mapsto 2,$ $2 \mapsto 1,$ $3 \mapsto 3$:
 
 $$\sigma = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 3 & 1 \end{pmatrix} \qquad \tau = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 1 & 3 \end{pmatrix}$$
 
-To compute $\sigma \circ \tau$, one applies $\tau$ first and then $\sigma$. The element $1$ is sent by $\tau$ to $2$, and then $\sigma$ sends $2$ to $3$, so $1 \mapsto 3$. The element $2$ is sent by $\tau$ to $1$, and then $\sigma$ sends $1$ to $2$, so $2 \mapsto 2$. Finally, $3$ is fixed by $\tau$, and $\sigma$ sends $3$ to $1$, so $3 \mapsto 1$. Therefore:
+To compute $\sigma \circ \tau,$ one applies $\tau$ first and then $\sigma.$ The element $1$ is sent by $\tau$ to $2,$ and then $\sigma$ sends $2$ to $3,$ so $1 \mapsto 3.$ The element $2$ is sent by $\tau$ to $1,$ and then $\sigma$ sends $1$ to $2,$ so $2 \mapsto 2.$ Finally, $3$ is fixed by $\tau,$ and $\sigma$ sends $3$ to $1,$ so $3 \mapsto 1.$ Therefore:
 
 $$\sigma \circ \tau = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 3 & 2 & 1 \end{pmatrix}$$
 
@@ -102,65 +102,65 @@ An analogous computation yields:
 
 $$\tau \circ \sigma = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 1 & 3 & 2 \end{pmatrix}$$
 
-Since $\sigma \circ \tau \neq \tau \circ \sigma$, the group $S_3$ is indeed non-abelian.
+Since $\sigma \circ \tau \neq \tau \circ \sigma,$ the group $S_3$ is indeed non-abelian.
 
 ## When the axioms fail
 
 A good way to appreciate the group axioms is to look at pairs consisting of a set and an operation that almost form a group, but fail on one specific point. Each failure isolates a different axiom and shows why the definition is cut exactly as it is.
 
-Consider the [natural numbers](../natural-numbers/) including zero, $\mathbb{N}_0 = \\{\ 0, 1, 2, \ldots \ \\}$, equipped with ordinary addition. The operation is closed and associative, and $0$ acts as an identity element. The axiom that fails is the existence of inverses. Given any positive integer $n$, there is no element in $\mathbb{N}_0$ that added to $n$ returns $0$, because the candidate $-n$ lies outside the set. The structure $(\mathbb{N}_0, +)$ is therefore not a group, but only a monoid.
+Consider the [natural numbers](../natural-numbers/) including zero, $\mathbb{N}_0 = \\{\ 0, 1, 2, \ldots \ \\},$ equipped with ordinary addition. The operation is closed and associative, and $0$ acts as an identity element. The axiom that fails is the existence of inverses. Given any positive integer $n,$ there is no element in $\mathbb{N}_0$ that added to $n$ returns $0,$ because the candidate $-n$ lies outside the set. The structure $(\mathbb{N}_0, +)$ is therefore not a group, but only a monoid.
 
 - - -
 
-The [integers](../integers/) with multiplication, $(\mathbb{Z}, \cdot)$, are another example. Closure, associativity, and the identity $1$ are all in place, yet the vast majority of integers lack a multiplicative inverse inside $\mathbb{Z}$. The only elements that admit an inverse are $1$ and $-1$, since for any other integer $n$ the reciprocal $1/n$ is not an integer. Dropping all non-invertible elements would leave only the two-element set $\\{\ 1, -1 \ \\}$, which is a group under multiplication but a much smaller object than the integers.
+The [integers](../integers/) with multiplication, $(\mathbb{Z}, \cdot),$ are another example. Closure, associativity, and the identity $1$ are all in place, yet the vast majority of integers lack a multiplicative inverse inside $\mathbb{Z}.$ The only elements that admit an inverse are $1$ and $-1,$ since for any other integer $n$ the reciprocal $1/n$ is not an integer. Dropping all non-invertible elements would leave only the two-element set $\\{\ 1, -1 \ \\},$ which is a group under multiplication but a much smaller object than the integers.
 
-The [real numbers](../real-numbers/) with multiplication, $(\mathbb{R}, \cdot)$, come even closer to being a group. Every real number different from zero has a multiplicative inverse, namely its reciprocal. The obstacle is a single element: zero has no multiplicative inverse, and its presence in the set is enough to disqualify the whole structure. The fix is to remove it. The set of nonzero reals $\mathbb{R} \setminus \\{\ 0 \ \\}$ equipped with ordinary multiplication forms an abelian group, with identity $1$ and inverse $a^{-1} = 1/a$ for every $a \neq 0$.
+The [real numbers](../real-numbers/) with multiplication, $(\mathbb{R}, \cdot),$ come even closer to being a group. Every real number different from zero has a multiplicative inverse, namely its reciprocal. The obstacle is a single element: zero has no multiplicative inverse, and its presence in the set is enough to disqualify the whole structure. The fix is to remove it. The set of nonzero reals $\mathbb{R} \setminus \\{\ 0 \ \\}$ equipped with ordinary multiplication forms an abelian group, with identity $1$ and inverse $a^{-1} = 1/a$ for every $a \neq 0.$
 
-> These three cases each fail a different axiom: inverses for $(\mathbb{N}_0, +)$, inverses for all but two elements in $(\mathbb{Z}, \cdot)$, and the existence of an inverse for the single element $0$ in $(\mathbb{R}, \cdot)$. The last case illustrates a recurring pattern in algebra, in which removing a problematic element produces a legitimate group.
+> These three cases each fail a different axiom: inverses for $(\mathbb{N}_0, +),$ inverses for all but two elements in $(\mathbb{Z}, \cdot),$ and the existence of an inverse for the single element $0$ in $(\mathbb{R}, \cdot).$ The last case illustrates a recurring pattern in algebra, in which removing a problematic element produces a legitimate group.
 
 ## Cyclic groups
 
-A group $G$ is called cyclic when there exists an element $g \in G$ such that every element of $G$ can be written as a power of $g$, that is:
+A group $G$ is called cyclic when there exists an element $g \in G$ such that every element of $G$ can be written as a power of $g,$ that is:
 
 $$G = \\{\ g^n : n \in \mathbb{Z} \ \\}$$
 
-Such an element $g$ is called a generator of $G$. Every cyclic group is isomorphic either to $\mathbb{Z}$ when it is infinite, or to $\mathbb{Z}/n\mathbb{Z}$ for some positive integer $n$ when it is finite.
+Such an element $g$ is called a generator of $G.$ Every cyclic group is isomorphic either to $\mathbb{Z}$ when it is infinite, or to $\mathbb{Z}/n\mathbb{Z}$ for some positive integer $n$ when it is finite.
 
-The group $(\mathbb{Z}/6\mathbb{Z}, +)$ is cyclic with generator $1$, since every element $0, 1, 2, 3, 4, 5$ can be obtained as a multiple of $1$. The element $5$ is also a generator, as repeated addition of $5$ modulo $6$ produces all six residues. The element $2$, however, is not a generator, since the multiples of $2$ modulo $6$ are only $\\{\ 0, 2, 4 \ \\}$, which form a proper subgroup of $\mathbb{Z}/6\mathbb{Z}$.
+The group $(\mathbb{Z}/6\mathbb{Z}, +)$ is cyclic with generator $1,$ since every element $0, 1, 2, 3, 4, 5$ can be obtained as a multiple of $1.$ The element $5$ is also a generator, as repeated addition of $5$ modulo $6$ produces all six residues. The element $2,$ however, is not a generator, since the multiples of $2$ modulo $6$ are only $\\{\ 0, 2, 4 \ \\},$ which form a proper subgroup of $\mathbb{Z}/6\mathbb{Z}.$
 
 ## Subgroups
 
-A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G$. Rather than verifying all four group axioms separately, the following criterion is usually more convenient.
+A subset $H$ of a group $G$ is called a subgroup when $H$ is itself a group under the operation inherited from $G.$ Rather than verifying all four group axioms separately, the following criterion is usually more convenient.
 
-A nonempty subset $H \subseteq G$ is a subgroup of $G$ if and only if for all $a, b \in H$ the element $a \cdot b^{-1}$ belongs to $H$. This condition encodes closure under the operation and under taking inverses, and the presence of the identity follows from setting $a = b$. The notation $H \leq G$ indicates that $H$ is a subgroup of $G$.
+A nonempty subset $H \subseteq G$ is a subgroup of $G$ if and only if for all $a, b \in H$ the element $a \cdot b^{-1}$ belongs to $H.$ This condition encodes closure under the operation and under taking inverses, and the presence of the identity follows from setting $a = b.$ The notation $H \leq G$ indicates that $H$ is a subgroup of $G.$
 
 Every group $G$ has at least two subgroups: the trivial subgroup $\\{\ e \ \\}$ and $G$ itself. Any subgroup other than $G$ is called a proper subgroup.
 
-As an example, consider the set of even integers $2\mathbb{Z} = \\{\ \ldots, -4, -2, 0, 2, 4, \ldots \ \\}$ as a subset of $(\mathbb{Z}, +)$. Taking any two even integers $a = 2m$ and $b = 2k$, the inverse of $b$ in $\mathbb{Z}$ is $-b = -2k$, so $a + (-b) = 2(m - k)$, which is again even. The subgroup criterion is therefore satisfied, and $2\mathbb{Z}$ is a subgroup of $\mathbb{Z}$.
+As an example, consider the set of even integers $2\mathbb{Z} = \\{\ \ldots, -4, -2, 0, 2, 4, \ldots \ \\}$ as a subset of $(\mathbb{Z}, +).$ Taking any two even integers $a = 2m$ and $b = 2k,$ the inverse of $b$ in $\mathbb{Z}$ is $-b = -2k,$ so $a + (-b) = 2(m - k),$ which is again even. The subgroup criterion is therefore satisfied, and $2\mathbb{Z}$ is a subgroup of $\mathbb{Z}.$
 
-Subgroups are stable under intersection. If $H$ and $K$ are subgroups of $G$, then $H \cap K$ is again a subgroup. The identity belongs to both, so the intersection is nonempty, and whenever $a$ and $b$ lie in $H \cap K$, the element $a \cdot b^{-1}$ lies in $H$ and in $K$ separately, hence in their intersection. The same argument applies to the intersection of any family of subgroups, however large.
+Subgroups are stable under intersection. If $H$ and $K$ are subgroups of $G,$ then $H \cap K$ is again a subgroup. The identity belongs to both, so the intersection is nonempty, and whenever $a$ and $b$ lie in $H \cap K,$ the element $a \cdot b^{-1}$ lies in $H$ and in $K$ separately, hence in their intersection. The same argument applies to the intersection of any family of subgroups, however large.
 
 ## Group homomorphisms and isomorphisms
 
-A group homomorphism is a [function](../functions/) between two groups that preserves the group structure. Given two groups $(G, \cdot)$ and $(H, \star)$, a function $\varphi : G \to H$ is a homomorphism when for all $a, b \in G$:
+A group homomorphism is a [function](../functions/) between two groups that preserves the group structure. Given two groups $(G, \cdot)$ and $(H, \star),$ a function $\varphi : G \to H$ is a homomorphism when for all $a, b \in G$:
 
 $$\varphi(a \cdot b) = \varphi(a) \star \varphi(b)$$
 
-This condition requires that applying $\varphi$ after performing the operation in $G$ yields the same result as first applying $\varphi$ to each element and then performing the operation in $H$. Several basic properties follow from this definition. A homomorphism $\varphi : G \to H$ necessarily maps the identity of $G$ to the identity of $H$, and satisfies $\varphi(a^{-1}) = \varphi(a)^{-1}$ for all $a \in G$. Two particularly important subsets associated with a homomorphism $\varphi : G \to H$ are the [kernel](../homomorphisms-and-isomorphisms/) and the image. The kernel is defined as:
+This condition requires that applying $\varphi$ after performing the operation in $G$ yields the same result as first applying $\varphi$ to each element and then performing the operation in $H.$ Several basic properties follow from this definition. A homomorphism $\varphi : G \to H$ necessarily maps the identity of $G$ to the identity of $H,$ and satisfies $\varphi(a^{-1}) = \varphi(a)^{-1}$ for all $a \in G.$ Two particularly important subsets associated with a homomorphism $\varphi : G \to H$ are the [kernel](../homomorphisms-and-isomorphisms/) and the image. The kernel is defined as:
 
 $$\ker(\varphi) = \\{\ a \in G : \varphi(a) = e_H \ \\}$$
 
-where $e_H$ denotes the identity of $H$, and the image is defined as:
+where $e_H$ denotes the identity of $H,$ and the image is defined as:
 
 $$\mathrm{im}(\varphi) = \\{\ \varphi(a) : a \in G \ \\}$$
 
-The kernel is always a subgroup of $G$, and the image is always a subgroup of $H$. Moreover, a homomorphism is injective if and only if its kernel contains only the identity element of $G$.
+The kernel is always a subgroup of $G,$ and the image is always a subgroup of $H.$ Moreover, a homomorphism is injective if and only if its kernel contains only the identity element of $G.$
 
 - - -
 
-A homomorphism $\varphi : G \to H$ that is both injective and surjective is called an isomorphism. When an isomorphism exists between $G$ and $H$, the two groups are said to be isomorphic, written $G \cong H$. Isomorphic groups are structurally identical, differing only in the names of their elements and their operation, not in any property intrinsic to their group structure.
+A homomorphism $\varphi : G \to H$ that is both injective and surjective is called an isomorphism. When an isomorphism exists between $G$ and $H,$ the two groups are said to be isomorphic, written $G \cong H.$ Isomorphic groups are structurally identical, differing only in the names of their elements and their operation, not in any property intrinsic to their group structure.
 
-As an example, consider the group $(\mathbb{Z}/2\mathbb{Z}, +)$ and the group $(\\{\ 1, -1 \ \\}, \times)$ under ordinary multiplication. Define $\varphi : \mathbb{Z}/2\mathbb{Z} \to \\{\ 1, -1 \ \\}$ by setting $\varphi(0) = 1$ and $\varphi(1) = -1$. Since:
+As an example, consider the group $(\mathbb{Z}/2\mathbb{Z}, +)$ and the group $(\\{\ 1, -1 \ \\}, \times)$ under ordinary multiplication. Define $\varphi : \mathbb{Z}/2\mathbb{Z} \to \\{\ 1, -1 \ \\}$ by setting $\varphi(0) = 1$ and $\varphi(1) = -1.$ Since:
 
 $$
 \begin{align}
@@ -171,9 +171,9 @@ $$
 \end{align}
 $$
 
-the function $\varphi$ preserves the group operation. Since it is also bijective, it is an isomorphism, and therefore $\mathbb{Z}/2\mathbb{Z} \cong \\{\ 1, -1 \ \\}$.
+the function $\varphi$ preserves the group operation. Since it is also bijective, it is an isomorphism, and therefore $\mathbb{Z}/2\mathbb{Z} \cong \\{\ 1, -1 \ \\}.$
 
-A second example connects two familiar infinite groups. Let $\mathbb{R}^{+}$ denote the positive real numbers under multiplication and let $\mathbb{R}$ denote the real numbers under addition. The [logarithm](../logarithms/) $\log : \mathbb{R}^{+} \to \mathbb{R}$ satisfies $\log(xy) = \log(x) + \log(y)$, which is exactly the homomorphism condition with multiplication on the source and addition on the target. The map is bijective, with inverse the exponential function, so it is an isomorphism and $\mathbb{R}^{+} \cong \mathbb{R}$. A multiplicative group and an additive group are in this way revealed to share the same abstract structure.
+A second example connects two familiar infinite groups. Let $\mathbb{R}^{+}$ denote the positive real numbers under multiplication and let $\mathbb{R}$ denote the real numbers under addition. The [logarithm](../logarithms/) $\log : \mathbb{R}^{+} \to \mathbb{R}$ satisfies $\log(xy) = \log(x) + \log(y),$ which is exactly the homomorphism condition with multiplication on the source and addition on the target. The map is bijective, with inverse the exponential function, so it is an isomorphism and $\mathbb{R}^{+} \cong \mathbb{R}.$ A multiplicative group and an additive group are in this way revealed to share the same abstract structure.
 
 Two further terms apply when the source and target of a homomorphism coincide. A homomorphism from a group to itself is called an endomorphism, and an endomorphism that is also an isomorphism is called an automorphism. The identity map is the simplest automorphism of any group. The composition of two homomorphisms is again a homomorphism, since the structure-preserving property passes through the two maps in turn.
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="289px" height="270px" viewBox="0 0 289 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M131.5,2.98013557 L131.935788,3.75486938 L136.435788,11.7548694 L136.680918,12.1906571 L135.809343,12.6809184 L135.564212,12.2451306 L131.999,5.906 L132,229 L131,229 L130.999,5.91 L127.435788,12.2451306 L127.190657,12.6809184 L126.319082,12.1906571 L126.564212,11.7548694 L131.064212,3.75486938 L131.5,2.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M278.809343,190.319082 L279.245131,190.564212 L287.245131,195.064212 L288.019864,195.5 L287.245131,195.935788 L279.245131,200.435788 L278.809343,200.680918 L278.319082,199.809343 L278.754869,199.564212 L285.091,196 L0,196 L0,195 L285.091,195 L278.754869,191.435788 L278.319082,191.190657 L278.809343,190.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="255">The graph of the exponential function </tspan>
+                <tspan x="0" y="268">always lies above the x-axis.</tspan>
+            </text>
+            <line x1="23.5" y1="205.5" x2="23.5" y2="235.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="111" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="280" y="215">x</tspan>
+            </text>
+            <path d="M1,192.5 C39.6666667,193.833333 82.3333333,181.5 129,155.5 C162.988996,136.563274 187.959954,107.370741 203.912875,67.9224007 M210.527663,49.3347725 C212.484127,43.0413873 214.974906,33.0964632 218,19.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="192.5" y="62">y = aˣ with a &gt; 1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="120.5" y="152">1</tspan>
+            </text>
+            <circle fill="#333333" cx="131.5" cy="154" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

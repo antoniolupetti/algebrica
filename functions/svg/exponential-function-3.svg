@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="229px" viewBox="0 0 306 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M147.5,2.98013557 L147.935788,3.75486938 L152.435788,11.7548694 L152.680918,12.1906571 L151.809343,12.6809184 L151.564212,12.2451306 L147.999,5.906 L148,229 L147,229 L146.999,5.91 L143.435788,12.2451306 L143.190657,12.6809184 L142.319082,12.1906571 L142.564212,11.7548694 L147.064212,3.75486938 L147.5,2.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,190.319082 L295.245131,190.564212 L303.245131,195.064212 L304.019864,195.5 L303.245131,195.935788 L295.245131,200.435788 L294.809343,200.680918 L294.319082,199.809343 L294.754869,199.564212 L301.091,196 L-0.5,196 L-0.5,195 L301.091,195 L294.754869,191.435788 L294.319082,191.190657 L294.809343,190.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="172" y="66">When a = 1, the function </tspan>
+                <tspan x="172" y="79">is parallel to the  x-axis.</tspan>
+            </text>
+            <line x1="199.5" y1="91.5" x2="199.5" y2="140.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="127" y="12">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="296" y="217">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="154.5" y="147">1</tspan>
+            </text>
+            <ellipse fill="#333333" cx="147.75" cy="154.755018" rx="2.75" ry="2.75501825"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="92" y="135">a=1</tspan>
+            </text>
+            <path d="M3.5,155 L28,155 M74,155 L300.5,155" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="37.5" y="158">y = aˣ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
