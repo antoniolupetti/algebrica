@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="282px" viewBox="0 0 305 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 19</title>
+    <g id="NEW---Functions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-19" transform="translate(1.000000, 0.000000)">
+            <path id="Line" d="M145.882134,5.67699263 L145.935788,5.75486938 L150.435788,13.7548694 C150.57117,13.9955483 150.48581,14.3004059 150.245131,14.4357878 C150.031194,14.5561272 149.766548,14.5020533 149.615296,14.3195146 L149.564212,14.2451306 L145.999,7.906 L146,230.5 C146,230.776142 145.776142,231 145.5,231 C145.25454,231 145.050392,230.823125 145.008056,230.589876 L145,230.5 L144.999,7.91 L141.435788,14.2451306 C141.315448,14.4590675 141.061202,14.5502832 140.837152,14.4728292 L140.754869,14.4357878 C140.540933,14.3154483 140.449717,14.0612021 140.527171,13.8371522 L140.564212,13.7548694 L145.064212,5.75486938 C145.239435,5.44336236 145.665161,5.41740344 145.882134,5.67699263 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="The-curve-is-obtaine" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="78" y="254">The curve is obtained by reflecting </tspan>
+                <tspan x="78" y="267">the negative part of the parabola </tspan>
+                <tspan x="78" y="280">across the x-axis. </tspan>
+            </text>
+            <line x1="126.5" y1="185.5" x2="126.5" y2="235.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <text id="x" font-family="SegoeUI, Segoe UI" font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="193">x</tspan>
+            </text>
+            <path id="Line-2" d="M295.162848,168.527171 L295.245131,168.564212 L303.245131,173.064212 C303.556638,173.239435 303.582597,173.665161 303.323007,173.882134 L303.245131,173.935788 L295.245131,178.435788 C295.004452,178.57117 294.699594,178.48581 294.564212,178.245131 C294.443873,178.031194 294.497947,177.766548 294.680485,177.615296 L294.754869,177.564212 L301.091,174 L3.85379111e-16,174 C-0.276142375,174 -0.5,173.776142 -0.5,173.5 C-0.5,173.25454 -0.323124839,173.050392 -0.0898756324,173.008056 L-3.85379111e-16,173 L301.091,173 L294.754869,169.435788 C294.540933,169.315448 294.449717,169.061202 294.527171,168.837152 L294.564212,168.754869 C294.684552,168.540933 294.938798,168.449717 295.162848,168.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text id="y" font-family="SegoeUI, Segoe UI" font-size="15" font-weight="normal" fill="#BABABA">
+                <tspan x="125.5" y="16">y</tspan>
+            </text>
+            <path d="M66,29 C85.9829646,107.294189 100.070587,154.086399 110.262867,173.376632" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M179.432562,175.273213 C187.081416,161.15527 196.951394,131.443821 209.836067,85.3452988" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M216.385091,61.4761383 C219.131727,51.2987007 222.001318,40.4753669 225,29" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M111.402418,143.530716 C122.495906,164.437257 133.6951,174.890527 145,174.890527 C156.577517,174.890527 168.105761,163.927018 179.584732,142" id="Path" stroke="#000000" stroke-width="2" stroke-linecap="round" transform="translate(145.493575, 158.445264) scale(1, -1) translate(-145.493575, -158.445264) "></path>
+            <text id="x²-1" font-family="SegoeUI, Segoe UI" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="204.5" y="79">x²-1</tspan>
+            </text>
+            <text id="-1" font-family="SegoeUI, Segoe UI" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="94.5" y="188">-1</tspan>
+            </text>
+            <text id="1" font-family="SegoeUI, Segoe UI" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="182.5" y="188">1</tspan>
+            </text>
+            <circle id="Oval" fill="#000000" cx="110.5" cy="173.5" r="2.5"></circle>
+            <circle id="Oval" fill="#000000" cx="179.5" cy="174.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="290px" viewBox="0 0 306 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="74" y="275">The function is negative on the </tspan>
+                <tspan x="74" y="288">open interval (-1, 1)</tspan>
+            </text>
+            <line x1="126.5" y1="204.5" x2="126.5" y2="254.5" stroke="#BABABA" stroke-linecap="round"></line>
+
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="189">x</tspan>
+            </text>
+            <path d="M294.809343,164.319082 L295.245131,164.564212 L303.245131,169.064212 L304.019864,169.5 L303.245131,169.935788 L295.245131,174.435788 L294.809343,174.680918 L294.319082,173.809343 L294.754869,173.564212 L301.091,170 L-0.5,170 L-0.5,169 L301.091,169 L294.754869,165.435788 L294.319082,165.190657 L294.809343,164.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="125.5" y="12">y</tspan>
+            </text>
+            <polygon fill="#E9E9E9" points="111 170 120 186 134 201 146 203 158 199 166 191 178 172 180 170"></polygon>
+                <path d="M145.5,0.980135569 L145.935788,1.75486938 L150.435788,9.75486938 L150.680918,10.1906571 L149.809343,10.6809184 L149.564212,10.2451306 L145.999,3.906 L146,227 L145,227 L144.999,3.91 L141.435788,10.2451306 L141.190657,10.6809184 L140.319082,10.1906571 L140.564212,9.75486938 L145.064212,1.75486938 L145.5,0.980135569 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                    <path d="M66,25 C91.7333389,143.666667 118.066672,203 145,203 C168.852841,203 192.496531,156.462941 215.931069,63.3888236 M220.658221,43.7581048 C221.516358,40.0972735 222.963618,33.8445719 225,25" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="210.5" y="57">x²-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="95" y="184">-1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="183" y="184">1</tspan>
+            </text>
+            <ellipse fill="#333333" cx="110.75" cy="169.755018" rx="2.75" ry="2.75501825"></ellipse>
+            <circle fill="#333333" cx="110.5" cy="169.5" r="2.5"></circle>
+            <circle fill="#333333" cx="179.5" cy="169.5" r="2.5"></circle>
+
+        </g>
+    </g>
+</svg>

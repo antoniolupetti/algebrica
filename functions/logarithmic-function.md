@@ -12,7 +12,7 @@ tags:
 ---
 ## Introduction
 
-The logarithmic function has the form $y = \log_a x,$ with $a > 0,$ $a \neq 1,$ for every $x \in \mathbb{R}^+.$ It is the [inverse](../inverse-function/) of the [exponential function](../exponential-function/), so its [domain](../determining-the-domain-of-a-function/) and range are exchanged relative to it.
+The logarithmic function has the form $y = \log_a x,$ with $a > 0,$ $a \neq 1,$ for every $x \in \mathbb{R}^+.$ It is the [inverse](../inverse-function/) of the [exponential function](../exponential-function/), so its [domain](../determining-the-domain-of-a-function/) and range are swapped.
 
 If the base $a > 1,$ the function is increasing.
 
@@ -22,9 +22,9 @@ If $0 < a < 1,$ the function is decreasing.
 
 ![IMG. 2](../powers-radicals-logarithms/svg/logarithms-2.svg)
 
-The only point where the function takes the value $0$ is $x = 1,$ since $\log_a(1) = 0.$ This holds because $a^0 = 1$ by the [properties of powers](../powers/). The line $x = 0$ is a vertical [asymptote](../asymptotes/), since the function diverges as $x$ approaches zero from the right.
+The only point where the function equals $0$ is $x = 1,$ since $\log_a(1) = 0.$ This holds because $a^0 = 1$ by the [properties of powers](../powers/). The line $x = 0$ is a vertical [asymptote](../asymptotes/), since the function diverges as $x$ approaches zero from the right.
 
-Defining the logarithm as the inverse of the exponential is the elementary approach, and it assumes that $a^x$ has already been constructed for every real exponent. The section on the natural logarithm below gives a rigorous definition via an integral, in which the exponential is defined as the inverse of the logarithm.
+Defining the logarithm as the inverse of the exponential is the elementary approach and assumes that $a^x$ has already been constructed for every real exponent. The section on the natural logarithm below gives a definition in terms of an integral, with the exponential defined as the inverse of the logarithm.
 
 > The value of the base determines whether the function is increasing or decreasing. For [logarithmic inequalities](../logarithmic-inequalities/), a base between $0$ and $1$ requires reversing the direction of the inequality, because the function is decreasing.
 
@@ -38,7 +38,7 @@ The main properties of the logarithmic function follow from its definition as th
 + The function is strictly [increasing](../increasing-and-decreasing-functions/) on $(0,+\infty)$ when $a > 1,$ and strictly decreasing when $0 < a < 1.$
 + The function is neither even nor odd, since it is not defined for negative $x.$
 + The function is [continuous](../continuous-functions/) on $(0, +\infty).$
-+ As the inverse of the differentiable exponential function, the function is differentiable on its whole domain, with derivative:
++ As the inverse of the differentiable exponential function, the logarithm is differentiable on its whole domain, with derivative:
 
 $$f'(x) = \frac{1}{x\ln(a)}$$
 
@@ -46,7 +46,7 @@ $$f'(x) = \frac{1}{x\ln(a)}$$
 
 ## Limits, derivatives, and integrals
 
-The [limits](../limits/) of the logarithmic function describe its behavior near zero and at infinity. For a base $a > 1,$ the value of the logarithm decreases without bound as $x$ approaches zero from the right, and grows without bound as $x$ tends to infinity:
+The [limits](../limits/) of the logarithmic function describe its behavior near zero and at infinity. For a base $a > 1,$ the logarithm decreases without bound as $x$ approaches zero from the right, and grows without bound as $x$ tends to infinity:
 
 $$\lim_{x \to 0^+} \log_a x = -\infty$$
 
