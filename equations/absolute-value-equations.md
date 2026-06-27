@@ -9,7 +9,7 @@ tags:
 
 ## Introduction
 
-Absolute value equations are a particular class of [equations](../equations/) in which the unknown $x$ appears inside an [absolute value](../absolute-value/) expression. The absolute value measures how far a [number](../types-of-numbers/) lies from zero on the number line, regardless of its sign, and therefore transforms any real number into its non-negative counterpart according to the following rule:
+Absolute value equations are a particular class of [equations](../equations/) in which the unknown $x$ appears inside an [absolute value](../absolute-value/) expression. The absolute value measures how far a [number](../types-of-numbers/) lies from zero on the number line, regardless of its sign, so it is always non-negative and is defined by:
 
 $$
 |x| =
@@ -19,11 +19,11 @@ x & \text{if } x \geq 0 \\[6pt]
 \end{cases}
 $$
 
-When an equation involves an absolute value, both cases must be considered, since the sign of the expression inside the bars determines which branch of the definition applies. This distinction typically splits the original problem into two separate equations, each valid on its own interval, which are then examined individually.
+When an equation involves an absolute value, both cases must be considered, since the sign of the expression inside the bars determines which branch of the definition applies. This distinction splits the problem into separate equations, each valid on its own interval, which are then solved individually.
 
 ## Properties
 
-The [absolute value function](../absolute-value-function/) $|x|$ obeys several algebraic properties that describe how it interacts with the basic arithmetic operations and with comparisons. These rules are the foundation for simplifying expressions and solving equations that contain absolute values. The most useful identities are the following:
+The [absolute value function](../absolute-value-function/) $|x|$ satisfies several algebraic properties relating it to the arithmetic operations and to order comparisons. These properties are used to simplify expressions and solve equations that contain absolute values. The most useful are the following:
 
 [class="table-1"]
 
@@ -47,7 +47,7 @@ Consider first the basic case in which the absolute value equals a constant:
 
 $$|A(x)| = a$$
 
-When $a \geq 0$, this equation is equivalent to $A(x) = a$ or $A(x) = -a$. When $a < 0$, the equation has no solution, since an absolute value can never be negative. For instance, the equation $|3 + 2x| = -2$ admits no solution because the left-hand side is non-negative for every real $x$.
+When $a \geq 0,$ this equation is equivalent to $A(x) = a$ or $A(x) = -a.$ When $a < 0,$ the equation has no solution, since an absolute value can never be negative. For instance, the equation $|3 + 2x| = -2$ admits no solution because the left-hand side is non-negative for every real $x.$
 
 - - -
 
@@ -55,7 +55,7 @@ Consider now the case in which the absolute value equals another expression:
 
 $$|A(x)| = B(x)$$
 
-Here the solution requires taking into account the sign of $A(x)$, because the definition of the absolute value must be applied separately on each interval where that sign is constant.
+Here we must consider the sign of $A(x),$ because the definition of the absolute value must be applied separately on each interval where that sign is constant.
 
 - - -
 
@@ -63,7 +63,7 @@ A further case arises when both sides of the equation are absolute values:
 
 $$|A(x)| = |B(x)|$$
 
-By the property $|A| = |B| \iff A = \pm B$, this equation is equivalent to the two equations $A(x) = B(x)$ and $A(x) = -B(x)$, which can be solved directly without any preliminary sign analysis. The solutions of both equations are then collected together. The examples below illustrate these situations in increasing order of complexity.
+By the property $|A| = |B| \iff A = \pm B,$ this equation is equivalent to the two equations $A(x) = B(x)$ and $A(x) = -B(x),$ which can be solved directly without any preliminary sign analysis. The solutions of both equations are then collected. The examples below illustrate these situations in increasing order of complexity.
 
 ## Example 1
 
@@ -83,7 +83,7 @@ Solving the second equation in the same way gives:
 
 $$3x = -4 \rightarrow x = -\frac{4}{3}$$
 
-Both values are admissible, since the constant on the right-hand side is positive and no further constraint applies. The equation has two solutions:
+Both values are acceptable, since the constant on the right-hand side is positive and no further constraint applies. The equation has two solutions:
 
 $$x = -\frac{4}{3} \quad x = 2$$
 
@@ -93,7 +93,7 @@ We solve the equation:
 
 $$|2x - 4| = x + 1$$
 
-We begin by analyzing the sign of the expression inside the bars. The condition $2x - 4 \geq 0$ holds when $x \geq 2$, so the absolute value can be written as a piecewise expression:
+We begin by analyzing the sign of the expression inside the bars. The condition $2x - 4 \geq 0$ holds when $x \geq 2,$ so the absolute value can be written as a piecewise expression:
 
 $$
 |2x - 4| =
@@ -105,7 +105,7 @@ $$
 
 - - -
 
-On the interval $x \geq 2$ the absolute value equals $2x - 4$, which leads to the system:
+On the interval $x \geq 2$ the absolute value equals $2x - 4,$ which leads to the system:
 
 $$
 \begin{cases}
@@ -123,13 +123,13 @@ x \geq 2 \\[6pt]
 \end{cases}
 $$
 
-The value $x = 5$ is acceptable because it satisfies the condition $x \geq 2$.
+The value $x = 5$ is acceptable because it satisfies the condition $x \geq 2.$
 
 > The pair formed by the constraint and the equation is a [system of inequalities](../systems-of-inequalities/) in one variable. The dedicated entry discusses the solving process and how to handle more involved cases.
 
 - - -
 
-On the interval $x < 2$ the absolute value equals $-2x + 4$, which leads to the second system:
+On the interval $x < 2$ the absolute value equals $-2x + 4,$ which leads to the second system:
 
 $$
 \begin{cases}
@@ -147,7 +147,7 @@ x < 2 \\[6pt]
 \end{cases}
 $$
 
-The value $x = 1$ is acceptable because it satisfies the condition $x < 2$. Collecting the results from both intervals, the equation has two solutions:
+The value $x = 1$ is acceptable because it satisfies the condition $x < 2.$ Collecting the results from both intervals, the equation has two solutions:
 
 $$x = 1 \quad x = 5$$
 
@@ -157,7 +157,7 @@ We solve the equation:
 
 $$\frac{|3x|}{|x + 1|} = |x|$$
 
-This is a [rational equation](../rational-equations/), so we first determine the conditions of existence, given by the values of $x$ that do not annihilate the denominator. The denominator vanishes when $x = -1$, and this value must therefore be excluded from the set of solutions.
+This is a [rational equation](../rational-equations/), so we first determine the conditions of existence, given by the values of $x$ for which the denominator is non-zero. The denominator vanishes when $x = -1,$ and this value must therefore be excluded from the set of solutions.
 
 - - -
 
@@ -165,7 +165,7 @@ Using the properties of the absolute value, the left-hand side can be rewritten 
 
 $$\left| \frac{3x}{x + 1} \right| = |x|$$
 
-By the property $|A| = |B| \iff A = \pm B$, the equation splits into two cases according to the sign relating the two arguments. We start with the first case:
+By the property $|A| = |B| \iff A = \pm B,$ the equation splits into two cases. We start with the first case:
 
 $$\frac{3x}{x + 1} = x \rightarrow 3x = x^2 + x \rightarrow x^2 - 2x = 0 \rightarrow x(x - 2) = 0$$
 
@@ -173,7 +173,7 @@ This is a [quadratic equation](../quadratic-equations/) whose solutions are:
 
 $$x = 0 \quad x = 2$$
 
-Both values are acceptable because they differ from $-1$.
+Both values are acceptable because they differ from $-1.$
 
 > The quadratic equation was solved without the [quadratic formula](../quadratic-formula/), by [factoring](../factoring-quadratic-equations/) the corresponding [polynomial](../polynomials/) and finding the values of $x$ that make each linear factor vanish.
 
@@ -187,7 +187,7 @@ Proceeding as above, the quadratic equation has the solutions:
 
 $$x = 0 \quad x = -4$$
 
-Both values are acceptable because they differ from $-1$. Collecting the solutions of the two cases, the equation has three distinct solutions:
+Both values are acceptable because they differ from $-1.$ Collecting the solutions of the two cases, the equation has three distinct solutions:
 
 $$x = -4 \quad x = 0 \quad x = 2$$
 
@@ -197,7 +197,7 @@ We solve an equation containing two distinct absolute values:
 
 $$|x - 1| + |x + 2| = 5$$
 
-When several absolute values appear together, the sign of each expression inside the bars must be examined separately. The two expressions change sign at $x = 1$ and at $x = -2$, and these critical points divide the real line into three intervals on which every absolute value has a constant sign. The equation is then solved on each interval, replacing each absolute value with the appropriate branch of its definition.
+When several absolute values appear, the sign of each expression inside the bars must be examined separately. The two expressions change sign at $x = 1$ and at $x = -2,$ and these critical points divide the real line into three intervals on which each expression inside the bars has a constant sign. The equation is then solved on each interval, replacing each absolute value with the appropriate branch of its definition.
 
 - - -
 
@@ -219,7 +219,7 @@ x < -2 \\[6pt]
 \end{cases}
 $$
 
-The value $x = -3$ is acceptable because it satisfies the condition $x < -2$.
+The value $x = -3$ is acceptable because it satisfies the condition $x < -2.$
 
 - - -
 
@@ -258,7 +258,7 @@ x \geq 1 \\[6pt]
 \end{cases}
 $$
 
-The value $x = 2$ is acceptable because it satisfies the condition $x \geq 1$. Collecting the contributions of the three intervals, the equation has two solutions:
+The value $x = 2$ is acceptable because it satisfies the condition $x \geq 1.$ Collecting the contributions of the three intervals, the equation has two solutions:
 
 $$x = -3 \quad x = 2$$
 
