@@ -15,7 +15,7 @@ The geometric construction of the sine from the [unit circle](../unit-circle/) i
 
 The sine function $f(x) = \sin(x)$ assigns to each angle $x,$ measured in [radians](../angles-and-angular-measure/), its corresponding [sine](../sine-and-cosine/) value. Its graph is a periodic wave with period $2\pi$ and amplitude $1,$ oscillating between $-1$ and $1.$ The function has all real numbers in its [domain](../determining-the-domain-of-a-function/), and its range is the [interval](../intervals/) $[-1, 1].$
 
-![IMG. 4](../trigonometry/svg/sine-and-cosine-3.svg)
+![IMG. 1](../trigonometry/svg/sine-and-cosine-3.svg)
 
 Together with the [cosine function](../cosine-function/), the sine models periodic phenomena. In simple [harmonic motion](../simple-harmonic-motion/) the displacement of a mass on a spring or of a pendulum varies sinusoidally with time, and the [velocity](../velocity/), as its derivative, is sinusoidal as well.
 
