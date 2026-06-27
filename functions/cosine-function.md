@@ -67,3 +67,11 @@ $$\int \cos(x) \ dx = \sin(x) + c$$
 The cosine function can also be written using [imaginary](../complex-numbers/) numbers. With $e^{ix}$ the [exponential function](../exponential-function/) of base $e$ and $i$ the imaginary unit, [Euler's formula](../eulers-formula/) gives:
 
 $$\cos(x) = \frac{e^{ix} + e^{-ix}}{2}$$
+
+## Maclaurin series
+
+The Maclaurin series of a function is its [Taylor series](../taylor-series/) centred at the origin, a [power series](../power-series/) whose partial sums approximate the function near $x = 0.$ For the cosine function the series converges for every [real number](../real-numbers/):
+
+$$\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots$$
+
+Only even powers appear, in agreement with the cosine being an even function. Keeping the first two terms gives the approximation $\cos(x) \approx 1 - \dfrac{x^2}{2}$ for small $x.$ The difference $1 - \cos(x)$ is then close to $\dfrac{x^2}{2},$ which recovers the limit $\dfrac{1 - \cos(x)}{x} \to 0$ as $x \to 0.$
