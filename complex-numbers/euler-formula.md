@@ -13,14 +13,14 @@ tags:
 ---
 ## Introduction
 
-Euler's formula gives a relation between the exponential function and the trigonometric functions, forming a bridge between the algebraic and geometric viewpoints on [complex numbers](../complex-numbers-introduction/). The identity states that for every real number $\theta$ the following equality holds:
+Euler's formula relates the exponential function and the trigonometric functions, and connects the algebraic and geometric viewpoints on [complex numbers](../complex-numbers-introduction/). The identity states that for every real number $\theta$ the following equality holds:
 
 $$e^{i\theta} = \cos\theta + i\sin\theta$$
 
-This relation underlies both the [exponential form](../complex-numbers-exponential-form/) and the [trigonometric form](../complex-numbers-trigonometric-form/) of a complex number, and it is the fact from which [De Moivre's theorem](../de-moivre-theorem/) and the description of the [roots of unity](../roots-of-unity/) follow. The status of the formula admits two readings. 
+This relation underlies both the [exponential form](../complex-numbers-exponential-form/) and the [trigonometric form](../complex-numbers-trigonometric-form/) of a complex number, and it is the fact from which [De Moivre's theorem](../de-moivre-theorem/) and the description of the [roots of unity](../roots-of-unity/) follow. The status of the formula admits two readings.
 
-+ In the first, the complex exponential is defined through its [Taylor series](../taylor-series/) for an arbitrary complex argument, and Euler's identity is then established as a theorem. 
-+ In the second, the formula is taken as the very definition of $e^{i\theta}$, and what becomes a theorem is the consistency of this definition with the algebraic properties of the real exponential. 
++ In the first, the complex exponential is defined through its [Taylor series](../taylor-series/) for an arbitrary complex argument, and Euler's identity is then established as a theorem.
++ In the second, the formula is taken as the definition of $e^{i\theta}$, and what becomes a theorem is the consistency of this definition with the algebraic properties of the real exponential.
 
 > These viewpoints are equivalent and lead to the same object. In what follows we adopt the first reading, since it places the formula within the broader analytic framework already used in the construction of the [exponential function](../exponential-function/).
 
@@ -128,7 +128,7 @@ Rearranging the equality produces the more familiar form:
 
 $$e^{i\pi} + 1 = 0$$
 
-This identity combines five fundamental constants of mathematics in a single equation: 
+This identity combines five fundamental constants of mathematics in a single equation:
 
 + the additive identity $0$
 + the multiplicative identity $1$
@@ -138,7 +138,7 @@ This identity combines five fundamental constants of mathematics in a single equ
 
 The identity states that the exponential of $i\pi$ produces the antipode of $1$ on the unit circle, that is, the rotation of the unit vector by an [angle of $\pi$ radians](../angles-and-angular-measure/).
 
-The formula can also be specialized at other notable values of $\theta$ to recover further identities. Setting $\theta = \pi/2$ gives $e^{i\pi/2} = i$, the rotation by a quarter turn that sends $1$ to the imaginary unit. Setting $\theta = 2\pi$ gives $e^{2\pi i} = 1$, the periodicity relation that underpins the theory of [roots of unity](../roots-of-unity/).
+The formula can also be specialised at other notable values of $\theta$ to recover further identities. Setting $\theta = \pi/2$ gives $e^{i\pi/2} = i$, the rotation by a quarter turn that sends $1$ to the imaginary unit. Setting $\theta = 2\pi$ gives $e^{2\pi i} = 1$, the periodicity relation that underpins the theory of [roots of unity](../roots-of-unity/).
 
 ## Trigonometric functions from the exponential
 
@@ -212,4 +212,4 @@ The complex exponential is thus completely determined by two pieces of informati
 
 $$|e^z| = e^x \qquad \arg(e^z) = y + 2k\pi \quad k \in \mathbb{Z}$$
 
-This decomposition underlies the analytic theory of the complex exponential as an entire function on $\mathbb{C}$, in which the real exponential $e^x$ governs the modulus and the imaginary part $y$ governs the argument.
+This decomposition underlies the analytic theory of the complex exponential as an entire function on $\mathbb{C}$.
