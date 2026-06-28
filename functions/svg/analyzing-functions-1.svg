@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="362px" height="407px" viewBox="0 0 362 407" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M178.882134,92.6769926 L178.935788,92.7548694 L183.435788,100.754869 C183.57117,100.995548 183.48581,101.300406 183.245131,101.435788 C183.031194,101.556127 182.766548,101.502053 182.615296,101.319515 L182.564212,101.245131 L179,94.908 L179,405.5 C179,405.776142 178.776142,406 178.5,406 C178.25454,406 178.050392,405.823125 178.008056,405.589876 L178,405.5 L178,94.908 L174.435788,101.245131 C174.315448,101.459067 174.061202,101.550283 173.837152,101.472829 L173.754869,101.435788 C173.540933,101.315448 173.449717,101.061202 173.527171,100.837152 L173.564212,100.754869 L178.064212,92.7548694 C178.239435,92.4433624 178.665161,92.4174034 178.882134,92.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="353.5" y="270">x</tspan>
+            </text>
+            <path d="M352.662848,244.527171 L352.745131,244.564212 L360.745131,249.064212 C361.056638,249.239435 361.082597,249.665161 360.823007,249.882134 L360.745131,249.935788 L352.745131,254.435788 C352.504452,254.57117 352.199594,254.48581 352.064212,254.245131 C351.943873,254.031194 351.997947,253.766548 352.180485,253.615296 L352.254869,253.564212 L358.591,250 L0,250 C-0.276142375,250 -0.5,249.776142 -0.5,249.5 C-0.5,249.25454 -0.323124839,249.050392 -0.0898756324,249.008056 L0,249 L358.591,249 L352.254869,245.435788 C352.040933,245.315448 351.949717,245.061202 352.027171,244.837152 L352.064212,244.754869 C352.184552,244.540933 352.438798,244.449717 352.662848,244.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="144.5" y="71">y</tspan>
+            </text>
+            <path d="M129.5,405 L129.5,237.5 M129.5,218.5 L129.5,93" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="128.5" y1="47.5" x2="128.5" y2="86" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="79" y="12.150589">The domain is ℝ ∖ {−2, 2}. The points </tspan>
+                <tspan x="79" y="25.150589">x = −2 and x = 2 are excluded </tspan>
+                <tspan x="79" y="38.150589">because the denominator is zero.</tspan>
+            </text>
+            <path d="M226.5,406 L226.5,238.5 M226.5,219.5 L226.5,94" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <text font-size="11" font-weight="400" fill="#333333">
+                <tspan x="119" y="234">- 2</tspan>
+            </text>
+            <text font-size="11" font-weight="400" fill="#333333">
+                <tspan x="223" y="234">2</tspan>
+            </text>
+            <circle stroke="#BABABA" fill="#F4EFEE" cx="129.5" cy="249.5" r="3"></circle>
+            <circle stroke="#BABABA" fill="#F4EFEE" cx="226" cy="249.5" r="3"></circle>
+        </g>
+    </g>
+</svg>
