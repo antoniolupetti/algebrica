@@ -8,13 +8,10 @@ tags:
   - function-symmetry
   - odd-function
 ---
-## Behavior of a function
-
-A [function](../functions/) can be symmetric with respect to the coordinate axes. When it is symmetric about the $y$-axis it is even, when it is symmetric about the origin it is odd, and otherwise it is neither even nor odd.
 
 ## Even function
 
-Suppose we have a function $f(x): \mathbb{R} \rightarrow \mathbb{R},$ and let $D \subseteq \mathbb{R}$ be its [domain](../determining-the-domain-of-a-function/), assumed symmetric about the origin. The function $f$ is even if the following condition holds:
+A [function](../functions/) can be symmetric with respect to the coordinate axes. When it is symmetric about the $y$-axis it is even, when it is symmetric about the origin it is odd, and otherwise it is neither even nor odd. Suppose we have a function $f(x): \mathbb{R} \rightarrow \mathbb{R},$ and let $D \subseteq \mathbb{R}$ be its [domain](../determining-the-domain-of-a-function/), assumed symmetric about the origin. The function $f$ is even if the following condition holds:
 
 $$
 f(-x) = f(x) \quad \forall \ x \in D
