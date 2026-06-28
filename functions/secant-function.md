@@ -40,7 +40,7 @@ The secant and the [tangent](../tangent-function/) are tied by a [Pythagorean id
 
 $$\sec^2(x) = 1 + \tan^2(x)$$
 
-The two functions share the same vertical asymptotes, and the secant grows together with the tangent. The relation recurs in the derivatives and integrals of the reciprocal trigonometric functions.
+The two functions share the same vertical asymptotes, and the secant grows together with the tangent.
 
 ## Limits, derivatives, and integrals of the secant function
 
