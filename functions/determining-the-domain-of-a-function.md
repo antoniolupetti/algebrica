@@ -12,17 +12,17 @@ tags:
 
 In the introduction to [functions](../functions/), we discussed the domain of a function, that is, the set of input values for which an expression is mathematically meaningful. We also examined how to determine the domain of basic families of functions such as [polynomials](../polynomials/), [radicals](../radicals/), [logarithms](../logarithms/), and [trigonometric](../sine-and-cosine/) expressions.
 
-In practice we often encounter more elaborate expressions that combine several types of functions in a single formula. In these situations identifying the domain is not immediate, because each internal component may introduce its own restrictions. The most effective strategy can be summarized in the following steps:
+In practice we often encounter more elaborate expressions that combine several types of functions in a single formula. In these situations identifying the domain is not immediate, because each internal component may introduce its own restrictions. The strategy can be summarized in the following steps:
 
 + Examine the inner components of the expression and determine the domain required by each of them.
 + Move outward, layer by layer, propagating the restrictions imposed by every new operation or function involved.
 + Combine all the resulting conditions by intersection, since the overall domain consists only of the values that satisfy every constraint simultaneously.
 
-To see how the procedure works in practice, it is helpful to move directly to concrete examples and apply each step to real expressions.
+The examples below apply each step to concrete expressions.
 
 ## Types of intervals
 
-When studying the domain of a function, it is useful to recall how real [intervals](../intervals/) are defined, since the domain is always expressed as a union of such sets. Intervals describe continuous portions of the real line and provide a compact way to specify which values of $x$ are allowed. The first type is the open interval, which contains all points strictly between two endpoints while excluding the endpoints themselves. In descriptive form it is written:
+The domain is always expressed as a union of real [intervals](../intervals/), so we recall how these sets are defined. Intervals describe continuous portions of the real line and provide a compact way to specify which values of $x$ are allowed. The first type is the open interval, which contains all points strictly between two endpoints while excluding the endpoints themselves. In descriptive form it is written:
 
 $$
 \{\,x : a < x < b\,\}
@@ -34,9 +34,10 @@ $$
 (a, b)
 $$
 
-This notation is convenient when $a$ and $b$ correspond to points where the function is not defined or where a [discontinuity](../discontinuities-of-real-functions/) occurs. Graphically, the endpoints $a$ and $b$ are shown as open circles to indicate that they are not included, while the segment connecting them represents all values strictly between $a$ and $b$. This makes an open interval immediately recognizable, emphasizing that its endpoints are excluded.
+This notation is convenient when $a$ and $b$ correspond to points where the function is not defined or where a [discontinuity](../discontinuities-of-real-functions/) occurs. Graphically, the endpoints $a$ and $b$ are shown as open circles to indicate that they are not included, while the segment connecting them spans all values strictly between $a$ and $b$.
 
 [shortcode="intervals"]
+
 |     | $a$  | $b$      |     |
 |:----|------------|---------------|-----|
 |     | sign+l-in-o-h  |   sign+r-in-o-h  |     |
@@ -54,9 +55,10 @@ $$
 [a, b]
 $$
 
-This representation is typical when the function is defined and continuous even at the boundary points $a$ and $b$. The closed interval is represented graphically by filling the endpoints. The solid dots indicate that both boundary values are included, while the segment between them depicts every point from $a$ to $b$. This makes the structure of a closed interval clear, emphasizing that its endpoints belong to the set.
+This representation is typical when the function is defined and continuous even at the boundary points $a$ and $b$. The closed interval is shown graphically by filling the endpoints. The solid dots indicate that both boundary values are included, while the segment between them spans every point from $a$ to $b$.
 
 [shortcode="intervals"]
+
 |     | $a$  | $b$      |     |
 |:----|------------|---------------|-----|
 |     | sign+l-in-c-h  |   sign+r-in-c-h  |     |
@@ -65,6 +67,7 @@ This representation is typical when the function is defined and continuous even 
 Other combinations of open and closed endpoints are also possible. For instance, one may have a half-closed interval such as $[a, +\infty)$, or more generally intervals that mix inclusion and exclusion at their boundaries such as $(a, b]$. These forms are commonly used when describing domains that extend indefinitely or start from a specific boundary value.
 
 [shortcode="intervals"]
+
 |     | $a$  | $b$      |     |
 |:----|------------|---------------|-----|
 |     | sign+l-c-h  |    |     |
@@ -73,7 +76,7 @@ Other combinations of open and closed endpoints are also possible. For instance,
 
 ## Domain of elementary functions
 
-It is useful to summarize the domain restrictions induced by the most common expressions:
+The most common expressions induce the following domain restrictions:
 
 + Polynomials: always defined on $\mathbb{R}$
 + Rational functions: denominator $\neq 0$
@@ -84,7 +87,7 @@ It is useful to summarize the domain restrictions induced by the most common exp
 + Trigonometric functions $\sin x$ and $\cos x$: always defined on $\mathbb{R}$
 + Inverse trigonometric functions: argument within specific bounds
 
-> The even-root condition is the radicand being non-negative, $\ge 0$, not strictly positive: $\sqrt{0} = 0$ is defined.
+> The even-root condition is the radicand being non-negative, $\ge 0$, not strictly positive, since $\sqrt{0} = 0$ is defined.
 
 ## Example 1
 
@@ -107,6 +110,7 @@ $$
 Only values greater than $1$ are admissible; any value less than or equal to $1$ violates the definition of the logarithm. Graphically, we represent the condition as follows:
 
 [shortcode="intervals"]
+
 |     | $1$  |       |    
 |:----|------------|---------------|
 |     | sign+l-o  |    |
@@ -121,6 +125,7 @@ $$
 so the values $x \ge -4$ are allowed. Compared with the logarithmic constraint, this requirement is less restrictive, since every value greater than $1$ is automatically greater than $-4$. Adding this result to the previous diagram, we obtain:
 
 [shortcode="intervals"]
+
 |     | $-4$  | $1$      |     |
 |:----|------------|---------------|-----|
 |     |   |   sign+l-o   |     |
@@ -142,7 +147,7 @@ $$
 f(x) = \sqrt{\frac{\log(2 + \sin x)}{\sinh(x)}}
 $$
 
-Determining the domain is not immediate. One initial observation is that the presence of a trigonometric term suggests that the conditions we obtain are likely to repeat periodically. We apply the method outlined above, examining the restrictions introduced by each component, starting from the innermost element.
+Determining the domain is not immediate. The trigonometric term suggests that the conditions we obtain are likely to repeat periodically. We apply the method outlined above, examining the restrictions introduced by each component, starting from the innermost element.
 
 - - -
 
@@ -156,11 +161,7 @@ $$2 + \sin x > 0$$
 
 Because $\sin x$ ranges between $-1$ and $1$, the smallest value this expression can take is $2 - 1 = 1$, which is already positive. The logarithm therefore introduces no restriction, as its argument is positive for every real $x$.
 
-- - -
-
 Moving one step outward, the logarithm appears in the numerator of a fraction whose denominator is the [hyperbolic sine](../hyperbolic-sine-and-cosine/) $\sinh(x)$. A denominator cannot be zero, since division by zero is not defined in the [real numbers](../real-numbers/), so we exclude the values of $x$ for which $\sinh(x) = 0$. The hyperbolic sine vanishes only at $x = 0$, so this point must be removed from the domain.
-
-- - -
 
 Finally, the entire fraction appears under a square root, whose argument must be non-negative.
 
@@ -203,7 +204,7 @@ $$
 \cos^{2}(3x - 1) - \log(5 - |2x|) \ge 0
 $$
 
-This inequality links two terms with very different behaviour. The squared cosine oscillates between $0$ and $1$, while the logarithm varies over $\left(-\infty, \log 5\right]$ on the admissible interval and tends to $-\infty$ as $|2x|$ approaches $5$ from below. The inequality holds only where the logarithmic term does not exceed the squared cosine:
+This inequality links two terms with different behavior. The squared cosine oscillates between $0$ and $1$, while the logarithm varies over $\left(-\infty, \log 5\right]$ on the admissible interval and tends to $-\infty$ as $|2x|$ approaches $5$ from below. The inequality holds only where the logarithmic term does not exceed the squared cosine:
 
 $$
 \log(5 - |2x|) \le \cos^{2}(3x - 1)
@@ -216,4 +217,4 @@ $$
 \mathrm{dom}(f) = \left\{\, x \in \left(-\tfrac{5}{2}, \tfrac{5}{2}\right) \ \middle|\ \cos^{2}(3x - 1) \ge \log(5 - |2x|) \,\right\}
 $$
 
-This last inequality has no elementary closed-form solution and must be examined numerically or graphically. It is a proper restriction, not the whole interval: near $x = 0$, for instance, we have $\log 5 \approx 1.61$, which exceeds $\cos^{2}(1) \approx 0.29$, so a neighbourhood of the origin is excluded. The domain is therefore a proper subset of $\left(-\frac{5}{2}, \frac{5}{2}\right)$.
+This last inequality has no elementary closed-form solution and must be examined numerically or graphically. Near $x = 0$, for instance, we have $\log 5 \approx 1.61$, which exceeds $\cos^{2}(1) \approx 0.29$, so a neighborhood of the origin is excluded. The domain is therefore a proper subset of $\left(-\frac{5}{2}, \frac{5}{2}\right)$.
