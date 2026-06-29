@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="236px" viewBox="0 0 342 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M90.882134,47.6769926 L90.9357878,47.7548694 L95.4357878,55.7548694 C95.5711697,55.9955483 95.4858096,56.3004059 95.2451306,56.4357878 C95.0311938,56.5561272 94.7665479,56.5020533 94.6152959,56.3195146 L94.5642122,56.2451306 L90.999,49.906 L91,233.5 C91,233.776142 90.7761424,234 90.5,234 C90.2545401,234 90.0503916,233.823125 90.0080557,233.589876 L90,233.5 L89.999,49.91 L86.4357878,56.2451306 C86.3154483,56.4590675 86.0612021,56.5502832 85.8371522,56.4728292 L85.7548694,56.4357878 C85.5409325,56.3154483 85.4497168,56.0612021 85.5271708,55.8371522 L85.5642122,55.7548694 L90.0642122,47.7548694 C90.2394349,47.4433624 90.6651608,47.4174034 90.882134,47.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.162848,204.527171 L295.245131,204.564212 L303.245131,209.064212 C303.556638,209.239435 303.582597,209.665161 303.323007,209.882134 L303.245131,209.935788 L295.245131,214.435788 C295.004452,214.57117 294.699594,214.48581 294.564212,214.245131 C294.443873,214.031194 294.497947,213.766548 294.680485,213.615296 L294.754869,213.564212 L301.091,209.999 L295,210 L3.85379111e-16,210 C-0.276142375,210 -0.5,209.776142 -0.5,209.5 C-0.5,209.25454 -0.323124839,209.050392 -0.0898756324,209.008056 L-3.85379111e-16,209 L295,209 L301.091,208.999 L294.754869,205.435788 C294.540933,205.315448 294.449717,205.061202 294.527171,204.837152 L294.564212,204.754869 C294.684552,204.540933 294.938798,204.449717 295.162848,204.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="231">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="72.5" y="56">y</tspan>
+            </text>
+            <path d="M119.884927,209.645848 C119.961108,208.774052 120,207.891568 120,207 C120,201.757144 118.655099,196.828407 116.291472,192.539963 C114.442669,189.185591 111.970591,186.222963 109.03133,183.808172" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M186.980259,210.098564 C186.993382,209.733997 187,209.367771 187,209 C187,195.030215 177.451526,183.290596 164.525018,179.951582" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M198.291472,130.539963 C194.198642,123.114143 187.051264,117.608178 178.542838,115.715567" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="201.5" y1="32.5" x2="201.5" y2="98" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="103" y="11">The angle between the lines equals the </tspan>
+                <tspan x="103" y="24">difference of their inclinations, θ= θ₂ −θ₁.</tspan>
+            </text>
+            <line x1="23.5" y1="234.5" x2="260.5" y2="93.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="151" y1="235" x2="188" y2="69" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="124" y="201">θ₁</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="190" y="201">θ₂</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="197" y="116">θ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

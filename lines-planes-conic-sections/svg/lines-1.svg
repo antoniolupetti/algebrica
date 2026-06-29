@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="207px" viewBox="0 0 335 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M90.882134,19.6769926 L90.9357878,19.7548694 L95.4357878,27.7548694 C95.5711697,27.9955483 95.4858096,28.3004059 95.2451306,28.4357878 C95.0311938,28.5561272 94.7665479,28.5020533 94.6152959,28.3195146 L94.5642122,28.2451306 L90.999,21.906 L91,205.5 C91,205.776142 90.7761424,206 90.5,206 C90.2545401,206 90.0503916,205.823125 90.0080557,205.589876 L90,205.5 L89.999,21.91 L86.4357878,28.2451306 C86.3154483,28.4590675 86.0612021,28.5502832 85.8371522,28.4728292 L85.7548694,28.4357878 C85.5409325,28.3154483 85.4497168,28.0612021 85.5271708,27.8371522 L85.5642122,27.7548694 L90.0642122,19.7548694 C90.2394349,19.4433624 90.6651608,19.4174034 90.882134,19.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="210.5" y1="99.5" x2="226.5" y2="181.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="99.5" x2="90.5" y2="80.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M295.162848,176.527171 L295.245131,176.564212 L303.245131,181.064212 C303.556638,181.239435 303.582597,181.665161 303.323007,181.882134 L303.245131,181.935788 L295.245131,186.435788 C295.004452,186.57117 294.699594,186.48581 294.564212,186.245131 C294.443873,186.031194 294.497947,185.766548 294.680485,185.615296 L294.754869,185.564212 L301.091,182 L3.85379111e-16,182 C-0.276142375,182 -0.5,181.776142 -0.5,181.5 C-0.5,181.25454 -0.323124839,181.050392 -0.0898756324,181.008056 L-3.85379111e-16,181 L301.091,181 L294.754869,177.435788 C294.540933,177.315448 294.449717,177.061202 294.527171,176.837152 L294.564212,176.754869 C294.684552,176.540933 294.938798,176.449717 295.162848,176.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="203">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="72.5" y="28">y</tspan>
+            </text>
+            <path d="M210.5,99.5 L195.604162,117.292251 M186.920801,127.664043 L174.5,142.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="72.0136869" y1="66.1831469" x2="259" y2="206" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle fill="#333333" cx="210.5" cy="99.5" r="2.5"></circle>
+            <circle fill="#333333" cx="226.5" cy="181.5" r="2.5"></circle>
+            <circle fill="#333333" cx="90.5" cy="80.5" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="217" y="99">P</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="10" y="65">ax+by+c=0</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="187" y="125">d</tspan>
+            </text>
+            <line x1="211.5" y1="47.5" x2="211.5" y2="86" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="162" y="11">The shortest distance from point </tspan>
+                <tspan x="162" y="24">P to the line is the length of the </tspan>
+                <tspan x="162" y="37">perpendicular segment d.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
