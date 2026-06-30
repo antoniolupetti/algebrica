@@ -12,13 +12,13 @@ tags:
 ---
 ## Definition
 
-Given a square [matrix](../matrices/) $A$ of order $n$, the inverse of $A$, denoted $A^{-1}$, is the matrix such that:
+Given a square [matrix](../matrices/) $A$ of order $n,$ the inverse of $A,$ denoted $A^{-1},$ is the matrix such that:
 
 $$A \cdot A^{-1} = A^{-1} \cdot A = I$$
 
-where $I$ is the identity matrix of order $n$. When such a matrix exists, it is unique. A square matrix that admits an inverse is called invertible or nonsingular. A matrix that does not admit an inverse is called singular.
+where $I$ is the identity matrix of order $n.$ When such a matrix exists, it is unique. A square matrix that admits an inverse is called invertible or nonsingular. A matrix that does not admit an inverse is called singular.
 
-The inverse matrix represents the linear transformation that reverses the effect of the original transformation. If $A$ maps a vector $\mathbf{x}$ to $\mathbf{b}$, that is $A\mathbf{x} = \mathbf{b}$, then $A^{-1}$ maps $\mathbf{b}$ back to $\mathbf{x}$:
+The inverse matrix represents the linear transformation that reverses the effect of the original transformation. If $A$ maps a vector $\mathbf{x}$ to $\mathbf{b},$ that is $A\mathbf{x} = \mathbf{b},$ then $A^{-1}$ maps $\mathbf{b}$ back to $\mathbf{x}$:
 
 $$A\mathbf{x} = \mathbf{b} \implies \mathbf{x} = A^{-1}\mathbf{b}$$
 
@@ -28,30 +28,53 @@ A square matrix $A$ is invertible if and only if its [determinant](../determinan
 
 $$A \text{ is invertible} \iff \det(A) \neq 0$$
 
-> The condition $\det(A) \neq 0$ is both necessary and sufficient for invertibility. It is equivalent to requiring that the rows (or columns) of $A$ are linearly independent, and that the [rank](../rank-of-a-matrix/) of $A$ equals $n$. The set of all invertible matrices of order $n$ forms a group under matrix multiplication, known as the general linear group $GL(n, \mathbb{R})$, discussed in the entry on [groups](../groups/).
+> The condition $\det(A) \neq 0$ is both necessary and sufficient for invertibility. It is equivalent to requiring that the rows (or columns) of $A$ are linearly independent, and that the [rank](../rank-of-a-matrix/) of $A$ equals $n.$ The set of all invertible matrices of order $n$ forms a group under matrix multiplication, known as the general linear group $GL(n, \mathbb{R}),$ discussed in the entry on [groups](../groups/).
 
 ## Properties of the inverse
 
 The inverse matrix satisfies the following properties, for square matrices $A$ and $B$ of order $n$:
 
-+ $(A^{-1})^{-1} = A$. The inverse of the inverse is the original matrix.
-+ $(AB)^{-1} = B^{-1} A^{-1}$. The inverse of a product reverses the order of the factors.
-+ $(A^{\mathrm{T}})^{-1} = (A^{-1})^{\mathrm{T}}$. The inverse of the transpose equals the transpose of the inverse.
-+ $\det(A^{-1}) = \dfrac{1}{\det(A)}$. The determinant of the inverse is the reciprocal of the determinant of $A$.
++ $(A^{-1})^{-1} = A.$ The inverse of the inverse is the original matrix.
++ $(AB)^{-1} = B^{-1} A^{-1}.$ The inverse of a product reverses the order of the factors.
++ $(A^{\mathrm{T}})^{-1} = (A^{-1})^{\mathrm{T}}.$ The inverse of the transpose equals the transpose of the inverse.
++ $\det(A^{-1}) = \dfrac{1}{\det(A)}.$ The determinant of the inverse is the reciprocal of the determinant of $A.$
 
 > The reversal of order in $(AB)^{-1} = B^{-1}A^{-1}$ is necessary for the same reason as in the transpose: matrix multiplication is not commutative, so inverting a product requires inverting each factor and reversing their order.
 
 ## Computing the inverse: the cofactor method
 
-The inverse of a square matrix $A$ of order $n$, when it exists, can be computed using the cofactor method. Given a square matrix $A = (a_{ij})$, the minor $M_{ij}$ is the determinant of the $(n-1) \times (n-1)$ submatrix obtained by deleting the $i$-th row and $j$-th column of $A$. The cofactor $C_{ij}$ is defined as:
+The inverse of a square matrix $A$ of order $n,$ when it exists, can be computed using the cofactor method. Given a square matrix $A = (a_{ij}),$ the minor $M_{ij}$ is the determinant of the $(n-1) \times (n-1)$ submatrix obtained by deleting the $i$-th row and $j$-th column of $A.$ The cofactor $C_{ij}$ is defined as:
 
 $$C_{ij} = (-1)^{i+j} \cdot M_{ij}$$
 
-The cofactor matrix $C$ is the matrix whose entry in position $(i,j)$ is the cofactor $C_{ij}$. The transpose of the cofactor matrix, denoted $C^{\mathrm{T}}$, is called the adjugate of $A$ and written $\mathrm{adj}(A)$. The inverse is then given by:
+The cofactor matrix $C$ is the matrix whose entry in position $(i,j)$ is the cofactor $C_{ij}.$ The transpose of the cofactor matrix, denoted $C^{\mathrm{T}},$ is called the adjugate of $A$ and written $\mathrm{adj}(A).$ The inverse is then given by:
 
-$$A^{-1} = \frac{1}{\det(A)}\, C^{\mathrm{T}} = \frac{1}{\det(A)}\, \mathrm{adj}(A)$$
+$$A^{-1} = \frac{1}{\det(A)} C^{\mathrm{T}} = \frac{1}{\det(A)} \mathrm{adj}(A)$$
 
-The computation proceeds as follows: calculate the cofactor $C_{ij}$ for every entry of $A$, assemble the cofactor matrix $C$, take its transpose to obtain $\mathrm{adj}(A)$, and divide every entry by $\det(A)$.
+The computation proceeds as follows: calculate the cofactor $C_{ij}$ for every entry of $A,$ assemble the cofactor matrix $C,$ take its transpose to obtain $\mathrm{adj}(A),$ and divide every entry by $\det(A).$
+
+## The inverse of a matrix of order 2
+
+For a matrix of order 2 the cofactor method reduces to an explicit formula. Given:
+
+$$A = \begin{pmatrix} a & b \\[6pt] c & d \end{pmatrix}$$
+
+the adjugate is obtained by exchanging the two diagonal entries and reversing the sign of the two off-diagonal entries, and the determinant is $ad - bc.$ The inverse is therefore:
+
+$$A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\[6pt] -c & a \end{pmatrix}$$
+
+The formula holds whenever $ad - bc \neq 0.$ Consider the matrix:
+
+$$A = \begin{pmatrix} 1 & 2 \\[6pt] 3 & 4 \end{pmatrix}$$
+
+Its determinant is $ad - bc = (1)(4) - (2)(3) = -2,$ which is nonzero, so the matrix is invertible. Applying the formula gives:
+
+$$
+A^{-1} = \frac{1}{-2} \begin{pmatrix} 4 & -2 \\[6pt] -3 & 1 \end{pmatrix}
+= \begin{pmatrix} -2 & 1 \\[6pt] \frac{3}{2} & -\frac{1}{2} \end{pmatrix}
+$$
+
+A direct multiplication confirms that $A \cdot A^{-1} = I.$
 
 ## Example 1
 
@@ -65,7 +88,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-This is a lower triangular matrix. Its determinant is the product of the diagonal entries, that is $\det(A) = 3 \cdot 1 \cdot 2 = 6$. We now compute the nine cofactors of $A$ one by one.
+This is a lower triangular matrix. Its determinant is the product of the diagonal entries, that is $\det(A) = 3 \cdot 1 \cdot 2 = 6.$ We now compute the nine cofactors of $A$ one by one.
 
 $$
 \begin{align}
@@ -122,7 +145,7 @@ $$
 
 ## Inversion by Gauss-Jordan elimination
 
-The cofactor method is conceptually transparent, but its computational cost becomes prohibitive as the order of the matrix grows, since it inherits the factorial cost of evaluating determinants by Laplace expansion. In practice, the inverse of a matrix is more efficiently computed using Gauss-Jordan elimination, which reduces the cost to $O(n^3)$.
+The cofactor method is conceptually transparent, but its computational cost becomes prohibitive as the order of the matrix grows, since it inherits the factorial cost of evaluating determinants by Laplace expansion. In practice, the inverse of a matrix is more efficiently computed using Gauss-Jordan elimination, which reduces the cost to $O(n^3).$
 
 The procedure begins by constructing the augmented matrix obtained by placing the identity matrix $I$ of the same order to the right of $A$:
 
@@ -130,7 +153,7 @@ $$[\ A \mid I\ ]$$
 
 Elementary row operations are then applied to this augmented matrix, with the goal of transforming the left-hand block into the identity. The operations admitted are the same as those used in the solution of linear systems: swapping two rows, multiplying a row by a nonzero scalar, and adding to a row a scalar multiple of another row. Each operation is applied simultaneously to both blocks of the augmented matrix.
 
-When the procedure terminates and the left-hand block has been reduced to $I$, the right-hand block contains the inverse:
+When the procedure terminates and the left-hand block has been reduced to $I,$ the right-hand block contains the inverse:
 
 $$[\ A \mid I\ ] \ \longrightarrow\ [\ I \mid A^{-1}\ ]$$
 
@@ -221,4 +244,4 @@ A^{-1} = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-A direct check confirms the result, since $A \cdot A^{-1} = I$. The inverse plays a central role in the [diagonalization](../matrix-diagonalization/) of a matrix, where the change-of-basis matrix $P$ must itself be invertible.
+A direct check confirms the result, since $A \cdot A^{-1} = I.$ The inverse appears in the [diagonalization](../matrix-diagonalization/) of a matrix, where the change-of-basis matrix $P$ must itself be invertible.
