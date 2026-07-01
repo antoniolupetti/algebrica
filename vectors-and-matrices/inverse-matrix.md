@@ -76,6 +76,8 @@ $$
 
 A direct multiplication confirms that $A \cdot A^{-1} = I.$
 
+> The same formula follows from the Cayley-Hamilton theorem, which for a matrix of order 2 reads $A^2 - (a+d)A + (ad-bc)I = O.$ More generally, the theorem expresses the inverse of any invertible matrix as a polynomial in the matrix, a method developed in the entry on [matrix diagonalization](../matrix-diagonalization/).
+
 ## Example 1
 
 Consider the following matrix:
