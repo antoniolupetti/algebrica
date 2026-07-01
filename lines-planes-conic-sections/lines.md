@@ -144,6 +144,8 @@ $$y = 2x - 2 + 2 = 2x$$
 
 The line through $P(1, 2)$ and $Q(3, 6)$ has equation $y = 2x$.
 
+The same line has a [vector and parametric description](../vector-and-parametric-equations-of-a-line/), built from a point on the line and a direction vector rather than a slope. For this line the direction vector is $Q - P = (2, 4)$, parallel to the line.
+
 ## Distance from a point to a line
 
 The distance from a point $P(x_P, y_P)$ to a line $r$ with equation $ax + by + c = 0$ is the length of the segment joining $P$ to the foot of the perpendicular dropped from $P$ onto the line. This is the shortest distance from the point to the line, computed by:
