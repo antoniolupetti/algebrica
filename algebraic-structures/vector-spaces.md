@@ -17,7 +17,7 @@ tags:
 ---
 ## Definition
 
-A vector space is an algebraic structure that formalises the idea of quantities that can be scaled and [combined linearly](../linear-combinations/). The concept arises wherever one encounters objects that can be added together and multiplied by numbers in a coherent way: geometric arrows in the plane, [polynomials](../polynomials/) with real coefficients, sequences of [real numbers](../real-numbers/), and [continuous functions](../continuous-functions/) on an interval all share this common pattern.
+A vector space is an algebraic structure that formalises the idea of quantities that can be scaled and [combined linearly](../linear-combinations/). The concept arises wherever one encounters objects that can be added and multiplied by numbers in a coherent way: geometric arrows in the plane, [polynomials](../polynomials/) with real coefficients, sequences of [real numbers](../real-numbers/), and [continuous functions](../continuous-functions/) on an interval all share this common pattern.
 
 Unlike a [group](../groups/) or a [ring](../rings/), which are defined on a single set, a vector space involves two distinct sets: a [field](../fields/) $F,$ whose elements are called scalars, and a set $V,$ whose elements are called [vectors](../vectors/). A vector space over $F$ is a set $V$ together with two operations, vector addition $+ : V \times V \to V$ and scalar multiplication $\cdot : F \times V \to V,$ satisfying the following axioms:
 
@@ -35,35 +35,41 @@ Several elementary consequences follow directly from the axioms. For any scalar 
 
 $$0 \cdot \mathbf{v} = (0 + 0) \cdot \mathbf{v} = 0 \cdot \mathbf{v} + 0 \cdot \mathbf{v}$$
 
-and the cancellation of $0 \cdot \mathbf{v}$ from both sides through the group structure of $(V, +)$ yields the result. Similarly, for any $\mathbf{v} \in V$ one has $\alpha \cdot \mathbf{0} = \mathbf{0}$ and $(-1) \cdot \mathbf{v} = -\mathbf{v}.$
+and the cancellation of $0 \cdot \mathbf{v}$ from both sides through the group structure of $(V, +)$ yields the result. Similarly, for any $\mathbf{v} \in V$ one has $\alpha \cdot \mathbf{0} = \mathbf{0}$ and $(-1) \cdot \mathbf{v} = -\mathbf{v},$ and more generally $(-\alpha) \cdot \mathbf{v} = -(\alpha \cdot \mathbf{v})$ for every $\alpha \in F.$
 
 When $\alpha \cdot \mathbf{v} = \mathbf{0},$ either $\alpha = 0$ or $\mathbf{v} = \mathbf{0}.$ This is a direct consequence of the invertibility of nonzero scalars: when $\alpha \neq 0$:
 
 $$\mathbf{v} = 1 \cdot \mathbf{v} = (\alpha^{-1}\alpha) \cdot \mathbf{v} = \alpha^{-1} \cdot (\alpha \cdot \mathbf{v}) = \alpha^{-1} \cdot \mathbf{0} = \mathbf{0}$$
 
-This property is the vector space analogue of the absence of zero divisors in a field, and it plays a central role in the theory of linear independence.
+This property is the vector space analogue of the absence of zero divisors in a field, and the theory of linear independence relies on it.
+
+Distinct scalars give distinct multiples of a fixed nonzero vector. When $\mathbf{v} \neq \mathbf{0}$ and $\alpha \neq \beta,$ the difference $(\alpha - \beta) \cdot \mathbf{v}$ is nonzero by the property just proved, so $\alpha \cdot \mathbf{v} \neq \beta \cdot \mathbf{v}.$ Over an infinite field such as $\mathbb{R}$ this forces every nontrivial space to be infinite, since a single nonzero vector $\mathbf{v}$ already produces one distinct multiple $\alpha \cdot \mathbf{v}$ for each scalar $\alpha.$ A real vector space therefore has either one element or infinitely many, and the trivial space $\\{\ \mathbf{0} \ \\}$ is the only finite one.
 
 ## Algebraic hierarchy
 
-Vector spaces occupy a position at the top of the standard hierarchy of algebraic structures, depending essentially on the presence of a field of scalars.
+A vector space sits above groups, rings, and fields in the standard classification of algebraic structures, since it depends on the presence of a field of scalars.
 
 A group consists of a set with a single operation admitting inverses. A ring introduces a second operation that need not be invertible. A field requires both operations to be fully invertible on nonzero elements. A vector space then takes a field as a given and builds a new structure on top of it, one in which the field acts on a separate set of vectors by scaling. The three underlying structures form a chain of increasing rigidity:
 
-+ A group carries one operation with inverses.
-+ A ring carries two operations, with inverses guaranteed only for addition.
-+ A field carries two operations, with inverses guaranteed for both addition and all nonzero elements under multiplication.
++ A group has one operation with inverses.
++ A ring has two operations, with inverses guaranteed only for addition.
++ A field has two operations, with inverses guaranteed for both addition and all nonzero elements under multiplication.
 
 > A vector space is not itself a further step in this chain but rather a structure that presupposes a field. Every vector space over $\mathbb{R}$ or $\mathbb{C}$ depends on the field axioms being in force for its scalar multiplication to be well defined. When the scalars are drawn from a [ring](../rings/) rather than a field, the resulting structure is a [module](../modules/), which generalises the notion of a vector space and is treated on the dedicated page.
 
 ## Examples
 
-The set $\mathbb{R}^n$ of all ordered $n$-tuples of real numbers is a vector space over $\mathbb{R}$ under componentwise addition and scalar multiplication. For $n = 2,$ addition is defined by $(a_1, a_2) + (b_1, b_2) = (a_1 + b_1, a_2 + b_2)$ and scalar multiplication by $\alpha \cdot (a_1, a_2) = (\alpha a_1, \alpha a_2).$ The zero vector is $(0, 0).$ This is the prototype of a finite-dimensional real vector space, and it provides the geometric intuition underlying the general theory.
+The smallest vector space is the trivial one, $\\{\ \mathbf{0} \ \\},$ consisting of the zero vector alone over any field $F.$ The operations are forced: $\mathbf{0} + \mathbf{0} = \mathbf{0}$ and $\alpha \cdot \mathbf{0} = \mathbf{0}$ for every $\alpha \in F.$ Its basis is the empty set, so it has dimension $0,$ and it is the only vector space of dimension $0.$
+
+The set $\mathbb{R}^n$ of all ordered $n$-tuples of real numbers is a vector space over $\mathbb{R}$ under componentwise addition and scalar multiplication. For $n = 2,$ addition is defined by $(a_1, a_2) + (b_1, b_2) = (a_1 + b_1, a_2 + b_2)$ and scalar multiplication by $\alpha \cdot (a_1, a_2) = (\alpha a_1, \alpha a_2).$ The zero vector is $(0, 0).$ This is the prototype of a finite-dimensional real vector space, and it gives the geometric intuition for the general theory.
 
 The set $\mathbb{C}^n$ of all ordered $n$-tuples of complex numbers is a vector space over $\mathbb{C}$ under the analogous operations. It can also be regarded as a vector space over $\mathbb{R},$ though in that case its dimension doubles: $\mathbb{C}^n$ as a real vector space has dimension $2n.$
 
+The set $M_{m \times n}(\mathbb{R})$ of all [matrices](../matrices/) with $m$ rows and $n$ columns and real entries is a vector space over $\mathbb{R}$ under entrywise addition and scalar multiplication. The sum of $A = (a_{ij})$ and $B = (b_{ij})$ is the matrix with entries $a_{ij} + b_{ij},$ and the scalar multiple $\alpha A$ has entries $\alpha a_{ij}.$ The zero vector is the matrix with every entry equal to $0.$ A basis consists of the $mn$ matrices having a single entry equal to $1$ and all others $0,$ so this space has dimension $mn.$ A single row reproduces $\mathbb{R}^n$ as $M_{1 \times n}(\mathbb{R}),$ and a single column gives the same space as $M_{n \times 1}(\mathbb{R}),$ so [row and column vectors](../vectors/) are particular matrices. When $m = n$ the matrices are square of order $n,$ and $M_{n \times n}(\mathbb{R})$ has dimension $n^2.$
+
 - - -
 
-The set $\mathbb{R}[x]_{\leq n}$ of all [polynomials](../polynomials/) with real coefficients of degree at most $n$ is a vector space over $\mathbb{R}$ under the usual addition of polynomials and multiplication of a polynomial by a real constant. The zero vector is the zero polynomial. A natural basis for this space is $\\{\ 1, x, x^2, \ldots, x^n \ \\},$ which contains $n + 1$ elements, so the dimension of this space is $n + 1.$
+The set $\mathbb{R}[x]_{\leq n}$ of all [polynomials](../polynomials/) with real coefficients of degree at most $n$ is a vector space over $\mathbb{R}$ under the usual addition of polynomials and multiplication of a polynomial by a real constant. The zero vector is the zero polynomial. A natural basis for this space is $\\{\ 1, x, x^2, \ldots, x^n \ \\},$ which contains $n + 1$ elements, so the dimension of this space is $n + 1.$ Removing the bound on the degree gives the space $\mathbb{R}[x]$ of all real polynomials, with basis $\\{\ 1, x, x^2, \ldots \ \\}$ and infinite dimension.
 
 The set $\mathcal{C}([a, b])$ of all continuous real-valued functions on a closed interval $[a, b]$ is a vector space over $\mathbb{R}$ under pointwise addition and scalar multiplication: $(f + g)(x) = f(x) + g(x)$ and $(\alpha f)(x) = \alpha f(x).$ This space is infinite-dimensional, since the polynomials of all degrees form a linearly independent subset with no finite spanning set.
 
@@ -95,7 +101,7 @@ and linear independence forces $\alpha_k = \beta_k$ for all $k.$
 
 - - -
 
-One of the fundamental theorems of linear algebra states that any two bases of the same vector space contain the same number of elements. The argument rests on the observation that when a set of $m$ vectors spans $V$ and a set of $n$ vectors is linearly independent in $V,$ the inequality $n \leq m$ holds. Applying this inequality twice, once in each direction, to any two bases forces their cardinalities to be equal. This common cardinality is called the dimension of $V$ and is denoted $\dim V.$
+Any two bases of the same vector space contain the same number of elements. The argument rests on the observation that when a set of $m$ vectors spans $V$ and a set of $n$ vectors is linearly independent in $V,$ the inequality $n \leq m$ holds. Applying this inequality twice, once in each direction, to any two bases forces their cardinalities to be equal. This common cardinality is called the dimension of $V$ and is denoted $\dim V.$
 
 The standard basis of $\mathbb{R}^n$ consists of the $n$ vectors $\mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n,$ where $\mathbf{e}_k$ has a $1$ in position $k$ and $0$ everywhere else. For example, in $\mathbb{R}^3$ the standard basis is:
 
@@ -111,7 +117,7 @@ $$\varphi(\mathbf{u} + \mathbf{v}) = \varphi(\mathbf{u}) + \varphi(\mathbf{v})$$
 
 $$\varphi(\alpha \cdot \mathbf{v}) = \alpha \cdot \varphi(\mathbf{v})$$
 
-These two conditions can be combined into the single requirement that $\varphi(\alpha \mathbf{u} + \beta \mathbf{v}) = \alpha\varphi(\mathbf{u}) + \beta\varphi(\mathbf{v})$ for all $\alpha, \beta \in F$ and $\mathbf{u}, \mathbf{v} \in V.$ A linear map that is bijective is called a linear isomorphism, and two vector spaces are isomorphic when a linear isomorphism between them exists. A fundamental result states that every $n$-dimensional vector space over $F$ is isomorphic to $F^n,$ so finite-dimensional vector spaces are completely classified by their dimension and their scalar field.
+These two conditions can be combined into the single requirement that $\varphi(\alpha \mathbf{u} + \beta \mathbf{v}) = \alpha\varphi(\mathbf{u}) + \beta\varphi(\mathbf{v})$ for all $\alpha, \beta \in F$ and $\mathbf{u}, \mathbf{v} \in V.$ A linear map that is bijective is called a linear isomorphism, and two vector spaces are isomorphic when a linear isomorphism between them exists. Every $n$-dimensional vector space over $F$ is isomorphic to $F^n,$ so finite-dimensional vector spaces are completely classified by their dimension and their scalar field.
 
 The [kernel](../homomorphisms-and-isomorphisms/) and image of a linear map $\varphi : V \to W$ are defined as follows:
 
@@ -123,7 +129,7 @@ Both $\ker(\varphi)$ and $\mathrm{im}(\varphi)$ are subspaces of $V$ and $W$ res
 
 $$\dim V = \dim \ker(\varphi) + \dim \mathrm{im}(\varphi)$$
 
-The dimension of $\mathrm{im}(\varphi)$ is called the rank of $\varphi$ and the dimension of $\ker(\varphi)$ is called its nullity. The rank-nullity theorem is one of the central results of linear algebra and underlies the theory of [systems of linear equations](../systems-of-linear-equations/), the analysis of [matrices](../matrices/), and the classification of linear maps between finite-dimensional spaces.
+The dimension of $\mathrm{im}(\varphi)$ is called the rank of $\varphi$ and the dimension of $\ker(\varphi)$ is called its nullity. The rank-nullity theorem underlies the theory of [systems of linear equations](../systems-of-linear-equations/), the analysis of [matrices](../matrices/), and the classification of linear maps between finite-dimensional spaces.
 
 ## Example
 
