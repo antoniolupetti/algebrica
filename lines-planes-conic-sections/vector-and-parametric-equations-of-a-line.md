@@ -89,8 +89,6 @@ We find the parametric equations of the line passing through the points:
 
 $$P_0 = (2, 1) \quad \text{and} \quad P = (5, 4)$$
 
-- - -
-
 To define a line parametrically, we need a point and a direction. Since both $P_0$ and $P$ lie on the line, we compute the direction vector $\vec{v}$ by subtracting their coordinates:
 
 $$\vec{v} = P-P_0 = (5-2,\ 4-1) = (3, 3)$$
