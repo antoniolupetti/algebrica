@@ -12,6 +12,7 @@ tags:
   - nilpotent-matrices
   - trace
   - transpose
+  - vector-space
 ---
 ## Introduction
 
@@ -218,6 +219,8 @@ Scalar multiplication satisfies the following properties, for matrices $A$ and $
 + Associativity: $k(hA) = (kh)A.$ Successive scalar multiplications can be combined into one.
 + Distributivity over matrix addition: $k(A+B) = kA+kB.$ A scalar distributes over a sum of matrices.
 + Distributivity over scalar addition: $(k+h)A = kA+hA.$ A sum of scalars distributes over a single matrix.
+
+> Matrix addition and scalar multiplication together satisfy the vector space axioms, so $M_{m \times n}(\mathbb{R})$ is a real [vector space](../vector-spaces/). The $mn$ matrices with a single entry equal to $1$ and zeros elsewhere form a basis, so its dimension is $mn.$
 
 ## Matrix multiplication
 
