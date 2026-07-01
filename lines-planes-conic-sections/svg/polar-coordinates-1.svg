@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="222px" viewBox="0 0 306 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.820191)">
+            <line x1="114.5" y1="68.679809" x2="114.5" y2="126.679809" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="210.408741" y1="93.6387878" x2="263.5" y2="64.679809" stroke="#A6A6A6" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M26.5,25.1599446 L26.9357878,25.9346784 L31.4357878,33.9346784 L31.6809184,34.3704662 L30.8093429,34.8607274 L30.5642122,34.4249396 L27,28.087 L27,221.179809 L26,221.179809 L26,28.087 L22.4357878,34.4249396 L22.1906571,34.8607274 L21.3190816,34.3704662 L21.5642122,33.9346784 L26.0642122,25.9346784 L26.5,25.1599446 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="9" y="204.179809">O</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="206" y="84.179809">Q</tspan>
+            </text>
+            <path d="M294.809343,179.498891 L295.245131,179.744021 L303.245131,184.244021 L304.019864,184.679809 L303.245131,185.115597 L295.245131,189.615597 L294.809343,189.860727 L294.319082,188.989152 L294.754869,188.744021 L301.093,185.179 L-0.5,185.179809 L-0.5,184.179809 L301.089,184.179 L294.754869,180.615597 L294.319082,180.370466 L294.809343,179.498891 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <ellipse fill="#333333" cx="26.4954463" cy="184.679809" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="210.495446" cy="92.679809" rx="2.49544627" ry="2.5"></ellipse>
+            <line x1="179.836897" y1="169.116837" x2="241.241101" y2="107.484673" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(210.373121, 138.287481) rotate(-44.893843) translate(-210.373121, -138.287481) "></line>
+            <line x1="53.4030167" y1="27.4616576" x2="183.751502" y2="157.328021" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(118.883522, 92.630829) rotate(-44.893843) translate(-118.883522, -92.630829) "></line>
+            <path d="M26,185.179809 L105.222688,145.783744 M122.648971,137.117957 L210,93.679809" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="204.440758">x</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="2.5" y="34.179809">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="110.059082" y="144.179809">ρ</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="66" y="45.179809">The point Q is determined by the </tspan>
+                <tspan x="66" y="58.179809">distance ρ = |OQ| and the angle θ.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

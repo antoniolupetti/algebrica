@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="272px" viewBox="0 0 309 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="210.5" y1="38.5" x2="210.5" y2="96.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="130" y="11">The point Q is determined by the </tspan>
+                <tspan x="130" y="24">distance ρ and the angles θ and ψ.</tspan>
+            </text>
+            <path d="M102,172 C112,168 120.711746,163.925643 128.135239,159.776928 C123.539152,149.839095 113.822847,143 102,143 L102,172 Z" fill="#D7D7D7"></path>
+            <path d="M101.5,20.9801356 L101.935788,21.7548694 L106.435788,29.7548694 L106.680918,30.1906571 L105.809343,30.6809184 L105.564212,30.2451306 L101.999,23.906 L102,217 L101,217 L100.999,23.91 L97.4357878,30.2451306 L97.1906571,30.6809184 L96.3190816,30.1906571 L96.5642122,29.7548694 L101.064212,21.7548694 L101.5,20.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M291.809343,168.319082 L292.245131,168.564212 L300.245131,173.064212 L301.019864,173.5 L300.245131,173.935788 L292.245131,178.435788 L291.809343,178.680918 L291.319082,177.809343 L291.754869,177.564212 L298.091,174 L48.5,174 L48.5,173 L298.091,173 L291.754869,169.435788 L291.319082,169.190657 L291.809343,168.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M102,204 C112,200 120.711746,195.925643 128.135239,191.776928 C123.539152,181.839095 113.822847,175 102,175 L102,204 Z" fill="#D7D7D7" transform="translate(115.067620, 189.500000) scale(1, -1) translate(-115.067620, -189.500000) "></path>
+            <path d="M102.135239,185.108984 C96.9072632,178.908266 89.1735922,175 80.2361182,175 L80.2361182,204 L83.3713574,203" fill="#D7D7D7" transform="translate(91.185679, 189.500000) scale(-1, -1) translate(-91.185679, -189.500000) "></path>
+            <path d="M101.514282,172.793037 L102.206963,173.514282 L101.84634,173.860622 L6.2424268,265.678242 L1.861,269.885 L8.90133407,268.06639 L9.38544084,267.941328 L9.63556591,268.909541 L9.15145914,269.034604 L0.264440234,271.330447 L-0.596194019,271.55278 L-0.339283111,270.701828 L2.31361164,261.914783 L2.45812403,261.436123 L3.41544565,261.725147 L3.27093326,262.203808 L1.17,269.163 L5.54974634,264.956998 L101.15366,173.139378 L101.514282,172.793037 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="101.5" y1="173.5" x2="209" y2="119" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="101.5" y1="173.5" x2="209" y2="230" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="101.5" y1="62.5" x2="209" y2="119" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="44.5" y1="229.5" x2="208.5" y2="229.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="97" y="196">θ</tspan>
+            </text>
+            <line x1="171.933029" y1="213.17516" x2="246.747347" y2="138.083098" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(209.263812, 175.371148) rotate(-44.893843) translate(-209.263812, -175.371148) "></line>
+            <line x1="199.044841" y1="202.800751" x2="271.878024" y2="203.372915" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(235.375624, 202.996739) rotate(-44.893843) translate(-235.375624, -202.996739) "></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="214" y="119">Q</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="206" y="245">H</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="32" y="225">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="85" y="65">z</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="261" y="162">x</tspan>
+            </text>
+            <ellipse fill="#333333" cx="208.495446" cy="119.5" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="100.495446" cy="61.5" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="101.495446" cy="173.5" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="263.495446" cy="173.5" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="42.4954463" cy="229.5" rx="2.49544627" ry="2.5"></ellipse>
+            <ellipse fill="#333333" cx="209.495446" cy="228.5" rx="2.49544627" ry="2.5"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="87" y="168">O</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="151.669922" y="138">ρ</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="108" y="152">ψ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
