@@ -12,7 +12,7 @@ tags:
 
 ## Statement
 
-**Theorem 1.** Let $f : [a,b] \to \mathbb{R}$ be a continuous [function](../functions/) on a closed and bounded interval $[a,b]$. Then there exist points $x_{\min}, x_{\max} \in [a,b]$ such that:
+Let $f : [a,b] \to \mathbb{R}$ be a continuous [function](../functions/) on a closed and bounded interval $[a,b]$. Then there exist points $x_{\min}, x_{\max} \in [a,b]$ such that:
 
 $$
 f(x_{\min}) \le f(x) \le f(x_{\max}) \quad \forall x \in [a,b]

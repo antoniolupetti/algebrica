@@ -18,7 +18,7 @@ $$\frac{0}{0} \qquad \frac{\infty}{\infty}$$
 
 These expressions prevent the direct evaluation of a limit, as they describe situations in which the basic limit theorems are insufficient to determine the result, and additional analytical techniques are required.
 
-**Theorem 1.** Let $f(x)$ and $g(x)$ be two [functions](../functions/) defined on a punctured neighbourhood $I$ of a point $x_0$. Assume that the following conditions are satisfied:
+Let $f(x)$ and $g(x)$ be two [functions](../functions/) defined on a punctured neighbourhood $I$ of a point $x_0$. Assume that the following conditions are satisfied:
 
 + $f(x)$ and $g(x)$ are differentiable on $I$, except possibly at $x_0$.
 + $g'(x) \neq 0$ for every $x \in I$ with $x \neq x_0$.

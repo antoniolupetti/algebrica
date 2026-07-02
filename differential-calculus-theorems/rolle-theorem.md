@@ -11,7 +11,7 @@ tags:
 
 ## Statement
 
-**Theorem.** Given a function $f(x)$ defined on a closed and bounded [interval](../intervals/) $[a, b]$, such that the following conditions are satisfied:
+Given a function $f(x)$ defined on a closed and bounded [interval](../intervals/) $[a, b]$, such that the following conditions are satisfied:
 
 + $f(x)$ is [continuous](../continuous-functions/) on the closed interval $[a, b]$.  
 + $f(x)$ is [differentiable](../derivatives/) on the open interval $(a, b)$.  
