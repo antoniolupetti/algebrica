@@ -344,7 +344,7 @@ Matrix multiplication satisfies the following properties, for matrices of compat
 
 For a square matrix $A$ of order $n,$ the associativity of the product makes integer powers well defined. One sets $A^1 = A$ and, for every integer $p \geq 2,$ defines $A^p = A^{p-1} A,$ so that $A^2 = AA$ and $A^3 = AAA.$ Since the identity matrix is the multiplicative identity, it is consistent to set $A^0 = I_n.$
 
-Diagonal matrices behave simply under both operations. The product of two diagonal matrices of the same order is again diagonal, with each diagonal entry the product of the corresponding entries of the factors. Repeated multiplication then acts on each entry separately, so a diagonal matrix and its powers are:
+The product of two diagonal matrices of the same order is again diagonal, with each diagonal entry the product of the corresponding entries. Integer powers then act on each diagonal entry separately, so a diagonal matrix and its powers are:
 
 $$
 D = \begin{pmatrix} d_1 & & \\[6pt] & \ddots & \\[6pt] & & d_n \end{pmatrix}
@@ -352,7 +352,7 @@ D = \begin{pmatrix} d_1 & & \\[6pt] & \ddots & \\[6pt] & & d_n \end{pmatrix}
 D^p = \begin{pmatrix} d_1^p & & \\[6pt] & \ddots & \\[6pt] & & d_n^p \end{pmatrix}
 $$
 
-This behaviour is what makes [diagonalization](../matrix-diagonalization/) an effective route to the powers of a general square matrix, which are laborious to compute by direct multiplication.
+Diagonalization reduces the powers of a general square matrix to this case, as developed in [diagonalization](../matrix-diagonalization/).
 
 Non-commutativity changes the algebraic identities that hold without comment over the real numbers. Expanding $(A+B)^2$ by distributivity gives
 

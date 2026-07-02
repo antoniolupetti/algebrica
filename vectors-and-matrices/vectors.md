@@ -7,6 +7,7 @@ tags:
   - dot-product
   - euclidean-space
   - linear-algebra
+  - scalar-triple-product
   - vectors
 ---
 ## Geometric representation
@@ -181,3 +182,107 @@ and for the second:
 $$(-3, 6, -3)\cdot(4, 5, 6) = -12 + 30 - 18 = 0$$
 
 Both results are zero, confirming that $\mathbf{u} \times \mathbf{v}$ is orthogonal to both factors.
+
+- - -
+
+Since the magnitude of the cross product is the area of a parallelogram, it also gives the area of a triangle from its vertices. Three non-collinear points $A,$ $B,$ $C$ determine a triangle whose sides issuing from $A$ are the vectors $B - A$ and $C - A.$ The triangle is half of the parallelogram spanned by these two vectors, so its area is:
+
+$$\mathrm{Area}(ABC) = \frac{1}{2}\|(B - A) \times (C - A)\|$$
+
+For three points in the plane, with $A = (x_A, y_A),$ $B = (x_B, y_B),$ and $C = (x_C, y_C),$ the cross product has only the component along $\mathbf{k},$ and the area reduces to the absolute value of a determinant:
+
+$$
+\mathrm{Area}(ABC) = \frac{1}{2}\left|\begin{vmatrix}
+x_B - x_A & y_B - y_A \\[6pt]
+x_C - x_A & y_C - y_A
+\end{vmatrix}\right|
+= \frac{1}{2}\left|\begin{vmatrix}
+x_A & y_A & 1 \\[6pt]
+x_B & y_B & 1 \\[6pt]
+x_C & y_C & 1
+\end{vmatrix}\right|
+$$
+
+> The determinant formula holds only for triangles in the plane. For three points in space the area is computed from the full cross product $\frac{1}{2}\|(B - A) \times (C - A)\|,$ since a two-dimensional determinant discards the other two components.
+
+As an example, take $A = (1, 1, 1),$ $B = (2, -1, 3),$ and $C = (-1, 0, 1).$ The sides from $A$ are $B - A = (1, -2, 2)$ and $C - A = (-2, -1, 0),$ which are not proportional, so the three points are not collinear. Their cross product is:
+
+$$
+\begin{align}
+(B - A) \times (C - A) &= ((-2)(0)-(2)(-1), (2)(-2)-(1)(0), (1)(-1)-(-2)(-2)) \\[6pt]
+&= (2, -4, -5)
+\end{align}
+$$
+
+The area of the triangle is half of its norm:
+
+$$
+\begin{align}
+\mathrm{Area}(ABC) &= \frac{1}{2}\|(2, -4, -5)\| \\[6pt]
+&= \frac{1}{2}\sqrt{4+16+25} \\[6pt]
+&= \frac{1}{2}\sqrt{45} \\[6pt]
+&= \frac{3}{2}\sqrt{5}
+\end{align}
+$$
+
+The points do not lie in a coordinate plane, so the planar determinant formula does not apply here, and the area follows from the full cross product.
+
+## Scalar triple product
+
+The scalar triple product assigns a single real number to three vectors in $\mathbb{R}^3$ by combining the dot and cross products. For $\mathbf{u}, \mathbf{v}, \mathbf{w} \in \mathbb{R}^3$ it is defined as follows.
+
+$$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w})$$
+
+The cross product $\mathbf{v} \times \mathbf{w}$ is evaluated first and returns a vector, which is then combined with $\mathbf{u}$ through the dot product to give a scalar. Writing the three vectors in components, the operation equals the [determinant](../determinant/) of the matrix whose rows are their coordinates.
+
+$$
+\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) =
+\begin{vmatrix}
+u_1 & u_2 & u_3 \\[6pt]
+v_1 & v_2 & v_3 \\[6pt]
+w_1 & w_2 & w_3
+\end{vmatrix}
+$$
+
+This identity follows by expanding the determinant along the first row, which reproduces the dot product of $\mathbf{u}$ with the components of $\mathbf{v} \times \mathbf{w}$ obtained in the previous section.
+
+The absolute value of the scalar triple product is the volume of the parallelepiped spanned by the three vectors. The cross product $\mathbf{v} \times \mathbf{w}$ has magnitude equal to the area of the base parallelogram determined by $\mathbf{v}$ and $\mathbf{w},$ and its direction is orthogonal to that base. Taking the dot product with $\mathbf{u}$ multiplies this area by the component of $\mathbf{u}$ orthogonal to the base, which is the height of the parallelepiped.
+
+$$V = |\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w})|$$
+
+> The tetrahedron built on the same three edges has one sixth of this volume. Placing the vectors at a common vertex $A$ as $\mathbf{u} = B - A,$ $\mathbf{v} = C - A,$ and $\mathbf{w} = D - A,$ the tetrahedron $ABCD$ has volume $\frac{1}{6}|\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w})|.$
+
+The product is positive when $\mathbf{u}, \mathbf{v}, \mathbf{w}$ form a right-handed system and negative when they form a left-handed one, so its sign indicates their orientation. Exchanging two rows of a determinant reverses its sign, so exchanging any two of the three vectors reverses the sign of the product, while a cyclic permutation leaves it unchanged.
+
+$$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \mathbf{v} \cdot (\mathbf{w} \times \mathbf{u}) = \mathbf{w} \cdot (\mathbf{u} \times \mathbf{v})$$
+
+The same invariance lets the dot and cross be interchanged, since $\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = (\mathbf{u} \times \mathbf{v}) \cdot \mathbf{w}.$ The scalar triple product vanishes exactly when the three vectors are coplanar, since a zero volume means the parallelepiped is degenerate. This gives a direct test for coplanarity, as $\mathbf{u}, \mathbf{v}, \mathbf{w}$ lie in a common plane if and only if
+
+$$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = 0$$
+
+> The vanishing of the determinant whose rows are the three vectors coincides with their linear dependence, so the coplanarity condition is equivalent to the matrix of their components having [rank](../rank-of-a-matrix/) less than $3.$
+
+- - -
+
+As an example, consider $\mathbf{u} = (1, 0, 2),$ $\mathbf{v} = (3, 1, 0),$ and $\mathbf{w} = (0, 4, 1).$ The scalar triple product is the determinant of the matrix formed by their components.
+
+$$
+\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) =
+\begin{vmatrix}
+1 & 0 & 2 \\[6pt]
+3 & 1 & 0 \\[6pt]
+0 & 4 & 1
+\end{vmatrix}
+$$
+
+Expanding along the first row gives the value.
+
+$$
+\begin{align}
+\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) &= 1(1\cdot1 - 0\cdot4) - 0(3\cdot1 - 0\cdot0) + 2(3\cdot4 - 1\cdot0) \\[6pt]
+&= 1(1) - 0 + 2(12) \\[6pt]
+&= 25
+\end{align}
+$$
+
+The result is non-zero, so the three vectors are not coplanar, and they span a parallelepiped of volume $25,$ while the tetrahedron on the same three edges has volume $\frac{25}{6}.$
