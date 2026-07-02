@@ -19,21 +19,21 @@ The following conditions must be satisfied:
 
 $$a>0 \quad a \neq 1 \quad b > 0$$
 
-For example, $\log{_2}8 = 3 \to 2^3 = 8$. In simple terms, the logarithm of a number is the exponent to which a given base must be raised to obtain that number. Therefore, the logarithm is the inverse operation of [exponentiation](../exponential-function/).
+For example, $\log_2 8 = 3 \to 2^3 = 8$. The logarithm of a number is the exponent to which a given base must be raised to obtain that number. Therefore, the logarithm is the inverse operation of [exponentiation](../exponential-function/).
 
 + $a$ is the base of the logarithm.
 + $b$ is the argument of the logarithm.
 
-The condition $a \neq 1$ is essential. In fact, when $a = 1$, the exponential expression $a^x$ becomes $1^x = 1$ for every $x \in \mathbb{R}$. In this case, the exponential function is constant and therefore not [invertible](../inverse-function/). Since the logarithm is defined as the inverse operation of exponentiation, it cannot be defined when the base is equal to $1$. For this reason, the base of a logarithm must satisfy $a > 0$ and $a \neq 1$.
+The condition $a \neq 1$ is essential. When $a = 1$, the exponential expression $a^x$ becomes $1^x = 1$ for every $x \in \mathbb{R}$. In this case, the exponential function is constant and therefore not [invertible](../inverse-function/). Since the logarithm is defined as the inverse operation of exponentiation, it cannot be defined when the base is equal to $1$. For this reason, the base of a logarithm must satisfy $a > 0$ and $a \neq 1$.
 
 
 ## Basic identities
 
 Understanding logarithms requires reviewing the concept of [powers](../powers/), as these two mathematical ideas are closely related. The following identities arise directly from the fact that logarithms are the inverse operation of exponentiation:
 
-$$a^0 = 1 \Rightarrow \log{_a}1 = 0$$
+$$a^0 = 1 \Rightarrow \log_a 1 = 0$$
 
-$$a^1 = a \Rightarrow \log{_a}a = 1$$
+$$a^1 = a \Rightarrow \log_a a = 1$$
 
 Since the exponential is always positive, it is not possible to define the logarithm of a negative number. Formally, there does not exist a number $c \in \mathbb{R}$ such that $a^c < 0$.
 
@@ -59,10 +59,10 @@ The domain is $x \in \mathbb{R}^+$ and the range is $\mathbb{R}$. The function i
 The graph above illustrates the monotonic behaviour and asymptotic properties of the logarithmic function. For values of $a > 1$, the function $f(x) = \log_a x$ is strictly increasing on $(0,+\infty)$. It has a vertical [asymptote](../asymptotes/) at $x = 0$, and its limits are:
 
 $$
-\begin{aligned}
+\begin{align}
 \lim_{x \to 0^+} \log_a x &= -\infty \\[6pt]
 \lim_{x \to +\infty} \log_a x &= +\infty
-\end{aligned}
+\end{align}
 $$
 
 For $0 < a < 1$, the function is strictly decreasing on $(0,+\infty)$.
@@ -72,13 +72,13 @@ For $0 < a < 1$, the function is strictly decreasing on $(0,+\infty)$.
 The line $x = 0$ is again a vertical asymptote, but the limiting behaviour is reversed:
 
 $$
-\begin{aligned}
+\begin{align}
 \lim_{x \to 0^+} \log_a x &= +\infty \\[6pt]
 \lim_{x \to +\infty} \log_a x &= -\infty
-\end{aligned}
+\end{align}
 $$
 
-> The logarithmic function is used across many disciplines, for example in computer science, where it is fundamental to the analysis of algorithmic complexity. Algorithms such as [binary search](../logarithmic-function/) exhibit logarithmic time complexity, meaning that their performance remains efficient even as input sizes grow large.
+> The logarithmic function is used across many disciplines, for example in computer science, where it is fundamental to the analysis of algorithmic complexity. Algorithms such as [binary search](../logarithmic-function/) have logarithmic time complexity, so their performance remains efficient even as input sizes grow large.
 
 
 ## Properties
@@ -88,10 +88,10 @@ The following identities describe how to manipulate logarithmic expressions. Eac
 Since the logarithm is defined as the inverse of the exponential function, the following identities hold:
 
 $$
-\begin{aligned}
+\begin{align}
 a^{\log_a x} &= x \qquad \forall x \in (0,+\infty) \\[6pt]
 \log_a(a^x) &= x \qquad \forall x \in \mathbb{R}
-\end{aligned}
+\end{align}
 $$
 
 These two identities express the fact that exponentiation with base $a$ and the logarithm to base $a$ are inverse functions on their respective [domains](../determining-the-domain-of-a-function/).
@@ -134,7 +134,7 @@ $$
 \log_a x^n = n \cdot \log_a x
 $$
 
-This is called the power rule. It follows directly from the properties of exponentials: for a positive integer $n$ the expression $x^n$ is obtained by multiplying $x$ by itself $n$ times, and the identity then extends to all real exponents by continuity.
+This is called the power rule. It follows from the properties of exponentials. For a positive integer $n$ the expression $x^n$ is obtained by multiplying $x$ by itself $n$ times, and the identity then extends to all real exponents by continuity.
 
 - - -
 
@@ -192,7 +192,7 @@ Thus, the inequality $\ln x \le x - 1$ expresses the geometric fact that the cur
 
 ## Logarithms in algebraic structure
 
-The logarithm acts as a structural bridge between two distinct algebraic systems. On the [set](../sets/) of positive real numbers $(0,+\infty)$, multiplication is the fundamental operation, while on $\mathbb{R}$ it is addition. The logarithm connects these systems by transforming multiplicative relationships into additive ones. For example, consider the product:
+The logarithm links two distinct algebraic systems. On the [set](../sets/) of positive real numbers $(0,+\infty)$, multiplication is the fundamental operation, while on $\mathbb{R}$ it is addition. The logarithm connects these systems by transforming multiplicative relationships into additive ones. For example, consider the product:
 
 $$
 x^3 y^2
@@ -204,7 +204,7 @@ $$
 \log_a(x^3 y^2) = 3\log_a x + 2\log_a y
 $$
 
-This process converts the multiplicative structure, characterised by products and powers, into an additive structure, characterised by sums and scalar multiples. In this sense, the logarithm functions as a homomorphism from the multiplicative group $(0,+\infty)$ to the additive group $\mathbb{R}$, preserving the underlying structure while changing the operation. The standard logarithmic rules provide exact algebraic formulations of this transformation.
+This process converts the multiplicative structure, characterised by products and powers, into an additive structure, characterised by sums and scalar multiples. In this sense, the logarithm is a homomorphism from the multiplicative group $(0,+\infty)$ to the additive group $\mathbb{R}$, preserving the underlying structure while changing the operation. The standard logarithmic rules give the exact algebraic form of this transformation.
 
 > A [homomorphism](../homomorphisms-and-isomorphisms/) is a function between two algebraic structures that preserves the operation, meaning $\varphi(x \star y) = \varphi(x) \circ \varphi(y)$. Here $\star$ and $\circ$ denote the operations of the two algebraic structures, such as addition or multiplication.
 
@@ -251,9 +251,9 @@ $$
 
 Any logarithm with base $a$ can be rewritten as a ratio of logarithms with a different, common base. More precisely, a logarithm with base $a$ and argument $b$ can be expressed using any other base $p$ as follows:
 
-$$\log{_a}b = \frac{\log{_p}b}{\log{_p}a}$$
+$$\log_a b = \frac{\log_p b}{\log_p a}$$
 
-> This change-of-base formula is useful because it allows you to compute logarithms with bases that may not be directly supported by a calculator or software, by converting them into logarithms with a more convenient base (such as 10 or $e$).
+> This change-of-base formula is useful because it lets you compute logarithms with bases that a calculator or software may not support directly, by converting them into logarithms with a more convenient base (such as 10 or $e$).
 
 - - -
 
@@ -317,12 +317,12 @@ $$
 \log_a x = \frac{\ln x}{\ln a}
 $$
 
-This construction provides a rigorous analytical foundation for logarithms and explains their continuity, differentiability, and structural properties.
+This construction gives logarithms a rigorous analytical foundation and explains their continuity, differentiability, and structural properties.
 
 
 ## Series expansion of the natural logarithm
 
-The [integral](../definite-integrals/) definition of the natural logarithm provides a direct route to its power series representation. Starting from the identity:
+The [integral](../definite-integrals/) definition of the natural logarithm leads directly to its power series representation. Starting from the identity:
 
 $$
 \ln(1+x) = \int_0^x \frac{1}{1+t} \ dt
@@ -346,7 +346,7 @@ $$
 \ln 2 = 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
 $$
 
-The series provides a method for computing the natural logarithm and clarifies its local behaviour. Truncating the expansion after the first term gives the linear approximation:
+The series gives a way to compute the natural logarithm and clarifies its local behaviour. Truncating the expansion after the first term gives the linear approximation:
 
 $$
 \ln(1+x) \approx x \qquad \text{for } x \to 0
@@ -431,4 +431,4 @@ $$
 
 Since $\ln$ is strictly increasing, this is equivalent to $M_g \leq M_a$, which is precisely the AM-GM inequality. Equality holds if and only if all arguments are equal, that is, $x_1 = x_2 = \cdots = x_n$.
 
-> This proof makes explicit the structural role of the logarithm: by mapping the multiplicative structure of $M_g$ into the additive structure of $M_a$, it reduces the comparison between two different types of mean to a single analytic property of $\ln$.
+> This proof makes explicit the structural role of the logarithm. By mapping the multiplicative structure of $M_g$ into the additive structure of $M_a$, it reduces the comparison between two different types of mean to a single analytic property of $\ln$.

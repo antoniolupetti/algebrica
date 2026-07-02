@@ -275,7 +275,7 @@ $$
 \end{align}
 $$
 
-With $a = 1,$ $b = -m,$ and $c = 3m + 2,$ the discriminant is:
+	With $a = 1,$ $b = -m,$ and $c = 3m + 2,$ the discriminant is:
 
 $$\Delta = m^2 - 12m - 8$$
 

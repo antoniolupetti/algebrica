@@ -33,7 +33,7 @@ This is also written in compact form as $A = (a_{ij}),$ where $a_{ij}$ denotes t
 
 ## Vectors and the zero matrix
 
-A matrix consisting of a single row is a row [vector](../vectors/), and a matrix consisting of a single column is  a column vector. The following are a row vector $A$ with 3 columns and a column vector $B$ with 3 rows:
+A matrix consisting of a single row is a row [vector](../vectors/), and a matrix consisting of a single column is a column vector. The following are a row vector $A$ with 3 columns and a column vector $B$ with 3 rows:
 
 $$
 A = \begin{pmatrix} a_1 & a_2 & a_3 \end{pmatrix}
@@ -47,7 +47,7 @@ A matrix in which every element is equal to zero is the zero matrix, denoted $O.
 
 ## Square matrices and special types
 
-A matrix is called square when its number of rows equals its number of columns, that is, when it has dimensions $n \times n.$ The integer $n$ the order of the matrix. In a square matrix, the elements $a_{ij}$ for which $i = j$ form the main diagonal ($a_{11}, a_{22}, a_{33}$.) The elements for which $i + j = n+1$ form the secondary diagonal:
+A matrix is called square when its number of rows equals its number of columns, that is, when it has dimensions $n \times n.$ The integer $n$ is the order of the matrix. In a square matrix, the elements $a_{ij}$ for which $i = j$ form the main diagonal ($a_{11}, a_{22}, a_{33}$.) The elements for which $i + j = n+1$ form the secondary diagonal:
 
 $$
 A = \begin{pmatrix}
@@ -64,6 +64,26 @@ D = \begin{pmatrix}
 4 & 0 & 0 \\[6pt]
 0 & 5 & 0 \\[6pt]
 0 & 0 & 6
+\end{pmatrix}
+$$
+
+The identity matrix of order $n,$ denoted $I_n,$ is the diagonal matrix whose diagonal entries are all equal to $1$:
+
+$$
+I_3 = \begin{pmatrix}
+1 & 0 & 0 \\[6pt]
+0 & 1 & 0 \\[6pt]
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+A scalar matrix is a diagonal matrix whose diagonal entries are all equal to a single value $k,$ so it has the form $kI_n.$ The following is the scalar matrix of order $3$ associated with $k = 5$:
+
+$$
+5I_3 = \begin{pmatrix}
+5 & 0 & 0 \\[6pt]
+0 & 5 & 0 \\[6pt]
+0 & 0 & 5
 \end{pmatrix}
 $$
 
@@ -290,7 +310,7 @@ The implication from $AB = O$ to $A = O$ or $B = O,$ valid for real numbers, has
 
 - - -
 
-The identity matrix of order $n,$ denoted $I_n,$ is the $n \times n$ square matrix with ones on the main diagonal and zeros elsewhere. It is the multiplicative identity, so for any matrix $A$ of compatible dimensions,
+The identity matrix $I_n$ introduced among the special square matrices is the multiplicative identity for the product, so for any matrix $A$ of compatible dimensions,
 
 $$A \cdot I = I \cdot A = A$$
 
@@ -323,6 +343,16 @@ Matrix multiplication satisfies the following properties, for matrices of compat
 ## Powers of a square matrix
 
 For a square matrix $A$ of order $n,$ the associativity of the product makes integer powers well defined. One sets $A^1 = A$ and, for every integer $p \geq 2,$ defines $A^p = A^{p-1} A,$ so that $A^2 = AA$ and $A^3 = AAA.$ Since the identity matrix is the multiplicative identity, it is consistent to set $A^0 = I_n.$
+
+Diagonal matrices behave simply under both operations. The product of two diagonal matrices of the same order is again diagonal, with each diagonal entry the product of the corresponding entries of the factors. Repeated multiplication then acts on each entry separately, so a diagonal matrix and its powers are:
+
+$$
+D = \begin{pmatrix} d_1 & & \\[6pt] & \ddots & \\[6pt] & & d_n \end{pmatrix}
+\qquad
+D^p = \begin{pmatrix} d_1^p & & \\[6pt] & \ddots & \\[6pt] & & d_n^p \end{pmatrix}
+$$
+
+This behaviour is what makes [diagonalization](../matrix-diagonalization/) an effective route to the powers of a general square matrix, which are laborious to compute by direct multiplication.
 
 Non-commutativity changes the algebraic identities that hold without comment over the real numbers. Expanding $(A+B)^2$ by distributivity gives
 

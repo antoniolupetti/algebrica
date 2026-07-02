@@ -15,7 +15,7 @@ Powers are mathematical operations that indicate how many times a [number](../ty
 
 $$a^n = \underbrace{a \cdot a \cdot a \cdots a}_{n \text{ times}} \qquad a \in \mathbb{R}$$
 
-> From a geometric perspective, for a positive number $a$, the expression $a^2$ represents the area of a square whose side length is $a$, while $a^3$ represents the volume of a cube whose edge length is $a$.
+> From a geometric perspective, for a positive number $a$, the expression $a^2$ is the area of a square with side length $a$, while $a^3$ is the volume of a cube with edge length $a$.
 
 - - -
 
@@ -27,11 +27,11 @@ Raising a number to a negative exponent is therefore equivalent to taking the re
 
 $$a^{\frac{1}{m}} = \sqrt[m]{a}$$
 
-This expression represents the $m$-th root of $a$. By combining both concepts, a negative fractional exponent can be interpreted as the reciprocal of a root:
+This expression is the $m$-th root of $a$. By combining both concepts, a negative fractional exponent can be interpreted as the reciprocal of a root:
 
 $$a^{-\frac{1}{m}} = \frac{1}{\sqrt[m]{a}}$$
 
-This unified notation allows exponents to represent both powers and roots, simplifying many algebraic expressions and keeping exponent rules consistent across different cases.
+This notation expresses both powers and roots with a single exponent, and it keeps the exponent rules consistent across the different cases.
 
 The table below shows selected values of $a^n$ where each row corresponds to a fixed base $a$ and each column to a fixed exponent $n$.
 
@@ -83,10 +83,10 @@ $$0^n = 0 \quad \text{for } n > 0$$
 The condition $n > 0$ is necessary because $0^0$ is an [indeterminate form](../indeterminate-forms/). Depending on the context, it can be approached as a [limit](../limits/) in two ways:
 
 $$
-\begin{aligned}
+\begin{align}
 \lim_{x \to 0^+} 0^x &= 0 \\[6pt]
 \lim_{x \to 0} x^0 &= 1
-\end{aligned}
+\end{align}
 $$
 
 Thus, in the setting of limits, the expression $0^0$ is typically left undefined. More generally, the following expressions are indeterminate forms, meaning their values cannot be determined without additional information about the specific limit: $0^0$, $1^{\infty}$, and $\infty^0$.
@@ -99,7 +99,7 @@ The product of two or more powers with the same base $a$ is again a power with b
 
 $$a^n \cdot a^m = a^{n+m}$$
 
-To see why this holds, observe that $a^n$ represents the product of $n$ factors equal to $a$, and $a^m$ represents the product of $m$ such factors. Concatenating these two products gives a total of $n+m$ factors, which is precisely $a^{n+m}$. In formal terms:
+To see why this holds, observe that $a^n$ is the product of $n$ factors equal to $a$, and $a^m$ is the product of $m$ such factors. Concatenating these two products gives a total of $n+m$ factors, which is precisely $a^{n+m}$. In formal terms:
 
 $$
 a^n \cdot a^m = \underbrace{a \cdot a \cdots a}_{n \text{ times}} \cdot \underbrace{a \cdot a \cdots a}_{m \text{ times}} = \underbrace{a \cdot a \cdots a}_{n+m \text{ times}} = a^{n+m}
@@ -204,13 +204,13 @@ This establishes the statement for $n+1$ and completes the induction.
 
 - - -
 
-The importance of Bernoulli's inequality lies in its ability to provide sharp estimates with minimal effort. A classical application is the proof that the sequence $a_n = \left(1+\frac{1}{n}\right)^n$ is monotonically increasing. The argument is based on the ratio of consecutive terms and on a single application of the inequality to control the resulting expression. Since this sequence is also bounded above, it converges, and its limit is [Euler's number](../euler-number-limit-sequence/) $e$:
+Bernoulli's inequality provides sharp estimates with minimal effort. A classical application is the proof that the sequence $a_n = \left(1+\frac{1}{n}\right)^n$ is monotonically increasing. The argument is based on the ratio of consecutive terms and on a single application of the inequality to control the resulting expression. Since this sequence is also bounded above, it converges, and its limit is [Euler's number](../euler-number-limit-sequence/) $e$:
 
 $$
 e = \lim_{n \to +\infty}\left(1+\frac{1}{n}\right)^n
 $$
 
-In this sense Bernoulli's inequality is one of the elementary tools that makes it possible to introduce $e$ without resorting to the full machinery of analysis.
+In this sense Bernoulli's inequality is one of the elementary tools for introducing $e$ without the full machinery of analysis.
 
 
 ## Power and exponential
@@ -248,13 +248,13 @@ Choosing $k$ larger than $\alpha$ and setting $u = x \ln a$, we obtain a lower b
 
 - - -
 
-The practical value of this hierarchy lies in the simplification of asymptotic estimates. Whenever a sum or product involves terms of different growth orders, only the dominant term contributes to the leading-order behavior. For example:
+This hierarchy simplifies asymptotic estimates. Whenever a sum or product involves terms of different growth orders, only the dominant term contributes to the leading-order behavior. For example:
 
 $$
 \lim_{x \to +\infty} \frac{2^{x}+x^{10}+\ln x}{2^{x}} = 1
 $$
 
-The contributions of $x^{10}$ and $\ln x$ become negligible compared with $2^{x}$ as $x$ tends to infinity, even though for moderate values of $x$ the [polynomial](../polynomials/) term may still be numerically larger. The same hierarchy underlies the standard classification of algorithmic complexity, in which logarithmic, polynomial, and exponential running times are treated as fundamentally distinct regimes.
+The contributions of $x^{10}$ and $\ln x$ become negligible compared with $2^{x}$ as $x$ tends to infinity, even though for moderate values of $x$ the [polynomial](../polynomials/) term may still be numerically larger. The same hierarchy underlies the standard classification of algorithmic complexity, in which logarithmic, polynomial, and exponential running times are treated as distinct regimes.
 
 
 ## Powers with complex exponents
@@ -267,8 +267,8 @@ and substitute $z = i\theta$. The resulting series separates into real and imagi
 
 $$e^{i\theta} = \cos\theta + i\sin\theta$$
 
-This result establishes a profound connection between the exponential function and trigonometry, showing that they are in fact different expressions of the same underlying structure over the complex numbers. It allows any nonzero [complex number](../complex-numbers-introduction/) to be written in exponential form as $z = re^{i\theta}$, where $r$ denotes the modulus and $\theta$ the argument. A notable consequence is one of the most celebrated identities in mathematics, obtained by setting $\theta = \pi$:
+This result connects the exponential function and trigonometry, which are different expressions of the same structure over the complex numbers. Any nonzero [complex number](../complex-numbers-introduction/) can then be written in exponential form as $z = re^{i\theta}$, where $r$ denotes the modulus and $\theta$ the argument. Setting $\theta = \pi$ gives Euler's identity:
 
 $$e^{i\pi} + 1 = 0$$
 
-This equation, known as Euler's identity, unites five fundamental mathematical constants in a single expression. A more detailed discussion of complex exponents, including methods for computing powers and roots of complex numbers, is provided on the page [complex numbers in exponential form](../complex-numbers-exponential-form/).
+This identity relates the five constants $e$, $i$, $\pi$, $1$, and $0$ in a single expression. A more detailed discussion of complex exponents, including methods for computing powers and roots of complex numbers, appears on the page [complex numbers in exponential form](../complex-numbers-exponential-form/).

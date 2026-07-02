@@ -21,7 +21,7 @@ The properties of roots depend on whether the index is even or odd.
 + For even $n$, the equation $x^n = a$ has a real solution only if $a \ge 0$. In that case, the principal root $\sqrt[n]{a}$ is defined to be the non-negative solution.
 + For odd $n$, the equation $x^n = a$ has exactly one real solution for every real number $a$, so the function $a \mapsto \sqrt[n]{a}$ is defined for all $a \in \mathbb{R}$.
 
-> For example, since $2^3 = 8$, it follows that $\sqrt[3]{8} = 2$, as 2 is the unique real number whose cube equals 8. More generally, extracting an $n$-th root is the inverse operation of raising a number to the $n$-th power. Thus, solving the equation $x^n = a$ is therefore equivalent to applying the $n$-th root to $a$.
+> For example, since $2^3 = 8$, it follows that $\sqrt[3]{8} = 2$, as 2 is the unique real number whose cube equals 8. More generally, extracting an $n$-th root is the inverse operation of raising a number to the $n$-th power. Solving the equation $x^n = a$ is therefore equivalent to applying the $n$-th root to $a$.
 
 - - -
 
@@ -29,7 +29,7 @@ Radicals such as $\sqrt{2}$, $\sqrt{3}$, and $\sqrt{5}$ are classified as [irrat
 
 ![IMG. 1](svg/radicals-1.svg)
 
-Their decimal expansions are infinite and non-repeating, exhibiting no repeating pattern. No rational number squared equals 2, 3, or 5. Nevertheless, these values occupy precise positions on the real number line, interspersed among the rational numbers, with no gaps between them.
+Their decimal expansions are infinite and non-repeating. No rational number squared equals 2, 3, or 5. Nevertheless, these values occupy precise positions on the real number line, interspersed among the rational numbers, with no gaps between them.
 
 Formally, if $a \in \mathbb{N}$ is not a perfect square, then $\sqrt{a} \notin \mathbb{Q}$.
 
@@ -47,7 +47,7 @@ The reason lies in the definition of the principal square root. When the index i
 
 + When $a \ge 0$ the value $a$ already satisfies this condition.
 + When $a < 0$ the non-negative number whose square is $a^2$ is $-a$.
-+ The [absolute value](../absolute-value/) provides a single expression valid in both cases.
++ The [absolute value](../absolute-value/) is a single expression valid in both cases.
 
 > The same phenomenon occurs whenever the index is even. For $n \in \mathbb{N}$ with $n \ge 1$, the identity $\sqrt[2n]{a^{2n}} = |a|$ holds for every $a \in \mathbb{R}$. When the index is odd, the constraint disappears and we have $\sqrt[2n+1]{a^{2n+1}} = a$ for every $a \in \mathbb{R}$, since the function $x \mapsto x^{2n+1}$ is bijective on the real line.
 
@@ -164,7 +164,7 @@ $$
 \sqrt[n]{a^m} = \sqrt[nk]{a^{mk}}
 $$
 
-This identity allows us to reduce the index of a radical to its lowest terms. For example, the following simplification is obtained by dividing both exponents by $2$:
+This identity reduces the index of a radical to its lowest terms. For example, the following simplification is obtained by dividing both exponents by $2$:
 
 $$\sqrt[4]{a^2} = \sqrt[2]{a} = \sqrt{a}$$
 
@@ -182,7 +182,7 @@ If either $m$ or $n$ is even, the condition $a \ge 0$ is necessary to ensure the
 
 - - -
 
-A radical of the form $\sqrt[n]{a^m}$ can be simplified when $m \ge n$ by writing the exponent as $m = nq+r$, where $q$ is the quotient and $0 \le r < n$ is the remainder of the division of $m$ by $n$. This allows us to factor out $a^q$ from the radical:
+A radical of the form $\sqrt[n]{a^m}$ can be simplified when $m \ge n$ by writing the exponent as $m = nq+r$, where $q$ is the quotient and $0 \le r < n$ is the remainder of the division of $m$ by $n$. This lets us factor out $a^q$ from the radical:
 
 $$
 \sqrt[n]{a^m} = \sqrt[n]{a^{nq+r}} = a^q \sqrt[n]{a^r}
@@ -201,10 +201,10 @@ $$
 For example:
 
 $$
-\begin{aligned}
+\begin{align}
 3\sqrt{2}+5\sqrt{2} &= 8\sqrt{2} \\[6pt]
 7\sqrt[3]{5}-2\sqrt[3]{5} &= 5\sqrt[3]{5}
-\end{aligned}
+\end{align}
 $$
 
 Radicals with different indices or different radicands are not like radicals and cannot be combined in this way. However, sometimes simplifying the radicals first shows that they are actually like. For example:
@@ -283,12 +283,12 @@ $$
 Direct substitution of $h = 0$ yields the [indeterminate form](../indeterminate-forms/) $\frac{0}{0}$. To resolve this, we multiply the numerator and denominator by the conjugate of the numerator:
 
 $$
-\begin{aligned}
+\begin{align}
 \frac{\sqrt{x+h}-\sqrt{x}}{h} &= \frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} \\[6pt]
 &= \frac{(x+h)-x}{h\left(\sqrt{x+h}+\sqrt{x}\right)} \\[6pt]
 &= \frac{h}{h\left(\sqrt{x+h}+\sqrt{x}\right)} \\[6pt]
 &= \frac{1}{\sqrt{x+h}+\sqrt{x}}
-\end{aligned}
+\end{align}
 $$
 
 Now take the limit as $h \to 0$:
