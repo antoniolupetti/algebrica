@@ -11,7 +11,7 @@ tags:
 ---
 ## Global maximum and minimum points
 
-The maximum and minimum of a function $f(x)$ represent, respectively, the highest and lowest values that the function can attain within its [domain](../determining-the-domain-of-a-function/). In other words, they indicate the extreme points of the [function](../functions/), showing where $f(x)$ reaches its greatest possible value or its smallest possible value for all permissible values of $x$ in the given domain.
+The maximum and minimum of a function $f(x)$ are, respectively, the highest and lowest values the function attains within its [domain](../determining-the-domain-of-a-function/). They are the extreme values of the [function](../functions/) over the whole domain.
 
 Given a function $y = f(x)$ with domain $D$, a point $x_0 \in D$ is a global maximum point if $f(x_0) \geq f(x)$ for every $x \in D$. The value $f(x_0) = M$ is the global maximum of the function.
 
@@ -23,7 +23,7 @@ Given a function $y = f(x)$ with domain $D$, a point $x_0 \in D$ is a global min
 
 If the global maximum and global minimum values of a function exist, they are unique, although each of them may be attained at more than one point of the domain. By [Weierstrass's Theorem](../weierstrass-theorem/), if a function is [continuous](../continuous-functions/) on a closed and bounded interval $[a, b]$, then it attains both a global maximum and a global minimum on that interval.
 
-Outside the hypotheses of the theorem, a function may fail to attain a maximum or a minimum, as happens for instance on open intervals or for unbounded functions. In these cases the set of values of the function still admits a least upper bound and a greatest lower bound, possibly infinite, which are studied in the entry on [supremum and infimum](../supremum-and-infimum/).
+Outside the hypotheses of the theorem, a function may fail to attain a maximum or a minimum, as happens for instance on open intervals or for unbounded functions. In these cases the set of values of the function still has a least upper bound and a greatest lower bound, possibly infinite, which are studied in the entry on [supremum and infimum](../supremum-and-infimum/).
 
 ## Local maximum and minimum points
 
@@ -81,6 +81,26 @@ In this case, $x_0$ is a point of local minimum for the function $f(x)$. The cor
 
 A function can have multiple local maxima and local minima within its domain. By [Fermat's theorem](../fermat-theorem/), the local maximum and minimum points of a differentiable function, located within the interior of the domain, are stationary points. This implies that the tangent line at a point of a local maximum or minimum is parallel to the x-axis. In this case, the [derivative](../derivatives/) of the function at $x_0$ is zero, and we have $f'(x_0) = 0$.
 
+## Proof of the first-derivative criterion
+
+The sign criterion stated above follows from [Lagrange's Theorem](../lagrange-theorem/), applied separately on each side of $x_0$. Consider the case of a local maximum, with $f$ continuous in a neighbourhood of $x_0$ and differentiable there for every $x \neq x_0$, and suppose $f'(x) > 0$ for $x < x_0$ and $f'(x) < 0$ for $x > x_0$.
+
+Take a point $x < x_0$ in the neighbourhood. On the interval $[x, x_0]$ the function is continuous, and it is differentiable in the interior, so Lagrange's Theorem gives a point $\xi \in (x, x_0)$ such that:
+
+$$f(x_0) - f(x) = f'(\xi)(x_0 - x)$$
+
+The point $\xi$ lies to the left of $x_0$, so $f'(\xi) > 0$, and the factor $x_0 - x$ is positive. The right-hand side is positive, which gives $f(x) < f(x_0)$.
+
+Take now a point $x > x_0$ in the neighbourhood. On the interval $[x_0, x]$ the same theorem gives a point $\xi \in (x_0, x)$ such that:
+
+$$f(x) - f(x_0) = f'(\xi)(x - x_0)$$
+
+This time $\xi$ lies to the right of $x_0$, so $f'(\xi) < 0$, while $x - x_0$ is positive. The right-hand side is negative, and again $f(x) < f(x_0)$.
+
+For every $x \neq x_0$ in the neighbourhood we have found $f(x) < f(x_0)$, which is the condition for $x_0$ to be a local maximum. The criterion for a local minimum is obtained by applying the same argument to $-f$, which reverses the inequalities on the sign of the derivative.
+
+> Continuity of $f$ at $x_0$ is what allows Lagrange's Theorem to be applied on intervals having $x_0$ as an endpoint, without assuming that the derivative exists at $x_0$ itself. For this reason the criterion recognises corners and cusps as extrema, and not only stationary points where $f'(x_0) = 0$.
+
 ## Upward and downward concavity
 
 Let $f(x)$ be a function differentiable at $x_0$, so that the tangent line to its graph at $x_0$ is defined. We say that the function $f(x)$ is concave upward at $x_0$ if there exists a neighborhood $I$ of $x_0$ such that, for every $x \in I$ with $x \neq x_0$, the function $f(x)$ takes values greater than those of the line $y = t(x)$, which is the tangent line to the graph of $f(x)$ at $x_0$:
@@ -108,7 +128,7 @@ Let us consider the case where a function $y = f(x)$ is defined on an interval $
 
 $$\lim_{x \to x_0} f'(x) = +\infty \quad \text{or} \quad \lim_{x \to x_0} f'(x) = -\infty$$
 
-The point $x_0$ is defined as an inflection point if the function changes concavity at $x_0$.
+The point $x_0$ is an inflection point if the function changes concavity at $x_0$.
 
 ![IMG. 7](svg/maximum-minimum-inflection-points-7.svg)
 
@@ -138,7 +158,7 @@ Given a continuous function, to find the local maximum and minimum points, we an
 
 The criterion based on the sign change of $f'$ applies to interior points of the domain. If the function is defined on a closed interval, the endpoints must be examined separately, since only one-sided behavior of the derivative is available there.
 
-> When the function admits a second derivative, an alternative criterion based on the sign of $f''$ at the stationary points, known as the second derivative test, is presented in the entry on [higher-order derivatives](../higher-order-derivatives/).
+> When the function has a second derivative, an alternative criterion based on the sign of $f''$ at the stationary points, known as the second derivative test, is presented in the entry on [higher-order derivatives](../higher-order-derivatives/).
 
 ## Example 1
 
@@ -205,7 +225,7 @@ We study the sign by imposing:
 
 $$6x - 1 > 0 \implies x > \frac{1}{6}$$
 
-The sign chart provides the intervals in which the function is concave upward or concave downward:
+The sign chart gives the intervals in which the function is concave upward or concave downward:
 
 [class="table-sign"]
 

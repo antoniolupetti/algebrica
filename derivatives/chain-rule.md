@@ -22,28 +22,41 @@ $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
 
 ## Proof
 
-To prove that $D[f(g(x))] = f'(g(x)) \cdot g'(x)$ we calculate the following [limit](../limits/):
+Fix the point $x$ and write $z = g(x)$. Differentiating the composition directly from the [limit](../limits/) is delicate, because the natural manipulation of the difference quotient divides by $g(x+h) - g(x)$, a quantity that can vanish for values of $h$ arbitrarily close to $0$. To sidestep this, we record the derivative of $f$ at $z$ in an auxiliary function that involves no division. Define $\varphi$ on the domain of $f$ by:
 
-$$D[f(g(x))] = \lim_{h \to 0} \frac{f(g(x + h))-f(g(x))}{h}$$
+$$
+\varphi(w) =
+\begin{cases}
+\dfrac{f(w) - f(z)}{w - z} & w \neq z \\[8pt]
+f'(z) & w = z
+\end{cases}
+$$
 
-Let $z = g(x)$, and set $\Delta z = g(x+h)-g(x)$. This implies that $g(x+h) = g(x) + \Delta z$. The limit becomes:
+Since $f$ is differentiable at $z$, the difference quotient tends to $f'(z)$ as $w \to z$, which is the value assigned to $\varphi$ at $z$. The auxiliary function is therefore [continuous](../continuous-functions/) at $z$:
 
-$$D[f(g(x))] = \lim_{h \to 0} \frac{f(z+\Delta z)-f(z)}{h}$$
+$$\lim_{w \to z} \varphi(w) = f'(z) = \varphi(z)$$
 
-Multiplying both the numerator and the denominator by $\Delta z$, we get:
+Directly from its definition, $\varphi$ satisfies the identity:
+
+$$f(w) - f(z) = \varphi(w)(w - z)$$
+
+For $w \neq z$ this is the definition of $\varphi$ multiplied by $w - z$, and for $w = z$ both sides vanish, so the identity holds for every $w$ without exception.
+
+Evaluating the identity at $w = g(x+h)$, for which $w - z = g(x+h) - g(x)$, and dividing by $h \neq 0$, the difference quotient of the composite function splits into a product:
+
+$$\frac{f(g(x+h)) - f(g(x))}{h} = \varphi(g(x+h)) \cdot \frac{g(x+h) - g(x)}{h}$$
+
+Now let $h \to 0$. The inner function $g$ is differentiable at $x$, hence continuous there, so $g(x+h) \to g(x) = z$. Since $\varphi$ is continuous at $z$, the composition gives $\varphi(g(x+h)) \to \varphi(z) = f'(z)$. The second factor is the difference quotient of $g$ at $x$, which tends to $g'(x)$. Therefore:
 
 $$
 \begin{align}
-D[f(g(x))] &= \lim_{h \to 0} \frac{f(z + \Delta z)-f(z)}{\Delta z} \cdot \frac{\Delta z}{h} \\[6pt]
-&= \lim_{h \to 0} \frac{f(z + \Delta z)-f(z)}{\Delta z} \cdot \frac{g(x + h)-g(x)}{h} \\[6pt]
+D[f(g(x))] &= \lim_{h \to 0} \left( \varphi(g(x+h)) \cdot \frac{g(x+h) - g(x)}{h} \right) \\[6pt]
 &= f'(z) \cdot g'(x) \\[6pt]
 &= f'(g(x)) \cdot g'(x)
 \end{align}
 $$
 
-Since $g$ is differentiable at $x$, it is also continuous there, so $\Delta z \to 0$ as $h \to 0$, and the first factor tends to $f'(z)$.
-
-> This argument assumes $\Delta z \neq 0$ for $h$ sufficiently small. A complete proof handles the case $\Delta z = 0$ separately via an auxiliary function, and the conclusion is the same.
+> The identity $f(w) - f(z) = \varphi(w)(w - z)$ is the step the naive computation cannot supply. It multiplies by $w - z$ instead of dividing, so it stays valid at the values of $h$ where $g(x+h) = g(x)$, which is exactly where dividing by $g(x+h) - g(x)$ would break down.
 
 ## A first example
 
@@ -146,7 +159,7 @@ The chain rule can be extended to compositions involving three or more functions
 
 $$D[f(g(h(x)))] = f'(g(h(x))) \cdot g'(h(x)) \cdot h'(x)$$
 
-Each factor represents the derivative of a function in the composition, evaluated at the composition of all subsequent functions. This pattern generalises to any finite number of nested functions. For $y = f_1(f_2(\cdots f_n(x)\cdots))$, the derivative is given by the product:
+Each factor is the derivative of a function in the composition, evaluated at the composition of all subsequent functions. This pattern generalises to any finite number of nested functions. For $y = f_1(f_2(\cdots f_n(x)\cdots))$, the derivative is given by the product:
 
 $$f_1'(f_2(\cdots f_n(x)\cdots)) \cdot f_2'(f_3(\cdots f_n(x)\cdots)) \cdots f_{n-1}'(f_n(x)) \cdot f_n'(x)$$
 

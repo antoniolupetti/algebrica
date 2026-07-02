@@ -121,6 +121,8 @@ Higher-order derivatives provide a natural way to measure the regularity of a fu
 
 The inclusions between these classes are strict. For example, the function $f(x) = x|x|$ is of class $C^1(\mathbb{R})$ but not of class $C^2(\mathbb{R})$. Indeed, the function coincides with $x^2$ for $x \geq 0$ and with $-x^2$ for $x < 0$, so its derivative is $f'(x) = 2|x|$, which is continuous on all of $\mathbb{R}$. The derivative, however, has a corner at the origin, so $f''(0)$ does not exist.
 
+The gap between differentiability and membership of $C^1$ is subtler. A function can have a derivative at every point while that derivative is not continuous, so it is differentiable without being of class $C^1$. The function $f(x) = x^2\sin(1/x)$ with $f(0) = 0$ is the standard example, differentiable on all of $\mathbb{R}$ with a derivative that oscillates near the origin. A discontinuity of this kind is always essential, since a derivative has no jump discontinuity by [Darboux's Theorem](../darboux-theorem/).
+
 > Polynomials, the exponential function, the sine and the cosine are all of class $C^\infty(\mathbb{R})$, since each differentiation produces another function of the same family.
 
 ## Higher-order derivatives in several variables

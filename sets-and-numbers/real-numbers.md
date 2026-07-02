@@ -10,6 +10,7 @@ tags:
   - dedekind-cut
   - density
   - nested-intervals
+  - nth-root
   - ordered-field
   - real-line
   - real-numbers
@@ -54,6 +55,8 @@ S = \\{ q \in \mathbb{Q} : q^2 < 2 \\}
 $$
 
 This set is non-empty and bounded above within $\mathbb{Q}$, yet it has no least upper bound in $\mathbb{Q}$. The value $\sqrt{2}$, which plays the role of $\sup S$, is irrational and therefore absent from $\mathbb{Q}$. In $\mathbb{R}$, the number $\sqrt{2}$ exists and one has $\sup S = \sqrt{2}$.
+
+Completeness produces the number $\sqrt{2}$ itself. Formed inside $\mathbb{R},$ the set $\\{ x \in \mathbb{R} : x^2 < 2 \\}$ is non-empty and bounded above, so it has a supremum $r.$ The two alternatives $r^2 < 2$ and $r^2 > 2$ each lead to a contradiction, since a number slightly above or slightly below $r$ would still lie in the set or still bound it, so $r^2 = 2.$ The same argument applied to $\\{ x \in \mathbb{R} : x^n < c \\}$ for $c > 0$ gives a supremum whose $n$-th power equals $c,$ so every positive real has a unique positive $n$-th root for each [natural number](../natural-numbers/) $n.$ Radicals are defined in $\mathbb{R}$ through this construction, and the same suprema do not exist in $\mathbb{Q}.$
 
 A symmetric notion applies to sets bounded below. A subset $S \subseteq \mathbb{R}$ is bounded below if there exists $m \in \mathbb{R}$ such that $x \geq m$ for all $x \in S$. The greatest lower bound, or [infimum](../supremum-and-infimum/), is denoted $\inf S$. The completeness axiom implies that every non-empty subset of $\mathbb{R}$ bounded below has an infimum in $\mathbb{R}$.
 
@@ -134,7 +137,9 @@ The real number $\sqrt{2}$, for instance, is the equivalence class of any Cauchy
 
 The rational numbers are dense in $\mathbb{R}$: between any two distinct real numbers there exists a rational number. For every $x, y \in \mathbb{R}$ with $x < y$, there exists $q \in \mathbb{Q}$ such that $x < q < y$. This follows from the Archimedean property. Given $x < y$, one finds a natural number $n$ satisfying $n(y - x) > 1$, and among the integers $m$ with $m > nx$ one can identify one for which $x < m/n < y$ holds.
 
-Despite the density of $\mathbb{Q}$ in $\mathbb{R}$, the two sets differ in cardinality. The rational numbers are countable, that is, their elements can be placed in a one-to-one correspondence with the natural numbers. The real numbers are uncountable, since no such correspondence exists. This result implies that the [irrational numbers](../irrational-numbers/), which form the set $\mathbb{R} \setminus \mathbb{Q}$, constitute the overwhelming majority of the real line.
+The same density is the basis for the standard method of proving non-strict inequalities in $\mathbb{R}.$ If a real number $x$ satisfies $x \leq \varepsilon$ for every $\varepsilon > 0,$ then $x \leq 0,$ since a positive $x$ would exceed the admissible choice $\varepsilon = x/2.$ In the version with absolute value, $|x| \leq \varepsilon$ for all $\varepsilon > 0$ forces $x = 0.$ An analyst proves an equality by bounding a difference below every positive threshold, and the same technique returns in the study of [limits](../limits/).
+
+Despite the density of $\mathbb{Q}$ in $\mathbb{R}$, the two sets differ in cardinality. The rational numbers are countable, that is, their elements can be placed in a one-to-one correspondence with the natural numbers. The real numbers are uncountable, since no such correspondence exists. This result implies that the [irrational numbers](../irrational-numbers/), which form the set $\mathbb{R} \setminus \mathbb{Q}$, are far more numerous than the rationals.
 
 The nested interval theorem supplies the argument behind this uncountability. A sequence of closed intervals $I_n = [a_n, b_n]$ is nested when $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$. Completeness guarantees that their intersection contains at least one point:
 
@@ -145,6 +150,8 @@ $$
 The left endpoints form a non-decreasing sequence bounded above by every $b_m$, so they admit a supremum $x = \sup_n a_n$ satisfying $a_n \leq x \leq b_n$ for all $n$. The point $x$ then lies in every interval. When the lengths $b_n - a_n$ tend to zero, the intersection reduces to this single point. The rational numbers fail the property: a sequence of nested intervals with rational endpoints shrinking around $\sqrt{2}$ has empty intersection in $\mathbb{Q}$.
 
 The uncountability of $\mathbb{R}$ follows by contradiction. Suppose the real numbers in $[0, 1]$ could be arranged in a list $x_1, x_2, x_3, \ldots$. Choose a closed interval $I_1 \subseteq [0, 1]$ that excludes $x_1$, then a closed interval $I_2 \subseteq I_1$ that excludes $x_2$, and continue so that $x_n \notin I_n$ at every step. The nested interval theorem provides a point $x \in \bigcap_n I_n$. This $x$ differs from each $x_n$ and therefore escapes the list, contradicting the assumption that the list was complete.
+
+A second proof of the same result, Cantor's diagonal argument, works directly with decimal expansions. Write each number of the supposed list as $x_k = 0.d_{k1} d_{k2} d_{k3} \ldots,$ and build a new number $y = 0.e_1 e_2 e_3 \ldots$ whose $k$-th digit $e_k$ is chosen to differ from $d_{kk},$ for example $e_k = 1$ when $d_{kk} \neq 1$ and $e_k = 2$ when $d_{kk} = 1.$ By construction $y$ disagrees with $x_k$ in the $k$-th place for every $k,$ so it is absent from the list, and $[0, 1]$ cannot be enumerated. Selecting the digits from $\\{ 1, 2 \\}$ avoids the two-valued expansions such as $0.4999\ldots = 0.5000\ldots,$ which are the only source of ambiguity in decimal notation.
 
 The Bolzano-Weierstrass theorem is a further consequence of completeness. Every bounded sequence of real numbers has a convergent subsequence. The result guarantees that bounded infinite sets cannot spread indefinitely without accumulating somewhere, and it underpins the theory of [limits](../limits/), continuous functions, and compactness in $\mathbb{R}$.
 
@@ -157,3 +164,5 @@ The real number system is the unique complete ordered field. Any two complete or
 ## Intervals
 
 Among the subsets of $\mathbb{R}$, [intervals](../intervals/) occupy a central role. An interval is a subset $I \subseteq \mathbb{R}$ with the property that, whenever two points belong to it, every point lying between them also belongs to it. Intervals may be bounded, such as the open interval $(a, b)$ or the closed interval $[a, b]$, or unbounded, such as $[a, +\infty)$ or $(-\infty, b)$. The entire real line is itself an interval, denoted $(-\infty, +\infty)$.
+
+Intervals vary widely in length yet share a single cardinality. The linear map $x \mapsto 2x$ sends $[0, 1]$ onto $[0, 2]$ bijectively, and the tangent function carries the bounded interval $(-\pi/2, \pi/2)$ onto the whole line, so even a bounded interval matches $\mathbb{R}$ point for point. The intervals $[0, 1]$ and $(0, 1)$ have the same cardinality too, although writing down an explicit bijection between them takes more effort. Length still separates these intervals, but it measures size on a finer scale than cardinality does.

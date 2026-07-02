@@ -136,6 +136,8 @@ $$\lim_{x \to x_0^-} f'(x) = \lim_{x \to x_0^+} f'(x) = \ell$$
 
 then the function is differentiable at $x_0$, and it follows that $f'(x_0) = \ell$. This criterion is a consequence of [Lagrange's Theorem](../lagrange-theorem/), which allows each one-sided limit of the derivative to be transferred to the corresponding one-sided limit of the difference quotient.
 
+When $f$ is differentiable on the whole interval, including $x_0$, the two one-sided limits of $f'$ cannot exist and differ. A derivative has no jump discontinuity, by [Darboux's Theorem](../darboux-theorem/), so whenever both one-sided limits are finite they are forced to agree, and $f'$ is continuous at $x_0$. A corner, where the one-sided derivatives are finite and distinct, can arise only at a point where the function is not differentiable to begin with.
+
 > The hypothesis of continuity at $x_0$ is essential. If the function has a jump at $x_0$, the one-sided limits of $f'(x)$ may exist and coincide even though the function is not differentiable, and not even continuous, at the point.
 
 The criterion provides a sufficient condition only. A function can be differentiable at $x_0$ even when the limit of $f'(x)$ as $x \to x_0$ does not exist. The function defined by $f(x) = x^2 \sin(1/x)$ for $x \neq 0$ and $f(0) = 0$ is differentiable at the origin, since its difference quotient $x\sin(1/x)$ tends to $0$, so that $f'(0) = 0$. For $x \neq 0$, however, the derivative is:

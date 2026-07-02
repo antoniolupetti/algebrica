@@ -11,11 +11,11 @@ tags:
 ---
 ## Introduction
 
-**Definition. 1.** Consider a function $y = f(x)$ defined on an interval $[a,b]$. The derivative of $f$ at a point $c \in (a,b)$, denoted by $f'(c)$, is defined as the limit of the [difference quotient](../difference-quotient/) as $h \to 0$, provided that this limit exists and is finite:
+Consider a function $y = f(x)$ defined on an interval $[a,b]$. The derivative of $f$ at a point $c \in (a,b)$, denoted by $f'(c)$, is defined as the limit of the [difference quotient](../difference-quotient/) as $h \to 0$, provided that this limit exists and is finite:
 
 $$f'(c) = \lim_{h \to 0} \frac{f(c+h) - f(c)}{h}$$
 
-If this limit exists for every $x$ in an interval, then the derivative defines a new function $f'(x)$, called the derivative of $f$. The value $f'(x)$ represents the slope of the tangent line to the graph of $f$ at the point $x$.
+If this limit exists for every $x$ in an interval, then the derivative defines a new function $f'(x)$, called the derivative of $f$. The value $f'(x)$ is the slope of the tangent line to the graph of $f$ at the point $x$.
 
 The geometric meaning of the derivative becomes clear by considering two points on the graph, $A(c, f(c))$ and $B(c+h, f(c+h))$. The difference quotient is the slope of the secant [line](../lines/) through $A$ and $B$. When $h \to 0$, the point $B$ approaches the point $A$, and the secant line through $A$ and $B$ tends to the tangent line to the curve at $A$. The slope of this tangent line is the derivative of the function at the point $c$.
 
@@ -25,19 +25,27 @@ Writing the tangent line at $A$ in the form $y = mx + q$, the derivative $f'(c)$
 
 - - -
 
-**Definition 2.** A function is differentiable at a point $c$ if the derivative $f'(c)$ exists. If a function is differentiable at $c$, then:
+A function is differentiable at a point $c$ if the derivative $f'(c)$ exists. If a function is differentiable at $c$, then:
 
 + The function is defined in a neighborhood of the point $c$.
 + The limit of the [difference quotient](../difference-quotient/) at $c$ exists and is finite as $h \to 0$.
 + The right-hand and left-hand limits of the difference quotient exist and are equal.
 
-If a function $f(x)$ is differentiable at a point $c$, then the function is also [continuous](../continuous-functions/) at that point. However, not all functions that are continuous at a point $c$ are differentiable. In other words, differentiable functions form a subset of continuous functions. The points where continuity holds but differentiability fails are discussed in the entry on [points of non-differentiability](../points-of-non-differentiability/).
+If a function $f(x)$ is differentiable at a point $c$, then it is also [continuous](../continuous-functions/) at that point. To prove this, write the increment of the function, for $h \neq 0$, as the product of the difference quotient and the increment of the variable:
+
+$$f(c+h) - f(c) = \frac{f(c+h) - f(c)}{h} \cdot h$$
+
+As $h \to 0$, the difference quotient tends to $f'(c)$, which exists by hypothesis, while the second factor tends to $0$. The product therefore tends to zero:
+
+$$\lim_{h \to 0} \bigl( f(c+h) - f(c) \bigr) = f'(c) \cdot 0 = 0$$
+
+This means $\lim_{h \to 0} f(c+h) = f(c)$, which is the definition of continuity at $c$. The converse does not hold, since a function continuous at $c$ need not be differentiable there, so the differentiable functions form a proper subset of the continuous ones. The points where continuity holds but differentiability fails are discussed in the entry on [points of non-differentiability](../points-of-non-differentiability/).
 
 - - -
 
-The inverse operation of differentiation is [integration](../indefinite-integrals/). This deep connection between derivatives and integrals is formalized by the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/), which establishes that differentiation and integration are inverse processes.
+The inverse operation of differentiation is [integration](../indefinite-integrals/). The connection between derivatives and integrals is made precise by the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/), which states that differentiation and integration are inverse processes.
 
-> Derivatives play a fundamental role in physics as well. A classic example is [velocity](../velocity/), which is defined as the derivative of position with respect to time. This simple concept forms the basis for understanding motion and change in the physical world.
+> Derivatives also appear in physics. A classic example is [velocity](../velocity/), which is the derivative of position with respect to time, and acceleration follows as the derivative of velocity.
 
 ## Example 1
 
@@ -116,7 +124,22 @@ Computing a derivative directly from the definition is often laborious. For this
 
 > The first two formulas have an immediate geometric justification. The graph of the constant function $f(x) = c$ is a line parallel to the $x$-axis, so its slope is $0$ at every point. The graph of $f(x) = x$ is the bisector of the first and third quadrants, whose slope is $1$ at every point. The power rule $f(x) = x^a$, with derivative $f'(x) = ax^{a-1}$, contains as particular cases both $f(x) = x$, obtained for $a = 1$, and $f(x) = \sqrt{x}$, obtained for $a = \frac{1}{2}$.
 
-## Differentiation Rules
+## The power rule for real exponents
+
+The table lists the derivative of $f(x) = x^a$ for an arbitrary real exponent $a$, a formula the geometric remarks above do not establish. For $x > 0$ the power has the equivalent form $x^a = e^{a\ln(x)}$, which writes it in terms of the exponential and the natural logarithm, two functions whose derivatives are already in the table. Applying the [chain rule](../chain-rule/) with outer function $e^t$ and inner function $a\ln(x)$, whose derivative is $a/x$, we obtain:
+
+$$
+\begin{align}
+D[x^a] &= D\left[e^{a\ln(x)}\right] \\[6pt]
+&= e^{a\ln(x)} \cdot \frac{a}{x} \\[6pt]
+&= x^a \cdot \frac{a}{x} \\[6pt]
+&= ax^{a-1}
+\end{align}
+$$
+
+The argument requires $x > 0$, since the logarithm appears in the exponent. For a positive integer exponent $n$ the same result follows instead from the [product rule](../differentiation-rules/) applied to the product of $n$ equal factors, and in that case it holds for every real $x$.
+
+## Differentiation rules
 
 The derivative of the product of a constant $c$ and a differentiable function $f(x)$ is equal to the product of the constant and the derivative of the function:
 
@@ -200,20 +223,21 @@ A further differentiation yields the third derivative:
 
 $$f'''(x) = 18$$
 
-First and second derivatives play a fundamental role in analyzing the local behavior of functions, particularly in identifying [maximum, minimum, and inflection points](../maximum-minimum-and-inflection-points/). A systematic treatment of this topic, including notation, general formulas, and the second derivative test, is given in the entry on [higher-order derivatives](../higher-order-derivatives/).
+First and second derivatives describe the local behavior of a function, in particular the location of [maximum, minimum, and inflection points](../maximum-minimum-and-inflection-points/). A systematic treatment of this topic, including notation, general formulas, and the second derivative test, is given in the entry on [higher-order derivatives](../higher-order-derivatives/).
 
-## Key theorems in differential calculus
+## Theorems in differential calculus
 
-Derivatives are also at the foundation of some of the most important theorems in differential calculus.
+Several important theorems in differential calculus rest on derivatives.
 
 + [Weierstrass's Theorem](../weierstrass-theorem/) guarantees that a continuous function on a closed and bounded interval attains both its maximum and minimum values.
 + [Fermat's Theorem](../fermat-theorem/) establishes a necessary condition for local extrema.
-+ [Rolle's Theorem](../rolle-theorem/) and [Lagrange's Theorem](../lagrange-theorem/), also known as the Mean Value Theorem, describe fundamental properties of differentiable functions on a closed interval.
-+ Further generalizations are provided by [Cauchy's Theorem](../cauchy-theorem/) and [L'Hôpital's Rule](../hopital-rule/), which extends the use of derivatives to the evaluation of [indeterminate forms](../indeterminate-forms/) of limits.
++ [Rolle's Theorem](../rolle-theorem/) and [Lagrange's Theorem](../lagrange-theorem/), also known as the Mean Value Theorem, describe properties of differentiable functions on a closed interval.
++ [Cauchy's Theorem](../cauchy-theorem/) generalizes these results, and [L'Hôpital's Rule](../hopital-rule/) extends the use of derivatives to the evaluation of [indeterminate forms](../indeterminate-forms/) of limits.
++ [Darboux's Theorem](../darboux-theorem/) shows that a derivative has the intermediate value property, even where it is not continuous.
 
 ## Equation of the tangent line
 
-The slope of the tangent line to the graph of a function $f(x)$ at a point $x_0$ is given by the derivative $f'(x_0)$. This value represents the instantaneous rate of change of the function at that point and coincides with the limit of the slopes of the secant lines approaching $x_0$.
+The slope of the tangent line to the graph of a function $f(x)$ at a point $x_0$ is given by the derivative $f'(x_0)$. This value is the instantaneous rate of change of the function at that point and coincides with the limit of the slopes of the secant lines approaching $x_0$.
 
 More precisely, if we consider a second point $x_0 + h$, the slope of the secant line through the points $(x_0, f(x_0))$ and $(x_0 + h, f(x_0 + h))$ is:
 
@@ -225,7 +249,7 @@ If the derivative exists and is finite, the tangent line is not vertical. In tha
 
 $$y - f(x_0) = f'(x_0)(x - x_0)$$
 
-This linear function provides the best linear approximation of $f$ near $x_0$. In fact, for values of $x$ close to $x_0$, the increment of the function satisfies:
+This linear function is the best linear approximation of $f$ near $x_0$. In fact, for values of $x$ close to $x_0$, the increment of the function satisfies:
 
 $$f(x) \approx f(x_0) + f'(x_0)(x - x_0)$$
 
@@ -274,7 +298,7 @@ Evaluating the function at these points, we find $f(3) = \frac{18}{18} = 1$ and 
 
 ## Partial derivatives
 
-Derivatives are fundamental in multivariable calculus. When a function depends on multiple variables, the rate of change with respect to a single variable, while keeping all other variables constant, is described by the partial derivative:
+Derivatives extend to multivariable calculus. When a function depends on several variables, the rate of change with respect to a single variable, holding the others constant, is the partial derivative:
 
 $$\frac{\partial f}{\partial x_i}(x_0) = \lim_{h \to 0} \frac{f(x_1^0, \ldots, x_i^0 + h, \ldots, x_n^0) - f(x_0)}{h}$$
 

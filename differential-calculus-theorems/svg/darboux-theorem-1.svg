@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="246px" viewBox="0 0 306 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="97" y="11">There exists a point c where the </tspan>
+                <tspan x="97" y="24">derivative is equal to any value </tspan>
+                <tspan x="97" y="37">strictly between f′(a) and f′(b).</tspan>
+            </text>
+            <line x1="191.5" y1="91.5" x2="191.5" y2="48.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="64.5" y1="188.5" x2="64.5" y2="227.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="241.5" y1="148.5" x2="241.5" y2="225.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="190.5" y1="125.5" x2="190.5" y2="225.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M26.5,76.9801356 L26.9357878,77.7548694 L31.4357878,85.7548694 L31.6809184,86.1906571 L30.8093429,86.6809184 L30.5642122,86.2451306 L27,79.908 L27,245 L26,245 L26,79.908 L22.4357878,86.2451306 L22.1906571,86.6809184 L21.3190816,86.1906571 L21.5642122,85.7548694 L26.0642122,77.7548694 L26.5,76.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="9" y="85">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296" y="242">x</tspan>
+            </text>
+            <path d="M294.809343,220.319082 L295.245131,220.564212 L303.245131,225.064212 L304.019864,225.5 L303.245131,225.935788 L295.245131,230.435788 L294.809343,230.680918 L294.319082,229.809343 L294.754869,229.564212 L301.091,226 L-0.5,226 L-0.5,225 L301.091,225 L294.754869,221.435788 L294.319082,221.190657 L294.809343,220.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M37,223 C79.7343891,160.128668 120.734389,126.462001 160,122 C199.265611,117.537999 235.598944,134.871332 269,174" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="64.5" cy="186.5" r="2.5"></circle>
+            <circle fill="#333333" cx="241.5" cy="147.5" r="2.5"></circle>
+            <circle fill="#333333" cx="190.5" cy="123" r="2.5"></circle>
+            <line x1="210.5" y1="121.5" x2="269.5" y2="170.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="144.5" y1="115.5" x2="233.5" y2="128.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="44.5" y1="211.5" x2="86.7795853" y2="156.301653" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="61" y="240">a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="238" y="240">b</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="185" y="240">c</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="41" y="175">f'(a)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="248" y="142">f’(b)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="181" y="111">f’(c)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

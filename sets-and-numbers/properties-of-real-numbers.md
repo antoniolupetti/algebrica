@@ -80,7 +80,7 @@ $$
 a \cdot b = b \cdot a
 $$
 
-The property is an intrinsic feature of the algebraic structure of $\mathbb{R}$. The real numbers form a commutative [field](../fields/), in which both addition and multiplication are commutative binary operations. Commutativity does not apply to every algebraic operation. Subtraction and division, for instance, are not commutative in general:
+Commutativity is part of the algebraic structure of $\mathbb{R}$. The real numbers form a commutative [field](../fields/), in which both addition and multiplication are commutative binary operations. Commutativity does not apply to every algebraic operation. Subtraction and division, for instance, are not commutative in general:
 
 $$
 a - b \neq b - a \quad \text{and} \quad \frac{a}{b} \neq \frac{b}{a}
@@ -193,7 +193,7 @@ $$
 
 The number $1$ is called the multiplicative identity, because multiplying by one leaves every real number unchanged. As in the additive case, the identity element is unique. If a number $n$ satisfies $a \cdot n = a$ for all $a \in \mathbb{R}$, then necessarily $n = 1$.
 
-> The existence of identity elements is one of the defining features of the real numbers as a field. The additive identity $0$ anchors the additive structure, while the multiplicative identity $1$ anchors the multiplicative structure.
+> The existence of identity elements is one of the defining properties of the real numbers as a field. The additive identity $0$ is neutral for addition, and the multiplicative identity $1$ is neutral for multiplication.
 
 ## Inverse property
 
@@ -267,7 +267,9 @@ The first rule states that multiplication by a positive number preserves the dir
 
 The same statements hold for the symbols $\leq$, $>$, and $\geq$, with the same dependence of the direction on the sign of the multiplier. Division by a positive or negative quantity is treated as multiplication by its reciprocal, and the same rules apply.
 
-> The reversal of the direction upon multiplication by a negative number is the algebraic feature of the order relation that has no counterpart in the equality relation. The operational consequences of this rule and its role in solving [inequalities](../inequalities/) are treated in the corresponding chapter.
+A related rule concerns the reciprocals of positive numbers. If $0 < a < b,$ then the reciprocals satisfy $0 < 1/b < 1/a,$ so inverting two positive numbers reverses their order. The reciprocal of a positive number is itself positive, because a positive number multiplied by a negative one would give a negative product, contradicting $a(1/a) = 1 > 0.$ Multiplying the inequality $a < b$ by the positive quantity $1/(ab)$ then yields $1/b < 1/a.$
+
+> The reversal of the direction upon multiplication by a negative number is the algebraic property of the order relation that has no counterpart in the equality relation. The operational consequences of this rule and its role in solving [inequalities](../inequalities/) are treated in the corresponding chapter.
 
 ## The sign of a product
 
@@ -289,6 +291,8 @@ The equality $a^2 = 0$ holds if and only if $a = 0$, so the square of a nonzero 
 
 The square rule is the algebraic foundation of many order relations involving polynomial expressions. As an illustration, the expression $a^2 + b^2$ is non-negative for every pair of real numbers $a$ and $b$, and it vanishes if and only if both $a$ and $b$ are zero.
 
+Squaring is also monotone on the non-negative numbers. If $0 \leq a < b,$ then $a^2 < b^2,$ which follows from the factorisation $b^2 - a^2 = (b - a)(b + a)$ once one observes that both factors are positive. For non-negative numbers the converse holds as well, so $a^2 < b^2$ forces $a < b.$ Because of this monotonicity, the square root inverts squaring on $[0, +\infty),$ and two non-negative numbers can be compared through their squares.
+
 The same reasoning applies to even powers $a^{2k}$ for any positive integer $k$, since $a^{2k} = (a^k)^2$ is the square of a real number. The corresponding statement for odd powers does not hold: an odd power preserves the sign of its base, so $a^{2k+1}$ is positive when $a > 0$ and negative when $a < 0$.
 
 ## The ordered field structure
@@ -296,3 +300,5 @@ The same reasoning applies to even powers $a^{2k}$ for any positive integer $k$,
 The properties presented in the previous sections combine with the field properties to make $\mathbb{R}$ an ordered field, that is, a field in which the order relation is compatible with the field operations. The complete characterisation requires a small number of foundational axioms: the field axioms (closure, associativity, commutativity, distributivity, identity elements, inverse elements) and the order axioms (trichotomy, transitivity, compatibility of $<$ with $+$ and with multiplication by positive numbers). From these axioms, every operational rule for the manipulation of expressions involving the relations $<$, $\leq$, $>$, and $\geq$ can be obtained by a sequence of elementary deductions.
 
 The ordered field structure alone does not single out $\mathbb{R}$ among other number systems. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ also form an ordered field with the same axioms, yet they fail to capture the full structure of the real line because of the presence of gaps. The property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$ is the completeness of the order relation, discussed at the beginning of this entry: every non-empty subset of $\mathbb{R}$ bounded above has a least upper bound in $\mathbb{R}$, while the analogous statement fails in $\mathbb{Q}$. The combination of the ordered field axioms with the completeness axiom characterises $\mathbb{R}$ uniquely.
+
+Being a field and being an ordered field are separate conditions, and not every field meets the second. The [complex numbers](../complex-numbers/) $\mathbb{C}$ form a field, yet no order relation on $\mathbb{C}$ is compatible with its operations. In any ordered field the square of a nonzero element is positive, while in $\mathbb{C}$ one has $i^2 = -1.$ An order compatible with the operations would force $i^2 > 0,$ that is $-1 > 0,$ in conflict with $1 > 0.$ The order is extra structure that $\mathbb{R}$ admits and $\mathbb{C}$ does not.
