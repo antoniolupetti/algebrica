@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="264px" viewBox="0 0 313 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="48.5" y1="216.5" x2="267.5" y2="216.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M116,89.4801356 L116.435788,90.2548694 L120.935788,98.2548694 L121.180918,98.6906571 L120.309343,99.1809184 L120.064212,98.7451306 L116.5,92.408 L116.5,259.5 L115.5,259.5 L115.5,92.408 L111.935788,98.7451306 L111.690657,99.1809184 L110.819082,98.6906571 L111.064212,98.2548694 L115.564212,90.2548694 L116,89.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,237.319082 L295.245131,237.564212 L303.245131,242.064212 L304.019864,242.5 L303.245131,242.935788 L295.245131,247.435788 L294.809343,247.680918 L294.319082,246.809343 L294.754869,246.564212 L301.093,242.999 L295,243 L3.85379111e-16,243 L-0.5,243 L-0.5,242 L-3.85379111e-16,242 L295,242 L301.089,241.999 L294.754869,238.435788 L294.319082,238.190657 L294.809343,237.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="75.5" y1="48.5" x2="75.5" y2="101.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="48" y="11">The equation y = ax² + bx + c defines </tspan>
+                <tspan x="48" y="24">a parabola with a vertical axis </tspan>
+                <tspan x="48" y="37">parallel to the y-axis.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="259.260949">x</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="92.5" y="96">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="32.5" y="221">d</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="148.5" y="179">F</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="159.5" y="212">V</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="244.5" y="164">P</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="225.5" y="233">D</tspan>
+            </text>
+            <line x1="163.5" y1="175.5" x2="228.5" y2="156.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="228.5" y1="214.5" x2="228.5" y2="154.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M58,90 C92.8000001,161.333333 127.8,197 163,197 C190.505586,197 218.092585,175.22195 245.760998,131.665849 M255.849885,114.42257 C258.370726,109.890176 262.754098,101.74932 269,90" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="163.5" cy="175.5" r="2.5"></circle>
+            <circle fill="#333333" cx="163.5" cy="197.5" r="2.5"></circle>
+            <circle fill="#333333" cx="228.5" cy="156.5" r="2.5"></circle>
+            <circle fill="#333333" cx="228.5" cy="217.5" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="247" y="127">y=ax²+bx+c</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

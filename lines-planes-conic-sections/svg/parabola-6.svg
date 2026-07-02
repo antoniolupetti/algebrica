@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="242px" viewBox="0 0 307 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="36.5" y1="218.5" x2="255.5" y2="218.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M151.5,79.4801356 L151.935788,80.2548694 L156.435788,88.2548694 L156.680918,88.6906571 L155.809343,89.1809184 L155.564212,88.7451306 L152,82.408 L152,241.5 L151,241.5 L151,82.408 L147.435788,88.7451306 L147.190657,89.1809184 L146.319082,88.6906571 L146.564212,88.2548694 L151.064212,80.2548694 L151.5,79.4801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="98.5" y1="177.5" x2="203.5" y2="177.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M294.809343,194.319082 L295.245131,194.564212 L303.245131,199.064212 L304.019864,199.5 L303.245131,199.935788 L295.245131,204.435788 L294.809343,204.680918 L294.319082,203.809343 L294.754869,203.564212 L301.093,199.999 L295,200 L3.85379111e-16,200 L-0.5,200 L-0.5,199 L-3.85379111e-16,199 L295,199 L301.089,198.999 L294.754869,195.435788 L294.319082,195.190657 L294.809343,194.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="187.5" y1="49.5" x2="187.5" y2="165.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="110" y="11">The latus rectum is the chord of </tspan>
+                <tspan x="110" y="24">the parabola through the focus </tspan>
+                <tspan x="110" y="37">and parallel to the directrix.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="216.260949">x</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="128.5" y="86">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="20.5" y="223">d</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="141.5" y="170">F</tspan>
+            </text>
+            <path d="M46,114 C80.8000001,170.666667 115.8,199 151,199 C186.2,199 221.533333,170.666667 257,114" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#333333" cx="151.5" cy="177.5" r="2.5"></circle>
+            <circle stroke="#333333" fill="#F4EFEE" cx="98" cy="177.5" r="2.5"></circle>
+            <circle stroke="#333333" fill="#F4EFEE" cx="204" cy="177.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

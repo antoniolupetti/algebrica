@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="241px" viewBox="0 0 307 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="235.5" y="131">y=ax²</tspan>
+            </text>
+            <line x1="36.5" y1="207.5" x2="255.5" y2="207.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M151.5,67.9801356 L151.935788,68.7548694 L156.435788,76.7548694 L156.680918,77.1906571 L155.809343,77.6809184 L155.564212,77.2451306 L152,70.908 L152,193.5 L151,193.5 L151,70.908 L147.435788,77.2451306 L147.190657,77.6809184 L146.319082,77.1906571 L146.564212,76.7548694 L151.064212,68.7548694 L151.5,67.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,183.319082 L295.245131,183.564212 L303.245131,188.064212 L304.019864,188.5 L303.245131,188.935788 L295.245131,193.435788 L294.809343,193.680918 L294.319082,192.809343 L294.754869,192.564212 L301.093,188.999 L295,189 L3.85379111e-16,189 L-0.5,189 L-0.5,188 L-3.85379111e-16,188 L295,188 L301.089,187.999 L294.754869,184.435788 L294.319082,184.190657 L294.809343,183.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="78.5" y1="48.5" x2="78.5" y2="89.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="29" y="11">The coefficient a in the equation y=ax² determines </tspan>
+                <tspan x="29" y="24">the width of the parabola. As |a| increases, the </tspan>
+                <tspan x="29" y="37">parabola becomes narrower.</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="205.260949">x</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="128.5" y="75">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="20.5" y="212">d</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="147.5" y="203">V</tspan>
+            </text>
+            <path d="M46,103 C80.8000001,159.666667 115.8,188 151,188 C178.375229,188 205.831102,170.863273 233.367619,136.589819" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M245.214576,120.427608 C247.527921,117.096963 251.456395,111.28776 257,103" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M78,103 C102.079621,159.666667 126.29763,188 150.654028,188 C175.010426,188 199.459084,159.666667 224,103" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M104,102 C119.503318,158.666667 135.095735,187 150.777251,187 C166.458768,187 182.199684,158.666667 198,102" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <circle fill="#333333" cx="151.5" cy="188.5" r="2.5"></circle>
+            <line x1="151.5" y1="208" x2="151.5" y2="240.5" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

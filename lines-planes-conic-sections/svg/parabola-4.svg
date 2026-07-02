@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="270px" viewBox="0 0 306 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="143.5" y1="64.5" x2="143.5" y2="105.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="129" y="11">The equation x=ay² defines a </tspan>
+                <tspan x="129" y="24">parabola with a horizontal axis. </tspan>
+                <tspan x="129" y="37">When a&gt;0, the parabola opens </tspan>
+                <tspan x="129" y="50">to the right.</tspan>
+            </text>
+            <line x1="0" y1="179.5" x2="104.782617" y2="179.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M70.5,63.9801356 L70.9357878,64.7548694 L75.4357878,72.7548694 L75.6809184,73.1906571 L74.8093429,73.6809184 L74.5642122,73.2451306 L71,66.908 L71,269 L70,269 L70,66.908 L66.4357878,73.2451306 L66.1906571,73.6809184 L65.3190816,73.1906571 L65.5642122,72.7548694 L70.0642122,64.7548694 L70.5,63.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,174.319082 L295.245131,174.564212 L303.245131,179.064212 L304.019864,179.5 L303.245131,179.935788 L295.245131,184.435788 L294.809343,184.680918 L294.319082,183.809343 L294.754869,183.564212 L301.091,180 L115.5,180 L115.5,179 L301.091,179 L294.754869,175.435788 L294.319082,175.190657 L294.809343,174.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="295.5" y="199.260949">x</tspan>
+            </text>
+            <line x1="51.5" y1="89.5" x2="51.5" y2="127.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="51.5" y1="146" x2="51.5" y2="269.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="52.5" y="71">y</tspan>
+            </text>
+            <path d="M252,268 C131.333333,239.666646 71,210.333313 71,180 C71,149.666687 131.333333,118.666687 252,87" stroke="#333333" stroke-width="2"></path>
+            <text font-size="13" font-weight="normal" fill="#BABABA">
+                <tspan x="46.5" y="140">d</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="107.5" y="183">F</tspan>
+            </text>
+            <circle fill="#333333" cx="94.5" cy="179.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="265px" viewBox="0 0 216 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="67.5" y1="49.5" x2="67.5" y2="97.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">A parabola is one of the conic sections </tspan>
+                <tspan x="0" y="24">obtained by intersecting a conical surface </tspan>
+                <tspan x="0" y="37">with a plane at a particular angle.</tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="99.5" cy="123" rx="68" ry="16.5"></ellipse>
+            <path d="M31.5,247 C31.5,256.388841 62.1684946,264 100,264 C137.831505,264 168.5,256.388841 168.5,247" stroke="#BABABA"></path>
+            <path d="M168.5,247 C168.5,244.337677 166.034018,241.818293 161.637992,239.574856 C150.531171,233.906677 127.10391,230 100,230 C76.4957861,230 52.9019517,232.832023 43.4190331,237.414704 C36,241 31.5,243.444322 31.5,247" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="35.5" y1="128.5" x2="167.15" y2="243.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="32.23" y1="128.5" x2="163.5" y2="244.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(97.865000, 186.500000) scale(-1, 1) translate(-97.865000, -186.500000) "></line>
+            <path d="M35,163 L63,201 L144,98 L98,78 L77.3896252,105.4805 L76.2,107 L78,107 L107,127 C94.8539557,137.056297 86.8539557,143.389631 83,146 C77.8008106,149.521526 73.2097097,150.421636 71,152 C69.5465871,153.038152 64.4302931,154.430293 63,153 C61,151 56.6223908,147.167624 49.8671725,141.502872 L35,163 Z" fill="#E6E6E6"></path>
+            <path d="M77.6299973,106.860897 C67.741465,125.256739 63.3440887,138.625491 62.4032683,145.002363 C62.174698,146.55161 62.0604129,148.016859 62.0604129,149.398111" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(69.845205, 128.129504) rotate(1.000000) translate(-69.845205, -128.129504) "></path>
+            <path d="M61.8520119,149.65282 C62.4362728,165.386012 104.183606,128.97694 106.816802,126.808635" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(84.334407, 140.197053) rotate(1.000000) translate(-84.334407, -140.197053) "></path>
+        </g>
+    </g>
+</svg>
