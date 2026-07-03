@@ -17,11 +17,11 @@ When a plane cuts a cone, the intersection projected onto the plane is a [circum
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
-The coefficients $a_{ij}$ are [real numbers](../real-numbers/), with $a_{11},$ $a_{12},$ $a_{22}$ not all zero so that at least one second-degree term is present. Each coefficient has a geometric meaning.
+The coefficients $a_{ij}$ are [real numbers](../real-numbers/), with $a_{11},$ $a_{12},$ $a_{22}$ not all zero so that at least one second-degree term is present.
 
-+ The terms $a_{11}$ and $a_{22}$ set the curvature along the $x$- and $y$-directions and, together with $a_{12},$ fix the type of conic and its orientation. 
-+ The coefficient $a_{12}$ governs the rotation of the curve relative to the coordinate axes, and the conic is aligned with the axes exactly when $a_{12} = 0.$ 
-+ The linear coefficients $a_{13}$ and $a_{23}$ are the translation terms along the $x$- and $y$-axes, while the constant $a_{33}$ shifts the curve relative to the origin.
++ The quadratic coefficients $a_{11},$ $a_{12},$ $a_{22}$ determine the type of the conic through the sign of $a_{11}a_{22} - a_{12}^2,$ positive for an ellipse, zero for a parabola, negative for a hyperbola.
++ The coefficient $a_{12}$ governs the rotation of the curve relative to the coordinate axes, and the conic is aligned with the axes exactly when $a_{12} = 0.$
++ The linear coefficients $a_{13}$ and $a_{23}$ and the constant $a_{33}$ fix the position of the curve in the plane, and a translation of the conic changes them while leaving the quadratic coefficients unchanged.
 
 When the polynomial $f(x, y)$ factors as a product of two linear polynomials:
 
@@ -29,7 +29,7 @@ $$f(x, y) = (ax + by + c)(a'x + b'y + c') = 0$$
 
 with [complex coefficients](../complex-numbers/) $a, b, c, a', b', c' \in \mathbb{C},$ the conic is degenerate.
 
-> A degenerate conic is not a proper curved figure such as a parabola, ellipse, or hyperbola. It reduces to a simpler object: a pair of lines, a single line, or in some cases the empty set.
+> A degenerate conic reduces to a pair of lines, a single line, or in some cases the empty set.
 
 ## The parabola
 
@@ -37,18 +37,15 @@ The parabola is the conic section obtained when the cutting plane is parallel to
 
 ![IMG 1.](svg/parabola-1.svg)
 
-
-A parabola is the set of all points in the plane equidistant from a fixed point $F,$ the focus, and a fixed line $d,$ the directrix. For any point $P$ on the curve, the distance from $P$ to the focus equals the distance from $P$ to the directrix. 
-
+A parabola is the set of all points in the plane equidistant from a fixed point $F,$ the focus, and a fixed line $d,$ the directrix.
 
 ![IMG 2.](svg/parabola-2.svg)
-
 
 The line through the focus perpendicular to the directrix is the axis of the parabola. The point $V$ where the parabola meets its axis is the vertex. A parabola with vertex at the origin and axis along the $y$-axis has equation:
 
 $$y = ax^2, \quad a \neq 0$$
 
-Such a parabola is symmetric with respect to the $y$-axis. When $a = 0$ the equation reduces to $y = 0,$ the $x$-axis, and the parabola is degenerate. Its focus and directrix are:
+Such a parabola is symmetric with respect to the $y$-axis. Its focus and directrix are:
 
 $$F = \left(0, \frac{1}{4a}\right)$$
 
@@ -58,7 +55,6 @@ When $a > 0$ the parabola opens upward, so $y \geq 0$ for every $x$ and the focu
 
 ![IMG 3.](svg/parabola-3.svg)
 
-
 ## Parabola with a horizontal axis
 
 Interchanging the roles of $x$ and $y$ makes the axis of the parabola horizontal. A parabola with vertex at the origin and axis along the $x$-axis has equation:
@@ -66,7 +62,6 @@ Interchanging the roles of $x$ and $y$ makes the axis of the parabola horizontal
 $$x = ay^2, \quad a \neq 0$$
 
 ![IMG 4.](svg/parabola-4.svg)
-
 
 Such a parabola is symmetric with respect to the $x$-axis. Its focus and directrix are:
 
@@ -76,7 +71,8 @@ $$x = -\frac{1}{4a}$$
 
 When $a > 0$ the parabola opens to the right, so $x \geq 0$ for every $y,$ and when $a < 0$ it opens to the left. As before, the opening narrows as $|a|$ increases. The general equation with axis parallel to the $x$-axis is $x = ay^2 + by + c$ with $a \neq 0.$ Its axis of symmetry is the horizontal line:
 
-$$y = -\frac{b}{2a}$$ 
+$$y = -\frac{b}{2a}$$
+
 Its vertex, focus, and directrix follow from the vertical case by exchanging the two coordinates.
 
 ## The parabola in standard quadratic form
@@ -85,9 +81,7 @@ A parabola with axis parallel to the $y$-axis has the general equation:
 
 $$y = ax^2 + bx + c, \quad a \neq 0$$
 
-
 ![IMG 5.](svg/parabola-5.svg)
-
 
 This is a [second-degree equation](../quadratic-equations/) in $x.$ Its axis of symmetry is the vertical line:
 
@@ -159,10 +153,11 @@ The endpoints are:
 
 $$\left(-\frac{1}{2|a|}, \frac{1}{4a}\right) \quad \text{and} \quad \left(\frac{1}{2|a|}, \frac{1}{4a}\right)$$
 
-The latus rectum has length: 
+The latus rectum has length:
+
 $$\frac{1}{|a|}$$
 
-A larger $|a|$ gives a shorter latus rectum and a narrower parabola, which matches the effect of $a$ on the width.
+A larger $|a|$ gives a shorter latus rectum and a narrower parabola.
 
 ## Eccentricity and the polar equation
 
@@ -182,8 +177,10 @@ $$
 $$
 
 The trigonometric function and the sign depend on the placement of the directrix. A directrix $x = h$ gives:
+
 $$r = \frac{h}{1 + \cos\theta}$$
-A horizontal directrix $y = \mp h$ gives: 
+
+A horizontal directrix $y = \mp h$ gives:
 
 $$r = \frac{h}{1 \pm \sin\theta}$$
 
@@ -214,7 +211,6 @@ $$
 &ax^2 + (b - m)x + (c - q) = 0
 \end{align}
 $$
-
 
 ![IMG 7.](svg/parabola-7.svg)
 
@@ -275,7 +271,7 @@ $$
 \end{align}
 $$
 
-	With $a = 1,$ $b = -m,$ and $c = 3m + 2,$ the discriminant is:
+With $a = 1,$ $b = -m,$ and $c = 3m + 2,$ the discriminant is:
 
 $$\Delta = m^2 - 12m - 8$$
 
