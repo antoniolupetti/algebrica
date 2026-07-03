@@ -66,6 +66,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Ordinary differential equations
 
 + [Notes on Diffy Qs](https://www.jirka.org/diffyqs/diffyqs.pdf), Jiří Lebl
++ [Elementary Differential Equations](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_DIFF_EQNS_I.PDF), William F. Trench
 
 ## Probability and statistics
 
@@ -73,6 +74,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [OpenIntro Statistics](https://leanpub.com/os), Christopher Barr, Mine Cetinkaya-Rundel, David Diez
 + [An Introduction to Statistical Learning](https://www.statlearning.com/s/ISLR-Seventh-Printing.pdf), Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
 + [The Elements of Statistical Learning](https://hastie.su.domains/Papers/ESLII.pdf), Trevor Hastie, Robert Tibshirani, Jerome Friedman
++ [Introduction to Probability](http://probabilitybook.net), Joseph K. Blitzstein, Jessica Hwang
 
 ## Optimization
 
@@ -98,6 +100,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Open Data Structures](https://opendatastructures.org/ods-python.pdf), Pat Morin
 + [Graph Theory](https://daiwz.net/course/disc_math/2023/Diestel_Graph_Theory.pdf), Reinhard Diestel
 + [Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf), Justin Solomon
++ [Mathematics for Computer Science](https://people.csail.mit.edu/meyer/mcs.pdf), Eric Lehman, F. Thomson Leighton, Albert R. Meyer
 
 ## Machine learning and artificial intelligence
 
@@ -115,3 +118,4 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [An Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf), Peter Holderrieth, Ezra Erives
 + [Transformers](https://web.stanford.edu/~jurafsky/slp3/8.pdf), Daniel Jurafsky, James H. Martin
 + [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223), Tong Xiao, Jingbo Zhu
++ [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
