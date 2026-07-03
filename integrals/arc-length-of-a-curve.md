@@ -111,7 +111,7 @@ so that $x'(t) = 1$ and $y'(t) = f'(t)$. Substituting these expressions into for
 
 ## Example 2
 
-Compute the circumference of a circle of radius $r$ centred at the origin, using the parametric representation:
+Compute the [circumference](../circumference/) of a circle of radius $r$ centred at the origin, using the parametric representation:
 
 $$\begin{cases} x(t) = r\cos t \\[6pt] y(t) = r\sin t \end{cases} \quad t \in [0, 2\pi]$$
 

@@ -10,7 +10,7 @@ tags:
 
 ## Definition
 
-The law of sines states that in any triangle, the ratio between the length of a side and the [sine](../sine-and-cosine/) of its opposite [angle](../angles-and-angular-measure/) is the same for all three sides. For a triangle with sides $a, b, c$ opposite to angles $\alpha, \beta, \gamma$ respectively, this common ratio equals twice the radius $r$ of the circumscribed circle:
+The law of sines states that in any triangle, the ratio between the length of a side and the [sine](../sine-and-cosine/) of its opposite [angle](../angles-and-angular-measure/) is the same for all three sides. For a triangle with sides $a, b, c$ opposite to angles $\alpha, \beta, \gamma$ respectively, this common ratio equals twice the radius $r$ of the circumscribed [circle](../circumference/):
 
 $$
 \frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2r

@@ -87,7 +87,7 @@ Several irrational numbers occur repeatedly across mathematics and admit short d
 + The square root $\sqrt{n}$ is irrational for every positive integer $n$ that is not a perfect square. The smallest cases are $\sqrt{2}$, $\sqrt{3}$, $\sqrt{5}$, $\sqrt{6}$, $\sqrt{7}$, $\sqrt{8}$, and $\sqrt{10}$.
 + The cube root $\sqrt[3]{n}$ is irrational for every positive integer $n$ that is not a perfect cube. The same principle generalises to higher roots.
 + The golden ratio, defined by $\varphi = (1 + \sqrt{5})/2$, is the positive root of $x^2 - x - 1 = 0$ and inherits its irrationality from $\sqrt{5}$.
-+ The number $\pi$ is the ratio of the circumference of a circle to its diameter and is transcendental.
++ The number $\pi$ is the ratio of the [circumference](../circumference/) of a circle to its diameter and is transcendental.
 + The number $e$ is the base of the natural logarithm and is transcendental as well. It can be introduced as the [limit of a sequence](../euler-number-limit-sequence/) of rationals that does not converge to a rational value.
 
 A further example is provided by the natural logarithm $\ln 2$, which is transcendental and therefore irrational. The decimal expansions of these constants begin as follows:

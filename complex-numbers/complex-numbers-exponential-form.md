@@ -176,7 +176,7 @@ The exponential form provides a natural framework for computing the $n$-th roots
 
 $$w_k = \sqrt[n]{r}e^{i(\theta + 2k\pi)/n} \qquad k = 0, 1, \ldots, n-1$$
 
-The modulus of each root is $\sqrt[n]{r}$, while the arguments are equally spaced by $2\pi/n$. Geometrically, the $n$ roots correspond to the vertices of a regular polygon inscribed in a circle of radius $\sqrt[n]{r}$ centered at the origin. The case $r = 1$ and $\theta = 0$ recovers the [roots of unity](../roots-of-unity/), whose vertices lie on the unit circle.
+The modulus of each root is $\sqrt[n]{r}$, while the arguments are equally spaced by $2\pi/n$. Geometrically, the $n$ roots correspond to the vertices of a regular polygon inscribed in a [circle](../circumference/) of radius $\sqrt[n]{r}$ centered at the origin. The case $r = 1$ and $\theta = 0$ recovers the [roots of unity](../roots-of-unity/), whose vertices lie on the unit circle.
 
 - - -
 

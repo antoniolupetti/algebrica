@@ -175,7 +175,7 @@ Applying De Moivre's theorem to the equation $z^n = w$ and taking the $n$-th roo
 
 $$z_k = \sqrt[n]{r}\cdot e^{i\left(\frac{\theta + 2k\pi}{n}\right)} \qquad k = 0, 1, \ldots, n-1$$
 
-The values $z_0, z_1, \ldots, z_{n-1}$ are exactly the $n$ distinct complex roots. They lie on a circle of radius $\sqrt[n]{r}$ centered at the origin, equally spaced by an angle of $2\pi/n$. Geometrically, the roots are the vertices of a regular polygon with $n$ sides inscribed in that circle. The case $w = 1$ recovers the [roots of unity](../roots-of-unity/), and is treated in detail in the next example.
+The values $z_0, z_1, \ldots, z_{n-1}$ are exactly the $n$ distinct complex roots. They lie on a [circle](../circumference/) of radius $\sqrt[n]{r}$ centered at the origin, equally spaced by an angle of $2\pi/n$. Geometrically, the roots are the vertices of a regular polygon with $n$ sides inscribed in that circle. The case $w = 1$ recovers the [roots of unity](../roots-of-unity/), and is treated in detail in the next example.
 
 ## Example 1
 

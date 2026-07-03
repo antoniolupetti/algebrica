@@ -10,7 +10,7 @@ tags:
 
 ## Definition
 
- The unit circle (or the trigonometric circle) is a circle of radius one centered at the origin of the Cartesian plane. It serves as the geometric reference for representing angles and their positions, providing a precise way to describe rotation, orientation, and the relationship between points on the circle as an angle varies. 
+ The unit circle (or the trigonometric circle) is a [circle](../circumference/) of radius one centered at the origin of the Cartesian plane. It serves as the geometric reference for representing angles and their positions, providing a precise way to describe rotation, orientation, and the relationship between points on the circle as an angle varies. 
  
  **Definition 1.** In formal terms, consider a circle of unit radius centered at the origin $O$, and let $P$ be a point on the circle. The segment $\overline{OP}$, which has length one, forms an angle $\theta$ with the positive $x$-axis, and $R$ denotes the foot of the perpendicular dropped from $P$ to the $x$-axis.
 
