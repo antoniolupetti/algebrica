@@ -22,6 +22,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html), Stanley N. Burris, H. P. Sankappanavar
 + [Basic Category Theory](https://arxiv.org/pdf/1612.09375), Tom Leinster
 + [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/ntb-v2_1.pdf), Victor Shoup
++ [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
 
 ## Linear algebra
 
@@ -29,12 +30,15 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Linear Algebra Done Wrong](https://www.math.brown.edu/streil/papers/LADW/LADW_2017-09-04.pdf), Sergei Treil
 + [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd, Lieven Vandenberghe
 + [Introduction to Vectors and Tensors](https://oaktrust.library.tamu.edu/server/api/core/bitstreams/06032ff0-a5bc-40d8-926d-965121f54d50/content), Ray M. Bowen, C.-C. Wang
++ [Linear Algebra](https://hefferon.net/linearalgebra/), Jim Hefferon
++ [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf), Sheldon Axler
 
 ## Geometry
 
 + [Plane Geometry](https://djm.cc/library/Plane_Geometry_Wentworth_Smith_edited.pdf), George Wentworth, David E. Smith
 + [Analytic Geometry](https://djm.cc/library/Analytic_Geometry_Siceloff_Wentworth_Smith_edited.pdf), Lewis Parker Siceloff, George Wentworth, David Eugene Smith
 + [Elementary Geometry from an Advanced Standpoint](https://www.ime.usp.br/~toscano/disc/2021/Moise.pdf), Edwin E. Moise
++ [Trigonometry](https://www.mecmath.net/trig/Trigonometry.pdf), Michael Corral
 
 ## Topology
 
@@ -51,11 +55,13 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Introduction to Real Analysis](https://www.jirka.org/ra/realanal.pdf), Jiří Lebl
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
 + [An Introduction to Measure Theory](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf), Terence Tao
++ [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
 
 ## Complex analysis
 
 + [Visual Complex Analysis](https://academic.oup.com/book/52945/chapter-abstract/421959366), Tristan Needham
 + [Complex Variables](https://people.math.sc.edu/girardi/m7034/book/AshComplexVariablesWithHyperlinks.pdf), Robert B. Ash, W. P. Novinger
++ [A First Course in Complex Analysis](https://matthbeck.github.io/papers/complex.pdf), Matthias Beck, Gerald Marchesi, Dennis Pixton, Lucas Sabalka
 
 ## Ordinary differential equations
 
