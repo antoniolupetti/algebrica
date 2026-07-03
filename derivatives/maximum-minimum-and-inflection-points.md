@@ -158,7 +158,9 @@ Given a continuous function, to find the local maximum and minimum points, we an
 
 The criterion based on the sign change of $f'$ applies to interior points of the domain. If the function is defined on a closed interval, the endpoints must be examined separately, since only one-sided behavior of the derivative is available there.
 
-> When the function has a second derivative, an alternative criterion based on the sign of $f''$ at the stationary points, known as the second derivative test, is presented in the entry on [higher-order derivatives](../higher-order-derivatives/).
+When the function is twice differentiable, the sign of the second derivative classifies a stationary point, without studying the sign of $f'$ on each side of it. If $f'(x_0) = 0$ and $f''(x_0) \neq 0$, then $x_0$ is a local maximum when $f''(x_0) < 0$ and a local minimum when $f''(x_0) > 0$, according to whether the graph is concave downward or concave upward at $x_0$. This criterion is known as the second derivative test.
+
+When $f''(x_0) = 0$ the test is inconclusive, and the nature of $x_0$ follows from the sign of $f'$ or from the higher-order derivatives treated in the entry on [higher-order derivatives](../higher-order-derivatives/).
 
 ## Example 1
 
