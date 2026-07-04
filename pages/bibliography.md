@@ -99,6 +99,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Algorithms and Complexity](https://www.math.upenn.edu/~wilf/AlgComp.pdf), Herbert S. Wilf
 + [Open Data Structures](https://opendatastructures.org/ods-python.pdf), Pat Morin
 + [Graph Theory](https://daiwz.net/course/disc_math/2023/Diestel_Graph_Theory.pdf), Reinhard Diestel
++ [Graph Theory](https://roam.libraries.psu.edu/system/files/e-books/MATH485-Graph_Theory.pdf), Christopher Griffin
 + [Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf), Justin Solomon
 + [Mathematics for Computer Science](https://people.csail.mit.edu/meyer/mcs.pdf), Eric Lehman, F. Thomson Leighton, Albert R. Meyer
 
