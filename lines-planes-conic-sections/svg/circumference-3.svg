@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="234px" height="274px" viewBox="0 0 234 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The segment labeled c is a chord connecting </tspan>
+                <tspan x="0" y="24">two points on the circle. The segment labeled </tspan>
+                <tspan x="0" y="37">d is the diameter, the longest chord of the </tspan>
+                <tspan x="0" y="50">circle, passing through its center.</tspan>
+            </text>
+            <line x1="58.5" y1="59.5" x2="58.5" y2="98.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle stroke="#333333" cx="109" cy="184" r="89.5"></circle>
+            <path d="M35.5,138.5 L89.3034965,133.953226 L91.4465155,133.772125 L177.5,126.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="29.5" y1="221.5" x2="189.5" y2="147.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="109.5" cy="184.5" r="2.5"></circle>
+            <circle fill="#333333" cx="31.5" cy="138.5" r="2.5"></circle>
+            <circle fill="#333333" cx="177.5" cy="126.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

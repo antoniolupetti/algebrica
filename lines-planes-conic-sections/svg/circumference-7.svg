@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="422px" viewBox="0 0 345 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="4" y="45">A secant line is a line that </tspan>
+                <tspan x="4" y="58">intersects a circle at two </tspan>
+                <tspan x="4" y="71">distinct points.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="107.0625" y="394">A tangent is a line that </tspan>
+                <tspan x="83" y="407">touches the circle at exactly </tspan>
+                <tspan x="169.501465" y="420">one point</tspan>
+            </text>
+            <line x1="47.5" y1="85.5" x2="47.5" y2="160.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="193.5" y1="301.5" x2="193.5" y2="376.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="230.125488" y="12">An external line has no </tspan>
+                <tspan x="210" y="25">points in common with the </tspan>
+                <tspan x="269.989746" y="38">circumference.</tspan>
+            </text>
+            <line x1="313.5" y1="52.5" x2="313.5" y2="127.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle stroke="#333333" cx="146" cy="193" r="89.5"></circle>
+            <line x1="0.5" y1="196.5" x2="232.5" y2="77.5" stroke="#979797" stroke-dasharray="4"></line>
+            <line x1="27.1743242" y1="182.817911" x2="208.511605" y2="89.8043924" stroke="#979797"></line>
+            <line x1="158.5" y1="332.5" x2="173.744329" y2="310.660607" stroke="#979797" stroke-dasharray="4"></line>
+            <line x1="283.244425" y1="153.788128" x2="299.5" y2="130.5" stroke="#979797" stroke-dasharray="4"></line>
+            <line x1="171.184668" y1="314.327639" x2="286.059546" y2="149.755119" stroke="#979797"></line>
+            <line x1="254.5" y1="350.5" x2="260.897288" y2="326.05322" stroke="#979797" stroke-dasharray="4"></line>
+            <line x1="303.53575" y1="163.113383" x2="310.5" y2="136.5" stroke="#979797" stroke-dasharray="4"></line>
+            <line x1="258.954172" y1="333.478699" x2="305.928281" y2="153.970497" stroke="#979797"></line>
+            <circle fill="#333333" cx="146.5" cy="193.5" r="2.5"></circle>
+            <circle fill="#333333" cx="172.5" cy="107.5" r="2.5"></circle>
+            <circle fill="#333333" cx="61.5" cy="164.5" r="2.5"></circle>
+            <circle fill="#333333" cx="222.5" cy="239.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

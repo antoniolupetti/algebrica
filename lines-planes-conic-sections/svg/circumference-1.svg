@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="261px" viewBox="0 0 216 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="67.5" y1="47.5" x2="67.5" y2="95.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">A circle is the conic section obtained by </tspan>
+                <tspan x="0" y="24">intersecting a conical surface with a plane </tspan>
+                <tspan x="0" y="37">perpendicular to the cone axis.</tspan>
+            </text>
+            <g transform="translate(22.000000, 103.000000)">
+                <ellipse stroke="#BABABA" cx="69" cy="17.5" rx="68.5" ry="17"></ellipse>
+                <path d="M57,89 L35,89 L18,116 L120,116 L103,89 L81,89 L93,99 L91,101 L86,103 L78,105 C71.3333333,105 68,105 68,105 C62,104.333333 59,104 59,104 C55,103.333333 53,103 53,103 C51,102.333333 50,102 50,102 C48,100.666667 47,100 47,100 L46,99" fill="#E7E7E7"></path>
+                <path d="M46.2,99 C46.2,102.221661 56.4974508,104.833333 69.2,104.833333 C81.9025492,104.833333 92.2,102.221661 92.2,99" stroke="#333333"></path>
+                <path d="M46.2,94 C46.2,97.221661 56.4974508,99.8333333 69.2,99.8333333 C81.9025492,99.8333333 92.2,97.221661 92.2,94" stroke="#333333" stroke-dasharray="4" transform="translate(69.200000, 96.916667) scale(1, -1) translate(-69.200000, -96.916667) "></path>
+                <path d="M0,139.5 C0,149.164983 30.8923523,157 69,157 C107.107648,157 138,149.164983 138,139.5" stroke="#BABABA" stroke-linejoin="bevel"></path>
+                <path d="M0,122.5 C0,132.164983 30.8923523,140 69,140 C107.107648,140 138,132.164983 138,122.5" stroke="#BABABA" stroke-linejoin="bevel" stroke-dasharray="4" transform="translate(69.000000, 131.250000) scale(1, -1) translate(-69.000000, -131.250000) "></path>
+                <path d="M136.5,136.5 L112.006388,115.479363 M92.1064013,98.4010161 L2.5,21.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                <path d="M135.5,21.5 L45.8065634,98.4757105 M25.5400866,115.868582 L1.5,136.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <line x1="90.5" y1="242.5" x2="90.5" y2="77.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+        </g>
+    </g>
+</svg>

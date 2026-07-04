@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="236px" viewBox="0 0 199 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M85.992135,94.7678236 L16,101 L56.7185978,125.013532 L94,147 L162,88 L101.926358,93.3490229" stroke="#BABABA" fill="#E9E9E9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="93" y="98">c</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="45" y="138">r</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="137" y="124">r</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">The triangle formed by chord c and the </tspan>
+                <tspan x="0" y="24">two radii is isosceles. c = 2r sin(θ/2)</tspan>
+            </text>
+            <line x1="69.5" y1="31.5" x2="69.5" y2="106.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle stroke="#333333" cx="93" cy="146" r="89.5"></circle>
+            <circle fill="#333333" cx="94" cy="147" r="2.5"></circle>
+            <circle fill="#333333" cx="16" cy="101" r="2.5"></circle>
+            <circle fill="#333333" cx="161.5" cy="88.5" r="2.5"></circle>
+            <text font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="90" y="129">θ</tspan>
+            </text>
+            <path d="M103.666985,138.307915 C101.287335,135.663093 97.8378856,134 94,134 C89.2155991,134 85.0348558,136.584566 82.7778052,140.433662" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

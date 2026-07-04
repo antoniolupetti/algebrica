@@ -27,6 +27,8 @@ For the equation to describe a quadratic curve, at least one of $a_{11}$, $a_{12
 
 The specific type of conic obtained depends on the relative values of these coefficients, in particular on the sign of the [discriminant](../quadratic-formula/) associated with the quadratic part. The circumference corresponds to the simplest and most symmetric case, in which the coefficients of $x^2$ and $y^2$ are equal and the mixed term $a_{12}xy$ vanishes.
 
+![IMG. 1](svg/circumference-1.svg)
+
 This algebraic symmetry comes from the way the plane intersects the cone. When the cutting plane is perpendicular to the axis of the cone, the resulting section is a circumference, whose points are all equidistant from the axis itself. Any deviation from this perpendicularity breaks the symmetry between the two quadratic coefficients and produces one of the other conic sections.
 
 ## What is a circumference
@@ -34,6 +36,8 @@ This algebraic symmetry comes from the way the plane intersects the cone. When t
 Given a point $C$ in the plane, called the center, the circumference is defined as the set of all points in the plane equidistant from $C$. Consider a circumference $\Gamma$ with center $C$ and radius $r$. For every point $P$ belonging to $\Gamma$ the following relation holds:
 
 $$d(P, C) = r \qquad r \in \mathbb{R},\ r > 0$$
+
+![IMG. 2](svg/circumference-2.svg)
 
 Let $C = (x_0, y_0)$ be the coordinates of the center and $P = (x, y)$ a generic point of the circumference. Using the formula for the distance between two points in the plane, the condition $d(P, C) = r$ becomes:
 
@@ -87,11 +91,11 @@ $$\rho = \frac{a^2}{4} + \frac{b^2}{4} - c$$
 
 The nature of the locus described by the equation $x^2 + y^2 + ax + by + c = 0$ depends entirely on the sign of $\rho$, and three distinct situations arise.
 
-+ When $\rho > 0$, the equation describes a proper circumference. Its center is $\left(-\frac{a}{2}, -\frac{b}{2}\right)$ and its radius is $r = \sqrt{\rho}$. This is the only case in which the locus is an actual curve in the plane.
++ For $\rho > 0$ the equation describes a proper circumference, with center $\left(-\frac{a}{2}, -\frac{b}{2}\right)$ and radius $r = \sqrt{\rho}$. This is the only case in which the locus is an actual curve in the plane.
 
-+ When $\rho = 0$, the radius collapses to zero and the equation is satisfied only by the point $\left(-\frac{a}{2}, -\frac{b}{2}\right)$. The locus degenerates into a single point, sometimes called a degenerate circumference of zero radius.
++ The value $\rho = 0$ collapses the radius to zero, so the equation is satisfied by the single point $\left(-\frac{a}{2}, -\frac{b}{2}\right)$. The locus degenerates into a point, sometimes called a degenerate circumference of zero radius.
 
-+ When $\rho < 0$, no real pair $(x, y)$ satisfies the equation, because a sum of two squares can never equal a negative quantity. The locus is therefore empty, and the equation, although still second-degree in form, does not describe any real curve in the plane.
++ A negative $\rho$ leaves no real pair $(x, y)$ satisfying the equation, because a sum of two squares can never equal a negative quantity. The locus is empty, and the equation, though still second-degree in form, does not describe any real curve in the plane.
 
 The condition $\rho > 0$ is thus the condition of existence of a real circumference expressed in general form. Whenever it holds, the equation $x^2 + y^2 + ax + by + c = 0$ can be converted back into the standard form by completing the square, and the center and radius can be read off directly from the formulas above.
 
@@ -108,6 +112,8 @@ The terms circle and circumference are often used interchangeably, but they deno
 
 Several basic elements are associated with a circumference, all defined in terms of its center and its points.
 
+![IMG. 3](svg/circumference-3.svg)
+
 + A radius is any [line](../lines/) segment that connects the center of the circumference to a point on the circumference itself.
 + A chord is any segment whose endpoints both lie on the circumference.
 + A diameter is any chord that passes through the center of the circumference; it is therefore the longest possible chord, and its length is exactly twice the radius.
@@ -119,11 +125,15 @@ Among these elements, the chord has a length that can be expressed directly in t
 
 $$c = 2r\sin\left(\frac{\theta}{2}\right)$$
 
+![IMG. 4](svg/circumference-4.svg)
+
 The chord, together with the two radii joining its endpoints to the center, forms an isosceles triangle whose apex angle is $\theta$, and the expression $2r\sin(\theta/2)$ is the length of the base of that triangle.
 
 ## Arcs and circular sectors
 
 An arc is a portion of a circumference bounded by two of its points. The endpoints of a chord divide the circumference into two arcs, and we say that the chord subtends the two arcs, or equivalently that each arc is subtended by the chord.
+
+![IMG. 5](svg/circumference-5.svg)
 
 If $\theta$ denotes the central angle corresponding to the arc, measured in radians, and $r$ the radius of the circumference, the length of the arc is given by the formula:
 
@@ -134,6 +144,8 @@ $$\text{Arc length} = r\theta$$
 A circular sector is the portion of a circle enclosed between an arc and the two radii connecting the center to the endpoints of the arc. Using the same notation, the area $A$ of a circular sector is given by the formula:
 
 $$A = \frac{1}{2}r^2\theta$$
+
+![IMG. 6](svg/circumference-6.svg)
 
 ## Length of a circumference
 
@@ -159,7 +171,7 @@ The same value follows from the arc-length formula. A full circumference is the 
 
 ## Example 1
 
-Consider the circumference centered at the origin with radius $r = 1$. Substituting $x_0 = 0$, $y_0 = 0$, and $r = 1$ into the standard form $(x - x_0)^2 + (y - y_0)^2 = r^2$, we obtain:
+For the circumference centered at the origin with radius $r = 1$, substituting $x_0 = 0$, $y_0 = 0$, and $r = 1$ into the standard form $(x - x_0)^2 + (y - y_0)^2 = r^2$ gives:
 
 $$x^2 + y^2 = 1$$
 
@@ -181,9 +193,9 @@ This equation coincides with that of the [unit circle](../unit-circle/), used in
 
 The position of a line with respect to a circumference depends on the distance between the line and the center. A [line](../lines/) can be classified as secant, tangent, or external to the circumference, and denoting by $D$ the distance from the center to the line and by $r$ the radius, the three cases are mutually exclusive and cover all possibilities.
 
-+ A line is secant when it intersects the circumference at two distinct points, which happens when $D < r$.
-+ A line is tangent when it touches the circumference at exactly one point, which happens when $D = r$.
-+ A line is external when it does not meet the circumference at all, which happens when $D > r$.
+![IMG. 7](svg/circumference-7.svg)
+
+The line is secant when it meets the circumference at two distinct points, corresponding to $D < r$. As the line recedes from the center the two intersections draw together, and at $D = r$ they merge into a single point of contact, where the line is tangent. Once $D > r$ the line no longer reaches the curve and is external to it.
 
 - - -
 
@@ -196,15 +208,11 @@ y = mx + q
 \end{cases}
 $$
 
-Substituting the expression for $y$ from the second equation into the first leads to a quadratic equation in the unknown $x$, whose number of real solutions coincides with the number of intersection points. Denoting by $\Delta$ the discriminant of this quadratic equation, the three cases discussed above correspond respectively to $\Delta > 0$, $\Delta = 0$, and $\Delta < 0$.
-
-+ When $\Delta > 0$, the quadratic equation has two real and distinct solutions, and the line is secant to the circumference.
-+ When $\Delta = 0$, the quadratic equation has a single real solution, counted with multiplicity two, and the line is tangent to the circumference.
-+ When $\Delta < 0$, the quadratic equation has no real solutions, and the line is external to the circumference.
+Substituting the expression for $y$ from the second equation into the first leads to a quadratic equation in the unknown $x$, whose number of real solutions coincides with the number of intersection points. Its discriminant $\Delta$ reproduces the geometric trichotomy: a positive $\Delta$ gives two distinct roots and a secant line, a vanishing $\Delta$ a single double root and a tangent line, and a negative $\Delta$ no real root and an external line.
 
 ## Example 2
 
-Consider the circumference of equation $x^2 + y^2 - 2x - 2y - 3 = 0$ and the line of equation $y = -x + 3$. We want to determine whether the line is secant, tangent, or external to the circumference, and in the first two cases find the coordinates of the intersection points.
+We are given the circumference of equation $x^2 + y^2 - 2x - 2y - 3 = 0$ and the line of equation $y = -x + 3$, and we want to determine whether the line is secant, tangent, or external to it, and in the first two cases find the coordinates of the intersection points.
 
 The intersection points are the solutions of the system formed by the two equations:
 
@@ -215,7 +223,7 @@ y = -x + 3
 \end{cases}
 $$
 
-We rewrite the first equation using the method of [completing the square](../completing-the-square/), which transforms each quadratic expression in $x$ and $y$ into a perfect square plus a constant:
+We rewrite the first equation using the method of [completing the square](../completing-the-square/):
 
 $$(x - 1)^2 - 1 + (y - 1)^2 - 1 - 3 = 0$$
 

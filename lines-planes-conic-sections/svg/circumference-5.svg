@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="249px" viewBox="0 0 201 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="6" y="11">An arc is a continuous portion of a </tspan>
+                <tspan x="6" y="24">circle lying between two of its points.</tspan>
+            </text>
+            <line x1="39.5" y1="36.5" x2="39.5" y2="73.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <circle stroke="#BABABA" cx="90" cy="159" r="89.5"></circle>
+            <path d="M159.098175,102.329907 C142.588853,82.5703555 117.762409,70 90,70 C57.1296737,70 28.3750544,87.6214364 12.6674795,113.932972" stroke="#333333" stroke-width="2"></path>
+            <line x1="16.5" y1="113.5" x2="158.5" y2="101.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="90.5" cy="159.5" r="2.5"></circle>
+            <circle fill="#333333" cx="12.5" cy="113.5" r="2.5"></circle>
+            <circle fill="#333333" cx="158.5" cy="101.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
