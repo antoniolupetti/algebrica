@@ -12,9 +12,7 @@ tags:
 ---
 ## Introduction
 
-The concept of a limit is fundamental in mathematical analysis. Intuitively, the limit of a [function](../functions/) $f(x)$ as $x$ approaches a point $x_0$ allows us to describe the behaviour of the function as the values of $x$ get arbitrarily close to $x_0$, without necessarily reaching that point.
-
-A neighbourhood of $x$ refers to an interval consisting of all points sufficiently close to $x$. More formally, a neighbourhood of $x$ is any open interval $(x - \delta, x + \delta)$ with $\delta > 0$. This notion is essential for defining limits and for describing the local behaviour of a function near a given point.
+Intuitively, the limit of a [function](../functions/) $f(x)$ as $x$ approaches a point $x_0$ describes how the function behaves as the values of $x$ get arbitrarily close to $x_0$, without necessarily reaching that point. A neighbourhood of $x$ is an interval consisting of all points sufficiently close to $x$. More formally, a neighbourhood of $x$ is any open interval $(x - \delta, x + \delta)$ with $\delta > 0$. Limits are defined through neighbourhoods, and the local behaviour of a function near a point is described in the same terms.
 
 ![IMG. 1](svg/limits-1.svg)
 
@@ -22,7 +20,7 @@ The smaller the neighbourhood, the closer the points are to $x$. As the interval
 
 ## Definition
 
-**Definition 1.** Let $f(x)$ be a function whose behaviour we wish to study as $x$ approaches the point $x_0$. We say that, as $x$ tends to $x_0$, the function $f(x)$ has limit $\ell$, and we write:
+Let $f(x)$ be a function whose behaviour we wish to study as $x$ approaches the point $x_0$. We say that, as $x$ tends to $x_0$, the function $f(x)$ has limit $\ell$, and we write:
 
 $$\lim_{x \to x_0} f(x) = \ell$$
 
@@ -34,7 +32,7 @@ it follows that:
 
 $$|f(x) - \ell| < \varepsilon$$
 
-In other words, for every neighbourhood of $\ell$, there exists a sufficiently small neighbourhood of $x_0$ such that all corresponding function values remain within this neighbourhood. This formal $\varepsilon$-$\delta$ definition makes precise the intuitive idea that the limit represents the value approached by $f(x)$ as $x$ becomes arbitrarily close to $x_0$.
+Equivalently, for every neighbourhood of $\ell$ there is a neighbourhood of $x_0$ whose points, with the possible exception of $x_0$ itself, are all mapped into the neighbourhood of $\ell$.
 
 - - -
 
@@ -58,7 +56,7 @@ When the limit of $f(x)$ exists and tends to $\pm \infty$ as $x$ approaches a fi
 
 ![IMG. 2](svg/limits-2.svg)
 
-A typical configuration is the one in which the one-sided limits diverge in opposite directions:
+Often the two one-sided limits diverge in opposite directions:
 
 $$\lim_{x \to x_0^+} f(x) = -\infty \quad \text{and} \quad \lim_{x \to x_0^-} f(x) = +\infty$$
 
@@ -68,7 +66,7 @@ When the limit of $f(x)$ exists and approaches a finite value $L$ as $x$ tends t
 
 ![IMG. 3](svg/limits-3.svg)
 
-A representative case occurs when both one-sided limits at infinity converge to the same value:
+This occurs when both limits at infinity equal the same value $L$:
 
 $$\lim_{x \to +\infty} f(x) = L \quad \text{and} \quad \lim_{x \to -\infty} f(x) = L$$
 
@@ -85,7 +83,7 @@ $$
 \end{cases} \implies \nexists \lim\limits_{x \to x_0} f(x)
 $$
 
-In this scenario, the limit of $f(x)$ as $x$ approaches $x_0$ does not exist, because the function approaches two distinct values depending on the direction of approach. The two one-sided limits, however, are well defined and finite when considered separately.
+The two-sided limit does not exist, because the function approaches two distinct values depending on the direction of approach. The two one-sided limits, however, are well defined and finite when considered separately.
 
 - - -
 
@@ -93,17 +91,17 @@ According to the uniqueness theorem of limits, if the limit of a function $f(x)$
 
 $$\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}} \implies \ell \text{ is unique}$$
 
-The theorem guarantees that if a limit exists, there cannot be two different values satisfying the definition for the same function and the same point.
+If two finite values $\ell_1 \neq \ell_2$ both satisfied the definition, choosing $\varepsilon < |\ell_1 - \ell_2|/2$ would force the values of $f$ near $x_0$ into two disjoint neighbourhoods at once, which cannot happen.
 
 - - -
 
-The concept of a limit is the foundation for the notion of a [continuous function](../continuous-functions/). A function $y = f(x)$ is continuous at a point $x_0$ if the limit of the function as $x$ approaches $x_0$ exists, is finite, and equals the value of the function at that point:
+Limits also define what it means for a function to be [continuous](../continuous-functions/). A function $y = f(x)$ is continuous at a point $x_0$ if the limit of the function as $x$ approaches $x_0$ exists, is finite, and equals the value of the function at that point:
 
 $$\lim_{x \to x_0} f(x) = f(x_0)$$
 
 ## Properties
 
-The following properties of limits are the operational core of any practical computation. They establish the rules for combining limits under algebraic operations and provide the foundation for more advanced techniques. A systematic treatment, with proofs and worked examples, is given in the page on the [algebra of limits](../algebra-of-limits/).
+Limits respect the algebraic operations, so the limit of a sum, product, quotient, or constant multiple can be obtained from the limits of the parts. The [algebra of limits](../algebra-of-limits/) treats each rule with proofs and worked examples.
 
 - - -
 
@@ -139,15 +137,15 @@ The properties stated above are valid only when all relevant limits exist and ar
 
 $$\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad \infty - \infty$$
 
-Such expressions are classified as [indeterminate forms](../indeterminate-forms/). Resolving them requires specialised techniques that go beyond standard algebraic manipulation, including factorisation, asymptotic comparison, [L'Hôpital's rule](../hopital-rule/), and the use of [Taylor expansions](../taylor-series/) combined with [little-o notation](../little-o-notation/). A classical example illustrates the point:
+Such expressions are classified as [indeterminate forms](../indeterminate-forms/). Resolving them requires specialised techniques that go beyond standard algebraic manipulation, including factorisation, asymptotic comparison, [L'Hôpital's rule](../hopital-rule/), and the use of [Taylor expansions](../taylor-series/) combined with [little-o notation](../little-o-notation/). A familiar example is the limit:
 
 $$\lim_{x \to 0} \frac{\sin x}{x}$$
 
-Direct substitution of $x = 0$ yields $\frac{0}{0}$, which is undefined. The quotient property cannot be applied because the limit of the denominator is zero. The correct value is $1$, and this is one of the [remarkable limits](../remarkable-limits/) that recur throughout analysis.
+Direct substitution of $x = 0$ yields $\frac{0}{0}$, which is undefined. The quotient property cannot be applied because the limit of the denominator is zero. The correct value is $1$, one of the [remarkable limits](../remarkable-limits/).
 
-## Fundamental limits of elementary functions
+## Limits of elementary functions
 
-The following limits characterise the asymptotic behaviour of common elementary functions at infinity. They provide foundational tools for evaluating more complex limits and are frequently encountered in mathematical analysis.
+The elementary functions have simple limits at infinity, and the logarithm at $0^+$. Most computations of harder limits reduce to these standard values.
 
 - - -
 
@@ -190,8 +188,6 @@ $$
 \lim_{x \to +\infty} a^x &= 0
 \end{align}
 $$
-
-> If the base is greater than $1$, the exponential function increases without bound in one direction and approaches zero in the other. If the base is strictly between $0$ and $1$, this behaviour is reversed.
 
 - - -
 
