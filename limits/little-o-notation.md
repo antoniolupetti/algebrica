@@ -14,7 +14,7 @@ tags:
 
 The symbol $o(x)$, read as "little-o of $x$", belongs to the family of Landau symbols, which characterise [asymptotic](../asymptotes/) relationships between functions. Writing $f(x) = o(x)$ states that $f(x)$ is negligible compared to $x$ as the input approaches a given value, its growth rate insignificant relative to $x$ in the [limit](../limits/).
 
-**Definition 1.** Let $f, g : A \to \mathbb{R}$ (or $\mathbb{C}$) be two [functions](../functions/), and let $x_0$ be a limit point of $A$. We say that $f(x)$ is little-o of $g(x)$ as $x \to x_0$ if $g(x) \neq 0$ on a neighbourhood of $x_0$ (except possibly at $x_0$ itself) and:
+Let $f, g : A \to \mathbb{R}$ (or $\mathbb{C}$) be two [functions](../functions/), and let $x_0$ be a limit point of $A$. We say that $f(x)$ is little-o of $g(x)$ as $x \to x_0$ if $g(x) \neq 0$ on a neighbourhood of $x_0$ (except possibly at $x_0$ itself) and:
 
 $$\lim_{x \to x_0} \frac{f(x)}{g(x)} = 0$$
 
