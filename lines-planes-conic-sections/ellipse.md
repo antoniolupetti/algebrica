@@ -220,8 +220,6 @@ The center is $(2,-1).$ Since $9>4,$ the major axis is parallel to the $x$-axis,
 
 We determine the equation of the ellipse with foci $F_1=(1,0)$ and $F_2=(-1,0)$ such that the sum of the distances from any point on the ellipse to the two foci equals $6.$
 
-- - -
-
 A point $P(x,y)$ belongs to the ellipse when it satisfies the condition:
 
 $$\sqrt{(x-1)^2 + y^2} + \sqrt{(x+1)^2 + y^2} = 6$$
@@ -248,8 +246,6 @@ x^2 + 18x + 81 &= 9x^2 + 18x + 9 + 9y^2 \\[6pt]
 8x^2 + 9y^2 &= 72
 \end{align}
 $$
-
-- - -
 
 Dividing both sides by $72$:
 
