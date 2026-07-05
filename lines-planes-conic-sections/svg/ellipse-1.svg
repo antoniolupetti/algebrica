@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="264px" viewBox="0 0 197 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="65.5" y1="47.5" x2="65.5" y2="95.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="4" y="11">A plane intersects one nappe of a </tspan>
+                <tspan x="4" y="24">double cone at an angle to the cone </tspan>
+                <tspan x="4" y="37">axis, producing an ellipse.</tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="90.5" cy="122" rx="68" ry="16.5"></ellipse>
+            <path d="M22.5,246 C22.5,255.388841 53.1684946,263 91,263 C128.831505,263 159.5,255.388841 159.5,246" stroke="#BABABA"></path>
+            <path d="M159.5,246 C159.5,243.337677 157.034018,240.818293 152.637992,238.574856 C141.531171,232.906677 118.10391,229 91,229 C67.4957861,229 43.9019517,231.832023 34.4190331,236.414704 C27,240 22.5,242.444322 22.5,246" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="26.5" y1="127.5" x2="158.15" y2="242.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="23.23" y1="127.5" x2="154.5" y2="243.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(88.865000, 185.500000) scale(-1, 1) translate(-88.865000, -185.500000) "></line>
+            <path d="M148,191 L176,207 L0,232 L20,209 L69.7915333,201.998066 L63,208 L62.4847318,208.516823 C61.91751,208.904647 61.5350686,209.281632 61.3597633,209.640591 L61,210 L61.2593128,209.953089 C61.2476039,210.032501 61.2470429,210.110862 61.2578962,210.188087 C61.6037805,212.649182 73.4114862,213.024236 87.6311449,211.025793 C101.850804,209.02735 113.09772,205.412181 112.751836,202.951086 C112.645445,202.19408 111.45464,201.634437 109.442783,201.280521 L111,201 L107,197 L148,191 Z" fill="#E7E7E7"></path>
+            <path d="M61.3180054,206.54769 C61.3180054,209.032971 72.9586019,211.04769 87.3180054,211.04769 C101.677409,211.04769 113.318005,209.032971 113.318005,206.54769" stroke="#333333" transform="translate(87.318005, 208.797690) rotate(-8.000000) translate(-87.318005, -208.797690) "></path>
+            <path d="M112.691726,206.591483 C112.691726,204.106202 101.05113,202.091483 86.6917265,202.091483 C72.332323,202.091483 60.6917265,204.106202 60.6917265,206.591483" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(86.691726, 204.341483) rotate(-8.000000) translate(-86.691726, -204.341483) "></path>
+        </g>
+    </g>
+</svg>

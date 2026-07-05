@@ -120,3 +120,4 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Transformers](https://web.stanford.edu/~jurafsky/slp3/8.pdf), Daniel Jurafsky, James H. Martin
 + [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223), Tong Xiao, Jingbo Zhu
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
++ [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance

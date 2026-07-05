@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="282px" viewBox="0 0 307 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="236.5" y1="49.5" x2="236.5" y2="115.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M152.378284,66.675216 L152.432301,66.7528411 L156.969635,74.731726 C157.10614,74.9717697 157.022205,75.2770228 156.782162,75.4135279 C156.568789,75.5348657 156.303894,75.482029 156.15179,75.3001991 L156.10036,75.2260546 L152.506,68.905 L152.53502,74.9930524 L153.499995,281.497664 C153.501285,281.773803 153.278476,281.998704 153.002336,281.999995 C152.756879,282.001142 152.551906,281.825222 152.508481,281.592173 L152.500005,281.502336 L151.535031,74.9977253 L151.507,68.91 L147.972024,75.2640375 C147.852685,75.4785343 147.598868,75.5709372 147.374459,75.4945309 L147.292004,75.4578744 C147.077507,75.3385359 146.985104,75.0847188 147.06151,74.8603093 L147.098167,74.7778543 L151.560735,66.7569139 C151.7345,66.4445915 152.1601,66.4166435 152.378284,66.675216 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M295.162848,179.527171 L295.245131,179.564212 L303.245131,184.064212 C303.556638,184.239435 303.582597,184.665161 303.323007,184.882134 L303.245131,184.935788 L295.245131,189.435788 C295.004452,189.57117 294.699594,189.48581 294.564212,189.245131 C294.443873,189.031194 294.497947,188.766548 294.680485,188.615296 L294.754869,188.564212 L301.091,185 L0,185 C-0.276142375,185 -0.5,184.776142 -0.5,184.5 C-0.5,184.25454 -0.323124839,184.050392 -0.0898756324,184.008056 L0,184 L301.091,184 L294.754869,180.435788 C294.540933,180.315448 294.449717,180.061202 294.527171,179.837152 L294.564212,179.754869 C294.684552,179.540933 294.938798,179.449717 295.162848,179.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="92" y1="184.5" x2="226" y2="141.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="207" y1="183.5" x2="226" y2="141.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" cx="226.5" cy="140.5" r="2.5"></circle>
+            <circle fill="#333333" cx="93" cy="184.5" r="2.5"></circle>
+            <circle fill="#333333" cx="207" cy="184.5" r="2.5"></circle>
+            <ellipse stroke="#333333" cx="151.5" cy="184" rx="115.5" ry="56.5"></ellipse>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133.5" y="74">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="297.5" y="202">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="232.5" y="137">P</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="77.5" y="202">    F₁</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="204.5" y="202">F₂</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="99" y="11">The sum of the distances from point P </tspan>
+                <tspan x="99" y="24">to the foci F₁ and F₂ remains constant </tspan>
+                <tspan x="99" y="37">as P moves along the ellipse.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
