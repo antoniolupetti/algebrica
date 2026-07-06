@@ -32,6 +32,9 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Introduction to Vectors and Tensors](https://oaktrust.library.tamu.edu/server/api/core/bitstreams/06032ff0-a5bc-40d8-926d-965121f54d50/content), Ray M. Bowen, C.-C. Wang
 + [Linear Algebra](https://hefferon.net/linearalgebra/), Jim Hefferon
 + [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf), Sheldon Axler
++ [Linear Algebra](https://www.math.ucdavis.edu/~linear/linear-guest.pdf), David Cherney, Tom Denton, Rohit Thomas, Andrew Waldron
++ [Linear Algebra with Applications](https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf), W. Keith Nicholson
++ [Linear Algebra as an Introduction to Abstract Mathematics](https://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf), Isaiah Lankham, Bruno Nachtergaele, Anne Schilling
 
 ## Geometry
 
@@ -56,6 +59,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
 + [An Introduction to Measure Theory](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf), Terence Tao
 + [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
++ [Integral Calculus: Mathematics 103](https://www.math.ucdavis.edu/~tjlewis/teaching/MAT17material/books/book_LEK/M103Fulltext.pdf), Leah Edelstein-Keshet
 
 ## Complex analysis
 
