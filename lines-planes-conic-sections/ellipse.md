@@ -8,15 +8,13 @@ tags:
   - ellipse
 ---
 
-## Introduction to conic sections
+## What is an ellipse
 
 When introducing the [parabola](../parabola/), we saw that the intersection of a plane with a cone, projected onto the plane, can be a [circumference](../circumference/), a parabola, an ellipse, or a [hyperbola](../hyperbola/). These curves are the conics. A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x,y)\in\mathbb{R}^2$ that satisfy a general quadratic equation in the variables $x$ and $y$:
 
 $$f(x,y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
 The coefficients satisfy $a_{ij}\in\mathbb{R},$ and for the curve to be quadratic we require $a_{11}$ and $a_{22}$ nonzero.
-
-## What is an ellipse
 
 The ellipse is the conic section obtained when the cutting plane crosses a single nappe of the cone completely, so the intersection is a single closed curve.
 

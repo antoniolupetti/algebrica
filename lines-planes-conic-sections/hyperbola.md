@@ -11,15 +11,13 @@ tags:
   - hyperbola
   - vertex
 ---
-## Conic sections
+## What is a hyperbola
 
 When a plane cuts a cone, the intersection projected onto the plane is a [circumference](../circumference/), a [parabola](../parabola/), an [ellipse](../ellipse/), or a hyperbola. These curves are the conic sections, or conics. A conic is a second-degree plane algebraic curve, the set of points $(x, y) \in \mathbb{R}^2$ that satisfy a [quadratic equation](../quadratic-equations/) in $x$ and $y$:
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
 The coefficients $a_{ij}$ are [real numbers](../real-numbers/), and the curve is quadratic when $a_{11}$ and $a_{22}$ are both nonzero.
-
-## What is a hyperbola
 
 The hyperbola is the conic section obtained when the cutting plane meets both nappes of the cone, so the intersection is two separate unbounded curves, the branches.
 
