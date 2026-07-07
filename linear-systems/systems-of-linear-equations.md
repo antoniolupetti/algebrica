@@ -160,7 +160,45 @@ $$
 X = A^{-1}B
 $$
 
-## Example with a unique solution
+The smallest case shows the method in full. Consider a system of two equations in two unknowns:
+
+$$
+\begin{cases}
+3x_1 + x_2 = 5 \\[6pt]
+x_1 + x_2 = 3
+\end{cases}
+$$
+
+The coefficient matrix and the vector of constants are:
+
+$$
+A = \begin{pmatrix} 3 & 1 \\[6pt] 1 & 1 \end{pmatrix}
+\qquad
+B = \begin{pmatrix} 5 \\[6pt] 3 \end{pmatrix}
+$$
+
+The determinant is $\det(A) = 3 \cdot 1 - 1 \cdot 1 = 2,$ nonzero, so $A$ is invertible. For a $2 \times 2$ matrix the inverse swaps the two diagonal entries, negates the other two, and divides by the determinant:
+
+$$
+A^{-1} = \frac{1}{2}\begin{pmatrix} 1 & -1 \\[6pt] -1 & 3 \end{pmatrix}
+$$
+
+Multiplying this inverse by the vector of constants gives $X = A^{-1}B$:
+
+$$
+\begin{pmatrix} x_1 \\[6pt] x_2 \end{pmatrix}
+=
+\frac{1}{2}\begin{pmatrix} 1 & -1 \\[6pt] -1 & 3 \end{pmatrix}
+\begin{pmatrix} 5 \\[6pt] 3 \end{pmatrix}
+=
+\frac{1}{2}\begin{pmatrix} 2 \\[6pt] 4 \end{pmatrix}
+=
+\begin{pmatrix} 1 \\[6pt] 2 \end{pmatrix}
+$$
+
+The system therefore has the unique solution $x_1 = 1$ and $x_2 = 2.$
+
+- - -
 
 We solve a linear system of three equations in three unknowns, so $n = m$:
 
