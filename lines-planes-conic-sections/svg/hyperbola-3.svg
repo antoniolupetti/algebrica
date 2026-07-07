@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="287px" viewBox="0 0 306 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="45.5" y1="82.5" x2="261.5" y2="286.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="44.5" y1="79.5" x2="260.5" y2="283.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4" transform="translate(152.500000, 181.500000) scale(-1, 1) translate(-152.500000, -181.500000) "></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="45.5" y="11">The hyperbola with its transverse axis, </tspan>
+                <tspan x="45.5" y="24">conjugate axis, vertices A(a,0) and A'(-a,0), </tspan>
+                <tspan x="45.5" y="37">and co-vertices B(0,b) and B'(0,-b).</tspan>
+            </text>
+            <line x1="86.5" y1="47.5" x2="86.5" y2="108.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M151.5,64.9801356 L151.935788,65.7548694 L156.435788,73.7548694 L156.680918,74.1906571 L155.809343,74.6809184 L155.564212,74.2451306 L152,67.908 L152,281 L151,281 L151,67.908 L147.435788,74.2451306 L147.190657,74.6809184 L146.319082,74.1906571 L146.564212,73.7548694 L151.064212,65.7548694 L151.5,64.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.309343,177.319082 L294.745131,177.564212 L302.745131,182.064212 L303.519864,182.5 L302.745131,182.935788 L294.745131,187.435788 L294.309343,187.680918 L293.819082,186.809343 L294.254869,186.564212 L300.591,183 L-0.5,183 L-0.5,182 L300.591,182 L294.254869,178.435788 L293.819082,178.190657 L294.309343,177.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M95,129 L208,129 L208,237 L95,237 L95,129 Z" stroke="#DCDCDC" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <circle fill="#333333" cx="72" cy="182" r="2.5"></circle>
+            <circle fill="#333333" cx="232" cy="182" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="134.5" y="72">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="200">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="69" y="200">F₁</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="100.5" y="176">A'</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="193.5" y="176">A</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="155.5" y="125">B</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="230" y="200">F₂</tspan>
+            </text>
+            <path d="M38,86 C76,130.666667 95,163.333333 95,184 C95,204.666667 76,237 38,281" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M208,86 C246,130.666667 265,163.333333 265,184 C265,204.666667 246,237 208,281" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(236.500000, 183.500000) scale(-1, -1) translate(-236.500000, -183.500000) "></path>
+            <circle fill="#333333" cx="95" cy="182" r="2.5"></circle>
+            <circle fill="#333333" cx="208.5" cy="182" r="2.5"></circle>
+            <circle fill="#333333" cx="151" cy="129" r="2.5"></circle>
+            <circle fill="#333333" cx="152" cy="237" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="155.5" y="251">B'</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

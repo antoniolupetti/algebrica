@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="187px" height="296px" viewBox="0 0 187 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="42.5" y1="50.5" x2="42.5" y2="98.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">A plane intersects both nappes of a </tspan>
+                <tspan x="0" y="24">right circular double cone, producing </tspan>
+                <tspan x="0" y="37">a hyperbola. </tspan>
+            </text>
+            <ellipse stroke="#BABABA" cx="70.5" cy="123" rx="68" ry="16.5"></ellipse>
+            <path d="M2.5,247 C2.5,256.388841 33.1684946,264 71,264 C108.831505,264 139.5,256.388841 139.5,247" stroke="#BABABA"></path>
+            <path d="M139.5,247 C139.5,244.337677 137.034018,241.818293 132.637992,239.574856 C121.531171,233.906677 98.1039103,230 71,230 C47.4957861,230 23.9019517,232.832023 14.4190331,237.414704 C7,241 2.5,243.444322 2.5,247" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="6.5" y1="128.5" x2="138.15" y2="243.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="3.23" y1="128.5" x2="134.5" y2="244.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" transform="translate(68.865000, 186.500000) scale(-1, 1) translate(-68.865000, -186.500000) "></line>
+            <path d="M91,76 L146,130 L146,296 L109.333,257.333 L113,261 L122,258 C122,258 122.895705,253.777269 122,247 C121.288126,241.613668 121.468133,234.582286 117,227 C113.794021,221.55955 105.127354,213.226217 91,202 L91,202 L91,167 L123,139 L123.3,137.781941 L126.46,132 L103,108 L91,108 L91,76 Z" fill="#E7E7E7"></path>
+            <path d="M103,108 C104.333333,129.333333 108,140.666667 114,142 C120,143.333333 124,140 126,132" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M114,142 C120,143.333333 124,140 126,132" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g transform="translate(110.500000, 239.500000) scale(-1, -1) translate(-110.500000, -239.500000) translate(99.000000, 221.000000)" stroke="#333333" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M0,0 C0.122107402,5.91788116 0.305268506,13.1160312 0.54948331,15.5944501 C1.71180116,27.3902565 4.71810058,34.3483922 9.56838157,36.4688572"></path>
+                <path d="M11,36.7142857 C17,38.047619 21,34.7142857 23,26.7142857" stroke-dasharray="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

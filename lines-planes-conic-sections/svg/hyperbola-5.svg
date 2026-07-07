@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="292px" viewBox="0 0 307 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="271.5" y="92">e≈1,5</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#9A8E8E">
+                <tspan x="276.5" y="160">e≈1,1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="34.5" y="11">The greater the value of the </tspan>
+                <tspan x="34.5" y="24">eccentricity, the wider the </tspan>
+                <tspan x="34.5" y="37">branches of the hyperbola open.</tspan>
+            </text>
+            <line x1="66.5" y1="48.5" x2="66.5" y2="109.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M150.992898,74.9801522 L151.432301,75.7528411 L155.969635,83.731726 L156.216799,84.1663635 L155.347524,84.6606922 L155.10036,84.2260546 L151.506,77.906 L151.53502,83.9930524 L152.499995,290.497664 L152.502331,290.997658 L151.502342,291.002331 L151.500005,290.502336 L150.535031,83.9977253 L150.506,77.91 L146.972024,84.2640375 L146.728932,84.700966 L145.855075,84.2147828 L146.098167,83.7778543 L150.560735,75.7569139 L150.992898,74.9801522 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.309343,187.319082 L294.745131,187.564212 L302.745131,192.064212 L303.519864,192.5 L302.745131,192.935788 L294.745131,197.435788 L294.309343,197.680918 L293.819082,196.809343 L294.254869,196.564212 L300.591,193 L-0.5,193 L-0.5,192 L300.591,192 L294.254869,188.435788 L293.819082,188.190657 L294.309343,187.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="132.5" y="83">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="297.5" y="210">x</tspan>
+            </text>
+            <path d="M38,96 C76,140.666667 95,173.333333 95,194 C95,214.666667 76,247 38,291" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M208,96 C246,140.666667 265,173.333333 265,194 C265,214.666667 246,247 208,291" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(236.500000, 193.500000) scale(-1, -1) translate(-236.500000, -193.500000) "></path>
+            <g transform="translate(36.000000, 157.000000)" stroke="#979797" stroke-dasharray="4" stroke-linecap="round">
+                <path d="M0,0 C38,10.2358974 57,21.7948718 57,34.6769231 C57,47.5589744 38,59 0,69"></path>
+            </g>
+            <g transform="translate(239.500000, 193.500000) scale(-1, 1) translate(-239.500000, -193.500000) translate(211.000000, 159.000000)" stroke="#979797" stroke-dasharray="4" stroke-linecap="round">
+                <path d="M0,0 C38,10.2358974 57,21.7948718 57,34.6769231 C57,47.5589744 38,59 0,69"></path>
+            </g>
+        </g>
+    </g>
+</svg>

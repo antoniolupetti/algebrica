@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="296px" viewBox="0 0 305 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="47.5" y="11">The absolute difference of the </tspan>
+                <tspan x="47.5" y="24">distances forn any point P to the foci </tspan>
+                <tspan x="47.5" y="37">F₁ and F₂ remains constant as P </tspan>
+                <tspan x="47.5" y="50">moves along the curve</tspan>
+            </text>
+            <line x1="87.5" y1="60.5" x2="87.5" y2="121.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="73.5" y1="195.5" x2="90.5" y2="177.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="73.5" y1="195.5" x2="55.5" y2="121.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="55.5" y1="119.5" x2="232.5" y2="195.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="93.5" y1="176.5" x2="232.5" y2="195.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="80.5" y1="152.5" x2="232.5" y2="195.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="79.5" y1="152.5" x2="73.5" y2="196.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M153.5,81.9801356 L153.935788,82.7548694 L158.435788,90.7548694 L158.680918,91.1906571 L157.809343,91.6809184 L157.564212,91.2451306 L154,84.908 L154,295 L153,295 L153,84.908 L149.435788,91.2451306 L149.190657,91.6809184 L148.319082,91.1906571 L148.564212,90.7548694 L153.064212,82.7548694 L153.5,81.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M288.809343,190.319082 L289.245131,190.564212 L297.245131,195.064212 L298.019864,195.5 L297.245131,195.935788 L289.245131,200.435788 L288.809343,200.680918 L288.319082,199.809343 L288.754869,199.564212 L295.091,196 L0,196 L0,195 L295.091,195 L288.754869,191.435788 L288.319082,191.190657 L288.809343,190.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333333" cx="73" cy="196" r="2.5"></circle>
+            <circle fill="#333333" cx="231" cy="196" r="2.5"></circle>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="133.5" y="87">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="296.5" y="214">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="70" y="213">F₁</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="227" y="213">F₂</tspan>
+            </text>
+            <path d="M39,99 C77,143.666667 96,176.333333 96,197 C96,217.666667 77,250 39,294" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M207,100 C245,144.666667 264,177.333333 264,198 C264,218.666667 245,251 207,295" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(235.500000, 197.500000) scale(-1, 1) translate(-235.500000, -197.500000) "></path>
+            <circle fill="#333333" cx="91.5" cy="176.5" r="2.5"></circle>
+            <circle fill="#333333" cx="55.5" cy="119.5" r="2.5"></circle>
+            <circle fill="#333333" cx="79.5" cy="152.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="317px" viewBox="0 0 305 317" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="61.5" y1="300.5" x2="247.5" y2="110.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4" transform="translate(154.500000, 205.500000) scale(-1, 1) translate(-154.500000, -205.500000) "></line>
+            <line x1="61.5" y1="297.5" x2="247.5" y2="107.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="7.5" y="11">The asymptotes of a rectangular hyperbola </tspan>
+                <tspan x="7.5" y="24">coincide with the bisectors of the quadrants, </tspan>
+                <tspan x="7.5" y="37">that is, the lines y = x and y = -x.</tspan>
+            </text>
+            <line x1="78.5" y1="52.5" x2="78.5" y2="103.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M153.5,78.9801356 L153.935788,79.7548694 L158.435788,87.7548694 L158.680918,88.1906571 L157.809343,88.6809184 L157.564212,88.2451306 L154,81.908 L154,317 L153,317 L153,81.908 L149.435788,88.2451306 L149.190657,88.6809184 L148.319082,88.1906571 L148.564212,87.7548694 L153.064212,79.7548694 L153.5,78.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.309343,199.319082 L294.745131,199.564212 L302.745131,204.064212 L303.519864,204.5 L302.745131,204.935788 L294.745131,209.435788 L294.309343,209.680918 L293.819082,208.809343 L294.254869,208.564212 L300.591,205 L-0.5,205 L-0.5,204 L300.591,204 L294.254869,200.435788 L293.819082,200.190657 L294.309343,199.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="134.5" y="87">y</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#BABABA">
+                <tspan x="294.5" y="222">x</tspan>
+            </text>
+            <path d="M160,94 C160,135.333333 167,164 181,180 C193.669381,194.479293 216.068014,198.047898 246.871874,198.821082 C251.623958,198.940361 260.666667,199 274,199" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M33,210 C33,251.333333 40,280 54,296 C66.6693814,310.479293 89.0680144,314.047898 119.871874,314.821082 C124.623958,314.940361 133.666667,315 147,315" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(90.000000, 262.500000) scale(-1, -1) translate(-90.000000, -262.500000) "></path>
+            <circle fill="#333333" cx="179" cy="177.5" r="2.5"></circle>
+            <circle fill="#333333" cx="127" cy="230.5" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
