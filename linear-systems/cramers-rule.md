@@ -89,9 +89,6 @@ The unknown in position $k$ is a fraction whose denominator is $\det(A)$ and who
 $$
 x_k = \frac{\det(A_k)}{\det(A)}
 $$
-
-> Example 2 carries out this step in full for a system of two equations.
-
 ## Proof of the rule
 
 Cramer's rule states that if $A$ is an invertible $n \times n$ matrix and $A_k$ denotes $A$ with its $k$-th column replaced by the constants $\mathbf{b}$, then the unique solution of $A\mathbf{x} = \mathbf{b}$ has components $x_k = \det(A_k)/\det(A).$ The formula follows from two properties of the determinant, with no reference to the inverse. Adding to one column a scalar multiple of another column leaves the determinant unchanged, and multiplying a single column by a scalar multiplies the determinant by that scalar.
