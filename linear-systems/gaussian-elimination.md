@@ -36,6 +36,8 @@ Each operation is reversible by an operation of the same type, so the solution s
 
 > The algorithm uses only the four arithmetic operations on the coefficients, so it works unchanged over any field, for example $\mathbb{Q},$ $\mathbb{R},$ or $\mathbb{C}.$
 
+- - -
+
 The process has four steps:
 
 + Eliminate the variable $x_1$ from all equations except the first.
