@@ -143,7 +143,7 @@ A^{-1} = \frac{1}{6}
 \end{pmatrix}
 $$
 
-> The cofactor method is exact but computationally expensive for large matrices, with complexity $O(n!)$ due to the determinant evaluations involved. In numerical practice, the inverse is typically computed via [Gaussian elimination](../solving-linear-systems-using-gaussian-elimination/) or LU decomposition, which achieve $O(n^3)$ complexity.
+> The cofactor method is exact but computationally expensive for large matrices, with complexity $O(n!)$ due to the determinant evaluations involved. In numerical practice, the inverse is typically computed via [Gaussian elimination](../gaussian-elimination/) or LU decomposition, which achieve $O(n^3)$ complexity.
 
 ## Inversion by Gauss-Jordan elimination
 

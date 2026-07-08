@@ -48,7 +48,7 @@ Solving the system therefore amounts to expressing $\mathbf{b}$ as a linear comb
 
 ## Proof of the theorem
 
-The consistency part of the theorem can be proved by reducing the system to row echelon form via [Gaussian elimination](../solving-linear-systems-using-gaussian-elimination/) and analyzing the position of the pivots in the reduced matrix.
+The consistency part of the theorem can be proved by reducing the system to row echelon form via [Gaussian elimination](../gaussian-elimination/) and analyzing the position of the pivots in the reduced matrix.
 
 We apply elementary row operations to the augmented matrix $A \mid \mathbf{b}$ until a row echelon form $\tilde{A} \mid \tilde{\mathbf{b}}$ is obtained. The same operations transform $A$ into a row echelon matrix $\tilde{A}$, since the coefficient block is unaffected by the column appended on the right. Elementary row operations preserve the rank, so the following equalities hold:
 

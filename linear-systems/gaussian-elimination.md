@@ -34,7 +34,7 @@ Every step of the algorithm is one of three elementary operations:
 
 Each operation is reversible by an operation of the same type, so the solution set of the system never changes.
 
-> The algorithm uses only the four arithmetic operations on the coefficients, so it works unchanged over any field, for example $\mathbb{Q},$ $\mathbb{R},$ or $\mathbb{C}.$
+> The algorithm uses only the four arithmetic operations on the coefficients, so it works unchanged over any [field](../fields/), for example $\mathbb{Q},$ $\mathbb{R},$ or $\mathbb{C}.$
 
 - - -
 
@@ -237,7 +237,7 @@ Subtracting the first equation from the second, and twice the first equation fro
 
 ## Applications of row reduction
 
-The [rank](../rank-of-a-matrix/) of a matrix is the number of nonzero rows of its row echelon form, because elementary row operations do not change the row space. The nonzero rows of the echelon form are a basis of the row space, and the columns of the original matrix at the pivot positions are a basis of the column space.
+The [rank](../rank-of-a-matrix/) of a matrix is the number of nonzero rows of its row echelon form, because elementary row operations do not change the row space. The nonzero rows of the echelon form are a basis of the row space, and the columns of the original matrix at the pivot positions are a basis of the [column space](../vector-spaces/).
 
 The [determinant](../determinant-of-a-square-matrix/) of a square matrix can be read from the elimination. Swapping two rows changes the sign of the determinant, multiplying a row by a constant $c \neq 0$ multiplies the determinant by $c,$ and adding a multiple of one row to another leaves it unchanged. If the reduction of $A$ to the triangular form above uses $s$ row swaps and multiplies rows by the constants $c_1, \dots, c_k,$ then:
 

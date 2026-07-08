@@ -113,7 +113,7 @@ $$
 
 The vertical bar has no algebraic meaning. It marks where the coefficients end and the constants begin. The augmented matrix holds all the data of the system, and the standard solution methods act directly on it:
 
-+ [Gaussian elimination](../solving-linear-systems-using-gaussian-elimination/) reduces the augmented matrix by elementary row operations and applies to any number of equations and unknowns.
++ [Gaussian elimination](../gaussian-elimination/) reduces the augmented matrix by elementary row operations and applies to any number of equations and unknowns.
 + [Cramer's rule](../cramers-rule/) expresses each unknown as a ratio of determinants when the coefficient matrix is square and invertible.
 + The [Rouché-Capelli theorem](../rouche-capelli-theorem/) compares the [rank](../rank-of-a-matrix/) of the coefficient matrix with the rank of the augmented matrix to decide whether a system is consistent and how many free parameters its solutions depend on.
 
@@ -299,7 +299,7 @@ x_1 + x_2 = 2 - t \\[6pt]
 \end{cases}
 $$
 
-Subtracting the first equation from the second gives $x_1 = 1 + 2t,$ and substituting this back into the first gives $x_2 = 1 - 3t.$ The [Gaussian elimination](../solving-linear-systems-using-gaussian-elimination/) page carries out this kind of reduction systematically.
+Subtracting the first equation from the second gives $x_1 = 1 + 2t,$ and substituting this back into the first gives $x_2 = 1 - 3t.$ The [Gaussian elimination](../gaussian-elimination/) page carries out this kind of reduction systematically.
 
 The solutions form a one-parameter family, which separates into a constant part and a multiple of a fixed vector:
 

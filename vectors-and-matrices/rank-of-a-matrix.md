@@ -58,7 +58,7 @@ $$r(A) = 2$$
 
 ## Computing the rank via Gaussian elimination
 
-For matrices of large order, computing all minors is impractical. The standard computational method is [Gaussian elimination](../solving-linear-systems-using-gaussian-elimination/), which reduces $A$ to row echelon form by applying elementary row operations that do not change the rank. The rank equals the number of nonzero rows in the reduced matrix. Consider the matrix from the previous example:
+For matrices of large order, computing all minors is impractical. The standard computational method is [Gaussian elimination](../gaussian-elimination/), which reduces $A$ to row echelon form by applying elementary row operations that do not change the rank. The rank equals the number of nonzero rows in the reduced matrix. Consider the matrix from the previous example:
 
 $$
 A = \begin{pmatrix}
