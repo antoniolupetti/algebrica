@@ -57,7 +57,7 @@ This picture matches the classification of the solutions. In the plane two lines
 
 ## Matrix representation
 
-The coefficients and constants of a linear system organize into [matrices](../matrices/), which give a compact representation and open the system to matrix methods. Any system in standard form with $m$ equations and $n$ unknowns has an $m \times n$ coefficient matrix, built from the coefficients of the variables:
+The coefficients and constants of a linear system can be arranged into [matrices](../matrices/), a compact notation on which the standard solution methods operate. Any system in standard form with $m$ equations and $n$ unknowns has an $m \times n$ coefficient matrix, built from the coefficients of the variables:
 
 $$
 A =
@@ -144,13 +144,13 @@ Whether a system has no solution, exactly one, or infinitely many depends on how
 
 These are tendencies, not guarantees. The exact count follows from the [Rouché-Capelli theorem](../rouche-capelli-theorem/), which compares the [rank](../rank-of-a-matrix/) $r$ of the coefficient matrix with the rank of the augmented matrix $(A \mid B).$ A consistent system is determined when $r = n,$ and undetermined, with solutions depending on $n - r$ free parameters, when $r < n.$
 
-The solutions of a consistent system have a structure tied to the associated homogeneous system. If $X_0$ is one particular solution of $A \cdot X = B,$ every solution has the form:
+If $X_0$ is one particular solution of $A \cdot X = B,$ every solution has the form:
 
 $$
 X = X_0 + Y
 $$
 
-where $Y$ ranges over the solutions of the associated homogeneous system $A \cdot X = 0,$ which form a [vector space](../vector-spaces/). The general solution is a single particular solution shifted by the entire solution set of the homogeneous system, a decomposition established by the [Rouché-Capelli theorem](../rouche-capelli-theorem/).
+where $Y$ ranges over the solutions of the associated homogeneous system $A \cdot X = 0,$ which form a [vector space](../vector-spaces/). The [Rouché-Capelli theorem](../rouche-capelli-theorem/) establishes this decomposition.
 
 ## Solving a square system with the inverse matrix
 
@@ -209,7 +209,6 @@ x_1 + x_2 + x_3 = 3 \\[6pt]
 2x_1 + x_2 + 3x_3 = 8
 \end{cases}
 $$
-
 
 First we form the coefficient matrix $A$ and compute its determinant:
 
@@ -291,7 +290,6 @@ x_1 + x_2 + x_3 = 2 \\[6pt]
 \end{cases}
 $$
 
-
 The coefficient matrix has rank $2,$ so by the [Rouché-Capelli theorem](../rouche-capelli-theorem/) the solutions depend on $n - r = 3 - 2 = 1$ free parameter. We take $x_3 = t$ as the free unknown and move it to the right-hand side:
 
 $$
@@ -328,4 +326,4 @@ t
 \qquad t \in \mathbb{R}
 $$
 
-Setting $t = 0$ gives the particular solution $X_0 = (1, 1, 0),$ while the vector $(2, -3, 1)$ solves the associated homogeneous system $A \cdot X = 0.$ As $t$ ranges over $\mathbb{R}$ it produces every solution of that homogeneous system. This family is the decomposition $X = X_0 + Y$ introduced above, a particular solution shifted by the full solution set of the homogeneous system. Geometrically the solution set is a [line in vector form](../vector-and-parametric-equations-of-a-line/) through $X_0$ with direction $(2, -3, 1).$
+Setting $t = 0$ gives the particular solution $X_0 = (1, 1, 0),$ while the vector $(2, -3, 1)$ solves the associated homogeneous system $A \cdot X = 0.$ As $t$ ranges over $\mathbb{R}$ it produces every solution of that homogeneous system. This family is the decomposition $X = X_0 + Y$ introduced above. Geometrically the solution set is a [line in vector form](../vector-and-parametric-equations-of-a-line/) through $X_0$ with direction $(2, -3, 1).$
