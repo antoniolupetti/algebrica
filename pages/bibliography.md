@@ -60,6 +60,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [An Introduction to Measure Theory](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf), Terence Tao
 + [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
 + [Integral Calculus: Mathematics 103](https://www.math.ucdavis.edu/~tjlewis/teaching/MAT17material/books/book_LEK/M103Fulltext.pdf), Leah Edelstein-Keshet
++ [Calculus in Context](https://www.science.smith.edu/~callahan/cic/book.pdf), James Callahan, David Cox, Kenneth Hoffman, Donal O'Shea, Harriet Pollatsek, Lester Senechal
 
 ## Complex analysis
 
@@ -83,10 +84,23 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Optimization
 
 + [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf), Stephen Boyd, Lieven Vandenberghe
++ [Lectures on Modern Convex Optimization](https://www2.isye.gatech.edu/~nemirovs/LMCOBookSIAM.pdf), Aharon Ben-Tal, Arkadi Nemirovski
++ [Convex Optimization: Algorithms and Complexity](http://sbubeck.com/Bubeck15.pdf), Sébastien Bubeck
++ [Introduction to Online Convex Optimization](https://arxiv.org/pdf/1909.05207), Elad Hazan
++ [A First Course in Optimization](https://faculty.uml.edu/cbyrne/optfirst0.pdf), Charles L. Byrne
++ [Algorithms for Optimization](https://algorithmsbook.com/optimization/files/optimization.pdf), Mykel J. Kochenderfer, Tim A. Wheeler
++ [Optimization: Principles and Algorithms](https://transp-or.epfl.ch/books/optimization/html/OptimizationPrinciplesAlgorithms2018.pdf), Michel Bierlaire
++ [An Introduction to Optimization Algorithms](https://thomasweise.github.io/aitoa/aitoa.pdf), Thomas Weise
++ [Lecture Notes on Numerical Optimization](https://faculty.ucmerced.edu/mcarreira-perpinan/teaching/EECS260/lecture-notes.pdf), Miguel Á. Carreira-Perpiñán
++ [Introduction to Optimization](https://scoop.iwr.uni-heidelberg.de/teaching/2022ws/short-course-optimization/introduction-to-optimization-lecture-notes-20230329.pdf), Roland Herzog
++ [Convex Optimization: EE227BT Lecture Notes](https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf), Laurent El Ghaoui
 
 ## Mathematical physics
 
 + [Classical Mechanics](https://www.physics.rutgers.edu/~shapiro/507/book.pdf), Joel A. Shapiro
++ [Mathematics for Physics](https://people.physics.illinois.edu/stone/bookmaster.pdf), Michael Stone, Paul Goldbart
++ [Lectures on Classical Dynamics](https://www.damtp.cam.ac.uk/user/tong/dynamics/clas.pdf), David Tong
++ [Mathematical Methods for Physics](https://theory.physics.manchester.ac.uk/~godfrey/lecture/PHYS30672/Notes.pdf), Niels Walet
 
 ## Foundations and general references
 
@@ -106,6 +120,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Graph Theory](https://roam.libraries.psu.edu/system/files/e-books/MATH485-Graph_Theory.pdf), Christopher Griffin
 + [Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf), Justin Solomon
 + [Mathematics for Computer Science](https://people.csail.mit.edu/meyer/mcs.pdf), Eric Lehman, F. Thomson Leighton, Albert R. Meyer
++ [Scientific Computing](https://www.math.hkust.edu.hk/~machas/scientific-computing.pdf), Jeffrey R. Chasnov
 
 ## Machine learning and artificial intelligence
 
@@ -126,3 +141,4 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf), Avrim Blum, John Hopcroft, Ravindran Kannan
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
 + [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
++ [Foundations of Machine Learning](https://cs.nyu.edu/~mohri/mlbook/), Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
