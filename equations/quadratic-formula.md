@@ -106,7 +106,7 @@ For a quadratic equation $ax^2 + bx + c = 0$ with roots $x_1$ and $x_2$, the sum
 
 $$x_1 + x_2 = -\frac{b}{a} \qquad x_1x_2 = \frac{c}{a}$$
 
-These relations hold in $\mathbb{C}$ for any value of the discriminant, and they follow directly from expanding the [factored form](../factoring-quadratic-equations/) $a(x - x_1)(x - x_2)$ and comparing coefficients. Their derivation and applications, including the role they play in factoring higher-degree polynomials, are discussed in the entry on [trinomial equations](../trinomial-equations/).
+These relations hold in $\mathbb{C}$ for any value of the discriminant, and they follow directly from expanding the [factored form](../factoring-quadratic-equations/) $a(x - x_1)(x - x_2)$ and comparing coefficients. The general statement for polynomials of any degree, together with its derivation and applications, is developed in the entry on [Vieta's formulas](../vieta-formulas/), while the role these relations play in factoring higher-degree polynomials is discussed in the entry on [trinomial equations](../trinomial-equations/).
 
 ## Example 1
 
