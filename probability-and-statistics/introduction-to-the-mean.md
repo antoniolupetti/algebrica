@@ -12,7 +12,7 @@ tags:
 ---
 ## The central behavior of a data distribution
 
-The mean condenses a collection of observations into a single value that reflects the typical level around which the data are distributed. It marks the balance point of a dataset, and it supports many methods of descriptive and inferential analysis.
+The mean condenses a collection of observations into a single value that reflects the typical level around which the data are distributed. It marks the balance point of the data, and it supports many methods of descriptive and inferential analysis.
 
 A general formulation of the mean was proposed by Oscar Chisini in 1929. By his definition, the mean of a set of numerical values is the number $M$ that, when substituted for each observation in a symmetric [function](../functions/) $F$, leaves the overall result unchanged:
 
@@ -71,11 +71,9 @@ The table below collects the classical means in both their simple and weighted f
 | $$M_2 = \left( \frac{1}{n} \sum_{i=1}^{n} x_i^2 \right)^{\frac{1}{2}}$$ | [more](../root-mean-square/) |
 [/class]
 
-> Each formula summarizes a dataset in a specific way, depending on how the individual values contribute to the final result. All means describe central tendency, and their interpretation varies with the mathematical operation that defines them.
+Each formula summarizes a collection of values in a specific way, depending on how the individual values contribute to the final result. All means describe central tendency, and their interpretation varies with the mathematical operation that defines them.
 
-## When to use each mean
-
-+ [Arithmetic mean](../arithmetic-mean/) ($M_1$): used when values combine additively, such as totals of quantities like income, length, or temperature. It expresses the point of balance of a dataset, where each observation contributes equally to the result.
++ [Arithmetic mean](../arithmetic-mean/) ($M_1$): used when values combine additively, such as totals of quantities like income, length, or temperature. It expresses the point of balance of the data, where each observation contributes equally to the result.
 
 + [Weighted arithmetic mean](../arithmetic-mean/) ($M_1$ weighted): applied when some data points have more relevance or occur more frequently than others. Each observation is multiplied by a weight that reflects its importance before computing the average.
 
