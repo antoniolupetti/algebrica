@@ -53,9 +53,10 @@ $$M_g = (2.0 \times 3.5 \times 4.0 \times 5.5 \times 6.0)^{\frac{1}{5}}$$
 
 $$M_g = (924)^{\frac{1}{5}} \approx 3.92$$
 
+The geometric mean of this set is therefore approximately $3.92$.
+
 > The arithmetic mean of these numbers is $(2.0 + 3.5 + 4.0 + 5.5 + 6.0)/5 = 4.2$. The geometric mean is lower ($3.92$) because it gives less weight to the larger values.
 
-The geometric mean of this set is therefore approximately $3.92$.
 
 ## Example 2
 
