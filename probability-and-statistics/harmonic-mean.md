@@ -13,13 +13,11 @@ tags:
 
 The harmonic mean is one of the [power means](../introduction-to-the-mean/). Unlike the [arithmetic mean](../arithmetic-mean/), it applies when the data combine reciprocally rather than additively. It takes the reciprocal of each value, averages them, and then takes the reciprocal of that average.
 
-The harmonic mean is the appropriate average for rates and ratios, such as speed, cost per unit, or productivity, where each value applies to the same fixed quantity. The arithmetic mean gives more weight to the larger values, the harmonic mean to the smaller ones. In its general form, the harmonic mean is:
+The harmonic mean is the appropriate average for rates and ratios, such as speed, cost per unit, or productivity, where each value applies to the same fixed quantity. The arithmetic mean gives more weight to the larger values, whereas the harmonic mean gives more weight to the smaller ones. In its general form, the harmonic mean is:
 
 $$M_h = \frac{n}{\displaystyle\sum_{i=1}^{n} \frac{1}{x_i}}$$
 
-In this expression $x_1, x_2, \ldots, x_n$ are positive values and $n$ is the number of elements.
-
-The reciprocal of the harmonic mean equals the arithmetic mean of the reciprocals:
+In this expression $x_1, x_2, \ldots, x_n$ are positive values and $n$ is the number of elements. The reciprocal of the harmonic mean equals the arithmetic mean of the reciprocals:
 
 $$\frac{1}{M_h} = \frac{1}{n}\sum_{i=1}^{n}\frac{1}{x_i}$$
 
