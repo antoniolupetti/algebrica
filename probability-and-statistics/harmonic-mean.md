@@ -17,7 +17,7 @@ The harmonic mean is the appropriate average for rates and ratios, such as speed
 
 $$M_h = \frac{n}{\displaystyle\sum_{i=1}^{n} \frac{1}{x_i}}$$
 
-In this expression $x_1, x_2, \ldots, x_n$ are positive values and $n$ is the number of elements. The reciprocal of the harmonic mean equals the arithmetic mean of the reciprocals:
+In this expression $x_1, x_2, \ldots, x_n$ are [positive values](../types-of-numbers/) and $n$ is the number of elements. The reciprocal of the harmonic mean equals the arithmetic mean of the reciprocals:
 
 $$\frac{1}{M_h} = \frac{1}{n}\sum_{i=1}^{n}\frac{1}{x_i}$$
 
@@ -84,7 +84,9 @@ The geometric mean is thus the geometric mean of the arithmetic and harmonic mea
 
 > The identity $M_h A = G^2$ holds only for two values. For the values $1, 1, 4$ the harmonic mean is $\frac{4}{3},$ the arithmetic mean is $2,$ and $M_h A = \frac{8}{3}$ differs from $G^2 = 2\sqrt[3]{2}.$
 
-In the harmonic sequence $1, \frac{1}{2}, \frac{1}{3}, \ldots$ every term after the first is the harmonic mean of its two neighbors, since the reciprocals of $\frac{1}{n-1}$ and $\frac{1}{n+1}$ have arithmetic mean $n.$ The name of the mean comes from this sequence, which the Pythagoreans connected to the lengths of vibrating strings and to musical harmony.
+- - -
+
+In the harmonic sequence $1, \frac{1}{2}, \frac{1}{3}, \ldots$ underlying the [harmonic series](../harmonic-series/), every term after the first is the harmonic mean of its two neighbors, since the reciprocals of $\frac{1}{n-1}$ and $\frac{1}{n+1}$ have arithmetic mean $n.$ The property mirrors the [arithmetic sequence](../arithmetic-sequence/), where each term is the arithmetic mean of its neighbors. The name of the mean comes from this sequence, which the Pythagoreans connected to the lengths of vibrating strings and to musical harmony.
 
 ## Bounds and behavior
 
@@ -130,4 +132,4 @@ The weighted form is the correct average for ratios such as the price-to-earning
 
 $$M_{hw} = \frac{30000 + 10000}{\frac{30000}{10} + \frac{10000}{40}} = \frac{40000}{3250} \approx 12.3$$
 
-The weighted arithmetic mean of the two ratios is $17.5,$ above the true figure, because it overweights the stock with the higher ratio. The weighted harmonic mean is the portfolio's actual price-to-earnings ratio, the total price divided by the total earnings.
+The [weighted arithmetic mean](../arithmetic-mean/) of the two ratios is $17.5,$ above the true figure, because it overweights the stock with the higher ratio. The weighted harmonic mean is the portfolio's actual price-to-earnings ratio, the total price divided by the total earnings.
