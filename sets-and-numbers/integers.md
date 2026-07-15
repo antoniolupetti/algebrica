@@ -21,17 +21,17 @@ tags:
 
 ## Definition
 
-Among the different [types of numbers](../types-of-numbers/), the integers emerge when we extend the [natural numbers](../natural-numbers/) to include the additive opposites of every positive quantity. In this enlarged system we find all whole quantities, both positive and negative, together with zero. The [set](../sets/) is denoted by $\mathbb{Z}$. Symbolically we write:
+Among the different [types of numbers](../types-of-numbers/), the integers are the extension of the [natural numbers](../natural-numbers/) obtained by adjoining the additive opposite of every positive quantity. The enlarged system contains all whole quantities, positive and negative, together with zero. The [set](../sets/) is denoted by $\mathbb{Z}$. Symbolically we write:
 
 $$
 \mathbb{Z} = \\{\ldots,-3,-2,-1,0,1,2,3,\ldots\\}
 $$
 
-The integers form an infinite collection of evenly spaced points along the number line and embed into the [rational numbers](../rational-numbers/) through the identification $n \mapsto n/1$, which in turn sit inside the [real numbers](../real-numbers/) and the [complex numbers](../complex-numbers/). 
+The integers are an infinite collection of evenly spaced points along the number line and embed into the [rational numbers](../rational-numbers/) through the identification $n \mapsto n/1$; the rationals in turn are contained in the [real numbers](../real-numbers/) and the [complex numbers](../complex-numbers/). 
 
 ![IMG. 1](svg/integers-1.svg)
 
-The chain of inclusions $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$ traces the successive extensions through which each new system addresses a structural limitation of the previous one.
+The chain of inclusions $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$ traces the successive extensions through which each new system resolves a limitation of the previous one.
 
 A rigorous construction models each integer as a class of ordered pairs of natural numbers. Take pairs $(a,b)$ with $a,b \in \mathbb{N}$, and say that two pairs belong to the same class whenever:
 
@@ -39,50 +39,44 @@ $$
 (a,b) \sim (c,d) \quad \longleftrightarrow \quad a + d = b + c
 $$
 
-The pair $(a,b)$ represents the net difference between $a$ and $b$:
+The pair $(a,b)$ represents the difference $a - b$:
 
 + Pairs with equal components form the class corresponding to $0$.
-+ Pairs where the first component dominates form the positive integers.
-+ Pairs where the second dominates form the negative ones.
++ Pairs where the first component is larger form the positive integers.
++ Pairs where the second component is larger form the negative ones.
 
-For example, consider the pair of natural numbers $(2,5)$. In the construction that builds the integers from ordered pairs, this element represents the net amount obtained by comparing its two components. Since the second entry is larger than the first, the pair corresponds to a negative integer:
+For example, consider the pair of natural numbers $(2,5)$. Since the second component is larger than the first, the pair corresponds to a negative integer:
 
 $$
 2 - 5 = -3
 $$
 
-This interpretation is justified by the fact that two pairs represent the same integer exactly when they fall into the same equivalence class, which occurs whenever:
-
-$$
-(a,b) \sim (c,d) \quad \longleftrightarrow \quad a + d = b + c
-$$
-
-For instance, the pair $(4,7)$ lies in the same class as $(2,5)$, because:
+Two pairs represent the same integer exactly when they belong to the same equivalence class. For instance, the pair $(4,7)$ lies in the same class as $(2,5)$, because:
 
 $$
 4 + 5 = 9 \qquad \text{and} \qquad 7 + 2 = 9
 $$
 
-Although the components differ, both pairs encode the same overall difference, the integer $-3$.
+Although the components differ, both pairs represent the same difference, the integer $-3$.
 
 ## The integers as an algebraic ring
 
-When we say that the integers form a [ring](../rings/), we mean that the set $\mathbb{Z}$ comes equipped with two operations, addition and multiplication, that interact in a structured and predictable way. The structure ensures that arithmetic with integers behaves consistently, no matter how large or small the numbers involved may be.
+When we say that the integers form a [ring](../rings/), we mean that the set $\mathbb{Z}$ has two operations, addition and multiplication, satisfying a fixed list of axioms.
 
 The ring axioms for $(\mathbb{Z}, +, \cdot)$ are the following. For all $a, b, c \in \mathbb{Z}$:
 
 + Closure: the sum and product of any two integers are again integers, $a + b \in \mathbb{Z}$ and $ab \in \mathbb{Z}$.
 + Associativity: both operations are associative, $a + (b+c) = (a+b) + c$ and $a(bc) = (ab)c$.
-+ Identity elements: there exist neutral elements for both operations, $a + 0 = a$ and $a \cdot 1 = a$.
++ Identity elements: both operations have a neutral element, $a + 0 = a$ and $a \cdot 1 = a$.
 + Additive inverses: every integer has an opposite, so that $(\mathbb{Z}, +)$ is an abelian [group](../groups/), with $a + (-a) = 0$.
 + Commutativity of addition: the order of summands does not affect the result, $a + b = b + a$.
 + Distributivity: multiplication distributes over addition, $a(b+c) = ab + ac$.
 
-Multiplication in $\mathbb{Z}$ is also commutative, that is, $ab = ba$ for all $a, b \in \mathbb{Z}$, which makes $(\mathbb{Z}, +, \cdot)$ a commutative ring. Integers do not possess multiplicative inverses in general. The only integers $a$ for which $a^{-1} \in \mathbb{Z}$ are $a = 1$ and $a = -1$, which is why $\mathbb{Z}$ is a ring but not a field.
+Multiplication in $\mathbb{Z}$ is also commutative, that is, $ab = ba$ for all $a, b \in \mathbb{Z}$, which makes $(\mathbb{Z}, +, \cdot)$ a commutative ring. Integers do not have multiplicative inverses in general. The only integers $a$ for which $a^{-1} \in \mathbb{Z}$ are $a = 1$ and $a = -1$, which is why $\mathbb{Z}$ is a ring but not a field.
 
 > A [field](../fields/) extends the ring structure by requiring that every non-zero element also has a multiplicative inverse. The [rational numbers](../rational-numbers/) $\mathbb{Q}$ and the [real numbers](../real-numbers/) $\mathbb{R}$ are standard examples; the integers are not, since $2^{-1} \notin \mathbb{Z}$.
 
-A further property refines the ring structure of $\mathbb{Z}$. A product of two integers is zero only when at least one of the factors is zero, so $\mathbb{Z}$ contains no zero divisors. A commutative ring with this property is called an integral domain, and the absence of zero divisors is what makes the multiplicative cancellation law valid: from $ab = ac$ with $a \neq 0$ one can conclude $b = c$. The same property fails in more general rings such as $\mathbb{Z}/n\mathbb{Z}$ when $n$ is composite, where products of nonzero classes may vanish.
+A further property refines the ring structure of $\mathbb{Z}$. A product of two integers is zero only when at least one of the factors is zero, so $\mathbb{Z}$ has no zero divisors. A commutative ring with this property is called an integral domain, and the absence of zero divisors makes the multiplicative cancellation law valid: from $ab = ac$ with $a \neq 0$ one can conclude $b = c$. The same property fails in more general rings such as $\mathbb{Z}/n\mathbb{Z}$ when $n$ is composite, where products of nonzero classes may vanish.
 
 ## Fundamental properties of the integers
 
@@ -130,7 +124,7 @@ $$
 
 - - -
 
-The integers also include neutral elements for the two operations. Adding zero leaves any integer unchanged, and multiplying by one preserves its value:
+The integers also have neutral elements for the two operations. Adding zero leaves any integer unchanged, and multiplying by one preserves its value:
 
 $$
 a + 0 = a \qquad a \cdot 1 = a
@@ -145,19 +139,19 @@ The order is compatible with the [ring](../rings/) operations. For all $a, b, c 
 + If $a \leq b$, then $a + c \leq b + c$.
 + If $a \leq b$ and $c \geq 0$, then $ac \leq bc$.
 
-A structural property distinguishes $\mathbb{Z}$ from $\mathbb{N}$. The natural numbers are well-ordered, in the sense that every non-empty subset of $\mathbb{N}$ admits a least element. The property fails in $\mathbb{Z}$, since the set itself has no smallest element and the negative integers extend without lower bound. Well-ordering is recovered by restricting to subsets of $\mathbb{Z}$ that are bounded below, and this restricted form is the one actually used in elementary number theory.
+A structural property distinguishes $\mathbb{Z}$ from $\mathbb{N}$. The natural numbers are well-ordered, in the sense that every non-empty subset of $\mathbb{N}$ has a least element. The property fails in $\mathbb{Z}$, since the set itself has no smallest element and the negative integers extend without lower bound. Well-ordering is recovered by restricting to subsets of $\mathbb{Z}$ that are bounded below, and this restricted form is the one used in elementary number theory.
 
-The notion of distance from zero is captured by the [absolute value](../absolute-value/). For any integer $a$, the value $|a|$ equals $a$ when $a \geq 0$ and $-a$ otherwise. The absolute value provides a non-negative measure of magnitude that allows comparisons between positive and negative integers and plays a central role in the formulation of the Euclidean division.
+The [absolute value](../absolute-value/) measures the distance of an integer from zero. For any integer $a$, the value $|a|$ equals $a$ when $a \geq 0$ and $-a$ otherwise. This non-negative measure allows comparisons between positive and negative integers and appears in the bound on the remainder of the Euclidean division.
 
 ## Integers in base 10
 
-Integers are typically written using the decimal system, that is, base 10. Each digit in a number carries a positional weight determined by a corresponding power of ten. By combining these weighted digits, we can reconstruct the entire value of the integer. Consider the number $235$. Using the positional principle, we can express the number as a sum of powers of ten:
+Integers are typically written using the decimal system, that is, base 10. Each digit in a number has a positional weight determined by a corresponding power of ten. By combining these weighted digits, we can reconstruct the value of the integer. Consider the number $235$. Using the positional principle, we can express the number as a sum of powers of ten:
 
 $$
 235 = 2 \times 10^{2} + 3 \times 10^{1} + 5 \times 10^{0}
 $$
 
-The decomposition shows exactly how each digit contributes to the final value. The following table summarises the structure of the number:
+The decomposition shows how each digit contributes to the final value. The following table summarises the structure of the number:
 
 | Digit | Place value         | Contribution               |
 |-------|---------------------|----------------------------|
@@ -171,11 +165,11 @@ $$
 235 = 200 + 30 + 5
 $$
 
-> The same mechanism applies to any integer written in decimal notation. Each digit acts as a coefficient multiplying a specific power of ten, and the integer itself is obtained by summing all the positional contributions.
+> The same mechanism applies to any integer written in decimal notation. Each digit is a coefficient of a specific power of ten, and the integer itself is obtained by summing all the positional contributions.
 
 ## The binary system
 
-Although integers are commonly written in base 10, other numeral systems are equally valid and sometimes more convenient. An especially important alternative is base 2, or the binary system, which uses only the digits $0$ and $1$. This representation is fundamental in computer science and digital electronics, where information is stored and processed using two-state devices. In base 2, each position corresponds to a power of two rather than a power of ten. Any integer can be rewritten in binary by expanding it as a sum of weighted powers of two. Consider the integer $53$. To convert it to binary, we repeatedly divide by $2$ and record the remainders. Reading the remainders from bottom to top yields the binary expansion.
+Although integers are commonly written in base 10, other numeral systems are equally valid and sometimes more convenient. A widely used alternative is base 2, or the binary system, which uses only the digits $0$ and $1$. This representation is standard in computer science and digital electronics, where information is stored and processed using two-state devices. In base 2, each position corresponds to a power of two rather than a power of ten. Any integer can be rewritten in binary by expanding it as a sum of weighted powers of two. Consider the integer $53$. To convert it to binary, we repeatedly divide by $2$ and record the remainders. Reading the remainders from bottom to top yields the binary expansion.
 
 | Division by 2  | Quotient | Remainder |
 |---------------:|:--------:|:---------:|
@@ -211,7 +205,7 @@ $$
 a = bq
 $$
 
-The divisibility relation organises the integers into a rich combinatorial structure and provides the entry point for the classical theory of factorisation, prime numbers, and greatest common divisors. The integer $q$ is the quotient of the exact division, and its existence translates the multiplicative structure of $\mathbb{Z}$ into an arithmetic statement about $a$ and $b$.
+The divisibility relation is the entry point for the classical theory of factorisation, prime numbers, and greatest common divisors. The integer $q$ is the quotient of the exact division.
 
 When $b$ does not divide $a$, the Euclidean division theorem guarantees that the quotient and the remainder still exist in a controlled form. For every pair of integers $a$ and $b$ with $b \neq 0$, there exist unique integers $q$ and $r$ such that:
 
@@ -219,7 +213,7 @@ $$
 a = bq + r \qquad \text{with} \qquad 0 \leq r < |b|
 $$
 
-The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b$. The use of the [absolute value](../absolute-value/) in the bound on $r$ is what allows the statement to cover negative divisors uniformly. The uniqueness of the pair $(q, r)$ is what makes the division algorithm a reliable tool, and the result is the foundation on which the [modulo operator](../modulo-operator/) and modular arithmetic are built. An analogous statement holds for [polynomials](../polynomial-division/) over a field, where the absolute value of the divisor is replaced by its degree.
+The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b$. The [absolute value](../absolute-value/) in the bound on $r$ allows the statement to cover negative divisors uniformly. The [modulo operator](../modulo-operator/) and modular arithmetic are built on the uniqueness of the pair $(q, r)$. An analogous statement holds for [polynomials](../polynomial-division/) over a field, where the absolute value of the divisor is replaced by its degree.
 
 For example, dividing $17$ by $5$ gives $q = 3$ and $r = 2$, since $17 = 3 \cdot 5 + 2$. Dividing $-17$ by $5$ gives $q = -4$ and $r = 3$, since $-17 = (-4) \cdot 5 + 3$. The remainder is again non-negative, in agreement with the convention $0 \leq r < |b|$.
 
@@ -237,11 +231,11 @@ $$
 
 In the case of $5 \times 7$, the product is $35 = 24 + 11$. Since $24$ is a multiple of $12$, the value of the product modulo $12$ is the remainder $11$.
 
-> Modular arithmetic is widely used beyond pure mathematics. In computer science, the modulo operator is essential for extracting remainders, generating cyclic patterns, and keeping values within a bounded range. A familiar example involves the months of the year. Adding $n$ months is naturally handled modulo $12$, since month counts wrap around after December.
+> Modular arithmetic is widely used beyond pure mathematics. In computer science, the modulo operator is used to extract remainders, generate cyclic patterns, and keep values within a bounded range. The months of the year are a familiar example. Adding $n$ months is handled modulo $12$, since month counts wrap around after December.
 
 ## Integers and the role of induction
 
-Several structural properties of the integers depend on the recursive nature of the natural numbers. The naturals form the foundation from which the integers are constructed, and many statements about $\mathbb{Z}$ can be traced back to properties first established on $\mathbb{N}$. The mechanism that allows these stepwise constructions and proofs is the [principle of mathematical induction](../principle-of-mathematical-induction/).
+Several structural properties of the integers depend on the recursive nature of the natural numbers. The naturals are the base from which the integers are constructed, and many statements about $\mathbb{Z}$ can be traced back to properties first established on $\mathbb{N}$. The mechanism behind these stepwise constructions and proofs is the [principle of mathematical induction](../principle-of-mathematical-induction/).
 
 Consider a set $A \subseteq \mathbb{N}$ defined by a property $p(n)$, such that $A = \\{ n \in \mathbb{N} \mid p(n) \\}$. Suppose the following conditions hold:
 
