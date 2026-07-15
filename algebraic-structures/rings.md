@@ -41,7 +41,7 @@ A nonzero element $a \in R$ is called a zero divisor when there exists a nonzero
 
 ## Algebraic hierarchy
 
-A group is the most elementary of these structures. It consists of a set equipped with a single binary operation satisfying closure, associativity, the existence of an identity element, and the existence of inverses.
+A group is a set equipped with a single binary operation that satisfies closure, associativity, the existence of an identity element, and the existence of inverses.
 
 A ring extends this framework by introducing a second operation, multiplication, required to be associative and to distribute over addition, but not necessarily commutative and not required to admit inverses.
 
