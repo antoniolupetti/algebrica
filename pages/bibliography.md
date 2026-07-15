@@ -48,6 +48,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Topology Without Tears](https://www.topologywithouttears.net/topbook.pdf), Sidney A. Morris
 + [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf), J. P. May
++ [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf), Allen Hatcher
 
 ## Calculus and real analysis
 
