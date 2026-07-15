@@ -95,7 +95,7 @@ In fact, we have:
 $$
 \begin{align}
 F(0) &= P(X \le 0) = f(0) = \frac{25}{36} \\[6pt]
-F(1) &= P(X \le 1) = f(0) + f(1) = \frac{25}{36} + \frac{10}{36} = \frac{35}{36} \\[6pt]
+F(1) &= P(X \le 1) = f(0) + f(1) = \frac{25}{36} + \frac{10}{36} = \frac{35}{36} \\[12pt]
 F(2) &= P(X \le 2) = f(0) + f(1) + f(2) = 1
 \end{align}
 $$
