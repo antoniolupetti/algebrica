@@ -19,7 +19,6 @@ tags:
 
 A group describes the structure shared by many different mathematical objects, such as the [integers](../integers/) under addition, nonzero [real numbers](../real-numbers/) under multiplication, geometric symmetries, and invertible [matrices](../matrices/). A group is a set $G$ together with a binary operation $\cdot : G \times G \to G$ satisfying four axioms:
 
-+ Closure: for all $a, b \in G,$ the element $a \cdot b$ belongs to $G.$
 + Associativity: for all $a, b, c \in G,$ the identity $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ holds.
 + Identity element: there exists an element $e \in G$ such that $a \cdot e = e \cdot a = a$ for all $a \in G.$
 + Inverses: for every $a \in G$ there exists an element $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e.$
