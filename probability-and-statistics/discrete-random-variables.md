@@ -60,7 +60,7 @@ A discrete random variable has a certain probability of taking each of its possi
 
 $$
 \begin{align}
-& f(x) \ge 0 \\[6pt]
+& f(x) \ge 0 \\[11pt]
 & \sum_x f(x) = 1 \\[6pt]
 & P(X = x) = f(x)
 \end{align}
@@ -114,7 +114,7 @@ In this expression $f(x, y)$ is the probability that $X$ takes the value $x$ and
 
 $$
 \begin{align}
-& f(x, y) \ge 0 \\[6pt]
+& f(x, y) \ge 0 \\[11pt]
 & \sum_x \sum_y f(x, y) = 1 \\[6pt]
 & P(X = x, Y = y) = f(x, y)
 \end{align}
