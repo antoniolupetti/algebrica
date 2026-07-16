@@ -14,15 +14,15 @@ tags:
 
 ## Definition
 
-A discrete random variable is a [function](../functions/) $X$ that assigns a [real number](../real-numbers/) to each element of a discrete sample space $\Omega$:
+A discrete random variable is a [function](../functions/) $X$ from a sample space $\Omega$ to the [real numbers](../real-numbers/) whose probability distribution is concentrated on a finite or countably infinite set $S \subseteq \mathbb{R}$:
 
 $$
-X : \Omega \rightarrow \mathbb{R}
+X : \Omega \rightarrow \mathbb{R}, \qquad P(X \in S) = 1
 $$
 
-In this definition $\Omega$ is a discrete sample space, a [set](../sets/) of outcomes that is finite or countably infinite. Through the function $X$ the outcomes of a random experiment become numerical values, which can then be analyzed statistically.
+In this definition $\Omega$ is the [set](../sets/) of outcomes of the random experiment. It may be finite, countably infinite, or uncountable. The variable $X$ is discrete because it belongs to the finite or countably infinite set $S$ with probability $1,$ regardless of the cardinality of $\Omega$.
 
-> When the sample space is continuous, composed of infinitely many infinitesimally close outcomes, we speak of [continuous random variables](../continuous-random-variables/).
+> An uncountable sample space can support both discrete and [continuous random variables](../continuous-random-variables/). The classification depends on the distribution of the random variable, not on the cardinality of the sample space.
 
 - - -
 
