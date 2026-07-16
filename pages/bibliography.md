@@ -108,6 +108,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Foundations and general references
 
 + [Book of Proof](https://richardhammack.github.io/BookOfProof/Main.pdf), Richard Hammack
++ [Proofs and Concepts](https://deductivepress.ca/dmorris/books/proofs+concepts.pdf), Dave Witte Morris, Joy Morris
 + [Pure Mathematics](https://archive.org/details/puremathematics0000pars), Stuart Parsonson
 + [Maths 1](https://people.bath.ac.uk/ensdasr/ME10304.bho/maths1.pdf), Andrew Rees
 + [The Princeton Companion to Mathematics](https://press.princeton.edu/books/hardcover/9780691118802/the-princeton-companion-to-mathematics), Timothy Gowers, June Barrow-Green, Imre Leader
