@@ -16,17 +16,13 @@ tags:
 ---
 ## Area under a function: from curve to integral
 
-Consider a [function](../functions/) $f(x)$ defined on a [closed interval](../intervals/) $[a, b]$. The definite integral of $f(x)$ over this interval represents the oriented area of the region bounded by the graph of the function, the $x$-axis, and the vertical lines $x = a$ and $x = b$:
+Consider a [function](../functions/) $f(x)$ defined on a [closed interval](../intervals/) $[a, b]$, with $a < b$. If $f(x)$ is [continuous](../continuous-functions/) and nonnegative on $[a, b]$, its graph, the $x$-axis, and the vertical lines $x = a$ and $x = b$ bound a curvilinear trapezoid. The area of this region is given by the definite integral:
 
 $$\int_{a}^{b} f(x) \ dx$$
 
-When $f(x)$ is [continuous](../continuous-functions/) on $[a, b]$, the region is called a curvilinear trapezoid: a planar figure bounded above by the graph of $f(x)$, below by the $x$-axis, and laterally by the vertical lines $x = a$ and $x = b$.
-
 ![Img. 1](svg/definite-integrals-1.svg)
 
-The area of this region cannot be determined by the standard formulas of elementary geometry, since one of its sides is a curve rather than a straight segment.
-
-## Approximating area with rectangular sums
+The standard formulas of elementary geometry do not apply directly to a general curvilinear trapezoid, because one of its boundaries is a curve rather than a straight segment.
 
 The area of the curvilinear trapezoid can be approximated by dividing the interval $[a, b]$ into $n$ subintervals of equal width:
 
@@ -36,23 +32,23 @@ Over each subinterval, the region is approximated by a rectangle, and the sum of
 
 ![Img. 2](svg/definite-integrals-2.svg)
 
-Denoting by $m_i$ and $M_i$ the minimum and maximum values of $f(x)$ on the $i$-th subinterval, the lower and upper sums are defined as:
+Denoting by $m_i$ and $M_i$ the infimum and supremum of $f(x)$ on the $i$-th subinterval, the lower and upper sums are defined as:
 
-$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x_i \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x_i$$
+$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x$$
 
 The lower sum $s_n^{-}$ approximates the area from below, the upper sum $s_n^{+}$ from above.
 
 ![Img. 3](svg/definite-integrals-3.svg)
 
-As the width $\Delta x$ tends to zero, both sums converge to the same [limit](../limits/). A bounded function $f(x)$ on $[a, b]$ is said to be integrable when this common limit exists:
+For a bounded function $f(x)$ on $[a, b]$, the lower and upper sums approach each other as the partition is refined precisely when $f(x)$ is Riemann integrable. For the uniform partitions considered here, both sums then converge to the same [limit](../limits/) as $n$ tends to infinity:
 
-$$\lim_{\Delta x \to 0} s_n^{-} = \lim_{\Delta x \to 0} s_n^{+} = I$$
+$$\lim_{n \to \infty} s_n^{-} = \lim_{n \to \infty} s_n^{+} = I$$
 
 The value $I$ is the definite integral of $f(x)$ over $[a, b]$:
 
 $$I = \int_{a}^{b} f(x) \ dx$$
 
-This approach, based on the convergence of lower and upper sums, is the [Riemann definition](../riemann-integrability-criteria/) of the integral. The values $a$ and $b$ are called the lower and upper limits of integration, and $f(x)$ is the integrand. Geometrically, $f(x)$ and $dx$ represent the height and the base of the infinitesimal rectangles whose areas are summed in the limit.
+This approach through lower and upper Darboux sums gives a characterization of [Riemann integrability](../riemann-integrability-criteria/). The values $a$ and $b$ are the lower and upper limits of integration, and $f(x)$ is the integrand. The notation $f(x) \ dx$ is suggested by the area $f(x)\Delta x$ of each approximating rectangle. The symbol $dx$ identifies $x$ as the integration variable and records the limiting role of the subinterval widths.
 
 ## Computing definite integrals
 
@@ -62,14 +58,14 @@ $$\int_{a}^{b} f(x) \ dx = F(b) - F(a)$$
 
 The two quantities appearing in this expression have the following meaning:
 
-+ $F(x)$ is any function satisfying $F'(x) = f(x)$ for every $x \in [a, b]$.
++ $F(x)$ is continuous on $[a, b]$, differentiable on $(a, b)$, and satisfies $F'(x) = f(x)$ for every $x \in (a, b)$.
 + $F(b)$ and $F(a)$ are the values of the antiderivative evaluated at the upper and lower limits of integration.
 
-This formula is the conclusion of the second [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/). The first part of the theorem establishes that the function obtained by accumulating area from a fixed point is differentiable, with derivative equal to the integrand. Specifically, if:
+This formula is the conclusion of the second [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/). The first part of the theorem establishes that the function obtained by integrating from a fixed point to a variable endpoint is differentiable, with derivative equal to the integrand. Define the accumulation function by:
 
 $$F(x) = \int_{a}^{x} f(t) \ dt$$
 
-then $F'(x) = f(x)$, which makes differentiation and integration mutually inverse operations in a precise sense. Both results are treated in detail on the dedicated page on the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/).
+For every $x \in (a, b)$, this function satisfies $F'(x) = f(x)$, which makes differentiation and integration mutually inverse operations in a precise sense. Both results are treated in detail on the dedicated page on the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/).
 
 ## Properties
 
@@ -83,15 +79,13 @@ $$\int_{a}^{b} f(x) \ dx = -\int_{b}^{a} f(x) \ dx$$
 
 This reflects the oriented nature of the definite integral: traversing the interval in the opposite direction reverses the sign of the accumulated area.
 
-If $f(x) = k$ is constant on $[a, b]$, the region under the graph is a rectangle of height $k$ and base $b - a$:
+If $f(x) = k$ is constant on $[a, b]$, its integral is the constant value multiplied by the length of the interval:
 
 $$\int_{a}^{b} k \ dx = k(b - a)$$
 
 A constant factor can be moved outside the integral sign:
 
-$$\int_{a}^{b} k \cdot f(x) \ dx = k \int_{a}^{b} f(x) \ dx$$
-
-- - -
+$$\int_{a}^{b} kf(x) \ dx = k \int_{a}^{b} f(x) \ dx$$
 
 The integral is additive over sums of functions:
 
@@ -105,7 +99,7 @@ If $f(x) \leq g(x)$ for every $x \in [a, b]$, the same inequality propagates to 
 
 $$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$
 
-> This is the comparison property of integrals. Geometrically, it states that the area under $f$ does not exceed the area under $g$ over the same interval.
+> This is the comparison property of integrals. The vertical difference $g(x) - f(x)$ is nonnegative throughout the interval, so its integral is also nonnegative.
 
 ## Mean value theorem for integrals
 
@@ -113,7 +107,7 @@ If $f(x)$ is continuous on $[a, b]$, then there exists at least one point $c \in
 
 $$\int_{a}^{b} f(x) \ dx = f(c)(b - a)$$
 
-The value $f(c)$ is the average value of the function over the interval. Geometrically, the theorem asserts the existence of a rectangle with base $b - a$ and height $f(c)$ whose area equals exactly the area under the curve. The theorem guarantees the existence of such a point without providing a method to locate it. Solving for $f(c)$, the average value of $f$ over $[a, b]$ can be written as:
+The value $f(c)$ is the average value of the function over the interval. Geometrically, the theorem asserts the existence of a rectangle with base $b - a$ and height $f(c)$ whose oriented area equals the definite integral. The theorem guarantees the existence of such a point without providing a method to locate it. Solving for $f(c)$, the average value of $f$ over $[a, b]$ can be written as:
 
 $$f(c) = \frac{1}{b - a} \int_{a}^{b} f(x) \ dx$$
 
@@ -148,7 +142,7 @@ The area of the region bounded by the graph of $f(x) = 3x - x^2$ and the $x$-axi
 
 $$\int_{0}^{3} (3x - x^2) \ dx = \frac{9}{2}$$
 
-> The procedure illustrated here applies whenever the antiderivative of the integrand can be expressed in closed form. When this is not the case, additional techniques are required, such as [integration by substitution](../integration-by-substitution/) and [integration by parts](../integration-by-parts/).
+> When an antiderivative is not immediately recognizable, techniques such as [integration by substitution](../integration-by-substitution/) and [integration by parts](../integration-by-parts/) may produce it. If no elementary antiderivative exists, the definite integral may require numerical methods or special functions.
 
 ## Example 2
 
@@ -157,8 +151,6 @@ Compute the following definite integral:
 $$\int_{0}^{\pi} (x + \sin x) \ dx$$
 
 > The integrand combines a polynomial term with a trigonometric function. The relevant antiderivatives are collected on the page on [integrals of trigonometric functions](../integral-of-trigonometric-functions/).
-
-- - -
 
 Applying linearity, the integral splits as:
 
@@ -188,38 +180,42 @@ The interpretation of the definite integral as an area holds when $f(x) \geq 0$ 
 
 ![Img. 4](svg/definite-integrals-4.svg)
 
-To recover the geometric area, the interval $[a, b]$ is divided into subintervals over which $f(x)$ maintains constant sign. If $f(x) > 0$ on $[a, c]$ and $f(x) < 0$ on $[c, b]$, the integral over each subinterval is computed separately and the results are combined according to the additivity property:
+To recover the geometric area, the interval $[a, b]$ is divided into subintervals over which $f(x)$ maintains constant sign. If $f(x) \geq 0$ on $[a, c]$ and $f(x) \leq 0$ on $[c, b]$, additivity gives the oriented integral:
 
 $$\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx$$
 
-For an [even function](../even-and-odd-functions/), symmetry about the $y$-axis implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal, and:
+The geometric area is obtained by changing the sign of the negative contribution:
+
+$$S = \int_{a}^{c} f(x) \ dx - \int_{c}^{b} f(x) \ dx = \int_{a}^{b} |f(x)| \ dx$$
+
+For an [even function](../even-and-odd-functions/), symmetry about the $y$-axis implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal. Hence:
 
 $$\int_{-a}^{a} f(x) \ dx = 2\int_{0}^{a} f(x) \ dx$$
 
 ![Img. 5](svg/definite-integrals-5.svg)
 
-For an [odd function](../even-and-odd-functions/), symmetry about the origin implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal in magnitude but opposite in sign, and:
+For an [odd function](../even-and-odd-functions/), symmetry about the origin implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal in magnitude but opposite in sign. Hence:
 
 $$\int_{-a}^{a} f(x) \ dx = 0$$
 
 ![Img. 6](svg/definite-integrals-6.svg)
 
-In both cases, the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a]$ is obtained by integrating the [absolute value](../absolute-value/) of the function. For an even function this coincides with the oriented integral:
-
-$$S = 2\int_{0}^{a} f(x) \ dx$$
-
-For an odd function, where the oriented integral vanishes, the geometric area is recovered through the absolute value:
+In both cases, the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a]$ is obtained by integrating the [absolute value](../absolute-value/) of the function. Since $|f(x)|$ is even whenever $f(x)$ is even or odd, the area is:
 
 $$S = 2\int_{0}^{a} |f(x)| \ dx$$
 
+If $f(x)$ is even and nonnegative on $[0, a]$, this formula reduces to:
+
+$$S = 2\int_{0}^{a} f(x) \ dx$$
+
+Further examples of geometric area calculations are given on the page on [finding areas by integration](../finding-areas-by-integration/).
+
 ## Improper integrals
 
-The construction developed so far assumes that the interval $[a, b]$ is finite and that $f(x)$ remains bounded throughout. Both conditions can fail in practice: integration over unbounded intervals or over functions that diverge at some point of the domain occurs naturally in many problems.
+The construction developed so far assumes that the interval $[a, b]$ is finite and that $f(x)$ remains bounded throughout. Both conditions can fail in practice: integration over unbounded intervals or over functions that become unbounded near an endpoint or an interior point occurs naturally in many problems.
 
-The standard [Riemann integral](../riemann-integrability-criteria/) does not cover these cases directly. The remedy is to replace the problematic bound with a parameter and pass to a limit. For an integral over an unbounded interval, the definition is:
+The standard [Riemann integral](../riemann-integrability-criteria/) does not cover these cases directly. The remedy is to replace the problematic bound with a parameter and pass to a limit. Suppose that $f(x)$ is Riemann integrable on every interval $[a, t]$ with $t > a$. The integral over an unbounded interval is defined by:
 
 $$\int_{a}^{+\infty} f(x) \ dx = \lim_{t \to +\infty} \int_{a}^{t} f(x) \ dx$$
 
 When the limit exists and is finite, the integral is said to converge; otherwise it diverges. The systematic treatment is given on the dedicated page on [improper integrals](../improper-integrals/).
-
-> The definite integral measures signed area and provides a precise tool for computing accumulated quantities. One of its most direct applications is the calculation of the area of regions bounded by curves, a problem that reduces to setting up and evaluating definite integrals of the kind studied here. The procedure is treated in detail on the dedicated page on [finding areas by integration](../finding-areas-by-integration/).
