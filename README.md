@@ -49,25 +49,19 @@ Each entry on Algebrica is written from scratch, drawing on a broad range of sou
 
 Where sources differ in notation or emphasis, they are compared and reconciled, then reorganised into a single coherent flow that follows a deliberate, logical progression. The resulting content is original: each entry is an independent exposition, built from the ground up to be accurate while remaining clear for the intended reader.
 
-The editorial aim is to reduce without distorting. University sources are often dense by necessity, and part of the work is finding what can be made more direct without losing precision.
+The editorial aim is to reduce without distorting. University sources are often dense by necessity, and part of the work is finding ways to make them more direct without sacrificing precision.
 
 ## Editorial process
 
-The process is iterative. A page that seems complete may be revisited as adjacent entries develop, and inconsistencies in notation, terminology, or depth often prompt further revision. Entries are progressively released and updated here on GitHub.
+Transparency is one of the principles Algebrica is built on, so I want to be open about the tools I use. English is not my native language, and I rely on [Grammarly](https://www.grammarly.com/) (no affiliation) for proofreading and stylistic refinement. The mathematical content is entirely my own. Grammarly helps me express it more naturally for an international audience.
 
-To increase transparency, I am also documenting the editorial process and continuously revising the content to improve accuracy and reliability. Since I am not a native English speaker, I also rely on [Grammarly Pro](https://grammarly.com) (no affiliation) to support the proofreading of the texts. On some pages a quality indicator is now visible, including a [GPTZero Pro](https://gptzero.me) score (no affiliation), as an additional signal of transparency. The score, expressed as a percentage, represents the system’s level of confidence that the content is human. For example, a score of 92% means that the text is considered human with 92% confidence.
-
-This should however be interpreted with caution.
-
-The inclusion of these indicators is primarily an effort toward transparency, but the results are often inconsistent and sometimes contradictory. In particular, formal mathematical definitions and the writing style of a non-native English speaker can significantly affect the score. In several cases, extremely small lexical changes have produced large variations in the reported confidence. For example, replacing a simple conjunction such as _"whether"_ with a synonym has in some tests shifted the score from 18% human to 72% human, even in texts with an extended and coherent contextual structure. 
-
-**Such variations suggest that these systems may not yet provide a stable or fully reliable measure of authorship. I am also testing other similar tools, but the results remain highly variable and, at least for now, only partially indicative.**
+More recently, I have started using Codex and Claude Cowork (no affiliation) to improve internal linking between entries, fix sentences that sound too Italian, and keep the style consistent by replacing colloquial turns of phrase with more accurate ones. I also use it to look for inaccuracies or mistakes, which I then verify individually. With hundreds of pages published, this is work I can no longer do manually page by page, and AI saves me a great deal of time while keeping content quality consistent. It works as a small support team that lightens the load, but the underlying writing is still my own.
 
 _Any help in making the texts sound more natural in English, while preserving the formal accuracy they would have in Italian, is absolutely welcome!_
 
 ## Repository structure
 
-In the Algebrica GitHub repository I’m progressively releasing not only all the entries in Markdown format, but also all the diagrams and illustrations as open and fully editable SVG files to improve the accessibility and reusability of the content.
+In the Algebrica GitHub repository, I’m progressively releasing not only all the entries in Markdown format, but also all the diagrams and illustrations as open and fully editable SVG files to improve the accessibility and reusability of the content.
 
 The SVG images can be freely modified, reused, and adapted for educational purposes, making the graphical structure of the entries fully inspectable and portable alongside the text itself.
 
