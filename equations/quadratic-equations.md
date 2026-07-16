@@ -70,7 +70,7 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 + $a$, $b$, $c$ are real coefficients and $a \neq 0$.
 + The $\pm$ symbol gives the two solutions, one for each sign.
 + A quadratic equation has exactly two roots in $\mathbb{C}$, counted with multiplicity.
-+ By [Vieta's formulas](../quadratic-formula/), the roots satisfy $x_1 + x_2 = -b/a$ and $x_1x_2 = c/a$.
++ By [Vieta's formulas](../vieta-formulas/), the roots satisfy $x_1 + x_2 = -b/a$ and $x_1x_2 = c/a$.
 
 A further property of the discriminant is the following:
 
@@ -86,27 +86,28 @@ A quadratic equation can be [factored](../factoring-quadratic-equations/) into t
 
 $$ax^2 + bx + c = 0 \quad \Longleftrightarrow \quad a(x - x_1)(x - x_2) = 0$$
 
-In this identity $x_1$ and $x_2$ are the roots of the equation. By [Vieta's formulas](../quadratic-formula/), the roots satisfy the following relations:
+In this identity $x_1$ and $x_2$ are the roots of the equation. By [Vieta's formulas](../vieta-formulas/), the roots satisfy the following relations:
 
 $$x_1 + x_2 = -\frac{b}{a}$$
 $$x_1x_2 = \frac{c}{a}$$
 
-This method is effective when the roots can be identified by inspection or by simple trial, but it becomes impractical for equations with irrational or complex roots, where the [quadratic formula](../quadratic-formula/) is preferable.
+This method is effective when the linear factors can be identified by inspection or by simple trial. Irrational roots do not by themselves prevent a direct factorization, as the identity $x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})$ shows. When the factors are not evident, the [quadratic formula](../quadratic-formula/) provides a systematic method. If the coefficients are real and the discriminant is negative, the polynomial has no factorization into real linear factors.
 
 ## How to solve a quadratic equation
 
-The following decision tree summarises the solution strategy, moving from the simplest configurations of the coefficients to the general method.
+The first step is to rewrite the equation in standard form $ax^2 + bx + c = 0$, collecting all terms on the same side and simplifying the coefficients. This step determines whether the equation is genuinely quadratic, since the leading coefficient must satisfy $a \neq 0$.
 
-+ Rewrite the equation in standard form $ax^2 + bx + c = 0$.
-+ Calculate the discriminant $\Delta = b^2 - 4ac$.
-+ Apply the quadratic formula:
+Before applying the general formula, the coefficients should be inspected. If $b = c = 0$, the equation reduces to $ax^2 = 0$ and has the double root $x = 0$. If $b = 0$, the term $x^2$ can be isolated and the equation can be solved by taking square roots. If $c = 0$, collecting $x$ as a common factor reduces the problem to the zero-product property. These are the [incomplete quadratic equations](../incomplete-quadratic-equations/).
 
-$$x = \frac{-b \pm \sqrt{\Delta}}{2a}$$
+When all three terms are present, a common factor, a perfect-square trinomial, or a simple factorization may give the roots directly. The method of [completing the square](../completing-the-square/) is useful when the quadratic expression can be converted readily into the square of a binomial. If no such structure is apparent, the discriminant is calculated:
 
-+ Simplify the result.
-+ If $\Delta \geq 0$ the solutions are real, while if $\Delta < 0$ the solutions are complex conjugates.
+$$\Delta = b^2 - 4ac$$
 
-> The quadratic formula is the universal method, but not always the most efficient. When the equation is incomplete or has an obvious factorization, the roots can often be obtained more quickly by direct inspection.
+The sign of $\Delta$ determines the nature of the roots. For $\Delta > 0$ the equation has two distinct real roots, for $\Delta = 0$ it has one real root of multiplicity two, and for $\Delta < 0$ it has two complex conjugate roots. Substitution into the quadratic formula then gives the roots:
+
+$$x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a}$$
+
+The resulting values should be simplified and written as a solution set. Substituting them into the original equation provides a direct check, particularly when the equation required several preliminary transformations.
 
 ## Quadratic equations with parameters
 
@@ -120,9 +121,11 @@ $$\Delta(k) = b(k)^2 - 4a(k)c(k)$$
 
 which, exactly as in the classical case, determines whether the equation has two distinct real solutions, a repeated solution, or a pair of complex conjugate solutions.
 
+The condition $a(k) \neq 0$ must be checked before the discriminant is used. A parameter value for which $a(k) = 0$ does not belong to the quadratic case, but the original equation still requires separate analysis. It becomes linear when $b(k) \neq 0$. If $b(k) = 0$ as well, the equation has no solution when $c(k) \neq 0$ and every value of $x$ is a solution when $c(k) = 0$.
+
 ## Examples
 
-The following equations illustrate how the form of the coefficients determines the most convenient resolution method. We use [factoring](../factoring-quadratic-equations/) when the linear factors can be identified directly and the [quadratic formula](../quadratic-formula/) when no simple factorisation is apparent.
+The following equations illustrate how the form of the coefficients determines the most convenient solution method. We use [factoring](../factoring-quadratic-equations/) when the linear factors can be identified directly and the [quadratic formula](../quadratic-formula/) when no simple factorization is apparent. The last three equations illustrate an incomplete quadratic equation, a repeated root, and the method of completing the square.
 
 [class="table-1"]
 
@@ -135,6 +138,9 @@ The following equations illustrate how the form of the coefficients determines t
 | $z^2 - 32z - 105 = 0$               |
 | $\sqrt{2}x^2 - 3x - 2\sqrt{2} = 0$  |
 | $n^2 + 7n + 15 = 5$                 |
+| $3x^2 - 12 = 0$                      |
+| $4x^2 - 12x + 9 = 0$                 |
+| $x^2 + 6x + 1 = 0$                   |
 [/class]
 
 We begin by solving the first equation. The product of the constant terms must be $-2$, and the factors $(9x - 2)$ and $(x + 1)$ produce the required linear coefficient:
@@ -259,3 +265,59 @@ The equation is therefore equivalent to:
 $$(n + 5)(n + 2) = 0$$
 
 The equation has two distinct real solutions, $n_1 = -5$ and $n_2 = -2$.
+
+- - -
+
+The eighth equation is incomplete because its linear term is absent. Moving the constant term to the right-hand side gives:
+
+$$3x^2 = 12$$
+
+Since the coefficient multiplying $x^2$ is $3$, we divide both sides by $3$ in order to isolate the square of the unknown:
+
+$$x^2 = 4$$
+
+Taking both square roots of $4$ gives:
+
+$$x_{1,2} = \pm 2$$
+
+The equation has two distinct real solutions, $x_1 = -2$ and $x_2 = 2$.
+
+- - -
+
+For the ninth equation the discriminant is:
+
+$$\Delta = (-12)^2 - 4(4)(9) = 144 - 144 = 0$$
+
+The vanishing discriminant shows that the equation has a repeated real root. The left-hand side is also a perfect-square trinomial:
+
+$$4x^2 - 12x + 9 = (2x - 3)^2$$
+
+The equation therefore becomes:
+
+$$(2x - 3)^2 = 0$$
+
+A square is zero only when its base is zero, so $2x - 3 = 0$ and hence $x = 3/2$. The equation has the single real root $x = 3/2$, counted with multiplicity two.
+
+- - -
+
+The tenth equation illustrates the method of completing the square. Moving the constant term to the right-hand side gives:
+
+$$x^2 + 6x = -1$$
+
+The coefficient of $x$ is $6$, and the square of its half is $9$. Adding $9$ to both sides preserves the equality and turns the left-hand side into a perfect square:
+
+$$x^2 + 6x + 9 = 8$$
+
+Thus the equation is equivalent to:
+
+$$(x + 3)^2 = 8$$
+
+Taking both square roots gives:
+
+$$x + 3 = \pm\sqrt{8} = \pm 2\sqrt{2}$$
+
+Subtracting $3$ from both sides yields:
+
+$$x_{1,2} = -3 \pm 2\sqrt{2}$$
+
+The equation has two distinct real solutions, $x_1 = -3 - 2\sqrt{2}$ and $x_2 = -3 + 2\sqrt{2}$.
