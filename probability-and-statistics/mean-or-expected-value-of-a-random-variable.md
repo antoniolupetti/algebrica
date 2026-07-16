@@ -10,7 +10,7 @@ tags:
   - statistics
 ---
 
-## What is the expected value of a random variable?
+## The expected value of a random variable
 
 The [mean](../introduction-to-the-mean/) is a statistical measure of the central tendency of a dataset, as is the [median](../median-and-quantiles/). It reduces an entire distribution to a single quantity, the point around which the values balance.
 
