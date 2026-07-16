@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="344px" height="265px" viewBox="0 0 344 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 1.000000)">
+            <g transform="translate(0.000000, 1.000000)">
+                <polygon fill="#E6E6E6" points="103 245 157 245 157 91 140 108 126 131 113 162 103 182"></polygon>
+                <line x1="103.5" y1="245.5" x2="103.5" y2="182" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="156.5" y1="245.5" x2="156.5" y2="91.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                    <tspan x="73" y="11">The shaded region between a and b visually </tspan>
+                    <tspan x="73" y="24">represents the probability that the random </tspan>
+                    <tspan x="73" y="37">variable falls within that interval. The larger the </tspan>
+                    <tspan x="73" y="50">area, the higher the probability.</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="99" y="259">a</tspan>
+                </text>
+                <text font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="154" y="259">b</tspan>
+                </text>
+                <path d="M335.162848,240.527171 L335.245131,240.564212 L343.245131,245.064212 C343.556638,245.239435 343.582597,245.665161 343.323007,245.882134 L343.245131,245.935788 L335.245131,250.435788 C335.004452,250.57117 334.699594,250.48581 334.564212,250.245131 C334.443873,250.031194 334.497947,249.766548 334.680485,249.615296 L334.754869,249.564212 L341.089,246 L0.5,246 C0.223857625,246 0,245.776142 0,245.5 C0,245.25454 0.176875161,245.050392 0.410124368,245.008056 L0.5,245 L341.093,245 L334.754869,241.435788 C334.540933,241.315448 334.449717,241.061202 334.527171,240.837152 L334.564212,240.754869 C334.684552,240.540933 334.938798,240.449717 335.162848,240.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <line x1="119.5" y1="60.5" x2="119.5" y2="121.5" stroke="#BABABA" stroke-linecap="square"></line>
+                <path d="M42,245 C110,245 110,86 178,86 C246,86 246,245 314,245" stroke="#333333" stroke-width="2"></path>
+            </g>
+            <path d="M41.882134,-0.323007375 L41.9357878,-0.24513062 L46.4357878,7.75486938 C46.5711697,7.99554832 46.4858096,8.30040587 46.2451306,8.43578777 C46.0311938,8.55612724 45.7665479,8.50205326 45.6152959,8.31951464 L45.5642122,8.24513062 L42,1.908 L42,263.5 C42,263.776142 41.7761424,264 41.5,264 C41.2545401,264 41.0503916,263.823125 41.0080557,263.589876 L41,263.5 L41,1.908 L37.4357878,8.24513062 C37.3154483,8.45906745 37.0612021,8.55028324 36.8371522,8.47282918 L36.7548694,8.43578777 C36.5409325,8.3154483 36.4497168,8.06120215 36.5271708,7.83715217 L36.5642122,7.75486938 L41.0642122,-0.24513062 C41.2394349,-0.55663764 41.6651608,-0.582596558 41.882134,-0.323007375 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
