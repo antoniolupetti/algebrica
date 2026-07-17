@@ -36,21 +36,22 @@ Write the partition points as $x_i = a + i\Delta x,$ for $i=0,\ldots,n.$ Then $x
 
 $$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x$$
 
-The data for the lower and upper rectangles follow the same pattern on every subinterval:
-
-| Rectangle | Subinterval | Lower height | Upper height | Lower area | Upper area |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| $1$ | $[x_0,x_1]$ | $m_1$ | $M_1$ | $m_1\Delta x$ | $M_1\Delta x$ |
-| $2$ | $[x_1,x_2]$ | $m_2$ | $M_2$ | $m_2\Delta x$ | $M_2\Delta x$ |
-| $3$ | $[x_2,x_3]$ | $m_3$ | $M_3$ | $m_3\Delta x$ | $M_3\Delta x$ |
-| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
-| $i$ | $[x_{i-1},x_i]$ | $m_i$ | $M_i$ | $m_i\Delta x$ | $M_i\Delta x$ |
-| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
-| $n$ | $[x_{n-1},x_n]$ | $m_n$ | $M_n$ | $m_n\Delta x$ | $M_n\Delta x$ |
-
 The lower sum $s_n^{-}$ approximates the area from below, while the upper sum $s_n^{+}$ approximates it from above.
 
 ![Img. 3](svg/definite-integrals-3.svg)
+
+The data for the lower and upper rectangles follow the same pattern on every subinterval:
+
+| Rectangle |   Subinterval   | Lower height | Upper height |  Lower area   |  Upper area   |
+| :-------: | :-------------: | :----------: | :----------: | :-----------: | :-----------: |
+|    $1$    |   $[x_0,x_1]$   |    $m_1$     |    $M_1$     | $m_1\Delta x$ | $M_1\Delta x$ |
+|    $2$    |   $[x_1,x_2]$   |    $m_2$     |    $M_2$     | $m_2\Delta x$ | $M_2\Delta x$ |
+|    $3$    |   $[x_2,x_3]$   |    $m_3$     |    $M_3$     | $m_3\Delta x$ | $M_3\Delta x$ |
+| $\vdots$  |    $\vdots$     |   $\vdots$   |   $\vdots$   |   $\vdots$    |   $\vdots$    |
+|    $i$    | $[x_{i-1},x_i]$ |    $m_i$     |    $M_i$     | $m_i\Delta x$ | $M_i\Delta x$ |
+| $\vdots$  |    $\vdots$     |   $\vdots$   |   $\vdots$   |   $\vdots$    |   $\vdots$    |
+|    $n$    | $[x_{n-1},x_n]$ |    $m_n$     |    $M_n$     | $m_n\Delta x$ | $M_n\Delta x$ |
+
 
 For a bounded function $f(x)$ on $[a, b]$, the lower and upper sums approach each other as the partition is refined precisely when $f(x)$ is Riemann integrable. For the uniform partitions considered here, both sums then converge to the same [limit](../limits/) as $n$ tends to infinity:
 
