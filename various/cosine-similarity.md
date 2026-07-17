@@ -12,7 +12,7 @@ tags:
 ---
 ## What is cosine similarity
 
-Large collections of text require a numerical measure of similarity between documents. Cosine similarity is a measure from linear algebra based on the angle between two vectors.
+Large collections of text require a numerical measure of similarity between documents. Cosine similarity is a measure from linear algebra based on the [angle](../angles-and-angular-measure/) between two vectors.
 
 A document has a [vector](../vectors/) representation in a high-dimensional space. Each component is a feature of the text, such as the frequency of a word or its contextual relevance. Two documents therefore have two corresponding vectors, and the [cosine](../cosine-function/) of their angle is their similarity score. The score depends only on the orientation of nonzero vectors. If either vector is multiplied by a positive scalar, the score is unchanged, so the total scale of the coordinates does not affect the comparison.
 
@@ -28,7 +28,7 @@ A document vector may have term frequencies or TF-IDF weights as coordinates, or
 
 ## Distance between vectors and its limitations
 
-Euclidean distance is a more elementary comparison of two vectors. For $u = (u_1, u_2, \ldots, u_n)$ and $v = (v_1, v_2, \ldots, v_n),$ it is:
+[Euclidean distance](../pythagorean-theorem/) is a more elementary comparison of two vectors. For $u = (u_1, u_2, \ldots, u_n)$ and $v = (v_1, v_2, \ldots, v_n),$ it is:
 
 $$
 d(u, v) = \sqrt{\sum_{i=1}^{n} (u_i - v_i)^2}
@@ -59,7 +59,7 @@ $$
 
 Hence maximizing cosine similarity is equivalent to minimizing Euclidean distance after normalization to unit length.
 
-The quantity $d_c(u, v) = 1 - C_s(u, v)$ is often called cosine distance, but it is not a metric on nonzero vectors. If $v = 2u,$ then $d_c(u, v) = 0$ although $u \neq v.$ It also fails the triangle inequality. For three unit vectors $u,$ $v,$ and $w$ with directions $0^\circ,$ $60^\circ,$ and $120^\circ,$ respectively, the cosine distances satisfy $d_c(u, v) = d_c(v, w) = 1/2,$ while $d_c(u, w) = 3/2.$ The Euclidean distance $\|\widehat{u} - \widehat{v}\|$ is instead a metric on normalized vectors.
+The quantity $d_c(u, v) = 1 - C_s(u, v)$ is often called cosine distance, but it is not a metric on nonzero vectors. If $v = 2u,$ then $d_c(u, v) = 0$ although $u \neq v.$ It also fails the triangle inequality. For three unit vectors $u,$ $v,$ and $w$ on the [unit circle](../unit-circle/) with directions $0^\circ,$ $60^\circ,$ and $120^\circ,$ respectively, the cosine distances satisfy $d_c(u, v) = d_c(v, w) = 1/2,$ while $d_c(u, w) = 3/2.$ The Euclidean distance $\|\widehat{u} - \widehat{v}\|$ is instead a metric on normalized vectors.
 
 ## How to calculate cosine similarity between two vectors
 
@@ -75,7 +75,7 @@ $$
 C_s(V_x, V_y) = \frac{V_x \cdot V_y}{\|V_x\| \|V_y\|}
 $$
 
-Here $V_x \cdot V_y$ is the dot product, while $\|V_x\|$ and $\|V_y\|$ are the Euclidean norms. The dot product and the angle satisfy:
+Here $V_x \cdot V_y$ is the dot product, while $\|V_x\|$ and $\|V_y\|$ are the Euclidean norms. The identity used in the [vector interpretation of the law of cosines](../law-of-cosines/) is:
 
 $$
 V_x \cdot V_y = \|V_x\| \|V_y\| \cos\theta
@@ -83,7 +83,7 @@ $$
 
 ![IMG.1](svg/cosine-similarity-2.svg)
 
-The angle $\theta$ is in $[0, \pi].$ Both norms are positive, so division by their product gives the cosine similarity formula. By the Cauchy-Schwarz inequality, $|V_x \cdot V_y| \leq \|V_x\| \|V_y\|,$ and the quotient is in $[-1, 1].$ The zero vector has zero norm, so cosine similarity is undefined if either vector is zero.
+The angle $\theta$ is in $[0, \pi].$ Both norms are positive, so division by their product gives the cosine similarity formula. By the [Cauchy-Schwarz inequality](../complex-number-fundamental-inequalities/), $|V_x \cdot V_y| \leq \|V_x\| \|V_y\|,$ and the quotient is in $[-1, 1].$ The zero vector has zero norm, so cosine similarity is undefined if either vector is zero.
 
 Term-frequency and TF-IDF vectors have non-negative coordinates. Their dot product is non-negative, so their cosine similarity is in $[0, 1].$ A score close to $1$ corresponds to vectors in nearly the same direction, while a score close to $0$ means little coordinate overlap. Dense embeddings may have negative coordinates and may therefore have negative cosine similarity.
 
@@ -111,7 +111,7 @@ Each sentence has a vector over a shared vocabulary. In this example, capitaliza
 | $V_y$   |       0 |    0 |    0 |      1 |      1 |       1 |        1 |         0 |
 | $V_z$   |       1 |    0 |    1 |      0 |      0 |       0 |        0 |         1 |
 
-The table is a document-term matrix. Each entry is $1$ if the word is in the corresponding sentence and $0$ otherwise. The entries are binary because each retained word occurs at most once per sentence; in general, they may instead be raw word frequencies or weights such as TF-IDF scores. Hence the three vectors are:
+The table is a document-term [matrix](../matrices/). Each entry is $1$ if the word is in the corresponding sentence and $0$ otherwise. The entries are binary because each retained word occurs at most once per sentence; in general, they may instead be raw word frequencies or weights such as TF-IDF scores. Hence the three vectors are:
 
 + $V_x = [0, 1, 0, 1, 0, 1, 1, 0]$
 + $V_y = [0, 0, 0, 1, 1, 1, 1, 0]$

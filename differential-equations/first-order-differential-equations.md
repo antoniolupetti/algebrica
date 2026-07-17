@@ -123,7 +123,7 @@ The form of a first-order equation tells which method applies. Several classes h
 + An [autonomous equation](../autonomous-differential-equations/) has the form $y'=f(y),$ with no explicit occurrence of $x.$ The zeros of $f$ give the constant equilibrium solutions. Away from these zeros, the equation is separable.
 
 + A [Bernoulli equation](../bernoulli-differential-equation/) has the form $y'+a(x)y=b(x)y^m.$ When $m\neq0,1,$ the substitution $z=y^{1-m}$ changes it into a linear equation for $z.$
-
+	
 These classes are not disjoint. The equation:
 
 $$y'=x(1+y)$$
