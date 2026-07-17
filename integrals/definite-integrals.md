@@ -5,7 +5,9 @@ license: CC BY-NC 4.0
 tags:
   - antiderivative
   - definite-integral
+  - exponential-function
   - fundamental-theorem-of-calculus
+  - geometric-sequence
   - improper-integrals
   - integration
   - linearity
@@ -22,9 +24,7 @@ $$\int_{a}^{b} f(x) \ dx$$
 
 ![Img. 1](svg/definite-integrals-1.svg)
 
-The standard formulas of elementary geometry do not apply directly to a general curvilinear trapezoid, because one of its boundaries is a curve rather than a straight segment.
-
-The area of the curvilinear trapezoid can be approximated by dividing the interval $[a, b]$ into $n$ subintervals of equal width:
+The standard formulas of elementary geometry do not apply directly to a general curvilinear trapezoid, because one of its boundaries is a curve rather than a straight segment. The area of the curvilinear trapezoid can be approximated by dividing the interval $[a, b]$ into $n$ subintervals of equal width:
 
 $$\Delta x = \frac{b - a}{n}$$
 
@@ -32,11 +32,23 @@ Over each subinterval, the region is approximated by a rectangle, and the sum of
 
 ![Img. 2](svg/definite-integrals-2.svg)
 
-Denoting by $m_i$ and $M_i$ the infimum and supremum of $f(x)$ on the $i$-th subinterval, the lower and upper sums are defined as:
+Write the partition points as $x_i = a + i\Delta x,$ for $i=0,\ldots,n.$ Then $x_0=a$ and $x_n=b,$ and the $i$-th subinterval is $[x_{i-1},x_i].$ Denoting by $m_i$ and $M_i$ the infimum and supremum of $f(x)$ on this subinterval, the lower and upper sums are defined as:
 
 $$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x$$
 
-The lower sum $s_n^{-}$ approximates the area from below, the upper sum $s_n^{+}$ from above.
+The data for the lower and upper rectangles follow the same pattern on every subinterval:
+
+| Rectangle | Subinterval | Lower height | Upper height | Lower area | Upper area |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $1$ | $[x_0,x_1]$ | $m_1$ | $M_1$ | $m_1\Delta x$ | $M_1\Delta x$ |
+| $2$ | $[x_1,x_2]$ | $m_2$ | $M_2$ | $m_2\Delta x$ | $M_2\Delta x$ |
+| $3$ | $[x_2,x_3]$ | $m_3$ | $M_3$ | $m_3\Delta x$ | $M_3\Delta x$ |
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+| $i$ | $[x_{i-1},x_i]$ | $m_i$ | $M_i$ | $m_i\Delta x$ | $M_i\Delta x$ |
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+| $n$ | $[x_{n-1},x_n]$ | $m_n$ | $M_n$ | $m_n\Delta x$ | $M_n\Delta x$ |
+
+The lower sum $s_n^{-}$ approximates the area from below, while the upper sum $s_n^{+}$ approximates it from above.
 
 ![Img. 3](svg/definite-integrals-3.svg)
 
@@ -77,9 +89,7 @@ The identity follows directly from the definition: an interval of zero width con
 
 $$\int_{a}^{b} f(x) \ dx = -\int_{b}^{a} f(x) \ dx$$
 
-This reflects the oriented nature of the definite integral: traversing the interval in the opposite direction reverses the sign of the accumulated area.
-
-If $f(x) = k$ is constant on $[a, b]$, its integral is the constant value multiplied by the length of the interval:
+This reflects the oriented nature of the definite integral: traversing the interval in the opposite direction reverses the sign of the accumulated area. If $f(x) = k$ is constant on $[a, b]$, its integral is the constant value multiplied by the length of the interval:
 
 $$\int_{a}^{b} k \ dx = k(b - a)$$
 
@@ -173,6 +183,48 @@ $$
 The area of the region bounded by the graph of $f(x) = x + \sin x$ and the $x$-axis over $[0, \pi]$ is:
 
 $$\int_{0}^{\pi} (x + \sin x) \ dx = \frac{\pi^2}{2} + 2$$
+
+## Example 3
+
+Compute the area under the exponential curve $f(x)=e^{2x}$ over $[0,2]$ directly from right-endpoint Riemann sums. Divide $[0,2]$ into $n$ subintervals of equal width. The width and the right endpoint of the $k$-th subinterval are:
+
+$$\Delta x = \frac{2}{n} \qquad x_k = \frac{2k}{n}$$
+
+The function $f(x)=e^{2x}$ is increasing, so the right-endpoint rectangles give upper sums. The height of the $k$-th rectangle is:
+
+$$f(x_k) = e^{2x_k} = e^{4k/n}$$
+
+Hence the sum of the rectangle areas is:
+
+$$R_n = \sum_{k=1}^{n} f(x_k)\Delta x = \frac{2}{n}\sum_{k=1}^{n} e^{4k/n}$$
+
+Set $q_n=e^{4/n}.$ The terms $e^{4k/n}=q_n^k$ form a finite [geometric progression](../geometric-sequence/), with $q_n^n=e^4.$ The finite-sum formula gives:
+
+$$
+\begin{align}
+R_n &= \frac{2}{n}\sum_{k=1}^{n}q_n^k \\[6pt]
+    &= \frac{2}{n}\frac{q_n(q_n^n-1)}{q_n-1} \\[6pt]
+    &= \frac{2q_n(e^4-1)}{n(q_n-1)}
+\end{align}
+$$
+
+As $n$ tends to infinity, $q_n$ tends to $1.$ Applying the [remarkable limit](../remarkable-limits/) for the exponential function gives:
+
+$$
+\lim_{n \to \infty}n(q_n-1)
+= \lim_{n \to \infty}4\left(\frac{e^{4/n}-1}{4/n}\right)
+= 4
+$$
+
+Taking the limit of the upper sums gives the definite integral:
+
+$$
+\int_{0}^{2}e^{2x} \ dx
+= \lim_{n \to \infty}R_n
+= \frac{e^4-1}{2}
+$$
+
+Since $e^{2x}$ is positive on $[0,2],$ this integral is the geometric area under the curve, approximately $26.799.$
 
 ## Handling definite integrals with positive and negative areas
 
