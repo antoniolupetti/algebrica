@@ -83,6 +83,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [An Introduction to Statistical Learning](https://www.statlearning.com/s/ISLR-Seventh-Printing.pdf), Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
 + [The Elements of Statistical Learning](https://hastie.su.domains/Papers/ESLII.pdf), Trevor Hastie, Robert Tibshirani, Jerome Friedman
 + [Introduction to Probability](http://probabilitybook.net), Joseph K. Blitzstein, Jessica Hwang
++ [Probability on Trees and Networks](https://rdlyons.pages.iu.edu/prbtree/book_online.pdf), Russell Lyons, Yuval Peres
 
 ## Optimization
 
