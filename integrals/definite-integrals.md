@@ -51,15 +51,23 @@ The data for the lower and upper rectangles follow the same pattern on every sub
 |    $n$    | $[x_{n-1},x_n]$ |    $m_n$     |    $M_n$     | $m_n\Delta x$ | $M_n\Delta x$ |
 
 
-For a bounded function $f(x)$ on $[a, b]$, the lower and upper sums approach each other as the partition is refined precisely when $f(x)$ is Riemann integrable. For the uniform partitions considered here, both sums then converge to the same [limit](../limits/) as $n$ tends to infinity:
+The equal-width construction is a special case of a partition whose subintervals need not have equal widths. For an arbitrary partition $P$ given by $a = x_0 < x_1 < \cdots < x_n = b,$ the lower and upper sums are:
 
-$$\lim_{n \to \infty} s_n^{-} = \lim_{n \to \infty} s_n^{+} = I$$
+$$L(f, P) = \sum_{i=1}^{n} m_i(x_i - x_{i-1}) \qquad U(f, P) = \sum_{i=1}^{n} M_i(x_i - x_{i-1})$$
 
-The value $I$ is the definite integral of $f(x)$ over $[a, b]$:
+If a partition $P'$ refines $P$ by adding division points, the lower sum cannot decrease and the upper sum cannot increase. Consequently:
 
-$$I = \int_{a}^{b} f(x) \ dx$$
+$$L(f, P) \leq L(f, P') \leq U(f, P') \leq U(f, P)$$
 
-This approach through lower and upper Darboux sums gives a characterization of [Riemann integrability](../riemann-integrability-criteria/). The values $a$ and $b$ are the lower and upper limits of integration, and $f(x)$ is the integrand. The notation $f(x) \ dx$ is suggested by the area $f(x)\Delta x$ of each approximating rectangle. The symbol $dx$ identifies $x$ as the integration variable and records the limiting role of the subinterval widths.
+For a bounded function $f(x)$ on $[a, b],$ the lower and upper integrals collect the best estimates obtained from all possible partitions:
+
+$$L(f, [a, b]) = \sup_P L(f, P) \qquad U(f, [a, b]) = \inf_P U(f, P)$$
+
+Every lower sum is no greater than every upper sum, so $L(f, [a, b]) \leq U(f, [a, b]).$ The function $f(x)$ is [Riemann integrable](../riemann-integrability-criteria/) precisely when these two values coincide. Their common value is the definite integral:
+
+$$L(f, [a, b]) = U(f, [a, b]) = \int_{a}^{b} f(x) \ dx$$
+
+Every continuous real-valued function on $[a, b]$ is Riemann integrable. Continuity on this interval implies uniform continuity, which makes the oscillation $M_i - m_i$ uniformly small when the subintervals are sufficiently short. The values $a$ and $b$ are the lower and upper limits of integration, and $f(x)$ is the integrand. The notation $f(x) \ dx$ is suggested by the area $f(x)\Delta x$ of each approximating rectangle. The symbol $dx$ identifies $x$ as the integration variable and records the limiting role of the subinterval widths.
 
 ## Computing definite integrals
 
@@ -109,6 +117,18 @@ If $f(x) \leq g(x)$ for every $x \in [a, b]$, the same inequality propagates to 
 $$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$
 
 > This is the comparison property of integrals. The vertical difference $g(x) - f(x)$ is nonnegative throughout the interval, so its integral is also nonnegative.
+
+For a bounded function $f(x)$ that is Riemann integrable on $[a, b],$ applying the comparison property to the constant functions equal to its infimum and supremum gives the bounds:
+
+$$
+(b - a)\inf_{x \in [a, b]} f(x)
+\leq \int_{a}^{b} f(x) \ dx
+\leq (b - a)\sup_{x \in [a, b]} f(x)
+$$
+
+If $f(x)$ is Riemann integrable, then $|f(x)|$ is also Riemann integrable. The inequalities $-|f(x)| \leq f(x) \leq |f(x)|$ and the comparison property imply:
+
+$$\left|\int_{a}^{b} f(x) \ dx\right| \leq \int_{a}^{b} |f(x)| \ dx$$
 
 ## Mean value theorem for integrals
 
@@ -269,4 +289,24 @@ The standard [Riemann integral](../riemann-integrability-criteria/) does not cov
 
 $$\int_{a}^{+\infty} f(x) \ dx = \lim_{t \to +\infty} \int_{a}^{t} f(x) \ dx$$
 
-When the limit exists and is finite, the integral is said to converge; otherwise it diverges. The systematic treatment is given on the dedicated page on [improper integrals](../improper-integrals/).
+When the limit exists and is finite, the integral is said to converge; otherwise it diverges.
+
+If $f(x)$ becomes unbounded as $x \to a^+$ but is Riemann integrable on every interval $[t, b]$ with $a < t < b,$ the improper integral is defined by:
+
+$$\int_{a}^{b} f(x) \ dx = \lim_{t \to a^+} \int_{t}^{b} f(x) \ dx$$
+
+If the function becomes unbounded as $x \to b^-,$ but is Riemann integrable on every interval $[a, t]$ with $a < t < b,$ the corresponding definition is:
+
+$$\int_{a}^{b} f(x) \ dx = \lim_{t \to b^-} \int_{a}^{t} f(x) \ dx$$
+
+In each case, the improper integral converges only when the corresponding one-sided limit exists and is finite.
+
+When the singularity occurs at an interior point $c \in (a, b),$ the integral must be split at $c$. Both one-sided limits must exist and be finite, and in that case:
+
+$$
+\int_{a}^{b} f(x) \ dx
+= \lim_{t \to c^-} \int_{a}^{t} f(x) \ dx
++ \lim_{s \to c^+} \int_{s}^{b} f(x) \ dx
+$$
+
+The systematic treatment is given on the dedicated page on [improper integrals](../improper-integrals/).
