@@ -149,5 +149,6 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
 + [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
 + [Foundations of Machine Learning](https://cs.nyu.edu/~mohri/mlbook/), Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
++ [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html), Shai Shalev-Shwartz, Shai Ben-David
 + [Machine Learning Systems, Volume I: Foundations](https://mlsysbook.ai/vol1/), Vijay Janapa Reddi
 + [Machine Learning Systems, Volume II: At Scale](https://mlsysbook.ai/vol2/assets/downloads/Machine-Learning-Systems-Vol2.pdf), Vijay Janapa Reddi
