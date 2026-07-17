@@ -75,6 +75,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Notes on Diffy Qs](https://www.jirka.org/diffyqs/diffyqs.pdf), Jiří Lebl
 + [Elementary Differential Equations](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_DIFF_EQNS_I.PDF), William F. Trench
++ [Differential Equations I](https://www.math.toronto.edu/selick/B44.pdf), Paul Selick
 
 ## Probability and statistics
 
