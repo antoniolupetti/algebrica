@@ -61,6 +61,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
 + [Analysis of Functions of a Single Variable](https://spot.colorado.edu/~baggett/book.pdf), Lawrence W. Baggett
 + [An Introduction to Measure Theory](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf), Terence Tao
++ [Measure, Integration & Real Analysis](https://measure.axler.net/MIRA.pdf), Sheldon Axler
 + [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
 + [Integral Calculus: Mathematics 103](https://www.math.ucdavis.edu/~tjlewis/teaching/MAT17material/books/book_LEK/M103Fulltext.pdf), Leah Edelstein-Keshet
 + [Calculus in Context](https://www.science.smith.edu/~callahan/cic/book.pdf), James Callahan, David Cox, Kenneth Hoffman, Donal O'Shea, Harriet Pollatsek, Lester Senechal
