@@ -87,6 +87,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [The Elements of Statistical Learning](https://hastie.su.domains/Papers/ESLII.pdf), Trevor Hastie, Robert Tibshirani, Jerome Friedman
 + [Introduction to Probability](http://probabilitybook.net), Joseph K. Blitzstein, Jessica Hwang
 + [Probability on Trees and Networks](https://rdlyons.pages.iu.edu/prbtree/book_online.pdf), Russell Lyons, Yuval Peres
++ [Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf), Michael J. Evans, Jeffrey S. Rosenthal
 
 ## Optimization
 
