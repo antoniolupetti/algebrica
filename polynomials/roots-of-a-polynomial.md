@@ -54,7 +54,9 @@ with $q(r) \neq 0$. Since $q$ is [continuous](../continuous-functions/) and nonz
 + When $m$ is odd, $(x - r)^m$ changes sign as $x$ passes through $r$, so $p$ crosses the axis.
 + When $m$ is even, $(x - r)^m \geq 0$ on both sides of $r$, so $p$ does not change sign and the graph returns to the same side of the axis.
 
-A nonzero polynomial of degree $n$ over any field has at most $n$ roots, counted with multiplicity. This property follows from the fact that a polynomial of degree $n$ cannot be divisible by more than $n$ linear factors.
+A nonzero polynomial of degree $n$ over any field has at most $n$ distinct roots. The proof proceeds by induction on $n$. A nonzero constant has no roots. If a polynomial of positive degree has no root, the conclusion is immediate. Otherwise, choose a root $r$. The factor theorem gives $p(x)=(x-r)q(x)$ with $\deg q=n-1$. Any other root $s\neq r$ satisfies $0=(s-r)q(s)$, hence $q(s)=0$. The inductive hypothesis bounds the number of roots of $q$ by $n-1$, and adjoining $r$ gives at most $n$ roots of $p$.
+
+The same degree count includes multiplicities. If the distinct roots are $r_1,\ldots,r_k$ with multiplicities $m_1,\ldots,m_k$, successive applications of the factor theorem show that $(x-r_1)^{m_1}\cdots(x-r_k)^{m_k}$ divides $p(x)$. Hence $m_1+\cdots+m_k\leq n$.
 
 > Two distinct polynomials of degree at most $n$ cannot agree at more than $n$ points. If $p(x) - q(x)$ has degree at most $n$ and vanishes at $n + 1$ points, then $p \equiv q$.
 
@@ -75,9 +77,9 @@ $$
 p(x) = a_n (x - r_1)^{m_1} (x - r_2)^{m_2} \cdots (x - r_k)^{m_k}
 $$
 
-with $m_1 + m_2 + \cdots + m_k = n$. Over the field of complex numbers, the fundamental theorem of algebra ensures that this complete decomposition always exists.
+with $m_1 + m_2 + \cdots + m_k = n$. Over the field of complex numbers, the fundamental theorem of algebra states that this complete decomposition always exists.
 
-The multiplicity admits a differential characterization in terms of the [derivatives](../derivatives/) of $p(x)$. The element $r$ is a root of multiplicity $m$ of $p(x)$ if and only if:
+Multiplicity has a differential characterization in terms of the [derivatives](../derivatives/) of $p(x)$. The element $r$ is a root of multiplicity $m$ of $p(x)$ if and only if:
 
 $$
 p(r) = p'(r) = p''(r) = \cdots = p^{(m-1)}(r) = 0
@@ -89,7 +91,7 @@ $$
 p^{(m)}(r) \neq 0
 $$
 
-This criterion provides a constructive method for determining the multiplicity of a known root: successive derivatives of $p(x)$ are evaluated at $r$ until the first nonzero value is obtained, and the order of that derivative coincides with the multiplicity.
+Successive derivatives give a constructive test for the multiplicity of a known root. Evaluate them at $r$; the order of the first nonzero derivative is the multiplicity.
 
 > The differential characterization explains the graphical behaviour described above. At a simple root, the polynomial vanishes but its derivative does not, so the graph crosses the $x$-axis with nonzero slope. At a root of multiplicity $m \geq 2$, the first $m-1$ derivatives also vanish at $r$, and the graph becomes increasingly flat at the intercept as $m$ grows.
 
@@ -115,25 +117,27 @@ $$
 p(x) = a_n (x - r_1)^{m_1}(x - r_2)^{m_2} \cdots (x - r_k)^{m_k}
 $$
 
-where $m_1 + m_2 + \cdots + m_k = n$. Counting roots with their multiplicities, a degree-$n$ polynomial has exactly $n$ roots in $\mathbb{C}$. This property characterizes $\mathbb{C}$ as an algebraically closed [field](../fields/). Over $\mathbb{R}$, the complex roots of a real polynomial occur in conjugate pairs. If $r = \alpha + \beta i$ with $\beta \neq 0$ is a root of $p \in \mathbb{R}[x]$, then $\bar{r} = \alpha - \beta i$ is also a root, and the two factors combine into an irreducible quadratic over $\mathbb{R}$:
+where $m_1 + m_2 + \cdots + m_k = n$. Counting roots with their multiplicities, a degree-$n$ polynomial has exactly $n$ roots in $\mathbb{C}$. The [unique factorization theorem](../unique-factorization-of-polynomials/) shows that the multiset of linear factors, and therefore the multiplicity assigned to each complex root, is uniquely determined. This property characterizes $\mathbb{C}$ as an algebraically closed [field](../fields/).
+
+Over $\mathbb{R}$, the complex roots of a real polynomial occur in conjugate pairs. If $r = \alpha + \beta i$ with $\beta \neq 0$ is a root of $p \in \mathbb{R}[x]$, then $\bar{r} = \alpha - \beta i$ is also a root, and the two factors combine into an irreducible quadratic over $\mathbb{R}$:
 
 $$
 (x - r)(x - \bar{r}) = x^2 - 2\alpha x + (\alpha^2 + \beta^2)
 $$
 
-Every real polynomial of odd degree therefore has at least one real root. The factored form also establishes a direct relationship between roots and coefficients. Expanding the product:
+Every real polynomial of odd degree therefore has at least one real root. To relate roots and coefficients, expand the product:
 
 $$
 a_n(x - r_1)(x - r_2)\cdots(x - r_n)
 $$
 
-and comparing with the standard form:
+Compare this product with the standard form:
 
 $$
 a_n x^n + a_{n-1}x^{n-1} + \cdots + a_0
 $$
 
-yields [Vieta's formulas](../vieta-formulas/), which express each coefficient as an elementary symmetric polynomial in the roots. In particular:
+Coefficient comparison gives [Vieta's formulas](../vieta-formulas/), which express each coefficient as an elementary symmetric polynomial in the roots. In particular:
 
 $$
 r_1 + r_2 + \cdots + r_n = \frac{-a_{n-1}}{a_n}
@@ -165,4 +169,4 @@ The quantity $\Delta = b^2 - 4ac$ is the discriminant.
 - - -
 The roots of a polynomial are precisely the solutions to the corresponding [polynomial equation](../polynomial-equations/) $p(x) = 0$, and the methods outlined above apply directly to both settings.
 
-An important application of polynomial roots occurs in [partial fraction decomposition](../partial-fraction-decomposition/), where a rational function $P(x)/Q(x)$ is expressed as a sum of simpler terms. The structure of these terms is determined by the roots and multiplicities of the denominator $Q(x)$. Simple roots of $Q(x)$ correspond to distinct linear factors, whereas repeated roots result in sequences of terms with increasing order.
+[Partial fraction decomposition](../partial-fraction-decomposition/) uses the roots and multiplicities of the denominator $Q(x)$. Each simple root has one linear term, while a root of multiplicity $m$ has terms with denominator powers from $1$ through $m$.

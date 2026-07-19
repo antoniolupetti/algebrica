@@ -65,7 +65,7 @@ $$ x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a} \tag{3} $$
 
 If $\Delta = 0$, the two roots coincide, resulting in a single value $x_0 = -b/(2a)$, referred to as a repeated root or a root of multiplicity two.
 
-If $\Delta < 0$, the trinomial has no real roots and is irreducible over $\mathbb{R}$, as it cannot be expressed as a product of two linear factors with real coefficients. However, over the [complex numbers](../complex-numbers-introduction/) $\mathbb{C}$, formula (3) remains valid, with $\sqrt{\Delta}$ interpreted as $i\sqrt{|\Delta|}$, resulting in a conjugate pair of [complex roots](../quadratic-equations-with-complex-solutions/).
+If $\Delta < 0$, the trinomial has no real roots and is [irreducible over $\mathbb{R}$](../unique-factorization-of-polynomials/), as it cannot be expressed as a product of two linear factors with real coefficients. However, over the [complex numbers](../complex-numbers-introduction/) $\mathbb{C}$, formula (3) remains valid, with $\sqrt{\Delta}$ interpreted as $i\sqrt{|\Delta|}$, resulting in a conjugate pair of [complex roots](../quadratic-equations-with-complex-solutions/).
 
 - - -
 If $\Delta \geq 0$, the trinomial in equation (1) can be completely factorised over the real numbers:

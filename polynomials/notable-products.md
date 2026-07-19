@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-Notable products are identities describing the expansion or [factorisation](../factoring-ac-method/) of [polynomials](../polynomials/) such as [binomials](../binomials/) or [trinomials](../trinomials/). They allow rewriting such expressions in a simpler form, and this is often what makes polynomial factorisation tractable in practice or what allows us to actually solve an [equation](../equations/).
+Notable products are identities describing the expansion or [factorisation](../unique-factorization-of-polynomials/) of [polynomials](../polynomials/) such as [binomials](../binomials/) or [trinomials](../trinomials/). They allow rewriting such expressions in a simpler form, and this is often what makes polynomial factorisation tractable in practice or what allows us to actually solve an [equation](../equations/).
 
 Consider for example the identity $(a+b)^2 = a^2 + 2ab + b^2$. A useful property is that, read from left to right, it gives us the expansion of the square, while read from right to left it gives us its factorisation.
 

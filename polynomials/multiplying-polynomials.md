@@ -26,13 +26,13 @@ $$
 (P \cdot Q)(x) = \sum_{k=0}^{n+m} \left( \sum_{i=0}^{k} a_i b_{k-i} \right) x^k
 $$
 
-This formula, known as the Cauchy convolution of the coefficient sequences, ensures that polynomial multiplication is well-defined and independent of the representation chosen for $P$ and $Q$. 
+This formula is the Cauchy convolution of the coefficient sequences. It defines the product independently of how zero coefficients beyond the degrees of $P$ and $Q$ are written.
 
 The coefficient indexed by $k$ collects every contribution to the term of degree $k$ that arises from pairing a term of degree $i$ in $P$ with a term of degree $k - i$ in $Q$. 
 
 The convention $a_i = 0$ for $i > n$ and $b_j = 0$ for $j > m$ extends the sums beyond the actual degree of each polynomial without altering the result.
 
-> Polynomial multiplication is the operation that, together with [addition](../adding-and-subtracting-polynomials/), gives $R[x]$ the structure of a ring. When $R$ is commutative with unity, $R[x]$ is also commutative with unity, and the integral domain property transfers as well: $R[x]$ is an integral domain whenever $R$ is.
+> With [addition](../adding-and-subtracting-polynomials/) and this product, $R[x]$ is a ring. If $R$ is commutative with unity, so is $R[x]$. If $R$ is an integral domain, then $R[x]$ is also an integral domain.
 
 - - -
 The degree of the product satisfies the identity:
@@ -70,7 +70,7 @@ $$
 for every polynomial $P(x)$.
 
 - - -
-The third property is distributivity with respect to addition, both on the left and on the right:
+The third property is left and right distributivity over addition:
 
 $$
 \begin{align}
@@ -187,7 +187,7 @@ is one of the [notable products](../notable-products/) discussed on the dedicate
 
 ## Multiplying two binomials and the FOIL method
 
-The case in which both factors are [binomials](../binomials/) admits a particularly compact procedure known as the FOIL method, an acronym for First, Outer, Inner, Last. For a product of the form $(a + b)(c + d)$:
+For two [binomials](../binomials/), the FOIL method is a compact form of the distributive law. Its name abbreviates First, Outer, Inner, Last. For a product of the form $(a+b)(c+d)$:
 
 $$
 (a + b)(c + d) = ac + ad + bc + bd
@@ -199,7 +199,7 @@ It does not extend to factors with more than two terms, where the general proced
 
 ## Notable products
 
-Certain products of polynomials yield identities that recur so often in algebraic manipulation that they have acquired their own name. The [notable products](../notable-products/) include the square and the cube of a binomial:
+Several recurring polynomial identities are [notable products](../notable-products/), including the square and the cube of a binomial:
 
 $$
 (a + b)^2 = a^2 + 2ab + b^2
@@ -215,7 +215,7 @@ $$
 a^2 - b^2 = (a + b)(a - b)
 $$
 
-The general formula that subsumes the powers of a binomial is the [binomial theorem](../binomial-theorem/), which gives the expansion of $(a + b)^n$ for any non-negative integer $n$ in terms of [binomial coefficients](../binomial-coefficient/). The dedicated page collects the identities of practical use and develops their derivation from the distributive property.
+The [binomial theorem](../binomial-theorem/) is the general expansion of $(a+b)^n$ for a non-negative integer $n$. Its coefficients are the [binomial coefficients](../binomial-coefficient/). The dedicated page derives the formula from the distributive property and lists its standard special cases.
 
 ## Multiplying polynomials in several indeterminates
 
@@ -256,10 +256,10 @@ The total degree of $P$ is $1$ and that of $Q$ is $2$, so the total degree of th
 
 ## Multiplication and factorisation
 
-The inverse operation of polynomial multiplication is [factorisation](../factoring-ac-method/): given a polynomial $P(x)$, the goal is to identify polynomials $P_1(x), \dots, P_k(x)$ of lower degree whose product equals $P(x)$. Multiplication and factorisation are linked by the [polynomial division algorithm](../polynomial-division/), which determines, for any pair of polynomials $P(x)$ and $D(x)$ with $D(x) \neq 0$, a unique quotient $Q(x)$ and remainder $R(x)$ such that:
+The inverse problem for polynomial multiplication is [factorisation](../unique-factorization-of-polynomials/). Given a polynomial $P(x)$, the goal is to identify polynomials $P_1(x), \dots, P_k(x)$ of lower degree whose product equals $P(x)$. Multiplication and factorisation are linked by the [polynomial division algorithm](../polynomial-division/), which determines, for any pair of polynomials $P(x)$ and $D(x)$ with $D(x) \neq 0$, a unique quotient $Q(x)$ and remainder $R(x)$ such that:
 
 $$
 P(x) = Q(x) \cdot D(x) + R(x) \qquad \deg R < \deg D
 $$
 
-When the remainder vanishes, the factorisation $P = Q \cdot D$ is exact, and the divisor $D$ is a factor of $P$. The interplay between multiplication and division, together with the structure of the [roots](../roots-of-a-polynomial/) of $P$ guaranteed by the fundamental theorem of algebra, provides the analytical foundation for the factorisation techniques developed in the related pages, including the [AC method](../factoring-ac-method/), [completing the square](../completing-the-square/), and [synthetic division](../synthetic-division/).
+When the remainder vanishes, the factorisation $P=QD$ is exact, and $D$ is a factor of $P$. Concrete factorisation methods combine multiplication, division, and information about the [roots](../roots-of-a-polynomial/) of $P$. The related pages treat the [AC method](../factoring-polynomials-ac-method/), [completing the square](../completing-the-square/), and [synthetic division](../synthetic-division/).

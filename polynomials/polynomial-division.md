@@ -3,6 +3,7 @@ title: Polynomial Division
 source: https://algebrica.org/polynomial-division/
 license: CC BY-NC 4.0
 tags:
+  - bezouts-identity
   - division-algorithm
   - euclidean-algorithm
   - factor-theorem
@@ -15,7 +16,7 @@ tags:
 
 ## The division algorithm
 
-Polynomial division is the operation that inverts [polynomial multiplication](../multiplying-polynomials/) up to a remainder. Let $P(x)$ and $D(x)$ be [polynomials](../polynomials/) in $\mathbb{R}[x]$ with $D(x) \neq 0$. The division algorithm asserts the existence of unique polynomials $Q(x)$ and $R(x)$ in $\mathbb{R}[x]$ such that:
+Polynomial division inverts [polynomial multiplication](../multiplying-polynomials/) up to a remainder. Let $P(x)$ and $D(x)$ be [polynomials](../polynomials/) in $\mathbb{R}[x]$ with $D(x)\neq 0$. The dividend $P(x)$ has a unique quotient $Q(x)$ and remainder $R(x)$ in $\mathbb{R}[x]$ such that:
 
 $$
 P(x) = Q(x) \cdot D(x) + R(x)
@@ -25,12 +26,28 @@ $$
 \deg R(x) < \deg D(x) \quad \text{or} \quad R(x) = 0
 $$
 
-+ The polynomial $P(x)$ is referred to as the dividend.
-+ $D(x)$ as the divisor.
-+ $Q(x)$ as the quotient.
-+ $R(x)$ as the remainder.
++ $P(x)$ is the dividend.
++ $D(x)$ is the divisor.
++ $Q(x)$ is the quotient.
++ $R(x)$ is the remainder.
 
-If $R(x) = 0$, the division is exact and $D(x)$ divides $P(x)$ in $\mathbb{R}[x]$. This result is directly analogous to the Euclidean division of [integers](../integers/) and holds in any polynomial [ring](../rings/) $F[x]$, where $F$ is a [field](../fields/). The existence of such a representation can be established by induction on $\deg P$, while uniqueness follows from a degree argument. Suppose that two representations exist:
+If $R(x)=0$, the division is exact and $D(x)$ divides $P(x)$ in $\mathbb{R}[x]$. The same identity holds in every polynomial [ring](../rings/) $F[x]$ over a [field](../fields/) $F$ and is the polynomial analogue of Euclidean division for [integers](../integers/).
+
+Existence follows by induction on $\deg P$. If $P=0$ or $\deg P<\deg D$, take $Q=0$ and $R=P$. Otherwise, write the leading terms of $P(x)$ and $D(x)$ as $a_nx^n$ and $b_mx^m$, respectively, with $n\geq m$. Since $b_m$ is a nonzero element of a field, define the polynomial $T(x)$ by:
+
+$$
+T(x)=\frac{a_n}{b_m}x^{n-m}
+$$
+
+The quotient $a_n/b_m$ belongs to the coefficient field. Subtract the corresponding multiple of $D(x)$ and set:
+
+$$
+P_1(x)=P(x)-T(x)D(x)
+$$
+
+The leading terms cancel, so $P_1=0$ or $\deg P_1<\deg P$. By the inductive hypothesis, $P_1(x)$ has the form $Q_1(x)D(x)+R(x)$, where $R=0$ or $\deg R<\deg D$. Substituting the definition of $P_1$ proves that $P(x)=(Q_1(x)+T(x))D(x)+R(x)$.
+
+For uniqueness, suppose that two representations exist:
 
 $$
 \begin{align}
@@ -41,7 +58,7 @@ $$
 
 Subtracting yields $(Q_1(x) - Q_2(x)) \cdot D(x) = R_2(x) - R_1(x)$. If $Q_1 \neq Q_2$, the left-hand side has degree at least $\deg D$, whereas the right-hand side satisfies $\deg(R_2 - R_1) < \deg D$, a contradiction. Therefore $Q_1 = Q_2$, and consequently $R_1 = R_2$.
 
-> A ring is an algebraic structure with two operations, addition and multiplication, that satisfy associativity, distributivity, and the existence of additive inverses. A field is a ring in which every nonzero element possesses a multiplicative inverse. Common examples of fields are $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}.$
+> A ring is an algebraic structure with two operations, addition and multiplication, that satisfy associativity, distributivity, and the existence of additive inverses. A field is a ring in which every nonzero element has a multiplicative inverse. Common examples are $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$.
 
 - - -
 Let $P(x)$ and $D(x)$ be nonzero polynomials such that $\deg P \geq \deg D$. The degrees of the quotient and remainder are as follows:
@@ -59,14 +76,13 @@ If $\deg P < \deg D$, then the quotient is the zero polynomial and the remainder
 
 ## Properties of polynomial division
 
-The division algorithm gives rise to several properties that follow directly from the uniqueness of the quotient and the remainder, or from the behaviour of the degree under polynomial operations.
+The following properties follow from the uniqueness of the quotient and remainder and from the degree laws for polynomial operations.
 
-The quotient and the remainder are uniquely determined by the dividend and the divisor. Given $P(x)$ and $D(x)$ with $D(x) \neq 0$ there exists one pair $(Q(x), R(x))$ satisfying the division identity $P(x) = Q(x) D(x) + R(x)$ with $\deg R < \deg D$ or $R = 0$. The degree of the quotient is determined by the degrees of the dividend and the divisor:
+For fixed $P(x)$ and nonzero $D(x)$, the pair $(Q(x),R(x))$ is unique and has $P(x)=Q(x)D(x)+R(x)$, with $\deg R<\deg D$ or $R=0$. When $\deg P\geq\deg D$, the quotient has degree:
 
 $$\deg Q(x) = \deg P(x) - \deg D(x)$$
-$$\deg P \geq \deg D$$
 
-When $\deg P < \deg D$, the algorithm produces $Q(x) = 0$ and $R(x) = P(x)$. The degree of the remainder is always strictly less than the degree of the divisor, regardless of the dividend.
+When $\deg P<\deg D$, the quotient is $Q(x)=0$ and the remainder is $R(x)=P(x)$. The degree of the remainder is always strictly less than the degree of the divisor, regardless of the dividend.
 
 Polynomial division is linear in the dividend. Given two polynomials $P_1(x)$ and $P_2(x)$, and constants $\alpha, \beta \in \mathbb{R}$, the division of $\alpha P_1(x) + \beta P_2(x)$ by $D(x)$ yields:
 
@@ -78,12 +94,12 @@ where $Q_i$ and $R_i$ are the quotient and the remainder of dividing $P_i$ by $D
 
 The division is invariant under multiplication of the divisor by a nonzero constant. Given $\lambda \in \mathbb{R}$ with $\lambda \neq 0$, dividing $P(x)$ by $\lambda D(x)$ produces the quotient $Q(x)/\lambda$ and the same remainder $R(x)$. The relation $P(x) = Q(x) D(x) + R(x)$ is therefore unaffected by rescaling the divisor, up to a corresponding rescaling of the quotient.
 
-> The polynomial [ring](../rings/) $\mathbb{R}[x]$, equipped with the division algorithm, is an example of a Euclidean ring. The degree function plays the role of the Euclidean valuation, and the existence of a division with remainder satisfying $\deg R < \deg D$ is precisely what characterises Euclidean structure in the polynomial setting.
+> The polynomial [ring](../rings/) $\mathbb{R}[x]$ is a Euclidean ring. Its Euclidean valuation is the degree, and division has a remainder with $\deg R<\deg D$.
 
 
 ## Polynomial long division
 
-The long division algorithm involves repeatedly dividing the leading term of the current remainder by the leading term of $D(x)$, subtracting the resulting product, and continuing this process until the degree of the remainder is less than that of $D(x)$. The procedure can be summarized in the following steps:
+The long division algorithm repeatedly divides the leading term of the current remainder by the leading term of $D(x)$ and subtracts the resulting product. It stops when the remainder has degree less than $\deg D$. The procedure has three steps:
 
 + Divide the leading term of the current dividend by the leading term of $D(x)$ to determine the next term of $Q(x)$.
 + Multiply this term by $D(x)$ and subtract the result from the current dividend.
@@ -236,7 +252,7 @@ $$
 
 The identity $r = P(c)$ establishes the result.
 
-> The remainder theorem offers a direct method for evaluating a polynomial at a specific point without performing the complete division. The value $P(c)$ is given by the remainder when dividing by $x - c$.
+> The remainder theorem is a direct evaluation method. The remainder after division by $x-c$ is $P(c)$.
 
 - - -
 The factor theorem is a direct consequence of the remainder theorem. Let $P(x) \in \mathbb{R}[x]$ and $c \in \mathbb{R}$. The polynomial $x - c$ divides $P(x)$ in $\mathbb{R}[x]$ if and only if $P(c) = 0$.
@@ -245,7 +261,7 @@ The proof follows directly from the remainder theorem. Dividing $P(x)$ by $x - c
 
 The factor theorem establishes a correspondence between the [roots](../roots-of-a-polynomial/) of a polynomial and its linear factors: $c$ is a root of $P(x)$ if and only if $x - c$ is a factor of $P(x)$ in $\mathbb{R}[x]$.
 
-> This principle underlies the factorization of polynomials over a field and will be explored further in the section on [polynomial factorization](../polynomials/).
+> The factor theorem is the link between roots and linear factors used in the [unique factorization theorem for polynomials](../unique-factorization-of-polynomials/).
 
 
 ## Example 3
@@ -271,7 +287,7 @@ $$
 \end{array}
 $$
 
-Dividing the leading term $2x^3$ by $x$ yields $2x^2$, which serves as the initial term of the quotient. Multiplying $2x^2$ by $D(x) = x - 2$ and subtracting the result from the dividend produces:
+Dividing the leading term $2x^3$ by $x$ yields $2x^2$, which is the initial term of the quotient. Multiplying $2x^2$ by $D(x)=x-2$ and subtracting the result from the dividend gives:
 
 $$
 \begin{array}{rrrr|rr}
@@ -322,13 +338,13 @@ $$
 
 ## Rational functions and polynomial division
 
-When the division of two polynomials is performed without separating the remainder, the result is represented as a [rational function](../rational-functions/) where $D(x) \neq 0$:
+The quotient of two polynomials is a [rational function](../rational-functions/) when $D(x)\neq 0$:
 
 $$
 F(x) = \frac{P(x)}{D(x)}
 $$
 
-In this context, polynomial division provides a systematic method to decompose $F(x)$ into a polynomial component and a proper rational component. A proper rational function is one in which the numerator has a strictly lower degree than the denominator:
+Polynomial division decomposes $F(x)$ into a polynomial part and a proper rational part. A rational function is proper when the numerator has degree less than the denominator:
 
 $$
 \frac{P(x)}{D(x)} = Q(x) + \frac{R(x)}{D(x)}
@@ -336,18 +352,20 @@ $$
 
 The decomposition is unique: the polynomial part $Q(x)$ and the proper rational part $R(x)/D(x)$ are uniquely determined by $P(x)$ and $D(x)$, as a direct consequence of the uniqueness of the division algorithm.
 
-The decomposition serves as the foundation for [partial fraction decomposition](../partial-fraction-decomposition/), a technique that expresses the proper rational component as a sum of simpler fractions. The method is widely used in integration.
+[Partial fraction decomposition](../partial-fraction-decomposition/) starts from this identity and writes the proper rational part as a sum of simpler fractions. These fractions have standard antiderivatives.
 
 
 ## Polynomial division and the GCD
 
-Polynomial division is the basic operation underlying the computation of the greatest common divisor of two polynomials. Given $P(x)$ and $D(x)$ in $\mathbb{R}[x]$ with $D(x) \neq 0$, the greatest common divisor $\gcd(P, D)$ is defined as the polynomial of highest degree that divides both $P(x)$ and $D(x)$. The Euclidean algorithm for polynomials computes $\gcd(P, D)$ through successive divisions, in direct analogy with the Euclidean algorithm for integers. The procedure rests on the following observation. Dividing $P(x)$ by $D(x)$ gives:
+The Euclidean algorithm computes the greatest common divisor through successive polynomial divisions, as in the integer case. For $P(x),D(x)\in\mathbb{R}[x]$ with $D(x)\neq 0$, a greatest common divisor is a polynomial of highest degree that divides both $P(x)$ and $D(x)$. Each division has the form:
 
 $$
 P(x) = Q(x) D(x) + R(x)
 $$
 
-The common divisors of $P(x)$ and $D(x)$ coincide with the common divisors of $D(x)$ and $R(x)$. The identity $\gcd(P, D) = \gcd(D, R)$ reduces the original problem to the computation of the GCD of two polynomials of strictly smaller degree. Iterating the construction produces a sequence of remainders of decreasing degree:
+The common divisors of $P(x)$ and $D(x)$ coincide with the common divisors of $D(x)$ and $R(x)$. Indeed, a polynomial that divides both $P(x)$ and $D(x)$ also divides $R(x)=P(x)-Q(x)D(x)$. Conversely, a polynomial that divides $D(x)$ and $R(x)$ divides $P(x)=Q(x)D(x)+R(x)$. The two pairs therefore have exactly the same common divisors.
+
+The identity $\gcd(P, D)=\gcd(D, R)$ reduces the original problem to polynomials of strictly smaller degree. Iterating the construction produces the following sequence of remainders:
 
 $$
 \begin{align}
@@ -358,8 +376,29 @@ R_1(x)   &= Q_3(x) R_2(x) + R_3(x) \\[6pt]
 \end{align}
 $$
 
-The sequence terminates when a remainder $R_n(x) = 0$ is reached. The last nonzero remainder $R_{n-1}(x)$ is the greatest common divisor of $P(x)$ and $D(x)$, determined up to multiplication by a nonzero constant.
+The sequence terminates when a remainder $R_n(x)=0$ is reached. The last nonzero remainder $R_{n-1}(x)$ is the greatest common divisor of $P(x)$ and $D(x)$, determined up to multiplication by a nonzero constant. Its quotient by its leading coefficient is the unique monic GCD.
 
-The Euclidean algorithm for polynomials provides a constructive method for testing whether two polynomials share a common factor, for simplifying rational expressions, and for verifying coprimality. Two polynomials $P(x)$ and $D(x)$ are coprime in $\mathbb{R}[x]$ when $\gcd(P, D)$ is a nonzero constant.
+The Euclidean algorithm is a constructive test for common factors and coprimality, and it also simplifies rational expressions. Two polynomials $P(x)$ and $D(x)$ are coprime in $\mathbb{R}[x]$ when $\gcd(P,D)$ is a nonzero constant.
 
-> The Euclidean algorithm extends to a stronger result known as Bézout's identity: given $P(x)$ and $D(x)$ in $\mathbb{R}[x]$, there exist polynomials $A(x)$ and $B(x)$ such that $A(x) P(x) + B(x) D(x) = \gcd(P, D)$. The polynomials $A(x)$ and $B(x)$ can be reconstructed by tracking the coefficients through the successive divisions of the algorithm.
+Every remainder in the Euclidean algorithm is a linear combination of the two initial polynomials with polynomial coefficients. Bézout's identity follows by back-substitution. For the monic GCD $G(x)$, polynomials $A(x)$ and $B(x)$ satisfy:
+
+$$
+A(x)P(x)+B(x)D(x)=G(x)
+$$
+
+For example, take $P(x)=x^3-2x+1$ and $D(x)=x^2-1$. The successive divisions reduce to:
+
+$$
+\begin{align}
+P(x) &= xD(x)+(1-x) \\[6pt]
+D(x) &= -(x+1)(1-x)
+\end{align}
+$$
+
+The last nonzero remainder is $1-x$, whose monic associate is $x-1$. The first identity is equivalent to the Bézout relation:
+
+$$
+x-1=-P(x)+xD(x)
+$$
+
+Thus $G(x)=x-1$, with coefficients $A(x)=-1$ and $B(x)=x$. Bézout's identity is also the step that proves Euclid's lemma in the [unique factorization theorem for polynomials](../unique-factorization-of-polynomials/).

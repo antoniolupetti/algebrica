@@ -35,7 +35,7 @@ mn &= ac \\[6pt]
 m + n &= b
 \end{align}$$
 
-The existence of such a pair $(m, n)$ is both necessary and sufficient for the trinomial to be factorable over $\mathbb{Z}$. If no such integer pair exists, the trinomial is irreducible over $\mathbb{Z}$, though it may still admit a factorization over $\mathbb{Q}$ or $\mathbb{R}$, depending on the sign of the [discriminant](../quadratic-formula/) $b^2 - 4ac$.
+The existence of such a pair $(m, n)$ is both necessary and sufficient for the trinomial to be factorable over $\mathbb{Z}$. If no such integer pair exists, the trinomial is [irreducible over $\mathbb{Z}$](../unique-factorization-of-polynomials/), though it may still admit a factorization over $\mathbb{Q}$ or $\mathbb{R}$, depending on the sign of the [discriminant](../quadratic-formula/) $b^2 - 4ac$.
 
 
 ## The method

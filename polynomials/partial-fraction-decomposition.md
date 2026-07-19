@@ -21,7 +21,7 @@ We have the following constraints:
 + $P(x)$ and $Q(x)$ are [polynomials](../polynomials/).
 + The degree of $P(x)$ is strictly less than the degree of $Q(x)$.
 
-The procedure consists in factoring $Q(x)$ and rewriting $P(x)/Q(x)$ as a sum of fractions whose denominators are those factors. The result is a sum of elementary fractions, one term for each linear or irreducible quadratic factor of $Q(x)$.
+The procedure consists in factoring $Q(x)$ and rewriting $P(x)/Q(x)$ as a sum of fractions whose denominators are those factors. The result is a sum of elementary fractions, one term for each linear or [irreducible quadratic factor](../unique-factorization-of-polynomials/) of $Q(x)$.
 
 > The method is useful, for instance, when [integrating rational functions](../integral-of-rational-functions/): each partial fraction has a standard antiderivative.
 

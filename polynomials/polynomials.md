@@ -12,11 +12,15 @@ tags:
 
 ## Definition
 
-Let $\mathbb{R}$ represent the [field](../fields/) of [real numbers](../real-numbers/). A polynomial in one variable $x$ with coefficients in $\mathbb{R}$ is defined as an expression of the following form:
+Let $\mathbb{R}$ be the [field](../fields/) of [real numbers](../real-numbers/). A polynomial in one variable $x$ with coefficients in $\mathbb{R}$ has the following form:
 
 $$a_{n}x^{n}+a_{n-1}x^{n-1}+\dotsb +a_{1}x+a_{0}$$
 
-$n$ is a non-negative integer and $a_0, a_1, \ldots, a_n \in \mathbb{R}$ are referred to as the coefficients, with $a_n \neq 0$. Each term $a_k x^k$ is known as a monomial of degree $k$. Polynomials are typically denoted by $P(x)$ or $p(x)$. The [set](../sets/) of all polynomials in $x$ with real coefficients is denoted by $\mathbb{R}[x]$. This set forms a [ring](../rings/) under two standard operations. For two polynomials:
+$n$ is a non-negative integer, and $a_0,a_1,\ldots,a_n\in\mathbb{R}$ are the coefficients, with $a_n\neq 0$. Each term $a_kx^k$ is a monomial of degree $k$. We usually write a polynomial as $P(x)$ or $p(x)$. The [set](../sets/) of all polynomials in $x$ with real coefficients is $\mathbb{R}[x]$.
+
+The symbol $x$ is an indeterminate rather than a number to be chosen. Formally, the polynomial above is the coefficient sequence $(a_0,a_1,\ldots,a_n,0,0,\ldots)$, whose entries vanish from some index onward. Two polynomials are equal when their coefficient sequences are equal. The same definition applies over any [field](../fields/) $\mathbb{F}$, and the resulting polynomial ring is $\mathbb{F}[x]$. The sections concerning graphs and real-variable behavior specialize to $\mathbb{R}[x]$.
+
+The set $\mathbb{R}[x]$ is a [ring](../rings/) under two standard operations. For two polynomials:
 
 $$
 \begin{align}
@@ -33,9 +37,11 @@ The product of two polynomials is defined by the Cauchy convolution of their coe
 
 $$(P \cdot Q)(x) = \sum_{k=0}^{n+m} \left( \sum_{j=0}^{k} a_j b_{k-j} \right) x^k$$
 
-Coefficients with indices exceeding the degree of the respective polynomial are defined to be zero. Under these two operations, $\mathbb{R}[x]$ forms a commutative ring with identity and is an integral domain, since the product of two nonzero polynomials is never the zero polynomial.
+Coefficients with indices exceeding the degree of the respective polynomial are zero. Under these two operations, $\mathbb{R}[x]$ is a commutative ring with identity and an integral domain, since the product of two nonzero polynomials is never the zero polynomial.
 
-> The set $\mathbb{R}[x]$ constitutes a ring under the standard operations of addition and multiplication, as the sum, difference, or product of any two polynomials in $\mathbb{R}[x]$ yields another polynomial within the same set.
+Because $\mathbb{R}[x]$ has no zero divisors, it has the cancellation law. If $P(x)R(x)=Q(x)R(x)$ and $R(x)\neq 0$, then $(P(x)-Q(x))R(x)=0$, so $P(x)=Q(x)$.
+
+> The ring $\mathbb{R}[x]$ is closed under addition, subtraction, and multiplication.
 
 
 ## Degree of a polynomial
@@ -55,48 +61,47 @@ $$\deg(P \cdot Q) = \deg P + \deg Q$$
 
 ## Interpolation and degree of a polynomial
 
-An important implication of the concept of polynomial degree is its role in interpolation. Given $n+1$ distinct points $\alpha_0, \alpha_1, \dots, \alpha_n \in \mathbb{R}$ and corresponding values $\beta_0, \beta_1, \dots, \beta_n \in \mathbb{R}$, there exists a unique polynomial $p(x) \in \mathbb{R}[x]$ of degree at most $n$ that satisfies the following conditions:
+Polynomial degree controls interpolation. For distinct points $\alpha_0,\alpha_1,\dots,\alpha_n\in\mathbb{R}$ and prescribed values $\beta_0,\beta_1,\dots,\beta_n\in\mathbb{R}$, a unique polynomial $p(x)\in\mathbb{R}[x]$ of degree at most $n$ satisfies:
 
 $$p(\alpha_i) = \beta_i \quad \forall \, i = 0, 1, \dots, n$$
 
-This result demonstrates a direct relationship between the degree of a polynomial and the number of data points necessary for its unique determination. Specifically, a polynomial of degree at most $n$ is uniquely specified by $n+1$ distinct interpolation nodes. The process of constructing such a polynomial is known as polynomial interpolation. Several explicit methods are available for this purpose, with the Lagrange interpolation formula being the most classical approach.
+Thus $n+1$ distinct interpolation nodes determine a polynomial of degree at most $n$. Its construction is polynomial interpolation, and the Lagrange interpolation formula is a standard explicit method.
 
 
 ## Degree of a polynomial and its geometric interpretation
 
-The degree of a polynomial directly influences the shape of its graph in the Cartesian plane, determining the overall behaviour and geometry of the curve. A first-degree polynomial, also referred to as a linear polynomial, produces a graph that is a straight line of the form:
+The degree constrains the shape of a polynomial graph. The graph of a first-degree, or linear, polynomial is a straight line of the form:
 
 $$y = mx + q$$
 
-In this equation, $m$ represents the slope (also known as the angular coefficient), and $q$ denotes the y-intercept. For example, the equation $y = 2x + 1$ defines a specific straight line. The graph shows the equation of the line $y = 2x + 1$.
+In this equation $m$ is the slope and $q$ is the y-intercept. For example, the equation $y=2x+1$ is the line shown in the graph.
 
 ![IMG. 1](svg/polynomials-1.svg)
 
-> In the equation of a straight line, the slope $m$ corresponds to the [derivative](../derivatives/) when the line is tangent to the graph of a function at a given point. In general, the derivative of a function at a point gives the slope of the tangent line at that point.
+> For a differentiable function, the [derivative](../derivatives/) at a point is the slope of the tangent line at that point.
 
 - - -
-Second-degree polynomials, also known as quadratic polynomials, have a graph that corresponds to a [parabola](../parabola/) of the form:
+The graph of a second-degree, or quadratic, polynomial is a [parabola](../parabola/) of the form:
 
 $$y = ax^2 + bx + c $$
 
-$a$ determines the concavity of the parabola, $b$ and $c$ jointly determine
-the position of the vertex, and $c$ represents the y-intercept. The graph shows the equation of the parabola $y = x^2 + 4x - 4.$ In this case, the parabola opens upward since the coefficient of $x^2$ is positive.
+The sign of $a$ determines whether the parabola opens upward or downward, the coefficients $a$, $b$, and $c$ determine the vertex, and $c$ is the y-intercept. The graph shows the parabola $y=x^2+4x-4$. It opens upward because the coefficient of $x^2$ is positive.
 
 ![IMG. 2](svg/polynomials-2.svg)
 
 - - -
-Third-degree polynomials, also known as cubic polynomials, have a graph that corresponds to a cubic curve of the form:
+The graph of a third-degree, or cubic, polynomial is a cubic curve of the form:
 
 $$y = ax^3 + bx^2 + cx + d $$
 
-where $a$ determines the overall shape and orientation of the curve, $b$ and $c$ influence the curvature and inflection points, and $d$ represents the y-intercept.
+The leading coefficient $a$ determines the end orientation, the coefficients $b$ and $c$ affect the critical and inflection points, and $d$ is the y-intercept.
 
 
 ## End behavior of polynomial
 
 The end behavior of a polynomial is determined exclusively by its leading term, that is, the term of highest degree $a_n x^n$. As $|x|$ approaches infinity, all lower-degree terms become [asymptotically](../asymptotes/) negligible compared to the growth imposed by the power $x^n$.
 
-Consequently, the description of the polynomial’s behavior for $x \to -\infty$ and $x \to +\infty$ reduces to analyzing the interplay between the parity of the degree $n$ and the sign of the leading coefficient $a_n$.
+The two end limits depend on the parity of $n$ and the sign of the leading coefficient $a_n$.
 
 + When the degree is even, the function $x^n$ is non-negative for all real values of $x$, and the end behavior is therefore symmetric: the polynomial diverges to $+\infty$ if $a_n > 0$ and to $-\infty$ if $a_n < 0$.
 
@@ -109,13 +114,13 @@ Consequently, the description of the polynomial’s behavior for $x \to -\infty$
 | odd            | $>0$  | $-\infty$        | $+\infty$        | opposite    | $\swarrow$ $\nearrow$     |
 | odd            | $<0$  | $+\infty$        | $-\infty$        | opposite    | $\nwarrow$  $\searrow$  |
 
-> In all cases, the leading term fully determines the polynomial’s asymptotic behavior, while the contribution of the remaining terms diminishes progressively as $|x|$ increases.
+> The leading term determines both end limits because the ratio of every lower-degree term to $a_nx^n$ tends to zero as $|x|$ increases.
 
 - - -
 To clarify the concept further, let us consider the case in the third row with the following polynomial:
 $$ x^3 + 5x^2 + 5x + 1 $$
 
-In this case the polynomial exhibits the characteristic end behavior of a cubic function with a positive leading coefficient. As $x$ moves toward $-\infty$, the term of highest degree dominates and forces the graph to decrease without bound, causing the curve to descend on the left side. Conversely, as $x$ approaches $+\infty$, the leading term becomes increasingly positive and drives the entire expression upward, making the graph rise indefinitely on the right side.
+This polynomial has odd degree and a positive leading coefficient. Therefore it tends to $-\infty$ as $x\to-\infty$ and to $+\infty$ as $x\to+\infty$.
 
 ![IMG. 3](svg/polynomials-3.svg)
 
@@ -124,7 +129,7 @@ In this case the polynomial exhibits the characteristic end behavior of a cubic 
 | odd            | $>0$  | $-\infty$        | $+\infty$        | opposite    | $\swarrow$ $\nearrow$     |
 
 
-This behavior produces the familiar down–to–up orientation characteristic of all odd-degree polynomials with a positive leading coefficient. Understanding a polynomial’s end behavior directly from its algebraic structure is especially valuable when studying the overall [behavior of functions](../analyzing-the-graphs-of-functions/). By focusing on the leading term $a_n x^n$, one can predict how the graph evolves as $x \to +\infty$ or $x \to -\infty$, since the rapid growth of $x^n$ dominates and makes all lower-degree contributions negligible. In many cases, identifying the degree of the polynomial and the sign of its leading coefficient already provides a clear, immediate indication of the global shape of the function.
+Every odd-degree polynomial with a positive leading coefficient has this down-to-up end behavior. Its degree and leading coefficient determine the two end limits because $a_nx^n$ dominates all lower-degree terms as $|x|$ increases.
 
 
 ## Monomials, binomials, trinomials
@@ -138,7 +143,7 @@ A [trinomial](../trinomials/) is a polynomial expression consisting of three ter
 
 ## Sum or difference of two polynomials
 
-The [sum or difference](../adding-and-subtracting-polynomials/) of two polynomials of the same degree results in a polynomial of the same degree, or of lower degree if the terms of highest degree cancel out. For example, if we have two polynomials of degree $n$, say $P(x)$ and $Q(x)$, then their sum or difference, denoted by $P(x) ± Q(x)$, is also a polynomial of degree $\leq n$.
+The [sum or difference](../adding-and-subtracting-polynomials/) of two polynomials of degree $n$ has degree at most $n$. It has degree less than $n$ when the leading terms cancel.
 
 The sum or difference of the two polynomials is obtained by adding or subtracting the corresponding coefficients of the like terms.
 
@@ -215,7 +220,7 @@ The degree of the product satisfies $\deg(P \cdot Q) = \deg P + \deg Q$ whenever
 
 ## How to divide two polynomials
 
-[Dividing two polynomials](../polynomial-division/) is a more complex process compared to their addition or subtraction. Given two polynomials $P(x)$ and $D(x)$, it is always possible to determine two polynomials $Q(x)$ and $R(x)$ such that:
+[Polynomial division](../polynomial-division/) asks for a quotient and a remainder. For polynomials $P(x)$ and $D(x)$ with $D(x)\neq 0$, unique polynomials $Q(x)$ and $R(x)$ satisfy:
 
 $$P(x) = Q(x) D(x) + R(x) $$
 
@@ -223,7 +228,7 @@ $$P(x) = Q(x) D(x) + R(x) $$
 + $R(x)$ is the remainder.  
 + The degree of $R(x)$ is strictly less than the degree of $D(x)$
 
-> This result is known as the polynomial division algorithm, or polynomial long division. It provides a systematic procedure for dividing any polynomial by a nonzero polynomial of lower or equal degree, guaranteeing that the remainder is either zero or of strictly lower degree than the divisor.
+> This is the polynomial division algorithm, or polynomial long division. Its remainder is zero or has degree strictly less than the degree of the divisor.
 
 - - -
 When the division between two polynomials is expressed as a reduced quotient (without explicitly showing the remainder), we obtain a rational function defined as:
@@ -234,7 +239,7 @@ $$
 
 where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \ne 0$.
 
-> In this context, it is worth exploring [rational equations](../rational-equations/) and rational inequalities, which involve expressions where both the numerator and the denominator are polynomials.
+> [Rational equations](../rational-equations/) and rational inequalities contain quotients of polynomials.
 
 
 ## Factoring polynomials
@@ -244,13 +249,15 @@ A number $\alpha$ is said to be a [root](../roots-of-a-polynomial/) of the polyn
 - - -
 The existence of roots over $\mathbb{C}$ is guaranteed by the [Fundamental Theorem of Algebra](../roots-of-a-polynomial/), which states that every non-constant polynomial with complex coefficients has at least one complex root. As a consequence, any polynomial of degree $n$ over $\mathbb{C}$ factors into exactly $n$ linear factors, counted with multiplicity. Over $\mathbb{R}$, the situation is more nuanced: real roots may not always exist, and irreducible quadratic factors with no real roots may appear in the factorization.
 
-Under the assumption that all roots are known, any polynomial $P(x)$ with $P(0) \ne 0$ admits a factored representation in terms of its roots:
+The general existence and uniqueness statement is developed in [unique factorization of polynomials](../unique-factorization-of-polynomials/). It distinguishes irreducible factors from units and explains why a factorization is unique only up to the order of the factors and multiplication by nonzero constants.
+
+When all roots are known, every polynomial $P(x)$ with $P(0)\ne 0$ has the following factored form:
 
 $$
 P(x) = P(0) \prod_{\rho} \left(1 - \frac{x}{\rho} \right)
 $$
 
-where the product runs over all roots $\rho$ of the polynomial, real or complex, counted with multiplicity. This representation expresses the polynomial entirely in terms of the values at which it vanishes, and makes the role of each root explicit in the structure of the expression. The coefficients of a polynomial and its roots are related through [Vieta's formulas](../vieta-formulas/), which express each coefficient as an elementary symmetric polynomial in the roots.
+The product has one factor for each root $\rho$, counted with multiplicity. Expanding the product and comparing coefficients gives [Vieta's formulas](../vieta-formulas/), in which every coefficient is an elementary symmetric polynomial in the roots.
 
 ## Polynomial equations
 
@@ -267,14 +274,17 @@ A [polynomial function](../polynomial-function/) is a [function](../functions/) 
 
 $$y = a_{n}x^{n}+a_{n-1}x^{n-1}+\dotsb +a_{2}x^{2}+a_{1}x+a_{0} $$
 
+Each formal polynomial $P\in\mathbb{R}[x]$ has an associated function $x\mapsto P(x)$. Evaluation preserves the algebraic operations, since $(P+Q)(x)=P(x)+Q(x)$ and $(PQ)(x)=P(x)Q(x)$ for every real $x$.
 
-Let $p(x)$ and $q(x)$ be two polynomials. If the two polynomial functions are equal for every value of $x$, that is:
+Suppose that two polynomials $p(x)$ and $q(x)$ define the same function at every real value, so that:
 
 $$ p(x) = q(x) \quad \forall \ x $$
 
-then the two polynomials are exactly the same, meaning they have the same coefficients. This is known as the identity principle of polynomials.
+Since $\mathbb{R}$ is infinite, the two polynomials are equal and have the same coefficients. This is the identity principle for polynomials.
 
-Polynomial functions possess several notable analytical properties.
+> The distinction between a formal polynomial and its associated function matters over finite fields. In the field $\mathbb{F}_2=\{0,1\}$, the nonzero polynomial $h(x)=x^2+x$ satisfies $h(0)=h(1)=0$. It therefore induces the same function as the zero polynomial even though their coefficient sequences differ.
+
+Polynomial functions have the following analytical properties.
 
 + Their domain is the entire real line $\mathbb{R}$, and they are [continuous](../continuous-functions/) and smooth at every point, with no [discontinuities](../discontinuities-of-real-functions/), singularities, cusps, or corners.
 + As a consequence of their global regularity, polynomial functions do not admit [asymptotes](../asymptotes/) of any kind.
