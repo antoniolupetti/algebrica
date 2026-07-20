@@ -131,6 +131,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf), Justin Solomon
 + [Mathematics for Computer Science](https://people.csail.mit.edu/meyer/mcs.pdf), Eric Lehman, F. Thomson Leighton, Albert R. Meyer
 + [Scientific Computing](https://www.math.hkust.edu.hk/~machas/scientific-computing.pdf), Jeffrey R. Chasnov
++ [Foundations of Applied Mathematics](https://foundations-of-applied-mathematics.github.io), Jeffrey Humpherys, Tyler J. Jarvis
 
 ## Machine learning and artificial intelligence
 

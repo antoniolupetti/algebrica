@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="370px" height="236px" viewBox="0 0 370 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 2.000000)">
+            <path d="M64.5,-1.01986443 L64.9357878,-0.24513062 L69.4357878,7.75486938 L69.6809184,8.19065715 L68.8093429,8.68091839 L68.5642122,8.24513062 L65,1.908 L65,234 L64,234 L64,1.908 L60.4357878,8.24513062 L60.1906571,8.68091839 L59.3190816,8.19065715 L59.5642122,7.75486938 L64.0642122,-0.24513062 L64.5,-1.01986443 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="107.5" y1="209.511905" x2="107.5" y2="128.488095" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="246.5" y1="209.511905" x2="246.5" y2="128.488095" stroke="#999999" stroke-linecap="square" stroke-dasharray="4"></line>
+            <path d="M359.809343,204.319082 L360.245131,204.564212 L368.245131,209.064212 L369.019864,209.5 L368.245131,209.935788 L360.245131,214.435788 L359.809343,214.680918 L359.319082,213.809343 L359.754869,213.564212 L366.089,210 L25,210 L25,209 L366.093,209 L359.754869,205.435788 L359.319082,205.190657 L359.809343,204.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="177.5" y1="64.5" x2="177.5" y2="115.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="122" y="26">The density is constant on [a,b], so</tspan>
+                <tspan x="122" y="39">subintervals of equal length have</tspan>
+                <tspan x="122" y="52">equal probability.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="0" y="31">f(x; a, b)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="353.99" y="228">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="104.194" y="229">a</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="242.93" y="229">b</tspan>
+            </text>
+            <line x1="108.5" y1="127.5" x2="246.5" y2="127.5" stroke="#333333" stroke-width="3" stroke-linecap="square"></line>
+            <line x1="5.5" y1="209.5" x2="107.5" y2="209.5" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="246.5" y1="209.5" x2="348.5" y2="209.5" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle stroke="#333333" fill="#FFFFFF" cx="107.5" cy="209.5" r="3"></circle>
+            <circle stroke="#333333" fill="#FFFFFF" cx="246.5" cy="209.5" r="3"></circle>
+            <circle stroke="#333333" fill="#333333" cx="107.5" cy="127.5" r="3"></circle>
+            <circle stroke="#333333" fill="#333333" cx="246.5" cy="127.5" r="3"></circle>
+        </g>
+    </g>
+</svg>
