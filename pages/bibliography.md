@@ -119,6 +119,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [The Princeton Companion to Mathematics](https://press.princeton.edu/books/hardcover/9780691118802/the-princeton-companion-to-mathematics), Timothy Gowers, June Barrow-Green, Imre Leader
 + [The Architecture of Mathematics](https://www.jstor.org/stable/2305937), Nicholas Bourbaki
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
++ [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach
 
 ## Algorithms and computation
 
