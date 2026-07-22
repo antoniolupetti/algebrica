@@ -3,11 +3,14 @@ title: Sets
 source: https://algebrica.org/sets/
 license: CC BY-NC 4.0
 tags:
+  - bijection
   - cardinality
   - cartesian-product
   - de-morgan-laws
+  - disjoint-union
   - inclusion-exclusion
   - indexed-family
+  - indexed-product
   - ordered-pair
   - partition
   - power-set
@@ -19,7 +22,13 @@ tags:
 
 ## Introduction
 
-A set is a collection of objects called elements that are considered as a whole. Sets are represented by uppercase letters $A,$ $B,$ $C,$ and their elements by lowercase letters. The notation $x \in A$ indicates that an object $x$ belongs to the set $A,$ while $x \notin A$ indicates that $x$ is not an element of $A.$ For any given object, it is always possible to determine unambiguously whether the object belongs to the collection or not.
+A set is a collection of objects called elements and is determined entirely by which objects belong to it. Two sets are equal precisely when they have the same elements. The order used to list the elements and any repetitions in the list do not change the set. For example, the following three descriptions define the same set:
+
+$$
+\{1,2,3\}=\{3,1,2\}=\{1,1,2,3,3\}
+$$
+
+A set with exactly one element is a singleton. Thus $\{a\}$ is a singleton, while $\{a,b\}$ has two elements when $a\neq b.$ Sets are usually represented by uppercase letters $A,$ $B,$ $C,$ and their elements by lowercase letters. The notation $x\in A$ indicates that $x$ belongs to $A,$ while $x\notin A$ indicates that $x$ does not belong to $A.$ Membership must have an unambiguous truth value for every object under consideration.
 
 A set can be described by enumeration or by set-builder notation. Enumeration consists in explicitly listing each element of the set, and is practical when the cardinality of the set is finite and small:
 
@@ -27,19 +36,21 @@ $$
 A = \{a_1, a_2, a_3, a_4\}
 $$
 
-When the elements are numerous or infinite, set-builder notation becomes preferable. In this case the set is described by the property that each element must satisfy in order to belong to it:
+When the elements are numerous or infinite, set-builder notation is usually shorter. It selects from a previously specified set the elements that satisfy a given condition. For example, we define a subset of the [integers](../integers/) by writing:
 
 $$
-A = \\{ x \in \mathbb{Z} \mid x > 4, \ x \leq 8 \\}
+A = \{\ x \in \mathbb{Z} \mid x > 4, \ x \leq 8 \ \}
 $$
 
-The previous notation defines $A$ as the set of all [integers](../integers/) $x$ such that $x > 4$ and $x \leq 8,$ that is, the following set:
+The ambient set $\mathbb{Z}$ limits the candidates for membership. The two inequalities then select the following four integers:
 
 $$
 A = \{5, 6, 7, 8\}
 $$
 
-The empty set contains no elements, is denoted by $\emptyset$ or $\\{\\},$ and plays a role in set theory analogous to that of zero in arithmetic.
+> In naive set theory, an arbitrary condition does not necessarily define a set. An expression of the form $\{\ x\in S\mid P(x)\ \}$ extracts elements from a set $S$ that is already available. Without such an ambient set, a condition may describe a collection that cannot be a set. Russell's paradox arises from an unrestricted definition of this kind.
+
+The empty set contains no elements, is denoted by $\emptyset$ or $\{\ \},$ and plays a role in set theory analogous to that of zero in arithmetic.
 
 ## The universal set
 
@@ -49,15 +60,13 @@ A main collection containing all objects under consideration is called the unive
 
 ## Cardinality of finite sets
 
-The cardinality of a set $A,$ denoted $|A|,$ is the number of elements the set contains. The cardinality can be measured in different situations, as follows.
-
-The empty set has cardinality $|\emptyset| = 0.$ Two finite sets have the same cardinality if and only if they contain the same number of elements.
-
-The cardinality of the power set of a finite set $A$ with $n$ elements is given by:
+The cardinality of a finite set $A,$ denoted $|A|,$ is the number of elements in $A.$ Cardinality can also be compared through [functions](../functions/). Two sets $A$ and $B$ have the same cardinality when a bijection from $A$ to $B$ exists. This condition is written as follows:
 
 $$
-|\mathcal{P}(A)| = 2^n
+|A|=|B| \iff \text{there is a bijection } f\colon A\to B
 $$
+
+For finite sets this condition is equivalent to equality between their numbers of elements. The empty set has cardinality $|\emptyset|=0.$
 
 The cardinality of the Cartesian product of two finite sets $A$ and $B$ is given by:
 
@@ -103,41 +112,53 @@ $$
 
 If $A \subseteq B$ and $A \neq B,$ then $A$ is a proper subset of $B,$ denoted $A \subsetneq B,$ and in this case there exists at least one element in $B$ that does not belong to $A.$ The empty set is a subset of every set. The inclusion $\emptyset \subseteq A$ holds for any set $A,$ because the implication $x \in \emptyset \Rightarrow x \in A$ is vacuously true.
 
-The power set of a set $A$ is the set of all subsets of $A,$ denoted $\mathcal{P}(A).$ It includes the empty set $\emptyset$ and the set $A$ itself. If $A$ has $n$ elements, then $\mathcal{P}(A)$ has $2^n$ elements. For example, if $A = \\{a, b, c\\},$ then the power set contains $2^3 = 8$ elements:
+The power set of a set $A$ is the set of all subsets of $A,$ denoted $\mathcal{P}(A).$ It includes the empty set $\emptyset$ and the set $A$ itself. If $A$ has $n$ elements, then $\mathcal{P}(A)$ has $2^n$ elements. For example, if $A=\{a,b,c\},$ then the power set contains $2^3=8$ elements:
 
 $$
 \mathcal{P}(A) = \{\emptyset, \ \{a\}, \ \{b\}, \ \{c\}, \ \{a,b\}, \ \{a,c\}, \ \{b,c\}, \ \{a,b,c\}\}
 $$
 
+The exponent $2^n$ comes from a correspondence with functions. Every subset $E\subseteq A$ has a characteristic function $\chi_E\colon A\to\{0,1\}$ defined by:
+
+$$
+\chi_E(a)=
+\begin{cases}
+1 & \text{if } a\in E \\[6pt]
+0 & \text{if } a\notin E
+\end{cases}
+$$
+
+Conversely, a function $\chi\colon A\to\{0,1\}$ determines the subset $\{\ a\in A\mid \chi(a)=1\ \}.$ These two constructions are inverse to each other. When $A$ has $n$ elements, the value of $\chi$ has two independent possibilities at each element of $A,$ so there are $2^n$ characteristic functions and therefore $2^n$ subsets.
+
 
 ## Indexed families of sets
 
-When several sets are considered together, labeling them by an index keeps the notation compact. A family of sets indexed by a set $I$ assigns a set $A_i$ to each index $i \in I,$ and is written $\\{A_i\\}_{i \in I}.$ The index set $I$ can be finite, countable, or uncountable, so this notation is more general than a finite list of terms.
+When several sets are considered together, labeling them by an index keeps the notation compact. A family of sets indexed by a set $I$ assigns a set $A_i$ to each index $i\in I$ and is written $(A_i)_{i\in I}.$ Formally, the family is a function whose domain is $I$ and whose value at $i$ is $A_i.$ The indices remain distinct even when two values coincide, so $A_i=A_j$ does not imply $i=j.$ The index set can be finite, countable, or uncountable.
 
 The union of the family is the set of elements that belong to at least one of its members, and the intersection is the set of elements that belong to every member:
 
 $$
-\bigcup_{i \in I} A_i = \\{x \mid x \in A_i \text{ for some } i \in I\\}
+\bigcup_{i\in I} A_i = \{\ x \mid x\in A_i \text{ for some } i\in I \ \}
 $$
 
 $$
-\bigcap_{i \in I} A_i = \\{x \mid x \in A_i \text{ for every } i \in I\\}
+\bigcap_{i\in I} A_i = \{\ x \mid x\in A_i \text{ for every } i\in I \ \}
 $$
 
 An element belongs to the union as soon as one member of the family contains it, and belongs to the intersection only when every member contains it.
 
-A family $\\{A_i\\}_{i \in I}$ is pairwise disjoint when any two distinct members share no elements:
+A family $(A_i)_{i\in I}$ is pairwise disjoint when any two members with distinct indices share no elements:
 
 $$
 A_i \cap A_j = \emptyset \quad \forall \ i \neq j
 $$
 
-For each $n \in \mathbb{N}$ the singletons $\\{n\\}$ form a pairwise disjoint family, and their union is the set $\mathbb{N}.$
+For each $n\in\mathbb{N}$ the singletons $\{n\}$ form a pairwise disjoint family, and their union is the set $\mathbb{N}.$
 
 
 ## Partitions
 
-A partition of a set $A$ is a family of non-empty subsets $\\{A_i\\}_{i \in I}$ that are pairwise disjoint and cover the whole of $A.$ The following conditions must hold:
+A partition of a set $A$ is a family of non-empty subsets $(A_i)_{i\in I}$ that are pairwise disjoint and cover the whole of $A.$ The following conditions must hold:
 
 $$
 \begin{align}
@@ -292,7 +313,7 @@ The first law states that the complement of a union equals the intersection of t
 
 The second law states that an element is not in the intersection $A \cap B$ when it is missing from at least one of the two sets, and this places it in $A^c \cup B^c.$
 
-These laws extend to an arbitrary family of sets $\\{A_i\\}_{i \in I},$ with no restriction on the size of the index set $I$:
+These laws extend to an arbitrary family of sets $(A_i)_{i\in I},$ with no restriction on the size of the index set $I$:
 
 $$
 \begin{align}
@@ -412,6 +433,34 @@ A_1 \times A_2 \times \cdots \times A_n = \\{(a_1, a_2, \ldots, a_n) \mid a_i \i
 $$
 
 An $n$-tuple $(a_1, \ldots, a_n)$ is an ordered sequence of $n$ elements, and two $n$-tuples are equal if and only if all corresponding components are equal. If all sets are identical, that is, $A_i = A$ for every $i,$ the product is $A^n.$ The space $\mathbb{R}^n$ is the $n$-fold Cartesian product of $\mathbb{R}$ with itself, and its elements are $n$-tuples of real numbers.
+
+The Cartesian product extends to an indexed family $(A_i)_{i\in I}.$ An element of the indexed product has one component $a_i\in A_i$ for each index $i.$ The product is defined by:
+
+$$
+\prod_{i\in I}A_i=\{\ (a_i)_{i\in I}\mid a_i\in A_i \text{ for every } i\in I \ \}
+$$
+
+Equivalently, an element of $\prod_{i\in I}A_i$ is a function $a\colon I\to\bigcup_{i\in I}A_i$ such that $a(i)\in A_i$ for every $i\in I.$ When $I=\{1,\ldots,n\},$ this definition gives the finite Cartesian product above. If one factor is empty, the whole product is empty because no family can choose an element from that factor.
+
+> For an arbitrary indexed family of non-empty sets, the assertion that the Cartesian product is non-empty is equivalent to the axiom of choice. Finite families do not require this axiom.
+
+## Disjoint union
+
+The ordinary union has only one occurrence of an element that belongs to both $A$ and $B.$ The disjoint union has two labeled versions of such an element, one for each source set. One construction is given by:
+
+$$
+A\sqcup B=(\{0\}\times A)\cup(\{1\}\times B)
+$$
+
+The sets $\{0\}\times A$ and $\{1\}\times B$ are disjoint because their ordered pairs have different first components. The functions $i_A\colon A\to A\sqcup B$ and $i_B\colon B\to A\sqcup B$ defined by $i_A(a)=(0,a)$ and $i_B(b)=(1,b)$ are injective. Their images are disjoint and their union is $A\sqcup B.$ Thus every element of the disjoint union comes from exactly one of the two source sets.
+
+If $A$ and $B$ are finite, the two tagged copies have $|A|$ and $|B|$ elements, respectively. Their disjointness gives the formula:
+
+$$
+|A\sqcup B|=|A|+|B|
+$$
+
+When $A\cap B=\emptyset,$ removing the labels defines a bijection from $A\sqcup B$ to $A\cup B.$ If $A\cap B\neq\emptyset,$ the same rule is not injective. For an element $x\in A\cap B,$ the distinct elements $(0,x)$ and $(1,x)$ of $A\sqcup B$ would both map to $x.$
 
 ## The ordered pair
 
