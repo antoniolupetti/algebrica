@@ -18,6 +18,7 @@ tags:
 The normal distribution, also called the Gaussian distribution, is a continuous probability distribution whose density function is symmetric and bell-shaped. It models a [continuous random variable](../continuous-random-variables/) $X$ whose values cluster around a central value and whose larger deviations are progressively less frequent. The distribution has two parameters: the [mean](../introduction-to-the-mean/) $\mu,$ which is its center, and the [standard deviation](../variance/) $\sigma > 0,$ which determines its spread. We write:
 
 $$X \sim \mathcal{N}(\mu, \sigma^{2})$$
+
 ![IMG. 1](svg/normal-distribution-1.svg)
 
 The density is symmetric about $x = \mu$ and has the following properties.
