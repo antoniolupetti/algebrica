@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="229px" viewBox="0 0 345 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M107,142 L107,212 L203,212 C203,116.666667 203,69 203,69 C197,63 194,60 194,60 C189.333333,57.3333333 187,56 187,56 C183,54.6666667 181,54 181,54 C177.666667,53.3333333 176,53 176,53 C171.333333,54.3333333 169,55 169,55 C163,60.3333333 160,63 160,63 C152.666667,71.6666667 149,76 149,76 C143.666667,84 141,88 141,88 C135,96.6666667 132,101 132,101 L120,121 L107,142 Z" fill="#E9E9E9"></path>
+            <line x1="178.5" y1="209.5" x2="178.5" y2="55.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="48" y="11">The shaded gray area under the curve represents</tspan>
+                <tspan x="48" y="24">the integral of the normal density function</tspan>
+                <tspan x="48" y="37">computed over the interval [x0 , x1].</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="174" y="229">μ</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="104" y="229">x₀</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" line-spacing="13" fill="#333333">
+                <tspan x="201" y="229">x₁</tspan>
+            </text>
+            <path d="M334.809343,207.319082 L335.245131,207.564212 L343.245131,212.064212 L344.019864,212.5 L343.245131,212.935788 L335.245131,217.435788 L334.809343,217.680918 L334.319082,216.809343 L334.754869,216.564212 L341.091,213 L0,213 L0,212 L341.091,212 L334.754869,208.435788 L334.319082,208.190657 L334.809343,207.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="113.5" y1="47.5" x2="113.5" y2="108.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M26,212 C57.6850677,212 84.159356,177.478586 107.446197,140.606738 C134.135742,98.3471268 156.638275,53 178,53 C186.151031,53 194.343588,59.6024069 202.797672,70.1163993 C235.830778,111.198294 272.856754,212 327,212" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M107.471475,140.56671 C134.149951,98.3184971 156.64502,53 178,53 C186.227661,53 194.497631,59.7271318 203.036178,70.4139673" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

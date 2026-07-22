@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="404px" height="247px" viewBox="0 0 404 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="207.5" y1="219.5" x2="207.5" y2="63.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="154.5" y1="220.5" x2="154.5" y2="119.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="260.5" y1="220.5" x2="260.5" y2="119.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="310.5" y1="220.5" x2="310.5" y2="195.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <line x1="104.5" y1="220.5" x2="104.5" y2="192.5" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="86" y="11">The figure illustrates the 68–95–99.7 </tspan>
+                <tspan x="86" y="25">rule, showing how most values fall within </tspan>
+                <tspan x="86" y="39">one, two, or three standard deviations </tspan>
+                <tspan x="86" y="53">from the mean.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="203" y="244">0</tspan>
+            </text>
+            <path d="M395.162848,215.527171 L395.245131,215.564212 L403.245131,220.064212 C403.556638,220.239435 403.582597,220.665161 403.323007,220.882134 L403.245131,220.935788 L395.245131,225.435788 C395.004452,225.57117 394.699594,225.48581 394.564212,225.245131 C394.443873,225.031194 394.497947,224.766548 394.680485,224.615296 L394.754869,224.564212 L401.091,221 L0.5,221 C0.223857625,221 0,220.776142 0,220.5 C0,220.25454 0.176875161,220.050392 0.410124368,220.008056 L0.5,220 L401.091,220 L394.754869,216.435788 C394.540933,216.315448 394.449717,216.061202 394.527171,215.837152 L394.564212,215.754869 C394.684552,215.540933 394.938798,215.449717 395.162848,215.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="139.5" y1="65.5" x2="139.5" y2="126.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="80.5" y1="200.5" x2="80.5" y2="209.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="37.5" y1="209.5" x2="37.5" y2="218.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="332.5" y1="200.5" x2="332.5" y2="209.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M55,220 C123,220 167,61 207,61 C247,61 288,220 356,220" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="146" y="244">-1𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="253" y="244">1𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="305" y="244">2𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="351" y="244">3𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="94" y="244">-2𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="42" y="244">-3𝜎</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="168" y="150">34,1%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="217" y="150">34,1%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="320" y="197">2,1%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="68" y="197">2,1%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="25" y="205">0,1%</tspan>
+            </text>
+            <line x1="375.5" y1="209.5" x2="375.5" y2="218.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="363" y="205">0,1%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="115" y="210">13,6%</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="270" y="210">13,6%</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
