@@ -173,7 +173,7 @@ The point lies about $1.41$ units from the line.
 
 ## Intersection of two lines
 
-Two lines with equal slopes are parallel and never meet. Two lines with different slopes intersect at a single point, whose coordinates are the solution of the [system](../systems-of-linear-equations/) formed by the two equations.
+Two lines with equal slopes are parallel and never meet. Two lines with different slopes intersect at a single point, whose coordinates are the solution of the [system in two variables](../systems-of-linear-equations-in-two-variables/) formed by the two equations.
 
 As an example, consider the lines $y = x + 2$ and $y = -2x + 8$. Their slopes differ, so they intersect at one point, found by solving the system:
 

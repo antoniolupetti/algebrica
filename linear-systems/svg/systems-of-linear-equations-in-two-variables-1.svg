@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="302px" height="353px" viewBox="0 0 302 353" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M291.162848,266.527171 L291.245131,266.564212 L299.245131,271.064212 C299.556638,271.239435 299.582597,271.665161 299.323007,271.882134 L299.245131,271.935788 L291.245131,276.435788 C291.004452,276.57117 290.699594,276.48581 290.564212,276.245131 C290.443873,276.031194 290.497947,275.766548 290.680485,275.615296 L290.754869,275.564212 L297.091,272 L21.5,272 C21.2238576,272 21,271.776142 21,271.5 C21,271.25454 21.1768752,271.050392 21.4101244,271.008056 L21.5,271 L297.091,271 L290.754869,267.435788 C290.540933,267.315448 290.449717,267.061202 290.527171,266.837152 L290.564212,266.754869 C290.684552,266.540933 290.938798,266.449717 291.162848,266.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <circle fill="#333" cx="111.5" cy="203" r="3"></circle>
+            <path d="M41.882134,84.6769926 L41.9357878,84.7548694 L46.4357878,92.7548694 C46.5711697,92.9955483 46.4858096,93.3004059 46.2451306,93.4357878 C46.0311938,93.5561272 45.7665479,93.5020533 45.6152959,93.3195146 L45.5642122,93.2451306 L42,86.908 L42,348.5 C42,348.776142 41.7761424,349 41.5,349 C41.2545401,349 41.0503916,348.823125 41.0080557,348.589876 L41,348.5 L41,86.908 L37.4357878,93.2451306 C37.3154483,93.4590675 37.0612021,93.5502832 36.8371522,93.4728292 L36.7548694,93.4357878 C36.5409325,93.3154483 36.4497168,93.0612021 36.5271708,92.8371522 L36.5642122,92.7548694 L41.0642122,84.7548694 C41.2394349,84.4433624 41.6651608,84.4174034 41.882134,84.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M5.5,97.5 L222.641703,312.911491 M237.092445,327.247087 L256.5,346.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M36,352 L163.914245,100.522334 M174.153412,80.3922722 L183,63" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="292" y="291">x</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="124.578" y="206">(2,2)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="166.086" y="93">y=2x-2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="224.476" y="324">y=-x+4</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="22" y="92">y</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="0" y="11">Since the two lines have different slopes, </tspan>
+                <tspan x="0" y="24">they can intersect at only one point, which </tspan>
+                <tspan x="0" y="37">guarantees the uniqueness of the solution.</tspan>
+            </text>
+            <line x1="11.5" y1="90.5" x2="11.5" y2="44.5" stroke="#BABABA" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

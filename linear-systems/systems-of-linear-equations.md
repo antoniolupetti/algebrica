@@ -55,6 +55,8 @@ Each equation of a linear system describes a flat set in the space of the $n$ un
 
 This picture matches the classification of the solutions. In the plane two lines meet at a single point, giving a determined system, or coincide along the same line, giving infinitely many solutions, or stay parallel without meeting, giving an inconsistent system. The same three outcomes recur for planes and hyperplanes in higher dimensions.
 
+The graphical, substitution, and elimination methods for the planar case are developed in the entry on [systems of linear equations in two variables](../systems-of-linear-equations-in-two-variables/).
+
 ## Matrix representation
 
 The coefficients and constants of a linear system can be arranged into [matrices](../matrices/), a compact notation on which the standard solution methods operate. Any system in standard form with $m$ equations and $n$ unknowns has an $m \times n$ coefficient matrix, built from the coefficients of the variables:

@@ -103,4 +103,4 @@ Transcendental equations are equations in which one or more variables appear wit
 
 A system of equations arises when several equations must be satisfied simultaneously by the same set of unknowns. Such a system consists of two or more equations involving the same variables, and a solution is any assignment of values that satisfies all equations concurrently. 
 
-Systems may be classified as [linear](../systems-of-linear-equations/) or nonlinear according to the form of their equations. Analysing them often requires techniques beyond those used for single equations, including substitution, elimination, and matrix methods for linear systems.
+Systems may be classified as [linear](../systems-of-linear-equations/) or nonlinear according to the form of their equations. Analysing them often requires techniques beyond those used for single equations. The graphical, substitution, and elimination methods for the case of two unknowns are developed in the entry on [systems of linear equations in two variables](../systems-of-linear-equations-in-two-variables/).
