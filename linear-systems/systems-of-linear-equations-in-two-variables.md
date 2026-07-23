@@ -25,7 +25,7 @@ $$
 
 In each equation at least one coefficient of the unknowns is nonzero. A solution is an ordered pair $(x,y)$ that satisfies both equations. The solution [set](../sets/) of every linear equation in two variables is a [line](../lines/) in the coordinate plane, so the solutions of the system are the points shared by the two lines.
 
-Three outcomes are possible. Two distinct intersecting lines have one common point, two distinct parallel lines have no common points, and coincident lines have every point in common. The general classification of these cases and their matrix formulation are in the entry on [systems of linear equations](../systems-of-linear-equations/). This entry treats three methods for finding and classifying the solutions in two variables.
+Three outcomes are possible. Two distinct intersecting lines have one common point, two distinct parallel lines have no common points, and coincident lines have every point in common. The general classification of these cases and their matrix formulation are in the entry on [systems of linear equations](../systems-of-linear-equations/). This entry treats three methods for finding and classifying the solutions in two variables. The corresponding method for one additional unknown is in [systems of linear equations in three variables](../systems-of-linear-equations-in-three-variables/).
 
 ## The graphical method
 

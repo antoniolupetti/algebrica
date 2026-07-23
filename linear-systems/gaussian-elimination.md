@@ -17,7 +17,7 @@ tags:
 
 ## What is Gaussian elimination
 
-The Gauss method, or Gaussian elimination, is an algorithm for solving [systems](../systems-of-linear-equations/) of linear equations. At each stage one variable is eliminated, and the result is an [equivalent system](../equations/) with fewer terms. The algorithm is valid for any system of $m$ equations in $n$ unknowns. The initial model below is a $3\times3$ system, which has a unique solution when its coefficient matrix is invertible:
+The Gauss method, or Gaussian elimination, is an algorithm for solving [systems](../systems-of-linear-equations/) of linear equations. At each stage one variable is eliminated, and the result is an [equivalent system](../equations/) with fewer terms. The algorithm is valid for any system of $m$ equations in $n$ unknowns. The initial model below is a $3\times3$ system, which has a unique solution when its coefficient matrix is invertible. The equation-by-equation treatment of this case is in [systems of linear equations in three variables](../systems-of-linear-equations-in-three-variables/):
 
 $$
 \begin{cases}

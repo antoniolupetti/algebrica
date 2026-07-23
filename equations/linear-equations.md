@@ -218,6 +218,8 @@ The solution set of the equation $x + 2y - z = 0$ is the plane through the origi
 
 $$(x, y, z) = (\lambda, \mu, \lambda + 2\mu), \qquad \lambda, \mu \in \mathbb{R}$$
 
+The entry on [systems of linear equations in three variables](../systems-of-linear-equations-in-three-variables/) treats intersections of several such planes and their elementary solution methods.
+
 ## Linear equations with a parameter
 
 A natural extension of the theory developed so far consists in allowing the coefficients to depend on one or more real parameters, rather than being fixed numbers. This gives rise to [linear equations with a parameter](../linear-equations-with-parameters/), a family of relations of the form:

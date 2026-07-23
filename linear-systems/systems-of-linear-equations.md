@@ -55,7 +55,7 @@ Each equation of a linear system describes a flat set in the space of the $n$ un
 
 This picture matches the classification of the solutions. In the plane two lines meet at a single point, giving a determined system, or coincide along the same line, giving infinitely many solutions, or stay parallel without meeting, giving an inconsistent system. The same three outcomes recur for planes and hyperplanes in higher dimensions.
 
-The graphical, substitution, and elimination methods for the planar case are developed in the entry on [systems of linear equations in two variables](../systems-of-linear-equations-in-two-variables/).
+The graphical, substitution, and elimination methods for the planar case are in the entry on [systems of linear equations in two variables](../systems-of-linear-equations-in-two-variables/). The corresponding elimination process for three planes is in [systems of linear equations in three variables](../systems-of-linear-equations-in-three-variables/).
 
 ## Matrix representation
 
