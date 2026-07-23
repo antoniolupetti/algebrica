@@ -37,6 +37,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Linear Algebra with Applications](https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf), W. Keith Nicholson
 + [Linear Algebra as an Introduction to Abstract Mathematics](https://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf), Isaiah Lankham, Bruno Nachtergaele, Anne Schilling
 + [Linear Algebra for Computer Science](https://la4cs.com/files/LA4CS-Free.pdf), Manoj Thulasidas
++ [Advanced Linear Algebra](https://link.springer.com/book/10.1007/978-0-387-72831-5), Steven Roman
 
 ## Geometry
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="344px" height="237px" viewBox="0 0 344 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="85.5" y1="49.5" x2="85.5" y2="157.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M121,120 C99.1578182,154.981988 87.8244849,172.648654 87,173 C86.0791265,173.392421 78.3666292,184.645175 60,199 C55.453244,202.553613 46.7865774,207.553613 34,214 L121,214 L121,120 Z" fill="#E6E6E6"></path>
+            <line x1="178.5" y1="210.5" x2="178.5" y2="56.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="33" y="11">The shaded region under the standard</tspan>
+                <tspan x="33" y="24">normal curve corresponds to the cumulative</tspan>
+                <tspan x="33" y="37">probability P(Z &lt; -1.25) = 0.1056.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="105" y="233">z=1.25</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BABABA">
+                <tspan x="169" y="233">0.0</tspan>
+            </text>
+            <line x1="120.5" y1="213.5" x2="120.5" y2="220.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="178.5" y1="213.5" x2="178.5" y2="221.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M335.162848,208.527171 L335.245131,208.564212 L343.245131,213.064212 C343.556638,213.239435 343.582597,213.665161 343.323007,213.882134 L343.245131,213.935788 L335.245131,218.435788 C335.004452,218.57117 334.699594,218.48581 334.564212,218.245131 C334.443873,218.031194 334.497947,217.766548 334.680485,217.615296 L334.754869,217.564212 L341.091,214 L0.5,214 C0.223857625,214 0,213.776142 0,213.5 C0,213.25454 0.176875161,213.050392 0.410124368,213.008056 L0.5,213 L341.091,213 L334.754869,209.435788 C334.540933,209.315448 334.449717,209.061202 334.527171,208.837152 L334.564212,208.754869 C334.684552,208.540933 334.938798,208.449717 335.162848,208.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M26,213 C57.6850677,213 84.159356,178.478586 107.446197,141.606738 C134.135742,99.3471268 156.638275,54 178,54 C186.151031,54 194.343588,60.6024069 202.797672,71.1163993 C235.830778,112.198294 272.856754,213 327,213" stroke="#333333" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>
