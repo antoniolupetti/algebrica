@@ -289,3 +289,46 @@ Polynomial functions have the following analytical properties.
 + Their domain is the entire real line $\mathbb{R}$, and they are [continuous](../continuous-functions/) and smooth at every point, with no [discontinuities](../discontinuities-of-real-functions/), singularities, cusps, or corners.
 + As a consequence of their global regularity, polynomial functions do not admit [asymptotes](../asymptotes/) of any kind.
 + Regarding [symmetry](../even-and-odd-functions/), an odd polynomial function has an [inflection point](../maximum-minimum-and-inflection-points/) at the origin $(0,0)$, while an even polynomial function attains a local maximum or minimum at $x = 0$.
+
+
+## The polynomial ring as a Euclidean domain
+
+The preceding sections describe polynomials through their coefficients, graphs, and arithmetic operations. The polynomial [ring](../rings/) $\mathbb{F}[x],$ where $\mathbb{F}$ is a field, has a divisibility theory parallel to that of the [integers](../integers/) $\mathbb{Z}.$ For nonzero polynomials, the degree is the analogue of the absolute value of a nonzero integer.
+
+A unit of $\mathbb{F}[x]$ is a polynomial that has a multiplicative inverse in $\mathbb{F}[x].$ If $PQ=1,$ then $\deg P+\deg Q=0,$ so both factors have degree zero. The units are therefore exactly the nonzero constant polynomials. Two polynomials that differ by a unit factor are associates. A monic polynomial has leading coefficient $1,$ and every nonzero polynomial has a unique monic associate, obtained by dividing the polynomial by its leading coefficient. In each class of nonzero associates, the monic polynomial is the chosen representative, just as the positive integer is the chosen representative in each pair $\{n,-n\}.$
+
+[Division with remainder](../polynomial-division/) is the basis of divisibility in $\mathbb{F}[x].$ For every pair $P,D\in\mathbb{F}[x]$ with $D\neq 0,$ unique polynomials $Q$ and $R$ satisfy $P=QD+R,$ where $R=0$ or $\deg R<\deg D.$ An integral domain with this division property is a Euclidean domain, and degree is a Euclidean function for $\mathbb{F}[x].$
+
+> At each step of the Euclidean algorithm, the new nonzero remainder has smaller degree than the preceding remainder. The algorithm therefore ends after finitely many steps.
+
+- - -
+
+For polynomials $F$ and $G$ that are not both zero, the [Euclidean algorithm](../polynomial-division/) is repeated division with remainder. Its last nonzero remainder is a greatest common divisor of $F$ and $G.$ Dividing this remainder by its leading coefficient gives the unique monic greatest common divisor. Back-substitution expresses the last remainder as a polynomial combination of $F$ and $G.$ Dividing this identity by the same leading coefficient gives polynomials $S,T\in\mathbb{F}[x]$ for which Bézout's identity holds:
+
+$$
+SF+TG=\gcd(F,G)
+$$
+
+Two polynomials are relatively prime when their monic greatest common divisor is $1.$ In this case Bézout's identity gives polynomials $S$ and $T$ such that $SF+TG=1.$ More generally, the combinations $AF+BG,$ where $A,B\in\mathbb{F}[x],$ are exactly the multiples of $\gcd(F,G).$
+
+The [irreducible polynomials](../unique-factorization-of-polynomials/) are the analogues of the prime numbers. A polynomial of positive degree is irreducible over $\mathbb{F}$ if every factorization in $\mathbb{F}[x]$ has a unit as one of its factors. Bézout's identity implies Euclid's lemma, according to which an irreducible polynomial that divides a product divides one of its factors. Induction on the degree proves the existence of a factorization into irreducible polynomials, while Euclid's lemma proves its uniqueness up to the order of the factors and multiplication by units. If each irreducible factor is monic, the unit factor is the leading coefficient $a,$ and the factorization has the form:
+
+$$
+P(x)=aP_1(x)^{e_1}\cdots P_r(x)^{e_r}
+$$
+
+Here $P_1,\ldots,P_r$ are distinct monic irreducible polynomials, and $e_1,\ldots,e_r$ are positive integers. Every Euclidean domain is a principal ideal domain, and every principal ideal domain is a unique factorization domain. Thus $\mathbb{F}[x]$ has both properties.
+
+The corresponding notions in $\mathbb{Z}$ and $\mathbb{F}[x]$ are summarized in the following table.
+
+| Integers $\mathbb{Z}$ | Polynomials $\mathbb{F}[x]$ |
+|---|---|
+| Euclidean function $\lvert n\rvert$ | Euclidean function $\deg P$ |
+| units $\pm 1$ | nonzero constant polynomials |
+| positive associate representatives | monic associate representatives |
+| prime numbers | irreducible polynomials |
+| remainder with $\lvert r\rvert < \lvert d\rvert$ | remainder with $\deg r < \deg d$ |
+| $\gcd$ and Bézout's identity | $\gcd$ and Bézout's identity |
+| unique factorization into primes | unique factorization into irreducibles |
+
+The field $\mathbb{F}$ determines which polynomials are irreducible. Over $\mathbb{C},$ every irreducible polynomial is linear by the [fundamental theorem of algebra](../roots-of-a-polynomial/). Over $\mathbb{R},$ the irreducible polynomials are precisely the linear polynomials and the quadratic polynomials with negative discriminant. Over $\mathbb{Q},$ Eisenstein's criterion with the prime $2$ shows that $x^n-2$ is irreducible for every positive integer $n,$ so the degrees of the irreducible polynomials have no upper bound. Each of the rings $\mathbb{C}[x],$ $\mathbb{R}[x],$ and $\mathbb{Q}[x]$ has infinitely many monic irreducible polynomials. These distinctions, together with the relation between $\mathbb{Z}[x]$ and $\mathbb{Q}[x],$ are discussed in [unique factorization of polynomials](../unique-factorization-of-polynomials/).
