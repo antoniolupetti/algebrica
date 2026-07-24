@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="364px" height="260px" viewBox="0 0 364 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 1.000000)">
+            <path d="M62,63 C80.665639,129.689387 107.998972,173.356054 144,194 C180.001028,214.643946 247.667694,224.977279 347,225" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M61,226 C69.6666667,188 84.6666667,167 106,163 C123.178326,158.909922 157.425501,187.262802 214,204 C237.759814,211.029187 282.093147,218.36252 347,226" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M61,226 C77.8526647,223.947093 91.185998,221.280427 101,218 C120.781555,211.387821 136.198026,203.053868 153,197 C166.689504,192.067577 182.748051,188.795954 191,188 C216.917208,185.500119 252.583875,189.833452 298,201 L347,211" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"></path>
+            <path d="M353.809343,221.319082 L354.245131,221.564212 L362.245131,226.064212 L363.019864,226.5 L362.245131,226.935788 L354.245131,231.435788 L353.809343,231.680918 L353.319082,230.809343 L353.754869,230.564212 L360.091,227 L19,227 L19,226 L360.091,226 L353.754869,222.435788 L353.319082,222.190657 L353.809343,221.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="86" y="80">α = 1</tspan>
+                <tspan x="86" y="96">β = 1</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="150" y="148">α = 2</tspan>
+                <tspan x="150" y="164">β = 1</tspan>
+            </text>
+            <line x1="267.5" y1="71.5" x2="267.5" y2="147.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="167" y="35.6994171">As α increases, the gamma</tspan>
+                <tspan x="167" y="48.6994171">distribution shifts its peak to the</tspan>
+                <tspan x="167" y="61.6994171">right and becomes more spread out.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="256" y="166">α= 4</tspan>
+                <tspan x="256" y="182">β= 1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="27.272" y="67">1.0</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="0" y="37">G (x; α, β)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="24.61" y="152">0.5</tspan>
+            </text>
+            <path d="M60.882134,-0.323007375 L60.9357878,-0.24513062 L65.4357878,7.75486938 C65.5711697,7.99554832 65.4858096,8.30040587 65.2451306,8.43578777 C65.0311938,8.55612724 64.7665479,8.50205326 64.6152959,8.31951464 L64.5642122,8.24513062 L61,1.908 L61,258.5 C61,258.776142 60.7761424,259 60.5,259 C60.2545401,259 60.0503916,258.823125 60.0080557,258.589876 L60,258.5 L60,1.908 L56.4357878,8.24513062 C56.3154483,8.45906745 56.0612021,8.55028324 55.8371522,8.47282918 L55.7548694,8.43578777 C55.5409325,8.3154483 55.4497168,8.06120215 55.5271708,7.83715217 L55.5642122,7.75486938 L60.0642122,-0.24513062 C60.2394349,-0.55663764 60.6651608,-0.582596558 60.882134,-0.323007375 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="52.5" y1="62.5" x2="60.5" y2="62.5" stroke="#333333" stroke-linecap="square"></line>
+            <line x1="52.5" y1="146.5" x2="60.5" y2="146.5" stroke="#333333" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
