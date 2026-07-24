@@ -17,11 +17,11 @@ tags:
 
 ## Gamma function and density
 
-The gamma distribution is a continuous probability distribution on the positive half-line. It is used to model waiting times, durations, and sums of independent positive contributions. The gamma function is part of its density and, for $\alpha > 0,$ is defined by:
+The gamma distribution is a continuous probability distribution on the [positive half-line](../intervals/). It is used to model waiting times, durations, and sums of independent positive contributions. The gamma function is part of its density and, for $\alpha > 0,$ is defined by the following [improper integral](../improper-integrals/):
 
 $$\Gamma(\alpha) = \int_{0}^{\infty} x^{\alpha - 1} e^{-x} \ dx$$
 
-Integration by parts gives the recurrence relation:
+[Integration by parts](../integration-by-parts/) gives the recurrence relation:
 
 $$
 \begin{align}
@@ -33,11 +33,11 @@ $$
 \end{align}
 $$
 
-The boundary term is zero for $\alpha > 0.$ Since $\Gamma(1) = 1,$ the recurrence gives $\Gamma(n) = (n - 1)!$ for every positive [integer](../integers/) $n.$ The gamma function is therefore an extension of the [factorial](../factorial/) to the positive real numbers. The Gaussian integral gives:
+The boundary term is zero for $\alpha > 0.$ Since $\Gamma(1) = 1,$ the recurrence gives $\Gamma(n) = (n - 1)!$ for every positive [integer](../integers/) $n.$ The gamma function is therefore an extension of the [factorial](../factorial/) to the positive [real numbers](../real-numbers/). The [Gaussian integral](../normal-distribution/) gives:
 
 $$\Gamma\left(\frac{1}{2}\right) = \int_{0}^{+\infty}x^{-1/2}e^{-x} \ dx = \sqrt{\pi}$$
 
-For large positive $t,$ [Stirling's approximation](../factorial/) gives
+The gamma function is also part of the normalizing constant of the [beta distribution](../beta-distribution/). For large positive $t,$ [Stirling's approximation](../factorial/) gives
 
 $$\Gamma(t + 1) \sim \sqrt{2\pi t}\left(\frac{t}{e}\right)^{t}$$
 
@@ -54,7 +54,7 @@ $$
 + $\alpha$ is the shape parameter. For fixed $\beta,$ it determines the behavior near the origin and the skewness.
 + $\beta$ is the scale parameter. For fixed $\alpha,$ a larger value increases the mean and the variance.
 
-The support is the positive half-line. For $\alpha > 1,$ the mode is $(\alpha - 1)\beta.$ For $0 < \alpha \le 1,$ the density is decreasing and has its supremum at the left endpoint.
+The support is the positive half-line. For $\alpha > 1,$ the mode is $(\alpha - 1)\beta.$ For $0 < \alpha \le 1,$ the density is [decreasing](../increasing-and-decreasing-functions/) and has its supremum at the left endpoint.
 
 ![IMG. 1](svg/gamma-distribution-1.svg)
 
@@ -78,7 +78,7 @@ $$\frac{1}{\Gamma(\alpha)} \cdot \Gamma(\alpha) = 1$$
 
 ## Density, mean, and variance
 
-For $X \sim \mathrm{Gamma}(\alpha, \beta),$ the density, mean, variance, and [standard deviation](../variance-and-covariance-of-a-random-variable/) are
+For $X \sim \mathrm{Gamma}(\alpha, \beta),$ the density, mean, variance, and [standard deviation](../variance/) are
 
 [class="table-1"]
 
@@ -179,15 +179,13 @@ Substitution in the variance formula gives
 
 $$\sigma^{2} = \beta^{2}\alpha(\alpha + 1) - (\alpha\beta)^{2} = \alpha\beta^{2}$$
 
-- - -
-
 With rate $\lambda = 1/\beta,$ the variance is
 
 $$\mathrm{Var}(X) = \frac{\alpha}{\lambda^{2}}$$
 
 ## Special cases of the gamma distribution
 
-For $\alpha = 1,$ the gamma distribution is the [exponential distribution](../exponential-distribution/). With rate $\lambda = 1/\beta,$ its density is
+For $\alpha = 1,$ the gamma distribution is the [exponential distribution](../exponential-distribution/). The [geometric distribution](../geometric-distribution/) is its discrete waiting-time analogue. With rate $\lambda = 1/\beta,$ its density is
 
 $$
 f(x;\lambda) =
@@ -247,6 +245,8 @@ $$
 With rate $\lambda,$ it is
 
 $$M_{X}(t) = \left(\frac{\lambda}{\lambda - t}\right)^{\alpha}, \qquad t < \lambda$$
+
+- - -
 
 Let $X_{1},\ldots,X_{m}$ be independent gamma random variables with shapes $\alpha_{1},\ldots,\alpha_{m}$ and common rate $\lambda.$ For $S = X_{1} + \cdots + X_{m},$ independence gives
 
