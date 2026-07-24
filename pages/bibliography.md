@@ -24,6 +24,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/ntb-v2_1.pdf), Victor Shoup
 + [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
 + [Basic Algebra](https://www.math.stonybrook.edu/~aknapp/download/b2-alg-coverandinside.pdf), Anthony W. Knapp
++ [Algebra: Abstract and Concrete](https://homepage.math.uiowa.edu/~goodman/algebrabook.dir/book.2.6.pdf), Frederick M. Goodman
 
 ## Linear algebra
 
