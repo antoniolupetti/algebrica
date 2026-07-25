@@ -56,7 +56,7 @@ This follows from the previous identity after replacing $b$ by $-b.$
 
 A [group](../groups/) is a set equipped with a single binary operation satisfying closure, associativity, the existence of an identity element, and the existence of inverses.
 
-A [ring](../rings/) has addition and multiplication. Addition makes the set an abelian group, while multiplication is associative and distributes over addition on both sides. Multiplication need not be commutative, as $\mathrm{M}_n(\mathbb{R})$ shows when $n \geq 2,$ and a ring need not have a multiplicative identity under the convention used here. The integers $\mathbb{Z}$ are a commutative ring with identity. Every [integer](../integers/) has an additive inverse, yet most integers lack a multiplicative inverse in $\mathbb{Z},$ since $2^{-1}$ does not belong to $\mathbb{Z}.$
+A [ring](../rings/) has addition and multiplication. Addition makes the set an abelian group, while multiplication is associative and distributes over addition on both sides. Multiplication need not be commutative, as the multiplication of [matrices](../matrices/) in $\mathrm{M}_n(\mathbb{R})$ shows when $n \geq 2,$ and a ring need not have a multiplicative identity under the convention used here. The integers $\mathbb{Z}$ are a commutative ring with identity. Every [integer](../integers/) has an additive inverse, yet most integers lack a multiplicative inverse in $\mathbb{Z},$ since $2^{-1}$ does not belong to $\mathbb{Z}.$
 
 A field is a commutative ring with unity in which every nonzero element has a multiplicative inverse. This gives the following hierarchy:
 
@@ -70,13 +70,13 @@ A field is a commutative ring with unity in which every nonzero element has a mu
 
 The set $\mathbb{Q}$ of rational numbers, equipped with ordinary addition and multiplication, is the smallest field containing the integers. Every nonzero rational number $p/q$ has a multiplicative inverse $q/p,$ and all field axioms are satisfied.
 
-The set $\mathbb{R}$ of real numbers is a field extending $\mathbb{Q}.$ It has an order compatible with the field operations and is complete, so every nonempty subset bounded above has a least upper bound. The page on the [properties of real numbers](../properties-of-real-numbers/) lists the field axioms for $\mathbb{R}$ and gives concrete examples.
+The set $\mathbb{R}$ of real numbers is a field extending $\mathbb{Q}.$ It has an order compatible with the field operations and is complete, so every nonempty subset bounded above has a [least upper bound](../supremum-and-infimum/). The page on the [properties of real numbers](../properties-of-real-numbers/) lists the field axioms for $\mathbb{R}$ and gives concrete examples.
 
-The set $\mathbb{C}$ of complex numbers is a field extending $\mathbb{R}.$ It is algebraically closed, whereas $\mathbb{R}$ is not. The fundamental theorem of algebra states that every nonconstant polynomial with coefficients in $\mathbb{C}$ has a root in $\mathbb{C}.$
+The set $\mathbb{C}$ of complex numbers is a field extending $\mathbb{R}.$ It is algebraically closed, whereas $\mathbb{R}$ is not. The [fundamental theorem of algebra](../roots-of-a-polynomial/) states that every nonconstant polynomial with coefficients in $\mathbb{C}$ has a root in $\mathbb{C}.$
 
 The ring $\mathbb{Z}$ has identity $1,$ but not every nonzero integer has an inverse. If integers $a$ and $b$ satisfy $ab = 1,$ then $|a||b| = 1,$ so $|a| = |b| = 1.$ Thus $1$ and $-1$ are the only units in $\mathbb{Z},$ and $\mathbb{Z}$ is not a field.
 
-For any field $K,$ the polynomial ring $K[x]$ is another commutative ring with identity that is not a field. Its units are exactly the nonzero constant polynomials. If nonzero polynomials $f$ and $g$ satisfied $fg = 1,$ then:
+For any field $K,$ the [polynomial ring](../polynomials/) $K[x]$ is another commutative ring with identity that is not a field. Its units are exactly the nonzero constant polynomials. If nonzero polynomials $f$ and $g$ satisfied $fg = 1,$ then:
 
 $$\deg(fg) = \deg(f) + \deg(g) = 0$$
 
