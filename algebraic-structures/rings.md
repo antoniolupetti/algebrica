@@ -128,10 +128,9 @@ The kernel is always an ideal of $R,$ and the image is always a subring of $S.$ 
 
 Polynomial evaluation at a matrix gives another example. Fix a matrix $T \in \mathrm{M}_n(\mathbb{R})$ and define the following map.
 
-$$
-\mathrm{ev}_T : \mathbb{R}[x] \to \mathrm{M}_n(\mathbb{R}), \qquad
-a_0 + a_1x + \cdots + a_mx^m \mapsto a_0I_n + a_1T + \cdots + a_mT^m
-$$
+$$\mathrm{ev}_T : \mathbb{R}[x] \to \mathrm{M}_n(\mathbb{R})$$
+
+$$a_0 + a_1x + \cdots + a_mx^m \mapsto a_0I_n + a_1T + \cdots + a_mT^m$$
 
 For polynomials $p$ and $q,$ the identities $(p + q)(T) = p(T) + q(T)$ and $(pq)(T) = p(T)q(T)$ follow from the laws of matrix multiplication and the rule $T^iT^j = T^{i+j}.$ Hence $\mathrm{ev}_T$ is a ring homomorphism. When $n = 1,$ this construction reduces to ordinary evaluation at a real number.
 
@@ -151,9 +150,9 @@ For two factors this ring is also denoted by $R \oplus S.$ If $a$ and $b$ are re
 
 $$
 \Phi : \mathbb{Z}/ab\mathbb{Z} \to
-\mathbb{Z}/a\mathbb{Z} \oplus \mathbb{Z}/b\mathbb{Z}, \qquad
-[x]_{ab} \mapsto ([x]_a,[x]_b)
-$$
+\mathbb{Z}/a\mathbb{Z} \oplus \mathbb{Z}/b\mathbb{Z}$$
+
+$$[x]_{ab} \mapsto ([x]_a,[x]_b)$$
 
 This map is a ring isomorphism. It is well-defined because $x \equiv y \pmod{ab}$ implies both $x \equiv y \pmod a$ and $x \equiv y \pmod b,$ and the componentwise operations show that it preserves sums and products. If $\Phi([x]_{ab}) = ([0]_a,[0]_b),$ then both $a$ and $b$ divide $x.$ Since $\gcd(a,b) = 1,$ their product divides $x,$ so $[x]_{ab} = [0]_{ab}$ and $\Phi$ is injective. The Chinese remainder theorem supplies, for every pair $([r]_a,[s]_b),$ an integer $x$ satisfying $x \equiv r \pmod a$ and $x \equiv s \pmod b.$ Thus $\Phi$ is surjective. This formulation expresses simultaneous congruences as an isomorphism between rings.
 
