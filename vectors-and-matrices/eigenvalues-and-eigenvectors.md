@@ -58,6 +58,8 @@ $$\det(A - \lambda I) = \det\begin{pmatrix} -\lambda & 1 \\[6pt] -1 & -\lambda \
 
 Over $\mathbb{R}$ this polynomial has no roots, so $A$ has no real eigenvalues, in agreement with the geometric fact that a rotation fixes no direction. Over $\mathbb{C}$ the roots are $\lambda = i$ and $\lambda = -i.$ Solving $(A - iI)\mathbf{v} = \mathbf{0}$ gives the condition $y = ix,$ so the eigenspace is spanned by $(1, i)^{\mathrm{T}},$ and solving $(A + iI)\mathbf{v} = \mathbf{0}$ gives $(1, -i)^{\mathrm{T}}.$ The two eigenvalues are complex conjugates, and so are the two eigenvectors.
 
+A reflection of the plane behaves differently. Its matrix has trace $0$ and determinant $-1,$ so its characteristic polynomial is $\lambda^2 - 1$ and its eigenvalues are the real numbers $1$ and $-1,$ with the axis of the reflection as the eigenspace for $1$ and the perpendicular line as the eigenspace for $-1.$ The rotations and the reflections that preserve a regular polygon are the [dihedral groups](../dihedral-groups/).
+
 > The eigenvalues of a matrix are not in general among its entries, and in particular not the entries on the main diagonal. The diagonal carries the eigenvalues only when the matrix is triangular, since in that case $\det(A - \lambda I)$ is the product of the diagonal differences $a_{ii} - \lambda.$
 
 ## Eigenspaces

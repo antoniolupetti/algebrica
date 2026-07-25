@@ -6,6 +6,7 @@ tags:
   - algebraic-structures
   - alternating-group
   - cycle-notation
+  - dihedral-group
   - group-theory
   - parity-of-permutations
   - permutation
@@ -60,6 +61,8 @@ As an example, consider the permutation of $X_6$ given by:
 $$\rho = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\[6pt] 3 & 5 & 1 & 4 & 2 & 6 \end{pmatrix}$$
 
 Following $1$ gives $1 \mapsto 3 \mapsto 1,$ which closes the cycle $(1\ 3).$ Following $2$ gives $2 \mapsto 5 \mapsto 2,$ which closes the cycle $(2\ 5).$ The elements $4$ and $6$ are fixed. Therefore $\rho = (1\ 3)(2\ 5),$ a product of two disjoint transpositions.
+
+Cycle notation also describes the subgroups of $S_n$ that come from geometry. Label the vertices of a regular $n$-gon with $1, 2, \ldots, n$ in cyclic order. Each symmetry of the polygon permutes the labels, the $n$-cycle $(1\ 2\ \cdots\ n)$ corresponds to the rotation through $2\pi/n,$ and the permutation fixing $1$ and reversing the order of the remaining labels corresponds to the reflection in the axis through the first vertex. These two permutations generate the [dihedral group](../dihedral-groups/) $D_n,$ a subgroup of $S_n$ of order $2n.$ For $n = 3$ the subgroup is all of $S_3,$ while for $n \geq 4$ it is proper, because $n!$ exceeds $2n$ in that range.
 
 ## Order of a permutation
 

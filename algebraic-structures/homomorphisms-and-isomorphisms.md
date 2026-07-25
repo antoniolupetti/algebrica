@@ -60,7 +60,7 @@ $$\rho(gh)(x) = (gh) \cdot x = g \cdot (h \cdot x) = \rho(g)(\rho(h)(x))$$
 
 Thus $\rho(gh) = \rho(g) \circ \rho(h).$ Its kernel consists of the elements of $G$ that fix every point of $X.$ The action is faithful if and only if this kernel is $\{\ e_G \ \}.$
 
-Let $D_4$ be the symmetry group of a square. Its action on the four vertices defines a homomorphism $\rho_V : D_4 \to S_4.$ This homomorphism is injective because a symmetry that fixes all four vertices is the identity. It is not surjective because $D_4$ has $8$ elements, while $S_4$ has $24.$ The action on the two diagonals defines a surjective homomorphism $\rho_D : D_4 \to S_2.$ Its kernel has four elements, the identity, the half-turn, and the two reflections across the diagonals.
+Let $D_4$ be the [symmetry group of a square](../dihedral-groups/). Its action on the four vertices defines a homomorphism $\rho_V : D_4 \to S_4.$ This homomorphism is injective because a symmetry that fixes all four vertices is the identity. It is not surjective because $D_4$ has $8$ elements, while $S_4$ has $24.$ The action on the two diagonals defines a surjective homomorphism $\rho_D : D_4 \to S_2.$ Its kernel has four elements, the identity, the half-turn, and the two reflections across the diagonals.
 
 Every element $a$ of a group $G$ defines a homomorphism $\eta_a : \mathbb{Z} \to G$ by $\eta_a(k) = a^k.$ The identity $a^{k+l} = a^ka^l$ proves the homomorphism property, and the image is the cyclic subgroup $\langle a \rangle.$ If $a$ has finite order $m,$ then $\ker(\eta_a) = m\mathbb{Z}.$ If $a$ has infinite order, then $\ker(\eta_a) = \{\ 0 \ \}.$
 

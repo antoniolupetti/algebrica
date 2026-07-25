@@ -9,6 +9,7 @@ tags:
   - cayley-table
   - coset
   - cyclic-group
+  - dihedral-group
   - group-theory
   - homomorphism
   - identity-element
@@ -28,7 +29,7 @@ A group is a set $G$ together with a binary operation $\cdot : G \times G \to G$
 + Identity element: there exists an element $e \in G$ such that $a \cdot e = e \cdot a = a$ for all $a \in G.$
 + Inverses: for every $a \in G$ there exists an element $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e.$
 
-The [integers](../integers/) under addition, the nonzero [real numbers](../real-numbers/) under multiplication, the symmetries of a fixed geometric object under composition, and invertible [matrices](../matrices/) of a fixed size under multiplication are examples of groups.
+The [integers](../integers/) under addition, the nonzero [real numbers](../real-numbers/) under multiplication, the symmetries of a fixed geometric object under composition, such as the [dihedral group](../dihedral-groups/) of a regular polygon, and invertible [matrices](../matrices/) of a fixed size under multiplication are examples of groups.
 
 > Many treatments list closure as a further axiom, requiring that $a \cdot b$ belong to $G$ for all $a, b \in G.$ Here the operation has codomain $G,$ so its definition already includes closure. Closure must be checked when determining whether a subset is a subgroup, since the subset need not contain the products of its elements.
 
@@ -102,7 +103,7 @@ Under ordinary addition, $\mathbb{Z}$ is an infinite abelian group. Its identity
 
 Let $n$ be a positive integer. With addition [modulo](../modulo-operator/) $n,$ the set $\mathbb{Z}/n\mathbb{Z} = \{\ 0, 1, \ldots, n - 1 \ \}$ is a finite abelian group of order $n.$ For example, in $\mathbb{Z}/5\mathbb{Z}$ one has $3 + 4 = 2,$ since $7 \equiv 2 \pmod{5}.$ The identity element is $0,$ and the inverse of the residue $k$ is the residue $-k.$
 
-Not every finite group has this form. Up to isomorphism, there are exactly two groups of order $4.$ One is $\mathbb{Z}/4\mathbb{Z}.$ The other is the Klein four-group $V,$ whose elements are the identity $e$ and three elements $a, b, c$ satisfying $a^2 = b^2 = c^2 = e.$ The product of any two distinct nonidentity elements is the third. The groups are not isomorphic, since every element of $V$ satisfies $x^2 = e,$ while a generator of $\mathbb{Z}/4\mathbb{Z}$ does not. A rectangle with unequal side lengths gives a geometric realization of $V.$ Its elements are the identity symmetry and the half-turns about the two symmetry axes in its plane and the axis perpendicular to its plane. Each half-turn has order $2,$ and the product of any two distinct half-turns is the third. The residues $\{\ 1, 3, 5, 7 \ \}$ under multiplication modulo $8$ give another realization, since each residue squares to $1.$ The group $V$ is the smallest noncyclic group.
+Not every finite group has this form. Up to isomorphism, there are exactly two groups of order $4.$ One is $\mathbb{Z}/4\mathbb{Z}.$ The other is the Klein four-group $V,$ whose elements are the identity $e$ and three elements $a, b, c$ satisfying $a^2 = b^2 = c^2 = e.$ The product of any two distinct nonidentity elements is the third. The groups are not isomorphic, since every element of $V$ satisfies $x^2 = e,$ while a generator of $\mathbb{Z}/4\mathbb{Z}$ does not. A rectangle with unequal side lengths gives a geometric realization of $V,$ which is the [dihedral group](../dihedral-groups/) $D_2.$ Its elements are the identity symmetry and the half-turns about the two symmetry axes in its plane and the axis perpendicular to its plane. Each half-turn has order $2,$ and the product of any two distinct half-turns is the third. The residues $\{\ 1, 3, 5, 7 \ \}$ under multiplication modulo $8$ give another realization, since each residue squares to $1.$ The group $V$ is the smallest noncyclic group.
 
 - - -
 
@@ -115,6 +116,8 @@ The group $S_3$ is the smallest non-abelian symmetric group and has order $6.$ L
 $$\sigma = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 3 & 1 \end{pmatrix} \qquad \tau = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 1 & 3 \end{pmatrix}$$
 
 The two compositions satisfy $\sigma \circ \tau \neq \tau \circ \sigma.$ The page on the [symmetric group](../symmetric-group/) gives the computation and develops the theory of permutations.
+
+The symmetries of a regular $n$-gon are a further family of finite groups. For $n \geq 3$ they consist of $n$ rotations about the centre and $n$ reflections in axes through the centre, so the group has order $2n.$ It is the [dihedral group](../dihedral-groups/) $D_n,$ and it is non-abelian for every $n \geq 3,$ since a rotation and a reflection commute only when the rotation is the identity or the half-turn. The smallest case $D_3$ has order $6$ and is isomorphic to $S_3,$ because every permutation of the three vertices of an equilateral triangle comes from a symmetry.
 
 ## When the axioms fail
 

@@ -8,6 +8,7 @@ tags:
   - cyclic-group
   - cyclotomic-polynomial
   - de-moivre-theorem
+  - dihedral-group
   - euler-formula
   - primitive-root
   - regular-polygon
@@ -65,6 +66,8 @@ z_2 &= e^{4\pi i/3} = -\frac{1}{2} - i\frac{\sqrt{3}}{2}
 $$
 
 ![IMG. 1](svg/roots-of-unity-1.svg)
+
+This picture connects $\mu_n$ to the symmetries of the polygon. Multiplication by the primitive root $z_1$ rotates the plane by $2\pi/n$ and permutes the vertices cyclically, so the elements of $\mu_n$ realise the $n$ rotational symmetries. The reflections in the $n$ axes through the centre are the remaining symmetries, and the $2n$ maps together form the [dihedral group](../dihedral-groups/) of the regular $n$-gon.
 
 > For $n = 6$ the six roots are the vertices of a regular hexagon, and they include as a subset the roots for $n = 2$ and $n = 3$, a consequence of the divisibilities $2 \mid 6$ and $3 \mid 6$ and the corresponding subgroup inclusions $\mu_2, \mu_3 \subset \mu_6$.
 
