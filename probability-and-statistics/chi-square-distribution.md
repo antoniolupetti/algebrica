@@ -25,7 +25,7 @@ The distribution of $X$ is the chi-square distribution with $k$ degrees of freed
 
 $$
 \begin{align}
-F(x) &= P(Z^{2} \le x) \\[6pt]
+F(x) &= P(Z^{2} \le x) \\[12pt]
 &= P(-\sqrt{x} \le Z \le \sqrt{x}) \\[6pt]
 &= \int_{-\sqrt{x}}^{\sqrt{x}} \varphi(z) \ dz = 2\Phi(\sqrt{x}) - 1
 \end{align}
