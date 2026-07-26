@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="297px" height="209px" viewBox="0 0 297 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 2.000000)">
+            <polygon fill="#E6E6E6" points="130.5 183 130.5 98 154.5 128 178.5 147 206.5 162 233.5 171 258.5 177 258.5 183"></polygon>
+            <path d="M27.5,182 C40.8333333,95.3333333 58.1666667,52 79.5,52 C100.5,52 133.858541,110.762895 170.5,140 C188.771693,154.579425 218.105026,166.579425 258.5,176" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="131" y1="182.5" x2="131" y2="102.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="185" y1="79.5" x2="185" y2="138.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="141.5" y="41">The shaded area represents </tspan>
+                <tspan x="141.5" y="54">the right-tail probability </tspan>
+                <tspan x="257.75148" y="53.3005829" font-family="Helvetica">α</tspan>
+                <tspan x="272.728238" y="54"> </tspan>
+                <tspan x="141.5" y="67">beyond the critical value.</tspan>
+            </text>
+            <path d="M27,-1.01986443 L27.4357878,-0.24513062 L31.9357878,7.75486938 L32.1809184,8.19065715 L31.3093429,8.68091839 L31.0642122,8.24513062 L27.5,1.908 L27.5,207 L26.5,207 L26.5,1.908 L22.9357878,8.24513062 L22.6906571,8.68091839 L21.8190816,8.19065715 L22.0642122,7.75486938 L26.5642122,-0.24513062 L27,-1.01986443 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M259.809343,177.319082 L260.245131,177.564212 L268.245131,182.064212 L269.019864,182.5 L268.245131,182.935788 L260.245131,187.435788 L259.809343,187.680918 L259.319082,186.809343 L259.754869,186.564212 L266.091,183 L-0.5,183 L-0.5,182 L266.091,182 L259.754869,178.435788 L259.319082,178.190657 L259.809343,177.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="125.5" y="199">χ²</tspan>
+            </text>
+            <text font-size="9" font-weight="normal" fill="#333333">
+                <tspan x="133.5" y="205">α</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="154.5" y="160">α</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

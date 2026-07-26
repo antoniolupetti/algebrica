@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="353px" height="260px" viewBox="0 0 353 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 1.000000)">
+            <path d="M342.809343,223.319082 L343.245131,223.564212 L351.245131,228.064212 L352.019864,228.5 L351.245131,228.935788 L343.245131,233.435788 L342.809343,233.680918 L342.319082,232.809343 L342.754869,232.564212 L349.091,229 L8,229 L8,228 L349.091,228 L342.754869,224.435788 L342.319082,224.190657 L342.809343,223.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="166.5" y1="85.5" x2="166.5" y2="161.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="115" y="32">As </tspan>
+                <tspan x="130.202" y="32" font-style="italic">k</tspan>
+                <tspan x="136.791" y="32"> increases, the chi-square distribution </tspan>
+                <tspan x="115" y="45">moves its peak to the right and becomes </tspan>
+                <tspan x="115" y="58">more spread out, gradually taking on a more </tspan>
+                <tspan x="115" y="71">symmetric shape.</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="20" y="69">0.5</tspan>
+            </text>
+            <text font-family="Helvetica" font-size="13" font-weight="normal" fill="#333333">
+                <tspan x="0" y="35">χ</tspan>
+                <tspan x="7.22998047" y="35" >²(x; k)  </tspan>
+            </text>
+            <line x1="43.5" y1="65.5" x2="49.5" y2="65.5" stroke="#333333" stroke-linecap="square"></line>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="336.1125" y="250">x</tspan>
+            </text>
+            <path d="M56,41 C59.3333333,133.666667 72.6666667,189.333333 96,208 C101.618189,212.494551 112.772948,221.177295 131,223 C171,227 237.686429,227 282,227" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M51,41 C56.2636101,117.085313 75.5969434,170.751979 109,202 C129.666667,221.333333 187.333333,230 282,228" stroke="#333333" stroke-linecap="round"></path>
+            <path d="M50,228 C51.6673413,164.666667 57.0006746,133 66,133 C74,133 99.6181184,185.327635 148,211 C165.776931,220.432784 198.443597,225.766118 246,227" stroke="#333333" stroke-linecap="round"></path>
+            <path d="M50,227 C54.8051506,182.359313 64.8051506,159.02598 80,157 C95,155 131.819717,198.889667 171,213 C192.830351,220.861952 229.830351,225.861952 282,228" stroke="#333333" stroke-linecap="round"></path>
+            <path d="M50,227 C54.1063148,224.65452 57.4396481,221.987853 60,219 C80.7431717,194.793346 93.9264586,177.236426 110,176 C136,174 157,195 202,211 C215.612705,215.840073 242.279372,221.50674 282,228" stroke="#333333" stroke-linecap="round" stroke-dasharray="4"></path>
+            <text font-size="10" font-style="italic" font-weight="normal" fill="#333333">
+                <tspan x="65" y="83">k</tspan>
+                <tspan x="70.43" y="83" > = 1</tspan>
+            </text>
+            <text font-size="10" font-style="italic" font-weight="normal" fill="#333333">
+                <tspan x="106" y="160">k</tspan>
+                <tspan x="111.43" y="160" > = 3</tspan>
+            </text>
+            <text font-size="10" font-style="italic" font-weight="normal" fill="#333333">
+                <tspan x="164" y="182">k</tspan>
+                <tspan x="169.43" y="182" > = 5</tspan>
+            </text>
+            <path d="M49.882134,-0.323007375 L49.9357878,-0.24513062 L54.4357878,7.75486938 C54.5711697,7.99554832 54.4858096,8.30040587 54.2451306,8.43578777 C54.0311938,8.55612724 53.7665479,8.50205326 53.6152959,8.31951464 L53.5642122,8.24513062 L50,1.908 L50,258.5 C50,258.776142 49.7761424,259 49.5,259 C49.2545401,259 49.0503916,258.823125 49.0080557,258.589876 L49,258.5 L49,1.908 L45.4357878,8.24513062 C45.3154483,8.45906745 45.0612021,8.55028324 44.8371522,8.47282918 L44.7548694,8.43578777 C44.5409325,8.3154483 44.4497168,8.06120215 44.5271708,7.83715217 L44.5642122,7.75486938 L49.0642122,-0.24513062 C49.2394349,-0.55663764 49.6651608,-0.582596558 49.882134,-0.323007375 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
