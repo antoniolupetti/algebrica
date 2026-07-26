@@ -4,19 +4,27 @@ source: https://algebrica.org/integers/
 license: CC BY-NC 4.0
 tags:
   - absolute-value
+  - bezout-identity
   - binary-system
   - commutative-ring
   - decimal-system
   - divisibility
   - equivalence-class
+  - euclidean-algorithm
   - euclidean-division
+  - euclids-lemma
+  - fundamental-theorem-of-arithmetic
+  - greatest-common-divisor
   - induction
   - integers
   - integral-domain
   - modular-arithmetic
   - number-line
   - ordered-pair
+  - prime-factorization
+  - prime-numbers
   - total-order
+  - unique-factorization
 ---
 
 ## Definition
@@ -231,23 +239,154 @@ $$
 
 ## Divisibility and Euclidean division
 
-Within $\mathbb{Z}$ the operation of division is not always possible without remainder. For two integers $a$ and $b,$ with $b \neq 0,$ we say that $b$ divides $a,$ written $b \mid a,$ when there exists an integer $q$ such that:
+Divisibility records when one integer is a multiple of another. For integers $a$ and $b,$ we say that $b$ divides $a,$ written $b\mid a,$ when some integer $q$ satisfies:
 
 $$
-a = bq
+a=bq
 $$
 
-Divisibility leads to the study of factorisation, prime numbers, and greatest common divisors. The integer $q$ is the quotient of the exact division.
+The integer $b$ is a divisor of $a,$ and $a$ is a multiple of $b.$ When $b\neq0,$ the integer $q$ is the quotient of the exact division. The definition also covers zero. Every integer divides $0,$ since $0=b\cdot0,$ while $0\mid a$ holds only when $a=0.$
 
-When $b$ does not divide $a,$ the Euclidean division theorem guarantees that the quotient and the remainder still exist in a controlled form. For every pair of integers $a$ and $b$ with $b \neq 0,$ there exist unique integers $q$ and $r$ such that:
+For all integers $a,b,c,s,t,$ divisibility has these properties:
+
++ Every integer divides itself, so $a\mid a.$
++ If $a\mid b$ and $b\mid a,$ then $a=\pm b.$
++ If $a\mid b$ and $b\mid c,$ then $a\mid c.$
++ If $a\mid b$ and $a\mid c,$ then $a\mid sb+tc.$
+
+For transitivity, write $b=au$ and $c=bv.$ Then $c=a(uv),$ so $a\mid c.$ If $b=au$ and $c=av,$ then $sb+tc=a(su+tv),$ which proves the last property. For mutual divisibility, suppose that $b=au$ and $a=bv.$ If $a=0,$ then also $b=0.$ If $a\neq0,$ cancellation in the integral domain $\mathbb{Z}$ gives $uv=1.$ The only units of $\mathbb{Z}$ are $1$ and $-1,$ hence $b=a$ or $b=-a.$
+
+For a nonzero divisor $b,$ Euclidean division writes $a$ as a multiple of $b$ plus a bounded remainder. More precisely, unique integers $q$ and $r$ satisfy:
 
 $$
-a = bq + r \qquad \text{with} \qquad 0 \leq r < |b|
+a=bq+r \qquad \text{with} \qquad 0\leq r<|b|
 $$
 
-The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b.$ The [absolute value](../absolute-value/) in the bound on $r$ allows the statement to cover negative divisors uniformly. The [modulo operator](../modulo-operator/) and modular arithmetic are built on the uniqueness of the pair $(q, r).$ An analogous statement holds for [polynomials](../polynomial-division/) over a field, where the absolute value of the divisor is replaced by its degree.
+The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b.$ Because the bound contains the [absolute value](../absolute-value/) of $b,$ it applies to positive and negative divisors. The [modulo operator](../modulo-operator/) assigns this unique remainder to $a.$ For [polynomial division](../polynomial-division/) over a field, the corresponding bound compares the degree of the remainder with the degree of the divisor.
 
-For example, dividing $17$ by $5$ gives $q = 3$ and $r = 2,$ since $17 = 3 \cdot 5 + 2.$ Dividing $-17$ by $5$ gives $q = -4$ and $r = 3,$ since $-17 = (-4) \cdot 5 + 3.$ The remainder is again non-negative, in agreement with the convention $0 \leq r < |b|.$
+To prove existence, set $d=|b|,$ so $d>0,$ and consider the set:
+
+$$
+S:=\{\ a-kd\mid k\in\mathbb{Z},\ a-kd\geq0\ \}
+$$
+
+The set $S$ is non-empty. If $a\geq0,$ the choice $k=0$ gives $a\in S.$ If $a<0,$ take $k=-|a|.$ Then $a-kd=a+|a|d\geq0,$ since $d\geq1.$ By the [well-ordering property](../natural-numbers/), the set $S$ has a least element $r=a-kd.$ If $r\geq d,$ the non-negative integer $r-d=a-(k+1)d$ would belong to $S$ and be smaller than $r.$ Thus $0\leq r<d.$ When $b=d,$ set $q=k,$ and when $b=-d,$ set $q=-k.$ In both cases $a=bq+r.$
+
+For uniqueness, suppose that $a=bq+r=bq'+r',$ where both remainders lie between $0$ and $|b|-1.$ Subtracting the two expressions gives:
+
+$$
+r-r'=b(q'-q)
+$$
+
+If $q\neq q',$ then the absolute value of the right-hand side is at least $|b|,$ whereas $|r-r'|<|b|.$ Hence $q=q',$ and then $r=r'.$
+
+For example, dividing $17$ by $5$ gives $q=3$ and $r=2,$ since $17=3\cdot5+2.$ Dividing $-17$ by $5$ gives $q=-4$ and $r=3,$ since $-17=(-4)\cdot5+3.$ The remainder is again non-negative, in agreement with the convention $0\leq r<|b|.$
+
+## Greatest common divisors and the Euclidean algorithm
+
+Let $m$ and $n$ be integers that are not both zero. A positive integer $d$ is a greatest common divisor of $m$ and $n$ when it satisfies two conditions:
+
++ The integer $d$ divides both $m$ and $n.$
++ Every common divisor of $m$ and $n$ divides $d.$
+
+The two conditions determine $d$ uniquely. If positive integers $d$ and $e$ both satisfy them, then $d\mid e$ and $e\mid d,$ which forces $d=e.$ We denote the common value by $\gcd(m,n).$ Moreover, every positive common divisor divides $d$ and is at most $d,$ so this definition agrees with the usual meaning of "greatest."
+
+The Euclidean algorithm computes the greatest common divisor by repeated division with remainder. If one integer is zero, the greatest common divisor is the absolute value of the other, since $\gcd(m,0)=|m|.$ When $mn\neq0,$ set $a=\max\{\ |m|,|n|\ \}$ and $b=\min\{\ |m|,|n|\ \},$ so $a\geq b>0.$ If $b\mid a,$ then $\gcd(a,b)=b.$ Otherwise, successive divisions give:
+
+$$
+\begin{align}
+a &= q_1b+r_1, \qquad 0<r_1<b \\[6pt]
+b &= q_2r_1+r_2, \qquad 0<r_2<r_1 \\[6pt]
+  &\ \vdots \\[6pt]
+r_{k-2} &= q_kr_{k-1}+r_k, \qquad 0<r_k<r_{k-1} \\[6pt]
+r_{k-1} &= q_{k+1}r_k
+\end{align}
+$$
+
+The positive remainders form a strictly decreasing sequence, so the process ends. At each step $x=qy+r,$ the pairs $(x,y)$ and $(y,r)$ have the same common divisors. A common divisor of $x$ and $y$ divides $r=x-qy,$ while a common divisor of $y$ and $r$ divides $x=qy+r.$ The final nonzero remainder $r_k$ is therefore $\gcd(a,b)=\gcd(m,n).$
+
+For example, the Euclidean algorithm applied to $252$ and $198$ gives:
+
+$$
+\begin{align}
+252 &= 1\cdot198+54 \\[6pt]
+198 &= 3\cdot54+36 \\[6pt]
+54 &= 1\cdot36+18 \\[6pt]
+36 &= 2\cdot18
+\end{align}
+$$
+
+The last nonzero remainder is $18,$ so $\gcd(252,198)=18.$ Reversing the divisions expresses the greatest common divisor as an integer linear combination of the original numbers:
+
+$$
+\begin{align}
+18 &= 54-36 \\[6pt]
+   &= 54-(198-3\cdot54) \\[6pt]
+   &= 4\cdot54-198 \\[6pt]
+   &= 4(252-198)-198 \\[6pt]
+   &= 4\cdot252-5\cdot198
+\end{align}
+$$
+
+Back-substitution always expresses the greatest common divisor as an integer linear combination of the original pair. The resulting equation is Bézout's identity. For integers $m$ and $n$ that are not both zero, some integers $s$ and $t$ satisfy:
+
+$$
+sm+tn=\gcd(m,n)
+$$
+
+Set $d=\gcd(m,n).$ Since $d$ divides both $m$ and $n,$ it divides every integer linear combination $sm+tn.$ Bézout's identity expresses $d$ as one such combination, and multiplication by an arbitrary integer produces every multiple of $d.$ Hence:
+
+$$
+\{\ sm+tn\mid s,t\in\mathbb{Z}\ \}=d\mathbb{Z}
+$$
+
+Two nonzero integers are relatively prime, or coprime, when their greatest common divisor is $1.$ By Bézout's identity, this is equivalent to $sm+tn=1$ for some integers $s$ and $t.$ Coprimality also implies that $a\mid x$ and $b\mid x$ together force $ab\mid x.$ Write $x=a\alpha=b\beta$ and $1=sa+tb.$ Multiplication by $x$ gives:
+
+$$
+x=sax+tbx=sab\beta+tba\alpha=ab(s\beta+t\alpha)
+$$
+
+Repeated application of the two-integer algorithm defines the greatest common divisor of any finite list of nonzero integers. The integers $a_1,\ldots,a_k$ are relatively prime as a family when $\gcd(a_1,\ldots,a_k)=1,$ and they are pairwise relatively prime when $\gcd(a_i,a_j)=1$ whenever $i\neq j.$ Pairwise relative primality is stronger. The numbers $6,10,15$ have greatest common divisor $1,$ although each pair has a common divisor greater than $1.$
+
+## Prime numbers and unique factorization
+
+A natural number $p$ is prime when $p>1$ and its only positive divisors are $1$ and $p.$ A natural number greater than $1$ that is not prime is composite. The number $1$ is neither prime nor composite.
+
+Every natural number $n\geq2$ is a product of prime numbers. Strong [mathematical induction](../principle-of-mathematical-induction/) proves the assertion. The base value $2$ is prime. For $n>2,$ assume that every integer from $2$ through $n-1$ is a product of primes. A prime $n$ already has a factorization with one factor. If $n$ is composite, then $n=ab$ for some integers satisfying $1<a<n$ and $1<b<n.$ Both factors have prime factorizations by the induction hypothesis, and multiplying them gives a prime factorization of $n.$
+
+There are infinitely many prime numbers. Assume, for contradiction, that $p_1,\ldots,p_k$ are all the primes, and define:
+
+$$
+N=p_1p_2\cdots p_k+1
+$$
+
+Division of $N$ by any $p_i$ leaves remainder $1,$ so none of the listed primes divides $N.$ The existence result gives a prime divisor of $N,$ and this divisor differs from every $p_i.$ The assumed list was therefore incomplete.
+
+Euclid's lemma provides the divisibility step used in the uniqueness proof. If a prime $p$ divides a product $ab,$ then $p\mid a$ or $p\mid b.$ Suppose that $p\nmid a.$ A positive common divisor of $p$ and $a$ divides $p,$ so it is either $1$ or $p.$ The second possibility would imply $p\mid a.$ Hence $\gcd(p,a)=1,$ and Bézout's identity gives integers $s$ and $t$ such that $sp+ta=1.$ Multiplying by $b$ gives:
+
+$$
+b=spb+tab
+$$
+
+The first term on the right is a multiple of $p,$ and the hypothesis $p\mid ab$ makes the second term a multiple of $p$ as well. Thus $p\mid b.$ Induction on the number of factors gives the corresponding statement for any finite product.
+
+Every natural number greater than $1$ has a unique prime factorization up to the order of the factors. Suppose that:
+
+$$
+n=p_1p_2\cdots p_r=q_1q_2\cdots q_s
+$$
+
+Euclid's lemma applied to the right-hand product shows that $p_1\mid q_j$ for some $j.$ Both numbers are prime, so $p_1=q_j.$ After moving $q_j$ to the first position, cancellation reduces the equality to two shorter products. Successive cancellations match every factor. No factors can remain on only one side, because a nonempty product of primes cannot equal $1.$ The two factorizations therefore contain the same primes with the same multiplicities.
+
+For every nonzero integer $n,$ the result can be written in the form:
+
+$$
+n=\varepsilon p_1^{e_1}\cdots p_k^{e_k}
+$$
+
+Here $\varepsilon\in\{\ -1,1\ \},$ the numbers $p_1,\ldots,p_k$ are distinct primes, and the exponents $e_1,\ldots,e_k$ are positive integers. The sign, the prime factors, and their exponents are unique, apart from the order of the factors. For $n=1$ or $n=-1,$ the product of prime factors is the empty product.
+
+If pairwise relatively prime integers $a_1,\ldots,a_k$ each divide an integer $x,$ their product divides $x.$ Unique prime factorization implies that $a_1\cdots a_{j-1}$ is relatively prime to $a_j.$ Applying the two-factor divisibility result successively gives $a_1\cdots a_k\mid x.$
 
 ## The modulo operator
 
