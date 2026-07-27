@@ -93,6 +93,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Introduction to Probability](http://probabilitybook.net), Joseph K. Blitzstein, Jessica Hwang
 + [Probability on Trees and Networks](https://rdlyons.pages.iu.edu/prbtree/book_online.pdf), Russell Lyons, Yuval Peres
 + [Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf), Michael J. Evans, Jeffrey S. Rosenthal
++ [Lecture Notes on Probability, Statistics and Linear Algebra](https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf), C. H. Taubes
 
 ## Optimization
 
