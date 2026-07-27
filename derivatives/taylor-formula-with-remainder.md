@@ -238,7 +238,7 @@ Computing the sixth derivative of $e^{-x^2}$ directly requires repeated applicat
 
 ## Computing limits
 
-Replacing the terms of an [indeterminate form](../indeterminate-forms/) by their expansions identifies the lowest power that does not cancel. Consider the limit:
+Replacing the terms of an [indeterminate form](../indeterminate-forms/) by their expansions identifies the lowest power that does not cancel. The choice of the required order and the algebra of the remainders are developed in [asymptotic expansion](../asymptotic-expansion/). Consider the limit:
 
 $$\lim_{x \to 0} \frac{e^{x^2} - \cos x - \dfrac{3}{2}x^2}{x^4}$$
 

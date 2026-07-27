@@ -171,7 +171,7 @@ This means there exists a constant $M > 0$ such that:
 
 $$\left| \cos x - 1 + \frac{x^2}{2} \right| \leq M x^4$$
 
-for all $x$ in a neighbourhood of zero. Since the next term in the series is $x^4/24$, the value $M = 1/24$ is sufficient for sufficiently small $x$. The procedure is typical of asymptotic analysis: instead of retaining the entire infinite series, only the terms of interest are kept, and all higher-order contributions are incorporated into a single remainder term.
+for all $x$ in a neighbourhood of zero. Since the next term in the series is $x^4/24$, the value $M = 1/24$ is sufficient for sufficiently small $x$. This is an [asymptotic expansion](../asymptotic-expansion/) in which only the terms through the required order are retained, while the higher-order contributions are incorporated into a single remainder term.
 
 - - -
 

@@ -160,7 +160,7 @@ In terms of set inclusion, the class of functions satisfying $f = o(g)$ lies str
 
 ## Little-o notation in Taylor expansions
 
-In [Taylor expansions](../taylor-series/), little-o notation quantifies the error introduced by truncating an infinite series at a finite order. Rather than enumerating each remaining term, a single symbol records the remainder's precise asymptotic order. Given a function $f(x)$ that is $n$ times differentiable at $x_0$, its Taylor expansion to order $n$ takes the form:
+In an [asymptotic expansion](../asymptotic-expansion/), little-o notation describes the error after truncation at a finite order. Rather than writing each omitted term, a single symbol records the remainder's asymptotic order. Given a function $f(x)$ that is $n$ times differentiable at $x_0$, its Taylor expansion to order $n$ takes the form:
 
 $$f(x) = f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 + \cdots + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n + o\big( (x - x_0)^n \big)$$
 

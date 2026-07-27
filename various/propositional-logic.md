@@ -23,13 +23,11 @@ tags:
   - well-formed-formula
 ---
 
-## Introduction
+## Propositional language
 
 Propositional logic studies arguments whose validity depends on how propositional connectives combine propositions. It treats each atomic proposition as either true or false and determines the truth value of a compound proposition from the truth values of its components.
 
 The subject matter of an atomic proposition is irrelevant to this calculation. If an argument has the form $p,$ $p \rightarrow q,$ therefore $q,$ its validity depends on that form, regardless of the propositions represented by $p$ and $q.$ This restriction makes propositional logic precise, but it also limits what the language can express.
-
-## Propositional language
 
 A propositional language $\mathrm{Prop}[P]$ has atomic symbols, logical connectives, and parentheses. The set $P$ contains the atomic proposition symbols, for example $P = \{p, q, r\}.$ Parentheses record how the connectives group the formulas.
 
