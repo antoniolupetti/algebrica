@@ -124,6 +124,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [The Architecture of Mathematics](https://www.jstor.org/stable/2305937), Nicholas Bourbaki
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
 + [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach
++ [Introduction to University Mathematics](https://courses.maths.ox.ac.uk/course/view.php?id=6023), James Munro
 
 ## Algorithms and computation
 
