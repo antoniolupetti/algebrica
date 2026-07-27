@@ -82,7 +82,7 @@ $$\begin{align}
 
 The condition $a > 0$ corresponds to a parabola opening upward, which is positive outside the interval determined by its roots and negative between them. If $a < 0$, multiplying both sides of the inequality by $-1$ and reversing the inequality sign reduces the problem to the previous case.
 
-If a function $f(x)$ is [continuous](../continuous-functions/) on an interval $[a,b]$ and $f(a)$ and $f(b)$ have opposite signs, then by the Intermediate Value Theorem there exists at least one point $c \in (a,b)$ such that $f(c) = 0$.
+If a function $f(x)$ is [continuous](../continuous-functions/) on an interval $[a,b]$ and $f(a)$ and $f(b)$ have opposite signs, then by the [Intermediate Value Theorem](../intermediate-value-theorem/) there exists at least one point $c \in (a,b)$ such that $f(c) = 0$.
 
 ![IMG. 1](svg/sign-analysis-in-inequalities-1.svg)
 

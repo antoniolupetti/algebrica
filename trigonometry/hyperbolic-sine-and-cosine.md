@@ -84,7 +84,7 @@ $$
 \sinh x = \sqrt{\cosh^{2} x - 1}
 $$
 
-Existence and uniqueness of $\cosh x$ are guaranteed by the continuity and strict monotonicity of $A$ on $[1, +\infty)$, by the intermediate value theorem. The fundamental hyperbolic identity $\cosh^{2} x - \sinh^{2} x = 1$ holds by construction.
+Existence and uniqueness of $\cosh x$ are guaranteed by the continuity and strict monotonicity of $A$ on $[1, +\infty)$, by the [intermediate value theorem](../intermediate-value-theorem/). The fundamental hyperbolic identity $\cosh^{2} x - \sinh^{2} x = 1$ holds by construction.
 
 - - -
 

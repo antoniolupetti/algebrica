@@ -83,7 +83,7 @@ $$
 \sin\theta = \sqrt{1 - \cos^2\theta}
 $$
 
-Existence and uniqueness of $\cos\theta$ are guaranteed by the continuity of $A$ on $[-1, 1]$, combined with the intermediate value theorem applied to the values it attains between $0$ and $\pi/2$. The [fundamental trigonometric identity](../pythagorean-identity/) $\sin^2\theta + \cos^2\theta = 1$ holds by construction.
+Existence and uniqueness of $\cos\theta$ are guaranteed by the continuity of $A$ on $[-1, 1]$, combined with the [intermediate value theorem](../intermediate-value-theorem/) applied to the values it attains between $0$ and $\pi/2$. The [fundamental trigonometric identity](../pythagorean-identity/) $\sin^2\theta + \cos^2\theta = 1$ holds by construction.
 
 - - -
 

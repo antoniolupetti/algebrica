@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="250px" viewBox="0 0 306 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="182.5" y1="89.5" x2="182.5" y2="46.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M139.5,58.9801356 L139.935788,59.7548694 L144.435788,67.7548694 L144.680918,68.1906571 L143.809343,68.6809184 L143.564212,68.2451306 L140,61.908 L140,250 L139,250 L139,61.908 L135.435788,68.2451306 L135.190657,68.6809184 L134.319082,68.1906571 L134.564212,67.7548694 L139.064212,59.7548694 L139.5,58.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <text fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="149" y="11">A jump carries the graph from </tspan>
+                <tspan x="149" y="24">-1 to 1 without ever meeting </tspan>
+                <tspan x="149" y="37">the level 0.</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="295" y="194">x</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="120" y="67">y</tspan>
+            </text>
+            <line x1="38" y1="225" x2="140" y2="225" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="140" y1="125" x2="242" y2="125" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#333333" fill-rule="nonzero" cx="140" cy="225" r="3.5"></circle>
+            <circle stroke="#333333" stroke-width="1.5" fill="#f4efee" fill-rule="nonzero" cx="140" cy="125" r="3.5"></circle>
+            <line x1="38" y1="180" x2="38" y2="220" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="242.5" y1="130" x2="242.5" y2="174.5" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="180" y="115">y = 1</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="70" y="217">y = -1</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="33" y="168">-1</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="239" y="195">1</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="127" y="190">0</tspan>
+            </text>
+            <path d="M294.809343,169.319082 L295.245131,169.564212 L303.245131,174.064212 L304.019864,174.5 L303.245131,174.935788 L295.245131,179.435788 L294.809343,179.680918 L294.319082,178.809343 L294.754869,178.564212 L301.091,175 L-0.5,175 L-0.5,174 L301.091,174 L294.754869,170.435788 L294.319082,170.190657 L294.809343,169.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

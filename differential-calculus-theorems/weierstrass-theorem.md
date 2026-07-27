@@ -113,7 +113,7 @@ $$
 f(x_{\min}) = m \qquad f(x_{\max}) = M
 $$
 
-By the Intermediate Value Theorem, the function takes every value between $m$ and $M$. In other words, if $y$ satisfies:
+By the [Intermediate Value Theorem](../intermediate-value-theorem/), the function takes every value between $m$ and $M$. In other words, if $y$ satisfies:
 
 $$
 m \le y \le M
