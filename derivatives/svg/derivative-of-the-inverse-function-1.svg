@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="345px" viewBox="0 0 323 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M16.882134,87.6769926 L16.9357878,87.7548694 L21.4357878,95.7548694 C21.5711697,95.9955483 21.4858096,96.3004059 21.2451306,96.4357878 C21.0311938,96.5561272 20.7665479,96.5020533 20.6152959,96.3195146 L20.5642122,96.2451306 L16.999,89.906 L17,277 C17,277.276142 16.7761424,277.5 16.5,277.5 C16.2545401,277.5 16.0503916,277.323125 16.0080557,277.089876 L16,277 L15.999,89.91 L12.4357878,96.2451306 C12.3154483,96.4590675 12.0612021,96.5502832 11.8371522,96.4728292 L11.7548694,96.4357878 C11.5409325,96.3154483 11.4497168,96.0612021 11.5271708,95.8371522 L11.5642122,95.7548694 L16.0642122,87.7548694 C16.2394349,87.4433624 16.6651608,87.4174034 16.882134,87.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="139.5" y1="91.5" x2="139.5" y2="50.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M257.162848,317.527171 L257.245131,317.564212 L265.245131,322.064212 C265.556638,322.239435 265.582597,322.665161 265.323007,322.882134 L265.245131,322.935788 L257.245131,327.435788 C257.004452,327.57117 256.699594,327.48581 256.564212,327.245131 C256.443873,327.031194 256.497947,326.766548 256.680485,326.615296 L256.754869,326.564212 L263.091,323 L17,323 C16.7238576,323 16.5,322.776142 16.5,322.5 C16.5,322.25454 16.6768752,322.050392 16.9101244,322.008056 L17,322 L263.091,322 L256.754869,318.435788 C256.540933,318.315448 256.449717,318.061202 256.527171,317.837152 L256.564212,317.754869 C256.684552,317.540933 256.938798,317.449717 257.162848,317.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="16.5" y1="291" x2="16.5" y2="322.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="0" y="101">y</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="257" y="341">x</tspan>
+            </text>
+            <line x1="23.2" y1="315.8" x2="201.295701" y2="137.704299" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="212.912281" y1="126.087719" x2="243.2" y2="95.8" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="205" y="136">y = x</tspan>
+            </text>
+            <polyline stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17 322 19 321.2 21.1 320.4 23.1 319.4 25.1 318.4 27.2 317.2 29.2 316 31.3 314.7 33.3 313.2 35.3 311.7 37.4 310.1"></polyline>
+            <polyline stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="49.6 298.3 51.6 296 53.7 293.7 55.7 291.2 57.7 288.6 59.8 285.9 61.8 283.2 63.8 280.3 65.9 277.3 67.9 274.3 70 271.1 72 267.9 74 264.5 76.1 261.1 78.1 257.5 80.1 253.9 82.2 250.2 84.2 246.4 86.2 242.4 88.3 238.4 90.3 234.3 92.4 230.1 94.4 225.8 96.4 221.4 98.5 216.9 100.5 212.3 102.5 207.6 104.6 202.9 106.6 198 108.6 193 110.7 187.9 112.7 182.8 114.8 177.5 116.8 172.2 118.8 166.7 120.9 161.2 122.9 155.5 124.9 149.8 127 143.9 129 138 131.1 132 133.1 125.9 135.1 119.6 137.2 113.3 139.2 106.9"></polyline>
+            <polyline stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17 322 17.8 320 18.6 317.9 19.6 315.9 20.6 313.9 21.8 311.8 23 309.8 24.3 307.7 25.8 305.7 27.3 303.7 28.9 301.6 30.6 299.6 32.4 297.6 34.4 295.5 36.4 293.5"></polyline>
+            <polyline stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="53.1 279.2 55.8 277.2 58.7 275.2 61.7 273.1 64.7 271.1 67.9 269 71.1 267 74.5 265 77.9 262.9 81.5 260.9 85.1 258.9 88.8 256.8 92.6 254.8 96.6 252.8 100.6 250.7 104.7 248.7 108.9 246.6 113.2 244.6 117.6 242.6 122.1 240.5 126.7 238.5 131.4 236.5 136.1 234.4 141 232.4 146 230.4 151.1 228.3 156.2 226.3 161.5 224.2 166.8 222.2 172.3 220.2 177.8 218.1 183.5 216.1 189.2 214.1 195.1 212 201 210 207 207.9 213.1 205.9 219.4 203.9 225.7 201.8 232.1 199.8"></polyline>
+            <line x1="76.8" y1="282.4" x2="148" y2="90" stroke="#333333" stroke-linecap="round"></line>
+            <line x1="53.5" y1="263.5" x2="259.5" y2="187.5" stroke="#333333" stroke-linecap="round"></line>
+            <circle fill="#333333" fill-rule="nonzero" cx="121" cy="160.8" r="2.5"></circle>
+            <circle fill="#333333" fill-rule="nonzero" cx="178.2" cy="218" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="82" y="161">(x₀, y₀)</tspan>
+            </text>
+            <text fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="78" y="11">The two graphs are symmetric with respect to </tspan>
+                <tspan x="78" y="24">the line y = x, and the tangent lines at </tspan>
+                <tspan x="78" y="37">corresponding points have reciprocal slopes</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="176" y="232">(y₀, x₀)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#333333">
+                <tspan x="10" y="287">y = f⁻¹(x)</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#BABABA">
+                <tspan x="42" y="308">y = f(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
