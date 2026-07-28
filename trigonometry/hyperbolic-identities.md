@@ -38,6 +38,8 @@ $$
 \coth^2(x) - 1 = \operatorname{csch}^2(x)
 $$
 
+Definitions and graphs of these reciprocal functions are given in the entry on [hyperbolic secant and cosecant](../hyperbolic-secant-and-cosecant/).
+
 The quotient identities relate hyperbolic tangent and cotangent to the ratio of hyperbolic sine and cosine. They follow directly from the definitions of the four functions:
 
 $$

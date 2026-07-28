@@ -125,6 +125,8 @@ The dot product admits an equivalent geometric formulation in terms of the [angl
 
 $$\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\|\mathbf{v}\|\cos\theta$$
 
+Dividing by the two norms gives [cosine similarity](../cosine-similarity/), which compares the directions of nonzero vectors independently of their lengths.
+
 The factor $\cos\theta$ connects the dot product to the [cosine](../sine-and-cosine/) of the angle between the two vectors. When $\mathbf{u} \cdot \mathbf{v} = 0$ and neither vector is zero, it follows that $\cos\theta = 0,$ hence $\theta = \pi/2.$ Two vectors satisfying this condition are said to be orthogonal. Conversely, when the vectors are parallel, $\theta = 0$ or $\theta = \pi,$ and the dot product equals $\pm\|\mathbf{u}\|\|\mathbf{v}\|.$ The norm also follows from the dot product, since $\|\mathbf{v}\|^2 = \mathbf{v} \cdot \mathbf{v}.$ As an application, consider $\mathbf{u} = (1, 2, -1)$ and $\mathbf{v} = (3, 0, 3).$ The dot product is computed as follows.
 
 $$

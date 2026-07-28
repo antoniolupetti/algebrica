@@ -332,6 +332,8 @@ $$
 \neg(P \land Q) \equiv \neg P \lor \neg Q
 $$
 
+The truth-table interpretation of these equivalences is developed in [propositional logic](../propositional-logic/).
+
 ## Example
 
 Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, and define the following two subsets:

@@ -147,4 +147,6 @@ $$
 
 Solving for $\bigl(f^{-1}\bigr)'(y)$ produces the formula above. The computation presupposes that $f^{-1}$ is differentiable, a property the hypothesis $f' \neq 0$ guarantees.
 
+A proof from the definition and further examples are given in the entry on the [derivative of the inverse function](../derivative-of-the-inverse-function/).
+
 The hypothesis $f' \neq 0$ cannot be dropped. When $f'\bigl(f^{-1}(a)\bigr) = 0,$ the identity above would force $0 \cdot \bigl(f^{-1}\bigr)'(a) = 1,$ so $f^{-1}$ is not differentiable at $a.$ The function $f(x) = x^3$ shows this. Its inverse is $f^{-1}(x) = \sqrt[3]{x}$ and $f'(0) = 0,$ so the cube root is not differentiable at the origin, where its graph has a vertical tangent, although $f$ is differentiable on all of $\mathbb{R}.$

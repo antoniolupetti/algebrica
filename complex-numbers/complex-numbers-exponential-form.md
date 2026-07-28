@@ -47,6 +47,8 @@ Euler's formula itself can be established by expanding $e^{ix}$, $\cos x$, and $
 
 $$e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \cos x + i\sin x$$
 
+The inverse equation $e^w = z$ defines the multivalued [complex logarithm](../complex-logarithm/) of a nonzero complex number.
+
 > The formula involves Euler's number $e$, a fundamental constant of analysis. Its origin as the limit of a sequence is discussed in the entry on [Euler's number](../euler-number-limit-sequence/).
 
 - - -
