@@ -40,6 +40,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Linear Algebra Done Wrong](https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong), Sergei Treil
 + [Linear Algebra for Computer Science](https://la4cs.com/files/LA4CS-Free.pdf), Manoj Thulasidas
 + [Linear Algebra with Applications](https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf), W. Keith Nicholson
++ [Matrix Calculus for Machine Learning and Beyond](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/mit18_s096iap23_lec_full.pdf), Paige Bright, Alan Edelman, Steven G. Johnson
 
 ## Geometry
 
@@ -56,6 +57,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 ## Calculus and real analysis
 
++ [Active Calculus: Single Variable](https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1034&context=books), Matthew Boelkins, David Austin, Christina Safranski, Steven Schlicker
 + [Advanced Calculus](https://people.math.harvard.edu/~shlomo/docs/Advanced_Calculus.pdf), Lynn H. Loomis, Shlomo Sternberg
 + [Analysis of Functions of a Single Variable](https://spot.colorado.edu/~baggett/book.pdf), Lawrence W. Baggett
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
@@ -108,6 +110,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [An Introduction to Optimization Algorithms](https://thomasweise.github.io/aitoa/aitoa.pdf), Thomas Weise
 + [Lecture Notes on Numerical Optimization](https://faculty.ucmerced.edu/mcarreira-perpinan/teaching/EECS260/lecture-notes.pdf), Miguel Á. Carreira-Perpiñán
 + [Lectures on Modern Convex Optimization](https://www2.isye.gatech.edu/~nemirovs/LMCOBookSIAM.pdf), Aharon Ben-Tal, Arkadi Nemirovski
++ [A Modern Introduction to Online Learning](https://arxiv.org/pdf/1912.13213), Francesco Orabona
 + [Optimization: Principles and Algorithms](https://transp-or.epfl.ch/books/optimization/html/OptimizationPrinciplesAlgorithms2018.pdf), Michel Bierlaire
 
 ## Mathematical physics
@@ -119,6 +122,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 ## Foundations and general references
 
++ [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
 + [The Architecture of Mathematics](https://www.jstor.org/stable/2305937), Nicholas Bourbaki
 + [Book of Proof](https://richardhammack.github.io/BookOfProof/Main.pdf), Richard Hammack
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
@@ -133,7 +137,9 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Algorithms and Complexity](https://www.math.upenn.edu/~wilf/AlgComp.pdf), Herbert S. Wilf
 + [Applied Combinatorics](https://trotter.math.gatech.edu/book.pdf), Mitchel T. Keller, William T. Trotter
++ [Exploring Combinatorial Mathematics](https://openmathbooks.org/ecm/ecm.html), Richard Grassl, Oscar Levin
 + [Foundations of Applied Mathematics](https://foundations-of-applied-mathematics.github.io), Jeffrey Humpherys, Tyler J. Jarvis
++ [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf), Avrim Blum, John Hopcroft, Ravindran Kannan
 + [Graph Theory](https://daiwz.net/course/disc_math/2023/Diestel_Graph_Theory.pdf), Reinhard Diestel
 + [Graph Theory](https://roam.libraries.psu.edu/system/files/e-books/MATH485-Graph_Theory.pdf), Christopher Griffin
 + [Introduction to Algorithms](https://www.cs.mcgill.ca/~akroit/math/compsci/Cormen%20Introduction%20to%20Algorithms.pdf), Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
@@ -144,23 +150,19 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 ## Machine learning and artificial intelligence
 
-+ [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
 + [Algorithms for Decision Making](https://drive.google.com/file/d/1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu/view), Mykel J. Kochenderfer, Tim A. Wheeler, Kyle H. Wray
 + [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu), Stuart Russell, Peter Norvig
 + [Computing Neural Network Gradients](https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf), Kevin Clark
 + [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342), Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola
-+ [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf), Avrim Blum, John Hopcroft, Ravindran Kannan
 + [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223), Tong Xiao, Jingbo Zhu
 + [Foundations of Machine Learning](https://cs.nyu.edu/~mohri/mlbook/), Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
 + [An Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf), Peter Holderrieth, Ezra Erives
 + [Machine Learning Systems, Volume I: Foundations](https://mlsysbook.ai/vol1/), Vijay Janapa Reddi
 + [Machine Learning Systems, Volume II: At Scale](https://mlsysbook.ai/vol2/assets/downloads/Machine-Learning-Systems-Vol2.pdf), Vijay Janapa Reddi
-+ [Mathematical and Statistical Foundations of AI](https://arxiv.org/pdf/2106.11342), Saman S. Ghods
++ [Mathematical and Statistical Foundations of AI](https://zenodo.org/records/15713364), Saman Siadati
 + [Mathematical Theory of Deep Learning](https://arxiv.org/abs/2407.18384), Philipp Petersen, Jakob Zech
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
 + [Mathematics of Neural Networks](https://arxiv.org/abs/2403.04807), Bart M. N. Smets
-+ [Matrix Calculus for Machine Learning and Beyond](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/mit18_s096iap23_lec_full.pdf), Paige Bright, Alan Edelman, Steven G. Johnson
-+ [A Modern Introduction to Online Learning](https://arxiv.org/pdf/1912.13213), Francesco Orabona
 + [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf), Christopher M. Bishop
 + [Transformers](https://web.stanford.edu/~jurafsky/slp3/8.pdf), Daniel Jurafsky, James H. Martin
 + [Understanding Deep Learning](https://udlbook.github.io/udlbook/), Simon J. D. Prince
