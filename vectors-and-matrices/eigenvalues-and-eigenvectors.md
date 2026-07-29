@@ -64,7 +64,7 @@ A reflection of the plane behaves differently. Its matrix has trace $0$ and dete
 
 ## Eigenspaces
 
-For each eigenvalue $\lambda_0,$ the [set](../sets/) of all vectors satisfying $A\mathbf{v} = \lambda_0\mathbf{v}$ is a subspace of the [vector space](../vector-spaces/) $\mathbb{R}^n$ or $\mathbb{C}^n.$ It coincides with the [kernel](../homomorphisms-and-isomorphisms/) of $A - \lambda_0 I$ and is called the eigenspace of $A$ associated with $\lambda_0$:
+For each eigenvalue $\lambda_0,$ the [set](../sets/) of all vectors satisfying $A\mathbf{v} = \lambda_0\mathbf{v}$ is a subspace of the [vector space](../vector-spaces/) $\mathbb{R}^n$ or $\mathbb{C}^n.$ It coincides with the [kernel of the linear map](../kernel-and-image-of-a-linear-map/) $A - \lambda_0 I$ and is called the eigenspace of $A$ associated with $\lambda_0$:
 
 $$E_{\lambda_0} = \ker(A - \lambda_0 I) = \\{\ \mathbf{v} : (A - \lambda_0 I)\mathbf{v} = \mathbf{0} \ \\}$$
 

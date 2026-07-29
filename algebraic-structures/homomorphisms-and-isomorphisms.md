@@ -152,6 +152,8 @@ The first isomorphism theorem has the same form for groups, rings, modules, and 
 
 $$A / \ker(\varphi) \cong \mathrm{im}(\varphi)$$
 
+For a linear map with finite-dimensional domain, taking dimensions in this isomorphism gives the [rank-nullity theorem](../kernel-and-image-of-a-linear-map/).
+
 The quotient depends on the type of structure. For [groups](../groups/), $A / \ker(\varphi)$ is the quotient group by a normal subgroup. For [rings](../rings/), it is the quotient ring by an ideal. For [modules](../modules/), it is the quotient module by a submodule. In each case the kernel has the type required to form the quotient. The induced map is defined by $\overline{\varphi}([a]) = \varphi(a).$ It is well-defined because two elements in the same class have the same image under $\varphi.$
 
 > To identify a quotient with another structure, one can construct a surjective homomorphism onto that structure and calculate its kernel. If the kernel is the substructure that defines the quotient, the first isomorphism theorem gives the required isomorphism.

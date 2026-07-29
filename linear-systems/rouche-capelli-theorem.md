@@ -42,7 +42,7 @@ $$
 A\mathbf{x} = x_1 C_1 + x_2 C_2 + \cdots + x_n C_n
 $$
 
-Solving the system therefore amounts to expressing $\mathbf{b}$ as a linear combination of the columns of $A$. Such an expression exists precisely when $\mathbf{b}$ belongs to the [column space](../vector-spaces/) of $A$, which happens exactly when adjoining $\mathbf{b}$ to the columns of $A$ does not enlarge the column space. Since the dimension of the column space equals the rank, this last condition is exactly $r(A) = r(A \mid \mathbf{b}).$
+Solving the system therefore amounts to expressing $\mathbf{b}$ as a linear combination of the columns of $A$. Such an expression exists precisely when $\mathbf{b}$ belongs to the [image](../kernel-and-image-of-a-linear-map/) of the linear map $\mathbf{x} \mapsto A\mathbf{x},$ which is the column space of $A$. This happens exactly when adjoining $\mathbf{b}$ to the columns of $A$ does not enlarge the column space. Since the dimension of the column space equals the rank, this last condition is exactly $r(A) = r(A \mid \mathbf{b}).$
 
 > The rank equality is therefore a test of whether $\mathbf{b}$ lies in the subspace spanned by the columns of $A$. When the equality fails, $\mathbf{b}$ lies outside that subspace, no linear combination of the columns can produce it, and the system has no solution.
 

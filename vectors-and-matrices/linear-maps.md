@@ -126,7 +126,7 @@ If $B$ spans $V,$ then $T(B)$ spans $\mathrm{im}(T),$ because every vector of $V
 
 $$\dim V = \dim \ker(T) + \dim \mathrm{im}(T)$$
 
-To prove the theorem, extend a basis of the kernel to a basis of $V.$ The images of the added vectors are then a basis of $\mathrm{im}(T).$ The page on [vector spaces](../vector-spaces/) gives the full proof.
+To prove the theorem, extend a basis of the kernel to a basis of $V.$ The images of the added vectors are then a basis of $\mathrm{im}(T).$ The page on the [kernel and image of a linear map](../kernel-and-image-of-a-linear-map/) gives the full proof, the description of the preimages of a vector and the translation of both subspaces into matrix terms.
 
 ## Composition and isomorphisms
 

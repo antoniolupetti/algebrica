@@ -96,7 +96,7 @@ The coordinate projection $P : F^3 \to F^2,$ defined by $P(x, y, z) = (x, y),$ i
 
 $$D\left(\sum_{k=0}^n a_kx^k\right) = \sum_{k=1}^n ka_kx^{k-1}$$
 
-The [kernel and image](../homomorphisms-and-isomorphisms/) of $T$ are:
+The [kernel and image](../kernel-and-image-of-a-linear-map/) of $T$ are:
 
 $$\ker(T) = \{\ \mathbf{v} \in V \mid T(\mathbf{v}) = \mathbf{0}\ \}$$
 

@@ -57,7 +57,7 @@ Since $A\mathbf{0} = \mathbf{0},$ the origin belongs to $\mathcal{S}.$ For $\mat
 
 $$A(\alpha\mathbf{x} + \beta\mathbf{y}) = \alpha A\mathbf{x} + \beta A\mathbf{y} = \mathbf{0}$$
 
-The set $\mathcal{S}$ is therefore a subspace of $\mathbb{R}^n$ and is the [kernel](../homomorphisms-and-isomorphisms/) of the map $\mathbf{x} \mapsto A\mathbf{x}.$ If $r$ is the [rank](../rank-of-a-matrix/) of $A,$ then after [Gaussian elimination](../gaussian-elimination/) the reduced system has $n - r$ free variables, and its standard parametrization has one basis vector for each free variable. Hence $\dim \mathcal{S} = n - r = n - \mathrm{rank}(A).$
+The set $\mathcal{S}$ is therefore a subspace of $\mathbb{R}^n$ and is the [kernel](../kernel-and-image-of-a-linear-map/) of the map $\mathbf{x} \mapsto A\mathbf{x}.$ If $r$ is the [rank](../rank-of-a-matrix/) of $A,$ then after [Gaussian elimination](../gaussian-elimination/) the reduced system has $n - r$ free variables, and its standard parametrization has one basis vector for each free variable. Hence $\dim \mathcal{S} = n - r = n - \mathrm{rank}(A).$
 
 The solution set of a system $A\mathbf{x} = \mathbf{b}$ with $\mathbf{b} \neq \mathbf{0}$ is not a subspace, since $\mathbf{x} = \mathbf{0}$ fails the equation. The [Rouché-Capelli theorem](../rouche-capelli-theorem/) determines whether the system is solvable. If it is and $\mathbf{x}_0$ is one of its solutions, the solution set is the translate $\mathbf{x}_0 + \mathcal{S},$ whose elements have the form $\mathbf{x}_0 + \mathbf{s}$ with $\mathbf{s} \in \mathcal{S}.$
 
