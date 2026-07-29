@@ -20,7 +20,7 @@ In these situations, the function is constrained between two other functions wit
 
 ## Statement
 
-**Theorem.** Let $x_0 \in \mathbb{R} \cup \{ \pm\infty \}$ be a limit point, that is, a point such that every neighbourhood of $x_0$ contains at least one point of the [domain](../functions/) different from $x_0$. Let $f$, $g$, and $h$ be real-valued functions defined on a neighbourhood $I$ of $x_0$, and assume that for every $x \in I$ the inequality:
+**Theorem.** Let $x_0 \in \mathbb{R} \cup \{ \pm\infty \}$ be a [limit point](../topology-of-the-real-line/), that is, a point such that every neighbourhood of $x_0$ contains at least one point of the [domain](../functions/) different from $x_0$. Let $f$, $g$, and $h$ be real-valued functions defined on a neighbourhood $I$ of $x_0$, and assume that for every $x \in I$ the inequality:
 
 $$g(x) \leq f(x) \leq h(x)$$
 

@@ -1,6 +1,8 @@
 ## How each entry is written
 
-I wrote the first entries for Algebrica in October 2023, and since then my process has remained largely manual. My background in engineering shapes the way I approach each topic. I have collected old notes from my studies, consulted many textbooks, lecture notes, and established reference works, and tried to write explanations that are essential, clear, and rigorous.
+I wrote the first entries for Algebrica in October 2023, and since then my process has remained largely manual. My background in engineering shapes the way I approach each topic. I have collected old notes from my studies, consulted many textbooks, lecture notes, and established reference works, and tried to write explanations that are essential, clear, and rigorous. Without the material I have consulted over the years, a knowledge base as extensive as Algebrica would not exist. What I add is the work done on that material, reconciling definitions and notation, and rewriting everything into a single exposition that follows a single line of reasoning from beginning to end. 
+
+Every source behind this work is listed in the [bibliography](../bibliography/).
 
 Every entry is written from scratch. I compare different sources, look for common ideas and discrepancies, and then reorganise the material into a structure that is rigorous and easy to follow. The goal is not to collect information but to turn it into a coherent explanation, an original exposition revised until the mathematics is as clear and accessible as possible without losing precision.
 

@@ -164,7 +164,7 @@ is called the $\varepsilon$-neighborhood of $x_0$, or simply a neighborhood of $
 |     | sign+l-in-o-h | sign+s-h | sign+r-in-o-h |     |
 [/shortcode]
 
-Neighborhoods provide the language in which the definitions of [limit](../limits/), continuity, and differentiability are naturally expressed. A function $f$ is continuous at $x_0$ if for every neighborhood of $f(x_0)$ there exists a neighborhood of $x_0$ whose image under $f$ is contained in the former. This formulation is equivalent to the classical $\varepsilon$-$\delta$ definition and makes the role of intervals explicit.
+Neighborhoods provide the language in which the definitions of [limit](../limits/), continuity, and differentiability are naturally expressed. Their relation to interior points, open and closed sets, and compactness is developed in the [topology of the real line](../topology-of-the-real-line/). A function $f$ is continuous at $x_0$ if for every neighborhood of $f(x_0)$ there exists a neighborhood of $x_0$ whose image under $f$ is contained in the former. This formulation is equivalent to the classical $\varepsilon$-$\delta$ definition and makes the role of intervals explicit.
 
 A point $x_0$ is said to be interior to a set $S \subseteq \mathbb{R}$ if some neighborhood of $x_0$ is entirely contained in $S$. Every point of an open interval is interior to it, which is one reason open intervals play a privileged role in analysis. By contrast, the endpoints of a closed interval are not interior points: every neighborhood of an endpoint contains points outside the interval.
 

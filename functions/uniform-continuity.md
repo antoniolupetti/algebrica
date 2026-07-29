@@ -52,7 +52,7 @@ The distinction lies in the dependence of $\delta$:
 
 The Heine–Cantor theorem establishes the conditions under which continuity implies uniform continuity. On compact sets, the local property of continuity suffices to guarantee a single global control parameter $\delta$ applicable to the entire domain.
 
-Let $K \subset \mathbb{R}$ be a compact set. If a function $f : K \to \mathbb{R}$ is continuous on $K$, then it is uniformly continuous on $K$. Since compactness in $\mathbb{R}$ is equivalent to being closed and bounded, the theorem admits the following equivalent formulation: if $f : [a,b] \to \mathbb{R}$ is continuous on a closed and bounded interval $[a,b]$, then $f$ is uniformly continuous on $[a,b]$.
+Let $K \subset \mathbb{R}$ be a compact set. If a function $f : K \to \mathbb{R}$ is continuous on $K$, then it is uniformly continuous on $K$. Since [compactness in $\mathbb{R}$](../topology-of-the-real-line/) is equivalent to being closed and bounded, the theorem admits the following equivalent formulation: if $f : [a,b] \to \mathbb{R}$ is continuous on a closed and bounded interval $[a,b]$, then $f$ is uniformly continuous on $[a,b]$.
 
 > The theorem identifies compactness as the structural property of the domain that prevents local continuity from degenerating into purely pointwise behaviour and guarantees instead a global form of regularity.
 

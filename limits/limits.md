@@ -12,7 +12,7 @@ tags:
 ---
 ## Introduction
 
-Intuitively, the limit of a [function](../functions/) $f(x)$ as $x$ approaches a point $x_0$ describes how the function behaves as the values of $x$ get arbitrarily close to $x_0$, without necessarily reaching that point. A neighbourhood of $x$ is an interval consisting of all points sufficiently close to $x$. More formally, a neighbourhood of $x$ is any open interval $(x - \delta, x + \delta)$ with $\delta > 0$. Limits are defined through neighbourhoods, and the local behaviour of a function near a point is described in the same terms.
+Intuitively, the limit of a [function](../functions/) $f(x)$ as $x$ approaches a point $x_0$ describes how the function behaves as the values of $x$ get arbitrarily close to $x_0$, without necessarily reaching that point. A [neighbourhood of $x$](../topology-of-the-real-line/) is an interval consisting of all points sufficiently close to $x$. More formally, a neighbourhood of $x$ is any open interval $(x - \delta, x + \delta)$ with $\delta > 0$. Limits are defined through neighbourhoods, and the local behaviour of a function near a point is described in the same terms.
 
 ![IMG. 1](svg/limits-1.svg)
 

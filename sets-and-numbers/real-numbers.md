@@ -221,7 +221,7 @@ Suppose, for contradiction, that the real numbers in $[0,1]$ could be arranged i
 
 A second proof, Cantor's diagonal argument, works directly with decimal expansions. Write each number of the supposed list as $x_k=0.d_{k1}d_{k2}d_{k3}\ldots,$ and define $y=0.e_1e_2e_3\ldots$ by choosing $e_k\neq d_{kk}.$ For example, take $e_k=1$ when $d_{kk}\neq1$ and $e_k=2$ when $d_{kk}=1.$ The number $y$ differs from $x_k$ in its $k$-th digit for every $k,$ so it is absent from the list. Choosing digits from $\{1,2\}$ avoids the two decimal expansions of numbers such as $0.4999\ldots=0.5000\ldots.$
 
-The Bolzano-Weierstrass theorem is another consequence of completeness. Every bounded sequence of real numbers has a convergent subsequence. Equivalently, every bounded infinite subset of $\mathbb{R}$ has an accumulation point.
+The Bolzano-Weierstrass theorem is another consequence of completeness. Every bounded sequence of real numbers has a convergent subsequence. Equivalently, every bounded infinite subset of $\mathbb{R}$ has an [accumulation point](../topology-of-the-real-line/).
 
 ## Uniqueness of $\mathbb{R}$
 

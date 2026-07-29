@@ -24,7 +24,7 @@ In other words, a [continuous function](../continuous-functions/) on a closed in
 
 It is helpful to relate the notation to the figure. The quantity $f(x_{\max})$ denotes the value of the function at the point marked Max in the graph, that is, the highest point reached on the interval. Likewise, $f(x_{\min})$ represents the value of the function at the point marked min, where the graph attains its lowest value.
 
-+ The interval must be closed and bounded. Closed means that the endpoints are included. Bounded means that it has finite length. Together, these conditions express compactness on the real line.
++ The interval must be closed and bounded. Closed means that the endpoints are included. Bounded means that it has finite length. Together, these conditions express [compactness on the real line](../topology-of-the-real-line/).
 
 + Continuity is equally essential. The theorem does not require differentiability. It only requires that the function have no jumps or breaks on the interval.
 

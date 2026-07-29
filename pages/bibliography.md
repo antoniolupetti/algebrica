@@ -37,7 +37,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Linear Algebra](https://www.math.ucdavis.edu/~linear/linear-guest.pdf), David Cherney, Tom Denton, Rohit Thomas, Andrew Waldron
 + [Linear Algebra as an Introduction to Abstract Mathematics](https://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf), Isaiah Lankham, Bruno Nachtergaele, Anne Schilling
 + [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf), Sheldon Axler
-+ [Linear Algebra Done Wrong](https://www.math.brown.edu/streil/papers/LADW/LADW_2017-09-04.pdf), Sergei Treil
++ [Linear Algebra Done Wrong](https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong), Sergei Treil
 + [Linear Algebra for Computer Science](https://la4cs.com/files/LA4CS-Free.pdf), Manoj Thulasidas
 + [Linear Algebra with Applications](https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf), W. Keith Nicholson
 
