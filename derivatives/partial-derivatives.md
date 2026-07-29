@@ -185,7 +185,7 @@ The value obtained depends on the slope $m$, so $f$ admits no [limit](../limits/
 
 ## Differentiability and the total differential
 
-The existence of partial derivatives at a point does not, in general, ensure differentiability. Differentiability is a stronger condition that requires the function to admit a linear approximation at the given point. A function $f : A \subseteq \mathbb{R}^n \to \mathbb{R}$ is differentiable at $x_0 \in A$ if there exists a linear map $L : \mathbb{R}^n \to \mathbb{R}$ such that:
+The existence of partial derivatives at a point does not, in general, ensure differentiability. Differentiability is a stronger condition that requires the function to admit a linear approximation at the given point. A function $f : A \subseteq \mathbb{R}^n \to \mathbb{R}$ is differentiable at $x_0 \in A$ if there exists a [linear map](../linear-maps/) $L : \mathbb{R}^n \to \mathbb{R}$ such that:
 
 $$\lim_{h \to 0} \frac{f(x_0 + h) - f(x_0) - L(h)}{|h|} = 0$$
 

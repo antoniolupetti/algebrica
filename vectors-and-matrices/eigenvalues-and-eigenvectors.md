@@ -12,7 +12,7 @@ tags:
 ---
 ## Definition
 
-A linear transformation, represented by a square [matrix](../matrices/) $A,$ acts on vectors by moving them in space. It can stretch, compress, rotate, or reflect them, and in general the image of a [vector](../vectors/) points in a different direction from the original. Among all vectors however there are those for which the action of $A$ is simple. The transformation scales them by a constant factor, leaving their direction unchanged. Such vectors are called eigenvectors of $A,$ and the corresponding scaling factors are called eigenvalues.
+A [linear map](../linear-maps/), represented by a square [matrix](../matrices/) $A,$ acts on vectors by moving them in space. It can stretch, compress, rotate, or reflect them, and in general the image of a [vector](../vectors/) points in a different direction from the original. Among all vectors however there are those for which the action of $A$ is simple. The transformation scales them by a constant factor, leaving their direction unchanged. Such vectors are called eigenvectors of $A,$ and the corresponding scaling factors are called eigenvalues.
 
 > Eigenvectors are the directions along which the transformation acts by scaling, and the eigenvalues do not depend on the basis chosen to represent the transformation.
 

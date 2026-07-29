@@ -84,7 +84,7 @@ The page on [subspaces](../subspaces/) contains the closure criterion, sums and 
 
 ## Linear maps
 
-A [function](../functions/) $T : V \to W$ between vector spaces over the same field is linear when it preserves addition and scalar multiplication:
+A [function](../functions/) $T : V \to W$ between vector spaces over the same field is a [linear map](../linear-maps/) when it preserves addition and scalar multiplication:
 
 $$T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$$
 

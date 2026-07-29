@@ -79,7 +79,7 @@ A constant factor can be moved outside the integral sign:
 
 $$\int k f(x) \ dx = k \int f(x) \ dx \qquad \forall k \in \mathbb{R} \tag{2}$$
 
-These two properties make the indefinite integral a linear map on the space of integrable functions, and they reduce the computation of integrals of linear combinations to the computation of integrals of the individual terms.
+These two properties make the indefinite integral a [linear map](../linear-maps/) on the space of integrable functions, and they reduce the computation of integrals of linear combinations to the computation of integrals of the individual terms.
 
 - - -
 

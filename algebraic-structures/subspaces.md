@@ -53,7 +53,7 @@ Let $A$ be an $m \times n$ matrix with real entries. The solution set of the ass
 
 $$\mathcal{S} = \{\ \mathbf{x} \in \mathbb{R}^n \mid A\mathbf{x} = \mathbf{0} \ \}$$
 
-Since $A\mathbf{0} = \mathbf{0},$ the origin belongs to $\mathcal{S}.$ For $\mathbf{x}, \mathbf{y} \in \mathcal{S}$ and $\alpha, \beta \in \mathbb{R},$ the linear map $\mathbf{x} \mapsto A\mathbf{x}$ satisfies:
+Since $A\mathbf{0} = \mathbf{0},$ the origin belongs to $\mathcal{S}.$ For $\mathbf{x}, \mathbf{y} \in \mathcal{S}$ and $\alpha, \beta \in \mathbb{R},$ the [linear map](../linear-maps/) $\mathbf{x} \mapsto A\mathbf{x}$ satisfies:
 
 $$A(\alpha\mathbf{x} + \beta\mathbf{y}) = \alpha A\mathbf{x} + \beta A\mathbf{y} = \mathbf{0}$$
 

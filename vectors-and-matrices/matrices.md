@@ -248,6 +248,8 @@ Matrix multiplication is defined under a compatibility condition: the product $A
 
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}$$
 
+For a fixed $m \times n$ matrix $A,$ the product $\mathbf{x} \mapsto A\mathbf{x}$ is a [linear map](../linear-maps/) from $\mathbb{R}^n$ to $\mathbb{R}^m.$ Matrix multiplication represents composition of these maps.
+
 Each entry $c_{ij}$ is computed by taking the dot product of the $i$-th row of $A$ with the $j$-th column of $B$: multiply corresponding entries pairwise and sum the results. The following example computes the product of a $2 \times 3$ matrix $A$ and a $3 \times 2$ matrix $B$:
 
 $$

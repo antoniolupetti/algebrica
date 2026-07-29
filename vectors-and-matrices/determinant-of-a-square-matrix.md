@@ -14,7 +14,7 @@ tags:
 ---
 ## Definition
 
-To every square [matrix](../matrices/) of order $n$ one can associate a [real number](../types-of-numbers/) called the determinant of the matrix, denoted $\det(A)$ or $|A|.$ The determinant is a scalar-valued function that encodes both algebraic and geometric properties of the associated linear transformation:
+To every square [matrix](../matrices/) of order $n$ one can associate a [real number](../types-of-numbers/) called the determinant of the matrix, denoted $\det(A)$ or $|A|.$ The determinant is a scalar-valued function that encodes both algebraic and geometric properties of the associated [linear map](../linear-maps/):
 
 $$\det : M_n(\mathbb{R}) \to \mathbb{R}$$
 

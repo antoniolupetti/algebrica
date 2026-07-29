@@ -18,7 +18,7 @@ $$A \cdot A^{-1} = A^{-1} \cdot A = I$$
 
 where $I$ is the identity matrix of order $n.$ When such a matrix exists, it is unique. A square matrix that admits an inverse is called invertible or nonsingular. A matrix that does not admit an inverse is called singular.
 
-The inverse matrix represents the linear transformation that reverses the effect of the original transformation. If $A$ maps a vector $\mathbf{x}$ to $\mathbf{b},$ that is $A\mathbf{x} = \mathbf{b},$ then $A^{-1}$ maps $\mathbf{b}$ back to $\mathbf{x}$:
+The inverse matrix represents the inverse of the [linear map](../linear-maps/) defined by $A.$ If $A$ maps a vector $\mathbf{x}$ to $\mathbf{b},$ that is $A\mathbf{x} = \mathbf{b},$ then $A^{-1}$ maps $\mathbf{b}$ back to $\mathbf{x}$:
 
 $$A\mathbf{x} = \mathbf{b} \implies \mathbf{x} = A^{-1}\mathbf{b}$$
 

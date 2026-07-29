@@ -95,7 +95,7 @@ $$A c = c_1 v_1 + c_2 v_2 + \dots + c_k v_k$$
 
 Multiplying a matrix by a vector is nothing more than forming a linear combination of its columns. The entries of the vector $c$ are the coefficients that determine how strongly each column contributes to the result.
 
-> From this perspective, a matrix-vector product combines the columns of the matrix, and the vectors reachable as $A c$ are exactly the span of those columns.
+> From this perspective, a matrix-vector product combines the columns of the matrix. The [linear map](../linear-maps/) $c \mapsto Ac$ has the span of those columns as its image.
 
 ## Linear systems and solvability
 

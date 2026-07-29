@@ -15,7 +15,7 @@ The rank of a matrix $A$, denoted $r(A)$ or $\mathrm{rank}(A)$, is the maximum n
 
 $$0 \leq r(A) \leq \min(m,n)$$
 
-The rank of a matrix $A$ equals the dimension of the image of the associated linear transformation $T_A : \mathbb{R}^n \to \mathbb{R}^m$, defined by $T_A(\mathbf{x}) = A\mathbf{x}$, regarded as a map between the [vector spaces](../vector-spaces/) $\mathbb{R}^n$ and $\mathbb{R}^m$. The complementary quantity $n - r(A)$ is the dimension of the kernel of $T_A$, the subspace of [vectors](../vectors/) mapped to zero. These two quantities are related by the rank-nullity theorem. For any $A \in M_{m,n}(\mathbb{R})$ we have:
+The rank of a matrix $A$ equals the dimension of the image of the associated [linear map](../linear-maps/) $T_A : \mathbb{R}^n \to \mathbb{R}^m$, defined by $T_A(\mathbf{x}) = A\mathbf{x}$, regarded as a map between the [vector spaces](../vector-spaces/) $\mathbb{R}^n$ and $\mathbb{R}^m$. The complementary quantity $n - r(A)$ is the dimension of the kernel of $T_A$, the subspace of [vectors](../vectors/) mapped to zero. These two quantities are related by the rank-nullity theorem. For any $A \in M_{m,n}(\mathbb{R})$ we have:
 
 $$\mathrm{rank}(A) + \mathrm{nullity}(A) = n$$
 

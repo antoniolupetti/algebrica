@@ -34,7 +34,7 @@ $$L(x + y) = L(x) + L(y)$$
 
 $$L(\lambda x) = \lambda L(x)$$
 
-These two identities are the algebraic counterpart of what, geometrically, makes the solution set a line, a plane, or more generally a hyperplane. The same notion of linearity underlies [vector spaces](../vector-spaces/) and linear maps, and explains why linear equations occupy such a central role in mathematics.
+These two identities are the algebraic counterpart of what, geometrically, makes the solution set a line, a plane, or more generally a hyperplane. The same notion of linearity underlies [vector spaces](../vector-spaces/) and [linear maps](../linear-maps/), and explains why linear equations occupy such a central role in mathematics.
 
 A linear equation may involve any finite number of unknowns. The expression $ax + by + c = 0$, for example, is a linear equation in the two variables $x$ and $y$, with constant term $-c$ once it is written in standard form.
 

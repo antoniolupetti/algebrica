@@ -48,7 +48,7 @@ $$\varphi(\mathbf{u} + \mathbf{v}) = \varphi(\mathbf{u}) + \varphi(\mathbf{v})$$
 
 $$\varphi(r \cdot \mathbf{v}) = r \cdot \varphi(\mathbf{v})$$
 
-for all $\mathbf{u}, \mathbf{v} \in M$ and all $r \in R.$ A linear map between [vector spaces](../vector-spaces/) is a module homomorphism whose ring of scalars is a field.
+for all $\mathbf{u}, \mathbf{v} \in M$ and all $r \in R.$ A [linear map](../linear-maps/) between [vector spaces](../vector-spaces/) is a module homomorphism whose ring of scalars is a field.
 
 > The definition for each structure has one condition for each operation that must be preserved. A group homomorphism preserves the group operation, a ring homomorphism preserves addition and multiplication, and a module homomorphism preserves addition and scalar multiplication.
 
