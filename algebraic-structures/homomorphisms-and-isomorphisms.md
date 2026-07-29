@@ -146,7 +146,9 @@ $$\varphi(n) = \varphi(\underbrace{1 + 1 + \cdots + 1}_{n \text{ summands}}) = n
 
 The identity also holds for negative integers and zero, so $\varphi(n) = n\varphi(1)$ for every $n \in \mathbb{Z}.$ The endomorphism $\varphi$ is bijective if and only if $\varphi(1)$ is a generator of $\mathbb{Z},$ which means that $\varphi(1) = 1$ or $\varphi(1) = -1.$ Hence $\mathrm{Aut}(\mathbb{Z})$ has two elements, the identity and the map $n \mapsto -n.$ It is isomorphic to $\mathbb{Z}/2\mathbb{Z}.$
 
-## The first isomorphism theorem
+## Isomorphism theorems
+
+The isomorphism theorems state relations between homomorphisms, substructures, and quotients. The first identifies a homomorphic image with a quotient by a kernel. The second compares a substructure with its image under a quotient map, and the third replaces two successive quotients with one quotient.
 
 The first isomorphism theorem has the same form for groups, rings, modules, and vector spaces. If $\varphi : A \to B$ is a homomorphism, then the quotient of $A$ by the kernel of $\varphi$ is isomorphic to the image of $\varphi$:
 
@@ -157,6 +159,26 @@ For a linear map with finite-dimensional domain, taking dimensions in this isomo
 The quotient depends on the type of structure. For [groups](../groups/), $A / \ker(\varphi)$ is the quotient group by a normal subgroup. For [rings](../rings/), it is the quotient ring by an ideal. For [modules](../modules/), it is the quotient module by a submodule. In each case the kernel has the type required to form the quotient. The induced map is defined by $\overline{\varphi}([a]) = \varphi(a).$ It is well-defined because two elements in the same class have the same image under $\varphi.$
 
 > To identify a quotient with another structure, one can construct a surjective homomorphism onto that structure and calculate its kernel. If the kernel is the substructure that defines the quotient, the first isomorphism theorem gives the required isomorphism.
+
+- - -
+
+The second isomorphism theorem compares a subgroup with its image under a quotient map. If $H \leq G$ and $N \trianglelefteq G,$ then $H \cap N \trianglelefteq H,$ the product $HN$ is a subgroup of $G,$ and the quotient map $G \to G/N$ induces the isomorphism:
+
+$$H/(H \cap N) \cong HN/N$$
+
+For a ring, module, or vector space $A,$ let $M$ and $N$ be ideals, submodules, or subspaces, respectively. The isomorphism is:
+
+$$M/(M \cap N) \cong (M + N)/N$$
+
+In each case the quotient map has the intersection as its kernel, so the first isomorphism theorem gives the isomorphism.
+
+- - -
+
+The third isomorphism theorem describes quotients in stages. Let $X$ be a group, ring, module, or vector space, and let $N \subseteq M$ be normal subgroups, ideals, submodules, or subspaces of $X,$ respectively. Then $M/N$ is a normal subgroup, ideal, submodule, or subspace of $X/N,$ respectively, and the theorem gives the isomorphism:
+
+$$(X/N)/(M/N) \cong X/M$$
+
+The quotient map $X/N \to X/M$ has kernel $M/N,$ so the first isomorphism theorem gives this isomorphism.
 
 ## What isomorphism captures
 
