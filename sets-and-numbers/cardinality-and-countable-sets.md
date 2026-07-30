@@ -100,9 +100,9 @@ A subset of a countable set is countable. Let $B$ be countable and $A\subseteq B
 
 For a non-empty set $A,$ countability is equivalent to either of two one-sided conditions. The following statements are equivalent:
 
-1. $A$ is countable.
-2. A surjective map $f\colon\mathbb{N}\to A$ exists.
-3. An injective map $g\colon A\to\mathbb{N}$ exists.
++ $A$ is countable.
++ A surjective map $f\colon\mathbb{N}\to A$ exists.
++ An injective map $g\colon A\to\mathbb{N}$ exists.
 
 Assume the first condition. If $A$ is countably infinite, an enumeration of $A$ is already a surjection of the kind required by the second condition. If $A$ is finite with cardinality $n\geq1,$ take a bijection $h\colon A\to I_n$ and define $s\colon\mathbb{N}\to I_n$ by $s(k)=k$ for $1\leq k\leq n$ and $s(k)=n$ for all other $k.$ The map $s$ is surjective, so $f=h^{-1}\circ s$ is a surjection from $\mathbb{N}$ to $A.$
 

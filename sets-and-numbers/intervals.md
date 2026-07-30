@@ -35,7 +35,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ | $b$ |     |
 |:----|-----|-----|-----|
-|     | sign+l-in-o-h | sign+r-in-o-h |     |
+|     | sign+l-in-o | sign+r-in-o |     |
 [/shortcode]
 
 The closed interval with endpoints $a$ and $b$ is the set of all real numbers between $a$ and $b$, including both endpoints. It is defined as follows:
@@ -47,7 +47,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ | $b$ |     |
 |:----|-----|-----|-----|
-|     | sign+l-in-c-h | sign+r-in-c-h |     |
+|     | sign+l-in-c | sign+r-in-c |     |
 [/shortcode]
 
 The two half-open intervals with endpoints $a$ and $b$ include one endpoint and exclude the other. They are defined as follows:
@@ -59,7 +59,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ | $b$ |     |
 |:----|-----|-----|-----|
-|     | sign+l-in-c-h | sign+r-in-o-h |     |
+|     | sign+l-in-c | sign+r-in-o |     |
 [/shortcode]
 
 $$
@@ -69,7 +69,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ | $b$ |     |
 |:----|-----|-----|-----|
-|     | sign+l-in-o-h | sign+r-in-c-h |     |
+|     | sign+l-in-o | sign+r-in-c |     |
 [/shortcode]
 
 A degenerate interval is the special case $[a, a] = \\{a\\}$, which contains exactly one point. It satisfies the definition of an interval vacuously, since there are no two distinct points between which additional points could be required.
@@ -85,7 +85,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ |     |
 |:----|-----|-----|
-|     | sign+l-c-h |     |
+|     | sign+l-c |     |
 [/shortcode]
 
 $$
@@ -95,7 +95,7 @@ $$
 [shortcode="intervals"]
 |     | $a$ |     |
 |:----|-----|-----|
-|     | sign+l-o-h |     |
+|     | sign+l-o |     |
 [/shortcode]
 
 $$
@@ -105,7 +105,7 @@ $$
 [shortcode="intervals"]
 |     | $b$ |     |
 |:----|-----|-----|
-|     | sign+r-c-h |     |
+|     | sign+r-c |     |
 [/shortcode]
 
 $$
@@ -115,7 +115,7 @@ $$
 [shortcode="intervals"]
 |     | $b$ |     |
 |:----|-----|-----|
-|     | sign+r-o-h |     |
+|     | sign+r-o |     |
 [/shortcode]
 
 The entire real line is itself an interval, denoted $(-\infty, +\infty) = \mathbb{R}$, which contains every real number and has no restriction of any kind.
