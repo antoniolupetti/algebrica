@@ -156,6 +156,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342), Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola
 + [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223), Tong Xiao, Jingbo Zhu
 + [Foundations of Machine Learning](https://cs.nyu.edu/~mohri/mlbook/), Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
++ [Information Theory, Inference, and Learning Algorithms](https://www.inference.org.uk/itprnn/book.pdf), David J. C. MacKay
 + [An Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf), Peter Holderrieth, Ezra Erives
 + [Machine Learning Systems, Volume I: Foundations](https://mlsysbook.ai/vol1/), Vijay Janapa Reddi
 + [Machine Learning Systems, Volume II: At Scale](https://mlsysbook.ai/vol2/assets/downloads/Machine-Learning-Systems-Vol2.pdf), Vijay Janapa Reddi
