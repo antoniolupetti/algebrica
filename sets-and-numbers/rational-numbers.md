@@ -177,7 +177,7 @@ Equivalently, in terms of [absolute value](../absolute-value/), for every $x \in
 
 ## Cardinality
 
-The rational numbers are countably infinite, that is, $\mathbb{Q}$ and $\mathbb{N}$ are in [bijection](../functions/). An explicit enumeration proves this statement.
+The rational numbers are countably infinite, that is, $\mathbb{Q}$ and $\mathbb{N}$ are in [bijection](../functions/). An explicit enumeration proves this statement. The general criteria for countability and a second proof based on a surjection from $\mathbb{Z}\times(\mathbb{N}\setminus\{0\})$ are given in [cardinality and countable sets](../cardinality-and-countable-sets/).
 
 The following infinite table has the fraction $p/q$ in row $p$ and column $q$:
 

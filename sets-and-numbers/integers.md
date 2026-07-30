@@ -37,6 +37,8 @@ $$
 
 The integers are an infinite collection of evenly spaced points along the number line and embed into the [rational numbers](../rational-numbers/) through the identification $n \mapsto n/1;$ the rationals in turn are contained in the [real numbers](../real-numbers/) and the [complex numbers](../complex-numbers/).
 
+Although $\mathbb{N}$ is a proper subset of $\mathbb{Z},$ the two sets have the same cardinality. An explicit bijection between them is given in [cardinality and countable sets](../cardinality-and-countable-sets/).
+
 ![IMG. 1](svg/integers-1.svg)
 
 The inclusions $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$ record successive extensions, each of which permits an operation or equation unavailable in the preceding system.

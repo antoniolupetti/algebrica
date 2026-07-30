@@ -45,6 +45,8 @@ A function $f : A \to B$ can be classified as:
 + Surjective if every element of $B$ is the image of at least one element of $A$, that is, if for every $y \in B$ there exists at least one $x \in A$ such that $f(x) = y$.
 + Bijective if it is both injective and surjective, that is, if for every $y \in B$ there exists a unique $x \in A$ such that $f(x) = y$.
 
+Bijections compare the cardinalities of arbitrary sets, while injections compare them by inequality. [Cardinality and countable sets](../cardinality-and-countable-sets/) uses these maps to establish countability criteria and compare infinite sets.
+
 - - -
 
 The identity function and the constant function are the two simplest cases. The identity function on a set $A$ sends every element to itself,

@@ -133,6 +133,8 @@ The argument shows that every open interval of $\mathbb{R},$ however small, cont
 
 Rationals and irrationals are both dense but have different cardinalities. The set $\mathbb{Q}$ is countable, while $\mathbb{R}$ is uncountable. If $\mathbb{I}$ were countable, then the identity $\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$ would express $\mathbb{R}$ as a union of two countable sets. Therefore $\mathbb{I}$ is uncountable.
 
+The stronger statement $\mathbb{I}\sim\mathbb{R}$ is proved in [cardinality and countable sets](../cardinality-and-countable-sets/) by constructing injections in both directions and applying the Cantor-Bernstein theorem.
+
 Thus the irrationals are uncountable even though the rationals are dense in $\mathbb{R}.$ The algebraic numbers $\mathbb{A}$ are countable, since each polynomial with integer coefficients has finitely many roots and the family of such polynomials is countable. Their complement $\mathbb{R} \setminus \mathbb{A},$ the set of transcendental numbers, is therefore uncountable.
 
 > Density and cardinality measure different properties. Every open interval contains rational and irrational numbers, but the rationals and the algebraic numbers are countable, whereas the irrationals and the transcendental numbers are uncountable.

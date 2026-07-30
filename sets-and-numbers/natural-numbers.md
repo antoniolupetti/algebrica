@@ -72,6 +72,8 @@ $$
 
 In this construction each natural number coincides with the set of all its predecessors, so the number $n$ has exactly $n$ elements. This connects the ordinal and the cardinal aspects of $\mathbb{N}$ directly.
 
+The set $\mathbb{N}$ also indexes every countably infinite set. [Cardinality and countable sets](../cardinality-and-countable-sets/) uses this property to distinguish finite, countable, and uncountable sets.
+
 ## Arithmetic operations
 
 Once the successor function is available, the arithmetic operations can be introduced by recursion. The idea is to define each operation by specifying its value in a base case and then extending it to all natural numbers by appealing to the successor.

@@ -185,8 +185,6 @@ $$\frac{(n-1)S^{2}}{\sigma^{2}} \sim \chi^{2}_{n-1}$$
 
 Each standardized deviation $(X_i-\mu)/\sigma$ has the standard normal distribution, and the sum of the $n$ squared deviations would have a $\chi^2_n$ distribution if $\mu$ were known. Because $\mu$ is estimated by $\bar X,$ the deviations satisfy the linear constraint $\sum_i(X_i-\bar X)=0,$ which removes one degree of freedom and reduces the chi-square parameter from $n$ to $n-1.$
 
-- - -
-
 This result is the basis of confidence intervals and hypothesis tests for $\sigma^2.$
 
 ## Chi-square critical values

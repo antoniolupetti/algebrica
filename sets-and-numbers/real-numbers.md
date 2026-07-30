@@ -207,7 +207,7 @@ The rational numbers are dense in $\mathbb{R}.$ For every $x,y\in\mathbb{R}$ wit
 
 If a real number $x$ satisfies $x\leq\varepsilon$ for every $\varepsilon>0,$ then $x\leq0,$ since a positive $x$ would exceed the choice $\varepsilon=x/2.$ Similarly, $|x|\leq\varepsilon$ for all $\varepsilon>0$ implies $x=0.$ This criterion proves an equality by bounding the absolute value of the difference below every positive threshold, and it recurs in the study of [limits](../limits/).
 
-Despite the density of $\mathbb{Q}$ in $\mathbb{R},$ the two sets differ in cardinality. The rational numbers are countable, whereas the real numbers are uncountable. Therefore the [irrational numbers](../irrational-numbers/) $\mathbb{R}\setminus\mathbb{Q}$ are uncountable.
+Despite the density of $\mathbb{Q}$ in $\mathbb{R},$ the two sets differ in cardinality. The rational numbers are countable, whereas the real numbers are uncountable. These results and their relation to Cantor's diagonal argument are developed in [cardinality and countable sets](../cardinality-and-countable-sets/). Therefore the [irrational numbers](../irrational-numbers/) $\mathbb{R}\setminus\mathbb{Q}$ are uncountable.
 
 The following proof of uncountability uses the nested interval theorem. A sequence of closed intervals $I_n = [a_n, b_n]$ is nested when $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots.$ Completeness guarantees that their intersection contains at least one point:
 

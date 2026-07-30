@@ -178,6 +178,8 @@ $$
 
 A single point has no extent, so adding or removing a finite number of points from an interval does not alter its length. A degenerate interval $[a, a]$ has length $\ell([a,a]) = 0$, consistently with this observation. Unbounded intervals have infinite length, in the sense that for every $M > 0$ there exist points in the interval whose distance exceeds $M$, so no finite value can be assigned as their length.
 
+Length and cardinality are different notions of size. Every non-degenerate interval has the same cardinality as $\mathbb{R},$ regardless of its length or the inclusion of its endpoints. This comparison is proved in [cardinality and countable sets](../cardinality-and-countable-sets/).
+
 The notion of length is the starting point for the theory of measure on the real line, which assigns a generalized notion of size to arbitrary subsets of $\mathbb{R}$. The measure of an interval $[a, b]$ coincides with its length $b - a$, and the extension of this assignment to more complex sets, through the notion of outer measure and measurability, forms the foundation of the [Lebesgue integral](../riemann-integrability-criteria/).
 
 ## Characterization of intervals

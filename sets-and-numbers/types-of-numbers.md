@@ -133,7 +133,7 @@ The set $\mathbb{R}$ is totally ordered: for any two real numbers $x$ and $y$, e
 
 Both $\mathbb{Q}$ and $\mathbb{I}$ are dense in $\mathbb{R}$: every open interval, however small, contains both rational and irrational numbers. The two families interleave at every scale of the real line, although they differ in size.
 
-A further distinction between $\mathbb{Q}$ and $\mathbb{R}$ is their cardinality. The rational numbers are countable, that is, their elements can be put in one-to-one correspondence with $\mathbb{N}$. The real numbers, by contrast, are uncountable, as shown by Cantor's diagonal argument. In this precise sense, almost every real number is irrational. The properties of the real number system are discussed further in the entry on [properties of real numbers](../properties-of-real-numbers/).
+A further distinction between $\mathbb{Q}$ and $\mathbb{R}$ is their cardinality. The rational numbers are countable, that is, their elements can be put in one-to-one correspondence with $\mathbb{N}$. The real numbers, by contrast, are uncountable, as shown by Cantor's diagonal argument. The proofs and the comparison of these infinite cardinalities are given in [cardinality and countable sets](../cardinality-and-countable-sets/). In this precise sense, almost every real number is irrational. The properties of the real number system are discussed further in the entry on [properties of real numbers](../properties-of-real-numbers/).
 
 Since zero has no sign, it does not belong to either the positive or negative reals. The following terminology is standard: a non-negative real number satisfies $x \geq 0$, while a non-positive real number satisfies $x \leq 0$.
 

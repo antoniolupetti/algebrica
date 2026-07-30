@@ -68,6 +68,8 @@ $$
 
 For finite sets this condition is equivalent to equality between their numbers of elements. The empty set has cardinality $|\emptyset|=0.$
 
+For infinite sets, bijections define equality of cardinality even when neither set has a finite number of elements. [Cardinality and countable sets](../cardinality-and-countable-sets/) extends this definition to infinite sets and includes the comparison with power sets.
+
 The cardinality of the Cartesian product of two finite sets $A$ and $B$ is given by:
 
 $$

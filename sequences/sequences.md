@@ -18,6 +18,8 @@ A sequence is an ordered collection of elements, each assigned to a specific pos
 + Each element produced by the sequence is known as a term.
 + The expression for $a_n$ defines the rule that determines every term of the sequence.
 
+A sequence enumerates a countably infinite set when it is a bijection from $\mathbb{N}$ onto that set. [Cardinality and countable sets](../cardinality-and-countable-sets/) relates this definition to finite enumerations and countability criteria.
+
 It is often useful to consider sequences defined only on a subset of natural numbers, such as those starting from a specific [integer](../integers/) value. These are sequences of the form:
 
 $$
@@ -140,4 +142,3 @@ When the rule that generates each term yields a [function](../functions/) rather
 The limit $e := \lim_{n \to \infty}(1 + 1/n)^n$ provides a celebrated example of a monotone bounded sequence and is discussed on the page about [Euler's number](../euler-number-limit-sequence/). Many properties of sequences are most efficiently established by the [principle of mathematical induction](../principle-of-mathematical-induction/), which applies whenever a statement is parametrised by a natural number.
 
 For sequences that do not converge but remain bounded, such as oscillating sequences, the ordinary limit does not exist. The [superior and inferior limits](../superior-and-inferior-limits-of-a-sequence/) extend the analysis to this case, identifying the largest and smallest cluster values around which the terms accumulate for arbitrarily large indices.
-
