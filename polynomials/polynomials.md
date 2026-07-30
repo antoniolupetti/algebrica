@@ -246,7 +246,6 @@ where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \ne 0$.
 
 A number $\alpha$ is said to be a [root](../roots-of-a-polynomial/) of the polynomial $P(x)$ if $P(\alpha) = 0$. The root $\alpha$ is called integer, rational, real, or complex depending on whether $\alpha$ is an integer, a [rational number](../types-of-numbers/), a real number, or a [complex number](../complex-numbers-introduction/).
 
-- - -
 The existence of roots over $\mathbb{C}$ is guaranteed by the [Fundamental Theorem of Algebra](../roots-of-a-polynomial/), which states that every non-constant polynomial with complex coefficients has at least one complex root. As a consequence, any polynomial of degree $n$ over $\mathbb{C}$ factors into exactly $n$ linear factors, counted with multiplicity. Over $\mathbb{R}$, the situation is more nuanced: real roots may not always exist, and irreducible quadratic factors with no real roots may appear in the factorization.
 
 The general existence and uniqueness statement is developed in [unique factorization of polynomials](../unique-factorization-of-polynomials/). It distinguishes irreducible factors from units and explains why a factorization is unique only up to the order of the factors and multiplication by nonzero constants.
