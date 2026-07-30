@@ -47,6 +47,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Analytic Geometry](https://djm.cc/library/Analytic_Geometry_Siceloff_Wentworth_Smith_edited.pdf), Lewis Parker Siceloff, George Wentworth, David Eugene Smith
 + [Elementary Geometry from an Advanced Standpoint](https://www.ime.usp.br/~toscano/disc/2021/Moise.pdf), Edwin E. Moise
 + [Plane Geometry](https://djm.cc/library/Plane_Geometry_Wentworth_Smith_edited.pdf), George Wentworth, David E. Smith
++ [The Rising Sea: Foundations of Algebraic Geometry](https://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), Ravi Vakil
 + [Trigonometry](https://www.mecmath.net/trig/Trigonometry.pdf), Michael Corral
 
 ## Topology
