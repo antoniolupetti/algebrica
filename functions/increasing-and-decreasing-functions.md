@@ -61,6 +61,8 @@ The [derivative](../derivatives/) describes the shape of the graph of a function
 + If $f'(x) < 0$ for every $x$ in the interior of $I,$ then $f(x)$ is strictly decreasing on $I.$
 + If $f'(x) = 0$ for every $x$ in the interior of $I,$ then $f(x)$ is constant on $I.$
 
+Applied to a position function $s(t),$ this criterion says that positive [velocity](../velocity/) makes the position increase with time, while negative velocity makes it decrease.
+
 > A nonnegative derivative already gives monotonicity in the wide sense, since $f'(x) \geq 0$ on the interior of $I$ implies that $f$ is increasing. Strict monotonicity tolerates isolated points where the derivative vanishes, as $f(x) = x^3$ shows at $x = 0,$ where $f'(0) = 0$ while $f$ remains strictly increasing.
 
 - - -

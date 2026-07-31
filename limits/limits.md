@@ -18,6 +18,8 @@ Intuitively, the limit of a [function](../functions/) $f(x)$ as $x$ approaches a
 
 The smaller the neighbourhood, the closer the points are to $x$. As the interval $(x - \delta, x + \delta)$ becomes narrower, that is, as $\delta$ approaches zero, the distance between the points of the neighbourhood and $x$ decreases accordingly.
 
+The passage from average to instantaneous [velocity](../velocity/) is a physical example of this limiting process. Average velocity is defined over a nonzero time interval, while its limit as the interval shrinks, when that limit exists, is the velocity at a single instant.
+
 ## Definition
 
 Let $f(x)$ be a function whose behaviour we wish to study as $x$ approaches the point $x_0$. We say that, as $x$ tends to $x_0$, the function $f(x)$ has limit $\ell$, and we write:
