@@ -34,7 +34,7 @@ The displacement has a sign. It is positive when the point moves in the positive
 
 $$\frac{\Delta s}{\Delta t} = \frac{s_2 - s_1}{t_2 - t_1}$$
 
-When the point has equal displacements over equal time intervals, this ratio has the same value $v$ for every choice of $t_1$ and $t_2,$ and $v$ is the velocity of the motion. In every other case the ratio depends on the interval, so it describes the interval as a whole and not a single instant. For a fixed time $t,$ consider intervals whose duration $\Delta t$ tends to zero. If the corresponding ratios have a finite limit, that limit is the instantaneous velocity:
+When the point has equal displacements over equal time intervals, this ratio has the same value $v$ for every choice of $t_1$ and $t_2,$ and $v$ is the signed scalar component of velocity along the oriented line. In every other case the ratio depends on the interval, so it describes the interval as a whole and not a single instant. For a fixed time $t,$ consider intervals whose duration $\Delta t$ tends to zero. If the corresponding ratios have a finite limit, that limit is the instantaneous scalar velocity:
 
 $$v(t) = \lim_{\Delta t \to 0} \frac{\Delta s}{\Delta t} = \lim_{\Delta t \to 0} \frac{s(t + \Delta t) - s(t)}{\Delta t}$$
 
@@ -134,7 +134,7 @@ At an arbitrary instant $t,$ the same algebra gives the difference quotient $40 
 
 $$v(t) = \lim_{h \to 0} (40 - 10t - 5h) = 40 - 10t$$
 
-The velocity is $40\ \mathrm{m/s}$ at the launch, vanishes at $t = 4$ when the body reaches its greatest height, and equals $-40\ \mathrm{m/s}$ on the return, where the negative sign indicates the downward direction. The absolute value $|v(t)|$ is the speed, and the two quantities agree only while the motion keeps its direction.
+The scalar velocity is $40\ \mathrm{m/s}$ at the launch, vanishes at $t = 4$ when the body reaches its greatest height, and equals $-40\ \mathrm{m/s}$ on the return, where the negative sign indicates the downward direction. The speed is the absolute value $|v(t)|.$ It is nonnegative and has no direction. Hence it equals $v(t)$ when $v(t) \geq 0$ and $-v(t)$ when $v(t) < 0.$
 
 - - -
 
@@ -156,11 +156,11 @@ $$\mathbf{v}(t) = \lim_{\Delta t \to 0} \frac{\Delta \mathbf{r}}{\Delta t} = \fr
 
 ![IMG. 4](svg/velocity-4.svg)
 
-As $\Delta t$ decreases, the chord aligns with the trajectory. The vector $\mathbf{v}(t)$ is tangent to the trajectory at the point occupied at time $t,$ has the direction of motion, and has magnitude equal to the speed. For a rectilinear motion along the unit vector $\mathbf{i}$ the position is $\mathbf{r}(t) = s(t)\mathbf{i},$ and the definition reduces to:
+As $\Delta t$ decreases, the chord aligns with the trajectory. When $\mathbf{v}(t) \neq \mathbf{0},$ the vector is tangent to the trajectory at the point occupied at time $t$ and points in the direction of motion. Its magnitude is the speed. For a rectilinear motion along the unit vector $\mathbf{i}$ the position is $\mathbf{r}(t) = s(t)\mathbf{i},$ and the definition reduces to:
 
 $$\mathbf{v}(t) = \frac{ds(t)}{dt}\mathbf{i}$$
 
-This is the scalar formula from the previous sections.
+The scalar $v(t) = \frac{ds(t)}{dt}$ is the component of $\mathbf{v}(t)$ along the oriented line, and the speed satisfies $\|\mathbf{v}(t)\| = |v(t)|.$
 
 ## Uniform rectilinear motion
 
