@@ -129,6 +129,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
 + [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach
 + [Introduction to University Mathematics](https://courses.maths.ox.ac.uk/course/view.php?id=6023), James Munro
++ [Klotz Online Math Notes](https://www.univmathnotes.com), Richard G. Klotz
 + [Maths 1](https://people.bath.ac.uk/ensdasr/ME10304.bho/maths1.pdf), Andrew Rees
 + [The Princeton Companion to Mathematics](https://press.princeton.edu/books/hardcover/9780691118802/the-princeton-companion-to-mathematics), Timothy Gowers, June Barrow-Green, Imre Leader
 + [Proofs and Concepts](https://deductivepress.ca/dmorris/books/proofs+concepts.pdf), Dave Witte Morris, Joy Morris

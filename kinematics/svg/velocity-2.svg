@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="295px" height="316px" viewBox="0 0 295 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.059685, 0.000000)">
+            <text fill="#BABABA" fill-rule="nonzero" transform="translate(8.000000, 197.000000) rotate(-90.000000) translate(-8.000000, -197.000000)" font-size="12" font-weight="normal">
+                <tspan x="-14" y="201">Position</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="250" y="311">Time</tspan>
+            </text>
+            <line x1="51.4403153" y1="292.5" x2="51.4403153" y2="213.75" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="106.440315" y1="292.5" x2="106.440315" y2="123.75" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="31.4403153" y1="243.5" x2="131.440315" y2="83.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M23.5,292.5 C83.4251683,96.3812673 143.350337,60.5231901 203.275505,184.925768" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M211.160566,202.219787 C221.940377,227.127213 232.720189,257.220617 243.5,292.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <circle stroke="#333333" fill="#333333" fill-rule="nonzero" cx="51" cy="213.75" r="2.5"></circle>
+            <circle stroke="#333333" fill="#333333" fill-rule="nonzero" cx="106" cy="123.75" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="47" y="310">1</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="102" y="310">3</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="59" y="228">(1, 35)</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="71" y="112">(3, 75)</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="202" y="197">y = s(t)</tspan>
+            </text>
+            <line x1="121.440315" y1="48.5" x2="121.5" y2="90.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="42.9403153" y="11">The average velocity over the interval [1, 3] is </tspan>
+                <tspan x="42.9403153" y="24">the slope of the secant line through the two </tspan>
+                <tspan x="42.9403153" y="37">points of the graph.</tspan>
+            </text>
+            <path d="M286.103163,287.527171 L286.185446,287.564212 L294.185446,292.064212 C294.496953,292.239435 294.522912,292.665161 294.263323,292.882134 L294.185446,292.935788 L286.185446,297.435788 C285.944767,297.57117 285.639909,297.48581 285.504528,297.245131 C285.384188,297.031194 285.438262,296.766548 285.620801,296.615296 L285.695185,296.564212 L292.032,293 L4.44031531,293 C4.16417294,293 3.94031531,292.776142 3.94031531,292.5 C3.94031531,292.25454 4.11719048,292.050392 4.35043968,292.008056 L4.44031531,292 L292.032,292 L285.695185,288.435788 C285.481248,288.315448 285.390032,288.061202 285.467486,287.837152 L285.504528,287.754869 C285.624867,287.540933 285.879113,287.449717 286.103163,287.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M23.8224493,99.6769926 L23.8761031,99.7548694 L28.3761031,107.754869 C28.511485,107.995548 28.4261249,108.300406 28.1854459,108.435788 C27.9715091,108.556127 27.7068632,108.502053 27.5556112,108.319515 L27.5045275,108.245131 L23.94,101.909 L23.9403153,315.5 C23.9403153,315.776142 23.7164577,316 23.4403153,316 C23.1948554,316 22.9907069,315.823125 22.948371,315.589876 L22.9403153,315.5 L22.94,101.909 L19.3761031,108.245131 C19.2557636,108.459067 19.0015175,108.550283 18.7774675,108.472829 L18.6951847,108.435788 C18.4812479,108.315448 18.3900321,108.061202 18.4674861,107.837152 L18.5045275,107.754869 L23.0045275,99.7548694 C23.1797502,99.4433624 23.6054761,99.4174034 23.8224493,99.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

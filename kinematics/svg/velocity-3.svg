@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="295px" height="310px" viewBox="0 0 295 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.059685, 0.000000)">
+            <line x1="95.4403153" y1="45.5" x2="95.4403153" y2="87.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="16.9403153" y="11">As the second instant approaches t₁ the </tspan>
+                <tspan x="16.9403153" y="24">secant lines turn about the fixed point and </tspan>
+                <tspan x="16.9403153" y="37">tend to the tangent line.</tspan>
+            </text>
+            <line x1="52.4403153" y1="286.5" x2="52.4403153" y2="207.75" stroke="#BABABA" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="18.4403153" y1="286.5" x2="96" y2="99.75" stroke="#BABABA" stroke-linecap="round"></line>
+            <path d="M24.5,286.5 C86.9001363,82.2813721 149.300273,51.8346108 211.700409,195.159716" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M218.996786,212.710516 C227.497858,234.081818 235.998929,258.678313 244.5,286.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <circle stroke="#333333" fill="#333333" fill-rule="nonzero" cx="52" cy="207.75" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="47" y="304">t₁</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="60" y="226">(t₁, s(t₁))</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="212" y="207">y = s(t)</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" transform="translate(8.000000, 191.000000) rotate(-90.000000) translate(-8.000000, -191.000000) " font-size="12" font-weight="normal">
+                <tspan x="-14" y="195">Position</tspan>
+            </text>
+            <text fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="250" y="305">Time</tspan>
+            </text>
+            <path d="M286.103163,281.527171 L286.185446,281.564212 L294.185446,286.064212 C294.496953,286.239435 294.522912,286.665161 294.263323,286.882134 L294.185446,286.935788 L286.185446,291.435788 C285.944767,291.57117 285.639909,291.48581 285.504528,291.245131 C285.384188,291.031194 285.438262,290.766548 285.620801,290.615296 L285.695185,290.564212 L292.032,287 L4.44031531,287 C4.16417294,287 3.94031531,286.776142 3.94031531,286.5 C3.94031531,286.25454 4.11719048,286.050392 4.35043968,286.008056 L4.44031531,286 L292.032,286 L285.695185,282.435788 C285.481248,282.315448 285.390032,282.061202 285.467486,281.837152 L285.504528,281.754869 C285.624867,281.540933 285.879113,281.449717 286.103163,281.527171 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M23.8224493,93.6769926 L23.8761031,93.7548694 L28.3761031,101.754869 C28.511485,101.995548 28.4261249,102.300406 28.1854459,102.435788 C27.9715091,102.556127 27.7068632,102.502053 27.5556112,102.319515 L27.5045275,102.245131 L23.94,95.909 L23.9403153,309.5 C23.9403153,309.776142 23.7164577,310 23.4403153,310 C23.1948554,310 22.9907069,309.823125 22.948371,309.589876 L22.9403153,309.5 L22.94,95.909 L19.3761031,102.245131 C19.2557636,102.459067 19.0015175,102.550283 18.7774675,102.472829 L18.6951847,102.435788 C18.4812479,102.315448 18.3900321,102.061202 18.4674861,101.837152 L18.5045275,101.754869 L23.0045275,93.7548694 C23.1797502,93.4433624 23.6054761,93.4174034 23.8224493,93.6769926 Z" fill="#BABABA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
