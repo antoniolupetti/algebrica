@@ -26,7 +26,7 @@ $$\|\mathbf{x}\|=\sqrt{\mathbf{x}\cdot\mathbf{x}}\qquad\cos\theta=\frac{\mathbf{
 
 These formulas depend on three properties of the dot product. It is linear in each argument, it is symmetric, and $\mathbf{x}\cdot\mathbf{x}$ is positive whenever $\mathbf{x}\neq\mathbf{0}.$ Taking these properties as axioms defines lengths and angles on spaces of [matrices](../matrices/), [polynomials](../polynomials/), [continuous functions](../continuous-functions/), or random variables. Their elements need not have a direct geometric representation, but the same computations remain valid.
 
-## The obstruction in the complex case
+- - - 
 
 A first attempt to extend the dot product to $\mathbb{C}^n$ is to keep the same formula and set $\mathbf{z}\cdot\mathbf{w}=z_1w_1+\cdots+z_nw_n.$ Positivity fails for $\mathbf{z}=(1,i)$ in $\mathbb{C}^2,$ since:
 
