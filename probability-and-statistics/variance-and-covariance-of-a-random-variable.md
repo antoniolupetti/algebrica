@@ -157,7 +157,7 @@ $$
 
 In this expression $\sigma_{XY} = \mathrm{Cov}(X, Y),$ while $\sigma_X$ and $\sigma_Y$ are the standard deviations of the two variables. The value of $\rho_{XY}$ is unchanged when either variable is shifted or multiplied by a positive constant.
 
-The Cauchy-Schwarz inequality implies $-1 \le \rho_{XY} \le 1.$ The coefficient is $1$ exactly when one centered variable is a positive scalar multiple of the other with probability $1,$ and it is $-1$ exactly when that multiple is negative. A coefficient close to either endpoint means that the linear association is strong. A coefficient close to $0$ means that the linear association is weak, but nonlinear dependence may still be present. For example, if $X$ is uniformly distributed on $[-1, 1]$ and $Y = X^2,$ then $\mathrm{Cov}(X, Y) = 0$ even though $Y$ is determined by $X.$
+The [Cauchy-Schwarz inequality](../inner-product-spaces/) implies $-1 \le \rho_{XY} \le 1.$ The coefficient is $1$ exactly when one centered variable is a positive scalar multiple of the other with probability $1,$ and it is $-1$ exactly when that multiple is negative. A coefficient close to either endpoint means that the linear association is strong. A coefficient close to $0$ means that the linear association is weak, but nonlinear dependence may still be present. For example, if $X$ is uniformly distributed on $[-1, 1]$ and $Y = X^2,$ then $\mathrm{Cov}(X, Y) = 0$ even though $Y$ is determined by $X.$
 
 ## Example 2
 

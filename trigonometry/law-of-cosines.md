@@ -175,7 +175,7 @@ The area of the triangle is $84$ square units. The result is exact and has been 
 
 ## Vector interpretation
 
-The law of cosines admits a reading in terms of [vectors](../vectors/) that exposes its deeper structure and connects it to the inner product. Consider a triangle with vertex $O$, and let $\vec{u}$ and $\vec{v}$ denote the two sides of length $a$ and $b$ issuing from $O$, so that $a = \|\vec{u}\|$ and $b = \|\vec{v}\|$. The third side of the triangle, of length $c$, is then represented by the vector $\vec{v} - \vec{u}$, which joins the endpoints of $\vec{u}$ and $\vec{v}$. Expanding the squared norm of this vector through the bilinearity of the inner product gives:
+The law of cosines can be written in terms of [vectors](../vectors/) and the [inner product](../inner-product-spaces/). Consider a triangle with vertex $O$, and let $\vec{u}$ and $\vec{v}$ denote the two sides of length $a$ and $b$ issuing from $O$, so that $a = \|\vec{u}\|$ and $b = \|\vec{v}\|$. The third side of the triangle, of length $c$, is then represented by the vector $\vec{v} - \vec{u}$, which joins the endpoints of $\vec{u}$ and $\vec{v}$. Expanding the squared norm of this vector through the bilinearity of the inner product gives:
 
 $$
 \begin{align}

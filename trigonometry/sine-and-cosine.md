@@ -322,14 +322,13 @@ $$
 \end{aligned}
 $$
 
-These identities express the fact that trigonometric waves with distinct frequencies do not overlap when averaged through integration over $[-\pi,\pi]$. In other words, the contribution of one frequency disappears when tested against a different one across a complete period. This situation is analogous to perpendicular [vectors](../vectors/) in Euclidean geometry. There, two vectors are orthogonal if their dot product is zero. Here, the integral:
+These identities express the fact that trigonometric waves with distinct frequencies do not overlap when averaged through integration over $[-\pi,\pi]$. In other words, the contribution of one frequency disappears when tested against a different one across a complete period. This situation is analogous to perpendicular [vectors](../vectors/) in Euclidean geometry. There, two vectors are orthogonal if their dot product is zero. For continuous functions on $[-\pi,\pi],$ the corresponding [inner product](../inner-product-spaces/) is:
 
 $$
 \langle f, g \rangle =
 \int_{-\pi}^{\pi} f(x)g(x) \ dx
 $$
 
-plays an analogous role (it acts as an inner product). When this integral vanishes, the functions behave as mutually perpendicular directions in a functional space.
+When this integral is zero, the functions are orthogonal in this function space.
 
 > This property reveals that sine and cosine form a structurally independent system of oscillations. Because of this orthogonality, it becomes possible to isolate individual harmonic components inside a periodic function, an idea developed systematically in the theory of [Fourier Series](../fourier-series/).
-

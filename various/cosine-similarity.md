@@ -63,7 +63,7 @@ The quantity $d_c(u, v) = 1 - C_s(u, v)$ is often called cosine distance, but it
 
 ## How to calculate cosine similarity between two vectors
 
-In a real inner product [vector space](../vector-spaces/), two nonzero vectors have a well-defined angle. For $V_x, V_y \in \mathbb{R}^n,$ their cosine similarity is:
+In a real [inner product space](../inner-product-spaces/), two nonzero vectors have a well-defined angle. For $V_x, V_y \in \mathbb{R}^n,$ their cosine similarity is:
 
 $$
 C_s(V_x, V_y) = \frac{\displaystyle\sum_{i=1}^{n} (V_x)_i(V_y)_i}{\sqrt{\displaystyle\sum_{i=1}^{n} ((V_x)_i)^2} \sqrt{\displaystyle\sum_{i=1}^{n} ((V_y)_i)^2}}

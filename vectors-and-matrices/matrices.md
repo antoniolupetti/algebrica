@@ -113,7 +113,7 @@ S = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-> Symmetric matrices appear in quadratic forms, inner product spaces, and spectral theory. Every real symmetric matrix has real [eigenvalues](../eigenvalues-and-eigenvectors/) and an orthogonal basis of eigenvectors, a result known as the spectral theorem.
+> Symmetric matrices appear in quadratic forms, [inner product spaces](../inner-product-spaces/), and spectral theory. Every real symmetric matrix has real [eigenvalues](../eigenvalues-and-eigenvectors/) and an orthogonal basis of eigenvectors, a result known as the spectral theorem.
 
 A square matrix $A$ is antisymmetric, also called skew-symmetric, if it equals the opposite of its transpose, that is if $A^{\mathrm{T}} = -A.$ In terms of entries this reads $a_{ij} = -a_{ji}$ for all $i$ and $j.$ Setting $i = j$ gives $a_{ii} = -a_{ii},$ so every entry on the main diagonal of an antisymmetric matrix is zero. The following is a $3 \times 3$ antisymmetric matrix:
 

@@ -188,7 +188,7 @@ has characteristic polynomial $\lambda^2 + 1,$ which has no real roots, so over 
 
 ## Diagonalization of symmetric matrices
 
-One class of matrices is diagonalizable without any computation. Every real symmetric matrix is diagonalizable over $\mathbb{R},$ and its eigenvectors can be chosen to form an orthonormal basis, a result known as the spectral theorem. The eigenvalues of a real symmetric matrix are all real, and even when an eigenvalue is repeated, its geometric multiplicity equals its algebraic multiplicity.
+One class of matrices is diagonalizable without any computation. Every real symmetric matrix is diagonalizable over $\mathbb{R},$ and its eigenvectors can be chosen to form an [orthonormal basis](../inner-product-spaces/), a result known as the spectral theorem. The eigenvalues of a real symmetric matrix are all real, and even when an eigenvalue is repeated, its geometric multiplicity equals its algebraic multiplicity.
 
 Consider the symmetric matrix:
 

@@ -117,7 +117,7 @@ The resulting vector $\hat{\mathbf{v}}$ satisfies $\|\hat{\mathbf{v}}\| = 1$ by 
 
 ## Dot product
 
-The dot product, also called the scalar product or inner product, is a binary operation that takes two vectors and returns a real number. For $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n,$ it is defined algebraically as the sum of the products of corresponding components.
+The dot product, also called the scalar product, is the standard [inner product](../inner-product-spaces/) on $\mathbb{R}^n.$ For $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n,$ it is the sum of the products of corresponding components.
 
 $$\mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n$$
 

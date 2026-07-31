@@ -153,7 +153,7 @@ which is exactly the Cauchy-Schwarz inequality.
 
 Equality holds when $P(t) = 0$ for some value of $t$, which means that $a_k = t b_k$ for every index $k$. In other words, equality occurs precisely when the tuples $(a_1, \ldots, a_n)$ and $(b_1, \ldots, b_n)$ are proportional in $\mathbb{C}^n$.
 
-> The role of Cauchy-Schwarz extends well beyond the present setting. In the theory of inner product spaces, of which $\mathbb{C}^n$ is the prototypical finite-dimensional example, the inequality becomes the foundational estimate from which the geometric notion of angle, the parallelogram identity, and the entire structure of orthogonality follow.
+> The same inequality holds in every [inner product space](../inner-product-spaces/). It bounds the inner product by the induced norms and implies the triangle inequality. In a real inner product space, it also ensures that the formula for the angle between two nonzero vectors is defined.
 
 ## Examples and applications
 

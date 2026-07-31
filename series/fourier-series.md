@@ -77,7 +77,7 @@ a_m \int_{-\pi}^{\pi} \cos^2(mx)\ dx
 \pi a_m
 $$
 
-Solving for $a_m$ and renaming the index gives the formula for $a_n$. Repeating the argument with $\sin(mx)$ produces $b_n$, and integrating the bare expansion produces $a_0$. The orthogonality relations also turn the trigonometric system into an orthogonal family under the inner product:
+Solving for $a_m$ and renaming the index gives the formula for $a_n$. Repeating the argument with $\sin(mx)$ produces $b_n$, and integrating the bare expansion produces $a_0$. These relations state that the trigonometric system is orthogonal for the [inner product](../inner-product-spaces/):
 
 $$
 \langle f, g \rangle =

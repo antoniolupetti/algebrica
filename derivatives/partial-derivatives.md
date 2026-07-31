@@ -219,7 +219,7 @@ When $f$ is differentiable at $x_0$, the following formula holds:
 
 $$D_{v} f(x_0) = \nabla f(x_0) \cdot v = \sum_{i=1}^n \frac{\partial f}{\partial x_i}(x_0)v_i$$
 
-The dot represents the Euclidean inner product on $\mathbb{R}^n$. Selecting $v = e_i$ yields $\frac{\partial f}{\partial x_i}(x_0)$, which aligns with the original definition of the partial derivative. This formula is valid only when $f$ is differentiable at $x_0$, rather than when only the partial derivatives exist.
+The dot is the [Euclidean inner product](../inner-product-spaces/) on $\mathbb{R}^n$. For $v = e_i,$ the formula gives $\frac{\partial f}{\partial x_i}(x_0),$ in agreement with the definition of the partial derivative. The formula requires $f$ to be differentiable at $x_0,$ not merely to have partial derivatives there.
 
 ## The chain rule in multivariable calculus
 
