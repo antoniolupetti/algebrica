@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="304px" height="238px" viewBox="0 0 304 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="41" y="11">In a parallelogram the squares of the two diagonals </tspan>
+                <tspan x="41" y="24">add up to the squares of the four sides. A norm </tspan>
+                <tspan x="41" y="37">with this property is induced by an inner product.</tspan>
+            </text>
+            <line x1="151.5" y1="47.5" x2="151.5" y2="99.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="0" y="235">O</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="74" y="109">u</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="180" y="215">v</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="273" y="93">u + v</tspan>
+            </text>
+            <line x1="12.5" y1="222.5" x2="263.5" y2="93.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M92.5,117.5 L109.495978,133.159215 M119.591775,142.460961 L181.5,199.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <line x1="92.5" y1="117.5" x2="263.5" y2="92.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="182.5" y1="198.5" x2="263.5" y2="92.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M93.3037429,117.091303 L93.2986865,117.172539 L92.0168792,126.261377 C91.9783162,126.534813 91.7253907,126.725216 91.4519542,126.686653 C91.2088996,126.652375 91.031452,126.448724 91.0221039,126.211848 L91.0266782,126.121728 L92.042,118.922 L88.3824457,123.711894 L11.8972853,223.803586 C11.7296194,224.023001 11.4158287,224.064951 11.1964141,223.897285 C11.0013789,223.748249 10.9465621,223.483756 11.0545456,223.272718 L11.1027147,223.196414 L87.5878752,123.104723 L91.246,118.316 L84.5680715,121.186378 C84.3425568,121.283299 84.0851567,121.201405 83.9541611,121.003825 L83.9112721,120.924434 C83.8143509,120.698919 83.8962447,120.441519 84.0938242,120.310523 L84.173216,120.267634 L92.6061582,116.643343 C92.9387878,116.500386 93.297754,116.746324 93.3037429,117.091303 Z" fill="#333333" fill-rule="nonzero"></path>
+            <path d="M173.539737,195.601661 L173.62639,195.626836 L182.176895,198.964329 C182.512166,199.095195 182.596234,199.518062 182.363543,199.768577 L182.298733,199.827347 L175.00634,205.401484 C174.78695,205.569181 174.473153,205.527275 174.305456,205.307885 C174.156392,205.112871 174.17294,204.843265 174.332542,204.66798 L174.399055,204.607 L180.174,200.192 L174.206748,201.034594 L11.5698951,223.995091 C11.2964642,224.033693 11.0435115,223.843326 11.0049094,223.569895 C10.9705965,223.326845 11.117197,223.099976 11.3422378,223.02545 L11.4301049,223.004909 L174.066958,200.044413 L180.035,199.201 L173.26278,196.558388 C173.034122,196.469136 172.908261,196.230137 172.953634,195.99746 L172.97881,195.910807 C173.068061,195.682149 173.30706,195.556287 173.539737,195.601661 Z" fill="#333333" fill-rule="nonzero"></path>
+            <text fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="111" y="140">u − v</tspan>
+            </text>
+            <circle fill="#333333" fill-rule="nonzero" cx="12" cy="223" r="2.5"></circle>
+            <circle fill="#979797" fill-rule="nonzero" cx="264" cy="93" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

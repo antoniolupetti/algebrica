@@ -34,7 +34,7 @@ $$(f + g)(x) = f(x) + g(x)$$
 
 $$(\alpha f)(x) = \alpha f(x)$$
 
-A [sequence](../sequences/) of real numbers is an element of $\mathbb{R}^{\mathbb{N}}.$ For an interval $I,$ the [continuous functions](../continuous-functions/) and the [differentiable functions](../derivatives/) from $I$ to $\mathbb{R}$ are subsets of $\mathbb{R}^I$ closed under both operations. In every case, addition and scalar multiplication satisfy the same identities. The abstract definition lists them.
+A [sequence](../sequences/) of real numbers is an element of $\mathbb{R}^{\mathbb{N}}.$ For an interval $I,$ the [continuous functions](../continuous-functions/) and the [differentiable functions](../derivatives/) from $I$ to $\mathbb{R}$ are subsets of $\mathbb{R}^I$ closed under both operations. In every case, addition and scalar multiplication satisfy the same identities. These operations do not define lengths or angles, which require the additional structure of an [inner product](../inner-product-spaces/). The abstract definition lists the vector space axioms.
 
 ## Abstract definition
 
