@@ -275,7 +275,7 @@ $$y_1(x)=0 \qquad y_2(x)=x^3$$
 
 For $y_2=x^3,$ the derivative is $3x^2,$ and $3|x^3|^{2/3}=3x^2.$ The function $f(y)=3|y|^{2/3}$ is continuous at $y=0,$ but it is not locally Lipschitz there. The two solutions do not contradict the uniqueness theorem because its Lipschitz hypothesis fails.
 
-Existence and uniqueness are local statements. For example, the solution $y=1/(1-x)$ of $y'=y^2$ with $y(0)=1$ is unique near $x=0,$ but its maximal interval is $(-\infty,1).$ The solution becomes unbounded as $x\to1^-.$
+Existence and uniqueness are local statements. The equation $y'=y^2$ considered above also illustrates this point. The initial value $y(0)=1$ selects $C=1,$ so the unique local solution is $y=1/(1-x).$ Its maximal interval is $(-\infty,1),$ and the solution becomes unbounded as $x\to1^-.$
 
 If $p$ and $q$ in the linear equation $y'+p(x)y=q(x)$ are continuous on an interval $I$ and $x_0\in I,$ the integrating factor is nonzero throughout $I.$ Its formula gives one solution for each initial value on the whole of $I.$
 

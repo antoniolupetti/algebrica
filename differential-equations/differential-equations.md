@@ -143,7 +143,7 @@ In a [nonlinear differential equation](../nonlinear-differential-equations/), th
 + In $(y')^2 + y = 0,$ the derivative is squared.
 + In $y'' + \sin(y) = 0,$ the sine is applied to the unknown function.
 
-For example, $y' = y^2$ has order one and is nonlinear, whereas $y'' + 4y = 0$ has order two and is linear.
+For example, $y' = x+y^2$ has order one and is nonlinear, whereas $y'' + 4y = 0$ has order two and is linear.
 
 ## Autonomous equations and systems
 
@@ -190,7 +190,7 @@ Conditions alone do not ensure a unique solution. The equation $y'' + y = 0$ on 
 
 An existence theorem states sufficient conditions for at least one solution, while a uniqueness theorem states sufficient conditions under which two solutions with the same data are equal. [Continuity](../continuous-functions/) alone does not guarantee uniqueness. For example, the problem $y' = 3\sqrt[3]{y^2},$ $y(0) = 0,$ has both $y(x) = 0$ and $y(x) = x^3$ as solutions. For $y(x) = x^3,$ both sides of the equation are $3x^2,$ while both sides vanish for $y(x) = 0.$
 
-For a linear equation, suppose that its coefficients and right-hand side are continuous on an interval $I$ and that its leading coefficient has no zero there. An initial-value problem posed at a point of $I$ then has exactly one solution on the whole interval $I.$ For a nonlinear equation $y' = f(x,y),$ continuity of $f$ and local Lipschitz continuity with respect to $y$ near the initial point give a unique local solution. The equation $y' = y^2,$ with $y(0) = 1,$ has the solution $y(x) = 1/(1-x),$ which is unbounded as $x$ approaches $1.$ Thus a local solution need not extend to the whole domain of $f.$
+For a linear equation, suppose that its coefficients and right-hand side are continuous on an interval $I$ and that its leading coefficient has no zero there. An initial-value problem posed at a point of $I$ then has exactly one solution on the whole interval $I.$ For a nonlinear equation $y' = f(x,y),$ continuity of $f$ and local Lipschitz continuity with respect to $y$ near the initial point give a unique local solution. The problem $y' = e^y,$ $y(0) = 0,$ has the solution $y(x) = -\ln(1-x)$ on the maximal interval $(-\infty,1).$ The right-hand side is defined for every real $y,$ but the solution is unbounded as $x$ approaches $1$ from the left. Thus a local solution need not extend to the whole domain of $f.$
 
 ## Explicit, implicit, and numerical descriptions
 
