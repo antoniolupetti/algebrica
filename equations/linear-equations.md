@@ -168,7 +168,7 @@ A linear equation in three unknowns has the standard form:
 
 $$ax + by + cz = d$$
 
-In this expression $a, b, c, d \in \mathbb{R}$, with at least one between $a$, $b$, and $c$ different from zero. Geometrically, its solution set is a plane in three-dimensional space, and the equation is the implicit representation of that plane. The vector of coefficients $(a, b, c)$ is normal to the plane and determines its orientation, while the constant term $d$ controls its distance from the origin: when $d = 0$ the plane passes through the origin and the equation is homogeneous, otherwise the plane is a parallel translate of the homogeneous one.
+In this expression $a, b, c, d \in \mathbb{R}$, with at least one between $a$, $b$, and $c$ different from zero. Geometrically, its solution set is a [plane](../planes/) in three-dimensional space, and the equation is the implicit representation of that plane. The vector of coefficients $(a, b, c)$ is normal to the plane and determines its orientation, while the constant term $d$ controls its distance from the origin: when $d = 0$ the plane passes through the origin and the equation is homogeneous, otherwise the plane is a parallel translate of the homogeneous one.
 
 The general solution is obtained by choosing two unknowns as free parameters. Assuming $c \neq 0$ and setting $x = \lambda$, $y = \mu$, the equation gives:
 

@@ -26,7 +26,7 @@ $$
 
 All coefficients and constants are [real numbers](../real-numbers/), and each equation has at least one nonzero coefficient among those of $x,$ $y,$ and $z.$ A solution is an ordered triple $(x,y,z)$ that satisfies all three equations. The entry on [systems of linear equations](../systems-of-linear-equations/) has the definitions of consistency, dependence, and solution set. The focus here is elementary elimination in the three-variable case.
 
-The [solution set](../sets/) of one linear equation in three variables is a plane. The solutions of a system are the points common to its three planes. Their intersection has one of three forms:
+The [solution set](../sets/) of one linear equation in three variables is a [plane](../planes/). The solutions of a system are the points common to its three planes. Their intersection has one of three forms:
 
 + One common point is one solution.
 + A common line or plane has infinitely many points, so the system has infinitely many solutions.

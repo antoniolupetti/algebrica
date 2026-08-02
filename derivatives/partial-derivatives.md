@@ -37,7 +37,7 @@ $$\frac{\partial f}{\partial x}(x_0, y_0) = \lim_{h \to 0} \frac{f(x_0 + h, y_0)
 
 $$\frac{\partial f}{\partial y}(x_0, y_0) = \lim_{h \to 0} \frac{f(x_0, y_0 + h) - f(x_0, y_0)}{h}$$
 
-Geometrically, $\frac{\partial f}{\partial x}(x_0, y_0)$ represents the slope of the curve formed by intersecting the graph of $f$ with the plane $y = y_0$, while $\frac{\partial f}{\partial y}(x_0, y_0)$ corresponds to the slope of the intersection with the plane $x = x_0$. Along each of these curves, $f$ becomes a function of a single real variable.
+Geometrically, $\frac{\partial f}{\partial x}(x_0, y_0)$ represents the slope of the curve formed by intersecting the graph of $f$ with the [plane](../planes/) $y = y_0$, while $\frac{\partial f}{\partial y}(x_0, y_0)$ corresponds to the slope of the intersection with the plane $x = x_0$. Along each of these curves, $f$ becomes a function of a single real variable.
 
 For example, consider the function of two variables:
 

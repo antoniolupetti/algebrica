@@ -155,7 +155,7 @@ The second column of $A$ is twice the first, and the fourth is the sum of the fi
 
 $$\mathrm{im}(L_A) = \mathrm{span}\{\ (1, 2, 1), (0, 1, 1)\ \}$$
 
-The image is therefore the plane in $\mathbb{R}^3$ with equation $y_1 - y_2 + y_3 = 0.$ Both basis vectors satisfy the equation, and the solution space of one nonzero homogeneous equation in $\mathbb{R}^3$ has dimension $2.$
+The image is therefore the [plane](../planes/) in $\mathbb{R}^3$ with equation $y_1 - y_2 + y_3 = 0.$ Both basis vectors satisfy the equation, and the solution space of one nonzero homogeneous equation in $\mathbb{R}^3$ has dimension $2.$
 
 It follows that $A\mathbf{x} = \mathbf{b}$ is solvable if and only if $b_1 - b_2 + b_3 = 0.$ For $\mathbf{b} = (1, 3, 2),$ the condition holds. Row reduction of the augmented matrix gives $x_1 = 1 - 2x_2 - x_4$ and $x_3 = 1 - x_4.$ Taking $x_2 = x_4 = 0$ gives the particular solution $\mathbf{v}_0 = (1, 0, 1, 0).$ Hence the complete solution set is:
 

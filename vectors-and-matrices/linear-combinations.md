@@ -12,7 +12,7 @@ tags:
 ---
 ## Definition
 
-A linear combination relates [vectors](../vectors/) to one another within a given collection. Each vector is scaled by a real coefficient, and the scaled vectors are then summed to produce a new vector. From this operation the notions of span, linear independence, [rank](../rank-of-a-matrix/), and dimension are built, along with the geometric objects of $\mathbb{R}^n$ such as [lines](../lines/), planes, and higher-dimensional subspaces. Let $V = \mathbb{R}^n$ and consider a finite collection of vectors:
+A linear combination relates [vectors](../vectors/) to one another within a given collection. Each vector is scaled by a real coefficient, and the scaled vectors are then summed to produce a new vector. From this operation the notions of span, linear independence, [rank](../rank-of-a-matrix/), and dimension are built, along with the geometric objects of $\mathbb{R}^n$ such as [lines](../lines/), [planes](../planes/), and higher-dimensional subspaces. Let $V = \mathbb{R}^n$ and consider a finite collection of vectors:
 
 $$v_1, v_2, \dots, v_k \in \mathbb{R}^n$$
 

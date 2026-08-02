@@ -130,7 +130,7 @@ $$
 
 The squares of the differences eliminate the absolute values, so that the orientation chosen for each difference is irrelevant. The identity reduces the metric structure of the plane to a single algebraic relation built entirely on the theorem of Pythagoras.
 
-The same construction extends to three dimensions through a double application of the theorem. Given two points $P_1 = (x_1, y_1, z_1)$ and $P_2 = (x_2, y_2, z_2)$ in Cartesian space, project the segment $\overline{P_1 P_2}$ onto the horizontal plane $Oxy$. The projection is itself a hypotenuse in the plane, with length:
+The same construction extends to three dimensions through a double application of the theorem. Given two points $P_1 = (x_1, y_1, z_1)$ and $P_2 = (x_2, y_2, z_2)$ in Cartesian space, project the segment $\overline{P_1 P_2}$ onto the horizontal [plane](../planes/) $Oxy$. The projection is itself a hypotenuse in the plane, with length:
 
 $$
 \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}

@@ -258,7 +258,7 @@ The product is positive when $\mathbf{u}, \mathbf{v}, \mathbf{w}$ form a right-h
 
 $$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \mathbf{v} \cdot (\mathbf{w} \times \mathbf{u}) = \mathbf{w} \cdot (\mathbf{u} \times \mathbf{v})$$
 
-The same invariance lets the dot and cross be interchanged, since $\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = (\mathbf{u} \times \mathbf{v}) \cdot \mathbf{w}.$ The scalar triple product vanishes exactly when the three vectors are coplanar, since a zero volume means the parallelepiped is degenerate. This gives a direct test for coplanarity, as $\mathbf{u}, \mathbf{v}, \mathbf{w}$ lie in a common plane if and only if
+The same invariance lets the dot and cross be interchanged, since $\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = (\mathbf{u} \times \mathbf{v}) \cdot \mathbf{w}.$ The scalar triple product vanishes exactly when the three vectors are coplanar, since a zero volume means the parallelepiped is degenerate. This gives a direct test for coplanarity, as $\mathbf{u}, \mathbf{v}, \mathbf{w}$ lie in a common [plane](../planes/) if and only if
 
 $$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = 0$$
 

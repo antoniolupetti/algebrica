@@ -51,7 +51,7 @@ Systems are classified by how many solutions they have:
 
 - - -
 
-Each equation of a linear system describes a flat set in the space of the $n$ unknowns: a [line](../lines/) in two variables, a plane in three, and a hyperplane of dimension $n - 1$ in general. A [linear equation](../linear-equations/) imposes one such constraint, and a solution of the system lies on all of them at once, so the solution set is their intersection.
+Each equation of a linear system describes a flat set in the space of the $n$ unknowns: a [line](../lines/) in two variables, a [plane](../planes/) in three, and a hyperplane of dimension $n - 1$ in general. A [linear equation](../linear-equations/) imposes one such constraint, and a solution of the system lies on all of them at once, so the solution set is their intersection.
 
 This picture matches the classification of the solutions. In the plane two lines meet at a single point, giving a determined system, or coincide along the same line, giving infinitely many solutions, or stay parallel without meeting, giving an inconsistent system. The same three outcomes recur for planes and hyperplanes in higher dimensions.
 

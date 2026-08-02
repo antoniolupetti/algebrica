@@ -67,7 +67,7 @@ The solution set of a system $A\mathbf{x} = \mathbf{b}$ with $\mathbf{b} \neq \m
 
 The subspaces of $\mathbb{R}^2$ are the zero subspace, the [lines](../lines/) through the origin and $\mathbb{R}^2$ itself. If $W$ contains a nonzero vector $\mathbf{v},$ then every multiple $\alpha\mathbf{v}$ belongs to $W.$ These multiples form the line through the origin with direction $\mathbf{v}.$ If $W$ contains a second vector $\mathbf{w}$ outside that line, then $\mathbf{v}$ and $\mathbf{w}$ form a basis of $\mathbb{R}^2,$ so $W = \mathbb{R}^2.$
 
-The subspaces of $\mathbb{R}^3$ are the zero subspace, the lines through the origin, the planes through the origin and $\mathbb{R}^3$ itself. Each is the solution set of a homogeneous system. A plane has an equation $ax + by + cz = 0$ with $(a, b, c) \neq (0, 0, 0),$ and a line is the solution set of two independent equations of that form.
+The subspaces of $\mathbb{R}^3$ are the zero subspace, the lines through the origin, the [planes through the origin](../planes/) and $\mathbb{R}^3$ itself. Each is the solution set of a homogeneous system. A plane has an equation $ax + by + cz = 0$ with $(a, b, c) \neq (0, 0, 0),$ and a line is the solution set of two independent equations of that form.
 
 Dimension distinguishes these cases. Every subspace of $\mathbb{R}^n$ has a dimension $k$ with $0 \leq k \leq n$ and is [linearly isomorphic](../homomorphisms-and-isomorphisms/) to $\mathbb{R}^k.$
 

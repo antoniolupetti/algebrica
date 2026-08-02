@@ -134,7 +134,7 @@ The range of $t$ selects how much of the line we obtain. With $t \in \mathbb{R}$
 
 ## Lines in space
 
-In the plane a line can be written as $y=mx+q$, a single equation in $x$ and $y$. In three dimensions this fails. A single linear equation in $x$, $y$, $z$ describes a plane, not a line, so the explicit form no longer isolates a line. The vector and parametric forms carry over unchanged, and they are the standard way to describe a line in space.
+In the plane a line can be written as $y=mx+q$, a single equation in $x$ and $y$. In three dimensions this fails. A single linear equation in $x$, $y$, $z$ describes a [plane](../planes/), not a line, so the explicit form no longer isolates a line. The vector and parametric forms carry over unchanged, and they are the standard way to describe a line in space.
 
 A line in space is fixed by a point $P_0=(x_0,y_0,z_0)$ and a direction vector $\vec{v}=(k,h,l)$. The vector equation keeps the same shape:
 
