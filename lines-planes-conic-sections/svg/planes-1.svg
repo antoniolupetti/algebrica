@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="198px" viewBox="0 0 254 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.000000, 0.000000)">
+            <line x1="98.5" y1="50.5" x2="98.5" y2="98.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="56" y="11">A, B, C determine the shaded </tspan>
+                <tspan x="56" y="24">plane, drawn here as a </tspan>
+                <tspan x="56" y="37">parallelogram.</tspan>
+            </text>
+            <polygon stroke="#D8D8D8" fill="#E6E6E6" fill-rule="nonzero" points="63.2183908 121.977011 250 76 186.781609 150.712644 0 196.689655"></polygon>
+            <circle fill="#333333" fill-rule="nonzero" cx="99.6" cy="135.6" r="3"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="83.6" y="132.6">A</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="173.6" y="111.6">B</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="119.6" y="144.6">C</tspan>
+            </text>
+            <circle fill="#333333" fill-rule="nonzero" cx="167.3" cy="117.6" r="3"></circle>
+            <circle fill="#333333" fill-rule="nonzero" cx="134.8" cy="145.6" r="3"></circle>
+        </g>
+    </g>
+</svg>

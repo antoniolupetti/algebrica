@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="235px" viewBox="0 0 309 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 21</title>
+    <g id="NEW---Lines,-Planes,-Conic-Section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21" transform="translate(2.000000, 0.000000)">
+            <text id="The-distance-from-Q" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="92" y="11">The distance from Q to the plane is the </tspan>
+                <tspan x="92" y="24">length of the segment QH perpendicular </tspan>
+                <tspan x="92" y="37">to the plane, the projection of Q - P₀ on n.</tspan>
+            </text>
+            <line x1="197.5" y1="46.5" x2="197.5" y2="79.5" id="Line-3" stroke="#BABABA" stroke-linecap="round"></line>
+            <polygon id="Path" stroke="#D8D8D8" fill="#E6E6E6" fill-rule="nonzero" points="79.4117647 162.529412 300 114 220.588235 184.588235 0 233.117647"></polygon>
+            <path id="Line-9" d="M90.5,189.1 C90.7454599,189.1 90.9496084,189.276875 90.9919443,189.510124 L91,189.6 L91,193.6 C91,193.876142 90.7761424,194.1 90.5,194.1 C90.2545401,194.1 90.0503916,193.923125 90.0080557,193.689876 L90,193.6 L90,189.6 C90,189.323858 90.2238576,189.1 90.5,189.1 Z M90.5,181.1 C90.7454599,181.1 90.9496084,181.276875 90.9919443,181.510124 L91,181.6 L91,185.6 C91,185.876142 90.7761424,186.1 90.5,186.1 C90.2545401,186.1 90.0503916,185.923125 90.0080557,185.689876 L90,185.6 L90,181.6 C90,181.323858 90.2238576,181.1 90.5,181.1 Z M90.5,173.1 C90.7454599,173.1 90.9496084,173.276875 90.9919443,173.510124 L91,173.6 L91,177.6 C91,177.876142 90.7761424,178.1 90.5,178.1 C90.2545401,178.1 90.0503916,177.923125 90.0080557,177.689876 L90,177.6 L90,173.6 C90,173.323858 90.2238576,173.1 90.5,173.1 Z M90.5,165.1 C90.7454599,165.1 90.9496084,165.276875 90.9919443,165.510124 L91,165.6 L91,169.6 C91,169.876142 90.7761424,170.1 90.5,170.1 C90.2545401,170.1 90.0503916,169.923125 90.0080557,169.689876 L90,169.6 L90,165.6 C90,165.323858 90.2238576,165.1 90.5,165.1 Z M90.5,157.1 C90.7454599,157.1 90.9496084,157.276875 90.9919443,157.510124 L91,157.6 L91,161.6 C91,161.876142 90.7761424,162.1 90.5,162.1 C90.2545401,162.1 90.0503916,161.923125 90.0080557,161.689876 L90,161.6 L90,157.6 C90,157.323858 90.2238576,157.1 90.5,157.1 Z M90.5,149.1 C90.7454599,149.1 90.9496084,149.276875 90.9919443,149.510124 L91,149.6 L91,153.6 C91,153.876142 90.7761424,154.1 90.5,154.1 C90.2545401,154.1 90.0503916,153.923125 90.0080557,153.689876 L90,153.6 L90,149.6 C90,149.323858 90.2238576,149.1 90.5,149.1 Z M90.5,141.1 C90.7454599,141.1 90.9496084,141.276875 90.9919443,141.510124 L91,141.6 L91,145.6 C91,145.876142 90.7761424,146.1 90.5,146.1 C90.2545401,146.1 90.0503916,145.923125 90.0080557,145.689876 L90,145.6 L90,141.6 C90,141.323858 90.2238576,141.1 90.5,141.1 Z M90.882134,134.776993 L90.9357878,134.854869 L95.4357878,142.854869 C95.5711697,143.095548 95.4858096,143.400406 95.2451306,143.535788 C95.0311938,143.656127 94.7665479,143.602053 94.6152959,143.419515 L94.5642122,143.345131 L91,137.008 L91,137.6 C91,137.876142 90.7761424,138.1 90.5,138.1 C90.2545401,138.1 90.0503916,137.923125 90.0080557,137.689876 L90,137.6 L90,137.008 L86.4357878,143.345131 C86.3154483,143.559067 86.0612021,143.650283 85.8371522,143.572829 L85.7548694,143.535788 C85.5409325,143.415448 85.4497168,143.161202 85.5271708,142.937152 L85.5642122,142.854869 L90.0642122,134.854869 C90.2394349,134.543362 90.6651608,134.517403 90.882134,134.776993 Z" fill="#333333" fill-rule="nonzero"></path>
+            <line x1="89.92" y1="195.4" x2="198" y2="93" id="Path" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="198" y1="93" x2="198" y2="149" id="Path" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle id="Oval" fill="#333333" fill-rule="nonzero" cx="198" cy="93" r="3"></circle>
+            <circle id="Oval" fill="#333333" fill-rule="nonzero" cx="198" cy="149" r="3"></circle>
+            <circle id="Oval" fill="#333333" fill-rule="nonzero" cx="89.92" cy="195.4" r="3"></circle>
+            <text id="Q" fill="#333333" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="205" y="87">Q</tspan>
+            </text>
+            <text id="H" fill="#333333" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="205" y="145">H</tspan>
+            </text>
+            <text id="P₀" fill="#333333" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="71.92" y="205.4">P₀</tspan>
+            </text>
+            <text id="n" fill="#333333" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="101.92" y="139.4">n</tspan>
+            </text>
+            <text id="D" fill="#333333" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="205" y="118">D</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

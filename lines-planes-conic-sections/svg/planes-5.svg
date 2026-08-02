@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="304px" height="254px" viewBox="0 0 304 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.400000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="48.6" y="11">Two independent directions u and v span the </tspan>
+                <tspan x="48.6" y="24">plane. Each point is reached from P₀ by a </tspan>
+                <tspan x="48.6" y="37">displacement su followed by tv, the dashed </tspan>
+                <tspan x="48.6" y="50">extensions shown in the figure.</tspan>
+            </text>
+            <line x1="125.1" y1="58.5" x2="125.1" y2="128.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <polygon stroke="#D8D8D8" fill="#E6E6E6" fill-rule="nonzero" points="94.1176471 152.258824 300 105.2 205.882353 205.2 0 252.258824"></polygon>
+            <line x1="124.6" y1="158" x2="201.31647" y2="140.464807" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="220.804692" y1="136.010356" x2="236.6" y2="132.4" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="124.6" y1="158" x2="83.4383743" y2="201.734227" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="70.7865548" y1="215.176785" x2="63.8" y2="222.6" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="236.6" y1="132.4" x2="175.8" y2="197" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="63.8" y1="222.6" x2="175.8" y2="197" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#333333" fill-rule="nonzero" cx="124.6" cy="158" r="3"></circle>
+            <circle fill="#333333" fill-rule="nonzero" cx="175.8" cy="197" r="3"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="119.6" y="148">P₀</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="183.8" y="203">P</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="157.6" y="163">u</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="92.6" y="175">v</tspan>
+            </text>
+            <text fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="204.6" y="140.4">su</tspan>
+            </text>
+            <text fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="70.8" y="210.6">tv</tspan>
+            </text>
+            <path d="M178.836389,140.294449 L178.924872,140.312145 L187.728766,142.908575 C188.073973,143.010383 188.193783,143.424544 187.983295,143.693984 L187.923731,143.758065 L181.133069,149.933573 C180.928773,150.119362 180.612546,150.10436 180.426756,149.900064 C180.26161,149.718467 180.255115,149.448431 180.399194,149.26018 L180.460266,149.193751 L185.839,144.302 L179.931815,145.658157 L126.211846,157.98733 C125.942701,158.049101 125.674441,157.880991 125.61267,157.611846 C125.557763,157.372606 125.684489,157.134065 125.902358,157.040626 L125.988154,157.01267 L179.708122,144.683497 L185.614,143.327 L178.641999,141.271303 C178.406565,141.201869 178.260787,140.974469 178.28616,140.738771 L178.303857,140.650287 C178.373291,140.414853 178.60069,140.269076 178.836389,140.294449 Z" fill="#333333" fill-rule="nonzero"></path>
+            <path d="M124.442338,158.135576 C124.621241,158.303636 124.648932,158.572327 124.520088,158.771317 L124.464424,158.842338 L98.5809466,186.395717 L94.429,190.815 L101.365094,188.637643 C101.599281,188.564109 101.847041,188.671703 101.957308,188.881556 L101.991918,188.964891 C102.065452,189.199077 101.957859,189.446837 101.748005,189.557105 L101.66467,189.591715 L92.9074504,192.34146 C92.56203,192.449921 92.2298767,192.168823 92.2589295,191.825018 L92.2722043,191.744714 L94.4697916,182.83289 C94.5212137,182.624359 94.6965447,182.47896 94.8980785,182.455743 L94.9857695,182.453445 L95.0749599,182.467142 C95.3132808,182.52591 95.4691443,182.746518 95.4544043,182.98312 L95.4407076,183.07231 L93.7,190.13 L97.8520986,185.711041 L123.735576,158.157662 C123.924644,157.956396 124.241072,157.946508 124.442338,158.135576 Z" fill="#333333" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

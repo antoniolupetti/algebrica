@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="234px" viewBox="0 0 341 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <line x1="155" y1="48.5" x2="155" y2="96.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="112.5" y="11">Three of the infinitely many</tspan>
+                <tspan x="112.5" y="24">planes containing the line r</tspan>
+                <tspan x="112.5" y="37">are sketched in outline.</tspan>
+            </text>
+            <polyline stroke="#BABABA" stroke-linejoin="round" points="252.178815 127.288721 280.727979 149.720207 118.810881 211.896373 46.2720207 154.901554 82.4126573 141.02355"></polyline>
+            <polyline stroke="#BABABA" stroke-linejoin="round" points="244.458549 164 244.458549 170.445596 82.5414508 232.621762 82.5414508 134.176166 244.458549 72 244.458549 121"></polyline>
+            <polyline stroke="#BABABA" stroke-linejoin="round" points="244.530733 121.21006 288.5 113.450777 126.582902 175.626943 38.5 191.170984 74.7358334 177.256424"></polyline>
+            <path d="M0,216.5 L305.281525,97.5713076 L326,89.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <circle fill="#333333" fill-rule="nonzero" cx="116.777202" cy="170.334197" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="105.323834" y="163.378238">A</tspan>
+            </text>
+            <circle fill="#333333" fill-rule="nonzero" cx="169.11399" cy="149.92487" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="157.318653" y="144.471503">B</tspan>
+            </text>
+            <circle fill="#333333" fill-rule="nonzero" cx="214.450777" cy="132.92" r="2.5"></circle>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="202.608808" y="128.559585">C</tspan>
+            </text>
+            <text fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="328.608808" y="90.5595855">r</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
