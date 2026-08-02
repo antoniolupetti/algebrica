@@ -24,7 +24,7 @@ The factorization is a property of the equation. Where $h(y) \neq 0,$ the separa
 + $y' = \frac{\cos(x)}{y}$ with $g(x) = \cos(x)$ and $h(y) = \frac{1}{y}$ on any region where $y \neq 0$
 + $y' = f(y)$ with $g(x) = 1,$ the [autonomous](../autonomous-differential-equations/) case
 
-Recognizing the form sometimes requires factoring first. The equation $y' = xy + x$ is separable, since its right-hand side is $x(y+1).$
+Recognizing the form sometimes requires [factoring](../multiplying-polynomials/) first. The equation $y' = xy + x$ is separable, since its right-hand side is $x(y+1).$
 
 Some equations have no such factorization. Suppose that $x + y = g(x)h(y)$ held for every real $x$ and $y.$ Setting $y = 0$ gives $x = g(x)h(0),$ so $h(0) \neq 0,$ because $h(0) = 0$ would force $x = 0$ for every $x.$ Hence $g(x) = x/h(0).$ Setting $y = 1$ then gives:
 
@@ -83,9 +83,16 @@ Here $h(y) = y-2$ has the single zero $y = 2.$ On a region where $y \neq 2,$ sep
 
 $$y(x) = 2 + Ae^{\sin(x)}$$
 
-The derivation assumes $A \neq 0.$ With $A = 0,$ the same formula gives the equilibrium $y = 2,$ so allowing zero includes every solution. The equation $y' = y^3$ is different. On a region where $y \neq 0,$ integration gives $y = \pm 1/\sqrt{C-2x}$ on an interval where $C-2x > 0.$ No value of $C$ gives the constant solution $y = 0.$
+The derivation assumes $A \neq 0.$ With $A = 0,$ the same formula gives the equilibrium $y = 2,$ so allowing zero includes every solution.
+
+![IMG. 1](svg/separable-differential-equations-1.svg)
+
+
+The equation $y' = y^3$ is different. On a region where $y \neq 0,$ integration gives $y = \pm 1/\sqrt{C-2x}$ on an interval where $C-2x > 0.$ No value of $C$ gives the constant solution $y = 0.$
 
 > Equilibrium solutions must be recorded before division and then compared with the family obtained by integration. If the family does not include them, they must be stated separately.
+
+- - -
 
 When $g$ is continuous and $h$ has a continuous derivative, the right-hand side $g(x)h(y)$ is locally Lipschitz in $y,$ so two distinct solutions cannot meet. A nonconstant solution cannot reach an equilibrium value at a finite point of its interval, because uniqueness would make it equal to the constant solution through that point. The complement of the equilibrium values is a union of intervals, and each nonconstant solution remains in one of them.
 
@@ -115,7 +122,7 @@ $$y'(x) = -\frac{x}{\sqrt{9-x^2}}$$
 
 It is unbounded as $x$ approaches either endpoint, so the solution has no differentiable extension and $(-3,3)$ is its maximal interval. The right-hand side $-x/y$ is defined at every point off the axis $y = 0,$ and the initial value is an ordinary point. The maximal interval is determined from the solution.
 
-For comparison, consider $y' = x/(1+y)$ with the initial value $y(0) = 1.$ Separation gives $(y+1)^2 = x^2 + 4,$ and the initial value selects $y(x) = -1+\sqrt{x^2+4}.$ Since $1+y(x) = \sqrt{x^2+4}$ is never zero, the solution is defined on the whole line.
+For comparison, consider $y' = x/(1+y)$ with the initial value $y(0) = 1.$ Separation gives $(y+1)^2-x^2 = 4,$ whose implicit curve is a [hyperbola](../hyperbola/). The initial value selects $y(x) = -1+\sqrt{x^2+4}.$ Since $1+y(x) = \sqrt{x^2+4}$ is never zero, the [domain](../determining-the-domain-of-a-function/) of the solution is the whole [real line](../real-numbers/).
 
 ## Equations reducible to separable form
 
