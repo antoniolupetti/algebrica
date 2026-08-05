@@ -492,19 +492,14 @@ After replacing $t$ by $\sqrt{x},$ the antiderivative is $2\sin\sqrt{x}-2\sqrt{x
 
 For a product of a polynomial with an exponential, sine, or cosine, repeated integration by parts can be recorded in a table. Differentiate the polynomial until it becomes zero, integrate the other factor repeatedly, and combine the products with alternating signs. For $\int x^3e^x \ dx,$ the table is:
 
-[class="table-1"]
-
 | Sign | Derivative of $x^3$ | Antiderivative of $e^x$ |
 | ---- | ------------------- | ----------------------- |
 | $+$  | $x^3$               | $e^x$                   |
 | $-$  | $3x^2$              | $e^x$                   |
 | $+$  | $6x$                | $e^x$                   |
 | $-$  | $6$                 | $e^x$                   |
-|      | $0$                  |                         |
 
-[/class]
-
-Combining the four nonzero rows gives:
+The next derivative is $0,$ so the tabular process stops after the row containing $6.$ Combining the four rows gives:
 
 $$\int x^3e^x \ dx=e^x(x^3-3x^2+6x-6)+c$$
 
