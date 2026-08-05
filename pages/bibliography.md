@@ -164,6 +164,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Machine Learning Systems, Volume I: Foundations](https://mlsysbook.ai/vol1/), Vijay Janapa Reddi
 + [Machine Learning Systems, Volume II: At Scale](https://mlsysbook.ai/vol2/assets/downloads/Machine-Learning-Systems-Vol2.pdf), Vijay Janapa Reddi
 + [Mathematical and Statistical Foundations of AI](https://zenodo.org/records/15713364), Saman Siadati
++ [Mathematical Foundations of Deep Learning](https://arxiv.org/pdf/2603.18387), Xiaojing Ye
 + [Mathematical Theory of Deep Learning](https://arxiv.org/abs/2407.18384), Philipp Petersen, Jakob Zech
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
 + [Mathematics of Neural Networks](https://arxiv.org/abs/2403.04807), Bart M. N. Smets
