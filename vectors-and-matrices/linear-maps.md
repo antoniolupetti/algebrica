@@ -208,7 +208,7 @@ $$[(S \circ T)(\mathbf{v})]_{\mathcal{D}} = B(A[\mathbf{v}]_{\mathcal{B}}) = (BA
 
 Thus the matrix of $S \circ T$ is $BA.$ The map $T$ is an isomorphism precisely when $A$ is [invertible](../inverse-matrix/), and in this case the matrix of $T^{-1}$ is $A^{-1}.$
 
-The rank of $T$ is the [rank of the matrix](../rank-of-a-matrix/), and the kernel of $T$ corresponds to the solutions of the [homogeneous system](../systems-of-linear-equations/) $A\mathbf{x} = \mathbf{0}.$ The matrix depends on the two ordered bases. A change of bases replaces $A$ by $Q^{-1}AP,$ where $P$ and $Q$ are invertible. If an endomorphism has the same basis in its domain and codomain, a change of basis has the form $C^{-1}AC.$ Matrices related by this formula are similar. If the endomorphism has a basis of [eigenvectors](../eigenvalues-and-eigenvectors/), then $C$ can be chosen so that $C^{-1}AC$ is diagonal and $A$ is [diagonalizable](../matrix-diagonalization/).
+The rank of $T$ is the [rank of the matrix](../rank-of-a-matrix/), and the kernel of $T$ corresponds to the solutions of the [homogeneous system](../systems-of-linear-equations/) $A\mathbf{x} = \mathbf{0}.$ The matrix depends on the two ordered bases. A [change of bases](../change-of-basis-matrix/) replaces $A$ by $Q^{-1}AP,$ where $P$ and $Q$ are invertible. If an endomorphism has the same basis in its domain and codomain, a change of basis has the form $C^{-1}AC.$ Matrices related by this formula are similar. If the endomorphism has a basis of [eigenvectors](../eigenvalues-and-eigenvectors/), then $C$ can be chosen so that $C^{-1}AC$ is diagonal and $A$ is [diagonalizable](../matrix-diagonalization/).
 
 ## A worked example
 

@@ -34,7 +34,7 @@ The relation $P^{-1} A P = D$ is an instance of a broader relation between squar
 
 $$B = P^{-1} A P$$
 
-Similar matrices represent the same [linear map](../linear-maps/) in different bases, with $P$ the change-of-basis matrix between them. Quantities that do not depend on the choice of basis are therefore shared by similar matrices: $A$ and $B$ have the same characteristic polynomial, hence the same eigenvalues with the same algebraic multiplicities, and in particular the same [determinant](../determinant/), the same trace, and the same [rank](../rank-of-a-matrix/).
+Similar matrices represent the same [linear map](../linear-maps/) in different bases, with $P$ the [change-of-basis matrix](../change-of-basis-matrix/) between them. Quantities that do not depend on the choice of basis are therefore shared by similar matrices: $A$ and $B$ have the same characteristic polynomial, hence the same eigenvalues with the same algebraic multiplicities, and in particular the same [determinant](../determinant/), the same trace, and the same [rank](../rank-of-a-matrix/).
 
 In this language a matrix is diagonalizable exactly when it is similar to a diagonal matrix. The diagonal entries of that matrix are the eigenvalues of $A,$ and the columns of $P$ are the eigenvectors that form the new basis.
 
