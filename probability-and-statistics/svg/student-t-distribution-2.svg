@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="257px" viewBox="0 0 345 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M110,142 L80,184 C77.6532704,186.899106 75.3199371,189.565772 73,192 C70.6666859,194.448264 66.0000193,199.11493 59,206 C53.3908574,209.6729 48.3908574,213.006234 44,216 C42.4444167,217.060625 34.6248185,219.272511 33,220 C31.0256899,220.883969 30.0256899,221.217302 30,221 L103,221 L111,221 L110,142 Z" fill="#e6e6e6"></path>
+            <path d="M318,142 L288,184 C285.65327,186.899106 283.319937,189.565772 281,192 C278.666686,194.448264 274.000019,199.11493 267,206 C261.390857,209.6729 256.390857,213.006234 252,216 C250.444417,217.060625 242.624818,219.272511 241,220 C239.02569,220.883969 238.02569,221.217302 238,221 L311,221 L318,221 L318,142 Z" fill="#e6e6e6" transform="translate(278.000000, 181.532158) scale(-1, 1) translate(-278.000000, -181.532158) "></path>
+            <line x1="87.5" y1="44.5" x2="87.5" y2="152.5" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="174.5" y1="217.5" x2="174.5" y2="63.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" fill="#636363">
+                <tspan x="7" y="13">By symmetry, t<tspan baseline-shift="sub" font-size="70%">1−α</tspan>on the left tail </tspan>
+                <tspan x="7" y="26">corresponds to -t<tspan baseline-shift="sub" font-size="70%">α</tspan> on the right tail.</tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="97" y="243">t<tspan baseline-shift="sub" font-size="70%">1−α</tspan></tspan>
+            </text>
+            <text font-size="15" font-weight="normal" fill="#333333">
+                <tspan x="232" y="242">t<tspan baseline-shift="sub" font-size="70%">α</tspan></tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#333333">
+                <tspan x="165" y="253">0.0</tspan>
+            </text>
+            <line x1="110.5" y1="221.5" x2="110.5" y2="227.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="238.5" y1="221.5" x2="238.5" y2="227.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <line x1="174.5" y1="220.5" x2="174.5" y2="240.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <path d="M334.809343,215.319082 L335.245131,215.564212 L343.245131,220.064212 L344.019864,220.5 L343.245131,220.935788 L335.245131,225.435788 L334.809343,225.680918 L334.319082,224.809343 L334.754869,224.564212 L341.091,221 L0,221 L0,220 L341.091,220 L334.754869,216.435788 L334.319082,216.190657 L334.809343,215.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M22,220 C53.6850677,220 80.159356,185.478586 103.446197,148.606738 C130.135742,106.347127 152.638275,61 174,61 C182.151031,61 190.343588,67.6024069 198.797672,78.1163993 C231.830778,119.198294 268.856754,220 323,220" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="287px" viewBox="0 0 345 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M334.809343,261.319082 L335.245131,261.564212 L343.245131,266.064212 L344.019864,266.5 L343.245131,266.935788 L335.245131,271.435788 L334.809343,271.680918 L334.319082,270.809343 L334.754869,270.564212 L341.091,267 L0,267 L0,266 L341.091,266 L334.754869,262.435788 L334.319082,262.190657 L334.809343,261.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="163.5" y1="264.5" x2="163.5" y2="104.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="29" y="11">As the degrees of freedom increase, the </tspan>
+                <tspan x="29" y="24">Student’s t distribution becomes narrower </tspan>
+                <tspan x="29" y="37">and its tails lighten, gradually approaching </tspan>
+                <tspan x="29" y="50">the shape of the standard normal curve.</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#333333">
+                <tspan x="159" y="283">μ</tspan>
+            </text>
+            <line x1="130.5" y1="62.5" x2="130.5" y2="123.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M43,264 C96.9933555,264 131.930233,105 163.69103,105 C195.451827,105 228.006645,264 282,264" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M43,264 C96.9933555,264 131.930233,121 163.69103,121 C195.451827,121 228.006645,264 282,264" stroke="#333333" stroke-linecap="round"></path>
+            <path d="M43,264 C96.9933555,264 131.930233,136 163.69103,136 C195.451827,136 228.006645,264 282,264" stroke="#333333" stroke-linecap="round"></path>
+            <path d="M43,264 C96.9933555,264 131.930233,149 163.69103,149 C195.451827,149 228.006645,264 282,264" stroke="#333333" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

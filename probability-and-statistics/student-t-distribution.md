@@ -62,7 +62,7 @@ The graph of $f(t;k)$ has four properties that follow from the expression above.
 
 ## Mean, variance, and kurtosis
 
-For $T \sim t_k$ the density, [mean and variance](../variance-and-covariance-of-a-random-variable/), and excess kurtosis are:
+For $T \sim t_k$ the density, [mean](mean-or-expected-value-of-a-random-variable) and [variance](../variance-and-covariance-of-a-random-variable/), and excess kurtosis are:
 
 [class="table-1"]
 
