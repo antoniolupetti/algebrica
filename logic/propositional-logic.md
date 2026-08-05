@@ -6,6 +6,7 @@ tags:
   - atomic-proposition
   - conjunctive-normal-form
   - contradiction
+  - deductive-closure
   - disjunctive-normal-form
   - inference-rules
   - interpretation
@@ -14,6 +15,7 @@ tags:
   - logical-equivalence
   - modus-ponens
   - modus-tollens
+  - propositional-constants
   - propositional-logic
   - satisfiability
   - semantics
@@ -41,6 +43,8 @@ The language used here has the following connectives:
 + Exclusive disjunction $\oplus$
 
 The choice of primitive connectives is conventional. The biconditional and exclusive disjunction can be defined from other connectives, but separate symbols make common formulas shorter.
+
+The language also has two propositional constants, $\top$ and $\bot.$ The first is true under every interpretation, the second is false under every interpretation. They take no arguments, so they are connectives of arity zero, and each of them has the truth value of a compound formula, $\top$ that of $p \lor \neg p$ and $\bot$ that of $p \wedge \neg p.$
 
 A formula built from the symbols in $P$ according to the formation rules is a well-formed formula (WFF). Atomic propositions are the simplest WFFs, while every other WFF has one or more WFFs as immediate components.
 
@@ -83,7 +87,7 @@ Parentheses are necessary in the last two formulas because the negation has the 
 
 The formation rules are an inductive definition of the WFFs of $\mathrm{Prop}[P].$
 
-+ Every atomic proposition $p \in P$ is a WFF.
++ Every atomic proposition $p \in P$ is a WFF, and the constants $\top$ and $\bot$ are WFFs.
 + If $\varphi$ is a WFF, then $\neg\varphi$ is a WFF.
 + If $\varphi$ and $\psi$ are WFFs, then each of $(\varphi \wedge \psi),$ $(\varphi \lor \psi),$ $(\varphi \rightarrow \psi),$ $(\varphi \leftrightarrow \psi),$ and $(\varphi \oplus \psi)$ is a WFF.
 + No other expression is a WFF.
@@ -91,6 +95,16 @@ The formation rules are an inductive definition of the WFFs of $\mathrm{Prop}[P]
 The last clause excludes every string that cannot be obtained by finitely many applications of the preceding clauses. These clauses also determine the structure of each formula. Every compound WFF has a unique main connective, the connective applied at the last step of its construction.
 
 We omit the outermost pair of parentheses when no ambiguity results. Under this convention, the main connective of $\neg(p \wedge q)$ is $\neg,$ while the main connective of $\neg p \wedge q$ is $\wedge.$ The scope of an occurrence of a connective is the subformula to which that occurrence applies. Parentheses therefore determine both the main connective and the scope of the inner connectives.
+
+Two further conventions remove the remaining parentheses. The connectives have a precedence order, from the one that binds most strongly to the one that binds least:
+
+$$
+\neg \quad \wedge \quad \lor \quad \rightarrow \quad \leftrightarrow
+$$
+
+The formula $\neg p \wedge q \rightarrow r$ is therefore an abbreviation of $((\neg p) \wedge q) \rightarrow r.$ Connectives of equal precedence associate to the left, so $p \wedge q \wedge r$ abbreviates $(p \wedge q) \wedge r.$ The grouping is immaterial for $\wedge$ and $\lor,$ which are associative, and it is not immaterial for $\rightarrow.$ Under $M(p) = M(q) = M(r) = F$ the formula $(p \rightarrow q) \rightarrow r$ is false while $p \rightarrow (q \rightarrow r)$ is true.
+
+> Several texts read a chain of conditionals to the right, so that $p \rightarrow q \rightarrow r$ abbreviates $p \rightarrow (q \rightarrow r).$ The two conventions disagree, and explicit parentheses on nested conditionals avoid the ambiguity.
 
 ## Semantics
 
@@ -100,7 +114,7 @@ $$
 \mathrm{Bool} := \{\ T, F\ \}
 $$
 
-The characteristic truth tables define the connectives. A single table for the six connectives is the following:
+The constants receive the same value in every case, $T$ for $\top$ and $F$ for $\bot.$ The characteristic truth tables define the connectives. A single table for the six connectives is the following:
 
 $$
 \begin{array}{cc|cccccc}
@@ -192,11 +206,25 @@ $$
 
 Only the first row makes both members of $S$ true, and that row also makes $q$ true. Therefore $S \models q.$ The corresponding inference rule is modus ponens.
 
+A third formulation of the relation replaces the inspection of the models of $S$ by a question about a single set of formulas:
+
+$$
+S \models \varphi \Longleftrightarrow S \cup \{\neg\varphi\} \ \text{is unsatisfiable}
+$$
+
+Assume $S \models \varphi$ and let $M$ satisfy every formula of $S \cup \{\neg\varphi\}.$ From $M \models S$ we get $M \models \varphi,$ while $M \models \neg\varphi$ gives $M \not\models \varphi,$ and the two conclusions are incompatible. Conversely, assume that $S \cup \{\neg\varphi\}$ is unsatisfiable and let $M \models S.$ If $\varphi$ were false under $M,$ then $M$ would satisfy $\neg\varphi$ and hence the whole set. So every model of $S$ is a model of $\varphi.$ The [procedures of automated deduction](../automated-deduction-in-propositional-logic/) test the right-hand side, since a proof of unsatisfiability can be searched for mechanically.
+
 ## Inference rules
 
 An inference rule is a schematic pattern for deriving a conclusion from one or more premises. If $S \vdash \varphi,$ then $\varphi$ has a derivation from premises in $S$ within the chosen proof system. The symbol $\vdash$ concerns derivations, while $\models$ concerns interpretations.
 
-A proof system is sound when $S \vdash \varphi$ implies $S \models \varphi,$ and it is complete when $S \models \varphi$ implies $S \vdash \varphi.$ Standard proof systems for propositional logic have both properties.
+A proof system is sound when $S \vdash \varphi$ implies $S \models \varphi,$ and it is complete when $S \models \varphi$ implies $S \vdash \varphi.$ Standard proof systems for propositional logic have both properties. The deductive closure of $S$ is the set of its logical consequences:
+
+$$
+\mathrm{Cn}(S) := \{\ \varphi \mid S \models \varphi \ \}
+$$
+
+For a sound and complete system, $\mathrm{Cn}(S)$ is also the set of formulas derivable from $S.$ It is infinite for every $S,$ since it contains every tautology of the language.
 
 Modus ponens derives $q$ from $p$ and $p \rightarrow q$:
 
@@ -219,6 +247,14 @@ $$
 In each schema, the formulas above the line are the premises and the formula below the line is the conclusion.
 
 For example, let $p$ mean that it is raining, let $q$ mean that the ground is wet, and let $r$ mean that the match is cancelled. From $p \rightarrow q$ and $q \rightarrow r,$ the hypothetical syllogism gives $p \rightarrow r.$ If $p$ is also a premise, modus ponens gives $r.$
+
+Further rules govern the remaining connectives. Conjunction elimination and conjunction introduction relate a conjunction to its conjuncts, disjunction introduction weakens a formula to a disjunction, and the disjunctive syllogism removes a disjunct:
+
+$$
+\frac{\varphi \wedge \psi}{\varphi} \qquad \frac{\varphi \qquad \psi}{\varphi \wedge \psi} \qquad \frac{\varphi}{\varphi \lor \psi} \qquad \frac{\varphi \lor \psi \qquad \neg\varphi}{\psi}
+$$
+
+A single rule, [resolution](../automated-deduction-in-propositional-logic/), covers modus ponens, modus tollens and the disjunctive syllogism at once, and it is the rule on which mechanical proof search is built.
 
 ## Normal forms
 
@@ -250,4 +286,4 @@ The resulting formula is equivalent to $p \lor q \lor r.$ It is a single clause 
 
 A complete truth table gives another proof of the normal-form theorems. For DNF, take each row on which the original formula is true, form a term that is true only on that row, and disjoin those terms. For CNF, take each row on which the formula is false, form a clause that is false only on that row, and conjoin those clauses. When the formula is a contradiction, $p \wedge \neg p$ is an equivalent normal form. When it is a tautology, $p \lor \neg p$ is an equivalent normal form.
 
-The DPLL procedure and several related satisfiability methods take CNF formulas as input.
+The DPLL procedure and several related satisfiability methods take CNF formulas as input, as does the [resolution procedure](../automated-deduction-in-propositional-logic/).
