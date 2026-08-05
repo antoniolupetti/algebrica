@@ -217,6 +217,8 @@ This is the chain rule applied to $\ln|f(x)|.$ A constant multiple of $f'(x)$ ca
 
 > To apply this formula directly, the numerator must be $f'(x),$ up to a nonzero constant factor. In general, the integral of $1/f(x)$ is not $\ln|f(x)|.$ A linear denominator has a constant derivative, so $\int \frac{dx}{ax+b}$ has a logarithmic antiderivative. By contrast, $\int \frac{dx}{x^2+1}$ has an arctangent as its antiderivative.
 
+- - -
+
 For a linear denominator, the formula is:
 
 $$\int \frac{dx}{ax+b} = \frac{1}{a}\ln|ax+b| + c \qquad a \neq 0$$
@@ -427,7 +429,9 @@ $$
 \end{align}
 $$
 
-On each interval where $\tan x$ is continuous, the antiderivative is $\frac{1}{\sqrt{2}}\arctan(\sqrt{2}\tan x)+c.$
+On each interval where $\tan x$ is continuous, the antiderivative is:
+
+$$\frac{1}{\sqrt{2}}\arctan(\sqrt{2}\tan x)+c.$$
 
 > The last formula is local because $\tan x$ is undefined at $x=\frac{\pi}{2}+k\pi,$ where $k\in\mathbb{Z}.$ The original integrand is defined at these points, so constants on adjacent intervals must be chosen so that the local antiderivatives join across them. For an integrand containing $\sqrt{ax^2+bx+c},$ Euler substitutions give rational forms, while [trigonometric substitution](../trigonometric-substitution-for-integrals/) is often simpler.
 
@@ -475,7 +479,7 @@ $$
 \begin{align}
 \int \sin\sqrt{x} \ dx &= 2\int t\sin t \ dt \\[6pt]
 &= 2\left(-t\cos t + \int \cos t \ dt\right) \\[6pt]
-&= 2\left(-t\cos t + \sin t\right) + c \\[6pt]
+&= 2\left(-t\cos t + \sin t\right) + c \\[12pt]
 &= 2\sin\sqrt{x} - 2\sqrt{x}\cos\sqrt{x} + c
 \end{align}
 $$
@@ -930,6 +934,6 @@ Integration in $b$ gives $I(b)=-\arctan b+k.$ Since $|\sin x|\leq x$ on $(0,+\in
 
 $$\int_{0}^{+\infty} \frac{\sin x}{x} \ dx = \lim_{b \to 0^+} \left(\frac{\pi}{2} - \arctan b\right) = \frac{\pi}{2}$$
 
-> Both operations require justification. On every half-line $b\geq b_0>0,$ the derivative in $b$ is dominated by the integrable function $e^{-b_0x}.$ For the limit $b\to 0^+,$ dominated convergence applies on every finite interval. On the remaining tail, Dirichlet's estimate is uniform for $b\geq 0,$ which gives continuity at $b=0.$ The integral at $b=0$ is only conditionally convergent.
+Both operations require justification. On every half-line $b\geq b_0>0,$ the derivative in $b$ is dominated by the integrable function $e^{-b_0x}.$ For the limit $b\to 0^+,$ dominated convergence applies on every finite interval. On the remaining tail, Dirichlet's estimate is uniform for $b\geq 0,$ which gives continuity at $b=0.$ The integral at $b=0$ is only conditionally convergent.
 
 The factor $e^{-bx}$ works because differentiation in $b$ removes $1/x,$ while exponential decay controls the improper integral for $b>0.$ A parameter method requires a family whose derivative is simpler than the original integrand, so it is less systematic than the preceding strategies.
