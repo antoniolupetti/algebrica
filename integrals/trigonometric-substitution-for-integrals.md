@@ -44,7 +44,7 @@ In practice, the expression under the square root is rarely presented in one of 
 
 ## From substitutions to geometry
 
-From a geometric point of view, these substitutions can be interpreted as parametrisations of conic sections. The correspondence between each Pythagorean identity and the curve it describes is the following.
+From a geometric point of view, these substitutions can be interpreted as parametrisations of [conic sections](../introduction-to-conics/). The correspondence between each Pythagorean identity and the curve it describes is the following.
 
 + The identity $\sin^2\theta + \cos^2\theta = 1$ corresponds to the [unit circle](../unit-circle/) and underlies the case $\sqrt{a^2 - x^2}$.
 + The identities $1 + \tan^2\theta = \sec^2\theta$ and $\sec^2\theta - 1 = \tan^2\theta$ are related to the geometry of the [hyperbola](../hyperbola/) $x^2 - y^2 = a^2$, and underlie the forms $\sqrt{x^2 + a^2}$ and $\sqrt{x^2 - a^2}$.

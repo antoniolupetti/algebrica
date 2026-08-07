@@ -14,7 +14,7 @@ tags:
 ---
 ## Introduction to conic sections
 
-When introducing the [parabola](../parabola/), we observed that the intersection of a [plane](../planes/) with a cone produces, once projected onto the plane, one of four possible curves: a circumference, a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These four curves are collectively known as conics. A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x, y) \in \mathbb{R}^2$ whose coordinates satisfy a general quadratic equation in the variables $x$ and $y$. This [equation](../equations/) takes the following form:
+When introducing the [parabola](../parabola/), we observed that the intersection of a [plane](../planes/) with a cone produces, once projected onto the plane, one of four possible curves: a circumference, a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These four curves are collectively known as [conics](../introduction-to-conics/). A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x, y) \in \mathbb{R}^2$ whose coordinates satisfy a general quadratic equation in the variables $x$ and $y$. This [equation](../equations/) takes the following form:
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
