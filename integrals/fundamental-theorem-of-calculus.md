@@ -43,6 +43,8 @@ When $f$ is nonnegative, the two outer quantities are the areas of rectangles wi
 
 > The heights of the two rectangles are values of $f,$ attained at points of $[a, b].$ In the figure the minimum and the maximum both occur inside the interval, but either may be attained at an endpoint.
 
+- - -
+
 A bounded [Riemann-integrable](../riemann-integrability-criteria/) function satisfies the same inequality with $m$ and $M$ replaced by the [infimum and supremum](../supremum-and-infimum/) of $f$ on the interval. If $f$ is continuous on a closed and bounded interval, it attains both extrema. This fact has two consequences.
 
 The first concerns the sign of the integral. If $f(t) > 0$ for every $t \in [a, b],$ then $m$ is a value of $f$ and is therefore positive, so:
