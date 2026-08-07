@@ -11,13 +11,11 @@ tags:
 
 ## Definition
 
-A power function is a [function](../functions/) of the form
+A power function is a [function](../functions/) of the form:
 
 $$f(x) = x^a \qquad a \in \mathbb{R}$$
 
-The exponent $a$ is a fixed [real number](../real-numbers/) and the variable is the base. In an [exponential function](../exponential-function/) $g(x) = b^x,$ the base $b > 0$ is fixed and the variable $x$ is the exponent. The condition $b \neq 1$ excludes the constant case.
-
-For an arbitrary real exponent the [power](../powers/) is defined through the [natural logarithm](../logarithms/) and the exponential function:
+The exponent $a$ is a fixed [real number](../real-numbers/) and the variable is the base. In an [exponential function](../exponential-function/) $g(x) = b^x,$ the base $b > 0$ is fixed and the variable $x$ is the exponent. The condition $b \neq 1$ excludes the constant case. For an arbitrary real exponent the [power](../powers/) is defined through the [natural logarithm](../logarithms/) and the exponential function:
 
 $$x^a := e^{a\ln x} \qquad x > 0$$
 
@@ -29,16 +27,19 @@ A constant factor gives the more general form $f(x) = kx^a$ with $k \neq 0.$ Its
 
 The [domain](../determining-the-domain-of-a-function/) depends on the type of exponent. A [rational](../rational-numbers/) exponent must first be written in lowest terms as $p/q,$ because the reduced denominator determines whether negative bases are admissible.
 
-| Exponent $a$ | Domain |
-|:---|:---|
-| positive integer | $\mathbb{R}$ |
-| negative integer | $\mathbb{R} \setminus \{0\}$ |
-| $p/q$ in lowest terms, $q$ odd, $p > 0$ | $\mathbb{R}$ |
-| $p/q$ in lowest terms, $q$ odd, $p < 0$ | $\mathbb{R} \setminus \{0\}$ |
-| $p/q$ in lowest terms, $q$ even, $p > 0$ | $[0, +\infty)$ |
-| $p/q$ in lowest terms, $q$ even, $p < 0$ | $(0, +\infty)$ |
-| [irrational](../irrational-numbers/), $a > 0$ | $[0, +\infty)$ |
-| irrational, $a < 0$ | $(0, +\infty)$ |
+[class="table-1 -right"]
+
+| Exponent $a$                                  | Domain                       |
+| :-------------------------------------------- | :--------------------------- |
+| positive integer                              | $\mathbb{R}$                 |
+| negative integer                              | $\mathbb{R} \setminus \{0\}$ |
+| $p/q$ in lowest terms, $q$ odd, $p > 0$       | $\mathbb{R}$                 |
+| $p/q$ in lowest terms, $q$ odd, $p < 0$       | $\mathbb{R} \setminus \{0\}$ |
+| $p/q$ in lowest terms, $q$ even, $p > 0$      | $[0, +\infty)$               |
+| $p/q$ in lowest terms, $q$ even, $p < 0$      | $(0, +\infty)$               |
+| [irrational](../irrational-numbers/), $a > 0$ | $[0, +\infty)$               |
+| irrational, $a < 0$                           | $(0, +\infty)$               |
+[/class]
 
 The reduction to lowest terms cannot be skipped. The exponents $2/6$ and $1/3$ denote the same rational number, and only the reduced form gives the power at a negative base. Reading the reduced exponent as a cube root gives $(-8)^{1/3} = \sqrt[3]{-8} = -2,$ while reading the unreduced one as $\sqrt[6]{(-8)^2}$ would give $2.$ The two readings agree for $x \geq 0,$ and the definition of a real power at a negative base uses the reduced fraction. The same caution applies to the [radicals](../radicals/) treated in [irrational functions](../irrational-functions/).
 
