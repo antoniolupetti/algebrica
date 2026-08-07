@@ -242,7 +242,7 @@ The transformed endpoints are $u(0) = 0$ and $u(1) = 1.$ Here they coincide nume
 
 $$\int_0^1 x\cos(x^2) \ dx = \frac{1}{2}\int_0^1 \cos u \ du$$
 
-The Fundamental Theorem of Calculus gives:
+The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) gives:
 
 $$\frac{1}{2}\Bigl[\sin u\Bigr]_{0}^{1} = \frac{1}{2}(\sin 1 - \sin 0) = \frac{\sin 1}{2}$$
 

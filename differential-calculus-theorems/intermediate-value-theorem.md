@@ -154,6 +154,6 @@ The graph of $f$ lies in the square $[a,b]^2,$ joins its left and right edges, a
 
 + In [sign analysis for inequalities](../sign-analysis-in-inequalities/), a continuous function has a constant sign on every subinterval of its domain that contains no zeros.
 + Together with [Weierstrass' theorem](../weierstrass-theorem/), the theorem implies that $f([a,b]) = [m,M]$ for a continuous function on a closed and bounded interval.
-+ The [mean value theorem for integrals](../definite-integrals/) follows because the average value of a continuous function lies between its minimum and maximum and is therefore attained.
++ The [mean value theorem for integrals](../fundamental-theorem-of-calculus/) follows because the average value of a continuous function lies between its minimum and maximum and is therefore attained.
 + A continuous and [strictly monotone](../increasing-and-decreasing-functions/) function has an [inverse function](../inverse-function/) whose domain is an interval.
 + [Darboux's theorem](../darboux-theorem/) states that every derivative has the intermediate value property, including derivatives that are not continuous.

@@ -128,4 +128,5 @@ The Weierstrass theorem plays a direct role in the proofs of several fundamental
 + [Fermat's theorem](../fermat-theorem/) relies on it to guarantee that a maximum or minimum actually exists on the interval before concluding that the derivative must vanish at that point.
 + [Rolle's theorem](../rolle-theorem/) uses it to establish that the function attains its maximum and minimum on the closed interval, which is the first step of its proof.
 + [Lagrange's theorem](../lagrange-theorem/) depends on Rolle's theorem and therefore, indirectly, on Weierstrass as well.
++ The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) uses the attained minimum and maximum to prove the mean value theorem for integrals and then the derivative formula for an accumulation function.
 + The [Riemann integrability criteria](../riemann-integrability-criteria/) for continuous functions rest on Weierstrass at a crucial step: the boundedness of a continuous function on a closed and bounded interval, which the theorem provides, is what makes the upper and lower Darboux sums well-defined and finite.

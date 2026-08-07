@@ -225,11 +225,11 @@ The role of the factor $x$ in the previous example becomes evident when it is re
 
 $$\int e^{x^2} \ dx$$
 
-does not admit an antiderivative expressible in terms of elementary functions. Its value is conventionally written in terms of the error function $\operatorname{erf}(x)$, defined by:
+does not admit an antiderivative expressible in terms of elementary functions. Its value is conventionally written in terms of the error function $\mathrm{erf}(x)$, defined by:
 
-$$\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \ dt$$
+$$\mathrm{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \ dt$$
 
-The function $\operatorname{erf}(x)$ is not elementary, in the sense that it cannot be obtained from polynomials, exponentials, logarithms, and trigonometric functions through a finite combination of algebraic operations, compositions, and inversions. It was introduced precisely because the integrand $e^{-t^2}$ has no elementary antiderivative, even though the function itself is perfectly regular and infinitely differentiable.
+The function $\mathrm{erf}(x)$ is not elementary, in the sense that it cannot be obtained from polynomials, exponentials, logarithms, and trigonometric functions through a finite combination of algebraic operations, compositions, and inversions. It was introduced precisely because the integrand $e^{-t^2}$ has no elementary antiderivative. The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) gives its derivative directly from the defining integral, and repeated differentiation shows that it is infinitely differentiable.
 
 The comparison with the previous example clarifies the role of the factor $x$. In $\int x \ e^{x^2} \ dx$ the factor $x$ provides, up to the constant $1/2$, the derivative of the exponent $x^2$. The integrand matches the canonical form $e^{f(x)} f'(x)$, and the antiderivative is elementary. When the factor $x$ is absent, the matching is lost and the integral falls outside the class of integrals solvable through elementary techniques.
 
@@ -306,4 +306,4 @@ The following stepwise procedure summarises the choice of method for a generic e
 + When the exponent is a differentiable function $f(x)$ and the integrand contains $f'(x)$, possibly up to a multiplicative constant, adjust the constant if necessary and apply $\int e^{f(x)} f'(x) \ dx = e^{f(x)} + c$.
 + When the integrand is a product of an exponential and a polynomial $P(x)$, apply integration by parts with $u(x) = P(x)$ and $v'(x) = e^{ax + b}$. When the polynomial has degree $n > 1$, the procedure is iterated and each application reduces the degree by one until a constant remains.
 + When the integrand is a product of two exponentials with related bases, apply the properties of powers to reduce both factors to a common base, simplify, and return to one of the previous cases.
-+ When none of the above applies, the integral may not admit a closed form in terms of elementary functions. Integrals such as $\int e^{x^2} \ dx$ or $\int e^x/x \ dx$ are written in terms of special functions like the error function $\operatorname{erf}(x)$ or the exponential integral $\operatorname{Ei}(x)$, and their definite versions are best approached through [numerical integration](../numerical-integration/).
++ When none of the above applies, the integral may not admit a closed form in terms of elementary functions. Integrals such as $\int e^{x^2} \ dx$ or $\int e^x/x \ dx$ are written in terms of special functions like the error function $\mathrm{erf}(x)$ or the exponential integral $\mathrm{Ei}(x)$, and their definite versions are best approached through [numerical integration](../numerical-integration/).

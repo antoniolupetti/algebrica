@@ -251,7 +251,7 @@ $$\left|f(x,y_1)-f(x,y_2)\right|\leq L\left|y_1-y_2\right|$$
 
 A continuous partial derivative $\partial f/\partial y$ near the initial point is sufficient for this condition.
 
-A proof of the Picard-Lindelöf theorem begins with the integral form of the problem. After we integrate from $x_0$ to $x$ and use the initial value, the equation is:
+A proof of the Picard-Lindelöf theorem begins with the integral form of the problem. By the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/), the differential problem is equivalent to:
 
 $$y(x)=y_0+\int_{x_0}^{x}f\left(t,y(t)\right) \ dt$$
 

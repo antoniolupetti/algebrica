@@ -160,7 +160,7 @@ $$A = \int_a^b [f(x) - g(x)] \ dx$$
 
 $$A = \int_a^c [f(x) - g(x)] \ dx + \int_c^b [g(x) - f(x)] \ dx$$
 
-+ Evaluate each definite integral using an [antiderivative](../indefinite-integrals/) of the integrand. When the antiderivative is not elementary, the method of [integration by substitution](../integration-by-substitution/) or [integration by parts](../integration-by-parts/) provides the appropriate tools.
++ Evaluate each definite integral using an [antiderivative](../indefinite-integrals/) and the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/). When the antiderivative is not elementary, the method of [integration by substitution](../integration-by-substitution/) or [integration by parts](../integration-by-parts/) provides the appropriate tools.
 
 > The same construction generalises to regions bounded by more than two curves and to regions described as functions of $y$ rather than of $x$. In every case the underlying idea is the same: the area is the integral of the difference between the upper and lower boundary of the region.
 

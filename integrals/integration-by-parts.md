@@ -18,7 +18,7 @@ Integration by parts rewrites the integral of a product of two [functions](../fu
 
 $$\int f(x)g'(x) \ dx = f(x)g(x) - \int f'(x)g(x) \ dx + c$$
 
-For [definite integrals](../definite-integrals/), the formula is:
+For [definite integrals](../definite-integrals/), applying the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) to the product rule gives:
 
 $$\int_a^b f(x)g'(x) \ dx = [f(x)g(x)]_a^b - \int_a^b f'(x)g(x) \ dx$$
 
