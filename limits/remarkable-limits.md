@@ -187,7 +187,7 @@ More generally, for any real constant $a$:
 $$\lim_{x \to 0} (1 + a x)^{\frac{1}{x}} = e^{a}$$
 ## Limits involving power functions
 
-For any real exponent $\alpha$:
+For the [power function](../power-function/) with real exponent $\alpha,$ the following limit holds:
 
 $$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = \alpha$$
 

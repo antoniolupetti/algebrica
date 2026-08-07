@@ -193,7 +193,7 @@ $$
 
 - - -
 
-For the [power function](../powers/) $f(x) = x^n$ with even exponent $n \in \mathbb{N}$, we have:
+For the [power function](../power-function/) $f(x) = x^n$ with even exponent $n \in \mathbb{N}$, we have:
 
 $$
 \begin{align}

@@ -162,7 +162,7 @@ $$\int e^x \ dx = e^x + c$$
 
 ## Asymptotic growth
 
-The exponential function grows faster than any [polynomial](../polynomial-function/) or power function, and slower than the [factorial](../factorial/). For any $a > 1$ and any $k > 0$:
+The exponential function grows faster than any [polynomial](../polynomial-function/) or [power function](../power-function/), and slower than the [factorial](../factorial/). For any $a > 1$ and any $k > 0$:
 
 $$\lim_{x \to +\infty} \frac{x^k}{a^x} = 0 \qquad \lim_{x \to +\infty} \frac{a^x}{x!} = 0$$
 

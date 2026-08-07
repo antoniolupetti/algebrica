@@ -123,7 +123,7 @@ The graph runs from one infinite end to the other, so the range is all of $\math
 
 ## End behavior
 
-The end behavior of a polynomial function is determined by its leading term $a_n x^n.$ As $|x|$ grows without bound, the lower-degree terms become negligible in comparison, and $f(x)$ approaches the behavior of the power function $a_n x^n.$ Writing
+The end behavior of a polynomial function is determined by its leading term $a_n x^n.$ As $|x|$ grows without bound, the lower-degree terms become negligible in comparison, and $f(x)$ approaches the behavior of the [power function](../power-function/) $a_n x^n.$ Writing
 
 $$
 f(x) = a_n x^n \left( 1 + \frac{a_{n-1}}{a_n x} + \dotsb + \frac{a_0}{a_n x^n} \right)

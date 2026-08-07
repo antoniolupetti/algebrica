@@ -126,7 +126,7 @@ Computing a derivative directly from the definition is often laborious. For this
 
 ## The power rule for real exponents
 
-The table lists the derivative of $f(x) = x^a$ for an arbitrary real exponent $a$, a formula the geometric remarks above do not establish. For $x > 0$ the power has the equivalent form $x^a = e^{a\ln(x)}$, which writes it in terms of the exponential and the natural logarithm, two functions whose derivatives are already in the table. Applying the [chain rule](../chain-rule/) with outer function $e^t$ and inner function $a\ln(x)$, whose derivative is $a/x$, we obtain:
+The table lists the derivative of the [power function](../power-function/) $f(x) = x^a$ for an arbitrary real exponent $a$, a formula the geometric remarks above do not establish. For $x > 0$ the power has the equivalent form $x^a = e^{a\ln(x)}$, which writes it in terms of the exponential and the natural logarithm, two functions whose derivatives are already in the table. Applying the [chain rule](../chain-rule/) with outer function $e^t$ and inner function $a\ln(x)$, whose derivative is $a/x$, we obtain:
 
 $$
 \begin{align}

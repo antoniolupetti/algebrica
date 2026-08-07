@@ -10,11 +10,11 @@ tags:
 ---
 ## Composite power functions
 
-We have previously introduced how to calculate the [derivative](../derivatives/) of a function at a point using the definition of the [difference quotient](../difference-quotient/), how to combine derivatives through the basic [differentiation rules](../differentiation-rules/), and how to differentiate composite functions through the [chain rule](../chain-rule/). A separate technique is required for power functions in which both the base and the exponent depend on the variable, that is, functions of the form:
+We have previously introduced how to calculate the [derivative](../derivatives/) of a function at a point using the definition of the [difference quotient](../difference-quotient/), how to combine derivatives through the basic [differentiation rules](../differentiation-rules/), and how to differentiate composite functions through the [chain rule](../chain-rule/). A separate technique is required for expressions in which both the base and the exponent depend on the variable, that is, functions of the form:
 
 $$y = f(x)^{g(x)}$$
 
-The expression is defined for $f(x) > 0$. Since the variable appears both in the base and in the exponent, neither the power rule nor the rule for exponential functions applies directly. The standard technique, known as logarithmic differentiation, combines the properties of [logarithms](../logarithms/) with the chain rule. The general formula for the derivative of $f(x)^{g(x)}$, with $f$ and $g$ differentiable, is the following:
+The expression is defined for $f(x) > 0$. Since the variable appears both in the base and in the exponent, neither the derivative rule for [power functions](../power-function/) nor the rule for exponential functions applies directly. The standard technique, known as logarithmic differentiation, combines the properties of [logarithms](../logarithms/) with the chain rule. The general formula for the derivative of $f(x)^{g(x)}$, with $f$ and $g$ differentiable, is the following:
 
 $$D\left[f(x)^{g(x)}\right] = f(x)^{g(x)} \left[ g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)} \right]$$
 

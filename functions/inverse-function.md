@@ -34,7 +34,7 @@ $$f^{-1} = g$$
 
 ## Making a function invertible by restricting its domain
 
-Consider the function $f(x) = x^2,$ defined on $\mathbb{R}.$ This is a quadratic function, represented by a [parabola](../parabola/) with its vertex at the origin of the Cartesian plane. On its full domain $\mathbb{R}$ the function is not invertible, since it is not injective, because distinct inputs can produce the same output, for example $f(-2) = f(2).$
+Consider the [power function](../power-function/) $f(x) = x^2,$ defined on $\mathbb{R}.$ This is a quadratic function, represented by a [parabola](../parabola/) with its vertex at the origin of the Cartesian plane. On its full domain $\mathbb{R}$ the function is not invertible, since it is not injective, because distinct inputs can produce the same output, for example $f(-2) = f(2).$
 
 If we restrict the domain to $[0, +\infty),$ the function becomes bijective and therefore invertible. Its inverse is the [square root function](../irrational-functions/):
 

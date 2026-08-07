@@ -61,7 +61,7 @@ If the cusp faces upward instead, the signs are reversed:
 
 $$f_{-}'(c) = +\infty \quad \text{and} \quad f_{+}'(c) = -\infty$$
 
-A typical example is the function $f(x) = x^{2/3} = \sqrt[3]{x^2}$ at the point $c = 0$. The function is continuous on all of $\mathbb{R}$, and for $x \neq 0$ its derivative is:
+A typical example is the [power function](../power-function/) $f(x) = x^{2/3} = \sqrt[3]{x^2}$ at the point $c = 0$. The function is continuous on all of $\mathbb{R}$, and for $x \neq 0$ its derivative is:
 
 $$f'(x) = \frac{2}{3\sqrt[3]{x}}$$
 

@@ -49,7 +49,7 @@ The reason lies in the definition of the principal square root. When the index i
 + When $a < 0$ the non-negative number whose square is $a^2$ is $-a$.
 + The [absolute value](../absolute-value/) is a single expression valid in both cases.
 
-> The same phenomenon occurs whenever the index is even. For $n \in \mathbb{N}$ with $n \ge 1$, the identity $\sqrt[2n]{a^{2n}} = |a|$ holds for every $a \in \mathbb{R}$. When the index is odd, the constraint disappears and we have $\sqrt[2n+1]{a^{2n+1}} = a$ for every $a \in \mathbb{R}$, since the function $x \mapsto x^{2n+1}$ is bijective on the real line.
+> The same phenomenon occurs whenever the index is even. For $n \in \mathbb{N}$ with $n \ge 1$, the identity $\sqrt[2n]{a^{2n}} = |a|$ holds for every $a \in \mathbb{R}$. When the index is odd, the constraint disappears and we have $\sqrt[2n+1]{a^{2n+1}} = a$ for every $a \in \mathbb{R}$, since the [power function](../power-function/) $x \mapsto x^{2n+1}$ is bijective on the real line.
 
 - - -
 

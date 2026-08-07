@@ -200,7 +200,7 @@ $$
 
 This establishes the statement for $n+1$ and completes the induction.
 
-> The inequality extends to real exponents $r$ under the conditions $r \ge 1$ or $r \le 0$, and it reverses for $0 < r < 1$. These generalizations rely on the convexity and concavity properties of the function $t \mapsto t^r$ and are typically established using differential calculus.
+> The inequality extends to real exponents $r \ge 1$ when $x \ge -1$ and to $r \le 0$ when $x > -1$; it reverses for $0 < r < 1$ when $x \ge -1$. These generalizations rely on the convexity and concavity properties of the [power function](../power-function/) $t \mapsto t^r$ and are typically established using differential calculus.
 
 - - -
 

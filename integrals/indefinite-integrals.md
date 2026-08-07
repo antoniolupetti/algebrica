@@ -129,7 +129,7 @@ $$\int 5\sin(x) \ dx = -5\cos(x) + c \qquad c \in \mathbb{R}$$
 
 ## Integral of a power function
 
-For every real exponent $a \neq -1$, the [power function](../powers/) $x^a$ has the following indefinite integral on $(0, +\infty)$:
+For every real exponent $a \neq -1$, the [power function](../power-function/) $x^a$ has the following indefinite integral on $(0, +\infty)$:
 
 $$\int x^a \ dx = \frac{x^{a+1}}{a+1} + c$$
 

@@ -29,7 +29,7 @@ $$\cos(\pi) = \cos(-\pi) = -1$$
 
 A further example is the [absolute value function](../absolute-value-function/), since $|-x| = |x|$ for every real $x.$
 
-Considering the family of functions $f(x) = x^{n}$ with $n \in \mathbb{N},$ the parity is entirely determined by the exponent: the function is even whenever $n$ is an even [integer](../integers/), and odd whenever $n$ is odd.
+Considering the family of [power functions](../power-function/) $f(x) = x^{n}$ with $n \in \mathbb{N},$ the parity is entirely determined by the exponent: the function is even whenever $n$ is an even [integer](../integers/), and odd whenever $n$ is odd.
 
 ## Definite integral of even function
 

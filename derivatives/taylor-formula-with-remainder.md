@@ -214,7 +214,7 @@ The [logarithm](../logarithmic-function/) is not defined at the origin and is ex
 
 $$\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + o(x^n)$$
 
-The power function with an arbitrary real exponent $\alpha$ has the generalised [binomial coefficients](../binomial-coefficient/) as its coefficients:
+The generalised [binomial coefficients](../binomial-coefficient/) are the coefficients in the expansion of the [power function](../power-function/) $t^\alpha$ about $t = 1.$ With $t = 1+x,$ this expansion is
 
 $$(1+x)^{\alpha} = 1 + \alpha x + \binom{\alpha}{2} x^2 + \cdots + \binom{\alpha}{n} x^n + o(x^n)$$
 

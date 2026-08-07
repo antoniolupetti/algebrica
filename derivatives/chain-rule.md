@@ -109,7 +109,7 @@ $$\frac{dy}{dx} = \frac{2x}{x^2 + 1}$$
 
 ## Special cases
 
-When the outer function is a power, an exponential, or a logarithm, the chain rule produces formulas that recur constantly in computations. For a differentiable function $f$:
+When the outer function is a [power function](../power-function/), an exponential, or a logarithm, the chain rule produces formulas that recur constantly in computations. For a differentiable function $f$:
 
 $$
 \begin{align}

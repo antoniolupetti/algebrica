@@ -165,7 +165,7 @@ The graph of the function then meets the $x$-axis at $(a, 0).$ Finding the zeros
 + The function is even if $f(-x) = f(x)$ for all $x \in A.$
 + The function is odd if $f(-x) = -f(x)$ for all $x \in A.$
 
-The graph of an even function is symmetric with respect to the $y$-axis, while the graph of an odd function is symmetric with respect to the origin. For the [power function](../powers/) $f(x) = x^n,$ where $n$ is a positive integer, the identity $f(-x) = (-1)^nx^n$ shows that $f$ is even exactly when $n$ is even and odd exactly when $n$ is odd.
+The graph of an even function is symmetric with respect to the $y$-axis, while the graph of an odd function is symmetric with respect to the origin. For the [power function](../power-function/) $f(x) = x^n,$ where $n$ is a positive integer, the identity $f(-x) = (-1)^nx^n$ shows that $f$ is even exactly when $n$ is even and odd exactly when $n$ is odd.
 
 ## Bounded functions
 

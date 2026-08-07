@@ -89,7 +89,7 @@ This derivative tends to $-\infty$ as $x \to 0^-$ and to $+\infty$ as $x \to 0^+
 
 ## Fractional exponents and reduction of the index
 
-For positive integers $p$ and $q,$ with $q \geq 2,$ the notations $\sqrt[q]{x^p}$ and $x^{p/q}$ agree for $x \geq 0.$ For $x < 0,$ write $p/q = r/s$ in lowest terms. The real power $x^{p/q}$ is defined by $\sqrt[s]{x^r}$ when $s$ is odd; if $s$ is even, it has no real value.
+For positive integers $p$ and $q,$ with $q \geq 2,$ the notations $\sqrt[q]{x^p}$ and $x^{p/q}$ agree for $x \geq 0.$ For $x < 0,$ write $p/q = r/s$ in lowest terms. The [power function](../power-function/) with exponent $p/q$ takes the value $\sqrt[s]{x^r}$ when $s$ is odd; if $s$ is even, it is not defined at $x.$
 
 The reduction of a radical to a smaller index requires the same care. For positive integers $m,$ $n,$ and $k,$ with $n \geq 2,$ the [rules for powers](../powers/) give the following identity when $x \geq 0:$
 

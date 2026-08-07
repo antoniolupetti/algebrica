@@ -48,7 +48,7 @@ Because the ratio approaches zero:
 
 $$x = o(x^2) \quad \text{as} \quad x \to \infty$$
 
-The same relation holds for any two power functions $x^a$ and $x^b$ with $a < b$:
+The same relation holds for any two [power functions](../power-function/) $x^a$ and $x^b$ with $a < b$:
 
 $$x^a = o(x^b) \quad \text{as} \quad x \to \infty$$
 
