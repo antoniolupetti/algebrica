@@ -10,11 +10,28 @@ tags:
 
 ## What is an ellipse
 
-When introducing the [parabola](../parabola/), we saw that the intersection of a [plane](../planes/) with a cone, projected onto the plane, can be a [circumference](../circumference/), a parabola, an ellipse, or a [hyperbola](../hyperbola/). These curves are the [conics](../introduction-to-conics/). A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x,y)\in\mathbb{R}^2$ that satisfy a general quadratic equation in the variables $x$ and $y$:
+When introducing the [parabola](../parabola/), we saw that the intersection of a [plane](../planes/) with a cone, projected onto the plane, can be a [circumference](../circumference/), a parabola, an ellipse, or a [hyperbola](../hyperbola/). These curves are the conics. A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x,y)\in\mathbb{R}^2$ that satisfy a general quadratic equation in the variables $x$ and $y$:
 
 $$f(x,y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
-The coefficients satisfy $a_{ij}\in\mathbb{R},$ and for the curve to be quadratic we require $a_{11}$ and $a_{22}$ nonzero.
+The coefficients satisfy $a_{ij}\in\mathbb{R},$ and $a_{11},$ $a_{12},$ $a_{22}$ are not all zero, so the polynomial has degree two.
+
+In the [matrix classification of conics](../introduction-to-conics/), the full coefficient matrix $A$ and its leading quadratic block $A_0$ are:
+
+$$
+A = \begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\[6pt]
+a_{12} & a_{22} & a_{23} \\[6pt]
+a_{13} & a_{23} & a_{33}
+\end{pmatrix}
+\qquad
+A_0 = \begin{pmatrix}
+a_{11} & a_{12} \\[6pt]
+a_{12} & a_{22}
+\end{pmatrix}
+$$
+
+The equation defines a non-degenerate ellipse with real points exactly when $\det A\neq0,$ $\det A_0>0$ and $\det A\cdot\mathrm{tr}(A_0)<0.$ The inequality $\det A_0>0$ means that the eigenvalues of $A_0$ have the same sign, and when they are distinct their eigenvectors are the directions of the two principal axes.
 
 The ellipse is the conic section obtained when the cutting plane crosses a single nappe of the cone completely, so the intersection is a single closed curve.
 
@@ -30,7 +47,7 @@ The points $F_1$ and $F_2$ are the foci of the ellipse. Taking $F_1$ with coordi
 
 - - -
 
-An ellipse has two axes of symmetry and a center of symmetry at their intersection, which is the center defined above. The major axis and the minor axis are, respectively, the longest and shortest diameters through the center. The major axis lies along the direction of maximum extension and passes through both foci. Its length is $2a,$ where $a$ is the semi-major axis. The minor axis is perpendicular to the major axis and also passes through the center. Its length is $2b,$ where $b$ is the semi-minor axis. The two endpoints of the major axis are the vertices of the ellipse, and the two endpoints of the minor axis are the co-vertices.
+An ellipse with distinct foci has two axes of symmetry and a center of symmetry at their intersection, which is the center defined above. The major axis and the minor axis are, respectively, the longest and shortest diameters through the center. The major axis lies along the direction of maximum extension and passes through both foci. Its length is $2a,$ where $a$ is the semi-major axis. The minor axis is perpendicular to the major axis and also passes through the center. Its length is $2b,$ where $b$ is the semi-minor axis. The two endpoints of the major axis are the vertices of the ellipse, and the two endpoints of the minor axis are the co-vertices.
 
 ## Deriving the standard equation
 
@@ -63,7 +80,7 @@ x^2(a^2-c^2) + a^2y^2 &= a^2(a^2-c^2)
 \end{align}
 $$
 
-Since $a>c,$ the quantity $a^2-c^2$ is positive, and we set $b^2=a^2-c^2.$ Substituting and dividing by $a^2b^2$ yields the standard form:
+For the case of distinct foci, $c>0.$ Since $a>c,$ the quantity $a^2-c^2$ is positive, and we set $b^2=a^2-c^2.$ Substituting and dividing by $a^2b^2$ yields the standard form:
 
 $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
 

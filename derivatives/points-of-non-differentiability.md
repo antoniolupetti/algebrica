@@ -34,7 +34,7 @@ In both cases the slopes of the secant lines grow without bound in absolute valu
 ![IMG. 1](svg/points-of-non-differentiability-1.svg)
 
 
-As an example, consider the function $f(x) = \sqrt[3]{x-1}$ at the point $c = 1$. The function is continuous on all of $\mathbb{R}$, and for $x \neq 1$ its derivative is:
+As an example, consider the [irrational function](../irrational-functions/) $f(x) = \sqrt[3]{x-1}$ at the point $c = 1$. The function is continuous on all of $\mathbb{R}$, and for $x \neq 1$ its derivative is:
 
 $$f'(x) = \frac{1}{3\sqrt[3]{(x-1)^2}}$$
 

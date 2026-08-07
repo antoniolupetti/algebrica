@@ -125,7 +125,7 @@ For example, in order to differentiate $y = (x^3 + 2)^{50}$, there is no need to
 
 $$D[(x^3 + 2)^{50}] = 50(x^3 + 2)^{49} \cdot 3x^2 = 150x^2(x^3 + 2)^{49}$$
 
-The power formula also covers roots, since $\sqrt{f(x)} = f(x)^{1/2}$. To differentiate $y = \sqrt{x^2 + 1}$, we apply the formula with $f(x) = x^2 + 1$ and $a = \frac{1}{2}$:
+The power formula also applies to [irrational functions](../irrational-functions/) expressed through roots, since $\sqrt{f(x)} = f(x)^{1/2}$. To differentiate $y = \sqrt{x^2 + 1}$, we apply the formula with $f(x) = x^2 + 1$ and $a = \frac{1}{2}$:
 
 $$D\left[\sqrt{x^2 + 1}\right] = \frac{1}{2}(x^2 + 1)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + 1}}$$
 

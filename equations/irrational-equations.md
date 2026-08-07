@@ -10,7 +10,7 @@ tags:
 
 ## Definition of irrational equations
 
-Irrational equations, also called radical equations, are [equations](../equations/) in which the unknown $x$ appears within a [radical](../radicals/) or is raised to a fractional [exponent](../powers/). They form a distinct class of problems that cannot be addressed through standard algebraic manipulations alone. The presence of roots and non-integer exponents imposes additional constraints on the admissible values of $x$, making [domain analysis](../determining-the-domain-of-a-function/) an essential preliminary step.
+Irrational equations, also called radical equations, are [equations](../equations/) that contain [irrational functions](../irrational-functions/) of the unknown, usually written with a [radical](../radicals/) or a fractional [exponent](../powers/). They form a distinct class of problems that cannot be addressed through standard algebraic manipulations alone. The presence of roots and non-integer exponents imposes additional constraints on the admissible values of $x$, making [domain analysis](../determining-the-domain-of-a-function/) an essential preliminary step.
 
 An irrational equation is an equation of the form $F(x) = 0$ in which at least one term contains a fractional power of a function, that is a power whose exponent has a denominator greater than one. Equivalently, these equations contain radical expressions. The defining term takes the form:
 

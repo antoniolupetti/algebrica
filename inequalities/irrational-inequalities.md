@@ -10,7 +10,7 @@ tags:
 ---
 ## Definition
 
-An irrational inequality is an inequality in which the unknown appears under a [radical](../radicals/) sign or is raised to a fractional [exponent](../powers/). More precisely, it is an inequality, strict or non-strict and in either direction, in which at least one term contains an expression of the type $\sqrt[n]{f(x)}$ or equivalently $f(x)^{p/q}$ with $p$, $q$ integers and $q \geq 2$. As with [irrational equations](../irrational-equations/), the presence of radicals imposes constraints on the [domain](../determining-the-domain-of-a-function/), and these constraints interact non-trivially with the direction of the inequality.
+An irrational inequality is an inequality involving an [irrational function](../irrational-functions/), with the unknown under a [radical](../radicals/) sign or raised to a fractional [exponent](../powers/). More precisely, it is an inequality, strict or non-strict and in either direction, in which at least one term contains an expression of the type $\sqrt[n]{f(x)}$ or equivalently $f(x)^{p/q}$ with $p$, $q$ integers and $q \geq 2$. As with [irrational equations](../irrational-equations/), the presence of radicals imposes constraints on the [domain](../determining-the-domain-of-a-function/), and these constraints interact non-trivially with the direction of the inequality.
 
 The central difficulty that distinguishes irrational inequalities from their equation counterparts is that raising both sides to a power is a monotone operation only under specific sign conditions:
 

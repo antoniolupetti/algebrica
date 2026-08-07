@@ -14,18 +14,35 @@ tags:
 ---
 ## Introduction to conic sections
 
-When introducing the [parabola](../parabola/), we observed that the intersection of a [plane](../planes/) with a cone produces, once projected onto the plane, one of four possible curves: a circumference, a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These four curves are collectively known as [conics](../introduction-to-conics/). A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x, y) \in \mathbb{R}^2$ whose coordinates satisfy a general quadratic equation in the variables $x$ and $y$. This [equation](../equations/) takes the following form:
+When introducing the [parabola](../parabola/), we observed that the intersection of a [plane](../planes/) with a cone produces, once projected onto the plane, one of four possible curves: a circumference, a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These four curves are collectively known as conics. A conic is a second-degree algebraic curve in the plane, defined as the set of points $(x, y) \in \mathbb{R}^2$ whose coordinates satisfy a general quadratic equation in the variables $x$ and $y$. This [equation](../equations/) takes the following form:
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
 + The coefficients $a_{ij}$ are real numbers.
 + The factor $2$ in front of the mixed and linear terms is a conventional choice that simplifies the matrix representation of the conic.
 
-For the equation to describe a quadratic curve, at least one of $a_{11}$, $a_{12}$, and $a_{22}$ must be different from zero; otherwise the expression reduces to a [linear equation](../linear-equations/) and the locus degenerates into a line.
+For the equation to have degree two, at least one of $a_{11},$ $a_{12},$ $a_{22}$ must be nonzero. If all three are zero, the polynomial has degree at most one and does not define a conic.
 
 - - -
 
-The specific type of conic obtained depends on the relative values of these coefficients, in particular on the sign of the [discriminant](../quadratic-formula/) associated with the quadratic part. The circumference corresponds to the simplest and most symmetric case, in which the coefficients of $x^2$ and $y^2$ are equal and the mixed term $a_{12}xy$ vanishes.
+The quadratic type depends on the sign of the [discriminant](../quadratic-formula/) associated with the quadratic part. For a circumference, the coefficients of $x^2$ and $y^2$ are equal and the mixed term $a_{12}xy$ is zero.
+
+For a circumference, the matrices in the [matrix classification of conics](../introduction-to-conics/) have the form:
+
+$$
+A = \begin{pmatrix}
+\lambda & 0 & a_{13} \\[6pt]
+0 & \lambda & a_{23} \\[6pt]
+a_{13} & a_{23} & a_{33}
+\end{pmatrix}
+\qquad
+A_0 = \lambda I = \begin{pmatrix}
+\lambda & 0 \\[6pt]
+0 & \lambda
+\end{pmatrix}
+$$
+
+Here $\lambda\neq0,$ and $I$ is the $2\times2$ identity matrix. The equation defines a non-degenerate circumference exactly when $\det A\cdot\mathrm{tr}(A_0)<0.$ The identity $A_0=\lambda I$ means that the quadratic part is $\lambda(x^2+y^2),$ while the sign condition guarantees a positive squared radius after translation to the center.
 
 ![IMG. 1](svg/circumference-1.svg)
 

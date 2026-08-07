@@ -14,7 +14,7 @@ Radicals arise from the problem of solving [equations](../equations/) of the for
 
 When $a \ge 0$, the principal real $n$-th root of $a$ is the unique non-negative real number $b$ such that $b^n = a$. This value is denoted by $\sqrt[n]{a}$. The defining property is that $\sqrt[n]{a} = b$ if and only if $b^n = a$ and $b \ge 0$. The condition $b \ge 0$ ensures uniqueness in the real case when $n$ is even.
 
-The value $a$ is called the radicand, and the [integer](../integers/) $n$ is called the index of the root. This notation specifies both the root operation and its degree.
+The value $a$ is called the radicand, and the [integer](../integers/) $n$ is called the index of the root. This notation specifies both the root operation and its degree. When the radicand depends on a variable, the radical may define an [irrational function](../irrational-functions/).
 
 The properties of roots depend on whether the index is even or odd.
 

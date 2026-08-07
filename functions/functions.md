@@ -200,7 +200,7 @@ Functions are classified as algebraic or transcendental. A function is algebraic
 
 + [Polynomial functions](../polynomial-function/) are defined by a [polynomial](../polynomials/) expression involving powers of $x$ with constant coefficients.
 + Rational functions are expressed as the [ratio of two polynomials](../rational-functions/).
-+ Irrational functions contain the variable $x$ under a [root symbol](../radicals/), such as $\sqrt{x}$.
++ [Irrational functions](../irrational-functions/) contain the variable $x$ under a [root symbol](../radicals/), such as $\sqrt{x}$.
 
 Transcendental functions go beyond algebraic operations and include expressions that cannot be written through finitely many additions, subtractions, multiplications, divisions, and root extractions. Common examples are [exponential functions](../exponential-function/), [logarithmic functions](../logarithms/), and [trigonometric functions](../sine-and-cosine/).
 

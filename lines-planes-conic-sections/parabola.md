@@ -13,31 +13,46 @@ tags:
 ---
 ## Conic sections
 
-When a [plane](../planes/) cuts a cone, the intersection projected onto the plane is a [circumference](../circumference/), a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These curves are the [conic sections](../introduction-to-conics/), or conics. A conic is a second-degree plane algebraic curve, the set of points $(x, y) \in \mathbb{R}^2$ that satisfy a quadratic equation in $x$ and $y$:
+When a [plane](../planes/) cuts a right circular double cone without passing through its vertex, the intersection is a [circle](../circumference/), a parabola, an [ellipse](../ellipse/), or a [hyperbola](../hyperbola/). These curves are the conic sections, or conics. Algebraically, a conic is the set of points $(x, y) \in \mathbb{R}^2$ that satisfy a quadratic equation in $x$ and $y:$
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
-The coefficients $a_{ij}$ are [real numbers](../real-numbers/), with $a_{11},$ $a_{12},$ $a_{22}$ not all zero so that at least one second-degree term is present.
+The coefficients $a_{ij}$ are [real numbers](../real-numbers/), and at least one of $a_{11},$ $a_{12},$ and $a_{22}$ is nonzero, so the equation has a nonzero quadratic part.
 
-+ The quadratic coefficients $a_{11},$ $a_{12},$ $a_{22}$ determine the type of the conic through the sign of $a_{11}a_{22} - a_{12}^2,$ positive for an ellipse, zero for a parabola, negative for a hyperbola.
-+ The coefficient $a_{12}$ governs the rotation of the curve relative to the coordinate axes, and the conic is aligned with the axes exactly when $a_{12} = 0.$
-+ The linear coefficients $a_{13}$ and $a_{23}$ and the constant $a_{33}$ fix the position of the curve in the plane, and a translation of the conic changes them while leaving the quadratic coefficients unchanged.
++ The quadratic type is elliptic when $a_{11}a_{22}-a_{12}^2>0,$ parabolic when $a_{11}a_{22}-a_{12}^2=0,$ and hyperbolic when $a_{11}a_{22}-a_{12}^2<0.$
++ The quadratic part is diagonal in the chosen coordinates exactly when $a_{12}=0.$
++ The coefficients determine where the conic lies, its size or aperture, whether it is degenerate, and whether it has real points. A translation changes the linear and constant coefficients while leaving the quadratic coefficients unchanged.
 
-When the polynomial $f(x, y)$ factors as a product of two linear polynomials:
+In the [matrix classification of conics](../introduction-to-conics/), the full coefficient matrix $A$ and its leading quadratic block $A_0$ are:
 
-$$f(x, y) = (ax + by + c)(a'x + b'y + c') = 0$$
+$$
+A = \begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\[6pt]
+a_{12} & a_{22} & a_{23} \\[6pt]
+a_{13} & a_{23} & a_{33}
+\end{pmatrix}
+\qquad
+A_0 = \begin{pmatrix}
+a_{11} & a_{12} \\[6pt]
+a_{12} & a_{22}
+\end{pmatrix}
+$$
 
-with [complex coefficients](../complex-numbers/) $a, b, c, a', b', c' \in \mathbb{C},$ the conic is degenerate.
+The equation defines a non-degenerate parabola exactly when $\det A\neq0$ and $\det A_0=0.$ Since $A_0$ is nonzero, it has rank $1$ and one zero eigenvalue. An eigenvector for this eigenvalue is parallel to the axis of the parabola.
 
-> A degenerate conic reduces to a pair of lines, a single line, or in some cases the empty set.
+When $\det A=0,$ the conic is degenerate. Over the [complex numbers](../complex-numbers/), its equation factors as a product of two linear polynomials:
+
+$$(ax + by + c)(a'x + b'y + c') = 0$$
+
+> The real locus of a degenerate conic may be a pair of lines, one double line, one point, or the empty set.
 
 ## The parabola
 
-The parabola is the conic section obtained when the cutting plane is parallel to a generatrix of the cone, so the intersection is a single unbounded curve.
+A non-degenerate parabola is the conic section obtained when the cutting plane is parallel to a generatrix of the cone and does not pass through the vertex of the cone. The intersection is a single unbounded curve.
 
 ![IMG 1.](svg/parabola-1.svg)
 
-A parabola is the set of all points in the plane equidistant from a fixed point $F,$ the focus, and a fixed line $d,$ the directrix.
+A parabola is the set of all points in the plane equidistant from a fixed point $F,$ the focus, and a fixed line $d,$ the directrix, where $F\notin d.$
 
 ![IMG 2.](svg/parabola-2.svg)
 
@@ -45,13 +60,17 @@ The line through the focus perpendicular to the directrix is the axis of the par
 
 $$y = ax^2, \quad a \neq 0$$
 
-Such a parabola is symmetric with respect to the $y$-axis. Its focus and directrix are:
+This equation follows from the focus-directrix definition. Write $p=\frac{1}{4a}.$ The distances from a point $P(x, y)$ to $F=(0, p)$ and to the line $y=-p$ are equal exactly when:
+
+$$\sqrt{x^2 + (y - p)^2} = |y + p|$$
+
+Squaring and simplifying gives $x^2=4py,$ which is equivalent to $y=ax^2.$ The parabola is symmetric with respect to the $y$-axis. Its focus and directrix are:
 
 $$F = \left(0, \frac{1}{4a}\right)$$
 
 $$y = -\frac{1}{4a}$$
 
-When $a > 0$ the parabola opens upward, so $y \geq 0$ for every $x$ and the focus lies on the positive half of the $y$-axis. When $a < 0$ it opens downward. The [magnitude](../absolute-value/) of $a$ fixes the width of the curve: as $|a|$ increases the opening narrows, and as $|a|$ decreases it widens.
+When $a > 0,$ the parabola opens upward, so $y \geq 0$ for every $x,$ and the focus lies on the positive half of the $y$-axis. When $a < 0,$ it opens downward. The [absolute value](../absolute-value/) $|a|$ determines the width of the curve. As $|a|$ increases, the opening narrows; as $|a|$ decreases, it widens.
 
 ![IMG 3.](svg/parabola-3.svg)
 
@@ -63,17 +82,17 @@ $$x = ay^2, \quad a \neq 0$$
 
 ![IMG 4.](svg/parabola-4.svg)
 
-Such a parabola is symmetric with respect to the $x$-axis. Its focus and directrix are:
+The parabola is symmetric with respect to the $x$-axis. Its focus and directrix are:
 
 $$F = \left(\frac{1}{4a}, 0\right)$$
 
 $$x = -\frac{1}{4a}$$
 
-When $a > 0$ the parabola opens to the right, so $x \geq 0$ for every $y,$ and when $a < 0$ it opens to the left. As before, the opening narrows as $|a|$ increases. The general equation with axis parallel to the $x$-axis is $x = ay^2 + by + c$ with $a \neq 0.$ Its axis of symmetry is the horizontal line:
+When $a > 0,$ the parabola opens to the right, so $x \geq 0$ for every $y,$ and when $a < 0,$ it opens to the left. As before, the opening narrows as $|a|$ increases. The general equation with axis parallel to the $x$-axis is $x = ay^2 + by + c,$ with $a \neq 0.$ Its axis of symmetry is the horizontal line:
 
 $$y = -\frac{b}{2a}$$
 
-Its vertex, focus, and directrix follow from the vertical case by exchanging the two coordinates.
+The corresponding formulas for the vertex, focus, and directrix are obtained by exchanging $x$ and $y$ in the vertical formulas derived in the next section.
 
 ## The parabola in standard quadratic form
 
@@ -83,7 +102,11 @@ $$y = ax^2 + bx + c, \quad a \neq 0$$
 
 ![IMG 5.](svg/parabola-5.svg)
 
-This is a [second-degree equation](../quadratic-equations/) in $x.$ Its axis of symmetry is the vertical line:
+This is a [second-degree equation](../quadratic-equations/) in $x.$ With the [discriminant](../quadratic-formula/) $\Delta=b^2-4ac,$ completing the square gives:
+
+$$y = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}$$
+
+This expression has the form $y=a(x-h)^2+k,$ with $h=-\frac{b}{2a}$ and $k=-\frac{\Delta}{4a}.$ Its axis of symmetry is the vertical line:
 
 $$x = -\frac{b}{2a}$$
 
@@ -91,17 +114,17 @@ The vertex is:
 
 $$V\left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)$$
 
-where $\Delta = b^2 - 4ac$ is the [discriminant](../quadratic-formula/) of the quadratic. The focus and the directrix are:
+The focus and directrix have signed vertical offsets $\frac{1}{4a}$ and $-\frac{1}{4a}$ from the vertex, respectively:
 
 $$F\left(-\frac{b}{2a}, \frac{1 - \Delta}{4a}\right)$$
 
 $$y = -\frac{1 + \Delta}{4a}$$
 
-Two special cases follow from the general equation. When $b = 0$ and $c \neq 0$ the equation becomes $y = ax^2 + c,$ with vertex $V(0, c)$ and axis of symmetry the $y$-axis. When $c = 0$ and $b \neq 0$ the equation becomes $y = ax^2 + bx,$ with vertex:
+Two special cases follow from the general equation. When $b = 0$ and $c \neq 0,$ the equation becomes $y = ax^2 + c,$ with vertex $V(0, c)$ and axis of symmetry the $y$-axis. When $c = 0$ and $b \neq 0,$ the equation becomes $y = ax^2 + bx,$ with vertex:
 
 $$V\left(-\frac{b}{2a}, -\frac{b^2}{4a}\right)$$
 
-and the curve passes through the origin $O(0, 0).$
+The curve also passes through the origin $O(0, 0).$
 
 ## Parabola with vertex not at the origin
 
@@ -115,15 +138,15 @@ $$F = \left(h, k + \frac{1}{4a}\right)$$
 
 $$y = k - \frac{1}{4a}$$
 
-The same translation applied to $x = ay^2$ gives the parabola with horizontal axis and vertex $(h, k)$:
+The same translation applied to $x = ay^2$ gives the parabola with horizontal axis and vertex $(h, k):$
 
 $$x - h = a(y - k)^2$$
 
-with axis of symmetry $y = k,$ focus $\left(h + \frac{1}{4a}, k\right),$ and directrix $x = h - \frac{1}{4a}.$
+Its axis of symmetry is $y = k.$ Its focus is $\left(h + \frac{1}{4a}, k\right),$ and its directrix is $x = h - \frac{1}{4a}.$
 
-Expanding $y = a(x - h)^2 + k$ returns the standard quadratic form $y = ax^2 + bx + c,$ so the vertex form and the general form describe the same curve. To read the vertex from the general form, [complete the square](../completing-the-square/).
+Expanding $y = a(x - h)^2 + k$ gives the standard quadratic form $y = ax^2 + bx + c,$ so the vertex form and the general form describe the same curve. To read the vertex from the general form, [complete the square](../completing-the-square/).
 
-As an example, write $y = 2x^2 - 12x + 13$ in vertex form. Since the leading coefficient multiplies only the terms in $x,$ factor it out of those terms:
+To write $y = 2x^2 - 12x + 13$ in vertex form, we complete the square. The first two terms have a common factor of $2,$ so we factor it out:
 
 $$y = 2(x^2 - 6x) + 13$$
 
@@ -137,7 +160,7 @@ y &= 2(x^2 - 6x + 9 - 9) + 13 \\[6pt]
 \end{align}
 $$
 
-The vertex is $(3, -5)$ and the axis of symmetry is $x = 3.$ With $a = 2$ the focus is $\left(3, -5 + \frac{1}{8}\right) = \left(3, -\frac{39}{8}\right)$ and the directrix is $y = -5 - \frac{1}{8} = -\frac{41}{8}.$
+The vertex is $(3, -5)$ and the axis of symmetry is $x = 3.$ With $a = 2,$ the focus is $\left(3, -5 + \frac{1}{8}\right) = \left(3, -\frac{39}{8}\right).$ The directrix is $y = -5 - \frac{1}{8} = -\frac{41}{8}.$
 
 ## The latus rectum
 
@@ -145,7 +168,7 @@ The chord of the parabola through the focus and parallel to the directrix is the
 
 ![IMG 6.](svg/parabola-6.svg)
 
-For the parabola $y = ax^2$ the focus has ordinate $1/4a,$ so the endpoints of the latus rectum are the points of the curve with this ordinate. Setting $ax^2 = 1/4a$ gives:
+For the parabola $y = ax^2,$ the focus has ordinate $\frac{1}{4a},$ so the endpoints of the latus rectum are the points of the curve with this ordinate. Setting $ax^2 = \frac{1}{4a}$ and solving for $x$ gives:
 
 $$x = \pm\frac{1}{2|a|}$$
 
@@ -161,13 +184,13 @@ A larger $|a|$ gives a shorter latus rectum and a narrower parabola.
 
 ## Eccentricity and the polar equation
 
-The parabola has a description common to all the conics. Fix a focus $F$ and a directrix $d,$ and for a point $P$ let $r$ be its distance to the focus and $\delta$ its distance to the directrix. The eccentricity is the constant ratio:
+Non-degenerate conics with positive eccentricity have a common focus-directrix description. Fix a focus $F$ and a directrix $d,$ with $F\notin d.$ For a point $P,$ let $r$ be its distance to the focus and $\delta$ its distance to the directrix. A conic is the locus on which the ratio of these distances has a fixed positive value $e:$
 
 $$e = \frac{r}{\delta}$$
 
-The value of $e$ selects the conic: $e < 1$ gives an ellipse, $e = 1$ gives a parabola, and $e > 1$ gives a hyperbola. The defining equidistance of the parabola, $r = \delta,$ is the case $e = 1.$
+The conic is an ellipse when $0 < e < 1,$ a parabola when $e = 1,$ and a hyperbola when $e > 1.$ The defining equidistance of the parabola, $r = \delta,$ is the case $e = 1.$
 
-This description also gives the equation of the parabola in [polar coordinates](../polar-coordinates/). Place the focus at the pole and take the directrix as the vertical line $x = -h,$ with $h > 0$ the distance from the focus to the directrix. A point $P$ with polar coordinates $(r, \theta)$ has abscissa $x = r\cos\theta,$ so its distance to the directrix is $r\cos\theta + h.$ The condition $r = r\cos\theta + h$ gives:
+This description also gives the equation of the parabola in [polar coordinates](../polar-coordinates/). Place the focus at the pole and take the directrix as the vertical line $x = -h,$ where $h > 0$ is the distance from the focus to the directrix. A point $P$ with polar coordinates $(r, \theta)$ has abscissa $x = r\cos\theta,$ so its distance to the directrix is $|r\cos\theta + h|.$ The parabola lies on the side of the directrix containing the focus, where this distance is $r\cos\theta + h.$ The condition $r = r\cos\theta + h$ gives:
 
 $$
 \begin{align}
@@ -180,21 +203,21 @@ The trigonometric function and the sign depend on the placement of the directrix
 
 $$r = \frac{h}{1 + \cos\theta}$$
 
-A horizontal directrix $y = \mp h$ gives:
+A horizontal directrix $y = \pm h$ gives:
 
 $$r = \frac{h}{1 \pm \sin\theta}$$
 
-The same construction for a general conic yields:
+On the side of the directrix containing the focus, a conic with eccentricity $e$ satisfies $r=e(r\cos\theta+h).$ Hence:
 
 $$r = \frac{eh}{1 - e\cos\theta}$$
 
-which reduces to the parabola when $e = 1.$
+For $e = 1,$ this is the polar equation of the parabola. For $e > 1,$ the solutions with $r\geq0$ form one branch of the hyperbola; the complete locus satisfies $r=e|r\cos\theta+h|.$
 
-At $\theta = \pi/2$ the radius equals $h,$ the distance from the focus to the directrix, which is the semi-latus rectum. The full latus rectum has length $2h,$ in agreement with the value $1/\lvert a\rvert$ found for $y = ax^2,$ where $h=1/2\lvert a\rvert.$
+For the parabola, at $\theta = \pm\pi/2,$ the radius equals $h,$ the distance from the focus to the directrix, which is the semi-latus rectum. The full latus rectum has length $2h.$ For $y = ax^2,$ we have $h=\frac{1}{2|a|},$ so $2h=\frac{1}{|a|},$ as obtained above.
 
 ## Intersection with a line
 
-The intersection points of the parabola $y = ax^2 + bx + c$ with a [line](../lines/) $y = mx + q$ are the solutions of the system formed by the two equations:
+The intersection points of the parabola $y = ax^2 + bx + c$ with a nonvertical [line](../lines/) $y = mx + q$ are the solutions of the system:
 
 $$
 \begin{cases}
@@ -203,7 +226,7 @@ y = mx + q
 \end{cases}
 $$
 
-Equating the right-hand sides and collecting terms gives a single quadratic in $x$:
+Equating the right-hand sides and collecting terms gives a single quadratic in $x:$
 
 $$
 \begin{align}
@@ -214,17 +237,21 @@ $$
 
 ![IMG 7.](svg/parabola-7.svg)
 
-Its solutions are the $x$-coordinates of the intersection points. Being a quadratic, it has at most two distinct [roots](../roots-of-a-polynomial/), and the discriminant $\Delta$ determines how the line meets the parabola:
+Its solutions are the $x$-coordinates of the intersection points. This quadratic has at most two distinct [roots](../roots-of-a-polynomial/). Its discriminant is:
 
-+ When $\Delta > 0$ the roots are real and distinct, and the line meets the parabola at two points. The line is a secant.
-+ When $\Delta = 0$ the roots are real and coincident, and the line is tangent to the parabola at a single point.
-+ When $\Delta < 0$ there are no real roots, and the line does not meet the parabola. The line is external.
+$$\Delta_{\ell} = (b - m)^2 - 4a(c - q)$$
 
-> Taking the line to be the $x$-axis, $y = 0,$ recovers the [intersections of the parabola with the $x$-axis](../geometrical-meaning-quadratic-equations/), fixed by the sign of $b^2 - 4ac.$
+The sign of $\Delta_{\ell}$ determines how the line meets the parabola:
+
++ When $\Delta_{\ell} > 0,$ the roots are real and distinct, and the line meets the parabola at two points. The line is a secant.
++ When $\Delta_{\ell} = 0,$ the quadratic has one repeated real root, and the line is tangent to the parabola at a single point.
++ When $\Delta_{\ell} < 0,$ the quadratic has no real roots, and the line does not meet the parabola. The line is external.
+
+> Taking the line to be the $x$-axis, $y = 0,$ recovers the [intersections of the parabola with the $x$-axis](../geometrical-meaning-quadratic-equations/), whose number is determined by the sign of $b^2 - 4ac.$
 
 ## Tangent lines through a point
 
-Given a point $P$ in the plane, the number of tangents to the parabola through $P$ depends on the position of $P$:
+The parabola divides the plane into two regions. The internal region is the side containing the focus, and the external region is the opposite side. Given a point $P$ in the plane, the number of tangents to the parabola through $P$ depends on the position of $P:$
 
 + Two tangents pass through $P$ when $P$ is external to the parabola.
 + One tangent passes through $P$ when $P$ lies on the parabola.
@@ -232,7 +259,7 @@ Given a point $P$ in the plane, the number of tangents to the parabola through $
 
 ![IMG 8.](svg/parabola-8.svg)
 
-To find the tangents from $P(x_0, y_0)$ to the parabola $y = ax^2 + bx + c,$ solve the system of the parabola and the pencil of lines through $P$:
+Every tangent to the parabola $y = ax^2 + bx + c$ is nonvertical, so a candidate through $P(x_0, y_0)$ has a finite slope $m.$ Its intersections with the parabola are the solutions of the system:
 
 $$
 \begin{cases}
@@ -241,11 +268,11 @@ y = ax^2 + bx + c
 \end{cases}
 $$
 
-Eliminating $y$ produces a quadratic in $x$ whose coefficients depend on $m.$ The tangency condition sets its discriminant equal to zero, which gives an equation in $m.$ Solving for $m$ and substituting the values into the pencil yields the tangent lines.
+Eliminating $y$ gives a quadratic in $x$ whose coefficients depend on $m.$ Tangency requires its discriminant to be zero. Solving the resulting equation for $m$ and substituting each solution into $y-y_0=m(x-x_0)$ gives the tangent lines.
 
 ## Example
 
-Find the equations of the lines through $P(3, -6)$ tangent to the parabola $y = x^2 - 4.$ The pencil of lines through $P$ is:
+Find the equations of the lines through $P(3, -6)$ tangent to the parabola $y = x^2 - 4.$ A nonvertical line through $P$ has equation:
 
 $$y - y_0 = m(x - x_0)$$
 
@@ -253,7 +280,7 @@ Substituting $x_0 = 3$ and $y_0 = -6$ gives:
 
 $$y + 6 = m(x - 3)$$
 
-The system of the pencil and the parabola is:
+Combining this line with the parabola gives the system:
 
 $$
 \begin{cases}
@@ -262,7 +289,7 @@ y + 6 = m(x - 3)
 \end{cases}
 $$
 
-Substituting the first equation into the second and collecting terms produces a quadratic in $x$:
+Substituting the first equation into the second and collecting terms gives a quadratic in $x:$
 
 $$
 \begin{align}
@@ -271,11 +298,11 @@ $$
 \end{align}
 $$
 
-With $a = 1,$ $b = -m,$ and $c = 3m + 2,$ the discriminant is:
+The discriminant of this quadratic in $x$ is:
 
-$$\Delta = m^2 - 12m - 8$$
+$$D(m) = (-m)^2 - 4(1)(3m + 2) = m^2 - 12m - 8$$
 
-Imposing the tangency condition $\Delta = 0$ and solving the quadratic in $m$:
+The tangency condition is $D(m)=0,$ so $m$ satisfies:
 
 $$
 \begin{align}
@@ -292,3 +319,5 @@ y &= \left(6 - 2\sqrt{11}\right)x + 6\sqrt{11} - 24 \\[6pt]
 y &= \left(6 + 2\sqrt{11}\right)x - 6\sqrt{11} - 24
 \end{align}
 $$
+
+These are the two tangent lines through $P(3, -6).$

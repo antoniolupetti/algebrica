@@ -13,11 +13,28 @@ tags:
 ---
 ## What is a hyperbola
 
-When a [plane](../planes/) cuts a cone, the intersection projected onto the plane is a [circumference](../circumference/), a [parabola](../parabola/), an [ellipse](../ellipse/), or a hyperbola. These curves are the [conic sections](../introduction-to-conics/), or conics. A conic is a second-degree plane algebraic curve, the set of points $(x, y) \in \mathbb{R}^2$ that satisfy a [quadratic equation](../quadratic-equations/) in $x$ and $y$:
+When a [plane](../planes/) cuts a cone, the intersection projected onto the plane is a [circumference](../circumference/), a [parabola](../parabola/), an [ellipse](../ellipse/), or a hyperbola. These curves are the conic sections, or conics. A conic is a second-degree plane algebraic curve, the set of points $(x, y) \in \mathbb{R}^2$ that satisfy a [quadratic equation](../quadratic-equations/) in $x$ and $y$:
 
 $$f(x, y) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0$$
 
-The coefficients $a_{ij}$ are [real numbers](../real-numbers/), and the curve is quadratic when $a_{11}$ and $a_{22}$ are both nonzero.
+The coefficients $a_{ij}$ are [real numbers](../real-numbers/), and $a_{11},$ $a_{12},$ $a_{22}$ are not all zero, so the polynomial has degree two.
+
+In the [matrix classification of conics](../introduction-to-conics/), the full coefficient matrix $A$ and its leading quadratic block $A_0$ are:
+
+$$
+A = \begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\[6pt]
+a_{12} & a_{22} & a_{23} \\[6pt]
+a_{13} & a_{23} & a_{33}
+\end{pmatrix}
+\qquad
+A_0 = \begin{pmatrix}
+a_{11} & a_{12} \\[6pt]
+a_{12} & a_{22}
+\end{pmatrix}
+$$
+
+The equation defines a non-degenerate hyperbola exactly when $\det A\neq0$ and $\det A_0<0.$ The eigenvalues of $A_0$ then have opposite signs, and their eigenvectors are the directions of the principal axes. After translation to the center, $\mathbf{w}^{\mathrm{T}}A_0\mathbf{w}=0$ is the equation of the two asymptotes.
 
 The hyperbola is the conic section obtained when the cutting plane meets both nappes of the cone, so the intersection is two separate unbounded curves, the branches.
 

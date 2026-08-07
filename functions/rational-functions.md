@@ -41,7 +41,7 @@ The [evenness or oddness](../even-and-odd-functions/) of the function, together 
 
 ## Special cases and algebraic structure
 
-Every polynomial is a rational function, the ratio of itself and the constant polynomial $1.$ Constants fall under the same description, since a number is a polynomial of degree zero. So [polynomials](../polynomials/) and constant functions are particular rational functions, those whose denominator carries no variable. A function is rational only when it can be written as a ratio of two polynomials, which excludes expressions such as $\sqrt{x},$ $\sin x,$ and $e^x,$ none of which is a quotient of polynomials.
+Every polynomial is a rational function, the ratio of itself and the constant polynomial $1.$ Constants fall under the same description, since a number is a polynomial of degree zero. So [polynomials](../polynomials/) and constant functions are particular rational functions, those whose denominator carries no variable. A function is rational only when it can be written as a ratio of two polynomials. This excludes [irrational functions](../irrational-functions/) such as $\sqrt{x}$ and transcendental functions such as $\sin x$ and $e^x.$
 
 The rational functions are closed under the four arithmetic operations. The sum, difference, and product of two rational functions is again a ratio of polynomials, and so is the quotient whenever the divisor is not the zero function. With these operations the rational functions form a field, in the same way the fractions of integers form the [rational numbers](../rational-numbers/).
 

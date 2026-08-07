@@ -150,7 +150,7 @@ $$a^{-n} = \frac{1}{a^n} \quad \text{with} \quad a \neq 0 \quad \text{and} \quad
 
 - - -
 
-When the exponent is a rational number of the form $\frac{m}{n}$, the power can be expressed as a radical.
+When the exponent is a rational number of the form $\frac{m}{n}$, the power can be expressed as a radical. If the base depends on a variable, this notation may define an [irrational function](../irrational-functions/).
 
 $$a^{\frac{m}{n}} = \sqrt[n]{a^m} \quad \text{where} \quad m, n \in \mathbb{N} \quad \text{and} \quad n \neq 0$$
 

@@ -92,7 +92,7 @@ $$
 \end{align}
 $$
 
-For example, the function $f(x) = \sqrt{x}$ defined on the interval $[0, 4]$ is continuous at every interior point, as the square root function is continuous on $(0, +\infty).$
+The [square root function](../irrational-functions/) $f(x) = \sqrt{x},$ restricted to $[0, 4],$ is continuous at every interior point because $\sqrt{x}$ is continuous on $(0, +\infty).$
 
 ![IMG. 3](svg/continuous-functions-3.svg)
 
