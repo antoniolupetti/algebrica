@@ -3,40 +3,40 @@
     <title>Group</title>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(1.000000, 0.000000)">
-            <path d="M151.5,4.98013557 L151.935788,5.75486938 L156.435788,13.7548694 L156.680918,14.1906571 L155.809343,14.6809184 L155.564212,14.2451306 L151.999,7.906 L152,196 L151,196 L150.999,7.91 L147.435788,14.2451306 L147.190657,14.6809184 L146.319082,14.1906571 L146.564212,13.7548694 L151.064212,5.75486938 L151.5,4.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <path d="M294.809343,141.319082 L295.245131,141.564212 L303.245131,146.064212 L304.019864,146.5 L303.245131,146.935788 L295.245131,151.435788 L294.809343,151.680918 L294.319082,150.809343 L294.754869,150.564212 L301.093,146.999 L295,147 L3.85379111e-16,147 L-0.5,147 L-0.5,146 L-3.85379111e-16,146 L295,146 L301.089,145.999 L294.754869,142.435788 L294.319082,142.190657 L294.809343,141.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <text font-size="14" font-weight="normal" fill="#BABABA">
+            <path d="M151.5,4.98013557 L151.935788,5.75486938 L156.435788,13.7548694 L156.680918,14.1906571 L155.809343,14.6809184 L155.564212,14.2451306 L151.999,7.906 L152,196 L151,196 L150.999,7.91 L147.435788,14.2451306 L147.190657,14.6809184 L146.319082,14.1906571 L146.564212,13.7548694 L151.064212,5.75486938 L151.5,4.98013557 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <path d="M294.809343,141.319082 L295.245131,141.564212 L303.245131,146.064212 L304.019864,146.5 L303.245131,146.935788 L295.245131,151.435788 L294.809343,151.680918 L294.319082,150.809343 L294.754869,150.564212 L301.093,146.999 L295,147 L3.85379111e-16,147 L-0.5,147 L-0.5,146 L-3.85379111e-16,146 L295,146 L301.089,145.999 L294.754869,142.435788 L294.319082,142.190657 L294.809343,141.319082 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
                 <tspan x="296.5" y="166">x</tspan>
             </text>
-            <text font-size="14" font-weight="normal" fill="#BABABA">
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
                 <tspan x="132.5" y="14">y</tspan>
             </text>
-            <line x1="91.5" y1="70.5" x2="91.5" y2="146.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <line x1="210.5" y1="70.5" x2="210.5" y2="146.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <line x1="91.5" y1="70.5" x2="91.5" y2="146.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="210.5" y1="70.5" x2="210.5" y2="146.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="82" y="166">-a</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="207" y="166">a</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="118" y="110">S₁</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="176" y="110">S₂</tspan>
             </text>
-            <path d="M31,128 C39.333818,117.720215 45.5749181,110.315295 49.7233005,105.785241 C84.3905697,67.9284138 118.482803,49 152,49 C181.361883,49 210.429564,63.5260199 239.203045,92.5780598 M252.595457,107.173944 C253.319701,108.021526 254.115324,108.973976 254.982328,110.031295 C257.31939,112.881366 261.991948,118.870934 269,128" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <path d="M31,128 C39.333818,117.720215 45.5749181,110.315295 49.7233005,105.785241 C84.3905697,67.9284138 118.482803,49 152,49 C181.361883,49 210.429564,63.5260199 239.203045,92.5780598 M252.595457,107.173944 C253.319701,108.021526 254.115324,108.973976 254.982328,110.031295 C257.31939,112.881366 261.991948,118.870934 269,128" stroke="#312f2f" stroke-width="2" stroke-linecap="round"></path>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="240.5" y="103">y=f(x)</tspan>
             </text>
-            <circle fill="#333333" cx="91.5" cy="146.5" r="2.5"></circle>
-            <circle fill="#333333" cx="210.5" cy="146.5" r="2.5"></circle>
-            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+            <circle fill="#312f2f" cx="91.5" cy="146.5" r="2.5"></circle>
+            <circle fill="#312f2f" cx="210.5" cy="146.5" r="2.5"></circle>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
                 <tspan x="166" y="202">In the case of an even function </tspan>
                 <tspan x="166" y="215">(symmetric with respect to the </tspan>
                 <tspan x="166" y="228">y-axis), we have S₁ = S₂.  </tspan>
             </text>
-            <line x1="179.5" y1="139" x2="179.5" y2="185" stroke="#BABABA" stroke-linecap="round"></line>
+            <line x1="179.5" y1="139" x2="179.5" y2="185" stroke="#beb8b7" stroke-linecap="round"></line>
         </g>
     </g>
 </svg>

@@ -2,68 +2,68 @@
 <svg width="331px" height="236px" viewBox="0 0 331 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="NEW---Integrals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="mean-value-theorem-for-integrals-1">
-            <path d="M62,94.926 L66.926,90 M76.2846,80.6414 L101.0093,55.9167 M62,104.926 L67.298,99.6279 M76.926,90 L111.66,55.266 M86.926,90 L119.296,57.63 M96.926,90 L125.7699,61.1561 M106.926,90 L131.6044,65.3215 M116.926,90 L137.0399,69.8861 M126.926,90 L142.2137,74.7123 M136.926,90 L147.2165,79.7094 M146.926,90 L152.1152,84.8108 M161.8128,95.1132 L166.926,90 M166.7103,100.2157 L176.926,90 M171.7112,105.2148 L186.926,90 M176.8819,110.0441 L196.926,90 M182.3126,114.6134 L206.926,90 M188.1398,118.7861 L216.926,90 M194.6016,122.3244 L226.926,90 M202.2134,124.7126 L236.926,90 M246.8036,80.1224 L252,74.926 M212.7791,124.1468 L237.9027,99.0232 M246.926,90 L252,84.926" id="area-hatching" stroke-opacity="0.466667" stroke="#BABABA"></path>
-            <line x1="61.5" y1="90.5" x2="62" y2="155" id="guide-a" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
-            <line x1="107.636552" y1="54.925971" x2="107.636552" y2="155" id="guide-maximum" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
-            <line x1="157.5" y1="90" x2="157.5" y2="155" id="guide-c" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
-            <line x1="206.363448" y1="125.074029" x2="206.363448" y2="155" id="guide-minimum" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
-            <line x1="252.5" y1="66.25" x2="252.5" y2="155" id="guide-b" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
-            <line x1="27" y1="90.5" x2="265" y2="90.5" id="mean-value-line" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <line x1="24" y1="54.5" x2="31" y2="54.5" id="maximum-tick" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="24" y1="125.5" x2="31" y2="125.5" id="minimum-tick" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
-            <path d="M62,113.75 C84.0034916,50.3452015 106.006983,47.2919657 128.010475,62.655184 M139.649723,72.2697374 C177.099815,107.252752 214.549908,174.165398 252,66.25" id="Shape" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M27.882134,4.6769926 L27.9357878,4.7548694 L32.4357878,12.7548694 C32.5711697,12.9955483 32.4858096,13.3004059 32.2451306,13.4357878 C32.0311938,13.5561272 31.7665479,13.5020533 31.6152959,13.3195146 L31.5642122,13.2451306 L27.999,6.906 L28,175.5 C28,175.776142 27.7761424,176 27.5,176 C27.2545401,176 27.0503916,175.823125 27.0080557,175.589876 L27,175.5 L26.999,6.91 L23.4357878,13.2451306 C23.3154483,13.4590675 23.0612021,13.5502832 22.8371522,13.4728292 L22.7548694,13.4357878 C22.5409325,13.3154483 22.4497168,13.0612021 22.5271708,12.8371522 L22.5642122,12.7548694 L27.0642122,4.7548694 C27.2394349,4.4433624 27.6651608,4.4174034 27.882134,4.6769926 Z" id="Line-Copy-5" fill="#BABABA" fill-rule="nonzero"></path>
-            <path d="M322.162848,150.527171 L322.245131,150.564212 L330.245131,155.064212 C330.556638,155.239435 330.582597,155.665161 330.323007,155.882134 L330.245131,155.935788 L322.245131,160.435788 C322.004452,160.57117 321.699594,160.48581 321.564212,160.245131 C321.443873,160.031194 321.497947,159.766548 321.680485,159.615296 L321.754869,159.564212 L328.091,156 L27,156 C26.7238576,156 26.5,155.776142 26.5,155.5 C26.5,155.25454 26.6768752,155.050392 26.9101244,155.008056 L27,155 L328.091,155 L321.754869,151.435788 C321.540933,151.315448 321.449717,151.061202 321.527171,150.837152 L321.564212,150.754869 C321.684552,150.540933 321.938798,150.449717 322.162848,150.527171 Z" id="Line-2-Copy-5" fill="#BABABA" fill-rule="nonzero"></path>
-            <circle id="point-a" fill="#333333" fill-rule="nonzero" cx="62" cy="155" r="2.5"></circle>
-            <circle id="point-maximum" fill="#333333" fill-rule="nonzero" cx="107.636552" cy="54.925971" r="2.5"></circle>
-            <circle id="point-c-axis" fill="#333333" fill-rule="nonzero" cx="157" cy="155" r="2.5"></circle>
-            <circle id="point-c-curve" fill="#333333" fill-rule="nonzero" cx="157" cy="90" r="2.5"></circle>
-            <circle id="point-minimum" fill="#333333" fill-rule="nonzero" cx="206.363448" cy="125.074029" r="2.5"></circle>
-            <circle id="point-b" fill="#333333" fill-rule="nonzero" cx="252" cy="155" r="2.5"></circle>
-            <text id="M" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <path d="M62,94.926 L66.926,90 M76.2846,80.6414 L101.0093,55.9167 M62,104.926 L67.298,99.6279 M76.926,90 L111.66,55.266 M86.926,90 L119.296,57.63 M96.926,90 L125.7699,61.1561 M106.926,90 L131.6044,65.3215 M116.926,90 L137.0399,69.8861 M126.926,90 L142.2137,74.7123 M136.926,90 L147.2165,79.7094 M146.926,90 L152.1152,84.8108 M161.8128,95.1132 L166.926,90 M166.7103,100.2157 L176.926,90 M171.7112,105.2148 L186.926,90 M176.8819,110.0441 L196.926,90 M182.3126,114.6134 L206.926,90 M188.1398,118.7861 L216.926,90 M194.6016,122.3244 L226.926,90 M202.2134,124.7126 L236.926,90 M246.8036,80.1224 L252,74.926 M212.7791,124.1468 L237.9027,99.0232 M246.926,90 L252,84.926" id="area-hatching" stroke-opacity="0.466667" stroke="#beb8b7"></path>
+            <line x1="61.5" y1="90.5" x2="62" y2="155" id="guide-a" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="107.636552" y1="54.925971" x2="107.636552" y2="155" id="guide-maximum" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="157.5" y1="90" x2="157.5" y2="155" id="guide-c" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="206.363448" y1="125.074029" x2="206.363448" y2="155" id="guide-minimum" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="252.5" y1="66.25" x2="252.5" y2="155" id="guide-b" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="27" y1="90.5" x2="265" y2="90.5" id="mean-value-line" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="24" y1="54.5" x2="31" y2="54.5" id="maximum-tick" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="24" y1="125.5" x2="31" y2="125.5" id="minimum-tick" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M62,113.75 C84.0034916,50.3452015 106.006983,47.2919657 128.010475,62.655184 M139.649723,72.2697374 C177.099815,107.252752 214.549908,174.165398 252,66.25" id="Shape" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M27.882134,4.6769926 L27.9357878,4.7548694 L32.4357878,12.7548694 C32.5711697,12.9955483 32.4858096,13.3004059 32.2451306,13.4357878 C32.0311938,13.5561272 31.7665479,13.5020533 31.6152959,13.3195146 L31.5642122,13.2451306 L27.999,6.906 L28,175.5 C28,175.776142 27.7761424,176 27.5,176 C27.2545401,176 27.0503916,175.823125 27.0080557,175.589876 L27,175.5 L26.999,6.91 L23.4357878,13.2451306 C23.3154483,13.4590675 23.0612021,13.5502832 22.8371522,13.4728292 L22.7548694,13.4357878 C22.5409325,13.3154483 22.4497168,13.0612021 22.5271708,12.8371522 L22.5642122,12.7548694 L27.0642122,4.7548694 C27.2394349,4.4433624 27.6651608,4.4174034 27.882134,4.6769926 Z" id="Line-Copy-5" fill="#beb8b7" fill-rule="nonzero"></path>
+            <path d="M322.162848,150.527171 L322.245131,150.564212 L330.245131,155.064212 C330.556638,155.239435 330.582597,155.665161 330.323007,155.882134 L330.245131,155.935788 L322.245131,160.435788 C322.004452,160.57117 321.699594,160.48581 321.564212,160.245131 C321.443873,160.031194 321.497947,159.766548 321.680485,159.615296 L321.754869,159.564212 L328.091,156 L27,156 C26.7238576,156 26.5,155.776142 26.5,155.5 C26.5,155.25454 26.6768752,155.050392 26.9101244,155.008056 L27,155 L328.091,155 L321.754869,151.435788 C321.540933,151.315448 321.449717,151.061202 321.527171,150.837152 L321.564212,150.754869 C321.684552,150.540933 321.938798,150.449717 322.162848,150.527171 Z" id="Line-2-Copy-5" fill="#beb8b7" fill-rule="nonzero"></path>
+            <circle id="point-a" fill="#312f2f" fill-rule="nonzero" cx="62" cy="155" r="2.5"></circle>
+            <circle id="point-maximum" fill="#312f2f" fill-rule="nonzero" cx="107.636552" cy="54.925971" r="2.5"></circle>
+            <circle id="point-c-axis" fill="#312f2f" fill-rule="nonzero" cx="157" cy="155" r="2.5"></circle>
+            <circle id="point-c-curve" fill="#312f2f" fill-rule="nonzero" cx="157" cy="90" r="2.5"></circle>
+            <circle id="point-minimum" fill="#312f2f" fill-rule="nonzero" cx="206.363448" cy="125.074029" r="2.5"></circle>
+            <circle id="point-b" fill="#312f2f" fill-rule="nonzero" cx="252" cy="155" r="2.5"></circle>
+            <text id="M" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="7" y="59">M</tspan>
             </text>
-            <text id="f(c)" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="f(c)" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="0" y="94">f(c)</tspan>
             </text>
-            <text id="m" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="m" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="7" y="129">m</tspan>
             </text>
-            <text id="a" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="a" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="59" y="174">a</tspan>
             </text>
-            <text id="x" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="x" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="101" y="174">x</tspan>
             </text>
-            <text id="M" fill="#333333" fill-rule="nonzero" font-size="8" font-weight="normal">
+            <text id="M" fill="#312f2f" fill-rule="nonzero" font-size="8" font-weight="normal">
                 <tspan x="109" y="178">M</tspan>
             </text>
-            <text id="c" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="c" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="154" y="174">c</tspan>
             </text>
-            <text id="x" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="x" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="200" y="174">x</tspan>
             </text>
-            <text id="m" fill="#333333" fill-rule="nonzero" font-size="8" font-weight="normal">
+            <text id="m" fill="#312f2f" fill-rule="nonzero" font-size="8" font-weight="normal">
                 <tspan x="207" y="177">m</tspan>
             </text>
-            <text id="b" fill="#333333" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="b" fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="249" y="174">b</tspan>
             </text>
-            <text id="y=f(x)" fill="#333333" fill-rule="nonzero" font-size="11" font-weight="normal">
+            <text id="y=f(x)" fill="#312f2f" fill-rule="nonzero" font-size="11" font-weight="normal">
                 <tspan x="131" y="70">y=f(x)</tspan>
             </text>
-            <text id="y" fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="y" fill="#beb8b7" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="9" y="11">y</tspan>
             </text>
-            <text id="x" fill="#BABABA" fill-rule="nonzero" font-size="12" font-weight="normal">
+            <text id="x" fill="#beb8b7" fill-rule="nonzero" font-size="12" font-weight="normal">
                 <tspan x="321" y="175">x</tspan>
             </text>
-            <line x1="156.5" y1="183" x2="156.5" y2="201" id="caption-rule" stroke="#BABABA" fill="#000000" fill-rule="nonzero" stroke-linecap="round"></line>
-            <text id="The-excess-above-y=f(c)-balances" fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal">
+            <line x1="156.5" y1="183" x2="156.5" y2="201" id="caption-rule" stroke="#beb8b7" fill="#000000" fill-rule="nonzero" stroke-linecap="round"></line>
+            <text id="The-excess-above-y=f(c)-balances" fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
                 <tspan x="91" y="219">The excess above y=f(c) balances</tspan>
             </text>
-            <text id="the-deficit-below-it-on-[a,-b]." fill="#636363" fill-rule="nonzero" font-size="11" font-weight="normal">
+            <text id="the-deficit-below-it-on-[a,-b]." fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
                 <tspan x="91" y="233">the deficit below it on [a, b].</tspan>
             </text>
         </g>

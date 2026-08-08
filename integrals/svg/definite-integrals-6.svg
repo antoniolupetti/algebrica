@@ -2,33 +2,33 @@
 <svg width="306px" height="231px" viewBox="0 0 306 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(1.000000, 2.000000)">
-            <path d="M151.5,-1.01986443 L151.935788,-0.24513062 L156.435788,7.75486938 L156.680918,8.19065715 L155.809343,8.68091839 L155.564212,8.24513062 L151.999,1.906 L152,169 L151,169 L150.999,1.91 L147.435788,8.24513062 L147.190657,8.68091839 L146.319082,8.19065715 L146.564212,7.75486938 L151.064212,-0.24513062 L151.5,-1.01986443 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <path d="M294.809343,117.319082 L295.245131,117.564212 L303.245131,122.064212 L304.019864,122.5 L303.245131,122.935788 L295.245131,127.435788 L294.809343,127.680918 L294.319082,126.809343 L294.754869,126.564212 L301.093,122.999 L295,123 L3.61292916e-16,123 L-0.5,123 L-0.5,122 L-3.61292916e-16,122 L295,122 L301.089,121.999 L294.754869,118.435788 L294.319082,118.190657 L294.809343,117.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <path d="M151.5,-1.01986443 L151.935788,-0.24513062 L156.435788,7.75486938 L156.680918,8.19065715 L155.809343,8.68091839 L155.564212,8.24513062 L151.999,1.906 L152,169 L151,169 L150.999,1.91 L147.435788,8.24513062 L147.190657,8.68091839 L146.319082,8.19065715 L146.564212,7.75486938 L151.064212,-0.24513062 L151.5,-1.01986443 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <path d="M294.809343,117.319082 L295.245131,117.564212 L303.245131,122.064212 L304.019864,122.5 L303.245131,122.935788 L295.245131,127.435788 L294.809343,127.680918 L294.319082,126.809343 L294.754869,126.564212 L301.093,122.999 L295,123 L3.61292916e-16,123 L-0.5,123 L-0.5,122 L-3.61292916e-16,122 L295,122 L301.089,121.999 L294.754869,118.435788 L294.319082,118.190657 L294.809343,117.319082 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="66" y="138">-a</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="225" y="113">a</tspan>
             </text>
-            <circle fill="#333333" cx="75.5" cy="122.5" r="2.5"></circle>
-            <ellipse fill="#333333" cx="227.495446" cy="122.5" rx="2.49544627" ry="2.5"></ellipse>
-            <path d="M70,22 C82.6666667,89.3333333 109.666667,123 151,123 C192.333333,123 219.333333,156.333333 232,223" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+            <circle fill="#312f2f" cx="75.5" cy="122.5" r="2.5"></circle>
+            <ellipse fill="#312f2f" cx="227.495446" cy="122.5" rx="2.49544627" ry="2.5"></ellipse>
+            <path d="M70,22 C82.6666667,89.3333333 109.666667,123 151,123 C192.333333,123 219.333333,156.333333 232,223" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
                 <tspan x="18" y="188">In the case of an odd function, </tspan>
                 <tspan x="18" y="201">the regions S₁ and S₂ are equal </tspan>
                 <tspan x="18" y="214">in magnitude but opposite in </tspan>
                 <tspan x="18" y="227">sign.</tspan>
             </text>
-            <line x1="91.5" y1="119" x2="91.5" y2="170.5" stroke="#BABABA" stroke-linecap="round"></line>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <line x1="91.5" y1="119" x2="91.5" y2="170.5" stroke="#beb8b7" stroke-linecap="round"></line>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="79.5" y="31">y=f(x)</tspan>
             </text>
-            <line x1="75.5" y1="46.5" x2="75.5" y2="122.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <line x1="227.5" y1="122.5" x2="227.5" y2="198.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <line x1="75.5" y1="46.5" x2="75.5" y2="122.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="227.5" y1="122.5" x2="227.5" y2="198.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="86" y="112">S₁</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="207" y="141">S₂</tspan>
             </text>
         </g>

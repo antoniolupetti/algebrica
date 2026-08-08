@@ -53,7 +53,12 @@ The data for the lower and upper rectangles follow the same pattern on every sub
 
 The equal-width construction is a special case of a partition whose subintervals need not have equal widths. For an arbitrary partition $P$ given by $a = x_0 < x_1 < \cdots < x_n = b,$ the lower and upper sums are:
 
-$$L(f, P) = \sum_{i=1}^{n} m_i(x_i - x_{i-1}) \qquad U(f, P) = \sum_{i=1}^{n} M_i(x_i - x_{i-1})$$
+$$
+\begin{align}
+L(f, P) &= \sum_{i=1}^{n} m_i(x_i - x_{i-1}) \\[6pt]
+U(f, P) &= \sum_{i=1}^{n} M_i(x_i - x_{i-1})
+\end{align}
+$$
 
 If a partition $P'$ refines $P$ by adding division points, the lower sum cannot decrease and the upper sum cannot increase. Consequently:
 
@@ -61,11 +66,45 @@ $$L(f, P) \leq L(f, P') \leq U(f, P') \leq U(f, P)$$
 
 For a bounded function $f(x)$ on $[a, b],$ the lower and upper integrals collect the best estimates obtained from all possible partitions:
 
-$$L(f, [a, b]) = \sup_P L(f, P) \qquad U(f, [a, b]) = \inf_P U(f, P)$$
+$$
+\begin{align}
+L(f, [a, b]) &= \sup_P L(f, P) \\[6pt]
+U(f, [a, b]) &= \inf_P U(f, P)
+\end{align}
+$$
 
 Every lower sum is no greater than every upper sum, so $L(f, [a, b]) \leq U(f, [a, b]).$ The function $f(x)$ is [Riemann integrable](../riemann-integrability-criteria/) precisely when these two values coincide. Their common value is the definite integral:
 
 $$L(f, [a, b]) = U(f, [a, b]) = \int_{a}^{b} f(x) \ dx$$
+
+An equivalent definition of the definite integral uses tagged Riemann sums. For a partition $P$ given by $a = x_0 < x_1 < \cdots < x_n = b,$ choose a point $\xi_i \in [x_{i-1},x_i]$ in each subinterval and set $\Delta x_i = x_i - x_{i-1}.$ The point $\xi_i$ is called the tag of the $i$-th subinterval, and the mesh of $P$ is defined by:
+
+$$
+\|P\| = \max_{1 \leq i \leq n} \Delta x_i
+$$
+
+A bounded function $f$ is Riemann integrable with integral $I$ if, for every $\varepsilon>0,$ there exists $\delta>0$ such that every partition $P$ and every choice of tags satisfy:
+
+$$
+\|P\|<\delta
+\implies
+\left|\sum_{i=1}^{n}f(\xi_i)\Delta x_i-I\right|<\varepsilon
+$$
+
+This condition requires all tagged Riemann sums with sufficiently small mesh to approach the same value. It is commonly abbreviated by the notation:
+
+$$
+\int_a^b f(x) \ dx
+=
+\lim_{\|P\| \to 0}
+\sum_{i=1}^{n} f(\xi_i)\Delta x_i
+$$
+
+The displayed limit therefore ranges over all tagged partitions rather than over a single prescribed sequence. This entry will use the Darboux formulation through $L(f,P)$ and $U(f,P).$ Every tagged Riemann sum lies between the corresponding lower and upper sums. Together with estimates for sufficiently fine partitions, this bound proves that a bounded function on $[a,b]$ is integrable under one definition if and only if it is integrable under the other, and both definitions assign the same value.
+
+> John K. Hunter presents the formulation through tagged partitions and proves its equivalence with the Darboux definition in Introduction to Analysis, listed in the [bibliography](../bibliography/).
+
+- - -
 
 Every continuous real-valued function on $[a, b]$ is Riemann integrable. Continuity on this interval implies uniform continuity, which makes the oscillation $M_i - m_i$ uniformly small when the subintervals are sufficiently short. The values $a$ and $b$ are the lower and upper limits of integration, and $f(x)$ is the integrand. The notation $f(x) \ dx$ is suggested by the area $f(x)\Delta x$ of each approximating rectangle. The symbol $dx$ identifies $x$ as the integration variable and records the limiting role of the subinterval widths.
 
@@ -118,6 +157,8 @@ $$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$
 
 > This is the comparison property of integrals. The vertical difference $g(x) - f(x)$ is nonnegative throughout the interval, so its integral is also nonnegative.
 
+- - -
+
 For a bounded function $f(x)$ that is Riemann integrable on $[a, b],$ applying the comparison property to the constant functions equal to its infimum and supremum gives the bounds:
 
 $$
@@ -132,7 +173,7 @@ $$\left|\int_{a}^{b} f(x) \ dx\right| \leq \int_{a}^{b} |f(x)| \ dx$$
 
 ## Mean value theorem for integrals
 
-If $f(x)$ is continuous on $[a, b]$, then there exists at least one point $c \in (a, b)$ such that:
+The [mean value theorem for integrals](../mean-value-theorem-for-integrals/) states that if $f(x)$ is continuous on $[a, b]$, then there exists at least one point $c \in (a, b)$ such that:
 
 $$\int_{a}^{b} f(x) \ dx = f(c)(b - a)$$
 
