@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="318px" viewBox="0 0 334 318" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 30</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M119.5,74.9801356 L119.935788,75.7548694 L124.435788,83.7548694 L124.680918,84.1906571 L123.809343,84.6809184 L123.564212,84.2451306 L120,77.908 L120,318 L119,318 L119,77.908 L115.435788,84.2451306 L115.190657,84.6809184 L114.319082,84.1906571 L114.564212,83.7548694 L119.064212,75.7548694 L119.5,74.9801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M312.809343,201.319082 L313.245131,201.564212 L321.245131,206.064212 L322.019864,206.5 L321.245131,206.935788 L313.245131,211.435788 L312.809343,211.680918 L312.319082,210.809343 L312.754869,210.564212 L319.091,207 L-0.5,207 L-0.5,206 L319.091,206 L312.754869,202.435788 L312.319082,202.190657 L312.809343,201.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BEB8B7">
+                <tspan x="101.5" y="85">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BEB8B7">
+                <tspan x="315.5" y="225">x</tspan>
+            </text>
+            <path d="M84,230 C115,229 128,184 157.2,184 C186.4,184 202,230 226.4,230" stroke="#BEB8B7" stroke-linecap="square"></path>
+            <path d="M15.2,184 C44.4,184 60,230 84.4,230" stroke="#BEB8B7" stroke-linecap="square"></path>
+            <path d="M226,230 C257,229 270,184 299.2,184" stroke="#BEB8B7" stroke-linecap="square"></path>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="149" y="221">π/2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="73" y="197">-π/2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="109" y="188">1</tspan>
+            </text>
+            <line x1="29.5" y1="300.5" x2="218.5" y2="107.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="116.5" y1="184.5" x2="123.5" y2="184.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="160.5" x2="123.5" y2="160.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="136.5" x2="123.5" y2="136.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="230.5" x2="123.5" y2="230.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="253.5" x2="123.5" y2="253.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="253.5" x2="123.5" y2="253.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="116.5" y1="276.5" x2="123.5" y2="276.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <path d="M51.0349048,267.999695 C82.0349048,266.999695 95.0349048,221.999695 124.234905,221.999695 C153.434905,221.999695 169.034905,267.999695 193.434905,267.999695" stroke="#312f2f" stroke-width="2" stroke-linecap="round" transform="translate(122.234905, 244.999695) rotate(-91.000000) translate(-122.234905, -244.999695) "></path>
+            <path d="M83.7605164,160.616053 C103.309504,159.98544 115.700393,141.857254 129.509759,128.550648 M144.505188,117.489197 C148.356367,115.681911 152.466588,114.616053 156.960516,114.616053" stroke="#312f2f" stroke-width="2" stroke-linecap="round" transform="translate(120.360516, 137.616053) rotate(-91.000000) translate(-120.360516, -137.616053) "></path>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="57" y="10">Only the branch between -π/2 and π/2, where </tspan>
+                <tspan x="57" y="23">the sine increases, is invertible. Reflecting it in </tspan>
+                <tspan x="57" y="36">the line y = x gives the graph of the arcsine.</tspan>
+            </text>
+            <line x1="96.5" y1="48.5" x2="96.5" y2="84.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#312f2f" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="95" y="125">arcsin(x)</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="306" y="187">sin(x)</tspan>
+            </text>
+            <line x1="85.5" y1="210.5" x2="85.5" y2="203.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="157.5" y1="208.5" x2="157.5" y2="201.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="131" y="233">-1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
