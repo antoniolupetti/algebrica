@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="307px" height="269px" viewBox="0 0 307 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="307px" height="274px" viewBox="0 0 307 274" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 17</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#E2DFDD" stroke-width="1"></path>
+        </pattern>
+    </defs>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(1.000000, 0.000000)">
-            <path d="M118,154 L117,91 C123.666667,95 127,97 127,97 C134.333333,105 138,109 138,109 C146.666667,121.666667 151,128 151,128 C160.333333,142.666667 165,150 165,150 L167,154 L118,154 Z" fill="#e9e3e2"></path>
-            <path d="M167,154 L177,169 C187,180.333333 192,186 192,186 C199.333333,189.333333 203,191 203,191 C211,191.666667 215,192 215,192 C223.666667,190 228,189 228,189 L241,177 L252,160 L255,154 L167,154 Z" fill="#C3C3C3"></path>
-            <text font-size="13" font-weight="normal" fill="#312f2f">
+            <path d="M118,154 L117,91 C123.666667,95 127,97 127,97 C134.333333,105 138,109 138,109 C146.666667,121.666667 151,128 151,128 C160.333333,142.666667 165,150 165,150 L167,154 L118,154 Z" fill="url(#diagonal-lines)"></path>
+            <path d="M167,154 L177,169 C187,180.333333 192,186 192,186 C199.333333,189.333333 203,191 203,191 C211,191.666667 215,192 215,192 C223.666667,190 228,189 228,189 L241,177 L252,160 L255,154 L167,154 Z" fill="url(#diagonal-lines)"></path>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
                 <tspan x="113" y="169">a</tspan>
             </text>
-            <path d="M106.882134,5.67699263 L106.935788,5.75486938 L111.435788,13.7548694 C111.57117,13.9955483 111.48581,14.3004059 111.245131,14.4357878 C111.031194,14.5561272 110.766548,14.5020533 110.615296,14.3195146 L110.564212,14.2451306 L106.999,7.906 L107,245.5 C107,245.776142 106.776142,246 106.5,246 C106.25454,246 106.050392,245.823125 106.008056,245.589876 L106,245.5 L105.999,7.91 L102.435788,14.2451306 C102.315448,14.4590675 102.061202,14.5502832 101.837152,14.4728292 L101.754869,14.4357878 C101.540933,14.3154483 101.449717,14.0612021 101.527171,13.8371522 L101.564212,13.7548694 L106.064212,5.75486938 C106.239435,5.44336236 106.665161,5.41740344 106.882134,5.67699263 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-            <path d="M295.162848,148.527171 L295.245131,148.564212 L303.245131,153.064212 C303.556638,153.239435 303.582597,153.665161 303.323007,153.882134 L303.245131,153.935788 L295.245131,158.435788 C295.004452,158.57117 294.699594,158.48581 294.564212,158.245131 C294.443873,158.031194 294.497947,157.766548 294.680485,157.615296 L294.754869,157.564212 L301.093,153.999 L295,154 L3.85379111e-16,154 C-0.276142375,154 -0.5,153.776142 -0.5,153.5 C-0.5,153.25454 -0.323124839,153.050392 -0.0898756324,153.008056 L-3.85379111e-16,153 L295,153 L301.089,152.999 L294.754869,149.435788 C294.540933,149.315448 294.449717,149.061202 294.527171,148.837152 L294.564212,148.754869 C294.684552,148.540933 294.938798,148.449717 295.162848,148.527171 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-            <text font-size="14" font-weight="normal" fill="#beb8b7">
+            <path d="M106.882134,5.67699263 L106.935788,5.75486938 L111.435788,13.7548694 C111.57117,13.9955483 111.48581,14.3004059 111.245131,14.4357878 C111.031194,14.5561272 110.766548,14.5020533 110.615296,14.3195146 L110.564212,14.2451306 L106.999,7.906 L107,245.5 C107,245.776142 106.776142,246 106.5,246 C106.25454,246 106.050392,245.823125 106.008056,245.589876 L106,245.5 L105.999,7.91 L102.435788,14.2451306 C102.315448,14.4590675 102.061202,14.5502832 101.837152,14.4728292 L101.754869,14.4357878 C101.540933,14.3154483 101.449717,14.0612021 101.527171,13.8371522 L101.564212,13.7548694 L106.064212,5.75486938 C106.239435,5.44336236 106.665161,5.41740344 106.882134,5.67699263 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M295.162848,148.527171 L295.245131,148.564212 L303.245131,153.064212 C303.556638,153.239435 303.582597,153.665161 303.323007,153.882134 L303.245131,153.935788 L295.245131,158.435788 C295.004452,158.57117 294.699594,158.48581 294.564212,158.245131 C294.443873,158.031194 294.497947,157.766548 294.680485,157.615296 L294.754869,157.564212 L301.091,154 L3.85379111e-16,154 C-0.276142375,154 -0.5,153.776142 -0.5,153.5 C-0.5,153.25454 -0.323124839,153.050392 -0.0898756324,153.008056 L-3.85379111e-16,153 L301.091,153 L294.754869,149.435788 C294.540933,149.315448 294.449717,149.061202 294.527171,148.837152 L294.564212,148.754869 C294.684552,148.540933 294.938798,148.449717 295.162848,148.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
                 <tspan x="296.5" y="173">x</tspan>
             </text>
-            <text font-size="14" font-weight="normal" fill="#beb8b7">
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
                 <tspan x="88.5" y="14">y</tspan>
             </text>
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
@@ -21,32 +27,32 @@
                 <tspan x="132" y="61">values (above the x-axis).</tspan>
             </text>
             <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
-                <tspan x="160.462" y="239.362015">Interval [c,b] where the </tspan>
-                <tspan x="135.261" y="252.362015">function  f(x) takes negative </tspan>
-                <tspan x="151.629" y="265.362015">values (below the x-axis)</tspan>
+                <tspan x="160.462" y="244.362015">Interval [c,b] where the </tspan>
+                <tspan x="135.261" y="257.362015">function  f(x) takes negative </tspan>
+                <tspan x="151.629" y="270.362015">values (below the x-axis)</tspan>
             </text>
-            <line x1="137.5" y1="69.5" x2="137.5" y2="125.5" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
-            <path d="M50,142 C55.4417449,129.922128 59.6274387,121.509013 62.5570814,116.760657 M79.1065326,96.8372742 C88.9004386,88.7157903 99.5315944,85.7700322 111,88 C147,95 172,186 205.386937,191.362865 C238.773874,196.725729 246.66777,167.167562 270,125" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <line x1="117.5" y1="91.5" x2="117.5" y2="150.5" stroke="#312f2f"  stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <text font-size="13" font-weight="normal" fill="#312f2f">
+            <line x1="137.5" y1="69.5" x2="137.5" y2="125.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M50,142 C55.4417449,129.922128 59.6274387,121.509013 62.5570814,116.760657 M79.1065326,96.8372742 C88.9004386,88.7157903 99.5315944,85.7700322 111,88 C147,95 172,186 205.386937,191.362865 C238.773874,196.725729 246.66777,167.167562 270,125" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="117.5" y1="91.5" x2="117.5" y2="150.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
                 <tspan x="153" y="169">c</tspan>
             </text>
-            <text font-size="14" font-weight="normal" fill="#312f2f">
+            <text font-size="14" font-weight="normal" fill="#312F2F">
                 <tspan x="134" y="141">+</tspan>
             </text>
-            <text font-size="14" font-weight="normal" fill="#312f2f">
+            <text font-size="14" font-weight="normal" fill="#312F2F">
                 <tspan x="210" y="174">–</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#312f2f">
+            <text font-size="13" font-weight="normal" fill="#312F2F">
                 <tspan x="256" y="169">b</tspan>
             </text>
-            <circle fill="#312f2f" cx="117.5" cy="153.5" r="2.5"></circle>
-            <circle fill="#312f2f" cx="166.5" cy="153.5" r="2.5"></circle>
-            <circle fill="#312f2f" cx="254.5" cy="153.5" r="2.5"></circle>
-            <text font-size="13" font-weight="normal" fill="#312f2f">
+            <circle fill="#312F2F" cx="117.5" cy="153.5" r="2.5"></circle>
+            <circle fill="#312F2F" cx="166.5" cy="153.5" r="2.5"></circle>
+            <circle fill="#312F2F" cx="254.5" cy="153.5" r="2.5"></circle>
+            <text font-size="14" font-weight="normal" fill="#312F2F">
                 <tspan x="45.5" y="111">y=f(x)</tspan>
             </text>
-            <line x1="213.5" y1="174.5" x2="213.5" y2="224" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="214.5" y1="178.5" x2="214.5" y2="228" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
         </g>
     </g>
 </svg>

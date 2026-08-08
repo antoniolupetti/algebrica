@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="305px" height="277px" viewBox="0 0 305 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="306px" height="282px" viewBox="0 0 306 282" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 8</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#E2DFDD" stroke-width="1"></path>
+        </pattern>
+    </defs>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-90.000000, -84.000000)">
-            <g transform="translate(91.000000, 85.000000)">
-                <path d="M26.882134,-0.323007375 L26.9357878,-0.24513062 L31.4357878,7.75486938 C31.5711697,7.99554832 31.4858096,8.30040587 31.2451306,8.43578777 C31.0311938,8.55612724 30.7665479,8.50205326 30.6152959,8.31951464 L30.5642122,8.24513062 L26.999,1.906 L27,166.5 C27,166.776142 26.7761424,167 26.5,167 C26.2545401,167 26.0503916,166.823125 26.0080557,166.589876 L26,166.5 L25.999,1.91 L22.4357878,8.24513062 C22.3154483,8.45906745 22.0612021,8.55028324 21.8371522,8.47282918 L21.7548694,8.43578777 C21.5409325,8.3154483 21.4497168,8.06120215 21.5271708,7.83715217 L21.5642122,7.75486938 L26.0642122,-0.24513062 C26.2394349,-0.55663764 26.6651608,-0.582596558 26.882134,-0.323007375 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-                <path d="M44,98 L58,115 C63.9868788,120.225867 67.9868788,122.5592 70,122 C72.0131212,121.4408 76.3464545,119.774133 83,117 L103,86 C108.957834,71.6315281 116.957834,68.6315281 127,77 C133.521922,82.4349353 138.513648,92.4400972 145,106 C147.33403,110.879355 151.33403,119.212689 157,131 L44,131 L44,98 Z" fill="#e9e3e2"></path>
-                <polygon fill="#C3C3C3" points="187 163 177 156 166 143 159 131 206 131 206 163.379899 198 165"></polygon>
-                <path d="M295.162848,125.527171 L295.245131,125.564212 L303.245131,130.064212 C303.556638,130.239435 303.582597,130.665161 303.323007,130.882134 L303.245131,130.935788 L295.245131,135.435788 C295.004452,135.57117 294.699594,135.48581 294.564212,135.245131 C294.443873,135.031194 294.497947,134.766548 294.680485,134.615296 L294.754869,134.564212 L301.091,131 L3.85379111e-16,131 C-0.276142375,131 -0.5,130.776142 -0.5,130.5 C-0.5,130.25454 -0.323124839,130.050392 -0.0898756324,130.008056 L-3.85379111e-16,130 L301.091,130 L294.754869,126.435788 C294.540933,126.315448 294.449717,126.061202 294.527171,125.837152 L294.564212,125.754869 C294.684552,125.540933 294.938798,125.449717 295.162848,125.527171 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-                <line x1="86.5" y1="124.5" x2="86.5" y2="215.5" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="190.5" y1="155.5" x2="190.5" y2="215.5" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round"></line>
-                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
-                    <tspan x="14.746" y="233.362015">This area lies above </tspan>
-                    <tspan x="18.893" y="246.362015">the horizontal axis, </tspan>
-                    <tspan x="22.831" y="259.362015">so its contribution </tspan>
-                    <tspan x="25.68" y="272.362015">to F(x) is positive.</tspan>
-                </text>
-                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
-                    <tspan x="172" y="235">Negative </tspan>
-                    <tspan x="172" y="248">contribution to F(x)</tspan>
-                </text>
-                <path d="M12,28 C36,90.6666667 55.6666667,122 71,122 C94,122 101,72 120,72 C139,72 158,165 198,165 C219.482054,165 241.613062,138.609191 264.393024,85.8275727" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M273.629372,62.8125243 C275.061636,59.0374776 277.518512,52.4333028 281,43" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <text font-size="13" font-weight="normal" fill="#233300">
-                    <tspan x="254.5" y="79">y=f(t)</tspan>
-                </text>
-                <text font-size="13" font-weight="normal" fill="#312f2f">
-                    <tspan x="115" y="118">+</tspan>
-                </text>
-                <text font-size="13" font-weight="normal" fill="#312f2f">
-                    <tspan x="187" y="149">-</tspan>
-                </text>
-                <text font-size="13" font-weight="normal" fill="#312f2f">
-                    <tspan x="40" y="150">a</tspan>
-                </text>
-                <text font-size="13" font-weight="normal" fill="#312f2f">
-                    <tspan x="212" y="124">x</tspan>
-                </text>
-                <line x1="43.5" y1="17.5" x2="43.5" y2="130.5" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-                <line x1="205.5" y1="17.5" x2="205.5" y2="162.5" stroke="#beb8b7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-                <ellipse fill="#312f2f" cx="205.495446" cy="130.5" rx="2.49544627" ry="2.5"></ellipse>
-                <circle fill="#312f2f" cx="43.5" cy="130.5" r="2.5"></circle>
-            </g>
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M162,58.6201013 L162,91 L154,92.6201013 L143,90.6201013 L133,83.6201013 L122,70.6201013 L115,58.6201013 L162,58.6201013 Z M83,4.62010128 C89.5219224,10.0550366 94.5136482,20.0601985 101,33.6201013 C103.33403,38.4994566 107.33403,46.8327899 113,58.6201013 L0,58.6201013 L0,25.6201013 L14,42.6201013 C19.9868788,47.8459683 23.9868788,50.1793016 26,49.6201013 C28.0131212,49.060901 32.3464545,47.3942343 39,44.6201013 L59,13.6201013 C64.9578337,-0.748370637 72.9578337,-3.74837064 83,4.62010128 Z" transform="translate(44, 78.379899)" fill="url(#diagonal-lines)"></path>
+            <path d="M26.882134,5.67699263 L26.9357878,5.75486938 L31.4357878,13.7548694 C31.5711697,13.9955483 31.4858096,14.3004059 31.2451306,14.4357878 C31.0311938,14.5561272 30.7665479,14.5020533 30.6152959,13.3195146 L30.5642122,13.2451306 L26.999,7.906 L27,172.5 C27,172.776142 26.7761424,173 26.5,173 C26.2545401,173 26.0503916,172.823125 26.0080557,172.589876 L26,172.5 L25.999,7.91 L22.4357878,14.2451306 C22.3154483,14.4590675 22.0612021,14.5502832 21.8371522,14.4728292 L21.7548694,14.4357878 C21.5409325,14.3154483 21.4497168,14.0612021 21.5271708,13.8371522 L21.5642122,13.7548694 L26.0642122,5.75486938 C26.2394349,5.44336236 26.6651608,5.41740344 26.882134,5.67699263 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M295.162848,131.527171 L295.245131,131.564212 L303.245131,136.064212 C303.556638,136.239435 303.582597,136.665161 303.323007,136.882134 L303.245131,136.935788 L295.245131,141.435788 C295.004452,141.57117 294.699594,141.48581 294.564212,141.245131 C294.443873,141.031194 294.497947,140.766548 294.680485,140.615296 L294.754869,140.564212 L301.091,137 L3.85379111e-16,137 C-0.276142375,137 -0.5,136.776142 -0.5,136.5 C-0.5,136.25454 -0.323124839,136.050392 -0.0898756324,136.008056 L-3.85379111e-16,136 L301.091,136 L294.754869,132.435788 C294.540933,132.315448 294.449717,132.061202 294.527171,131.837152 L294.564212,131.754869 C294.684552,131.540933 294.938798,131.449717 295.162848,131.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="86.5" y1="130.5" x2="86.5" y2="221.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="190.5" y1="161.5" x2="190.5" y2="221.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="35" y="241">This area lies above </tspan>
+                <tspan x="35" y="254">the horizontal axis, </tspan>
+                <tspan x="35" y="267">so its contribution </tspan>
+                <tspan x="35" y="280">to F(x) is positive.</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="172" y="241">Negative </tspan>
+                <tspan x="172" y="254">contribution to F(x)</tspan>
+            </text>
+            <path d="M12,34 C36,96.6666667 55.6666667,128 71,128 C94,128 101,78 120,78 C139,78 158,171 198,171 C219.482054,171 241.613062,144.609191 264.393024,91.8275727" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M273.629372,68.8125243 C275.061636,65.0374776 277.518512,58.4333028 281,49" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" fill="#233300">
+                <tspan x="254.5" y="85">y=f(t)</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
+                <tspan x="115" y="124">+</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
+                <tspan x="187" y="155">-</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
+                <tspan x="40" y="156">a</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
+                <tspan x="212" y="130">x</tspan>
+            </text>
+            <line x1="43.5" y1="23.5" x2="43.5" y2="136.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="205.5" y1="23.5" x2="205.5" y2="168.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <ellipse fill="#312F2F" cx="205.495446" cy="136.5" rx="2.49544627" ry="2.5"></ellipse>
+            <circle fill="#312F2F" cx="43.5" cy="136.5" r="2.5"></circle>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="6.5" y="12">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="297" y="158">t</tspan>
+            </text>
         </g>
     </g>
 </svg>
