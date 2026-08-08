@@ -36,7 +36,7 @@ On the [unit circle](../unit-circle/), the equation corresponds to the horizonta
 
 $$x = \alpha \quad \text{and} \quad x = \pi - \alpha$$
 
-Here $\alpha$ is the [arcsine](../arcsine-and-arccosine/) of $m$, that is the unique angle in $[-\pi/2, \pi/2]$ satisfying $\sin(\alpha) = m$. Since the sine function is periodic with period $2\pi$, the complete set of solutions is:
+Here $\alpha$ is the [arcsine](../arcsine-function/) of $m$, that is the unique angle in $[-\pi/2, \pi/2]$ satisfying $\sin(\alpha) = m$. Since the sine function is periodic with period $2\pi$, the complete set of solutions is:
 
 $$
 \begin{align}

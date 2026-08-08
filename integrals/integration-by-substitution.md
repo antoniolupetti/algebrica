@@ -214,7 +214,7 @@ The integral is:
 
 $$\int \frac{3\cos u \ du}{3\cos u} = \int \ du = u + c$$
 
-Since $u$ is in the principal range of the [arcsine](../arcsine-and-arccosine/) function, the equation $x = 3\sin u$ implies:
+Since $u$ is in the principal range of the [arcsine](../arcsine-function/) function, the equation $x = 3\sin u$ implies:
 
 $$u = \arcsin\left(\frac{x}{3}\right)$$
 

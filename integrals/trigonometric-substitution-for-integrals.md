@@ -85,7 +85,7 @@ Returning to the original variable $x$, the relationships implied by the substit
 
 $$\sin\theta = \frac{x}{a} \qquad \cos\theta = \frac{\sqrt{a^2 - x^2}}{a}$$
 
-The angle can be expressed through the [arcsine](../arcsine-and-arccosine/):
+The angle can be expressed through the [arcsine](../arcsine-function/):
 
 $$\theta = \arcsin\left(\frac{x}{a}\right)$$
 

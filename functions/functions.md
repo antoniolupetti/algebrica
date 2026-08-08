@@ -90,7 +90,7 @@ $$
 \sin|_{[-\pi/2, \pi/2]} \colon [-\pi/2, \pi/2] \to [-1, 1]
 $$
 
-This restriction is bijective, and its inverse is the [arcsine function](../arcsine-and-arccosine/) $\arcsin \colon [-1, 1] \to [-\pi/2, \pi/2].$
+This restriction is bijective, and its inverse is the [arcsine function](../arcsine-function/) $\arcsin \colon [-1, 1] \to [-\pi/2, \pi/2].$
 
 ## What is not a function
 

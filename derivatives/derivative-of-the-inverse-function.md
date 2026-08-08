@@ -109,7 +109,7 @@ $$D[\log_a(x)] = \frac{1}{a^{\log_a(x)}\ln(a)} = \frac{1}{x\ln(a)}$$
 
 ## Derivatives of the inverse trigonometric functions
 
-The [sine](../sine-function/) is not injective on $\mathbb{R},$ and the [arcsine](../arcsine-and-arccosine/) is by definition the inverse of its restriction to $[-\pi/2, \pi/2],$ where the sine is strictly increasing. On that interval the derivative $\cos(t)$ is positive except at the two endpoints, so the theorem applies for $x \in (-1, 1).$ Writing $t = \arcsin(x),$ the [Pythagorean identity](../pythagorean-identity/) gives $\cos(t) = \sqrt{1 - \sin^2(t)},$ where the positive root is the correct one because $t$ lies in an interval on which the cosine is positive:
+The [sine](../sine-function/) is not injective on $\mathbb{R},$ and the [arcsine](../arcsine-function/) is by definition the inverse of its restriction to $[-\pi/2, \pi/2],$ where the sine is strictly increasing. On that interval the derivative $\cos(t)$ is positive except at the two endpoints, so the theorem applies for $x \in (-1, 1).$ Writing $t = \arcsin(x),$ the [Pythagorean identity](../pythagorean-identity/) gives $\cos(t) = \sqrt{1 - \sin^2(t)},$ where the positive root is the correct one because $t$ lies in an interval on which the cosine is positive:
 
 $$
 \begin{align}

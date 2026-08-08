@@ -79,7 +79,7 @@ $$
 \end{align}
 $$
 
-Since $0 < 0.8194 < 1$, the equation $\sin(\beta) = 0.8194$ admits two solutions in $(0^\circ, 180^\circ)$, obtained from the [arcsine](../arcsine-and-arccosine/) and its supplementary angle:
+Since $0 < 0.8194 < 1$, the equation $\sin(\beta) = 0.8194$ admits two solutions in $(0^\circ, 180^\circ)$, obtained from the [arcsine](../arcsine-function/) and its supplementary angle:
 
 $$
 \begin{align}

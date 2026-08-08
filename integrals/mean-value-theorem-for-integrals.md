@@ -188,7 +188,7 @@ The interval has length $\pi,$ so the average value is:
 
 $$\mu = \frac{2}{\pi} \approx 0.6366$$
 
-The admissible points are the solutions of $\sin c = 2/\pi$ on $[0, \pi].$ On this interval the sine takes each value in $(0, 1)$ exactly twice, at two points symmetric with respect to $\pi/2,$ so its two solutions can be written using the [arcsine](../arcsine-and-arccosine/):
+The admissible points are the solutions of $\sin c = 2/\pi$ on $[0, \pi].$ On this interval the sine takes each value in $(0, 1)$ exactly twice, at two points symmetric with respect to $\pi/2,$ so its two solutions can be written using the [arcsine](../arcsine-function/):
 
 $$c_1 = \arcsin \frac{2}{\pi} \approx 0.690 \qquad c_2 = \pi - \arcsin \frac{2}{\pi} \approx 2.451$$
 
