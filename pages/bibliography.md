@@ -71,6 +71,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Introduction to Analysis](https://www.math.ucdavis.edu/~hunter/intro_analysis_pdf/intro_analysis.html), John K. Hunter
 + [An Introduction to Measure Theory](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf), Terence Tao
 + [Introduction to Real Analysis](https://www.jirka.org/ra/realanal.pdf), Jiří Lebl
++ [Lecture Notes in Calculus I](https://bpb-us-w2.wpmucdn.com/faculty.umaine.edu/dist/1/19/files/2022/08/calculus.pdf), Jakob Streipel
 + [Lecture Notes on Mathematical Analysis](https://www.math.nthu.edu.tw/~hyliao/AnalysisLectureNotes.pdf), Hsuan-Yi Liao
 + [Measure, Integration & Real Analysis](https://measure.axler.net/MIRA.pdf), Sheldon Axler
 + [Methods of Real Analysis](https://openlibrary.org/books/OL5205094M/Methods_of_real_analysis), Richard R. Goldberg
