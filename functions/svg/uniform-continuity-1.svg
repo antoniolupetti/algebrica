@@ -10,7 +10,7 @@
         <g>
             <rect fill="#E9E3E2" opacity="0.699707031" x="91" y="190" width="248" height="45"></rect>
             <rect x="153" y="82" width="82" height="176" fill="url(#diagonal-lines)"></rect>
-            <rect stroke="#BEB8B7" x="153.5" y="82.5" width="81" height="175"></rect>
+            <rect stroke="#E2DFDD" x="153.5" y="82.5" width="81" height="175"></rect>
             <line x1="178.5" y1="203.5" x2="178.5" y2="249.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
             <line x1="178.5" y1="203.5" x2="91.5" y2="203.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
             <line x1="210.5" y1="223.5" x2="90.5" y2="223.5" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>

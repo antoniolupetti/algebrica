@@ -94,6 +94,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [High-Dimensional Probability: An Introduction with Applications in Data Science](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-2.pdf), Roman Vershynin
 + [Introduction to Probability](https://math.dartmouth.edu/~prob/prob/prob.pdf), Charles M. Grinstead, J. Laurie Snell
 + [Introduction to Probability](http://probabilitybook.net), Joseph K. Blitzstein, Jessica Hwang
++ [Introduction to Probability](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf), Dimitri P. Bertsekas, John N. Tsitsiklis
 + [An Introduction to Statistical Learning](https://www.statlearning.com/s/ISLR-Seventh-Printing.pdf), Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
 + [Lecture Notes on Probability, Statistics and Linear Algebra](https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf), C. H. Taubes
 + [OpenIntro Statistics](https://leanpub.com/os), Christopher Barr, Mine Cetinkaya-Rundel, David Diez
