@@ -88,7 +88,7 @@ Both one-sided derivatives exist and are finite, but they are different, so the 
 
 ![IMG. 5](svg/points-of-non-differentiability-5.svg)
 
-A corner can also combine a finite one-sided derivative with an infinite one. Consider the function defined by:
+A corner can also combine a finite one-sided derivative with an infinite one. Consider the following [piecewise function](../piecewise-functions/):
 
 $$
 f(x) =

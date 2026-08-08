@@ -25,7 +25,7 @@ $$
 
 For example, let $f \colon \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x - 1.$ The notation $x \mapsto 2x - 1$ describes the same assignment. Substituting $3$ for $x$ gives $f(3) = 2 \cdot 3 - 1 = 5.$ The symbol $f$ denotes the whole function, while $f(3)$ denotes one value of that function.
 
-The assignment may be specified by a formula, a table, a diagram, or a rule defined by cases.
+The assignment may be specified by a formula, a table, a diagram, or a [rule defined by cases](../piecewise-functions/).
 
 ![IMG. 1](svg/functions-1.svg)
 

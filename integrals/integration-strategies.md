@@ -799,7 +799,7 @@ $$\int \frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2} \ dx=\frac{f(x)}{g(x)}+c$$
 
 - - -
 
-For an integrand containing an [absolute value](../absolute-value/), its zeros divide the interval into parts on which the sign is fixed. The absolute value can then be removed separately on each part. For example, $|x-1|=1-x$ when $x\leq1$ and $|x-1|=x-1$ when $x\geq1,$ so:
+For an integrand containing an [absolute value](../absolute-value/), its zeros divide the interval into parts on which the sign is fixed. The [piecewise definition](../piecewise-functions/) then allows the absolute value to be removed separately on each part. For example, $|x-1|=1-x$ when $x\leq1$ and $|x-1|=x-1$ when $x\geq1,$ so:
 
 $$
 \begin{align}

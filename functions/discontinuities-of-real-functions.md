@@ -57,7 +57,7 @@ $$
 
 With this definition $g$ is continuous at $x_0$. The term "removable" records the fact that the discontinuity can be resolved in this way.
 
-> Removable discontinuities occur in rational functions with cancellable factors, where they produce a hole in the graph. They also occur in piecewise-defined functions, or in functions whose value at a single point has been modified, provided the limit at that point exists and is finite.
+> Removable discontinuities occur in rational functions with cancellable factors, where they produce a hole in the graph. They also occur in [piecewise-defined functions](../piecewise-functions/), or in functions whose value at a single point has been modified, provided the limit at that point exists and is finite.
 
 ## Example 1
 

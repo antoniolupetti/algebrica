@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="290px" viewBox="0 0 306 290" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 33</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#E2DFDD" stroke-width="1"></path>
+        </pattern>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M56,175 L56,110 C81,92 101,85 126,80 L126,175 L56,175 Z" fill="url(#diagonal-lines)" fill-rule="nonzero"></path>
+            <path d="M126,175 L126,130 C146,120 171,100 196,95 L196,175 L126,175 Z" fill="url(#diagonal-lines)" fill-rule="nonzero"></path>
+            <path d="M196,175 L196,60 C221,65 241,85 266,100 L266,175 L196,175 Z" fill="url(#diagonal-lines)" fill-rule="nonzero"></path>
+            <line x1="126.5" y1="173" x2="126.5" y2="82" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="196.5" y1="173" x2="196.5" y2="62" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <path d="M56,110 C81,92 101,85 126,80" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M126,130 C146,120 171,100 196,95" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M196,60 C221,65 241,85 266,100" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></path>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="56" cy="110" r="3.5"></circle>
+            <circle stroke="#312F2F" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" cx="126" cy="80" r="3.5"></circle>
+            <circle stroke="#312F2F" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" cx="126" cy="130" r="3.5"></circle>
+            <circle stroke="#312F2F" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" cx="196" cy="95" r="3.5"></circle>
+            <circle stroke="#312F2F" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" cx="196" cy="60" r="3.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="266" cy="100" r="3.5"></circle>
+            <line x1="56" y1="172" x2="56" y2="178" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <line x1="266" y1="172" x2="266" y2="178" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <tspan x="52" y="193">a</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <tspan x="119" y="193">c₁</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <tspan x="189" y="193">c₂</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <tspan x="263" y="193">b</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="14" font-weight="normal">
+                <tspan x="46" y="70">y=f(x)</tspan>
+            </text>
+            <line x1="161.5" y1="163.5" x2="161.5" y2="225.5" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="65" y="245">The function jumps at c₁ and at c₂, yet each </tspan>
+                <tspan x="65" y="259">piece stays bounded and continuous on the </tspan>
+                <tspan x="65" y="273">open subinterval. The area over [a, b] is the </tspan>
+                <tspan x="65" y="287">sum of thethree shaded regions.</tspan>
+            </text>
+            <path d="M31.882134,4.67699263 L31.9357878,4.75486938 L36.4357878,12.7548694 C36.5711697,12.9955483 36.4858096,13.3004059 36.2451306,13.4357878 C36.0311938,13.5561272 35.7665479,13.5020533 35.6152959,13.3195146 L35.5642122,13.2451306 L32,6.908 L32,200.5 C32,200.776142 31.7761424,201 31.5,201 C31.2545401,201 31.0503916,200.823125 31.0080557,200.589876 L31,200.5 L31,6.908 L27.4357878,13.2451306 C27.3154483,13.4590675 27.0612021,13.5502832 26.8371522,13.4728292 L26.7548694,13.4357878 C26.5409325,13.3154483 26.4497168,13.0612021 26.5271708,12.8371522 L26.5642122,12.7548694 L31.0642122,4.75486938 C31.2394349,4.44336236 31.6651608,4.41740344 31.882134,4.67699263 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M295.162848,170.527171 L295.245131,170.564212 L303.245131,175.064212 C303.556638,175.239435 303.582597,175.665161 303.323007,175.882134 L303.245131,175.935788 L295.245131,180.435788 C295.004452,180.57117 294.699594,180.48581 294.564212,180.245131 C294.443873,180.031194 294.497947,179.766548 294.680485,179.615296 L294.754869,179.564212 L301.093,175.999 L3.85379111e-16,176 C-0.276142375,176 -0.5,175.776142 -0.5,175.5 C-0.5,175.25454 -0.323124839,175.050392 -0.0898756324,175.008056 L-3.85379111e-16,175 L301.089,174.999 L294.754869,171.435788 C294.540933,171.315448 294.449717,171.061202 294.527171,170.837152 L294.564212,170.754869 C294.684552,170.540933 294.938798,170.449717 295.162848,170.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="14" font-weight="normal">
+                <tspan x="296" y="196">x</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="12" y="14">y</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

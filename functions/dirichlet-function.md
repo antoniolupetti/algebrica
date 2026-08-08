@@ -11,7 +11,7 @@ tags:
 ---
 ## Definition
 
-The Dirichlet function is defined on $\mathbb{R}$ by the following rule:
+The Dirichlet function is defined on $\mathbb{R}$ by the following [piecewise rule](../piecewise-functions/):
 
 $$
 D(x) =
@@ -34,6 +34,8 @@ $$\lim_{x \to x_0} D(x)$$
 does not exist for any $x_0,$ establishing discontinuity at every point. Since a function that is discontinuous everywhere cannot be [Riemann integrable](../riemann-integrability-criteria/) on any non-degenerate interval, this can be confirmed by noting that the upper and lower Darboux sums remain fixed at $1$ and $0,$ respectively, for every partition of the interval.
 
 > Darboux sums are sums obtained by multiplying the maximum or minimum value of a function on each subinterval of a partition by the width of that subinterval. These sums are used to approximate the integral from above and below.
+
+- - -
 
 Dirichlet's original construction expresses $D$ as a double limit of continuous functions:
 

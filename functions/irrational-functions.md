@@ -15,9 +15,7 @@ An irrational function is an algebraic [function](../functions/) defined by an e
 
 $$y = \sqrt[n]{f(x)} = f(x)^{1/n} \qquad n \in \mathbb{N}, \ n \geq 2$$
 
-The radicand $f$ is a [rational function](../rational-functions/). More general irrational functions combine rational functions with finitely many root extractions and retain at least one radical containing the variable after simplification. The remaining sections focus on the basic form $\sqrt[n]{f(x)}.$
-
-The following formulas define irrational functions:
+The radicand $f$ is a [rational function](../rational-functions/). More general irrational functions combine rational functions with finitely many root extractions and retain at least one radical containing the variable after simplification. The remaining sections focus on the basic form $\sqrt[n]{f(x)}.$ The following formulas define irrational functions:
 
 $$y = \sqrt{x^2 - 4} \qquad y = \sqrt[3]{\frac{x + 1}{x}} \qquad y = \sqrt[5]{x^3}$$
 
@@ -49,7 +47,7 @@ Determining the domain of an even-index radical therefore amounts to solving $f(
 
 $$y = \sqrt{\frac{x - 3}{x + 1}}$$
 
-The radicand is a ratio of two first-degree polynomials and is undefined at $x = -1.$ The quotient is positive when the numerator and denominator have the same sign, namely for $x < -1$ and $x > 3,$ and it vanishes at $x = 3.$ The function therefore has domain
+The radicand is a ratio of two first-degree polynomials and is undefined at $x = -1.$ The quotient is positive when the numerator and denominator have the same sign, namely for $x < -1$ and $x > 3,$ and it vanishes at $x = 3.$ The function therefore has domain:
 
 $$(-\infty, -1) \cup [3, +\infty)$$
 
@@ -63,7 +61,7 @@ The simplest irrational function is $y = \sqrt{x},$ with domain and range both e
 
 ![IMG. 1](svg/irrational-functions-1.svg)
 
-The function is strictly increasing because $0 \leq x_1 < x_2$ implies $\sqrt{x_1} < \sqrt{x_2}.$ On $(0, +\infty),$ its first two derivatives are
+The function is strictly increasing because $0 \leq x_1 < x_2$ implies $\sqrt{x_1} < \sqrt{x_2}.$ On $(0, +\infty),$ its first two derivatives are:
 
 $$y' = \frac{1}{2\sqrt{x}} \qquad y'' = -\frac{1}{4x^{3/2}}$$
 
@@ -73,13 +71,13 @@ As $x \to +\infty,$ the square root tends to $+\infty,$ while $\sqrt{x}/x$ tends
 
 ## Roots of odd index
 
-The cube root $y = \sqrt[3]{x}$ is defined on all of $\mathbb{R}$ and takes every real value. It is the inverse of $x \mapsto x^3$ on the whole line. It is also an [odd function](../even-and-odd-functions/) and is strictly increasing. For $x \neq 0,$ its first two derivatives are
+The cube root $y = \sqrt[3]{x}$ is defined on all of $\mathbb{R}$ and takes every real value. It is the inverse of $x \mapsto x^3$ on the whole line. It is also an [odd function](../even-and-odd-functions/) and is strictly increasing. For $x \neq 0,$ its first two derivatives are:
 
 $$y' = \frac{1}{3\sqrt[3]{x^2}} \qquad y'' = -\frac{2}{9\sqrt[3]{x^5}}$$
 
 The first derivative is positive for $x \neq 0$ and tends to $+\infty$ as $x \to 0,$ so the graph has a vertical tangent at the origin. The second derivative is positive for $x < 0$ and negative for $x > 0.$ Thus the curve is convex on the negative half-line and concave on the positive half-line, and the origin is an inflection point.
 
-The function $y = \sqrt[3]{x^2}$ has the same domain but behaves differently at the origin. It equals $|x|^{2/3}$ and is even. For $x \neq 0,$ its derivative is
+The function $y = \sqrt[3]{x^2}$ has the same domain but behaves differently at the origin. It equals $|x|^{2/3}$ and is even. For $x \neq 0,$ its derivative is:
 
 $$y' = \frac{2}{3\sqrt[3]{x}}$$
 
@@ -103,7 +101,7 @@ Canceling the common factor in the index and exponent for negative $x$ can chang
 
 For every index $n$ the map $t \mapsto \sqrt[n]{t}$ is [continuous](../continuous-functions/) on its domain. Since rational functions are continuous wherever they are defined, the [composition](../composite-functions/) $x \mapsto \sqrt[n]{f(x)}$ is continuous throughout its domain.
 
-The [chain rule](../chain-rule/) gives the general derivative formula
+The [chain rule](../chain-rule/) gives the general derivative formula:
 
 $$\frac{d}{dx}\sqrt[n]{f(x)} = \frac{f'(x)}{n\sqrt[n]{f(x)^{n-1}}}$$
 
@@ -119,11 +117,11 @@ Concavity is not inherited in the same way. The radicand $x$ is affine on $[0, +
 
 Irrational functions can have vertical, horizontal, and oblique [asymptotes](../asymptotes/). For a function of the basic form, a vertical asymptote occurs at a finite boundary point where the radicand tends to an infinite value. When the index is even, the radicand must tend to $+\infty;$ when it is odd, the radicand may tend to either $+\infty$ or $-\infty.$ If the radicand tends to a finite limit $L$ as $x \to +\infty$ or $x \to -\infty,$ the function tends to $\sqrt[n]{L}$ and has the horizontal asymptote $y = \sqrt[n]{L}.$ For even $n,$ this requires $L \geq 0,$ while for odd $n,$ any real $L$ is admissible.
 
-Square roots of quadratic polynomials can have oblique asymptotes. For $a > 0,$ consider the function
+Square roots of quadratic polynomials can have oblique asymptotes. For $a > 0,$ consider the function:
 
 $$y = \sqrt{ax^2 + bx + c}$$
 
-Its two oblique asymptotes are
+Its two oblique asymptotes are:
 
 $$y = \pm\sqrt{a}\left(x + \frac{b}{2a}\right)$$
 
@@ -142,11 +140,11 @@ The denominator tends to $+\infty$ as $x \to +\infty,$ so the difference tends t
 
 ## Example 1
 
-We study the function
+We study the function:
 
 $$f(x) = \sqrt{\frac{x - 1}{x + 2}}$$
 
-The index is even, so the radicand must be non-negative and the denominator must not vanish. The quotient $(x - 1)/(x + 2)$ is positive when the numerator and denominator have the same sign, and it is zero at $x = 1.$ The domain is
+The index is even, so the radicand must be non-negative and the denominator must not vanish. The quotient $(x - 1)/(x + 2)$ is positive when the numerator and denominator have the same sign, and it is zero at $x = 1.$ The domain is:
 
 $$D = (-\infty, -2) \cup [1, +\infty)$$
 
@@ -154,7 +152,7 @@ The point $x = -2$ is excluded because the radicand is undefined there, while $x
 
 - - -
 
-As $x \to \pm\infty,$ the radicand tends to $1.$ Both limits are
+As $x \to \pm\infty,$ the radicand tends to $1.$ Both limits are:
 
 $$\lim_{x \to \pm\infty} f(x) = 1$$
 
@@ -170,7 +168,7 @@ To determine monotonicity, we differentiate the radicand $g(x) = (x - 1)/(x + 2)
 
 $$g'(x) = \frac{(x + 2) - (x - 1)}{(x + 2)^2} = \frac{3}{(x + 2)^2}$$
 
-The derivative of $g$ is positive at every point of the domain, so $g$ increases on each of the two intervals. Since the square-root function is strictly increasing, $f$ has the same monotonicity. The derivative of $f$ is
+The derivative of $g$ is positive at every point of the domain, so $g$ increases on each of the two intervals. Since the square-root function is strictly increasing, $f$ has the same monotonicity. The derivative of $f$ is:
 
 $$f'(x) = \frac{g'(x)}{2\sqrt{g(x)}} = \frac{3}{2(x + 2)^2}\sqrt{\frac{x + 2}{x - 1}}$$
 
@@ -178,7 +176,7 @@ This derivative is positive wherever it is defined. As $x \to 1^+,$ the radicand
 
 - - -
 
-The function $f$ increases from $1$ to $+\infty$ on $(-\infty, -2)$ and from $0$ to $1$ on $[1, +\infty),$ without attaining the value $1$ on either interval. Its range is
+The function $f$ increases from $1$ to $+\infty$ on $(-\infty, -2)$ and from $0$ to $1$ on $[1, +\infty),$ without attaining the value $1$ on either interval. Its range is:
 
 $$[0, 1) \cup (1, +\infty)$$
 
@@ -186,11 +184,11 @@ $$[0, 1) \cup (1, +\infty)$$
 
 ## Example 2
 
-We study the function
+We study the function:
 
 $$f(x) = \sqrt{x^2 - 4x}$$
 
-The radicand factors as $x(x - 4)$ and is non-negative for $x \leq 0$ or $x \geq 4.$ Thus the domain is
+The radicand factors as $x(x - 4)$ and is non-negative for $x \leq 0$ or $x \geq 4.$ Thus the domain is:
 
 $$D = (-\infty, 0] \cup [4, +\infty)$$
 
@@ -198,7 +196,7 @@ The function vanishes at $x = 0$ and $x = 4.$ On the excluded interval $(0, 4)$ 
 
 - - -
 
-The radicand is a second-degree polynomial with $a = 1$ and $b = -4,$ so the asymptote formula gives the lines $y = x - 2$ and $y = -(x - 2).$ For the branch on the right, rationalizing the difference gives
+The radicand is a second-degree polynomial with $a = 1$ and $b = -4,$ so the asymptote formula gives the lines $y = x - 2$ and $y = -(x - 2).$ For the branch on the right, rationalizing the difference gives:
 
 $$
 \begin{align}
@@ -211,7 +209,7 @@ The last expression tends to $0$ as $x \to +\infty.$ The corresponding computati
 
 - - -
 
-The derivative is
+The derivative is:
 
 $$f'(x) = \frac{2x - 4}{2\sqrt{x^2 - 4x}} = \frac{x - 2}{\sqrt{x^2 - 4x}}$$
 

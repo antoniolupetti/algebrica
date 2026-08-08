@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="300px" viewBox="0 0 306 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 30</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M150.882134,4.67699263 L150.935788,4.75486938 L155.435788,12.7548694 C155.57117,12.9955483 155.48581,13.3004059 155.245131,13.4357878 C155.031194,13.5561272 154.766548,13.5020533 154.615296,13.3195146 L154.564212,13.2451306 L151,6.908 L151,200.5 C151,200.776142 150.776142,201 150.5,201 C150.25454,201 150.050392,200.823125 150.008056,200.589876 L150,200.5 L150,6.908 L146.435788,13.2451306 C146.315448,13.4590675 146.061202,13.5502832 145.837152,13.4728292 L145.754869,13.4357878 C145.540933,13.3154483 145.449717,13.0612021 145.527171,12.8371522 L145.564212,12.7548694 L150.064212,4.75486938 C150.239435,4.44336236 150.665161,4.41740344 150.882134,4.67699263 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M295.162848,170.527171 L295.245131,170.564212 L303.245131,175.064212 C303.556638,175.239435 303.582597,175.665161 303.323007,175.882134 L303.245131,175.935788 L295.245131,180.435788 C295.004452,180.57117 294.699594,180.48581 294.564212,180.245131 C294.443873,180.031194 294.497947,179.766548 294.680485,179.615296 L294.754869,179.564212 L301.093,175.999 L3.85379111e-16,176 C-0.276142375,176 -0.5,175.776142 -0.5,175.5 C-0.5,175.25454 -0.323124839,175.050392 -0.0898756324,175.008056 L-3.85379111e-16,175 L301.089,174.999 L294.754869,171.435788 C294.540933,171.315448 294.449717,171.061202 294.527171,170.837152 L294.564212,170.754869 C294.684552,170.540933 294.938798,170.449717 295.162848,170.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="14" font-weight="normal">
+                <tspan x="296" y="196">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="14" font-weight="normal">
+                <tspan x="131" y="14">y</tspan>
+            </text>
+            <line x1="152" y1="55.5" x2="216" y2="55.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="116.5" y1="117.5" x2="116.5" y2="142.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="150.5" y1="144.5" x2="116" y2="144.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="116.5" y1="176" x2="116.5" y2="182" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="218.5" y1="176" x2="218.5" y2="182" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="34" y1="187" x2="116" y2="115" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="218" y1="55" x2="285" y2="55" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle stroke="#312F2F" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" cx="116" cy="115" r="3.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="116" cy="145" r="3.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="218" cy="55" r="3.5"></circle>
+            <text fill-rule="nonzero" font-size="12" font-weight="normal" fill="#312f2f">
+                <tspan x="108" y="197">-1</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="12" font-weight="normal" fill="#312f2f">
+                <tspan x="215" y="196">2</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="12" font-weight="normal" fill="#312f2f">
+                <tspan x="138" y="59">4</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="12" font-weight="normal" fill="#312f2f">
+                <tspan x="157" y="148">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="198" y="111">y=f(x)</tspan>
+            </text>
+            <line x1="116.5" y1="209.5" x2="116.5" y2="238.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="218.5" y1="210" x2="218.5" y2="238.5" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="12" y="255">At x = -1 the left limit is 2 </tspan>
+                <tspan x="12" y="269">and the value is 1, so the </tspan>
+                <tspan x="12" y="283">graph jumps.</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="183" y="255">At x = 2 both pieces </tspan>
+                <tspan x="183" y="269">give the value 4, so the </tspan>
+                <tspan x="183" y="283">graph joins with no </tspan>
+                <tspan x="183" y="297">break.</tspan>
+            </text>
+            <path d="M116,145 C122.666667,165.666667 134.333333,176 151,176 C167.269525,175.548069 182.773143,156.867552 197.510855,119.958449 M205.332988,97.4764723 C207.728326,89.9709467 211.950663,75.8121226 218,55" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

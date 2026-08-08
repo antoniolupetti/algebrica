@@ -14,7 +14,7 @@ tags:
 
 ## Introduction to absolute value
 
-This handout covers [absolute value](../absolute-value/), starting with its definition:
+This handout covers [absolute value](../absolute-value/), starting with its [piecewise definition](../piecewise-functions/):
 
 $$
 |x| =

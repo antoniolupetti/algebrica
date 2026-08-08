@@ -101,7 +101,7 @@ The following three conditions imply Riemann integrability and often avoid a dir
 
 + If $f$ is [continuous](../continuous-functions/) on $[a, b],$ then it is uniformly continuous. Its oscillation $M_i - m_i$ is therefore uniformly small on every sufficiently short subinterval, and the Darboux criterion gives integrability.
 + If $f$ is monotone on $[a, b],$ let $\lVert P\rVert$ denote the largest subinterval length. Bounding each subinterval length by $\lVert P\rVert$ gives $U(f, P) - L(f, P) \leq \lVert P\rVert|f(b) - f(a)|$ because the absolute endpoint differences telescope. The gap can therefore be made arbitrarily small.
-+ If $f$ is bounded and has only finitely many [discontinuities](../discontinuities-of-real-functions/), those points can be covered by intervals of arbitrarily small total length. Boundedness controls the contribution on these intervals. On the remaining compact pieces, $f$ is uniformly continuous, which controls the rest of the Darboux gap.
++ If $f$ is bounded and has only finitely many [discontinuities](../discontinuities-of-real-functions/), those points can be covered by intervals of arbitrarily small total length. Boundedness controls the contribution on these intervals. On the remaining compact pieces, $f$ is uniformly continuous, which controls the rest of the Darboux gap. This condition includes [piecewise continuous functions](../piecewise-functions/) on closed bounded intervals.
 
 > These conditions overlap and are sufficient rather than necessary. A monotone function can have a dense countable set of jump discontinuities, so density alone does not decide Riemann integrability. The exact condition concerns the measure of the discontinuity set.
 

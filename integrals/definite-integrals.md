@@ -151,6 +151,8 @@ Together, the previous two properties make the definite integral a linear operat
 
 $$\int_{a}^{c} f(x) \ dx = \int_{a}^{b} f(x) \ dx + \int_{b}^{c} f(x) \ dx$$
 
+This additivity allows us to [integrate a piecewise function](../piecewise-functions/) by splitting the interval at its junction points.
+
 If $f(x) \leq g(x)$ for every $x \in [a, b]$, the same inequality propagates to the integrals:
 
 $$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$

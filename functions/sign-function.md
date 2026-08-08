@@ -12,7 +12,7 @@ tags:
 
 ## Introduction to the sign function
 
-The sign function assigns to each real number its sign, disregarding its magnitude. The function is defined as follows:
+The sign function assigns to each real number its sign, disregarding its magnitude. The function has the following [piecewise definition](../piecewise-functions/):
 
 $$
 \mathrm{sgn}(x) =
