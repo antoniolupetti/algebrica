@@ -13,7 +13,7 @@ tags:
   - step-function
 ---
 
-## Introduction to the Heaviside step function
+## Introduction
 
 The Heaviside step function is $0$ to the left of the origin and $1$ to the right. With $H(0)=\frac{1}{2},$ its [piecewise definition](../piecewise-functions/) is:
 
@@ -64,7 +64,7 @@ $$
 
 Their values differ, so the two-sided limit $\lim_{x \to 0} H(x)$ does not exist and $H$ has a jump discontinuity at the origin. The jump has amplitude $1-0=1.$
 
-## Limits, derivatives, and integrals of the Heaviside function
+## Limits, derivatives, and integrals
 
 Since $H$ is constant on each half-line, its limits at infinity are:
 
