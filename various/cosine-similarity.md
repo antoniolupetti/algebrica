@@ -151,7 +151,7 @@ The three retained words "novels", "reading", and "thriller" give the dot produc
 
 ## The angle between vectors
 
-The [arccosine](../arcsine-and-arccosine/) function gives the angle from $C_s(V_x, V_y) = \cos\theta:$
+The [arccosine](../arccosine-function/) function gives the angle from $C_s(V_x, V_y) = \cos\theta:$
 
 $$
 \theta = \arccos(0.75) \approx 41.4^\circ

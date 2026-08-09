@@ -70,7 +70,7 @@ The equation
 
 $$\cos(x) = m \tag{2}$$
 
-is governed by the same range condition, since the [cosine](../sine-and-cosine/) also takes values in $[-1, 1]$. For $-1 < m < 1$ the line $x = m$ meets the unit circle at two points symmetric with respect to the horizontal axis, which produce two opposite angles. Writing $\alpha = \arccos(m)$ for the [arccosine](../arcsine-and-arccosine/) of $m$, the unique value in $[0, \pi]$ with $\cos(\alpha) = m$, the general solution is:
+is governed by the same range condition, since the [cosine](../sine-and-cosine/) also takes values in $[-1, 1]$. For $-1 < m < 1$ the line $x = m$ meets the unit circle at two points symmetric with respect to the horizontal axis, which produce two opposite angles. Writing $\alpha = \arccos(m)$ for the [arccosine](../arccosine-function/) of $m$, the unique value in $[0, \pi]$ with $\cos(\alpha) = m$, the general solution is:
 
 $$x = \pm\alpha + 2k\pi, \quad k \in \mathbb{Z}$$
 

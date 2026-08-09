@@ -2,43 +2,43 @@
 <svg width="311px" height="269px" viewBox="0 0 311 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g>
-            <path d="M174.676181,138 C174.676181,137.759949 174.671205,137.521059 174.661352,137.28343 C174.409945,131.220417 170.983011,125.977384 166,123.173782" stroke="#BABABA"></path>
-            <line x1="158" y1="138" x2="205.5" y2="55.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
-            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+            <path d="M174.676181,138 C174.676181,137.759949 174.671205,137.521059 174.661352,137.28343 C174.409945,131.220417 170.983011,125.977384 166,123.173782" stroke="#BEB8B7"></path>
+            <line x1="158" y1="138" x2="205.5" y2="55.5" stroke="#312f2f" stroke-width="2" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
                 <tspan x="35.678" y="61.3620148">The cosine and sine </tspan>
                 <tspan x="16.725" y="74.3620148">functions identify the x </tspan>
                 <tspan x="2.348" y="87.3620148">and y coordinates of point </tspan>
                 <tspan x="38.186" y="100.362015">P on the unit circle.</tspan>
             </text>
-            <path d="M157.5,4.98013557 L157.935788,5.75486938 L162.435788,13.7548694 L162.680918,14.1906571 L161.809343,14.6809184 L161.564212,14.2451306 L158,7.908 L158,269 L157,269 L157,7.908 L153.435788,14.2451306 L153.190657,14.6809184 L152.319082,14.1906571 L152.564212,13.7548694 L157.064212,5.75486938 L157.5,4.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <path d="M300.809343,133.319082 L301.245131,133.564212 L309.245131,138.064212 L310.019864,138.5 L309.245131,138.935788 L301.245131,143.435788 L300.809343,143.680918 L300.319082,142.809343 L300.754869,142.564212 L307.091,139 L7,139 L7,138 L307.091,138 L300.754869,134.435788 L300.319082,134.190657 L300.809343,133.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <path d="M157.5,4.98013557 L157.935788,5.75486938 L162.435788,13.7548694 L162.680918,14.1906571 L161.809343,14.6809184 L161.564212,14.2451306 L158,7.908 L158,269 L157,269 L157,7.908 L153.435788,14.2451306 L153.190657,14.6809184 L152.319082,14.1906571 L152.564212,13.7548694 L157.064212,5.75486938 L157.5,4.98013557 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M300.809343,133.319082 L301.245131,133.564212 L309.245131,138.064212 L310.019864,138.5 L309.245131,138.935788 L301.245131,143.435788 L300.809343,143.680918 L300.319082,142.809343 L300.754869,142.564212 L307.091,139 L7,139 L7,138 L307.091,138 L300.754869,134.435788 L300.319082,134.190657 L300.809343,133.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="172.5" y="87">r</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#333333">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="141.5" y="154">O</tspan>
             </text>
-            <path d="M243.006717,97.0546397 C227.612606,65.3535281 195.108386,43.5 157.5,43.5 C149.367981,43.5 141.474607,44.5217601 133.941255,46.4439029" stroke="#BABABA" stroke-linecap="round"></path>
-            <path d="M65.1716183,116.035679 C63.425413,123.237897 62.5,130.760878 62.5,138.5 C62.5,190.967051 105.032949,233.5 157.5,233.5 C209.967051,233.5 252.5,190.967051 252.5,138.5 C252.5,131.677244 251.780763,125.022474 250.413973,118.607375" stroke="#BABABA" stroke-linecap="round"></path>
-            <line x1="158" y1="55.5" x2="206" y2="55.5" stroke="#BABABA" stroke-dasharray="4"></line>
-            <line x1="205.5" y1="138" x2="205.5" y2="52.5000178" stroke="#BABABA" stroke-dasharray="4"></line>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <path d="M243.006717,97.0546397 C227.612606,65.3535281 195.108386,43.5 157.5,43.5 C149.367981,43.5 141.474607,44.5217601 133.941255,46.4439029" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M65.1716183,116.035679 C63.425413,123.237897 62.5,130.760878 62.5,138.5 C62.5,190.967051 105.032949,233.5 157.5,233.5 C209.967051,233.5 252.5,190.967051 252.5,138.5 C252.5,131.677244 251.780763,125.022474 250.413973,118.607375" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <line x1="158" y1="55.5" x2="206" y2="55.5" stroke="#BEB8B7" stroke-dasharray="4"></line>
+            <line x1="205.5" y1="138" x2="205.5" y2="52.5000178" stroke="#BEB8B7" stroke-dasharray="4"></line>
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="223.5" y="110">y=sin(θ)</tspan>
             </text>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="203.5" y="45">P(1/2, √3/2)</tspan>
             </text>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="181.5" y="156">x=cos(θ)</tspan>
             </text>
-            <circle fill="#333333" cx="205.5" cy="55.5" r="3"></circle>
-            <text font-family="Helvetica" font-size="13" font-weight="normal" fill="#333333">
+            <circle fill="#312f2f" cx="205.5" cy="55.5" r="3"></circle>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="177.176181" y="131">θ</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#BABABA">
+            <text font-size="13" font-weight="normal" fill="#BEB8B7">
                 <tspan x="301.5" y="156">x</tspan>
             </text>
-            <text font-size="13" font-weight="normal" fill="#BABABA">
+            <text font-size="13" font-weight="normal" fill="#BEB8B7">
                 <tspan x="137.5" y="13">y</tspan>
             </text>
         </g>

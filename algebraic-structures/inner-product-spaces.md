@@ -230,7 +230,7 @@ In a real inner product space, the Cauchy-Schwarz inequality gives:
 
 $$-1\leq\frac{\langle\mathbf{u},\mathbf{v}\rangle}{\|\mathbf{u}\|\|\mathbf{v}\|}\leq1$$
 
-For nonzero vectors, the quotient in the middle belongs to the domain of the [arccosine](../arcsine-and-arccosine/). The [angle](../angles-and-angular-measure/) between $\mathbf{u}$ and $\mathbf{v}$ is the unique $\theta\in[0,\pi]$ such that:
+For nonzero vectors, the quotient in the middle belongs to the domain of the [arccosine](../arccosine-function/). The [angle](../angles-and-angular-measure/) between $\mathbf{u}$ and $\mathbf{v}$ is the unique $\theta\in[0,\pi]$ such that:
 
 $$\cos\theta=\frac{\langle\mathbf{u},\mathbf{v}\rangle}{\|\mathbf{u}\|\|\mathbf{v}\|}$$
 

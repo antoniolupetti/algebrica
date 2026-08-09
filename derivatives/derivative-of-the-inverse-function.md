@@ -121,7 +121,7 @@ $$
 
 At $x = \pm 1$ the corresponding points are $t = \pm\pi/2,$ where the derivative of the sine is zero, so the arcsine is not differentiable at the endpoints of its domain and its graph has vertical tangents there.
 
-The arccosine is the inverse of the [cosine](../cosine-function/) restricted to $[0, \pi],$ where the derivative $-\sin(t)$ is negative on the interior. With $t = \arccos(x)$ and $\sin(t) = \sqrt{1 - \cos^2(t)} = \sqrt{1 - x^2},$ the same substitution gives:
+The [arccosine](../arccosine-function/) is the inverse of the [cosine](../cosine-function/) restricted to $[0, \pi],$ where the derivative $-\sin(t)$ is negative on the interior. With $t = \arccos(x)$ and $\sin(t) = \sqrt{1 - \cos^2(t)} = \sqrt{1 - x^2},$ the same substitution gives:
 
 $$D[\arccos(x)] = \frac{1}{-\sin(\arccos(x))} = -\frac{1}{\sqrt{1 - x^2}}$$
 

@@ -105,7 +105,7 @@ $$
 \end{align}
 $$
 
-> This equivalence is often useful in calculus and in analytical derivations, because it allows expressions involving the arctangent to be rewritten in terms of the [arcsine](../arcsine-function/) or [arccosine](../arcsine-and-arccosine/), depending on which form simplifies the computation.
+> This equivalence is often useful in calculus and in analytical derivations, because it allows expressions involving the arctangent to be rewritten in terms of the [arcsine](../arcsine-function/) or [arccosine](../arccosine-function/), depending on which form simplifies the computation.
 
 ## Addition formula for the arctangent
 

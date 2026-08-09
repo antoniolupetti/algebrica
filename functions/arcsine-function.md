@@ -44,7 +44,7 @@ As the inverse of the restricted sine, the arcsine has the following properties.
 + Roots: $x = 0,$ the only point of the domain at which the function vanishes
 + [Maximum and minimum points](../maximum-minimum-and-inflection-points/): the maximum value $\dfrac{\pi}{2}$ is attained at $x = 1$ and the minimum value $-\dfrac{\pi}{2}$ at $x = -1.$
 
-The arcsine is bounded, and its minimum and maximum are attained at the endpoints of the domain rather than at interior stationary points. For every $x \in [-1, 1],$ the arcsine and the [arccosine](../arcsine-and-arccosine/) satisfy the identity:
+The arcsine is bounded, and its minimum and maximum are attained at the endpoints of the domain rather than at interior stationary points. For every $x \in [-1, 1],$ the arcsine and the [arccosine](../arccosine-function/) satisfy the identity:
 
 $$\arcsin(x) + \arccos(x) = \frac{\pi}{2}$$
 

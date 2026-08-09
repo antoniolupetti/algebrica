@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="329px" height="352px" viewBox="0 0 329 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 35</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M151.5,74.9801356 L151.935788,75.7548694 L156.435788,83.7548694 L156.680918,84.1906571 L155.809343,84.6809184 L155.564212,84.2451306 L152,77.908 L152,351 L151,351 L151,77.908 L147.435788,84.2451306 L147.190657,84.6809184 L146.319082,84.1906571 L146.564212,83.7548694 L151.064212,75.7548694 L151.5,74.9801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M312.809343,201.319082 L313.245131,201.564212 L321.245131,206.064212 L322.019864,206.5 L321.245131,206.935788 L313.245131,211.435788 L312.809343,211.680918 L312.319082,210.809343 L312.754869,210.564212 L319.091,207 L-0.5,207 L-0.5,206 L319.091,206 L312.754869,202.435788 L312.319082,202.190657 L312.809343,201.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="12" font-weight="normal" fill="#BEB8B7">
+                <tspan x="133.5" y="85">y</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#BEB8B7">
+                <tspan x="315.5" y="225">x</tspan>
+            </text>
+            <path d="M79,230 C110,229 123,184 152.2,184 C181.4,184 197,230 221.4,230" stroke="#BEB8B7" stroke-linecap="square"></path>
+            <path d="M10.2,184 C39.4,184 55,230 79.4,230" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M221,230 C252,229 265,184 294.2,184" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <g transform="translate(152.200000, 206.100000) rotate(-90.000000) translate(-152.200000, -206.100000) translate(8.100000, 183.100000)" stroke="#312F2F" stroke-width="2">
+                <path d="M0,46 C31,45 44,-1.14525779e-14 73.2,-1.14525779e-14 C102.4,-1.14525779e-14 118,46 142.4,46" stroke-linecap="round"></path>
+                <path d="M142,46 C173,45 186,-2.01475702e-14 215.2,-2.01475702e-14" stroke-linecap="square"></path>
+                <path d="M215,46 C234.071629,45.3847862 246.330473,28.1160969 259.740039,14.9176807 M274.575838,3.44810834 C278.762555,1.29403655 283.248351,-2.48689958e-14 288.2,-2.48689958e-14" stroke-linecap="round" transform="translate(251.600000, 23.000000) scale(1, -1) translate(-251.600000, -23.000000) "></path>
+            </g>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="179" y="222">1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="124" y="222">-1</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="163" y="140">π</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="161" y="281">-π</tspan>
+            </text>
+            <line x1="61.5" y1="300.5" x2="250.5" y2="107.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="148.5" y1="184.5" x2="155.5" y2="184.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="89" y="10">Only the branch between 0 and π, where the </tspan>
+                <tspan x="89" y="23">cosine decreases, is invertible. Reflecting it in </tspan>
+                <tspan x="89" y="36">the line y = x gives the graph of the arccosine.</tspan>
+            </text>
+            <line x1="128.5" y1="48.5" x2="128.5" y2="84.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="298" y="188">cos(x)</tspan>
+            </text>
+            <line x1="148.5" y1="136.5" x2="155.5" y2="136.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="148.5" y1="277.5" x2="155.5" y2="277.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="131.5" y1="210.5" x2="131.5" y2="203.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="163" y="87">arccos(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -13,7 +13,7 @@ tags:
 
 The geometric construction of the cosine from the [unit circle](../unit-circle/) is developed in [sine and cosine](../sine-and-cosine/). Here the cosine is treated as a real [function](../functions/) of a real variable.
 
-The cosine function $f(x) = \cos(x)$ assigns to each angle $x,$ measured in [radians](../angles-and-angular-measure/), its corresponding [cosine](../sine-and-cosine/) value. Its graph is a periodic wave with period $2\pi$ and amplitude $1,$ oscillating between $-1$ and $1.$ The function has all real numbers in its [domain](../determining-the-domain-of-a-function/), and its range is the [interval](../intervals/) $[-1, 1].$
+The cosine function $f(x) = \cos(x)$ assigns to each angle $x,$ measured in [radians](../angles-and-angular-measure/), its corresponding [cosine](../sine-and-cosine/) value. Its graph is a periodic wave with period $2\pi$ and amplitude $1,$ oscillating between $-1$ and $1.$ The function has all real numbers in its [domain](../determining-the-domain-of-a-function/), and its range is the [interval](../intervals/) $[-1, 1].$ On $[0, \pi],$ the cosine is strictly decreasing from $1$ to $-1,$ and the inverse of this restriction is the [arccosine function](../arccosine-function/).
 
 ![IMG. 1](../trigonometry/svg/sine-and-cosine-4.svg)
 

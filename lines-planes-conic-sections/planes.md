@@ -248,7 +248,7 @@ Both vectors have norm $3,$ since $4+1+4=9$ and $1+4+4=9,$ so the [cosine](../si
 
 $$\cos\theta = \frac{|-4|}{3 \cdot 3} = \frac{4}{9}$$
 
-The [arccosine](../arcsine-and-arccosine/) gives the angle $\theta=\arccos\frac{4}{9} \approx 1.11$ radians, or $63.61°.$
+The [arccosine](../arccosine-function/) gives the angle $\theta=\arccos\frac{4}{9} \approx 1.11$ radians, or $63.61°.$
 
 ## Distance from a point to a plane
 

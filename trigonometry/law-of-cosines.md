@@ -77,7 +77,7 @@ $$
 \end{align}
 $$
 
-Since $\cos(\theta) < 0$, the angle $\theta$ is obtuse. Taking the inverse cosine yields:
+Since $\cos(\theta) < 0$, the angle $\theta$ is obtuse. Taking the [inverse cosine](../arccosine-function/) yields:
 
 $$
 \theta = \arccos(-0.1) \approx 95.7^\circ
