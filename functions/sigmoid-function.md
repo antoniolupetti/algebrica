@@ -5,6 +5,7 @@ license: CC BY-NC 4.0
 tags:
   - derivatives
   - functions
+  - heaviside-function
   - logistic-function
   - machine-learning
 ---
@@ -95,7 +96,7 @@ The derivative identity $\sigma'(x) = \sigma(x)(1 - \sigma(x))$ shows that $\sig
 
 ## Limit to the step function
 
-For the scaled sigmoid $\sigma(kx) = \dfrac{1}{1 + e^{-kx}},$ a larger $k$ compresses the transition around the origin while the asymptotic values $0$ and $1$ stay fixed. As $k \to +\infty,$ the function converges pointwise to the Heaviside step function:
+For the scaled sigmoid $\sigma(kx) = \dfrac{1}{1 + e^{-kx}},$ a larger $k$ compresses the transition around the origin while the asymptotic values $0$ and $1$ stay fixed. As $k \to +\infty,$ the function converges pointwise to the [Heaviside step function](../heaviside-function/):
 
 $$
 \lim_{k \to +\infty} \sigma(kx) =

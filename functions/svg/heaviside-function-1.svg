@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="257px" viewBox="0 0 313 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 37</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M137.5,77.9801356 L137.935788,78.7548694 L142.435788,86.7548694 L142.680918,87.1906571 L141.809343,87.6809184 L141.564212,87.2451306 L137.999,80.906 L138,257 L137,257 L136.999,80.91 L133.435788,87.2451306 L133.190657,87.6809184 L132.319082,87.1906571 L132.564212,86.7548694 L137.064212,78.7548694 L137.5,77.9801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M280.809343,209.319082 L281.245131,209.564212 L289.245131,214.064212 L290.019864,214.5 L289.245131,214.935788 L281.245131,219.435788 L280.809343,219.680918 L280.319082,218.809343 L280.754869,218.564212 L287.091,215 L17.5,215 L17.5,214 L287.091,214 L280.754869,210.435788 L280.319082,210.190657 L280.809343,209.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="121" y="85">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="281" y="232">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="21" y="11">The graph shows the Heaviside step function, which </tspan>
+                <tspan x="21" y="24">jumps from 0 to 1 at the origin. The filled point at y = 0.5 </tspan>
+                <tspan x="21" y="37">indicates the convention that its value at x = 0 is one half.</tspan>
+            </text>
+            <line x1="201.5" y1="51.5" x2="201.5" y2="117.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="2.84217094e-14" y1="215" x2="138" y2="215" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="138" y1="130" x2="285" y2="130" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="120" y="134">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="107" y="177">0.5</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="117" y="234">0</tspan>
+            </text>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="137" cy="172.5" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="138" cy="130" r="3"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="138" cy="215" r="3"></circle>
+        </g>
+    </g>
+</svg>

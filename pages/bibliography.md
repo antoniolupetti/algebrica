@@ -143,6 +143,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Applied Combinatorics](https://trotter.math.gatech.edu/book.pdf), Mitchel T. Keller, William T. Trotter
 + [Exploring Combinatorial Mathematics](https://openmathbooks.org/ecm/ecm.html), Richard Grassl, Oscar Levin
 + [Foundations of Applied Mathematics](https://foundations-of-applied-mathematics.github.io), Jeffrey Humpherys, Tyler J. Jarvis
++ [Foundations of Computation](https://math.hws.edu/FoundationsOfComputation/FoundationsOfComputation_2.3.2_6x9.pdf), Carol Critchlow, David Eck
 + [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf), Avrim Blum, John Hopcroft, Ravindran Kannan
 + [Graph Theory](https://daiwz.net/course/disc_math/2023/Diestel_Graph_Theory.pdf), Reinhard Diestel
 + [Graph Theory](https://roam.libraries.psu.edu/system/files/e-books/MATH485-Graph_Theory.pdf), Christopher Griffin

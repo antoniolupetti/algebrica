@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="216px" viewBox="0 0 306 216" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 38</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#E2DFDD" stroke-width="1"></path>
+        </pattern>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M36.5,36.9801356 L36.9357878,37.7548694 L41.4357878,45.7548694 L41.6809184,46.1906571 L40.8093429,46.6809184 L40.5642122,46.2451306 L37,39.908 L37,216 L36,216 L36,39.908 L32.4357878,46.2451306 L32.1906571,46.6809184 L31.3190816,46.1906571 L31.5642122,45.7548694 L36.0642122,37.7548694 L36.5,36.9801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M294.809343,168.319082 L295.245131,168.564212 L303.245131,173.064212 L304.019864,173.5 L303.245131,173.935788 L295.245131,178.435788 L294.809343,178.680918 L294.319082,177.809343 L294.754869,177.564212 L301.091,174 L31.5,174 L31.5,173 L301.091,173 L294.754869,169.435788 L294.319082,169.190657 L294.809343,168.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="157.5" y1="61.5" x2="157.5" y2="100.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <rect x="103" y="111" width="105" height="62" fill="url(#diagonal-lines)"></rect>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="18" y="46">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="281" y="195">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="82" y="10">The graph shows a rectangular pulse that </tspan>
+                <tspan x="82" y="23">equals 1 between a and b and 0 outside that </tspan>
+                <tspan x="82" y="36">interval. The filled points indicate the chosen </tspan>
+                <tspan x="82" y="49">values at the endpoints.</tspan>
+            </text>
+            <line x1="103" y1="111" x2="103" y2="173" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="33.5" y1="111.5" x2="40.5" y2="111.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="208" y1="111" x2="208" y2="173" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="0" y1="173" x2="103" y2="173" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="103" y1="111" x2="208" y2="111" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="208" y1="173" x2="285" y2="173" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="19" y="115">1</tspan>
+            </text>
+            <line x1="33.5" y1="143.5" x2="40.5" y2="143.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="9" y="147">0.5</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="19" y="191">0</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="99" y="193">a</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="204" y="193">b</tspan>
+            </text>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="103" cy="142" r="3.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="208" cy="142" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="103" cy="111" r="3"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="103" cy="173" r="3"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="208" cy="111" r="3"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="208" cy="173" r="3"></circle>
+        </g>
+    </g>
+</svg>

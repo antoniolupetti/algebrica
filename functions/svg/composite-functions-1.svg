@@ -10,7 +10,7 @@
                     <tspan x="35.1975" y="116">x</tspan>
                 </text>
                 <text font-size="13" font-weight="normal" fill="#312f2f">
-                    <tspan x="244.196" y="116">g[f(x)]</tspan>
+                    <tspan x="244.196" y="116">g(f(x))</tspan>
                 </text>
                 <text font-size="12" font-weight="normal" fill="#BEB8B7">
                     <tspan x="128.92" y="95.3118325">B</tspan>

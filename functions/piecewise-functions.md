@@ -212,6 +212,8 @@ $$
 
 The one-sided limits at $0$ are $-1$ and $1,$ so the function jumps by $2$ and is discontinuous at the origin. The middle piece consists of the single point $x = 0,$ so a piece need not be an interval of positive length.
 
+The [Heaviside step function](../heaviside-function/) uses the same partition, with values $0,$ $\frac{1}{2},$ and $1$ on the negative half-line, the origin, and the positive half-line, respectively.
+
 - - -
 
 The floor function assigns to each real number the greatest [integer](../integers/) that does not exceed it. Its pieces are the intervals $[n, n + 1),$ where $n \in \mathbb{Z}.$ More explicitly:

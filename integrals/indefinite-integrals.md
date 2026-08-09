@@ -39,7 +39,7 @@ $$F'(0) = \lim_{h \to 0}\frac{h^2\sin(1/h)}{h} = \lim_{h \to 0}h\sin(1/h) = 0$$
 
 Thus $f := F'$ has $F$ as a primitive on $\mathbb{R},$ but $f$ is not continuous at $0$ because $\cos(1/x)$ has no limit as $x \to 0.$
 
-By [Darboux's theorem](../darboux-theorem/), every derivative has the intermediate value property. Hence a function with a jump discontinuity has no primitive on any open interval containing the point of discontinuity.
+By [Darboux's theorem](../darboux-theorem/), every derivative has the intermediate value property. Hence a function with a jump discontinuity, such as the [Heaviside step function](../heaviside-function/), has no primitive on any open interval containing the point of discontinuity.
 
 - - -
 

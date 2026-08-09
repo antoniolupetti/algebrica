@@ -73,7 +73,7 @@ Conversely, the zero theorem is the case $y = 0$ of the intermediate value theor
 
 The function must be continuous on its whole [domain](../determining-the-domain-of-a-function/), and the domain must be an interval. If either condition is removed, the conclusion can fail.
 
-A counterexample on $[-1,1]$ is the step function:
+A counterexample on $[-1,1]$ is a variant of the [Heaviside step function](../heaviside-function/):
 
 $$
 f(x) =

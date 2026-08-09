@@ -50,6 +50,8 @@ The case $f'(a) > \lambda > f'(b)$ reduces to the one just treated by applying i
 
 A function with the intermediate value property cannot have a jump discontinuity, because across a jump it would skip every value strictly between the two one-sided limits, and those values would go unattained near the point. Every derivative has this property, so a derivative cannot jump.
 
+The [Heaviside step function](../heaviside-function/) has such a jump and therefore cannot be a classical derivative on any open interval containing the origin.
+
 Stated at a single point, if $f$ is differentiable on an interval and $c$ is an interior point at which the one-sided limits $\lim_{x \to c^-} f'(x)$ and $\lim_{x \to c^+} f'(x)$ both exist and are finite, then the two limits are equal, and they equal $f'(c)$. The derivative is then continuous at $c$. A derivative can therefore have no removable and no jump discontinuity; wherever it fails to be continuous, at least one of its one-sided limits does not exist, and the discontinuity is of the essential type.
 
 This is the reason behind the criterion based on the limit of the derivative discussed in the entry on [points of non-differentiability](../points-of-non-differentiability/). When the two one-sided limits of $f'$ exist and agree, the function is differentiable with that common value; when they exist and differ, no differentiable extension is possible, and the graph has a corner. For a function differentiable on the whole interval the second case is ruled out, so $f'$ passes from one value to another only by taking every value in between.
