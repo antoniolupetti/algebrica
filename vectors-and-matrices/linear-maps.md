@@ -36,7 +36,7 @@ The image of a linear combination is the linear combination of the images with t
 
 Homogeneity has two consequences. Taking $\alpha = 0$ gives $T(\mathbf{0}_V) = \mathbf{0}_W,$ and taking $\alpha = -1$ gives $T(-\mathbf{v}) = -T(\mathbf{v}).$ Thus a map that does not fix the origin is not linear.
 
-An endomorphism of $V$ is a linear map $T : V \to V,$ also called a linear operator. A linear functional, or linear form, has codomain $F,$ regarded as a one-dimensional vector space over itself. A bijective linear map is an [isomorphism](../homomorphisms-and-isomorphisms/), and an isomorphism from $V$ to itself is an automorphism.
+An endomorphism of $V$ is a linear map $T : V \to V,$ also called a linear operator. A linear functional, or linear form, has codomain $F,$ regarded as a one-dimensional vector space over itself. A bijective linear map is an [isomorphism](../homomorphisms-and-isomorphisms/), and an isomorphism from $V$ to itself is an automorphism. [Injectivity, surjectivity and bijectivity](../injective-surjective-and-bijective-functions/) are the conditions defined for functions, applied here to the map between the underlying sets.
 
 > Additivity alone makes $T$ a homomorphism of the underlying additive [groups](../groups/). Homogeneity requires compatibility with multiplication by scalars. Together, the same conditions define a homomorphism of [modules](../modules/) over a ring.
 
@@ -237,4 +237,3 @@ The map is surjective. For $(s, t) \in \mathbb{R}^2,$ the polynomial $p(x) = s +
 $$3 = \dim \ker(T) + \dim \mathrm{im}(T) = 1 + 2$$
 
 Since $\dim P_2(\mathbb{R}) = 3$ exceeds $\dim \mathbb{R}^2 = 2,$ no linear map from $P_2(\mathbb{R})$ to $\mathbb{R}^2$ can be injective. On the subspace $P_1(\mathbb{R})$ of polynomials of degree at most $1,$ the restriction $T|_{P_1(\mathbb{R})} : P_1(\mathbb{R}) \to \mathbb{R}^2$ is an isomorphism. Its inverse sends $(s, t)$ to $s + t(x - 1),$ the [first-order Taylor polynomial](../taylor-formula-with-remainder/) at $1$ with value $s$ and derivative $t.$
-	

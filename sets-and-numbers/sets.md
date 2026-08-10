@@ -60,7 +60,7 @@ A main collection containing all objects under consideration is called the unive
 
 ## Cardinality of finite sets
 
-The cardinality of a finite set $A,$ denoted $|A|,$ is the number of elements in $A.$ Cardinality can also be compared through [functions](../functions/). Two sets $A$ and $B$ have the same cardinality when a bijection from $A$ to $B$ exists. This condition is written as follows:
+The cardinality of a finite set $A,$ denoted $|A|,$ is the number of elements in $A.$ Cardinality can also be compared through [functions](../functions/). Two sets $A$ and $B$ have the same cardinality when a [bijection](../injective-surjective-and-bijective-functions/) from $A$ to $B$ exists. This condition is written as follows:
 
 $$
 |A|=|B| \iff \text{there is a bijection } f\colon A\to B

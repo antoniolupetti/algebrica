@@ -16,7 +16,7 @@ tags:
 ---
 ## Definition
 
-Let $X_n = \{\ 1, 2, \ldots, n \ \}.$ A permutation of $X_n$ is a [bijection](../inverse-function/) $\sigma : X_n \to X_n.$ The set of all permutations of $X_n,$ equipped with [composition of functions](../composite-functions/), is the symmetric group on $n$ elements and is denoted $S_n.$
+Let $X_n = \{\ 1, 2, \ldots, n \ \}.$ A permutation of $X_n$ is a [bijection](../injective-surjective-and-bijective-functions/) $\sigma : X_n \to X_n.$ The set of all permutations of $X_n,$ equipped with [composition of functions](../composite-functions/), is the symmetric group on $n$ elements and is denoted $S_n.$
 
 The group axioms follow from the properties of functions. The composite of two bijections of $X_n$ is a bijection of $X_n,$ so composition is an operation on $S_n.$ Composition is associative, the identity map is the identity element, and every bijection has an inverse that is also a bijection of $X_n.$ Hence $S_n$ is a [group](../groups/). Cayley's theorem states that every finite group of order $n$ is [isomorphic](../homomorphisms-and-isomorphisms/) to a subgroup of $S_n.$
 

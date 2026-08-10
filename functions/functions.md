@@ -49,6 +49,8 @@ A function $f \colon A \to B$ may have the following properties:
 + The function is surjective if every element of $B$ is the image of at least one element of $A,$ that is, if for every $y \in B$ there exists at least one $x \in A$ such that $f(x) = y.$ Equivalently, $f(A) = B.$
 + The function is bijective if it is both injective and surjective, that is, if for every $y \in B$ there exists a unique $x \in A$ such that $f(x) = y.$
 
+These three conditions, their reading on the graph and their relation to one-sided inverses are developed in [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/).
+
 The [floor and ceiling functions](../floor-and-ceiling-functions/) from $\mathbb{R}$ to $\mathbb{Z}$ are surjective but not injective. For either function, the preimage of every integer is a half-open interval of length $1.$
 
 A bijection $A \to B$ proves $|A| = |B|,$ while an injection $A \to B$ proves $|A| \leq |B|.$ The discussion in [cardinality and countable sets](../cardinality-and-countable-sets/) uses these maps to compare infinite sets and establish countability criteria.

@@ -114,7 +114,7 @@ Reading the sign of the derivative through the definition of monotonicity, $f$ i
 
 ## Strict monotonicity and injectivity
 
-A strictly monotonic function is injective. Suppose $f$ is strictly increasing on $I$ and let $x_1, x_2 \in I$ be distinct. One of the two orderings holds, either $x_1 < x_2$ or $x_2 < x_1,$ and in each case strict monotonicity turns the strict inequality between the inputs into a strict inequality between the outputs, so $f(x_1) \neq f(x_2).$ The same reasoning applies to a strictly decreasing function.
+A strictly monotonic function is [injective](../injective-surjective-and-bijective-functions/). Suppose $f$ is strictly increasing on $I$ and let $x_1, x_2 \in I$ be distinct. One of the two orderings holds, either $x_1 < x_2$ or $x_2 < x_1,$ and in each case strict monotonicity turns the strict inequality between the inputs into a strict inequality between the outputs, so $f(x_1) \neq f(x_2).$ The same reasoning applies to a strictly decreasing function.
 
 A strictly monotonic function therefore admits an [inverse](../inverse-function/) on its image, and the inverse keeps the same direction of monotonicity.
 

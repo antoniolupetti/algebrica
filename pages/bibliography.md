@@ -23,6 +23,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/ntb-v2_1.pdf), Victor Shoup
 + [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html), Stanley N. Burris, H. P. Sankappanavar
 + [Elementary Number Theory: Primes, Congruences, and Secrets](https://wstein.org/ent/ent.pdf), William Stein
++ [Foundations of Module and Ring Theory: A Handbook for Study and Research](https://www.math.uni-duesseldorf.de/~wisbauer/book.pdf), Robert Wisbauer
 + [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
 + [Introduction to Modern Algebra](http://aleph0.clarku.edu/~djoyce/ma225/algebra.pdf), David Joyce
 + [Precalculus](https://www.pearson.com/en-us/subject-catalog/p/precalculus/P200000006127/9780137321667), Robert F. Blitzer

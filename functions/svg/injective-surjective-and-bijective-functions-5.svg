@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="273px" height="278px" viewBox="0 0 273 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 50</title>
+    <g id="NEW---Functions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-50">
+            <line x1="41.5" y1="131.5" x2="41.5" y2="56.5" id="Line-3" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text id="Every-horizontal-lin" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636060">
+                <tspan x="1" y="11">Every horizontal line meets </tspan>
+                <tspan x="1" y="25">this graph at most once, so </tspan>
+                <tspan x="1" y="39">the function is injective.</tspan>
+            </text>
+            <line x1="1" y1="148.5" x2="236" y2="148.5" id="Path" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle id="Oval" fill="#312F2F" fill-rule="nonzero" cx="163" cy="148.5" r="2.5"></circle>
+            <text id="y-=-c" fill="#BEB8B7" fill-rule="nonzero" font-family="Helvetica" font-size="12" font-weight="normal">
+                <tspan x="246.5" y="151.8">y = c</tspan>
+            </text>
+            <text id="f" fill-rule="nonzero" font-family="Helvetica" font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="188.5" y="110.8">f</tspan>
+            </text>
+            <path id="Line" d="M113.882134,65.6769926 L113.935788,65.7548694 L118.435788,73.7548694 C118.57117,73.9955483 118.48581,74.3004059 118.245131,74.4357878 C118.031194,74.5561272 117.766548,74.5020533 117.615296,74.3195146 L117.564212,74.2451306 L113.999,67.906 L114,276.5 C114,276.776142 113.776142,277 113.5,277 C113.25454,277 113.050392,276.823125 113.008056,276.589876 L113,276.5 L112.999,67.91 L109.435788,74.2451306 C109.315448,74.4590675 109.061202,74.5502832 108.837152,74.4728292 L108.754869,74.4357878 C108.540933,74.3154483 108.449717,74.0612021 108.527171,73.8371522 L108.564212,73.7548694 L113.064212,65.7548694 C113.239435,65.4433624 113.665161,65.4174034 113.882134,65.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path id="Line-2" d="M230.162848,176.527171 L230.245131,176.564212 L238.245131,181.064212 C238.556638,181.239435 238.582597,181.665161 238.323007,181.882134 L238.245131,181.935788 L230.245131,186.435788 C230.004452,186.57117 229.699594,186.48581 229.564212,186.245131 C229.443873,186.031194 229.497947,185.766548 229.680485,185.615296 L229.754869,185.564212 L236.091,182 L0.5,182 C0.223857625,182 0,181.776142 0,181.5 C0,181.25454 0.176875161,181.050392 0.410124368,181.008056 L0.5,181 L236.091,181 L229.754869,177.435788 C229.540933,177.315448 229.449717,177.061202 229.527171,176.837152 L229.564212,176.754869 C229.684552,176.540933 229.938798,176.449717 230.162848,176.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text id="y" fill="#BEB8B7" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="97" y="72">y</tspan>
+            </text>
+            <text id="x" fill="#BEB8B7" fill-rule="nonzero" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal">
+                <tspan x="232" y="201">x</tspan>
+            </text>
+            <path d="M31,277 C48.3333333,223.666667 75.6666667,192 113,182 C141.475063,174.372751 166.071797,151.813938 186.790202,114.323561" id="Path" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M194.570313,99.1621906 C196.974455,94.1255849 200.451017,86.0715214 205,75" id="Path" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

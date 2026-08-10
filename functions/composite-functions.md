@@ -211,7 +211,7 @@ Assume that $f \colon A \rightarrow B$ and $g \colon B \rightarrow C.$ If $f$ an
 
 The missing converses fail. Let $f \colon [0, +\infty) \rightarrow \mathbb{R}$ be given by $f(x) = x,$ and let $g \colon \mathbb{R} \rightarrow [0, +\infty)$ be given by $g(t) = t^2.$ The composite $g \circ f$ is $x \mapsto x^2,$ which is injective on $[0, +\infty),$ while $g$ is not injective on $\mathbb{R}.$ For surjectivity, let $f \colon \mathbb{R} \rightarrow \mathbb{R}$ be given by $f(x) = x^2$ and use the same function $g.$ The composite $(g \circ f)(x) = x^4$ is surjective onto $[0, +\infty),$ although $f$ is not surjective onto $\mathbb{R}.$
 
-A composite of bijections is therefore a bijection. The bijections of a set onto itself form a group under composition, the [symmetric group](../symmetric-group/) of that set.
+A composite of bijections is therefore a bijection. The bijections of a set onto itself form a group under composition, the [symmetric group](../symmetric-group/) of that set. The three properties themselves are treated in [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/).
 
 - - -
 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="219px" viewBox="0 0 305 219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="NEW---Functions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(1.000000, 0.000000)">
+            <line x1="67.5" y1="68.5" x2="67.5" y2="36.5" id="Line-3" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text id="Each-element-of-B-re" font-family="Geist-Regular, Geist" font-size="11" font-weight="normal" fill="#636060">
+                <tspan x="13" y="11">Each element of B receives exactly one arrow. The </tspan>
+                <tspan x="13" y="25">function is injective and surjective, hence bijective.</tspan>
+            </text>
+            <text id="A" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="20.5" y="74.2609489">A</tspan>
+            </text>
+            <text id="B" font-family="Geist-Regular, Geist" font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="202.5" y="69.2609489">B</tspan>
+            </text>
+            <path id="Line" d="M228.192054,97.4843493 L228.274118,97.5218712 L236.247666,102.068577 C236.558143,102.245618 236.581612,102.671489 236.320759,102.88694 L236.242569,102.940138 L228.216391,107.393278 C227.974924,107.52725 227.670571,107.440109 227.536599,107.198642 C227.417513,106.984005 227.473133,106.71968 227.656553,106.569498 L227.731235,106.51885 L234.087,102.991 L228.002846,102.956166 L64.4970761,101.999991 C64.2209384,101.998377 63.9983937,101.773214 64.0000085,101.497076 C64.0016234,101.220938 64.2267863,100.998394 64.5029239,101.000009 L228.008694,101.956183 L234.095,101.992 L227.778769,98.3905649 C227.565539,98.2689764 227.475812,98.0142012 227.554575,97.790608 L227.592097,97.7085432 C227.713685,97.4953137 227.96846,97.4055863 228.192054,97.4843493 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path id="Line" d="M228.047235,129.702175 L228.130371,129.737259 L236.23461,134.046703 C236.550176,134.214506 236.586201,134.639498 236.331819,134.862553 L236.255234,134.918034 L228.363953,139.606071 C228.126544,139.74711 227.819752,139.668987 227.678713,139.431579 C227.553346,139.220549 227.601142,138.954698 227.780051,138.799169 L227.853205,138.74634 L234.104,135.032 L228.035129,135.176823 L66.511831,138.99986 C66.2357659,139.006394 66.0066741,138.787896 66.00014,138.511831 C65.9943319,138.26644 66.166327,138.058163 66.3985091,138.01032 L66.488169,138.00014 L228.011467,134.177103 L234.08,134.033 L227.66087,130.620191 C227.444146,130.504947 227.34694,130.252931 227.419071,130.027111 L227.454155,129.943975 C227.569398,129.72725 227.821415,129.630044 228.047235,129.702175 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path id="Line" d="M229.049215,161.6991 L229.132337,161.734219 L237.234797,166.047006 C237.550294,166.214939 237.586144,166.639946 237.331669,166.862896 L237.255061,166.918346 L229.361846,171.603126 C229.12438,171.744067 228.81762,171.665818 228.676679,171.428351 C228.551399,171.21727 228.599305,170.951439 228.778278,170.795984 L228.851454,170.743184 L235.104,167.032 L229.034517,167.173751 L64.5116248,170.999865 C64.235557,171.006285 64.0065553,170.787692 64.0001352,170.511625 C63.9944283,170.266231 64.1665093,170.058026 64.3987112,170.010278 L64.4883752,170.000135 L229.011268,166.174021 L235.08,166.033 L228.662472,162.616957 C228.445795,162.501624 228.348693,162.249567 228.420917,162.023777 L228.456035,161.940655 C228.571368,161.723978 228.823425,161.626876 229.049215,161.6991 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M17.3810485,79.1616043 C6.59973791,93.9074443 0,113.71791 0,135.5 C0,181.063492 28.8776336,218 64.5,218 C100.122366,218 129,181.063492 129,135.5 C129,89.9365081 100.122366,53 64.5,53 C52.3293577,53 40.9460263,57.3115884 31.2327003,64.8057372" id="Path" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g id="Group-49" transform="translate(42.000000, 92.000000)" fill="#312F2F">
+                <circle id="Oval" cx="22" cy="10" r="3"></circle>
+                <text id="a₁" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="0" y="13">a₁</tspan>
+                </text>
+            </g>
+            <g id="Group-48" transform="translate(42.000000, 126.000000)" fill="#312F2F">
+                <circle id="Oval" cx="22" cy="11" r="3"></circle>
+                <text id="a₂" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="0" y="13">a₂</tspan>
+                </text>
+            </g>
+            <g id="Group-47" transform="translate(42.000000, 160.000000)" fill="#312F2F">
+                <circle id="Oval" cx="22" cy="11" r="3"></circle>
+                <text id="a₃" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="0" y="13">a₃</tspan>
+                </text>
+            </g>
+            <path d="M197.90204,71.3890065 C183.320048,86.5146424 174,109.615173 174,135.5 C174,181.063492 202.877634,218 238.5,218 C274.122366,218 303,181.063492 303,135.5 C303,89.9365081 274.122366,53 238.5,53 C229.937533,53 221.764754,55.1340673 214.289037,59.0090494" id="Path" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g id="Group-46" transform="translate(238.000000, 156.000000)" fill="#312F2F">
+                <circle id="Oval" transform="translate(3.000000, 10.000000) scale(1, -1) translate(-3.000000, -10.000000) " cx="3" cy="10" r="3"></circle>
+                <text id="b₃" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="12" y="13">b₃</tspan>
+                </text>
+            </g>
+            <g id="Group-45" transform="translate(238.000000, 125.000000)" fill="#312F2F">
+                <circle id="Oval" transform="translate(3.000000, 9.000000) scale(1, -1) translate(-3.000000, -9.000000) " cx="3" cy="9" r="3"></circle>
+                <text id="b₂" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="12" y="13">b₂</tspan>
+                </text>
+            </g>
+            <g id="Group-44" transform="translate(238.000000, 92.000000)" fill="#312F2F">
+                <circle id="Oval" transform="translate(3.000000, 10.000000) scale(1, -1) translate(-3.000000, -10.000000) " cx="3" cy="10" r="3"></circle>
+                <text id="b₁" font-family="Geist-Regular, Geist" font-size="13" font-weight="normal">
+                    <tspan x="12" y="13">b₁</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

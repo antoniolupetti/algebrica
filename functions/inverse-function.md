@@ -17,6 +17,8 @@ In the introduction to [functions](../functions/), we saw that a function $f: X 
 + A function is injective if for every $x_1, x_2 \in X$ with $x_1 \ne x_2$ we have $f(x_1) \ne f(x_2).$ Equivalently, for every $y \in Y$ there exists at most one $x \in X$ such that $f(x) = y.$
 + A function is surjective if for every $y \in Y$ there exists at least one $x \in X$ such that $f(x) = y.$
 
+The two conditions and their consequences are examined in [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/).
+
 Injectivity has a direct graphical reading. A function is injective exactly when no horizontal line meets its graph more than once. A horizontal line $y = c$ that crossed the graph at two distinct points would produce two inputs with the same image $c,$ which contradicts injectivity.
 
 - - -

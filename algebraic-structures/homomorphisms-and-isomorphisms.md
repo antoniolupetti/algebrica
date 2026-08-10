@@ -20,7 +20,7 @@ tags:
 
 Every algebraic structure considered here has an underlying [set](../sets/), one or more operations such as addition, multiplication, or scalar multiplication, and sometimes distinguished elements such as an identity or a zero.
 
-A homomorphism is a [function](../functions/) between two algebraic structures of the same type. It commutes with each operation and preserves each distinguished element required by the definition. The precise conditions depend on whether the structures are groups, rings, [modules](../modules/), or [vector spaces](../vector-spaces/). Injectivity and surjectivity are separate properties and are not part of the definition.
+A homomorphism is a [function](../functions/) between two algebraic structures of the same type. It commutes with each operation and preserves each distinguished element required by the definition. The precise conditions depend on whether the structures are groups, rings, [modules](../modules/), or [vector spaces](../vector-spaces/). [Injectivity and surjectivity](../injective-surjective-and-bijective-functions/) are separate properties and are not part of the definition.
 
 > In category theory, algebraic structures are objects and their homomorphisms are morphisms. In this language, kernels, images, and quotients have common definitions whenever the category has the required constructions.
 

@@ -24,7 +24,7 @@ A countable set has either a finite enumeration or an enumeration indexed by the
 
 ## Equipotent sets
 
-Counting a finite collection means pairing its elements with the numbers $1,2,\ldots,n$ until the collection is exhausted. Two finite collections have the same number of elements exactly when their elements can be matched with none left over on either side. Such a matching is a [bijection](../functions/), and the definition makes sense for finite and infinite sets.
+Counting a finite collection means pairing its elements with the numbers $1,2,\ldots,n$ until the collection is exhausted. Two finite collections have the same number of elements exactly when their elements can be matched with none left over on either side. Such a matching is a [bijection](../injective-surjective-and-bijective-functions/), and the definition makes sense for finite and infinite sets.
 
 Two sets $A$ and $B$ are equipotent when a bijection $f\colon A\to B$ exists. In that case we write $A\sim B$ and say that $A$ and $B$ have the same cardinality. The relation $\sim$ has the three formal properties of an equivalence relation. The identity map on $A$ gives $A\sim A.$ If $f\colon A\to B$ is a bijection, its [inverse](../inverse-function/) is a bijection from $B$ to $A,$ so $A\sim B$ implies $B\sim A.$ If $f\colon A\to B$ and $g\colon B\to C$ are bijections, the [composition](../composite-functions/) $g\circ f$ is a bijection from $A$ to $C,$ so $A\sim B$ and $B\sim C$ imply $A\sim C.$
 
