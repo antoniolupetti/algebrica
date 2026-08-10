@@ -55,16 +55,11 @@ On the [integers](../integers/) the two functions are the identity, since $n \le
 
 The graph of $y = \lfloor x \rfloor$ is a staircase with steps of unit width and unit height. The floor is a [piecewise function](../piecewise-functions/), constant with value $n$ on each interval $[n, n+1).$ Its graph consists of countably many horizontal segments, each containing its left endpoint and missing its right endpoint.
 
-
 ![IMG. 1](./svg/floor-and-ceiling-functions-1.svg)
 
-The graph of $y = \lceil x \rceil$ has the same staircase shape, with the endpoint convention reversed.
-
+The graph of $y = \lceil x \rceil$ has the same staircase shape, with the endpoint convention reversed. On $(n-1, n]$ the ceiling is constant with value $n,$ and each segment includes its right endpoint and excludes its left endpoint.
 
 ![IMG. 2](./svg/floor-and-ceiling-functions-2.svg)
-
-
-On $(n-1, n]$ the ceiling is constant with value $n,$ and each segment includes its right endpoint and excludes its left endpoint.
 
 ## The fractional part and rounding to the nearest integer
 
@@ -241,7 +236,7 @@ $$
 \left\lceil \frac{n}{2} \right\rceil = -\left\lfloor \frac{n}{2} - n \right\rfloor = -\left( \left\lfloor \frac{n}{2} \right\rfloor - n \right) = n - \left\lfloor \frac{n}{2} \right\rfloor
 $$
 
-The two halves differ by $1$ when $n$ is odd and coincide when $n$ is even. For a list of $n \ge 0$ items, an algorithm that processes the first $\lfloor n/2\rfloor$ items and then the last $\lceil n/2\rceil$ items therefore processes each item exactly once.
+The two halves differ by $1$ when $n$ is odd and coincide when $n$ is even. For $n \ge 0,$ the ordered pair $(\lfloor n/2\rfloor, \lceil n/2\rceil)$ is the unique pair $(a, b)$ of non-negative integers with $a + b = n$ and $0 \le b - a \le 1.$
 
 The ceiling of a quotient of integers also has an expression in terms of the floor. For an integer $n$ and a positive integer $m$ we have:
 
@@ -259,11 +254,7 @@ $$
 \left\lfloor \frac{x}{k} \right\rfloor
 $$
 
-A positive integer $m$ satisfies $mk \le x$ if and only if $m \le x/k,$ and the second comparison rule gives $m \le \lfloor x/k \rfloor.$ Thus the positive multiples in question are the numbers $mk$ with $1 \le m \le \lfloor x/k\rfloor,$ so their number is $\lfloor x/k \rfloor.$ Taking $x = 100$ and $k = 13$ gives $\lfloor 100/13\rfloor=7,$ in agreement with the list:
-
-$$
-13 \quad 26 \quad 39 \quad 52 \quad 65 \quad 78 \quad 91
-$$
+A positive integer $m$ satisfies $mk \le x$ if and only if $m \le x/k,$ and the second comparison rule gives $m \le \lfloor x/k \rfloor.$ Thus the positive multiples in question are the numbers $mk$ with $1 \le m \le \lfloor x/k\rfloor,$ so their number is $\lfloor x/k \rfloor.$ For example, $7 \cdot 12 = 84 \le 95 < 96 = 8 \cdot 12,$ so exactly seven positive multiples of $12$ do not exceed $95.$
 
 The difference between the count up to $n$ and the count up to $n-1$ indicates whether $n$ is a multiple of $k.$ For positive integers $k$ and $n,$ consider the difference:
 
@@ -305,9 +296,9 @@ $$
 d = \lceil \log_b (n+1) \rceil
 $$
 
-The shift by one unit inside the logarithm cannot be removed. For $n = 1000$ and $b = 10$ the expression $\lceil\log_{10}1000\rceil$ returns $3,$ while the correct count is $4.$ This discrepancy occurs exactly at the powers of the base.
+The shift by one unit inside the logarithm cannot be removed. For $n = 100$ and $b = 10$ the expression $\lceil\log_{10}100\rceil$ returns $2,$ while the correct count is $3.$ This discrepancy occurs exactly at the powers of the base.
 
-> For $n = 1000$ and $b = 2,$ we have $\log_2 1000 = 9.9657\ldots,$ hence $d = 10.$ The binary representation $1111101000_2$ confirms the count, since $512 + 256 + 128 + 64 + 32 + 8 = 1000.$
+> For $n = 45$ and $b = 2,$ we have $\log_2 45 = 5.4918\ldots,$ hence $d = 6.$ The binary representation $101101_2$ confirms the count, since $32 + 8 + 4 + 1 = 45.$
 
 ## Rounding inside and outside a function
 
@@ -319,13 +310,9 @@ $$
 \lfloor f(x) \rfloor = \lfloor f(\lfloor x \rfloor) \rfloor
 $$
 
-If $x$ is an integer there is nothing to prove, so assume $\lfloor x \rfloor < x.$ Since $f$ is strictly increasing, $f(\lfloor x\rfloor)<f(x),$ and since the floor is non-decreasing this gives $\lfloor f(\lfloor x\rfloor)\rfloor\le\lfloor f(x)\rfloor.$ Suppose the inequality is strict. The first comparison rule, applied to $f(\lfloor x \rfloor)$ and the integer $\lfloor f(x) \rfloor,$ gives $f(\lfloor x \rfloor)<\lfloor f(x) \rfloor.$ Moreover, $x$ is not an integer, so the hypothesis implies that $f(x)$ is not an integer and hence $\lfloor f(x)\rfloor<f(x).$ Therefore:
+Set $m = \lfloor x \rfloor.$ If $x = m$ the identity is immediate, so assume $m < x < m + 1.$ Strict increase gives $f(m) < f(x),$ and the hypothesis implies that $f(x)$ is not an integer. No integer can lie strictly between $f(m)$ and $f(x).$ Indeed, if $q \in \mathbb{Z}$ satisfied $f(m) < q < f(x),$ the [intermediate value theorem](../intermediate-value-theorem/) would give a point $y \in (m, x)$ with $f(y) = q.$ The hypothesis would then make $y$ an integer, although $(m, x) \subset (m, m + 1)$ contains none.
 
-$$
-f(\lfloor x \rfloor) < \lfloor f(x) \rfloor < f(x)
-$$
-
-The [intermediate value theorem](../intermediate-value-theorem/) yields a point $y \in (\lfloor x \rfloor, x)$ such that $f(y) = \lfloor f(x) \rfloor.$ The value $f(y)$ is an integer, so the hypothesis on $f$ implies that $y$ is an integer. But the interval $(\lfloor x \rfloor, x)$ contains no integers, a contradiction. The two floors are therefore equal.
+Let $r = \lfloor f(x)\rfloor.$ Since $f(x)$ is not an integer, $r < f(x).$ If $f(m) < r,$ then $r$ would be an integer strictly between $f(m)$ and $f(x),$ which is impossible. Hence $r \le f(m),$ and therefore $r \le \lfloor f(m)\rfloor.$ On the other hand, $f(m) < f(x)$ and monotonicity of the floor give $\lfloor f(m)\rfloor \le r.$ The two inequalities yield $\lfloor f(m)\rfloor = r = \lfloor f(x)\rfloor.$
 
 If $I$ is closed under the ceiling, the same argument gives $\lceil f(x)\rceil=\lceil f(\lceil x\rceil)\rceil.$ Under the continuity and integer-value hypotheses above, a strictly decreasing $f$ satisfies $\lceil f(x)\rceil=\lceil f(\lfloor x\rfloor)\rceil$ when $I$ is closed under the floor, and $\lfloor f(x)\rfloor=\lfloor f(\lceil x\rceil)\rfloor$ when $I$ is closed under the ceiling.
 
@@ -378,7 +365,7 @@ The terms are zero once $p^k > n,$ so the sum is finite; its non-zero terms are 
 $$
 \begin{align}
 v_p(n!) &= \sum_{m=1}^{n} v_p(m) \\[6pt]
-&= \sum_{k \ge 1} \#\{\,1 \le m \le n \mid p^k \mid m\,\} \\[6pt]
+&= \sum_{k \ge 1} \#\{\ 1 \le m \le n \mid p^k \mid m \ \} \\[6pt]
 &= \sum_{k \ge 1} \left\lfloor \frac{n}{p^k} \right\rfloor
 \end{align}
 $$
@@ -387,18 +374,18 @@ The last equality is the count of multiples established above, applied with divi
 
 - - -
 
-The number of zeros at the end of the decimal expansion of $n!$ is the exponent of $10$ in $n!,$ which equals the smaller of the exponents of $2$ and of $5.$ For every $k \ge 1,$ the inequality $2^k \le 5^k$ gives $\lfloor n/2^k\rfloor\ge\lfloor n/5^k\rfloor,$ so $v_2(n!)\ge v_5(n!).$ Thus the exponent of $5$ determines the number of trailing zeros. For $n = 1000:$
+The number of zeros at the end of the decimal expansion of $n!$ is the exponent of $10$ in $n!,$ which equals the smaller of the exponents of $2$ and of $5.$ For every $k \ge 1,$ the inequality $2^k \le 5^k$ gives $\lfloor n/2^k\rfloor\ge\lfloor n/5^k\rfloor,$ so $v_2(n!)\ge v_5(n!).$ Thus the exponent of $5$ determines the number of trailing zeros. For $n = 750:$
 
 $$
 \begin{align}
-v_5(1000!)
-&= \left\lfloor \frac{1000}{5} \right\rfloor + \left\lfloor \frac{1000}{25} \right\rfloor + \left\lfloor \frac{1000}{125} \right\rfloor + \left\lfloor \frac{1000}{625} \right\rfloor \\[6pt]
-&= 200 + 40 + 8 + 1 \\[6pt]
-&= 249
+v_5(750!)
+&= \left\lfloor \frac{750}{5} \right\rfloor + \left\lfloor \frac{750}{25} \right\rfloor + \left\lfloor \frac{750}{125} \right\rfloor + \left\lfloor \frac{750}{625} \right\rfloor \\[6pt]
+&= 150 + 30 + 6 + 1 \\[6pt]
+&= 187
 \end{align}
 $$
 
-The corresponding sum for $p = 2$ is $994>249,$ so $1000!$ ends with exactly $249$ zeros. The valuation $v_p(n!)$ also has a closed form in terms of the base $p$ representation. Write $n = \sum_{i=0}^r a_i p^i,$ where $0 \le a_i < p,$ and let $s_p(n) = \sum_{i=0}^r a_i$ be the sum of the digits. Reversing the order of summation in the floor formula gives:
+The corresponding sum for $p = 2$ is $743>187,$ so $750!$ ends with exactly $187$ zeros. The valuation $v_p(n!)$ also has a closed form in terms of the base $p$ representation. Write $n = \sum_{i=0}^r a_i p^i,$ where $0 \le a_i < p,$ and let $s_p(n) = \sum_{i=0}^r a_i$ be the sum of the digits. Reversing the order of summation in the floor formula gives:
 
 $$
 \begin{align}
@@ -408,4 +395,6 @@ v_p(n!) &= \sum_{i=1}^r a_i (1 + p + \cdots + p^{i-1}) \\[6pt]
 \end{align}
 $$
 
-For $n = 1000$ and $p = 5$ the representation is $13000_5,$ whose digit sum is $4,$ and the formula returns $(1000-4)/4 = 249,$ the same value as the sum of floors above.
+For $n = 750$ and $p = 5$ the representation is $11000_5,$ whose digit sum is $2,$ and the formula returns $(750-2)/4 = 187,$ the same value as the sum of floors above.
+
+> The comparison rules, digit-count formulas, divisor indicator, and theorem on rounding a function and its argument draw on Chapter 7 of Discrete Structures by Andreas Klappenecker and Hyunyoung Lee. The book is listed in the [bibliography](../bibliography/).
