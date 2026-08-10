@@ -113,6 +113,8 @@ A typical example is the [sign function](../sign-function/) $\mathrm{sgn}(x)$, w
 
 Its left-hand limit at the origin is $-1$ and its right-hand limit is $1$, so the two one-sided limits are finite and different, and the function jumps at $x = 0$.
 
+The [floor function](../floor-and-ceiling-functions/) has a jump discontinuity of size $1$ at every integer.
+
 ## Example 2
 
 To analyse a jump discontinuity, consider the following function, which has a discontinuity at $x = 1$:

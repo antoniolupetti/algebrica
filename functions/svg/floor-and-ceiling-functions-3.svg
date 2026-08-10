@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="287px" height="240px" viewBox="0 0 287 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 43</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M151.882134,67.6769926 L151.935788,67.7548694 L156.435788,75.7548694 C156.57117,75.9955483 156.48581,76.3004059 156.245131,76.4357878 C156.031194,76.5561272 155.766548,76.5020533 155.615296,76.3195146 L155.564212,76.2451306 L152,69.908 L152,239.5 C152,239.776142 151.776142,240 151.5,240 C151.25454,240 151.050392,239.823125 151.008056,239.589876 L151,239.5 L151,69.908 L147.435788,76.2451306 C147.315448,76.4590675 147.061202,76.5502832 146.837152,76.4728292 L146.754869,76.4357878 C146.540933,76.3154483 146.449717,76.0612021 146.527171,75.8371522 L146.564212,75.7548694 L151.064212,67.7548694 C151.239435,67.4433624 151.665161,67.4174034 151.882134,67.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M278.162848,178.527171 L278.245131,178.564212 L286.245131,183.064212 C286.556638,183.239435 286.582597,183.665161 286.323007,183.882134 L286.245131,183.935788 L278.245131,188.435788 C278.004452,188.57117 277.699594,188.48581 277.564212,188.245131 C277.443873,188.031194 277.497947,187.766548 277.680485,187.615296 L277.754869,187.564212 L284.091,184 L15,184 C14.7238576,184 14.5,183.776142 14.5,183.5 C14.5,183.25454 14.6768752,183.050392 14.9101244,183.008056 L15,183 L284.091,183 L277.754869,179.435788 C277.540933,179.315448 277.449717,179.061202 277.527171,178.837152 L277.564212,178.754869 C277.684552,178.540933 277.938798,178.449717 278.162848,178.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="15.5" y1="154.5" x2="285.5" y2="154.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="4" y="10">The fractional part repeats the same tooth on every </tspan>
+                <tspan x="4" y="23">interval [n, n+1). It vanishes at the integers and </tspan>
+                <tspan x="4" y="36">approaches 1 without reaching it.</tspan>
+            </text>
+            <line x1="94.5" y1="52.5" x2="94.5" y2="135.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="68" y1="183" x2="96" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="68" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="96" cy="155" r="3"></circle>
+            <line x1="96" y1="183" x2="124" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="96" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="124" cy="155" r="3"></circle>
+            <line x1="124" y1="183" x2="152" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="124" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="152" cy="155" r="3"></circle>
+            <line x1="152" y1="183" x2="180" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="152" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="180" cy="155" r="3"></circle>
+            <line x1="180" y1="183" x2="208" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="180" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="208" cy="155" r="3"></circle>
+            <line x1="208" y1="183" x2="236" y2="155" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="208" cy="183" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="236" cy="155" r="3"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="89" y="203">-2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="60" y="203">-3</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="117" y="203">-1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="177" y="203">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="205" y="203">2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="233" y="203">3</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="0" y="159">1</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="135" y="74">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="278" y="203">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

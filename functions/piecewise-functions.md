@@ -216,7 +216,7 @@ The [Heaviside step function](../heaviside-function/) uses the same partition, w
 
 - - -
 
-The floor function assigns to each real number the greatest [integer](../integers/) that does not exceed it. Its pieces are the intervals $[n, n + 1),$ where $n \in \mathbb{Z}.$ More explicitly:
+The [floor function](../floor-and-ceiling-functions/) assigns to each real number the greatest [integer](../integers/) that does not exceed it. Its pieces are the intervals $[n, n + 1),$ where $n \in \mathbb{Z}.$ More explicitly:
 
 $$\lfloor x \rfloor = n \ \text{for}\ n \le x < n + 1$$
 

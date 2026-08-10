@@ -1,0 +1,25 @@
+## What Algebrica is
+
+Algebrica is an open, free, and distributed mathematical knowledge base created to make the study of mathematics clearer, more accessible, and more rigorous. I started writing the first entries in May 2023, and what began as a small personal project has gradually evolved into a structured, growing repository of mathematical knowledge, enriched not only by my own work but also by the suggestions, corrections, and feedback from readers around the world.
+
+From the very beginning, the idea behind Algebrica has been simple: put content first. The site is intentionally designed with a clean, minimal, and distraction-free interface, without advertising or unnecessary visual elements. The goal is to provide a place where anyone, regardless of their background, can explore mathematical concepts in a way that is both formally accurate and approachable. Whether you are encountering a topic for the first time, reviewing material from years ago, or seeking a deeper understanding of advanced concepts, Algebrica aims to provide a clear path through the subject.
+
+Why a site like Algebrica, when a question put to ChatGPT, Claude, or Gemini returns a mathematical answer in seconds? The main reason is the level of detail. Each entry is built on carefully chosen sources and explains every step without the verbosity of those systems, staying anchored to the mathematics itself. Entries are tied together by a dense network of internal references that makes it easy to move between related topics and see how they connect, and each one is accompanied by accurate diagrams that clarify the concepts. A language model gives an answer, while Algebrica offers a sustained view of the ideas it covers, closer to a book that keeps evolving.
+
+## An open project
+
+In March 2026, the project experienced an unexpected increase in visibility after several posts shared on X reached millions of views. What followed was a wave of interest from readers across many countries, bringing new visitors, valuable feedback, and a growing community of people who appreciated the project's focus on clarity, accuracy, and openness. Since then, the work has continued with a dual objective: carefully reviewing and improving existing content while steadily expanding the collection with new entries.
+
+One of the principles behind Algebrica is that knowledge should remain open and accessible. For this reason, all content is also available through the project's [GitHub repository](https://github.com/antoniolupetti/algebrica) in open formats. The source material can be downloaded, studied, reused, and adapted, including the illustrations, which are distributed as SVG files and can be modified directly through their source code. The intention is not only to share mathematical knowledge but also to make the underlying resources available to anyone who may find them useful.
+
+My ambition is to make Algebrica a globally recognised reference for mathematics: a resource that students, educators, self-learners, and curious readers can rely on for clear explanations and trustworthy information. This is undoubtedly a long-term goal, but every new article, revision, and contribution helps move the project a little closer in that direction.
+
+## How the pages are written
+
+Today, Algebrica remains a personal project developed entirely in my spare time. Every page is the result of extensive research across textbooks, academic resources, lecture notes, and reference materials, synthesised into a single explanation that seeks to connect foundational ideas to the broader mathematical landscape. Whenever possible, I try to highlight relationships between concepts that are often presented separately, helping readers build a more coherent understanding of the subject. The [editorial process](../editorial-process/) page describes in detail how each entry is researched, written, and reviewed.
+
+As a native Italian speaker writing for an international audience, another challenge is translating not only the language itself but also different mathematical traditions and teaching approaches. Mathematical terminology, notation, and pedagogical conventions often vary between educational systems, and part of the work involves finding explanations that remain clear and natural for readers from diverse backgrounds.
+
+I do my best to ensure that every page is accurate, complete, and useful. Nevertheless, any mistakes, omissions, or inaccuracies are entirely my responsibility. If you take the time to report an error, suggest an improvement, or share constructive feedback, you will have my sincere gratitude. Algebrica has become what it is, in part, thanks to its readers, and every contribution helps make it a better resource for everyone.
+
+[Antonio Lupetti](https://www.x.com/antoniolupetti/)

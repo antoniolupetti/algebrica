@@ -14,9 +14,9 @@ All content is free, downloadable in Markdown format, and reusable for non-comme
 
 ## Tools that support the writing
 
-Transparency is one of the principles Algebrica is built on, so I want to be open about the tools I use. English is not my native language, and I rely on [Grammarly](https://www.grammarly.com/) (no affiliation) for proofreading and stylistic refinement. The mathematical content is entirely my own. Grammarly helps me express it more naturally for an international audience.
+Transparency is one of the principles Algebrica is built on, so I want to be open about the tools I use. English is not my native language, and I rely on _Grammarly_ (no affiliation) for proofreading and stylistic refinement. The mathematical content is entirely my own. Grammarly helps me express it more naturally for an international audience.
 
-More recently, I have started using Codex and Claude Cowork (no affiliation) to improve internal linking between entries, fix sentences that sound too Italian, and keep the style consistent by replacing colloquial turns of phrase with more accurate ones. I also use it to look for inaccuracies or mistakes, which I then verify individually. With hundreds of pages published, this is work I can no longer do manually page by page, and AI saves me a great deal of time while keeping content quality consistent. It works as a small support team that lightens the load, but the underlying writing is still my own.
+More recently, I have started using _Codex_ and _Claude CoWork_ (no affiliation) to improve internal linking between entries, fix sentences that sound too Italian, and keep the style consistent by replacing colloquial turns of phrase with more accurate ones. I also use it to look for inaccuracies or mistakes, which I then verify individually. With hundreds of pages published, this is work I can no longer do manually page by page, and AI saves me a great deal of time while keeping content quality consistent. It works as a small support team that lightens the load, but the underlying writing is still my own.
 
 ## A personal project, open to everyone
 

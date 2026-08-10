@@ -264,7 +264,7 @@ $$
 a=bq+r \qquad \text{with} \qquad 0\leq r<|b|
 $$
 
-The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b.$ Because the bound contains the [absolute value](../absolute-value/) of $b,$ it applies to positive and negative divisors. The [modulo operator](../modulo-operator/) assigns this unique remainder to $a.$ For [polynomial division](../polynomial-division/) over a field, the corresponding bound compares the degree of the remainder with the degree of the divisor.
+The integer $q$ is the quotient and $r$ the remainder of the division of $a$ by $b.$ Because the bound contains the [absolute value](../absolute-value/) of $b,$ it applies to positive and negative divisors. The [modulo operator](../modulo-operator/) assigns this unique remainder to $a.$ For a positive divisor, the [floor function](../floor-and-ceiling-functions/) gives explicit formulas for both the quotient and the remainder. For [polynomial division](../polynomial-division/) over a field, the corresponding bound compares the degree of the remainder with the degree of the divisor.
 
 To prove existence, set $d=|b|,$ so $d>0,$ and consider the set:
 

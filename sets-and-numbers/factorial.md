@@ -50,7 +50,7 @@ n! =
 \end{cases}
 $$
 
-The factorial is used to compute the [binomial coefficient](../binomial-coefficient/), which is the number of ways to select a given number of elements from a larger set. The expression $a_n = n!$ also defines a [sequence](../sequences/) of natural numbers.
+The factorial is used to compute the [binomial coefficient](../binomial-coefficient/), which is the number of ways to select a given number of elements from a larger set. The expression $a_n = n!$ also defines a [sequence](../sequences/) of natural numbers. For each prime $p,$ the exponent of $p$ in $n!$ is a finite sum of values of the [floor function](../floor-and-ceiling-functions/).
 
 ## Simplifying factorial ratios
 

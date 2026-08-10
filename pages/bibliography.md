@@ -141,6 +141,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Algorithms and Complexity](https://www.math.upenn.edu/~wilf/AlgComp.pdf), Herbert S. Wilf
 + [Applied Combinatorics](https://trotter.math.gatech.edu/book.pdf), Mitchel T. Keller, William T. Trotter
++ [Discrete Structures](https://link.springer.com/book/10.1007/978-3-031-73434-2), Andreas Klappenecker, Hyunyoung Lee
 + [Exploring Combinatorial Mathematics](https://openmathbooks.org/ecm/ecm.html), Richard Grassl, Oscar Levin
 + [Foundations of Applied Mathematics](https://foundations-of-applied-mathematics.github.io), Jeffrey Humpherys, Tyler J. Jarvis
 + [Foundations of Computation](https://math.hws.edu/FoundationsOfComputation/FoundationsOfComputation_2.3.2_6x9.pdf), Carol Critchlow, David Eck
@@ -172,6 +173,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf), Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
 + [Mathematics of Neural Networks](https://arxiv.org/abs/2403.04807), Bart M. N. Smets
 + [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf), Christopher M. Bishop
++ [Patterns, Predictions, and Actions](https://mlstory.org/pdf/patterns.pdf), Moritz Hardt, Benjamin Recht
 + [Transformers](https://web.stanford.edu/~jurafsky/slp3/8.pdf), Daniel Jurafsky, James H. Martin
 + [Understanding Deep Learning](https://udlbook.github.io/udlbook/), Simon J. D. Prince
 + [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html), Shai Shalev-Shwartz, Shai Ben-David

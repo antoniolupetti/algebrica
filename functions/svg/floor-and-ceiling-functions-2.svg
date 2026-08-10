@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="269px" viewBox="0 0 315 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 36</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="185.5" y1="47.5" x2="185.5" y2="77.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="60" y="10">The ceiling function is constant on each interval </tspan>
+                <tspan x="60" y="23">(n-1, n], where it takes the value n. The hollow point </tspan>
+                <tspan x="60" y="36">marks the value left out at the left endpoint.</tspan>
+            </text>
+            <path d="M113.882134,57.6769926 L113.935788,57.7548694 L118.435788,65.7548694 C118.57117,65.9955483 118.48581,66.3004059 118.245131,66.4357878 C118.031194,66.5561272 117.766548,66.5020533 117.615296,66.3195146 L117.564212,66.2451306 L113.999,59.906 L114,268.5 C114,268.776142 113.776142,269 113.5,269 C113.25454,269 113.050392,268.823125 113.008056,268.589876 L113,268.5 L112.999,59.91 L109.435788,66.2451306 C109.315448,66.4590675 109.061202,66.5502832 108.837152,66.4728292 L108.754869,66.4357878 C108.540933,66.3154483 108.449717,66.0612021 108.527171,65.8371522 L108.564212,65.7548694 L113.064212,57.7548694 C113.239435,57.4433624 113.665161,57.4174034 113.882134,57.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M230.162848,168.527171 L230.245131,168.564212 L238.245131,173.064212 C238.556638,173.239435 238.582597,173.665161 238.323007,173.882134 L238.245131,173.935788 L230.245131,178.435788 C230.004452,178.57117 229.699594,178.48581 229.564212,178.245131 C229.443873,178.031194 229.497947,177.766548 229.680485,177.615296 L229.754869,177.564212 L236.091,174 L0.5,174 C0.223857625,174 0,173.776142 0,173.5 C0,173.25454 0.176875161,173.050392 0.410124368,173.008056 L0.5,173 L236.091,173 L229.754869,169.435788 C229.540933,169.315448 229.449717,169.061202 229.527171,168.837152 L229.564212,168.754869 C229.684552,168.540933 229.938798,168.449717 230.162848,168.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="110" y1="228.5" x2="117" y2="228.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="171.5" y1="170.5" x2="171.5" y2="177.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="198.5" y1="170.5" x2="198.5" y2="177.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="86.5" y1="169.5" x2="86.5" y2="176.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="57.5" y1="170.5" x2="57.5" y2="177.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="29.5" y1="170.5" x2="29.5" y2="177.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="110" y1="257.5" x2="117" y2="257.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="97" y="64">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="232" y="193">x</tspan>
+            </text>
+            <line x1="110.5" y1="117.5" x2="117.5" y2="117.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="110.5" y1="145.5" x2="117.5" y2="145.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="110.5" y1="88.5" x2="117.5" y2="88.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="3" y1="257" x2="31" y2="257" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="3" cy="257" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="31" cy="257" r="3.5"></circle>
+            <line x1="31" y1="229" x2="59" y2="229" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="31" cy="229" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="59" cy="229" r="3.5"></circle>
+            <line x1="59" y1="201" x2="87" y2="201" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="59" cy="201" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="87" cy="201" r="3.5"></circle>
+            <line x1="87" y1="173" x2="115" y2="173" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="87" cy="173" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="115" cy="173" r="3.5"></circle>
+            <line x1="115" y1="145" x2="143" y2="145" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="115" cy="145" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="143" cy="145" r="3.5"></circle>
+            <line x1="143" y1="117" x2="171" y2="117" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="143" cy="117" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="171" cy="117" r="3.5"></circle>
+            <line x1="171" y1="89" x2="199" y2="89" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="171" cy="89" r="3"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="199" cy="89" r="3.5"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="140" y="193">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="168" y="193">2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="194" y="193">3</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="149">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="121">2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="93">3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

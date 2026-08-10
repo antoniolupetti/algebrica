@@ -166,4 +166,6 @@ measures its size. A removable discontinuity is excluded, because $f(x_0^-) = f(
 
 The set of points where a monotonic function is discontinuous is at most countable. Take $f$ increasing on $(a, b).$ At each discontinuity $x$ we have $f(x^-) < f(x^+),$ so the open interval $(f(x^-), f(x^+))$ is nonempty and contains a rational number $r_x.$ If $x < y$ are two discontinuities, the bound $f(x^+) \leq f(y^-)$ keeps the intervals $(f(x^-), f(x^+))$ and $(f(y^-), f(y^+))$ disjoint, so $r_x \neq r_y.$ The map $x \mapsto r_x$ is an injection from the set of discontinuities into $\mathbb{Q},$ and any set that injects into $\mathbb{Q}$ is at most countable.
 
+The [floor function](../floor-and-ceiling-functions/) shows that this bound is attained. It is non-decreasing and has a jump at every integer.
+
 > The discontinuities of a monotonic function need not be isolated. Given any countable set $E \subseteq (a, b),$ even a dense one such as $\mathbb{Q} \cap (a, b),$ one can build an increasing function that is discontinuous exactly at the points of $E$ and continuous everywhere else.

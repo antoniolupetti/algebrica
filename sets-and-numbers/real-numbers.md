@@ -91,7 +91,7 @@ For $x = 7.4,$ the smallest natural number greater than $x$ is $8.$ The existenc
 
 An equivalent quantitative form states that for all positive real numbers $x$ and $\varepsilon,$ there exists a positive integer $M$ such that $M\varepsilon>x.$ Applying the preceding form to $x/\varepsilon$ gives an integer $M>x/\varepsilon.$ Thus repeated addition of any fixed positive quantity eventually exceeds any prescribed real number.
 
-Every real number also has a unique integer part. For each $x\in\mathbb{R},$ the Archimedean property bounds $x$ between two integers, and the integers not exceeding $x$ have a greatest element. Denoting this integer by $\lfloor x\rfloor,$ one has:
+Every real number also has a unique [integer part](../floor-and-ceiling-functions/). For each $x\in\mathbb{R},$ the Archimedean property bounds $x$ between two integers, and the integers not exceeding $x$ have a greatest element. Denoting this integer by $\lfloor x\rfloor,$ one has:
 
 $$
 \lfloor x\rfloor\leq x<\lfloor x\rfloor+1

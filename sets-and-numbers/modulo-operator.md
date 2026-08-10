@@ -26,7 +26,7 @@ tags:
 
 ## Definition
 
-For two integers $a$ and $n$ with $n > 0$, the modulo operator gives the remainder in the Euclidean division of $a$ by $n$:
+For two integers $a$ and $n$ with $n > 0$, the modulo operator gives the remainder in the [Euclidean division](../floor-and-ceiling-functions/) of $a$ by $n$:
 
 $$
 a \bmod n = r

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="273px" viewBox="0 0 303 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 42</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="59" y="10">The floor function is constant on each interval </tspan>
+                <tspan x="59" y="23">[n, n+1), where it takes the value n. The filled </tspan>
+                <tspan x="59" y="36">point marks the value attained at the left endpoint.</tspan>
+            </text>
+            <path d="M114.882134,61.6769926 L114.935788,61.7548694 L119.435788,69.7548694 C119.57117,69.9955483 119.48581,70.3004059 119.245131,70.4357878 C119.031194,70.5561272 118.766548,70.5020533 118.615296,70.3195146 L118.564212,70.2451306 L114.999,63.906 L115,272.5 C115,272.776142 114.776142,273 114.5,273 C114.25454,273 114.050392,272.823125 114.008056,272.589876 L114,272.5 L113.999,63.91 L110.435788,70.2451306 C110.315448,70.4590675 110.061202,70.5502832 109.837152,70.4728292 L109.754869,70.4357878 C109.540933,70.3154483 109.449717,70.0612021 109.527171,69.8371522 L109.564212,69.7548694 L114.064212,61.7548694 C114.239435,61.4433624 114.665161,61.4174034 114.882134,61.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M241.162848,172.527171 L241.245131,172.564212 L249.245131,177.064212 C249.556638,177.239435 249.582597,177.665161 249.323007,177.882134 L249.245131,177.935788 L241.245131,182.435788 C241.004452,182.57117 240.699594,182.48581 240.564212,182.245131 C240.443873,182.031194 240.497947,181.766548 240.680485,181.615296 L240.754869,181.564212 L247.091,178 L0.5,178 C0.223857625,178 0,177.776142 0,177.5 C0,177.25454 0.176875161,177.050392 0.410124368,177.008056 L0.5,177 L247.091,177 L240.754869,173.435788 C240.540933,173.315448 240.449717,173.061202 240.527171,172.837152 L240.564212,172.754869 C240.684552,172.540933 240.938798,172.449717 241.162848,172.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="31" y1="261" x2="59" y2="261" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="31" cy="261" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="59" cy="261" r="3"></circle>
+            <line x1="59" y1="233" x2="87" y2="233" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="59" cy="233" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="87" cy="233" r="3"></circle>
+            <line x1="87" y1="205" x2="115" y2="205" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="87" cy="205" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="115" cy="205" r="3"></circle>
+            <line x1="115" y1="177" x2="143" y2="177" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="115" cy="177" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="143" cy="177" r="3"></circle>
+            <line x1="143" y1="149" x2="171" y2="149" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="143" cy="149" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="171" cy="149" r="3"></circle>
+            <line x1="171" y1="121" x2="199" y2="121" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="171" cy="121" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="199" cy="121" r="3"></circle>
+            <line x1="199" y1="93" x2="227" y2="93" stroke="#312F2F" stroke-width="2" stroke-linecap="round"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="199" cy="93" r="3.5"></circle>
+            <circle stroke="#312F2F" fill="#F4EFEE" fill-rule="nonzero" cx="227" cy="93" r="3"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="140" y="197">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="168" y="197">2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="196" y="197">3</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="100" y="153">1</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="125">2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="97">3</tspan>
+            </text>
+            <line x1="111" y1="232.5" x2="118" y2="232.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="172.5" y1="174.5" x2="172.5" y2="181.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="199.5" y1="174.5" x2="199.5" y2="181.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="87.5" y1="173.5" x2="87.5" y2="180.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="58.5" y1="174.5" x2="58.5" y2="181.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="30.5" y1="174.5" x2="30.5" y2="181.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="111" y1="261.5" x2="118" y2="261.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="98" y="68">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="242" y="197">x</tspan>
+            </text>
+            <line x1="111.5" y1="121.5" x2="118.5" y2="121.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="111.5" y1="149.5" x2="118.5" y2="149.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="111.5" y1="92.5" x2="118.5" y2="92.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="212.5" y1="49.5" x2="212.5" y2="79.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
