@@ -371,7 +371,7 @@ For the trigonometric functions, the following domains apply:
 + The [tangent function](../tangent-function/) $y = \tan x$ has domain $\mathbb{R} \setminus \left\{\ \frac{\pi}{2} + k\pi \mid k \in \mathbb{Z}\ \right\}.$
 + The [cotangent function](../cotangent-function/) $y = \cot x$ has domain $\mathbb{R} \setminus \left\{\ k\pi \mid k \in \mathbb{Z}\ \right\}.$
 + $y = \arcsin x$ and $y = \arccos x$ have domain $[-1, 1].$
-+ $y = \arctan x$ and $y = \mathrm{arccot}\ x$ have domain $\mathbb{R}.$
++ The [arctangent function](../arctangent-function/) $y = \arctan x$ and the [arccotangent function](../arccotangent-function/) $y = \mathrm{arccot}\ x$ have domain $\mathbb{R}.$
 
 > For an expression formed from several elementary functions, its domain is the intersection of the restrictions imposed by its components. These restrictions must be imposed before solving [equations](../equations/) or [inequalities](../inequalities/) and before [analyzing a function's graph](../analyzing-the-graphs-of-functions/), as explained in the [systematic method](../determining-the-domain-of-a-function/).
 

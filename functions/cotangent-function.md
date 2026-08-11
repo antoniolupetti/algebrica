@@ -66,7 +66,7 @@ $$\cot(x) = \frac{i\left(e^{ix} + e^{-ix}\right)}{e^{ix} - e^{-ix}}$$
 
 ## Inverse function
 
-On its whole domain the cotangent is not injective, because the period $\pi$ makes it repeat every value in each branch. Restricted to the open interval $\left(0, \pi\right),$ where it is continuous and strictly decreasing, the cotangent is a bijection onto $\mathbb{R}$ and admits an [inverse function](../inverse-function/), the [arccotangent](../arctangent-and-arccotangent/):
+On its whole domain the cotangent is not injective, because the period $\pi$ makes it repeat every value in each branch. Restricted to the open interval $\left(0, \pi\right),$ where it is continuous and strictly decreasing, the cotangent is a bijection onto $\mathbb{R}$ and admits an [inverse function](../inverse-function/), the [arccotangent](../arccotangent-function/):
 
 $$\mathrm{arccot} : \mathbb{R} \to \left(0, \pi\right)$$
 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="325px" height="295px" viewBox="0 0 325 295" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>arccotangent-function-1</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#E2DFDD" stroke-width="1"></path>
+        </pattern>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect x="153" y="133" width="107" height="107" fill="url(#diagonal-lines)"></rect>
+
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M151.882134,68.68829 L151.935788,68.7711377 L156.435788,77.281776 C156.57117,77.5378173 156.48581,77.8621339 156.245131,78.0061572 C156.031194,78.1341779 155.766548,78.0766524 155.615296,77.8824623 L155.564212,77.8033304 L151.999,71.0595745 L152,292.968085 C152,293.261853 151.776142,293.5 151.5,293.5 C151.25454,293.5 151.050392,293.311835 151.008056,293.063698 L151,292.968085 L150.999,71.0638298 L147.435788,77.8033304 C147.315448,78.0309229 147.061202,78.1279609 146.837152,78.045563 L146.754869,78.0061572 C146.540933,77.8781365 146.449717,77.6076618 146.527171,77.3693109 L146.564212,77.281776 L151.064212,68.7711377 C151.239435,68.4397472 151.665161,68.4121313 151.882134,68.68829 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <g transform="translate(0.000000, 235.499912)" fill="#BEB8B7" fill-rule="nonzero">
+                <path d="M314.671624,0.0272594418 L314.758755,0.0643004418 L323.230114,4.56430044 C323.559975,4.73952344 323.587463,5.16524944 323.312578,5.38222244 L323.230114,5.43587644 L314.758755,9.93587644 C314.503896,10.0712584 314.181076,9.98589844 314.037717,9.74521944 C313.910287,9.53128244 313.967548,9.26663644 314.160841,9.11538444 L314.239607,9.06430044 L320.949062,5.50008844 L0.529459901,5.50008844 C0.237047272,5.50008844 0,5.27623044 0,5.00008844 C0,4.75462844 0.187296611,4.55048044 0.434288815,4.50814444 L0.529459901,4.50008844 L320.949062,4.50008844 L314.239607,0.935876442 C314.013066,0.815536442 313.916476,0.561290442 313.998493,0.337240442 L314.037717,0.254957442 C314.165147,0.0410214418 314.434373,-0.0501945582 314.671624,0.0272594418 Z"></path>
+            </g>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="133.5" y="72">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="318" y="259">x</tspan>
+            </text>
+            <path d="M0,133.5 L129,133.5 M176,133.5 L304,133.5" stroke="#ECE5E4" stroke-linecap="round" stroke-dasharray="5"></path>
+            <path d="M1,250.8 C3.63,253.66 6.06,256.53 8.25,259.4 C10.45,262.26 12.4,265.13 14.13,268 C15.87,270.87 17.39,273.73 18.74,276.6 C20.09,279.47 21.27,282.33 22.32,285.2 C23.38,288.07 24.3,290.93 25.13,293.8" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M51.46,76.2 C51.79,84.26 52.17,92.32 52.62,100.38 C53.07,108.44 53.59,116.5 54.23,124.56 C54.87,132.61 55.63,140.67 56.6,148.73 C57.58,156.79 58.77,164.85 60.4,172.91 C62.03,180.97 64.09,189.03 67.16,197.09 C70.23,205.15 74.38,213.21 80.49,221.27 C86.6,229.33 95.02,237.39 102.91,245.44 C110.8,253.5 117.44,261.56 122.09,269.62 C126.75,277.68 129.8,285.74 132.13,293.8" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M158.46,76.2 C158.79,84.26 159.17,92.32 159.62,100.38 C160.07,108.44 160.59,116.5 161.23,124.56 C161.87,132.61 162.63,140.67 163.6,148.73 C164.58,156.79 165.77,164.85 167.4,172.91 C169.03,180.97 171.09,189.03 174.16,197.09 C177.23,205.15 181.38,213.21 187.49,221.27 C193.6,229.33 202.02,237.39 209.91,245.44 C217.8,253.5 224.44,261.56 229.09,269.62 C233.75,277.68 236.8,285.74 239.13,293.8" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M265.46,76.2 C265.77,83.69 266.12,91.17 266.53,98.66 C266.93,106.14 267.4,113.63 267.97,121.11 C268.53,128.6 269.19,136.09 270.01,143.57 C270.83,151.06 271.81,158.54 273.11,166.03 C274.4,173.51 276,181 278.25,188.49 C280.49,195.97 283.39,203.46 287.66,210.94 C291.93,218.43 297.83,225.91 305,233.4" stroke="#BEB8B7" stroke-linecap="round"></path>
+            <path d="M100.5,291.5 L296.5,95.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M1.98,141.13 C17.76,141.91 33.54,142.88 49.32,144.46 C62.95,145.82 76.57,147.56 90.19,150.77 C99.28,152.91 108.36,155.71 117.44,160.25 C123.69,163.37 129.93,167.41 136.17,172.6 C141.28,176.85 146.39,181.89 151.5,187 C156.61,192.11 161.72,197.15 166.83,201.4 C173.07,206.59 179.31,210.63 185.56,213.75 C194.64,218.29 203.72,221.09 212.81,223.23 C214.598955,223.651626 216.38791,224.047891 218.176888,224.421266 M267.53231,230.78082 C278.694873,231.671401 289.857437,232.318238 301.02,232.87" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="148" y1="133.5" x2="155" y2="133.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="148" y1="187" x2="155" y2="187" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="44.5" y1="237" x2="44.5" y2="244" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="258.5" y1="237" x2="258.5" y2="244" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="136" y="136">π</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="130" y="197">π/2</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="255" y="256">π</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="38" y="256">-π</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="222" y="230">arccot(x)</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="167" y="105">cot(x)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="40.5" y="10">Only the branch between 0 and π, where the </tspan>
+                <tspan x="40.5" y="23">cotangent decreases, is invertible. Reflecting it in </tspan>
+                <tspan x="40.5" y="36">the line y = x gives the graph of the arccotangent.</tspan>
+            </text>
+            <line x1="117.5" y1="50.5" x2="117.5" y2="120.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

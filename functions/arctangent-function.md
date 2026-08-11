@@ -46,7 +46,7 @@ As the inverse of the restricted tangent, the arctangent has the following prope
 
 The arctangent is odd because the tangent is odd and the principal interval is symmetric about the origin, so its graph is symmetric with respect to the origin. The function is bounded and satisfies the [absolute-value](../absolute-value/) inequality $\left|\arctan(x)\right| < \pi/2$ for every real $x.$ Its supremum $\pi/2$ and its infimum $-\pi/2$ lie outside the range, so the arctangent has neither a maximum nor a minimum.
 
-The arctangent has a closed form in terms of the [complex logarithm](../complex-logarithm/). Set $w = \arctan(x)$ and $u = e^{2iw}.$ [Euler's formula](../euler-formula/) rewrites $\tan(w) = x$ as the equation:
+The arctangent has a closed form in terms of the [complex logarithm](../complex-logarithm/). Set $w = \arctan(x)$ and $u = e^{2iw}.$ [Euler's formula](../eulers-formula/) rewrites $\tan(w) = x$ as the equation:
 
 $$-i\frac{u - 1}{u + 1} = x$$
 
@@ -71,7 +71,7 @@ The lines $y = \pi/2$ and $y = -\pi/2$ are [horizontal asymptotes](../asymptotes
 
 $$\lim_{x \to 0} \frac{\arctan(x)}{x} = 1$$
 
-The same limit describes the approach to the upper asymptote. For $x > 0$ the identity $\arctan(x) = \pi/2 - \arctan\left(\frac{1}{x}\right)$ and the substitution $t = 1/x$ give the limit:
+The same limit describes the approach to the upper asymptote. For $x > 0,$ the [arccotangent function](../arccotangent-function/) satisfies $\mathrm{arccot}(x) = \arctan\left(\frac{1}{x}\right) = \pi/2 - \arctan(x).$ The substitution $t = 1/x$ gives the limit:
 
 $$\lim_{x \to +\infty} x\left(\frac{\pi}{2} - \arctan(x)\right) = 1$$
 

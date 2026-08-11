@@ -131,7 +131,7 @@ The [arctangent function](../arctangent-function/) is the inverse of the [tangen
 
 $$D[\arctan(x)] = \frac{1}{1 + \tan^2(\arctan(x))} = \frac{1}{1 + x^2}$$
 
-The [cotangent](../cotangent-function/) restricted to $(0, \pi)$ has derivative $-\bigl(1 + \cot^2(t)\bigr),$ and the same substitution gives the derivative of the arccotangent:
+The [cotangent](../cotangent-function/) restricted to $(0, \pi)$ has derivative $-\bigl(1 + \cot^2(t)\bigr),$ and the same substitution gives the derivative of the [arccotangent](../arccotangent-function/):
 
 $$D[\mathrm{arccot}(x)] = -\frac{1}{1 + x^2}$$
 

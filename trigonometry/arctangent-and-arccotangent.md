@@ -186,7 +186,7 @@ $$
 
 ## Arccotangent function
 
-The arccotangent function $f(x) = \mathrm{arccot}(x)$ assigns to each real number $x \in \mathbb{R}$ the unique angle $\theta \in (0, \pi)$ whose cotangent equals $x$. Its graph is a continuous, strictly decreasing curve that admits two horizontal asymptotes, namely $y = 0$ and $y = \pi$. The function is the [inverse](../inverse-function/) of the cotangent restricted to its principal domain $(0, \pi)$, over which the cotangent is strictly decreasing and bijective.
+The [arccotangent function](../arccotangent-function/) $f(x) = \mathrm{arccot}(x)$ assigns to each real number $x \in \mathbb{R}$ the unique angle $\theta \in (0, \pi)$ whose cotangent equals $x$. Its graph is a continuous, strictly decreasing curve that admits two horizontal asymptotes, namely $y = 0$ and $y = \pi$. The function is the [inverse](../inverse-function/) of the cotangent restricted to its principal domain $(0, \pi)$, over which the cotangent is strictly decreasing and bijective.
 
 + Domain: $x \in \mathbb{R}$
 + Range: $y \in (0, \pi)$
