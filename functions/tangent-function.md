@@ -66,7 +66,7 @@ $$\tan(x) = \frac{e^{ix} - e^{-ix}}{i\left(e^{ix} + e^{-ix}\right)}$$
 
 ## Inverse function
 
-On its whole domain the tangent is not injective, because the period $\pi$ makes it repeat every value in each branch. Restricted to the open interval $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right),$ where it is continuous and strictly increasing, the tangent is a bijection onto $\mathbb{R}$ and admits an [inverse function](../inverse-function/), the [arctangent](../arctangent-and-arccotangent/):
+On its whole domain the tangent is not injective, because the period $\pi$ makes it repeat every value in each branch. Restricted to the open interval $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right),$ where it is continuous and strictly increasing, the tangent is a bijection onto $\mathbb{R}$ and admits an [inverse function](../inverse-function/), the [arctangent function](../arctangent-function/):
 
 $$\arctan : \mathbb{R} \to \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$$
 

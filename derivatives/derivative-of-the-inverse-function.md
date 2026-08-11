@@ -127,7 +127,7 @@ $$D[\arccos(x)] = \frac{1}{-\sin(\arccos(x))} = -\frac{1}{\sqrt{1 - x^2}}$$
 
 - - -
 
-The [arctangent](../arctangent-and-arccotangent/) is the inverse of the [tangent](../tangent-function/) restricted to $(-\pi/2, \pi/2),$ an interval on which the tangent is strictly increasing and takes every real value. Its derivative is $1 + \tan^2(t),$ which is at least $1$ and therefore never zero, so the arctangent is differentiable on all of $\mathbb{R}.$ With $t = \arctan(x)$ and $\tan(t) = x,$ the result has no trigonometric functions or square roots:
+The [arctangent function](../arctangent-function/) is the inverse of the [tangent](../tangent-function/) restricted to $(-\pi/2, \pi/2),$ an interval on which the tangent is strictly increasing and takes every real value. Its derivative is $1 + \tan^2(t),$ which is at least $1$ and therefore never zero, so the arctangent is differentiable on all of $\mathbb{R}.$ With $t = \arctan(x)$ and $\tan(t) = x,$ the result has no trigonometric functions or square roots:
 
 $$D[\arctan(x)] = \frac{1}{1 + \tan^2(\arctan(x))} = \frac{1}{1 + x^2}$$
 

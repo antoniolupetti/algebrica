@@ -181,7 +181,7 @@ For a function $f \colon A \to \mathbb{R}$ with $A \subseteq \mathbb{R},$ bounde
 
 Boundedness means that the range lies in some [bounded interval](../intervals/) $[m, M].$ It does not imply the existence of a global [maximum or minimum](../maximum-minimum-and-inflection-points/).
 
-A global maximum is an [upper bound](../supremum-and-infimum/) attained by the function, and a global minimum is a lower bound attained by the function. A bounded function need not have either one. The [arctangent function](../arctangent-and-arccotangent/) is an example:
+A global maximum is an [upper bound](../supremum-and-infimum/) attained by the function, and a global minimum is a lower bound attained by the function. A bounded function need not have either one. The [arctangent function](../arctangent-function/) is an example:
 
 $$
 f(x) = \arctan x

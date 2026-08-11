@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-The natural numbers arise from the act of counting, but a modern treatment requires an axiomatic foundation that makes their properties explicit and independent from any informal notion. This page develops the natural numbers from two perspectives: an axiomatic one, based on the Peano axioms, and an algebraic one, focused on the operations defined on them and on the structure they give rise to.
+The natural numbers arise from the act of counting, but a modern treatment requires an axiomatic foundation that makes their properties explicit and independent from any informal notion.
 
 We denote the [set](../sets/) of natural numbers by $\mathbb{N}$, and throughout this page we adopt the convention that $0 \in \mathbb{N}$, consistent with the modern formulation of the Peano axioms and with the treatment of the [principle of mathematical induction](../principle-of-mathematical-induction/) already developed on this site.
 

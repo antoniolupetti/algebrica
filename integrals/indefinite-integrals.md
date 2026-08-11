@@ -187,7 +187,7 @@ The table lists the two linearity identities, the power rule for $a \neq -1$, an
 
 ## Common integrals
 
-The table lists basic indefinite integrals. The derivative of each right-hand side is the corresponding integrand.
+The table lists basic indefinite integrals. The derivative of each right-hand side is the corresponding integrand. The entry on the [arctangent function](../arctangent-function/) derives the inverse-trigonometric case and its definite-integral consequences.
 
 [class="table-1 -right"]
 

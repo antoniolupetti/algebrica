@@ -65,7 +65,7 @@ $$
 
 ## Arctangent function
 
-The arctangent function $f(x) = \arctan(x)$ assigns to each real number $x \in \mathbb{R}$ the unique angle $\theta \in \left(-\pi/2, \pi/2\right)$ whose tangent equals $x$. Its graph is a continuous, strictly increasing curve that admits two horizontal asymptotes, namely $y = -\pi/2$ and $y = \pi/2$. The function is the [inverse](../inverse-function/) of the tangent restricted to its principal domain $\left(-\pi/2, \pi/2\right)$, over which the tangent is strictly increasing and bijective.
+The [arctangent function](../arctangent-function/) $f(x) = \arctan(x)$ assigns to each real number $x \in \mathbb{R}$ the unique angle $\theta \in \left(-\pi/2, \pi/2\right)$ whose tangent equals $x$. Its graph is a continuous, strictly increasing curve that admits two horizontal asymptotes, namely $y = -\pi/2$ and $y = \pi/2$. The function is the [inverse](../inverse-function/) of the tangent restricted to its principal domain $\left(-\pi/2, \pi/2\right)$, over which the tangent is strictly increasing and bijective.
 
 + Domain: $x \in \mathbb{R}$
 + Range: $y \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$

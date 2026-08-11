@@ -112,6 +112,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Introduction to Online Convex Optimization](https://arxiv.org/pdf/1909.05207), Elad Hazan
 + [Introduction to Optimization](https://scoop.iwr.uni-heidelberg.de/teaching/2022ws/short-course-optimization/introduction-to-optimization-lecture-notes-20230329.pdf), Roland Herzog
 + [An Introduction to Optimization Algorithms](https://thomasweise.github.io/aitoa/aitoa.pdf), Thomas Weise
++ [Introduction to Stochastic Gradient Methods](https://arxiv.org/pdf/2606.03953), Simon Weissmann
 + [Lecture Notes on Numerical Optimization](https://faculty.ucmerced.edu/mcarreira-perpinan/teaching/EECS260/lecture-notes.pdf), Miguel Á. Carreira-Perpiñán
 + [Lectures on Modern Convex Optimization](https://www2.isye.gatech.edu/~nemirovs/LMCOBookSIAM.pdf), Aharon Ben-Tal, Arkadi Nemirovski
 + [A Modern Introduction to Online Learning](https://arxiv.org/pdf/1912.13213), Francesco Orabona
