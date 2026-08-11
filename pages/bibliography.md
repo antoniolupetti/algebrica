@@ -130,6 +130,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
 + [The Architecture of Mathematics](https://www.jstor.org/stable/2305937), Nicholas Bourbaki
 + [Book of Proof](https://richardhammack.github.io/BookOfProof/Main.pdf), Richard Hammack
++ [Everything You Always Wanted to Know About Mathematics (But Didn't Even Know to Ask)](https://www.math.cmu.edu/~jmackey/151_128/bws_book.pdf), Brendan W. Sullivan
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
 + [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach
 + [Introduction to University Mathematics](https://courses.maths.ox.ac.uk/course/view.php?id=6023), James Munro
