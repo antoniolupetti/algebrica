@@ -161,7 +161,7 @@ $$2 + \sin x > 0$$
 
 Because $\sin x$ ranges between $-1$ and $1$, the smallest value this expression can take is $2 - 1 = 1$, which is already positive. The logarithm therefore introduces no restriction, as its argument is positive for every real $x$.
 
-Moving one step outward, the logarithm appears in the numerator of a fraction whose denominator is the [hyperbolic sine](../hyperbolic-sine-and-cosine/) $\sinh(x)$. A denominator cannot be zero, since division by zero is not defined in the [real numbers](../real-numbers/), so we exclude the values of $x$ for which $\sinh(x) = 0$. The hyperbolic sine vanishes only at $x = 0$, so this point must be removed from the domain.
+Moving one step outward, the logarithm appears in the numerator of a fraction whose denominator is the [hyperbolic sine](../hyperbolic-sine-function/) $\sinh(x)$. A denominator cannot be zero, since division by zero is not defined in the [real numbers](../real-numbers/), so we exclude the values of $x$ for which $\sinh(x) = 0$. The hyperbolic sine vanishes only at $x = 0$, so this point must be removed from the domain.
 
 Finally, the entire fraction appears under a square root, whose argument must be non-negative.
 

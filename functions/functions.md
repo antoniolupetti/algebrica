@@ -80,7 +80,7 @@ A function $f \colon A \to B$ is bijective if and only if it has a two-sided inv
 $$(g \circ f)(x) = x, \quad \forall \ x \in A$$
 $$(f \circ g)(y) = y, \quad \forall \ y \in B$$
 
-The symbol $\circ$ denotes function composition. Thus $(g \circ f)(x) = g(f(x)),$ which means that $f$ is applied first and $g$ is applied to the result. The right-hand sides are the identity functions on $A$ and $B,$ so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B.$ Whenever such a function $g$ exists, it is unique. It is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}.$
+The symbol $\circ$ denotes function [composition](../composite-functions/). Thus $(g \circ f)(x) = g(f(x)),$ which means that $f$ is applied first and $g$ is applied to the result. The right-hand sides are the identity functions on $A$ and $B,$ so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B.$ Whenever such a function $g$ exists, it is unique. It is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}.$
 
 > For any base $a > 0$ with $a \neq 1,$ the [exponential function](../exponential-function/) $x \mapsto a^x$ from $\mathbb{R}$ to $(0,+\infty)$ and the [logarithmic function](../logarithmic-function/) $\log_a$ from $(0,+\infty)$ to $\mathbb{R}$ are inverses.
 

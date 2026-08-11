@@ -269,7 +269,7 @@ The identity emerges therefore as a pure algebraic consequence of the analytical
 
 ## Hyperbolic sine and cosine function
 
-The hyperbolic sine function $f(x) = \sinh(x)$ associates each [real number](../types-of-numbers/) $x$ with a value derived from the exponential function. Unlike the circular sine, it does not oscillate: its graph grows exponentially for large positive or negative values of $x$, crossing the origin with slope $1$. The function $f(x) = \sinh(x)$ is defined for all real numbers, and its range also spans the entire real line.
+The [hyperbolic sine function](../hyperbolic-sine-function/) $f(x) = \sinh(x)$ associates each [real number](../types-of-numbers/) $x$ with a value derived from the exponential function. Unlike the circular sine, it does not oscillate: its graph grows exponentially for large positive or negative values of $x$, crossing the origin with slope $1$. The function $f(x) = \sinh(x)$ is defined for all real numbers, and its range also spans the entire real line.
 
 ![IMG. 4](svg/hyperbolic-sine-and-cosine-4.svg)
 
@@ -311,4 +311,3 @@ P(X_{P}, Y_{P}) = P(\cos\theta, \sin\theta)
 $$
 
 > Both constructions follow the same basic idea: whether on a circle or on a hyperbola, a sector picks out a point on the curve. In the circular case this leads to the familiar sine and cosine, while in the hyperbolic case it gives the hyperbolic sine and cosine, which mirror the circular behaviour but within the geometry of the hyperbola.
-

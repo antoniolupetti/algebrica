@@ -53,7 +53,7 @@ $$
 
 ## Parity and symmetry
 
-Whereas the trigonometric functions admit a rich family of [reduction formulas](../reduction-formulas-and-reference-angles/) based on the quadrants of the unit circle, the hyperbolic functions, defined on the single right branch of the equilateral hyperbola, possess a simpler symmetry structure governed entirely by the parity of their arguments. The hyperbolic sine is an odd function, while the hyperbolic cosine is even:
+Whereas the trigonometric functions admit a rich family of [reduction formulas](../reduction-formulas-and-reference-angles/) based on the quadrants of the unit circle, the hyperbolic functions, defined on the single right branch of the equilateral hyperbola, possess a simpler symmetry structure governed entirely by the parity of their arguments. The [hyperbolic sine](../hyperbolic-sine-function/) is an odd function, while the hyperbolic cosine is even:
 
 $$
 \begin{align}

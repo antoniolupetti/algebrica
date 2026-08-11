@@ -204,7 +204,7 @@ $$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^n \frac{x^{2n+1}}
 
 $$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n+1})$$
 
-In both cases the remainder has an exponent one unit higher than the last written power, because the first omitted term is two units higher. The [hyperbolic sine and cosine](../hyperbolic-sine-and-cosine/) obey the same pattern without the alternation of signs:
+In both cases the remainder has an exponent one unit higher than the last written power, because the first omitted term is two units higher. The [hyperbolic sine](../hyperbolic-sine-function/) and [hyperbolic cosine](../hyperbolic-sine-and-cosine/) obey the same pattern without the alternation of signs:
 
 $$\sinh x = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots + \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+2})$$
 

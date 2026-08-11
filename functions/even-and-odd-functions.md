@@ -126,7 +126,7 @@ $$
 
 This decomposition is the only one possible. Suppose $f = g + h$ with $g$ even and $h$ odd. Evaluating at $-x$ gives $f(-x) = g(x) - h(x),$ and solving the two equations for $g$ and $h$ reproduces exactly the formulas above. The even and odd parts of a function are therefore uniquely determined.
 
-The exponential function is the standard example. Its even and odd parts are the [hyperbolic cosine and sine](../hyperbolic-sine-and-cosine/):
+The exponential function is the standard example. Its even and odd parts are the [hyperbolic cosine](../hyperbolic-sine-and-cosine/) and [hyperbolic sine](../hyperbolic-sine-function/):
 
 $$
 e^x = \underbrace{\frac{e^x + e^{-x}}{2}}_{\cosh x} + \underbrace{\frac{e^x - e^{-x}}{2}}_{\sinh x}

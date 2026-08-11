@@ -152,7 +152,7 @@ $$\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}$$
 
 $$\sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$
 
-These formulas are the starting point for extending the trigonometric functions to complex arguments. Defining $\cos z$ and $\sin z$ for $z \in \mathbb{C}$ by the same expressions produces functions that agree with the real cosine and sine on $\mathbb{R}$ and inherit the algebraic identities of the exponential. This perspective unifies the trigonometric and hyperbolic functions, since the substitution $\theta = iy$ gives $\cos(iy) = \cosh y$ and $\sin(iy) = i\sinh y$, a relation with no analogue in the [real setting](../real-numbers/).
+These formulas are the starting point for extending the trigonometric functions to complex arguments. Defining $\cos z$ and $\sin z$ for $z \in \mathbb{C}$ by the same expressions produces functions that agree with the real cosine and sine on $\mathbb{R}$ and inherit the algebraic identities of the exponential. This perspective relates the trigonometric functions to the hyperbolic cosine and [hyperbolic sine](../hyperbolic-sine-function/), since the substitution $\theta = iy$ gives $\cos(iy) = \cosh y$ and $\sin(iy) = i\sinh y$, a relation with no analogue in the [real setting](../real-numbers/).
 
 A consequence of Euler's formula is a derivation of the [addition formulas](../reduction-formulas-and-reference-angles/) for sine and cosine. The multiplicative law of the exponential gives:
 

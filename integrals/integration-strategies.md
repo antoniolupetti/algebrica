@@ -81,7 +81,7 @@ The table below contains the formulas used most often. Each one is an entry in t
 | Squared cosecant    | $$\int \dfrac{1}{\sin^2 x} \ dx = -\cot x + c$$                        |
 | Arctangent          | $$\int \dfrac{1}{1 + x^2} \ dx = \arctan x + c$$                       |
 | Arcsine             | $$\int \dfrac{1}{\sqrt{1 - x^2}} \ dx = \arcsin x + c$$                |
-| Hyperbolic sine     | $$\int \sinh x \ dx = \cosh x + c$$                                    |
+| [Hyperbolic sine](../hyperbolic-sine-function/) | $$\int \sinh x \ dx = \cosh x + c$$                                    |
 | Hyperbolic cosine   | $$\int \cosh x \ dx = \sinh x + c$$                                    |
 
 [/class]

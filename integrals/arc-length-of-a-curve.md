@@ -77,7 +77,7 @@ Evaluating at the limits and using $\sinh 2t = 2\sinh t \cosh t$ together with $
 
 $$L = \frac{1}{4}\operatorname{arsinh} 2 + \frac{\sqrt{5}}{2}$$
 
-The length of the parabolic arc between the origin and the point $(1, 1)$ is therefore equal to $\tfrac{\sqrt{5}}{2} + \tfrac{1}{4}\ln(2 + \sqrt{5})$, since the inverse hyperbolic sine admits the [logarithmic](../logarithms/) representation $\operatorname{arsinh} u = \ln(u + \sqrt{1 + u^2})$.
+The length of the parabolic arc between the origin and the point $(1, 1)$ is therefore equal to $\tfrac{\sqrt{5}}{2} + \tfrac{1}{4}\ln(2 + \sqrt{5})$, since the [inverse hyperbolic sine](../hyperbolic-sine-function/) admits the [logarithmic](../logarithms/) representation $\operatorname{arsinh} u = \ln(u + \sqrt{1 + u^2})$.
 
 > The integral above can also be handled through a [trigonometric substitution](../trigonometric-substitution-for-integrals/) of the form $2x = \tan \theta$, which reduces the radical to $\sec \theta$ and produces an equivalent closed-form expression.
 

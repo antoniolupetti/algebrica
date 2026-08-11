@@ -63,7 +63,7 @@ $$
 
 ## Hyperbolic cosecant
 
-In parallel with the construction above, the hyperbolic cosecant is defined as the reciprocal of the hyperbolic sine. Starting again from the point $P(\cosh(x), \sinh(x))$ on the right branch of the equilateral hyperbola, the hyperbolic cosecant of $x$ is the reciprocal of the vertical coordinate of $P$:
+In parallel with the construction above, the hyperbolic cosecant is defined as the reciprocal of the [hyperbolic sine](../hyperbolic-sine-function/). Starting again from the point $P(\cosh(x), \sinh(x))$ on the right branch of the equilateral hyperbola, the hyperbolic cosecant of $x$ is the reciprocal of the vertical coordinate of $P$:
 
 $$
 \mathrm{csch}(x) := \frac{1}{\sinh(x)}
