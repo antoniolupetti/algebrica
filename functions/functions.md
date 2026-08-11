@@ -12,7 +12,7 @@ tags:
 ---
 ## Definition
 
-This entry considers functions with a non-empty domain $A \subseteq \mathbb{R}$ and a non-empty codomain $B \subseteq \mathbb{R},$ both [subsets](../sets/) of the [real numbers](../real-numbers/). A function $f$ from $A$ to $B$ assigns to each $x \in A$ exactly one value $f(x) \in B.$ This assignment is written as:
+Let $A \subseteq \mathbb{R}$ and $B \subseteq \mathbb{R}$ be non-empty [subsets](../sets/) of the [real numbers](../real-numbers/). A function $f$ from $A$ to $B$ assigns to each $x \in A$ exactly one value $f(x) \in B.$ The assignment is written as:
 
 $$
 f \colon A \to B
@@ -20,7 +20,7 @@ $$
 
 + The set $A$ is called the [domain](../determining-the-domain-of-a-function/) of the function.
 + The set $B$ is the codomain.
-+ For every $x \in A,$ the function assigns a unique value $f(x) \in B.$
++ For every $x \in A,$ the unique assigned value $f(x) \in B$ is called the image of $x$ under $f.$
 + When the output is denoted by $y = f(x),$ the variable $x$ is the independent variable and $y$ is the dependent variable.
 
 For example, let $f \colon \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x - 1.$ The notation $x \mapsto 2x - 1$ describes the same assignment. Substituting $3$ for $x$ gives $f(3) = 2 \cdot 3 - 1 = 5.$ The symbol $f$ denotes the whole function, while $f(3)$ denotes one value of that function.
@@ -29,7 +29,7 @@ The assignment may be specified by a formula, a table, a diagram, or a [rule def
 
 ![IMG. 1](svg/functions-1.svg)
 
-> A rule that satisfies this existence and uniqueness condition defines a well-defined function. A relation that assigns no value or more than one value to some element of $A$ is not a function.
+> Uniqueness is required for each fixed input. Different inputs may have the same image.
 
 - - -
 
@@ -49,15 +49,11 @@ A function $f \colon A \to B$ may have the following properties:
 + The function is surjective if every element of $B$ is the image of at least one element of $A,$ that is, if for every $y \in B$ there exists at least one $x \in A$ such that $f(x) = y.$ Equivalently, $f(A) = B.$
 + The function is bijective if it is both injective and surjective, that is, if for every $y \in B$ there exists a unique $x \in A$ such that $f(x) = y.$
 
-These three conditions, their reading on the graph and their relation to one-sided inverses are developed in [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/).
-
-The [floor and ceiling functions](../floor-and-ceiling-functions/) from $\mathbb{R}$ to $\mathbb{Z}$ are surjective but not injective. For either function, the preimage of every integer is a half-open interval of length $1.$
-
-A bijection $A \to B$ proves $|A| = |B|,$ while an injection $A \to B$ proves $|A| \leq |B|.$ The discussion in [cardinality and countable sets](../cardinality-and-countable-sets/) uses these maps to compare infinite sets and establish countability criteria.
+See [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/) for graphical criteria and characterizations by one-sided inverses.
 
 - - -
 
-The identity function and the constant function are the two simplest cases. The identity function on a set $A$ sends every element to itself and is defined by:
+The identity function on a set $A$ sends every element to itself and is defined by:
 
 $$
 \mathrm{id}_A \colon A \to A, \quad \mathrm{id}_A(x) = x
@@ -73,14 +69,22 @@ A constant function is not injective when $A$ has more than one element, and it 
 
 - - -
 
+The [floor and ceiling functions](../floor-and-ceiling-functions/) from $\mathbb{R}$ to $\mathbb{Z}$ are surjective but not injective. For either function, the preimage of every integer is a half-open interval of length $1.$
+
+A bijection $A \to B$ proves $|A| = |B|,$ while an injection $A \to B$ proves $|A| \leq |B|.$ For infinite sets, these implications yield the criteria described in [cardinality and countable sets](../cardinality-and-countable-sets/).
+
+- - -
+
 A function $f \colon A \to B$ is bijective if and only if it has a two-sided inverse, that is, if there exists a function $g \colon B \to A$ such that:
 
 $$(g \circ f)(x) = x, \quad \forall \ x \in A$$
 $$(f \circ g)(y) = y, \quad \forall \ y \in B$$
 
-Here $(g \circ f)(x) = g(f(x)).$ The right-hand sides are the identity functions on $A$ and $B,$ so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B.$ Whenever such a function $g$ exists, it is unique. It is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}.$
+The symbol $\circ$ denotes function composition. Thus $(g \circ f)(x) = g(f(x)),$ which means that $f$ is applied first and $g$ is applied to the result. The right-hand sides are the identity functions on $A$ and $B,$ so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B.$ Whenever such a function $g$ exists, it is unique. It is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}.$
 
 > For any base $a > 0$ with $a \neq 1,$ the [exponential function](../exponential-function/) $x \mapsto a^x$ from $\mathbb{R}$ to $(0,+\infty)$ and the [logarithmic function](../logarithmic-function/) $\log_a$ from $(0,+\infty)$ to $\mathbb{R}$ are inverses.
+
+- - -
 
 A function that is not injective on all of $A$ can still be inverted on a smaller domain. Given $E \subseteq A,$ the restriction $f|_E$ agrees with $f$ at every point of $E$ and is defined by:
 
@@ -91,7 +95,7 @@ $$
 If $f$ is injective on $E,$ the same assignment, now with codomain $f(E),$ defines a bijection from $E$ to $f(E),$ and this bijection has an inverse. The sine function is not injective on $\mathbb{R}.$ Its restriction to $[-\pi/2, \pi/2],$ with codomain $[-1, 1],$ is the function:
 
 $$
-\sin|_{[-\pi/2, \pi/2]} \colon [-\pi/2, \pi/2] \to [-1, 1]
+\sin|_{[-\frac{\pi}{2}, \frac{\pi}{2}]} \colon [-\frac{\pi}{2}, \frac{\pi}{2}] \to [-1, 1]
 $$
 
 This restriction is bijective, and its inverse is the [arcsine function](../arcsine-function/) $\arcsin \colon [-1, 1] \to [-\pi/2, \pi/2].$
@@ -102,13 +106,13 @@ A relation $R \subseteq A \times B$ defines a function from $A$ to $B$ only when
 
 ![IMG. 2](svg/functions-2.svg)
 
-The image illustrates the second failure. A single element $x_0$ corresponds to two distinct values in the codomain, so the relation is not a function. Formally, the required existence and uniqueness condition is:
+In the diagram, a single element $x_0$ corresponds to two distinct values in the codomain, so the relation is not a function. Formally, the required existence and uniqueness condition is:
 
 $$
 \forall x \in A,\ \exists! y \in B\ \text{such that}\ (x, y) \in R
 $$
 
-In the relation shown, both $(x_0, y_1)$ and $(x_0, y_2)$ belong to $R,$ with $y_1 \neq y_2,$ which violates uniqueness. The following table gives a numerical example:
+In the relation shown, both $(x_0, y_1)$ and $(x_0, y_2)$ belong to $R,$ with $y_1 \neq y_2,$ which violates uniqueness. The same failure occurs in the table:
 
 | X  | -3 |  1 | -3 |  5 |  2 |
 |----|----|----|----|----|----|
@@ -128,7 +132,7 @@ The curve on the left, a [parabola](../parabola/), is the graph of a function, s
 
 For a function $f \colon A \to B,$ the codomain is the declared target set $B.$
 
-The range (or image) is the set of values attained by the function. It is $f(A)$ and is always a subset of $B.$
+The range of $f,$ also called the image of the function, is the set $f(A)$ of attained values. It is always a subset of $B.$
 
 Consider the function $f \colon \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^2.$ Its codomain is $\mathbb{R},$ while its range is $[0, +\infty),$ so it is not surjective. The same assignment with codomain $[0, +\infty)$ defines a surjective function, but it is not injective because $f(-1) = f(1) = 1.$ With both domain and codomain equal to $[0, +\infty),$ the same formula defines a bijection.
 
@@ -138,7 +142,7 @@ $$
 f(E) = \{\ f(x) \mid x \in E \ \}
 $$
 
-The range is therefore the image of the whole domain. For a subset $F \subseteq B,$ its preimage is defined by:
+Taking $E = A$ gives the range $f(A).$ For a subset $F \subseteq B,$ its preimage is defined by:
 
 $$
 f^{-1}(F) = \{\ x \in A \mid f(x) \in F \ \}
@@ -187,7 +191,7 @@ $$
 f(x) = \arctan x
 $$
 
-It satisfies $-\frac{\pi}{2} < \arctan x < \frac{\pi}{2}$ for every real $x,$ so it is bounded. It has neither a global maximum nor a global minimum, because $\arctan x \to \frac{\pi}{2}$ as $x \to +\infty$ and $\arctan x \to -\frac{\pi}{2}$ as $x \to -\infty,$ but neither limiting value is attained.
+It satisfies $-\pi/2 < \arctan x < \pi/2$ for every real $x,$ so it is bounded. It has neither a global maximum nor a global minimum, because $\arctan x \to \pi/2$ as $x \to +\infty$ and $\arctan x \to -\pi/2$ as $x \to -\infty,$ but neither limiting value is attained.
 
 ## Monotone functions
 
@@ -212,17 +216,17 @@ Every positive $T$ satisfying these conditions is a period of $f.$ If the set of
 
 ## Classification of functions
 
-The algebraic-transcendental distinction below concerns elementary real functions on non-degenerate intervals. A real-valued function $f$ is algebraic on such an interval if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ throughout the interval. For example, on $[0, +\infty),$ the function $f(x) = \sqrt{x}$ satisfies $f(x)^2 - x = 0.$ Common classes of algebraic functions include:
+A real-valued function $f$ on a non-degenerate interval is algebraic if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ throughout the interval. For example, on $[0, +\infty),$ the function $f(x) = \sqrt{x}$ satisfies $f(x)^2 - x = 0.$ Common classes of algebraic functions include:
 
 + [Polynomial functions](../polynomial-function/) have a [polynomial](../polynomials/) expression in $x$ with constant coefficients.
 + [Rational functions](../rational-functions/) are ratios of two polynomials.
-+ Functions obtained from rational functions through finitely many arithmetic operations and [root extractions](../radicals/) are algebraic. The page on [irrational functions](../irrational-functions/) explains the narrower elementary convention used for expressions such as $\sqrt{x}.$
++ Functions obtained from rational functions through finitely many arithmetic operations and [root extractions](../radicals/) are algebraic. Expressions such as $\sqrt{x}$ belong to the narrower elementary class of [irrational functions](../irrational-functions/).
 
-These classes do not exhaust all algebraic functions. Some algebraic functions cannot be expressed by radicals, meaning through finitely many arithmetic operations and root extractions applied to rational functions. A transcendental function is not algebraic. The standard functions $x \mapsto a^x$ and $x \mapsto \log_a x,$ with $a > 0$ and $a \neq 1,$ and the standard sine and cosine functions are transcendental.
+These classes do not exhaust all algebraic functions. Some algebraic functions cannot be constructed from rational functions by finitely many arithmetic operations and root extractions. A transcendental function is not algebraic. The functions $x \mapsto a^x$ and $x \mapsto \log_a x,$ where $a > 0$ and $a \neq 1,$ together with sine and cosine, are transcendental.
 
 ## Domain of the main functions
 
-A function includes a declared domain. When a real formula is given without one, its natural domain is the largest subset of $\mathbb{R}$ on which every operation in the formula is defined and real-valued. The same formula can define functions with smaller declared domains. When an expression imposes several restrictions, all of them must hold simultaneously. The [systematic method](../determining-the-domain-of-a-function/) explains how to combine these conditions.
+A function includes a declared domain. When a real formula is given without one, its natural domain is the largest subset of $\mathbb{R}$ on which every operation in the formula is defined and real-valued. The same formula can define functions with smaller declared domains. When an expression imposes several restrictions, its natural domain is obtained by [combining all domain conditions](../determining-the-domain-of-a-function/).
 
 - - -
 
@@ -232,7 +236,7 @@ $$
 y = \sum_{k=0}^{n} a_kx^k
 $$
 
-In this expression $a_0, a_1, \dots, a_n$ are real coefficients and $n$ is a non-negative integer. When the polynomial has degree $n,$ the leading coefficient satisfies $a_n \neq 0;$ the zero polynomial has all coefficients equal to zero. Here $x^0$ denotes the constant monomial $1,$ including at $x = 0.$ Every polynomial has natural domain $\mathbb{R}$ because its constant term and its positive integer powers are defined for every real number. An example is:
+The coefficients $a_0, a_1, \dots, a_n$ are real and $n$ is a non-negative integer. When the polynomial has degree $n,$ the leading coefficient satisfies $a_n \neq 0;$ the zero polynomial has all coefficients equal to zero. Here $x^0$ denotes the constant monomial $1,$ including at $x = 0.$ Every polynomial has natural domain $\mathbb{R}$ because its constant term and its positive integer powers are defined for every real number. Consider the cubic polynomial:
 
 $$
 y = 2x^3 - 5x^2 + 3x - 1
@@ -248,7 +252,7 @@ $$
 y = \frac{N(x)}{D(x)}
 $$
 
-In this expression $N(x)$ and $D(x)$ are polynomials, and $D$ is not the zero polynomial. The function is defined at the real numbers $x$ for which $D(x) \neq 0.$ An example is:
+The numerator $N(x)$ and denominator $D(x)$ are polynomials, and $D$ is not the zero polynomial. The function is defined at the real numbers $x$ for which $D(x) \neq 0.$ Consider the rational function:
 
 $$
 y = \frac{x^2 - 4}{x - 2}
@@ -258,7 +262,7 @@ The denominator vanishes at $x = 2,$ so the domain is $\mathbb{R} \setminus \{\ 
 
 - - -
 
-For domain analysis, consider the following [radical expression](../radicals/), where $f \colon D \to \mathbb{R}$ and $n$ is an integer with $n \geq 2:$
+Let $f \colon D \to \mathbb{R}$ and let $n \geq 2$ be an integer. A [radical expression](../radicals/) with index $n$ has the form:
 
 $$
 y = \sqrt[n]{f(x)}
@@ -270,13 +274,13 @@ $$
 \{\ x \in D \mid f(x) \geq 0 \ \}
 $$
 
-An example with an even index is:
+For the even index $n = 2,$ consider:
 
 $$
 y = \sqrt{x - 2}
 $$
 
-The radicand must be non-negative, so the domain is $[2, +\infty).$ If $n$ is odd, the radical imposes no further restriction, and the domain is $D.$ An example with an odd index is:
+The radicand must be non-negative, so the domain is $[2, +\infty).$ If $n$ is odd, the radical imposes no further restriction, and the domain is $D.$ For the odd index $n = 3,$ consider:
 
 $$
 y = \sqrt[3]{x - 2}
@@ -298,19 +302,19 @@ $$
 \{\ x \in D \mid f(x) > 0 \ \}
 $$
 
-An example is:
+For base $2,$ consider:
 
 $$
 y = \log_2(x - 1)
 $$
 
-This function is defined only when $x - 1 > 0,$ so the domain is $(1, +\infty).$ For any $x \leq 1$ the expression is undefined, because the logarithm of a non-positive number does not exist in the reals. Another example is:
+This function is defined only when $x - 1 > 0,$ so the domain is $(1, +\infty).$ For any $x \leq 1$ the expression is undefined, because the logarithm of a non-positive number does not exist in the reals. A second example uses the natural logarithm:
 
 $$
 y = \ln(3x + 6)
 $$
 
-Here the argument $3x + 6$ must be positive, so the domain is $(-2, +\infty).$
+The inequality $3x + 6 > 0$ gives $x > -2,$ so the domain is $(-2, +\infty).$
 
 - - -
 
@@ -320,13 +324,13 @@ $$
 y = a^{f(x)} \quad \text{with} \quad a > 0, \quad a \neq 1
 $$
 
-Its domain is $D.$ An example is:
+Its domain is $D.$ Taking $a = 2$ and $f(x) = x$ gives:
 
 $$
 y = 2^x
 $$
 
-Since $2 > 0,$ this function is defined for every real $x.$ Its domain is $\mathbb{R}$ and its range is $(0, +\infty).$
+Since $2 > 0,$ this function has domain $\mathbb{R}$ and range $(0, +\infty).$
 
 - - -
 
@@ -336,7 +340,7 @@ $$
 y = [f(x)]^{g(x)}
 $$
 
-The standard uniform [definition of real powers](../powers/), $[f(x)]^{g(x)} = \exp(g(x)\ln f(x)),$ requires $f(x) > 0.$ Under this convention, if $f$ and $g$ have domains $D_f$ and $D_g,$ respectively, the domain is:
+If [real powers](../powers/) are defined by $[f(x)]^{g(x)} = \exp(g(x)\ln f(x)),$ then $f(x) > 0$ is required. Under this definition, if $f$ and $g$ have domains $D_f$ and $D_g,$ respectively, the domain is:
 
 $$
 \{\ x \in D_f \cap D_g \mid f(x) > 0 \ \}
@@ -361,19 +365,19 @@ $$
 \{\ x \in D \mid f(x) > 0 \ \}, \quad \text{if } \alpha < 0
 $$
 
-The strict inequality for $\alpha < 0$ excludes the base $0,$ which would require division by zero. Negative bases are excluded because an irrational power of a negative real number is not defined by the standard real power function.
+The strict inequality for $\alpha < 0$ excludes the base $0$ because the power would require division by zero. Negative bases are excluded because $t^\alpha$ is not defined as a real-valued function for irrational $\alpha$ when $t < 0.$
 
 - - -
 
 For the trigonometric functions, the following domains apply:
 
 + $y = \sin x$ and $y = \cos x$ have domain $\mathbb{R}.$
-+ The [tangent function](../tangent-function/) $y = \tan x$ has domain $\mathbb{R} \setminus \left\{\ \frac{\pi}{2} + k\pi \mid k \in \mathbb{Z}\ \right\}.$
++ The [tangent function](../tangent-function/) $y = \tan x$ has domain $\mathbb{R} \setminus \left\{\ \pi/2 + k\pi \mid k \in \mathbb{Z}\ \right\}.$
 + The [cotangent function](../cotangent-function/) $y = \cot x$ has domain $\mathbb{R} \setminus \left\{\ k\pi \mid k \in \mathbb{Z}\ \right\}.$
 + $y = \arcsin x$ and $y = \arccos x$ have domain $[-1, 1].$
 + The [arctangent function](../arctangent-function/) $y = \arctan x$ and the [arccotangent function](../arccotangent-function/) $y = \mathrm{arccot}\ x$ have domain $\mathbb{R}.$
 
-> For an expression formed from several elementary functions, its domain is the intersection of the restrictions imposed by its components. These restrictions must be imposed before solving [equations](../equations/) or [inequalities](../inequalities/) and before [analyzing a function's graph](../analyzing-the-graphs-of-functions/), as explained in the [systematic method](../determining-the-domain-of-a-function/).
+> For an expression formed from several elementary functions, the domain is the set of real numbers satisfying every restriction imposed by its components. [Combine the domain restrictions](../determining-the-domain-of-a-function/) before solving [equations](../equations/) or [inequalities](../inequalities/) and before [analyzing a function's graph](../analyzing-the-graphs-of-functions/).
 
 ## Operations between functions
 
@@ -383,24 +387,16 @@ $$
 f \colon X_1 \to \mathbb{R} \quad \text{and} \quad g \colon X_2 \to \mathbb{R}
 $$
 
-Their common domain is $X = X_1 \cap X_2.$ The sum, difference, and product are defined on $X,$ while the quotient may require a smaller domain.
+Their common domain is $X = X_1 \cap X_2.$
 
-The sum of two functions $f$ and $g$ is defined by:
-
-$$
-(f + g)(x) = f(x) + g(x)
-$$
-
-The difference of two functions is defined by:
+The sum, difference, and product are defined pointwise on $X:$
 
 $$
-(f - g)(x) = f(x) - g(x)
-$$
-
-The product of two functions is defined by:
-
-$$
-(f \cdot g)(x) = f(x)g(x)
+\begin{align}
+(f + g)(x) &= f(x) + g(x) \\[6pt]
+(f - g)(x) &= f(x) - g(x) \\[6pt]
+(f \cdot g)(x) &= f(x)g(x)
+\end{align}
 $$
 
 The quotient of two functions is defined by:
@@ -409,7 +405,7 @@ $$
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}
 $$
 
-It is defined only for those $x \in X$ where $g(x) \neq 0.$ Its domain is obtained by excluding from $X$ all points that make the denominator vanish.
+The quotient has domain $\{\ x \in X \mid g(x) \neq 0 \ \}.$
 
 The domain of the composition is determined by a different condition. It consists of the points of $X_1$ whose images under $f$ belong to $X_2:$
 
@@ -417,4 +413,4 @@ $$
 C = \{\ x \in X_1 \mid f(x) \in X_2 \ \}
 $$
 
-For every $x \in C,$ the composition is $(g \circ f)(x) = g(f(x)).$ The page on [composite functions](../composite-functions/) develops this operation in detail.
+For every $x \in C,$ the [composition](../composite-functions/) is $(g \circ f)(x) = g(f(x)).$
