@@ -10,7 +10,7 @@ tags:
 ---
 
 ## Introduction
-
+ 
 This entry treats the hyperbolic cotangent as a real [function](../functions/). Its geometric construction from the coordinates of a point on the equilateral [hyperbola](../hyperbola/) is described in [hyperbolic tangent and cotangent](../hyperbolic-tangent-and-cotangent/).
 
 For real $x \neq 0,$ the hyperbolic cotangent is defined as the ratio of the [hyperbolic cosine](../hyperbolic-cosine-function/) to the [hyperbolic sine](../hyperbolic-sine-function/):
