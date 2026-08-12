@@ -25,14 +25,14 @@ Multiplying numerator and denominator by $e^x$ and using $e^{2x}-1=(e^{2x}+1)-2$
 
 $$\tanh(x) = \frac{e^{2x} - 1}{e^{2x} + 1} = 1 - \frac{2}{e^{2x} + 1}$$
 
-The term $2/(e^{2x}+1)$ is positive and strictly decreasing on $\mathbb{R}.$ Hence $\tanh(x)<1$ for every real $x,$ and $\tanh$ is strictly increasing.
+The term $2/(e^{2x}+1)$ is positive and strictly decreasing on $\mathbb{R}.$ Hence $\tanh(x)\lt 1$ for every real $x,$ and $\tanh$ is strictly increasing.
 
 ## Properties
 
 The function has the following properties.
 
 + [Domain](../determining-the-domain-of-a-function/): $x \in \mathbb{R}$
-+ Range: $-1 < y < 1$
++ Range: $-1 \lt y \lt 1$
 + Periodicity: not periodic
 + Parity: [odd](../even-and-odd-functions/), with $\tanh(-x) = -\tanh(x)$
 + Monotonicity: strictly [increasing](../increasing-and-decreasing-functions/) on $\mathbb{R}$
@@ -44,7 +44,7 @@ Dividing the [hyperbolic identity](../hyperbolic-identities/) $\cosh^2(x)-\sinh^
 
 $$1 - \tanh^2(x) = \frac{1}{\cosh^2(x)}$$
 
-The left side is positive, so $|\tanh(x)|<1.$ Since $\cosh(x)>0,$ the same identity expresses the hyperbolic sine and cosine in terms of the hyperbolic tangent:
+The left side is positive, so $|\tanh(x)|\lt 1.$ Since $\cosh(x)\gt 0,$ the same identity expresses the hyperbolic sine and cosine in terms of the hyperbolic tangent:
 
 $$
 \begin{align}
@@ -116,7 +116,7 @@ The derivative $1/\cosh^2(x)$ is positive on $\mathbb{R},$ so the hyperbolic tan
 
 $$|\tanh(a) - \tanh(b)| \leq |a - b|$$
 
-The second derivative $-2\tanh(x)/\cosh^2(x)$ has the sign opposite to $\tanh(x),$ so the graph is strictly [convex](../convexity-and-concavity-of-functions/) on $(-\infty,0)$ and strictly concave on $(0,+\infty).$ The origin is an [inflection point](../maximum-minimum-and-inflection-points/), where the second derivative vanishes and changes sign. For $x>0,$ concavity implies $\tanh(x)\leq x,$ and oddness extends the bound to the whole real line. The same conclusion follows by setting $b=0$ in the preceding inequality:
+The second derivative $-2\tanh(x)/\cosh^2(x)$ has the sign opposite to $\tanh(x),$ so the graph is strictly [convex](../convexity-and-concavity-of-functions/) on $(-\infty,0)$ and strictly concave on $(0,+\infty).$ The origin is an [inflection point](../maximum-minimum-and-inflection-points/), where the second derivative vanishes and changes sign. For $x\gt 0,$ concavity implies $\tanh(x)\leq x,$ and oddness extends the bound to the whole real line. The same conclusion follows by setting $b=0$ in the preceding inequality:
 
 $$|\tanh(x)| \leq |x|$$
 
@@ -134,11 +134,11 @@ After clearing the denominator, we have $t(x-1)=-1-x.$ Since $x\neq 1$ on $(-1,1
 
 $$t = \frac{1 + x}{1 - x}$$
 
-For $-1<x<1,$ the right side is positive, so its logarithm is defined. Taking the natural logarithm of both sides and dividing by $2$ gives:
+For $-1\lt x\lt 1,$ the right side is positive, so its logarithm is defined. Taking the natural logarithm of both sides and dividing by $2$ gives:
 
 $$\mathrm{artanh}(x) = \frac{1}{2}\ln\left(\frac{1 + x}{1 - x}\right)$$
 
-For $|x|<1,$ set $y=\mathrm{artanh}(x).$ The [derivative of the inverse function](../derivative-of-the-inverse-function/) gives $\mathrm{artanh}'(x)=1/\tanh'(y).$ Since $1-\tanh^2(y)=1-x^2,$ we obtain:
+For $|x|\lt 1,$ set $y=\mathrm{artanh}(x).$ The [derivative of the inverse function](../derivative-of-the-inverse-function/) gives $\mathrm{artanh}'(x)=1/\tanh'(y).$ Since $1-\tanh^2(y)=1-x^2,$ we obtain:
 
 $$\frac{d}{dx}\mathrm{artanh}(x) = \frac{1}{1 - x^2}$$
 
@@ -158,6 +158,6 @@ $$\tanh(x) = \sum_{n=1}^{\infty} \frac{2^{2n}\left(2^{2n} - 1\right)B_{2n}}{(2n)
 
 Unlike the series for the hyperbolic sine and cosine, this [power series](../power-series/) has a finite radius of convergence. The radius of a Taylor series in the [complex plane](../complex-numbers/) is the distance from its centre to the nearest singularity of the function. For $\tanh(z),$ the nearest singularities are the zeros $z=\pm i\pi/2$ of $\cosh(z),$ so the series converges for:
 
-$$|x| < \frac{\pi}{2}$$
+$$|x| \lt \frac{\pi}{2}$$
 
 Since $\sinh(ix)=i\sin(x)$ and $\cosh(ix)=\cos(x),$ we have $\tanh(ix)=i\tan(x).$ This identity explains why the coefficients in the [Taylor series](../taylor-series/) of the circular tangent have the same absolute values and are all positive. Replacing $x$ with $ix$ in the identity and using oddness gives $\tan(ix)=i\tanh(x).$
