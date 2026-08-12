@@ -195,7 +195,7 @@ Every positive $T$ satisfying these conditions is a period of $f.$ If the set of
 
 ## Algebraic and transcendental functions
 
-One way to classify continuous real functions is through polynomial relations. Let $f \colon D \to \mathbb{R},$ where $D \subseteq \mathbb{R}$ contains a non-degenerate [interval](../intervals). The function is algebraic if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ for every $x \in D.$ For example, $f(x) = \sqrt{x}$ is algebraic on $[0, +\infty)$ because $f(x)^2 - x = 0.$
+One way to classify continuous real functions is through polynomial relations. Let $f \colon D \to \mathbb{R},$ where $D \subseteq \mathbb{R}$ contains a non-degenerate [interval](../intervals/). The function is algebraic if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ for every $x \in D.$ For example, $f(x) = \sqrt{x}$ is algebraic on $[0, +\infty)$ because $f(x)^2 - x = 0.$
 
 Every [polynomial function](../polynomial-function/) is [rational](../rational-functions/), since it can be written with denominator $1,$ and every rational function $f(x) = N(x)/Q(x)$ is algebraic because $Q(x)f(x) - N(x) = 0.$ Hence:
 

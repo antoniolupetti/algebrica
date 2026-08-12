@@ -132,7 +132,7 @@ $$
 A useful result from basic analysis is the one-dimensional version of the inverse function theorem. Its content is intuitive, since a function that behaves regularly on an interval can be inverted without difficulty. Suppose a function $f$ is [continuous](../continuous-functions/) and differentiable on an interval $I,$ and its [derivative](../derivatives/) never vanishes:
 
 $$
-f'(x) \neq 0 \quad \forall \, x \in I
+f'(x) \neq 0 \quad \forall x \in I
 $$
 
 A derivative that keeps a constant sign on $I$ makes the function [strictly monotonic](../increasing-and-decreasing-functions/), and strict monotonicity makes $f$ injective. An inverse function $f^{-1}$ therefore exists on $f(I),$ and it is continuous and differentiable. Its derivative is given by the relation:

@@ -28,7 +28,7 @@ $$
 + Parity: [even](../even-and-odd-functions/), with $D(-x) = D(x)$
 + Periodicity: the set of nonzero [periods](../functions/) is $\mathbb{Q} \setminus \{0\},$ and no fundamental period exists.
 
-If $r \in \mathbb{Q},$ then $x + r$ is rational exactly when $x$ is, and $D(x + r) = D(x).$ Conversely, suppose that $D(x + r) = D(x)$ for every $x \in \mathbb{R}.$ Setting $x = 0$ gives $D(r) = D(0) = 1,$ so $r \in \mathbb{Q}.$ The positive rational periods have no least element, so $D$ has no fundamental period.
+For a rational number $r,$ the number $x + r$ is rational exactly when $x$ is rational. This gives $D(x + r) = D(x)$ for every $x \in \mathbb{R},$ so every nonzero rational number is a period. Conversely, if $r$ is a period, setting $x = 0$ gives $D(r) = D(0) = 1,$ which forces $r \in \mathbb{Q}.$ The positive rational periods have no least element, so $D$ has no fundamental period.
 
 $\mathbb{Q}$ and $\mathbb{R} \setminus \mathbb{Q}$ are [dense](../topology-of-the-real-line/) in the [real line](../real-numbers/). Fix $x_0 \in \mathbb{R}$ and take $\varepsilon = 1/2.$ If $x_0$ is rational, every $\delta$-neighborhood of $x_0$ contains an irrational number $x$ satisfying $0 < |x - x_0| < \delta.$ The function values satisfy:
 

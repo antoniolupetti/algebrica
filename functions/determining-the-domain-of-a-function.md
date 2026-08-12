@@ -25,7 +25,7 @@ The examples below apply each step to concrete expressions.
 The domain is always expressed as a union of real [intervals](../intervals/), so we recall how these sets are defined. Intervals describe continuous portions of the real line and provide a compact way to specify which values of $x$ are allowed. The first type is the open interval, which contains all points strictly between two endpoints while excluding the endpoints themselves. In descriptive form it is written:
 
 $$
-\{\,x : a < x < b\,\}
+\{\ x : a < x < b\ \}
 $$
 
 and in interval notation it appears as:
@@ -46,7 +46,7 @@ This notation is convenient when $a$ and $b$ correspond to points where the func
 The second type is the closed interval, which includes both endpoints. In descriptive form it is written:
 
 $$
-\{\,x : a \le x \le b\,\}
+\{\ x : a \le x \le b\ \}
 $$
 
 and the corresponding interval notation is:
@@ -171,7 +171,7 @@ Finally, the entire fraction appears under a square root, whose argument must be
 Putting these observations together, the domain consists of all $x$ greater than zero, together with the isolated points where $\sin x = -1$. The domain is therefore:
 
 $$
-(0, +\infty) \;\cup\; \left\{ -\frac{\pi}{2} + 2k\pi \,\middle|\, k \in \mathbb{Z} \right\}
+(0, +\infty) \;\cup\; \left\{ -\frac{\pi}{2} + 2k\pi \ \middle|\ k \in \mathbb{Z} \right\}
 $$
 
 ## Example 3
@@ -214,7 +214,7 @@ $$
 The solutions are contained in $\left(-\frac{5}{2}, \frac{5}{2}\right)$, since outside this interval the logarithm is undefined. Combining the two requirements by intersection, the domain is the set of points of that interval which also satisfy the radicand condition:
 
 $$
-\mathrm{dom}(f) = \left\{\, x \in \left(-\tfrac{5}{2}, \tfrac{5}{2}\right) \ \middle|\ \cos^{2}(3x - 1) \ge \log(5 - |2x|) \,\right\}
+\mathrm{dom}(f) = \left\{\ x \in \left(-\tfrac{5}{2}, \tfrac{5}{2}\right) \ \middle|\ \cos^{2}(3x - 1) \ge \log(5 - |2x|) \ \right\}
 $$
 
 This last inequality has no elementary closed-form solution and must be examined numerically or graphically. Near $x = 0$, for instance, we have $\log 5 \approx 1.61$, which exceeds $\cos^{2}(1) \approx 0.29$, so a neighborhood of the origin is excluded. The domain is therefore a proper subset of $\left(-\frac{5}{2}, \frac{5}{2}\right)$.

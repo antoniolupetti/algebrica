@@ -14,7 +14,7 @@ A [function](../functions/) is classified as increasing, decreasing, or monotoni
 
 - - -
 
-**Definition 1.** Let $y = f(x)$ be a function defined on a [domain](../determining-the-domain-of-a-function/) $X \subseteq \mathbb{R}.$ We say that $f$ is strictly increasing on an interval $I \subseteq X$ if, for any two values $x_1, x_2 \in I$ with $x_1 < x_2,$ the following condition holds:
+Definition 1. Let $y = f(x)$ be a function defined on a [domain](../determining-the-domain-of-a-function/) $X \subseteq \mathbb{R}.$ We say that $f$ is strictly increasing on an interval $I \subseteq X$ if, for any two values $x_1, x_2 \in I$ with $x_1 < x_2,$ the following condition holds:
 
 $$
 f(x_1) < f(x_2)
@@ -27,7 +27,7 @@ As the input $x$ increases within the [interval](../intervals/) $I,$ the output 
 
 - - -
 
-**Definition 2.** Let $y = f(x)$ be a function defined on a domain $X \subseteq \mathbb{R}.$ We say that $f$ is strictly decreasing on an interval $I \subseteq X$ if, for any two values $x_1, x_2 \in I$ with $x_1 < x_2,$ the following condition holds:
+Definition 2. Let $y = f(x)$ be a function defined on a domain $X \subseteq \mathbb{R}.$ We say that $f$ is strictly decreasing on an interval $I \subseteq X$ if, for any two values $x_1, x_2 \in I$ with $x_1 < x_2,$ the following condition holds:
 
 $$
 f(x_1) > f(x_2)
@@ -124,7 +124,7 @@ A strictly monotonic function therefore admits an [inverse](../inverse-function/
 
 Monotonicity constrains the local behavior of a function strongly enough to force the existence of both one-sided [limits](../limits/) at every interior point, even where the function is discontinuous.
 
-**Definition 3.** Let $f$ be increasing on an open [interval](../intervals/) $(a, b).$ For every $x_0 \in (a, b)$ both one-sided limits exist and satisfy:
+Definition 3. Let $f$ be increasing on an open [interval](../intervals/) $(a, b).$ For every $x_0 \in (a, b)$ both one-sided limits exist and satisfy:
 
 $$
 \sup_{a < t < x_0} f(t) = f(x_0^-) \leq f(x_0) \leq f(x_0^+) = \inf_{x_0 < t < b} f(t)

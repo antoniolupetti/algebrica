@@ -397,4 +397,4 @@ $$
 
 For $n = 750$ and $p = 5$ the representation is $11000_5,$ whose digit sum is $2,$ and the formula returns $(750-2)/4 = 187,$ the same value as the sum of floors above.
 
-> The book, _Discrete Structures_ by Andreas Klappenecker and Hyunyoung Lee is recommended for a detailed treatment of floor and ceiling functions. The book is listed in the [bibliography](../bibliography/).
+> The book, Discrete Structures by Andreas Klappenecker and Hyunyoung Lee is recommended for a detailed treatment of floor and ceiling functions. The book is listed in the [bibliography](../bibliography/).
