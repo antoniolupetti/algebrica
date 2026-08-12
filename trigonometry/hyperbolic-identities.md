@@ -327,7 +327,7 @@ $$
 R\sinh(x + \varphi) = R\cosh(\varphi)\sinh(x) + R\sinh(\varphi)\cosh(x)
 $$
 
-Matching the coefficients of $\sinh(x)$ and $\cosh(x)$ with those of the original combination produces the system $R\cosh(\varphi) = a$ and $R\sinh(\varphi) = b$. Squaring the two equations and subtracting them isolates the amplitude $R = \sqrt{a^2 - b^2}$, while the ratio of the second to the first determines the shift $\varphi$ uniquely, since the hyperbolic tangent is a bijection from the real line onto $(-1, 1)$.
+Matching the coefficients of $\sinh(x)$ and $\cosh(x)$ with those of the original combination produces the system $R\cosh(\varphi) = a$ and $R\sinh(\varphi) = b$. Squaring the two equations and subtracting them isolates the amplitude $R = \sqrt{a^2 - b^2}$, while the ratio of the second to the first determines the shift $\varphi$ uniquely, since the [hyperbolic tangent](../hyperbolic-tangent-function/) is a bijection from the real line onto $(-1, 1)$.
 
 When the coefficients satisfy $|b| > |a|$, the analogous representation uses a single hyperbolic cosine:
 

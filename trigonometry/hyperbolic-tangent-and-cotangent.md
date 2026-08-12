@@ -136,7 +136,7 @@ The latter expressions show that for large positive $x$ the function approaches 
 
 ## Hyperbolic tangent and cotangent functions
 
-The hyperbolic tangent function $f(x) = \tanh(x)$ is defined for all real numbers. Unlike the circular tangent, it does not have vertical [asymptotes](../asymptotes/): its graph is a smooth, monotonically increasing curve that passes through the origin with slope $1$ and remains bounded for all $x$. As $x \to +\infty$ the function approaches $1$ asymptotically, while as $x \to -\infty$ it approaches $-1$, so the range is the open interval $(-1, 1)$.
+The [hyperbolic tangent function](../hyperbolic-tangent-function/) $f(x) = \tanh(x)$ is defined for all real numbers. Unlike the circular tangent, it does not have vertical [asymptotes](../asymptotes/): its graph is a smooth, monotonically increasing curve that passes through the origin with slope $1$ and remains bounded for all $x$. As $x \to +\infty$ the function approaches $1$ asymptotically, while as $x \to -\infty$ it approaches $-1$, so the range is the open interval $(-1, 1)$.
 
 
 ![IMG. 3](svg/hyperbolic-tangent-and-cotangent-3.svg)

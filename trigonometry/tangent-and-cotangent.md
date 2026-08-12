@@ -171,7 +171,7 @@ $$
 \tan(\theta) = \frac{\sin\theta}{\cos\theta} = \frac{e^{i\theta} - e^{-i\theta}}{i(e^{i\theta} + e^{-i\theta})}
 $$
 
-This expression mirrors the structure of the [hyperbolic tangent](../hyperbolic-tangent-and-cotangent/), which is defined as $\tanh(x) = (e^x - e^{-x})/(e^x + e^{-x})$, and reveals that the two are related by the substitution $x \to i\theta$:
+This expression mirrors the structure of the [hyperbolic tangent](../hyperbolic-tangent-function/), which is defined as $\tanh(x) = (e^x - e^{-x})/(e^x + e^{-x})$, and reveals that the two are related by the substitution $x \to i\theta$:
 
 $$
 \tan(\theta) = -i\tanh(i\theta)

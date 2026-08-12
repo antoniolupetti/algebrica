@@ -185,7 +185,7 @@ The table below illustrates this hierarchy for $a = 2.$
 
 ## Hyperbolic functions derived from the exponential function
 
-Combining $e^x$ and $e^{-x}$ yields the hyperbolic functions, which appear in analysis and geometry. The three main ones are the [hyperbolic sine](../hyperbolic-sine-function/), [hyperbolic cosine](../hyperbolic-sine-and-cosine/), and [hyperbolic tangent](../hyperbolic-tangent-and-cotangent/), defined as follows:
+Combining $e^x$ and $e^{-x}$ yields the hyperbolic functions, which appear in analysis and geometry. The three main ones are the [hyperbolic sine](../hyperbolic-sine-function/), [hyperbolic cosine](../hyperbolic-sine-and-cosine/), and [hyperbolic tangent](../hyperbolic-tangent-function/), defined as follows:
 
 $$\cosh(x) = \frac{e^{x} + e^{-x}}{2} \quad x \in \mathbb{R}$$
 

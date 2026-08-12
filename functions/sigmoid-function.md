@@ -111,7 +111,7 @@ At the origin the limit equals $\frac{1}{2},$ since $\sigma(0) = \frac{1}{2}$ fo
 
 ## Relation to the hyperbolic tangent
 
-The sigmoid function and the [hyperbolic tangent](../hyperbolic-tangent-and-cotangent/) $\tanh$ satisfy the identity:
+The sigmoid function and the [hyperbolic tangent](../hyperbolic-tangent-function/) $\tanh$ satisfy the identity:
 
 $$\sigma(x) = \frac{1 + \tanh\left(\dfrac{x}{2}\right)}{2}$$
 

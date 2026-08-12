@@ -47,7 +47,7 @@ $$
 
 ## Hyperbolic identities for the secant
 
-The identities governing the hyperbolic secant follow from its definition as the reciprocal of the hyperbolic cosine. Dividing the fundamental hyperbolic identity $\cosh^{2}(x) - \sinh^{2}(x) = 1$ by $\cosh^{2}(x)$ produces the relation that connects the hyperbolic secant to the hyperbolic tangent, while the even symmetry of the cosine transfers directly to the secant. The relations collected below summarise these connections together with the algebraic forms most often encountered in computations.
+The identities governing the hyperbolic secant follow from its definition as the reciprocal of the hyperbolic cosine. Dividing the fundamental hyperbolic identity $\cosh^{2}(x) - \sinh^{2}(x) = 1$ by $\cosh^{2}(x)$ produces the relation that connects the hyperbolic secant to the [hyperbolic tangent](../hyperbolic-tangent-function/), while the even symmetry of the cosine transfers directly to the secant. The relations collected below summarise these connections together with the algebraic forms most often encountered in computations.
 
 $$
 \begin{align}
