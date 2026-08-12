@@ -9,7 +9,7 @@ tags:
   - identity-function
   - inverse-function
 ---
-## Definition of the composition
+f## Definition of the composition
 
 Given two [functions](../functions/) $f$ and $g,$ their composition is the function obtained by applying $f$ first and $g$ second. It is written $g \circ f$ and is defined by:
 

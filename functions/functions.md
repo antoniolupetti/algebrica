@@ -23,7 +23,19 @@ $$
 + For each $x \in A,$ the value $f(x) \in B$ is the image of $x$ under $f.$
 + $x$ is the independent variable, and $y=f(x)$ is the dependent variable.
 
-For example, let $f \colon \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x - 1.$ The notation $x \mapsto 2x - 1$ describes the same assignment. Substituting $3$ for $x$ gives $f(3) = 2 \cdot 3 - 1 = 5.$ The symbol $f$ denotes the whole function, while $f(3)$ denotes one value of that function.
+The linear rule $2x - 1$ defines the function:
+
+$$
+f \colon \mathbb{R} \to \mathbb{R}, \quad f(x) = 2x - 1
+$$
+
+Writing $x \mapsto 2x - 1$ specifies the same assignment without naming the function. At the input $3,$ its value is:
+
+$$
+f(3) = 2 \cdot 3 - 1 = 5
+$$
+
+The symbol $f$ denotes the complete assignment, whereas $f(3)$ is the image of the particular input $3.$
 
 ![IMG. 1](svg/functions-1.svg)
 
@@ -35,9 +47,9 @@ A function $f \colon A \to B$ may have the following properties:
 
 + The function is injective if every element of $B$ is the image of at most one element of $A,$ that is, if for any $x_1, x_2 \in A$ with $x_1 \neq x_2$ we have $f(x_1) \neq f(x_2).$ Equivalently, for every $y \in B$ there is at most one $x \in A$ such that $f(x) = y.$
 + The function is surjective if every element of $B$ is the image of at least one element of $A,$ that is, if for every $y \in B$ there exists at least one $x \in A$ such that $f(x) = y.$ Equivalently, $f(A) = B.$
-+ The function is bijective if it is both injective and surjective, that is, if for every $y \in B$ there exists a unique $x \in A$ such that $f(x) = y.$
++ The function is bijective, or equivalently invertible, if it is both injective and surjective, that is, if for every $y \in B$ there exists a unique $x \in A$ such that $f(x) = y.$
 
-See [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/) for graphical criteria and characterizations by one-sided inverses.
+These properties are treated in detail in the corresponding entry on [injective, surjective and bijective functions](../injective-surjective-and-bijective-functions/).
 
 - - -
 
@@ -109,7 +121,7 @@ For a function $f \colon A \to B,$ the codomain is the declared target set $B.$
 
 The range of $f,$ also called the image of the function, is the set $f(A)$ of attained values. It is always a subset of $B.$
 
-Consider the function $f \colon \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^2.$ Its codomain is $\mathbb{R},$ while its range is $[0, +\infty),$ so it is not surjective. The same assignment with codomain $[0, +\infty)$ defines a surjective function, but it is not injective because $f(-1) = f(1) = 1.$ With both domain and codomain equal to $[0, +\infty),$ the same formula defines a bijection.
+Consider the function $f \colon \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^2.$ Its codomain is $\mathbb{R},$ while its range is $[0, +\infty),$ so it is not surjective. The same assignment with codomain $[0, +\infty)$ defines a surjective function, but it is not injective because $f(-1) = f(1) = 1.$ With both domain and codomain equal to $[0, +\infty),$ the same rule defines a bijection.
 
 For a subset $E \subseteq A,$ its image is defined by:
 
@@ -197,7 +209,7 @@ A continuous real function that satisfies no such polynomial relation is transce
 
 ## Domain of the main functions
 
-The natural domain of a real-valued formula is the largest subset of $\mathbb{R}$ on which every operation in the formula is defined and real-valued. When an expression imposes several restrictions, its natural domain is obtained by [combining all domain conditions](../determining-the-domain-of-a-function/).
+The natural domain of a real expression is the largest subset of $\mathbb{R}$ on which every operation in the expression is defined and real-valued. When an expression imposes several restrictions, its natural domain is obtained by [combining all domain conditions](../determining-the-domain-of-a-function/).
 
 - - -
 
@@ -358,7 +370,7 @@ $$
 \end{align}
 $$
 
-The quotient of two functions $f(x)$ and $g(x)$ has domain $\{\ x \in X \mid g(x) \neq 0 \ \}.$ and is defined by:
+The quotient of two functions $f(x)$ and $g(x)$ has domain $\{\ x \in X \mid g(x) \neq 0 \ \}$ and is defined by:
 
 $$
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}
