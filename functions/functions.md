@@ -12,7 +12,7 @@ tags:
 ---
 ## Definition
 
-Let $A \subseteq \mathbb{R}$ and $B \subseteq \mathbb{R}$ be non-empty [subsets](../sets/) of the [real numbers](../real-numbers/). A function $f$ from $A$ to $B$ assigns to each $x \in A$ exactly one value $f(x) \in B.$ The assignment is written as:
+Suppose $A$ and $B$ are non-empty [subsets](../sets/) of the [real numbers](../real-numbers/). The elements of $A$ are the inputs, while the elements of $B$ are the possible outputs. A function $f$ gives each $x \in A$ one and only one value $f(x) \in B.$ We write:
 
 $$
 f \colon A \to B
@@ -20,24 +20,14 @@ $$
 
 + The set $A$ is the [domain](../determining-the-domain-of-a-function/) of the function.
 + The set $B$ is the codomain.
-+ For every $x \in A,$ the unique assigned value $f(x) \in B$ is called the image of $x$ under $f.$
-+ When the output is denoted by $y = f(x),$ the variable $x$ is the independent variable and $y$ is the dependent variable.
++ For each $x \in A,$ the value $f(x) \in B$ is the image of $x$ under $f.$
++ $x$ is the independent variable, and $y=f(x)$ is the dependent variable.
 
 For example, let $f \colon \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x - 1.$ The notation $x \mapsto 2x - 1$ describes the same assignment. Substituting $3$ for $x$ gives $f(3) = 2 \cdot 3 - 1 = 5.$ The symbol $f$ denotes the whole function, while $f(3)$ denotes one value of that function.
 
 ![IMG. 1](svg/functions-1.svg)
 
 > Uniqueness is required for each fixed input. Different inputs may have the same image.
-
-- - -
-
-The graph of $f$ is the set of ordered pairs formed by each input and its assigned output:
-
-$$
-G_f = \{\ (x, f(x)) \mid x \in A \ \}
-$$
-
-Thus $G_f \subseteq A \times B,$ and each $x \in A$ occurs as the first coordinate of exactly one pair.
 
 - - -
 
@@ -51,7 +41,7 @@ See [injective, surjective and bijective functions](../injective-surjective-and-
 
 - - -
 
-The identity function on a set $A$ sends every element to itself and is defined by:
+Every set $A$ has an identity function. Its value at any $x \in A$ is simply $x$ itself:
 
 $$
 \mathrm{id}_A \colon A \to A, \quad \mathrm{id}_A(x) = x
@@ -67,24 +57,34 @@ A constant function is not injective when $A$ has more than one element, and it 
 
 - - -
 
-Restricting the domain can make a non-injective function injective. Given $E \subseteq A,$ the restriction $f|_E$ agrees with $f$ at every point of $E$ and is defined by:
+Given $E \subseteq A,$ the restriction of $f \colon A \to B$ to $E$ is defined by:
 
 $$
 f|_E \colon E \to B, \quad f|_E(x) = f(x)
 $$
 
-If $f$ is injective on $E,$ the same assignment with codomain $f(E)$ defines a bijection from $E$ to $f(E).$ Every bijection has an [inverse function](../inverse-function/).
+Restricting the domain can make a non-injective function injective. If $f|_E$ is injective, the same assignment with codomain $f(E)$ defines a bijection from $E$ to $f(E)$ and hence has an [inverse function](../inverse-function/).
+
+- - -
+
+The graph of $f$ is the set of ordered pairs $(x, f(x))$ obtained by pairing each input with its assigned output:
+
+$$
+G_f = \{\ (x, f(x)) \mid x \in A \ \}
+$$
+
+Thus $G_f \subseteq A \times B,$ and each $x \in A$ occurs as the first coordinate of exactly one pair.
 
 ## What is not a function
 
-A relation $R \subseteq A \times B$ defines a function from $A$ to $B$ only when every $x \in A$ has exactly one associated value $y \in B.$ It fails this condition if some $x$ has no associated value or has more than one.
+A relation $R \subseteq A \times B$ is a function from $A$ to $B$ only when every $x \in A$ is associated with exactly one value $y \in B.$
 
 ![IMG. 2](svg/functions-2.svg)
 
 In the diagram, a single element $x_0$ corresponds to two distinct values in the codomain, so the relation is not a function. Formally, the required existence and uniqueness condition is:
 
 $$
-\forall x \in A,\ \exists! y \in B\ \text{such that}\ (x, y) \in R
+\forall \ x \in A,\ \exists! \ y \in B\ \vert \ (x, y) \in R
 $$
 
 In the relation shown, both $(x_0, y_1)$ and $(x_0, y_2)$ belong to $R,$ with $y_1 \neq y_2,$ which violates uniqueness. The same failure occurs in the table:
@@ -97,7 +97,7 @@ The relation is not a function because $x = -3$ is associated with both $7$ and 
 
 - - -
 
-A curve in the plane is the graph of a function on its projection onto the $x$-axis exactly when every vertical line meets it in at most one point. This criterion is the vertical line test.
+A criterion for deciding whether a curve in the plane is the graph of a function on its projection onto the $x$-axis is the vertical line test, which is passed exactly when every vertical line meets the curve in at most one point.
 
 ![IMG. 3](svg/functions-3.svg)
 
@@ -139,7 +139,7 @@ $$
 f(a) = 0
 $$
 
-The graph of the function then meets the $x$-axis at $(a, 0).$ Finding the zeros is equivalent to solving the [equation](../equations/) $f(x) = 0.$ In [sign analysis](../sign-analysis-in-inequalities/), every zero must be examined as a possible boundary between positive and negative values, although the sign need not change there.
+Finding the zeros amounts to solving the [equation](../equations/) $f(x)=0.$ Each solution $a$ identifies a point $(a,0)$ where the graph meets the $x$-axis. In [sign analysis](../sign-analysis-in-inequalities/), every zero must be examined as a possible boundary between intervals on which $f$ is positive and those on which it is negative. The sign need not change at a zero, since the graph may touch the axis and remain on the same side.
 
 ## Symmetric and bounded functions
 
@@ -197,7 +197,7 @@ A continuous real function that satisfies no such polynomial relation is transce
 
 ## Domain of the main functions
 
-A function includes a declared domain. When a real formula is given without one, its natural domain is the largest subset of $\mathbb{R}$ on which every operation in the formula is defined and real-valued. The same formula can define functions with smaller declared domains. When an expression imposes several restrictions, its natural domain is obtained by [combining all domain conditions](../determining-the-domain-of-a-function/).
+The natural domain of a real-valued formula is the largest subset of $\mathbb{R}$ on which every operation in the formula is defined and real-valued. When an expression imposes several restrictions, its natural domain is obtained by [combining all domain conditions](../determining-the-domain-of-a-function/).
 
 - - -
 
@@ -207,7 +207,7 @@ $$
 y = \sum_{k=0}^{n} a_kx^k
 $$
 
-The coefficients $a_0, a_1, \dots, a_n$ are real and $n$ is a non-negative integer. When the polynomial has degree $n,$ the leading coefficient satisfies $a_n \neq 0;$ the zero polynomial has all coefficients equal to zero. Here $x^0$ denotes the constant monomial $1,$ including at $x = 0.$ Every polynomial has natural domain $\mathbb{R}$ because its constant term and its positive integer powers are defined for every real number. Consider the cubic polynomial:
+The coefficients $a_0, a_1, \dots, a_n$ are real, and $n$ is a non-negative integer. When the polynomial has degree $n,$ its leading coefficient is $a_n,$ with $a_n \neq 0.$ The zero polynomial has all coefficients equal to zero. The monomial $x^0$ is the constant monomial $1.$ The constant term and the positive integer powers are defined for every real $x,$ including $x = 0.$ Hence every polynomial has natural domain $\mathbb{R}.$ Consider the cubic polynomial:
 
 $$
 y = 2x^3 - 5x^2 + 3x - 1
@@ -217,13 +217,13 @@ Every term is defined for every real $x,$ so this polynomial also has domain $\m
 
 - - -
 
-[Rational functions](../rational-functions/) have the form:
+In a [rational function](../rational-functions/), the numerator $N(x)$ and denominator $D(x)$ are polynomials, and $D$ is not the zero polynomial. Rational functions have the form:
 
 $$
 y = \frac{N(x)}{D(x)}
 $$
 
-The numerator $N(x)$ and denominator $D(x)$ are polynomials, and $D$ is not the zero polynomial. The function is defined at the real numbers $x$ for which $D(x) \neq 0.$ Consider the rational function:
+The quotient is defined at exactly those real numbers $x$ for which $D(x) \neq 0.$ Consider the rational function:
 
 $$
 y = \frac{x^2 - 4}{x - 2}
@@ -336,11 +336,7 @@ $$
 \{\ x \in D \mid f(x) > 0 \ \}, \quad \text{if } \alpha < 0
 $$
 
-The strict inequality for $\alpha < 0$ excludes the base $0$ because the power would require division by zero. Negative bases are excluded because $t^\alpha$ is not defined as a real-valued function for irrational $\alpha$ when $t < 0.$
-
 - - -
-
-For the trigonometric functions, the following domains apply:
 
 + The [sine function](../sine-function/) $y = \sin x$ and the [cosine function](../cosine-function/) $y = \cos x$ have domain $\mathbb{R}.$
 + The [tangent function](../tangent-function/) $y = \tan x$ has domain $\mathbb{R} \setminus \left\{\ \pi/2 + k\pi \mid k \in \mathbb{Z}\ \right\}.$
@@ -350,13 +346,7 @@ For the trigonometric functions, the following domains apply:
 
 ## Operations between functions
 
-Let $f$ and $g$ have domains $X_1 \subseteq \mathbb{R}$ and $X_2 \subseteq \mathbb{R},$ respectively:
-
-$$
-f \colon X_1 \to \mathbb{R} \quad \text{and} \quad g \colon X_2 \to \mathbb{R}
-$$
-
-Their common domain is $X = X_1 \cap X_2.$
+Let $f \colon X_1 \to \mathbb{R}$ and $g \colon X_2 \to \mathbb{R},$ where $X_1 \subseteq \mathbb{R}$ and $X_2 \subseteq \mathbb{R},$ and set $X=X_1 \cap X_2.$
 
 The sum, difference, and product are defined pointwise on $X:$
 
@@ -368,18 +358,14 @@ $$
 \end{align}
 $$
 
-The quotient of two functions is defined by:
+The quotient of two functions $f(x)$ and $g(x)$ has domain $\{\ x \in X \mid g(x) \neq 0 \ \}.$ and is defined by:
 
 $$
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}
 $$
 
-The quotient has domain $\{\ x \in X \mid g(x) \neq 0 \ \}.$
-
-The domain of the composition is determined by a different condition. It consists of the points of $X_1$ whose images under $f$ belong to $X_2:$
+Another operation between functions is [composition](../composite-functions/). If $f \colon A \to B$ and $g \colon B \to C,$ then the composite $g \circ f$ applies $f$ first and then applies $g$ to the result:
 
 $$
-C = \{\ x \in X_1 \mid f(x) \in X_2 \ \}
+(g \circ f)(x)=g(f(x))
 $$
-
-For every $x \in C,$ the [composition](../composite-functions/) is $(g \circ f)(x) = g(f(x)).$
