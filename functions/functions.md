@@ -18,14 +18,12 @@ $$
 f \colon A \to B
 $$
 
-+ The set $A$ is called the [domain](../determining-the-domain-of-a-function/) of the function.
++ The set $A$ is the [domain](../determining-the-domain-of-a-function/) of the function.
 + The set $B$ is the codomain.
 + For every $x \in A,$ the unique assigned value $f(x) \in B$ is called the image of $x$ under $f.$
 + When the output is denoted by $y = f(x),$ the variable $x$ is the independent variable and $y$ is the dependent variable.
 
 For example, let $f \colon \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x - 1.$ The notation $x \mapsto 2x - 1$ describes the same assignment. Substituting $3$ for $x$ gives $f(3) = 2 \cdot 3 - 1 = 5.$ The symbol $f$ denotes the whole function, while $f(3)$ denotes one value of that function.
-
-The assignment may be specified by a formula, a table, a diagram, or a [rule defined by cases](../piecewise-functions/).
 
 ![IMG. 1](svg/functions-1.svg)
 
@@ -69,36 +67,13 @@ A constant function is not injective when $A$ has more than one element, and it 
 
 - - -
 
-The [floor and ceiling functions](../floor-and-ceiling-functions/) from $\mathbb{R}$ to $\mathbb{Z}$ are surjective but not injective. For either function, the preimage of every integer is a half-open interval of length $1.$
-
-A bijection $A \to B$ proves $|A| = |B|,$ while an injection $A \to B$ proves $|A| \leq |B|.$ For infinite sets, these implications yield the criteria described in [cardinality and countable sets](../cardinality-and-countable-sets/).
-
-- - -
-
-A function $f \colon A \to B$ is bijective if and only if it has a two-sided inverse, that is, if there exists a function $g \colon B \to A$ such that:
-
-$$(g \circ f)(x) = x, \quad \forall \ x \in A$$
-$$(f \circ g)(y) = y, \quad \forall \ y \in B$$
-
-The symbol $\circ$ denotes function [composition](../composite-functions/). Thus $(g \circ f)(x) = g(f(x)),$ which means that $f$ is applied first and $g$ is applied to the result. The right-hand sides are the identity functions on $A$ and $B,$ so the two conditions read $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B.$ Whenever such a function $g$ exists, it is unique. It is the [inverse](../inverse-function/) of $f$ and is denoted by $f^{-1}.$
-
-> For any base $a > 0$ with $a \neq 1,$ the [exponential function](../exponential-function/) $x \mapsto a^x$ from $\mathbb{R}$ to $(0,+\infty)$ and the [logarithmic function](../logarithmic-function/) $\log_a$ from $(0,+\infty)$ to $\mathbb{R}$ are inverses.
-
-- - -
-
-A function that is not injective on all of $A$ can still be inverted on a smaller domain. Given $E \subseteq A,$ the restriction $f|_E$ agrees with $f$ at every point of $E$ and is defined by:
+Restricting the domain can make a non-injective function injective. Given $E \subseteq A,$ the restriction $f|_E$ agrees with $f$ at every point of $E$ and is defined by:
 
 $$
 f|_E \colon E \to B, \quad f|_E(x) = f(x)
 $$
 
-If $f$ is injective on $E,$ the same assignment, now with codomain $f(E),$ defines a bijection from $E$ to $f(E),$ and this bijection has an inverse. The sine function is not injective on $\mathbb{R}.$ Its restriction to $[-\pi/2, \pi/2],$ with codomain $[-1, 1],$ is the function:
-
-$$
-\sin|_{[-\frac{\pi}{2}, \frac{\pi}{2}]} \colon [-\frac{\pi}{2}, \frac{\pi}{2}] \to [-1, 1]
-$$
-
-This restriction is bijective, and its inverse is the [arcsine function](../arcsine-function/) $\arcsin \colon [-1, 1] \to [-\pi/2, \pi/2].$
+If $f$ is injective on $E,$ the same assignment with codomain $f(E)$ defines a bijection from $E$ to $f(E).$ Every bijection has an [inverse function](../inverse-function/).
 
 ## What is not a function
 
@@ -166,34 +141,26 @@ $$
 
 The graph of the function then meets the $x$-axis at $(a, 0).$ Finding the zeros is equivalent to solving the [equation](../equations/) $f(x) = 0.$ In [sign analysis](../sign-analysis-in-inequalities/), every zero must be examined as a possible boundary between positive and negative values, although the sign need not change there.
 
-## Symmetric functions
+## Symmetric and bounded functions
 
 [Even and odd functions](../even-and-odd-functions/) describe the behavior of a function under the change $x \mapsto -x.$ Let $A \subseteq \mathbb{R}$ be symmetric with respect to the origin, meaning $x \in A \Rightarrow -x \in A.$ For a function $f \colon A \to \mathbb{R},$ the two cases are:
 
-+ The function is even if $f(-x) = f(x)$ for all $x \in A.$
-+ The function is odd if $f(-x) = -f(x)$ for all $x \in A.$
++ The function is even if $f(-x) = f(x)$ for all $x \in A$ (symmetric with respect to the $y$-axis).
++ The function is odd if $f(-x) = -f(x)$ for all $x \in A$ (symmetric with respect to the origin)
 
-The graph of an even function is symmetric with respect to the $y$-axis, while the graph of an odd function is symmetric with respect to the origin. For the [power function](../power-function/) $f(x) = x^n,$ where $n$ is a positive integer, the identity $f(-x) = (-1)^nx^n$ shows that $f$ is even exactly when $n$ is even and odd exactly when $n$ is odd.
+- - -
 
-## Bounded functions
-
-For a function $f \colon A \to \mathbb{R}$ with $A \subseteq \mathbb{R},$ boundedness is defined as follows:
-
-+ The function is bounded above if there exists $M \in \mathbb{R}$ such that $f(x) \leq M$ for all $x \in A.$
-+ The function is bounded below if there exists $m \in \mathbb{R}$ such that $m \leq f(x)$ for all $x \in A.$
-+ The function is bounded if it satisfies both conditions, so that $m \leq f(x) \leq M$ for all $x \in A.$
-
-Boundedness means that the range lies in some [bounded interval](../intervals/) $[m, M].$ It does not imply the existence of a global [maximum or minimum](../maximum-minimum-and-inflection-points/).
-
-A global maximum is an [upper bound](../supremum-and-infimum/) attained by the function, and a global minimum is a lower bound attained by the function. A bounded function need not have either one. The [arctangent function](../arctangent-function/) is an example:
+A function $f \colon A \to \mathbb{R}$ with $A \subseteq \mathbb{R}$ is bounded if there exist $m, M \in \mathbb{R}$ such that:
 
 $$
-f(x) = \arctan x
+m \leq f(x) \leq M \quad \text{for every } x \in A
 $$
 
-It satisfies $-\pi/2 < \arctan x < \pi/2$ for every real $x,$ so it is bounded. It has neither a global maximum nor a global minimum, because $\arctan x \to \pi/2$ as $x \to +\infty$ and $\arctan x \to -\pi/2$ as $x \to -\infty,$ but neither limiting value is attained.
+The function is bounded above if there exists $M \in \mathbb{R}$ such that $f(x) \leq M$ for every $x \in A,$ and bounded below if there exists $m \in \mathbb{R}$ such that $m \leq f(x)$ for every $x \in A.$
 
-## Monotone functions
+Boundedness means that the range lies in some [bounded interval](../intervals/) $[m, M].$ It does not imply the existence of a global [maximum or minimum](../maximum-minimum-and-inflection-points/). A global maximum is an [upper bound](../supremum-and-infimum/) attained by the function, and a global minimum is a lower bound attained by the function (the [arctangent](../arctangent-function/) is an example).
+
+## Monotone and periodic functions
 
 [Increasing, decreasing, and monotone functions](../increasing-and-decreasing-functions/) compare function values at ordered points. For a function $f \colon A \to \mathbb{R},$ the inequality in each of the first four definitions below must hold for every pair $x_1, x_2 \in A$ with $x_1 < x_2:$
 
@@ -204,7 +171,7 @@ It satisfies $-\pi/2 < \arctan x < \pi/2$ for every real $x,$ so it is bounded. 
 + The function is monotone if it is increasing or decreasing throughout its domain.
 + The function is strictly monotone if it is strictly increasing or strictly decreasing throughout its domain.
 
-## Periodic functions
+- - -
 
 A function $f \colon X \to \mathbb{R}$ is periodic if there exists $T > 0$ for which the translation $x \mapsto x + T$ maps $X$ onto itself and the following identity holds for every $x \in X:$
 
@@ -214,15 +181,19 @@ $$
 
 Every positive $T$ satisfying these conditions is a period of $f.$ If the set of positive periods has a least element, that element is the fundamental period. The [sine and cosine functions](../sine-and-cosine/) both have fundamental period $2\pi.$
 
-## Classification of functions
+## Algebraic and transcendental functions
 
-A real-valued function $f$ on a non-degenerate interval is algebraic if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ throughout the interval. For example, on $[0, +\infty),$ the function $f(x) = \sqrt{x}$ satisfies $f(x)^2 - x = 0.$ Common classes of algebraic functions include:
+One way to classify continuous real functions is through polynomial relations. Let $f \colon D \to \mathbb{R},$ where $D \subseteq \mathbb{R}$ contains a non-degenerate [interval](../intervals). The function is algebraic if there is a nonzero polynomial $P$ in two variables, with real coefficients and positive degree in $y,$ such that $P(x, f(x)) = 0$ for every $x \in D.$ For example, $f(x) = \sqrt{x}$ is algebraic on $[0, +\infty)$ because $f(x)^2 - x = 0.$
 
-+ [Polynomial functions](../polynomial-function/) have a [polynomial](../polynomials/) expression in $x$ with constant coefficients.
-+ [Rational functions](../rational-functions/) are ratios of two polynomials.
-+ Functions obtained from rational functions through finitely many arithmetic operations and [root extractions](../radicals/) are algebraic. Expressions such as $\sqrt{x}$ belong to the narrower elementary class of [irrational functions](../irrational-functions/).
+Every [polynomial function](../polynomial-function/) is [rational](../rational-functions/), since it can be written with denominator $1,$ and every rational function $f(x) = N(x)/Q(x)$ is algebraic because $Q(x)f(x) - N(x) = 0.$ Hence:
 
-These classes do not exhaust all algebraic functions. Some algebraic functions cannot be constructed from rational functions by finitely many arithmetic operations and root extractions. A transcendental function is not algebraic. The functions $x \mapsto a^x$ and $x \mapsto \log_a x,$ where $a > 0$ and $a \neq 1,$ together with sine and cosine, are transcendental.
+$$
+\text{polynomial functions} \subseteq \text{rational functions} \subseteq \text{algebraic functions}
+$$
+
+The [irrational functions](../irrational-functions/) considered here form a subclass of the non-rational algebraic functions. Their simplified expressions contain the variable in a radical and use finitely many root extractions. They do not exhaust the algebraic functions, since some algebraic functions cannot be expressed by radicals.
+
+A continuous real function that satisfies no such polynomial relation is transcendental. Standard elementary examples include [exponential](../exponential-function/) and [logarithmic](../logarithmic-function/) functions, [trigonometric](../sine-and-cosine/) and inverse trigonometric functions, and [hyperbolic functions](../hyperbolic-sine-and-cosine/). In this context, transcendental means non-algebraic, not non-elementary.
 
 ## Domain of the main functions
 
@@ -371,13 +342,11 @@ The strict inequality for $\alpha < 0$ excludes the base $0$ because the power w
 
 For the trigonometric functions, the following domains apply:
 
-+ $y = \sin x$ and $y = \cos x$ have domain $\mathbb{R}.$
++ The [sine function](../sine-function/) $y = \sin x$ and the [cosine function](../cosine-function/) $y = \cos x$ have domain $\mathbb{R}.$
 + The [tangent function](../tangent-function/) $y = \tan x$ has domain $\mathbb{R} \setminus \left\{\ \pi/2 + k\pi \mid k \in \mathbb{Z}\ \right\}.$
 + The [cotangent function](../cotangent-function/) $y = \cot x$ has domain $\mathbb{R} \setminus \left\{\ k\pi \mid k \in \mathbb{Z}\ \right\}.$
-+ $y = \arcsin x$ and $y = \arccos x$ have domain $[-1, 1].$
++ The [arcsine function](../arcsine-function/) $y = \arcsin x$ and the [arccosine function](../arccosine-function/) $y = \arccos x$ have domain $[-1, 1].$
 + The [arctangent function](../arctangent-function/) $y = \arctan x$ and the [arccotangent function](../arccotangent-function/) $y = \mathrm{arccot}\ x$ have domain $\mathbb{R}.$
-
-> For an expression formed from several elementary functions, the domain is the set of real numbers satisfying every restriction imposed by its components. [Combine the domain restrictions](../determining-the-domain-of-a-function/) before solving [equations](../equations/) or [inequalities](../inequalities/) and before [analyzing a function's graph](../analyzing-the-graphs-of-functions/).
 
 ## Operations between functions
 
