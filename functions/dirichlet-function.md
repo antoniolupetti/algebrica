@@ -7,100 +7,66 @@ tags:
   - discontinuity
   - lebesgue-integration
   - riemann-integrability
-  - thomae-function
 ---
 ## Definition
 
-The Dirichlet function is defined on $\mathbb{R}$ by the following [piecewise rule](../piecewise-functions/):
+The Dirichlet function $D : \mathbb{R} \to \{0, 1\}$ is the indicator function $\mathbf{1}_{\mathbb{Q}}$ of the [rational numbers](../rational-numbers/). It assigns the value $1$ to rational numbers and $0$ to [irrational numbers](../irrational-numbers/):
 
 $$
-D(x) =
+D(x) = \mathbf{1}_{\mathbb{Q}}(x) =
 \begin{cases}
 1 & \text{if } x \in \mathbb{Q} \\[6pt]
 0 & \text{if } x \in \mathbb{R} \setminus \mathbb{Q}
 \end{cases}
 $$
 
-At first glance this appears to be an almost trivial definition, a simple distinction between [rationals](../rational-numbers/) and [irrationals](../irrational-numbers/). The function is [even](../even-and-odd-functions/), and every nonzero rational is a period of $D,$ since $x + r$ is rational exactly when $x$ is, so $D$ is periodic without a fundamental period. Yet this simplicity conceals an extremely irregular analytic behaviour, which has made this function a standard reference object in [integration](../definite-integrals/) theory and real analysis.
+## Properties
+
++ [Domain](../determining-the-domain-of-a-function/): $\mathbb{R}$
++ Range: $\{0, 1\}$
++ Boundedness: $0 \leq D(x) \leq 1$ for every $x \in \mathbb{R}$
++ Parity: [even](../even-and-odd-functions/), with $D(-x) = D(x)$
++ Periodicity: the set of nonzero periods is $\mathbb{Q} \setminus \{0\},$ and no fundamental period exists.
+
+If $r \in \mathbb{Q},$ then $x + r$ is rational exactly when $x$ is, and $D(x + r) = D(x).$ Conversely, suppose that $D(x + r) = D(x)$ for every $x \in \mathbb{R}.$ Setting $x = 0$ gives $D(r) = D(0) = 1,$ hence $r \in \mathbb{Q}.$ Thus the nonzero periods are the nonzero rational numbers. Since the positive rationals have no least element, $D$ has no fundamental period.
+
+$\mathbb{Q}$ and $\mathbb{R} \setminus \mathbb{Q}$ are dense in the [real line](../real-numbers/). Fix $x_0 \in \mathbb{R}$ and take $\varepsilon = 1/2.$ If $x_0$ is rational, every $\delta$-neighborhood of $x_0$ contains an irrational number $x$ satisfying $0 < |x - x_0| < \delta.$ The function values satisfy:
+
+$$|D(x) - D(x_0)| = 1 > \varepsilon$$
+
+If $x_0$ is irrational, the argument uses a rational number $x$ in the $\delta$-neighborhood. Thus the $\varepsilon$-$\delta$ condition for [continuity](../continuous-functions/) fails at every $x_0,$ and $D$ is nowhere continuous.
 
 - - -
 
-A notable property of $D$ is its [discontinuity](../discontinuities-of-real-functions/) at every point of $\mathbb{R}.$ This result follows from the mutual density of $\mathbb{Q}$ and $\mathbb{R} \setminus \mathbb{Q}$ in the [real line](../real-numbers/).
+For each positive integer $k,$ define the function $g_k$ by:
 
-For any fixed point $x_0 \in \mathbb{R}$ and any $\varepsilon > 0,$ the [interval](../intervals/) $(x_0 - \varepsilon, x_0 + \varepsilon)$ contains both rational and irrational numbers. Therefore, there is no neighborhood of $x_0$ on which $D$ is constant, and any [sequence](../convergent-and-divergent-sequences/) converging to $x_0$ can be constructed so that the values of $D$ alternate indefinitely between $0$ and $1.$ As a result, the following [limit](../limits/):
+$$g_k(x) := \lim_{j \to \infty} \cos^{2j}(k!\pi x)$$
 
-$$\lim_{x \to x_0} D(x)$$
+Each $g_k$ is of Baire class one because it is a pointwise limit of continuous functions. If $x = p/q$ is rational, with $p \in \mathbb{Z}$ and $q \in \mathbb{N}_{>0},$ then $k!x$ is an integer for every $k \geq q,$ and $g_k(x) = 1.$ If $x$ is irrational, then $|\cos(k!\pi x)| < 1$ for every $k,$ and $g_k(x) = 0.$ The two cases give the identity:
 
-does not exist for any $x_0,$ establishing discontinuity at every point. Since a function that is discontinuous everywhere cannot be [Riemann integrable](../riemann-integrability-criteria/) on any non-degenerate interval, this can be confirmed by noting that the upper and lower Darboux sums remain fixed at $1$ and $0,$ respectively, for every partition of the interval.
+$$D(x) = \lim_{k \to \infty} g_k(x)$$
 
-> Darboux sums are sums obtained by multiplying the maximum or minimum value of a function on each subinterval of a partition by the width of that subinterval. These sums are used to approximate the integral from above and below.
+Since $D$ is a pointwise limit of functions of Baire class one, it is of Baire class at most two. If it were of class one, it would be continuous on a dense set, but $D$ is nowhere continuous. Hence its Baire class is two.
 
-- - -
+Differentiability at a point implies continuity at that point. Since $D$ is nowhere continuous, it is nowhere [differentiable](../derivatives/).
 
-Dirichlet's original construction expresses $D$ as a double limit of continuous functions:
+## Riemann and Lebesgue integrability
 
-$$D(x) = \lim_{k \to \infty} \lim_{j \to \infty} \cos^{2j}(k!\pi x)$$
-
-For a rational $x,$ once $k$ is large enough the number $k!x$ is an integer, so $\cos(k!\pi x) = \pm 1$ and the inner limit equals $1.$ For an irrational $x,$ the number $k!x$ is never an integer, hence $|\cos(k!\pi x)| < 1$ and the inner limit equals $0.$ This places $D$ in Baire class two. It cannot belong to class one, because a Baire-one function is continuous on a dense set of points, while $D$ is continuous nowhere.
-
-## Non-integrability in the Riemann sense
-
-Consider an interval $[a, b]$ with $a < b$ and any partition $\mathcal{P}$ such that:
-
-$$\mathcal{P} = \{\ a = x_0 < x_1 < \cdots < x_n = b \ \}$$
-
-On each subinterval $[x_{i-1}, x_i],$ the [supremum](../supremum-and-infimum/) of $D$ is $1$ due to the density of the rationals, while the infimum is $0$ due to the density of the irrationals. Therefore:
-
-$$U(D, \mathcal{P}) = \sum_{i=1}^{n} 1 \cdot (x_i - x_{i-1}) = b - a$$
-
-$$L(D, \mathcal{P}) = \sum_{i=1}^{n} 0 \cdot (x_i - x_{i-1}) = 0$$
-
-Because $U(D, \mathcal{P}) - L(D, \mathcal{P}) = b - a > 0$ for every partition $\mathcal{P},$ the Riemann criterion is not satisfied. Consequently, the function is not integrable in the classical sense on any non-trivial interval.
-
-- - -
-
-Lebesgue's integration theory introduces a significant shift in perspective. The set $\mathbb{Q}$ is countable and therefore has Lebesgue measure zero: $\lambda(\mathbb{Q}) = 0.$ It follows that $D(x) = 0$ almost everywhere with respect to the Lebesgue measure, and since a function that equals zero almost everywhere has integral zero, one obtains
-
-$$\int_{a}^{b} D(x) \ d\lambda = 0$$
-
-for every interval $[a, b].$ This is one of the more immediate illustrations of the greater reach of Lebesgue's theory relative to Riemann's, since by construction it assigns no weight to sets of measure zero, even when those sets are dense in the real line.
-
-## Differentiability
-
-The question of whether $D$ possesses a [derivative](../derivatives/) at any point has a definitive answer, $D$ is nowhere differentiable. The derivative of $D$ at a point $x_0$ is defined as the limit:
-
-$$D'(x_0) = \lim_{h \to 0} \frac{D(x_0 + h) - D(x_0)}{h}$$
-
-provided this limit exists. Since differentiability implies [continuity](../continuous-functions/) and $D$ is discontinuous at every point of $\mathbb{R},$ it follows immediately that $D$ cannot be differentiable anywhere.
-
-This conclusion can also be seen directly through [difference quotients](../difference-quotient/). Fix any $x_0$ and consider two sequences $(r_n)$ and $(s_n)$ converging to $x_0,$ with $r_n \in \mathbb{Q}$ and $s_n \in \mathbb{R} \setminus \mathbb{Q}$ for all $n.$ If $x_0 \in \mathbb{Q},$ then:
-
-$$\frac{D(r_n) - D(x_0)}{r_n - x_0} = \frac{1 - 1}{r_n - x_0} = 0$$
-
-$$\frac{D(s_n) - D(x_0)}{s_n - x_0} = \frac{0 - 1}{s_n - x_0} = \frac{-1}{s_n - x_0}$$
-
-The second expression is unbounded as $s_n \to x_0.$ If instead $x_0 \in \mathbb{R} \setminus \mathbb{Q},$ then:
-
-$$\frac{D(r_n) - D(x_0)}{r_n - x_0} = \frac{1 - 0}{r_n - x_0} = \frac{1}{r_n - x_0}$$
-
-$$\frac{D(s_n) - D(x_0)}{s_n - x_0} = \frac{0 - 0}{s_n - x_0} = 0$$
-
-It is now the first expression that grows without bound as $r_n \to x_0.$ In either case, the difference quotient admits no finite limit, confirming that $D'(x_0)$ does not exist.
-
-## The Thomae function
-
-A function closely related to the Dirichlet function, known as the Thomae function or the popcorn function, is defined as follows:
+Let $[a, b]$ be a compact interval with $a < b.$ Every subinterval of a partition $\mathcal{P}$ contains rational and irrational points, so the [supremum](../supremum-and-infimum/) of $D$ on that subinterval is $1$ and the infimum is $0.$ For every partition, the upper and lower Darboux sums are:
 
 $$
-T(x) =
-\begin{cases}
-\dfrac{1}{q} & \text{if } x = \dfrac{p}{q} \\[6pt]
-0 & \text{if } x \in \mathbb{R} \setminus \mathbb{Q}
-\end{cases}
+\begin{align}
+U(D, \mathcal{P}) &= b - a \\[6pt]
+L(D, \mathcal{P}) &= 0
+\end{align}
 $$
 
-We have $p \in \mathbb{Z},$ $q \in \mathbb{N}_{>0},$ and $\gcd(|p|, q) = 1,$ that is, the fraction $p/q$ is in lowest terms.
+Since $a < b,$ these sums are unequal. The [Darboux criterion](../riemann-integrability-criteria/) fails, so $D$ is not Riemann integrable on any non-degenerate compact interval.
 
-In contrast to the Dirichlet function, the Thomae function is continuous at every irrational point and discontinuous at every rational point. This behaviour exemplifies the boundary case allowed by the Lebesgue criterion for Riemann integrability, where a Riemann-integrable function may be discontinuous on a set of measure zero, and the rationals, though dense, constitute precisely such a set.
+- - -
 
-Consequently, the Thomae function is Riemann integrable, with integral equal to zero on every interval, and is a well-behaved counterpart to the Dirichlet function.
+The set $\mathbb{Q}$ is countable, hence Borel, and has Lebesgue measure zero. Its indicator function $D$ is measurable and equals zero almost everywhere. For every Lebesgue-measurable set $E \subseteq \mathbb{R},$ the integral of $D$ over $E$ is:
+
+$$\int_E D(x) \ d\lambda = \lambda(E \cap \mathbb{Q}) = 0$$
+
+Taking $E = \mathbb{R}$ shows that $D$ is Lebesgue integrable on $\mathbb{R},$ with integral zero.
