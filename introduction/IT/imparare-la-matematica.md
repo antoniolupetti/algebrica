@@ -84,4 +84,4 @@ Quello che voglio dire è che le difficoltà che molti incontrano nello studio d
 Quando ho iniziato a scrivere le prime voci di Algebrica, nel maggio del 2023, ho cercato di strutturare i contenuti in modo che fossero facilmente fruibili, schematizzabili e memorizzabili, eliminando il superfluo e mantenendo ciò che ritenevo realmente necessario. Spero che questo approccio possa aiutare le tante persone che utilizzano il sito regolarmente a comprendere meglio la matematica e a superare le barriere che spesso la fanno apparire più difficile, distante e inaccessibile di quanto sia realmente.
 
 
-> Author's note: this piece was translated from Italian and may contain some linguistic nuances that do not fully reflect the original version, as English is not my native language. Please don't be too harsh.
+> Author's note: this piece was translated from Italian and may contain some linguistic nuances that do not fully reflect the original version, as English is not my native language. Please don't be too harsh. Copyright © Antonio Lupetti. This material may not be reproduced without prior permission.

@@ -126,4 +126,5 @@ What I mean is that the difficulties many people encounter when studying mathema
 When I started writing the first entries of Algebrica, in May 2023, I tried to structure the content so that it would be easy to use, easy to set out in schematic form and easy to memorise, cutting away the superfluous and keeping what I judged truly necessary. I hope this approach can help the many people who use the site regularly to understand mathematics better and to get past the barriers that often make it appear harder, more distant and more inaccessible than it really is.
 
 
-> Author's note: this piece was translated from Italian and may contain some linguistic nuances that do not fully reflect the original version, as English is not my native language. Please don't be too harsh.
+> Author's note: this piece was translated from Italian and may contain some linguistic nuances that do not fully reflect the original version, as English is not my native language. Please don't be too harsh. 
+> Copyright © Antonio Lupetti. This material may not be reproduced without prior permission.
