@@ -107,6 +107,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Optimization
 
 + [Algorithms for Optimization](https://algorithmsbook.com/optimization/files/optimization.pdf), Mykel J. Kochenderfer, Tim A. Wheeler
++ [Branch-and-Price](https://link.springer.com/content/pdf/10.1007/978-3-031-96917-1.pdf), Jacques Desrosiers, Marco Lübbecke, Guy Desaulniers, Jean Bertrand Gauthier
 + [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf), Stephen Boyd, Lieven Vandenberghe
 + [Convex Optimization: Algorithms and Complexity](http://sbubeck.com/Bubeck15.pdf), Sébastien Bubeck
 + [Convex Optimization: EE227BT Lecture Notes](https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf), Laurent El Ghaoui
