@@ -88,6 +88,7 @@ Being able to solve a linear system with [Cramer's rule](../cramers-rule/) or an
 $$\log_a(x \cdot \cos x )$$
 
 If one does not know the property of the logarithm of a product, it is hard to guess that the expression can be rewritten in the equivalent form:
+
 $$\log_a(x \cdot \cos x)=\log_a x+\log_a(\cos x)$$
 
 It has to be taken in and memorised first. Only then can intuition establish the necessary connections and suggest to us that, in order to work through a given expression, we may fall back on one of the two equivalent formulations. Which of the two to use depends on the context, and the more one practises, the more one becomes able to pick the appropriate one automatically.
@@ -95,6 +96,7 @@ It has to be taken in and memorised first. Only then can intuition establish the
 Let us take another example, with an integrand containing the following expression:
 
 $$\sqrt{a^2 - x^2}$$
+
 Integrals of this kind are typically solved by substitution, and the most immediate one consists in setting $x=a \sin t$ and, differentiating with respect to $t$, setting $dx = a \cos t \ dt.$ The reason for this choice lies in the [Pythagorean identity](../pythagorean-identity/) $\sin^{2}x + \cos^{2}x = 1$, which in this case allows the expression under the root to be simplified. Here too intuition is not much of an ally if it has not first been trained, through practice, to recognise this kind of recurring pattern in integrals.
 
 Contrary to common belief, most of the mathematical problems one faces from secondary school through the first years of university involve little more than mechanical procedures. But, as with learning to play the piano, it takes a great deal of practice to apply those procedures with ease and acquire the necessary confidence.
