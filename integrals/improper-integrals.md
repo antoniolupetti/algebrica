@@ -38,15 +38,11 @@ A direct calculation gives $\left[-x^{-1}\right]_{-1}^{1} = -2,$ which is clearl
 
 ## Improper integrals over unbounded intervals
 
-Suppose $f$ is continuous on $[a, +\infty).$ The integral:
+Suppose $f$ is Riemann integrable on every interval $[a,t]$ with $t>a.$ The improper integral over $[a,+\infty)$ is defined by the [limit](../limits/):
 
-$$\int_a^{+\infty} f(x) \ dx$$
+$$\int_a^{+\infty} f(x) \ dx := \lim_{t \to +\infty} \int_a^t f(x) \ dx$$
 
-is defined as the [limit](../limits/):
-
-$$\int_a^{+\infty} f(x) \ dx := \lim_{b \to +\infty} \int_a^b f(x) \ dx$$
-
-provided that this limit exists and is finite. The integration is carried out up to a finite upper bound $b,$ and $b$ is then allowed to grow without bound.
+The integration is carried out up to a finite upper bound $t,$ and $t$ is then allowed to grow without bound.
 
 ![Img. 1](svg/improper-integrals-1.svg)
 
@@ -55,19 +51,15 @@ provided that this limit exists and is finite. The integration is carried out up
 
 - - -
 
-The same idea applies when the lower limit is $-\infty.$ For an integral of the form:
+The same idea applies when the lower limit is $-\infty.$ Suppose $f$ is Riemann integrable on every interval $[t,b]$ with $t<b.$ The corresponding definition is:
 
-$$\int_{-\infty}^b f(x) \ dx$$
+$$\int_{-\infty}^b f(x) \ dx := \lim_{t \to -\infty} \int_t^b f(x) \ dx$$
 
-the definition is symmetric:
-
-$$\int_{-\infty}^b f(x) \ dx := \lim_{a \to -\infty} \int_a^b f(x) \ dx$$
-
-For integrals over the entire real line, neither endpoint is finite, so a single limit no longer suffices. The integral is split at an arbitrary point $c$ and each half is handled separately:
+For integrals over the entire real line, neither endpoint is finite, so a single limit no longer suffices. Choose an arbitrary point $c$ and define:
 
 $$\int_{-\infty}^{+\infty} f(x) \ dx = \int_{-\infty}^c f(x) \ dx + \int_c^{+\infty} f(x) \ dx$$
 
-for some real $c,$ provided that both integrals converge separately. The result does not depend on the choice of $c.$
+The improper integral over the real line converges only when both integrals on the right converge separately. In that case, the result does not depend on the choice of $c.$
 
 ## Example 1
 
@@ -107,19 +99,23 @@ The limit does not exist as a finite value, and therefore the integral diverges.
 
 ## Improper integrals with infinite discontinuities
 
-A second type of improper integral occurs when $f$ is unbounded at some point in the interval. Suppose $f$ is continuous on $(a, b]$ but becomes unbounded as $x \to a^+.$ The integral is defined as:
+A second type of improper integral occurs when $f$ is unbounded at some point in the interval. Suppose $f$ becomes unbounded as $x \to a^+$ but is Riemann integrable on every interval $[t,b]$ with $a<t<b.$ The improper integral is defined by:
 
 $$\int_a^b f(x) \ dx := \lim_{t \to a^+} \int_t^b f(x) \ dx$$
 
-provided that the limit exists and is finite. Symmetrically, if $f$ is continuous on $[a, b)$ but becomes unbounded as $x \to b^-$:
+The improper integral converges when the limit exists and is finite. Symmetrically, suppose $f$ becomes unbounded as $x \to b^-$ but is Riemann integrable on every interval $[a,t]$ with $a<t<b.$ The corresponding definition is:
 
 $$\int_a^b f(x) \ dx := \lim_{t \to b^-} \int_a^t f(x) \ dx$$
 
-If the singularity occurs at an interior point $c \in (a, b),$ the integral is split at $c$:
+Suppose $c\in(a,b)$ is the only singular point, and $f$ is Riemann integrable on every interval $[a,t]$ with $a<t<c$ and every interval $[s,b]$ with $c<s<b.$ The definition uses two independent one-sided limits:
 
-$$\int_a^b f(x) \ dx = \int_a^c f(x) \ dx + \int_c^b f(x) \ dx$$
+$$
+\int_a^b f(x) \ dx
+:=\lim_{t\to c^-}\int_a^t f(x) \ dx
++\lim_{s\to c^+}\int_s^b f(x) \ dx
+$$
 
-provided that both integrals converge separately.
+The improper integral converges only when both one-sided limits exist and are finite.
 
 ## Example 3
 

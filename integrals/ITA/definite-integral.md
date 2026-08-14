@@ -18,29 +18,29 @@ tags:
 ---
 ## Don’t rush things
 
-Adrien-Marie Legendre is one of the best-known and most influential mathematicians of the eighteenth century. He was born in Paris in 1752, and around the age of thirty he began to take an interest in the theory of elliptic integrals, mathematical objects used to compute the length of an arc of an [ellipse](../ellipse/).
+Adrien-Marie Legendre è uno dei matematici più noti e influenti del Settecento. Nacque a Parigi, nel 1752 e intorno ai trent'anni iniziò ad interessarsi della teoria degli integrali ellittici, oggetti matematici utilizzati per il calcolo della lunghezza di un arco di [ellisse](../ellipse/). 
 
-The problem is not trivial, and it was even less so at the time, when no established theory for solving it yet existed. For an ellipse with semi-major axis $a$ and eccentricity $e\in[0,1),$ the perimeter is given by the following complete elliptic integral of the second kind:
+Il problema non è banale, soprattutto non lo era all'epoca, quando non esisteva ancora una teoria consolidata per la sua risoluzione. Per un'ellisse con semiasse maggiore $a$ ed eccentricità $e\in[0,1),$ il perimetro è espresso dal seguente integrale ellittico completo di seconda specie:
 
 $$
 L=4aE(e)=4a\int_{0}^{\pi/2}\sqrt{1-e^2\sin^2\theta} \ d\theta
 $$
 
-We will not deal with such complicated objects in our exposition, but will focus on the kinds of definite integrals normally covered in secondary school and in calculus courses during the first years of university. Be aware, though, that monsters of this sort exist, and that they call for methods of solution that are anything but trivial.
+Non affronteremo questi oggetti complessi nella nostra esposizione, ma ci focalizzeremo sulle tipologie di integrali definiti tipicamente trattate nelle scuole superiori e nei corsi di calcolo dei primi anni universitari. Sappiate però che certi mostri esistono e che richiedono metodi risolutivi tutt'altro che banali.
 
-In the formula, $\pi/2$ and $0$ are the limits of integration, which distinguish definite integrals from [indefinite](../indefinite-integrals/) ones, at least as far as notation goes.
+Nella formula $\pi/2$ e $0$ sono gli estremi di integrazione che differenziano, quantomeno in termini di rappresentazione, gli integrali definiti da quelli [indefiniti](../indefinite-integrals/).
 
-Returning to our story, the sources give 1786 as the year of Legendre's first publications on the theory of elliptic integrals. His research between 1811 and 1819 led to the publication of further volumes devoted to the development of the theory and to its applications. Dissatisfied with his own work, a few years later he ended up rewriting the entire corpus from scratch, and he kept it up to date until the last years of his life.
+Tornando alla nostra storia, le fonti indicano il 1786 come l'anno delle prime pubblicazioni di Legendre sulla teoria degli integrali ellittici. Le sue ricerche, tra il 1811 e il 1819, portarono alla pubblicazione di ulteriori volumi dedicati allo sviluppo della teoria e alle relative applicazioni. Non soddisfatto del proprio lavoro, qualche anno più tardi finì per riscrivere daccapo l'intero corpus, tenendolo aggiornato fino agli ultimi anni di vita. 
 
-One morning in early August, Legendre received a letter from Carl Gustav Jacobi, then twenty-two years old, which offered a new perspective on the subject and put forward a new theory that made the one Legendre had worked on for nearly forty years obsolete. The young Norwegian Niels Henrik Abel arrived at the same results.
+In una mattina d'inizio agosto, Legendre ricevette una lettera da Carl Gustav Jacobi, all'epoca ventiduenne, che offriva un cambio di prospettiva sull'argomento e proponeva una nuova teoria che rendeva obsoleta quella a cui Legendre aveva lavorato per quasi quarant'anni. Agli stessi risultati giunse il giovane norvegese Niels Henrik Abel.
 
-The sources report that Legendre openly supported the work of the two young men, even though their work had rendered four decades of his research almost entirely obsolete. Abel died at 26. Jacobi at 46. Legendre, on the other hand, lived to be eighty.
+Le fonti riferiscono che Legendre sostenne apertamente il lavoro dei due giovani, nonostante questo vanificasse quasi del tutto quattro decenni di ricerche. Abel morì a 26 anni. Jacobi a 46. Legendre arrivò, invece, ad ottant'anni.
 
-To come back to our subject, we will not need forty years to learn how to evaluate definite integrals. It will take us far less. If you have already understood what an indefinite integral is and have memorised its main properties together with the basic antiderivatives, you are well on your way. Otherwise, I advise you to stop here and take the necessary step back.
+Per tornare in argomento, a noi non serviranno quarant'anni per imparare a risolvere gli integrali definiti. Impiegheremo molto meno. Se avete già compreso cos'è un integrale indefinito e memorizzato le sue principali proprietà con le primitive fondamentali, siete già a buon punto. Altrimenti vi consiglio di fermarvi qui e di fare un necessario passo indietro.
 
-In short, a definite integral represents the accumulation of a quantity given by a function $y=f(x)$ over an interval $[a, b]$. In less precise but still valid terms, it measures the signed area between a given curve and the $x$-axis, where the portions lying above the $x$-axis are added and those below are subtracted.
+In estrema sintesi un integrale definito rappresenta l'accumulazione di una quantità data da una funzione $y=f(x)$ all'interno di un intervallo $[a, b]$. In termini meno precisi, ma comunque validi, misura l'area con segno tra una certa curva e l'asse delle $x,$ dove le porzioni che si trovano sopra l'asse $x$ si sommano mentre quelle sotto si sottraggono.
 
-This entry deals with the main definitions and properties of definite integrals, while the methods and [integration strategies](../integration-strategies/), which form the problem-solving core of integral calculus, are covered in their own sections.
+In questa entry saranno trattate le principali definizioni e proprietà degli integrali definiti, mentre i metodi e le [strategie di integrazione](../integration-strategies/), che rappresentano il fulcro risolutivo del calcolo integrale, saranno trattati nelle apposite sezioni.
 
 ## Area under a function: from curve to integral
 
