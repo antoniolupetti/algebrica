@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="314px" height="317px" viewBox="0 0 314 317" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="1.5" y="11">The functions y = x², y = x² + 2, y = x² + 4 and, more generally, </tspan>
+                <tspan x="1.5" y="24">all functions of the form y = x² + c differ only by a vertical </tspan>
+                <tspan x="1.5" y="37">translation. Since this translation does not change the slope </tspan>
+                <tspan x="1.5" y="50">of the curve, they all have the same derivative: y′ = 2x.</tspan>
+            </text>
+            <line x1="39" y1="60" x2="39" y2="111.5" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="208" y="235">y=x²</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="241" y="142">y=x²+2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="241" y="110">y=x²+2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="118" y="266">2</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="117" y="235">4</tspan>
+            </text>
+            <line x1="134" y1="263.5" x2="127" y2="263.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="133" y1="231.5" x2="126" y2="231.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M133,120.480136 L133.435788,121.254869 L137.935788,129.254869 L138.180918,129.690657 L137.309343,130.180918 L137.064212,129.745131 L133.5,123.408 L133.5,311.5 L132.5,311.5 L132.5,123.408 L128.935788,129.745131 L128.690657,130.180918 L127.819082,129.690657 L128.064212,129.254869 L132.564212,121.254869 L133,120.480136 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M257.309343,289.319082 L257.745131,289.564212 L265.745131,294.064212 L266.519864,294.5 L265.745131,294.935788 L257.745131,299.435788 L257.309343,299.680918 L256.819082,298.809343 L257.254869,298.564212 L263.591,295 L-0.5,295 L-0.5,294 L263.591,294 L257.254869,290.435788 L256.819082,290.190657 L257.309343,289.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="260" y="313">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="112" y="129">y</tspan>
+            </text>
+            <path d="M12.5,151 C54.5,244.333333 94.8333333,292 133.5,294 C157.132385,295.222365 181.262829,277.892049 205.891331,242.009053" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M218.330305,222.380243 C226.072948,209.231442 237.796179,185.438028 253.5,151" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12.5,120.5 C59.2558968,204.226136 93.7218175,250.553286 115.897762,259.48145" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M133.5,263.5 C168.184027,265.294001 203.940868,227.125693 240.770523,148.995074 M248.78626,131.397897 C250.355575,127.837213 251.926822,124.204581 253.5,120.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M12.5,88.5 C59.147561,172.080401 93.5350601,218.375798 115.662497,227.38619" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M133.5,231.5 C168.569592,233.313944 204.735983,194.272158 241.999172,114.374641 M248.487501,100.074948 C250.15615,96.298002 251.826983,92.4396861 253.5,88.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+        </g>
+    </g>
+</svg>

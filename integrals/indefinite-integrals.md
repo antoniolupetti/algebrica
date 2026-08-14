@@ -13,6 +13,62 @@ tags:
   - power-rule
   - primitive
 ---
+## A friendly introduction to integrals
+
+Integrals have a terrible reputation among secondary school students and those in the early years of university. When students first encounter them, they regard them as mathematical objects marked by an intrinsic complexity that makes them, to put it mildly, hostile.
+And that is true, at least in part.
+Take, for instance, the following [definite integral](../definite-integrals/) over the interval $[+\infty, -\infty],$ known as the Gaussian integral:
+
+$$
+\int_{-\infty}^{+\infty} e^{-x^2}\,dx = \sqrt{\pi}
+$$
+
+At first sight it may look like a harmless object, but anyone who tries to evaluate it with the elementary methods of integration gets nowhere. The commonly accepted story has it that Gauss solved it around the age of thirty, so, at least until that age, you may consider yourselves excused if you are unable to determine its value.
+Another integral to regard with reverent awe is Dirichlet's, simple in form but extremely difficult to evaluate:
+
+$$
+\int_{0}^{\infty} \frac{\sin x}{x}\,dx = \frac{\pi}{2}
+$$
+
+Fortunately, most of us are not in the running for a _Fields Medal_ and nurse more modest ambitions. For this reason, the integrals we will encounter over the course of our studies are, for the most part, within the reach of any willing student (unless they have the misfortune of running into a particularly sadistic professor along the way).
+
+The good news is that a large share of these integrals can be evaluated using mechanical procedures and a pinch of intuition, which can be developed only through [a great deal of practice](learning-mathematics.md) with the main rules of integration and the typical shortcuts that save a significant number of steps.
+
+- - -
+
+In the following paragraphs I will give a rigorous definition of integrals, in particular of the indefinite ones, which are the subject of this entry and are essential for introducing their [definite](../definite-integrals) counterparts. First, though, I prefer to offer an intuitive preamble, starting from the notion of differentiation, which, as we will see later when we discuss _primitives_, is the inverse operation of integration.
+
+Consider a simple function $y=x^2$. Its graph is a [parabola](parabola.md) passing through the origin. We know, from the study of the rules of differentiation, that its derivative is unique and equal to $y'=2x$ and that, for each value of $x$, it gives the slope of the line tangent to the graph at that point. For instance, for $x=2$ we obtain $y'(2)=2 \cdot 2 = 4.$ This means that the line tangent to the parabola at the point $(2,4)$ has slope exactly equal to $4$.
+
+![IMG. 1](svg/indefinite-integrals-1.svg)
+
+Let us now examine the opposite case, in which we are given a derivative, for instance $y'=2x,$ and we want to compute its primitive $y.$ Having seen the process in the opposite direction, by analogy and without any rule of integration at hand, we might state that its primitive is $y=x^2.$
+
+The trouble is that this answer is incomplete because one term is missing.
+
+While a function $y$ has a single derivative $y',$ a given derivative has infinitely many primitives, which differ by a constant $c.$ In the case $y'=2x,$ the correct answer would therefore have been $y=x^2 + c.$ The reason is simple, yet it is surprising how many students, even experienced ones, cannot explain it immediately. The graph will make everything clearer. If you imagine translating the graph of $y=x^2$ along the y-axis, you will obtain infinitely many graphs of the same form, corresponding to functions that differ only in the constant term.
+
+![IMG. 1](svg/indefinite-integrals-2.svg)
+
+Vertical translation, in fact, does not change the slope of the curve in any way. The functions $y=x^2$, $y=x^2+1$, $y=x^2-3$ and, more generally, all the functions of the form $y=x^2+c$ therefore have exactly the same derivative, $y'=2x$.
+
+It is precisely this simple geometric observation that explains why a function has a single derivative, while the same function can have infinitely many primitives, all differing from one another by a constant.
+
+To close this preamble, remember the following fundamental distinction: the indefinite integral determines the family of primitives of a given derivative, while the definite integral, the subject of its own entry, computes the area between a curve and the x-axis within a given interval. The following paragraphs list the main primitives and the properties of integrals. To your misfortune, you will have to learn them all by heart (I mean every single one), a necessary condition for having any chance of correctly carrying out the computations of the more complex integrals we will meet later on.
+
+I will leave you with Feynman's path integral below, one of the fundamental tools of quantum mechanics and quantum field theory. It is, of course, well beyond our reach.
+
+$$
+\langle x_f,t_f \mid x_i,t_i\rangle
+=
+\int_{x(t_i)=x_i}^{x(t_f)=x_f}
+\mathcal{D}x(t)\,
+\exp\left(\frac{i}{\hbar}S[x(t)]\right)
+$$
+
+Keep it in mind all the same, if only as a warning of what may lie ahead.
+
+
 ## Primitives
 
 Every differentiable function has a unique [derivative](../derivatives/). The inverse problem is to determine whether a given function $f$ is the derivative of some function $F$. Any such function $F$ is a primitive (or antiderivative) of $f$. Let $I$ be an open [interval](../intervals/). A differentiable function $F\colon I \to \mathbb{R}$ is a primitive of $f\colon I \to \mathbb{R}$ when the following identity holds:

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="286px" viewBox="0 0 303 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="0" y="11">The graph of the function y = x² is a parabola passing </tspan>
+                <tspan x="0" y="24">through the origin. Its derivative at a given point represents </tspan>
+                <tspan x="0" y="37">the slope of the tangent line to the curve at that point.</tspan>
+                <tspan x="2.2" y="51.6379852"></tspan>
+            </text>
+            <line x1="30.5" y1="48" x2="30.5" y2="99.5" stroke="#BEB8B7" stroke-linecap="round"></line>
+            <text font-size="13" font-weight="normal" fill="#312F2F">
+                <tspan x="32.5" y="146">y=x²</tspan>
+            </text>
+            <path d="M141.5,78.4801356 L141.935788,79.2548694 L146.435788,87.2548694 L146.680918,87.6906571 L145.809343,88.1809184 L145.564212,87.7451306 L142,81.408 L142,269.5 L141,269.5 L141,81.408 L137.435788,87.7451306 L137.190657,88.1809184 L136.319082,87.6906571 L136.564212,87.2548694 L141.064212,79.2548694 L141.5,78.4801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M265.809343,247.319082 L266.245131,247.564212 L274.245131,252.064212 L275.019864,252.5 L274.245131,252.935788 L266.245131,257.435788 L265.809343,257.680918 L265.319082,256.809343 L265.754869,256.564212 L272.091,253 L8,253 L8,252 L272.091,252 L265.754869,248.435788 L265.319082,248.190657 L265.809343,247.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="268.5" y="271">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="120.5" y="86">y</tspan>
+            </text>
+            <path d="M21,109 C26.110339,120.099994 30.0478629,128.476782 32.8125716,134.130366 M41.8635262,151.865663 C76.3997043,216.95526 109.778529,250.333372 142,252 C180.666667,254 220.666667,206.333333 262,109" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="148.5" y1="285.5" x2="282.5" y2="117.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <ellipse fill="#312F2F" cx="208.497" cy="208.5" rx="2.497" ry="2.5"></ellipse>
+        </g>
+    </g>
+</svg>

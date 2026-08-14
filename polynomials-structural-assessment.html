@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assessment strutturale &mdash; cartella polynomials</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --muted:#6b7280; --line:#e2e4e8; --bg:#ffffff; --soft:#f7f8fa;
+    --crit:#b42318; --high:#b54708; --med:#175cd3; --low:#667085; --ok:#067647;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:56px 28px 96px}
+  header{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:40px}
+  h1{font-size:2.05rem;line-height:1.2;margin:0 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:.92rem;font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif}
+  h2{font-size:1.35rem;margin:52px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:1.02rem;margin:30px 0 10px;font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif;font-weight:650}
+  p{margin:0 0 14px}
+  code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.855em;background:var(--soft);padding:1px 5px;border-radius:3px}
+  .lede{font-size:1.06rem;color:#333}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:26px 0 8px}
+  .stat{background:#fff;padding:16px 18px}
+  .stat b{display:block;font-size:1.75rem;line-height:1.1;font-family:ui-sans-serif,-apple-system,sans-serif;letter-spacing:-.02em}
+  .stat span{font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-family:ui-sans-serif,-apple-system,sans-serif}
+
+  table{width:100%;border-collapse:collapse;margin:18px 0 26px;font-size:.9rem}
+  th{text-align:left;font-family:ui-sans-serif,-apple-system,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--ink)}
+  td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:hover{background:var(--soft)}
+
+  .bar{display:flex;height:9px;background:var(--soft);border-radius:2px;overflow:hidden;min-width:104px}
+  .bar i{display:block;height:100%}
+  .lv-1{background:#d9dbe0}.lv-2{background:#a3b3cc}.lv-3{background:#5a7fb5}.lv-4{background:#1f3f70}
+
+  .tag{display:inline-block;font-family:ui-sans-serif,-apple-system,sans-serif;font-size:.68rem;font-weight:650;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .t-crit{background:#fef3f2;color:var(--crit);border:1px solid #fecdca}
+  .t-high{background:#fffaeb;color:var(--high);border:1px solid #fedf89}
+  .t-med{background:#eff8ff;color:var(--med);border:1px solid #b2ddff}
+  .t-low{background:#f6f7f9;color:var(--low);border:1px solid #e2e4e8}
+  .t-ok{background:#ecfdf3;color:var(--ok);border:1px solid #abefc6}
+
+  .gap{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 26px}
+  .gap.crit{border-color:var(--crit)}.gap.high{border-color:var(--high)}.gap.med{border-color:var(--med)}.gap.low{border-color:var(--low)}
+  .gap h4{margin:0 0 6px;font-size:1rem;font-family:ui-sans-serif,-apple-system,sans-serif;font-weight:650;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .gap p{margin:0 0 8px;font-size:.94rem}
+  .ev{font-size:.83rem;color:var(--muted);font-family:ui-sans-serif,-apple-system,sans-serif;border-top:1px dotted var(--line);padding-top:7px}
+  .ev b{color:#444;font-weight:600}
+
+  .note{background:var(--soft);border:1px solid var(--line);padding:16px 20px;margin:22px 0;font-size:.92rem}
+  .note p:last-child{margin-bottom:0}
+
+  ul{margin:0 0 16px;padding-left:20px}li{margin-bottom:6px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+  @media(max-width:720px){.cols{grid-template-columns:1fr}.wrap{padding:32px 18px 64px}}
+  footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;font-family:ui-sans-serif,-apple-system,sans-serif}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Cartella <span class="mono" style="font-size:.8em">polynomials</span> &mdash; assessment strutturale</h1>
+  <div class="sub">algebrica.org &middot; 12 agosto 2026 &middot; taratura: livello universitario &middot; 16 post, 29.024 parole</div>
+</header>
+
+<p class="lede">La cartella copre in modo completo l'algebra polinomiale elementare e arriva al livello universitario in un solo punto: la teoria della fattorizzazione unica in <span class="mono">F[x]</span>. Tutto il resto del programma standard di algebra dei polinomi (criteri di irriducibilit&agrave;, risultante e discriminante, polinomi simmetrici, campi finiti, quozienti <span class="mono">F[x]/(P)</span>) &egrave; assente o citato senza sviluppo. Nove post su sedici restano a livello pre-universitario.</p>
+
+<div class="stats">
+  <div class="stat"><b>16</b><span>post</span></div>
+  <div class="stat"><b>2</b><span>di livello universitario</span></div>
+  <div class="stat"><b>12</b><span>gap identificati</span></div>
+  <div class="stat"><b>3</b><span>link interni rotti</span></div>
+  <div class="stat"><b>4</b><span>promesse non mantenute</span></div>
+</div>
+
+<!-- ============================================ -->
+<h2>1. Mappa della copertura attuale</h2>
+
+<p>Il livello &egrave; classificato cos&igrave;: <b>1</b> algebra della scuola secondaria &middot; <b>2</b> pre-calcolo / primo anno propedeutico &middot; <b>3</b> corso universitario di algebra &middot; <b>4</b> algebra astratta con dimostrazioni complete.</p>
+
+<table>
+  <thead><tr><th style="width:31%">Post</th><th style="width:8%">Parole</th><th style="width:17%">Livello</th><th>Contenuto sostanziale</th></tr></thead>
+  <tbody>
+    <tr><td class="mono">unique-factorization-of-polynomials</td><td>1.282</td><td><span class="bar"><i class="lv-4" style="width:100%"></i></span></td><td>Unit&agrave;, associati, irriducibile = primo in F[x], lemma di Euclide, UFD, lemma di Gauss, contenuto</td></tr>
+    <tr><td class="mono">polynomials</td><td>3.036</td><td><span class="bar"><i class="lv-2" style="width:70%"></i><i class="lv-4" style="width:30%"></i></span></td><td>Hub in 15 sezioni; l'ultima (dominio euclideo, B&eacute;zout, tabella Z/F[x]) &egrave; di livello 4</td></tr>
+    <tr><td class="mono">polynomial-division</td><td>2.543</td><td><span class="bar"><i class="lv-2" style="width:62%"></i><i class="lv-3" style="width:38%"></i></span></td><td>Algoritmo di divisione, teorema del resto e del fattore, algoritmo euclideo, MCD</td></tr>
+    <tr><td class="mono">vieta-formulas</td><td>1.676</td><td><span class="bar"><i class="lv-2" style="width:70%"></i><i class="lv-3" style="width:30%"></i></span></td><td>Caso quadratico e cubico, forma generale, cenno ai polinomi simmetrici elementari</td></tr>
+    <tr><td class="mono">roots-of-a-polynomial</td><td>1.448</td><td><span class="bar"><i class="lv-2" style="width:75%"></i><i class="lv-3" style="width:25%"></i></span></td><td>Molteplicit&agrave;, teorema delle radici razionali, TFA, coniugio, panoramica dei metodi</td></tr>
+    <tr><td class="mono">partial-fraction-decomposition</td><td>2.693</td><td><span class="bar"><i class="lv-2" style="width:85%"></i><i class="lv-3" style="width:15%"></i></span></td><td>Struttura generale, quattro esempi, caso improprio, uso negli integrali</td></tr>
+    <tr><td class="mono">binomial-theorem</td><td>1.406</td><td><span class="bar"><i class="lv-2" style="width:88%"></i><i class="lv-3" style="width:12%"></i></span></td><td>Enunciato, coefficienti binomiali, dimostrazione, casi particolari</td></tr>
+    <tr><td class="mono">synthetic-division</td><td>2.230</td><td><span class="bar"><i class="lv-2" style="width:100%"></i></span></td><td>Regola di Ruffini, limiti del metodo, nota computazionale</td></tr>
+    <tr><td class="mono">trinomials</td><td>2.185</td><td><span class="bar"><i class="lv-2" style="width:100%"></i></span></td><td>Discriminante, Vieta, trinomi quadrati perfetti, riducibilit&agrave;</td></tr>
+    <tr><td class="mono">multiplying-polynomials</td><td>1.940</td><td><span class="bar"><i class="lv-1" style="width:55%"></i><i class="lv-2" style="width:45%"></i></span></td><td>Prodotto termine a termine, propriet&agrave; di anello, caso multivariato</td></tr>
+    <tr><td class="mono">adding-and-subtracting-polynomials</td><td>1.852</td><td><span class="bar"><i class="lv-1" style="width:60%"></i><i class="lv-2" style="width:40%"></i></span></td><td>Somma termine a termine, gruppo abeliano (R[x],+), pi&ugrave; indeterminate</td></tr>
+    <tr><td class="mono">factoring-polynomials-ac-method</td><td>1.636</td><td><span class="bar"><i class="lv-1" style="width:70%"></i><i class="lv-2" style="width:30%"></i></span></td><td>Metodo AC, legame con Vieta, irriducibilit&agrave; dei trinomi quadratici</td></tr>
+    <tr><td class="mono">notable-products</td><td>1.584</td><td><span class="bar"><i class="lv-1" style="width:80%"></i><i class="lv-2" style="width:20%"></i></span></td><td>Prodotti notevoli, somma e differenza di potenze n-esime</td></tr>
+    <tr><td class="mono">monomials</td><td>1.368</td><td><span class="bar"><i class="lv-1" style="width:100%"></i></span></td><td>Definizione, grado, operazioni, MCD e mcm</td></tr>
+    <tr><td class="mono">binomials</td><td>1.217</td><td><span class="bar"><i class="lv-1" style="width:100%"></i></span></td><td>FOIL, propriet&agrave; distributiva, prodotti notevoli</td></tr>
+    <tr><td class="mono">completing-the-square</td><td>928</td><td><span class="bar"><i class="lv-1" style="width:100%"></i></span></td><td>Procedimento, interpretazione geometrica, formula quadratica</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <p><b>Forma della distribuzione.</b> Nove post su sedici stanno interamente a livello 1&ndash;2. Il salto verso il livello 4 avviene in un unico post e in una sezione finale di <span class="mono">polynomials.md</span>. Non esiste una fascia intermedia: chi arriva da <span class="mono">trinomials</span> non ha alcun percorso graduale verso <span class="mono">unique-factorization-of-polynomials</span>.</p>
+</div>
+
+<!-- ============================================ -->
+<h2>2. Argomenti mancanti</h2>
+
+<div class="gap crit">
+  <h4>Criteri di irriducibilit&agrave; su <span class="mono">Q</span> <span class="tag t-crit">critico</span></h4>
+  <p>Criterio di Eisenstein, riduzione modulo un primo, sostituzione traslata <span class="mono">x &rarr; x+1</span>, teorema delle radici razionali come criterio per gradi 2 e 3. &Egrave; il complemento naturale della fattorizzazione unica: il post sulla UFD dimostra che la fattorizzazione esiste ed &egrave; unica, ma nessun post spiega come stabilire se un dato polinomio &egrave; irriducibile.</p>
+  <p class="ev"><b>Evidenza.</b> "Eisenstein" compare una sola volta in tutto il repository (291 post), in una frase incidentale di <span class="mono">polynomials.md</span>. La chiusura di <span class="mono">unique-factorization-of-polynomials.md</span> rimanda a "other irreducibility criteria" senza collegamento.</p>
+</div>
+
+<div class="gap crit">
+  <h4>Quozienti <span class="mono">F[x]/(P)</span> e polinomio minimo <span class="tag t-crit">critico</span></h4>
+  <p>Ideali di <span class="mono">F[x]</span>, il quoziente per un irriducibile come campo, costruzione di <span class="mono">C = R[x]/(x&sup2;+1)</span> e di <span class="mono">F<sub>4</sub></span>, elementi algebrici e polinomio minimo, grado di un'estensione. &Egrave; il ponte fra la cartella polynomials e <span class="mono">algebraic-structures</span>, e oggi quel ponte non c'&egrave;.</p>
+  <p class="ev"><b>Evidenza.</b> Nessuna occorrenza di <span class="mono">F[x]/</span> nel repository. <span class="mono">fields.md</span> ha una sezione "Subfields and field extensions" ma non la costruzione polinomiale. "Minimal polynomial" compare solo in <span class="mono">modules.md</span>, in senso di algebra lineare.</p>
+</div>
+
+<div class="gap high">
+  <h4>Polinomi simmetrici e identit&agrave; di Newton <span class="tag t-high">alta</span></h4>
+  <p>Teorema fondamentale sui polinomi simmetrici, algoritmo di riduzione ai simmetrici elementari, identit&agrave; di Newton fra somme di potenze <span class="mono">p<sub>k</sub></span> ed <span class="mono">e<sub>k</sub></span>, discriminante come funzione simmetrica delle radici.</p>
+  <p class="ev"><b>Evidenza.</b> <span class="mono">vieta-formulas.md</span> nomina esplicitamente entrambi i risultati e li descrive come "the foundation on which more advanced developments rest", poi chiude il paragrafo. Il post &egrave; quindi incompleto rispetto a ci&ograve; che dichiara.</p>
+</div>
+
+<div class="gap high">
+  <h4>Derivata formale, radici multiple e parte priva di quadrati <span class="tag t-high">alta</span></h4>
+  <p>Definizione algebrica di <span class="mono">P'</span> valida su un anello qualsiasi, criterio <span class="mono">gcd(P,P') &ne; 1</span> per le radici multiple, decomposizione squarefree, comportamento anomalo in caratteristica <span class="mono">p</span> (polinomi non separabili).</p>
+  <p class="ev"><b>Evidenza.</b> <span class="mono">roots-of-a-polynomial.md</span> caratterizza la molteplicit&agrave; con la derivata analitica in una blockquote, quindi solo su <span class="mono">R</span>. La versione algebrica &egrave; assente; "squarefree" e "separable" (in senso algebrico) hanno zero occorrenze.</p>
+</div>
+
+<div class="gap high">
+  <h4>Risultante e discriminante generale <span class="tag t-high">alta</span></h4>
+  <p>Matrice di Sylvester, risultante come criterio di radice comune, discriminante come <span class="mono">&prod;(r<sub>i</sub>-r<sub>j</sub>)&sup2;</span> e la sua espressione tramite <span class="mono">Res(P,P')</span>, discriminante del cubico.</p>
+  <p class="ev"><b>Evidenza.</b> Zero occorrenze di "Sylvester matrix" e di "resultant" in senso algebrico nel repository. Il termine "discriminante" esiste in 10 post, sempre e soltanto come <span class="mono">b&sup2;-4ac</span>.</p>
+</div>
+
+<div class="gap high">
+  <h4>Polinomi su campi finiti <span class="tag t-high">alta</span></h4>
+  <p><span class="mono">F<sub>p</sub>[x]</span>, distinzione fra polinomio formale e funzione polinomiale, <span class="mono">x<sup>q</sup>-x</span> come prodotto dei monici irriducibili di grado divisore, conteggio degli irriducibili, endomorfismo di Frobenius, costruzione di <span class="mono">F<sub>p<sup>n</sup></sub></span>.</p>
+  <p class="ev"><b>Evidenza.</b> <span class="mono">F<sub>p</sub></span> viene usato come strumento in due punti (dimostrazione del lemma di Gauss, esempio <span class="mono">x&sup2;+x</span> su <span class="mono">F<sub>2</sub></span>) ma non ha mai una trattazione propria, in nessuna cartella.</p>
+</div>
+
+<div class="gap med">
+  <h4>Polinomi ciclotomici <span class="tag t-med">media</span></h4>
+  <p><span class="mono">&Phi;<sub>n</sub>(x) &isin; Z[x]</span>, calcolo ricorsivo da <span class="mono">x<sup>n</sup>-1 = &prod;<sub>d|n</sub> &Phi;<sub>d</sub></span>, inversione di M&ouml;bius, irriducibilit&agrave; su <span class="mono">Q</span>, coefficienti non appartenenti a <span class="mono">{-1,0,1}</span> a partire da <span class="mono">&Phi;<sub>105</sub></span>.</p>
+  <p class="ev"><b>Evidenza.</b> <span class="mono">complex-numbers/roots-of-unity.md</span> introduce <span class="mono">&Phi;<sub>n</sub></span> dal lato analitico e conclude: "a property treated in detail in the dedicated entry on cyclotomic polynomials". Quella voce non esiste, e il rimando non &egrave; nemmeno un link.</p>
+</div>
+
+<div class="gap med">
+  <h4>Interpolazione polinomiale <span class="tag t-med">media</span></h4>
+  <p>Formula di Lagrange, differenze divise di Newton, unicit&agrave; via Vandermonde, termine di errore, fenomeno di Runge.</p>
+  <p class="ev"><b>Evidenza.</b> <span class="mono">polynomials.md</span> enuncia il teorema di esistenza e unicit&agrave; e chiude con "the Lagrange interpolation formula is a standard explicit method", senza mai scriverla. "Divided difference" ha zero occorrenze.</p>
+</div>
+
+<div class="gap med">
+  <h4>Localizzazione e separazione delle radici <span class="tag t-med">media</span></h4>
+  <p>Regola dei segni di Cartesio, limitazione di Cauchy sul modulo delle radici, successioni di Sturm per il conteggio esatto delle radici reali in un intervallo.</p>
+  <p class="ev"><b>Evidenza.</b> "Descartes", "Sturm", "Cauchy bound": zero occorrenze. <span class="mono">roots-of-a-polynomial.md</span> ha una sezione "Finding roots: an overview of methods" che si ferma al grado 2 pi&ugrave; una blockquote su Cardano e Ferrari.</p>
+</div>
+
+<div class="gap med">
+  <h4>Risoluzione per radicali: Cardano, Ferrari, Abel-Ruffini <span class="tag t-med">media</span></h4>
+  <p>Derivazione della formula di Cardano tramite sostituzione di Tschirnhaus, caso casus irreducibilis, metodo di Ferrari, enunciato di Abel-Ruffini e gruppo di Galois.</p>
+  <p class="ev"><b>Evidenza.</b> Copertura parziale fuori cartella: <span class="mono">equations/polynomial-equations.md</span> dedica una sezione a "Solvability by radicals" con l'esempio <span class="mono">x&sup5;-x-1</span>. Manca la derivazione. Il link <span class="mono">../cubic-equations/</span> in <span class="mono">polynomials.md</span> punta a una pagina inesistente.</p>
+</div>
+
+<div class="gap low">
+  <h4>Polinomi in pi&ugrave; indeterminate <span class="tag t-low">bassa</span></h4>
+  <p><span class="mono">F[x<sub>1</sub>,...,x<sub>n</sub>]</span> come UFD ma non PID, grado totale contro multigrado, ordinamenti monomiali, cenno alle basi di Gr&ouml;bner.</p>
+  <p class="ev"><b>Evidenza.</b> Due sezioni brevi in <span class="mono">adding-and-subtracting-polynomials.md</span> e <span class="mono">multiplying-polynomials.md</span> trattano il caso multivariato solo dal lato operativo. "Monomial order" e "Gr&ouml;bner": zero occorrenze.</p>
+</div>
+
+<div class="gap low">
+  <h4>Famiglie di polinomi ortogonali <span class="tag t-low">bassa</span></h4>
+  <p>Legendre, Chebyshev, Hermite; ortogonalit&agrave; rispetto a un peso, ricorrenza a tre termini, radici reali e semplici.</p>
+  <p class="ev"><b>Evidenza.</b> "Legendre polynomial" e "Hermite polynomial": zero occorrenze; "Chebyshev" solo in <span class="mono">integrals/integration-strategies.md</span>. Il repository ha gi&agrave; <span class="mono">inner-product-spaces.md</span> con il processo di Gram-Schmidt, quindi la premessa &egrave; disponibile.</p>
+</div>
+
+<!-- ============================================ -->
+<h2>3. Coerenza interna</h2>
+
+<h3>3.1 Link interni rotti</h3>
+<p>Il repository contiene 291 post. Tre bersagli di link usati nella cartella non corrispondono ad alcun file.</p>
+
+<table>
+  <thead><tr><th style="width:26%">Bersaglio</th><th style="width:8%">Usi</th><th>Diagnosi</th></tr></thead>
+  <tbody>
+    <tr><td class="mono">../complex-numbers-introduction/</td><td>6</td><td>Lo slug corretto &egrave; <span class="mono">complex-numbers</span>. Compare in <span class="mono">binomials</span>, <span class="mono">notable-products</span>, <span class="mono">polynomials</span>, <span class="mono">roots-of-a-polynomial</span>, <span class="mono">synthetic-division</span>, <span class="mono">trinomials</span></td></tr>
+    <tr><td class="mono">../factoring-ac-method/</td><td>4</td><td>Lo slug corretto &egrave; <span class="mono">factoring-polynomials-ac-method</span>. Nella cartella convivono entrambe le forme: 1 corretta e 4 errate. Su tutto il repository le occorrenze errate sono 6, le corrette 7</td></tr>
+    <tr><td class="mono">../cubic-equations/</td><td>1</td><td>Nessun post sulle equazioni cubiche esiste. In <span class="mono">polynomials.md</span>, sezione "Polynomial equations", dove linear e quadratic puntano a pagine reali</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2 Rimandi promessi ma non collegati</h3>
+<p>Quattro passaggi rinviano a una trattazione approfondita senza produrre un link, e in un caso senza che la pagina esista.</p>
+<ul>
+  <li><span class="mono">roots-of-unity.md:139</span> &mdash; "the dedicated entry on cyclotomic polynomials": la voce non esiste.</li>
+  <li><span class="mono">trinomials.md:182</span> &mdash; "refer to the dedicated page on completing the square": la pagina esiste, il link manca.</li>
+  <li><span class="mono">vieta-formulas.md:193</span> &mdash; "The dedicated entry develops the correspondence in detail": il link precedente nella stessa frase &egrave; uno dei quattro rotti.</li>
+  <li><span class="mono">polynomials.md:219</span> &mdash; "The dedicated page collects worked examples": nessun link a <span class="mono">multiplying-polynomials</span>.</li>
+</ul>
+
+<h3>3.3 Link mal indirizzati</h3>
+<ul>
+  <li><span class="mono">complex-numbers/roots-of-unity.md:116</span> &mdash; "Vieta's formulas" punta a <span class="mono">../trinomials/</span> invece che a <span class="mono">../vieta-formulas/</span>.</li>
+  <li><span class="mono">equations/factoring-quadratic-equations.md:34</span> &mdash; "Vieta's formulas" punta a <span class="mono">../quadratic-formula/</span>.</li>
+</ul>
+<p>Il post <span class="mono">vieta-formulas</span> riceve 4 link esterni; con queste due correzioni ne riceverebbe 6. Il tema &egrave; citato in molti pi&ugrave; punti di quanti ne rimandino alla pagina dedicata.</p>
+
+<h3>3.4 Post isolati</h3>
+<table>
+  <thead><tr><th style="width:38%">Post</th><th style="width:20%">Link in ingresso</th><th>Nota</th></tr></thead>
+  <tbody>
+    <tr><td class="mono">unique-factorization-of-polynomials</td><td><b>0</b> esterni</td><td>Il post pi&ugrave; avanzato della cartella &egrave; raggiungibile solo dall'interno. Naturali candidati a linkarlo: <span class="mono">rings.md</span>, <span class="mono">fields.md</span>, <span class="mono">integers.md</span>, <span class="mono">irrational-numbers.md</span></td></tr>
+    <tr><td class="mono">binomials</td><td><b>0</b> esterni</td><td>Assorbito di fatto da <span class="mono">multiplying-polynomials</span> e <span class="mono">notable-products</span></td></tr>
+    <tr><td class="mono">adding-and-subtracting-polynomials</td><td><b>0</b> esterni</td><td>Contiene la struttura di gruppo abeliano di <span class="mono">(R[x],+)</span>, materiale che <span class="mono">rings.md</span> potrebbe richiamare</td></tr>
+    <tr><td class="mono">multiplying-polynomials</td><td><b>1</b> esterno</td><td>&mdash;</td></tr>
+  </tbody>
+</table>
+<p>Per confronto: <span class="mono">polynomials</span> riceve 65 link esterni, <span class="mono">roots-of-a-polynomial</span> 23, <span class="mono">completing-the-square</span> 12.</p>
+
+<h3>3.5 Sovrapposizioni di contenuto</h3>
+<table>
+  <thead><tr><th style="width:24%">Argomento</th><th style="width:38%">Trattato in</th><th>Valutazione</th></tr></thead>
+  <tbody>
+    <tr><td>Unit&agrave;, associati, monico, irriducibili su R</td><td><span class="mono">polynomials.md</span> &sect;Euclidean domain &middot; <span class="mono">unique-factorization</span> &sect;1&ndash;2</td><td><span class="tag t-crit">da risolvere</span> Quattro frasi coincidono quasi alla lettera, una &egrave; identica nella sostanza. La sezione dell'hub duplica il post dedicato invece di rimandarvi</td></tr>
+    <tr><td>Formule di Vieta</td><td><span class="mono">vieta-formulas</span> &middot; <span class="mono">trinomials</span> &middot; <span class="mono">roots-of-a-polynomial</span> &middot; <span class="mono">factoring-ac-method</span> &middot; <span class="mono">equations/polynomial-equations</span></td><td><span class="tag t-high">da rivedere</span> Cinque trattazioni. Le prime due riscrivono entrambe il caso quadratico per esteso</td></tr>
+    <tr><td>Teorema delle radici razionali</td><td><span class="mono">roots-of-a-polynomial</span> &middot; <span class="mono">synthetic-division</span> &middot; <span class="mono">equations/polynomial-equations</span></td><td><span class="tag t-med">accettabile</span> Enunciato ripetuto tre volte, ma ogni volta a servizio di un uso diverso</td></tr>
+    <tr><td>Metodo FOIL</td><td><span class="mono">binomials</span> &middot; <span class="mono">multiplying-polynomials</span></td><td><span class="tag t-med">accettabile</span> Il secondo &egrave; un richiamo breve con link</td></tr>
+    <tr><td>Prodotti notevoli</td><td><span class="mono">notable-products</span> &middot; <span class="mono">binomials</span> &middot; <span class="mono">multiplying-polynomials</span></td><td><span class="tag t-ok">corretto</span> Struttura hub e satelliti funzionante</td></tr>
+    <tr><td>Completamento del quadrato</td><td><span class="mono">completing-the-square</span> &middot; <span class="mono">trinomials</span></td><td><span class="tag t-ok">corretto</span> Manca solo il link (cfr. 3.2)</td></tr>
+  </tbody>
+</table>
+
+<h3>3.6 Tag</h3>
+<div class="cols">
+<div>
+<p><b>Manca un tag ombrello.</b> Le altre cartelle applicano il tag di dominio quasi ovunque: <span class="mono">trigonometry</span> 18/18, <span class="mono">series</span> 14/16, <span class="mono">limits</span> 9/9, <span class="mono">algebraic-structures</span> 8/10. Qui il candidato naturale <span class="mono">polynomial</span> compare in 11 post su 16.</p>
+<p>Ne sono privi: <span class="mono">binomial-theorem</span>, <span class="mono">completing-the-square</span>, <span class="mono">notable-products</span>, <span class="mono">partial-fraction-decomposition</span>, <span class="mono">trinomials</span>.</p>
+</div>
+<div>
+<p><b>Coppie ridondanti.</b> Lo stesso concetto compare sotto etichette diverse, e ciascuna variante &egrave; usata una sola volta nell'intero repository:</p>
+<ul>
+  <li><span class="mono">roots</span> / <span class="mono">polynomial-roots</span></li>
+  <li><span class="mono">factoring</span> (&times;4) / <span class="mono">polynomial-factorization</span></li>
+  <li><span class="mono">symmetric-polynomials</span> / <span class="mono">elementary-symmetric-polynomials</span></li>
+  <li><span class="mono">binomial</span> / <span class="mono">binomial-theorem</span> / <span class="mono">polynomial-expansion</span></li>
+</ul>
+<p>Su 61 tag distinti, 46 hanno una sola occorrenza. Un tag usato una volta sola non produce alcuna aggregazione.</p>
+</div>
+</div>
+
+<!-- ============================================ -->
+<h2>4. Ordine di intervento suggerito</h2>
+
+<table>
+  <thead><tr><th style="width:5%">#</th><th style="width:46%">Intervento</th><th style="width:14%">Tipo</th><th>Motivazione</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Correggere i 3 slug rotti (11 occorrenze) e i 2 link Vieta mal indirizzati</td><td><span class="tag t-crit">correzione</span></td><td>Difetto visibile al lettore, risolvibile in pochi minuti</td></tr>
+    <tr><td>2</td><td>Nuovo post: criteri di irriducibilit&agrave; su <span class="mono">Q</span></td><td><span class="tag t-crit">nuovo</span></td><td>Completa la UFD, che oggi &egrave; l'unico post di livello 4 e resta senza controparte operativa</td></tr>
+    <tr><td>3</td><td>Ridurre &sect;Euclidean domain di <span class="mono">polynomials.md</span> a un rimando</td><td><span class="tag t-high">revisione</span></td><td>Elimina la duplicazione pi&ugrave; forte e d&agrave; a <span class="mono">unique-factorization</span> i link in ingresso che oggi non ha</td></tr>
+    <tr><td>4</td><td>Nuovo post: polinomi simmetrici e identit&agrave; di Newton</td><td><span class="tag t-high">nuovo</span></td><td>Chiude la sezione "Structural interpretation" di <span class="mono">vieta-formulas</span>, oggi interrotta a met&agrave;</td></tr>
+    <tr><td>5</td><td>Nuovo post: derivata formale e radici multiple</td><td><span class="tag t-high">nuovo</span></td><td>Prerequisito per squarefree, discriminante e separabilit&agrave;; sblocca tre gap successivi</td></tr>
+    <tr><td>6</td><td>Nuovo post: quozienti <span class="mono">F[x]/(P)</span> e polinomio minimo</td><td><span class="tag t-high">nuovo</span></td><td>Unico collegamento possibile fra questa cartella e <span class="mono">algebraic-structures</span></td></tr>
+    <tr><td>7</td><td>Nuovo post: polinomi ciclotomici</td><td><span class="tag t-med">nuovo</span></td><td>Gi&agrave; annunciato da <span class="mono">roots-of-unity.md</span> come voce esistente</td></tr>
+    <tr><td>8</td><td>Uniformare i tag: <span class="mono">polynomial</span> su tutti i 16 post, fondere le 4 coppie ridondanti</td><td><span class="tag t-med">revisione</span></td><td>Allinea la cartella alla convenzione delle altre</td></tr>
+    <tr><td>9</td><td>Nuovo post: risultante e discriminante generale</td><td><span class="tag t-med">nuovo</span></td><td>Dipende dall'intervento 5</td></tr>
+    <tr><td>10</td><td>Nuovo post: polinomi su campi finiti</td><td><span class="tag t-med">nuovo</span></td><td>Gi&agrave; usato come strumento in due dimostrazioni senza avere una sede propria</td></tr>
+    <tr><td>11</td><td>Nuovi post: interpolazione di Lagrange &middot; localizzazione delle radici</td><td><span class="tag t-low">nuovo</span></td><td>Entrambi annunciati e non sviluppati</td></tr>
+    <tr><td>12</td><td>Nuovi post: multivariato avanzato &middot; polinomi ortogonali</td><td><span class="tag t-low">nuovo</span></td><td>Estensioni; utili dopo il consolidamento del nucleo</td></tr>
+  </tbody>
+</table>
+
+<footer>
+  Assessment su 16 file Markdown della cartella <span class="mono">polynomials</span>, verificato contro tutti i 291 post del repository. Le occorrenze citate sono conteggi diretti sul contenuto dei file.
+</footer>
+
+</div>
+</body>
+</html>
