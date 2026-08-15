@@ -16,7 +16,7 @@ tags:
   - riemann-integral
   - riemann-sum
 ---
-	## Don’t rush things
+## Don’t rush things
 
 Adrien-Marie Legendre is one of the best-known and most influential mathematicians of the eighteenth century. He was born in Paris in 1752, and around the age of thirty he began to take an interest in the theory of elliptic integrals, mathematical objects used to compute the length of an arc of an [ellipse](../ellipse/).
 
