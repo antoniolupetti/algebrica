@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="243px" viewBox="0 0 323 243" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 3</title>
+    <defs>
+        <pattern id="diagonal-lines" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" fill="none" stroke="#e9e3e2" stroke-width="1"></path>
+        </pattern>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M42.382134,56.6769926 L42.4357878,56.7548694 L46.9357878,64.7548694 C47.0711697,64.9955483 46.9858096,65.3004059 46.7451306,65.4357878 C46.5311938,65.5561272 46.2665479,65.5020533 46.1152959,65.3195146 L46.0642122,65.2451306 L42.5,58.908 L42.5,242.5 C42.5,242.776142 42.2761424,243 42,243 C41.7545401,243 41.5503916,242.823125 41.5080557,242.589876 L41.5,242.5 L41.5,58.908 L37.9357878,65.2451306 C37.8154483,65.4590675 37.5612021,65.5502832 37.3371522,65.4728292 L37.2548694,65.4357878 C37.0409325,65.3154483 36.9497168,65.0612021 37.0271708,64.8371522 L37.0642122,64.7548694 L41.5642122,56.7548694 C41.7394349,56.4433624 42.1651608,56.4174034 42.382134,56.6769926 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <path d="M311.662848,212.527171 L311.745131,212.564212 L319.745131,217.064212 C320.056638,217.239435 320.082597,217.665161 319.823007,217.882134 L319.745131,217.935788 L311.745131,222.435788 C311.504452,222.57117 311.199594,222.48581 311.064212,222.245131 C310.943873,222.031194 310.997947,221.766548 311.180485,221.615296 L311.254869,221.564212 L317.591,218 L11,218 C10.7238576,218 10.5,217.776142 10.5,217.5 C10.5,217.25454 10.6768752,217.050392 10.9101244,217.008056 L11,217 L317.591,217 L311.254869,213.435788 C311.040933,213.315448 310.949717,213.061202 311.027171,212.837152 L311.064212,212.754869 C311.184552,212.540933 311.438798,212.449717 311.662848,212.527171 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
+                <tspan x="313" y="237">x</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
+                <tspan x="24" y="65">y</tspan>
+            </text>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="70.5" y="11">The shaded region is the area under the curve </tspan>
+                <tspan x="70.5" y="24">y = f(x) from x = a to +∞ and corresponds to an </tspan>
+                <tspan x="70.5" y="37">improper integral over an unbounded interval.</tspan>
+            </text>
+            <line x1="101" y1="43.5" x2="101" y2="88.5" stroke="#beb8b7" stroke-linecap="round"></line>
+            <text font-size="12" font-weight="normal" fill="#312f2f">
+                <tspan x="0" y="170">y=f(x)</tspan>
+            </text>
+            <line x1="83" y1="101.5" x2="83" y2="217.5" stroke="#beb8b7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
+                <tspan x="78.5" y="236">a</tspan>
+            </text>
+            <circle fill="#312f2f" cx="83" cy="217.5" r="2.5"></circle>
+            <path d="M0,120 L0,5 L1,2 L15,0 L24,0 L39,5 L50,12 L62,24 C72,36.6666667 77,43 77,43 L89,61 L101,76 L114,87 L126,94 L136,98 L157,104 L191,110 L221,112 L225,112 L225,121 L0,120 Z" transform="translate(83.5 97)" fill="url(#diagonal-lines)"></path>
+            <path d="M10.5,200 C15.38567,188.512397 18.8436054,180.510235 20.8738063,175.993513 M30.3045456,156.440112 C51.7794022,116.813371 75.177887,97 100.5,97 C150.235489,97 164.342201,164.058605 199.930357,185.659235 C200.119628,185.774115 200.309506,185.887709 200.5,186 C224.505838,200.15081 260.505838,207.817477 308.5,209" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

@@ -16,23 +16,25 @@ tags:
   - riemann-integral
   - unbounded-intervals
 ---
-## Introduzione
+## Integrali su intervalli illimitati
 
-Un integrale improprio è un [integrale definito](../definite-integrals/) in cui l'intervallo di integrazione è illimitato, la funzione integranda è illimitata in uno o più punti, oppure entrambe le cose. Nel calcolo elementare l'integrale definito si scrive:
+Finora abbiamo analizzato gli [integrali indefiniti](../indefinite-integrals/) e quelli [definiti](../definite-integrals), descrivendo sia le primitive delle funzioni analitiche più comuni sia le principali regole di derivazione. Ricordiamo, in termini semplicistici, che gli integrali indefiniti non presentano estremi di integrazione, mentre quelli definiti sono sempre valutati all'interno di un [intervallo](../intervals/) limitato, ad esempio $[a,b]$. In quest'ultimo caso ci siamo imbattuti in integrali come questo:
 
-$$\int_a^b f(x) \ dx$$
+$$\int_{a}^{b} f(x) \ dx = F(b) - F(a) \tag{1}$$
 
-La sua definizione usuale richiede che l'intervallo $[a,b]$ sia limitato e che la funzione $f$ sia [continua](../continuous-functions/), o almeno [integrabile secondo Riemann](../riemann-integrability-criteria/), su quell'intervallo. Un [intervallo illimitato](../intervals/), come $(a,+\infty),$ oppure una funzione integranda illimitata cadono fuori da queste ipotesi. L'integrale viene allora definito attraverso uno o più limiti.
+Al di là di quanto sia complesso il calcolo della primitiva della funzione integranda $f(x)$, ogni integrale definito si può ricondurre alla $(1)$. Come oramai sapete, essendo arrivati a questo punto della nostra trattazione, una volta giunti a tale formulazione, si valuta la primitiva $F$ ai due estremi del segno di integrale e si determina il valore dell'area con segno iscritta tra la curva e l'asse delle $x.$ Tenere conto del segno è fondamentale, in quanto le aree sopra l'asse delle $x$ (quelle quindi con segno positivo) si sommano, mentre quelle sotto l'asse delle $x$ (con segno negativo)  si sottraggono. Ciò deriva dalla definizione stessa di integrale come quantità accumulata sotto una data curva.
 
-> Un integrale improprio è un limite di integrali di Riemann ordinari. La convergenza va verificata separatamente in ogni estremo improprio e in ogni punto singolare.
+Questo modo di procedere però ha una limitazione non banale: funziona solo quando i due estremi circoscrivono un intervallo limitato. Più esattamente, richiamando i [criteri di integrazione di Riemann](../riemann-integrability-criteria), è necessario che l'intervallo in cui è definito l'integrale sia limitato, e $f$ sia limitata. 
 
-- - -
+Che cosa accade quando una di queste ipotesi non è verificata e uno degli estremi di integrazione è $+\infty$ o $-\infty?$ Ci troveremmo in un caso del genere:
 
-Un'applicazione formale del [teorema fondamentale del calcolo integrale](../fundamental-theorem-of-calculus/) alla seguente espressione produce un risultato non valido:
+$$\int_{a}^{+\infty} f(x) \ dx$$
 
-$$\int_{-1}^{1} \frac{1}{x^2} \ dx$$
+![IMG. 1](svg/improper-integrals-3.svg) 
 
-Il calcolo $\left[-x^{-1}\right]_{-1}^{1}=-2$ non è valido perché $1/x^2$ è illimitata in $x=0,$ e il teorema fondamentale non si applica attraverso quel punto. Poiché la funzione integranda è positiva, un valore negativo rivela già l'errore. Dopo aver spezzato l'intervallo in $0,$ entrambi gli integrali impropri unilaterali divergono a $+\infty.$
+Come si può facilmente dedurre, in questa circostanza non è possibile valutare la primitiva direttamente nell'estremo $F(+\infty)$ non essendo $+\infty$ un numero reale.
+
+Questa classe di integrali sono molto comuni e il loro comportamento si valuta ricorrendo all'algebra dei [limiti](../limits/). Prendono il nome di integrali impropri, a differenza di quelli propri di Riemann che abbiamo incontrato finora: o meglio il loro limite definisce quello che viene chiamato integrale improprio, come vedremo in termini più formali nei seguenti paragrafi.
 
 ## Integrali impropri su intervalli illimitati
 
@@ -40,32 +42,33 @@ Supponiamo che $f$ sia integrabile secondo Riemann su ogni intervallo $[a,t]$ co
 
 $$\int_a^{+\infty} f(x) \ dx := \lim_{t \to +\infty} \int_a^t f(x) \ dx$$
 
-Ogni integrale ordinario ha estremo superiore finito $t,$ e la definizione passa al limite per $t\to+\infty.$
+Quindi si impone l'estremo superiore pari a un numero finito $t,$ e si determina il limite per $t\to+\infty.$
 
 ![Img. 1](svg/improper-integrals-1.svg)
 
-+ Quando il limite esiste ed è finito, l'integrale converge.
-+ Quando il limite non esiste come numero reale finito, l'integrale diverge.
++ Quando il limite esiste ed è finito ed è pari ad un numero reale $\ell$, l'integrale converge.
++ Quando il limite è pari a $\pm\infty$, l'integrale diverge.
++ Quando il limite non esiste, l'integrale improprio si dice irregolare.
 
 - - -
 
-La stessa idea vale quando l'estremo inferiore è $-\infty.$ Supponiamo che $f$ sia integrabile secondo Riemann su ogni intervallo $[t,b]$ con $t<b.$ La definizione corrispondente è:
+Lo stesso processo può essere replicato quando l'estremo inferiore è $-\infty.$ Supponiamo in questo caso che $f$ sia integrabile secondo Riemann su ogni intervallo $[t,b]$ con $t<b.$ La definizione corrispondente dell'integrale improprio è:
 
 $$\int_{-\infty}^b f(x) \ dx := \lim_{t \to -\infty} \int_t^b f(x) \ dx$$
 
-Supponiamo che $f$ sia integrabile secondo Riemann su ogni intervallo limitato. Per un integrale esteso a tutta la retta reale nessuno dei due estremi è finito, quindi un solo limite non basta. Si sceglie un punto qualsiasi $c$ e si pone:
+Un altro caso è quello in cui entrambe gli estremi sono $\pm\infty$ e quindi un solo limite non basta. In questa situazione si sceglie un punto qualsiasi $c$ e si pone:
 
 $$\int_{-\infty}^{+\infty} f(x) \ dx := \int_{-\infty}^c f(x) \ dx + \int_c^{+\infty} f(x) \ dx$$
 
-L'integrale improprio sulla retta reale converge solo quando entrambi gli integrali a destra convergono separatamente. In tal caso il risultato non dipende dalla scelta di $c.$
+L'integrale improprio converge solo quando entrambi gli integrali a destra convergono separatamente e in tal caso il risultato non dipende dalla scelta di $c.$
 
 ## Esempio 1
 
-Calcoliamo il seguente integrale:
+Per illustrare un caso di studio molto frequente, calcoliamo il seguente integrale improprio:
 
 $$\int_1^{+\infty} \frac{1}{x^2} \ dx$$
 
-Per $b>1,$ l'integrale ordinario è:
+Per $b>1,$ l'integrale proprio di Riemann è:
 
 $$\int_1^b \frac{1}{x^2} \ dx = \int_1^b x^{-2} \ dx = \left[ -x^{-1} \right]_1^b = -\frac{1}{b} + 1$$
 
@@ -73,15 +76,15 @@ Poiché $1/b\to0$ per $b\to+\infty,$ il limite che definisce l'integrale è:
 
 $$\lim_{b \to +\infty} \left(1 - \frac{1}{b}\right) = 1$$
 
-Il limite è finito, quindi l'integrale improprio converge a $1.$
+Tale limite è finito e quindi l'integrale improprio converge a $1.$
 
 ## Esempio 2
 
-L'integrale analogo con esponente $1$ è:
+Consideriamo adesso il caso analogo con esponente pari a $1$ al denominatore:
 
 $$\int_1^{+\infty} \frac{1}{x} \ dx$$
 
-Per $b>1,$ l'integrale ordinario è:
+Per $b>1,$ l'integrale diventa:
 
 $$\int_1^b \frac{1}{x} \ dx = \left[ \ln x \right]_1^b = \ln b$$
 
@@ -89,7 +92,7 @@ Il limite che lo definisce è:
 
 $$\lim_{b \to +\infty} \ln b = +\infty$$
 
-Il limite è infinito, quindi l'integrale diverge.
+Tale limite è infinito, quindi l'integrale diverge.
 
 ## Integrali impropri con discontinuità infinite
 
@@ -97,7 +100,7 @@ Un secondo tipo di integrale improprio si presenta quando $f$ è illimitata in q
 
 $$\int_a^b f(x) \ dx := \lim_{t \to a^+} \int_t^b f(x) \ dx$$
 
-L'integrale improprio converge quando il limite esiste ed è finito. Simmetricamente, supponiamo che $f$ diventi illimitata per $x \to b^-$ ma sia integrabile secondo Riemann su ogni intervallo $[a,t]$ con $a<t<b.$ La definizione corrispondente è:
+L'integrale improprio converge quando il limite esiste ed è finito. Allo stesso modo, supponiamo che $f$ diventi illimitata per $x \to b^-$ ma sia integrabile secondo Riemann su ogni intervallo $[a,t]$ con $a<t<b.$ La definizione corrispondente è:
 
 $$\int_a^b f(x) \ dx := \lim_{t \to b^-} \int_a^t f(x) \ dx$$
 
@@ -111,7 +114,7 @@ $$
 
 L'integrale improprio converge solo quando entrambi i limiti unilaterali esistono e sono finiti.
 
-Se un integrale presenta più estremi impropri o più punti singolari, si scelgono punti di taglio regolari in modo che ogni pezzo unilaterale abbia una sola sorgente di improprietà. L'integrale di partenza converge se e solo se converge ogni pezzo.
+Se un integrale presenta più estremi impropri o più punti singolari, si scelgono punti di taglio regolari in modo che ogni pezzo unilaterale abbia una sola fonte di improprietà. In questi casi, l'integrale di partenza converge se e solo se converge ogni pezzo dell'integrale.
 
 ## Esempio 3
 
@@ -127,7 +130,7 @@ La primitiva è:
 
 $$\int x^{-1/2} \ dx = 2x^{1/2} + C$$
 
-Per $t>0,$ l'integrale ordinario è:
+Per $t>0,$ l'integrale proprio di Riemann è:
 
 $$\int_t^1 x^{-1/2} \ dx = 2 - 2\sqrt{t}$$
 
@@ -139,11 +142,11 @@ Il limite esiste ed è finito, quindi l'integrale converge e vale $2.$
 
 ## Il criterio dell'integrale $p$
 
-Il criterio dell'integrale $p$ classifica la famiglia:
+Il criterio dell'integrale $p$ classifica la famiglia di integrali del tipo:
 
-$$\int_1^{+\infty} \frac{1}{x^p} \ dx \tag{1}$$
+$$\int_1^{+\infty} \frac{1}{x^p} \ dx \tag{2}$$
 
-Il parametro $p$ è reale e la convergenza dipende dal suo valore. Quando $p\neq1,$ l'integrale ordinario è:
+Il parametro $p$ è un numero reale e la convergenza dipende in questo caso dal suo valore. Quando $p\neq1,$ l'integrale proprio di Riemann è:
 
 $$\int_1^b x^{-p} \ dx = \left[ \frac{x^{1-p}}{1-p} \right]_1^b = \frac{b^{1-p} - 1}{1 - p}$$
 
@@ -159,32 +162,33 @@ Il passaggio al limite per $b \to +\infty$ produce tre casi:
 
 [/class]
 
-L'integrale $(1)$ converge se e solo se $p>1.$ L'integrale corrispondente vicino all'origine è:
+L'integrale $(2)$ converge se e solo se $p>1.$ L'integrale corrispondente vicino all'origine è:
 
-$$\int_0^1 \frac{1}{x^p} \ dx \tag{2}$$
+$$\int_0^1 \frac{1}{x^p} \ dx \tag{3}$$
 
-Nell'origine il comportamento all'estremo si inverte. La funzione integranda è singolare in $x=0$ solo quando $p>0,$ mentre l'integrale $(2)$ converge se e solo se $p<1.$
+Nell'origine il comportamento all'estremo si inverte. La funzione integranda è singolare in $x=0$ solo quando $p>0,$ mentre l'integrale $(3)$ converge se e solo se $p<1.$
 
 > Queste [funzioni potenza](../powers/) sono i casi di riferimento per i criteri del confronto esposti di seguito.
 
 ## Convergenza e criteri del confronto
 
-I criteri del confronto stabiliscono la convergenza senza una primitiva e senza il valore esatto dell'integrale.
+Non sempre è utile o conveniente ricorrere al calcolo degli integrali impropri attraverso il limite. In taluni casi si preferisce ricorrere ad altri meccanismi che consentono un risparmio computazionale significativo. Esistono infatti dei criteri di confronto, diretto e asintotico, che stabiliscono la convergenza senza calcolare la una primitiva e senza valutare il valore esatto dell'integrale.
 
 Il criterio del confronto diretto usa una maggiorazione puntuale. Supponiamo che $f$ e $g$ siano integrabili secondo Riemann su ogni sottointervallo limitato di $[a,+\infty)$ e che $0\leq f(x)\leq g(x)$ per ogni $x\geq a$:
 
 + Se $\int_a^{+\infty} g(x) \ dx$ converge, converge anche $\int_a^{+\infty} f(x) \ dx.$
 + Se $\int_a^{+\infty} f(x) \ dx$ diverge, diverge anche $\int_a^{+\infty} g(x) \ dx.$
 
-![Img. 2](svg/improper-integrals-2.svg)
 
-> Per ogni $b>a$ la disuguaglianza $0\leq f\leq g$ dà $0\leq\int_a^b f(x) \ dx\leq\int_a^b g(x) \ dx.$ Il passaggio al limite dimostra la prima implicazione, e la seconda segue per contrapposizione.
+![Img. 2](svg/improper-integrals-2.svg)
 
 Il criterio del confronto asintotico sostituisce la maggiorazione puntuale con un rapporto asintotico. Supponiamo che $f$ e $g$ siano positive e integrabili secondo Riemann su ogni sottointervallo limitato di $[a,+\infty),$ e che il loro rapporto abbia limite:
 
 $$\lim_{x \to +\infty} \frac{f(x)}{g(x)} = L \qquad 0 < L < +\infty$$
 
-Allora $\int_a^{+\infty} f(x) \ dx$ e $\int_a^{+\infty} g(x) \ dx$ convergono entrambi oppure divergono entrambi. In modo equivalente $f(x)\sim Lg(x)$ per $x\to+\infty;$ l'equivalenza asintotica di $f$ e $g$ è il caso particolare $L=1.$ Scegliendo $g(x)=1/x^p$ la questione si riconduce al criterio dell'integrale $p.$
+Allora $\int_a^{+\infty} f(x) \ dx$ e $\int_a^{+\infty} g(x) \ dx$ convergono entrambi oppure divergono entrambi. 
+
+In modo equivalente $f(x)\sim Lg(x)$ per $x\to+\infty;$ l'equivalenza asintotica di $f$ e $g$ è il caso particolare $L=1.$ Scegliendo $g(x)=1/x^p$ la questione si riconduce al criterio dell'integrale $p.$
 
 I valori degeneri di $L$ danno implicazioni in un solo verso:
 
@@ -195,13 +199,13 @@ Se $f$ e $g$ sono positive e integrabili secondo Riemann su ogni intervallo comp
 
 ## Procedura di decisione
 
-Per stabilire la convergenza si eseguono i seguenti controlli.
+Non è sempre immediato stabilire la convergenza di tali integrali. Tuttavia si può identificare una sorta di procedura decisionale che può aiutare nella sua determinazione.
 
-+ Individuare ogni sorgente di improprietà, cioè un intervallo illimitato, una funzione integranda illimitata in un estremo e ogni singolarità in un punto interno.
-+ Se è disponibile una primitiva, applicare la definizione a ciascun pezzo improprio. La [regola di de l'Hôpital](../hopital-rule/) può aiutare con un quoziente indeterminato quando le sue ipotesi sono soddisfatte.
-+ Per una funzione integranda non negativa, usare il criterio del confronto diretto quando si dispone di una maggiorazione puntuale mediante una funzione di riferimento.
-+ Se la maggiorazione puntuale non è disponibile e la funzione integranda è definitivamente positiva, usare il criterio del confronto asintotico quando il suo rapporto con una funzione di riferimento ha uno dei limiti descritti sopra. I modelli usuali sono $1/x^p$ all'infinito e $1/|x-c|^p$ vicino a un punto singolare finito.
-+ Spezzare un integrale con più sorgenti di improprietà in pezzi unilaterali e richiedere che ogni pezzo converga.
++ Per prima cosa occorre individuare ogni sorgente di improprietà, cioè un intervallo illimitato, una funzione integranda illimitata in un estremo e ogni singolarità in un punto interno.
++ Se è disponibile una primitiva, bisogna applicare la definizione a ciascun pezzo dell'integrale improprio. La [regola di de l'Hôpital](../hopital-rule/) può aiutare con un quoziente indeterminato quando le sue ipotesi sono soddisfatte.
++ Per una funzione integranda non negativa, si può usare il criterio del confronto diretto quando si dispone di una maggiorazione puntuale mediante una funzione di riferimento.
++ Se la maggiorazione puntuale non è disponibile e la funzione integranda è definitivamente positiva, si può ricorrere al criterio del confronto asintotico quando il suo rapporto con una funzione di riferimento ha uno dei limiti descritti sopra. I modelli usuali sono $1/x^p$ all'infinito e $1/|x-c|^p$ vicino a un punto singolare finito.
++ Infine, spezzare un integrale con più sorgenti di improprietà in pezzi unilaterali e richiedere che ogni pezzo converga.
 
 ## Esempio 4
 
@@ -284,5 +288,3 @@ $$\int_1^{+\infty} \frac{|\sin x|}{x} \ dx$$
 Il secondo integrale diverge. Un integrale che converge senza convergere assolutamente si dice semplicemente convergente.
 
 > Supponiamo che $f$ sia integrabile secondo Riemann su ogni sottointervallo limitato di $[a,+\infty).$ La funzione $f$ è integrabile secondo Lebesgue su $[a,+\infty)$ se e solo se il suo integrale improprio converge assolutamente, e in tal caso i due valori coincidono. Quindi $\int_1^{+\infty}\sin x/x \ dx$ converge come integrale improprio, ma $x\mapsto\sin x/x$ non è integrabile secondo Lebesgue su $[1,+\infty)$ perché l'integrale di $|\sin x|/x$ diverge.
-
-> Se non è disponibile un valore analitico, l'[integrazione numerica](../numerical-integration/) su un intervallo troncato richiede una stima separata della coda omessa.
