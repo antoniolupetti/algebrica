@@ -78,6 +78,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Lecture Notes on Mathematical Analysis](https://www.math.nthu.edu.tw/~hyliao/AnalysisLectureNotes.pdf), Hsuan-Yi Liao
 + [Measure, Integration & Real Analysis](https://measure.axler.net/MIRA.pdf), Sheldon Axler
 + [Methods of Real Analysis](https://openlibrary.org/books/OL5205094M/Methods_of_real_analysis), Richard R. Goldberg
++ [Univariate Real Analysis](https://arxiv.org/pdf/2508.19405), Martin Klazar
 
 ## Complex analysis
 
