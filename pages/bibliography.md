@@ -31,6 +31,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Linear algebra
 
 + [Advanced Linear Algebra](https://link.springer.com/book/10.1007/978-0-387-72831-5), Steven Roman
++ [Fundamentals of Linear Algebra](https://personal.math.ubc.ca/~carrell/NB.pdf), James B. Carrell
 + [Fundamentals of Matrix Algebra](https://www.apexcalculus.com/downloads/MatrixAlgebra.pdf), Gregory Hartman
 + [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd, Lieven Vandenberghe
 + [Introduction to Vectors and Tensors](https://oaktrust.library.tamu.edu/server/api/core/bitstreams/06032ff0-a5bc-40d8-926d-965121f54d50/content), Ray M. Bowen, C.-C. Wang

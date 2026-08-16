@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="244px" height="273px" viewBox="0 0 244 273" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 18</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <line x1="107.5" y1="45.5" x2="107.5" y2="148.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="20" y="11">On [0, 1], x² ≤ x, so the line </tspan>
+                <tspan x="20" y="24">determines the outer radius and </tspan>
+                <tspan x="20" y="37">the parabola the inner radius.</tspan>
+            </text>
+            <path d="M26.882134,76.6769926 L26.9357878,76.7548694 L31.4357878,84.7548694 C31.5711697,84.9955483 31.4858096,85.3004059 31.2451306,85.4357878 C31.0311938,85.5561272 30.7665479,85.5020533 30.6152959,85.3195146 L30.5642122,85.2451306 L26.999,78.906 L27,272.5 C27,272.776142 26.7761424,273 26.5,273 C26.2545401,273 26.0503916,272.823125 26.0080557,272.589876 L26,272.5 L25.999,78.91 L22.4357878,85.2451306 C22.3154483,85.4590675 22.0612021,85.5502832 21.8371522,85.4728292 L21.7548694,85.4357878 C21.5409325,85.3154483 21.4497168,85.0612021 21.5271708,84.8371522 L21.5642122,84.7548694 L26.0642122,76.7548694 C26.2394349,76.4433624 26.6651608,76.4174034 26.882134,76.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="7.5" y="85">y</tspan>
+            </text>
+            <path d="M234.162848,243.527171 L234.245131,243.564212 L242.245131,248.064212 C242.556638,248.239435 242.582597,248.665161 242.323007,248.882134 L242.245131,248.935788 L234.245131,253.435788 C234.004452,253.57117 233.699594,253.48581 233.564212,253.245131 C233.443873,253.031194 233.497947,252.766548 233.680485,252.615296 L233.754869,252.564212 L240.091,249 L1.09314267e-15,249 C-0.276142375,249 -0.5,248.776142 -0.5,248.5 C-0.5,248.25454 -0.323124839,248.050392 -0.0898756324,248.008056 L-1.09314267e-15,248 L240.091,248 L233.754869,244.435788 C233.540933,244.315448 233.449717,244.061202 233.527171,243.837152 L233.564212,243.754869 C233.684552,243.540933 233.938798,243.449717 234.162848,243.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="171.5" y1="244" x2="171.5" y2="102" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="171" cy="102" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="26" cy="249" r="2.5"></circle>
+            <g transform="translate(209.000000, 60.000000)" fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <text>
+                    <tspan x="0" y="10">y=x</tspan>
+                </text>
+            </g>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="170" y="65">y=x²</tspan>
+            </text>
+            <g transform="translate(27.000000, 101.000000)" fill="#E9E3E2">
+                <path d="M0,147 L145,0 C138.333333,12.6666667 135,19 135,19 C125.666667,36.3333333 121,45 121,45 C111,61.6666667 106,70 106,70 C94.6666667,85.3333333 89,93 89,93 C79.6666667,103 75,108 75,108 C65.6666667,116 61,120 61,120 L44,131 C31.3333333,137 25,140 25,140 L9,145 L0,147 Z"></path>
+            </g>
+            <g transform="translate(167.000000, 251.000000)" fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <text>
+                    <tspan x="0" y="13">1</tspan>
+                </text>
+            </g>
+            <g transform="translate(98.000000, 179.000000)" fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <text>
+                    <tspan x="0" y="13">R</tspan>
+                </text>
+            </g>
+            <g transform="translate(236.000000, 255.000000)" fill="#BEB8B7" fill-rule="nonzero" font-size="14" font-weight="normal">
+                <text>
+                    <tspan x="0" y="14">x</tspan>
+                </text>
+            </g>
+            <path d="M169.238246,105.133445 C172.67097,98.0219199 177.924888,86.6441051 185,71" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M28,248 C59.3333333,241.333333 86.3333333,226 109,202 C127.429516,182.486395 147.842264,149.530877 170.238246,103.133445" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M170.889623,100.849013 L203.5,67.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M26.902256,248.097743 L171.026978,100.708549" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
