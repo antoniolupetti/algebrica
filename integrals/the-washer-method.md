@@ -218,4 +218,4 @@ The choice of method for determining the volume of a solid of revolution depends
 
 When a region naturally described in terms of $x$ is rotated about a vertical axis, or a region naturally described in terms of $y$ is rotated about a horizontal axis, the washer method requires the boundary curves to be rewritten in terms of the other variable.
 
-Finally, when the cross sections perpendicular to the axis are not annuli, the washer formula does not apply. In that case, one must use the general cross-section method, which requires only the area $A(x)$ of each section.
+Finally, when the cross sections perpendicular to the axis are not annuli, the washer formula does not apply. In that case, one must use the [general cross-section method](../volumes-from-parallel-cross-sections/), which requires only the area $A(x)$ of each section.

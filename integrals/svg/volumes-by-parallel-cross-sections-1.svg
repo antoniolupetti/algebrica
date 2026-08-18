@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="351px" viewBox="0 0 309 351" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 25</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <g transform="translate(155.000000, 196.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">A(x)</tspan>
+                </text>
+            </g>
+            <g transform="translate(14.000000, 337.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">a</tspan>
+                </text>
+            </g>
+            <g transform="translate(137.000000, 337.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">x</tspan>
+                </text>
+            </g>
+            <g transform="translate(259.000000, 337.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">b</tspan>
+                </text>
+            </g>
+            <path d="M20,152 C8.954305,152 0,176.176624 0,206 C0,235.823376 8.954305,260 20,260" stroke="#BEB8B7"></path>
+            <path d="M20,260 C31.045695,260 40,235.823376 40,206 C40,176.176624 31.045695,152 20,152" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M141,125 C124.431458,125 111,161.264935 111,206 C111,250.735065 124.431458,287 141,287" stroke="#BEB8B7"></path>
+            <path d="M141,287 C156.763299,287 169.687032,254.174413 170.906005,212.459265 M170.714149,194.772821 C168.689664,155.351441 156.157602,125 141,125" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <ellipse stroke="#BEB8B7" cx="257" cy="206.5" rx="14.5" ry="40"></ellipse>
+            <path d="M17,153 C47,137.666667 74.514235,128.967422 99.542705,126.902267 M141,125 C183.897077,126.629003 223.897077,140.962336 261,168" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17,273.818448 C44.3333333,257.697413 72.0386297,248.674333 100.115889,246.749209 M141,244.818448 C183.897077,246.447451 223.897077,260.780784 261,287.818448" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" transform="translate(139.000000, 266.318448) scale(1, -1) translate(-139.000000, -266.318448) "></path>
+            <path d="M299.162848,324.527171 L299.245131,324.564212 L307.245131,329.064212 C307.556638,329.239435 307.582597,329.665161 307.323007,329.882134 L307.245131,329.935788 L299.245131,334.435788 C299.004452,334.57117 298.699594,334.48581 298.564212,334.245131 C298.443873,334.031194 298.497947,333.766548 298.680485,333.615296 L298.754869,333.564212 L305.091,330 L5.5,330 C5.22385763,330 5,329.776142 5,329.5 C5,329.25454 5.17687516,329.050392 5.41012437,329.008056 L5.5,329 L305.091,329 L298.754869,325.435788 C298.540933,325.315448 298.449717,325.061202 298.527171,324.837152 L298.564212,324.754869 C298.684552,324.540933 298.938798,324.449717 299.162848,324.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="19.5" y1="260.5" x2="19.5" y2="331.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="141.5" y1="287.5" x2="141.5" y2="329.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="261.5" y1="247.5" x2="261.5" y2="331.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <polyline stroke="#BEB8B7" points="180 90 100 117 100 316"></polyline>
+            <path d="M180.5,90 L100.5,117 L100.5,123 M100.5,275 L100.5,316" stroke="#BEB8B7" transform="translate(140.250000, 203.000000) scale(-1, -1) translate(-140.250000, -203.000000) "></path>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="36" y="10">A solid bounded by two planes perpendicular to the </tspan>
+                <tspan x="36" y="23">x-axis. The plane through the point of abscissa x </tspan>
+                <tspan x="36" y="36">meets the solid along a plane region of area A(x).</tspan>
+            </text>
+            <line x1="136.5" y1="48.5" x2="136.5" y2="93.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

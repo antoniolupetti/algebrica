@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="293px" height="334px" viewBox="0 0 293 334" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 27</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <g transform="translate(264.000000, 125.550000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">x</tspan>
+                </text>
+            </g>
+            <g transform="translate(284.000000, 198.550000)" fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <text>
+                    <tspan x="0" y="13">h</tspan>
+                </text>
+            </g>
+            <g transform="translate(72.200000, 179.100000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">A(x)</tspan>
+                </text>
+            </g>
+            <g transform="translate(76.000000, 261.000000)" fill="#312F2F" fill-rule="nonzero" font-size="13" font-weight="normal">
+                <text>
+                    <tspan x="0" y="13">B</tspan>
+                </text>
+            </g>
+            <polygon stroke="#979797" points="117 90 4.4245857e-14 263 111 333 234 260"></polygon>
+            <line x1="1.5" y1="262.5" x2="104.795379" y2="198.726331" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="126.767329" y1="198.569308" x2="232.5" y2="259.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="117.5" y1="91.5" x2="111.5" y2="332.5" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M61,175 L71.5174664,180.648269 M96.5497059,194.091509 L115,204 L174,175" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M174,175 L116,147 L61,174" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <g transform="translate(112.000000, 68.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <text>
+                    <tspan x="0" y="11">V</tspan>
+                </text>
+            </g>
+            <path d="M263.5,176 C263.223858,176 263,175.776142 263,175.5 C263,175.25454 263.176875,175.050392 263.410124,175.008056 L263.5,175 L267,175 L267,144 C267,143.723858 267.223858,143.5 267.5,143.5 C267.74546,143.5 267.949608,143.676875 267.991944,143.910124 L268,144 L268,175 L271.5,175 C271.776142,175 272,175.223858 272,175.5 C272,175.74546 271.823125,175.949608 271.589876,175.991944 L271.5,176 L263.5,176 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M283.5,262 C283.223858,262 283,261.776142 283,261.5 C283,261.25454 283.176875,261.050392 283.410124,261.008056 L283.5,261 L287,261 L287,219 C287,218.723858 287.223858,218.5 287.5,218.5 C287.74546,218.5 287.949608,218.676875 287.991944,218.910124 L288,219 L288,261 L291.5,261 C291.776142,261 292,261.223858 292,261.5 C292,261.74546 291.823125,261.949608 291.589876,261.991944 L291.5,262 L283.5,262 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M271.5,90 C271.776142,90 272,90.2238576 272,90.5 C272,90.7454599 271.823125,90.9496084 271.589876,90.9919443 L271.5,91 L268,91 L268,125 C268,125.276142 267.776142,125.5 267.5,125.5 C267.25454,125.5 267.050392,125.323125 267.008056,125.089876 L267,125 L267,91 L263.5,91 C263.223858,91 263,90.7761424 263,90.5 C263,90.2545401 263.176875,90.0503916 263.410124,90.0080557 L263.5,90 L271.5,90 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path d="M291.5,90 C291.776142,90 292,90.2238576 292,90.5 C292,90.7454599 291.823125,90.9496084 291.589876,90.9919443 L291.5,91 L288,91 L288,198 C288,198.276142 287.776142,198.5 287.5,198.5 C287.25454,198.5 287.050392,198.323125 287.008056,198.089876 L287,198 L287,91 L283.5,91 C283.223858,91 283,90.7761424 283,90.5 C283,90.2545401 283.176875,90.0503916 283.410124,90.0080557 L283.5,90 L291.5,90 Z" fill="#979797" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="34" y="10">The section at distance x from the </tspan>
+                <tspan x="34" y="23">apex is the image of the base under </tspan>
+                <tspan x="34" y="36">the homothety of ratio x/h.</tspan>
+            </text>
+            <line x1="74.5" y1="48.5" x2="74.5" y2="124.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

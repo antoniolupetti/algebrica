@@ -41,7 +41,7 @@ Matters become more complicated when the axis of revolution is not the $x$-axis 
 
 Take, for instance, the region between the $x$-axis and the curve $y=2x^2-x^3$ on the interval $[0,2].$ To apply the washer method we would have to solve a cubic equation for $x,$ which is not exactly convenient. Since the curve is not injective on $[0,2],$ the inverse would also have to be built piece by piece, complicating the picture even further. This situation is unfortunately rather common in practice, because functions with no inverse in elementary form are the rule and not the exception.
 
-To sidestep the problem entirely we have to change the way we decompose the solid. Instead of cutting it into slices perpendicular to the axis of revolution, we picture it as made of many thin concentric shells, one inside the other. Since a vertical strip is described directly by the variable $x,$ we can compute the volume without rewriting the function in terms of $y.$
+To sidestep the problem entirely we have to change the way we decompose the solid. Instead of cutting it into [slices perpendicular to the axis of revolution](../volumes-from-parallel-cross-sections/), we picture it as made of many thin concentric shells, one inside the other. Since a vertical strip is described directly by the variable $x,$ we can compute the volume without rewriting the function in terms of $y.$
 
 
 ## The volume of a cylindrical shell

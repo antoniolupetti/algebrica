@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="351px" viewBox="0 0 309 351" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Group 26</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <g>
+                <g transform="translate(186.000000, 196.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="11">A(x*)</tspan>
+                    </text>
+                </g>
+                <g transform="translate(14.000000, 337.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="11">a</tspan>
+                    </text>
+                </g>
+                <g transform="translate(259.000000, 337.000000)" fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <text>
+                        <tspan x="0" y="11">b</tspan>
+                    </text>
+                </g>
+                <path d="M20,152 C8.954305,152 0,176.176624 0,206 C0,235.823376 8.954305,260 20,260" stroke="#BEB8B7"></path>
+                <path d="M20,260 C31.045695,260 40,235.823376 40,206 C40,176.176624 31.045695,152 20,152" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <path d="M141,124.5 C124.431458,124.5 111,160.764935 111,205.5 C111,250.235065 124.431458,286.5 141,286.5" stroke="#312F2F"></path>
+                <path d="M141,286.5 C146.427461,286.5 151.518294,282.608547 155.910641,275.802656 M155.633008,134.772447 C151.304335,128.229731 146.313487,124.5 141,124.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <path d="M170,124.5 C153.431458,124.5 140,160.764935 140,205.5 C140,250.235065 153.431458,286.5 170,286.5" stroke="#312F2F"></path>
+                <path d="M170,286.5 C185.763299,286.5 198.687032,253.674413 199.906005,211.959265 M199.714149,194.272821 C197.689664,154.851441 185.157602,124.5 170,124.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <ellipse stroke="#BEB8B7" cx="257" cy="206.5" rx="14.5" ry="40"></ellipse>
+                <path d="M17,153 C47,137.666667 74.514235,128.967422 99.542705,126.902267 M171,125 C200,125 234.92716,149.000185 261,168" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17,273.312556 C44.3333333,257.191521 72.0386297,248.168441 100.115889,246.243317 M172.055468,245.312556 C204.18837,249.6071 233.001549,266.4154 261,286.818448" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" transform="translate(139.000000, 266.065502) scale(1, -1) translate(-139.000000, -266.065502) "></path>
+                <line x1="19.5" y1="260.5" x2="19.5" y2="331.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="141.5" y1="287.5" x2="141.5" y2="329.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="170.5" y1="287.5" x2="170.5" y2="329.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <line x1="261.5" y1="247.5" x2="261.5" y2="331.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+                <polyline stroke="#BEB8B7" points="180 90 100 117 100 316"></polyline>
+                <path d="M180.5,90 L100.5,117 M100.5,120 L100.5,117 M100.5,281 L100.5,316" stroke="#BEB8B7" transform="translate(140.250000, 203.000000) scale(-1, -1) translate(-140.250000, -203.000000) "></path>
+                <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                    <tspan x="45" y="10">The slab cut from the solid by two </tspan>
+                    <tspan x="45" y="23">neighbouring planes is replaced by a </tspan>
+                    <tspan x="45" y="36">cylinder of base A(x*) and thickness Δx.</tspan>
+                </text>
+                <line x1="136.5" y1="48.5" x2="136.5" y2="93.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+            <line x1="141.5" y1="124.5" x2="170.5" y2="124.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="143.5" y1="286.5" x2="172.5" y2="286.5" stroke="#312F2F" stroke-linecap="round" stroke-linejoin="round"></line>
+            <g transform="translate(150.000000, 322.000000)" fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <text>
+                    <tspan x="0" y="10">Δx</tspan>
+                </text>
+            </g>
+            <path d="M299.162848,324.527171 L299.245131,324.564212 L307.245131,329.064212 C307.556638,329.239435 307.582597,329.665161 307.323007,329.882134 L307.245131,329.935788 L299.245131,334.435788 C299.004452,334.57117 298.699594,334.48581 298.564212,334.245131 C298.443873,334.031194 298.497947,333.766548 298.680485,333.615296 L298.754869,333.564212 L305.091,330 L166,330 C165.723858,330 165.5,329.776142 165.5,329.5 C165.5,329.25454 165.676875,329.050392 165.910124,329.008056 L166,329 L305.091,329 L298.754869,325.435788 C298.540933,325.315448 298.449717,325.061202 298.527171,324.837152 L298.564212,324.754869 C298.684552,324.540933 298.938798,324.449717 299.162848,324.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="5.5" y1="329.5" x2="146" y2="329.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>
