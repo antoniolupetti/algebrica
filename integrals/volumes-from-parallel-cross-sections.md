@@ -28,7 +28,7 @@ Consider, for example, a solid $S$ lying between two planes perpendicular to a f
 
 We now divide $[a,b]$ into $n$ subintervals of equal width $\Delta x=(b-a)/n,$ determined by the following points.
 
-$$a=x_0<x_1<\dots<x_n=b$$
+$$a=x_0 \lt x_1 \lt \dots \lt x_n=b$$
 
 The planes $x=x_{k-1}$ and $x=x_k$ cut a slice of thickness $\Delta x$ from $S.$ We now choose in the subinterval $[x_{k-1},x_k]$ a point $x_k^{*}$ different from the endpoints. As we said in the introduction, if the cross section remained unchanged as $x$ varied over the subinterval, the slice we have just delimited would be a solid of constant cross section, with base area $A(x_k^{*})$ and height $\Delta x,$ and its volume would be the product of the base area and the thickness:
 
