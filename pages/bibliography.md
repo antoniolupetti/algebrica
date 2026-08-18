@@ -168,6 +168,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Algorithms for Decision Making](https://drive.google.com/file/d/1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu/view), Mykel J. Kochenderfer, Tim A. Wheeler, Kyle H. Wray
 + [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu), Stuart Russell, Peter Norvig
 + [Computing Neural Network Gradients](https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf), Kevin Clark
++ [CS229 Lecture Notes on Machine Learning (Stanford)](https://cs229.stanford.edu/main_notes.pdf), Andrew Ng, Tengyu Ma
 + [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342), Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola
 + [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223), Tong Xiao, Jingbo Zhu
 + [Foundations of Machine Learning](https://cs.nyu.edu/~mohri/mlbook/), Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
