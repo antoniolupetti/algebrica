@@ -26,6 +26,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Foundations of Module and Ring Theory: A Handbook for Study and Research](https://www.math.uni-duesseldorf.de/~wisbauer/book.pdf), Robert Wisbauer
 + [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
 + [Introduction to Modern Algebra](http://aleph0.clarku.edu/~djoyce/ma225/algebra.pdf), David Joyce
++ [An Invitation to General Algebra and Universal Constructions](https://math.berkeley.edu/~gbergman/245/3.2.pdf), George M. Bergman
 + [Precalculus](https://www.pearson.com/en-us/subject-catalog/p/precalculus/P200000006127/9780137321667), Robert F. Blitzer
 
 ## Linear algebra

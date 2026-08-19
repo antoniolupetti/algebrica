@@ -197,6 +197,6 @@ The direction along which the solid is sliced must be chosen by considering the 
 
 Note that when we replace each slice of the solid with a small cylinder or prism of base area $A(x_i)$ and thickness $\Delta x$, we are only approximating its volume. If $A$ is sufficiently regular, the error produced by each slice becomes smaller and smaller as $\Delta x$ decreases and, in the limit, the total error tends to zero, so the Riemann sums converge to the volume of the solid.
 
-This construction does not, on the other hand, provide an approximation of the lateral surface, since the edges of the individual slices do not reconstruct, in the limit, the area of the surface of the solid. A separate procedure is needed to compute it.
+This construction does not, on the other hand, provide an approximation of the lateral surface, since the edges of the individual slices do not reconstruct, in the limit, the [area of the surface of the solid](../surface-area-of-revolution/). A separate procedure is needed to compute it.
 
 Keep in mind, finally, that all of this requires the function $A(x)$, which describes the area of the cross sections, to be integrable on the interval considered. If the shape of the cross sections changes along the axis, it is often enough to divide the solid into several parts. For example, if a solid is formed by a cone and a cylinder, $A(x)$ will have different expressions on the intervals corresponding to the two components, and the volume is computed by splitting the integral into the corresponding pieces.

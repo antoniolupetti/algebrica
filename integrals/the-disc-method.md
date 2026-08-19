@@ -71,7 +71,7 @@ Since $\big(f(x)\big)^2 = \big(|f(x)|\big)^2$, the formula holds whether $f$ is 
 
 ## Example
 
-Consider the curve $y = \sqrt{x}$ on the interval $0 \leq x \leq 4$, together with the region $R$ that lies between this curve and the $x$-axis. Rotating $R$ about the $x$-axis generates a solid whose silhouette widens as $x$ increases, since the radius $\sqrt{x}$ grows with $x$. This solid is a paraboloid of revolution, the shape of a smooth bowl.
+Consider the curve $y = \sqrt{x}$ on the interval $0 \leq x \leq 4$, together with the region $R$ that lies between this curve and the $x$-axis. Rotating $R$ about the $x$-axis generates a solid whose silhouette widens as $x$ increases, since the radius $\sqrt{x}$ grows with $x$. This solid is a [paraboloid of revolution](../surface-area-of-revolution/), the shape of a smooth bowl.
 
 ![IMG. 3](svg/the-disk-method-3.svg)
 
