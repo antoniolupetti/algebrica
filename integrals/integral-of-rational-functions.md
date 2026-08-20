@@ -323,6 +323,30 @@ $$\frac{5}{2} \ln(x^2 + 2x + 3) - \frac{7}{\sqrt{2}} \arctan\!\left(\frac{x + 1}
 
 > The factor $x + 1$ initially appears to require its own term in the decomposition. Once the coefficients are computed, that contribution disappears entirely. The full decomposition must always be written down: what seems essential at first may ultimately cancel.
 
+## Repeated irreducible quadratic factors
+
+An irreducible quadratic can appear in the denominator with multiplicity greater than one. The rule is the one already seen for repeated linear factors: every power of the factor contributes its own term, and each numerator has degree one. When the denominator contains $(x^2 + bx + c)^k$ with $b^2 - 4c < 0$, the corresponding part of the decomposition is:
+
+$$\frac{A_1 x + B_1}{x^2 + bx + c} + \frac{A_2 x + B_2}{(x^2 + bx + c)^2} + \dots + \frac{A_k x + B_k}{(x^2 + bx + c)^k}$$
+
+Every term is integrated by the same splitting used in the simple case. The numerator $A_j x + B_j$ is written as a multiple of the derivative $2x + b$ of the quadratic plus a constant:
+
+$$A_j x + B_j = \frac{A_j}{2}(2x + b) + \left(B_j - \frac{A_j b}{2}\right)$$
+
+The substitution $u = x^2 + bx + c$ settles the first piece at once. For $j = 1$ it produces a logarithm, while for $j \geq 2$ it produces the power $u^{1 - j}/(1 - j)$, a rational term without logarithm, as happens for repeated linear factors.
+
+- - -
+
+The constant piece is what distinguishes the repeated case. Completing the square with $u = x + b/2$ and $a^2 = c - b^2/4$, positive because the discriminant is negative, reduces it to:
+
+$$I_j = \int \frac{1}{(u^2 + a^2)^j} \ du$$
+
+For $j = 1$ this is the arctangent integral of the previous section. For $j \geq 2$ the exponent blocks that route, and the integral is computed through the [reduction formula](../reduction-formulas/) for powers of a quadratic denominator:
+
+$$I_j = \frac{1}{2(j - 1)a^2} \left[ \frac{u}{(u^2 + a^2)^{j - 1}} + (2j - 3) I_{j - 1} \right] \qquad (j \geq 2)$$
+
+Each application lowers the index by one and detaches a rational term, so after $j - 1$ steps the computation ends at $I_1$ and its arctangent. Collecting the contributions of all the powers, the antiderivative associated with a repeated irreducible quadratic factor consists of a rational function, one arctangent, and the single logarithm produced by the first power of the factor.
+
 ## Decision procedure
 
 The following stepwise procedure summarises the integration of a generic rational function.

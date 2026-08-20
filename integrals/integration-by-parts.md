@@ -250,3 +250,5 @@ The second outcome is that the original integral reappears, possibly after anoth
 The third outcome is that the new integral has a standard antiderivative or requires another application of integration by parts. In the definite case, evaluate the boundary term $[uv]_a^b = u(b)v(b) - u(a)v(a)$ and the remaining definite integral. In the indefinite case, evaluate the remaining integral and add one constant of integration $c$ after the last algebraic simplification.
 
 > When the integrand is a rational expression in $\sin(x)$ and $\cos(x)$ rather than a product suited to integration by parts, the [Weierstrass substitution](../the-weierstrass-substitution/) or a [direct substitution](../integration-by-substitution/) such as $u = \sin(x)$ or $u = \cos(x)$ may give an [integral of a rational function](../integral-of-rational-functions/).
+
+> When the integrand carries an integer exponent $n,$ the repeated application described in the third outcome takes a systematic form. Integration by parts returns an integral of the same family with a lower index, and the relation obtained is a [reduction formula](../reduction-formulas/) to be applied down to a base case.

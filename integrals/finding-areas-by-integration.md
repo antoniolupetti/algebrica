@@ -146,6 +146,58 @@ $$A = 4 + 4 = 8$$
 
 The symmetry of the result is not a coincidence: $f(x) = x^3 - 3x$ is an [odd function](../even-and-odd-functions/), and the two regions are mirror images of each other across the origin.
 
+## Integration with respect to $y$
+
+Vertical strips are not always the natural choice. When the boundaries of a region are graphs of functions of $y$, horizontal strips describe it with a single integral, while the description by vertical strips may force a subdivision of the interval.
+
+Let $p(y)$ and $q(y)$ be continuous on $[c, d]$, with $p(y) \geq q(y)$ for every $y \in [c, d]$. Consider the region bounded on the right by the curve $x = p(y)$, on the left by the curve $x = q(y)$, and by the horizontal lines $y = c$ and $y = d$. Its area is given by:
+
+$$A = \int_c^d [p(y) - q(y)] \ dy \tag{2}$$
+
+The derivation is the one of equation $(1)$ with the two coordinates exchanged. A horizontal strip at height $y$ has length $p(y) - q(y)$ and thickness $dy$, and the integral accumulates these contributions from $y = c$ to $y = d$. Everything established for vertical strips transfers unchanged. The heights at which the two curves meet are found by solving $p(y) = q(y)$, and when the curves cross at an interior height the interval is split there, or the [absolute value](../absolute-value/) is used:
+
+$$A = \int_c^d |p(y) - q(y)| \ dy$$
+
+- - -
+
+What decides between the two descriptions is the shape of the boundary. Vertical strips are appropriate when one function gives the upper boundary and one function the lower boundary over the whole interval $[a, b]$. When the upper or the lower boundary changes formula partway, while the left and right boundaries are single graphs $x = q(y)$ and $x = p(y)$, the horizontal description avoids the subdivision. Enough splitting makes either method work on any region, so the choice is a matter of how many integrals it costs.
+
+> A curve given by $y = f(x)$ with $f$ [invertible](../inverse-function/) on the interval of interest can be rewritten as $x = f^{-1}(y)$. The two descriptions are available for the same region whenever the inverse exists, and they give the same value for the area.
+
+## Example 3
+
+Find the area of the region enclosed between the parabola $x = y^2$ and the line $x = y + 2$. Both boundaries are already expressed as functions of $y$. The curves meet where $y^2 = y + 2$, an equation that gives:
+
+$$
+\begin{align}
+y^2 - y - 2 &= 0 \\[6pt]
+(y - 2)(y + 1) &= 0
+\end{align}
+$$
+
+The solutions $y = -1$ and $y = 2$ are the limits of integration. At the intermediate height $y = 0$ the line gives $x = 2$ and the parabola gives $x = 0$, so the line is the right boundary and the parabola the left one on the whole interval. Equation $(2)$ gives:
+
+$$
+\begin{align}
+A &= \int_{-1}^{2} \left[ (y + 2) - y^2 \right] \ dy \\[6pt]
+  &= \left[ \frac{y^2}{2} + 2y - \frac{y^3}{3} \right]_{-1}^{2} \\[6pt]
+  &= \left( 2 + 4 - \frac{8}{3} \right) - \left( \frac{1}{2} - 2 + \frac{1}{3} \right) \\[6pt]
+  &= \frac{10}{3} + \frac{7}{6}
+\end{align}
+$$
+
+The area of the region is therefore:
+
+$$A = \frac{9}{2}$$
+
+- - -
+
+The cost of the vertical description measures the convenience of the horizontal one. For $0 \leq x \leq 1$ the region is bounded above and below by the two branches $y = \pm\sqrt{x}$ of the parabola, while for $1 \leq x \leq 4$ the lower boundary is the line $y = x - 2$. The lower boundary changes formula at $x = 1$, so the computation splits into two integrals:
+
+$$A = \int_{0}^{1} 2\sqrt{x} \ dx + \int_{1}^{4} \left( \sqrt{x} - x + 2 \right) \ dx$$
+
+The two integrals evaluate to $4/3$ and $19/6$, whose sum is again $9/2$. The horizontal description reaches the same value with one integral instead of two.
+
 ## Decision procedure
 
 The following stepwise procedure summarises the application of the area formula to a generic pair of curves.
