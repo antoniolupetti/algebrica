@@ -275,7 +275,7 @@ The remaining integral has the same structure as the previous example and has al
 
 $$\int x^2 \ e^x \ dx = x^2 \ e^x - 2(x - 1) e^x + c = (x^2 - 2x + 2) e^x + c$$
 
-The same reasoning extends to any polynomial $P(x)$ of degree $n$. After $n$ successive applications of integration by parts, the polynomial factor is reduced to a constant and the integration terminates. The general recurrence relation is:
+The same reasoning extends to any polynomial $P(x)$ of degree $n$. After $n$ successive applications of integration by parts, the polynomial factor is reduced to a constant and the integration terminates. The [general recurrence relation](../reduction-formulas/) is:
 
 $$\int x^n \ e^x \ dx = x^n \ e^x - n \int x^{n - 1} \ e^x \ dx$$
 

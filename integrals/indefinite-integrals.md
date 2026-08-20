@@ -264,6 +264,6 @@ The table lists basic indefinite integrals. The derivative of each right-hand si
 
 [/class]
 
-The page on [integration strategies](../integration-strategies/) examines the structure of common integrands and explains how to choose among direct integration, substitution, integration by parts, and algebraic or trigonometric reduction.
+The page on [integration strategies](../integration-strategies/) examines the structure of common integrands and explains how to choose among direct integration, substitution, integration by parts, and [algebraic or trigonometric reduction](../reduction-formulas/).
 
 > The identities above hold on any interval where the integrand is defined and continuous. [Integration by substitution](../integration-by-substitution/) and [integration by parts](../integration-by-parts/) apply to some integrals outside this table, but neither method guarantees an elementary primitive. If $f$ is continuous on $[a, b]$ and $F$ is continuous on $[a, b]$ with $F'(x) = f(x)$ for every $x \in (a, b)$, the Fundamental Theorem of Calculus gives $\int_a^b f(x) \ dx = F(b) - F(a).$ This [definite integral](../definite-integrals/) is the net signed area between the graph of $f$ and the $x$-axis over $[a, b]$.

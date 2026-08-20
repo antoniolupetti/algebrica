@@ -503,7 +503,7 @@ The next derivative is $0,$ so the tabular process stops after the row containin
 
 $$\int x^3e^x \ dx=e^x(x^3-3x^2+6x-6)+c$$
 
-The table is a shorthand for four applications of integration by parts. For $J_n=\int x^ne^{ax} \ dx,$ where $n\geq1$ is an integer, the same calculation has the reduction formula:
+The table is a shorthand for four applications of integration by parts. For $J_n=\int x^ne^{ax} \ dx,$ where $n\geq1$ is an integer, the same calculation has the [reduction formula](../reduction-formulas/):
 
 $$J_n=\frac{x^ne^{ax}}{a}-\frac{n}{a}J_{n-1}+c \qquad a\neq0$$
 

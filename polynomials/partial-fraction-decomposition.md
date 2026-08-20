@@ -138,7 +138,7 @@ $$
 \frac{Bx + C}{x^{2} + ax + b}
 $$
 
-The numerator is a linear polynomial because the denominator has degree two, and a proper fraction with such a denominator admits a numerator of degree at most one. If the quadratic factor is repeated $k$ times, the decomposition contains the full sequence:
+The numerator is a linear polynomial because the denominator has degree two, and a proper fraction with such a denominator admits a numerator of degree at most one. If the [quadratic factor is repeated $k$ times](../reduction-formulas/), the decomposition contains the full sequence:
 
 $$
 \frac{B_{1}x + C_{1}}{x^{2} + ax + b}

@@ -156,7 +156,7 @@ The derived identities serve the same purpose for expressions involving the reci
 
 Similarly, from $1 + \cot^2\theta = \csc^2\theta$ one obtains $\cot^2\theta = \csc^2\theta - 1$, allowing expressions in $\cot\theta$ and $\csc\theta$ to be written in terms of $\csc\theta$ alone.
 
-Many standard [integrals](../definite-integrals/) require the integrand to be expressed in a form that matches a known pattern before a substitution can be applied. The integral of $\tan^2\theta$, for instance, is not immediately reducible by elementary rules. Substituting $\tan^2\theta = \sec^2\theta - 1$ rewrites the integrand as a difference of two terms, each of which is straightforward to integrate:
+Many standard [integrals](../definite-integrals/) require the integrand to be expressed in a form that matches a known pattern before a substitution can be applied. The [integral of $\tan^2\theta$](../reduction-formulas/), for instance, is not immediately reducible by elementary rules. Substituting $\tan^2\theta = \sec^2\theta - 1$ rewrites the integrand as a difference of two terms, each of which is straightforward to integrate:
 
 $$
 \begin{align}

@@ -42,7 +42,7 @@ The final six entries record the corresponding [hyperbolic](../hyperbolic-functi
 
 ## Integrals of trigonometric powers with $n$ even
 
-A frequent case in which the antiderivative is not immediately accessible occurs when sine or cosine appears raised to an integer power:
+A frequent case in which the antiderivative is not immediately accessible occurs when [sine or cosine appears raised to an integer power](../reduction-formulas/):
 
 $$\int \sin^{n} x \ dx \qquad \int \cos^{n} x \ dx$$
 
