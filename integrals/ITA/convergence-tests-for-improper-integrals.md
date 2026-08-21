@@ -22,7 +22,7 @@ Nella voce dedicata agli integrali impropri sono stati esposti i criteri del con
 
 ## Il criterio di Cauchy
 
-Il primo Criterio è quello di Cauchy, che come vedremo non richiede ipotesi di segno della funzione e, questo è fondamentale, non fornisce il valore dell'integrale, ma solo la sua convergenza. Consideriamo, quindi, una funzione $f$ integrabile secondo Riemann su ogni intervallo $[a,t]$ con $t\gt a,$ e sia $F$ la sua funzione integrale:
+Il primo criterio è quello di Cauchy, che come vedremo non richiede ipotesi di segno della funzione e, questo è fondamentale, non fornisce il valore dell'integrale, ma solo la sua convergenza. Consideriamo, quindi, una funzione $f$ integrabile secondo Riemann su ogni intervallo $[a,t]$ con $t\gt a,$ e sia $F$ la sua funzione integrale:
 
 $$F(t):=\int_a^t f(x) \ dx$$
 
@@ -66,7 +66,7 @@ Consideriamo adesso l'integrale:
 
 $$\int_a^{+\infty}f(x)g(x) \ dx \tag{5}$$
 
-Se le suddette ipotesi sono soddisfatte l'integrale  converge.
+Se le suddette ipotesi sono soddisfatte l'integrale converge.
 
 - - - 
 
@@ -98,7 +98,7 @@ $$\int_a^{+\infty}f(x) \ dx \tag{7}$$
 Da queste premesse si può concludere che il seguente integrale converge:
 
 $$\int_a^{+\infty}f(x)g(x) \ dx$$ 
-La dimostrazione non è particolarmente complicata e riconduce l'enunciato al criterio di Dirichlet. Se un funzione monotona e limitata ammette limite finito $L$ per $x\to+\infty,$ la funzione $h=g-L$ è allora monotona e infinitesima. La funzione integrale $F$ è quindi continua e ha limite finito per $t\to+\infty,$ dunque è limitata su $[a,+\infty).$ Il criterio di Dirichlet applicato alla coppia $f$ e $h$ garantisce la convergenza di: 
+La dimostrazione non è particolarmente complicata e riconduce l'enunciato al criterio di Dirichlet. Se una funzione monotona e limitata ammette limite finito $L$ per $x\to+\infty,$ la funzione $h=g-L$ è allora monotona e infinitesima. La funzione integrale $F$ è quindi continua e ha limite finito per $t\to+\infty,$ dunque è limitata su $[a,+\infty).$ Il criterio di Dirichlet applicato alla coppia $f$ e $h$ garantisce la convergenza di: 
 
 $$\int_a^{+\infty}f(x)h(x) \ dx$$ 
 Dalla decomposizione si ottiene che:
@@ -188,6 +188,8 @@ Questo integrale non converge, perché per ogni $R$ abbiamo
 
 $$\int_0^R f(x) \ dx=\ln(1+R^2) \to +\infty$$
 
-$$\int_{-R}^R f(x) \ dx=0$$Quindi il valore principale è nullo.
+$$\int_{-R}^R f(x) \ dx=0$$
+
+Quindi il valore principale è nullo.
 
 Se invece un generico integrale improprio converge, il valore principale esiste e coincide con esso, poiché la coppia simmetrica di limiti è un caso particolare dei due limiti indipendenti. Il viceversa invece è falso, come mostra l'esempio precedente.
