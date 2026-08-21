@@ -32,13 +32,13 @@ $$
 
 Fortunately, most of us are not in the running for a _Fields Medal_ and nurse more modest ambitions. For this reason, the integrals we will encounter over the course of our studies are, for the most part, within the reach of any willing student (unless they have the misfortune of running into a particularly sadistic professor along the way).
 
-The good news is that a large share of these integrals can be evaluated using mechanical procedures and a pinch of intuition, which can be developed only through [a great deal of practice](learning-mathematics.md) with the main rules of integration and the typical shortcuts that save a significant number of steps.
+The good news is that a large share of these integrals can be evaluated using mechanical procedures and a pinch of intuition, which can be developed only through [a great deal of practice](../learning-mathematics/) with the main rules of integration and the typical shortcuts that save a significant number of steps.
 
 - - -
 
 In the following paragraphs I will give a rigorous definition of integrals, in particular of the indefinite ones, which are the subject of this entry and are essential for introducing their [definite](../definite-integrals) counterparts. First, though, I prefer to offer an intuitive preamble, starting from the notion of differentiation, which, as we will see later when we discuss _primitives_, is the inverse operation of integration.
 
-Consider a simple function $y=x^2$. Its graph is a [parabola](parabola.md) passing through the origin. We know, from the study of the rules of differentiation, that its derivative is unique and equal to $y'=2x$ and that, for each value of $x$, it gives the slope of the line tangent to the graph at that point. For instance, for $x=2$ we obtain $y'(2)=2 \cdot 2 = 4.$ This means that the line tangent to the parabola at the point $(2,4)$ has slope exactly equal to $4$.
+Consider a simple function $y=x^2$. Its graph is a [parabola](../parabola/) passing through the origin. We know, from the study of the rules of differentiation, that its derivative is unique and equal to $y'=2x$ and that, for each value of $x$, it gives the slope of the line tangent to the graph at that point. For instance, for $x=2$ we obtain $y'(2)=2 \cdot 2 = 4.$ This means that the line tangent to the parabola at the point $(2,4)$ has slope exactly equal to $4$.
 
 ![IMG. 1](svg/indefinite-integrals-1.svg)
 

@@ -17,7 +17,7 @@ tags:
 
 The individual [function](../functions/) pages, such as those for [sine](../sine-function/), [cosine](../cosine-function/), [tangent](../tangent-function/), and [cotangent](../cotangent-function/), state the corresponding antiderivatives alongside the other defining properties. These integrals are straightforward to compute since they appear constantly in problem solving. The list below collects the antiderivatives of all the main trigonometric functions, providing an immediate overall view of the essential results. 
 
-The final six entries record the corresponding [hyperbolic](../hyperbolic-functions/) integrals, included for completeness because they arise from the same techniques and are often needed alongside their circular counterparts.
+The final six entries record the corresponding hyperbolic integrals, included for completeness because they arise from the same techniques and are often needed alongside their circular counterparts.
 
 [class="table-1"]
 
@@ -272,6 +272,6 @@ The following stepwise procedure summarises the application of the techniques ab
 + When the integrand has the form $\sin^{m} x \cos^{n} x$ with at least one odd exponent, detach one factor of the odd-power function, convert the remaining even power through the Pythagorean identity, and substitute with the complementary function: $u = \sin x$ when cosine carries the odd exponent, $u = \cos x$ otherwise.
 + When both $m$ and $n$ are even, apply the power-reduction identities to every squared term, possibly together with $\sin x \cos x = \tfrac{1}{2}\sin 2x$, and integrate term by term.
 + For $\sec x$ and $\csc x$, multiply the integrand by a fraction equal to $1$ chosen so that the numerator becomes the derivative of the denominator, and recognise the resulting logarithmic form.
-+ When the integrand is a rational function of $\sin x$ and $\cos x$ that does not fit the cases above, apply the [Weierstrass substitution](../weierstrass-substitution/), which converts the integrand into a [rational function](../rational-functions/) of a new variable. For radicals of quadratic expressions, the natural tool is instead [trigonometric substitution](../trigonometric-substitution-for-integrals/).
++ When the integrand is a rational function of $\sin x$ and $\cos x$ that does not fit the cases above, apply the [Weierstrass substitution](../the-weierstrass-substitution/), which converts the integrand into a [rational function](../rational-functions/) of a new variable. For radicals of quadratic expressions, the natural tool is instead [trigonometric substitution](../trigonometric-substitution-for-integrals/).
 
 > When a product of two functions does not match any of the patterns above, the standard alternative is [integration by parts](../integration-by-parts/). When no closed-form antiderivative exists, the value of a definite integral can still be approximated through [numerical integration](../numerical-integration/).

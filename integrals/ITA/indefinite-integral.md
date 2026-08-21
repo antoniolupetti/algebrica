@@ -32,13 +32,13 @@ $$
 
 Per nostra fortuna, la maggior parte di noi non corre per una _Field Medal_, nutre ambizioni più contenute e per questa ragione, gli integrali con cui avrà a che fare nel corso dei propri studi sono quindi, in prevalenza, alla portata di un qualunque studente volenteroso (fatto salvo il caso in cui abbia la sfortuna di imbattersi lungo il proprio percorso accademico in qualche professore particolarmente sadico).
 
-La buona notizia è che una larga parte di questi oggetti matematici sono risolvibili con processi meccanici e un pizzico di intuizione che si può sviluppare solo ed esclusivamente facendo [tantissima pratica](learning-mathematics.md) sulle principali regole di integrazione e sulle tipiche scorciatoie che consentono di risparmiare un quantità significativa di passaggi.
+La buona notizia è che una larga parte di questi oggetti matematici sono risolvibili con processi meccanici e un pizzico di intuizione che si può sviluppare solo ed esclusivamente facendo [tantissima pratica](../learning-mathematics/) sulle principali regole di integrazione e sulle tipiche scorciatoie che consentono di risparmiare un quantità significativa di passaggi.
 
 - - -
 
 Nei successivi paragrafi proporrò una definizione rigorosa degli integrali, in particolare di quelli indefiniti che sono l'oggetto di questa voce e sono fondamentali per introdurre gli omonimi [definiti](../definite-integrals). Tuttavia preferisco fare una premessa intuitiva, partendo dal concetto di derivazione, che come vedremo più avanti, parlando di _primitive_, è l'operazione inversa dell'integrazione. 
 
-Consideriamo una semplice funzione $y=x^2$. Il suo grafico è una [parabola](parabola.md) passante per l'origine. Sappiamo, dallo studio delle regole di derivazione, che la sua derivata è unica ed è pari a $y'=2x$ e associa ad ogni valore di $x$ il coefficiente angolare della retta tangente al grafico in quel punto. Per esempio, per $x=2$ si ottiene $y'(2)=2 \cdot 2 = 4.$ Questo significa che la retta tangente alla parabola nel punto $(2,4)$ ha coefficiente angolare proprio pari a $4$.
+Consideriamo una semplice funzione $y=x^2$. Il suo grafico è una [parabola](../parabola/) passante per l'origine. Sappiamo, dallo studio delle regole di derivazione, che la sua derivata è unica ed è pari a $y'=2x$ e associa ad ogni valore di $x$ il coefficiente angolare della retta tangente al grafico in quel punto. Per esempio, per $x=2$ si ottiene $y'(2)=2 \cdot 2 = 4.$ Questo significa che la retta tangente alla parabola nel punto $(2,4)$ ha coefficiente angolare proprio pari a $4$.
 
 ![IMG. 1](indefinite-integrals-1.svg)
 

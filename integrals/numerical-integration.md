@@ -17,7 +17,7 @@ tags:
 ---
 ## Integrals without elementary antiderivatives
 
-The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provides a way for evaluating a [definite integral](../definite-integrals/). When an antiderivative exists, the value of the integral becomes the difference between the values of the antiderivative at the endpoints. Many integrands, however, do not admit a primitive expressible through elementary [functions](../functions/), and methods such as [integration by substitution](../integration-by-substitution/), [integration by parts](../integration-by-parts/), and the [Weierstrass substitution](../weierstrass-substitution/) often fail to produce a closed form.
+The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provides a way for evaluating a [definite integral](../definite-integrals/). When an antiderivative exists, the value of the integral becomes the difference between the values of the antiderivative at the endpoints. Many integrands, however, do not admit a primitive expressible through elementary [functions](../functions/), and methods such as [integration by substitution](../integration-by-substitution/), [integration by parts](../integration-by-parts/), and the [Weierstrass substitution](../the-weierstrass-substitution/) often fail to produce a closed form.
 
 A typical example is provided by the following integral, which appears in the theory of the [normal distribution](../normal-distribution/) and whose integrand has no antiderivative within the elementary functions:
 

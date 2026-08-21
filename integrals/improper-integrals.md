@@ -287,6 +287,6 @@ $$\int_1^{+\infty} \frac{\sin x}{x} \ dx$$
 
 $$\int_1^{+\infty} \frac{|\sin x|}{x} \ dx$$
 
-The second integral diverges. An integral that converges without converging absolutely is said to converge conditionally.
+The second integral diverges. An integral that converges without converging absolutely is said to [converge conditionally](../convergence-tests-for-improper-integrals/).
 
 > Suppose $f$ is Riemann integrable on every bounded subinterval of $[a,+\infty).$ The function $f$ is Lebesgue integrable on $[a,+\infty)$ if and only if its improper integral converges absolutely, and the two values then coincide. Thus $\int_1^{+\infty}\sin x/x \ dx$ converges as an improper integral, but $x\mapsto\sin x/x$ is not Lebesgue integrable on $[1,+\infty)$ because the integral of $|\sin x|/x$ diverges.

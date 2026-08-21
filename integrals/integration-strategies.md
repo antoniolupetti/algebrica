@@ -929,6 +929,6 @@ Integration in $b$ gives $I(b)=-\arctan b+k.$ Since $|\sin x|\leq x$ on $(0,+\in
 
 $$\int_{0}^{+\infty} \frac{\sin x}{x} \ dx = \lim_{b \to 0^+} \left(\frac{\pi}{2} - \arctan b\right) = \frac{\pi}{2}$$
 
-Both operations require justification. On every half-line $b\geq b_0>0,$ the derivative in $b$ is dominated by the integrable function $e^{-b_0x}.$ For the limit $b\to 0^+,$ dominated convergence applies on every finite interval. On the remaining tail, Dirichlet's estimate is uniform for $b\geq 0,$ which gives continuity at $b=0.$ The integral at $b=0$ is only conditionally convergent.
+Both operations require justification. On every half-line $b\geq b_0>0,$ the derivative in $b$ is dominated by the integrable function $e^{-b_0x}.$ For the limit $b\to 0^+,$ dominated convergence applies on every finite interval. On the remaining tail, [Dirichlet's estimate](../convergence-tests-for-improper-integrals/) is uniform for $b\geq 0,$ which gives continuity at $b=0.$ The integral at $b=0$ is only conditionally convergent.
 
 The factor $e^{-bx}$ works because differentiation in $b$ removes $1/x,$ while exponential decay controls the improper integral for $b>0.$ A parameter method requires a family whose derivative is simpler than the original integrand, so it is less systematic than the preceding strategies.

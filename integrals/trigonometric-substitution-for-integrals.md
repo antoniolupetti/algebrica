@@ -34,7 +34,7 @@ $$1 + \tan^2\theta = \sec^2\theta$$
 
 $$\sec^2\theta - 1 = \tan^2\theta$$
 
-> The substitution in each case is chosen so that the term inside the square root matches the left-hand side of one of these identities, which turns the radical into an expression without radicals. Integrals involving rational functions of $\sin x$ and $\cos x$ are instead usually treated through the [Weierstrass substitution](../weierstrass-substitution/), which transforms trigonometric expressions into rational functions of a new variable.
+> The substitution in each case is chosen so that the term inside the square root matches the left-hand side of one of these identities, which turns the radical into an expression without radicals. Integrals involving rational functions of $\sin x$ and $\cos x$ are instead usually treated through the [Weierstrass substitution](../the-weierstrass-substitution/), which transforms trigonometric expressions into rational functions of a new variable.
 
 - - -
 
@@ -415,4 +415,4 @@ The following stepwise procedure summarises the application of trigonometric sub
 + Evaluate the resulting trigonometric integral. For the definite version of the problem, update the limits of integration according to the substitution, as discussed on the page on [integration by substitution](../integration-by-substitution/).
 + For an indefinite integral, back-substitute through the right triangle, or through the inverse trigonometric function, to return to the original variable $x$.
 
-> When the integrand is a [rational function](../rational-functions/) of $x$ rather than the radical of a quadratic, [partial fraction decomposition](../partial-fraction-decomposition/) and the techniques on the page on [integrals of rational functions](../integral-of-rational-functions/) are the appropriate tools. For rational functions of $\sin x$ and $\cos x$, the [Weierstrass substitution](../weierstrass-substitution/) provides a systematic alternative.
+> When the integrand is a [rational function](../rational-functions/) of $x$ rather than the radical of a quadratic, [partial fraction decomposition](../partial-fraction-decomposition/) and the techniques on the page on [integrals of rational functions](../integral-of-rational-functions/) are the appropriate tools. For rational functions of $\sin x$ and $\cos x$, the [Weierstrass substitution](../the-weierstrass-substitution/) provides a systematic alternative.

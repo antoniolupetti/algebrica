@@ -94,7 +94,7 @@ A frequent situation in applications is an exponential whose argument is a linea
 
 $$\int e^{ax + b} \ dx = \frac{1}{a} e^{ax + b} + c$$
 
-The factor $1/a$ compensates for the coefficient that the [chain rule](../the-derivative-of-a-composite-function/) introduces upon differentiation. A direct verification yields:
+The factor $1/a$ compensates for the coefficient that the [chain rule](../chain-rule/) introduces upon differentiation. A direct verification yields:
 
 $$\frac{d}{dx}\left[ \frac{1}{a} e^{ax + b} + c \right] = \frac{1}{a} \cdot a \cdot e^{ax + b} = e^{ax + b}$$
 

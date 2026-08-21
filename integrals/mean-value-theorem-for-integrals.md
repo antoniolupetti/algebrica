@@ -144,7 +144,7 @@ The statement above is the first mean value theorem for integrals. In the second
 
 $$\int_a^b f(x) g(x) \ dx = g(a) \int_a^{\xi} f(x) \ dx + g(b) \int_{\xi}^b f(x) \ dx$$
 
-This form is used in proofs of the Dirichlet and Abel tests for the convergence of [improper integrals](../improper-integrals/) with an oscillating integrand.
+This form is used in proofs of the [Dirichlet and Abel tests](../convergence-tests-for-improper-integrals/) for the convergence of [improper integrals](../improper-integrals/) with an oscillating integrand.
 
 ## Use in the fundamental theorem of calculus
 

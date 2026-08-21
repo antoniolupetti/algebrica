@@ -26,7 +26,7 @@ The procedure has four steps:
 + Rewrite every factor and differential in terms of $u.$
 + Integrate with respect to $u.$ For an indefinite integral, replace $u$ by $g(x).$ For a definite integral, use limits expressed in $u.$
 
-> Substitution is the reverse of the [chain rule](../the-derivative-of-a-composite-function/). The inner function and its derivative determine the change of variable.
+> Substitution is the reverse of the [chain rule](../chain-rule/). The inner function and its derivative determine the change of variable.
 
 - - -
 
@@ -255,7 +255,7 @@ The following steps show when substitution applies and how to carry it out.
 + When the integrand has the form $f(g(x))g'(x),$ set $u = g(x),$ compute $du = g'(x) \ dx,$ rewrite the integral entirely in $u,$ and use the corresponding standard formula.
 + For a definite integral evaluated in $u,$ replace the original limits by $g(a)$ and $g(b).$ If the antiderivative is first expressed in $x,$ retain the original limits.
 + For an indefinite integral, replace $u$ by $g(x)$ to express the antiderivative in $x.$
-+ For a product of two functions, [integration by parts](../integration-by-parts/) is useful when differentiation simplifies one factor and the other has an antiderivative that is easy to compute. The [Weierstrass substitution](../weierstrass-substitution/) converts every rational function of $\sin x$ and $\cos x$ into a rational function of the new variable.
++ For a product of two functions, [integration by parts](../integration-by-parts/) is useful when differentiation simplifies one factor and the other has an antiderivative that is easy to compute. The [Weierstrass substitution](../the-weierstrass-substitution/) converts every rational function of $\sin x$ and $\cos x$ into a rational function of the new variable.
 
 ## Further worked examples
 
