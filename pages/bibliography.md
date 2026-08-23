@@ -86,6 +86,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 ## Complex analysis
 
++ [Complex Analysis](https://complexanalysis.org/howell-complex-analysis-web.pdf), Russell W. Howell, John H. Mathews
 + [Complex Variables](https://people.math.sc.edu/girardi/m7034/book/AshComplexVariablesWithHyperlinks.pdf), Robert B. Ash, W. P. Novinger
 + [A First Course in Complex Analysis](https://matthbeck.github.io/papers/complex.pdf), Matthias Beck, Gerald Marchesi, Dennis Pixton, Lucas Sabalka
 + [Visual Complex Analysis](https://academic.oup.com/book/52945/chapter-abstract/421959366), Tristan Needham

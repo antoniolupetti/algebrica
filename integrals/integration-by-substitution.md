@@ -13,54 +13,71 @@ tags:
   - integration-by-substitution
   - trigonometric-substitution
 ---
-## How substitution simplifies integration
+## Simplifying integration
 
-Integration by substitution simplifies an [integral](../indefinite-integrals/) by changing the variable of integration. If $F' = f,$ the substitution $u = g(x)$ gives:
+In practical problems, we regularly encounter integrals that cannot be evaluated immediately or by inspection. To rewrite them in a more manageable form, we must perform a series of manipulations. At first, finding the right sequence involves some trial and error, but with experience we acquire enough fluency to recognize at a glance a strategy that simplifies the computation even for integrals that initially appear very complicated. As I have pointed out several times in the entries on this topic, integrals, at least those encountered in the early years of university study, can be evaluated by fairly mechanical procedures and do not require any exceptional capacity for abstraction. What they require above all is considerable practice and a thorough knowledge of the standard antiderivatives, their algebraic properties, and the main methods of integration.
 
-$$\int f(g(x))g'(x) \ dx = F(g(x)) + c$$
+The method of integration by substitution, which we shall examine in detail shortly, is fairly simple because it reverses the chain rule. In brief, the method seeks to simplify the original integral by making a suitable change of variable, and it generally applies to integrals of the following form:
 
-The procedure has four steps:
+$$\int f(g(x))g'(x) \ dx \tag{1}$$
 
-+ Set $u = g(x),$ where the structure of the integrand suggests $g(x).$
-+ Differentiate to obtain $du = g'(x) \ dx.$
-+ Rewrite every factor and differential in terms of $u.$
-+ Integrate with respect to $u.$ For an indefinite integral, replace $u$ by $g(x).$ For a definite integral, use limits expressed in $u.$
+Suppose that $F$ is an antiderivative of $f,$ that is, $F' = f.$ Using the substitution $u = g(x),$ the integral becomes:
 
-> Substitution is the reverse of the [chain rule](../chain-rule/). The inner function and its derivative determine the change of variable.
+$$\int f(g(x))g'(x) \ dx = \int f(u) \ du = F(u) + c = F(g(x)) + c$$
+
+The procedure can be organized into four basic steps:
+
++ First, set $u = g(x),$ choosing $g(x)$ according to the structure of the original integral.
++ Next, differentiate the chosen function to obtain $du = g'(x) \ dx.$
++ At this point, rewrite all the factors and the differential in terms of $u.$
++ Finally, integrate with respect to $u$ and, for an indefinite integral, substitute $g(x)$ back for $u.$
+
+> For a definite integral, remember to use the original limits of integration reexpressed in terms of $u,$ as explained later in the section devoted to this case.
 
 - - -
 
-The substitution rule follows from the chain rule for [derivatives](../derivatives/). If $F(x) = H(g(x)),$ the chain rule gives:
+As noted above, the substitution method follows from the chain rule for derivatives. Applying the chain rule to the composite function $F(g(x))$ gives:
 
-$$F'(x) = H'(g(x)) g'(x)$$
+$$\frac{d}{dx}F(g(x)) = F'(g(x))g'(x) = f(g(x))g'(x)$$
 
-An integrand of the form $H'(g(x))g'(x)$ is therefore the derivative of the composite function $H(g(x)).$ With $u = g(x),$ its antiderivative is:
+The integrand $f(g(x))g'(x)$ is therefore the derivative of $F(g(x)).$ Setting $u = g(x)$ gives:
 
-$$\int H'(u) \ du = H(u) + c$$
+$$\int f(u) \ du = F(u) + c$$
 
-## Recognising when to use substitution
+Substituting $g(x)$ back for $u$ gives $F(g(x)) + c,$ as in the original formula.
 
-A substitution is useful when the integrand contains a [composite function](../composite-functions/) together with a factor proportional to the derivative of its inner function. The basic pattern is:
+- - -
 
-$$f(g(x)) g'(x)$$
+How can we tell whether a substitution is genuinely useful? To apply this method, we must recognize the pattern in $(1),$ namely, the presence in the integrand of a [composite function](../composite-functions/) together with a factor proportional to the derivative of its inner function.
 
-The integrand may differ from this pattern by a constant factor. The substitution $u = g(x)$ replaces $g(x)$ by $u$ and $g'(x) \ dx$ by $du.$ Expressions such as $(ax + b)^n,$ $\sqrt{ax + b},$ $\ln(ax + b),$ and $e^{ax + b}$ suggest the inner linear function $ax + b$ as the new variable. A rational expression may have the form:
+After identifying a possible inner function $g(x),$ we calculate $g'(x)$ and compare this derivative with the remaining factors in the integrand. The factor $g'(x)$ need not appear exactly as such; it is enough for one of those factors to be a nonzero constant multiple of it. The constant is factored out of the integral, while the substitution $u = g(x)$ transforms $g'(x) \ dx$ into $du.$
+
+For example, consider expressions of the following kinds:
+
+$$(ax + b)^n \quad \quad \sqrt{ax + b}$$
+$$\ln(ax + b) \quad \quad e^{ax + b}$$
+
+In all these cases, the inner function is:
+
+$$g(x) = ax + b$$
+
+Its derivative is simply $g'(x) = a.$ Since this derivative is constant, the substitution $u = ax + b$ can also be applied when the factor $a$ does not appear explicitly in the integrand. Indeed, for $a \neq 0,$ the relation $du = a \ dx$ gives $dx = \frac{1}{a} \ du.$
+
+The same criterion applies to a rational expression of the following form, with the inner function in the denominator and its derivative in the numerator:
 
 $$\frac{g'(x)}{g(x)}$$
 
-If the numerator is $g'(x)$ up to a constant factor, set $u = g(x).$
+If the numerator agrees with $g'(x)$ up to a nonzero constant factor, we set $u = g(x).$
 
-> Choose an inner expression whose derivative occurs elsewhere in the integrand, exactly or up to a nonzero constant factor. A complete substitution leaves no occurrence of the original variable in the transformed integral.
+- - -
 
-## Substitution patterns
-
-The table lists common integrand patterns and a suitable substitution for each one:
+The following table summarizes the recurring patterns discussed so far together with the appropriate substitutions:
 
 [class="table-1"]
 
 |                                  |              |
 | -------------------------------- | ------------ |
-| $$\int f(g(x)) g'(x) \ dx$$      | $$u = g(x)$$ |
+| $$\int f(g(x))g'(x) \ dx$$       | $$u = g(x)$$ |
 | $$\int (ax + b)^n \ dx$$         | $$u = ax + b$$ |
 | $$\int e^{ax + b} \ dx$$         | $$u = ax + b$$ |
 | $$\int \ln(ax + b) \ dx$$        | $$u = ax + b$$ |
@@ -68,109 +85,100 @@ The table lists common integrand patterns and a suitable substitution for each o
 
 [/class]
 
-## Example 1
+As the table shows, only a few cases occur, so a little practice makes them immediately recognizable.
 
-Consider the following integral:
+## Examples
+
+Below we present several concrete examples to illustrate how the method works in practice. First, consider the following integral:
 
 $$\int (2x + 1)^3 \ dx$$
 
-Set $u = 2x + 1$ to replace the cubic expression by $u^3.$ Differentiation gives:
-
-$$du = 2 \ dx$$
-
-This relation is equivalent to:
+This integral has the form $(ax+b)^n,$ so it is enough to set $u = 2x + 1$ and replace the cubic expression by $u^3.$ Differentiating the substitution gives $du = 2 \ dx,$ and hence:
 
 $$dx = \frac{du}{2}$$
-
-The substituted integral is:
+The transformed integral is therefore:
 
 $$\int \frac{u^3}{2} \ du = \frac{1}{2}\int u^3 \ du$$
 
-The power rule gives:
+As we can see, the integral has been reduced to an elementary form, and the power rule for integration gives:
 
 $$\frac{1}{2}\left(\frac{u^4}{4}\right) + c = \frac{u^4}{8} + c$$
 
-Replacing $u$ by $2x + 1$ gives:
+Always remember, however, to return to the original variable by substituting back for $u.$ In this case, we obtain:
 
 $$\int (2x + 1)^3 \ dx = \frac{1}{8}(2x + 1)^4 + c$$
 
-## Example 2
+- - -
 
-Evaluate the following integral:
+We now consider an example with a rational integrand:
 
 $$\int \frac{1}{3x - 5} \ dx$$
 
-Set $u = 3x - 5$ to replace the denominator by $u.$ Differentiation gives:
-
-$$du = 3 \ dx$$
-
-This relation is equivalent to:
+As discussed above, in this case it is enough to set $u = 3x - 5,$ and differentiation gives $du = 3 \ dx.$ We can therefore write:
 
 $$dx = \frac{du}{3}$$
 
-The substituted integral is:
+The transformed integral becomes:
 
 $$\int \frac{1}{3u} \ du = \frac{1}{3}\int \frac{du}{u}$$
 
-The logarithmic formula gives:
+This is the standard logarithmic integral and gives:
 
 $$\frac{1}{3}\ln|u| + c$$
 
-Replacing $u$ by $3x - 5$ gives:
+Substituting $3x - 5$ back for $u$ gives:
 
 $$\int \frac{1}{3x - 5} \ dx = \frac{1}{3}\ln|3x - 5| + c$$
 
-## Example 3
+- - -
 
-Evaluate the following integral:
+We now compute the following integral:
 
 $$\int x \sin(x^2) \ dx$$
 
-The inner expression $x^2$ has derivative $2x,$ so the integrand contains one half of its differential. Set $u = x^2.$ This substitution gives:
+The inner expression $x^2$ has derivative $2x.$ We set $u = x^2$ and obtain $du = 2x \ dx,$ hence:
 
-$$du = 2x \ dx \qquad x \ dx = \frac{1}{2} \ du$$
+$$\qquad x \ dx = \frac{1}{2} \ du$$
 
 The substitution gives:
 
 $$\int x\sin(x^2) \ dx = \frac{1}{2}\int \sin u \ du$$
 
-The transformed antiderivative is:
+The antiderivative in the new variable is:
 
 $$\frac{1}{2}\int \sin u \ du = -\frac{1}{2}\cos u + c$$
 
-Replacing $u$ by $x^2$ gives:
+Replacing $u$ with $x^2$ gives:
 
 $$\int x\sin(x^2) \ dx = -\frac{1}{2}\cos(x^2) + c$$
 
-## Example 4
+- - -
 
-On an open interval where $\sin x > 0,$ evaluate the following integral:
+Finally, consider the following integral:
 
 $$\int \cos x \sqrt{\sin x} \ dx$$
 
-The substitution $u = \sin x$ replaces the radical by $\sqrt{u}.$ Its differential is:
-
-$$du = \cos x \ dx$$
-
-The substituted integral is:
+In this case, we set $u = \sin x$ so that the radical becomes $\sqrt{u}.$ The differential of the new variable is therefore $du = \cos x \ dx,$ and the integral becomes:
 
 $$\int \sqrt{u} \ du = \int u^{1/2} \ du$$
 
-The power rule gives:
+This is also an elementary integral that, again by the power rule, gives:
 
 $$\int u^{1/2} \ du = \frac{u^{3/2}}{3/2} = \frac{2}{3} u^{3/2} + c$$
 
-Replacing $u$ by $\sin x$ gives:
+Replacing $u$ with $\sin x$ gives:
 
 $$\int \cos x\sqrt{\sin x} \ dx = \frac{2}{3}(\sin x)^{3/2} + c$$
 
 ## Trigonometric substitutions
 
-Trigonometric substitution is useful for radicals containing the quadratic expressions $a^2 - x^2,$ $a^2 + x^2,$ and $x^2 - a^2,$ where $a > 0.$ The relevant formulas follow from the [fundamental trigonometric identity](../pythagorean-identity/):
+Besides the substitutions considered above, it is sometimes necessary to use trigonometric substitutions. They are especially useful when an integral contains radicals involving quadratic expressions of the forms $a^2 - x^2,$ $a^2 + x^2$ and $x^2 - a^2.$
+
+Trigonometric substitution makes these expressions manageable by rewriting the radicands by means of the [Pythagorean identity](../pythagorean-identity/):
 
 $$\sin^2 x + \cos^2 x = 1$$
 
-This identity has the following equivalent forms:
+This identity can be rewritten in the following equivalent forms:
 
 $$
 \begin{align}
@@ -180,104 +188,99 @@ $$
 \end{align}
 $$
 
-For $a > 0,$ the standard substitution depends on the expression under the radical:
+When $a > 0,$ the substitution depends on the expression under the radical. Each substitution must be applied on an interval where the chosen trigonometric function is invertible and each resulting factor has a fixed sign. In the case of $\sqrt{x^2 - a^2},$ the branches $x \geq a$ and $x \leq -a$ must be treated separately. The choice of intervals and the treatment of absolute values are explained in the entry devoted to [trigonometric substitutions for integrals](../trigonometric-substitution-for-integrals/). The standard substitutions are summarized below:
 
-+ For $a^2 - x^2,$ set $x = a\sin u.$
-+ For $a^2 + x^2,$ set $x = a\tan u.$
-+ For $x^2 - a^2,$ set $x = a\sec u.$
+[class="table-1"]
 
-> The page on [trigonometric substitution for integrals](../trigonometric-substitution-for-integrals/) develops the geometric basis and gives complete worked examples.
+|                         |                  |
+| ----------------------- | ---------------- |
+| $$\sqrt{a^2 - x^2}$$   | $$x = a\sin u$$ |
+| $$\sqrt{a^2 + x^2}$$   | $$x = a\tan u$$ |
+| $$\sqrt{x^2 - a^2}$$   | $$x = a\sec u$$ |
 
-## Example 5
+[/class]
 
-Evaluate the following integral:
+- - -
+
+As an example, we compute the following indefinite integral:
 
 $$\int \frac{1}{\sqrt{9 - x^2}} \ dx$$
 
-For $|x| < 3,$ choose $u \in (-\pi/2, \pi/2)$ and set:
-
-$$x = 3\sin u$$
-
-The differential is:
+For $|x| < 3,$ we choose $u \in (-\pi/2, \pi/2)$ and set $x = 3\sin u.$ The differential becomes:
 
 $$dx = 3\cos u \ du$$
 
-The denominator after substitution is:
+After the substitution, the denominator becomes:
 
 $$\sqrt{9 - x^2} = \sqrt{9 - 9\sin^2 u} = \sqrt{9(1 - \sin^2 u)}$$
 
-On the chosen interval $\cos u > 0.$ The identity $\sin^2 u + \cos^2 u = 1$ gives:
+On the chosen interval, $\cos u > 0.$ The identity $\sin^2 u + \cos^2 u = 1$ gives:
 
 $$\sqrt{9(1 - \sin^2 u)} = \sqrt{9\cos^2 u} = 3\lvert\cos u\rvert = 3\cos u$$
 
-The integral is:
+The integral therefore becomes:
 
 $$\int \frac{3\cos u \ du}{3\cos u} = \int \ du = u + c$$
 
-Since $u$ is in the principal range of the [arcsine](../arcsine-function/) function, the equation $x = 3\sin u$ implies:
+Since $u$ lies in the principal range of the [arcsine function](../arcsine-function/), the equation $x = 3\sin u$ implies:
 
 $$u = \arcsin\left(\frac{x}{3}\right)$$
 
-The antiderivative in the original variable is:
+The antiderivative expressed in the original variable is therefore:
 
 $$\int \frac{1}{\sqrt{9 - x^2}} \ dx = \arcsin\left(\frac{x}{3}\right) + c$$
 
 ## Substitution rule for definite integrals
 
-If we evaluate a transformed [definite integral](../definite-integrals/) in $u,$ its limits are values of $u.$ Alternatively, we may find an antiderivative in $u,$ replace $u$ by $g(x),$ and then use the original limits in $x.$ Assume that $g$ is continuously differentiable on $[a,b]$ and $f$ is continuous on an interval containing $g([a,b]).$ Under these hypotheses, the substitution rule is:
+So far, we have considered only indefinite integrals. When evaluating definite integrals, we must also transform the bounds according to the substitution we use. Alternatively, we can find an antiderivative with respect to $u,$ replace $u$ with $g(x)$ and use the original bounds in $x.$ Suppose that $g$ is continuously differentiable on $[a,b]$ and that $f$ is continuous on an interval containing $g([a,b]).$ Under these hypotheses, the substitution rule is analogous to $(1),$ with the bounds of integration made explicit:
 
 $$\int_a^b f(g(x))g'(x) \ dx = \int_{g(a)}^{g(b)} f(u) \ du$$
 
-- - -
+As a concrete example, we compute the following definite integral:
 
-Evaluate the following definite integral:
+$$\int_{2}^{3} x\cos(x^2) \ dx$$
 
-$$\int_{0}^{1} x\cos(x^2) \ dx$$
-
-Set $u = x^2.$ This substitution gives:
+We set $u = x^2.$ The relation between the differentials is:
 
 $$du = 2x \ dx \qquad x \ dx = \frac{1}{2} \ du$$
 
-The transformed endpoints are $u(0) = 0$ and $u(1) = 1.$ Here they coincide numerically with the original bounds. The integral is:
+We transform the bounds using the same substitution:
 
-$$\int_0^1 x\cos(x^2) \ dx = \frac{1}{2}\int_0^1 \cos u \ du$$
+$$x = 2 \Longrightarrow u = 4 \qquad x = 3 \Longrightarrow u = 9$$
 
-The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) gives:
+The integral in the new variable is therefore:
 
-$$\frac{1}{2}\Bigl[\sin u\Bigr]_{0}^{1} = \frac{1}{2}(\sin 1 - \sin 0) = \frac{\sin 1}{2}$$
+$$\int_2^3 x\cos(x^2) \ dx = \frac{1}{2}\int_4^9 \cos u \ du$$
 
-## Decision procedure
+By the [fundamental theorem of calculus](../fundamental-theorem-of-calculus/) we obtain:
 
-The following steps show when substitution applies and how to carry it out.
+$$\frac{1}{2}\Bigl[\sin u\Bigr]_{4}^{9} = \frac{1}{2}(\sin 9 - \sin 4)$$
 
-+ Identify the structure of the integrand. When it matches a standard form (power, exponential, logarithmic, or trigonometric), use the corresponding formula in [indefinite integrals](../indefinite-integrals/).
-+ After checking for a direct substitution, consider a trigonometric substitution when a radical contains $a^2 - x^2,$ $a^2 + x^2,$ or $x^2 - a^2,$ where $a > 0.$ The standard choices are $x = a\sin u,$ $x = a\tan u,$ and $x = a\sec u,$ respectively. The entry on [trigonometric substitution for integrals](../trigonometric-substitution-for-integrals/) gives the full procedure.
-+ When the integrand has the form $f(g(x))g'(x),$ set $u = g(x),$ compute $du = g'(x) \ dx,$ rewrite the integral entirely in $u,$ and use the corresponding standard formula.
-+ For a definite integral evaluated in $u,$ replace the original limits by $g(a)$ and $g(b).$ If the antiderivative is first expressed in $x,$ retain the original limits.
-+ For an indefinite integral, replace $u$ by $g(x)$ to express the antiderivative in $x.$
-+ For a product of two functions, [integration by parts](../integration-by-parts/) is useful when differentiation simplifies one factor and the other has an antiderivative that is easy to compute. The [Weierstrass substitution](../the-weierstrass-substitution/) converts every rational function of $\sin x$ and $\cos x$ into a rational function of the new variable.
+Thus, the value of the integral is $\frac{1}{2}(\sin 9 - \sin 4).$
+
+- - -
+
+When the integrand is a rational function of $\sin x$ and $\cos x$ that cannot be simplified using trigonometric identities or direct substitutions, we can use the [Weierstrass substitution](../the-weierstrass-substitution/).
 
 ## Further worked examples
 
-The table lists integrals in increasing order of difficulty. A sentence before each solution identifies the feature of the integrand that suggests the substitution. In the later examples, the solution also transforms the limits, rewrites an algebraic factor, or uses a trigonometric substitution.
+The table lists the integrals in increasing order of difficulty. A sentence before each solution identifies the feature of the integrand that suggests the substitution. In the later examples, the solution also transforms the limits of integration, rewrites an algebraic factor, or uses a trigonometric substitution.
 
 [class="table-1"]
 
-|                                             |
-| :------------------------------------------ |
-| $\int \dfrac{dt}{(1 - 6t)^4}$               |
-| $\int x^3(2 + x^4)^5 \ dx$                  |
-| $\int \cos^3\theta\sin\theta \ d\theta$     |
-| $\int \dfrac{2^{\ln x}}{x} \ dx$            |
-| $\int_0^{\ln 4} \dfrac{e^t}{1 + 2e^t} \ dt$ |
-| $\int_{\pi/4}^{\pi/3} \csc^2(5x) \ dx$      |
-| $\int \dfrac{9x^3}{\sqrt{1 + x^2}} \ dx$    |
-| $\int_0^1 \sqrt{4 - x^2} \ dx$              |
+|                                                        |
+| :----------------------------------------------------- |
+| $$1 \quad \int \dfrac{dt}{(1 - 6t)^4}$$                |
+| $$2. \quad \int x^3(2 + x^4)^5 \ dx$$                  |
+| $$3. \quad \int \cos^3\theta\sin\theta \ d\theta$$     |
+| $$4. \int \dfrac{2^{\ln x}}{x} \ dx$$                  |
+| $$5. \quad \int_0^{\ln 4} \dfrac{e^t}{1 + 2e^t} \ dt$$ |
+| $$6. \quad \int_{\pi/4}^{\pi/3} \csc^2(5x) \ dx$$      |
+| $$7. \quad \int \dfrac{9x^3}{\sqrt{1 + x^2}} \ dx$$    |
+| $$8. \quad \int_0^1 \sqrt{4 - x^2} \ dx$$              |
 [/class]
 
-The denominator is a power of the linear expression $1 - 6t,$ whose derivative is constant.
-
-$$u = 1 - 6t \qquad du = -6 \ dt$$
+We begin with the first integral. The denominator is a power of the linear expression $1 - 6t,$ whose derivative is constant. Set $u = 1 - 6t,$ so that $du = -6 \ dt.$ We can therefore rewrite the integral as:
 
 $$
 \begin{align}
@@ -289,9 +292,7 @@ $$
 
 - - -
 
-The factor $x^3$ is proportional to the derivative of the inner expression $2 + x^4.$
-
-$$u = 2 + x^4 \qquad du = 4x^3 \ dx$$
+In the second integral, the factor $x^3$ is proportional to the derivative of the inner expression $2 + x^4.$ Substitute $u = 2 + x^4$ and obtain $du = 4x^3 \ dx.$ The integral can therefore be rewritten as:
 
 $$
 \begin{align}
@@ -303,9 +304,7 @@ $$
 
 - - -
 
-The factor $\sin\theta$ is the negative derivative of $\cos\theta.$
-
-$$u = \cos\theta \qquad du = -\sin\theta \ d\theta$$
+For the third integral, observe that the factor $\sin\theta$ is the negative of the derivative of $\cos\theta.$ Substitute $u = \cos\theta,$ so that $du = -\sin\theta \ d\theta.$ The transformed integral becomes:
 
 $$
 \begin{align}
@@ -317,9 +316,7 @@ $$
 
 - - -
 
-For $x > 0,$ the exponent $\ln x$ has derivative $1/x,$ which is the other factor in the integrand.
-
-$$u = \ln x \qquad du = \frac{1}{x} \ dx$$
+In the fourth integral, the exponent $\ln x$ has derivative $1/x,$ which is the other factor in the integrand. We therefore substitute $u = \ln x,$ so that $du = 1/x \ dx.$ The integral can be rewritten as:
 
 $$
 \begin{align}
@@ -331,11 +328,13 @@ $$
 
 - - -
 
-The denominator $1 + 2e^t$ has derivative $2e^t,$ which is twice the numerator. We transform the limits together with the variable.
+We now consider the fifth integral. The denominator $1 + 2e^t$ has derivative $2e^t,$ which is twice the numerator. Since this is a definite integral, we must also transform the limits of integration along with the variable. We use the following substitution:
 
 $$u = 1 + 2e^t \qquad du = 2e^t \ dt$$
 
 $$t = 0 \Longrightarrow u = 3 \qquad t = \ln 4 \Longrightarrow u = 9$$
+
+The integral can therefore be rewritten as:
 
 $$
 \begin{align}
@@ -347,11 +346,13 @@ $$
 
 - - -
 
-The linear argument $5x$ has constant derivative. We transform the limits before integrating $\csc^2u.$
+For the sixth integral, observe that the argument $5x$ of the cosecant has a constant derivative. We therefore make the following substitutions:
 
 $$u = 5x \qquad du = 5 \ dx$$
 
 $$x = \frac{\pi}{4} \Longrightarrow u = \frac{5\pi}{4} \qquad x = \frac{\pi}{3} \Longrightarrow u = \frac{5\pi}{3}$$
+
+We can now rewrite the integral and evaluate it using the transformed limits:
 
 $$
 \begin{align}
@@ -364,9 +365,11 @@ $$
 
 - - -
 
-The expression $1 + x^2$ has derivative $2x.$ After the substitution $u = 1 + x^2,$ the remaining factor is $x^2 = u - 1.$
+In example $7,$ the expression $1 + x^2$ under the radical has derivative $2x.$ After the substitution $u = 1 + x^2,$ the remaining factor is $x^2 = u - 1.$
 
 $$u = 1 + x^2 \qquad du = 2x \ dx \qquad x^2 = u - 1$$
+
+The integral therefore becomes:
 
 $$
 \begin{align}
@@ -379,13 +382,15 @@ $$
 
 - - -
 
-The radical has the form $\sqrt{a^2 - x^2},$ so we set $x = 2\sin\theta.$ The transformed interval is $[0, \pi/6],$ on which $\cos\theta \geq 0.$
+Finally, in the last case, the radical has the form $\sqrt{a^2 - x^2},$ so we set $x = 2\sin\theta$ and transform the limits of integration as well. The substitution gives:
 
 $$x = 2\sin\theta \qquad dx = 2\cos\theta \ d\theta$$
 
 $$x = 0 \Longrightarrow \theta = 0 \qquad x = 1 \Longrightarrow \theta = \frac{\pi}{6}$$
 
 $$\sqrt{4 - x^2} = \sqrt{4 - 4\sin^2\theta} = \sqrt{4\cos^2\theta} = 2\cos\theta$$
+
+The integral therefore becomes:
 
 $$
 \begin{align}
