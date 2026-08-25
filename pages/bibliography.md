@@ -71,6 +71,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
 + [Calculus in Context](https://www.science.smith.edu/~callahan/cic/book.pdf), James Callahan, David Cox, Kenneth Hoffman, Donal O'Shea, Harriet Pollatsek, Lester Senechal
 + [Calculus: Early Transcendentals](https://open.umn.edu/opentextbooks/textbooks/415), David Guichard
++ [Differential Calculus: From Practice to Theory](https://milneopentextbooks.org/differential-calculus-from-practice-to-theory/), Eugene Boman, Robert Rogers
 + [Elementary Calculus: An Infinitesimal Approach](https://people.math.wisc.edu/~hkeisler/calc.html), H. Jerome Keisler
 + [Honors Calculus](https://academicweb.nd.edu/~andyp/teaching/2020FallMath10850/ClarkNotes.pdf), Pete L. Clark
 + [Integral Calculus: Mathematics 103](https://www.math.ucdavis.edu/~tjlewis/teaching/MAT17material/books/book_LEK/M103Fulltext.pdf), Leah Edelstein-Keshet
