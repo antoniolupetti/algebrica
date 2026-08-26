@@ -36,6 +36,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Fundamentals of Matrix Algebra](https://www.apexcalculus.com/downloads/MatrixAlgebra.pdf), Gregory Hartman
 + [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd, Lieven Vandenberghe
 + [Introduction to Vectors and Tensors](https://oaktrust.library.tamu.edu/server/api/core/bitstreams/06032ff0-a5bc-40d8-926d-965121f54d50/content), Ray M. Bowen, C.-C. Wang
++ [Lectures on Applied Mathematics Part 1: Linear Algebra](https://oaktrust.library.tamu.edu/bitstreams/43a7c801-5a35-41b6-a486-b8a8c3e1b16d/download), Ray M. Bowen
 + [Linear Algebra](https://hefferon.net/linearalgebra/), Jim Hefferon
 + [Linear Algebra](https://www.math.ucdavis.edu/~linear/linear-guest.pdf), David Cherney, Tom Denton, Rohit Thomas, Andrew Waldron
 + [Linear Algebra as an Introduction to Abstract Mathematics](https://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf), Isaiah Lankham, Bruno Nachtergaele, Anne Schilling
