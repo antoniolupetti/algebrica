@@ -43,7 +43,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf), Sheldon Axler
 + [Linear Algebra Done Wrong](https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong), Sergei Treil
 + [Linear Algebra for Computer Science](https://la4cs.com/files/LA4CS-Free.pdf), Manoj Thulasidas
-+ [Linear Algebra with Applications](https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf), W. Keith Nicholson
++ [Linear Algebra with Applications](https://collection.bccampus.ca/textbook/qTj4b4Ey/), W. Keith Nicholson
 + [Matrix Calculus for Machine Learning and Beyond](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/mit18_s096iap23_lec_full.pdf), Paige Bright, Alan Edelman, Steven G. Johnson
 
 ## Geometry
