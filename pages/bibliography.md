@@ -51,6 +51,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Analytic Geometry](https://djm.cc/library/Analytic_Geometry_Siceloff_Wentworth_Smith_edited.pdf), Lewis Parker Siceloff, George Wentworth, David Eugene Smith
 + [Beginning in Algebraic Geometry](https://link.springer.com/content/pdf/10.1007/978-3-031-88819-9.pdf), Emily Clader, Dustin Ross
 + [Differential Geometry: From Elastic Curves to Willmore Surfaces](https://link.springer.com/content/pdf/10.1007/978-3-031-39838-4.pdf), Ulrich Pinkall, Oliver Gross
++ [Elementary College Geometry](https://open.umn.edu/opentextbooks/textbooks/elementary-college-geometry), Henry Africk
 + [Elementary Geometry from an Advanced Standpoint](https://www.ime.usp.br/~toscano/disc/2021/Moise.pdf), Edwin E. Moise
 + [Plane Geometry](https://djm.cc/library/Plane_Geometry_Wentworth_Smith_edited.pdf), George Wentworth, David E. Smith
 + [The Rising Sea: Foundations of Algebraic Geometry](https://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), Ravi Vakil
