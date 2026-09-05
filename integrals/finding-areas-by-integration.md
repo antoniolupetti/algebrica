@@ -39,7 +39,7 @@ We cannot simply multiply base by height as we would for a rectangle, since, as 
 
 $$A \approx \sum_{i=1}^{n} [f(\xi_i) - g(\xi_i)]\Delta x_i$$
 
-Since $f$ and $g$ are continuous, their difference $f - g$ is also continuous and [Riemann integrable](../riemann-integrability-criteria/). As the maximum width of the subintervals tends to zero, these sums converge to the definite integral of $f - g.$ This gives formula $(1),$ which we can also rewrite using the linearity of the integral:
+Since $f$ and $g$ are continuous, their difference $f - g$ is also continuous and [Riemann integrable](../riemann-integrability-criteria/). As the maximum width of the subintervals tends to zero, these sums converge to the definite integral of $f - g.$ This gives formula $(1),$ which we can also rewrite using the [linearity of the integral](../definite-integrals/):
 
 $$A = \int_a^b f(x) \ dx - \int_a^b g(x) \ dx \tag{2}$$
 
@@ -62,7 +62,7 @@ In this case, the integral of $f - g$ over all of $[a,b]$ would count the first 
 
 $$A = \int_a^c [f(x) - g(x)] \ dx + \int_c^b [g(x) - f(x)] \ dx \tag{4}$$
 
-The same construction applies when there is more than one change of sign. This explains the use of the [absolute value](../absolute-value/) in $(3),$ which gives the vertical distance between the curves regardless of their order. To evaluate the integral using antiderivatives, we generally still need to determine the sign of $f - g$ and rewrite the absolute value on the different subintervals.
+The same construction applies when there is more than one change of sign. This explains the use of the [absolute value](../absolute-value/) in $(3),$ which gives the vertical distance between the curves regardless of their order. To evaluate the integral using [antiderivatives](../indefinite-integrals/), we generally still need to determine the sign of $f - g$ and rewrite the absolute value on the different subintervals.
 
 > An intersection does not necessarily mean that the curves switch positions. The graphs of $f(x) = x^2$ and $g(x) = 0$ meet at the origin, but $f(x) \geq g(x)$ on both sides. We only need to split the integral when the difference changes sign or when the expression defining a boundary of the region changes.
 
@@ -72,7 +72,7 @@ Let us apply the method we have described to the curves $y = e^x$ and $y = x^2 -
 
 ![Img. 3](svg/finding-areas-by-integration-3.svg)
 
-The function $e^x$ is positive for every $x,$ whereas $x^2 - 1 \leq 0$ on $[-1,1],$ so the graph of the exponential lies above the parabola throughout the interval. Formula $(1)$ gives:
+The function $e^x$ is positive for every $x,$ whereas $x^2 - 1 \leq 0$ on $[-1,1],$ so the graph of the [exponential](../exponential-function/) lies above the parabola throughout the interval. Formula $(1)$ gives:
 
 $$A = \int_{-1}^{1} [e^x - (x^2 - 1)] \ dx$$
 
@@ -101,7 +101,7 @@ x(x - 2)(x + 2) &= 0
 \end{align}
 $$
 
-The factorization gives the solutions immediately, namely $x = -2,$ $x = 0$ and $x = 2.$ The curves therefore enclose two regions, one over $[-2,0]$ and the other over $[0,2].$ To set up their integrals, we now examine the sign of the difference:
+The factorization gives the solutions immediately, namely $x = -2,$ $x = 0$ and $x = 2.$ The curves therefore enclose two regions, one over $[-2,0]$ and the other over $[0,2].$ To set up their integrals, we now examine the [sign of the difference](../polynomial-inequalities/):
 
 $$f(x) - g(x) = x(x - 2)(x + 2)$$
 
@@ -147,7 +147,7 @@ The reasoning is the same as for $(1),$ but with the coordinates interchanged. B
 
 ## Example 3
 
-Let us find the area enclosed by the parabola $x = y^2$ and the line $x = y + 2.$ Both curves are expressed as functions of $y,$ so we try formula $(5).$ As in Example 2, the limits of integration are not given. To find them, we equate the two expressions for $x:$
+Let us find the area enclosed by the [parabola](../parabola/) $x = y^2$ and the line $x = y + 2.$ Both curves are expressed as functions of $y,$ so we try formula $(5).$ As in Example 2, the limits of integration are not given. To find them, we equate the two expressions for $x:$
 
 $$
 \begin{align}
@@ -180,7 +180,7 @@ Let us now see how the calculation changes if we use vertical strips. The parabo
 
 $$A = \int_0^1 2\sqrt{x} \ dx + \int_1^4 (\sqrt{x} - x + 2) \ dx$$
 
-This calculation is also relatively simple, and we find the antiderivatives using the power rule:
+This calculation is also relatively simple, and we find the antiderivatives using the [power rule](../indefinite-integrals/):
 
 $$
 \begin{align}
@@ -200,4 +200,4 @@ If the interval is not given, we find the intersections and select those that bo
 
 Once we understand the shape of the region, we set up each integral by subtracting the lower boundary from the upper one, or the left boundary from the right one. If the order of the boundaries or their defining expressions change, we split the calculation into the corresponding intervals. Remember, though, that an intersection alone does not necessarily mean we must reverse the subtraction. Two graphs may touch at one or more points without crossing.
 
-All that remains is to evaluate the integral and obtain the area.
+All that remains is to [evaluate the integral](../fundamental-theorem-of-calculus/) and obtain the area.
