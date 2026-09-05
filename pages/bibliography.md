@@ -67,6 +67,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Active Calculus: Single Variable](https://activecalculus.org/single2e/frontmatter.html), Matthew Boelkins, David Austin, Christina Safranski, Steven Schlicker
 + [Advanced Calculus](https://people.math.harvard.edu/~shlomo/docs/Advanced_Calculus.pdf), Lynn H. Loomis, Shlomo Sternberg
++ [Advanced Calculus](https://sites.math.washington.edu/~folland/AdvCalc24.pdf), Gerald B. Folland
 + [Analysis of Functions of a Single Variable](https://spot.colorado.edu/~baggett/book.pdf), Lawrence W. Baggett
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
 + [Calculus](https://ia800204.us.archive.org/28/items/CalculusSpivak/Calculus%20-%20Spivak_text.pdf), Michael Spivak
