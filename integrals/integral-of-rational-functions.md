@@ -15,345 +15,292 @@ tags:
   - polynomial-division
   - rational-functions
 ---
-## Integration of rational functions with polynomial division
 
-A [rational function](../rational-functions/) is the quotient of two polynomials, and the corresponding [indefinite integral](../indefinite-integrals/) takes the general form:
+## How to approach integrals of rational functions
 
-$$\int \frac{N(x)}{D(x)} \ dx$$
+Recall that a [rational function](../rational-functions/) is a quotient of two [polynomials](../polynomials/), with $N(x)$ in the numerator and $D(x)$ in the denominator. Its [indefinite integral](../indefinite-integrals/) has the general form:
 
-where $N(x)$ and $D(x)$ are [polynomials](../polynomials/) with real coefficients, and $D(x)$ is not identically zero. The strategy for computing an integral of this kind depends on the relation between the degrees of the numerator and the denominator. The discussion starts with the case in which the degree of $N(x)$ is greater than or equal to the degree of $D(x)$.
+$$\int \frac{N(x)}{D(x)} \ dx \tag{1}$$
 
-- - -
+When integrating a rational function, we must first identify the [zeros](../roots-of-a-polynomial/) of $D(x)$ to determine where the integrand is defined.
 
-From the general properties of polynomials, it is always possible to perform the [division](../polynomial-division/) of a polynomial $N(x)$ by a non-zero polynomial $D(x)$. The result of this operation consists of two polynomials:
+Below, we examine several common cases of integrals of the form $(1)$ and show the most suitable method for each. These integrals are generally not especially difficult to evaluate, but recognising the right method at once takes considerable practice and allows us to avoid unnecessary steps and complete the calculation efficiently.
 
-+ A quotient polynomial $Q(x)$.
-+ A remainder polynomial $R(x)$, whose degree is strictly less than the degree of $D(x)$.
+To choose a method, we begin by comparing the degrees of the two polynomials, aiming to reduce the quotient to a proper fraction, that is, one whose numerator has degree strictly less than that of the denominator.
 
-This process produces an identity of the form:
+If the original integrand is already a proper fraction, we can apply the methods described below directly.
 
-$$N(x) = Q(x) D(x) + R(x)$$
+If, however, the degree of the numerator is greater than or equal to that of the denominator, the fraction is improper. We can then use [polynomial division](../polynomial-division/) to obtain a quotient $Q(x)$ and a remainder $R(x)$ satisfying the identity:
 
-Dividing both sides by $D(x)$:
+$$N(x) = Q(x)D(x) + R(x)$$
+
+The remainder is either zero or has degree strictly less than that of $D(x).$ At points where the denominator is nonzero, we can divide the identity by $D(x)$ and write:
 
 $$\frac{N(x)}{D(x)} = Q(x) + \frac{R(x)}{D(x)}$$
 
-Integrating both sides:
+Using $(1)$ and the [linearity of integration](../integration-strategies/), we can write:
 
-$$\int \frac{N(x)}{D(x)} \ dx = \int Q(x) \ dx + \int \frac{R(x)}{D(x)} \ dx$$
+$$\int \frac{N(x)}{D(x)} \ dx = \int Q(x) \ dx + \int \frac{R(x)}{D(x)} \ dx \tag{2}$$
+
+If the remainder $R(x)$ is zero, we only need to integrate $Q(x),$ a straightforward term-by-term application of the power rule. If the remainder is nonzero, we must also integrate the fraction $R(x)/D(x).$ Polynomial division has made the numerator's degree smaller than the denominator's, giving us the proper fraction we were seeking.
+
+To evaluate the second integral in $(2),$ recall that over the real numbers every nonconstant polynomial factors into [linear and irreducible quadratic factors](../unique-factorization-of-polynomials/), possibly repeated. This factorisation allows us to express the fraction as a sum of partial fractions, to which we can apply the integration formulas introduced in the following sections.
+
+> Before starting polynomial division or factorisation, we should always check whether the numerator and denominator have common factors that can be cancelled, remembering to exclude the zeros of the original denominator, which lie outside the [integrand's domain](../determining-the-domain-of-a-function/).
 
 - - -
 
-What guides the choice of method is the comparison between the degrees of the numerator and the denominator. When $\deg N(x) \geq \deg D(x)$, the rational function is improper and must first be reduced by polynomial long division. Only after this preliminary step does the integral take a manageable form.
-
-When $\deg N(x) < \deg D(x)$, the rational function is already proper, and attention shifts to the factorisation of the denominator. Its algebraic structure dictates the technique:
-
-+ When the denominator is a single linear factor, a simple substitution typically settles the integral immediately.
-+ When it splits into distinct linear factors, decomposing into partial fractions converts the expression into a sum of elementary terms.
-+ When a linear factor is repeated, each power of that factor generates its own term in the decomposition, forming a small hierarchy of fractions.
-+ When an irreducible quadratic factor is present, the path runs through completing the square and naturally leads to an inverse tangent term.
-
-> Once the rational function has been reduced to the proper case, the denominator governs the entire strategy. Its factorisation over the real numbers determines the structure of the partial fraction decomposition. Integration then becomes a systematic reduction to logarithmic and inverse trigonometric primitives.
-
-## Example 1
-
-Compute the integral of the rational function:
+We can illustrate the procedure with an example. We evaluate the following integral, whose integrand is an improper fraction:
 
 $$\int \frac{x^3 + x + 1}{x^2 + 1} \ dx$$
 
-The first step is the [polynomial division](../polynomial-division/) of the numerator by the denominator, which gives:
+The numerator has degree $3$ and the denominator has degree $2,$ so we use polynomial division to bring the integral into the form $(2).$ The quotient of the leading terms is $x^3/x^2 = x.$ Multiplying the denominator by $x$ gives $x^3 + x,$ and we can write:
 
-$$Q(x) = x \qquad R(x) = 1$$
+$$x^3 + x + 1 = x(x^2 + 1) + 1$$
 
-so that:
+The quotient is $Q(x) = x$ and the remainder is $R(x) = 1.$ Dividing by $x^2 + 1$ gives:
 
 $$\frac{x^3 + x + 1}{x^2 + 1} = x + \frac{1}{x^2 + 1}$$
 
-> The method of dividing two polynomials is treated in detail on the page on [polynomials](../polynomials/).
+We can therefore rewrite the original integral as:
+
+$$
+\begin{align}
+\int \frac{x^3 + x + 1}{x^2 + 1} \ dx &= \int x \ dx + \int \frac{1}{x^2 + 1} \ dx \\[6pt]
+  &= \frac{x^2}{2} + \arctan x + k
+\end{align}
+$$
+
+The first term is straightforward to integrate by the power rule, while the second integrand is the [derivative of the arctangent](../arctangent-function/). We have thus found the antiderivatives on all of $\mathbb{R},$ since the denominator $x^2 + 1$ is always positive.
+
+## When the denominator is linear
+
+If a proper fraction has a denominator of degree one, its numerator must be constant. Denoting this constant by $c,$ we need to evaluate an integral of the form:
+
+$$\int \frac{c}{ax + b} \ dx \tag{3}$$
+
+The coefficients $a,$ $b$ and $c$ are real, with $a \neq 0.$ We can use [integration by substitution](../integration-by-substitution/) in this case. Setting $t = ax + b$ and $dt = a \ dx,$ we rewrite integral $(3)$ as:
+
+$$
+\begin{align}
+\int \frac{c}{ax + b} \ dx &= \frac{c}{a} \int \frac{1}{t} \ dt \\[8pt]
+  &= \frac{c}{a} \ln|t| + k \\[10pt]
+  &= \frac{c}{a} \ln|ax + b| + k
+\end{align}
+$$
 
 - - -
 
-The integral splits into two terms:
-
-$$\int \frac{x^3 + x + 1}{x^2 + 1} \ dx = \int x \ dx + \int \frac{1}{x^2 + 1} \ dx$$
-
-Evaluating each term and combining the constants of integration:
-
-$$\int \frac{x^3 + x + 1}{x^2 + 1} \ dx = \frac{x^2}{2} + \arctan(x) + c$$
-
-## Integrals with linear denominators
-
-The simplest case of a proper rational function occurs when the denominator is a polynomial of degree one. The integral takes the form:
-
-$$\int \frac{c}{ax + b} \ dx$$
-
-where $a$, $b$, and $c$ are real constants with $a \neq 0$. The numerator is a constant, and the degree condition $\deg N(x) < \deg D(x)$ is automatically satisfied.
-
-An integral of this type is solved by [integration by substitution](../integration-by-substitution/). Setting $t = ax + b$ gives $dt = a \ dx$, and the integral becomes:
-
-$$\int \frac{c}{ax + b} \ dx = \frac{c}{a} \int \frac{1}{t} \ dt = \frac{c}{a} \ln|t| + k$$
-
-Returning to the original variable:
-
-$$\int \frac{c}{ax + b} \ dx = \frac{c}{a} \ln|ax + b| + k$$
-
-The absolute value is essential, since the linear expression $ax + b$ changes sign at $x = -b/a$ and the natural logarithm is defined only for positive arguments. The formula holds on any interval that does not contain this point, where the integrand is otherwise continuous. This case also serves as a building block for the more general situation. Once a proper rational function has been decomposed into partial fractions, every term whose denominator is a simple linear factor reduces to an integral of the form considered here. The logarithmic primitive obtained above therefore appears repeatedly in the rest of the discussion.
-
-## Example 2
-
-Compute the integral of the rational function:
+We apply the method just described to the following integral:
 
 $$\int \frac{2}{6x + 1} \ dx$$
 
-Apply the substitution $t = 6x + 1$. Differentiating both sides with respect to $x$:
+Set $t = 6x + 1.$ The derivative of $t$ with respect to $x$ is $6,$ so $dt = 6 \ dx$ and $dx = dt/6.$ Substitution gives:
 
-$$\frac{dt}{dx} = 6 \quad \Rightarrow \quad dx = \frac{dt}{6}$$
+$$
+\begin{align}
+\int \frac{2}{6x + 1} \ dx &= \frac{2}{6} \int \frac{1}{t} \ dt \\[8pt]
+  &= \frac{1}{3} \ln|t| + k \\[10pt]
+  &= \frac{1}{3} \ln|6x + 1| + k
+\end{align}
+$$
 
-Replacing into the integral:
+The calculation is quite simple because it always leads to a logarithmic antiderivative. Once we identify the right substitution, the rest follows directly.
 
-$$\int \frac{2}{6x + 1} \ dx = \int \frac{2}{t} \cdot \frac{dt}{6} = \frac{1}{3} \int \frac{1}{t} \ dt$$
-
-The remaining integral is one of the elementary forms recalled in the page on [indefinite integrals](../indefinite-integrals/), and its primitive is the natural logarithm of the absolute value of $t$:
-
-$$\frac{1}{3} \int \frac{1}{t} \ dt = \frac{1}{3} \ln|t| + c$$
-
-Returning to the original variable by substituting $t = 6x + 1$, the final result is:
-
-$$\int \frac{2}{6x + 1} \ dx = \frac{1}{3} \ln|6x + 1| + c$$
 
 ## Partial fraction decomposition
 
-In many situations, the integral of a rational function cannot be computed directly by inspection. Even when the expression appears relatively simple, algebraic manipulations may not reveal an immediate antiderivative. In such cases, the method of [partial fraction decomposition](../partial-fraction-decomposition/) provides a systematic way to rewrite the function as a sum of elementary terms whose integrals are well known. By decomposing the rational function into simpler components, a representation far more suitable for integration is obtained. To illustrate the idea in a setting different from the earlier examples, consider the integral:
+We now consider denominators with several factors and use [partial fraction decomposition](../partial-fraction-decomposition/) to separate their contributions. Consider, for example, the integral:
+
+
 
 $$\int \frac{7x + 5}{(x - 1)(3x + 2)} \ dx$$
 
-At first glance, the structure of this expression does not suggest an obvious primitive. Once the integrand is decomposed into partial fractions, the computation becomes straightforward. The starting point is:
+When the factors are linear and distinct, each contributes a fraction with a constant numerator.
 
-$$\frac{7x + 5}{(x - 1)(3x + 2)} = \frac{A}{x - 1} + \frac{B}{3x + 2} \tag{1}$$
+$$\frac{A}{x - 1} + \frac{B}{3x + 2}$$
 
-Multiplying both sides by $(x - 1)(3x + 2)$ yields the identity:
+We determine the coefficients $A$ and $B$ by requiring the sum to equal the original function:
+
+$$\frac{7x + 5}{(x - 1)(3x + 2)} = \frac{A}{x - 1} + \frac{B}{3x + 2} \tag{4}$$
+
+Carrying out the algebra gives:
 
 $$7x + 5 = A(3x + 2) + B(x - 1)$$
 
-The coefficients $A$ and $B$ are determined by evaluating at the convenient values $x = 1$ and $x = -2/3$:
+Setting $x=1$ eliminates the term with coefficient $B$ and gives $A = 12/5.$ Setting $x = -2/3$ instead eliminates the term with coefficient $A$ and gives $B = -1/5.$ Substituting these values into $(4)$ gives:
 
-$$A = 4 \qquad B = -5$$
+$$\frac{7x + 5}{(x - 1)(3x + 2)} = \frac{12}{5(x - 1)} - \frac{1}{5(3x + 2)}$$
 
-Substituting these values into identity $(1)$:
+We can therefore rewrite the integral as:
 
-$$\frac{7x + 5}{(x - 1)(3x + 2)} = \frac{4}{x - 1} - \frac{5}{3x + 2}$$
+$$
+\begin{align}
+\int \frac{7x + 5}{(x - 1)(3x + 2)} \ dx &= \frac{12}{5} \int \frac{1}{x - 1} \ dx - \frac{1}{5} \int \frac{1}{3x + 2} \ dx \\[6pt]
+  &= \frac{12}{5} \ln|x - 1| - \frac{1}{15} \ln|3x + 2| + k
+\end{align}
+$$
 
-The integral becomes:
-
-$$\int \left( \frac{4}{x - 1} - \frac{5}{3x + 2} \right) dx$$
-
-By the linearity of the [indefinite integral](../indefinite-integrals/), each term can be treated separately:
-
-$$4 \int \frac{1}{x - 1} \ dx \qquad 5 \int \frac{1}{3x + 2} \ dx$$
-
-Both integrals reduce to elementary [logarithmic](../logarithms/) forms:
-
-$$4 \ln|x - 1| + c_1 \qquad \frac{5}{3} \ln|3x + 2| + c_2$$
-
-Combining the constants and simplifying:
-
-$$\int \frac{7x + 5}{(x - 1)(3x + 2)} \ dx = 4 \ln|x - 1| - \frac{5}{3} \ln|3x + 2| + c$$
-
-> This example shows how a rational function that initially presents no clear path to integration becomes entirely tractable once rewritten in partial fractions. The method transforms the integral into a collection of standard forms, making the computation both systematic and transparent.
+The antiderivatives are therefore given by this difference of logarithmic terms on the [intervals](../intervals/) $(-\infty,-2/3),$ $(-2/3,1)$ and $(1,+\infty).$
 
 ## Repeated linear factors
 
-When the denominator of a rational function contains a linear factor raised to a power greater than one, the decomposition into partial fractions requires a structural adjustment. A single term of the form $A/(x - r)$ is no longer sufficient to capture the behaviour of the function near the repeated root. Each power of the factor must contribute its own term to the decomposition.
-
-When the denominator contains the factor $(x - r)^k$, the corresponding contribution to the partial fraction decomposition is:
+We next consider a denominator containing a factor $(x - r)^k$ of multiplicity $k \geq 2.$ The decomposition must include a term for each power of the factor, from the first to the $k$th, giving the form:
 
 $$\frac{A_1}{x - r} + \frac{A_2}{(x - r)^2} + \dots + \frac{A_k}{(x - r)^k}$$
 
-Each numerator is a constant, and the denominators range over all powers of $(x - r)$ from the first up to the multiplicity $k$. Omitting any of these terms would, in general, make the system of equations for the coefficients inconsistent.
+The numerators are constants to be determined by the partial fraction method used above. With luck, some will be zero, simplifying the calculation. The first term, with denominator $x - r,$ has antiderivative $A_1\ln|x - r|.$ For the higher powers, we use the [power rule for integration](../power-function/), since the exponent in the integrand is $-j \neq -1.$ For each $j \geq 2,$ we have:
 
-Once the decomposition has been written, the integration proceeds term by term. The first contribution produces a logarithm, while every term of the form $A_j/(x - r)^j$ with $j \geq 2$ integrates to a power of $(x - r)$ with negative exponent:
+$$\int \frac{A_j}{(x - r)^j} \ dx = \frac{A_j}{1 - j}(x - r)^{1 - j} + k$$
 
-$$\int \frac{1}{(x - r)^j} \ dx = \frac{(x - r)^{1 - j}}{1 - j} + c \qquad (j \geq 2)$$
+We illustrate this with a worked example, evaluating the following integral:
 
-The logarithmic term therefore appears only once, associated with the simple power, whereas the higher powers contribute rational expressions without logarithms.
+$$\int \frac{3x + 1}{(x - 1)^2(x + 2)} \ dx \tag{5}$$
 
-## Example 3
+The factor $x - 1$ has multiplicity $2,$ while $x + 2$ occurs only once. We therefore write the decomposition:
 
-Consider the integral:
+$$\frac{3x + 1}{(x - 1)^2(x + 2)} = \frac{A}{x - 1} + \frac{B}{(x - 1)^2} + \frac{C}{x + 2}$$
 
-$$\int \frac{3x + 1}{(x - 1)^2 (x + 2)} \ dx$$
-
-The denominator contains the factor $x - 1$ with multiplicity two and the simple factor $x + 2$. According to the general rule for repeated linear factors, the partial fraction decomposition takes the form:
-
-$$\frac{3x + 1}{(x - 1)^2 (x + 2)} = \frac{A}{x - 1} + \frac{B}{(x - 1)^2} + \frac{C}{x + 2}$$
-
-Multiplying both sides by the common denominator $(x - 1)^2 (x + 2)$, the polynomial identity reads:
+Multiplying by the common denominator gives:
 
 $$3x + 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)^2$$
 
-The coefficients are determined by evaluating the identity at convenient values of $x$. Substituting $x = 1$ eliminates every term containing the factor $x - 1$, and the identity reduces to $4 = 3B$, from which:
+At $x = 1,$ the first and third terms on the right vanish, so $4 = 3B$ and $B = 4/3.$ At $x = -2,$ only the term containing $C$ remains, so $-5 = 9C$ and $C = -5/9.$ To find $A,$ we can compare the coefficients of $x^2.$ The coefficient on the left is zero, while that on the right is $A + C.$ Hence $A + C = 0$ and $A = 5/9.$ The decomposition is therefore:
 
-$$B = \frac{4}{3}$$
+$$\frac{3x + 1}{(x - 1)^2(x + 2)} = \frac{5}{9(x - 1)} + \frac{4}{3(x - 1)^2} - \frac{5}{9(x + 2)}$$
 
-Substituting $x = -2$ eliminates every term containing the factor $x + 2$, and the identity reduces to $-5 = 9C$, from which:
+We thus obtain:
 
-$$C = -\frac{5}{9}$$
+$$
+\begin{align}
+\int \frac{3x + 1}{(x - 1)^2(x + 2)} \ dx &= \frac{5}{9} \int \frac{1}{x - 1} \ dx + \frac{4}{3} \int \frac{1}{(x - 1)^2} \ dx - \frac{5}{9} \int \frac{1}{x + 2} \ dx \\[6pt]
+  &= \frac{5}{9} \ln|x - 1| - \frac{4}{3(x - 1)} - \frac{5}{9} \ln|x + 2| + k
+\end{align}
+$$
 
-The remaining coefficient $A$ cannot be obtained by direct substitution, since no value of $x$ simultaneously cancels all the terms that depend on $A$. The standard approach is to compare the coefficients of the highest power of $x$ on both sides of the identity. The left-hand side contains no term in $x^2$, so its coefficient is zero. On the right-hand side, expanding the products shows that the coefficient of $x^2$ is $A + C$. Setting the two expressions equal gives $A + C = 0$, from which:
+We have therefore obtained the antiderivatives on each of the intervals $(-\infty,-2),$ $(-2,1)$ and $(1,+\infty).$ These intervals exclude $x = -2$ and $x = 1,$ where the denominator in $(5)$ vanishes and the original integrand is undefined.
 
-$$A = \frac{5}{9}$$
+## Irreducible quadratic factors
 
-Substituting the values just obtained into the decomposition:
+The next case is slightly more involved than the previous ones. Recall that a quadratic polynomial with a negative [discriminant](../quadratic-formula/) has no real roots and cannot be written as a product of real linear factors. The quadratic factor therefore remains intact in the denominator. To simplify the calculation, we divide the numerator and denominator by the coefficient of $x^2,$ so that the factor takes the form:
 
-$$\frac{3x + 1}{(x - 1)^2 (x + 2)} = \frac{5/9}{x - 1} + \frac{4/3}{(x - 1)^2} - \frac{5/9}{x + 2}$$
+$$q(x) = x^2 + bx + c \qquad b^2 - 4c < 0$$
 
-The integral splits into three terms, each of which admits a known primitive:
+If this factor occurs only once, we associate with it a term of the form:
 
-$$\frac{5}{9} \int \frac{1}{x - 1} \ dx + \frac{4}{3} \int \frac{1}{(x - 1)^2} \ dx - \frac{5}{9} \int \frac{1}{x + 2} \ dx$$
+$$\frac{Ax + B}{q(x)}$$
 
-The first and the third integrals produce logarithmic primitives, while the second integral produces a rational expression with negative exponent. Combining the contributions, an antiderivative of the original rational function is:
+The numerator has degree at most $1,$ so it may also be constant or zero. To integrate this fraction, we compare the numerator with the derivative $q'(x) = 2x + b.$ We then write the numerator as a multiple of this derivative plus a constant:
 
-$$\frac{5}{9} \ln|x - 1| - \frac{4}{3} \cdot \frac{1}{x - 1} - \frac{5}{9} \ln|x + 2| + c$$
+$$Ax + B = \frac{A}{2}(2x + b) + \left(B - \frac{Ab}{2}\right)$$
 
-The final expression shows how the two distinct powers of the factor $x - 1$ generate primitives of different nature: a logarithm from the simple power and a rational term from the squared power.
+The integral therefore splits into two parts:
 
-> The repeated factor $(x - 1)^2$ contributes two distinct terms to the antiderivative. Only the simple power produces a logarithm, whereas the higher power yields a rational expression with negative exponent. The same pattern applies to every linear factor of multiplicity greater than one.
+$$\int \frac{Ax + B}{q(x)} \ dx = \frac{A}{2} \int \frac{q'(x)}{q(x)} \ dx + \left(B - \frac{Ab}{2}\right) \int \frac{1}{q(x)} \ dx$$
 
-## Irreducible quadratic factors in the denominator
+The first part gives a [logarithm](../logarithmic-function/) through the substitution $v = q(x).$ For the second, we [complete the square](../completing-the-square/):
 
-Not every polynomial splits into linear factors over the real numbers. A quadratic expression $ax^2 + bx + c$ whose [discriminant](../quadratic-formula/) satisfies $b^2 - 4ac < 0$ has no real roots. It cannot be written as $(x - r_1)(x - r_2)$ with $r_1, r_2 \in \mathbb{R}$.
+$$q(x) = \left(x + \frac{b}{2}\right)^2 + c - \frac{b^2}{4}$$
 
-Over the real field, such a quadratic is said to be irreducible. When a factor of this type appears in the denominator of a rational function, the strategy for partial fraction decomposition changes slightly. In the linear case, each factor $(x - r)$ gives rise to a term of the form:
+The negative discriminant implies $c - b^2/4 > 0.$ We therefore set $\rho = \sqrt{c - b^2/4} > 0$ and $u = x + b/2.$ Since $du = dx,$ the second integral becomes:
 
-$$\frac{A}{x - r}$$
+$$\int \frac{1}{q(x)} \ dx = \int \frac{1}{u^2 + \rho^2} \ du$$
 
-Here there are no real roots to attach such terms to. The quadratic must therefore remain intact in the denominator. An irreducible quadratic factor $ax^2 + bx + c$ contributes a term of the form:
+With the further substitution $t = u/\rho,$ we have $du = \rho \ dt$ and recognise the derivative of the [arctangent](../arctangent-and-arccotangent/):
 
-$$\frac{Ax + B}{ax^2 + bx + c}$$
+$$
+\begin{align}
+\int \frac{1}{u^2 + \rho^2} \ du &= \frac{1}{\rho} \int \frac{1}{1 + t^2} \ dt \\[6pt]
+  &= \frac{1}{\rho} \arctan t + k \\[6pt]
+  &= \frac{1}{\rho} \arctan\left(\frac{u}{\rho}\right) + k
+\end{align}
+$$
 
-The numerator must have degree strictly smaller than the denominator, and in the quadratic case that means degree one. Using only a constant would not provide enough flexibility to match the original rational function. Once the decomposition is complete, integration typically proceeds by rewriting the quadratic denominator through [completing the square](../completing-the-square/). After an appropriate change of variable, the integral reduces to:
+Combining the two contributions gives the formula:
 
-$$\int \frac{1}{u^2 + a^2} \ du$$
+$$\int \frac{Ax + B}{q(x)} \ dx = \frac{A}{2}\ln q(x) + \frac{B - Ab/2}{\rho}\arctan\left(\frac{x + b/2}{\rho}\right) + k$$
 
-whose antiderivative is:
+The formula therefore allows us to evaluate the integral by expressing the antiderivative in terms of a logarithm and an arctangent. To apply it, we identify the coefficients $A,$ $B,$ $b$ and $c,$ calculate $\rho = \sqrt{c - b^2/4}$ and substitute these values into the expression obtained.
 
-$$\frac{1}{a}\arctan\!\left(\frac{u}{a}\right) + c$$
+- - -
 
-The appearance of the [arctangent](../arctangent-and-arccotangent/) reflects the geometric structure encoded in the expression $u^2 + a^2$, which cannot vanish over the real numbers and corresponds, analytically, to the derivative of the inverse [tangent function](../tangent-function/).
-
-## Example 4
-
-Consider the following integral:
+A worked example will help clarify the steps and the substitutions involved. We evaluate the following integral:
 
 $$\int \frac{5x^2 + 3x - 2}{(x + 1)(x^2 + 2x + 3)} \ dx$$
 
-The denominator is already written as a product. One factor, $x + 1$, is linear. The other, $x^2 + 2x + 3$, deserves a closer look. Its discriminant is:
-
-$$\Delta = 2^2 - 4 \cdot 1 \cdot 3 = 4 - 12 = -8 < 0$$
-
-so it has no real zeros and is irreducible over $\mathbb{R}$. This determines the shape of the partial fraction decomposition:
+The denominator contains the linear factor $x + 1$ and the quadratic factor $x^2 + 2x + 3.$ The discriminant of the latter is $2^2 - 4 \cdot 3 = -8,$ so the factor is irreducible over the reals. We set up the decomposition:
 
 $$\frac{5x^2 + 3x - 2}{(x + 1)(x^2 + 2x + 3)} = \frac{A}{x + 1} + \frac{Bx + C}{x^2 + 2x + 3}$$
 
-Clearing denominators by multiplying both sides by $(x + 1)(x^2 + 2x + 3)$ produces the identity:
+Multiplying by the common denominator gives the identity:
 
 $$5x^2 + 3x - 2 = A(x^2 + 2x + 3) + (Bx + C)(x + 1)$$
 
-A convenient first step is to evaluate at $x = -1$. The second term vanishes at that value, and:
+At $x = -1,$ the left-hand side is $5 - 3 - 2 = 0$ and the right-hand side reduces to $2A.$ Hence $A = 0.$ Expanding the remaining product gives:
 
-$$5(-1)^2 + 3(-1) - 2 = A\bigl((-1)^2 + 2(-1) + 3\bigr)$$
+$$5x^2 + 3x - 2 = Bx^2 + (B + C)x + C$$
 
-The left-hand side simplifies to $5 - 3 - 2 = 0$, while the right-hand side becomes $A(1 - 2 + 3) = 2A$. Hence $0 = 2A$, so:
-
-$$A = 0$$
-
-With $A = 0$, the identity reduces to:
-
-$$5x^2 + 3x - 2 = (Bx + C)(x + 1)$$
-
-Expanding the right-hand side:
-
-$$(Bx + C)(x + 1) = Bx^2 + (B + C)x + C$$
-
-Matching coefficients term by term:
-
-$$B = 5 \qquad B + C = 3$$
-
-From the second relation, $C = -2$. The decomposition therefore collapses to:
+Comparing the coefficients of $x^2$ and the constant terms gives $B = 5$ and $C = -2.$ The coefficients of $x$ also agree, since $B + C = 3.$ For $x \neq -1,$ the fraction therefore reduces to:
 
 $$\frac{5x^2 + 3x - 2}{(x + 1)(x^2 + 2x + 3)} = \frac{5x - 2}{x^2 + 2x + 3}$$
 
-The integral simplifies considerably:
-
-$$\int \frac{5x - 2}{x^2 + 2x + 3} \ dx$$
-
-The standard strategy at this point is to relate the numerator to the derivative of the denominator. Since:
-
-$$\frac{d}{dx}(x^2 + 2x + 3) = 2x + 2$$
-
-the numerator is rewritten as a combination of this derivative and a constant:
+The derivative of the new denominator is $2x + 2.$ To obtain this term in the numerator, we write:
 
 $$5x - 2 = \frac{5}{2}(2x + 2) - 7$$
 
-The integral splits accordingly:
+Separating the contributions, we can rewrite the original integral as:
 
-$$\frac{5}{2} \int \frac{2x + 2}{x^2 + 2x + 3} \ dx - 7 \int \frac{1}{x^2 + 2x + 3} \ dx$$
+$$\int \frac{5x - 2}{x^2 + 2x + 3} \ dx = \frac{5}{2} \int \frac{2x + 2}{x^2 + 2x + 3} \ dx - 7 \int \frac{1}{x^2 + 2x + 3} \ dx$$
 
-- - -
+In the first integral, the numerator is the derivative of the denominator, giving $(5/2)\ln(x^2 + 2x + 3).$ The denominator is positive because $x^2 + 2x + 3 = (x + 1)^2 + 2.$ This same identity allows us to evaluate the second integral by setting $u = x + 1$ and using the arctangent formula with $\rho = \sqrt{2}:$
 
-For the first piece, the numerator is exactly the derivative of the denominator, which produces a logarithm:
+$$-7 \int \frac{1}{(x + 1)^2 + 2} \ dx = -\frac{7}{\sqrt{2}}\arctan\left(\frac{x + 1}{\sqrt{2}}\right) + k$$
 
-$$\frac{5}{2} \ln|x^2 + 2x + 3|$$
+Combining the results gives:
 
-Since the quadratic has negative discriminant it is always positive, so the [absolute value](../absolute-value/) is not strictly necessary, though keeping it causes no harm.
+$$\int \frac{5x^2 + 3x - 2}{(x + 1)(x^2 + 2x + 3)} \ dx = \frac{5}{2}\ln(x^2 + 2x + 3) - \frac{7}{\sqrt{2}}\arctan\left(\frac{x + 1}{\sqrt{2}}\right) + k$$
 
-- - -
-
-For the second piece, completing the square gives $x^2 + 2x + 3 = (x + 1)^2 + 2$, so the integral becomes:
-
-$$-7 \int \frac{1}{(x + 1)^2 + 2} \ dx$$
-
-With the substitution $u = x + 1$ and $a^2 = 2$:
-
-$$-\frac{7}{\sqrt{2}} \arctan\!\left(\frac{x + 1}{\sqrt{2}}\right)$$
-
-Putting everything together, an antiderivative is:
-
-$$\frac{5}{2} \ln(x^2 + 2x + 3) - \frac{7}{\sqrt{2}} \arctan\!\left(\frac{x + 1}{\sqrt{2}}\right) + c$$
-
-> The factor $x + 1$ initially appears to require its own term in the decomposition. Once the coefficients are computed, that contribution disappears entirely. The full decomposition must always be written down: what seems essential at first may ultimately cancel.
+The procedure is a little more involved than in the previous cases, but do not be discouraged. By keeping the desired final form in mind and systematically making the appropriate substitutions, you will find these integrals fairly straightforward to evaluate with practice.
 
 ## Repeated irreducible quadratic factors
 
-An irreducible quadratic can appear in the denominator with multiplicity greater than one. The rule is the one already seen for repeated linear factors: every power of the factor contributes its own term, and each numerator has degree one. When the denominator contains $(x^2 + bx + c)^k$ with $b^2 - 4c < 0$, the corresponding part of the decomposition is:
+Our final case is more involved still and concerns integrals whose denominator contains a power $q(x)^k$ of an irreducible quadratic factor. Here we must include every power from $1$ to $k,$ just as we did for repeated linear factors. With $q(x) = x^2 + bx + c$ and $b^2 - 4c < 0,$ the corresponding part of the decomposition is:
 
-$$\frac{A_1 x + B_1}{x^2 + bx + c} + \frac{A_2 x + B_2}{(x^2 + bx + c)^2} + \dots + \frac{A_k x + B_k}{(x^2 + bx + c)^k}$$
+$$\frac{A_1x + B_1}{q(x)} + \frac{A_2x + B_2}{q(x)^2} + \dots + \frac{A_kx + B_k}{q(x)^k}$$
 
-Every term is integrated by the same splitting used in the simple case. The numerator $A_j x + B_j$ is written as a multiple of the derivative $2x + b$ of the quadratic plus a constant:
+Each numerator has degree at most $1.$ To integrate the term with index $j,$ we split the numerator as in the previous case:
 
-$$A_j x + B_j = \frac{A_j}{2}(2x + b) + \left(B_j - \frac{A_j b}{2}\right)$$
+$$A_jx + B_j = \frac{A_j}{2}q'(x) + \left(B_j - \frac{A_jb}{2}\right)$$
 
-The substitution $u = x^2 + bx + c$ settles the first piece at once. For $j = 1$ it produces a logarithm, while for $j \geq 2$ it produces the power $u^{1 - j}/(1 - j)$, a rational term without logarithm, as happens for repeated linear factors.
+The part containing $q'(x)$ is integrated by the substitution $v = q(x).$ For $j = 1,$ we again obtain a logarithm. For $j \geq 2,$ we instead obtain:
 
-- - -
+$$\int \frac{q'(x)}{q(x)^j} \ dx = \int v^{-j} \ dv = \frac{q(x)^{1-j}}{1-j} + K$$
 
-The constant piece is what distinguishes the repeated case. Completing the square with $u = x + b/2$ and $a^2 = c - b^2/4$, positive because the discriminant is negative, reduces it to:
+It remains to integrate the term with a constant numerator. Setting $u = x + b/2$ and $\rho = \sqrt{c - b^2/4} > 0$ as before, we reduce it to the family of integrals:
 
-$$I_j = \int \frac{1}{(u^2 + a^2)^j} \ du$$
+$$I_j = \int \frac{1}{(u^2 + \rho^2)^j} \ du$$
 
-For $j = 1$ this is the arctangent integral of the previous section. For $j \geq 2$ the exponent blocks that route, and the integral is computed through the [reduction formula](../reduction-formulas/) for powers of a quadratic denominator:
+We have just considered the case $j = 1.$ For $j \geq 2,$ we can lower the exponent using a [reduction formula](../reduction-formulas/). To derive it, we start with the derivative:
 
-$$I_j = \frac{1}{2(j - 1)a^2} \left[ \frac{u}{(u^2 + a^2)^{j - 1}} + (2j - 3) I_{j - 1} \right] \qquad (j \geq 2)$$
+$$
+\begin{align}
+\frac{d}{du}\left[\frac{u}{(u^2 + \rho^2)^{j-1}}\right] &= \frac{1}{(u^2 + \rho^2)^{j-1}} - \frac{2(j-1)u^2}{(u^2 + \rho^2)^j} \\[6pt]
+  &= \frac{2(j-1)\rho^2}{(u^2 + \rho^2)^j} - \frac{2j-3}{(u^2 + \rho^2)^{j-1}}
+\end{align}
+$$
 
-Each application lowers the index by one and detaches a rational term, so after $j - 1$ steps the computation ends at $I_1$ and its arctangent. Collecting the contributions of all the powers, the antiderivative associated with a repeated irreducible quadratic factor consists of a rational function, one arctangent, and the single logarithm produced by the first power of the factor.
+In the last step, we substituted $u^2 = (u^2 + \rho^2) - \rho^2$ and collected the terms with the same denominator. Integrating the identity and solving for $I_j$ gives:
 
-## Decision procedure
+$$I_j = \frac{u}{2(j-1)\rho^2(u^2 + \rho^2)^{j-1}} + \frac{2j-3}{2(j-1)\rho^2}I_{j-1} \qquad (j \geq 2)$$
 
-The following stepwise procedure summarises the integration of a generic rational function.
+Each application lowers the index by one, so after $j - 1$ steps we reach the form:
 
-+ When $\deg N(x) \geq \deg D(x)$, perform polynomial long division to write $N(x) = Q(x) D(x) + R(x)$ with $\deg R(x) < \deg D(x)$, split the integral as $\int Q(x) \ dx + \int R(x)/D(x) \ dx$, and restart with the proper part.
-+ When $D(x)$ is a single linear factor $ax + b$, apply the substitution $t = ax + b$. The result is the logarithm $\tfrac{c}{a}\ln|ax + b| + k$.
-+ When $D(x)$ factors into distinct linear factors, write the partial fraction decomposition with one term $A_i/(x - r_i)$ per factor, determine the coefficients by evaluation at the roots or by matching coefficients, and integrate term by term: each contribution is a logarithm.
-+ When $D(x)$ contains a repeated linear factor $(x - r)^k$, expand the decomposition into one term per power, from $A_1/(x - r)$ up to $A_k/(x - r)^k$, and integrate term by term: the simple power produces a logarithm, the higher powers produce rational terms.
-+ When $D(x)$ contains an irreducible quadratic factor $ax^2 + bx + c$ with $b^2 - 4ac < 0$, add the term $(Ax + B)/(ax^2 + bx + c)$ to the decomposition. Split the numerator into a multiple of the derivative of the denominator plus a constant, and integrate the two pieces: the derivative part produces a logarithm, while the constant part is reduced by completing the square and yields an arctangent.
-+ When a product of polynomial and exponential or polynomial and trigonometric function appears alongside the rational structure, the standard alternative is [integration by parts](../integration-by-parts/). For rational integrands in $\sin x$ and $\cos x$, the [Weierstrass substitution](../the-weierstrass-substitution/) is the natural tool.
+$$I_1 = \frac{1}{\rho}\arctan\left(\frac{u}{\rho}\right) + K$$
+
+For example, when $j = 2,$ a single application of the formula gives:
+
+$$I_2 = \frac{u}{2\rho^2(u^2 + \rho^2)} + \frac{1}{2\rho^3}\arctan\left(\frac{u}{\rho}\right) + k$$
+
+This expression gives the antiderivatives of $1/(u^2 + \rho^2)^2$ on all of $\mathbb{R},$ since $\rho > 0$ and the denominator never vanishes.
+
+These cases can be fairly laborious, especially when the quadratic factor has high multiplicity, since more coefficients must be determined and the reduction formula must be applied several times. We therefore restrict ourselves to the case $j = 2,$ which shows how to use the formula. A further example would repeat the decomposition and substitutions already illustrated, mainly adding algebraic steps without introducing any new integration techniques.
