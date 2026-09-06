@@ -15,200 +15,203 @@ tags:
   - simpsons-rule
   - trapezoidal-rule
 ---
+
 ## Integrals without elementary antiderivatives
 
-The [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provides a way for evaluating a [definite integral](../definite-integrals/). When an antiderivative exists, the value of the integral becomes the difference between the values of the antiderivative at the endpoints. Many integrands, however, do not admit a primitive expressible through elementary [functions](../functions/), and methods such as [integration by substitution](../integration-by-substitution/), [integration by parts](../integration-by-parts/), and the [Weierstrass substitution](../the-weierstrass-substitution/) often fail to produce a closed form.
+I have often observed that integrals, at least those encountered in secondary school or the first years of university, are on the whole less problematic than they may seem at first, and that evaluating them depends less on intuition than on applying fairly structured and largely mechanical procedures.
 
-A typical example is provided by the following integral, which appears in the theory of the [normal distribution](../normal-distribution/) and whose integrand has no antiderivative within the elementary functions:
+We know that the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) provides a method for evaluating a [definite integral](../definite-integrals/) from an [antiderivative](../indefinite-integrals/) of the integrand. Finding the antiderivative is the main part of the work, which may be more or less complicated depending on the form of the original integral, but once it is found, the value of the integral follows easily as the difference between the values of the antiderivative at the endpoints. Many integrands, however, do not admit an antiderivative expressible through elementary [functions](../functions/), and methods such as [integration by substitution](../integration-by-substitution/), [integration by parts](../integration-by-parts/), and the [Weierstrass substitution](../the-weierstrass-substitution/) often fail to produce a closed-form expression.
 
-$$\int_0^1 e^{-x^2}\ dx$$
+A typical example is the following integral, which appears in the [normal distribution](../normal-distribution/) and whose integrand has no elementary antiderivative:
 
-The same difficulty occurs with integrals containing $\sin(x)/x$, with elliptic integrals, and with a wide class of expressions involving combinations of algebraic and transcendental terms.
+$$\int_0^1 e^{-x^2} \ dx$$
 
-The numerical evaluation of such integrals follows a different conceptual route. Instead of looking for an exact symbolic expression, one builds an approximation whose accuracy can be controlled and improved as needed. The branch of analysis that studies these procedures is called numerical integration, the latter term being a remembrance of the geometric origin of the integral as the area of a planar region.
+The same difficulty arises with integrals containing $\sin(x)/x,$ with elliptic integrals, and with a broad class of expressions combining algebraic and transcendental terms.
 
-> Numerical methods become indispensable when the analytical route is unavailable or prohibitively expensive but when a primitive exists and is reasonably accessible, the exact evaluation through the Fundamental Theorem of Calculus remains the method of choice.
-> 
-## General principle of a quadrature formula
+The numerical evaluation of these integrals therefore follows a different route from the techniques presented in the preceding chapters. The aim is to construct an approximation whose accuracy can be improved to meet the needs of the problem. The branch of analysis that studies these procedures is called numerical integration, or numerical quadrature, a term that recalls the geometric origin of the integral as the [area of a planar region](../finding-areas-by-integration/).
 
-Numerical integration rests on the same construction that defines the [Riemann integral](../riemann-integrability-criteria/): the interval of integration is partitioned into a finite number of subintervals, the integrand is replaced on each subinterval by a simpler function whose integral is known exactly, and the total area is approximated by summing the contributions of the individual pieces. The quality of the approximation is determined by two factors: the width of the subintervals and the order of accuracy of the local rule. 
+On this page, we will therefore examine the main numerical methods, which become indispensable when analytical evaluation is impossible or requires excessive work. This treatment goes beyond the topics covered in a standard first university course in calculus, but the subject is worth exploring to give an early indication of how complex integration theory is and how far it extends beyond the elementary integration techniques discussed so far.
 
-![Img. 1](svg/numerical-integration-1.svg)
+As a general rule, remember that when an antiderivative can be found readily, it is always preferable to evaluate the integral exactly through the Fundamental Theorem of Calculus and reserve numerical methods, which are far from trivial, for other kinds of problems.
 
-Consider a uniform partition of the interval $[a,b]$:
+## General principle
+
+In general terms, numerical integration rests on the same construction that defines the [Riemann integral](../riemann-integrability-criteria/). The interval of integration is partitioned into a finite number of subintervals, the integrand is replaced on each one by a simpler function whose integral is known exactly, and the total area is approximated by summing the individual contributions. The quality of the approximation depends on the width of the subintervals and the order of accuracy of the local rule.
+
+![Fig. 1](svg/numerical-integration-1.svg)
+
+Consider, for example, a uniform partition of the [interval](../intervals/) $[a,b],$ whose subintervals are defined by the following points, or nodes, of the partition:
 
 $$
-a = x_0 < x_1 < \cdots < x_n = b \quad x_k = a + k h
+a = x_0 < x_1 < \cdots < x_n = b \quad x_k = a + kh
 $$
 
-with constant step size:
+The step size, which is the width of the base of each rectangle, is constant and is given by:
 
 $$
 h = \frac{b-a}{n}
 $$
 
-A quadrature formula approximates the integral by a finite linear combination of values of the integrand at the nodes of the partition:
+To approximate the integral, we evaluate the integrand at the nodes $x_0, x_1, \dots, x_n,$ multiply each value $f(x_k)$ by a coefficient $w_k,$ and add the results. This gives a quadrature formula of the form:
 
+$$  
+\int_a^b f(x) \ dx \approx \sum_{k=0}^{n} w_k f(x_k) \tag{1}  
 $$
-F_1 = \int_a^b f(x)\ dx \approx \sum_{k=0}^{n} w_k\ f(x_k)
-$$
 
-The coefficients $w_k$ are called weights, and their choice determines the specific method. The simplest schemes arise by interpolating the integrand on each subinterval, or on each group of consecutive subintervals, by a low-degree [polynomial](../polynomials/), and then integrating that polynomial exactly. The degree of the interpolating polynomial determines both the form of the resulting formula and its order of accuracy.
+The coefficients $w_k$ are called weights and determine the contribution of each function value to the approximation of the integral. Their choice also determines the specific quadrature method, since it specifies how the function values at the nodes are combined to approximate the integral.
 
-**Definition 1.** A quadrature rule is said to have degree of exactness $m$ if it integrates exactly every polynomial of degree at most $m$. 
+The simplest formulas are obtained by interpolating the integrand on each subinterval, or on each group of consecutive subintervals, with a [polynomial](../polynomials/) of relatively low degree, and then integrating it. The degree of the interpolating polynomial determines the form of the resulting formula and helps determine its order of accuracy.
 
-> This notion provides a useful theoretical measure of the precision of a method, and it is the starting point for the construction of more refined formulas such as the Gauss quadrature rules.
+Accordingly, a quadrature formula is said to have degree of exactness $m$ if it integrates exactly every polynomial of degree at most $m,$ but not every polynomial of degree $m+1.$ This notion provides a theoretical measure of the accuracy of a method and is the starting point for constructing more accurate formulas.
 
 ## The rectangle and midpoint rules
 
-The most elementary quadrature rule approximates the integrand on each subinterval by a constant. Depending on whether one chooses the value of the integrand at the left endpoint, the right endpoint, or the midpoint, three variants of the rectangle rule are obtained. The left and right versions reproduce the Riemann sums already encountered in the construction of the definite integral. The midpoint version deserves particular attention because of its superior accuracy and the symmetry of its construction. Introducing the midpoints of the subintervals:
+The most elementary quadrature rule approximates the integrand on each subinterval by a constant. Choosing the value of the function at the left endpoint, the right endpoint, or the midpoint gives three variants of the rectangle rule. The first two reproduce the Riemann sums already encountered in the construction of the definite integral, whereas the midpoint rule has greater accuracy because of the symmetry of its construction. We focus on the latter and denote the midpoints of the subintervals by the following equality:
 
 $$
 \bar{x}_k = \frac{x_{k-1} + x_k}{2}
 $$
 
-the midpoint rule on a single subinterval reads:
+The midpoint quadrature rule on a single subinterval is:
 
 $$
-\int_{x_{k-1}}^{x_k} f(x)\ dx \approx h\ f(\bar{x}_k)
+\int_{x_{k-1}}^{x_k} f(x) \ dx \approx hf(\bar{x}_k)
 $$
 
-Summing the local contributions over all subintervals, one obtains the composite midpoint formula:
+On each subinterval, we approximate the integral by the product $hf(\bar{x}_k),$ where $h$ is the width of the subinterval (the base of the rectangle) and $f(\bar{x}_k)$ is the value of the function at its midpoint (the height). Since the integral over $[a,b]$ is the sum of the integrals over the individual subintervals, we add these approximations and factor out the common factor $h.$ This gives the midpoint rule:
 
-$$
-F_2 = \int_a^b f(x)\ dx \approx h \sum_{k=1}^{n} f(\bar{x}_k)
-$$
-
-**Theorem 1.** When the integrand is of class $C^2$ on $[a,b]$, the error committed by the formula $F_2$ satisfies the bound:
-
-$$
-\left| \int_a^b f(x)\ dx - h\sum_{k=1}^{n} f(\bar{x}_k) \right| \le \frac{(b-a)\ h^2}{24} \max_{x \in [a,b]} |f''(x)|
+$$  
+\int_a^b f(x) \ dx \approx \sum_{k=1}^{n} hf(\bar{x}_k) = h \sum_{k=1}^{n} f(\bar{x}_k) \tag{2}  
 $$
 
-The error therefore decreases as $h^2$ and halving $h$ reduces the bound by a factor of 4. This is already a clear improvement over the left and right rectangle rules, whose error scales linearly with $h$ and which therefore converge much more slowly to the exact value of the integral.
+If the integrand is of class $C^2,$ meaning that it has [first and second derivatives](../higher-order-derivatives/) that are both continuous on $[a,b],$ the error in formula $(2)$ satisfies the bound:
 
-> The error bound, and every analogous bound that appears in the rules below, depends on the maximum of a higher derivative of $f$ over $[a,b]$. The finiteness of this maximum is guaranteed by [Weierstrass' theorem](../weierstrass-theorem/), which ensures that a continuous function on a closed and bounded interval attains its extreme values.
+$$
+\left| \int_a^b f(x) \ dx - h\sum_{k=1}^{n} f(\bar{x}_k) \right| \le \frac{(b-a)h^2}{24} \max_{x \in [a,b]} |f''(x)|
+$$
 
-> The midpoint rule integrates exactly every polynomial of degree at most one. The geometric reason is that the area of a rectangle whose base coincides with the subinterval and whose height equals the value of an affine function at the midpoint is exactly the integral of the affine function over the subinterval. This degree of exactness is the source of the second-order convergence.
+The error is therefore of order $h^2$ and if, for example, we halve the step size $h,$ the upper bound decreases to one quarter of its original value. This gives a significant improvement over the left and right rectangle rules, whose error is of order $h$ and which therefore converge more slowly to the exact value of the integral.
+
+> The error bound, like all the analogous bounds for the formulas below, depends on the maximum of the absolute value of a higher derivative of $f$ on $[a,b].$ The finiteness of this maximum is guaranteed by [Weierstrass' theorem](../weierstrass-theorem/), which states that a [continuous function](../continuous-functions/) on a closed and bounded interval attains its maximum and minimum.
 
 ## The trapezoidal rule
 
-A more accurate approximation is obtained by replacing the integrand on each subinterval not by a constant but by an affine function, namely the segment joining the two graph points $(x_{k-1}, f(x_{k-1}))$ and $(x_k, f(x_k))$. The region underneath this segment is a trapezoid, and its area equals the average of the two ordinates multiplied by the base. 
+We now examine another approach that uses trapezoids instead of rectangles. On each subinterval, we replace the graph of the integrand with the line segment joining the points $(x_{k-1}, f(x_{k-1}))$ and $(x_k, f(x_k)).$ This gives a more accurate approximation than the rectangle rules that use the endpoints.
 
-![Img. 2](svg/numerical-integration-2.svg)
+When both ordinates are positive, the segment, the horizontal axis, and the vertical lines through the endpoints enclose a trapezoid. Its area is calculated by multiplying the average of the two ordinates by the width of the subinterval. The same formula remains valid for ordinates of either sign, provided that areas below the horizontal axis are counted as negative.
 
-The local formula reads:
+![Fig. 2](svg/numerical-integration-2.svg)
 
-$$
-\int_{x_{k-1}}^{x_k} f(x)\ dx \approx \frac{h}{2}\bigl[f(x_{k-1}) + f(x_k)\bigr]
-$$
-
-Summing over all subintervals and observing that each internal node belongs to two adjacent subintervals, and therefore appears with multiplicity two in the global sum, one obtains the composite trapezoidal formula:
+The local formula in this case is:
 
 $$
-F_3 = \int_a^b f(x)\ dx \approx \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr]
+\int_{x_{k-1}}^{x_k} f(x) \ dx \approx \frac{h}{2}\bigl[f(x_{k-1}) + f(x_k)\bigr]
 $$
 
-**Theorem 2.** If the integrand is of class $C^2$ on $[a,b]$, the error of the composite trapezoidal formula admits the bound:
+To approximate the integral over $[a,b],$ we now sum the contributions of the individual trapezoids. Each interior value $f(x_k)$ appears in two contributions, because the node $x_k$ is the right endpoint of one subinterval and the left endpoint of the next. The values $f(a)$ and $f(b)$ appear only once. Factoring out the common factor $h/2,$ we therefore obtain the composite trapezoidal rule:
+
+$$  
+\int_a^b f(x) \ dx \approx \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \tag{3}  
+$$
+
+If the integrand is of class $C^2$ on $[a,b],$ the error in formula $(3)$ satisfies the following bound:
 
 $$
-\left| \int_a^b f(x)\ dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a) h^2}{12} \max_{x \in [a,b]} |f''(x)|
+\left| \int_a^b f(x) \ dx - \frac{h}{2}\Bigl[f(a) + f(b) + 2 \sum_{k=1}^{n-1} f(x_k)\Bigr] \right| \le \frac{(b-a)h^2}{12} \max_{x \in [a,b]} |f''(x)|
 $$
 
-The decay is again of order $h^2$, and the asymptotic behaviour coincides with that of the midpoint rule. The constant appearing in the trapezoidal bound is, however, twice as large as that for the midpoint rule, so the two methods are comparable in convergence order, but the midpoint rule is slightly more accurate in the leading constant.
-
-> The trapezoidal and midpoint rules share the same degree of exactness, namely one. The reason why the trapezoidal formula carries a larger error constant lies in the fact that it samples the integrand only at the endpoints of each subinterval, where the error of polynomial interpolation tends to be larger, while the midpoint rule samples at the centre, where this error is naturally smaller. This observation already suggests that not all sampling strategies are equally efficient, an idea that lies at the heart of the Gauss quadrature rules.
+The error is again of order $h^2,$ as with the midpoint rule, but the constant in the trapezoidal bound is twice that in the midpoint bound. The two methods therefore have the same order of convergence, but the midpoint rule has a smaller error constant.
 
 ## Simpson's rule
 
-A substantial gain in accuracy is achieved by approximating the integrand on a pair of consecutive subintervals by a polynomial of degree two, rather than by a piecewise affine function. The construction proceeds as follows. Consider three consecutive equally spaced nodes $x_{k-1}, x_k, x_{k+1}$, and let $P(x)$ denote the unique polynomial of degree at most two passing through the three points $(x_{k-1}, f(x_{k-1}))$, $(x_k, f(x_k))$, $(x_{k+1}, f(x_{k+1}))$. The integral of this polynomial over the pair of subintervals can be computed in closed form, for instance by integrating the Lagrange representation of $P(x)$, and the result reads:
+Simpson's rule is a method for increasing accuracy by approximating the integrand on a pair of consecutive subintervals with a quadratic polynomial. Consider three consecutive equally spaced nodes $x_{k-1}, x_k, x_{k+1}$ and let $P(x)$ denote the unique polynomial of degree at most two that passes through the three points $(x_{k-1}, f(x_{k-1})),$ $(x_k, f(x_k)),$ $(x_{k+1}, f(x_{k+1})).$ The integral of this polynomial over the pair of subintervals can be evaluated in closed form, giving:
 
 $$
-\int_{x_{k-1}}^{x_{k+1}} P(x)\ dx = \frac{h}{3}\bigl[f(x_{k-1}) + 4 f(x_k) + f(x_{k+1})\bigr]
+\int_{x_{k-1}}^{x_{k+1}} P(x) \ dx = \frac{h}{3}\bigl[f(x_{k-1}) + 4 f(x_k) + f(x_{k+1})\bigr]
 $$
 
-Substituting this expression in place of the exact integral one obtains Simpson's formula on a single pair of subintervals. For the composite version, the number of subdivisions $n$ must be even, so that the whole interval can be covered by $n/2$ non-overlapping consecutive pairs. Grouping the nodes accordingly, one arrives at the composite Simpson formula:
+Substituting this expression for the integral of the integrand gives Simpson's rule on a single pair of subintervals. To apply Simpson's rule to the entire interval, we group the subintervals in pairs, the first with the second, the third with the fourth, and so on, so the number of subdivisions $n$ must be even.
 
-$$
-F_4 = \int_a^b f(x)\ dx \approx \frac{h}{3}\Bigl[f(a) + f(b) + 4 \sum_{k \text{ odd}} f(x_k) + 2 \sum_{k \text{ even}} f(x_k)\Bigr]
-$$
+When we sum the formulas for the individual pairs, the midpoint values retain a coefficient of $4,$ whereas the values at the interior endpoints have a coefficient of $2,$ because they appear in two adjacent pairs. The values at $a$ and $b$ appear only once and therefore have a coefficient of $1.$ This gives Simpson's rule:
 
-where the odd-indexed sum extends over $k = 1, 3, \dots, n-1$ and the even-indexed sum extends over the interior even nodes $k = 2, 4, \dots, n-2$. When the integrand is of class $C^4$ on $[a,b]$, the error of the composite Simpson formula satisfies:
-
-$$
-\left| \int_a^b f(x)\ dx - S_n \right| \le \frac{(b-a) h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
+$$  
+\int_a^b f(x) \ dx \approx \frac{h}{3}\Bigl[f(a) + f(b) + 4 \sum_{j=1}^{n/2} f(x_{2j-1}) + 2 \sum_{j=1}^{n/2-1} f(x_{2j})\Bigr] \tag{4}  
 $$
 
-where $S_n$ stands for the right-hand side of formula $F_4$. The error now decreases as the fourth power of the step size, and halving $h$ reduces the bound by a factor of sixteen. This represents a dramatic improvement over the second-order behaviour of the trapezoidal and midpoint rules, and it explains why Simpson's formula has historically occupied a central role in numerical quadrature.
+The first sum includes the values at the nodes $x_1, x_3, \dots, x_{n-1},$ whereas the second includes those at the interior nodes $x_2, x_4, \dots, x_{n-2}.$
 
-> Although Simpson's rule is built by interpolating a polynomial of degree two, an additional cancellation of symmetric terms in the error expansion makes the rule exact on polynomials of degree three as well. The degree of exactness is therefore three, not two, and the gain of two orders of accuracy with respect to the trapezoidal rule is the manifestation of this fortunate phenomenon.
+The sum over odd indices runs over $k = 1, 3, \dots, n-1,$ whereas the sum over even indices includes only the interior nodes $k = 2, 4, \dots, n-2.$ If the integrand is of class $C^4$ on $[a,b],$ the error in the composite Simpson rule satisfies the bound:
+
+$$
+\left| \int_a^b f(x) \ dx - S_n \right| \le \frac{(b-a)h^4}{180} \max_{x \in [a,b]} |f^{(4)}(x)|
+$$
+
+Here $S_n$ denotes the approximating expression on the right-hand side of formula $4.$ The error is now of the order of the fourth power of the step size, and halving $h$ reduces the upper bound by a factor of sixteen! The error bound for Simpson's rule therefore decreases more rapidly as the step size decreases than the second-order bounds for the trapezoidal and midpoint rules, but this does not guarantee a smaller actual error for every function and every step size.
 
 ## Comparison and order of convergence
 
-The three formulas just discussed belong to the family of Newton-Cotes rules of low order, characterised by the use of equally spaced nodes and by the integration of a polynomial interpolant of fixed degree. The order of convergence summarises in a single number the rate at which the error decreases as the number of subdivisions grows. The following table collects the relevant information.
+The three formulas just discussed belong to the family of so-called low-order Newton-Cotes rules, which are characterised by the use of equally spaced nodes and the integration of a polynomial interpolant of fixed degree. The order of convergence describes how rapidly the error decreases as the number of subdivisions increases. We can summarise these properties in the following table:
 
-| Rule         | Degree of exactness | Global error    |
-| ------------ | ------------------- | --------------- |
-| Midpoint     | 1                   | $O(h^2)$ |
-| Trapezoidal  | 1                   | $O(h^2)$ |
-| Simpson      | 3                   | $O(h^4)$ |
+| Rule        | Degree of exactness | Global error |
+| ----------- | ------------------- | ------------ |
+| Midpoint    | 1                   | $O(h^2)$     |
+| Trapezoidal | 1                   | $O(h^2)$     |
+| Simpson     | 3                   | $O(h^4)$     |
 
-The qualitative consequence is striking. To divide the error by a factor of one hundred it is sufficient to roughly triple the number of subdivisions when using Simpson's method, while the trapezoidal rule would require multiplying that number by ten. Since the cost of a quadrature method is dominated by the number of evaluations of the integrand, and since each evaluation can be expensive in real applications, the practical advantage of Simpson's rule is considerable.
+The notation $O(h^p),$ called [big O notation](../big-o-notation/), means that, for sufficiently small $h,$ the [absolute value](../absolute-value/) of the error is bounded above by $Ch^p,$ where $C$ is a constant independent of $h.$
 
-> The qualitative difference between second-order and fourth-order convergence is decisive in any setting where high precision is required from a limited budget of function evaluations. This is why Simpson's rule, and the higher-order Newton-Cotes formulas obtained by analogous constructions, occupy a privileged position among elementary quadrature methods.
+According to these orders of convergence, reducing the upper error bound by a factor of one hundred requires multiplying the number of subdivisions by approximately $\sqrt[4]{100} \approx 3.16$ for Simpson's rule and by ten for the trapezoidal rule, so Simpson's rule may require fewer evaluations of the integrand to achieve a prescribed accuracy.
 
 ## Example 1
 
-We illustrate the use of the trapezoidal and Simpson rules on the integral:
+As a practical example, we apply the trapezoidal and Simpson rules to the integral:
 
 $$
-\int_0^1 e^{-x^2}\ dx
+\int_0^1 e^{-x^2} \ dx
 $$
 
-The integrand is the kernel of the Gauss error function and admits no antiderivative expressible in elementary form, so the integral cannot be evaluated by the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/) in any direct way. The reference value, obtained with arbitrary precision, is approximately $0.7468241328$, and it provides a yardstick against which our approximations can be tested.
+We know that the integrand has no antiderivative expressible in elementary form, so the Fundamental Theorem of Calculus does not allow us to evaluate the integral directly through an elementary antiderivative. We therefore apply numerical integration and choose $n = 4$ subintervals of equal width $h = 1/4.$ The nodes of the partition and the corresponding values of the integrand are listed in the following table.
 
-We choose $n = 4$ subintervals of equal width $h = 1/4$. The nodes of the partition and the corresponding values of the integrand are listed in the following table.
+| $k$ | $x_k$ | $f(x_k) = e^{-x_k^2}$ |
+| --- | --- | --- |
+| 0 | 0.00 | 1.000000 |
+| 1 | 0.25 | 0.939413 |
+| 2 | 0.50 | 0.778801 |
+| 3 | 0.75 | 0.569783 |
+| 4 | 1.00 | 0.367879 |
 
-|  k  | $x_k$ | $f(x_k) = e^{-x_k^2}$ |
-| --- | ----------- | ---------------------------- |
-| 0   | 0.00        | 1.000000                     |
-| 1   | 0.25        | 0.939413                     |
-| 2   | 0.50        | 0.778801                     |
-| 3   | 0.75        | 0.569783                     |
-| 4   | 1.00        | 0.367879                     |
+Applying the trapezoidal rule $(3)$ gives:
 
-Applying the composite trapezoidal formula $F_3$, the endpoint values contribute with weight one and the three interior values contribute with weight two. A direct substitution gives:
-
-$$
-\begin{align}
-T_4
-&= \frac{0.25}{2}   \Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\\\[6pt]
-&= 0.125   (1.367879 + 4.575994) \\\\[6pt]
-&= 0.742984
-\end{align}
+$$  
+\begin{align}  
+\int_0^1 e^{-x^2} \ dx  
+&\approx \frac{0.25}{2}\Bigl[1.000000 + 0.367879 + 2(0.939413 + 0.778801 + 0.569783)\Bigr] \\[6pt]  
+&= 0.125(1.367879 + 4.575994) \\[14pt]  
+&\approx 0.742984  
+\end{align}  
 $$
 
-The discrepancy with the reference value is approximately $3.84 \times 10^{-3}$, which is consistent with the second-order error bound that governs the trapezoidal rule.
+To compare the results, we use the approximate value of the integral $0.7468241328,$ obtained with a more accurate numerical calculation than those used in this example. The difference from the reference value is approximately $3.84 \times 10^{-3},$ consistent with the second-order error bound for the trapezoidal rule.
 
-Applying the composite Simpson formula $F_4$, the odd-indexed nodes $x_1$ and $x_3$ contribute with weight four and the even-indexed interior node $x_2$ contributes with weight two. A direct substitution gives:
+In Simpson's rule $(4),$ the odd-indexed nodes $x_1$ and $x_3$ have weight four, whereas the even-indexed interior node $x_2$ has weight two. Substituting the values gives:
 
 $$
 \begin{align}
 S_4
-&= \frac{0.25}{3}   \Bigl[1.000000+0.367879+4(0.939413 + 0.569783)+2(0.778801)\Bigr] \\\\[6pt]
-&= \frac{1}{12}   (1.367879+6.036784+1.557602) \\\\[6pt]
-&= 0.746855
+&= \frac{0.25}{3}\Bigl[1.000000 + 0.367879 + 4(0.939413 + 0.569783) + 2(0.778801)\Bigr] \\[6pt]
+&= \frac{1}{12}(1.367879 + 6.036784 + 1.557602) \\[12pt]
+&\approx 0.746855
 \end{align}
 $$
 
-The discrepancy with the reference value is now approximately $3.1 \times 10^{-5}$, more than two orders of magnitude smaller than the trapezoidal error obtained with the same number of nodes. The comparison confirms, in a concrete setting, the theoretical prediction that Simpson's rule produces results of much higher quality than the trapezoidal rule at the same computational cost.
+The difference from the reference value is now approximately $3.1 \times 10^{-5},$ more than two orders of magnitude smaller than the error obtained with the trapezoidal rule using the same number of nodes, showing that Simpson's rule gives a more accurate approximation with the same number of evaluations.
 
 ## Beyond Newton-Cotes
 
-The methods presented above are the simplest representatives of a much larger landscape of quadrature techniques. The Newton-Cotes family can be extended to higher-degree interpolants, although the resulting formulas develop oscillatory weights and lose stability beyond degree seven or so, and are therefore rarely used in practice. A more powerful idea is to abandon the assumption of equally spaced nodes and to choose both the nodes and the weights so as to maximise the degree of exactness for a fixed number of evaluations. 
+To offer some reassurance, the methods presented on this page are the simplest among the many quadrature techniques available. The Newton-Cotes family can be extended to interpolating polynomials of higher degree, but as the degree increases, weights of alternating signs and stability problems may appear, which is why high-degree formulas are rarely used in practice.
 
-The result is the family of Gauss quadrature rules, in which $n$ nodes are sufficient to integrate exactly every polynomial of degree at most $2n - 1$. Closely related are the adaptive methods, which subdivide the interval of integration more finely in the regions where the integrand varies rapidly and more coarsely where it is well behaved, and the Romberg method, which combines several trapezoidal estimates with different step sizes to extract a much more accurate value through Richardson extrapolation.
+Another possibility is to give up equally spaced nodes and choose both the nodes and the weights to maximise the degree of exactness for a fixed number of evaluations, although this of course makes the problem more complicated. This choice underlies the family of Gauss quadrature rules, in which $n$ nodes are sufficient to integrate exactly every polynomial of degree at most $2n - 1.$
 
-Numerical quadrature also requires care when applied to [improper integrals](../improper-integrals/), to integrands with rapidly oscillating behaviour, or to functions that approach a singularity within or at the boundary of the interval. In all these cases, the elementary rules introduced in this lecture lose accuracy and must be modified, either by a preliminary analytical transformation that removes the singularity or by specialised methods tailored to the specific situation.
+Other techniques also exist, such as Romberg's method, but they require more advanced tools that are beyond our scope.
 
-The framework outlined here, nonetheless, contains the essential conceptual ingredients on which the more advanced techniques are built, and it is the natural starting point for any deeper study of numerical analysis.
+Finally, I want to mention that numerical quadrature requires some care when applied to [improper integrals](../improper-integrals/), rapidly oscillating integrands, or functions with a singularity inside the interval or at its endpoints. In these cases, the elementary rules introduced here may lose accuracy and must be adapted, either through a preliminary analytical transformation that removes the singularity or through methods tailored to the specific problem.

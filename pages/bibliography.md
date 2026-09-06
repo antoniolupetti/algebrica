@@ -113,6 +113,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Lecture Notes on Probability, Statistics and Linear Algebra](https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf), C. H. Taubes
 + [OpenIntro Statistics](https://leanpub.com/os), Christopher Barr, Mine Cetinkaya-Rundel, David Diez
 + [Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf), Michael J. Evans, Jeffrey S. Rosenthal
++ [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/ProbabilityForComputerScientists.pdf), Chris Piech
 + [Probability on Trees and Networks](https://rdlyons.pages.iu.edu/prbtree/book_online.pdf), Russell Lyons, Yuval Peres
 
 ## Optimization
