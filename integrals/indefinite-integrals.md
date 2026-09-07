@@ -233,12 +233,12 @@ The table lists the two linearity identities, the power rule for $a \neq -1$, an
 
 [class="table-1"]
 
-|                  |                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| Linearity        | $$\int (f(x) + g(x)) \ dx = F(x) + G(x) + c \qquad F'=f,\quad G'=g,\quad c \in \mathbb{R}$$    |
-| Linearity        | $$\int kf(x) \ dx = kF(x) + c \qquad F'=f,\quad k,c \in \mathbb{R}$$                         |
-| Power rule       | $$\int x^a \ dx = \dfrac{x^{a+1}}{a+1} + c \qquad a \in \mathbb{R}\setminus\{-1\},\quad x > 0$$ |
-| Logarithmic case | $$\int \dfrac{1}{x} \ dx = \ln \lvert x \rvert + c$$                                          |
+|                  |                                                      |
+| ---------------- | ---------------------------------------------------- |
+| Linearity        | $$\int (f(x) + g(x)) \ dx = F(x) + G(x) + c$$        |
+| Linearity        | $$\int kf(x) \ dx = kF(x) + c$$                      |
+| Power rule       | $$\int x^a \ dx = \dfrac{x^{a+1}}{a+1} + c$$         |
+| Logarithmic case | $$\int \dfrac{1}{x} \ dx = \ln \lvert x \rvert + c$$ |
 [/class]
 
 ## Common integrals
