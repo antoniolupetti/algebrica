@@ -18,7 +18,7 @@ tags:
 ---
 ## Don’t rush things
 
-Adrien-Marie Legendre è uno dei matematici più noti e influenti del Settecento. Nacque a Parigi, nel 1752 e intorno ai trent'anni iniziò ad interessarsi della teoria degli integrali ellittici, oggetti matematici utilizzati per il calcolo della lunghezza di un arco di [ellisse](../ellipse/). 
+Adrien-Marie Legendre è uno dei matematici più noti e influenti del Settecento. Nacque a Parigi, nel 1752 e intorno ai trent'anni iniziò ad interessarsi della teoria degli integrali ellittici, oggetti matematici utilizzati per il calcolo della lunghezza di un arco di [ellisse](../ellipse/).
 
 Il problema non è banale, soprattutto non lo era all'epoca, quando non esisteva ancora una teoria consolidata per la sua risoluzione. Per un'ellisse con semiasse maggiore $a$ ed eccentricità $e\in[0,1),$ il perimetro è espresso dal seguente integrale ellittico completo di seconda specie:
 
