@@ -13,18 +13,18 @@ tags:
   - trigonometric-integrals
   - weierstrass-substitution
 ---
-## The class of integrals under consideration
+	## The class of integrals under consideration
 
-The Weierstrass substitution is a method for evaluating integrals that cannot be computed directly, whose integrands are rational functions involving sine and cosine, by making a suitable change of variable. In general, integrals of this type have forms similar to those listed below, where the numerator and denominator are polynomials in $\sin x$ and $\cos x:$
+The Weierstrass substitution is a method for evaluating integrals that cannot be computed directly, whose integrands are [rational functions](../rational-functions/) involving sine and cosine, by making a suitable change of variable. In general, integrals of this type have forms similar to those listed below, where the numerator and denominator are polynomials in $\sin x$ and $\cos x:$
 
 $$\frac{1}{1 + \sin x} \qquad \frac{1}{5 - 3\cos x} \qquad \frac{1}{\sin x + \cos x} \tag{1}$$
 
-We have already covered some techniques for integrating trigonometric functions, based on power-reduction formulas or separating out factors. However, in cases such as those in $(1)$ these techniques do not provide a useful way to obtain a result readily. In the cases we will consider shortly, we need to make a change of variable that reduces the problem to integrating a simple rational function, which is generally handled using polynomial division and partial fraction decomposition.
+We have already covered some techniques for [integrating trigonometric functions](../integral-of-trigonometric-functions/), based on power-reduction formulas or separating out factors. However, in cases such as those in $(1)$ these techniques do not provide a useful way to obtain a result readily. In the cases we will consider shortly, we need to make a change of variable that reduces the problem to integrating a simple rational function, which is generally handled using [polynomial division](../polynomial-division/) and [partial fraction decomposition](../partial-fraction-decomposition/).
 
 The Weierstrass substitution is based on introducing the following variable:
 $$t = \tan\left(\frac{x}{2}\right) \tag{2}$$
 
-This substitution allows us to write $\sin x,$ $\cos x$ and the differential $dx$ as rational expressions in $t.$ To derive these expressions, as we will see shortly, we use the double-angle formulas and the [Pythagorean identity](../pythagorean-identity/). Once we have calculated the antiderivative in $t,$ we return to the original variable $x$ by substituting $t = \tan(x/2).$
+This substitution allows us to write $\sin x,$ $\cos x$ and the [differential](../differential-of-a-function/) $dx$ as rational expressions in $t.$ To derive these expressions, as we will see shortly, we use the double-angle formulas and the [Pythagorean identity](../pythagorean-identity/). Once we have calculated the antiderivative in $t,$ we return to the original variable $x$ by substituting $t = \tan(x/2).$
 
 First, we examine how to derive the expressions for sine, cosine and the differential. I should mention at the outset that recalling the various trigonometric identities we will use in the calculations will require a little effort, so I encourage you to consult the relevant page before proceeding. For sine, we start with the [double-angle formula](../trigonometric-identities/), which gives:
 
@@ -172,7 +172,7 @@ $$
 \end{align}
 $$
 
-Completing the square in the denominator, we obtain:
+[Completing the square](../completing-the-square/) in the denominator, we obtain:
 
 $$t^2 + t + 1 = \left(t + \frac{1}{2}\right)^2 + \frac{3}{4}$$
 
@@ -192,17 +192,17 @@ Once again substituting $t = \tan(x/2),$ we obtain the final expression:
 
 $$\int \frac{dx}{2+\sin x} = \frac{2}{\sqrt{3}}\arctan\left(\frac{2\tan(x/2)+1}{\sqrt{3}}\right) + c$$
 
-> Here too, we have seen that after the substitution, the integrand becomes a rational function of $t,$ simpler than the original one, and its antiderivative may contain arctangents and logarithms, which typically appear when integrating rational functions.
+> Here too, we have seen that after the substitution, the integrand becomes a rational function of $t,$ simpler than the original one, and its antiderivative may contain [arctangents](../arctangent-function/) and [logarithms](../logarithms/), which typically appear when [integrating rational functions](../integral-of-rational-functions/).
 
 ## Domain conditions
 
 We need to consider the domains of the functions involved in the substitutions. The substitution $t = \tan(x/2)$ is defined for every $x$ such that $x/2 \neq \pi/2 + k\pi,$ that is, for every $x \notin \pi + 2\pi\mathbb{Z}.$ When evaluating an [indefinite integral](../indefinite-integrals/), the resulting formulas hold on intervals where both the original integrand and the substitution are defined.
 
-Greater care is needed when applying the substitution to a [definite integral](../definite-integrals/) whose limits of integration may lie in different intervals. In this case, we apply the substitution separately to each part of the [domain](../determining-the-domain-of-a-function/) of integration on which it is defined, has a continuous nonzero derivative and is invertible on the interval in question, then add the resulting contributions. Mechanically applying the substitutions above across a point of the form $x = (2k+1)\pi$ could lead to incorrect results, since the substitution might not be defined at that point. Consider, for example, the definite integral:
+Greater care is needed when applying the substitution to a [definite integral](../definite-integrals/) whose limits of integration may lie in different intervals. In this case, we apply the substitution separately to each part of the [domain](../determining-the-domain-of-a-function/) of integration on which it is defined, has a continuous nonzero derivative and is [invertible](../inverse-function/) on the interval in question, then add the resulting contributions. Mechanically applying the substitutions above across a point of the form $x = (2k+1)\pi$ could lead to incorrect results, since the substitution might not be defined at that point. Consider, for example, the definite integral:
 
 $$\int_0^{2\pi} \frac{dx}{5 - 3\cos x}$$
 
-The integrand is continuous throughout the interval $[0,2\pi]$ but the substitution $t = \tan(x/2),$ by contrast, is not defined at $x = \pi.$ For this reason, we must split the integral at this point and rewrite the two contributions using the following limits:
+The integrand is [continuous](../continuous-functions/) throughout the interval $[0,2\pi]$ but the substitution $t = \tan(x/2),$ by contrast, is not defined at $x = \pi.$ For this reason, we must split the integral at this point and rewrite the two contributions using the following [limits](../limits/):
 
 $$
 \lim_{a \to \pi^-}\int_0^a \frac{dx}{5 - 3\cos x}
@@ -213,7 +213,7 @@ As we have already shown in the preceding examples, the Weierstrass substitution
 
 $$\frac{dx}{5 - 3\cos x} = \frac{dt}{1 + 4t^2}$$
 
-On the first interval, $x = 0$ corresponds to $t = 0,$ while $t \to +\infty$ as $x \to \pi^-.$ On the second interval, $t \to -\infty$ as $x \to \pi^+,$ while $x = 2\pi$ corresponds to $t = 0.$ We therefore obtain two improper integrals, which we write as follows:
+On the first interval, $x = 0$ corresponds to $t = 0,$ while $t \to +\infty$ as $x \to \pi^-.$ On the second interval, $t \to -\infty$ as $x \to \pi^+,$ while $x = 2\pi$ corresponds to $t = 0.$ We therefore obtain two [improper integrals](../improper-integrals/), which we write as follows:
 
 $$\int_0^{+\infty} \frac{dt}{1 + 4t^2} + \int_{-\infty}^0 \frac{dt}{1 + 4t^2}$$
 
