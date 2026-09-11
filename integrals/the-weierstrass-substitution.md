@@ -13,7 +13,7 @@ tags:
   - trigonometric-integrals
   - weierstrass-substitution
 ---
-	## The class of integrals under consideration
+## When to use the substitution
 
 The Weierstrass substitution is a method for evaluating integrals that cannot be computed directly, whose integrands are [rational functions](../rational-functions/) involving sine and cosine, by making a suitable change of variable. In general, integrals of this type have forms similar to those listed below, where the numerator and denominator are polynomials in $\sin x$ and $\cos x:$
 
@@ -22,6 +22,7 @@ $$\frac{1}{1 + \sin x} \qquad \frac{1}{5 - 3\cos x} \qquad \frac{1}{\sin x + \co
 We have already covered some techniques for [integrating trigonometric functions](../integral-of-trigonometric-functions/), based on power-reduction formulas or separating out factors. However, in cases such as those in $(1)$ these techniques do not provide a useful way to obtain a result readily. In the cases we will consider shortly, we need to make a change of variable that reduces the problem to integrating a simple rational function, which is generally handled using [polynomial division](../polynomial-division/) and [partial fraction decomposition](../partial-fraction-decomposition/).
 
 The Weierstrass substitution is based on introducing the following variable:
+
 $$t = \tan\left(\frac{x}{2}\right) \tag{2}$$
 
 This substitution allows us to write $\sin x,$ $\cos x$ and the [differential](../differential-of-a-function/) $dx$ as rational expressions in $t.$ To derive these expressions, as we will see shortly, we use the double-angle formulas and the [Pythagorean identity](../pythagorean-identity/). Once we have calculated the antiderivative in $t,$ we return to the original variable $x$ by substituting $t = \tan(x/2).$
