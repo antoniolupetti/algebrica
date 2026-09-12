@@ -15,7 +15,6 @@ tags:
   - simpsons-rule
   - trapezoidal-rule
 ---
-
 ## Integrali senza primitive elementari
 
 Ho più volte osservato che gli integrali, quantomeno quelli che si incontrano nella scuola superiore o nei primi anni universitari, sono, tutto sommato, meno problematici di quanto possano sembrare a un primo approccio e che il loro calcolo, più che il ricorso all'intuizione, richiede l'applicazione di procedimenti piuttosto strutturati e in buona parte meccanici. 

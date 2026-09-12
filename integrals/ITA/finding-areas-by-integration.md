@@ -12,7 +12,6 @@ tags:
   - linearity
   - riemann-integral
 ---
-
 ## Il calcolo delle aree mediante integrali definiti
 
 Sappiamo che il calcolo delle aree è una delle applicazioni degli [integrali definiti](../definite-integrals/) e che quando una funzione è non negativa su un intervallo, il suo integrale definito coincide con l'area compresa tra il grafico e l'asse delle ascisse. Questa stessa idea si può applicare abbastanza agevolmente anche nel caso in cui si voglia calcolare l'area tra due curve qualsiasi con qualche piccola accortezza di cui tener conto.

@@ -15,7 +15,6 @@ tags:
   - polynomial-division
   - rational-functions
 ---
-
 ## Come approcciare all'integrazione delle funzioni razionali
 
 Come sappiamo, una [funzione razionale](../rational-functions/) è una funzione caratterizzata dal rapporto tra due [polinomi](../polynomials/), $N(x)$ al numeratore e $D(x)$ al denominatore. Il suo [integrale indefinito](../indefinite-integrals/) ha la seguente forma generica:

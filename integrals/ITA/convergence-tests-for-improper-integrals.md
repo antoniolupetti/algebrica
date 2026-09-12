@@ -14,6 +14,8 @@ tags:
   - oscillating-integrands
   - second-mean-value-theorem
 ---
+## Introduzione
+
 In questa voce ci occuperemo dei criteri di convergenza degli integrali impropri che rappresentano una famiglia di integrali in cui uno o entrambi gli estremi di integrazione sono $\pm \infty$ oppure l'integranda è illimitata presso un estremo finito. Ricorderete che questi integrali non possono essere valutati con la mera differenza del valore delle rispettive primitive agli estremi, in quanto una quantità infinita renderebbe impossibile questo calcolo. Per tale ragione si ricorre a studiarne il limite nella tipica forma: 
 
 $$\int_a^{+\infty} f(x) \ dx := \lim_{t \to +\infty} \int_a^t f(x) \ dx \tag{1}$$

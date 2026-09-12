@@ -22,7 +22,7 @@ Finora abbiamo analizzato gli [integrali indefiniti](../indefinite-integrals/) e
 
 $$\int_{a}^{b} f(x) \ dx = F(b) - F(a) \tag{1}$$
 
-Al di là di quanto sia complesso il calcolo della primitiva della funzione integranda $f(x)$, ogni integrale definito si può ricondurre alla $(1)$. Come oramai sapete, essendo arrivati a questo punto della nostra trattazione, una volta giunti a tale formulazione, si valuta la primitiva $F$ ai due estremi del segno di integrale e si determina il valore dell'area con segno iscritta tra la curva e l'asse delle $x.$ Tenere conto del segno è fondamentale, in quanto le aree sopra l'asse delle $x$ (quelle quindi con segno positivo) si sommano, mentre quelle sotto l'asse delle $x$ (con segno negativo)  si sottraggono. Ciò deriva dalla definizione stessa di integrale come quantità accumulata sotto una data curva.
+Al di là di quanto sia complessa la determinazione della primitiva della funzione integranda $f(x)$, ogni integrale definito si può ricondurre alla $(1)$. Come ormai sapete, essendo arrivati a questo punto della nostra trattazione, una volta giunti a tale formulazione, si valuta la primitiva $F$ ai due estremi del segno di integrale e si determina il valore dell'area con segno iscritta tra la curva e l'asse delle $x.$ Tenere conto del segno è fondamentale, in quanto le aree sopra l'asse delle $x$ (con segno positivo) si sommano, mentre quelle sotto l'asse delle $x$ (segno negativo)  si sottraggono. Ciò deriva dalla definizione stessa di integrale come quantità accumulata sotto una data curva.
 
 Questo modo di procedere però ha una limitazione non banale: funziona solo quando i due estremi circoscrivono un intervallo limitato. Più esattamente, richiamando i [criteri di integrazione di Riemann](../riemann-integrability-criteria), è necessario che l'intervallo in cui è definito l'integrale sia limitato, e $f$ sia limitata. 
 
@@ -104,7 +104,7 @@ L'integrale improprio converge quando il limite esiste ed è finito. Allo stesso
 
 $$\int_a^b f(x) \ dx := \lim_{t \to b^-} \int_a^t f(x) \ dx$$
 
-Supponiamo che $c\in(a,b)$ sia l'unico punto singolare e che $f$ sia integrabile secondo Riemann su ogni intervallo $[a,t]$ con $a<t<c$ e su ogni intervallo $[s,b]$ con $c<s<b.$ La definizione impiega due limiti unilaterali indipendenti:
+Supponiamo che $c\in(a,b)$ sia l'unico punto singolare e che $f$ sia integrabile secondo Riemann su ogni intervallo $[a,t]$ con $a<t<c$ e su ogni intervallo $[s,b]$ con $c<s<b.$ La definizione impiega due limiti indipendenti:
 
 $$
 \int_a^b f(x) \ dx
@@ -112,13 +112,13 @@ $$
 +\lim_{s\to c^+}\int_s^b f(x) \ dx
 $$
 
-L'integrale improprio converge solo quando entrambi i limiti unilaterali esistono e sono finiti.
+L'integrale improprio converge solo se entrambi i limiti sono finiti.
 
 Se un integrale presenta più estremi impropri o più punti singolari, si scelgono punti di taglio regolari in modo che ogni pezzo unilaterale abbia una sola fonte di improprietà. In questi casi, l'integrale di partenza converge se e solo se converge ogni pezzo dell'integrale.
 
 ## Esempio 3
 
-La funzione integranda del seguente integrale è illimitata nell'estremo inferiore:
+Consideriamo ora il seguente esempio in cui la funzione integranda dè illimitata nell'estremo inferiore:
 
 $$\int_0^1 \frac{1}{\sqrt{x}} \ dx$$
 
@@ -195,7 +195,7 @@ I valori degeneri di $L$ danno implicazioni in un solo verso:
 + Se $L=0$ e $\int_a^{+\infty} g(x) \ dx$ converge, allora $\int_a^{+\infty} f(x) \ dx$ converge.
 + Se $L=+\infty$ e $\int_a^{+\infty} g(x) \ dx$ diverge, allora $\int_a^{+\infty} f(x) \ dx$ diverge.
 
-Se $f$ e $g$ sono positive e integrabili secondo Riemann su ogni intervallo compatto contenuto in un lato di un punto finito $c,$ le stesse conclusioni valgono per i corrispondenti integrali impropri unilaterali quando $x\to c^+$ oppure $x\to c^-.$ Il modello potenza di riferimento è $1/|x-c|^p,$ il cui integrale su ciascun lato di $c$ converge se e solo se $p<1.$
+Se $f$ e $g$ sono positive e integrabili secondo Riemann su ogni intervallo compatto contenuto in un lato di un punto finito $c,$ allora le stesse conclusioni valgono per i corrispondenti integrali impropri quando $x\to c^+$ oppure $x\to c^-.$ La forma di riferimento è $1/|x-c|^p,$ il cui integrale su ciascun lato di $c$ converge se e solo se $p<1.$
 
 ## Procedura di decisione
 

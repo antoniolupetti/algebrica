@@ -18,7 +18,7 @@ tags:
 ---
 ## Integrals over unbounded intervals
 
-So far we have analysed [indefinite integrals](../indefinite-integrals/) and [definite](../definite-integrals) ones, describing both the antiderivatives of the most common analytic functions and the main rules of integration. In simple terms, indefinite integrals have no limits of integration, while definite ones are always evaluated within a bounded [interval](../intervals/), for example $[a,b]$. In this last case we came across integrals such as this one:
+So far we have analysed [indefinite integrals](../indefinite-integrals/) and [definite](integrals/definite-integrals.md) ones, describing both the antiderivatives of the most common analytic functions and the main rules of integration. In simple terms, indefinite integrals have no limits of integration, while definite ones are always evaluated within a bounded [interval](../intervals/), for example $[a,b]$. In this last case we came across integrals such as this one:
 
 $$\int_{a}^{b} f(x) \ dx = F(b) - F(a) \tag{1}$$
 

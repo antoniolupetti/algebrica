@@ -36,7 +36,7 @@ The good news is that a large share of these integrals can be evaluated using me
 
 - - -
 
-In the following paragraphs I will give a rigorous definition of integrals, in particular of the indefinite ones, which are the subject of this entry and are essential for introducing their [definite](../definite-integrals) counterparts. First, though, I prefer to offer an intuitive preamble, starting from the notion of differentiation, which, as we will see later when we discuss _primitives_, is the inverse operation of integration.
+In the following paragraphs I will give a rigorous definition of integrals, in particular of the indefinite ones, which are the subject of this entry and are essential for introducing their [definite](../definite-integrals.md) counterparts. First, though, I prefer to offer an intuitive preamble, starting from the notion of differentiation, which, as we will see later when we discuss _primitives_, is the inverse operation of integration.
 
 Consider a simple function $y=x^2$. Its graph is a [parabola](../parabola/) passing through the origin. We know, from the study of the rules of differentiation, that its derivative is unique and equal to $y'=2x$ and that, for each value of $x$, it gives the slope of the line tangent to the graph at that point. For instance, for $x=2$ we obtain $y'(2)=2 \cdot 2 = 4.$ This means that the line tangent to the parabola at the point $(2,4)$ has slope exactly equal to $4$.
 

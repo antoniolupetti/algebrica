@@ -95,7 +95,7 @@ $$F'(0) = \lim_{h \to 0}\frac{h^2\sin(1/h)}{h} = \lim_{h \to 0}h\sin(1/h) = 0$$
 
 Quindi $f := F'$ ha $F$ come primitiva su $\mathbb{R},$ ma $f$ non è continua in $0$ perché $\cos(1/x)$ non ha limite per $x \to 0.$
 
-Per il [teorema di Darboux](../darboux-theorem/), ogni derivata gode della proprietà dei valori intermedi. Di conseguenza una funzione con una discontinuità di salto, come la [funzione gradino di Heaviside](../heaviside-function/), non ha primitive su alcun intervallo aperto che contenga il punto di discontinuità.
+Per il [teorema di Darboux](../darboux-theorem/), ogni derivata gode della proprietà dei valori intermedi; per questo motivo una funzione discontinua, come la [funzione gradino di Heaviside](../heaviside-function/), non ha primitive su alcun intervallo aperto che contenga il punto di discontinuità.
 
 - - -
 

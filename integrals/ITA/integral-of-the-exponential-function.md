@@ -14,7 +14,6 @@ tags:
   - linearity
   - logarithms
 ---
-
 ## Un richiamo alla funzione esponenziale
 
 Una [funzione esponenziale](../exponential-function/) è una funzione della forma $e^x$ oppure $\alpha^x,$ con $\alpha > 0$ e $\alpha \neq 1.$ Il numero $e$ ha un ruolo centrale nell'analisi perché è l'unica base per cui la derivata della funzione esponenziale coincide con la funzione stessa. Per una generica funzione esponenziale $\alpha^x$ con $\alpha > 0,$ la derivazione infatti introduce un fattore aggiuntivo:
