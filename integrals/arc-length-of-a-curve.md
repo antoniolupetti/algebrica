@@ -13,133 +13,132 @@ tags:
   - rectifiable-curves
   - riemann-integral
 ---
-## From straight segments to curved arcs
+## From line segments to curved arcs
 
-The notion of length is immediate for a straight segment, since two points in the plane determine a single line and the Euclidean distance provides an unambiguous measurement. When the path between two points is not straight but follows the graph of a function, the same intuitive idea of measuring a physical thread laid along the curve must be turned into a precise analytical definition. The construction that achieves this goal is the same that underlies the [definite integral](../definite-integrals/): a curve is approximated by simpler objects whose length is already known, and the approximation is then refined by a limiting procedure.
+To determine the length of a line segment joining two distinct points in the plane, $A$ and $B,$ we use the Euclidean distance formula:
 
-Consider a function $f(x)$ defined and [continuously differentiable](../continuous-functions/) on a closed interval $[a, b]$. The arc of the graph between the points of abscissa $a$ and $b$ is a curve in the plane, and the question is how to attach to it a real number that quantifies its length. The construction inscribes a polygonal line in the curve, computes the length of this polygonal line, and then refines the approximation by adding vertices whose spacing tends to zero.
+$$
+d(A,B)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2} \tag{1}
+$$
 
-## Polygonal approximation and the differential element
+This simple and fairly intuitive formula uses the differences between the points' $x$- and $y$-coordinates, measured along the coordinate axes, and applies directly to a line segment, which is simply a straight portion of a line. The situation becomes more complicated when, instead of a segment, we need to measure the length of a curve, which typically does not follow a straight path and may have a more varied shape.
 
-**Definition 1.** Let $P = \\{\ x_0, x_1, \dots, x_n \ \\}$ be a [partition](../riemann-integrability-criteria/) of the interval $[a, b]$ with:
+In such cases, we use a construction based on the same procedure used to define the [definite integral](../definite-integrals/), approximating the curve by segments whose lengths are easy to measure and then taking a [limit](../limits/). Consider, for example, a function $f(x)$ that is [continuous](../continuous-functions/) and differentiable with a continuous derivative on a closed interval $[a, b].$ Our aim is to measure the arc between the points with $x$-coordinates $a$ and $b$ by assigning it a real number that measures its length. First, we inscribe a polygonal line in the curve, then calculate its length and progressively improve the approximation by adding points whose spacing along the $x$-axis tends to zero.
+
+Formally, let $P = \{\ x_0, x_1, \dots, x_n \ \}$ be a [partition](../riemann-integrability-criteria/) of the interval $[a, b]$ such that:
 
 $$a = x_0 < x_1 < \cdots < x_n = b$$
 
-To each subdivision point is associated the point $(x_k, f(x_k))$ on the graph of the function. Joining consecutive points by straight segments produces a polygonal line inscribed in the curve, and its total length is the sum of the Euclidean distances between consecutive vertices. The length of the $k$-th segment is given by:
+We construct the polygonal line by associating each point of the partition with the point $(x_k, f(x_k))$ on the graph of the function. Joining the resulting points by line segments gives a polygonal line inscribed in the curve, whose total length is the sum of the Euclidean distances between consecutive points. The length of the individual segment with index $k$ can therefore be obtained from the following Euclidean distance formula, which is an instance of $(1)$:
 
-$$\ell_k = \sqrt{(x_k - x_{k-1})^2 + (f(x_k) - f(x_{k-1}))^2}$$
+$$\ell_k = \sqrt{(x_k - x_{k-1})^2 + (f(x_k) - f(x_{k-1}))^2} \tag{2}$$
 
-![Img. 1](svg/arc-length-of-a-curve-1.svg)
+![Fig. 1](svg/arc-length-of-a-curve-1.svg)
 
-Since $f$ is differentiable on $[x_{k-1}, x_k]$, the [mean value theorem](../lagrange-theorem/) guarantees the existence of a point $\xi_k$ in the open interval $(x_{k-1}, x_k)$ such that:
+
+Since $f$ is differentiable on $[x_{k-1}, x_k],$ the [mean value theorem](../lagrange-theorem/) guarantees a point $\xi_k$ in the open interval $(x_{k-1}, x_k)$ such that:
 
 $$f(x_k) - f(x_{k-1}) = f'(\xi_k)(x_k - x_{k-1})$$
 
-Substituting this identity into the expression for $\ell_k$ and factoring $(x_k - x_{k-1})^2$ under the radical gives:
+Substituting this identity into $(2)$ and factoring out $(x_k - x_{k-1})^2$ gives:
 
-$$\ell_k = \sqrt{1 + [f'(\xi_k)]^2} \ (x_k - x_{k-1})$$
+$$\ell_k = \sqrt{1 + [f'(\xi_k)]^2}(x_k - x_{k-1})$$
 
-The total length of the inscribed polygonal line therefore equals a Riemann sum of the function $\sqrt{1 + [f'(x)]^2}$ on the partition $P$. When the mesh of the partition tends to zero, this Riemann sum converges to a definite integral, provided that the integrand is [Riemann-integrable](../riemann-integrability-criteria/).
+The total length of the polygonal line inscribed in the curve is therefore a Riemann sum of the function $\sqrt{1 + [f'(x)]^2}$ for the partition $P,$ and as the mesh of the partition tends to zero, this sum converges to a definite integral.
 
 ## Arc length in Cartesian form
 
-The construction above leads to the fundamental definition for curves expressed as graphs of functions in the Cartesian plane. Let $f$ be a function with continuous [derivative](../derivatives/) on the closed [interval](../intervals/) $[a, b]$. The arc length of the graph of $f$ from $x = a$ to $x = b$ is defined by:
+The construction just described leads to the definition of length for curves expressed as graphs of functions in the Cartesian plane. Consider a function $f$ with a continuous [derivative](../derivatives/) on the closed [interval](../intervals/) $[a, b].$ The arc length of the graph of $f$ from $x = a$ to $x = b$ is defined by the following definite integral:
 
-$$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx \tag{1}$$
+$$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx \tag{3}$$
 
-The hypothesis that $f'$ be continuous on $[a, b]$ is essential, because it ensures the continuity of the integrand and therefore its Riemann integrability. A function whose derivative is merely bounded but not continuous may still admit a well-defined arc length, but the elementary proof presented above no longer applies, and the discussion requires the more general framework of rectifiable curves.
+The continuity of $f'$ on $[a, b]$ guarantees the continuity of the integrand and hence its Riemann integrability. A function whose derivative is bounded but not continuous may still have a graph with a well-defined length. In this case, the elementary proof just presented does not apply directly, and the discussion requires the more general framework of rectifiable curves.
 
-> The expression $\sqrt{1 + [f'(x)]^2} \ dx$ is called the arc length element, and it is usually denoted by $ds$. It represents the infinitesimal length of the curve associated with an infinitesimal increment $dx$ of the independent variable, and it satisfies the identity $ds^2 = dx^2 + dy^2$, which is the Pythagorean theorem applied to the infinitesimal triangle of legs $dx$ and $dy = f'(x) \ dx$.
+The expression $\sqrt{1 + [f'(x)]^2} \ dx$ is called the arc length element and is denoted by $ds.$ It expresses the infinitesimal length of the curve associated with an infinitesimal increment $dx$ of the independent variable and satisfies the following identity:
+$$ds^2 = dx^2 + dy^2 \tag{4}$$
+A closer look at $(4)$ reveals the [Pythagorean theorem](../pythagorean-theorem/) applied to a right triangle with legs $dx$ and $dy = f'(x) \ dx.$
 
-## Example 1
+- - -
 
-Compute the length of the parabolic arc described by the function $f(x) = x^2$ on the interval $[0, 1]$. The derivative of the function is:
+As a practical example, we calculate the length of the [parabolic arc](../parabola/) described by the function $f(x) = x^2$ on the interval $[0, 1].$ To do this, we apply $(3),$ first calculating the derivative of $f$ to obtain:
 
 $$f'(x) = 2x$$
 
-Substituting into formula $(1)$, the arc length is expressed as:
+Substituting into formula $(3),$ we can express the arc length as:
 
 $$L = \int_0^1 \sqrt{1 + 4x^2} \ dx$$
 
-The integrand has the structure $\sqrt{1 + (2x)^2}$, and this form invites the hyperbolic substitution $2x = \sinh t$. The differential is transformed as follows:
+This is an integral of an algebraic function involving a square root of the form $\sqrt{1 + (2x)^2},$ which is typically evaluated by the [substitution](../integration-by-substitution/) $2x = \sinh t.$ The corresponding [differential relation](../differential-of-a-function/) is $2 \ dx = \cosh t \ dt,$ giving:
 
-$$2 \ dx = \cosh t \ dt$$
+$$dx = \frac{1}{2}\cosh t \ dt$$
 
-so that $dx = \tfrac{1}{2}\cosh t \ dt$. Using the hyperbolic identity $1 + \sinh^2 t = \cosh^2 t$, the radical simplifies to $\cosh t$. The integral therefore becomes:
+The [hyperbolic identity](../hyperbolic-identities/) $1 + \sinh^2 t = \cosh^2 t$ allows us to simplify the radical to $\cosh t,$ obtaining:
 
-$$L = \int_0^{\operatorname{arsinh} 2} \cosh t \cdot \frac{1}{2}\cosh t \ dt = \frac{1}{2}\int_0^{\operatorname{arsinh} 2} \cosh^2 t \ dt$$
+$$L = \int_0^{\mathrm{arsinh} 2} \cosh t \cdot \frac{1}{2}\cosh t \ dt = \frac{1}{2}\int_0^{\mathrm{arsinh} 2} \cosh^2 t \ dt$$
 
-Applying the standard identity $\cosh^2 t = \tfrac{1}{2}(1 + \cosh 2t)$, the antiderivative is obtained as:
+Applying the identity $\cosh^2 t = \tfrac{1}{2}(1 + \cosh 2t),$ we obtain the [antiderivative](../indefinite-integrals/):
 
 $$\int \cosh^2 t \ dt = \frac{1}{2}t + \frac{1}{4}\sinh 2t + c$$
 
-Evaluating at the limits and using $\sinh 2t = 2\sinh t \cosh t$ together with $\sinh(\operatorname{arsinh} 2) = 2$ and $\cosh(\operatorname{arsinh} 2) = \sqrt{5}$, the closed-form result is:
+Evaluating the integral at the limits and using $\sinh 2t = 2\sinh t \cosh t,$ together with the relations $\sinh(\mathrm{arsinh} 2) = 2$ and $\cosh(\mathrm{arsinh} 2) = \sqrt{5},$ we obtain the length of the parabolic arc between the origin and the point $(1, 1)$:
 
-$$L = \frac{1}{4}\operatorname{arsinh} 2 + \frac{\sqrt{5}}{2}$$
-
-The length of the parabolic arc between the origin and the point $(1, 1)$ is therefore equal to $\tfrac{\sqrt{5}}{2} + \tfrac{1}{4}\ln(2 + \sqrt{5})$, since the [inverse hyperbolic sine](../hyperbolic-sine-function/) admits the [logarithmic](../logarithms/) representation $\operatorname{arsinh} u = \ln(u + \sqrt{1 + u^2})$.
-
-> The integral above can also be handled through a [trigonometric substitution](../trigonometric-substitution-for-integrals/) of the form $2x = \tan \theta$, which reduces the radical to $\sec \theta$ and produces an equivalent closed-form expression.
+$$L = \frac{1}{4}\mathrm{arsinh} 2 + \frac{\sqrt{5}}{2}$$
 
 ## Arc length in parametric form
 
-Several curves that occur in geometry and in physics, among which circles, ellipses, cycloids, and spirals, cannot be written as graphs of a single-valued function. For curves of this kind an auxiliary variable, called the parameter, is introduced, and the two coordinates of the moving point are described as functions of it. The point then traces out the curve as the parameter varies over a real interval, and the Cartesian description is recovered as the particular case in which the parameter coincides with the abscissa.
-
-Consider a planar curve parametrised by:
+We next consider a common situation involving curves such as circles, [ellipses](../ellipse/), and spirals, which cannot be described as graphs of a single function because more than one value of $y$ may correspond to a given value of $x.$ For these curves, an auxiliary variable is typically introduced, and the two coordinates of the moving point are expressed as functions of this parameter. This is the parametric description of a curve, which, as we shall see below, coincides with the Cartesian description when the parameter is the $x$-coordinate. Consider, for example, a plane curve described by a parameter $t$ in a closed interval:
 
 $$\begin{cases} x = x(t) \\[6pt] y = y(t) \end{cases} \quad t \in [\alpha, \beta]$$
 
-where $x(t)$ and $y(t)$ are continuously differentiable functions on the interval $[\alpha, \beta]$. Repeating the polygonal approximation construction with respect to a partition of the parameter interval, the chord joining the points associated with consecutive parameter values $t_{k-1}$ and $t_k$ has length:
+Suppose that the functions $x(t)$ and $y(t)$ are continuously differentiable on the interval $[\alpha, \beta].$ We apply the polygonal construction described above to a partition of the parameter interval. This gives a chord joining the points associated with two consecutive values $t_{k-1}$ and $t_k,$ whose length, by $(1),$ is given by:
 
 $$\ell_k = \sqrt{[x(t_k) - x(t_{k-1})]^2 + [y(t_k) - y(t_{k-1})]^2}$$
 
-Applying the mean value theorem separately to $x$ and $y$, and passing to the limit as the mesh of the partition tends to zero, the parametric arc length formula is obtained:
+We apply the mean value theorem to $x$ and $y$ and take the limit as the mesh of the partition tends to zero. This gives the arc length formula in parametric form:
 
-$$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt \tag{2}$$
+$$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt \tag{5}$$
 
-Under the square root one recognises the squared modulus of the velocity vector associated with the parametrisation, and this observation suggests a kinematic reading of the formula. If the parameter $t$ is interpreted as time, the quantity $\sqrt{[x'(t)]^2 + [y'(t)]^2}$ is the instantaneous speed of a point moving along the curve, and integrating it over the time interval yields the distance covered.
+> Recall that a curve generally admits many distinct parametrizations, but its arc length depends only on the geometric image of the portion traversed, provided that the parametrization is regular and [injective](../injective-surjective-and-bijective-functions/).
 
-> A curve admits in general many distinct parametrisations, but the arc length depends only on the geometric image of the curve and on the interval over which it is traversed, provided that the parametrisation is regular and injective. This invariance under reparametrisation is a fundamental property and reflects the intrinsic geometric nature of length.
+- - -
 
-## Relation between the two formulations
-
-The Cartesian formula is a special case of the parametric one. Choosing the parameter $t = x$, the parametrisation reduces to:
+We stated that the Cartesian formula is a special case of the parametric formula when we choose the parameter $t = x.$ In this case, the parametrization reduces to:
 
 $$\begin{cases} x(t) = t \\[6pt] y(t) = f(t) \end{cases}$$
 
-so that $x'(t) = 1$ and $y'(t) = f'(t)$. Substituting these expressions into formula $(2)$ immediately yields formula $(1)$. The parametric representation is therefore strictly more general, and it remains applicable when the curve possesses vertical tangents or self-intersections, situations in which the Cartesian formulation breaks down.
+We therefore have $x'(t) = 1$ and $y'(t) = f'(t).$ Substituting these expressions into formula $(5)$ gives formula $(3).$ The parametric representation is thus more general and is useful in situations where the Cartesian formulation is not directly applicable.
 
-## Example 2
+- - -
 
-Compute the [circumference](../circumference/) of a circle of radius $r$ centred at the origin, using the parametric representation:
+As another example, we calculate the length of a [circle](../circumference/) of radius $r$ centered at the origin, this time using the parametric representation:
 
 $$\begin{cases} x(t) = r\cos t \\[6pt] y(t) = r\sin t \end{cases} \quad t \in [0, 2\pi]$$
 
-The derivatives of the parametric functions are:
+We begin by calculating the derivatives of the parametric functions:
 
 $$x'(t) = -r\sin t \qquad y'(t) = r\cos t$$
 
-Substituting into the parametric arc length formula and using the fundamental trigonometric identity $\sin^2 t + \cos^2 t = 1$, the integrand simplifies considerably:
+Substituting into the parametric arc length formula and using the [fundamental trigonometric identity](../pythagorean-identity/) $\sin^2 t + \cos^2 t = 1,$ the integrand becomes:
 
 $$\sqrt{[x'(t)]^2 + [y'(t)]^2} = \sqrt{r^2\sin^2 t + r^2\cos^2 t} = r$$
 
-The integral therefore reduces to the computation of a constant function over the interval $[0, 2\pi]$, and the result is obtained immediately:
+Over the interval $[0, 2\pi],$ we therefore obtain the following integral:
 
 $$L = \int_0^{2\pi} r \ dt = 2\pi r$$
 
-> The parametric formula reproduces the expression for the circumference of a circle, and this agreement is a useful coherence check for the construction developed above.
+We have thus shown that the circle has length $2\pi r.$
 
-## Example 3
+- - -
 
-Consider the cycloid generated by a point on the rim of a circle of radius $r$ rolling without slipping along a straight line. The standard parametrisation of one full arch of the cycloid is:
+Next, consider a cycloid generated by a point on a circle of radius $r$ rolling without slipping along a straight line. The standard parametrization of one arch of the cycloid is:
 
 $$\begin{cases} x(t) = r(t - \sin t) \\[6pt] y(t) = r(1 - \cos t) \end{cases} \quad t \in [0, 2\pi]$$
 
-The derivatives of the parametric components are:
+We calculate the derivatives of the parametric components:
 
 $$x'(t) = r(1 - \cos t) \qquad y'(t) = r\sin t$$
 
-Adding the squares of these two components and using the [identities](../trigonometric-identities/) $1 - \cos t = 2\sin^2(t/2)$ and $\sin t = 2\sin(t/2)\cos(t/2)$, the integrand reduces to a much simpler expression. A direct computation gives:
+Adding the squares of these two components and using the [identities](../trigonometric-identities/) $1 - \cos t = 2\sin^2(t/2)$ and $\sin t = 2\sin(t/2)\cos(t/2),$ we obtain:
 
 $$
 \begin{align}
@@ -148,11 +147,11 @@ $$
 \end{align}
 $$
 
-Applying the half-angle identity once more, the expression becomes $4r^2\sin^2(t/2)$, and the square root yields $2r |\sin(t/2)|$. Since $t/2 \in [0, \pi]$ over the interval of integration, the sine is non-negative and the absolute value can be removed. The arc length integral therefore reduces to:
+Applying the half-angle identities, the expression becomes $4r^2\sin^2(t/2),$ whose square root is $2r |\sin(t/2)|.$ Since $t/2 \in [0, \pi]$ over the interval of integration, the sine is nonnegative and we can remove the [absolute value](../absolute-value/). The arc length integral therefore reduces to:
 
 $$L = \int_0^{2\pi} 2r\sin(t/2) \ dt$$
 
-The antiderivative of $\sin(t/2)$ is $-2\cos(t/2)$, and evaluating at the limits gives:
+An antiderivative of $\sin(t/2)$ is $-2\cos(t/2),$ and evaluating at the limits gives the length of one arch of the cycloid, which is $8r$:
 
 $$
 \begin{align}
@@ -163,10 +162,23 @@ L &= 2r\bigl[-2\cos(t/2)\bigr]_0^{2\pi} \\[6pt]
 \end{align}
 $$
 
-The length of a full arch of the cycloid is therefore equal to eight times the radius of the rolling circle. The result was established by Christopher Wren in 1658 and deserves attention for two reasons: the length is an integer multiple of the radius, and a transcendental curve produces here a perfectly algebraic value.
+## A brief summary and limits of applicability
 
-## Conditions and limitations
+We have described how to calculate the length of an arc using the Cartesian and parametric formulations. The formulas to remember are:
 
-The formulas obtained above rest on the assumption that the relevant derivatives exist and are continuous throughout the interval of integration. When this regularity fails at isolated points, the integral can often be interpreted as an [improper integral](../improper-integrals/), and the arc length still turns out to be finite. There exist, on the other hand, continuous curves whose length is infinite; the classical examples come from fractal geometry, the Koch snowflake being the most familiar. For curves of this kind the elementary formulas lose their meaning, and the discussion falls back on the general theory of rectifiable curves, where the length is defined directly as the [supremum](../supremum-and-infimum/) of the lengths of all inscribed polygonal lines.
+[class="table-1"]
 
-> A curve is said to be rectifiable when this supremum is finite. Continuously differentiable curves on a closed bounded interval are rectifiable, and for them the supremum reduces to the value computed by the integral formulas. The class of rectifiable curves is strictly larger than that of curves of class $C^1$, and provides the proper setting for the most general formulation of the notion of length. When a closed-form evaluation of the arc-length integral is out of reach, the value can still be approximated through [numerical integration](../numerical-integration/).
+|                                             |                                                             |
+| ------------------------------------------- | ----------------------------------------------------------- |
+| $y = f(x),$ with $x \in [a, b]$              | $$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx$$                  |
+| $(x(t), y(t)),$ with $t \in [\alpha, \beta]$ | $$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt$$ |
+
+[/class]
+
+The formulas presented so far assume that the derivatives involved exist and are continuous throughout the interval of integration. When this regularity fails at isolated points, the integral can often be interpreted as an [improper integral](../improper-integrals/), and the arc length may still be finite. However, continuous curves of infinite length exist for which the elementary formulas are not applicable, and we turn to the general theory of rectifiable curves (which is beyond the scope of this discussion), where length is defined directly as the [supremum](../supremum-and-infimum/) of the lengths of all inscribed polygonal lines.
+
+To give a brief indication, a curve is said to be rectifiable when this supremum is finite. In general, continuously differentiable curves on a closed bounded interval are rectifiable, and in these cases the supremum coincides with the value calculated using the integral formulas.
+
+The class of rectifiable curves is broader than that of curves of class $C^1,$ that is, curves with a continuous first derivative, and provides the basis for the general formulation of the notion of length.
+
+Finally, recall that when the arc length integral cannot be evaluated in closed form, its value can still be approximated using [numerical integration](../numerical-integration/).

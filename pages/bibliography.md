@@ -136,6 +136,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Mathematical physics
 
 + [Classical Mechanics](https://www.physics.rutgers.edu/~shapiro/507/book.pdf), Joel A. Shapiro
++ [Introduction to Advanced Engineering Mathematics and Analysis](https://open.oregonstate.education/app/uploads/sites/246/2023/06/Introduction_to_Advanced_Engineering_Mathematics_and_AnalysisA.pdf), Brian D. Wood
 + [Lectures on Classical Dynamics](https://www.damtp.cam.ac.uk/user/tong/dynamics/clas.pdf), David Tong
 + [Mathematical Methods for Physics](https://theory.physics.manchester.ac.uk/~godfrey/lecture/PHYS30672/Notes.pdf), Niels Walet
 + [Mathematics for Physics](https://people.physics.illinois.edu/stone/bookmaster.pdf), Michael Stone, Paul Goldbart

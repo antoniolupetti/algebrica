@@ -15,57 +15,64 @@ tags:
 ---
 ## Dai segmenti agli archi di curva
 
-La nozione di lunghezza è immediata per un segmento, poiché due punti distinti nel piano determinano un'unica retta e la distanza euclidea fornisce una misura univoca. Quando il percorso fra due punti segue il grafico di una funzione anziché un segmento, l'idea intuitiva di misurare un filo disposto lungo la curva deve essere tradotta in una definizione analitica precisa. La costruzione è la stessa su cui si fonda l'[integrale definito](../definite-integrals/), si approssima la curva con oggetti più semplici di cui si conosce la lunghezza e si affina poi l'approssimazione mediante un procedimento di limite.
+Quando vogliamo determinare la lunghezza di un segmento determinato da due punti distinti nel piano, $A$ e $B$, utilizziamo la formula della distanza euclidea:
 
-Consideriamo una funzione $f(x)$ definita e [continuamente derivabile](../continuous-functions/) su un intervallo chiuso $[a, b].$ L'arco del grafico compreso fra i punti di ascissa $a$ e $b$ è una curva nel piano, e vogliamo associargli un numero reale che ne misuri la lunghezza. A questo scopo inscriviamo nella curva una spezzata, ne calcoliamo la lunghezza e affiniamo l'approssimazione aggiungendo vertici la cui distanza in ascissa tende a zero.
+$$
+d(A,B)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2} \tag{1}
+$$
 
-## Approssimazione mediante spezzate ed elemento differenziale
+È una formula semplice e piuttosto intuitiva che considera le distanze calcolate rispetto agli assi delle componenti in $x$ e in $y$ dei punti ed è immediatamente applicabile a un segmento che non è nient'altro che una linea dritta. Le cose si complicano quando al posto di un segmento dobbiamo misurare la lunghezza di una curva che tipicamente non segue un andamento lineare e può assumere un profilo più variegato.
 
-Definizione 1. Sia $P = \{\ x_0, x_1, \dots, x_n \ \}$ una [partizione](../riemann-integrability-criteria/) dell'intervallo $[a, b]$ tale che:
+In questi casi si ricorre ad una costruzione che si fonda sullo stesso meccanismo con cui abbiamo costruito l'[integrale definito](../definite-integrals/), approssimando la curva con segmenti facilmente misurabili e ricorrendo al limite. Consideriamo per esempio una funzione $f(x)$ [continua](../continuous-functions/) e derivabile con derivata continua su un intervallo chiuso $[a, b].$ Il nostro obiettivo è quello di misurare l'arco di curva compreso fra i punti di ascissa $a$ e $b$ associandogli un numero reale che ne misuri la lunghezza. Per prima cosa inscriviamo una spezzata nella curva, poi ne calcoliamo la lunghezza e miglioriamo progressivamente l'approssimazione aggiungendo dei punti la cui distanza sull'asse delle $x$ tende a zero.
+
+In termini formali definiamo $P = \{\ x_0, x_1, \dots, x_n \ \}$ una [partizione](../riemann-integrability-criteria/) dell'intervallo $[a, b]$ tale che:
 
 $$a = x_0 < x_1 < \cdots < x_n = b$$
 
-A ogni punto di suddivisione associamo il punto $(x_k, f(x_k))$ sul grafico della funzione. Congiungendo i punti consecutivi con segmenti otteniamo una spezzata inscritta nella curva, la cui lunghezza totale è la somma delle distanze euclidee fra vertici consecutivi. La lunghezza del segmento di indice $k$ è data da:
+Costruiamo la spezzata associando ad ogni punto della partizione il punto $(x_k, f(x_k))$ che giace sul grafico della funzione. Congiungendo i punti ottenuti tramite dei segmenti otteniamo la spezzata inscritta nella curva, la cui lunghezza totale è la somma delle distanze euclidee tra punti consecutivi. La lunghezza del singolo segmento di indice $k$ è pertanto ricavabile dalla seguente formula della distanza euclidea che corrisponde alla $(1)$:
 
-$$\ell_k = \sqrt{(x_k - x_{k-1})^2 + (f(x_k) - f(x_{k-1}))^2}$$
+$$\ell_k = \sqrt{(x_k - x_{k-1})^2 + (f(x_k) - f(x_{k-1}))^2} \tag{2}$$
 
 ![Fig. 1](../svg/arc-length-of-a-curve-1.svg)
 
-Poiché $f$ è derivabile su $[x_{k-1}, x_k],$ il [teorema di Lagrange](../lagrange-theorem/) garantisce l'esistenza di un punto $\xi_k$ nell'intervallo aperto $(x_{k-1}, x_k)$ tale che:
+
+Poiché $f$ è derivabile su $[x_{k-1}, x_k],$ per il [teorema di Lagrange](../lagrange-theorem/) esiste un punto $\xi_k$ nell'intervallo aperto $(x_{k-1}, x_k)$ tale che:
 
 $$f(x_k) - f(x_{k-1}) = f'(\xi_k)(x_k - x_{k-1})$$
 
-Sostituendo questa identità nell'espressione di $\ell_k$ e raccogliendo $(x_k - x_{k-1})^2$ sotto il radicale otteniamo:
+Sostituendo questa identità nella $(2)$ e raccogliendo $(x_k - x_{k-1})^2$ otteniamo:
 
 $$\ell_k = \sqrt{1 + [f'(\xi_k)]^2}(x_k - x_{k-1})$$
 
-La lunghezza totale della spezzata inscritta è quindi una somma di Riemann della funzione $\sqrt{1 + [f'(x)]^2}$ relativa alla partizione $P.$ Quando l'ampiezza massima degli intervalli della partizione tende a zero, questa somma converge a un integrale definito, purché la funzione integranda sia [integrabile secondo Riemann](../riemann-integrability-criteria/).
+La lunghezza totale della spezzata inscritta nella curva è quindi una somma di Riemann della funzione $\sqrt{1 + [f'(x)]^2}$ relativa alla partizione $P$ e quando l'ampiezza degli intervalli tende a zero, questa somma converge a un integrale definito.
 
 ## Lunghezza di un arco in forma cartesiana
 
-La costruzione precedente conduce alla definizione della lunghezza per le curve espresse come grafici di funzioni nel piano cartesiano. Sia $f$ una funzione con [derivata](../derivatives/) continua sull'[intervallo](../intervals/) chiuso $[a, b].$ La lunghezza dell'arco del grafico di $f$ da $x = a$ a $x = b$ è definita da:
+La costruzione appena illustrata conduce alla definizione di lunghezza per le curve espresse come grafici di funzioni sul piano cartesiano. Consideriamo una funzione $f$ con [derivata](../derivatives/) continua sull'[intervallo](../intervals/) chiuso $[a, b].$ La lunghezza dell'arco del grafico di $f$ da $x = a$ a $x = b$ è definita dal seguente integrale definito:
 
-$$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx \tag{1}$$
+$$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx \tag{3}$$
 
-L'ipotesi di continuità di $f'$ su $[a, b]$ garantisce la continuità della funzione integranda e quindi la sua integrabilità secondo Riemann. Una funzione la cui derivata sia soltanto limitata, ma non continua, può comunque avere un grafico di lunghezza ben definita. In questo caso la dimostrazione elementare appena presentata non si applica direttamente, e la discussione richiede il quadro più generale delle curve rettificabili.
+La continuità di $f'$ su $[a, b]$ garantisce la continuità della funzione integranda e quindi la sua integrabilità secondo Riemann. Una funzione la cui derivata sia limitata, ma non continua, può comunque avere un grafico di lunghezza ben definita. In questo caso la dimostrazione elementare appena presentata non si applica direttamente, e la discussione richiede il quadro più generale delle cosiddette curve rettificabili.
 
-> L'espressione $\sqrt{1 + [f'(x)]^2} \ dx$ è detta elemento di lunghezza d'arco e si indica solitamente con $ds.$ Esprime la lunghezza infinitesima della curva associata a un incremento infinitesimo $dx$ della variabile indipendente e soddisfa l'identità $ds^2 = dx^2 + dy^2,$ che corrisponde al teorema di Pitagora applicato al triangolo infinitesimo di cateti $dx$ e $dy = f'(x) \ dx.$
+L'espressione $\sqrt{1 + [f'(x)]^2} \ dx$ è detta elemento di lunghezza d'arco e si indica  con $ds.$ Tale espressione esprime la lunghezza infinitesima della curva associata a un incremento infinitesimo $dx$ della variabile indipendente e soddisfa la seguente identità:
+$$ds^2 = dx^2 + dy^2 \tag{4}$$ 
+Se osserviamo attentamente la $(4)$ possiamo riconoscere il teorema di Pitagora applicato al triangolo di cateti $dx$ e $dy = f'(x) \ dx.$
 
-## Esempio 1
+- - -
 
-Calcoliamo la lunghezza dell'arco di parabola descritto dalla funzione $f(x) = x^2$ sull'intervallo $[0, 1].$ La derivata della funzione è:
+Facciamo un esempio pratico andando a calcolare la lunghezza dell'arco di una parabola descritto dalla funzione $f(x) = x^2$ sull'intervallo $[0, 1].$ Per farlo dobbiamo applicare la $(3)$ e per prima cosa calcoliamo la derivata di $f$ ottenendo:
 
 $$f'(x) = 2x$$
 
-Sostituendo nella formula $(1),$ la lunghezza dell'arco si esprime come:
+Sostituendo nella formula $(3),$ possiamo esprimere la lunghezza dell'arco come:
 
 $$L = \int_0^1 \sqrt{1 + 4x^2} \ dx$$
 
-La funzione integranda ha la forma $\sqrt{1 + (2x)^2},$ che suggerisce la sostituzione iperbolica $2x = \sinh t.$ Il differenziale si trasforma secondo la relazione:
+Questo è un integrale di una funzione razionale della forma $\sqrt{1 + (2x)^2},$ che si risolve tipicamente per sostituzione imponendo $2x = \sinh t$ e il differenziale pari a $2 \ dx = \cosh t \ dt$ ottenendo
 
-$$2 \ dx = \cosh t \ dt$$
+$$dx = \frac{1}{2}\cosh t \ dt$$
 
-Si ha quindi $dx = \tfrac{1}{2}\cosh t \ dt.$ L'identità iperbolica $1 + \sinh^2 t = \cosh^2 t$ permette di semplificare il radicale in $\cosh t.$ L'integrale diventa pertanto:
+L'identità iperbolica $1 + \sinh^2 t = \cosh^2 t$ permette di semplificare il radicale in $\cosh t$ ottenendo::
 
 $$L = \int_0^{\mathrm{arsinh} 2} \cosh t \cdot \frac{1}{2}\cosh t \ dt = \frac{1}{2}\int_0^{\mathrm{arsinh} 2} \cosh^2 t \ dt$$
 
@@ -73,75 +80,65 @@ Applicando l'identità $\cosh^2 t = \tfrac{1}{2}(1 + \cosh 2t),$ otteniamo la pr
 
 $$\int \cosh^2 t \ dt = \frac{1}{2}t + \frac{1}{4}\sinh 2t + c$$
 
-Valutando agli estremi e usando $\sinh 2t = 2\sinh t \cosh t,$ insieme alle relazioni $\sinh(\mathrm{arsinh} 2) = 2$ e $\cosh(\mathrm{arsinh} 2) = \sqrt{5},$ ricaviamo il risultato in forma chiusa:
+Valutando l'integrale agli estremi e usando $\sinh 2t = 2\sinh t \cosh t,$ insieme alle relazioni $\sinh(\mathrm{arsinh} 2) = 2$ e $\cosh(\mathrm{arsinh} 2) = \sqrt{5},$ ricaviamo quindi la lunghezza dell'arco di parabola tra l'origine e il punto 1,1:
 
 $$L = \frac{1}{4}\mathrm{arsinh} 2 + \frac{\sqrt{5}}{2}$$
 
-La lunghezza dell'arco di parabola fra l'origine e il punto $(1, 1)$ è dunque uguale a $\tfrac{\sqrt{5}}{2} + \tfrac{1}{4}\ln(2 + \sqrt{5}),$ poiché il [seno iperbolico inverso](../hyperbolic-sine-function/) ammette la rappresentazione [logaritmica](../logarithms/) $\mathrm{arsinh} u = \ln(u + \sqrt{1 + u^2}).$
-
-> L'integrale precedente può essere calcolato anche mediante una [sostituzione trigonometrica](../trigonometric-substitution-for-integrals/) della forma $2x = \tan \theta,$ che riduce il radicale a $\sec \theta$ e conduce a un'espressione equivalente in forma chiusa.
-
 ## Lunghezza di un arco in forma parametrica
 
-Diverse curve che si incontrano in geometria e in fisica, fra cui circonferenze, ellissi, cicloidi e spirali, non possono essere descritte come grafici di un'unica funzione. Per queste curve introduciamo una variabile ausiliaria, detta parametro, ed esprimiamo le due coordinate del punto mobile come funzioni di essa. Il punto descrive la curva mentre il parametro varia in un intervallo reale. La descrizione cartesiana si ritrova nel caso particolare in cui il parametro coincide con l'ascissa.
-
-Consideriamo una curva piana descritta dalla parametrizzazione:
+Consideriamo adesso un caso molto frequente che riguarda alcune curve come le circonferenze, ellissi e spirali, che non possono essere descritte come grafici di un'unica funzione in quanto per un valore della $x$ possono corrispondere più valori della $y$. Per queste curve si introduce tipicamente una variabile ausiliaria e si esprimono le due coordinate del punto mobile come funzioni di tale parametro. Questa è la cosiddetta descrizione parametrica di una curva che coincide, come vedremo più avanti, con la descrizione cartesiana quando il parametro corrisponde all'ascissa. Consideriamo ad esempio una curva piana descritta dal parametro $t$ in un intervallo chiuso:
 
 $$\begin{cases} x = x(t) \\[6pt] y = y(t) \end{cases} \quad t \in [\alpha, \beta]$$
 
-Le funzioni $x(t)$ e $y(t)$ sono continuamente derivabili sull'intervallo $[\alpha, \beta].$ Ripetiamo la costruzione mediante spezzate rispetto a una partizione dell'intervallo del parametro. La corda che congiunge i punti associati a due valori consecutivi $t_{k-1}$ e $t_k$ ha lunghezza:
+Supponiamo che le funzioni $x(t)$ e $y(t)$ siano continuamente derivabili sull'intervallo $[\alpha, \beta].$ Applichiamo la costruzione vista sopra mediante le spezzate rispetto a una partizione dell'intervallo del parametro. In questo modo otteniamo una corda che congiunge i punti associati a due valori consecutivi $t_{k-1}$ e $t_k$ la cui lunghezza per la $(1)$ è data da:
 
 $$\ell_k = \sqrt{[x(t_k) - x(t_{k-1})]^2 + [y(t_k) - y(t_{k-1})]^2}$$
 
-Applicando il teorema di Lagrange separatamente a $x$ e a $y$ e passando al limite quando l'ampiezza massima degli intervalli della partizione tende a zero, otteniamo la formula della lunghezza d'arco in forma parametrica:
+Applichiamo il teorema di Lagrange a $x$ e a $y$ e passiamo al limite quando l'ampiezza degli intervalli tende a zero. In questo modo otteniamo la formula della lunghezza d'arco in forma parametrica:
 
-$$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt \tag{2}$$
+$$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt \tag{5}$$
 
-Sotto la radice quadrata riconosciamo il quadrato del modulo del vettore velocità associato alla parametrizzazione. Questa osservazione suggerisce un'interpretazione cinematica della formula. Se interpretiamo il parametro $t$ come tempo, la quantità $\sqrt{[x'(t)]^2 + [y'(t)]^2}$ è il modulo della velocità istantanea di un punto che si muove lungo la curva, e il suo integrale sull'intervallo di tempo fornisce la distanza percorsa.
+> Ricordiamo che una curva ammette in generale molte parametrizzazioni distinte, ma la lunghezza dell'arco dipende esclusivamente dall'immagine geometrica della curva sul tratto percorso, purché la parametrizzazione sia regolare e iniettiva.
 
-> Una curva ammette in generale molte parametrizzazioni distinte, ma la lunghezza dell'arco dipende soltanto dall'immagine geometrica della curva sul tratto percorso, purché la parametrizzazione sia regolare e iniettiva. Questa invarianza rispetto alla riparametrizzazione esprime il carattere geometrico intrinseco della lunghezza.
+- - -
 
-## Relazione fra le due formulazioni
-
-La formula cartesiana è un caso particolare di quella parametrica. Scegliendo il parametro $t = x,$ la parametrizzazione si riduce a:
+Abbiamo detto che la formula cartesiana è un caso particolare di quella parametrica quando scegliamo il parametro $t = x.$ In questo caso, infatti, la parametrizzazione si riduce a:
 
 $$\begin{cases} x(t) = t \\[6pt] y(t) = f(t) \end{cases}$$
 
-Si ha quindi $x'(t) = 1$ e $y'(t) = f'(t).$ Sostituendo queste espressioni nella formula $(2)$ si ottiene la formula $(1).$ La rappresentazione parametrica è dunque più generale e rimane applicabile in presenza di tangenti verticali o di autointersezioni, situazioni che la formulazione cartesiana non consente di trattare direttamente.
+Si ha quindi che $x'(t) = 1$ e $y'(t) = f'(t).$ Sostituendo queste espressioni nella formula $(5)$ si ottiene la formula $(3).$ La rappresentazione parametrica è dunque più generale e quindi utile in situazioni in cui la formulazione cartesiana non è direttamente applicabile.
 
-## Esempio 2
+- - -
 
-Calcoliamo la lunghezza di una [circonferenza](../circumference/) di raggio $r$ e centro nell'origine, usando la rappresentazione parametrica:
+Facciamo un ulteriore esempio, andando a calcolare la lunghezza di una [circonferenza](../circumference/) di raggio $r$ e centro nell'origine, usando stavolta la rappresentazione parametrica:
 
 $$\begin{cases} x(t) = r\cos t \\[6pt] y(t) = r\sin t \end{cases} \quad t \in [0, 2\pi]$$
 
-Le derivate delle funzioni parametriche sono:
+Iniziamo a calcolare le derivate delle funzioni parametriche che sono:
 
 $$x'(t) = -r\sin t \qquad y'(t) = r\cos t$$
 
-Sostituendo nella formula parametrica della lunghezza d'arco e usando l'identità trigonometrica fondamentale $\sin^2 t + \cos^2 t = 1,$ la funzione integranda si semplifica come segue:
+Sostituendo nella formula parametrica della lunghezza d'arco e usando l'identità trigonometrica fondamentale $\sin^2 t + \cos^2 t = 1,$ la funzione integranda diventa:
 
 $$\sqrt{[x'(t)]^2 + [y'(t)]^2} = \sqrt{r^2\sin^2 t + r^2\cos^2 t} = r$$
 
-Resta quindi da integrare una funzione costante sull'intervallo $[0, 2\pi],$ ottenendo:
+Quindi nell'intervallo $[0, 2\pi],$ otteniamo il seguente integrale:
 
 $$L = \int_0^{2\pi} r \ dt = 2\pi r$$
 
-La circonferenza ha dunque lunghezza $2\pi r.$
+In questo modo abbiamo dimostrato che la circonferenza ha dunque lunghezza proprio pari a $2\pi r.$
 
-> La formula parametrica restituisce l'espressione della lunghezza di una circonferenza. Questo accordo fornisce una verifica della coerenza della costruzione sviluppata sopra.
+- - -
 
-## Esempio 3
-
-Consideriamo la cicloide generata da un punto su una circonferenza di raggio $r$ che rotola senza strisciare lungo una retta. La parametrizzazione usuale di un arco completo della cicloide è:
+Consideriamo invece una cicloide generata da un punto su una circonferenza di raggio $r$ che rotola senza strisciare lungo una retta. La tipica parametrizzazione di un arco della cicloide è data da:
 
 $$\begin{cases} x(t) = r(t - \sin t) \\[6pt] y(t) = r(1 - \cos t) \end{cases} \quad t \in [0, 2\pi]$$
 
-Le derivate delle componenti parametriche sono:
+Calcoliamo le derivate delle componenti parametriche che sono pari a:
 
 $$x'(t) = r(1 - \cos t) \qquad y'(t) = r\sin t$$
 
-Sommando i quadrati di queste due componenti e usando le [identità](../trigonometric-identities/) $1 - \cos t = 2\sin^2(t/2)$ e $\sin t = 2\sin(t/2)\cos(t/2),$ la funzione integranda si riduce a un'espressione più semplice. Un calcolo diretto dà:
+Sommando i quadrati di queste due componenti e usando le [identità](../trigonometric-identities/) $1 - \cos t = 2\sin^2(t/2)$ e $\sin t = 2\sin(t/2)\cos(t/2),$ otteniamo:
 
 $$
 \begin{align}
@@ -150,11 +147,11 @@ $$
 \end{align}
 $$
 
-Applicando nuovamente la formula di bisezione, l'espressione diventa $4r^2\sin^2(t/2),$ la cui radice quadrata è $2r |\sin(t/2)|.$ Poiché $t/2 \in [0, \pi]$ sull'intervallo di integrazione, il seno è non negativo e possiamo eliminare il valore assoluto. L'integrale della lunghezza d'arco si riduce quindi a:
+Applicando le formule di bisezione, l'espressione diventa $4r^2\sin^2(t/2),$ la cui radice quadrata è $2r |\sin(t/2)|.$ Poiché $t/2 \in [0, \pi]$ sull'intervallo di integrazione, il seno è non negativo e possiamo eliminare il valore assoluto. L'integrale della lunghezza d'arco si riduce quindi a:
 
 $$L = \int_0^{2\pi} 2r\sin(t/2) \ dt$$
 
-Una primitiva di $\sin(t/2)$ è $-2\cos(t/2),$ e la valutazione agli estremi dà:
+Una primitiva di $\sin(t/2)$ è $-2\cos(t/2),$ e la valutazione agli estremi dà la lunghezza di una arco della cicloide che è pari a $8r$:
 
 $$
 \begin{align}
@@ -165,10 +162,23 @@ L &= 2r\bigl[-2\cos(t/2)\bigr]_0^{2\pi} \\[6pt]
 \end{align}
 $$
 
-La lunghezza di un arco completo della cicloide è dunque uguale a otto volte il raggio della circonferenza che rotola. Il risultato fu dimostrato da Christopher Wren nel 1658. La lunghezza è un multiplo intero del raggio, e in questo caso una curva trascendente conduce a un valore algebrico.
+## Un breve riepilogo e limiti di applicabilità
 
-## Condizioni e limiti di applicabilità
+Abbiamo quindi descritto come calcolare la lunghezza di un arco di curva mediante la formulazione cartesiana e quella parametrica. Le formule da tenere a mente sono:
 
-Le formule ottenute si basano sull'ipotesi che le derivate coinvolte esistano e siano continue su tutto l'intervallo di integrazione. Quando questa regolarità viene meno in punti isolati, l'integrale può spesso essere interpretato come un [integrale improprio](../improper-integrals/), e la lunghezza dell'arco può ancora risultare finita. Esistono invece curve continue di lunghezza infinita. Gli esempi classici provengono dalla geometria frattale, fra cui il fiocco di neve di Koch. Per queste curve le formule elementari non sono applicabili e si ricorre alla teoria generale delle curve rettificabili, nella quale la lunghezza è definita direttamente come l'[estremo superiore](../supremum-and-infimum/) delle lunghezze di tutte le spezzate inscritte.
+[class="table-1"]
 
-> Una curva si dice rettificabile quando questo estremo superiore è finito. Le curve continuamente derivabili su un intervallo chiuso e limitato sono rettificabili, e per esse l'estremo superiore coincide con il valore calcolato dalle formule integrali. La classe delle curve rettificabili è strettamente più ampia di quella delle curve di classe $C^1$ e fornisce il quadro per la formulazione generale della nozione di lunghezza. Quando l'integrale della lunghezza d'arco non può essere calcolato in forma chiusa, il suo valore può comunque essere approssimato mediante l'[integrazione numerica](../numerical-integration/).
+|                                             |                                                             |
+| ------------------------------------------- | ----------------------------------------------------------- |
+| $y = f(x),$ con $x \in [a, b]$              | $$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx$$                  |
+| $(x(t), y(t)),$ con $t \in [\alpha, \beta]$ | $$L = \int_\alpha^\beta \sqrt{[x'(t)]^2 + [y'(t)]^2} \ dt$$ |
+
+[/class]
+
+Le formule fin qui illustrate si basano sull'ipotesi che le derivate coinvolte esistano e siano continue su tutto l'intervallo di integrazione. Quando questa regolarità viene meno in punti isolati, l'integrale può spesso essere interpretato come un [integrale improprio](../improper-integrals/), e la lunghezza dell'arco può ancora risultare finita. Esistono tuttavia curve continue di lunghezza infinita per le quali le formule elementari non sono applicabili e si ricorre alla teoria generale delle curve rettificabili (che va oltre la nostra trattazione), nella quale la lunghezza è definita direttamente come l'[estremo superiore](../supremum-and-infimum/) delle lunghezze di tutte le spezzate inscritte.
+
+Solo per fornire un breve accenno, una curva si dice rettificabile quando l'estremo superiore è finito. In genere, le curve continuamente derivabili su un intervallo chiuso e limitato sono rettificabili, e in questi casi l'estremo superiore coincide con il valore calcolato dalle formule integrali. 
+
+La classe delle curve rettificabili è più ampia di quella delle curve di classe $C^1$, ovvero con derivata prima continua, e fornisce la base per la formulazione generale della nozione di lunghezza. 
+
+Ricordiamo infine che quando l'integrale della lunghezza d'arco non può essere calcolato in forma chiusa, il suo valore può comunque essere approssimato mediante l'[integrazione numerica](../numerical-integration/).
