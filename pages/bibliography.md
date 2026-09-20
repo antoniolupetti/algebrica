@@ -32,6 +32,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Linear algebra
 
 + [Advanced Linear Algebra](https://link.springer.com/book/10.1007/978-0-387-72831-5), Steven Roman
++ [Discover Linear Algebra](https://sites.ualberta.ca/~jsylvest/books/pdf/JSylvestre-DiscoverLinearAlgebra1-2025-PreRelease-Electronic.pdf), Jeremy Sylvestre
 + [Fundamentals of Linear Algebra](https://personal.math.ubc.ca/~carrell/NB.pdf), James B. Carrell
 + [Fundamentals of Matrix Algebra](https://www.apexcalculus.com/downloads/MatrixAlgebra.pdf), Gregory Hartman
 + [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd, Lieven Vandenberghe

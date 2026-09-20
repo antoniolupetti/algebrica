@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="369px" height="257px" viewBox="0 0 369 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <line x1="307.5" y1="233.5" x2="307.5" y2="75.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="307.5" y1="75.5" x2="30.5" y2="75.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="78.5" y1="231.5" x2="78.5" y2="184.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="78.5" y1="231.5" x2="78.5" y2="184.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="193.5" y1="233.5" x2="193.5" y2="99.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <line x1="193.5" y1="99.5" x2="30.5" y2="99.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+            <g>
+                <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                    <tspan x="121" y="11">At C, the tangent is parallel to </tspan>
+                    <tspan x="121" y="24">the secant through A and B.</tspan>
+                </text>
+                <line x1="193.5" y1="28.5" x2="193.5" y2="66.5" stroke="#BEB8B7" stroke-linecap="round"></line>
+                <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="349" y="253">g(t)</tspan>
+                </text>
+                <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="0" y="27">f(t)</tspan>
+                </text>
+                <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="0" y="189">f(a)</tspan>
+                </text>
+                <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="0" y="104">f(c)</tspan>
+                </text>
+                <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="0" y="79">f(b)</tspan>
+                </text>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="68" y="253">g(a)</tspan>
+                </text>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="183" y="253">g(c)</tspan>
+                </text>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="298" y="253">g(b)</tspan>
+                </text>
+                <line x1="53" y1="196.956522" x2="343" y2="58.26087" stroke="#BEB8B7" stroke-linecap="round"></line>
+                <line x1="53" y1="166.956522" x2="343" y2="28.26087" stroke="#BEB8B7" stroke-linecap="round"></line>
+                <path d="M78,185 C154.666667,108.333333 231.333333,71.6666667 308,75" stroke="#312f2f" stroke-width="2" stroke-linecap="round"></path>
+                <circle fill="#312f2f" fill-rule="nonzero" cx="78" cy="185" r="3"></circle>
+                <circle fill="#312f2f" fill-rule="nonzero" cx="193" cy="100" r="3"></circle>
+                <circle fill="#312f2f" fill-rule="nonzero" cx="308" cy="75" r="3"></circle>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="84" y="201">A</tspan>
+                </text>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="189" y="91">C</tspan>
+                </text>
+                <text fill="#312f2f" fill-rule="nonzero" font-size="12" font-weight="normal">
+                    <tspan x="313" y="68">B</tspan>
+                </text>
+            </g>
+            <path d="M30.882134,16.6769926 L30.9357878,16.7548694 L35.4357878,24.7548694 C35.5711697,24.9955483 35.4858096,25.3004059 35.2451306,25.4357878 C35.0311938,25.5561272 34.7665479,25.5020533 34.6152959,25.3195146 L34.5642122,25.2451306 L31,18.908 L31,250.5 C31,250.776142 30.7761424,251 30.5,251 C30.2545401,251 30.0503916,250.823125 30.0080557,250.589876 L30,250.5 L30,18.908 L26.4357878,25.2451306 C26.3154483,25.4590675 26.0612021,25.5502832 25.8371522,25.4728292 L25.7548694,25.4357878 C25.5409325,25.3154483 25.4497168,25.0612021 25.5271708,24.8371522 L25.5642122,24.7548694 L30.0642122,16.7548694 C30.2394349,16.4433624 30.6651608,16.4174034 30.882134,16.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M360.162848,228.527171 L360.245131,228.564212 L368.245131,233.064212 C368.556638,233.239435 368.582597,233.665161 368.323007,233.882134 L368.245131,233.935788 L360.245131,238.435788 C360.004452,238.57117 359.699594,238.48581 359.564212,238.245131 C359.443873,238.031194 359.497947,237.766548 359.680485,237.615296 L359.754869,237.564212 L366.091,234 L1.5,234 C1.22385763,234 1,233.776142 1,233.5 C1,233.25454 1.17687516,233.050392 1.41012437,233.008056 L1.5,233 L366.091,233 L359.754869,229.435788 C359.540933,229.315448 359.449717,229.061202 359.527171,228.837152 L359.564212,228.754869 C359.684552,228.540933 359.938798,228.449717 360.162848,228.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <line x1="30.5" y1="184.5" x2="78.5" y2="184.5" stroke="#BEB8B7" stroke-linecap="round" stroke-dasharray="4"></line>
+        </g>
+    </g>
+</svg>

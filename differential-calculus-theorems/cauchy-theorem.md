@@ -11,126 +11,176 @@ tags:
 
 ## Statement
 
-Cauchy's theorem relates the variations of two differentiable functions over a closed interval to the ratio of their derivatives at a suitable interior point. It generalises [Lagrange's theorem](../lagrange-theorem/) to a pair of functions and is the analytical basis for the proof of [L'Hôpital's rule](../hopital-rule/).
+Cauchy's theorem is one of the fundamental theorems of differential calculus and generalises [Lagrange's theorem](../lagrange-theorem/) to a pair of functions. As you may recall, Lagrange's theorem gives the following identity:
 
-Let $f(x)$ and $g(x)$ be two real-valued [functions](../functions/) defined on $[a, b].$ Assume that:
+$$
+f'(c) = \frac{f(b)-f(a)}{b-a} \tag{1}
+$$
 
-+ $f(x)$ and $g(x)$ are [continuous](../continuous-functions/) on the closed [interval](../intervals/) $[a, b].$
-+ $f(x)$ and $g(x)$ are differentiable on the open interval $(a, b).$
-+ $g'(x) \neq 0$ for every $x \in (a, b).$
+Equation $(1)$ relates the change in a function $f$ over an [interval](../intervals/) $[a, b]$ to its [derivative](../derivatives/) at an interior point $c.$ Cauchy's theorem considers the ratio of the increments of two functions and states that this ratio equals the ratio of their derivatives evaluated at the same interior point. To state the theorem formally, let $f$ and $g$ be two [real-valued functions](../functions/) defined on an interval $[a, b],$ with $a < b.$ Assume that the following conditions hold:
 
-Then there exists at least one point $c \in (a, b)$ such that:
++ The functions $f$ and $g$ are [continuous](../continuous-functions/) on the closed interval $[a, b].$
++ The functions $f$ and $g$ are differentiable on the open interval $(a, b).$
++ The derivative $g'(x)$ is non-zero for every $x \in (a, b).$
 
-$$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}$$
+If these assumptions hold, then at least one point $c \in (a, b)$ satisfies the following identity:
 
-In other words, the ratio of the increments of the two functions over the interval $[a, b]$ coincides with the ratio of their [derivatives](../derivatives/) at some interior point.
+$$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)} \tag{2}$$
 
-> The hypothesis $g'(x) \neq 0$ on $(a, b)$ ensures, via [Rolle's theorem](../rolle-theorem/) applied to $g,$ that $g(b) \neq g(a),$ so that the denominator on the right-hand side does not vanish. A detailed discussion of this point is given in the last section.
+In other words, the ratio of the changes in the two functions from $a$ to $b$ equals the ratio of the derivatives of $f$ and $g$ at some interior point of the interval. As you can see, the third condition, $g'(x) \neq 0,$ ensures that both denominators in $(2)$ are non-zero.
 
-- - -
-The choice $g(x) = x$ reduces Cauchy's theorem to [Lagrange's theorem](../lagrange-theorem/). In that case $g'(x) = 1$ and $g(b) - g(a) = b - a,$ and the conclusion takes the familiar form:
+This result underlies the proof of [L'Hôpital's rule](../hopital-rule/), since it allows us to express the ratio of the increments of two functions as the ratio of their derivatives at an intermediate point.
 
-$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
-
-Lagrange's theorem is therefore the special case of Cauchy's, obtained when one of the two functions is the identity.
-
-## Geometric interpretation
-
-Cauchy's theorem has a clear geometric meaning when the pair $(g(t), f(t))$ is regarded as a parametric curve in the plane, with $t$ varying in $[a, b].$ The chord joining the endpoints $(g(a), f(a))$ and $(g(b), f(b))$ of the curve has slope:
-
-$$\frac{f(b) - f(a)}{g(b) - g(a)}$$
-
-The tangent to the curve at the parameter $t = c$ has slope $f'(c)/g'(c).$ Cauchy's theorem asserts therefore the existence of at least one interior parameter $c$ at which the tangent to the curve is parallel to the chord connecting its endpoints. When $g(t) = t$ the curve coincides with the graph of $f,$ and the statement reduces to the geometric content of Lagrange's theorem.
+> The theorem guarantees the existence of at least one point $c,$ but not its uniqueness. Several points, or even every interior point of the interval, may satisfy $(2).$ For example, take $f(x) = 2x$ and $g(x) = x.$ Both sides of the identity equal $2,$ so every $c \in (a, b)$ satisfies the conclusion of the theorem.
 
 ## Proof
 
-To prove the theorem we introduce an auxiliary function depending on a real parameter $\lambda$:
+The proof of Cauchy's theorem uses [Rolle's theorem](../rolle-theorem/) to establish the existence of a point $c$ satisfying $(2).$ We first need to check that the denominator $g(b) - g(a)$ is non-zero. Suppose, for a contradiction, that $g(a)$ equals $g(b).$ By the first two assumptions, $g$ is continuous on $[a, b]$ and differentiable on $(a, b),$ so Rolle's theorem would give a point $\xi \in (a, b)$ at which $g'(\xi) = 0.$ This contradicts the third assumption, so we must have $g(b) \neq g(a).$
 
-$$\varphi(x) = f(x) - \lambda g(x)$$
+We next define an auxiliary function that depends on a real constant $\lambda:$
 
-The parameter $\lambda$ is chosen so that the values of $\varphi$ at the endpoints of the interval coincide. The condition $\varphi(a) = \varphi(b)$ leads to:
+$$\varphi(x) = f(x) - \lambda g(x) \tag{3}$$
+
+We want to choose $\lambda$ so that $\varphi$ takes the same value at both endpoints. The condition $\varphi(a) = \varphi(b)$ can be written as:
+
+$$f(a) - \lambda g(a) = f(b) - \lambda g(b)$$
+
+Collecting the terms involving $\lambda$ gives:
+
+$$\lambda[g(b) - g(a)] = f(b) - f(a) \tag{4}$$
+
+We have just shown that the coefficient of $\lambda,$ namely $g(b) - g(a),$ is non-zero, so we can rewrite $(4)$ as:
 
 $$\lambda = \frac{f(b) - f(a)}{g(b) - g(a)}$$
 
-The denominator is non-zero because the hypothesis $g'(x) \neq 0$ on $(a, b)$ excludes the case $g(b) = g(a),$ as discussed in the last section.
-
-- - -
-The function $\varphi(x)$ is continuous on $[a, b]$ and differentiable on $(a, b),$ since it is a [linear combination](../linear-combinations/) of $f$ and $g,$ which satisfy these regularity properties by hypothesis. Moreover $\varphi(a) = \varphi(b)$ by the very choice of $\lambda.$ The hypotheses of [Rolle's theorem](../rolle-theorem/) are therefore satisfied, and there exists at least one point $c \in (a, b)$ such that $\varphi'(c) = 0.$ Computing the derivative of $\varphi$ and evaluating it at $c$ gives:
+We can now check the hypotheses of Rolle's theorem. Multiplying $g$ by the constant $\lambda$ and subtracting the result from $f$ gives a function $\varphi$ that is a [linear combination](../linear-combinations/) of $f$ and $g.$ It is therefore continuous on $[a, b]$ and differentiable on $(a, b),$ so the first two hypotheses of Rolle's theorem are satisfied. Our choice of $\lambda$ also ensures that $\varphi(a) = \varphi(b),$ which verifies the third hypothesis. Hence there is a point $c \in (a, b)$ such that $\varphi'(c) = 0.$ [Differentiating](../differentiation-rules/) $(3)$ gives:
 
 $$\varphi'(x) = f'(x) - \lambda g'(x)$$
 
+We know that this derivative vanishes at $c,$ which gives:
+
 $$f'(c) = \lambda g'(c)$$
 
-- - -
-Substituting the value of $\lambda$ into the previous equality we obtain:
+Since $g'(c) \neq 0,$ we can divide both sides by $g'(c)$ and substitute the value of $\lambda.$ This gives the following identity, which is precisely $(2)$ in Cauchy's theorem:
 
-$$f'(c) = \frac{f(b) - f(a)}{g(b) - g(a)} g'(c)$$
+$$\frac{f'(c)}{g'(c)} = \lambda = \frac{f(b) - f(a)}{g(b) - g(a)}$$
 
-Since $g'(c) \neq 0$ by hypothesis, dividing both sides by $g'(c)$ yields:
+## Geometric interpretation and connection with Lagrange's and Rolle's theorems
 
-$$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}$$
+To interpret $(2)$ geometrically, imagine a point moving in the plane whose coordinates depend on a parameter $t.$ We use $g(t)$ as the horizontal coordinate and $f(t)$ as the vertical coordinate. As $t$ ranges over $[a, b],$ the pair $(g(t), f(t))$ traces a curve joining the points $(g(a), f(a))$ and $(g(b), f(b)).$ The line through these points has a [slope](../lines/) equal to the ratio of the change in the vertical coordinate to the change in the horizontal coordinate:
 
-This is the conclusion of the theorem.
+$$\frac{f(b) - f(a)}{g(b) - g(a)}$$
 
-## Example 1
+At the point corresponding to $t = c,$ the [vector](../vectors/) $(g'(c), f'(c))$ gives the direction of the tangent to the curve. Since $g'(c) \neq 0,$ the slope of the tangent is:
 
-Let us verify that the hypotheses of Cauchy's theorem are satisfied by the functions:
+$$\frac{f'(c)}{g'(c)}$$
 
-$$f(x) = 2x^2 - 4x + 2 \qquad g(x) = x^2$$
+As the following figure illustrates, $(2)$ states that at some interior point of the parameter interval, the tangent is parallel to the secant line through the endpoints of the curve.
 
-on the interval $[1, 3],$ and let us determine the corresponding value of $c$ predicted by the statement.
 
-The two functions are [polynomials](../polynomials/), hence continuous and differentiable for every $x \in \mathbb{R}.$ The derivative of the denominator is $g'(x) = 2x,$ which is non-zero on $[1, 3].$ The hypotheses of the theorem are therefore satisfied.
+![IMG. 1](svg/cauchy-theorem-1.svg)
 
-- - -
-The theorem guarantees the existence of a point $c \in (1, 3)$ such that:
+
+
+As we have seen, choosing $g(x) = x$ recovers Lagrange's theorem. In this case $g'(x) = 1$ and $g(b) - g(a) = b - a,$ so $(2)$ becomes:
+
+$$f'(c) = \frac{f(b) - f(a)}{b - a} \tag{5}$$
+
+If we make the additional assumption that $f(a) = f(b),$ the numerator on the right vanishes and we obtain $f'(c) = 0,$ which is the conclusion of Rolle's theorem. Thus Lagrange's theorem is a special case of Cauchy's theorem, while Rolle's theorem is a special case of Lagrange's theorem.
+
+## Example
+
+Let us apply the theorem to a concrete example by checking the hypotheses and finding the point $c.$ Consider the functions $f$ and $g$ on the interval $[1, 3]:$
+
+$$f(x) = 2x^2 - 4x + 2$$
+
+$$g(x) = x^2$$
+
+Both functions are [polynomials](../polynomials/), so they are continuous and differentiable throughout $\mathbb{R},$ which verifies the first two hypotheses. Recall that we want to apply $(2),$ so we must also check that the derivative of $g$ in the denominator is non-zero. Here $g'(x) = 2x,$ which is positive on the chosen interval, so the third hypothesis is satisfied as well. All the hypotheses now hold, and we can look for a point $c \in (1, 3)$ such that:
 
 $$\frac{f'(c)}{g'(c)} = \frac{f(3) - f(1)}{g(3) - g(1)}$$
 
-We begin by evaluating $f$ and $g$ at the endpoints:
+Evaluating the functions at the endpoints of the interval gives:
 
-$$f(1) = 2 - 4 + 2 = 0 \qquad f(3) = 18 - 12 + 2 = 8$$
-
-$$g(1) = 1 \qquad g(3) = 9$$
+$$
+\begin{align}
+f(1) &= 2 - 4 + 2 = 0 \\[6pt]
+f(3) &= 18 - 12 + 2 = 8 \\[6pt]
+g(1) &= 1 \\[6pt]
+g(3) &= 9
+\end{align}
+$$
 
 The ratio of the increments is therefore:
 
 $$\frac{f(3) - f(1)}{g(3) - g(1)} = \frac{8 - 0}{9 - 1} = 1$$
 
-- - -
-Computing the derivatives we obtain $f'(x) = 4x - 4$ and $g'(x) = 2x,$ hence:
+The derivatives of $f$ and $g$ are $f'(x) = 4x - 4$ and $g'(x) = 2x,$ respectively. The point we seek must therefore satisfy the following equation:
 
-$$\frac{f'(c)}{g'(c)} = \frac{4c - 4}{2c}$$
+$$\frac{4c - 4}{2c} = 1$$
 
-Imposing the equality between the two ratios, the equation determining $c$ takes the form:
+Solving for $c$ gives:
 
 $$
 \begin{align}
-\frac{4c - 4}{2c} &= 1 \\[6pt]
 4c - 4 &= 2c \\[6pt]
 2c &= 4 \\[6pt]
 c &= 2
 \end{align}
 $$
 
-Since $c = 2 \in (1, 3),$ the theorem is verified, and $c = 2$ is the interior point it predicts.
+The value $c = 2$ belongs to $(1, 3)$ and satisfies the required identity. In this example, the equation reduces to a [linear equation](../linear-equations/) with a unique solution, so only one point $c$ satisfies the conclusion of the theorem. As noted earlier, other examples may have more than one such point $c$ in the interval. This can happen, for instance, if the resulting equation is [quadratic](../quadratic-equations/) and has two distinct real solutions, both lying in the open interval under consideration.
 
-## A note on the hypothesis $g'(x) \neq 0$
+## A more general formulation
 
-The hypothesis $g'(x) \neq 0$ on $(a, b)$ has a precise role both in the statement and in the proof. Consider the situation in which $g(b) = g(a).$ In this case the denominator of the ratio:
+Cauchy's theorem also has a more general formulation without quotients, which does not require the third assumption that $g'$ be non-zero. To state this version, we again consider two functions $f$ and $g$ that are continuous on $[a, b]$ and differentiable on $(a, b),$ with $a < b.$ Then at least one point $c \in (a, b)$ satisfies the following identity:
 
-$$\frac{f(b) - f(a)}{g(b) - g(a)}$$
+$$[g(b) - g(a)]f'(c) = [f(b) - f(a)]g'(c) \tag{6}$$
 
-vanishes, and the expression is undefined. For the same reason the constant:
+Unlike $(2),$ equation $(6)$ involves no division by $g(b) - g(a)$ or by $g'(c),$ so the identity is meaningful even when either of these factors vanishes. When both factors are non-zero, the two formulations are equivalent.
 
-$$\lambda = \frac{f(b) - f(a)}{g(b) - g(a)}$$
+To prove $(6),$ we introduce a new auxiliary function, continuous on $[a, b]$ and differentiable on $(a, b),$ defined by:
 
-cannot be introduced, and the auxiliary function used in the proof:
+$$H(x) = [g(b) - g(a)][f(x) - f(a)] - [f(b) - f(a)][g(x) - g(a)] \tag{7}$$
 
-$$\varphi(x) = f(x) - \lambda g(x)$$
+At $x = a,$ both differences involving $x$ vanish, so $H(a) = 0.$ At $x = b,$ we obtain:
 
-is no longer well defined.
+$$H(b) = [g(b) - g(a)][f(b) - f(a)] - [f(b) - f(a)][g(b) - g(a)] = 0$$
 
-Under the hypotheses of Cauchy's theorem, however, this situation does not arise. Suppose by contradiction that $g(a) = g(b).$ Since $g$ is continuous on $[a, b]$ and differentiable on $(a, b),$ [Rolle's theorem](../rolle-theorem/) applied to $g$ would produce a point $\xi \in (a, b)$ with $g'(\xi) = 0,$ contradicting the assumption $g'(x) \neq 0$ on the open interval. Therefore $g(b) \neq g(a),$ the ratio defining $\lambda$ is well posed, and the proof goes through.
+Since $H(a) = H(b),$ Rolle's theorem gives a point $c \in (a, b)$ such that $H'(c) = 0.$ Differentiating $(7)$ gives:
 
-> The proof given above uses [Rolle's theorem](../rolle-theorem/), of which [Lagrange's theorem](../lagrange-theorem/) is the special case $g(x) = x.$ [Fermat's theorem](../fermat-theorem/) and [Weierstrass' theorem](../weierstrass-theorem/) provide the existence results on which Rolle's theorem itself depends.
+$$H'(x) = [g(b) - g(a)]f'(x) - [f(b) - f(a)]g'(x)$$
+
+Evaluating this expression at $c$ and setting it equal to zero gives $(6),$ which completes the proof. Recall that to pass from $(6)$ to $(2),$ we need $g(b) - g(a) \neq 0$ and a non-zero value of $g'(c)$ at the specific point provided by the theorem. The assumption $g'(x) \neq 0$ throughout $(a, b)$ guarantees this condition before we know $c,$ and also ensures that $g(b) - g(a) \neq 0.$
+
+- - -
+
+This formulation without quotients helps explain why the assumption $g'(x) \neq 0$ appears in the original statement of the theorem. If $g(a)$ were equal to $g(b),$ the ratio of the increments would be undefined, and we could not choose $\lambda$ using the formula from the first proof. If $g(a) \neq g(b),$ that ratio is defined, but we still need to check that we can also divide by $g'(c).$
+
+To see why the condition $g(a) \neq g(b)$ alone is not enough, consider the following functions on the interval $[-1, 1]:$
+
+$$f(x) = x^2$$
+$$g(x) = x^3$$
+
+Both functions are continuous and differentiable throughout $\mathbb{R},$ and their increments between the endpoints are:
+
+$$
+\begin{align}
+f(1) - f(-1) &= 0 \\[6pt]
+g(1) - g(-1) &= 2
+\end{align}
+$$
+
+The ratio of the increments is therefore zero:
+
+$$\frac{f(1) - f(-1)}{g(1) - g(-1)} = 0$$
+
+The derivatives of $f$ and $g$ are $f'(x) = 2x$ and $g'(x) = 3x^2.$ For every non-zero $c \in (-1, 1),$ their ratio is:
+
+$$\frac{f'(c)}{g'(c)} = \frac{2c}{3c^2} = \frac{2}{3c}$$
+
+This ratio is never zero. At $c = 0,$ however, both derivatives vanish and their ratio is undefined. Thus no interior point satisfies $(2),$ even though the ratio of the increments is defined. The formulation without quotients still holds. Substituting the increments and derivatives into $(6)$ gives:
+
+$$2 \cdot 2c = 0 \cdot 3c^2$$
+
+This equation reduces to $4c = 0,$ so the point provided by the general formulation is precisely $c = 0.$ The identity holds at this point, but we cannot turn it into an equality of quotients because $g'(0) = 0.$
