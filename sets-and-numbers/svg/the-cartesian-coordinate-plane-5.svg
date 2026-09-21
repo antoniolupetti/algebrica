@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="367px" height="346px" viewBox="0 0 367 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="144" y="12">The point E(2, 0) is equidistant from A(−3, 1) </tspan>
+                <tspan x="144" y="25">and B(3, 5), with EA = EB = √26, but unlike </tspan>
+                <tspan x="144" y="38">M(0, 3), it does not lie on the segment AB </tspan>
+                <tspan x="144" y="51">and is therefore not its midpoint.</tspan>
+            </text>
+            <line x1="266.5" y1="58.5" x2="266.5" y2="122.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <path d="M176.380609,74.6762864 L176.434407,74.7540636 L180.949214,82.7457166 C181.085042,82.9861444 181.000246,83.2911595 180.759818,83.4269869 C180.546105,83.5477223 180.281359,83.4941385 180.129769,83.3118803 L180.078548,83.237591 L176.502,76.906 L176.513885,82.997246 L176.999999,345.499074 C177.000511,345.775216 176.777068,345.999488 176.500926,345.999999 C176.255466,346.000454 176.050991,345.823957 176.008223,345.590786 L176.000001,345.500926 L175.513886,82.9990979 L175.502,76.91 L171.950138,83.2526436 C171.830194,83.466803 171.576118,83.5584894 171.351925,83.4814504 L171.269573,83.4445614 C171.055414,83.3246183 170.963728,83.0705415 171.040767,82.8463485 L171.077656,82.7639973 L175.562833,74.7556777 C175.737479,74.4438467 176.163156,74.4170994 176.380609,74.6762864 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M355.662848,312.527171 L355.745131,312.564212 L363.745131,317.064212 C364.056638,317.239435 364.082597,317.665161 363.823007,317.882134 L363.745131,317.935788 L355.745131,322.435788 C355.504452,322.57117 355.199594,322.48581 355.064212,322.245131 C354.943873,322.031194 354.997947,321.766548 355.180485,321.615296 L355.254869,321.564212 L361.591,318 L0,318 C-0.276142375,318 -0.5,317.776142 -0.5,317.5 C-0.5,317.25454 -0.323124839,317.050392 -0.0898756324,317.008056 L0,317 L361.591,317 L355.254869,313.435788 C355.040933,313.315448 354.949717,313.061202 355.027171,312.837152 L355.064212,312.754869 C355.184552,312.540933 355.438798,312.449717 355.662848,312.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="357" y="339">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="160" y="80">y</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="157" y="336">O</tspan>
+            </text>
+            <line x1="173" y1="280.5" x2="180" y2="280.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="160" y="284">1</tspan>
+            </text>
+            <line x1="173" y1="128.5" x2="180" y2="128.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="160" y="132">5</tspan>
+            </text>
+            <line x1="62" y1="280" x2="290" y2="128" stroke="#636060" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M62,280 L115.777077,290.755415 M146.493509,296.898702 L252,318" stroke="#312F2F" stroke-width="2" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M290,128 L271.072683,222.636585 M266.819851,243.900744 L252,318" stroke="#312F2F" stroke-width="2" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="176" y1="204" x2="252" y2="318" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="62" cy="280" r="3.1"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="290" cy="128" r="3.1"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="176" cy="204" r="3.1"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="252" cy="318" r="3.1"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="10" y="283">A(−3, 1)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="295" y="115">B(3, 5)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="120" y="196">M(0, 3)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="263" y="341">E(2, 0)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="120.5" y="297">√26</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="265" y="236">√26</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

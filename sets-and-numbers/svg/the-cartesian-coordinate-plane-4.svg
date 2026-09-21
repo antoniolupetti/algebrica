@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="365px" height="313px" viewBox="0 0 365 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <path d="M188.380447,67.6762113 L188.43426,67.7539779 L192.950644,75.7447399 C193.086519,75.9851409 193.001783,76.2901727 192.761382,76.4260475 C192.547693,76.5468251 192.282937,76.4932936 192.131311,76.3110653 L192.080075,76.2367861 L188.502,69.906 L188.515364,75.9969526 L188.999999,312.498975 C189.000565,312.775117 188.777166,312.999433 188.501025,312.999999 C188.255565,313.000502 188.051055,312.824045 188.008241,312.590884 L188.000001,312.501025 L187.515366,75.9990018 L187.503,69.91 L183.951667,76.2534426 C183.831767,76.4676256 183.577708,76.5593622 183.3535,76.4823674 L183.271141,76.4454947 C183.056958,76.3255939 182.965222,76.0715352 183.042216,75.847327 L183.079089,75.7649684 L187.562686,67.755764 C187.73727,67.4438985 188.162942,67.4170673 188.380447,67.6762113 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M355.662848,206.527171 L355.745131,206.564212 L363.745131,211.064212 C364.056638,211.239435 364.082597,211.665161 363.823007,211.882134 L363.745131,211.935788 L355.745131,216.435788 C355.504452,216.57117 355.199594,216.48581 355.064212,216.245131 C354.943873,216.031194 354.997947,215.766548 355.180485,215.615296 L355.254869,215.564212 L361.591,212 L0,212 C-0.276142375,212 -0.5,211.776142 -0.5,211.5 C-0.5,211.25454 -0.323124839,211.050392 -0.0898756324,211.008056 L0,211 L361.591,211 L355.254869,207.435788 C355.040933,207.315448 354.949717,207.061202 355.027171,206.837152 L355.064212,206.754869 C355.184552,206.540933 355.438798,206.449717 355.662848,206.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="64" y="12">The point P(3, 2) and its reflections across the x-axis, </tspan>
+                <tspan x="64" y="25">y-axis, and origin form the vertices of a rectangle </tspan>
+                <tspan x="64" y="38">centered at the origin, illustrating symmetry with </tspan>
+                <tspan x="64" y="51">respect to the coordinate axes and central symmetry.</tspan>
+            </text>
+            <line x1="299.5" y1="62.5" x2="299.5" y2="105.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="355" y="235">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="169" y="74">y</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="176.5" y="230">O</tspan>
+            </text>
+            <line x1="77" y1="137.5" x2="299" y2="137.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-dasharray="4"></line>
+            <line x1="299.5" y1="137" x2="299.5" y2="285" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-dasharray="4"></line>
+            <line x1="299" y1="285.5" x2="77" y2="285.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-dasharray="4"></line>
+            <line x1="77.5" y1="285" x2="77.5" y2="137" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-dasharray="4"></line>
+            <line x1="77" y1="285" x2="299" y2="137" stroke="#636060" stroke-width="1.2" fill="#312F2F" fill-rule="nonzero"></line>
+            <line x1="77" y1="137" x2="299" y2="285" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-dasharray="4"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="299.4" cy="137.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="299.4" cy="284.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="77.4" cy="137.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="76.4" cy="285.4" r="2.5"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="290" y="122">P(3, 2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="49.5" y="122">P(−3, 2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="287.5" y="308">P(3, −2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="43.5" y="308">P(−3, −2)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

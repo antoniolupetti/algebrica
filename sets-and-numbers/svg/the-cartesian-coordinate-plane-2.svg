@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="367px" height="339px" viewBox="0 0 367 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="110" y="12">The distance between A(−3, 1) and B(3, 5) </tspan>
+                <tspan x="110" y="25">is represented as the hypotenuse of a right </tspan>
+                <tspan x="110" y="38">triangle with horizontal and vertical legs of </tspan>
+                <tspan x="110" y="51">lengths 6 and 4, giving AB = 2√13</tspan>
+            </text>
+            <line x1="204.5" y1="63.5" x2="204.5" y2="150.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <path d="M169.882134,75.6769926 L169.935788,75.7548694 L174.435788,83.7548694 C174.57117,83.9955483 174.48581,84.3004059 174.245131,84.4357878 C174.031194,84.5561272 173.766548,84.5020533 173.615296,84.3195146 L173.564212,84.2451306 L169.999,77.906 L170,334.5 C170,334.776142 169.776142,335 169.5,335 C169.25454,335 169.050392,334.823125 169.008056,334.589876 L169,334.5 L168.999,77.91 L165.435788,84.2451306 C165.315448,84.4590675 165.061202,84.5502832 164.837152,84.4728292 L164.754869,84.4357878 C164.540933,84.3154483 164.449717,84.0612021 164.527171,83.8371522 L164.564212,83.7548694 L169.064212,75.7548694 C169.239435,75.4433624 169.665161,75.4174034 169.882134,75.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M356.162848,311.527171 L356.245131,311.564212 L364.245131,316.064212 C364.556638,316.239435 364.582597,316.665161 364.323007,316.882134 L364.245131,316.935788 L356.245131,321.435788 C356.004452,321.57117 355.699594,321.48581 355.564212,321.245131 C355.443873,321.031194 355.497947,320.766548 355.680485,320.615296 L355.754869,320.564212 L362.091,317 L0.5,317 C0.223857625,317 -2.27373675e-13,316.776142 -2.27373675e-13,316.5 C-2.27373675e-13,316.25454 0.176875161,316.050392 0.410124368,316.008056 L0.5,316 L362.091,316 L355.754869,312.435788 C355.540933,312.315448 355.449717,312.061202 355.527171,311.837152 L355.564212,311.754869 C355.684552,311.540933 355.938798,311.449717 356.162848,311.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="359" y="335">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="152" y="82">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="150" y="334">O</tspan>
+            </text>
+            <line x1="55.5" y1="313" x2="55.5" y2="320" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="49" y="334">−3</tspan>
+            </text>
+            <line x1="283.5" y1="313" x2="283.5" y2="320" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="280" y="334">3</tspan>
+            </text>
+            <line x1="166" y1="126.5" x2="173" y2="126.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="153" y="130">5</tspan>
+            </text>
+            <line x1="55" y1="278.5" x2="283" y2="278.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" fill-rule="nonzero"></line>
+            <line x1="283.5" y1="278" x2="283.5" y2="126" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" fill-rule="nonzero"></line>
+            <path d="M55,278 L194.619107,184.920596 M219.091648,168.605568 L283,126" stroke="#312F2F" stroke-width="2" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="54.4" cy="277.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="282.5" cy="277.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="282.5" cy="125.4" r="2.5"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="0" y="283">A(−3, 1)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="288" y="113">B(3, 5)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="293" y="294">H(3, 1)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="209.5" y="269">6</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="296" y="206">4</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="190.5" y="179">2√13</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

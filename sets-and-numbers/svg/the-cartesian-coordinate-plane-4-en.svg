@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="440px" height="340px" viewBox="0 0 440 340" role="img" aria-labelledby="title desc">
+  <title id="title">Symmetry about the axes and the origin</title>
+  <desc id="desc">The point P=(3,2) has images Px=(3,-2), Py=(-3,2), and PO=(-3,-2). The diagonals of the rectangle intersect at the origin.</desc>
+  <g font-size="13" font-weight="normal" fill="#312F2F" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="109,241 331,241 331,93 109,93" fill="#E9E3E2" opacity=".3"/>
+    <line x1="29" y1="167" x2="411" y2="167" stroke="#BEB8B7" stroke-width="1"/>
+    <path d="M 403,163 L 411,167 L 403,171" stroke="#BEB8B7" stroke-width="1" fill="none"/>
+    <line x1="220" y1="302" x2="220" y2="24" stroke="#BEB8B7" stroke-width="1"/>
+    <path d="M 216,32 L 220,24 L 224,32" stroke="#BEB8B7" stroke-width="1" fill="none"/>
+    <text x="408" y="186" font-size="14" fill="#BEB8B7" text-anchor="start">x</text>
+    <text x="204" y="29" font-size="14" fill="#BEB8B7" text-anchor="start">y</text>
+    <text x="238" y="200" font-size="12" fill="#636060" text-anchor="middle">O</text>
+    <line x1="109" y1="93" x2="331" y2="93" stroke="#BEB8B7" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="331" y1="93" x2="331" y2="241" stroke="#BEB8B7" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="331" y1="241" x2="109" y2="241" stroke="#BEB8B7" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="109" y1="241" x2="109" y2="93" stroke="#BEB8B7" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="109" y1="241" x2="331" y2="93" stroke="#636060" stroke-width="1.2"/>
+    <line x1="109" y1="93" x2="331" y2="241" stroke="#BEB8B7" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="331" cy="93" r="3.1" fill="#312F2F"/>
+    <circle cx="331" cy="241" r="3.1" fill="#312F2F"/>
+    <circle cx="109" cy="93" r="3.1" fill="#312F2F"/>
+    <circle cx="109" cy="241" r="3.1" fill="#312F2F"/>
+    <text x="340" y="78" font-size="13" fill="#312F2F" text-anchor="middle">P(3, 2)</text>
+    <text x="103" y="78" font-size="13" fill="#312F2F" text-anchor="middle">P<tspan baseline-shift="sub" font-size="9">y</tspan>(−3, 2)</text>
+    <text x="341" y="264" font-size="13" fill="#312F2F" text-anchor="middle">P<tspan baseline-shift="sub" font-size="9">x</tspan>(3, −2)</text>
+    <text x="101" y="264" font-size="13" fill="#312F2F" text-anchor="middle">P<tspan baseline-shift="sub" font-size="9">O</tspan>(−3, −2)</text>
+    <text x="220" y="325" font-size="12" fill="#636060" text-anchor="middle">P ↦ P<tspan baseline-shift="sub" font-size="9">O</tspan>: rotation through 180°</text>
+  </g>
+</svg>
