@@ -29,16 +29,15 @@ $$ (a,b)=(c,d) \quad \Longleftrightarrow \quad a=c \text{ and } b=d $$
 
 The coordinate axes divide the plane into four quadrants, numbered counterclockwise from the upper right. The coordinates satisfy the following conditions in each quadrant:
 
-| Quadrant | Condition |
-| :---: | :--- |
-| I | $x>0$ and $y>0$ |
-| II | $x<0$ and $y>0$ |
-| III | $x<0$ and $y<0$ |
-| IV | $x>0$ and $y<0$ |
++ I: $x>0$ and $y>0$
++ II: $x<0$ and $y>0$
++ III: $x<0$ and $y<0$
++ IV: $x>0$ and $y<0$
+
 
 ![IMG. 1](svg/the-cartesian-coordinate-plane-1.svg)
 
-For example, the point $R(-3,2)$ lies in the second quadrant and satisfies the conditions in the second row, $x<0$ and $y>0.$ The point $S(-3/2,-\sqrt{2})$ lies in the third quadrant and satisfies the conditions in the third row, $x<0$ and $y<0.$
+For example, the point $R(-3,2)$ lies in the second quadrant and satisfies the conditions, $x<0$ and $y>0.$ The point $S(-3/2,-\sqrt{2})$ lies in the third quadrant and satisfies the conditions, $x<0$ and $y<0.$
 
 ## Euclidean distance
 
