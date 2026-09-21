@@ -38,11 +38,11 @@ The repository progressively includes:
 The current status of Algebrica is summarized below.
 
 - [x] Finalize the underlying infrastructure that supports content publishing, versioning, search, and community contributions
-- [ ] Migrate all mathematical entries to Markdown and make them openly available through the GitHub repository (IN PROGRESS)
-- [ ] Convert existing graphics to editable SVG format and continue expanding the visual library with new illustrations (IN PROGRESS)
+- [x] Migrate all mathematical entries to Markdown and make them openly available through the GitHub repository
+- [x] Convert existing graphics to editable SVG format and continue expanding the visual library with new illustrations
 - [ ] Continue the progressive expansion of the knowledge base with additional mathematical topics and references
 - [ ] Complete the ontological model that defines relationships between mathematical concepts
-- [ ] Build an interactive SKOS-based semantic graph to enable concept exploration, knowledge discovery, and future interoperability with external knowledge systems
+- [ ] Build an interactive semantic graph to enable concept exploration, knowledge discovery, and future interoperability with external knowledge systems
 ## About the content
 
 Each entry on Algebrica is written from scratch, drawing on a broad range of sources: university textbooks, lecture notes, and reference works in mathematics. The selection, structure, and presentation of the material are shaped by an engineering background.
