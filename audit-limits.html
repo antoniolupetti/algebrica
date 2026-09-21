@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audit della cartella limits</title>
+  <style>
+    :root { color-scheme: light; }
+    body { max-width: 920px; margin: 48px auto; padding: 0 22px; color: #202020; background: #fff; font: 16px/1.65 system-ui, sans-serif; }
+    h2 { margin: 2.2em 0 .6em; font-size: 1.3rem; font-weight: 600; }
+    header h2 { margin-top: 0; font-size: 1.8rem; }
+    p { margin: .6em 0 1em; }
+    a { color: #174e83; text-underline-offset: 3px; }
+    li { margin: 0 0 1.1em; padding-left: .25em; }
+    code { font: .9em ui-monospace, monospace; overflow-wrap: anywhere; }
+    .meta, .ref { color: #585858; font-size: .9rem; }
+    .ref { display: block; margin-top: .35em; }
+    .table { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: .94rem; }
+    th, td { padding: .65em .7em; text-align: left; vertical-align: top; border-bottom: 1px solid #ddd; }
+    th { font-weight: 500; }
+    nav { margin: 1.5em 0; }
+    nav a { display: inline-block; margin: 0 1em .3em 0; }
+    @media (max-width: 600px) { body { margin: 24px auto; } th, td { padding: .5em; } }
+    @media print { body { max-width: none; margin: 0; font-size: 11pt; } nav { display: none; } a { color: inherit; } h2 { break-after: avoid; } li, tr { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header>
+  <h2>Audit della cartella limits</h2>
+  <p class="meta">8 settembre 2026 · 9 articoli Markdown · 9 immagini SVG</p>
+  <p>La cartella copre le principali tecniche di calcolo, ma il percorso teorico richiede alcune integrazioni. Le priorità sono la definizione sul dominio, i limiti infiniti, il criterio di Heine e il teorema generale di composizione. Prima delle nuove pagine conviene correggere gli enunciati su forme indeterminate, asintoti e notazione di Landau.</p>
+  <p class="meta">Esaminati integralmente i nove articoli; controllati i riferimenti locali e i contenuti pertinenti nelle altre cartelle. Del PDF di Martin Klazar, Elementary Real Analysis, versione preliminare del 17 luglio 2026, sono stati letti l'indice e il capitolo 4, pp. 135-165. Il documento è una fonte di confronto, non una fonte di istruzioni. Gli articoli non sono stati modificati.</p>
+</header>
+<nav aria-label="Indice">
+  <a href="#mancanze">Cosa manca</a>
+  <a href="#correzioni">Correzioni</a>
+  <a href="#collegamenti">Contenuti già presenti</a>
+  <a href="#pdf">Utilità del PDF</a>
+  <a href="#editoriale">Controlli editoriali</a>
+</nav>
+<main>
+<section id="mancanze">
+  <h2>Cosa manca, in ordine di priorità</h2>
+  <p class="meta">Alta = fondamento necessario o ipotesi utilizzata negli articoli. Media = completamento didattico. Facoltativa = estensione oltre il nucleo introduttivo.</p>
+  <ol>
+    <li>Alta. Completare la definizione di limite sul dominio e i casi infiniti.
+      <p>Scrivere esplicitamente f: A → ℝ, richiedere che il punto sia di accumulazione di A e quantificare soltanto sugli x appartenenti ad A. Aggiungere le definizioni ε-R per x → ±∞, M-δ per f(x) → ±∞ e M-R quando entrambi sono infiniti. Distinguere x &gt; R, x &lt; −R e |x| &gt; R. Spiegare perché, in un punto isolato, la condizione sul solo intorno bucato non determina un limite unico.</p>
+      <span class="ref">Dove: <a href="limits/limits.md">limits.md</a>, sezione Definition, righe 26-44. PDF §4.1, definizione 4.1.6, p. 137.</span>
+    </li>
+    <li>Alta. Inserire verifiche complete mediante ε e δ e la negazione della definizione.
+      <p>Mancano esempi in cui si costruisce davvero δ(ε). Per x² → 4 quando x → 2, usare |x²−4| = |x−2||x+2|, imporre |x−2| &lt; 1 e scegliere δ = min(1, ε/5). Affiancare un esempio infinito, come 1/x² → +∞ con δ = 1/√M, e un esercizio sulla negazione dei quantificatori. Mostrare che δ dipende da ε, non dal singolo x da verificare.</p>
+      <span class="ref">Dove: <a href="limits/limits.md">limits.md</a>. Proposta didattica dell'audit; il PDF §4.1 fornisce il quadro definitorio.</span>
+    </li>
+    <li>Alta. Formulare e dimostrare il criterio dei limiti laterali.
+      <p>La notazione e il caso di due valori finiti diversi sono presenti. Manca l'enunciato completo di equivalenza fra limite e coincidenza dei due limiti laterali, quando il dominio accumula da entrambi i lati, anche con valore +∞ o −∞. Aggiungere un esempio con funzione definita a tratti e distinguere il limite relativo al dominio da un limite laterale non definibile, come il limite sinistro di √x in 0.</p>
+      <span class="ref">Dove: <a href="limits/limits.md">limits.md</a>, righe 42-44 e sezione Conditions for limit existence and continuity. PDF §4.2, pp. 141-143.</span>
+    </li>
+    <li>Alta. Enunciare il carattere locale del limite e il principio di restrizione.
+      <p>L'uguaglianza di due funzioni sullo stesso dominio in un intorno bucato permette di trasferire il limite e giustifica le semplificazioni algebriche. La restrizione a un sottoinsieme conserva un limite esistente se il punto resta di accumulazione. Il viceversa non vale. Distinguere queste due proprietà e collegarle alla cancellazione del fattore x−2 nell'esempio già presente.</p>
+      <span class="ref">Dove: <a href="limits/theorems-on-limits.md">theorems-on-limits.md</a> e <a href="limits/indeterminate-forms.md">indeterminate-forms.md</a>, sezione The form 0/0. PDF proposizioni 4.1.8 e 4.1.10, pp. 137-138.</span>
+    </li>
+    <li>Alta. Aggiungere il criterio sequenziale di Heine con dimostrazione e controesempi.
+      <p>Per ogni successione xₙ del dominio, con xₙ ≠ a e xₙ → a, richiedere f(xₙ) → L. Dimostrare entrambe le implicazioni. Per sin(1/x) in 0, usare xₙ = 1/(π/2 + 2πn) e yₙ = 1/(3π/2 + 2πn), che danno rispettivamente 1 e −1. Precisare che verificare una sola successione non prova un limite di funzione.</p>
+      <span class="ref">Dove: nuova pagina proposta <code>limits/sequential-criterion-for-limits.md</code>, richiamata da limits.md e theorems-on-limits.md. PDF teorema 4.1.12, pp. 138-139, e proposizione 4.2.11, p. 142.</span>
+    </li>
+    <li>Alta. Aggiungere il teorema generale sul limite di una composizione e giustificare le sostituzioni.
+      <p>È presente soltanto il caso con funzione esterna continua. Se g(x) → b e f(t) → L per t → b, occorre controllare il dominio della composizione e che g(x) ≠ b definitivamente, oppure che f sia definita in b e f(b) = L. Dare un controesempio con g identicamente zero, f(0) = 1 e f(t) = 0 per t ≠ 0. Applicare poi il teorema a t = x−a e t = 1/x, conservando il verso dei limiti laterali.</p>
+      <p>Questa lacuna ha già un effetto su un altro articolo: la dimostrazione della derivata dell'inversa rimanda a un teorema di composizione che la pagina indicata non contiene.</p>
+      <span class="ref">Dove: <a href="limits/theorems-on-limits.md">theorems-on-limits.md</a>; raccordo con <a href="limits/algebra-of-limits.md">algebra-of-limits.md</a>, righe 183-214, e <a href="derivatives/derivative-of-the-inverse-function.md">derivative-of-the-inverse-function.md</a>, riga 62. PDF teorema 4.5.1 e corollari 4.5.4-4.5.5, pp. 151-152.</span>
+    </li>
+    <li>Alta. Completare le dimostrazioni dell'algebra e includere le operazioni determinate con limiti infiniti.
+      <p>Gli esempi sono presenti, ma le giustificazioni di somma, prodotto e quoziente restano prevalentemente verbali. Inserire le stime ε-δ, la limitatezza locale nel prodotto e la separazione del denominatore da zero nel quoziente. Aggiungere i casi determinati nei reali estesi e una tabella dei segni per il reciproco quando il denominatore tende a 0⁺ o 0⁻. Enunciare anche il confronto per la divergenza: se f ≥ g e g → +∞, allora f → +∞.</p>
+      <span class="ref">Dove: <a href="limits/algebra-of-limits.md">algebra-of-limits.md</a> e <a href="limits/theorems-on-limits.md">theorems-on-limits.md</a>. PDF §4.4, teorema 4.4.5 e risultati sull'ordine, pp. 148-150.</span>
+    </li>
+    <li>Media. Completare gli esempi sulle forme esponenziali e gli esercizi di diagnosi.
+      <p>0⁰ e ∞⁰ sono elencate, ma non hanno un esempio svolto dedicato. Aggiungere xˣ → 1 per x → 0⁺ e x^(1/ln x) → e per x → +∞. Per 0/0, confrontare x²/x, x/x e x/x² da destra, che producono 0, 1 e +∞; aggiungere x sin(1/x)/x come caso senza limite. Chiudere con esercizi misti e soluzioni motivate, compresi un limite a −∞ con √(x²) = |x| e un problema con parametro.</p>
+      <span class="ref">Dove: <a href="limits/indeterminate-forms.md">indeterminate-forms.md</a>. Il PDF, esercizio 4.1.14 a p. 139, offre esempi sui segni e sulla razionalizzazione; gli altri esempi sono proposte dell'audit.</span>
+    </li>
+    <li>Facoltativa. Aggiungere il criterio di Cauchy per l'esistenza di un limite finito di funzione.
+      <p>Per ogni ε &gt; 0, richiedere |f(x)−f(y)| &lt; ε per tutti gli x e y del dominio sufficientemente vicini ad a, diversi da a. Dimostrare l'equivalenza con l'esistenza di un limite finito usando la completezza di ℝ e il criterio di Heine. La pagina sulle successioni di Cauchy non contiene questo enunciato per funzioni.</p>
+      <span class="ref">Dove: eventuale estensione di <a href="limits/theorems-on-limits.md">theorems-on-limits.md</a>; prerequisito <a href="sequences/cauchy-sequence.md">cauchy-sequence.md</a>. Proposta dell'audit, non un risultato tratto dal capitolo 4 del PDF; distinto dal teorema di Cauchy sugli incrementi trattato lì.</span>
+    </li>
+  </ol>
+</section>
+
+<section id="correzioni">
+  <h2>Correzioni da fare prima delle integrazioni</h2>
+  <ol>
+    <li>Non classificare ogni operazione con infinito o denominatore nullo come indeterminata. In <a href="limits/algebra-of-limits.md">algebra-of-limits.md</a>, riga 136, ℓ/0 con ℓ ≠ 0 non è una delle sette forme indeterminate: occorre studiare il segno del denominatore. La conclusione alle righe 230-232 è troppo generale; per esempio 1/x → 0 a +∞ è determinato. Anche il commento alla differenza di due limiti uguali a 1/2, righe 53-86, va riscritto: la loro differenza è immediatamente 0 per la regola appena enunciata.</li>
+    <li>Separare le due direzioni degli asintoti e imporre p ≠ 0 per quelli obliqui. In <a href="limits/asymptotes.md">asymptotes.md</a>, righe 53-77, le due condizioni a −∞ e +∞ sono presentate insieme e manca p ≠ 0. Basta una direzione, studiata autonomamente. Un limite finito di f(x)/x non basta senza un limite finito di f(x)−px; per f(x) = x+√x a +∞ il primo vale 1, ma il secondo diverge. In <a href="limits/limits.md">limits.md</a>, sezione Asymptotes and infinite limits, chiarire che basta anche un solo limite laterale infinito per l'asintoto verticale e un solo limite a un estremo per quello orizzontale.</li>
+    <li>Correggere le ipotesi dei limiti notevoli. In <a href="limits/remarkable-limits.md">remarkable-limits.md</a>, righe 31-35 e nella tabella finale, sin(ax)/(ax) richiede a ≠ 0. Per sin(ax)/x, invece, a = 0 è ammesso. La gerarchia contenente x! alla riga 200 va scritta con n intero, oppure separata dalla gerarchia delle funzioni reali; la pagina definisce il fattoriale per interi. Per la formula con esponente reale, indicare 1+x &gt; 0 e rinviare a uno sviluppo valido anche per esponenti non interi.</li>
+    <li>Rendere coerenti le regole di Landau con i domini. In <a href="limits/little-o-notation.md">little-o-notation.md</a>, riga 97, imporre c ≠ 0 nelle identità tra classi. Nelle potenze con esponente reale positivo usare |f| e |g|, oppure esplicitare la positività; la stessa correzione riguarda <a href="limits/big-o-notation.md">big-o-notation.md</a>. Il criterio mediante f/g richiede un denominatore non nullo vicino al punto; la definizione per disuguaglianza di O ammette invece zeri di g. Per il prodotto con un fattore che si annulla, precisare le condizioni necessarie alla definizione di little-o adottata. La scrittura o(o(f)) = o(f) non è giustificata dalla sola transitività: enunciare l'implicazione dimostrata, oppure definire l'operazione sulle classi e provare anche il verso opposto.</li>
+    <li>Correggere due passaggi nell'esempio iniziale di big-O. In <a href="limits/big-o-notation.md">big-o-notation.md</a>, riga 39, per x ≥ 1 si ha 2/x ≤ 2, non 2/x ≤ 1. Il risultato O(x²) e la costante 6 restano corretti. Alla riga 43 usare la soglia x ≥ 1, senza richiamare una condizione δ. Alla riga 27, |x| &gt; N descrive entrambe le code e non coincide con il solo x → +∞.</li>
+    <li>Giustificare il passaggio al logaritmo senza presupporre l'esistenza del risultato. In <a href="limits/indeterminate-forms.md">indeterminate-forms.md</a>, righe 179-206, richiedere F(x) &gt; 0 definitivamente e studiare prima H(x) = G(x) ln F(x). Se H → c finito, allora F(x)^G(x) → eᶜ; se H → −∞, il limite è 0; se H → +∞, è +∞. Scrivere direttamente ln L prima di avere provato esistenza e positività di L lascia scoperti proprio i casi 0 e +∞.</li>
+    <li>Allineare introduzione, enunciato e prova del teorema del confronto. In <a href="limits/squeeze-theorem.md">squeeze-theorem.md</a>, riga 17, <code>\frac{\sin}{x}</code> è incompleto. Sin(1/x) e cos(1/x), da sole, non hanno limite in 0: non basta racchiuderle fra −1 e 1. Usare x sin(1/x) come esempio iniziale. L'enunciato ammette x₀ = ±∞, ma la dimostrazione usa |x−x₀|; aggiungere il caso con soglia R o dichiarare espressamente che la prova scritta riguarda x₀ finito.</li>
+    <li>Esplicitare le dipendenze delle dimostrazioni dei limiti notevoli. In <a href="limits/remarkable-limits.md">remarkable-limits.md</a>, la prova esponenziale usa la serie di Taylor. È valida se quella rappresentazione è già stabilita indipendentemente, ma non è autosufficiente per un percorso che usa prima il limite per costruire la derivata dell'esponenziale. Scegliere l'ordine dei prerequisiti e dichiararlo. Per il passaggio al limite dopo la divisione per x, stimare il resto oppure giustificare la convergenza uniforme della serie trasformata.</li>
+  </ol>
+</section>
+
+<section id="collegamenti">
+  <h2>Contenuti già presenti da collegare</h2>
+  <p>Questi argomenti non sono lacune dell'intero repository. Conviene renderli raggiungibili nel percorso sui limiti e ampliare solo le parti indicate.</p>
+  <div class="table">
+  <table>
+    <thead><tr><th>Contenuto</th><th>Copertura esistente e intervento</th></tr></thead>
+    <tbody>
+      <tr><td>Infinitesimi, parte principale, equivalenze e cancellazioni</td><td><a href="derivatives/asymptotic-expansion.md">derivatives/asymptotic-expansion.md</a> contiene definizioni, regole, controesempi e scelta dell'ordine. Da <a href="limits/remarkable-limits.md">remarkable-limits.md</a>, sezione Asymptotic equivalence, aggiungere un avvertimento sulle somme e un rinvio a Where substitution fails.</td></tr>
+      <tr><td>Limiti delle funzioni monotone</td><td><a href="functions/increasing-and-decreasing-functions.md">increasing-and-decreasing-functions.md</a>, righe 123-153, contiene i limiti laterali interni con prova. Collegarlo dai teoremi sui limiti e aggiungere i casi agli estremi e all'infinito, identificati con infimo o supremo anche infiniti.</td></tr>
+      <tr><td>Taylor e de l'Hôpital</td><td><a href="derivatives/taylor-formula-with-remainder.md">taylor-formula-with-remainder.md</a>, <a href="series/taylor-series.md">taylor-series.md</a> e <a href="differential-calculus-theorems/hopital-rule.md">hopital-rule.md</a> esistono già. Per sviluppi finiti, dare precedenza al rinvio alla formula con resto; non occorre duplicare queste pagine in limits.</td></tr>
+      <tr><td>Limiti delle successioni, Cauchy, limsup e liminf</td><td>Sono presenti in <a href="sequences/convergent-and-divergent-sequences.md">convergent-and-divergent-sequences.md</a>, <a href="sequences/cauchy-sequence.md">cauchy-sequence.md</a> e <a href="sequences/superior-and-inferior-limits-of-a-sequence.md">superior-and-inferior-limits-of-a-sequence.md</a>. Manca il raccordo di Heine alle funzioni, non un secondo corso sulle successioni.</td></tr>
+      <tr><td>Continuità e inversa</td><td><a href="functions/continuous-functions.md">continuous-functions.md</a> e <a href="functions/inverse-function.md">inverse-function.md</a> sono presenti; <a href="derivatives/derivative-of-the-inverse-function.md">derivative-of-the-inverse-function.md</a> richiama la continuità dell'inversa. Un completamento utile è una prova autonoma per funzioni continue strettamente monotone su intervalli, con limiti agli estremi. I risultati più generali del PDF §4.6 sono facoltativi.</td></tr>
+      <tr><td>Intorni e punti di accumulazione</td><td><a href="sets-and-numbers/topology-of-the-real-line.md">topology-of-the-real-line.md</a> esplicita già il ruolo del dominio. Allineare limits.md a questa impostazione. Se si ammettono domini arbitrari, precisare anche che la continuità in un punto isolato non si caratterizza mediante un limite su un intorno bucato.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="pdf">
+  <h2>Cosa utilizzare del PDF</h2>
+  <p>Il contributo più utile è nei §§4.1-4.5: ipotesi sul dominio, restrizioni, Heine e composizione. Il §4.7 offre esercizi su O, o e ∼; il §4.8 suggerisce un'estensione alle scale asintotiche generali. Le pp. indicate sono quelle stampate: nel visualizzatore PDF occorre aggiungere 8, per esempio p. 138 corrisponde alla pagina PDF 146.</p>
+  <div class="table">
+  <table>
+    <thead><tr><th>Riferimento</th><th>Uso concreto</th></tr></thead>
+    <tbody>
+      <tr><td>§4.1, pp. 136-139<br>PDF 144-147</td><td>Fondamenti sul dominio, località, restrizione e criterio di Heine. È il materiale da riprendere per primo, con formulazione e dimostrazioni originali.</td></tr>
+      <tr><td>§§4.2-4.3, pp. 141-145<br>PDF 149-153</td><td>Limiti laterali, estremi del dominio e distinzione fra limite e continuità nei punti isolati. Il PDF usa una convenzione esplicita di limite relativo al dominio, da dichiarare se adottata.</td></tr>
+      <tr><td>§4.4, pp. 146-150<br>PDF 154-158</td><td>Limiti delle monotone, algebra nei reali estesi e stabilità del limite sotto un errore che tende a zero. Il teorema 4.4.3 sugli incrementi f(x+1)−f(x) è un possibile approfondimento, non una lacuna essenziale.</td></tr>
+      <tr><td>§4.5, pp. 150-152<br>PDF 158-160</td><td>Teorema generale di composizione e sostituzioni. Utile anche per riparare il rinvio nella prova della derivata dell'inversa.</td></tr>
+      <tr><td>§4.6, pp. 152-157<br>PDF 160-165</td><td>Controesempi all'inversione automatica di un limite. Selezionare un esempio e il caso classico monotono; le nozioni aggiuntive di limite forte e funzioni regolate introdotte nel testo non sono necessarie al percorso di base.</td></tr>
+      <tr><td>§4.7, pp. 158-162<br>PDF 166-170</td><td>Esercizi sui rapporti asintotici e sulle perturbazioni trascurabili. Uniformare le convenzioni prima di adattarli.</td></tr>
+      <tr><td>§4.8, pp. 163-165<br>PDF 171-173</td><td>Estensione facoltativa della pagina esistente sugli sviluppi, dalle potenze alle scale generali. Gli esempi su fattoriale e numeri armonici sono proposti senza prova nel capitolo; non sostituiscono una trattazione dimostrata.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Due anomalie del PDF sono state controllate anche sulla pagina renderizzata. Alla definizione 4.7.11, p. 160, ω è presentata come sinonimo di o: non trasferire questa identificazione. Alla definizione 4.8.2, p. 163, dopo n termini compare o(fₙ₊₁). Con la scala x, x², ... e la funzione x+x², già il resto dopo il primo termine è x² e non o(x²). Per la definizione usuale di sviluppo asintotico il resto dopo n termini è o(fₙ); un controllo O(fₙ₊₁) è una condizione più forte, da giustificare quando disponibile.</p>
+  <p>Anche le convenzioni differiscono. Nel §4.7, ≪ indica big-O, mentre <a href="limits/remarkable-limits.md">remarkable-limits.md</a> lo definisce come little-o. Inoltre il PDF definisce O attraverso un rapporto sul dominio in cui il denominatore non si annulla; il repository parte da una disuguaglianza. Conservare una sola convenzione esplicita negli articoli.</p>
+</section>
+
+<section id="editoriale">
+  <h2>Controlli editoriali e stato dei file</h2>
+  <ul>
+    <li>I nove frontmatter contengono titolo, source, licenza CC BY-NC 4.0 e tag ordinati alfabeticamente. Le intestazioni degli articoli sono H2. Le 149 occorrenze di link interni con percorso ../slug/ corrispondono a source presenti nel repository; questo controllo non verifica lo stato del sito pubblicato.</li>
+    <li>Le nove immagini referenziate esistono e i nove SVG sono XML validi. Non è stata svolta una verifica grafica delle curve: questi controlli non certificano il contenuto matematico delle illustrazioni.</li>
+    <li>Correggere i doppi backslash nelle graffe di <a href="limits/asymptotes.md">asymptotes.md</a>, riga 34; <a href="limits/big-o-notation.md">big-o-notation.md</a>, righe 63 e 196; <a href="limits/little-o-notation.md">little-o-notation.md</a>, riga 69. In big-o-notation.md, riga 202, correggere anche <code>O\\!</code>. Questi sono difetti di sorgente MathJax, distinti dalle separazioni di riga negli ambienti align.</li>
+    <li>Rimuovere il grassetto dalle etichette di teoremi e definizioni in theorems-on-limits.md, squeeze-theorem.md e big-o-notation.md. Sostituire l'apostrofo curvo in remarkable-limits.md, riga 252. Uniformare la punteggiatura inline alla convenzione del repository.</li>
+    <li>In <a href="limits/theorems-on-limits.md">theorems-on-limits.md</a>, riga 56, la disuguaglianza usata è quella triangolare, non quella triangolare inversa; alla riga 64 correggere "f the limit" in "If the limit" e rimuovere il collegamento improprio fra positività e monotonia; alle righe 118-122 sostituire "large inequality" con "non-strict inequality". Ridurre i riepiloghi ripetitivi e le frasi enfatiche, come "cornerstone" nella prova trigonometrica di squeeze-theorem.md.</li>
+  </ul>
+  <div class="table">
+  <table>
+    <thead><tr><th>Articolo esaminato</th><th>Esito principale</th></tr></thead>
+    <tbody>
+      <tr><td><a href="limits/limits.md">Limits</a></td><td>Integrare definizioni, verifiche ε-δ e criterio laterale.</td></tr>
+      <tr><td><a href="limits/theorems-on-limits.md">Theorems on Limits</a></td><td>Aggiungere località, restrizioni, Heine e composizione.</td></tr>
+      <tr><td><a href="limits/algebra-of-limits.md">Algebra of Limits</a></td><td>Completare prove e casi infiniti; correggere la classificazione delle forme.</td></tr>
+      <tr><td><a href="limits/squeeze-theorem.md">Squeeze Theorem</a></td><td>Correggere l'introduzione e completare la prova all'infinito.</td></tr>
+      <tr><td><a href="limits/indeterminate-forms.md">Indeterminate Forms</a></td><td>Integrare esempi esponenziali e giustificare il logaritmo.</td></tr>
+      <tr><td><a href="limits/remarkable-limits.md">Remarkable Limits</a></td><td>Correggere parametri e fattoriale; chiarire prerequisiti e sostituzioni asintotiche.</td></tr>
+      <tr><td><a href="limits/asymptotes.md">Asymptotes</a></td><td>Separare le direzioni e richiedere p ≠ 0 per gli asintoti obliqui.</td></tr>
+      <tr><td><a href="limits/big-o-notation.md">Big-O Notation</a></td><td>Correggere stime, soglie all'infinito e condizioni sui rapporti.</td></tr>
+      <tr><td><a href="limits/little-o-notation.md">Little-o Notation</a></td><td>Precisare costanti, potenze e significato delle operazioni sulle classi.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+  <p class="meta">Verifica del report: struttura HTML, collegamenti locali e ancore controllati. L'anteprima nel browser non è stata verificata, perché la policy del browser blocca l'apertura di questo file locale.</p>
+</main>
+</body>
+</html>
