@@ -49,7 +49,7 @@ $$\mathbf{n}\cdot(P-P_0) = 0$$
 
 The base point satisfies the equation, since $P-P_0=\mathbf{0}$ there and the dot product with the zero vector is zero. Conversely, a point $P$ satisfying the equation has $P-P_0$ orthogonal to $\mathbf{n},$ hence lying in $\pi,$ so $P$ belongs to $\pi.$ The solution set is the plane $\pi.$
 
-> In the [Cartesian plane](../lines/) the equation $ax+by+c=0$ describes a line, and $(a,b)$ is a normal vector to it. This is the same construction one dimension higher, with a normal vector of three components. A single [linear equation](../linear-equations/) removes one degree of freedom from the ambient space, which leaves a line in $\mathbb{R}^2$ and a plane in $\mathbb{R}^3.$
+> In the [Cartesian plane](../the-cartesian-coordinate-plane/) the equation $ax+by+c=0$ describes a line, and $(a,b)$ is a normal vector to it. This is the same construction one dimension higher, with a normal vector of three components. A single [linear equation](../linear-equations/) removes one degree of freedom from the ambient space, which leaves a line in $\mathbb{R}^2$ and a plane in $\mathbb{R}^3.$
 
 ## The scalar equation
 

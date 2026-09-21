@@ -27,7 +27,7 @@ Here $P_0$ is a fixed point on the line, $\vec{v}$ is a direction vector, and $t
 
 ## From vector to parametric form
 
-An [orthonormal basis](../inner-product-spaces/) determines a Cartesian reference system whose axes are perpendicular and whose basis vectors have unit length. In the standard Cartesian plane, the x-axis is aligned with $\vec{i}=(1,0)$ and the y-axis with $\vec{j}=(0,1)$.
+An [orthonormal basis](../inner-product-spaces/) determines a Cartesian reference system whose axes are perpendicular and whose basis vectors have unit length. In the standard [Cartesian plane](../the-cartesian-coordinate-plane/), the x-axis is aligned with $\vec{i}=(1,0)$ and the y-axis with $\vec{j}=(0,1)$.
 
 We write the fixed point $P_0$ and a generic point $P$ in coordinates:
 

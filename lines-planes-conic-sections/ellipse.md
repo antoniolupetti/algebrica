@@ -55,7 +55,7 @@ Choosing the point $P=(a,0)$ at the right endpoint of the major axis places $P$ 
 
 $$\overline{F_1P} + \overline{F_2P} = (a+c) + (a-c) = 2a$$
 
-To obtain the equation of the curve we impose this same condition on a general point $P=(x,y).$ Writing each distance with the distance formula gives:
+To obtain the equation of the curve we impose this same condition on a general point $P=(x,y).$ Writing each distance with the [distance formula](../the-cartesian-coordinate-plane/) gives:
 
 $$\sqrt{(x+c)^2+y^2} + \sqrt{(x-c)^2+y^2} = 2a$$
 

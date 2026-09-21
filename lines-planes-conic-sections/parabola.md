@@ -56,7 +56,7 @@ A parabola is the set of all points in the plane equidistant from a fixed point 
 
 ![IMG 2.](svg/parabola-2.svg)
 
-The line through the focus perpendicular to the directrix is the axis of the parabola. The point $V$ where the parabola meets its axis is the vertex. A parabola with vertex at the origin and axis along the $y$-axis has equation:
+The line through the focus perpendicular to the directrix is the axis of the parabola. The point $V$ where the parabola meets its axis is the vertex. A parabola with vertex at the [origin](../the-cartesian-coordinate-plane/) and axis along the $y$-axis has equation:
 
 $$y = ax^2, \quad a \neq 0$$
 

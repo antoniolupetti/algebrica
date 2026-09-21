@@ -56,7 +56,7 @@ $$d(P, C) = r \qquad r \in \mathbb{R},\ r > 0$$
 
 ![IMG. 2](svg/circumference-2.svg)
 
-Let $C = (x_0, y_0)$ be the coordinates of the center and $P = (x, y)$ a generic point of the circumference. Using the formula for the distance between two points in the plane, the condition $d(P, C) = r$ becomes:
+Let $C = (x_0, y_0)$ be the coordinates of the center and $P = (x, y)$ a generic point of the circumference. Using the formula for the [distance between two points in the plane](../the-cartesian-coordinate-plane/), the condition $d(P, C) = r$ becomes:
 
 $$\sqrt{(x - x_0)^2 + (y - y_0)^2} = r$$
 

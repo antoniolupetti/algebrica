@@ -72,7 +72,7 @@ This occurs when both limits at infinity equal the same value $L$:
 
 $$\lim_{x \to +\infty} f(x) = L \quad \text{and} \quad \lim_{x \to -\infty} f(x) = L$$
 
-> An asymptote is a line that the graph of a function approaches arbitrarily closely as either the $x$-value or the $y$-value increases or decreases without bound. The distance between the curve and the asymptote tends to zero as the graph extends toward the extremes of the coordinate plane. A systematic treatment of horizontal, vertical, and [oblique asymptotes](../asymptotes/) is developed in the dedicated page.
+> An asymptote is a line that the graph of a function approaches arbitrarily closely as either the $x$-value or the $y$-value increases or decreases without bound. The distance between the curve and the asymptote tends to zero as the graph extends toward the extremes of the [coordinate plane](../the-cartesian-coordinate-plane/). A systematic treatment of horizontal, vertical, and [oblique asymptotes](../asymptotes/) is developed in the dedicated page.
 
 ## Conditions for limit existence and continuity
 

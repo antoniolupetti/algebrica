@@ -10,7 +10,7 @@ tags:
 ---
 ## Radial and angular description of a point
 
-The Cartesian coordinate system describes a point in the plane by projecting it onto two perpendicular axes, which privileges horizontal and vertical directions. In many problems the distance from a fixed point and the direction relative to a fixed ray are more natural descriptors, and this leads to the polar coordinate system. Fix in the plane:
+The [Cartesian coordinate system](../the-cartesian-coordinate-plane/) describes a point in the plane by projecting it onto two perpendicular axes, which privileges horizontal and vertical directions. In many problems the distance from a fixed point and the direction relative to a fixed ray are more natural descriptors, and this leads to the polar coordinate system. Fix in the plane:
 
 + a point $O$, called the pole
 + a reference half-line from $O$, called the polar axis

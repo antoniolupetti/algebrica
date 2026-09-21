@@ -27,7 +27,7 @@ With this definition, the equation $x^2 + 1 = 0$ now has two distinct complex [r
 
 The introduction of complex numbers is sometimes treated as a matter of convenient notation, as though the symbol $i$ were simply declared to satisfy $i^2 = -1$ and the matter were settled. This approach leaves an important question unanswered: does such an object actually exist, and if so, in what mathematical sense? Answering this requires a short excursion into the construction of $\mathbb{C}$ from the [real numbers](../real-numbers/).
 
-The starting point is the Cartesian product $\mathbb{R}^2$, the set of all ordered pairs of real numbers. Each element of this set is a pair of the form $(a, b)$ with $a, b \in \mathbb{R}$. This [set](../sets/) is the familiar Euclidean plane, but here we want to equip it with an algebraic structure that makes it a [field](../fields/). To do so, we must define addition and multiplication on $\mathbb{R}^2$.
+The starting point is the Cartesian product $\mathbb{R}^2$, the set of all ordered pairs of real numbers. Each element of this set is a pair of the form $(a, b)$ with $a, b \in \mathbb{R}$. This [set](../sets/) is the familiar [Euclidean plane](../the-cartesian-coordinate-plane/), but here we want to equip it with an algebraic structure that makes it a [field](../fields/). To do so, we must define addition and multiplication on $\mathbb{R}^2$.
 
 Addition is defined componentwise. Given two pairs $(a, b)$ and $(c, d)$, their sum is:
 

@@ -19,7 +19,7 @@ The same form, with the symbol $>$ replaced by $<$, $\geq$, or $\leq$, governs e
 
 $$y = ax^2 + bx + c$$
 
-The pairs $(x, y)$ that satisfy this relation form a [parabola](../parabola/) in the Cartesian plane, and the inequality $ax^2 + bx + c > 0$ asks for the values of $x$ at which the output $y$ is positive. The algebraic problem of finding where the polynomial is positive is therefore translated into the geometric problem of locating the regions of the horizontal axis above which the parabola lies. The shape and position of the parabola are governed by the three coefficients.
+The pairs $(x, y)$ that satisfy this relation form a [parabola](../parabola/) in the [Cartesian plane](../the-cartesian-coordinate-plane/), and the inequality $ax^2 + bx + c > 0$ asks for the values of $x$ at which the output $y$ is positive. The algebraic problem of finding where the polynomial is positive is therefore translated into the geometric problem of locating the regions of the horizontal axis above which the parabola lies. The shape and position of the parabola are governed by the three coefficients.
 
 + The coefficient $a$ controls the direction and the width of the curve. Its sign decides whether the parabola opens upward or downward, while larger values of $|a|$ make the graph narrower and smaller values make it wider.
 + The coefficient $b$, acting together with $a$, fixes the horizontal location of the axis of symmetry and therefore of the vertex, whose abscissa is $-b/2a$.

@@ -20,7 +20,7 @@ This relation involves a single unknown $x$ and the values that satisfy it are i
 
 $$y = ax^2 + bx + c$$
 
-The pairs $(x, y)$ that satisfy this relation form a [parabola](../parabola/) in the Cartesian plane. Solving the original equation then amounts to asking for which values of $x$ the output $y$ equals zero, so the algebraic problem of finding the roots is translated into the geometric problem of locating the points where the parabola meets the horizontal axis.
+The pairs $(x, y)$ that satisfy this relation form a [parabola](../parabola/) in the [Cartesian plane](../the-cartesian-coordinate-plane/). Solving the original equation then amounts to asking for which values of $x$ the output $y$ equals zero, so the algebraic problem of finding the roots is translated into the geometric problem of locating the points where the parabola meets the horizontal axis.
 
 ![Img. 1](svg/quadratic-equations.svg)
 

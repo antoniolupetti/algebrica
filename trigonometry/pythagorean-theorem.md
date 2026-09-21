@@ -122,7 +122,7 @@ The identity therefore holds for every real $\theta$ and is simply the Pythagore
 
 ## Distance in the Cartesian plane and in space
 
-Given two points $P_1 = (x_1, y_1)$ and $P_2 = (x_2, y_2)$ in the Cartesian plane, the segment joining them is the hypotenuse of a right triangle whose legs are parallel to the coordinate axes. The horizontal leg has length $|x_1 - x_2|$ and the vertical leg has length $|y_1 - y_2|$. The Pythagorean theorem applied to this triangle yields the distance formula:
+Given two points $P_1 = (x_1, y_1)$ and $P_2 = (x_2, y_2)$ in the [Cartesian plane](../the-cartesian-coordinate-plane/), the segment joining them is the hypotenuse of a right triangle whose legs are parallel to the coordinate axes. The horizontal leg has length $|x_1 - x_2|$ and the vertical leg has length $|y_1 - y_2|$. The Pythagorean theorem applied to this triangle yields the distance formula:
 
 $$
 d(P_1, P_2) = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}

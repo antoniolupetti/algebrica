@@ -40,7 +40,7 @@ Angles written as deviations from $\pi$ or $2\pi$ are measured from a horizontal
 
 ## Reduction formulas for $\pi/2 + \alpha$
 
-Consider an angle of the form $\pi/2+\alpha$ where $\alpha$ denotes an acute angle measured from the positive $x$-axis. Starting from $\frac{\pi}{2}$, which corresponds to the vertical direction, the addition of $\alpha$ rotates the terminal side slightly to the left of the vertical axis, as shown in the figure below. The resulting angle lies strictly between $\frac{\pi}{2}$ and $\pi$, and therefore its terminal side falls in the second quadrant of the Cartesian plane.
+Consider an angle of the form $\pi/2+\alpha$ where $\alpha$ denotes an acute angle measured from the positive $x$-axis. Starting from $\frac{\pi}{2}$, which corresponds to the vertical direction, the addition of $\alpha$ rotates the terminal side slightly to the left of the vertical axis, as shown in the figure below. The resulting angle lies strictly between $\frac{\pi}{2}$ and $\pi$, and therefore its terminal side falls in the second quadrant of the [Cartesian plane](../the-cartesian-coordinate-plane/).
 
 ![IMG. 1](svg/reduction-formulas-and-reference-angles-1.svg)
 

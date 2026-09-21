@@ -50,7 +50,7 @@ $$
 
 ## Reference angles and reflections
 
-The method of [reference angles](../identities-using-reference-angles/), sometimes called the method of reflections, is a family of identities that allow one to express a trigonometric function of a non-acute angle in terms of the corresponding acute angle in the first quadrant of the Cartesian plane. Any trigonometric function, whether [sine](../sine-and-cosine/), [cosine](../sine-and-cosine/), [tangent](../tangent-and-cotangent/), or [cotangent](../tangent-and-cotangent/), with an argument of the form:
+The method of [reference angles](../identities-using-reference-angles/), sometimes called the method of reflections, is a family of identities that allow one to express a trigonometric function of a non-acute angle in terms of the corresponding acute angle in the first quadrant of the [Cartesian plane](../the-cartesian-coordinate-plane/). Any trigonometric function, whether [sine](../sine-and-cosine/), [cosine](../sine-and-cosine/), [tangent](../tangent-and-cotangent/), or [cotangent](../tangent-and-cotangent/), with an argument of the form:
 
 $$
 \frac{\pi}{2} \pm \alpha, \quad \pi \pm \alpha, \quad \frac{3\pi}{2} \pm \alpha, \quad 2\pi - \alpha

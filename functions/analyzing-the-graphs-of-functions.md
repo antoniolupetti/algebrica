@@ -15,7 +15,7 @@ Studying the graph of a function $y=f(x)$ means recovering its qualitative shape
 
 + Determine the [domain](../determining-the-domain-of-a-function/), the set of real numbers on which $f$ is defined.
 + Test the function for [symmetry](../even-and-odd-functions/) about the $y$-axis or the origin.
-+ Find the intercepts with the coordinate axes.
++ Find the intercepts with the [coordinate axes](../the-cartesian-coordinate-plane/).
 + Study the sign of $f$ to locate the regions where the graph lies above and below the $x$-axis.
 + Identify the [asymptotes](../asymptotes/), vertical, horizontal, or oblique.
 + Use the first derivative to find the intervals of [monotonicity](../increasing-and-decreasing-functions/) and the local extrema.

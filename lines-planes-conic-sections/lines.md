@@ -14,7 +14,7 @@ tags:
 ---
 ## Lines in the coordinate plane
 
-A line is a set of points extending without end in two opposite directions, with no thickness and no endpoints. Two distinct points determine a unique line. In the Cartesian plane, a line is the [solution set](../equations/) of a [first-degree equation](../linear-equations/) in the variables $x$ and $y$. Its implicit form is:
+A line is a set of points extending without end in two opposite directions, with no thickness and no endpoints. Two distinct points determine a unique line. In the [Cartesian plane](../the-cartesian-coordinate-plane/), a line is the [solution set](../equations/) of a [first-degree equation](../linear-equations/) in the variables $x$ and $y$. Its implicit form is:
 
 $$ax + by + c = 0$$
 

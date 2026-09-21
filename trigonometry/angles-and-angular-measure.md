@@ -25,7 +25,7 @@ The dynamic interpretation requires a choice of direction. By convention, the co
 
 ## Standard position
 
-**Definition 2.** An angle is said to be in standard position when its vertex coincides with the origin of the Cartesian plane and one of its sides, called the initial side, lies along the positive $x$-axis. The remaining side, called the terminal side, is determined by the magnitude and the orientation of the rotation. In this configuration, every angle is identified by the position of its terminal side alone.
+**Definition 2.** An angle is said to be in standard position when its vertex coincides with the origin of the [Cartesian plane](../the-cartesian-coordinate-plane/) and one of its sides, called the initial side, lies along the positive $x$-axis. The remaining side, called the terminal side, is determined by the magnitude and the orientation of the rotation. In this configuration, every angle is identified by the position of its terminal side alone.
 
 
 ![IMG. 2](svg/angles-and-angular-measure-2.svg)

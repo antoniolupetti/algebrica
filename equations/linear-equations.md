@@ -111,7 +111,7 @@ A linear equation in two unknowns has the standard form:
 
 $$ax + by = c$$
 
-In this expression $a, b, c \in \mathbb{R}$, with at least one between $a$ and $b$ different from zero. Geometrically, its solution set is a straight [line](../lines/) in the Cartesian plane, and the equation is the implicit representation of that line. The constant term $c$ determines the position of the line: when $c \neq 0$ the line does not pass through the origin, while when $c = 0$ the equation reduces to the homogeneous form and the corresponding line passes through the origin.
+In this expression $a, b, c \in \mathbb{R}$, with at least one between $a$ and $b$ different from zero. Geometrically, its solution set is a straight [line](../lines/) in the [Cartesian plane](../the-cartesian-coordinate-plane/), and the equation is the implicit representation of that line. The constant term $c$ determines the position of the line: when $c \neq 0$ the line does not pass through the origin, while when $c = 0$ the equation reduces to the homogeneous form and the corresponding line passes through the origin.
 
 The general solution can be obtained by treating one of the unknowns as a free parameter. Assuming $b \neq 0$ and setting $x = \lambda$, the equation gives:
 

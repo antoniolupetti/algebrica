@@ -46,7 +46,7 @@ $$\left| PF_1 - PF_2 \right| = k$$
 
 ![IMG.2](svg/hyperbola-2.svg)
 
-$F_1$ and $F_2$ are the foci and $k$ is the constant. The midpoint of the segment $\overline{F_1F_2}$ is the center, which here coincides with the origin of the Cartesian axes.
+$F_1$ and $F_2$ are the foci and $k$ is the constant. The midpoint of the segment $\overline{F_1F_2}$ is the center, which here coincides with the origin of the [Cartesian axes](../the-cartesian-coordinate-plane/).
 
 The line through the two foci is the transverse axis, the $x$-axis here. It meets the hyperbola at the two vertices $A(a, 0)$ and $A'(-a, 0),$ so $a$ is the semi-transverse axis. The perpendicular line through the center is the conjugate axis, the $y$-axis. The curve does not cross it, and the co-vertices $B(0, b)$ and $B'(0, -b)$ define the semi-conjugate axis $b.$
 

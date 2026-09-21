@@ -48,7 +48,7 @@ The total length of the polygonal line inscribed in the curve is therefore a Rie
 
 ## Arc length in Cartesian form
 
-The construction just described leads to the definition of length for curves expressed as graphs of functions in the Cartesian plane. Consider a function $f$ with a continuous [derivative](../derivatives/) on the closed [interval](../intervals/) $[a, b].$ The arc length of the graph of $f$ from $x = a$ to $x = b$ is defined by the following definite integral:
+The construction just described leads to the definition of length for curves expressed as graphs of functions in the [Cartesian plane](../the-cartesian-coordinate-plane/). Consider a function $f$ with a continuous [derivative](../derivatives/) on the closed [interval](../intervals/) $[a, b].$ The arc length of the graph of $f$ from $x = a$ to $x = b$ is defined by the following definite integral:
 
 $$L = \int_a^b \sqrt{1 + [f'(x)]^2} \ dx \tag{3}$$
 

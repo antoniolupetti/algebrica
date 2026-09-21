@@ -428,7 +428,7 @@ $$
 (a, b) = (a', b') \iff a = a' \text{ and } b = b'
 $$
 
-In general $A \times B$ and $B \times A$ are not the same set. If $A$ contains $m$ elements and $B$ contains $n$ elements, then $A \times B$ contains $mn$ elements. For example $\mathbb{R} \times \mathbb{R},$ which is the set of all pairs of [real numbers](../real-numbers/), is the Cartesian plane $\mathbb{R}^2.$
+In general $A \times B$ and $B \times A$ are not the same set. If $A$ contains $m$ elements and $B$ contains $n$ elements, then $A \times B$ contains $mn$ elements. For example $\mathbb{R} \times \mathbb{R},$ which is the set of all pairs of [real numbers](../real-numbers/), is the [Cartesian plane](../the-cartesian-coordinate-plane/) $\mathbb{R}^2.$
 
 Given the sets $A_1, A_2, \ldots, A_n,$ their Cartesian product is the set of all ordered $n$-tuples:
 
