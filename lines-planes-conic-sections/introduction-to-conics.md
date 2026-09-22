@@ -10,7 +10,6 @@ tags:
   - invariants
   - quadratic-forms
 ---
-
 ## The general second-degree equation
 
 A conic is defined by a quadratic equation in two variables. In Cartesian coordinates its general equation is:
