@@ -24,7 +24,7 @@ $$\int_{a}^{b} f(x) \ dx = F(b) - F(a) \tag{1}$$
 
 When $f$ is continuous on $[a,b]$ and $F$ is an antiderivative of $f,$ the fundamental theorem of calculus gives $(1).$ The integral is obtained by evaluating $F$ at the endpoints $a$ and $b.$ Geometrically, it is the signed area between the graph of $f$ and the $x$ axis over $[a,b].$ Regions above the axis contribute positively, while regions below it contribute negatively.
 
-This way of proceeding has a non-trivial limitation: it works only when the two endpoints enclose a bounded interval. More precisely, recalling the [Riemann integrability criteria](../riemann-integrability-criteria), the interval on which the integral is defined must be bounded, and $f$ must be bounded.
+This way of proceeding has a non-trivial limitation: it works only when the two endpoints enclose a bounded interval. More precisely, recalling the [Riemann integrability criteria](integrals/riemann-integrability-criteria.md), the interval on which the integral is defined must be bounded, and $f$ must be bounded.
 
 What happens when one of these hypotheses fails and one of the limits of integration is $+\infty$ or $-\infty?$ We would find ourselves in a case of this kind:
 
