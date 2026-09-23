@@ -24,6 +24,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html), Stanley N. Burris, H. P. Sankappanavar
 + [Elementary Number Theory: Primes, Congruences, and Secrets](https://wstein.org/ent/ent.pdf), William Stein
 + [Foundations of Module and Ring Theory: A Handbook for Study and Research](https://www.math.uni-duesseldorf.de/~wisbauer/book.pdf), Robert Wisbauer
++ [The Great Story of Numbers](https://egbertrijke.github.io/elementary-number-theory-fall.pdf), Egbert Rijke
 + [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
 + [Introduction to Modern Algebra](http://aleph0.clarku.edu/~djoyce/ma225/algebra.pdf), David Joyce
 + [An Invitation to General Algebra and Universal Constructions](https://math.berkeley.edu/~gbergman/245/3.2.pdf), George M. Bergman
