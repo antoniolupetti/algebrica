@@ -10,99 +10,127 @@ tags:
   - vieta-formulas
 ---
 
-## Introduction
+## Introduction and formulas
 
-Given a [polynomial equation](../polynomial-equations/) with assigned roots, the coefficients are not free parameters and are determined, up to a multiplicative constant, by the roots themselves. The identities that explicitly relate the roots to the coefficients are known as Vieta's formulas. They provide one of the simplest examples of how symmetric relationships between the roots are reflected in the coefficients of a [polynomial](../polynomials/).
+Recall that a [polynomial equation](../polynomial-equations/) in one variable has the form $P(x) = 0,$ where $P(x)$ is a [polynomial](../polynomials/). Its standard form is:
 
-The formulas can be stated in two equivalent ways. 
-
-+ From the perspective of solving an equation, they give the sum, the product, and a hierarchy of intermediate symmetric expressions of the roots, all in terms of the coefficients. 
-+ From the perspective of constructing a polynomial, they describe how to assemble the coefficients once the roots are fixed.
-
-
-## Quadratic case
-
-Consider the [quadratic equation](../quadratic-equations/) associated with a quadratic [trinomial](../trinomials/) in standard form:
-
-$$
-ax^2 + bx + c = 0, \qquad a \neq 0
+$$\tag{1}
+a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0
 $$
 
-If $x_1$ and $x_2$ denote its two roots in $\mathbb{C}$, counted with multiplicity, the polynomial admits the factorisation $a(x - x_1)(x - x_2)$. Expanding the product gives:
+The coefficients $a_0, a_1, \ldots, a_n$ may be real or [complex numbers](../complex-numbers/), and $n$ is the degree of the equation. The condition $a_n \neq 0$ is required for $(1)$ to have degree $n.$ For example, a [quadratic equation](../quadratic-equations/) is a polynomial equation of degree $n=2,$ with $a \neq 0$ and standard form:
+
+$$ax^2 + bx + c = 0 \tag{2}$$
+
+For equations of the form $(1)$ or $(2),$ the identities that explicitly relate the [roots](../roots-of-a-polynomial/) to the coefficients of the polynomial are known as Vieta's formulas. These formulas can be viewed in two equivalent ways. They express the sum and product of the roots in terms of the coefficients to help solve an equation, and they describe how to determine the coefficients of a polynomial once its roots are known.
+
+- - -
+
+Consider a general quadratic equation in the standard form $(2).$ Denoting its two roots by $x_1$ and $x_2,$ we can factor the polynomial as follows:
+
+$$a(x - x_1)(x - x_2) \tag{3}$$
+
+[Expanding the product](../multiplying-polynomials/) gives:
 
 $$
-a(x - x_1)(x - x_2) = ax^2 - a(x_1 + x_2)x + ax_1 x_2
+ax^2 - a(x_1 + x_2)x + ax_1 x_2
 $$
 
-Equating the coefficients of $x^2$, $x$, and the constant term with those of $ax^2 + bx + c$ yields Vieta's formulas in the quadratic case:
+Comparing coefficients with $(2),$ we obtain $-a(x_1 + x_2) = b$ and $ax_1x_2 = c.$ Since $a \neq 0,$ we can divide by $a$ to obtain Vieta's formulas for quadratic equations:
+
+$$\tag{4}
+\begin{align}
+x_1 + x_2 &= -\frac{b}{a} \\[6pt]
+x_1 x_2 &= \frac{c}{a}
+\end{align}
+$$
+
+These identities express the relationships between the roots and the coefficients. They hold for every value of the discriminant, including the case of [complex conjugate roots](../quadratic-equations-with-complex-solutions/).
+
+- - -
+
+An alternative derivation of $(4)$ uses the [quadratic formula](../quadratic-formula/), which gives the two roots as follows:
 
 $$
-x_1 + x_2 = -\frac{b}{a}, \qquad x_1 x_2 = \frac{c}{a}
+x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
-These two identities encode all the information about the roots that can be read directly from the coefficients without solving the equation. They hold for every value of the [discriminant](../quadratic-formula/), including the case in which the roots form a pair of complex conjugates.
+Recalling that $\Delta = b^2 - 4ac,$ we add $x_1$ and $x_2$ to obtain the first identity in $(4)$:
 
-> The same identities can be derived from the [quadratic formula](../quadratic-formula/) by computing the sum and the product of the two expressions $\frac{-b + \sqrt{\Delta}}{2a}$ and $\frac{-b - \sqrt{\Delta}}{2a}$. The argument by factorisation is shorter and generalises to higher degrees with no modification.
+$$
+\begin{align}
+x_1 + x_2 &= \frac{-b + \sqrt{\Delta} - b - \sqrt{\Delta}}{2a} \\[6pt]
+&= \frac{-2b}{2a} \\[6pt]
+&= -\frac{b}{a}
+\end{align}
+$$
 
+To compute the product, we apply the [difference-of-squares identity](../notable-products/) $(u + v)(u - v) = u^2 - v^2$ to the numerator and substitute the expression for the discriminant. This gives the second identity in $(4)$:
+
+$$
+\begin{align}
+x_1 x_2 &= \frac{(-b + \sqrt{\Delta})(-b - \sqrt{\Delta})}{4a^2} \\[6pt]
+&= \frac{b^2 - \Delta}{4a^2} \\[6pt]
+&= \frac{b^2 - (b^2 - 4ac)}{4a^2} \\[6pt]
+&= \frac{c}{a}
+\end{align}
+$$
 
 ## General form
 
-The same reasoning applies, with no essential change, to a polynomial of arbitrary degree. Let $p(x)$ be a polynomial of degree $n$ with leading coefficient $a_n \neq 0$:
+The formulas in $(4)$ extend to any polynomial $P(x)$ of degree $n$ written in the form:
 
-$$
-p(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
-$$
-
-By the [fundamental theorem of algebra](../roots-of-a-polynomial/), $p(x)$ admits exactly $n$ roots in $\mathbb{C}$, counted with multiplicity. Denoting them $x_1, x_2, \ldots, x_n$, the polynomial factors as:
-
-$$
-p(x) = a_n (x - x_1)(x - x_2) \cdots (x - x_n)
+$$ \tag{5}
+P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
 $$
 
-Expanding the product and collecting like terms produces a polynomial whose coefficients are themselves polynomial expressions in the roots. These expressions share two structural features: they are symmetric, in the sense that any permutation of the roots leaves them unchanged, and elementary, in the sense that each consists of a sum of products of distinct roots. They are the elementary symmetric polynomials.
-
-For $k = 1, 2, \ldots, n$, the $k$-th elementary symmetric polynomial in the roots is defined as follows.
+By the [fundamental theorem of algebra](../roots-of-a-polynomial/), the polynomial in $(5)$ has $n$ roots in $\mathbb{C},$ counted with multiplicity. Denoting them by $x_1, x_2, \ldots, x_n,$ we can factor it as in the quadratic case in $(3)$:
 
 $$
+P(x) = a_n (x - x_1)(x - x_2) \cdots (x - x_n)
+$$
+
+To expand the product, recall that a term in $x^{n-k}$ is obtained by choosing $-x_i$ from $k$ factors and $x$ from the remaining $n-k$ factors. The coefficient of $x^{n-k}$ is therefore the sum of all products of $k$ roots with distinct indices, multiplied by $a_n(-1)^k.$ We can write this sum as follows:
+
+$$ \tag{6}
 e_k(x_1, \ldots, x_n) = \sum_{1 \le i_1 < i_2 < \cdots < i_k \le n} x_{i_1} x_{i_2} \cdots x_{i_k}
 $$
 
-In other words, $e_k$ is the sum of all distinct products of $k$ roots. The first and last instances are the most familiar:
-
-$$
-e_1 = x_1 + x_2 + \cdots + x_n, \qquad e_n = x_1 x_2 \cdots x_n
-$$
-
-With this notation, Vieta's formulas in their general form take the compact statement:
+The expression $e_k$ is called an elementary symmetric polynomial. Comparing the coefficient of $x^{n-k}$ in the expansion with that in $(5),$ we obtain $a_{n-k} = a_n(-1)^k e_k.$ Since $a_n \neq 0,$ we can divide by $a_n$ to obtain Vieta's formulas in their general form:
 
 $$
 \frac{a_{n-k}}{a_n} = (-1)^k e_k(x_1, \ldots, x_n), \qquad k = 1, 2, \ldots, n
 $$
 
-Two cases deserve to be singled out. The coefficient adjacent to the leading one corresponds to the negative of the sum of the roots:
+For $k = 1,$ each product in $(6)$ contains just one root, so $e_1 = x_1 + \cdots + x_n.$ This gives Vieta's formula for the sum of the roots of a polynomial of degree $n,$ generalising the first identity in $(4)$:
 
-$$
-\frac{a_{n-1}}{a_n} = -(x_1 + x_2 + \cdots + x_n)
-$$
-
-The constant term encodes the product of the roots, with a sign that depends on the parity of the degree:
-
-$$
-\frac{a_0}{a_n} = (-1)^n x_1 x_2 \cdots x_n
+$$ \tag{7}
+x_1 + x_2 + \cdots + x_n = -\frac{a_{n-1}}{a_n}
 $$
 
-> When the polynomial is monic, that is, when $a_n = 1$, the formulas simplify accordingly. The factor at the denominator disappears, and each coefficient $a_{n-k}$ coincides, up to the sign $(-1)^k$, with the corresponding elementary symmetric polynomial in the roots.
+The second identity in $(4)$ is generalised by setting $k = n$:
 
-
-## The cubic case
-
-Specialising the general statement to degree three produces a useful intermediate case between the quadratic identities and the formal expression in arbitrary degree. Consider the cubic equation in standard form:
-
-$$
-ax^3 + bx^2 + cx + d = 0, \qquad a \neq 0
+$$ \tag{8}
+x_1 x_2 \cdots x_n = (-1)^n\frac{a_0}{a_n}
 $$
 
-Calling the roots $x_1$, $x_2$, $x_3$, Vieta's formulas read:
+In the quadratic case, $n = 2$ and the coefficients are $a_2 = a,$ $a_1 = b$ and $a_0 = c.$ Since $e_1 = x_1 + x_2$ and $e_2 = x_1 x_2,$ applying the general formula with $k = 1$ and $k = 2$ recovers exactly the identities in $(4)$:
+
+$$
+\begin{align}
+x_1 + x_2 &= -\frac{a_1}{a_2} = -\frac{b}{a} \\[6pt]
+x_1 x_2 &= (-1)^2 \frac{a_0}{a_2} = \frac{c}{a}
+\end{align}
+$$
+- - -
+
+As a particular case, we apply the general formula to degree three. Consider a cubic equation in standard form:
+
+$$
+ax^3 + bx^2 + cx + d = 0
+$$
+
+As in the quadratic case, we denote the roots by $x_1,$ $x_2$ and $x_3.$ Vieta's formulas then give the following identities:
 
 $$
 \begin{align}
@@ -112,35 +140,53 @@ x_1 x_2 x_3 &= -\frac{d}{a}
 \end{align}
 $$
 
-The three identities correspond to the elementary symmetric polynomials $e_1$, $e_2$, and $e_3$. The middle one, often the least familiar, is the sum of all distinct pairwise products of the roots. The pattern of alternating signs, already visible in the quadratic case, is dictated by the formula $(-1)^k e_k = a_{n-k}/a_n$.
+## Examples
 
-
-## Example 1
-
-Consider the quadratic equation:
+To apply the formulas introduced so far, consider the quadratic equation:
 
 $$
 x^2 - 5x + 6 = 0
 $$
 
-Vieta's formulas demand that the two roots have sum equal to $5$ and product equal to $6$. Among the integer pairs whose product is $6$, namely $(1, 6)$, $(-1, -6)$, $(2, 3)$, and $(-2, -3)$, only the pair $(2, 3)$ also has the required sum. The polynomial therefore admits the factorisation:
+The coefficients are $a = 1,$ $b = -5$ and $c = 6,$ so the roots must have sum $5$ and product $6.$ To find them, we follow the method described in the discussion of [factoring quadratic equations](../factoring-quadratic-equations/) and seek a factorisation of the form $(x + r)(x + s).$ In this notation, $r = -x_1$ and $s = -x_2,$ since each root makes the corresponding factor zero. Expanding the product gives $x^2 + (r + s)x + rs.$ Comparing coefficients therefore yields the conditions:
+
+$$
+\begin{align}
+rs &= \frac{c}{a} = 6 \\[6pt]
+r + s &= \frac{b}{a} = -5
+\end{align}
+$$
+
+The table lists all pairs of integers whose product is $6,$ omitting pairs that differ only in order. In the last column, we calculate the sum to see which pair also satisfies the second condition:
+
+$$
+\begin{array}{c|c|c|c}
+r & s & rs & r+s \\[6pt]
+\hline
+1 & 6 & 6 & 7 \\[6pt]
+2 & 3 & 6 & 5 \\[6pt]
+-1 & -6 & 6 & -7 \\[6pt]
+-2 & -3 & 6 & -5
+\end{array}
+$$
+
+Only the last row satisfies both conditions. Setting $r = -2$ and $s = -3,$ we obtain the factorisation:
 
 $$
 x^2 - 5x + 6 = (x - 2)(x - 3)
 $$
 
-The roots are $x_1 = 2$ and $x_2 = 3$. The procedure works whenever the roots are rational and small enough to be located by inspection. When this fails, the [quadratic formula](../quadratic-formula/) remains the general-purpose method.
+By the zero-product property, the equation holds when $x - 2 = 0$ or $x - 3 = 0.$ The roots are therefore $x_1 = -r = 2$ and $x_2 = -s = 3.$
 
+- - -
 
-## Example 2
-
-Consider the cubic equation:
+Next, consider the cubic equation:
 
 $$
-x^3 - 6x^2 + 11x - 6 = 0
+x^3 - 6x^2 + 11x - 6 = 0 \tag{9}
 $$
 
-Suppose, by inspection or by trial, that its roots are $1$, $2$, and $3$. To confirm, we evaluate the elementary symmetric polynomials in these three values:
+Suppose we have identified $1,$ $2$ and $3$ as possible roots. We evaluate the polynomials $e_i$ at these values:
 
 $$
 \begin{align}
@@ -150,22 +196,65 @@ e_3 &= 1 \cdot 2 \cdot 3 = 6
 \end{align}
 $$
 
-The leading coefficient is $a = 1$, so Vieta's formulas read $-b = e_1$, $c = e_2$, and $-d = e_3$. Substituting the values from the equation gives $-(-6) = 6$, $11 = 11$, and $-(-6) = 6$, all in agreement. The factorisation is therefore:
+Vieta's formulas become $-b = e_1,$ $c = e_2$ and $-d = e_3.$ Substituting the coefficients of the equation gives $-(-6) = 6,$ $11 = 11$ and $-(-6) = 6,$ so all three equalities hold. We can therefore factor the polynomial in $(9)$ as follows:
 
 $$
 x^3 - 6x^2 + 11x - 6 = (x - 1)(x - 2)(x - 3)
 $$
 
+Again, the zero-product property shows that the roots of the equation are $1,$ $2$ and $3.$
 
-## Constructing a polynomial from its roots
+- - -
 
-Vieta's formulas can be read in the opposite direction: given a list of numbers, the monic polynomial having precisely those numbers as roots is determined by their elementary symmetric polynomials. If $\alpha_1, \alpha_2, \ldots, \alpha_n$ are the assigned roots, the polynomial is:
+For a final example, we consider a leading coefficient other than $1.$ Take the quadratic equation:
 
 $$
-p(x) = x^n - e_1 x^{n-1} + e_2 x^{n-2} - \cdots + (-1)^n e_n
+2x^2 - 8x + 6 = 0
 $$
 
-As an illustration, suppose we want the monic polynomial whose roots are $2$, $-1$, and $3$. Computing the three elementary symmetric polynomials in these values:
+Applying the formulas in $(4)$ gives:
+
+$$
+\begin{align}
+x_1 + x_2 &= -\frac{-8}{2} = 4 \\[6pt]
+x_1 x_2 &= \frac{6}{2} = 3
+\end{align}
+$$
+
+We therefore seek two numbers with product $3$ and sum $4.$ We can use a table like the one in the first example, this time listing the possible roots directly in the columns $x_1$ and $x_2$:
+
+$$
+\begin{array}{c|c|c|c}
+x_1 & x_2 & x_1x_2 & x_1+x_2 \\[6pt]
+\hline
+1 & 3 & 3 & 4 \\[6pt]
+-1 & -3 & 3 & -4
+\end{array}
+$$
+
+Only the first row also has sum $4,$ so the required numbers are $1$ and $3.$ Since we must retain the leading coefficient $a = 2$ in the factorisation, we write:
+
+$$
+2x^2 - 8x + 6 = 2(x - 1)(x - 3)
+$$
+
+The zero-product property again gives the roots of the equation as $x_1 = 1$ and $x_2 = 3.$
+
+## Constructing a polynomial
+
+As noted in the introduction, Vieta's formulas can also be used in the opposite direction to construct a polynomial $P(x)$ from its roots. If the roots are $\alpha_1, \alpha_2, \ldots, \alpha_n,$ the monic polynomial, that is, the one with leading coefficient $1,$ is given by:
+
+$$\tag{10}
+P(x) = x^n - e_1 x^{n-1} + e_2 x^{n-2} - \cdots + (-1)^n e_n
+$$
+
+For example, we seek the monic cubic polynomial whose roots are $2,$ $-1$ and $3.$ Setting $n = 3,$ the formula becomes:
+
+$$
+P(x) = x^3 - e_1 x^2 + e_2 x - e_3
+$$
+
+To determine its coefficients, we need to calculate $e_1,$ the sum of the roots, $e_2,$ the sum of their pairwise products, and $e_3,$ the product of all three roots. This gives the following equalities:
 
 $$
 \begin{align}
@@ -175,32 +264,8 @@ e_3 &= 2 \cdot (-1) \cdot 3 = -6
 \end{align}
 $$
 
-Substituting into the general formula yields:
+Applying $(10),$ the required polynomial is therefore:
 
 $$
-p(x) = x^3 - 4x^2 + x + 6
+P(x) = x^3 - 4x^2 + x + 6
 $$
-
-The polynomial has the prescribed roots, as can be verified by direct substitution of $x = 2$, $x = -1$, and $x = 3$, each of which makes $p(x)$ vanish.
-
-
-## Applications
-
-Vieta's formulas underpin a number of techniques that recur throughout elementary algebra and beyond. Three uses are worth recording.
-
-The first is the verification of a candidate factorisation. Given a proposed pair of roots $x_1$ and $x_2$ for a quadratic with coefficients $a$, $b$, $c$, the conditions $x_1 + x_2 = -b/a$ and $x_1 x_2 = c/a$ provide a fast consistency check that requires no recomputation of the discriminant.
-
-The second is the [AC method](../factoring-ac-method/) for factoring quadratic trinomials. The conditions $mn = ac$ and $m + n = b$ imposed by that procedure are precisely Vieta's formulas applied to the rescaled polynomial $u^2 + bu + ac$, with $u = ax$. The dedicated entry develops the correspondence in detail.
-
-The third arises in the study of the [roots of unity](../roots-of-unity/), where the polynomial $z^n - 1$ has all its non-leading coefficients equal to zero except for the constant term. Vieta's formulas then state that the sum of the $n$-th roots of unity vanishes whenever $n \geq 2$, and that their product equals $(-1)^{n+1}$. Both results follow by inspection of the coefficients of $z^n - 1$.
-
-
-## Structural interpretation
-
-Behind Vieta's formulas lies a more general phenomenon. The elementary symmetric polynomials $e_1, e_2, \ldots, e_n$ form a system of generators for the ring of symmetric polynomials in the variables $x_1, \ldots, x_n$: every polynomial expression in the roots that is invariant under permutation can be written, in a unique way, as a polynomial in the $e_k$. This statement is the fundamental theorem of symmetric polynomials.
-
-Vieta's formulas record one half of this picture, expressing the coefficients of the polynomial in terms of the elementary symmetric polynomials. The other half consists of expressing other symmetric quantities of the roots, such as the power sums $x_1^p + x_2^p + \cdots + x_n^p$, in terms of the same $e_k$. 
-
-These conversions are organised by Newton's identities. Together, the two results form the foundation on which more advanced developments rest, including the systematic study of how the roots of a polynomial transform under permutations, which eventually leads to the framework of Galois theory.
-
-> When the roots are not all distinct, Vieta's formulas remain valid provided that each root is listed in the elementary symmetric polynomials according to its multiplicity. A double root $x_0$, for instance, appears as $x_1 = x_2 = x_0$ in the list, and contributes accordingly to each $e_k$.
