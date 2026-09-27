@@ -7,16 +7,14 @@
             <circle stroke="#333333" fill="#FFFFFF" cx="236" cy="84.5" r="2.5"></circle>
             <circle fill="#333333" cx="148" cy="84.5" r="3"></circle>
             <circle stroke="#333333" fill="#FFFFFF" cx="57" cy="84.5" r="2.5"></circle>
-            <text font-size="14" font-weight="normal" fill="#333333">
-                <tspan x="226" y="108">+</tspan>
-                <tspan x="233.812" y="108" font-family="Helvetica">δ</tspan>
+            <text font-size="14" font-weight="normal" fill="#333333" text-anchor="middle">
+                <tspan x="236" y="108">x + </tspan><tspan font-family="Helvetica">δ</tspan>
             </text>
             <text font-size="14" font-weight="normal" fill="#333333">
                 <tspan x="145" y="108">x</tspan>
             </text>
-            <text font-size="14" font-weight="normal" fill="#333333">
-                <tspan x="48" y="108">-</tspan>
-                <tspan x="53.866" y="108" font-family="Helvetica">δ</tspan>
+            <text font-size="14" font-weight="normal" fill="#333333" text-anchor="middle">
+                <tspan x="57" y="108">x - </tspan><tspan font-family="Helvetica">δ</tspan>
             </text>
             <line x1="185.5" y1="74.5" x2="185.5" y2="35.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
             <line x1="149.5" y1="154.5" x2="149.5" y2="115.5" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"></line>
