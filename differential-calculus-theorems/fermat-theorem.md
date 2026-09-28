@@ -10,151 +10,156 @@ tags:
   - stationary-points
 ---
 
-## Introduction
-
-Fermat's Theorem states that any relative [maximum or minimum](../maximum-minimum-and-inflection-points/) of a differentiable function within its [domain](../determining-the-domain-of-a-function/) must occur at a stationary point, that is, a point where the first [derivative](../derivatives/) is equal to zero, and the tangent line is horizontal (parallel to the $x$-axis).
-
-The condition is necessary but not sufficient. If a function has a local maximum or minimum at an interior point and is differentiable there, its derivative at that point is zero. The converse does not hold, since a zero derivative does not necessarily imply an extremum.
-
-> Fermat's Theorem is used in the proof of [Rolle's Theorem](../rolle-theorem/), which in turn underlies the proof of [Lagrange's Theorem](../lagrange-theorem/) and, ultimately, [Cauchy's Theorem](../cauchy-theorem/) and [L'Hopital's rule](../hopital-rule/). The existence of the extremum required by Fermat's statement is guaranteed, on a closed and bounded interval, by [Weierstrass' Theorem](../weierstrass-theorem/).
-
 ## Statement
 
-Given a [function](../functions/) $y = f(x)$ defined on a closed and bounded interval $[a, b],$ and differentiable on the open interval $(a, b),$ if the function attains a local maximum or minimum at a point $x_0 \in (a, b),$ then the derivative at that point must be zero:
+Fermat's theorem is an important theorem in differential calculus. It states that every local [maximum or minimum](../maximum-minimum-and-inflection-points/) of a differentiable function at an interior point of its [domain](../determining-the-domain-of-a-function/) is a stationary point, that is, a point where the first [derivative](../derivatives/) of the function is zero and the tangent line is therefore parallel to the $x$-axis. To state the theorem formally, consider a function $y = f(x)$ defined on a closed and bounded interval $[a, b]$ and differentiable on the open interval $(a, b).$ If $f(x)$ attains a local maximum or minimum at a point $x_0 \in (a, b),$ then the derivative of the function at that point is zero:
 
 $$
-f'(x_0) = 0
+f'(x_0) = 0 \tag{1}
 $$
 
-The graph below shows a local maximum at a point $\mu$ inside the interval $I,$ where the derivative is zero.
+This situation is illustrated in the following graph, which shows a function $f(x)$ with a local maximum point $\mu$ inside a given interval. At that point, the tangent line to the graph is horizontal, parallel to the $x$-axis, so $(1)$ holds:
 
 ![IMG. 1](svg/fermat-theorem-1.svg)
 
-> In certain cases, the derivative of a function becomes zero at a point that is neither a maximum nor a minimum. Such points are called stationary points without an extremum, including stationary [inflection points](../maximum-minimum-and-inflection-points/), where the derivative is zero but the function does not change direction.
 
-## Proof
+This condition is necessary but not sufficient, since a zero derivative at a point does not necessarily imply that the point is a maximum or minimum. Stationary points that are not extrema include, for example, inflection points with a horizontal tangent, where the derivative is zero but the function does not change from increasing to decreasing or vice versa.
 
-To prove the theorem, let us assume that $x_0$ is a point of local maximum. Then, in a neighborhood $I$ around $x_0,$ the following inequality must hold:
+> An interesting connection is that Fermat's theorem is also important because it is used in the proof of [Rolle's theorem](../rolle-theorem/), which underlies the proof of [Lagrange's theorem](../lagrange-theorem/) and, through it, [Cauchy's theorem](../cauchy-theorem/) and [l'Hôpital's rule](../hopital-rule/) for evaluating limits involving [indeterminate forms](../indeterminate-forms/) such as $0/0$ and $\infty/\infty.$
 
-$$
-f(x) \leq f(x_0) \quad \forall x \in I
-$$
+- - -
 
-From this, it follows that the [difference quotient](../difference-quotient/) satisfies the following:
-
-For $h > 0$:
-$$
-\frac{f(x_0 + h) - f(x_0)}{h} \leq 0
-$$
-
-For $h < 0$:
-$$
-\frac{f(x_0 + h) - f(x_0)}{h} \geq 0
-$$
-
-From these inequalities, and by the definition of the derivative as the limit of the difference quotient, it follows that the respective limits satisfy:
+We prove $(1)$ by assuming that the function has a local maximum point $\mu$ at $x_0.$ A neighborhood $I$ of $x_0$ therefore exists in which the following inequality holds:
 
 $$
-\lim_{h \to 0^+} \frac{f(x_0 + h) - f(x_0)}{h} \leq 0
-$$
-$$
-\lim_{h \to 0^-} \frac{f(x_0 + h) - f(x_0)}{h} \geq 0
+f(x) \leq f(x_0) \quad \forall \ x \in I \tag{2}
 $$
 
-If the function is differentiable at $x_0,$ then both the left-hand and right-hand limits exist and are equal to the derivative. The only way these two inequalities can be true simultaneously is if:
+In $(2),$ set $x = x_0 + h,$ with $h \neq 0$ and sufficiently small in absolute value for $x_0 + h$ to belong to the interval $I.$ We can then rewrite $(2)$ as $f(x_0 + h) \leq f(x_0)$ and obtain:
+
+$$
+f(x_0 + h) - f(x_0) \leq 0 \tag{3}
+$$
+
+Looking at $(3),$ we can recognize the numerator of the [difference quotient](../difference-quotient/) used to define derivatives. Dividing by $h$ gives two cases. When $h > 0,$ we obtain:
+
+$$
+\frac{f(x_0 + h) - f(x_0)}{h} \leq 0 \tag{4}
+$$
+
+For $h < 0,$ the direction of the inequality is reversed, and we obtain:
+
+$$
+\frac{f(x_0 + h) - f(x_0)}{h} \geq 0 \tag{5}
+$$
+
+By the definition of the derivative as the limit of the difference quotient, the limits in $(4)$ and $(5)$ satisfy the relations:
+
+$$
+\lim_{h \to 0^+} \frac{f(x_0 + h) - f(x_0)}{h} \leq 0 \tag{6}
+$$
+
+$$
+\lim_{h \to 0^-} \frac{f(x_0 + h) - f(x_0)}{h} \geq 0 \tag{7}
+$$
+
+Since $f(x)$ is differentiable at $x_0,$ the right-hand and left-hand limits exist and both equal the derivative. Thus, $(6)$ and $(7)$ give the conclusion of the theorem:
 
 $$
 f'(x_0) = 0
 $$
 
-> The theorem is thus proven, since we have shown that if a differentiable function attains a local extremum at an interior point, the derivative at that point is zero.
+The proof above assumes that $x_0$ is a local maximum point. If $x_0$ is a local minimum point instead, the proof follows the same steps, but the directions of inequalities $(6)$ and $(7)$ are reversed, yielding the same conclusion.
 
-## Example 1
+## Example
 
-Consider the real-valued function:
+To illustrate an application of the theorem, consider the following [polynomial function](../polynomial-function/), which is [continuous](../continuous-functions/) and differentiable throughout $\mathbb{R}:$
 
 $$
 f(x) = x^{3} - 3x^{2} + 2
 $$
 
-defined for every real number. Being a [polynomial](../polynomials/), the function is [continuous](../continuous-functions/) and [differentiable](../derivatives/) on the entire real line. If it attains a local maximum or minimum at an interior point of its domain, Fermat's Theorem guarantees that the derivative there is zero. To find where the function might have extrema, we compute its derivative:
+Assuming that a local maximum or minimum exists at an interior point of its domain, Fermat's theorem states that the derivative of the function at that point is zero. To find the maximum or minimum, we calculate the derivative of the function and determine where it vanishes:
 
-$$
-f'(x) = 3x^{2} - 6x = 3x(x - 2)
-$$
-
-The derivative vanishes precisely when $3x(x - 2) = 0$ which occurs at:
-
-$$
-x = 0 \quad \text{and} \quad x = 2
+$$ \tag{8}
+\begin{align}
+f'(x) &= 3x^{2} - 6x \\[6pt]
+      &= 3x(x - 2)
+\end{align}
 $$
 
-These two values are therefore the only candidates for interior extrema, because Fermat's Theorem states that any differentiable function reaching a local extremum must have a horizontal tangent line at that point.
+The expression in $(8)$ vanishes at $x = 0$ and $x = 2.$ We must now determine the nature of these points by examining the behavior of the derivative on the three intervals they define. For $x < 0,$ the derivative is positive and the function is increasing. Between $0$ and $2,$ the derivative is negative and the function is decreasing. For $x > 2,$ the derivative is positive and the function is increasing again.
 
-- - -
-To determine the nature of these points, we examine how the derivative behaves around them. For $x < 0,$ the derivative is positive and the function increases. Between $0$ and $2,$ the derivative becomes negative, so the function decreases. For $x > 2,$ the derivative returns to positive, meaning the function increases again. This change in [monotonicity](../increasing-and-decreasing-functions/) shows that:
-
-+ for $x = 0,$ the function transitions from increasing to decreasing, indicating a local maximum;
-+ for $x = 2,$ the function transitions from decreasing to increasing, indicating a local minimum.
+![IMG. 2](svg/fermat-theorem-4.svg)
 
 [class="table-sign"]
 
-The sign chart below summarizes the behavior of the derivative and the corresponding monotonicity of the function.
+The following sign chart summarizes the behavior of the derivative and the corresponding [monotonicity](../increasing-and-decreasing-functions/) of the function.
 
 |         |                         |           $0$           |           $2$           |
 | :-----: | :---------------------: | :---------------------: | :---------------------: |
-| $f'(x)$ |    $\boldsymbol{+}$     |    $\boldsymbol{-}$     |    $\boldsymbol{+}$     |
+| $f'(x)$ |           $+$           |           $-$           |           $+$           |
 | $f(x)$  | $\boldsymbol{\nearrow}$ | $\boldsymbol{\searrow}$ | $\boldsymbol{\nearrow}$ |
 
 [/class]
 
-Evaluating the function confirms the classification, with $f(0) = 2$ a local maximum and $f(2)= -2$ a local minimum.
+We can therefore conclude that the function has a local maximum at $x = 0$ and a local minimum at $x = 2.$ Calculating the corresponding function values gives $f(0) = 2$ and $f(2) = -2.$ On the graph, the local maximum point therefore has coordinates $(0, 2),$ while the local minimum point has coordinates $(2, -2).$
 
-> Fermat's Theorem states a necessary condition, not a sufficient one. A point with a zero derivative need not be an extremum, while every interior extremum of a differentiable function occurs at such a point. The condition narrows the search for maxima and minima to the stationary points.
+> Keep in mind that, in this example, Fermat's theorem identifies $x = 0$ and $x = 2$ as candidates for local extrema, while the change in sign of the derivative allows us to classify them as such.
 
-## Not all stationary points are extrema
+- - -
 
-The function $f(x) = x^3$ shows that a zero derivative does not necessarily imply a local extremum.
+As we have already stated, not all stationary points are necessarily maximum or minimum points. We take, for example, the function $f(x) = x^3$ to show that a zero derivative does not necessarily imply a local extremum.
 
-![IMG. 2](svg/fermat-theorem-2.svg)
+![IMG. 3](svg/fermat-theorem-2.svg)
 
-The derivative is:
+Calculating the derivative gives:
 
 $$
 f'(x) = 3x^2
 $$
 
-At $x = 0,$ we have $f'(0) = 0.$ Thus, $x = 0$ is a stationary point. Although the derivative at $x = 0$ is zero, the point is neither a local maximum nor a local minimum. Instead, $x = 0$ is a stationary inflection point, where the derivative is zero, while the function increases on both sides without changing direction.
+At $x = 0,$ we have $f'(0) = 0,$ so $x = 0$ is a stationary point. However, although the derivative is zero, the point is neither a local maximum nor a local minimum, as is also evident from the graph. It is an inflection point with a horizontal tangent, where the derivative is zero while the function remains increasing on both sides.
 
 ## The second-derivative test
 
-Fermat's theorem identifies the candidates for an interior extremum but does not determine their nature. The classification follows from the second [derivative](../derivatives/) of $f$ at the stationary point. Let $f$ be twice differentiable in a neighborhood of an interior point $x_0$ with $f'(x_0) = 0.$ The sign of $f''(x_0)$ determines the local behavior of the function as follows:
+In the preceding example, we classified the stationary points by examining the sign of the first derivative. An alternative test for obtaining the same classification uses the [second derivative](../higher-order-derivatives/), which gives a sufficient condition rather than only a necessary one. Consider a function $f$ that is twice differentiable in a neighborhood of a point $x_0$ where $f'(x_0) = 0.$ Depending on the value of $f''(x_0),$ we can distinguish three cases.
 
-+ If $f''(x_0) > 0,$ then $x_0$ is a local minimum of $f.$
-+ If $f''(x_0) < 0,$ then $x_0$ is a local maximum of $f.$
-+ If $f''(x_0) = 0,$ the test is inconclusive and additional information is required.
++ If $f''(x_0) > 0,$ then $x_0$ is a local minimum point of $f.$
++ If $f''(x_0) < 0,$ then $x_0$ is a local maximum point of $f.$
++ If $f''(x_0) = 0,$ the test does not determine whether $x_0$ is a maximum or minimum, and further information is needed.
 
-The first two cases follow from the second-order Taylor expansion of $f$ around $x_0.$ Since $f'(x_0) = 0,$ the expansion reduces to:
+To prove the first two cases, we compare the value $f(x_0)$ with the function values at nearby points $x_0 + h.$ For this purpose, we use a second-order [Taylor expansion](../taylor-formula-with-remainder/) and obtain:
 
 $$
-f(x_0 + h) = f(x_0) + \tfrac{1}{2} f''(x_0) h^2 + o(h^2)
+f(x_0 + h) = f(x_0) + \tfrac{1}{2} f''(x_0) h^2 + o(h^2) \tag{9}
 $$
 
-For sufficiently small $h,$ the term $\tfrac{1}{2} f''(x_0) h^2$ dominates the remainder, and its sign coincides with the sign of $f''(x_0).$ When $f''(x_0) > 0,$ the increment $f(x_0 + h) - f(x_0)$ is positive for every small $h \neq 0,$ hence $x_0$ is a local minimum. The case $f''(x_0) < 0$ is symmetric and yields a local maximum.
+Subtracting $f(x_0)$ from both sides of $(9)$ and dividing by $h^2$ gives:
+
+$$
+\frac{f(x_0 + h) - f(x_0)}{h^2} = \frac{1}{2}f''(x_0) + \frac{o(h^2)}{h^2} \tag{10}
+$$
+
+As $h \to 0,$ the term $o(h^2)/h^2$ tends to zero, so the expression in $(10)$ tends to $\frac{1}{2}f''(x_0).$ If $f''(x_0) \neq 0,$ then for nonzero $h$ sufficiently small in absolute value, the quotient has the same sign as $f''(x_0).$ The following conclusions therefore hold:
+
++ If $f''(x_0) > 0,$ then $f(x_0 + h) > f(x_0),$ so at every point sufficiently close to $x_0$ and distinct from it, the function value is greater than $f(x_0).$ Thus, $x_0$ is a local minimum point.
++ If $f''(x_0) < 0,$ the reverse inequality holds, so $x_0$ is a local maximum point.
 
 - - -
-The third case, $f''(x_0) = 0,$ leaves the second-order term inert and requires examining the higher-order derivatives. The nature of the stationary point is governed by the first non-vanishing derivative of $f$ at $x_0.$ If $f^{(k)}(x_0)$ is the first such derivative with $k \geq 2,$ then:
 
-+ When $k$ is even, $x_0$ is a local minimum if $f^{(k)}(x_0) > 0$ and a local maximum if $f^{(k)}(x_0) < 0.$
-+ When $k$ is odd, $x_0$ is a stationary [inflection point](../maximum-minimum-and-inflection-points/) and not an extremum.
+In the third case, suppose that $f$ is differentiable up to order $k$ in a neighborhood of $x_0$ and that $f^{(k)}(x_0)$ is the first nonzero derivative, with $k \geq 2.$ We distinguish two cases:
 
-The function $f(x) = x^3$ illustrates the odd case with $k = 3$: at $x = 0$ we have $f'(0) = f''(0) = 0$ and $f'''(0) = 6 \neq 0,$ so the point is an inflection. The function $f(x) = x^4$ illustrates the even case with $k = 4$: at $x = 0$ the first non-vanishing derivative is $f^{(4)}(0) = 24 > 0,$ and the point is a local minimum even though $f''(0) = 0.$
++ If $k$ is even, $x_0$ is a local minimum point if $f^{(k)}(x_0) > 0$ or a local maximum point if $f^{(k)}(x_0) < 0.$
++ If $k$ is odd, $x_0$ is an inflection point with a horizontal tangent and is not an extremum.
 
-> The second-derivative test is a local sufficient condition. It complements Fermat's theorem, which states only the necessary condition $f'(x_0) = 0,$ by adding a decision rule that classifies most stationary points found in practice.
+For example, return to the function $f(x) = x^3$ considered earlier. At $x = 0,$ the first and second derivatives vanish, so the point is stationary, but the second-derivative test does not classify it. We therefore calculate the third derivative, which gives $f'''(0) = 6.$ Thus, the first nonzero derivative at the point has order $k = 3,$ and since this order is odd, $x = 0$ is an inflection point with a horizontal tangent.
 
-## Stationary points and boundary behavior
+As another example, consider the function $f(x) = x^4.$ Again, the first and second derivatives vanish at $x = 0,$ but continuing the calculation gives $f'''(0) = 0$ as well. Calculating the fourth derivative instead gives $f^{(4)}(0) = 24.$ This time, the first nonzero derivative at the point has even order, $k = 4,$ and its value is positive, so we can conclude that $x = 0$ is a local minimum point.
 
-A stationary point, a point at which the derivative vanishes, does not by itself determine whether the function has a local maximum or minimum there. The classification requires a more refined analysis of the function near the candidate point and of the structure of the domain. Consider, for instance, the [absolute value function](../absolute-value-function/)
+## Why the hypotheses are necessary
+
+In the preceding examples, we looked for extrema among the stationary points and then studied their nature. To apply Fermat's theorem to a local extremum, the point must be interior to the domain, and the function must be differentiable there. The following examples show what happens when one of these conditions is missing. Consider the [absolute value function](../absolute-value-function/), defined on the entire real line by the formula:
 
 $$
 y = f(x) = |x| =
@@ -164,12 +169,8 @@ y = f(x) = |x| =
 \end{cases}
 $$
 
+Since $|x| \geq 0$ for every $x \in \mathbb{R}$ and $f(0) = 0,$ the function has an absolute minimum at $x = 0.$ This point is interior to the domain, but the function is [not differentiable](../points-of-non-differentiability/) there because its left-hand derivative is $-1,$ while its right-hand derivative is $1.$ As the graph also shows, a minimum point exists, but the differentiability hypothesis required by the theorem is not satisfied.
 
-which attains a global minimum at $x = 0$ even though the derivative does not exist at that point.
+![IMG. 4](svg/fermat-theorem-3.svg)
 
-![IMG. 3](svg/fermat-theorem-3.svg)
-
-
-This example shows that extrema may occur where the derivative is zero, where differentiability fails, or at boundary points of the domain. On a closed interval, a function may reach its extrema at the endpoints regardless of the behavior of the derivative in the interior.
-
-Conversely, on open intervals or unbounded [domains](../determining-the-domain-of-a-function/), extrema may be absent even if stationary points exist. A complete understanding of [maxima and minima](../maximum-minimum-and-inflection-points/) therefore requires the combined use of Fermat's condition, the study of differentiability, and the careful analysis of the domain on which the function is defined.
+For one further example, consider the function $f(x) = x$ and restrict its domain to the interval $[0,1].$ The function then attains an absolute minimum at $(0,0)$ and an absolute maximum at $(1,1),$ yet its derivative is $f'(x) = 1$ throughout the open interval $(0,1),$ so there are no stationary points. Fermat's theorem therefore does not apply at $x = 0$ and $x = 1,$ because these points are not interior to the interval.

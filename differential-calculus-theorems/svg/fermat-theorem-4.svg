@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="341px" viewBox="0 0 307 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <path d="M96,123.980136 L96.4357878,124.754869 L100.935788,132.754869 L101.180918,133.190657 L100.309343,133.680918 L100.064212,133.245131 L96.5,126.908 L96.5,340 L95.5,340 L95.5,126.908 L91.9357878,133.245131 L91.6906571,133.680918 L90.8190816,133.190657 L91.0642122,132.754869 L95.5642122,124.754869 L96,123.980136 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#BEB8B7">
+                <tspan x="76.5" y="132">y</tspan>
+            </text>
+            <text font-size="13" font-weight="normal" fill="#BEB8B7">
+                <tspan x="262.5" y="251">x</tspan>
+            </text>
+            <path d="M260.309343,226.319082 L260.745131,226.564212 L268.745131,231.064212 L269.519864,231.5 L268.745131,231.935788 L260.745131,236.435788 L260.309343,236.680918 L259.819082,235.809343 L260.254869,235.564212 L266.591,232 L-0.5,232 L-0.5,231 L266.591,231 L260.254869,227.435788 L259.819082,227.190657 L260.309343,226.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="69.5" y="11">At both local extrema, the tangent to the </tspan>
+                <tspan x="69.5" y="24">curve is horizontal, as required by Fermat's </tspan>
+                <tspan x="69.5" y="37">theorem. The curve changes from increasing </tspan>
+                <tspan x="69.5" y="50">to decreasing at the peak and from </tspan>
+                <tspan x="69.5" y="63">decreasing to increasing at the trough.</tspan>
+            </text>
+            <line x1="179" y1="72.5" x2="179" y2="113.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="169" y="164">y=x³ − 3x² + 2</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="136" y="306">min = (2, -2)</tspan>
+            </text>
+            <text font-size="12" font-weight="normal" fill="#312F2F">
+                <tspan x="21" y="184">max = (0, 2)</tspan>
+            </text>
+            <path d="M67.5,340 C72.8333333,238.666667 82.5,188 96.5,188 C117.5,188 127.5,289 146.5,289 C157.105666,289 166.309225,251.143106 174.110677,175.429317 M176.474081,150.858005 C176.932102,145.767277 177.607408,137.814609 178.5,127" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle fill="#312F2F" cx="146.5" cy="289" r="3"></circle>
+            <circle fill="#312F2F" cx="96.5" cy="188" r="3"></circle>
+        </g>
+    </g>
+</svg>
