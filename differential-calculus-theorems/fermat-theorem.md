@@ -96,10 +96,10 @@ The expression in $(8)$ vanishes at $x = 0$ and $x = 2.$ We must now determine t
 
 The following sign chart summarizes the behavior of the derivative and the corresponding [monotonicity](../increasing-and-decreasing-functions/) of the function.
 
-|         |                         |           $0$           |           $2$           |
-| :-----: | :---------------------: | :---------------------: | :---------------------: |
-| $f'(x)$ |           $+$           |           $-$           |           $+$           |
-| $f(x)$  | $\boldsymbol{\nearrow}$ | $\boldsymbol{\searrow}$ | $\boldsymbol{\nearrow}$ |
+|         |            |    $0$     |    $2$     |
+| :-----: | :--------: | :--------: | :--------: |
+| $f'(x)$ |    $+$     |    $-$     |    $+$     |
+| $f(x)$  | $\nearrow$ | $\searrow$ | $\nearrow$ |
 
 [/class]
 
