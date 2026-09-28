@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="217px" height="247px" viewBox="0 0 217 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 1.000000)">
+            <path d="M100,141 L184,141 C184,113.593761 170.630282,87.9107664 148.1804,72.1912 L100,141 Z" fill="#E9E3E2" fill-rule="nonzero"></path>
+            <line x1="0" y1="141.75" x2="215" y2="141.75" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <polyline stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" points="209 137.5 215 141.75 209 146"></polyline>
+            <line x1="100.75" y1="245" x2="100.75" y2="15" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <polyline stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" points="96.5 21 100.75 15 105 21"></polyline>
+            <circle stroke="#BEB8B7" cx="100" cy="141" r="84"></circle>
+            <line x1="184.25" y1="0" x2="184.25" y2="21.0356" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="184.25" y1="141" x2="184.25" y2="217" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="100" y1="141" x2="194" y2="6.7541" stroke="#BEB8B7"></line>
+            <path d="M126,141 C126,132.517106 121.861777,124.567592 114.913,119.702" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M100,141.5 L184,141.5 C184,114.216754 170.630282,88.1490202 148.1804,72.5 L100,141.5 Z" stroke="#312F2F"></path>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="83.5" y="159">O</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="187.933333" y="159">A</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="138.910318" y="62.1912">P</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="196.970833" y="24.0356">T</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="134.7125" y="126">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="140.235417" y="159">1</tspan>
+            </text>
+            <line x1="184.5" y1="142.5" x2="184.5" y2="22.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+            <ellipse fill="#312F2F" fill-rule="nonzero" cx="100.014045" cy="141" rx="2.51404494" ry="2.5"></ellipse>
+            <ellipse fill="#312F2F" fill-rule="nonzero" cx="184.485955" cy="141" rx="2.51404494" ry="2.5"></ellipse>
+            <ellipse fill="#312F2F" fill-rule="nonzero" cx="148.465121" cy="72.1912" rx="2.51404494" ry="2.5"></ellipse>
+            <ellipse fill="#312F2F" fill-rule="nonzero" cx="184.485955" cy="21.0356" rx="2.51404494" ry="2.5"></ellipse>
+        </g>
+    </g>
+</svg>

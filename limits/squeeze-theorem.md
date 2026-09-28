@@ -10,202 +10,180 @@ tags:
   - remarkable-limits
   - squeeze-theorem
 ---
-## What is the squeeze theorem
-
-The squeeze theorem, also called the sandwich theorem, provides a method for determining the [limit](../limits/) of a [function](../functions/) when direct evaluation is challenging or when the function exhibits complex oscillatory behaviour near a specific point. The theorem is frequently applied to functions involving [sine and cosine](../sine-and-cosine/), particularly when these trigonometric terms oscillate in such a way that direct limit evaluation is impossible, as in:
-
-$$\sin\left( \frac{1}{x} \right) \qquad \frac{\sin}{x} \qquad \cos\left( \frac{1}{x} \right)$$
-
-In these situations, the function is constrained between two other functions with known and equal limits, which makes the evaluation of the target limit accessible.
-
 ## Statement
 
-**Theorem.** Let $x_0 \in \mathbb{R} \cup \{ \pm\infty \}$ be a [limit point](../topology-of-the-real-line/), that is, a point such that every neighbourhood of $x_0$ contains at least one point of the [domain](../functions/) different from $x_0$. Let $f$, $g$, and $h$ be real-valued functions defined on a neighbourhood $I$ of $x_0$, and assume that for every $x \in I$ the inequality:
+When calculating [limits](../limits/), we may encounter problems for which direct substitution is not an effective method. Certain techniques, as we will see in the relevant articles in the section on limits, allow us to handle particular forms, such as [indeterminate forms](../indeterminate-forms/). Some functions, such as [sine and cosine](../sine-and-cosine/), have an oscillatory behaviour and warrant a separate discussion. In these cases, we use the squeeze theorem, which allows us to evaluate limits of expressions such as the following with ease:
 
-$$g(x) \leq f(x) \leq h(x)$$
+$$x\sin\left( \frac{1}{x} \right) \qquad \frac{\sin x}{x} \qquad x^2\cos\left( \frac{1}{x} \right)$$
 
-holds. Suppose, in addition, that the limits of $g(x)$ and $h(x)$ as $x \to x_0$ both exist and coincide with the same value $\ell$:
+In practical terms, the theorem allows us to bound the original [function](../functions/) between two functions with the same limit, thereby determining its limit. Consider a [limit point](../topology-of-the-real-line/) $x_0 \in \mathbb{R} \cup \{ \pm\infty \}.$ By definition, every neighbourhood of this point contains at least one point of the [domain](../determining-the-domain-of-a-function/) distinct from $x_0.$ We then consider three real-valued functions $f,$ $g$ and $h$ defined at the points of the domain that lie in a neighbourhood $I$ of $x_0.$ Suppose also that the following [inequality](../inequalities/) holds, expressing the fact that the graph of $f$ always lies between the graphs of $g$ and $h$:
 
-$$\lim_{x \to x_0} g(x) = \lim_{x \to x_0} h(x) = \ell$$
+$$g(x) \leq f(x) \leq h(x) \tag{1}$$
 
-Under these hypotheses, the function $f(x)$ also admits a limit as $x \to x_0$, and that limit is:
+At this point, suppose that we know the following limit $\ell$:
 
-$$\lim_{x \to x_0} f(x) = \ell$$
+$$\lim_{x \to x_0} g(x) = \lim_{x \to x_0} h(x) = \ell\tag{2}$$
 
-- - -
+Then, under these hypotheses, the function $f(x)$ also has a limit, and its value is precisely the limit in $(2)$:
 
-Graphically, the curve representing $f(x)$ lies entirely between the lower bound $g(x)$ and the upper bound $h(x)$. As both bounding functions tend to $\ell$, the function $f(x)$ is forced to approach the same limit.
+$$\lim_{x \to x_0} f(x) = \ell\tag{3}$$
+
+Graphically, the curve representing $f(x)$ always lies between the lower bounding function $g(x)$ and the upper bounding function $h(x),$ and since both tend to $\ell,$ the function $f(x)$ must also converge to the same limit.
+
 
 ![IMG. 1](svg/squeeze-theorem-1.svg)
 
-This expresses the geometric intuition behind the theorem: if a function is bounded above and below by two functions that both converge to the same value, then it must converge to that value.
 
-## Proof of the squeeze theorem
 
-Let $\varepsilon > 0$ be arbitrary. The goal is to prove that the function $f(x)$, which lies between $g(x)$ and $h(x)$, tends to the same limit $\ell$ as $x \to x_0$.
+To prove this result, we fix an arbitrary number $\varepsilon > 0$ and show that the function $f(x),$ which lies between $g(x)$ and $h(x),$ tends to the same limit $\ell$ as $x \to x_0.$ By the hypothesis stated in $(1),$ we know that $\lim_{x \to x_0} g(x) = \ell.$ By the definition of a limit, a positive number $\delta_1$ therefore exists such that, for every $x$ in the domain satisfying $0 < |x - x_0| < \delta_1,$ we have:
 
-By assumption, $\lim_{x \to x_0} g(x) = \ell$. This means that there exists a positive number $\delta_1$ such that, for every $x$ sufficiently close to $x_0$, specifically for all $x$ satisfying $0 < |x - x_0| < \delta_1$:
+$$\ell - \varepsilon < g(x) < \ell + \varepsilon \tag{4}$$
 
-$$|g(x) - \ell| < \varepsilon \quad \implies \quad \ell - \varepsilon < g(x) < \ell + \varepsilon$$
+Again by $(1),$ since we know that $\lim_{x \to x_0} h(x) = \ell,$ an argument analogous to the one just given yields a positive number $\delta_2$ such that, for every $x$ in the domain satisfying $0 < |x - x_0| < \delta_2,$ we have:
 
-Similarly, since $\lim_{x \to x_0} h(x) = \ell$, there exists another positive number $\delta_2$ such that:
+$$\ell - \varepsilon < h(x) < \ell + \varepsilon \tag{5}$$
 
-$$|h(x) - \ell| < \varepsilon \quad \implies \quad \ell - \varepsilon < h(x) < \ell + \varepsilon$$
+Setting $\delta = \min(\delta_1, \delta_2),$ we find that both $(4)$ and $(5)$ hold for every $x$ in the domain such that $0 < |x - x_0| < \delta.$ Since $(1)$ also holds, we obtain:
 
-Set $\delta = \min(\delta_1, \delta_2)$. For every $x$ such that $0 < |x - x_0| < \delta$, both inequalities above are satisfied. Since $f(x)$ is squeezed between $g(x)$ and $h(x)$:
+$$\ell - \varepsilon < f(x) < \ell + \varepsilon \tag{6}$$
 
-$$g(x) \leq f(x) \leq h(x)$$
-
-Combining this with the bounds on $g(x)$ and $h(x)$:
-
-$$\ell - \varepsilon < f(x) < \ell + \varepsilon \quad \implies \quad |f(x) - \ell| < \varepsilon$$
-
-Since this inequality holds for every $\varepsilon > 0$, we conclude:
+Since this condition holds for every $\varepsilon > 0,$ we conclude that:
 
 $$\lim_{x \to x_0} f(x) = \ell$$
 
-## Example 1
+When $x_0 = +\infty,$ the conditions $0 < |x - x_0| < \delta_1$ and $0 < |x - x_0| < \delta_2$ are replaced by $x > M_1$ and $x > M_2.$ Choosing $M = \max(M_1, M_2)$ sufficiently large ensures that both bounds hold for $x > M,$ and the squeeze theorem gives the same conclusion as in the case just proved. For $x_0 = -\infty,$ we instead use the conditions $x < M_1$ and $x < M_2,$ choosing $M = \min(M_1, M_2).$
 
-The following example illustrates how the theorem is applied to compute the limit:
+## Examples
 
-$$\lim_{x \to 0} x \cdot \sin\left( \frac{1}{x} \right)$$
+We give a few examples below to show how the theorem is applied in practice. Let us try to calculate the limit of the following function:
 
-- - -
+$$\lim_{x \to 0} x \cdot \sin\left( \frac{1}{x} \right) \tag{7}$$
 
-The term $\sin\left( \frac{1}{x} \right)$ does not admit a limit as $x \to 0$, since it oscillates indefinitely between $-1$ and $1$. For every [real number](../real-numbers/) $x \neq 0$, however, the inequality:
+Direct substitution of $x = 0$ is not possible because $1/x$ is not defined at zero. The factor $x$ tends to zero, whereas $\sin(1/x)$ has no limit as $x \to 0,$ because it oscillates indefinitely between $-1$ and $1.$ However, we know that the following inequality holds for $x \neq 0,$ since the [sine function](../sine-function/) lies between these values:
 
-$$-1 \leq \sin\left( \frac{1}{x} \right) \leq 1$$
+$$-1 \leq \sin\left( \frac{1}{x} \right) \leq 1 \tag{8}$$
 
-holds. Multiplying through by $x$ and using the [absolute value](../absolute-value/) to symmetrise the inequality, we obtain:
+To calculate the limit in $(7),$ we observe that $(8)$ guarantees that the [absolute value](../absolute-value/) of the sine is at most $1,$ and from this, multiplying by $x,$ we obtain:
 
-$$-|x| \leq x \cdot \sin\left( \frac{1}{x} \right) \leq |x|$$
+$$-|x| \leq x \cdot \sin\left( \frac{1}{x} \right) \leq |x| \tag{9}$$
 
-- - -
-
-For $x > 0$, the inequality is preserved; for $x < 0$, the direction reverses, but the absolute value ensures that the comparison remains symmetric with respect to zero. Both bounding functions $-|x|$ and $|x|$ tend to zero as $x \to 0$:
-
-$$\lim_{x \to 0} -|x| = 0 \qquad \lim_{x \to 0} |x| = 0$$
-
-Since $x \sin(1/x)$ is squeezed between two functions that both approach zero, the squeeze theorem applies and gives:
+From $(9),$ we can see that the functions $-|x|$ and $|x|$ tend to zero as $x \to 0,$ and therefore, since $x \sin(1/x)$ lies between them, the squeeze theorem gives zero as the value of the limit in $(7)$:
 
 $$\lim_{x \to 0} x \cdot \sin\left( \frac{1}{x} \right) = 0$$
 
-In many problems, when an oscillating function is multiplied by a power of $x$ that approaches zero, the overall limit is zero. The reason is that the oscillation remains bounded, as is the case for sine and cosine, which are confined to the interval $[-1, 1]$. The factor $x^n$ approaches zero rapidly enough to dominate the oscillation, so the entire product converges to zero.
-
-## Example 2
-
-Evaluate the limit:
-
-$$\lim_{x \to +\infty} \frac{\ln(3 + \sin x)}{x^3}$$
+In general, remember the following rule, which is very useful for solving problems similar to the one just presented: when a bounded oscillating function is multiplied by a [power](../powers/) $x^n$ with $n$ a positive integer, the product tends to zero as $x$ tends to zero.
 
 - - -
 
-The sine function is bounded between $-1$ and $1$ for every real $x$:
+Now consider the following limit:
 
-$$-1 \leq \sin x \leq 1$$
+$$\lim_{x \to +\infty} \frac{\ln(3 + \sin x)}{x^3} \tag{10}$$
 
-Adding $3$ to each term gives:
+The numerator oscillates but remains bounded, while the denominator tends to $+\infty.$ To apply the squeeze theorem, we examine the argument of the logarithm. First, we know that:
 
-$$2 \leq 3 + \sin x \leq 4 \quad \text{for all } x \in \mathbb{R}$$
+$$-1 \leq \sin x \leq 1 \tag{11}$$
 
-- - -
+If we add $3$ to each member of $(11)$ to match the structure of the argument of the logarithm, we obtain:
 
-Since the [logarithmic function](../logarithms/) is strictly increasing, the same chain of inequalities is preserved under $\ln$:
+$$2 \leq 3 + \sin x \leq 4$$
+
+We now apply the [logarithmic function](../logarithmic-function/) to the inequality and obtain:
 
 $$\ln 2 \leq \ln(3 + \sin x) \leq \ln 4$$
 
-Dividing all three terms by $x^3$ (which is positive for $x > 0$):
+We then divide by the denominator in $(10),$ obtaining:
 
-$$\frac{\ln 2}{x^3} \leq \frac{\ln(3 + \sin x)}{x^3} \leq \frac{\ln 4}{x^3} \quad \forall x > 0$$
+$$\frac{\ln 2}{x^3} \leq \frac{\ln(3 + \sin x)}{x^3} \leq \frac{\ln 4}{x^3}$$
 
-Both bounding functions tend to zero as $x \to +\infty$. Applying the squeeze theorem:
+With the inequality written in this form, both the lower and upper bounding functions tend to zero as $x \to +\infty,$ so the limit in $(10)$ is also zero. We can therefore write:
 
 $$\lim_{x \to +\infty} \frac{\ln(3 + \sin x)}{x^3} = 0$$
 
-## Example 3
+- - -
 
-Evaluate the limit:
+We now calculate the limit:
 
-$$\lim_{x \to 0} \left( x^4 \cdot \cos\left( \frac{2}{x} \right) + 2 \right)$$
+$$\lim_{x \to 0} \left( x^4 \cdot \cos\left( \frac{2}{x} \right) + 2 \right) \tag{12}$$
 
-We analyse the behaviour of the function $x^4 \cdot \cos\left( \frac{2}{x} \right)$ separately. The cosine function is bounded between $-1$ and $1$ for all real values:
+Like sine, the [cosine function](../cosine-function/) lies between $-1$ and $1,$ so the following inequality holds for every $x \neq 0$:
 
 $$-1 \leq \cos\left( \frac{2}{x} \right) \leq 1$$
 
-Multiplying all three terms by $x^4$, which is non-negative, gives:
+Multiplying all three members by $x^4,$ as in $(12),$ we obtain:
 
 $$-x^4 \leq x^4 \cdot \cos\left( \frac{2}{x} \right) \leq x^4$$
 
-- - -
-
-Taking the limit of the left and right bounds as $x \to 0$:
-
-$$\lim_{x \to 0} (-x^4) = 0 \qquad \lim_{x \to 0} x^4 = 0$$
-
-By the squeeze theorem:
-
+As $x$ tends to $0,$ the limits of the lower and upper bounding functions are both zero, so the squeeze theorem gives:
 $$\lim_{x \to 0} x^4 \cdot \cos\left( \frac{2}{x} \right) = 0$$
 
-The original expression can now be evaluated by applying the sum rule from the [algebra of limits](../algebra-of-limits/):
+As you can see, we still need to account for the constant 2 in $(12),$ so, using the rules of the [algebra of limits](../algebra-of-limits/), in particular the rule for the limit of a sum, we obtain:
 
 $$\lim_{x \to 0} \left( x^4 \cdot \cos\left( \frac{2}{x} \right) + 2 \right) = 0 + 2 = 2$$
 
-## Example 4
+The limit in $(12)$ is therefore $2.$
 
-The squeeze theorem provides the classical justification of the trigonometric fundamental limit:
+## A fundamental limit
 
-$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+It is worth examining the squeeze theorem further through its application to a [fundamental trigonometric limit](../remarkable-limits/):
 
-This limit is the cornerstone of the differentiation of the trigonometric functions and appears among the [remarkable limits](../remarkable-limits/) in standard calculus references. The argument below establishes the limit for $x \to 0^+$, and the case $x \to 0^-$ is then deduced by symmetry.
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1 \tag{13}$$
 
-- - -
+Consider an [angle](../angles-and-angular-measure/) $x \in (0, \pi/2)$ on the [unit circle](../unit-circle/), and let $O$ denote the centre, $A$ the point $(1, 0)$ on the positive horizontal axis, and $P$ the point on the circle determined by the angle $x,$ measured counterclockwise from $OA.$ We now identify the point $T$ where the ray $OP$ intersects the vertical tangent line through $A.$ This gives us three regions:
 
-Consider an angle $x \in (0, \pi/2)$ together with the [unit circle](../unit-circle/) centred at the origin. Let $O$ denote the centre, $A$ the point $(1, 0)$ on the positive $x$-axis, and $P$ the point on the unit circle determined by the angle $x$ measured counterclockwise from $OA$. Let $T$ be the intersection of the ray $OP$ extended with the vertical tangent line passing through $A$. Three regions are then compared: the triangle $OAP$, the circular sector bounded by $OA$, $OP$, and the arc $AP$, and the triangle $OAT$.
++ the triangle $OAP$
++ the circular sector bounded by $OA,$ $OP$ and the arc $AP$
++ the triangle $OAT.$
 
-The triangle $OAP$ has base $OA = 1$ and height equal to the ordinate of $P$, which is $\sin x$. Its area is therefore:
+We can now compare these regions, starting with the first one, namely the triangle $OAP,$ whose area is given by
 
 $$\mathrm{Area}(OAP) = \frac{1}{2} \sin x$$
 
-The circular sector has radius $1$ and central [angle](../angles-and-angular-measure/) $x$ measured in radians, so its area is:
+![IMG. 2](svg/squeeze-theorem-2.svg)
+
+
+The area of the circular sector in the second item is given by
 
 $$\mathrm{Area}(\text{sector}) = \frac{1}{2} x$$
 
-The triangle $OAT$ has base $OA = 1$ and height $AT = \tan x$, since $T = (1, \tan x)$ by definition of tangent. Its area is:
+![IMG. 3](svg/squeeze-theorem-3.svg)
+
+Finally, the triangle $OAT$ has area:
 
 $$\mathrm{Area}(OAT) = \frac{1}{2} \tan x$$
 
-- - -
+![IMG. 3](svg/squeeze-theorem-3.svg)
 
-The triangle $OAP$ is contained in the circular sector, which is in turn contained in the triangle $OAT$. The corresponding chain of strict inequalities between the three areas is:
+From this construction, we can deduce that the triangle $OAP$ is contained in the circular sector, which is in turn contained in the triangle $OAT,$ so their areas satisfy the following inequality:
 
-$$\frac{1}{2} \sin x < \frac{1}{2} x < \frac{1}{2} \tan x$$
+$$\frac{1}{2} \sin x < \frac{1}{2} x < \frac{1}{2} \tan x \tag{14}$$
 
-Multiplying every term by $2$ removes the common factor and yields:
+We eliminate the denominator in $(14)$ by multiplying by $2,$ obtaining:
 
-$$\sin x < x < \tan x$$
+$$\sin x < x < \tan x \tag{15}$$
 
-Since $x \in (0, \pi/2)$, the value $\sin x$ is strictly positive, so dividing the chain by $\sin x$ preserves the order of the terms:
+Since $\sin x$ is strictly positive for $x \in (0, \pi/2),$ dividing $(15)$ by $\sin x$ gives:
 
 $$1 < \frac{x}{\sin x} < \frac{1}{\cos x}$$
 
-Taking the reciprocal of each member reverses the inequality:
+The middle expression is the reciprocal of the function appearing in the limit in $(13),$ so we can rewrite $(15)$ by taking reciprocals to obtain:
 
 $$\cos x < \frac{\sin x}{x} < 1$$
 
-- - -
+The inequality just obtained holds for $0 < x < \pi/2,$ so it allows us to study the ratio $\sin x/x$ as $x$ approaches zero from the right. The lower bounding function $\cos x$ and the constant upper bounding function $1$ both have limit $1$:
 
-The function $\sin(x)/x$ is now confined between the lower bound $\cos x$ and the constant upper bound $1$. Both bounds admit a limit as $x \to 0^+$:
+$$
+\begin{align}
+& \lim_{x \to 0^+} \cos x = 1 \\[6pt]
+&\lim_{x \to 0^+} 1 = 1
+\end{align}
+$$
 
-$$\lim_{x \to 0^+} \cos x = 1 \qquad \lim_{x \to 0^+} 1 = 1$$
-
-The squeeze theorem applies directly and gives the right-hand limit:
+As $x$ approaches zero from the right, $\cos x$ approaches $1,$ while the upper bound is already $1.$ The ratio $\sin x/x,$ which lies between these two values, must therefore also approach $1,$ and the squeeze theorem gives:
 
 $$\lim_{x \to 0^+} \frac{\sin x}{x} = 1$$
 
-The function $\sin(x)/x$ is even, because $\sin(-x) = -\sin x$ and the denominator changes sign in the same way, leaving the ratio invariant under $x \mapsto -x$. The left-hand limit at $0$ therefore equals the right-hand limit, and the two-sided limit follows:
+The same result holds when $x$ approaches zero from the left. Indeed, changing the sign of $x$ changes the signs of both the sine and the denominator, leaving the ratio unchanged:
 
-$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+$$\frac{\sin(-x)}{-x} = \frac{-\sin x}{-x} = \frac{\sin x}{x}$$
 
-> The geometric inequality $\sin x < x < \tan x$ on $(0, \pi/2)$ is the central ingredient of this argument. The same inequality underlies the derivation of related trigonometric limits, such as $\lim_{x \to 0} (1 - \cos x)/x^2 = 1/2$, which is obtained from the identity $1 - \cos x = 2 \sin^2(x/2)$ combined with the fundamental limit above.
-
-The squeeze theorem complements the techniques developed for [indeterminate forms](../indeterminate-forms/) and is often the simplest route whenever a function can be controlled between two functions with a common limit.
+The ratio therefore tends to $1$ from both sides, so we can conclude that the limit in $(13)$ has been established.

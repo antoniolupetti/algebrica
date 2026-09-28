@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="245px" viewBox="0 0 216 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <polygon fill="#E9E3E2" fill-rule="nonzero" points="100 141.5 184 141.5 183.5 21.0356"></polygon>
+            <line x1="-6.71337985e-14" y1="141.5" x2="215" y2="141.5" stroke="#BEB8B7"></line>
+            <polyline stroke="#BEB8B7" points="208.5 137 214.5 141 208.5 145"></polyline>
+            <line x1="99" y1="245" x2="99" y2="15" stroke="#BEB8B7"></line>
+            <polyline stroke="#BEB8B7" points="95.5 21 99.5 15 103.5 21"></polyline>
+            <circle stroke="#BEB8B7" cx="99.5" cy="141" r="84"></circle>
+            <line x1="184" y1="1.8683366e-14" x2="184" y2="21.0356" stroke="#BEB8B7" stroke-dasharray="4"></line>
+            <line x1="184" y1="141" x2="184" y2="217" stroke="#BEB8B7" stroke-dasharray="4"></line>
+            <line x1="99.5" y1="141" x2="193.5" y2="6.7541" stroke="#BEB8B7"></line>
+            <path d="M125.5,141 C125.5,132.517106 121.361777,124.567592 114.413,119.702" stroke="#979797"></path>
+            <polyline stroke="#BEB8B7" points="99.5 141 183.5 141 183.5 21.0356"></polyline>
+            <polygon stroke="#312F2F" points="99.5 141 184 141 184 21.0356"></polygon>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="82.5" y="159">O</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="186.5" y="159">A</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="137.6804" y="62.1912">P</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="195.5" y="24.0356">T</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="133.5" y="126">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="139" y="159">1</tspan>
+            </text>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="99.5" cy="141" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="183.5" cy="141" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="147.6804" cy="72.1912" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="183.5" cy="21.0356" r="2.5"></circle>
+        </g>
+    </g>
+</svg>
