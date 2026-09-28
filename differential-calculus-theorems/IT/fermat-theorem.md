@@ -96,10 +96,10 @@ La $(8)$ si annulla per $x = 0$ e $x = 2.$ Ora dobbiamo determinare la natura di
 
 La seguente tabella dei segni riassume il comportamento della derivata e la corrispondente monotonia della funzione.
 
-|         |                         |           $0$           |           $2$           |
-| :-----: | :---------------------: | :---------------------: | :---------------------: |
-| $f'(x)$ |           $+$           |           $-$           |           $+$           |
-| $f(x)$  | $\boldsymbol{\nearrow}$ | $\boldsymbol{\searrow}$ | $\boldsymbol{\nearrow}$ |
+|         |            |    $0$     |    $2$     |
+| :-----: | :--------: | :--------: | :--------: |
+| $f'(x)$ |    $+$     |    $-$     |    $+$     |
+| $f(x)$  | $\nearrow$ | $\searrow$ | $\nearrow$ |
 
 [/class]
 
