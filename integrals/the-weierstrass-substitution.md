@@ -195,6 +195,8 @@ $$\int \frac{dx}{2+\sin x} = \frac{2}{\sqrt{3}}\arctan\left(\frac{2\tan(x/2)+1}{
 
 > Here too, we have seen that after the substitution, the integrand becomes a rational function of $t,$ simpler than the original one, and its antiderivative may contain [arctangents](../arctangent-function/) and [logarithms](../logarithms/), which typically appear when [integrating rational functions](../integral-of-rational-functions/).
 
+
+
 ## Domain conditions
 
 We need to consider the domains of the functions involved in the substitutions. The substitution $t = \tan(x/2)$ is defined for every $x$ such that $x/2 \neq \pi/2 + k\pi,$ that is, for every $x \notin \pi + 2\pi\mathbb{Z}.$ When evaluating an [indefinite integral](../indefinite-integrals/), the resulting formulas hold on intervals where both the original integrand and the substitution are defined.

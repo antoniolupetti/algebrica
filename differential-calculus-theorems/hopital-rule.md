@@ -10,209 +10,302 @@ tags:
   - limits
 ---
 
-## Statement
+## Evaluating limits involving indeterminate forms
 
-L'Hôpital's rule is a method for evaluating certain [limits](../limits/) that yield in [indeterminate forms](../indeterminate-forms/). The theorem provides a criterion for resolving the indeterminate behaviour of the limit of a quotient of two functions by using their [derivatives](../derivatives/). By indeterminate forms, we mean expressions of the type:
+L'Hôpital's rule is a very useful method that allows us to evaluate certain [limits](../limits/) involving [indeterminate forms](../indeterminate-forms/) of the type $0/0$ or $\infty/\infty$ with ease. Informally, under certain conditions, the theorem underlying the formula states that the limit of the quotient of two functions equals the limit of the quotient of their respective [derivatives](../derivatives/). In some cases, this step eliminates the indeterminate form and allows us to evaluate the limit by direct substitution or with a few algebraic manipulations. Keep in mind that this transformation does not always simplify the calculation, because the quotient of the derivatives may itself yield an indeterminate form. In that situation, if the hypotheses of the theorem still hold, we can apply the rule again or use another method.
 
-$$\frac{0}{0} \qquad \frac{\infty}{\infty}$$
+To illustrate the theorem, consider two [functions](../functions/) $f$ and $g$ defined on an [open neighbourhood](../topology-of-the-real-line/) $I$ containing $x_0,$ except possibly at $x_0$ itself, and consider the limit of their quotient:
 
-These expressions prevent the direct evaluation of a limit, as they describe situations in which the basic limit theorems are insufficient to determine the result, and additional analytical techniques are required.
+$$\lim_{x \to x_0} \frac{f(x)}{g(x)} \tag{1}$$
 
-Let $f(x)$ and $g(x)$ be two [functions](../functions/) defined on a punctured neighbourhood $I$ of a point $x_0$. Assume that the following conditions are satisfied:
+Substituting $x_0$ into the quotient in $(1)$ gives one of the following indeterminate forms, which tells us nothing about the value or existence of the limit:
 
-+ $f(x)$ and $g(x)$ are differentiable on $I$, except possibly at $x_0$.
-+ $g'(x) \neq 0$ for every $x \in I$ with $x \neq x_0$.
-+ $\displaystyle \lim_{x \to x_0} f(x) = \lim_{x \to x_0} g(x) = 0$.
-+ The following limit exists, finite or infinite:
+$$\frac{0}{0} \quad \frac{\infty}{\infty}$$
 
-$$\lim_{x \to x_0} \frac{f'(x)}{g'(x)}$$
+Suppose that the following conditions hold for $(1):$
 
-Under these assumptions the original limit also exists and is equal to the limit of the ratio of the derivatives:
++ $f$ and $g$ are differentiable at every point of $I$ other than $x_0.$
++ The derivative $g'(x)$ is nonzero for every $x \in I$ with $x \neq x_0.$
++ In the $0/0$ case, we have $\displaystyle \lim_{x \to x_0} f(x) = \lim_{x \to x_0} g(x) = 0;$ in the $\infty/\infty$ case, each function tends to $+\infty$ or $-\infty$ as $x \to x_0.$
++ The following limit of the quotient of the derivatives of $f$ and $g$ exists, either finite or infinite:
 
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)}$$
+$$\lim_{x \to x_0} \frac{f'(x)}{g'(x)} \tag{2}$$
 
-> In simpler terms, when the quotient of two functions presents itself as an indeterminate form $0/0$, its limit can be determined by evaluating the limit of the ratio of their derivatives, provided that this latter limit exists.
+Under these hypotheses, the limit of the quotient of the functions also exists, and the following equality holds:
+
+$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)} \tag{3}$$
+
+Note that in $(3)$ the numerator and denominator are differentiated separately, so the [quotient rule for derivatives](../differentiation-rules/) must not be applied.
 
 - - -
-The rule applies in an analogous way to the indeterminate form $\infty/\infty$. Suppose that $f(x) \to \pm\infty$ and $g(x) \to \pm\infty$ as $x \to x_0$, and that the remaining conditions on differentiability and on $g'(x)$ are satisfied. If the limit of the ratio of the derivatives exists, then the original limit is equal to this value:
 
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)}$$
+An important consideration is the existence of the limit of the quotient of the derivatives. If this limit does not exist, the theorem gives no conclusion about the original limit in $(1).$ Consider, for example, the functions $f(x) = x + \sin x$ and $g(x) = x.$ As $x$ tends to $\infty,$ their quotient tends to one, since:
 
-The rule remains valid when $x_0$ is replaced by $+\infty$ or $-\infty$, with no change in the form of the statement. In this case, the hypotheses on differentiability and on $g'$ are imposed on a half-line of the form $(M, +\infty)$ or $(-\infty, M)$, and the limits are computed accordingly.
+$$\lim_{x \to +\infty} \frac{f(x)}{g(x)} = \lim_{x \to +\infty} \left(1 + \frac{\sin x}{x}\right) = 1$$
 
-> The conclusion of the rule fails when the limit of the ratio of the derivatives does not exist. A classical counterexample is given by $f(x) = x + \sin x$ and $g(x) = x$ as $x \to +\infty$: the original quotient tends to $1$, but the quotient of the derivatives $1 + \cos x$ has no limit. It is therefore essential to verify that the limit of the ratio of the derivatives actually exists before applying the theorem.
+If we instead differentiate the numerator and denominator, we find that the quotient of their derivatives is $1 + \cos x,$ an oscillating expression with no limit at infinity. We can therefore conclude that, under the other hypotheses of the theorem, the existence of the limit of the quotient of the derivatives is sufficient, but not necessary, for the existence of the limit of the quotient of the functions.
 
-## Proof
+## Proof of the $0/0$ case
 
-We prove the rule for the form $0/0$. The case $\infty/\infty$ can be handled in an analogous way, with adaptations that are standard in advanced calculus. We treat the right limit $x \to x_0^+$, the case $x \to x_0^-$ being symmetric, and the bilateral limit being obtained by combining the two.
+We now prove rule $(3)$ when the limit in $(1)$ yields the indeterminate form $0/0.$ Since both $f(x)$ and $g(x)$ tend to zero, we can extend them continuously to $x_0$ by assigning each function the value of its limit:
 
-Since $\displaystyle \lim_{x \to x_0} f(x) = \lim_{x \to x_0} g(x) = 0$, we extend the two functions continuously to $x_0$ by setting $f(x_0) = g(x_0) = 0$. With this extension $f$ and $g$ are continuous on $I$ and differentiable on $I \setminus \{x_0\}$, with $g'(x) \neq 0$.
+$$f(x_0) = g(x_0) = 0\tag{4}$$
 
-Fix an arbitrary $x \in I$ with $x > x_0$. By applying [Cauchy's theorem](../cauchy-theorem/) to $f$ and $g$ on the closed interval $[x_0, x]$, there exists a point $c \in (x_0, x)$ such that:
+Fix $x \in I$ with $x > x_0.$ In this case, the denominator is nonzero. Indeed, if it were zero, $g$ would have the same value at both endpoints of $[x_0, x].$ Since it is [continuous](../continuous-functions/) on the closed interval and differentiable in its interior, [Rolle's theorem](../rolle-theorem/) would imply that its derivative vanishes at some interior point. This contradicts the hypothesis that $g'$ is nonzero at every point of $I$ other than $x_0.$ We can therefore conclude that $g(x) \neq 0$ and apply [Cauchy's theorem](../cauchy-theorem/) on $[x_0, x]$ to obtain a point $c \in (x_0, x)$ for which the following equality holds:
 
-$$\frac{f(x) - f(x_0)}{g(x) - g(x_0)} = \frac{f'(c)}{g'(c)}$$
+$$\frac{f(x) - f(x_0)}{g(x) - g(x_0)} = \frac{f'(c)}{g'(c)} \tag{5}$$
 
-Using $f(x_0) = g(x_0) = 0$, the equation simplifies to:
+Since $(4)$ holds, $(5)$ becomes:
 
 $$\frac{f(x)}{g(x)} = \frac{f'(c)}{g'(c)}$$
 
-At this stage the point $c$ is not fixed: it depends on $x$. More precisely, for each $x \neq x_0$, Cauchy's theorem guarantees the existence of a point $c = c(x)$ such that:
+For every $x > x_0,$ Cauchy's theorem guarantees a point, denoted by $c(x),$ that satisfies:
 
-$$x_0 < c(x) < x \quad \text{if } x > x_0$$
+$$x_0 < c(x) < x \tag{6}$$
 
-$$x < c(x) < x_0 \quad \text{if } x < x_0$$
+Subtracting $x_0$ from all three terms in $(6)$ gives:
 
-Consider for instance the right limit and let $x \to x_0^+$. Then $0 < c(x) - x_0 < x - x_0$, and since $x - x_0 \to 0$, by the [squeeze theorem](../squeeze-theorem/) it follows that $c(x) - x_0 \to 0$, hence $c(x) \to x_0$. An analogous argument applies to the left limit.
+$$0 < c(x) - x_0 < x - x_0$$
 
-By hypothesis, the following limit exists, finite or infinite:
+For the right-hand limit, the distance $x - x_0$ tends to zero, so the distance $c(x) - x_0$ must also tend to zero. By the [squeeze theorem](../squeeze-theorem/), it follows that:
 
-$$L = \lim_{t \to x_0} \frac{f'(t)}{g'(t)}$$
+$$\lim_{x \to x_0^+} c(x) = x_0$$
 
-Since $c(x) \to x_0$ as $x \to x_0$ and $c(x) \neq x_0$ for every $x \in I$ with $x \neq x_0$, by composition of limits we obtain:
+For the left-hand limit, we apply Cauchy's theorem on $[x, x_0],$ where the point $c(x)$ satisfies:
+
+$$x < c(x) < x_0$$
+
+Subtracting each term from $x_0$ and reordering the inequalities gives:
+
+$$0 < x_0 - c(x) < x_0 - x$$
+
+As $x$ approaches $x_0$ from the left, the distance $x_0 - x$ tends to zero, so the distance $x_0 - c(x)$ also tends to zero. The squeeze theorem gives:
+
+$$\lim_{x \to x_0^-} c(x) = x_0$$
+
+We have therefore shown that $c(x)$ tends to $x_0$ as $x$ approaches from either side; we can now use the hypothesis that the limit in $(2)$ exists, denoting its value, finite or infinite, by $L:$
+
+$$\lim_{x \to x_0} \frac{f'(x)}{g'(x)} = L$$
+
+Since $c(x) \to x_0$ and $c(x) \neq x_0,$ we can write:
 
 $$\lim_{x \to x_0} \frac{f'(c(x))}{g'(c(x))} = L$$
 
-Combining this with the equality $f(x)/g(x) = f'(c(x))/g'(c(x))$ established above, we obtain:
+Return to equality $(5),$ obtained from Cauchy's theorem. By $(4),$ the values of the functions at $x_0$ are zero, so, denoting the intermediate point by $c(x),$ we have:
 
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = L = \lim_{x \to x_0} \frac{f'(x)}{g'(x)}$$
+$$\frac{f(x)}{g(x)} = \frac{f'(c(x))}{g'(c(x))}$$
 
-This value is what we wanted to prove. Note that the argument does not require the continuity of the derivatives at $x_0$. The existence of the limit of $f'/g'$ at $x_0$, assumed in the statement, is by itself sufficient to guarantee the conclusion via the composition of limits.
+We have just shown that the quotient on the right tends to $L.$ Since the two quotients are equal, the one on the left also tends to $L,$ so:
 
-## Proof of the case $\infty/\infty$
+$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = L$$
 
-The argument for the form $\infty/\infty$ requires a slightly different construction because the trick of setting $f(x_0) = g(x_0) = 0$ is not available. We treat the right limit $x \to x_0^+$, with $f(x), g(x) \to +\infty$; the other cases are obtained by symmetry or by changing signs.
+Replacing $L$ with the limit in $(2),$ we obtain precisely formula $(3),$ which we wanted to prove for the $0/0$ case:
 
-Assume that the limit of $f'/g'$ exists and is finite, equal to $L$. Fix $\varepsilon > 0$. By definition of limit, there exists a neighbourhood $(x_0, x_0 + \delta)$ on which:
+$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)}$$
 
-$$
-\left| \frac{f'(t)}{g'(t)} - L \right| < \frac{\varepsilon}{2} \quad \forall t \in (x_0, x_0 + \delta)
-$$
+## Proof of the $\infty/\infty$ case
 
-Fix a point $y \in (x_0, x_0 + \delta)$ and consider the auxiliary interval $[x, y]$ with $x_0 < x < y$. By [Cauchy's theorem](../cauchy-theorem/) applied to $f$ and $g$ on $[x, y]$, there exists $c \in (x, y)$ such that:
+We now prove the theorem when $(1)$ yields the indeterminate form $\infty/\infty.$ In this case, we proceed as follows. Suppose that the limit in $(2)$ is a real number $L.$ Given $\varepsilon > 0,$ the definition of a limit allows us to choose $\delta > 0$ such that:
 
 $$
-\frac{f(x) - f(y)}{g(x) - g(y)} = \frac{f'(c)}{g'(c)}
+\left| \frac{f'(t)}{g'(t)} - L \right| < \frac{\varepsilon}{2} \quad \forall \ t \in (x_0, x_0 + \delta)
 $$
 
-The point $c$ lies in $(x_0, x_0 + \delta)$, so the right-hand side stays within distance $\varepsilon/2$ from $L$. Rewriting the left-hand side as a quotient that involves $f(x)/g(x)$:
+Fix a point $y \in (x_0, x_0 + \delta)$ and consider $x$ such that $x_0 < x < y.$ By [Cauchy's theorem](../cauchy-theorem/), a point $c \in (x, y)$ exists for which the following equality holds:
+
+$$
+\frac{f(x) - f(y)}{g(x) - g(y)} = \frac{f'(c)}{g'(c)} \tag{7}
+$$
+
+For $x$ sufficiently close to $x_0,$ both $f(x)$ and $g(x)$ are nonzero, and we can rewrite $(7)$ as follows:
 
 $$
 \frac{f(x)}{g(x)} \cdot \frac{1 - f(y)/f(x)}{1 - g(y)/g(x)} = \frac{f'(c)}{g'(c)}
 $$
 
-Since $f(x), g(x) \to +\infty$ as $x \to x_0^+$, the ratios $f(y)/f(x)$ and $g(y)/g(x)$ tend to zero, so the correction factor on the left-hand side tends to $1$. For $x$ sufficiently close to $x_0$ the absolute difference between $f(x)/g(x)$ and $f'(c)/g'(c)$ becomes smaller than $\varepsilon/2$. Combining the two bounds:
+Now set:
 
 $$
-\left| \frac{f(x)}{g(x)} - L \right| < \varepsilon
+\begin{align}
+A(x) &= \frac{1 - f(y)/f(x)}{1 - g(y)/g(x)} \\[6pt]
+R(x) &= \frac{f'(c)}{g'(c)}
+\end{align}
 $$
 
-for every $x$ in a suitably restricted right neighbourhood of $x_0$. The arbitrariness of $\varepsilon$ proves that $f(x)/g(x) \to L$.
+Equation $(7)$ then becomes:
 
-- - -
-The case $L = +\infty$ is treated analogously, with the inequality $f'(t)/g'(t) > N$ replacing the two-sided bound, and the case $L = -\infty$ by symmetry. The same argument adapts to the limits at infinity, $x \to +\infty$ and $x \to -\infty$, with the role of the neighbourhood $(x_0, x_0 + \delta)$ played by a half-line of the form $(M, +\infty)$.
+$$\frac{f(x)}{g(x)} = \frac{R(x)}{A(x)} \tag{8}$$
 
-> The technical core of the $\infty/\infty$ case is the algebraic manipulation that isolates $f(x)/g(x)$ and treats the residual factor as a perturbation tending to $1$. The hypotheses $g'(x) \neq 0$ and the existence of the limit $\lim f'/g'$ are the same as in the $0/0$ case and are used at the same points of the argument.
+Since $c$ lies in the chosen neighbourhood, the initial estimate for the quotient of the derivatives also applies to $R(x).$ In addition, the [triangle inequality](../absolute-value/) gives an upper bound, so we can write:
 
-## Example 1
+$$
+\begin{align}
+|R(x) - L| &< \frac{\varepsilon}{2} \\[6pt]
+|R(x)| &\leq |L| + |R(x) - L| < |L| + \frac{\varepsilon}{2}
+\end{align}
+$$
 
-Let us compute the following limit involving the [sine function](../sine-function/):
+Since $|R(x)|$ is bounded and $1/A(x) - 1$ tends to zero, for $x$ sufficiently close to $x_0$ from the right we have:
+
+$$|R(x)|\left|\frac{1}{A(x)} - 1\right| < \frac{\varepsilon}{2}$$
+
+Using $(8),$ we obtain:
+
+$$
+\begin{align}
+\left|\frac{f(x)}{g(x)} - L\right|
+&= \left|R(x)\left(\frac{1}{A(x)} - 1\right) + R(x) - L\right| \\[6pt]
+&\leq |R(x)|\left|\frac{1}{A(x)} - 1\right| + |R(x) - L| \\[6pt]
+&< \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
+\end{align}
+$$
+
+This estimate shows that the quotient of the functions is as close to $L$ as we wish, provided that $x$ is sufficiently close to $x_0$ from the right. Since $L$ is the limit of the quotient of the derivatives, we have proved that:
+
+$$\lim_{x \to x_0^+} \frac{f(x)}{g(x)} = \lim_{x \to x_0^+} \frac{f'(x)}{g'(x)} = L$$
+
+This completes the proof of the rule for the $\infty/\infty$ form in the case of a right-hand limit with finite $L.$
+
+> We have thus proved the result when $L$ is a finite real number. The same procedure can be adapted to $L = +\infty$ by showing that the quotient of the functions exceeds any prescribed positive number for $x$ sufficiently close to $x_0.$ The case $L = -\infty$ follows by changing the sign of $f,$ and analogous adjustments handle the left-hand limit and limits at infinity.
+
+## Examples
+
+The following examples show how L'Hôpital's rule can be used to evaluate limits involving indeterminate forms. As a first example, consider the [standard trigonometric limit](../remarkable-limits/):
 
 $$\lim_{x \to 0} \frac{\sin x}{x}$$
 
-At first glance, this expression leads to an indeterminate form. Indeed, substituting $x = 0$ we obtain:
+Direct substitution shows that both the numerator and denominator tend to zero, giving the indeterminate form $0/0.$ First, we check whether L'Hôpital's rule applies. The functions in the numerator and denominator are differentiable in a neighbourhood of zero, and the derivative of the denominator equals $1$ (so it does not vanish). The quotient of the derivatives is $\cos x,$ which tends to $1.$ We have thus verified all the hypotheses and can apply the rule to obtain:
 
-$$\frac{\sin 0}{0} = \frac{0}{0}$$
-
-The functions $\sin x$ and $x$ satisfy the hypotheses of L'Hôpital's rule, so the limit of the quotient can be replaced by the limit of the ratio of the derivatives:
-
-$$\lim_{x \to 0} \frac{\sin x}{x} = \lim_{x \to 0} \frac{(\sin x)'}{(x)'} = \lim_{x \to 0} \frac{\cos x}{1}$$
-
-> The hypotheses of the theorem are satisfied: $\sin x$ and $x$ are [continuous functions](../continuous-functions/) at $x_0 = 0$, with $\sin(0) = 0$ and $x\big|_{x=0} = 0$. Both functions are differentiable on every open interval containing $0$, and the derivative of the denominator, $g'(x) = 1$, never vanishes.
-
-- - -
-The remaining expression is no longer indeterminate. By evaluating the cosine at $0$ we obtain:
-
-$$\lim_{x \to 0} \frac{\cos x}{1} = \frac{\cos(0)}{1} = 1$$
-
-We can therefore conclude that:
-
-$$\lim_{x \to 0} \frac{\sin x}{x} = \lim_{x \to 0} \frac{\cos x}{1} = 1$$
-
-## Example 2
-
-Let us now consider a more involved situation in which the expression results in an indeterminate form of the type $-\infty + \infty$. In such cases the recommended approach is to rewrite the difference between the two functions as a product or a quotient, so that the expression is brought back to one of the standard forms to which L'Hôpital's rule applies, namely:
-
-$$\frac{0}{0} \quad \text{or} \quad \frac{\infty}{\infty}$$
+$$
+\begin{align}
+\lim_{x \to 0} \frac{\sin x}{x}
+&= \lim_{x \to 0} \frac{(\sin x)'}{(x)'} \\[6pt]
+&= \lim_{x \to 0} \frac{\cos x}{1} \\[6pt]
+&= 1
+\end{align}
+$$
 
 - - -
-Consider the following limit:
+
+Now consider a difference of functions that yields the indeterminate form $\infty - \infty.$ The difference can be rewritten as a single quotient to reduce it to one of the forms to which the rule applies. We illustrate this with the following limit:
 
 $$\lim_{x \to 0} \left(\frac{1}{\sin x} - \frac{2}{x}\right)$$
 
-The limit leads to an indeterminate form of type $-\infty + \infty$. To apply L'Hôpital's rule we first rewrite it as a single fraction, thus obtaining an indeterminate form of type $0/0$:
+We can rewrite the expression whose limit we seek as:
 
-$$\lim_{x \to 0} \left(\frac{1}{\sin x} - \frac{2}{x}\right) = \lim_{x \to 0} \frac{x - 2\sin x}{x \sin x}$$
+$$\frac{1}{\sin x} - \frac{2}{x} = \frac{x - 2\sin x}{x \sin x}$$
 
-> Before applying the rule, it is always necessary to verify that the conditions of the theorem are satisfied for the rewritten expression.
+The new quotient yields the form $0/0.$ The numerator and denominator are differentiable near zero, and the quotient of their derivatives is:
+
+$$\frac{1 - 2\cos x}{\sin x + x\cos x}$$
+
+For $0 < |x| < \pi/2,$ the terms $\sin x$ and $x\cos x$ have the same sign, so their sum does not vanish and the hypothesis on the derivative of the denominator is satisfied. The numerator tends to $-1,$ while the denominator tends to zero, and therefore:
+
+$$
+\lim_{x \to 0^+} \frac{1 - 2\cos x}{\sin x + x\cos x} = -\infty
+$$
+
+$$
+\lim_{x \to 0^-} \frac{1 - 2\cos x}{\sin x + x\cos x} = +\infty
+$$
+
+We can therefore apply L'Hôpital's rule to each one-sided limit to obtain:
+
+$$
+\lim_{x \to 0^+} \left(\frac{1}{\sin x} - \frac{2}{x}\right) = -\infty
+$$
+
+$$
+\lim_{x \to 0^-} \left(\frac{1}{\sin x} - \frac{2}{x}\right) = +\infty
+$$
+
+The one-sided limits are different, so the two-sided limit does not exist.
 
 - - -
-Computing the derivatives of the numerator and the denominator, the limit becomes:
 
-$$\lim_{x \to 0} \frac{1 - 2\cos x}{\sin x + x \cos x}$$
+We now consider a case in which we compare algebraic manipulation with the transformation used in L'Hôpital's rule. Consider the following limit:
 
-Substituting $x = 0$ in the resulting expression gives $-1/0$, which shows that the limit diverges. The result is therefore:
+$$\lim_{x \to 1} \frac{\sqrt{x} - 1}{x^2 - 1} \tag{9}$$
 
-$$\lim_{x \to 0} \frac{1 - 2\cos x}{\sin x + x \cos x} = -\infty$$
+Direct substitution gives the form $0/0.$ We first try to resolve it algebraically by [factoring the denominator](../notable-products/). We can rewrite $(9)$ as:
 
-> If the application of L'Hôpital's rule yields a quotient that still presents an [indeterminate form](../indeterminate-forms/), the rule may be applied repeatedly, provided that the conditions of the theorem are met at each step. At each iteration it is essential to verify that both the new numerator and the new denominator approach either $0$ or $\pm\infty$.
+$$
+\begin{align}
+\lim_{x \to 1} \frac{\sqrt{x} - 1}{x^2 - 1}
+&= \lim_{x \to 1} \frac{\sqrt{x} - 1}{(x + 1)(x - 1)} \\[6pt]
+&= \lim_{x \to 1} \frac{\sqrt{x} - 1}{(x + 1)(\sqrt{x} - 1)(\sqrt{x} + 1)} \\[6pt]
+&= \lim_{x \to 1} \frac{1}{(x + 1)(\sqrt{x} + 1)} \\[6pt]
+&= \frac{1}{(1 + 1)(1 + 1)} = \frac{1}{4}
+\end{align}
+$$
 
-## Indeterminate products
+In this case, the calculation using L'Hôpital's rule is shorter. To check that the hypotheses of the theorem hold, observe that:
 
-The same principle illustrated in the previous example also applies to indeterminate forms of the type $0 \cdot \infty$, which arise from the product of two functions $f(x) \cdot g(x)$. To rewrite the expression in a form suitable for L'Hôpital's rule, it is enough to express the product as a quotient:
++ the functions $f(x) = \sqrt{x} - 1$ and $g(x) = x^2 - 1$ are differentiable for $x > 0$
++ $g'(x) = 2x$ does not vanish in a neighbourhood of $1.$ 
++ The quotient of the derivatives is $1/(4x\sqrt{x}),$ which is continuous at $1$ and has limit $1/4.$ 
 
-$$f(x) \cdot g(x) = \frac{f(x)}{\dfrac{1}{g(x)}} \quad \text{or} \quad f(x) \cdot g(x) = \frac{g(x)}{\dfrac{1}{f(x)}}$$
+The hypotheses are therefore satisfied, so we apply $(3)$ to evaluate the limit in a single step:
+
+$$
+\begin{align}
+\lim_{x \to 1} \frac{\sqrt{x} - 1}{x^2 - 1}
+&= \lim_{x \to 1} \frac{\dfrac{1}{2\sqrt{x}}}{2x} \\[6pt]
+&= \lim_{x \to 1} \frac{1}{4x\sqrt{x}} = \frac{1}{4}
+\end{align}
+$$
 
 - - -
-For example, consider the following limit:
+
+Now consider the following limit:
 
 $$\lim_{x \to 0^+} x \ln x$$
 
-This expression is an indeterminate form of type $0 \cdot (-\infty)$. The product can be rewritten as a quotient:
+The product yields the indeterminate form $0 \cdot (-\infty),$ which we can reduce to the form $\infty/\infty$ to apply L'Hôpital's rule:
 
 $$\lim_{x \to 0^+} x \ln x = \lim_{x \to 0^+} \frac{\ln x}{\dfrac{1}{x}}$$
 
-The resulting expression is now an indeterminate form of type $\infty/\infty$, suitable for the application of L'Hôpital's rule:
+In this form, direct substitution gives a numerator tending to $-\infty$ and a denominator tending to $+\infty.$ Checking the hypotheses of the theorem, we find that both functions are differentiable for $x > 0,$ and the derivative of the denominator is $-1/x^2,$ which is nonzero. The quotient of the derivatives is $-x$ and tends to zero, so we apply the rule to evaluate the limit:
 
-$$\lim_{x \to 0^+} \frac{\ln x}{\dfrac{1}{x}} = \lim_{x \to 0^+} \frac{(\ln x)'}{\left(\dfrac{1}{x}\right)'} = \lim_{x \to 0^+} \frac{\dfrac{1}{x}}{-\dfrac{1}{x^2}} = \lim_{x \to 0^+} (-x) = 0$$
+$$
+\begin{align}
+\lim_{x \to 0^+} \frac{\ln x}{\dfrac{1}{x}}
+&= \lim_{x \to 0^+} \frac{(\ln x)'}{\left(\dfrac{1}{x}\right)'} \\[6pt]
+&= \lim_{x \to 0^+} \frac{\dfrac{1}{x}}{-\dfrac{1}{x^2}} \\[6pt]
+&= \lim_{x \to 0^+} (-x) = 0
+\end{align}
+$$
 
 ## Exponential indeterminate forms
 
-A further class of indeterminate forms that can be addressed through L'Hôpital's rule consists of the exponential forms:
+L'Hôpital's rule can also be used to handle the following exponential indeterminate forms:
 
 $$0^0 \qquad \infty^0 \qquad 1^\infty$$
 
-These arise from the limit of expressions of the form $f(x)^{g(x)}$ whenever the base and the exponent tend to specific values that prevent the direct evaluation of the power. The standard technique consists in taking the natural logarithm of the expression, in order to convert the power into a product, which is then handled with the methods discussed above.
+The aim is to proceed as in the last example, reducing these expressions to a form of the type $0/0$ or $\infty/\infty.$ Consider, for example, the typical situation described by the following exponential expression:
 
-Set $y = f(x)^{g(x)}$. Taking the [logarithm](../logarithms/) yields:
+$$y = f(x)^{g(x)} \tag{10}$$
 
-$$\ln y = g(x) \ln f(x)$$
+Assuming that $f(x) > 0$ in the neighbourhood under consideration, we can take [logarithms](../logarithms/) and rewrite $(10)$ as follows:
 
-The limit of $\ln y$ is computed by transforming the product $g(x) \ln f(x)$ into a quotient and applying L'Hôpital's rule. Once the value $L = \lim \ln y$ has been obtained, the limit of the original expression follows by exponentiation:
+$$\ln y = g(x)\ln f(x) \tag{11}$$
 
-$$\lim f(x)^{g(x)} = e^{L}$$
+If, in addition, $g(x) \neq 0$ in the same neighbourhood, we can rewrite $(11)$ as a quotient to which we can apply L'Hôpital's rule:
 
-As an illustration, consider the limit:
+$$\ln y = g(x)\ln f(x) = \frac{\ln f(x)}{\dfrac{1}{g(x)}} \tag{12}$$
+
+At this point, if the hypotheses hold, we apply L'Hôpital's rule to $(12)$ to evaluate $L = \lim \ln y.$ If $L$ is finite, the continuity of the [exponential function](../exponential-function/) gives:
+
+$$\lim f(x)^{g(x)} = e^L \tag{13}$$
+
+Consider, for example:
 
 $$\lim_{x \to 0^+} x^x$$
 
-The expression represents an indeterminate form of type $0^0$. Setting $y = x^x$ and taking the logarithm we obtain $\ln y = x \ln x$, and the corresponding limit was already computed in the previous section:
+Both the base and the exponent tend to zero, so we obtain the indeterminate form $0^0.$ Setting $y = x^x,$ we have $\ln y = x\ln x.$ In the preceding section, we proved that:
 
-$$\lim_{x \to 0^+} x \ln x = 0$$
+$$\lim_{x \to 0^+} x\ln x = 0$$
 
-The limit of the original expression is therefore:
+Applying the exponential function, we obtain the limit from $(13):$
 
-$$\lim_{x \to 0^+} x^x = e^{0} = 1$$
-
-> Beyond the evaluation of plain limits, L'Hôpital's rule is the standard tool for analysing the asymptotic behaviour of an integrand at infinity or near a singular point, and it is therefore the natural entry point for the convergence analysis of [improper integrals](../improper-integrals/).
-
-> L'Hopital's rule rests on [Cauchy's theorem](../cauchy-theorem/), itself a refinement of [Lagrange's theorem](../lagrange-theorem/) and, ultimately, of [Rolle's theorem](../rolle-theorem/). The existence theorems that ground the chain are [Fermat's theorem](../fermat-theorem/) for the location of stationary points and [Weierstrass' theorem](../weierstrass-theorem/) for the attainment of extrema on closed intervals.
+$$\lim_{x \to 0^+} x^x = e^0 = 1$$
