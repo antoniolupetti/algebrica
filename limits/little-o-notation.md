@@ -10,165 +10,164 @@ tags:
   - little-o-notation
   - taylor-series
 ---
-## What is little-o notation
+## Little-o of a variable
 
-The symbol $o(x)$, read as "little-o of $x$", belongs to the family of Landau symbols, which characterise [asymptotic](../asymptotes/) relationships between functions. Writing $f(x) = o(x)$ states that $f(x)$ is negligible compared to $x$ as the input approaches a given value, its growth rate insignificant relative to $x$ in the [limit](../limits/).
+When studying a limit, it can be useful to compare two [functions](../functions/) to understand, for example, how quickly they grow or tend to zero, and thus determine which terms dominate and which are negligible. These comparisons are expressed using Landau symbols, namely the so-called "little-o" and "big-O" notation for real or complex variables.
 
-Let $f, g : A \to \mathbb{R}$ (or $\mathbb{C}$) be two [functions](../functions/), and let $x_0$ be a limit point of $A$. We say that $f(x)$ is little-o of $g(x)$ as $x \to x_0$ if $g(x) \neq 0$ on a neighbourhood of $x_0$ (except possibly at $x_0$ itself) and:
+Suppose we have two functions $f(x), \ g(x) : A \to \mathbb{R}$ (if you have followed the topics covered so far on Algebrica, you should by now be familiar with $A$ as the [domain](../determining-the-domain-of-a-function/) and $\mathbb{R}$ as the codomain), and suppose that $x_0$ is a [limit point](../topology-of-the-real-line/) of $A,$ meaning that every neighbourhood of $x_0$ contains at least one point of $A$ other than $x_0.$ We say that $f(x)$ is "little-o" of $g(x)$ as $x$ tends to $x_0$ if the following relation holds:
 
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = 0$$
+$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = 0 \tag{1}$$
 
-Equivalently, for every $\varepsilon > 0$ there exists $\delta > 0$ such that, whenever $0 < |x - x_0| < \delta$, the inequality $|f(x)| \leq \varepsilon \cdot |g(x)|$ holds.
+Condition $(1)$ requires $g(x)$ to be nonzero and can also be expressed using the notation $f(x) = o(g(x))$ as $x \to x_0,$ indicating that $f(x)$ is negligible compared to $g(x)$ as $x$ tends to $x_0.$ In general, we can describe the class of all functions $f$ satisfying $(1)$ as follows:
 
-> The same notation applies to limits at infinity by replacing $x \to x_0$ with $x \to \infty$. It also applies to [sequences](../sequences/), where the continuous variable $x$ is replaced by the integer index $n$ and the limit is taken as $n \to \infty$.
+$$o_{x_0}(g) = \{\ f : A \to \mathbb{R} \mid \lim_{x \to x_0} \frac{f(x)}{g(x)} = 0 \ \}$$
 
-## Example 1
+But what does "negligible" mean formally? To make this precise, we recall the [definition of a limit](../limits/), discussed in the corresponding article. The difference between the ratio in $(1)$ and zero must become smaller than any given positive number when $x$ is sufficiently close to $x_0.$ Choosing an arbitrarily small $\varepsilon,$ we express this distance through the following inequality:
 
-Take $f(x) = x^2$ and $g(x) = x$ as $x \to 0$. Their ratio has limit:
+$$\left|\frac{f(x)}{g(x)} - 0\right| < \varepsilon \tag{2}$$
 
-$$\lim_{x \to 0} \frac{x^2}{x} = \lim_{x \to 0} x = 0$$
+Thus, for every $\varepsilon > 0,$ there exists $\delta > 0$ such that $(2)$ holds for all points $x \in A$ satisfying the condition:
 
-Since the limit is zero, we write:
+$$0 < |x - x_0| < \delta \tag{3}$$
 
-$$x^2 = o(x) \quad \text{as} \quad x \to 0$$
+For all points satisfying $(3),$ condition $(2)$ therefore holds and can be rewritten as:
 
-A direct comparison clarifies the reason. As $x \to 0$, both $x$ and $x^2$ tend to zero, but at different rates. Near the origin, $x^2$ is much smaller than $x$:
+$$\frac{|f(x)|}{|g(x)|} < \varepsilon \tag{4}$$
+
+
+This gives:
+
+$$|f(x)| < \varepsilon \cdot |g(x)| \tag{5}$$
+
+The connection with little-o is that we can make $|f(x)|$ smaller than an arbitrarily small fraction of $|g(x)|,$ which explains what "negligible" compared to $g(x)$ means. To clarify the concept, we consider two functions, $f(x) = x^2$ and $g(x) = x,$ and calculate the limit of their ratio:
+
+$$\lim_{x \to 0} \frac{x^2}{x} = 0$$
+
+Since this limit is zero, definition $(1)$ tells us that $f(x)$ is "little-o" of $g(x)$ and that, as $x$ tends to zero, we have:
+
+$$x^2 = o(x)$$
+
+The following graph makes the reasoning easier to follow. As $x \to 0,$ both functions tend to zero, but at different rates. Near the origin, $x^2$ is much smaller than $x$ in [absolute value](../absolute-value/), as the corresponding curve shows:
+
 
 ![IMG. 1](svg/little-o-1.svg)
 
-Numerically, at $x = 0.1$ the square is $0.01$, at $x = 0.01$ it is $0.0001$, and at $x = 0.001$ it is $0.000001$. Each tenfold decrease in $x$ shrinks $x^2$ a hundredfold, so the ratio $x^2/x = x$ falls to zero.
 
-## Example 2
+To see this comparison numerically, we take several values of $x$ increasingly close to zero and, for each, calculate $x^2$ and the ratio $x^2/x:$
 
-Little-o notation applies equally when the input increases without bound. For $x$ and $x^2$ as $x \to \infty$:
+$$
+\begin{array}{c|c|c}
+x & x^2 & x^2/x \\[6pt]
+\hline
+0.1 & 0.01 & 0.1 \\[6pt]
+0.01 & 0.0001 & 0.01 \\[6pt]
+0.001 & 0.000001 & 0.001
+\end{array}
+$$
+
+As we continue, the square becomes an ever smaller fraction of $x,$ showing that $x^2$ is negligible compared to $x,$ or equivalently, that $x^2 = o(x)$ as $x \to 0.$
+
+- - -
+
+We now consider a similar case, but with the variable $x$ tending to infinity. We calculate the following limit:
 
 $$\lim_{x \to \infty} \frac{x}{x^2} = \lim_{x \to \infty} \frac{1}{x} = 0$$
 
-Because the ratio approaches zero:
+Here too, the ratio of the two functions $x$ and $x^2$ tends to zero, so $(1)$ gives, as $x \to \infty,$ the relation:
 
-$$x = o(x^2) \quad \text{as} \quad x \to \infty$$
+$$x = o(x^2)$$
 
-The same relation holds for any two [power functions](../power-function/) $x^a$ and $x^b$ with $a < b$:
+- - -
 
-$$x^a = o(x^b) \quad \text{as} \quad x \to \infty$$
-
-A further example compares a [logarithmic function](../logarithms/) with a power function. Since:
+For a final example, we evaluate the following limit:
 
 $$\lim_{x \to \infty} \frac{\log x}{x} = 0$$
 
-it follows that $\log x = o(x)$ as $x \to \infty$. Logarithmic growth is strictly dominated by linear growth, a fact used throughout the analysis of algorithms.
+Since this ratio has limit zero, $(1)$ implies that, as $x \to \infty,$ $\log x = o(x).$ This result is useful in practice, particularly in algorithm design, because [logarithmic growth](../logarithmic-function/) is negligible compared to linear growth.
 
 ## The meaning of $o(1)$
 
-The symbol $o(1)$ is the class of functions that tend to zero as $x \to x_0$. A function $f(x)$ belongs to $o(1)$ when it becomes infinitesimally small compared to the constant $1$ in that limit. We write $f(x) = o(1)$ as $x \to x_0$ if and only if:
+We now introduce the symbol $o(1),$ read as "little-o of 1", which denotes functions that tend to zero as $x \to x_0.$ A function $f(x)$ belongs to $o(1)$ when it is infinitesimal compared to the constant $1$ in that limit, meaning that the following equality holds:
 
-$$\lim_{x \to x_0} \frac{f(x)}{1} = \lim_{x \to x_0} f(x) = 0$$
+$$\lim_{x \to x_0} \frac{f(x)}{1} = \lim_{x \to x_0} f(x) = 0 \tag{6}$$
 
-The set of all functions belonging to $o(1)$ can be described as:
+In other words, let $A \subseteq \mathbb{R}$ and let $x_0$ be a limit point of $A.$ The class of functions defined on $A$ that are little-o of $1$ as $x \to x_0$ can be written as:
 
-$$o_{x_0}(1) = \\{\ f : B(x_0, \delta) \setminus \\{x_0\\} \to \mathbb{R} \mid \lim_{x \to x_0} f(x) = 0 \ \\}$$
+$$o_{x_0}(1) = \{\ f : A \to \mathbb{R} \mid \lim_{x \to x_0} f(x) = 0 \ \}$$
 
-Here $B(x_0, \delta)$ is an open neighbourhood of $x_0$ of radius $\delta$, and the functions are defined on it except at $x_0$ itself. Membership in $o(1)$ requires only that $f(x) \to 0$ as $x \to x_0$, so $o_{x_0}(1)$ collects exactly the functions that are infinitesimal compared to the constant $1$.
+As an immediate example, we consider the following [standard limit](../remarkable-limits/):
 
-## Example 3
+$$\lim_{x \to 0} \frac{\sin x}{x}$$
 
-The limit of $\dfrac{\sin x}{x}$ as $x \to 0$ follows from the Taylor expansion of $\sin x$ near zero:
+To evaluate the limit, we use the [Taylor expansion](../taylor-series/), which allows us to write $\sin x$ as $x$ plus an error that is negligible compared to $x.$ As $x \to 0,$ we obtain:
 
-$$\sin x = x - \frac{x^3}{6} + o(x^3) \quad \text{as} \quad x \to 0$$
+$$\sin x = x - \frac{x^3}{6} + o(x^3) \quad \text{as} \quad x \to 0 \tag{7}$$
 
-Dividing both sides by $x$:
+Dividing both sides by $x,$ we can rewrite $(7)$ as:
 
-$$\frac{\sin x}{x} = 1 - \frac{x^2}{6} + o(x^2) \quad \text{as} \quad x \to 0$$
+$$\frac{\sin x}{x} = 1 - \frac{x^2}{6} + o(x^2) \tag{8}$$
 
-Both $\dfrac{x^2}{6}$ and the remainder $o(x^2)$ vanish as $x \to 0$, so:
+Both $-x^2/6$ and $o(x^2)$ tend to zero as $x$ tends to zero. Since $o(1)$ denotes a quantity that tends to zero, we can rewrite $(8)$ as follows:
 
 $$\frac{\sin x}{x} = 1 + o(1)$$
 
-> Since $o(1) \to 0$, this recovers $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$, one of the [remarkable limits](../remarkable-limits/).
 
 ## Properties
 
-One property follows at once from the definition. If $g(x) = o(f(x))$ as $x \to x_0$, the ratio of the two functions tends to zero:
+We now list several standard properties of little-o notation that are useful for solving the kinds of problems encountered in this setting. The first follows directly from definition $(1),$ namely that if $g(x) = o(f(x))$ as $x \to x_0,$ the ratio of the two functions tends to zero:
 
 $$\lim_{x \to x_0} \frac{o(f(x))}{f(x)} = 0$$
 
-- - -
+Another property concerns multiplication. Multiplying a function by a nonzero constant does not change its asymptotic behaviour in little-o notation. Thus, for every constant $c \in \mathbb{R}$ with $c \neq 0$ and every function $g(x),$ the following relations hold as $x \to x_0:$
 
-Multiplying a function by a nonzero constant does not affect its asymptotic behaviour in little-o notation. For any constant $c \in \mathbb{R}$ and any function $g(x)$, as $x \to x_0$:
+$$
+\begin{align}
+o(c \cdot g(x)) &= o(g(x)) \\[6pt]
+c \cdot o(g(x)) &= o(g(x))
+\end{align}
+$$
 
-$$o(c \cdot g(x)) = o(g(x))$$
-
-$$c \cdot o(g(x)) = o(g(x))$$
-
-> A nonzero constant only rescales the ratio that defines little-o, so its zero limit is unchanged.
-
-- - -
-
-Little-o terms behave predictably under addition. The sum of two little-o terms of the same function remains a little-o term of that function. Formally, as $x \to x_0$:
+An analogous property holds for addition. The sum of two little-o terms of the same function is still a little-o term of that function, so we have:
 
 $$o(f(x)) + o(f(x)) = o(f(x))$$
 
-> By the [algebra of limits](../algebra-of-limits/), the limit of a sum is the sum of the limits, so two ratios that each tend to zero add to one that also tends to zero.
-
-- - -
-
-When multiplying a little-o term by a function, the result is a new little-o term whose asymptotic order scales accordingly. For functions $f(x)$ and $g(x)$, as $x \to x_0$:
+Recall from the [algebra of limits](../algebra-of-limits/) that the limit of a sum is the sum of the limits, so the sum of two ratios that tend to zero also tends to zero. We now consider a further property concerning the product of a little-o term and a function. Multiplying a little-o term of $g(x)$ by $f(x),$ with $f(x) \neq 0$ at points of $A$ sufficiently close to $x_0$ and distinct from it, gives a little-o term of the product $f(x)g(x).$ That is:
 
 $$f(x) \cdot o(g(x)) = o(f(x) g(x))$$
 
-For example, if $g(x) = x$ and we have $o(g(x)) = o(x)$, then multiplying by $f(x) = x^2$ gives:
+For example, if $g(x) = x$ and $o(g(x)) = o(x),$ multiplying by $f(x) = x^2$ gives:
 
 $$x^2 \cdot o(x) = o(x^3)$$
 
-- - -
+An analogous property holds for powers. If $f(x) = o(g(x))$ as $x \to x_0,$ with $f$ and $g$ nonnegative, then for every exponent $a > 0$ the following holds in the same limit:
 
-Powers behave the same way. If $f(x) = o(g(x))$ as $x \to x_0$, then for any $a > 0$ raising both functions to the power $a$ preserves the relation, so that $[f(x)]^a = o([g(x)]^a)$ as $x \to x_0$. For example, with $f(x) = o(x)$ as $x \to 0$ and $a = 2$:
+$$[f(x)]^a = o([g(x)]^a)$$
 
-$$[f(x)]^2 = o(x^2)$$
+In addition to these calculation rules, the little-o relation is transitive. Thus, if $f(x) = o(g(x))$ and $g(x) = o(h(x))$ as $x \to x_0,$ then:
 
-- - -
+$$f(x) = o(h(x))$$
 
-Little-o notation exhibits transitivity. If $f(x) = o(g(x))$ and $g(x) = o(h(x))$ as $x \to x_0$, then:
+This relation also follows directly from definition $(1),$ because both ratios tend to zero and hence so does their product. Finally, transitivity allows two nested little-o symbols to be reduced to a single symbol. If $h(x) = o(g(x))$ and $g(x) = o(f(x))$ as $x \to x_0,$ then every function that is little-o of $g$ is also little-o of $f,$ giving the following relation:
 
-$$f(x) = o(h(x)) \quad \text{as} \quad x \to x_0$$
+$$o(o(f(x))) = o(f(x))$$
 
-This follows directly from the definition: since both ratios approach zero, their product also approaches zero, and therefore $f(x)/h(x) \to 0$. For example, since $x^3 = o(x^2)$ and $x^2 = o(x)$ as $x \to 0$, it follows that $x^3 = o(x)$ as $x \to 0$.
+## Comparison with big-O notation
 
-> Chaining extends to any finite sequence of functions, each little-o of the next, so that the first is little-o of the last.
+The distinction between little-o and [big-O notation](../big-o-notation/) deserves a brief mention here; big-O notation is discussed in detail in a separate article. In brief, as $x$ approaches $x_0,$ big-O requires the absolute value of the ratio of the two functions to remain below some constant bound, whereas little-o requires the ratio to tend to zero.
 
-- - -
+Compared to $(1),$ we therefore replace the requirement of a zero limit with an inequality. Assuming $g(x) \neq 0$ at the points under consideration, we write $f(x) = O(g(x))$ as $x \to x_0$ if there exist constants $M > 0$ and $\delta > 0$ such that, for every $x \in A$ with $0 < |x - x_0| < \delta,$ we have:
 
-The composition of two little-o terms reduces to a single term. If $h(x) = o(g(x))$ and $g(x) = o(f(x))$ as $x \to x_0$, then any function that is little-o of $g$ is also little-o of $f$. In compact notation:
+$$\left|\frac{f(x)}{g(x)}\right| \leq M$$
 
-$$o(o(f(x))) = o(f(x)) \quad \text{as} \quad x \to x_0$$
-
-This result follows directly from transitivity: if $h = o(g)$ and $g = o(f)$, then $h = o(f)$. For example, since $x^2 = o(x)$ as $x \to 0$, any function that is $o(x^2)$ is also $o(x)$.
-
-## Distinction between little-o and big-O notation
-
-Little-o and [Big-O notation](../big-o-notation/) are both members of the family of Landau symbols, but they describe distinct asymptotic behaviours. Big-O notation bounds a function by a constant multiple of another, whereas little-o imposes the stricter requirement that the ratio of the two functions approach zero in the limit.
-
-Formally, $f(x) = O(g(x))$ as $x \to x_0$ if there exist constants $M > 0$ and $\delta > 0$ such that $|f(x)| \leq M |g(x)|$ whenever $0 < |x - x_0| < \delta$.
-
-As $x \to 0$, $x^2 = o(x)$, which also implies $x^2 = O(x)$. However, $x = O(x)$ does not imply $x = o(x)$, since:
-
-$$\lim_{x \to 0} \frac{x}{x} = 1 \neq 0$$
-
-The limit fails to vanish, so the little-o condition is not satisfied even though the Big-O condition holds. Little-o requires the ratio to reach zero, while Big-O asks only that it stay bounded.
-
-In terms of set inclusion, the class of functions satisfying $f = o(g)$ lies strictly within the class satisfying $f = O(g)$. Every little-o relationship is also a Big-O relationship, but the converse fails.
+In terms of [set inclusion](../sets/), the class of functions satisfying $f = o(g)$ is strictly contained in the class of functions satisfying $f = O(g).$ Every little-o relation is also a big-O relation, but the converse does not hold.
 
 ## Little-o notation in Taylor expansions
 
-In an [asymptotic expansion](../asymptotic-expansion/), little-o notation describes the error after truncation at a finite order. Rather than writing each omitted term, a single symbol records the remainder's asymptotic order. Given a function $f(x)$ that is $n$ times differentiable at $x_0$, its Taylor expansion to order $n$ takes the form:
+A more advanced application concerns the use of little-o notation in [asymptotic expansions](../asymptotic-expansion/). It merits a brief mention because it extends the use already seen in the example with $\sin x.$ In general, in an asymptotic expansion, little-o notation describes the error introduced by truncating at a given degree. For a function $f(x)$ that is [$n$ times differentiable](../higher-order-derivatives/) at $x_0,$ its [Taylor expansion of order $n$](../taylor-formula-with-remainder/) has the form:
 
 $$f(x) = f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 + \cdots + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n + o\big( (x - x_0)^n \big)$$
 
-The remainder $o((x - x_0)^n)$ conveys precise asymptotic information: the error decreases more rapidly than $(x - x_0)^n$ as $x \to x_0$, and is therefore negligible compared to the last explicit term in the expansion.
-
-- - -
-
-Several common Taylor expansions near $x = 0$ carry an explicit little-o remainder:
+The symbol $o((x - x_0)^n)$ denotes the remainder and provides asymptotic information about the function. It states that the error tends to zero more rapidly than $(x - x_0)^n$ as $x \to x_0$ and is therefore negligible compared to this power. When $f^{(n)}(x_0) \neq 0,$ the error is also negligible compared to the last explicit term of the expansion. Several Taylor expansions near $x = 0$ have a remainder expressed in little-o notation, including the following:
 
 [class="table-1"]
 
@@ -182,10 +181,8 @@ Several common Taylor expansions near $x = 0$ carry an explicit little-o remaind
 
 [/class]
 
-These expansions are effective for evaluating limits involving [indeterminate forms](../indeterminate-forms/). Replacing a function by its Taylor expansion turns the problem into algebraic manipulation in which the little-o remainder vanishes in the limit:
+These expansions are useful for evaluating limits involving [indeterminate forms](../indeterminate-forms/), since substituting a function's Taylor expansion gives an expression in which the contribution of the remainder tends to zero. For example:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{\dfrac{x^2}{2} + o(x^2)}{x^2} = \frac{1}{2}$$
 
-As $x \to 0$, the little-o term becomes negligible and the limit is determined by the leading coefficient.
-
-> The little-o remainder records more than the presence of omitted terms. It fixes the order of the error, the rate at which the truncated expansion approaches $f(x)$ as $x \to x_0$.
+As $x \to 0,$ the ratio $o(x^2)/x^2$ tends to zero, so the limit is determined by the coefficient of the quadratic term.
