@@ -274,7 +274,7 @@ $$
 
 In either normal form, only $\neg,$ $\wedge,$ and $\lor$ occur, and every negation has an atomic proposition as its scope. A single literal is both a clause and a term, so it is both a CNF formula and a DNF formula.
 
-Every propositional formula is logically equivalent to a formula in CNF and to a formula in DNF. One conversion method first removes $\rightarrow,$ $\leftrightarrow,$ and $\oplus,$ then moves each negation inward by double negation and De Morgan's laws, and finally applies the distributive laws.
+Every propositional formula is logically equivalent to a formula in CNF and to a formula in DNF. One conversion method first removes $\rightarrow,$ $\leftrightarrow,$ and $\oplus,$ then moves each negation inward by double negation and [De Morgan's laws](../de-morgan-laws/), and finally applies the distributive laws.
 
 For example, consider $\neg(p \lor q) \rightarrow r.$ The equivalence $\varphi \rightarrow \psi \equiv \neg\varphi \lor \psi$ gives the following calculation:
 

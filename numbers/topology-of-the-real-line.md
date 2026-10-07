@@ -106,7 +106,7 @@ A sequential criterion follows from the characterization of accumulation points.
 + The interval $[0,1)$ is neither open nor closed, since $0$ is not an interior point and $1$ is an accumulation point outside the set.
 + The sets $\emptyset$ and $\mathbb{R}$ are both open and closed, and they are the only subsets of $\mathbb{R}$ with this property. This is equivalent to the [connectedness](../intervals/) of the real line.
 
-By the [De Morgan laws](../sets/), an arbitrary intersection of closed sets is closed, and a union of finitely many closed sets is closed. Finiteness is required for unions. The sets $[1/n,1]$ are closed for every $n\in\mathbb{N},$ but their union over all $n$ is $(0,1],$ which is not closed.
+By the [De Morgan laws](../de-morgan-laws/), an arbitrary intersection of closed sets is closed, and a union of finitely many closed sets is closed. Finiteness is required for unions. The sets $[1/n,1]$ are closed for every $n\in\mathbb{N},$ but their union over all $n$ is $(0,1],$ which is not closed.
 
 ## Closure, interior and boundary
 

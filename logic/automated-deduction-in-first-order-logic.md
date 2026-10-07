@@ -179,7 +179,7 @@ Under fair search, forward chaining derives every ground atom entailed by the kn
 Resolution applies beyond the definite-clause fragment, but it requires clauses. An arbitrary first-order sentence must therefore be converted. The conversion has six steps, applied in order.
 
 + Eliminate $\leftrightarrow$ and $\rightarrow$ by the equivalences $\varphi \leftrightarrow \psi \equiv (\varphi \rightarrow \psi) \wedge (\psi \rightarrow \varphi)$ and $\varphi \rightarrow \psi \equiv \neg\varphi \lor \psi.$
-+ Move every negation inward by the double negation law, De Morgan's laws, and the quantifier dualities $\neg\forall x\varphi \equiv \exists x \neg\varphi$ and $\neg\exists x\varphi \equiv \forall x \neg\varphi.$
++ Move every negation inward by the double negation law, [De Morgan's laws](../de-morgan-laws/), and the quantifier dualities $\neg\forall x\varphi \equiv \exists x \neg\varphi$ and $\neg\exists x\varphi \equiv \forall x \neg\varphi.$
 + Standardize the variables apart, so that each quantifier binds a variable that occurs nowhere else, and move all quantifiers to the front to obtain prenex normal form.
 + Skolemize, replacing each existentially quantified variable by a term as described below.
 + Drop the universal quantifiers, which bind every remaining variable.
