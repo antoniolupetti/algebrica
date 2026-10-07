@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="365px" height="331px" viewBox="0 0 365 331" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="134.5" y="12">The midpoint M(0, 3) divides the segment </tspan>
+                <tspan x="134.5" y="25">joining A(−3, 1) and B(3, 5) into two equal </tspan>
+                <tspan x="134.5" y="38">parts, with AM = MB = √13</tspan>
+            </text>
+            <line x1="228" y1="47.5" x2="228" y2="134.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="356.5" y="327">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="153.5" y="74">y</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="150.5" y="327">O</tspan>
+            </text>
+            <line x1="55.5" y1="306" x2="55.5" y2="312" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="49.5" y="327">−3</tspan>
+            </text>
+            <line x1="283.5" y1="306" x2="283.5" y2="312" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="280.5" y="327">3</tspan>
+            </text>
+            <line x1="166.5" y1="119" x2="172.5" y2="119" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="153.5" y="123">5</tspan>
+            </text>
+            <line x1="55.5" y1="271.5" x2="169.5" y2="271.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="170" y1="271" x2="170" y2="195" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="169.5" y1="195.5" x2="283.5" y2="195.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="284" y1="195" x2="284" y2="119" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="55.5" y1="271" x2="283.5" y2="119" stroke="#312F2F" stroke-width="2" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="5.5" y="274">A(−3, 1)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="288.5" y="106">B(3, 5)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="113.5" y="187">M(0, 3)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="109.5" y="288">3</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="222.5" y="212">3</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="176.5" y="240">2</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="292.5" y="157">2</tspan>
+            </text>
+            <path d="M170.382134,67.6769926 L170.435788,67.7548694 L174.935788,75.7548694 C175.07117,75.9955483 174.98581,76.3004059 174.745131,76.4357878 C174.531194,76.5561272 174.266548,76.5020533 174.115296,76.3195146 L174.064212,76.2451306 L170.5,69.908 L170.5,194 C170.5,194.276142 170.276142,194.5 170,194.5 C169.75454,194.5 169.550392,194.323125 169.508056,194.089876 L169.5,194 L169.5,69.908 L165.935788,76.2451306 C165.815448,76.4590675 165.561202,76.5502832 165.337152,76.4728292 L165.254869,76.4357878 C165.040933,76.3154483 164.949717,76.0612021 165.027171,75.8371522 L165.064212,75.7548694 L169.564212,67.7548694 C169.739435,67.4433624 170.165161,67.4174034 170.382134,67.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <path d="M355.662848,303.527171 L355.745131,303.564212 L363.745131,308.064212 C364.056638,308.239435 364.082597,308.665161 363.823007,308.882134 L363.745131,308.935788 L355.745131,313.435788 C355.504452,313.57117 355.199594,313.48581 355.064212,313.245131 C354.943873,313.031194 354.997947,312.766548 355.180485,312.615296 L355.254869,312.564212 L361.591,309 L0,309 C-0.276142375,309 -0.5,308.776142 -0.5,308.5 C-0.5,308.25454 -0.323124839,308.050392 -0.0898756324,308.008056 L0,308 L361.591,308 L355.254869,304.435788 C355.040933,304.315448 354.949717,304.061202 355.027171,303.837152 L355.064212,303.754869 C355.184552,303.540933 355.438798,303.449717 355.662848,303.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="55.9" cy="270.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="169.9" cy="194.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="283.9" cy="118.4" r="2.5"></circle>
+            <line x1="170" y1="272" x2="170" y2="326.5" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

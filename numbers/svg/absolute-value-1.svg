@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="271px" viewBox="0 0 315 271" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <tspan x="84" y="218">The function | x | is symmetric with respect to </tspan>
+                <tspan x="84" y="231">the y-axis. This symmetry implies that the </tspan>
+                <tspan x="84" y="244">function is even. It has an absolute minimum at </tspan>
+                <tspan x="84" y="257">the origin, but it is not differentiable there.</tspan>
+            </text>
+            <line x1="195.5" y1="115.5" x2="195.5" y2="198.5" stroke="#BABABA" stroke-linecap="square"></line>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="294.5" y="167">x</tspan>
+            </text>
+            <path d="M144.5,6.98013557 L144.935788,7.75486938 L149.435788,15.7548694 L149.680918,16.1906571 L148.809343,16.6809184 L148.564212,16.2451306 L144.999,9.906 L145,181 L144,181 L143.999,9.91 L140.435788,16.2451306 L140.190657,16.6809184 L139.319082,16.1906571 L139.564212,15.7548694 L144.064212,7.75486938 L144.5,6.98013557 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <path d="M294.809343,142.319082 L295.245131,142.564212 L303.245131,147.064212 L304.019864,147.5 L303.245131,147.935788 L295.245131,152.435788 L294.809343,152.680918 L294.319082,151.809343 L294.754869,151.564212 L301.091,148 L-0.5,148 L-0.5,147 L301.091,147 L294.754869,143.435788 L294.319082,143.190657 L294.809343,142.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+            <line x1="17" y1="22" x2="144" y2="148" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+            <path d="M145,22 L166.912736,43.7401944 M189.847533,66.494403 L272,148" stroke="#000000" stroke-width="2" stroke-linecap="round" transform="translate(208.500000, 85.000000) scale(-1, 1) translate(-208.500000, -85.000000) "></path>
+            <text font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="217.5" y="59">y=|x|</tspan>
+            </text>
+            <text font-size="14" font-weight="normal" fill="#BABABA">
+                <tspan x="124.5" y="15">y</tspan>
+            </text>
+            <circle fill="#000000" cx="144.5" cy="147.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>

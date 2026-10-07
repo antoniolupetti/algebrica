@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="425px" viewBox="0 0 352 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+                <tspan x="62.5" y="12">Example of two points represented in the </tspan>
+                <tspan x="62.5" y="25">Cartesian plane, with their coordinates projected </tspan>
+                <tspan x="62.5" y="38">onto the axes The points P(3, 2) and Q(2, 3) are </tspan>
+                <tspan x="62.5" y="51">plotted in the first quadrant; the dashed lines </tspan>
+                <tspan x="62.5" y="64">show their corresponding coordinates on the axes.</tspan>
+            </text>
+            <line x1="215" y1="73.5" x2="215" y2="141.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <path d="M154.382134,91.6769926 L154.435788,91.7548694 L158.935788,99.7548694 C159.07117,99.9955483 158.98581,100.300406 158.745131,100.435788 C158.531194,100.556127 158.266548,100.502053 158.115296,100.319515 L158.064212,100.245131 L154.5,93.908 L154.5,424.5 C154.5,424.776142 154.276142,425 154,425 C153.75454,425 153.550392,424.823125 153.508056,424.589876 L153.5,424.5 L153.5,93.908 L149.935788,100.245131 C149.815448,100.459067 149.561202,100.550283 149.337152,100.472829 L149.254869,100.435788 C149.040933,100.315448 148.949717,100.061202 149.027171,99.8371522 L149.064212,99.7548694 L153.564212,91.7548694 C153.739435,91.4433624 154.165161,91.4174034 154.382134,91.6769926 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="344.5" y="294">x</tspan>
+            </text>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="137.5" y="100">y</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="140.5" y="293">O</tspan>
+            </text>
+            <line x1="26" y1="271" x2="26" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="19.5" y="293">−4</tspan>
+            </text>
+            <line x1="58" y1="271" x2="58" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="51.5" y="293">−3</tspan>
+            </text>
+            <line x1="90" y1="271" x2="90" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="83.5" y="293">−2</tspan>
+            </text>
+            <line x1="122" y1="271" x2="122" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="115.5" y="293">−1</tspan>
+            </text>
+            <line x1="186" y1="271" x2="186" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="182.5" y="293">1</tspan>
+            </text>
+            <line x1="218" y1="271" x2="218" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="214.5" y="293">2</tspan>
+            </text>
+            <line x1="250" y1="271" x2="250" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="246.5" y="293">3</tspan>
+            </text>
+            <line x1="282" y1="271" x2="282" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="278.5" y="293">4</tspan>
+            </text>
+            <line x1="314" y1="271" x2="314" y2="278" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="310.5" y="293">5</tspan>
+            </text>
+            <line x1="150.5" y1="403.5" x2="157.5" y2="403.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="131.5" y="407">−4</tspan>
+            </text>
+            <line x1="150.5" y1="371.5" x2="157.5" y2="371.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="131.5" y="375">−3</tspan>
+            </text>
+            <line x1="150.5" y1="339.5" x2="157.5" y2="339.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="131.5" y="343">−2</tspan>
+            </text>
+            <line x1="150.5" y1="307.5" x2="157.5" y2="307.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="131.5" y="311">−1</tspan>
+            </text>
+            <line x1="150.5" y1="243.5" x2="157.5" y2="243.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="137.5" y="247">1</tspan>
+            </text>
+            <line x1="150.5" y1="211.5" x2="157.5" y2="211.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="137.5" y="215">2</tspan>
+            </text>
+            <line x1="150.5" y1="179.5" x2="157.5" y2="179.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="137.5" y="183">3</tspan>
+            </text>
+            <line x1="150.5" y1="147.5" x2="157.5" y2="147.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="137.5" y="151">4</tspan>
+            </text>
+            <line x1="150.5" y1="115.5" x2="157.5" y2="115.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="137.5" y="119">5</tspan>
+            </text>
+            <line x1="250" y1="275" x2="250" y2="211" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="58" y1="276" x2="58" y2="212" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <path d="M58,211.5 L129.5,211.5 M152.5,211.5 L249.5,211.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="249.9" cy="211.4" r="2.5"></circle>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="57.9" cy="211.4" r="2.5"></circle>
+            <line x1="218" y1="275" x2="218" y2="179" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="153.5" y1="179.5" x2="217.5" y2="179.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="216.9" cy="179.4" r="2.5"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="262.5" y="215">P(3, 2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="5.5" y="216">R(-3, 2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="200.5" y="166">Q(2, 3)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="24.5" y="119">II</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="2.5" y="139">x &lt; 0, y &gt; 0</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="283.5" y="119">I</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="258.5" y="139">x &gt; 0, y &gt; 0</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="22" y="376">III</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="2.5" y="396">x &lt; 0, y &lt; 0</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="267.5" y="376">IV</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="12" font-weight="normal">
+                <tspan x="248.5" y="396">x &gt; 0, y &lt; 0</tspan>
+            </text>
+            <path d="M340.662848,269.527171 L340.745131,269.564212 L348.745131,274.064212 C349.056638,274.239435 349.082597,274.665161 348.823007,274.882134 L348.745131,274.935788 L340.745131,279.435788 C340.504452,279.57117 340.199594,279.48581 340.064212,279.245131 C339.943873,279.031194 339.997947,278.766548 340.180485,278.615296 L340.254869,278.564212 L346.591,275 L0,275 C-0.276142375,275 -0.5,274.776142 -0.5,274.5 C-0.5,274.25454 -0.323124839,274.050392 -0.0898756324,274.008056 L0,274 L346.591,274 L340.254869,270.435788 C340.040933,270.315448 339.949717,270.061202 340.027171,269.837152 L340.064212,269.754869 C340.184552,269.540933 340.438798,269.449717 340.662848,269.527171 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
