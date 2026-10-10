@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="293px" height="410px" viewBox="0 0 293 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 56</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="175.5" y="212">y=f(x)</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="223.5" y="172">y=g(x)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="31.5" y="11">The graph of g(x) = f(x) − 2 is obtained by </tspan>
+                <tspan x="31.5" y="24">shifting f(x) downward by 2 units, mapping </tspan>
+                <tspan x="31.5" y="37">P(2, 2) to P′(2, 0).</tspan>
+            </text>
+            <line x1="43.5" y1="48.5" x2="43.5" y2="89.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="1.62933902e-14" y1="337.5" x2="289" y2="337.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="110.5" y1="409.5" x2="110.5" y2="91" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <polyline stroke="#BEB8B7" points="283 333 290 337 283 341"></polyline>
+            <polyline stroke="#BEB8B7" points="106 98 110 91 114 98"></polyline>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="285" y="354">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="93" y="97">y</tspan>
+            </text>
+            <line x1="42.5" y1="334" x2="42.5" y2="342" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="76.5" y1="334" x2="76.5" y2="342" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="144.5" y1="334" x2="144.5" y2="342" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="212.5" y1="334" x2="212.5" y2="342" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="246.5" y1="334" x2="246.5" y2="342" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="303.5" x2="115" y2="303.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="269.5" x2="115" y2="269.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="106" y1="401.5" x2="114" y2="401.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="106" y1="367.5" x2="114" y2="367.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="235.5" x2="115" y2="235.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="201.5" x2="115" y2="201.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="167.5" x2="115" y2="167.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="107" y1="133.5" x2="115" y2="133.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <path d="M45,98 C80.3333333,280.666667 113.666667,372 145,372 C171.230126,372 197.693849,308.461756 224.391168,181.385267 M229.10634,158.29311 C231.524285,146.119257 235.155505,126.68822 240,100" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M58,99 C87.9999767,235.666667 116.999977,304 145,304 C163.030163,304 180.783883,275.665527 198.261159,218.99658" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M204.399783,196.997128 C208.336599,181.832199 215.870005,149.166489 227,99" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M182.245131,321.564212 C182.459067,321.684552 182.550283,321.938798 182.472829,322.162848 L182.435788,322.245131 L177.935788,330.245131 L177.5,331.019864 L177.064212,330.245131 L172.564212,322.245131 C172.42883,322.004452 172.51419,321.699594 172.754869,321.564212 C172.968806,321.443873 173.233452,321.497947 173.384704,321.680485 L173.435788,321.754869 L177,328.091 L177,325.5 C177,325.223858 177.223858,325 177.5,325 C177.74546,325 177.949608,325.176875 177.991944,325.410124 L178,325.5 L178,328.091 L181.564212,321.754869 C181.699594,321.51419 182.004452,321.42883 182.245131,321.564212 Z M177.5,317 C177.74546,317 177.949608,317.176875 177.991944,317.410124 L178,317.5 L178,321.5 C178,321.776142 177.776142,322 177.5,322 C177.25454,322 177.050392,321.823125 177.008056,321.589876 L177,321.5 L177,317.5 C177,317.223858 177.223858,317 177.5,317 Z M177.5,309 C177.74546,309 177.949608,309.176875 177.991944,309.410124 L178,309.5 L178,313.5 C178,313.776142 177.776142,314 177.5,314 C177.25454,314 177.050392,313.823125 177.008056,313.589876 L177,313.5 L177,309.5 C177,309.223858 177.223858,309 177.5,309 Z M177.5,301 C177.74546,301 177.949608,301.176875 177.991944,301.410124 L178,301.5 L178,305.5 C178,305.776142 177.776142,306 177.5,306 C177.25454,306 177.050392,305.823125 177.008056,305.589876 L177,305.5 L177,301.5 C177,301.223858 177.223858,301 177.5,301 Z M177.5,293 C177.74546,293 177.949608,293.176875 177.991944,293.410124 L178,293.5 L178,297.5 C178,297.776142 177.776142,298 177.5,298 C177.25454,298 177.050392,297.823125 177.008056,297.589876 L177,297.5 L177,293.5 C177,293.223858 177.223858,293 177.5,293 Z M177.5,285 C177.74546,285 177.949608,285.176875 177.991944,285.410124 L178,285.5 L178,289.5 C178,289.776142 177.776142,290 177.5,290 C177.25454,290 177.050392,289.823125 177.008056,289.589876 L177,289.5 L177,285.5 C177,285.223858 177.223858,285 177.5,285 Z M177.5,277 C177.74546,277 177.949608,277.176875 177.991944,277.410124 L178,277.5 L178,281.5 C178,281.776142 177.776142,282 177.5,282 C177.25454,282 177.050392,281.823125 177.008056,281.589876 L177,281.5 L177,277.5 C177,277.223858 177.223858,277 177.5,277 Z M177.5,269 C177.74546,269 177.949608,269.176875 177.991944,269.410124 L178,269.5 L178,273.5 C178,273.776142 177.776142,274 177.5,274 C177.25454,274 177.050392,273.823125 177.008056,273.589876 L177,273.5 L177,269.5 C177,269.223858 177.223858,269 177.5,269 Z" fill="#636060" fill-rule="nonzero"></path>
+            <circle stroke="#BEB8B7" stroke-width="1.3" fill="#f4efee" fill-rule="nonzero" cx="177.5" cy="270" r="3"></circle>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="135" y="266">P (2, 2)</tspan>
+            </text>
+            <circle fill="#312F2F" fill-rule="nonzero" cx="178.5" cy="337" r="3"></circle>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="180" y="356">P’ (2, 0)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

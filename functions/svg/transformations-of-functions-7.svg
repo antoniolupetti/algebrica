@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="362px" viewBox="0 0 331 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 52</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.570000, 0.000000)">
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="62.93" y="11">The graph of g(x) = f(2x) is obtained by </tspan>
+                <tspan x="62.93" y="24">compressing f(x) horizontally by a factor </tspan>
+                <tspan x="62.93" y="37">of ½, mapping P(2, 2) to P′(1, 2).</tspan>
+            </text>
+            <line x1="100.93" y1="49.5" x2="100.93" y2="90.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="179.93" y="134">y=g(x)</tspan>
+            </text>
+            <line x1="4.95152169e-13" y1="339.5" x2="327.86" y2="339.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <path d="M124.93,96.4801356 L125.365788,97.2548694 L129.865788,105.254869 C130.00117,105.495548 129.91581,105.800406 129.675131,105.935788 C129.461194,106.056127 129.196548,106.002053 129.045296,105.819515 L128.994212,105.745131 L125.43,99.408 L125.43,358.5 C125.43,358.776142 125.206142,359 124.93,359 C124.68454,359 124.480392,358.823125 124.438056,358.589876 L124.43,358.5 L124.43,99.408 L120.865788,105.745131 C120.745448,105.959067 120.491202,106.050283 120.267152,105.972829 L120.184869,105.935788 C119.970933,105.815448 119.879717,105.561202 119.957171,105.337152 L119.994212,105.254869 L124.494212,97.2548694 L124.93,96.4801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+            <polyline stroke="#BEB8B7" points="321.86 335.14 328.86 339.14 321.86 343.14"></polyline>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="321.86" y="358.14">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="135.57" y="104">y</tspan>
+            </text>
+            <line x1="46.86" y1="336.14" x2="46.86" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="85.72" y1="336.14" x2="85.72" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="163.43" y1="336.14" x2="163.43" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="202.29" y1="336.14" x2="202.29" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="241.14" y1="336.14" x2="241.14" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="280" y1="336.14" x2="280" y2="342.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="121.57" y1="300.29" x2="127.57" y2="300.29" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="121.57" y1="261.43" x2="127.57" y2="261.43" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="121.57" y1="222.57" x2="127.57" y2="222.57" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="121.57" y1="183.71" x2="127.57" y2="183.71" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="121.57" y1="144.86" x2="127.57" y2="144.86" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <path transform="translate(368.32 0) scale(-1 1)" d="M187.98007,256.258785 L188.069701,256.301431 L196.069701,261.026431 L196.871511,261.5 L196.069701,261.973569 L188.069701,266.698569 C187.808157,266.853043 187.470906,266.766246 187.316431,266.504701 C187.179121,266.272217 187.232444,265.979916 187.42968,265.809338 L187.510299,265.751431 L193.777,262.05 L192.29,262.05 C191.986243,262.05 191.74,261.803757 191.74,261.5 C191.74,261.226619 191.939457,260.999824 192.200787,260.957199 L192.29,260.95 L193.777,260.95 L187.510299,257.248569 C187.277814,257.111258 187.183402,256.829531 187.273785,256.58493 L187.316431,256.495299 C187.453742,256.262814 187.735469,256.168402 187.98007,256.258785 Z M189.29,260.95 C189.593757,260.95 189.84,261.196243 189.84,261.5 C189.84,261.773381 189.640543,262.000176 189.379213,262.042801 L189.29,262.05 L186.29,262.05 C185.986243,262.05 185.74,261.803757 185.74,261.5 C185.74,261.226619 185.939457,260.999824 186.200787,260.957199 L186.29,260.95 L189.29,260.95 Z M183.29,260.95 C183.593757,260.95 183.84,261.196243 183.84,261.5 C183.84,261.773381 183.640543,262.000176 183.379213,262.042801 L183.29,262.05 L180.29,262.05 C179.986243,262.05 179.74,261.803757 179.74,261.5 C179.74,261.226619 179.939457,260.999824 180.200787,260.957199 L180.29,260.95 L183.29,260.95 Z M177.29,260.95 C177.593757,260.95 177.84,261.196243 177.84,261.5 C177.84,261.773381 177.640543,262.000176 177.379213,262.042801 L177.29,262.05 L174.29,262.05 C173.986243,262.05 173.74,261.803757 173.74,261.5 C173.74,261.226619 173.939457,260.999824 174.200787,260.957199 L174.29,260.95 L177.29,260.95 Z" fill="#636060" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="212.29" y="270.43">P (2, 2)</tspan>
+            </text>
+            <text fill="#312F2F" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="165.43" y="278.43">P' (1, 2)</tspan>
+            </text>
+            <path d="M74.43,102 C104.63,234 134.63,300 164.43,300 C188.478275,300 212.439719,257.018728 236.314332,171.056184" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M241.879564,150.233508 C244.447836,140.261866 248.297982,124.18403 253.43,102" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M100.43,102 C114.163352,234 128.496685,300 143.43,300 C156.785676,300 170.461314,246.941972 184.456915,140.825915" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M186.875786,121.982982 C187.442606,117.449955 188.294011,110.455627 189.43,101" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle stroke="#BEB8B7" stroke-width="1.3" fill="#f4efee" fill-rule="nonzero" cx="204.59" cy="260.73" r="3"></circle>
+            <circle stroke="#312F2F" stroke-width="1.3" fill="#312F2F" fill-rule="nonzero" cx="163.73" cy="260.73" r="3"></circle>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="234.93" y="163">y=f(x)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

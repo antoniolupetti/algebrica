@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="337px" height="352px" viewBox="0 0 337 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 61</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)">
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#312F2F">
+                <tspan x="259" y="202">y=g(x)</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#BEB8B7">
+                <tspan x="241" y="142">y=f(x)</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal" line-spacing="13">
+                <tspan x="0" y="11">The graph of g(x) = ½f(x) is obtained by </tspan>
+                <tspan x="0" y="24">compressing f(x) vertically by a factor of </tspan>
+                <tspan x="0" y="37">½, mapping P(2, 2) to P′(2, 1).</tspan>
+            </text>
+            <line x1="38" y1="49.5" x2="38" y2="90.5" stroke="#BEB8B7" stroke-linecap="square"></line>
+            <line x1="6.07" y1="332.5" x2="333.93" y2="332.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="131" y1="348.5" x2="131" y2="91" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <polyline stroke="#BEB8B7" points="327.93 328.14 334.93 332.14 327.93 336.14"></polyline>
+            <polyline stroke="#BEB8B7" points="126.64 98 130.64 91 134.64 98"></polyline>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="327.93" y="348.14">x</tspan>
+            </text>
+            <text fill="#636060" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="113.64" y="96">y</tspan>
+            </text>
+            <line x1="53" y1="329.5" x2="53" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="92" y1="329.5" x2="92" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="170" y1="329.5" x2="170" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="208" y1="329.5" x2="208" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="247" y1="329.5" x2="247" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="286" y1="329.5" x2="286" y2="337.14" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="127.64" y1="254.5" x2="134.64" y2="254.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="127.64" y1="215.5" x2="134.64" y2="215.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="127.64" y1="176.5" x2="134.64" y2="176.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <line x1="127.64" y1="137.5" x2="134.64" y2="137.5" stroke="#BEB8B7" fill="#312F2F" fill-rule="nonzero" stroke-linecap="round"></line>
+            <path d="M213.004701,276.316431 C213.237186,276.453742 213.331598,276.735469 213.241215,276.98007 L213.198569,277.069701 L208.473569,285.069701 L208,285.871511 L207.526431,285.069701 L202.801431,277.069701 C202.646957,276.808157 202.733754,276.470906 202.995299,276.316431 C203.227783,276.179121 203.520084,276.232444 203.690662,276.42968 L203.748569,276.510299 L208,283.708 L212.251431,276.510299 C212.405906,276.248754 212.743157,276.161957 213.004701,276.316431 Z M208,276.88 C208.273381,276.88 208.500176,277.079457 208.542801,277.340787 L208.55,277.43 L208.55,281.43 C208.55,281.733757 208.303757,281.98 208,281.98 C207.726619,281.98 207.499824,281.780543 207.457199,281.519213 L207.45,281.43 L207.45,277.43 C207.45,277.126243 207.696243,276.88 208,276.88 Z M208,268.88 C208.273381,268.88 208.500176,269.079457 208.542801,269.340787 L208.55,269.43 L208.55,273.43 C208.55,273.733757 208.303757,273.98 208,273.98 C207.726619,273.98 207.499824,273.780543 207.457199,273.519213 L207.45,273.43 L207.45,269.43 C207.45,269.126243 207.696243,268.88 208,268.88 Z M208,260.88 C208.273381,260.88 208.500176,261.079457 208.542801,261.340787 L208.55,261.43 L208.55,265.43 C208.55,265.733757 208.303757,265.98 208,265.98 C207.726619,265.98 207.499824,265.780543 207.457199,265.519213 L207.45,265.43 L207.45,261.43 C207.45,261.126243 207.696243,260.88 208,260.88 Z" fill="#636060" fill-rule="nonzero"></path>
+            <text fill="#BEB8B7" fill-rule="nonzero" font-size="11" font-weight="normal">
+                <tspan x="167.36" y="250.43">P (2, 2)</tspan>
+            </text>
+            <text fill-rule="nonzero" font-size="11" font-weight="normal" fill="#312f2f">
+                <tspan x="220.36" y="307.29">P' (2, 1)</tspan>
+            </text>
+            <path d="M37.5,99 C82.6623043,242.00254 126.662304,313.669592 169.5,314.0023 C199.553648,314.232596 229.359048,279.355342 258.916201,209.369137" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M266.493076,190.645369 C273.180398,173.427735 283.182706,143.545946 296.5,101" stroke="#312F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M81.5,99 C109.885455,228.667266 138.552122,293.667695 167.5,294.002565 C192.382202,294.286458 217.549189,246.794938 243.000962,151.526467" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <path d="M248.930845,128.486612 C250.389259,122.612968 252.578978,113.450764 255.5,101" stroke="#BEB8B7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+            <circle stroke="#312F2F" stroke-width="1.3" fill="#312F2F" fill-rule="nonzero" cx="208.66" cy="294.59" r="3"></circle>
+            <circle stroke="#BEB8B7" stroke-width="1.3" fill="#f4efee" fill-rule="nonzero" cx="207.66" cy="253.73" r="3"></circle>
+        </g>
+    </g>
+</svg>
