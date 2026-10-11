@@ -56,7 +56,7 @@ $$|{-x}| = |x| \quad \text{per ogni } x \in \mathbb{R}$$
 
 ## Proprietà
 
-Dalla $\tag{3}$ si ricavano le principali proprietà della funzione valore assoluto, che riportiamo di seguito.
+Dalla $(3)$ si ricavano le principali proprietà della funzione valore assoluto, che riportiamo di seguito.
 
 + Dominio: $\mathbb{R}$
 + Immagine: $\mathbb{R}^+_0$

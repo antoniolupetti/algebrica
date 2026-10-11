@@ -56,7 +56,7 @@ $$|{-x}| = |x| \quad \text{for all } x \in \mathbb{R}$$
 
 ## Properties
 
-From $\tag{3}$ we obtain the main properties of the absolute value function, which are listed below.
+From $(3)$ we obtain the main properties of the absolute value function, which are listed below.
 
 + [Domain](../determining-the-domain-of-a-function/): $\mathbb{R}$
 + [Range](../functions/): $\mathbb{R}^+_0$
