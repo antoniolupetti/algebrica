@@ -12,11 +12,11 @@ tags:
   - sign-function
 ---
 
-## Introduction to absolute value
+## Definition
 
-This handout covers [absolute value](../absolute-value/), starting with its [piecewise definition](../piecewise-functions/):
+Before discussing the absolute value function, we briefly recall the concept of the [absolute value](../absolute-value/) of a [real number](../real-numbers/) $x,$ which is denoted by $|x|$ and is defined according to the sign of $x$ as follows:
 
-$$
+$$ \tag{1}
 |x| =
 \begin{cases}
 +x & \text{if } x \geq 0 \\[6pt]
@@ -25,21 +25,22 @@ $$
 \quad \forall \ x \in \mathbb{R}
 $$
 
-The absolute value function assigns to each real number its distance from zero on the number line. Since distance is never negative, negative numbers map to their positive counterparts and positive numbers remain unchanged.
+In other words, the absolute value of a real number $x$ represents its distance from zero on the real line and is therefore always non-negative. In the following figure, for example, the points $-1$ and $2$ are respectively $1$ and $2$ units away from zero, so $|-1| = 1$ and $|2| = 2.$
 
-![IMG. 1](../sets-and-numbers/svg/real-numbers-1.svg)
+![IMG. 1](../numbers/svg/real-numbers-1.svg)
 
-More generally, $|x - a|$ is the distance between the points $x$ and $a$ on the number line:
+More generally, the distance between two points $x$ and $a$ is given by $|x - a|$ and the following equality holds:
 
-$$|x-a| = |a-x|$$
+$$|x-a| = |a-x| \tag{2}$$
 
-Since $a - x = -(x - a)$ the two expressions inside the bars are opposites. Therefore $|a - x| = |-(x - a)| = |x - a|,$ so the two expressions are equal even though the terms inside the bars appear in reverse order.
+From $(2),$ since $a - x = -(x - a)$ we also have:
 
-## Graph and symmetry of the absolute value function
+$$|a - x| = |-(x - a)| = |x - a|$$
 
-The absolute value function is defined as:
 
-$$
+With this preliminary discussion in place, we can introduce the absolute value function, which assigns to each real number $x$ its absolute value $|x|$ and, consistently with $(1),$ is defined [piecewise](../piecewise-functions/) as:
+
+$$ \tag{3}
 y = |x| =
 \begin{cases}
 +x & \text{if } x \geq 0 \\[6pt]
@@ -47,21 +48,23 @@ y = |x| =
 \end{cases}
 $$
 
-![IMG. 2](../sets-and-numbers/svg/absolute-value-1.svg)
+![IMG. 2](../numbers/svg/absolute-value-1.svg)
 
-Its graph consists of two half-lines that meet at the origin, forming a V shape. The graph is symmetric with respect to the $y$-axis, so the function is [even](../even-and-odd-functions/) and satisfies:
+Its graph consists of two half-lines that meet at the origin of the [Cartesian plane](../the-cartesian-coordinate-plane/) and is symmetric with respect to the vertical axis, so the function is [even](../even-and-odd-functions/) and satisfies the identity:
 
 $$|{-x}| = |x| \quad \text{for all } x \in \mathbb{R}$$
 
 ## Properties
 
+From $\tag{3}$ we obtain the main properties of the absolute value function, which are listed below.
+
 + [Domain](../determining-the-domain-of-a-function/): $\mathbb{R}$
-+ Range: $\mathbb{R}^+_0$
-+ Regarding monotonicity, the function is [decreasing](../increasing-and-decreasing-functions/) on $(-\infty, 0]$ and increasing on $[0, +\infty).$
-+ The function is [even](../even-and-odd-functions/), since $|{-x}| = |x|.$
-+ The function is [continuous](../continuous-functions/) on the whole real line $\mathbb{R}.$
-+ The function is differentiable everywhere except at $x = 0,$ where it has a [corner point](../points-of-non-differentiability/).
-+ The function has an [absolute minimum](../maximum-minimum-and-inflection-points/) at $x = 0,$ where $|x| = 0,$ and it has no maximum.
++ [Range](../functions/): $\mathbb{R}^+_0$
++ Regarding [monotonicity](../increasing-and-decreasing-functions/), the function is decreasing on $(-\infty, 0]$ and increasing on $[0, +\infty).$
++ The function is even, since $|{-x}| = |x|.$
++ The function is [continuous](../continuous-functions/) on the entire real line $\mathbb{R}.$
++ The function is differentiable at every point except at $x = 0,$ where it has a [corner point](../points-of-non-differentiability/).
++ The function has an [absolute minimum](../maximum-minimum-and-inflection-points/) at $x = 0,$ where $|x| = 0,$ and has no maximum.
 + The limits at the endpoints of the domain are:
 
 $$
@@ -71,39 +74,40 @@ $$
 \end{align}
 $$
 
-## Graphing the absolute value of a function by flipping the negative part
+The graph of the absolute value of a function is obtained through a [transformation](../transformations-of-functions/), reflecting across the $x$-axis the parts of the original graph that lie below that axis. Consider, for example, the graph of the [parabola](../parabola/) defined by the equation:
 
-Consider the [parabola](../parabola/) defined by the equation:
-
-$$y = x^2 - 1$$
+$$y = x^2 - 1 \tag{4}$$
 
 ![IMG. 3](svg/absolute-value-function-1.svg)
 
-Part of this curve lies below the $x$-axis, in the interval where the function is negative. To find this interval, we solve the inequality:
+By [studying the sign](../sign-analysis-in-inequalities/) of the function, we verify that $(4)$ is negative in the interval between $-1$ and $1$, that is, when the following [inequality](../quadratic-inequalities/) holds:
 
-$$x^2 - 1 < 0 \quad \Longrightarrow \quad -1 < x < 1$$
+$$x^2 - 1 < 0$$
+We now apply a transformation to $(4)$ so that the following holds:
 
-So $y = x^2 - 1$ is negative on the open interval $(-1, 1),$ where the graph lies below the $x$-axis.
+$$f(x) = |x^2 - 1|$$
 
-To graph $f(x) = |x^2 - 1|,$ we start from the graph of $y = x^2 - 1.$ We keep the parts of the graph that lie on or above the $x$-axis and reflect across the $x$-axis the parts that originally lay below it.
+To plot this function, we keep the parts of the graph with values greater than or equal to zero unchanged, while reflecting the negative parts, that is, those lying precisely in the interval between $-1$ and $1,$ to obtain:
 
 ![IMG. 4](svg/absolute-value-function-2.svg)
 
-The reflected graph has all values non-negative, as the absolute value requires.
 
 ## Limits, derivatives, and integrals of the absolute value function
 
-A basic [limit](../limits/) for the absolute value function is:
+We now examine some useful aspects of the absolute value function that arise in the calculation of [limits](../limits/) and in differential and integral calculus. We begin with a standard limit involving the absolute value function:
 
-$$\lim_{x \to 0} \frac{|x|}{x}$$
+$$\lim_{x \to 0} \frac{|x|}{x} \tag{5}$$
 
-This limit does not exist, because the left-hand and right-hand limits are different:
+The existence of the limit requires the left-hand and right-hand limits to coincide. In this case, however, the two one-sided limits are different, so the limit does not exist:
 
-$$\lim_{x \to 0^-} \frac{|x|}{x} = -1 \quad \text{and} \quad \lim_{x \to 0^+} \frac{|x|}{x} = 1$$
+$$
+\begin{align}
+\lim_{x \to 0^-} \frac{|x|}{x} &= -1 \\[6pt]
+\lim_{x \to 0^+} \frac{|x|}{x} &= 1
+\end{align}
+$$
 
-Because the two one-sided limits differ, $|x|$ is not differentiable at $x = 0.$
-
-The [derivative](../derivatives/) of the absolute value function is defined piecewise as:
+Thus, since the two one-sided limits of the [difference quotient](../difference-quotient/) are different, $|x|$ is not differentiable at $x = 0.$ As for the [derivative](../derivatives/), by differentiating each branch of the absolute value function, we obtain the following piecewise expression for its derivative:
 
 $$
 \frac{d}{dx} |x| =
@@ -113,13 +117,11 @@ $$
 \end{cases}
 $$
 
-The derivative does not exist at $x = 0,$ because the function has a [corner point](../points-of-non-differentiability/) there.
+Since, as we have seen, the limit at $x=0$ does not exist, the derivative does not exist at $x = 0,$ because the function has a corner point there. The [indefinite integral](../indefinite-integrals/) of the absolute value function is:
 
-The [indefinite integral](../indefinite-integrals/) of the absolute value function is:
+$$\int |x| \ dx = \frac{x^2 \cdot \mathrm{sgn}(x)}{2} + c \tag{6}$$
 
-$$\int |x| \ dx = \frac{x^2 \cdot \mathrm{sgn}(x)}{2} + c$$
-
-$\mathrm{sgn}(x)$ is the [sign function](../sign-function/), defined as:
+The [sign function](../sign-function/) appearing in $(6),$ which allows the two branches of the antiderivative to be combined into a single expression, is defined by:
 
 $$
 \mathrm{sgn}(x) =
