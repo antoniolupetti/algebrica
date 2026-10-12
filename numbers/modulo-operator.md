@@ -6,7 +6,6 @@ tags:
   - bezout-identity
   - cancellation-law
   - cayley-table
-  - chinese-remainder-theorem
   - congruence
   - division-algorithm
   - equivalence-relation
@@ -184,6 +183,8 @@ $$
 
 The coefficient $a/g$ is coprime with the modulus $n/g$, so the reduced congruence has one solution class modulo $n/g$. This class corresponds to $g$ classes modulo $n$. For example, consider $6x \equiv 9 \pmod{15}$. Here $g = 3$ divides $9,$ and the reduced congruence is $2x \equiv 3 \pmod 5$. The inverse of $2$ modulo $5$ is $3,$ so $x \equiv 9 \equiv 4 \pmod 5$. The original congruence has the three solutions $x = 4$, $x = 9$, and $x = 14$ modulo $15$.
 
+Systems involving several moduli are treated in the [Chinese remainder theorem](../chinese-remainder-theorem/).
+
 ## Fermat's little theorem and Euler's theorem
 
 Fermat's little theorem concerns powers modulo a prime. If $p$ is prime and $a$ is not divisible by $p$, then the following congruence holds:
@@ -201,37 +202,6 @@ a^{\varphi(n)} \equiv 1 \pmod n
 $$
 
 When $n = p$ is prime, every integer in the range $1 \le k \le p - 1$ is coprime with $p$, so $\varphi(p) = p - 1$ and Euler's theorem reduces to Fermat's little theorem.
-
-## The Chinese remainder theorem
-
-The Chinese remainder theorem gives existence and uniqueness for systems of congruences with pairwise coprime moduli. Suppose the integers $n_1, n_2, \ldots, n_k$ are pairwise coprime and $a_1, a_2, \ldots, a_k$ are arbitrary integers. Consider the system:
-
-$$
-\begin{align}
-x &\equiv a_1 \pmod{n_1} \\[6pt]
-x &\equiv a_2 \pmod{n_2} \\[6pt]
-  &\ \vdots \\[6pt]
-x &\equiv a_k \pmod{n_k}
-\end{align}
-$$
-
-The theorem states that such an integer exists and is unique modulo $N = n_1n_2 \cdots n_k$. For two coprime moduli, Bézout's identity gives integers $s$ and $t$ with $sn_1 + tn_2 = 1$. Let $e_1 = tn_2$ and $e_2 = sn_1$. The integer $e_1$ is a multiple of $n_2$ and differs from $1$ by the multiple $sn_1$ of $n_1$, so $e_1 \equiv 1 \pmod{n_1}$ and $e_1 \equiv 0 \pmod{n_2}$. Similarly, $e_2 \equiv 0 \pmod{n_1}$ and $e_2 \equiv 1 \pmod{n_2}$. For arbitrary $a_1$ and $a_2$, a solution is:
-
-$$
-x = a_1e_1 + a_2e_2
-$$
-
-Modulo $n_1$, the second term is congruent to zero and the first is congruent to $a_1$. Modulo $n_2$, the first term is congruent to zero and the second is congruent to $a_2$. Thus $x$ satisfies both congruences. If $x'$ is another solution, both $n_1$ and $n_2$ divide $x - x',$ and coprimality implies that $n_1n_2$ divides $x - x'$.
-
-Iterating the construction proves the statement for any finite number of congruences. In terms of [rings](../rings/), the theorem gives the following [isomorphism](../homomorphisms-and-isomorphisms/):
-
-$$
-\mathbb{Z}/N\mathbb{Z} \cong \mathbb{Z}/n_1\mathbb{Z} \times \mathbb{Z}/n_2\mathbb{Z} \times \cdots \times \mathbb{Z}/n_k\mathbb{Z}
-$$
-
-This isomorphism sends addition and multiplication modulo $N$ to componentwise addition and multiplication modulo the factors $n_i$.
-
-Consider the system $x \equiv 2 \pmod 3$ and $x \equiv 3 \pmod 5$. The Bézout identity $2 \cdot 3 - 1 \cdot 5 = 1$ gives $s = 2$ and $t = -1,$ so $e_1 = -5$ and $e_2 = 6$. The formula gives $x = 2 \cdot (-5) + 3 \cdot 6 = 8$. The equalities $8 = 2 \cdot 3 + 2$ and $8 = 1 \cdot 5 + 3$ verify both congruences. The set of solutions is the residue class $[8]_{15} = \{ \ldots, -7, 8, 23, 38, \ldots \}$.
 
 ## Examples
 
