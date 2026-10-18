@@ -34,10 +34,10 @@
             <circle stroke="#333333" fill="#333333" cx="80" cy="160" r="2.5"></circle>
             <ellipse stroke="#333333" fill="#333333" cx="261.998" cy="160.003471" rx="2.498" ry="2.5034708"></ellipse>
             <text font-size="12" font-weight="normal" fill="#333333">
-                <tspan x="1" y="152">inf A = min A</tspan>
+                <tspan x="1" y="152">inf B = min B</tspan>
             </text>
             <text font-size="12" font-weight="normal" fill="#333333">
-                <tspan x="268" y="152">Sup A = max A</tspan>
+                <tspan x="268" y="152">Sup B = max B</tspan>
             </text>
             <text font-size="12" font-weight="normal" fill="#333333">
                 <tspan x="145" y="183"> B = [0,1]</tspan>

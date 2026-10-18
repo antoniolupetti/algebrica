@@ -23,6 +23,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/ntb-v2_1.pdf), Victor Shoup
 + [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html), Stanley N. Burris, H. P. Sankappanavar
 + [Elementary Number Theory: Primes, Congruences, and Secrets](https://wstein.org/ent/ent.pdf), William Stein
++ [Elements of Abstract and Linear Algebra](https://www.math.miami.edu/~ec/book/book.pdf), E. H. Connell
 + [Foundations of Module and Ring Theory](https://www.math.uni-duesseldorf.de/~wisbauer/book.pdf), Robert Wisbauer
 + [The Great Story of Numbers](https://egbertrijke.github.io/elementary-number-theory-fall.pdf), Egbert Rijke
 + [Group Theory](https://www.jmilne.org/math/CourseNotes/GT.pdf), J. S. Milne
@@ -103,7 +104,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 ## Ordinary differential equations
 
 + [Differential Equations I](https://www.math.toronto.edu/selick/B44.pdf), Paul Selick
-+ [Elementary Differential Equations](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_DIFF_EQNS_I.PDF), William F. Trench
++ [Elementary Differential Equations with Boundary Value Problems](https://digitalcommons.trinity.edu/mono/9/), William F. Trench
 + [Notes on Diffy Qs](https://www.jirka.org/diffyqs/diffyqs.pdf), Jiří Lebl
 
 ## Probability and statistics
@@ -150,6 +151,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf), Jean Gallier, Jocelyn Quaintance
 + [The Architecture of Mathematics](https://www.jstor.org/stable/2305937), Nicholas Bourbaki
 + [Book of Proof](https://richardhammack.github.io/BookOfProof/Main.pdf), Richard Hammack
++ [Contemporary Mathematics](https://assets.openstax.org/oscms-prodcms/media/documents/contemporary-mathematics_-_WEB.pdf), Donna Kirk
 + [Everything You Always Wanted to Know About Mathematics (But Didn't Even Know to Ask)](https://www.math.cmu.edu/~jmackey/151_128/bws_book.pdf), Brendan W. Sullivan
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
 + [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach

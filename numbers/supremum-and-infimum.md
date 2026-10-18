@@ -14,181 +14,206 @@ tags:
   - upper-bound
 ---
 
-## The completeness axiom
-
-Although [real numbers](../real-numbers/) are frequently introduced via their algebraic properties, the essential distinction between $\mathbb{R}$ and $\mathbb{Q}$ lies in their order structure, and in particular in a unique property of that order. Every non-empty subset of $\mathbb{R}$ that is bounded above has a least upper bound lying within $\mathbb{R}$. The property is known as the completeness axiom and characterises the real line. The notions of supremum and infimum are the practical tools for applying it.
-
 ## Upper and lower bounds
 
-Consider a non-empty [set](../sets/) $A \subseteq \mathbb{R}$. A real number $M$ is an upper bound of $A$ if:
+Before introducing the concepts of supremum and infimum, we need to define what are known as the upper and lower bounds of a set, namely the values that bound it from above and below. As we will see in detail below, the supremum is the least upper bound, while the infimum is the greatest lower bound. In this discussion, we will consider only subsets of the set of [real numbers](../real-numbers/) $\mathbb{R},$ which satisfies the [completeness axiom](../properties-of-real-numbers/), according to which every non-empty subset of $\mathbb{R}$ bounded above and below has, respectively, a supremum and an infimum in $\mathbb{R}.$ We therefore begin by considering a non-empty [set](../sets/) $A \subseteq \mathbb{R}.$ A real number $M$ is said to be an upper bound of $A$ if the following condition holds:
 
 $$
-a \leq M \quad \forall \ a \in A
+a \leq M \quad \forall \ a \in A \tag{1}
 $$
 
-If such a number exists, the set $A$ is bounded above. A real number $m$ is a lower bound of $A$ if:
+If such a number exists, the set $A$ is bounded above. Similarly, a real number $m$ is a lower bound of $A$ if the following condition holds:
 
 $$
-a \geq m \quad \forall \ a \in A
+a \geq m \quad \forall \ a \in A \tag{2}
 $$
 
-In this case, $A$ is bounded below. A set is bounded if it is both bounded above and below, that is, there exists $K > 0$ such that:
+In this case, $A$ is bounded below. A set is bounded if it is bounded both above and below, that is, if there exists a real constant $K > 0$ such that:
 
 $$
-|a| \leq K \quad \forall \ a \in A
+|a| \leq K \quad \forall \ a \in A \tag{3}
 $$
 
-Upper bounds, when they exist, are generally not unique. If $M$ is an upper bound of $A$, then $M + 1$ and $M + 100$ are also upper bounds. The same applies symmetrically to lower bounds. If $m$ is a lower bound of $A$, then $m - 1$ is also a lower bound. The least upper bound is called the supremum, and the greatest lower bound is called the infimum.
+Upper bounds, when they exist, are generally not unique, since if $M$ is an upper bound of $A,$ then $M + 1$ and $M + 100$ are also upper bounds of the set. A similar argument applies to lower bounds. If $m$ is a lower bound of $A,$ then $m - 1$ is also a lower bound. Thus, as stated at the beginning, the least upper bound is called the supremum, while the greatest lower bound is called the infimum.
 
-![Img. 1](svg/supremum-and-infimum-1.svg)
 
-+ If $A$ is non-empty but not bounded above, the supremum is conventionally defined as $\sup A = +\infty$.
-+ If $A$ is not bounded below, the infimum is set as $\inf A = -\infty$.
-+ For the empty set, the conventions $\sup \emptyset = -\infty$ and $\inf \emptyset = +\infty$ are employed.
+![Fig. 1](svg/supremum-and-infimum-1.svg)
 
-## Supremum
 
-Consider a non-empty subset $A \subseteq \mathbb{R}$ that is bounded above. The supremum of $A$, denoted $\sup A$, is its least upper bound. A real number $s$ is equal to $\sup A$ if and only if both of the following conditions are satisfied. The first condition states that $s$ is an upper bound of $A$:
+These definitions extend to unbounded sets and the empty set by allowing the values $+\infty$ and $-\infty,$ under the following conventions:
+
++ If $A$ is non-empty and not bounded above, we set $\sup A = +\infty$ by convention.
++ If $A$ is not bounded below, we set $\inf A = -\infty.$
++ For the empty set, we adopt the conventions $\sup \emptyset = -\infty$ and $\inf \emptyset = +\infty.$
+
+## Supremum and infimum
+
+We now consider a non-empty subset $A \subseteq \mathbb{R}$ that is bounded above. The supremum of $A,$ denoted by $\sup A,$ is its least upper bound. A real number $s$ equals $\sup A$ if and only if it satisfies two conditions. The first mirrors $(1),$ namely:
 
 $$
 a \leq s \quad \forall \ a \in A
 $$
 
-The second condition ensures that any number strictly less than $s$ is exceeded by some element of $A$:
+The second condition ensures that every number strictly less than $s$ is exceeded by at least one element of $A$:
 
 $$
-\forall \ \varepsilon > 0 \quad \exists \ a \in A : a > s - \varepsilon
+\forall \ \varepsilon > 0 \quad \exists \ a \in A : a > s - \varepsilon \tag{4}
 $$
 
-Together, these conditions determine $s$ uniquely. There can be only one least upper bound. If both $s$ and $s'$ satisfy the definition, we have:
+These conditions determine $s$ uniquely, that is, if both $s$ and $s'$ satisfy the definition, then $s$ and $s'$ must be equal, as expressed by the following relation:
 
 $$
-s \leq s' \ \wedge \ s' \leq s \ \to \ s = s'
+s \leq s' \ \wedge \ s' \leq s \ \to \ s = s' \tag{5}
 $$
 
-An equivalent characterisation states that $s = \sup A$ if and only if $s$ is an upper bound of $A$ and there exists a [sequence](../sequences/) $(a_n) \subseteq A$ such that $a_n \to s$.
+An equivalent characterisation states that $s = \sup A$ if and only if $s$ is an upper bound of $A$ and there exists a [sequence](../sequences/) $(a_n) \subseteq A$ such that $a_n \to s.$
 
-> The completeness axiom ensures that $\sup A$ exists in $\mathbb{R}$ whenever $A$ is non-empty and bounded above. The property does not hold in $\mathbb{Q}$. For example, the set $\\{q \in \mathbb{Q} : q^2 < 2\\}$ is bounded above in $\mathbb{Q}$, but its least upper bound is $\sqrt{2}$, which is not a [rational number](../rational-numbers/). In this case, the supremum exists, but it does not belong to the space. Such a situation cannot occur in $\mathbb{R}$.
+- - -
 
-## Infimum
+We now distinguish between $\mathbb{R}$ and $\mathbb{Q}.$ We have already stated that the completeness axiom guarantees that every non-empty set of real numbers bounded above has a real supremum, which is why we have considered subsets of the real numbers. While this property holds for the reals, it does not hold for the [rational numbers](../rational-numbers/). Indeed, consider the following set:
+$$A = \{q \in \mathbb{Q} : q^2 < 2\} \tag{6}$$This set contains $0$ and is bounded above, for example by $2.$ If we seek its supremum in $\mathbb{R},$ we obtain $\sqrt{2},$ which is an [irrational number](../irrational-numbers/). If we instead allow only rational upper bounds, no upper bound of $A$ is less than or equal to all the other rational upper bounds. Indeed, every rational upper bound $M$ is greater than $\sqrt{2}$ and, by the density of the rationals, there exists a rational number $r$ such that $\sqrt{2} < r < M,$ so $r$ is also an upper bound of $A.$ Thus, the set given in $(6)$ has a supremum in $\mathbb{R},$ but not in $\mathbb{Q}.$
 
-Consider a non-empty subset $A \subseteq \mathbb{R}$ that is bounded below. The infimum of $A$, denoted $\inf A$, is its greatest lower bound. A real number $i$ is equal to $\inf A$ if and only if both of the following conditions are satisfied. The first condition states that $i$ is a lower bound of $A$:
+- - -
 
-$$
-a \geq i \quad \forall \ a \in A
-$$
-
-The second condition ensures that any number strictly greater than $i$ is preceded by some element of $A$:
+We now turn to the definition of infimum, considering, as in the case of the supremum, a non-empty subset $A \subseteq \mathbb{R},$ but this time one that is bounded below. The infimum of $A,$ denoted by $\inf A,$ is its greatest lower bound. A real number $i$ equals $\inf A$ if and only if it satisfies the following conditions. The first corresponds to $(2)$ and states that $i$ is a lower bound of $A$:
 
 $$
-\forall \ \varepsilon > 0 \quad \exists \ a \in A : a < i + \varepsilon
+	a \geq i \quad \forall \ a \in A \tag{7}
 $$
 
-Together, these conditions uniquely determine $i$. There can be only one greatest lower bound. If both $i$ and $i'$ satisfy the definition, we have:
+The second condition ensures that every number strictly greater than $i$ is greater than at least one element of $A$:
 
 $$
-i \geq i' \ \wedge \ i' \geq i \ \to \ i = i'
+\forall \ \varepsilon > 0 \quad \exists \ a \in A : a < i + \varepsilon \tag{8}
 $$
 
-An equivalent characterisation states that $i = \inf A$ if and only if $i$ is a lower bound of $A$ and there exists a sequence $(a_n) \subseteq A$ such that $a_n \to i$.
-
-A concrete example is the set $\\{ 1/n : n \in \mathbb{N} \\}.$ Each term is positive, so $0$ is a lower bound, and no positive number can be a lower bound, because the Archimedean property supplies an $n$ with $1/n$ below any proposed positive threshold. Hence $\inf \\{ 1/n : n \in \mathbb{N} \\} = 0.$ The value $0$ is not one of the terms, so the set has an infimum but no minimum.
-
-## Supremum and maximum, infimum and minimum
-
-The relationship between supremum and maximum, as well as between infimum and minimum, is frequently misunderstood. The maximum of a set $A$ is an element of $A$ that is greater than or equal to every other element. When a maximum exists, we have:
+As with the supremum, these conditions determine $i$ uniquely, so if both $i$ and $i'$ satisfy the definition, we have:
 
 $$
-\max A = \sup A
+i \geq i' \ \wedge \ i' \geq i \ \to \ i = i' \tag{9}
 $$
 
-The supremum does not necessarily belong to the set $A$. Consider $A = (0, 1)$. Every element of $A$ is strictly less than $1$, so $\sup A = 1$. Since $1 \notin A$, the set $A$ has no maximum. The number $1$ is the least upper bound, but it is not an element of $A$. Similarly, $\inf A = 0$, yet $0 \notin A$, so $A$ has no minimum. By contrast, for the closed [interval](../intervals/) $B = [0,1]$ we have:
+Here too, we can use sequences to obtain an equivalent definition, under which $i = \inf A$ if and only if $i$ is a lower bound of $A$ and there exists a sequence $(a_n) \subseteq A$ such that $a_n \to i.$
+
+It can happen that a set has an infimum that does not belong to the set and is therefore not a minimum. Consider, for example, the following set:
+
+$$\{1/n : n \in \mathbb{N},\ n \geq 1\} \tag{10}$$
+
+Every element of $(10)$ is positive, so we can readily conclude that $0$ is a lower bound of the set. However, no positive number can be a lower bound, since the [Archimedean property](../real-numbers/) guarantees that, for every positive value, there exists an [integer](../integers/) $n \geq 1$ for which $1/n$ is less than that threshold. The set therefore has the following infimum:
 
 $$
-\sup B = \max B = 1 \qquad \inf B = \min B = 0
+\inf \{1/n : n \in \mathbb{N},\ n \geq 1\} = 0 \tag{11}
 $$
 
-since the boundary points are included in the set.
-
-![Img. 2](svg/supremum-and-infimum-2.svg)
-
-In general, the following implications hold:
-
-$$
-\max A \text{ exists} \ \to \ \max A = \sup A
-$$
-
-$$
-\min A \text{ exists} \ \to \ \min A = \inf A
-$$
-
-The converse does not hold in general. Whether a function actually attains its supremum is a non-trivial question. The [Weierstrass theorem](../weierstrass-theorem/) gives a sufficient condition: if a function is continuous on a closed and bounded interval, then the supremum and infimum are attained, and the maximum and minimum exist. Outside these conditions, the question must be examined case by case.
-
-## Supremum and infimum of functions
-
-The concepts of supremum and infimum extend naturally to functions. For a function $f : D \to \mathbb{R}$, the supremum of $f$ over $D$ is the supremum of its image:
-
-$$
-\sup_{x \in D} f(x) = \sup \\{ f(x) : x \in D \\}
-$$
-
-Similarly, the infimum is defined as:
-
-$$
-\inf_{x \in D} f(x) = \inf \\{ f(x) : x \in D \\}
-$$
-
-These quantities are the least upper bound and greatest lower bound of the values assumed by $f$, and neither is necessarily attained.
-
-+ A real number $s$ is equal to $\sup_{x \in D} f(x)$ if and only if $f(x) \leq s$ for all $x \in D$, and for every $\varepsilon > 0$ there exists $x \in D$ such that $f(x) > s - \varepsilon$.
-+ Symmetrically, a real number $i$ is equal to $\inf_{x \in D} f(x)$ if and only if $f(x) \geq i$ for all $x \in D$, and for every $\varepsilon > 0$ there exists $x \in D$ such that $f(x) < i + \varepsilon$.
-
-The supremum and infimum of a function are not necessarily attained. For the function $f(x) = x$ defined on the open interval $(0, 1)$, $\sup_{x \in (0,1)} f(x) = 1$, yet there is no $x \in (0, 1)$ such that $f(x) = 1$. If the supremum is attained at some point $x_0 \in D$, that is, $f(x_0) = \sup_{x \in D} f(x)$, it coincides with the maximum of $f$ over $D$. The same relationship holds between the infimum and the minimum.
-
-> Supremum and infimum are bounds that the function may approach but need not attain, whereas maximum and minimum are values that the function actually reaches at specific points of $D$.
-
-## Algebra of suprema and infima
-
-Suprema and infima behave simply under translation and scaling of a set, which often simplifies their computation. For a non-empty bounded set $A \subseteq \mathbb{R}$ and a real number $c,$ write $c + A = \\{ c + a : a \in A \\}$ and $cA = \\{ ca : a \in A \\}.$ Translating a set shifts both bounds by the same amount:
-
-$$
-\sup(c + A) = c + \sup A \qquad \inf(c + A) = c + \inf A
-$$
-
-Scaling by a positive factor scales the bounds while preserving their roles:
-
-$$
-\sup(cA) = c \sup A \qquad \inf(cA) = c \inf A \qquad (c > 0)
-$$
-
-Scaling by a negative factor exchanges the two, since multiplication by a negative number reverses the order:
-
-$$
-\sup(cA) = c \inf A \qquad \inf(cA) = c \sup A \qquad (c < 0)
-$$
-
-Each identity is verified by checking that the right-hand side satisfies the two defining conditions of the bound on the left. The choice $c = -1$ gives the useful special case $\sup(-A) = -\inf A,$ which turns any statement about infima into one about suprema.
-
-A comparison of two sets follows the same reasoning. Suppose $A$ and $B$ are non-empty and every element of $A$ is at most every element of $B,$ that is $a \leq b$ for all $a \in A$ and $b \in B.$ Each $a$ is then a lower bound for $B,$ so $a \leq \inf B,$ and $\inf B$ is in turn an upper bound for $A.$ Taking the least upper bound gives:
-
-$$
-\sup A \leq \inf B
-$$
-
-The conclusion stays non-strict even when the hypothesis is sharpened to $a < b$ for every pair. With $A = \\{ 0 \\}$ and $B = \\{ 1/n : n \in \mathbb{N} \\}$ one has $a < b$ throughout, yet both extrema equal $0,$ so a strict separation $\sup A < \inf B$ cannot be expected.
+However, since the value $0$ does not belong to the set, the set has no minimum.
 
 ## The approximation property
 
-The $\varepsilon$-characterisation of the supremum and infimum is more than a definitional detail. It is the form in which these concepts most frequently appear in proofs, and is often presented as a standalone property. If $s = \sup A$, then for every $\varepsilon > 0$ there exists an element $a \in A$ such that:
+Conditions $(4)$ and $(8)$ show that we can find elements of a set arbitrarily close to its supremum or infimum, provided that the bound in question is finite. This consequence of the definitions is called the approximation property and holds even when the supremum or infimum does not belong to the set. Consider a non-empty set $A \subseteq \mathbb{R}.$ If $s = \sup A \in \mathbb{R},$ then for every $\varepsilon > 0$ there exists an element $a \in A$ such that:
 
 $$
-s - \varepsilon < a \leq s
+s - \varepsilon < a \leq s \tag{12}
 $$
 
-Equivalently, no number strictly less than $s$ is an upper bound for $A$. The analogous statement applies to the infimum: if $i = \inf A$, then for every $\varepsilon > 0$ there exists $a \in A$ such that:
+Indeed, $s - \varepsilon$ cannot be an upper bound of $A,$ because it is less than the supremum, so there exists an element $a \in A$ greater than $s - \varepsilon.$ We also have $a \leq s$ because $s$ is an upper bound. Similarly, if $i = \inf A \in \mathbb{R},$ then for every $\varepsilon > 0$ there exists an element $a \in A$ such that:
 
 $$
 i \leq a < i + \varepsilon
 $$
 
-The property is used throughout analysis whenever one needs to extract elements of a set arbitrarily close to its supremum or infimum, and it appears naturally in existence arguments such as the proof of the Bolzano-Weierstrass theorem and the construction of the [Riemann integral](../riemann-integrability-criteria/).
+In this case, $i + \varepsilon$ cannot be a lower bound of $A,$ because it is greater than the infimum, so there exists a number $a \in A$ such that $a < i + \varepsilon.$ Moreover, $a \geq i$ because $i$ is a lower bound.
+
+The possibility of finding elements of $A$ arbitrarily close to $s$ allows us to construct a sequence that [converges](../convergent-and-divergent-sequences/) to $s.$ To prove this, we apply the approximation property with values of $\varepsilon$ that tend to zero. Choosing $\varepsilon = 1/n$ for every integer $n \geq 1,$ we obtain an element $a_n \in A$ such that:
+
+$$
+s - \frac{1}{n} < a_n \leq s
+$$
+
+The [distance](../absolute-value/) between $a_n$ and $s$ therefore satisfies $0 \leq s - a_n < 1/n,$ that is, $(12),$ and since $1/n$ tends to zero, this distance also tends to zero, so $a_n \to s.$ The same procedure applies to the infimum $i.$ For every integer $n \geq 1,$ we choose $b_n \in A$ such that $i \leq b_n < i + 1/n.$ The inequality $0 \leq b_n - i < 1/n$ implies that $b_n \to i.$
+
+## Maximum and minimum
+
+The maximum of a set $A$ is an element of $A$ greater than or equal to every other element of the set. When the maximum exists, it coincides with the supremum of $A$:
+
+$$
+\max A = \sup A \tag{13}
+$$
+
+For $(13)$ to hold, the supremum must belong to $A,$ but, as we have seen above, the definition of supremum does not impose this condition. Thus, in general, a set can have a supremum without having a maximum. To clarify this point, consider, for example, the open interval $A = (0,1).$ The number $1$ is an upper bound and every number less than $1$ is exceeded by some element of $A,$ so $\sup A = 1.$ However, $1 \notin A,$ so $A$ has no maximum. Similarly, $\inf A = 0,$ but $0 \notin A,$ so $A$ has no minimum. In the closed [interval](../intervals/) $B = [0,1],$ by contrast, both the supremum and the infimum belong to the set and coincide with its maximum and minimum, respectively:
+
+$$
+\begin{align}
+\sup B &= \max B = 1 \\[6pt]
+\inf B &= \min B = 0
+\end{align}
+$$
+
+The argument is illustrated in the following image:
+
+![Fig. 2](svg/supremum-and-infimum-2.svg)
+
+In general, the following implications hold:
+
++ If the set $A$ has a maximum, it coincides with its supremum, so $\max A = \sup A.$
++ If the set $A$ has a minimum, it coincides with its infimum, so $\min A = \inf A.$
+
+## Suprema and infima of functions
+
+The notions of supremum and infimum also extend to [functions](../functions/). In general, for a function $f : D \to \mathbb{R},$ the supremum of $f$ over $D$ is the supremum of its image, that is:
+
+$$
+\sup_{x \in D} f(x) = \sup \{ f(x) : x \in D \} \tag{14}
+$$
+
+Similarly, the infimum is defined by the following equality:
+
+$$
+\inf_{x \in D} f(x) = \inf \{ f(x) : x \in D \} \tag{15}
+$$
+
+Definitions $(14)$ and $(15)$ specify the supremum and infimum of the image of $f,$ which need not belong to the image itself. In this case, the function does not take the value of the supremum or infimum at any point of its [domain](../determining-the-domain-of-a-function/). The following conditions allow us to determine whether a real number is the supremum or infimum of $f$ over $D$:
+
++ A real number $s$ equals $\sup_{x \in D} f(x)$ if and only if $f(x) \leq s$ for every $x \in D$ and, for every $\varepsilon > 0,$ there exists $x \in D$ such that $f(x) > s - \varepsilon.$
++ Symmetrically, a real number $i$ equals $\inf_{x \in D} f(x)$ if and only if $f(x) \geq i$ for every $x \in D$ and, for every $\varepsilon > 0,$ there exists $x \in D$ such that $f(x) < i + \varepsilon.$
+
+For example, the function $f(x) = x$ defined on the open interval $(0, 1)$ satisfies $\sup_{x \in (0,1)} f(x) = 1,$ but no $x \in (0, 1)$ satisfies $f(x) = 1,$ so the function has no maximum. When, on the other hand, the supremum is attained at a point $x_0 \in D,$ that is, when $f(x_0) = \sup_{x \in D} f(x),$ it coincides with the maximum of $f$ over $D.$ The same relationship holds between the infimum and the minimum. We can therefore conclude that the supremum and infimum are values that the function can approach without necessarily attaining them, while the maximum and minimum are values that the function must attain at one or more points of its domain.
+
+The [Weierstrass theorem](../weierstrass-theorem/) provides a sufficient condition for a function to attain its supremum and infimum. In particular, if $f : [a,b] \to \mathbb{R}$ is [continuous](../continuous-functions/) on a closed, bounded, non-empty interval, then $f$ is bounded and attains both a maximum and a minimum on $[a,b].$ Its supremum and infimum are therefore finite and coincide with these values, respectively.
+
+## Algebra of suprema and infima
+
+Suprema and infima satisfy some simple algebraic relations that often simplify their calculation. We first consider translating a set and take a non-empty bounded set $A \subseteq \mathbb{R}$ and a real number $c,$ setting $c + A = \{ c + a : a \in A \}$ and $cA = \{ ca : a \in A \}.$ This translation, as one would expect, shifts both the supremum and the infimum by the same amount, so we obtain:
+
+$$
+\begin{align}
+\sup(c + A) &= c + \sup A \\[6pt]
+\inf(c + A) &= c + \inf A
+\end{align}
+$$
+
+Similarly, multiplication by a positive factor $c$ multiplies both the supremum and the infimum by that factor, giving:
+
+$$
+\begin{align}
+\sup(cA) &= c \sup A \tag{16} \\[6pt]
+\inf(cA) &= c \inf A \notag
+\end{align}
+$$
+
+When $c$ is negative, the order in $(16)$ is reversed:
+
+$$
+\begin{align}
+\sup(cA) &= c \inf A \\[6pt]
+\inf(cA) &= c \sup A
+\end{align}
+$$
+
+Now suppose that two sets $A$ and $B$ are non-empty and that every element of $A$ is less than or equal to every element of $B,$ that is, $a \leq b$ for every $a \in A$ and every $b \in B.$ Each $a$ is then a lower bound of $B,$ so $a \leq \inf B.$ Consequently, $\inf B$ is an upper bound of $A.$ By the definition of the supremum of $A,$ we obtain:
+
+$$
+\sup A \leq \inf B \tag{17}
+$$
+
+Inequality $(17)$ remains non-strict even if the hypothesis is strengthened by requiring $a < b$ for every pair of elements from the two sets. For example, if we consider the sets $A = \{ 0 \}$ and $B = \{1/n : n \in \mathbb{N},\ n \geq 1\},$ we always have $a < b,$ yet $\sup A = \inf B = 0.$
+
