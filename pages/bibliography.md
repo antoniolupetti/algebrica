@@ -21,7 +21,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Basic Category Theory](https://arxiv.org/pdf/1612.09375), Tom Leinster
 + [Basic Mathematics](https://archive.org/download/basic-mathematics-serge-lang_20240418/Basic%20Mathematics%20-%20Serge%20Lang.pdf), Serge Lang
 + [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/ntb-v2_1.pdf), Victor Shoup
-+ [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html), Stanley N. Burris, H. P. Sankappanavar
++ [A Course in Universal Algebra](https://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf), Stanley N. Burris, H. P. Sankappanavar
 + [Elementary Number Theory: Primes, Congruences, and Secrets](https://wstein.org/ent/ent.pdf), William Stein
 + [Elements of Abstract and Linear Algebra](https://www.math.miami.edu/~ec/book/book.pdf), E. H. Connell
 + [Foundations of Module and Ring Theory](https://www.math.uni-duesseldorf.de/~wisbauer/book.pdf), Robert Wisbauer
