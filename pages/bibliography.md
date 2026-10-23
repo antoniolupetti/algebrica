@@ -179,6 +179,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Open Data Structures](https://opendatastructures.org/ods-python.pdf), Pat Morin
 + [Scientific Computing](https://www.math.hkust.edu.hk/~machas/scientific-computing.pdf), Jeffrey R. Chasnov
 + [A Spiral Workbook for Discrete Mathematics](https://milneopentextbooks.org/a-spiral-workbook-for-discrete-mathematics/), Harris Kwong
++ [Start Doing Graph Theory](https://vertex.degree/pdf/book.pdf), Mikhail Lavrov
 
 ## Machine learning and artificial intelligence
 
