@@ -38,9 +38,9 @@ This notation is convenient when $a$ and $b$ correspond to points where the func
 
 [shortcode="intervals"]
 
-|     | $a$  | $b$      |     |
-|:----|------------|---------------|-----|
-|     | sign+l-in-o-h  |   sign+r-in-o-h  |     |
+|     | $a$           | $b$           |     |
+| :-- | ------------- | ------------- | --- |
+|     | sign+l-in-o-h | sign+r-in-o-h |     |
 [/shortcode]
 
 The second type is the closed interval, which includes both endpoints. In descriptive form it is written:
