@@ -11,406 +11,150 @@ tags:
 ---
 ## Definition
 
-If $a$ and $b$ are positive [real numbers](../properties-of-real-numbers/), with $a \neq 1,$ the logarithm of $b$ to the base $a,$ denoted by $\log_a b,$ is the real number $c$ such that $a^c = b.$
+The logarithm of a number is the exponent to which a given base must be raised to obtain that number. For example, $\log_2 8 = 3$ because $2^3 = 8.$ Formally, if $a$ and $b$ are positive [real numbers](../properties-of-real-numbers/), the logarithm of $b$ to base $a$ is the real number $c$ such that $a^c = b.$ We can express this relationship as follows:
 
-$$\log_a b = c \iff a^c = b$$
+$$\log_a b = c \iff a^c = b \tag{1}$$
 
-The following conditions must be satisfied:
+$a$ is the base of the logarithm, while $b$ is its argument. For $(1)$ to be well-defined, the following conditions must hold:
 
-$$a>0 \qquad a \neq 1 \qquad b>0$$
++ $a > 0$ because a zero or negative base does not allow real powers to be defined for every real exponent.
++ $a \neq 1$ because $1^c = 1$ for every $c,$ so the equation has no solutions if $b \neq 1$ and infinitely many if $b = 1.$
++ $b > 0$ because every power of a positive base is positive, so $a^c$ cannot be zero or negative.
 
-For example, $\log_2 8 = 3$ because $2^3 = 8.$ The logarithm of a number is the exponent to which a given base must be raised to obtain that number. Therefore, the logarithm is the inverse operation of [exponentiation](../exponential-function/).
-
-+ $a$ is the base of the logarithm.
-+ $b$ is the argument of the logarithm.
-
-For $a>0,$ the value $a^x$ is a positive real number for every $x \in \mathbb{R}.$ Negative and zero bases do not define real powers for every real exponent. When $a = 1,$ the expression $a^x$ becomes $1^x = 1$ for every $x \in \mathbb{R}.$ The exponential function is then constant and is not [invertible](../inverse-function/), so it has no logarithmic inverse. Thus, the base must satisfy $a>0$ and $a \neq 1.$
-
-## Basic identities
-
-The laws of [powers](../powers/) and the definition of the logarithm give the following identities:
+From $(1),$ we can therefore deduce that taking a logarithm is the inverse operation of exponentiation. Using the [properties of powers](../powers/) and $(1),$ we can derive the following identities:
 
 $$a^0 = 1 \Rightarrow \log_a 1 = 0$$
 
 $$a^1 = a \Rightarrow \log_a a = 1$$
 
-Since $a^c>0$ for every $c \in \mathbb{R},$ no real logarithm has a nonpositive argument. Equivalently, if $b \le 0,$ no real number $c$ satisfies $a^c=b.$
+Two particular types of logarithm are quite common, namely natural logarithms and common logarithms. Natural logarithms, or logarithms to base $e,$ are denoted by $\ln x,$ where the constant $e$ is [Euler's number](../euler-number-limit-sequence/), and are used in differential and integral calculus. Logarithms to base $10,$ on the other hand, are denoted by $\log_{10}x$ or $\log x.$ These are very useful because they allow us to compare the orders of magnitude of numbers. For example, whenever a positive number is multiplied by $10,$ its common logarithm increases by $1$ (the numbers $10,$ $100$ and $1000$ have logarithms $1,$ $2$ and $3$, respectively).
 
-+ Logarithms with base $e$ are natural logarithms and are denoted by $\ln x,$ where the [constant $e$](../euler-number-limit-sequence/) is approximately $2.71828$ and is the base of the natural exponential function $e^x.$
-
-+ Logarithms with base $10$ are common logarithms and are denoted unambiguously by $\log_{10}x.$ When the context fixes the base as $10,$ the shorter notation $\log x$ is also common.
-
-> The base-10 logarithm measures orders of magnitude, since multiplying a positive number by $10^k$ adds $k$ to its logarithm.
-
-## Logarithmic function
-
-The [logarithmic function](../logarithmic-function/) is the [inverse](../inverse-function/) of the exponential function. Its [domain](../determining-the-domain-of-a-function/) and range are therefore interchanged relative to those of the [exponential function](../exponential-function/). For a fixed base $a,$ the function has the following form:
-
-$$
-\log_a : (0,+\infty) \to \mathbb{R}, \quad a > 0 \quad a \neq 1
-$$
-
-The domain is $(0,+\infty),$ and the range is $\mathbb{R}.$ The function is [continuous](../continuous-functions/) and [differentiable](../derivatives/) on $(0,+\infty).$
-
-![IMG. 1](svg/logarithms-1.svg)
-
-The graph above shows the monotonic behaviour and asymptotic properties of the logarithmic function. For $a > 1,$ the function $f(x) = \log_a x$ is strictly increasing on $(0,+\infty).$ It has a vertical [asymptote](../asymptotes/) at $x = 0,$ and its limits are:
-
-$$
-\begin{align}
-\lim_{x \to 0^+} \log_a x &= -\infty \\[6pt]
-\lim_{x \to +\infty} \log_a x &= +\infty
-\end{align}
-$$
-
-For $0 < a < 1,$ the function is strictly decreasing on $(0,+\infty).$
-
-![IMG. 2](svg/logarithms-2.svg)
-
-The line $x = 0$ is again a vertical asymptote, but the limiting behaviour is reversed:
-
-$$
-\begin{align}
-\lim_{x \to 0^+} \log_a x &= +\infty \\[6pt]
-\lim_{x \to +\infty} \log_a x &= -\infty
-\end{align}
-$$
-
-> In binary search, each comparison halves the remaining search interval. Starting with $n$ entries, after $k$ comparisons the interval contains at most $n/2^k$ entries, so the number of comparisons grows proportionally to $\log_2 n.$
+> Fixing a base $a > 0,$ with $a \neq 1,$ and allowing the argument $x > 0$ to vary gives the [logarithmic function](../logarithmic-function/), whose graph and analytic properties we study in the dedicated article.
 
 ## Properties
 
-The following identities describe how to manipulate logarithmic expressions. Each property is stated together with the conditions on the base and the arguments that ensure the expressions are well-defined in the [real numbers](../properties-of-real-numbers/). In every case, the base must satisfy $a > 0$ and $a \neq 1,$ and every quantity appearing as an argument of a logarithm must be strictly positive.
-
-Since the logarithm is defined as the inverse of the exponential function, the following identities hold:
+Logarithms satisfy several algebraic properties that allow us to rewrite expressions in simpler forms and make calculations easier. In all the properties below, the base satisfies $a > 0$ and $a \neq 1.$ For $x,y > 0,$ we begin with the product rule, which expresses the logarithm of a product as the sum of the logarithms of its factors:
 
 $$
-\begin{align}
-a^{\log_a x} &= x \qquad \forall x \in (0,+\infty) \\[6pt]
-\log_a(a^x) &= x \qquad \forall x \in \mathbb{R}
-\end{align}
+\log_a(xy) = \log_a x + \log_a y \tag{2}
 $$
 
-These two identities express the fact that exponentiation with base $a$ and the logarithm to base $a$ are inverse functions on their respective [domains](../determining-the-domain-of-a-function/).
+Identity $(2)$ follows from the properties of powers, and to prove it we set $u = \log_a x$ and $v = \log_a y,$ so that, by definition, $x = a^u$ and $y = a^v.$ As we know, the product of two powers with the same base is obtained by adding their exponents, so we can write the product as follows:
+
+$$xy = a^u a^v = a^{u+v}$$
+
+The exponent to which $a$ must be raised to obtain $xy$ is therefore $u+v,$ so the definition of a logarithm gives precisely $(2).$
 
 - - -
 
-For $x, y > 0,$ the logarithm of a product is the sum of the logarithms of the factors:
+For $x,y > 0,$ the second property expresses the logarithm of a quotient as the difference between the logarithm of the numerator and the logarithm of the denominator, giving the following identity:
 
-$$
-\log_a(xy) = \log_a x + \log_a y
-$$
-
-This is the product rule. It transforms a multiplicative relationship into an additive one and follows directly from the corresponding law of exponents.
-
-- - -
-
-For $x, y > 0,$ the logarithm of a quotient is the difference between the logarithm of the numerator and the logarithm of the denominator:
-
-$$
+$$ \tag{3}
 \log_a{\frac{x}{y}} = \log_a x - \log_a y
 $$
 
-This is the quotient rule. As a particular case, setting $x = 1$ yields:
+Again, to prove $(3),$ we use a property of powers. We set $u = \log_a x$ and $v = \log_a y,$ so that $x = a^u$ and $y = a^v.$ The quotient of two powers with the same base is obtained by subtracting their exponents, so we can write:
+
+$$\frac{x}{y} = \frac{a^u}{a^v} = a^{u-v}$$
+
+By $(1),$ the exponent $u-v$ is the logarithm of $x/y$ to base $a,$ which gives $(3).$ As a special case, setting $x = 1$ gives:
 
 $$
 \log_a{\frac{1}{y}} = -\log_a y
 $$
 
-Thus, the logarithm of the reciprocal of $y$ is the opposite of the logarithm of $y.$
+Thus, the logarithm of the reciprocal of $y$ is the negative of the logarithm of $y.$
 
 - - -
 
-For $x > 0$ and $n \in \mathbb{R},$ the logarithm of a [power](../powers/) equals the exponent times the logarithm of $x:$
+For $x > 0$ and $n \in \mathbb{R},$ another useful property is the power rule, which states that the logarithm of a power equals the exponent multiplied by the logarithm:
 
-$$
+$$ \tag{4}
 \log_a x^n = n\log_a x
 $$
 
-This is the power rule. If $u=\log_a x,$ then $x=a^u$ and $x^n=a^{nu}.$ Applying $\log_a$ gives $\log_a x^n=nu=n\log_a x$ for every real exponent $n.$
+To prove it, we set $u = \log_a x,$ and the definition of a logarithm gives $x = a^u.$ Raising both sides to the power $n$ and using the rule for a power of a power, we obtain:
+
+$$x^n = (a^u)^n = a^{nu}$$
+
+By $(1),$ the exponent to which $a$ must be raised to obtain $x^n$ is therefore $nu.$ Since $u = \log_a x,$ identity $(4)$ follows.
+
+Identity $(4)$ requires the argument of the logarithm to be positive. For example, $\log_a(x^2)$ is defined for every $x \neq 0,$ even when $x$ is negative. In this case, since $x^2 = |x|^2,$ the formula valid for all admissible values is $\log_a(x^2) = 2\log_a|x|.$ The expression $2\log_a x,$ however, is defined only for $x > 0.$
 
 - - -
 
-For $b > 0$ and $n \in \mathbb{N}$ with $n \ge 1,$ the logarithm of a [radical](../radicals/) is equal to the logarithm of the radicand divided by the index of the root:
-
-$$
+Identity $(4)$ gives the rule for the logarithm of a [radical](../radicals/), valid for $b > 0$ and $n \in \mathbb{N}$ with $n \ge 2.$ Since a radical can be written as a power with a [rational exponent](../rational-numbers/) ($\sqrt[n]{b} = b^{1/n}$), we obtain:
+$$ \tag{5}
 \log_a\sqrt[n]{b} = \frac{1}{n}\log_a b
 $$
 
-This identity is a direct consequence of the power rule, since $\sqrt[n]{b} = b^{1/n}.$
-
 - - -
 
-For $a, p > 0$ with $a, p \neq 1$ and $b > 0,$ a logarithm in base $a$ can be written as the ratio of two logarithms taken in a common base $p:$
+Suppose that $x,y,z > 0,$ and let us apply the properties just discussed to the following expression:
 
-$$
-\log_a b = \frac{\log_p b}{\log_p a}
-$$
-
-This is the change of base formula. It expresses every logarithm in a base for which values are available, such as base $e$ or base $10.$
-
-## Fundamental inequality for the natural logarithm
-
-The natural logarithm satisfies the inequality:
-
-$$
-\ln x \le x - 1 \qquad \forall x > 0
-$$
-
-Equality holds if and only if $x = 1.$ This result follows directly from the fact that the function $\ln x$ is concave on the interval $(0,+\infty).$
-
-![IMG. 3](svg/logarithms-3.svg)
-
-Its second derivative is negative, so $\ln x$ is strictly concave on $(0,+\infty):$
-
-$$
-(\ln x)^{\prime\prime} = -\frac{1}{x^2} < 0 \qquad \forall x > 0
-$$
-
-For any differentiable concave function, the graph lies below each of its tangent lines. In particular, consider the tangent at $x = 1,$ where:
-
-$$
-\ln 1 = 0 \quad \text{and} \quad (\ln x)' \big|_{x=1} = 1
-$$
-
-The equation of this tangent line is:
-
-$$
-y = x - 1
-$$
-
-Thus, the inequality $\ln x \le x - 1$ expresses the geometric fact that the curve $y = \ln x$ never rises above its tangent line at $x = 1,$ and it touches it only at $x = 1.$
-
-## Logarithms in algebraic structure
-
-The [set](../sets/) of positive real numbers $(0,+\infty)$ is a group under multiplication, while $\mathbb{R}$ is a group under addition. The logarithm maps products to sums. For example, for $x,y>0,$ consider the product:
-
-$$
-x^3 y^2
-$$
-
-Taking logarithms gives:
-
-$$
-\log_a(x^3 y^2) = 3\log_a x + 2\log_a y
-$$
-
-The logarithm is therefore a homomorphism from the multiplicative group $(0,+\infty)$ to the additive group $\mathbb{R}.$ It is bijective, so it is a group isomorphism. The product and power rules describe this correspondence explicitly.
-
-> A [homomorphism](../homomorphisms-and-isomorphisms/) is a function between two algebraic structures that preserves the operation, meaning $\varphi(x \star y) = \varphi(x) \circ \varphi(y).$ Here $\star$ and $\circ$ denote the operations of the two algebraic structures, such as addition or multiplication.
-
-## Example 1
-
-Assume that $a>0,$ $a\neq1,$ and $x,y,z>0.$ We simplify the following expression using the logarithmic properties:
-
-$$
+$$ \tag{6}
 \log_a \left( \frac{x^3 \cdot y}{z^2} \right)
 $$
 
-The quotient rule expresses the logarithm as the difference between the logarithms of the numerator and denominator:
+We begin by observing that $(6)$ contains a quotient within the argument of the logarithm, so we can apply $(3)$ and rewrite the expression as:
 
-$$
-\log_a \left( \frac{x^3 \cdot y}{z^2} \right) = \log_a(x^3 \cdot y) - \log_a(z^2)
+$$ \tag{7}
+\log_a(x^3 \cdot y) - \log_a(z^2)
 $$
 
-The product rule then separates the factors in the numerator:
+The first logarithm contains a product, and by $(2)$ we can rewrite it as:
 
 $$
 \log_a(x^3 \cdot y) = \log_a(x^3) + \log_a(y)
 $$
 
-Thus, the expression becomes:
+Expression $(7)$ then becomes:
 
 $$
-\log_a \left( \frac{x^3 \cdot y}{z^2} \right) = \log_a(x^3) + \log_a(y) - \log_a(z^2)
+\log_a(x^3) + \log_a(y) - \log_a(z^2)
 $$
 
-The power rule moves each exponent in front of its logarithm:
+Finally, the power rule allows us to rewrite the first and third logarithms using $(4)$ to obtain:
 
-$$
-\log_a(x^3) = 3 \log_a(x) \quad \text{and} \quad \log_a(z^2) = 2 \log_a(z)
-$$
-
-Substitution gives the simplified expression:
-
-$$
-\log_a \left( \frac{x^3 \cdot y}{z^2} \right) = 3 \log_a(x) + \log_a(y) - 2 \log_a(z)
+$$ \tag{8}
+3 \log_a(x) + \log_a(y) - 2 \log_a(z)
 $$
 
-The exponents of the numerator factors become positive coefficients, while the exponent of the denominator factor becomes the negative coefficient $-2.$
 
 ## Changing the base of a logarithm
 
-The change of base formula can be derived directly from the definition. Assume that $a,b>0,$ $a,b\neq1,$ and $x>0.$ Then:
+The change-of-base formula allows us to express any logarithm in terms of logarithms to a base for which values are known or calculation tools are available, such as base $e$ or base $10.$ It is also very useful when working with expressions because it allows logarithms with different bases to be expressed in terms of logarithms with the same base, making calculations easier. Suppose that $a,b>0,$ $a,b\neq1$ and $x>0.$ The change-of-base formula is:
 
-$$\log_a x = \frac{\log_b x}{\log_b a}$$
+$$\log_a x = \frac{\log_b x}{\log_b a} \tag{9}$$
 
-> The formula converts a logarithm to any base in which values are known, including base $10$ or base $e.$
-
-- - -
-
-Set $y=\log_a x.$ By the definition of the logarithm, $a^y=x.$ Taking logarithms to base $b$ on both sides gives:
+To prove it, we set $y=\log_a x,$ and the definition of a logarithm gives the equality $a^y=x.$ Taking the logarithm to base $b$ of both sides gives:
 
 $$\log_b(a^y) = \log_b(x)$$
 
-The power rule gives:
+On the left-hand side, we can use the power rule given in $(4)$ to obtain:
 
 $$y\log_b(a) = \log_b(x)$$
 
-Since $a\neq1,$ the denominator $\log_b a$ is nonzero. Dividing both sides by it gives:
+Solving for $y$ gives precisely $(9).$ As a concrete example, let us show how changing the base allows us to evaluate the following expression.
 
-$$y = \frac{\log_b(x)}{\log_b(a)}$$
+$$\log_2 3 \cdot \log_3 8 \tag{10}$$
 
-Since $y=\log_a x,$ we have proved the change of base formula:
-
-$$\log_a(x) = \frac{\log_b(x)}{\log_b(a)}$$
-
-## Logarithmic equations
-
-[Logarithmic equations](../logarithmic-equations/) are [equations](../equations/) in which the variable appears inside a logarithm. Their solutions must satisfy the domain conditions of every logarithmic argument. A typical logarithmic equation has the form:
-
-$$\log_a f(x) = g(x)$$
-
-+ $a,$ the base of the logarithm, must satisfy $a > 0$ and $a \neq 1.$
-
-+ $f(x)$ is the argument of the logarithm and must be strictly positive, so $f(x) > 0.$
-
-## The natural logarithm
-
-The natural logarithm can be defined independently of exponentiation using a [definite integral](../definite-integrals/). For every real number $x > 0,$ set:
+If we rewrite the second logarithm from base $3$ to base $2,$ we obtain a common factor in the numerator and denominator that we can cancel. Using $(9),$ we can rewrite $(10)$ and obtain the following result:
 
 $$
-\ln x = \int_1^x \frac{1}{t} \ dt
+\begin{align}
+\log_2 3 \cdot \log_3 8 &= \log_2 3 \cdot \frac{\log_2 8}{\log_2 3} \\[6pt]
+&= \log_2 8 \\[6pt]
+&= 3
+\end{align}
 $$
 
-The function $1/t$ is continuous on the interval between $1$ and any fixed $x>0,$ so the integral is well-defined. By the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/), the natural logarithm is differentiable and satisfies:
+## Logarithms and algebraic structures
 
-$$
-(\ln x)' = \frac{1}{x} \qquad x>0
-$$
+The properties of logarithms can be interpreted in the language of abstract algebra, which studies [sets](../sets/) and the operations defined on them. In this setting, the product rule $(2)$ allows us to interpret the logarithm as a correspondence between two algebraic structures.
 
-The natural logarithm is [strictly increasing](../increasing-and-decreasing-functions/) because its [derivative](../derivatives/) is positive on $(0,+\infty).$ It is also strictly concave, since:
+As we know, the set of positive real numbers is a [group](../groups/) under multiplication, with identity element $1$ and the inverse of any element $x$ equal to $1/x.$ The real numbers, on the other hand, form a group under addition, with identity element $0$ and the inverse of each element $u$ equal to $-u.$ The logarithm associates a real number with each positive number and transforms multiplication in the first group into addition in the second, according to identity $(2).$
 
-$$
-(\ln x)^{\prime\prime}= -\frac{1}{x^2} < 0
-$$
+A correspondence of this kind, which preserves the operations of the two groups, is a [homomorphism](../homomorphisms-and-isomorphisms/). This correspondence also preserves the identity elements and inverses of the two groups. Indeed, $\log_a 1 = 0$ maps the multiplicative identity to the additive identity, while $\log_a(1/x) = -\log_a x$ maps the reciprocal of $x$ to the negative of its logarithm.
 
-- - -
-
-The exponential function $e^x$ is the inverse of the natural logarithm $\ln x.$ Once $\ln x$ has been established, logarithms with any base $a>0,$ $a\neq 1,$ are defined by:
-
-$$
-\log_a x = \frac{\ln x}{\ln a}
-$$
-
-Since $\ln a\neq0$ for every admissible base $a,$ this quotient is well-defined. As a function of $x,$ it is continuous and differentiable on $(0,+\infty).$
-
-## Series expansion of the natural logarithm
-
-For $x>-1,$ the [integral](../definite-integrals/) definition gives the identity:
-
-$$
-\ln(1+x) = \int_0^x \frac{1}{1+t} \ dt
-$$
-
-The integrand can be expanded as a [geometric series](../geometric-series/). For $|t| < 1,$ we have:
-
-$$
-\frac{1}{1+t} = \sum_{n=0}^{\infty} (-1)^nt^n = 1-t+t^2-t^3+\cdots
-$$
-
-This [series](../series/) converges uniformly on every closed [subinterval](../intervals/) of $(-1,1),$ which justifies term-by-term integration for $|x|<1.$ Integrating from $0$ to $x$ yields:
-
-$$
-\ln(1+x) = \sum_{n=0}^{\infty} \frac{(-1)^nx^{n+1}}{n+1} = x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots
-$$
-
-The resulting series converges for $-1 < x \le 1.$ The endpoint $x = -1$ is excluded because the series then reduces, up to sign, to the [harmonic series](../harmonic-series/), which diverges. At $x = 1,$ the alternating series test gives convergence, and Abel's theorem extends the identity to the endpoint:
-
-$$
-\ln 2 = 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
-$$
-
-For $|x|<1,$ the partial sums approximate $\ln(1+x).$ Truncating the expansion after the first term gives the linear approximation:
-
-$$
-\ln(1+x) \approx x \qquad \text{for } x \to 0
-$$
-
-The error has order $x^2.$ In particular, the approximation implies:
-
-$$
-\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1
-$$
-
-This limit appears in calculations involving [limits](../limits/) and [derivatives](../derivatives/), and it gives the local linearisation of the logarithm near $1.$
-
-The series for $\ln(1+x)$ converges slowly when $x$ is close to $1.$ For $|y|<1,$ subtracting the series for $\ln(1-y)$ from the series for $\ln(1+y)$ gives:
-
-$$\ln\frac{1+y}{1-y} = 2\left(y+\frac{y^3}{3}+\frac{y^5}{5}+\cdots\right)$$
-
-For example, setting $y=1/3$ gives a series for $\ln 2$ whose terms decrease much faster than those of the alternating harmonic series.
-
-## Logarithmic differentiation
-
-Assume that $f$ and $g$ are differentiable on an interval and that $f(x)>0$ throughout that interval. A function of the form $y = f(x)^{g(x)},$ in which both the base and the exponent depend on the variable, cannot in general be differentiated by directly applying either the power rule or the exponential rule. Logarithmic differentiation handles such expressions by taking the natural logarithm of both sides and then differentiating implicitly.
-
-Applying the natural logarithm to $y = f(x)^{g(x)}$ and using the power rule for logarithms, we obtain:
-
-$$
-\ln y = g(x)\ln f(x)
-$$
-
-Differentiating both sides with respect to $x,$ and applying the chain rule to the left-hand side and the product rule to the right-hand side, gives:
-
-$$
-\frac{y'}{y} = g'(x)\ln f(x)+g(x)\frac{f'(x)}{f(x)}
-$$
-
-Solving for $y'$ and substituting the original expression for $y$ yields the explicit derivative:
-
-$$
-y' = f(x)^{g(x)}\left[g'(x)\ln f(x)+g(x)\frac{f'(x)}{f(x)}\right]
-$$
-
-The condition $f(x) > 0$ ensures that the logarithm is well-defined on the interval of interest. For example, consider the derivative of $y = x^x$ for $x > 0.$ Taking the natural logarithm of both sides gives:
-
-$$
-\ln y = x \ln x
-$$
-
-Differentiating both sides with respect to $x,$ the left-hand side becomes $y'/y$ by the [chain rule](../the-derivative-of-a-composite-function/), while the right-hand side is computed using the product rule:
-
-$$
-\frac{y'}{y} = \ln x+x \cdot \frac{1}{x} = \ln x+1
-$$
-
-Multiplying both sides by $y = x^x$ yields the result:
-
-$$
-\frac{d}{dx}x^x = x^x(\ln x+1)
-$$
-
-The same method applies when the variable appears in both the base and the exponent. It also applies to products of several positive factors because the logarithm converts the product into a sum before differentiation.
-
-## The AM-GM inequality via logarithms
-
-The [arithmetic mean](../arithmetic-mean/) and the [geometric mean](../geometric-mean/) of positive real numbers satisfy the AM-GM inequality. For $n\in\mathbb{N}$ with $n\ge1$ and $x_1, x_2, \ldots, x_n>0,$ it is:
-
-$$
-\frac{x_1 + x_2 + \cdots + x_n}{n} \geq \left( x_1 x_2 \cdots x_n \right)^{\frac{1}{n}}
-$$
-
-Equality holds if and only if $x_1 = x_2 = \cdots = x_n.$ The function $\ln$ is strictly concave on $(0,+\infty)$ because $(\ln x)'' = -1/x^2 < 0$ for every $x > 0.$ Jensen's inequality therefore gives:
-
-$$
-\frac{1}{n} \sum_{i=1}^{n} \ln x_i \leq \ln \left( \frac{1}{n} \sum_{i=1}^{n} x_i \right)
-$$
-
-The left-hand side is the arithmetic mean of $\ln x_1, \ldots, \ln x_n,$ which by the logarithmic form of the [geometric mean](../geometric-mean/) equals $\ln M_g.$ The right-hand side is $\ln M_a,$ where $M_a$ denotes the [arithmetic mean](../arithmetic-mean/). The inequality therefore becomes:
-
-$$
-\ln M_g \leq \ln M_a
-$$
-
-Since $\ln$ is strictly increasing, this is equivalent to $M_g \leq M_a,$ which is the AM-GM inequality. Strict concavity gives equality if and only if $x_1 = x_2 = \cdots = x_n.$
+Moreover, every real number $u$ is the logarithm of a unique positive number $a^u.$ The correspondence is therefore [bijective](../injective-surjective-and-bijective-functions/) and hence a [group isomorphism](../homomorphisms-and-isomorphisms/).
