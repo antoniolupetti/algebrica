@@ -195,11 +195,11 @@ $$
 
 The additive inverse of $a + bi$ is given by:
 
-$$-(a + bi) = -a - bi$$
+$$-(a + bi) = -a - bi \tag{19}$$
 
 Finally, the reciprocal of a nonzero complex number $z = a + bi$ is given by:
 
-$$\frac{1}{z} = \frac{a}{a^2 + b^2} - \frac{b}{a^2 + b^2} i$$
+$$\frac{1}{z} = \frac{a}{a^2 + b^2} - \frac{b}{a^2 + b^2} i \tag{20}$$
 
 Since $z \neq 0,$ we have $a^2 + b^2 > 0.$ To verify the formula, we multiply the stated expression by $z.$
 
