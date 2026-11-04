@@ -22,97 +22,104 @@ tags:
   - ring-z-nz
   - zero-divisor
 ---
-
 ## Definition
 
-For two integers $a$ and $n$ with $n > 0$, the modulo operator gives the remainder in the [Euclidean division](../floor-and-ceiling-functions/) of $a$ by $n$:
+The modulo operator returns the remainder of [Euclidean division](../euclidean-division/) and is useful when a count repeats at regular intervals and we want to know where we are in the cycle. For an intuitive example, if today is Monday and we want to know what day it will be in $17$ days, we count $14$ days (two weeks) plus the remaining 3 days to arrive at Thursday. Formally, given integers $a$ and $n$ with $n>0,$ the modulo operator is defined by the following equation.
 
 $$
-a \bmod n = r
+a \bmod n = r \tag{1}
 $$
 
-Here $r$ is the unique integer satisfying $0 \le r < n$ and $a = qn + r$ for some integer $q$. The integer $q$ is the quotient, and $r$ is the remainder. The [division algorithm for integers](../integers/) states that each pair $(a, n)$ with $n > 0$ has a unique quotient $q$ and remainder $r$ satisfying these conditions. [Polynomial division](../polynomial-division/) over a field has the same existence and uniqueness property when the modulus is a fixed polynomial of positive degree.
-
-The number $n$ is the modulus. When $a$ is positive, $a \bmod n$ is the usual remainder from elementary arithmetic. For example, $17 \bmod 5 = 2$, since $17 = 3 \cdot 5 + 2$. The quotient is $3$ and the remainder is $2$.
-
-> The modulo operator is sometimes written as $a \ \mathrm{mod} \ n$ in textbooks and as `a % n` in many programming languages. For negative operands, a programming language may use a different convention from the mathematical definition.
-
-- - -
-
-When $a$ is negative, the remainder is still the unique integer in the range $0 \le r < n$. For $-7 \bmod 5$, the equation $-7 = q \cdot 5 + r$ has $q = -2$ and $r = 3$, since $-7 = (-2) \cdot 5 + 3$. Therefore $-7 \bmod 5 = 3$.
-
-Programming languages do not all use this convention. In several languages, the result of % has the sign of the dividend, so $-7 \% 5$ is $-2$ rather than $3$. Under the definition above, the remainder is always non-negative.
-
-## Congruence modulo n
-
-Two integers $a$ and $b$ are congruent modulo $n$ if they have the same remainder upon division by $n$, or equivalently if their difference is a multiple of $n$. We write the relation as:
+For example, $17\bmod5=2,$ since $17=3\cdot5+2.$ In equation $(1),$ $n$ is the modulus and $r$ is the remainder of Euclidean division of $a$ by $n,$ the unique integer from $0$ to $n-1$ that satisfies the following equation for some integer quotient.
 
 $$
-a \equiv b \pmod{n}
+a = qn + r \tag{2}
 $$
 
-In terms of divisibility, $a \equiv b \pmod{n}$ if and only if $n \mid (a - b)$. For example, $17 \equiv 2 \pmod 5$ because $17 - 2 = 15$ is divisible by $5$. Equivalently, both $17$ and $2$ have remainder $2$ upon division by $5$.
+The integer $q$ is the quotient. By the Euclidean division theorem, equation $(2)$ determines a unique pair of integers $(q,r)$ with $0\leq r<n.$ When $a$ is negative, the remainder in $(1)$ is still the unique integer in the range $0\leq r<n$ that satisfies the definition. For example, to find $-7\bmod5,$ the equation $-7=q\cdot5+r$ gives $q=-2$ and $r=3,$ since $-7=(-2)\cdot5+3.$ Hence $-7\bmod5=3.$
 
-The value $a \bmod n$ is a specific integer, whereas $a \equiv b \pmod n$ is a relation between two integers. The first is a [function](../functions/) of $a$ and $n$; the second is a statement that is either true or false. Congruence modulo $n$ is an [equivalence relation](../sets/) on the integers:
+## Congruence
 
-+ It is reflexive, since $a \equiv a \pmod n$ for every integer $a$.
-+ It is symmetric, since $a \equiv b \pmod n$ implies $b \equiv a \pmod n$.
-+ It is transitive, since $a \equiv b \pmod n$ and $b \equiv c \pmod n$ together imply $a \equiv c \pmod n$.
-
-## Arithmetic properties
-
-Congruence modulo $n$ is preserved by addition, subtraction, and multiplication. If $a \equiv b \pmod n$ and $c \equiv d \pmod n$, then the following congruences hold:
+Two integers $a$ and $b$ are congruent modulo $n$ if they have the same remainder upon division by $n$ or, equivalently, if their difference is a multiple of $n.$ The relation is written as follows.
 
 $$
-\begin{align}
+a \equiv b \pmod{n} \tag{3}
+$$
+
+If $a$ and $b$ have the same remainder $r,$ we can write $a=q_an+r$ and $b=q_bn+r,$ and subtracting gives the following identity.
+
+$$
+a-b=(q_a-q_b)n \tag{4}
+$$
+
+Conversely, if $a-b=kn$ for some integer $k$ and $b=q_bn+r,$ then $a=(q_b+k)n+r.$ The quotient changes by $k$ and the remainder stays the same. Formula $(5)$ thus expresses the equivalence between congruence of $a$ and $b$ modulo $n$ and divisibility of $a-b$ by $n.$
+
+$$
+a\equiv b\pmod n \quad\Longleftrightarrow\quad n\mid(a-b) \tag{5}
+$$
+
+The two integers have the same remainder, so they are congruent modulo $5,$ and we can write $(3)$ in this case as $17\equiv2\pmod5.$ Congruence modulo $n$ is an [equivalence relation](../sets/) on the integers, with the following properties.
+
++ It is reflexive because $a\equiv a\pmod n$ for every integer $a.$
++ It is symmetric because $a\equiv b\pmod n$ implies $b\equiv a\pmod n.$
++ It is transitive because $a\equiv b\pmod n$ and $b\equiv c\pmod n$ imply $a\equiv c\pmod n.$
+
+Congruence also has the algebraic properties given below. First, congruence modulo $n$ is preserved under addition, subtraction, and multiplication, so if $a\equiv b\pmod n$ and $c\equiv d\pmod n,$ the following relations hold.
+
+$$
+\begin{aligned}
 a + c &\equiv b + d \pmod n \\[6pt]
 a - c &\equiv b - d \pmod n \\[6pt]
 a \cdot c &\equiv b \cdot d \pmod n
-\end{align}
+\end{aligned} \tag{6}
 $$
 
-The three statements follow from the characterisation of congruence by divisibility. The hypotheses say that $n$ divides $a - b$ and $n$ divides $c - d$. For the sum, the difference of the two sides is:
+The assumptions $a\equiv b\pmod n$ and $c\equiv d\pmod n$ tell us that $a-b$ and $c-d$ are multiples of $n.$ To prove that the sums $a+c$ and $b+d$ are congruent modulo $n,$ we must show that their difference is also a multiple of $n.$
 
 $$
-(a + c) - (b + d) = (a - b) + (c - d)
+(a + c) - (b + d) = (a - b) + (c - d) \tag{7}
 $$
 
-Both summands on the right are divisible by $n$, hence so is the left side. Replacing $c - d$ by its negative proves the statement for subtraction. For multiplication, subtracting the right side from the left gives:
+Since the right-hand side of $(7)$ is the sum of two multiples of $n,$ the difference is also a multiple of $n.$ It follows that $a+c\equiv b+d\pmod n.$ The same criterion applies to subtraction, using the following identity.
 
 $$
-ac - bd = (ac - bc) + (bc - bd) = (a - b)c + b(c - d)
+(a-c)-(b-d)=(a-b)-(c-d)\tag{8}
 $$
 
-Each term on the right is divisible by $n$, so $n$ divides $ac - bd$.
-
-An integer may be replaced by a congruent integer before addition, subtraction, or multiplication without changing the resulting residue class. Thus intermediate results may be reduced modulo $n$ throughout a computation.
-
-Congruence is also preserved by non-negative integer [powers](../powers/). If $a \equiv b \pmod n$, then $a^k \equiv b^k \pmod n$ for every non-negative integer $k$. The statement follows from the multiplicative identity by [induction](../principle-of-mathematical-induction/) on $k$. Division does not have this unrestricted property because not every nonzero residue has a multiplicative inverse modulo $n$.
-
-> A nonzero residue class $[a]_n$ has a multiplicative inverse if and only if $\gcd(a, n) = 1$. When an inverse exists, it is unique in $\mathbb{Z}/n\mathbb{Z}$.
-
-Cancellation can fail in modular arithmetic. From $ac \equiv bc \pmod n$ one cannot conclude that $a \equiv b \pmod n$. With $n = 10$ and $c = 2$, the products $2 \cdot 3 = 6$ and $2 \cdot 8 = 16$ are congruent modulo $10,$ while $3$ and $8$ are not. In general, if $g = \gcd(c, n),$ then $ac \equiv bc \pmod n$ implies:
+For multiplication, we use the following identity.
 
 $$
-a \equiv b \pmod{n/g}
+ac-bd=(a-b)c+b(c-d) \tag{9}
 $$
 
-In the example $g = \gcd(2, 10) = 2,$ and the two residues are congruent modulo $5$. If $c$ is coprime with $n$, then $g = 1$ and ordinary cancellation is valid.
+Here too, both terms on the right are multiples of $n,$ so $ac\equiv bd\pmod n.$ By [induction](../principle-of-mathematical-induction/), compatibility with multiplication extends to [powers](../powers/). If $a\equiv b\pmod n,$ then the following holds for every integer $k \gt 0.$
+
+$$
+a^k\equiv b^k\pmod n \tag{10}
+$$
+
+By $(6)$ and $(10),$ we can reduce intermediate sums, differences, products, and powers modulo $n$ without changing the final remainder. For example, to find the remainder when $17\cdot8$ is divided by $5,$ we can replace each factor with its remainder upon division by $5.$ The remainder for $17$ is $2$ and the remainder for $8$ is $3.$ The product of the remainders is $2\cdot3=6.$ Dividing $6$ by $5$ gives a remainder of $1$ because $6=1\cdot5+1,$ so by $(6)$ the original product $17\cdot8$ also gives a remainder of $1$ upon division by $5.$
+
+Property $(6)$ allows us to multiply both sides of a congruence by the same integer $c.$ To see when we can cancel that factor, we use $(5).$ If $ac\equiv bc\pmod n,$ then $n$ divides $c(a-b).$ With $g=\gcd(c,n),$ the integers $c/g$ and $n/g$ are coprime. Since $n/g$ divides $(c/g)(a-b),$ it must also divide $a-b.$ Applying $(5)$ again gives the following congruence.
+
+$$
+a\equiv b\pmod{n/g} \tag{11}
+$$
+
+Thus, if $c$ is coprime to $n,$ then $g=1$ and $(11)$ retains the modulus $n.$
 
 ## Addition and multiplication tables
 
-Addition and multiplication tables list every sum or product of two residues modulo $n$. Each row and column is labelled by a residue, and the entry at their intersection is the result reduced modulo $n$. For $n = 4$, the addition table is:
+The following tables show the remainder of a sum or product modulo $n$ at a glance. They are straightforward to construct. The rows and columns are numbered from $0$ to $n-1,$ and each cell contains the remainder obtained by dividing the corresponding sum or product by $n.$ For example, the table below gives addition modulo $4.$ The sum $2+3$ equals $5,$ so we enter its remainder, $1,$ in the corresponding cell.
 
-| + | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|
-| 0 | 0 | 1 | 2 | 3 |
-| 1 | 1 | 2 | 3 | 0 |
-| 2 | 2 | 3 | 0 | 1 |
-| 3 | 3 | 0 | 1 | 2 |
+| +   | 0   | 1   | 2   | 3   |
+| --- | --- | --- | --- | --- |
+| 0   | 0   | 1   | 2   | 3   |
+| 1   | 1   | 2   | 3   | 0   |
+| 2   | 2   | 3   | 0   | 1   |
+| 3   | 3   | 0   | 1   | 2   |
 
-Each row is a cyclic shift of the preceding row because addition by a fixed residue permutes the elements of $\mathbb{Z}/4\mathbb{Z}$. Every row and column contains each residue exactly once. The same property holds for addition modulo every positive integer.
-
-The multiplication table modulo $4$ is:
+Each row is a cyclic shift of the preceding row because adding a fixed residue permutes the elements of $\mathbb{Z}/4\mathbb{Z}.$ We construct the multiplication table modulo $4$ in the same way. Here, multiplying $3 \cdot 3$ gives $9,$ which has remainder $1$ modulo $4.$
 
 | × | 0 | 1 | 2 | 3 |
 |---|---|---|---|---|
@@ -121,32 +128,21 @@ The multiplication table modulo $4$ is:
 | 2 | 0 | 2 | 0 | 2 |
 | 3 | 0 | 3 | 2 | 1 |
 
-The row for $2$ does not contain $1$, so $2$ has no multiplicative inverse modulo $4$. This agrees with $\gcd(2, 4) = 2 \neq 1$. The rows for $1$ and $3$ contain $1$, so these two residues, both coprime with $4$, are invertible.
+The row for $2$ contains no $1,$ so $2$ has no multiplicative inverse modulo $4,$ consistent with $\gcd(2,4)=2\neq1.$ The rows for $1$ and $3$ contain $1,$ so these two residues, both coprime to $4,$ are invertible.
 
-The entry in row $2$ and column $2$ is $0$, so a product of two nonzero residues can be zero. A nonzero residue $a$ is a zero divisor if $ab \equiv 0 \pmod n$ for some nonzero residue $b$. Modulo $4$ the residue $2$ is the only zero divisor. Modulo $12$ the residues $3$ and $4$ are zero divisors because their product is congruent to $0$. The integers have no zero divisors because a product of nonzero integers is nonzero.
-
-> The Cayley table of a finite [group](../groups/) lists the result of its operation for every ordered pair of elements. The addition table modulo $n$ is the Cayley table of the cyclic group $(\mathbb{Z}/n\mathbb{Z}, +)$.
+> The addition table modulo $n$ is the [Cayley table](../groups/) of the cyclic group $(\mathbb{Z}/n\mathbb{Z},+).$ A Cayley table gives the result of the group operation for each pair of elements of a finite group. To obtain the Cayley table of the multiplicative group, keep only the rows and columns for the invertible residues. Modulo $4,$ for example, these residues are $1$ and $3.$
 
 ## Residue classes
 
-For a fixed modulus $n$, the equivalence relation of congruence [partitions](../sets/) the set of integers into $n$ disjoint subsets, called residue classes or equivalence classes modulo $n$. The residue class of an integer $a$ is the set of all integers congruent to $a$ modulo $n$:
+If we fix a modulus $n$ and group the integers by their remainders upon division by $n,$ each group is a residue class, also called an equivalence class modulo $n.$ The class $[a]_n$ contains all integers congruent to $a,$ which by $(5)$ are obtained by adding a multiple of $n$ to $a$ as shown below.
 
 $$
-[a]_n = \{ a + kn \mid k \in \mathbb{Z} \}
+[a]_n = \{ a + kn \mid k \in \mathbb{Z} \} \tag{12}
 $$
 
-Four conditions on a pair of integers $a$ and $b$ express the same relation:
+Classes with different remainders are disjoint. When the remainders differ, the classes are disjoint because each integer has only one remainder upon division by $n.$ If an integer $c$ belongs to both $[a]_n$ and $[b]_n,$ its remainder upon division by $n$ is the same as that of $a$ and $b.$ The two classes therefore contain all the integers with the same remainder and coincide.
 
-+ $a \equiv b \pmod n$
-+ $[a]_n = [b]_n$
-+ $a \bmod n = b \bmod n$
-+ $[a]_n \cap [b]_n \neq \emptyset$
-
-Suppose $a \equiv b \pmod n$. If $c \equiv a \pmod n$, then transitivity gives $c \equiv b \pmod n$. The reverse inclusion follows from $b \equiv a \pmod n$, so $[a]_n = [b]_n$. Equal classes have the same unique element in the range $0 \le r < n$, so $a \bmod n = b \bmod n$. This common remainder belongs to both classes, which makes their intersection nonempty. Conversely, if $c$ belongs to the intersection, then $a \equiv c \pmod n$ and $c \equiv b \pmod n,$ so transitivity gives $a \equiv b \pmod n$.
-
-The intersection condition shows that two residue classes are either equal or disjoint. Every integer belongs to the class of its remainder, so the classes are $[0]_n, [1]_n, \ldots, [n-1]_n$. They are pairwise distinct because the difference of two distinct remainders in the range $0 \le r < n$ is nonzero and has [absolute value](../absolute-value/) less than $n$, so it is not a multiple of $n$. The set of all residue classes modulo $n$ is denoted by $\mathbb{Z}/n\mathbb{Z}$ and has exactly these $n$ elements.
-
-For $n = 4$, the integers split into four residue classes:
+The possible remainders modulo $n$ are $0,1,\ldots,n-1,$ and each of these integers represents its own class. Thus the residue classes are $[0]_n,[1]_n,\ldots,[n-1]_n,$ and their set is denoted by $\mathbb{Z}/n\mathbb{Z}.$ For example, when $n=4,$ the integers fall into the following residue classes.
 
 $$
 \begin{align}
@@ -157,109 +153,92 @@ $$
 \end{align}
 $$
 
-Every integer belongs to exactly one of these four classes, and the union of the four classes is all of $\mathbb{Z}$.
-
 ## Linear congruences and inverses
 
-A linear congruence has the form $ax \equiv b \pmod n$, where $a$, $b$, and $n$ are fixed integers with $n > 0$ and $x$ is the unknown. Its solutions are the integers $x$ that satisfy the relation, grouped into residue classes modulo $n$.
-
-The congruence has a solution if and only if $\gcd(a, n)$ divides $b$. When this condition holds, the solutions form one residue class modulo $n / \gcd(a, n)$, which corresponds to $\gcd(a, n)$ distinct classes modulo $n$. The criterion follows from Bézout's identity. For any integers $a$ and $n$, some integers $u$ and $v$ satisfy:
+Given integers $a,$ $b,$ and $n$ with $n>0,$ we define a linear congruence in the unknown $x$ as follows.
 
 $$
-au + nv = \gcd(a, n)
+ax\equiv b\pmod n \tag{13}
 $$
 
-For $b = 1$, the solutions of $ax \equiv 1 \pmod n$ are the multiplicative inverses of $a$ modulo $n$. Such an inverse exists if and only if $\gcd(a, n) = 1$, and it is then unique modulo $n$. The extended Euclidean algorithm computes integers $u$ and $v$ satisfying $au + nv = 1$. Reduction modulo $n$ gives $au \equiv 1 \pmod n$, so $u$ is an inverse of $a$.
+The solutions of $(13)$ are the integers $x$ that satisfy the relation, grouped into residue classes modulo $n.$ Congruence $(13)$ has a solution if and only if $\gcd(a,n)$ divides $b,$ in which case the solutions form one class modulo $n/\gcd(a,n)$ corresponding to $\gcd(a,n)$ distinct classes modulo $n.$
 
-For $a = 7$ and $n = 12$, the inverse exists because $\gcd(7, 12) = 1$. The identity $7 \cdot 7 + 12 \cdot (-4) = 1$ gives $7 \cdot 7 \equiv 1 \pmod{12}$. Thus $7$ is its own inverse modulo $12$.
-
-If $\gcd(a, n) = 1$ and $u$ is the inverse of $a$, then $ax \equiv b \pmod n$ has the unique solution class $x \equiv ub \pmod n$. Indeed, multiplication by $u$ gives $uax \equiv ub \pmod n$, and $ua \equiv 1 \pmod n$. For $a = 7$ and $n = 12,$ the congruence $7x \equiv 5 \pmod{12}$ has the solution $x \equiv 7 \cdot 5 = 35 \equiv 11 \pmod{12}$. The identity $7 \cdot 11 = 6 \cdot 12 + 5$ verifies the solution.
-
-Suppose $g = \gcd(a, n) > 1$ and $g$ divides $b$. Dividing $a$, $b$, and $n$ by $g$ gives:
+To justify the criterion for the existence of solutions to $(13),$ let $g=\gcd(a,n).$ By $(5),$ if $x$ is a solution, then $ax-b$ is a multiple of $n.$ Since $g$ divides both $a$ and $n,$ it must also divide $b.$ For the converse, we use [Bézout's identity](../integers/), which states that there are integers $u$ and $v$ satisfying the following equation.
 
 $$
-\frac{a}{g}x \equiv \frac{b}{g} \pmod{n/g}
+au + nv = g \tag{14}
 $$
 
-The coefficient $a/g$ is coprime with the modulus $n/g$, so the reduced congruence has one solution class modulo $n/g$. This class corresponds to $g$ classes modulo $n$. For example, consider $6x \equiv 9 \pmod{15}$. Here $g = 3$ divides $9,$ and the reduced congruence is $2x \equiv 3 \pmod 5$. The inverse of $2$ modulo $5$ is $3,$ so $x \equiv 9 \equiv 4 \pmod 5$. The original congruence has the three solutions $x = 4$, $x = 9$, and $x = 14$ modulo $15$.
+If $g$ divides $b,$ we write $b=kg$ for some integer $k.$ Multiplying $(14)$ by $k$ gives $b-a(ku)=n(kv).$ The difference is a multiple of $n,$ so by $(5),$ $x=ku$ solves $(13).$
 
-Systems involving several moduli are treated in the [Chinese remainder theorem](../chinese-remainder-theorem/).
+- - -
+
+For $b=1,$ a solution of $(13)$ is an inverse of $a$ modulo $n,$ and it exists if and only if $g=1.$ In this case, the extended Euclidean algorithm computes the coefficients in $(14).$ Since $nv$ is a multiple of $n,$ equation $(14)$ gives $au\equiv1\pmod n.$ For any right-hand side $b,$ multiplying both sides of $(13)$ by $u$ gives the unique solution class $x\equiv ub\pmod n.$
+
+For example, $7$ is its own inverse modulo $12$ because $7\cdot7=4\cdot12+1.$ Thus $7x\equiv5\pmod{12}$ is equivalent to $x\equiv7\cdot5\equiv11\pmod{12}.$
+
+If $g>1$ and $g$ divides $b,$ congruence $(13)$ is equivalent to the congruence obtained by dividing the coefficient of $x,$ the right-hand side, and the modulus by $g.$
+
+$$
+\frac{a}{g}x \equiv \frac{b}{g} \pmod{n/g} \tag{15}
+$$
+
+Since $a/g$ and $n/g$ are coprime, $(15)$ has a single solution class modulo $n/g,$ which corresponds to $g$ classes modulo $n.$ For example, $6x\equiv9\pmod{15}$ reduces to $2x\equiv3\pmod5.$ Multiplying by $3,$ the inverse of $2$ modulo $5,$ gives $x\equiv4\pmod5.$ The residues modulo $15$ that leave a remainder of $4$ upon division by $5$ are $4,$ $9,$ and $14.$
+
+Systems involving more than one modulus are covered in the entry on the [Chinese remainder theorem](../chinese-remainder-theorem/).
 
 ## Fermat's little theorem and Euler's theorem
 
-Fermat's little theorem concerns powers modulo a prime. If $p$ is prime and $a$ is not divisible by $p$, then the following congruence holds:
+Fermat's little theorem and Euler's theorem let us find the remainder of a power with a large exponent by using a power with a smaller exponent. The idea is to find an exponent $m$ for which $a^m$ leaves a remainder of $1$ modulo $n.$ If we write the exponent $k$ as $k=qm+r$ with $0\leq r<m,$ then $a^k=(a^m)^qa^r$ has the same remainder as $a^r.$ If the modulus $p$ is prime and $a$ is not divisible by $p,$ Fermat's little theorem lets us take $m=p-1$ and gives the following congruence.
 
 $$
-a^{p-1} \equiv 1 \pmod p
+a^{p-1} \equiv 1 \pmod p \tag{16}
 $$
 
-Equivalently, $a^p \equiv a \pmod p$ for every integer $a$. For $a$ not divisible by $p$, exponents may therefore be reduced modulo $p-1$.
+An equivalent form of the theorem, valid for every integer $a,$ is $a^p\equiv a\pmod p.$ For example, to find the remainder of $3^{100}$ upon division by $7,$ we use $(16)$ with $p=7.$ Since $3^6\equiv1\pmod7$ and $100=16\cdot6+4,$ we need only find the remainder of $3^4=81$ upon division by $7,$ which is $4.$
 
-Euler's theorem generalises the previous statement to an arbitrary modulus $n$. Let $\varphi(n)$ denote the Euler totient, defined as the number of integers in the range $1 \le k \le n$ that are coprime with $n$. If $\gcd(a, n) = 1$, then the following congruence holds:
-
-$$
-a^{\varphi(n)} \equiv 1 \pmod n
-$$
-
-When $n = p$ is prime, every integer in the range $1 \le k \le p - 1$ is coprime with $p$, so $\varphi(p) = p - 1$ and Euler's theorem reduces to Fermat's little theorem.
-
-## Examples
-
-Suppose today is Wednesday and we want to determine the day of the week in $100$ days. Since $100 = 14 \cdot 7 + 2$, we have $100 \bmod 7 = 2$. The day is therefore two days after Wednesday, which is Friday, because the seven weekdays repeat after each complete week.
-
-Parity is determined by the residue modulo $2$. An integer $a$ is even if $a \bmod 2 = 0$ and odd if $a \bmod 2 = 1$. The two residue classes modulo $2$ are the even and odd integers. The usual rules of parity, such as "even plus even is even" and "odd times odd is odd", are special cases of the arithmetic properties of congruences.
-
-The residue $7^{100} \bmod 10$ is the last decimal digit of $7^{100}$. The successive powers of $7$ modulo $10$ are $7, 9, 3, 1, 7, 9, 3, 1, \ldots$, with period $4$.
-
-Since $100 = 25 \cdot 4$, the exponent contains $25$ complete periods, so $7^{100} \equiv 1 \pmod{10}$. The last digit of $7^{100}$ is therefore $1$. The same conclusion follows from Euler's theorem, since $\varphi(10) = 4$ and $\gcd(7, 10) = 1$ imply $7^{4} \equiv 1 \pmod{10}$, from which $7^{100} = (7^{4})^{25} \equiv 1 \pmod{10}$.
-
-## Relation with algebraic structures
-
-Addition and multiplication of residue classes modulo $n$ are defined by:
+For any modulus $n>1,$ Euler's theorem lets us take $m=\varphi(n)$ when $a$ and $n$ are coprime, where $\varphi(n)$ counts the integers from $1$ to $n$ that are coprime to $n.$ Under this assumption, the following congruence holds.
 
 $$
-[a]_n + [b]_n = [a+b]_n \qquad [a]_n \cdot [b]_n = [a \cdot b]_n
+a^{\varphi(n)} \equiv 1 \pmod n \tag{17}
 $$
 
-For these formulas to define operations on $\mathbb{Z}/n\mathbb{Z}$, their values must be independent of the chosen representatives. Suppose $a' \in [a]_n$ and $b' \in [b]_n$. Then $a \equiv a' \pmod n$ and $b \equiv b' \pmod n,$ so the arithmetic properties of congruence give $a + b \equiv a' + b' \pmod n$ and $ab \equiv a'b' \pmod n$. Therefore $[a+b]_n = [a'+b']_n$ and $[ab]_n = [a'b']_n$, and both operations are well defined.
+If $n=p$ is prime, every integer from $1$ to $p-1$ is coprime to $p.$ Therefore $\varphi(p)=p-1,$ and $(17)$ coincides with $(16).$
 
-An arbitrary partition of $\mathbb{Z}$ need not have this property. Group the integers according to the number of decimal digits of their absolute value. The integers $3$, $4$, $6$, and $7$ then belong to the one-digit class. The sum $3 + 4 = 7$ has one digit, whereas $6 + 7 = 13$ has two. The class of the sum depends on the representatives, so addition is not well defined on these classes. For residue classes, congruence is compatible with addition and multiplication, which gives the required independence.
+## Connection with algebraic structures
 
-The ring laws on $\mathbb{Z}/n\mathbb{Z}$ follow from the corresponding identities in $\mathbb{Z}$. For example, the following calculation proves associativity of multiplication:
-
-$$
-\begin{align}
-([a]_n[b]_n)[c]_n &= [ab]_n[c]_n = [(ab)c]_n \\[6pt]
-&= [a(bc)]_n = [a]_n[bc]_n = [a]_n([b]_n[c]_n)
-\end{align}
-$$
-
-The middle equality is associativity in $\mathbb{Z}$. The other ring laws follow in the same way.
-
-+ Addition is commutative and associative.
-+ The class $[0]_n$ is the additive identity, and $[-a]_n$ is the additive inverse of $[a]_n$.
-+ Multiplication is commutative and associative.
-+ The class $[1]_n$ is the multiplicative identity.
-+ Multiplication distributes over addition.
-
-A set carrying two operations with these properties is a commutative [ring](../rings/), so $\mathbb{Z}/n\mathbb{Z}$ is a finite commutative ring.
-
-Every nonzero class in $\mathbb{Z}/n\mathbb{Z}$ is either invertible or a zero divisor, but not both. Modulo $12$ the invertible classes are $[1]_{12}$, $[5]_{12}$, $[7]_{12}$, and $[11]_{12}$, whose representatives are coprime with $12$. Each remaining nonzero class is a zero divisor because the products $[2]_{12}[6]_{12}$, $[3]_{12}[4]_{12}$, $[8]_{12}[3]_{12}$, $[9]_{12}[4]_{12}$, and $[10]_{12}[6]_{12}$ are all equal to $[0]_{12}$.
-
-The two cases are mutually exclusive. Suppose $[a]_n[b]_n = [1]_n$ and $[a]_n[c]_n = [0]_n$. Associativity gives:
+The congruence properties in $(6)$ let us extend the operations on integers to residue classes. Addition and multiplication defined in this way give $\mathbb{Z}/n\mathbb{Z}$ the structure of a [ring](../rings/). To add or multiply two classes, we choose a representative from each class, perform the operation on the integers, and take the class of the result.
 
 $$
-[c]_n = ([b]_n[a]_n)[c]_n = [b]_n([a]_n[c]_n) = [b]_n[0]_n = [0]_n
+\begin{aligned}
+[a]_n + [b]_n &= [a+b]_n \\[6pt]
+[a]_n[b]_n &= [ab]_n
+\end{aligned} \tag{18}
 $$
 
-Thus an invertible class annihilates no nonzero class. A counting argument proves that every nonzero, noninvertible class is a zero divisor. Multiplication by a fixed class defines the map:
+The result in $(18)$ is independent of the choice of representatives because, if we choose $a'$ in the class of $a$ and $b'$ in the class of $b,$ property $(6)$ guarantees that $a+b$ and $a'+b'$ belong to the same class. The same holds for $ab$ and $a'b'.$ This independence depends on how we have grouped the integers. If we grouped them by the number of digits in their [absolute values](../absolute-value/), $3,$ $4,$ $6,$ and $7$ would all belong to the same class. Yet $3+4=7$ has one digit, whereas $6+7=13$ has two. The class of the sum would therefore depend on the representatives chosen.
+
+The operations in $(18)$ inherit the properties of addition and multiplication on the integers. For example, associativity of multiplication follows by replacing $(ab)c$ with $a(bc)$ within the residue class.
 
 $$
-\mu_a : \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z} \qquad \mu_a([x]_n) = [ax]_n
+\begin{aligned}
+([a]_n[b]_n)[c]_n &= [(ab)c]_n \\[6pt]
+&= [a(bc)]_n = [a]_n([b]_n[c]_n)
+\end{aligned} \tag{19}
 $$
 
-If $[a]_n$ has no inverse, no class maps to $[1]_n$, so $\mu_a$ is not surjective. A map from a finite set to itself that is not surjective is not injective. Hence two distinct classes $[x]_n$ and $[y]_n$ satisfy $[ax]_n = [ay]_n$. Their difference is a nonzero class annihilated by $[a]_n$, so $[a]_n$ is a zero divisor. Finiteness is necessary for this argument. In $\mathbb{Z}$, the integer $2$ has no inverse and is not a zero divisor.
+Addition and multiplication are both associative and commutative, and multiplication distributes over addition. The class $[0]_n$ is the additive identity, $[-a]_n$ is the additive inverse of $[a]_n,$ and $[1]_n$ is the multiplicative identity. With these operations, $\mathbb{Z}/n\mathbb{Z}$ is a finite commutative ring.
 
-When $n$ is prime, every nonzero residue is coprime with $n$ and is therefore invertible. Hence $\mathbb{Z}/n\mathbb{Z}$ has no zero divisors and is a [field](../fields/).
+A nonzero class $[a]_n$ is called a zero divisor if there is a nonzero class $[b]_n$ such that $[a]_n[b]_n=[0]_n.$
 
-A [polynomial ring](../polynomials/) over a field can also be quotiented by the ideal generated by a nonconstant polynomial. Polynomial division gives each residue class a representative whose degree is smaller than the degree of the modulus. For example, the quotient $\mathbb{R}[x]/(x^2 + 1)$ is isomorphic to the field of [complex numbers](../complex-numbers/), denoted by $\mathbb{C}$.
+The criterion for solving $(13)$ with $b=1$ shows that $[a]_n$ is invertible if and only if $\gcd(a,n)=1.$ If $[a]_n$ is invertible and $[a]_n[b]_n=[0]_n,$ multiplying by the inverse of $[a]_n$ gives $[b]_n=[0]_n.$ If instead $[a]_n$ is nonzero and $g=\gcd(a,n)>1,$ the class $[n/g]_n$ is nonzero and the product is zero because $a(n/g)=(a/g)n,$ which gives the following equation.
+
+$$
+[a]_n[n/g]_n=[0]_n \tag{20}
+$$
+
+Every nonzero class is therefore either invertible or a zero divisor. Modulo $12,$ the invertible classes are those of $1,$ $5,$ $7,$ and $11,$ the only residues coprime to $12.$ For example, the class of $8$ is a zero divisor. Since $\gcd(8,12)=4,$ equation $(20)$ gives $[8]_{12}[3]_{12}=[0]_{12}.$
+
+When $n$ is prime, every nonzero residue is coprime to $n.$ Thus every nonzero class is invertible and $\mathbb{Z}/n\mathbb{Z}$ is a [field](../fields/).
+
+As with integers, we can form a ring of residue classes for [polynomials](../polynomials/) with coefficients in a field. For instance, fix a nonconstant polynomial and group together the polynomials that have the same remainder upon [division](../polynomial-division/) by it. In the quotient $\mathbb{R}[x]/(x^2+1),$ for example, each class is represented by a polynomial $a+bx,$ and the square of the class of $x$ is the class of $-1.$ Mapping the class of $a+bx$ to the number $a+bi$ gives an [isomorphism](../homomorphisms-and-isomorphisms/) with $\mathbb{C}.$
