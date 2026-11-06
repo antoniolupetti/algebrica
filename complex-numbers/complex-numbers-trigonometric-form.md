@@ -12,26 +12,32 @@ tags:
 ---
 ## Definition
 
-The algebraic form $z = a + bi$ expresses a [complex number](../complex-numbers-introduction/) through its real and imaginary components. Every nonzero complex number can also be described by two geometric quantities, its distance from the origin and its angular position in the complex plane. This leads to the trigonometric (or polar) form of a complex number:
+As we saw in the [definition](../complex-numbers/), the [algebraic form](../complex-numbers/) of a complex number expresses a number $z$ by specifying its real and imaginary components and is given by the following expression:
 
-$$z = r(\cos\theta + i\sin\theta)$$
+$$z = a + bi \tag{1}$$
 
-+ $r = |z| = \sqrt{a^2 + b^2}$ is the [modulus](../complex-numbers-introduction/), representing the distance of $z$ from the origin in the complex plane.
-+ $\theta = \arg(z)$ is the argument, the [angle in radians](../angles-and-angular-measure/) between the positive real axis and the [vector](../vectors/) representing $z$.
+Every nonzero complex number of the form $(1)$ can also be described in terms of geometric quantities. If we view a general point $z$ as a pair of coordinates on the real and imaginary axes, we can consider its distance from the origin and its angular position in the complex plane. This gives the trigonometric form, also called the [polar form](../polar-coordinates/), of a complex number, expressed by the following identity:
+
+$$z = r(\cos\theta + i\sin\theta) \tag{2}$$
+
+$r$ is the [modulus](../complex-numbers/), that is, the distance of $z$ from the origin in the complex plane, and is given by:
+
+$$r = |z| = \sqrt{a^2 + b^2}\tag{3}$$
+
+Geometrically, it is the length of the hypotenuse of the [right triangle](../right-triangle-trigonometry/) determined by the real and imaginary parts. $\theta = \arg(z)$ is the argument, that is, the [angle in radians](../angles-and-angular-measure/) between the positive real axis and the [vector](../vectors/) representing $z.$
 
 ![IMG. 1](svg/complex-numbers-trigonometric-form-1.svg)
 
-> Geometrically, $r$ is the hypotenuse of the right triangle determined by the real and imaginary parts of $z$. By the [Pythagorean theorem](../pythagorean-theorem/) $r = \sqrt{a^2 + b^2}$
+We now derive the trigonometric form $(2)$ from the algebraic form $(1).$ Consider the point $P(a, b)$ representing $z$ in the complex plane. Its coordinates are obtained by projecting the vector $\overrightarrow{OP},$ of modulus $r,$ onto the two axes. The [cosine](../cosine-function/) and [sine](../sine-function/) of the argument $\theta$ determine the real and imaginary components, respectively, with signs corresponding to the quadrant containing $P:$
 
-- - -
+$$ \tag{4}
+\begin{align}
+a &= r\cos(\theta) \\[6pt]
+b &= r\sin(\theta)
+\end{align}
+$$
 
-Since the point $z = (a, b)$ lies in the complex plane at distance $r$ from the origin, and $\theta$ is the angle it forms with the positive real axis, the real and imaginary components can be expressed through the definitions of [sine and cosine](../sine-and-cosine/) in a right triangle. The projections onto the two axes are then given by these trigonometric relationships:
-
-$$\overline{OA} = \overline{OP} \cdot \cos(\theta) = r\cos(\theta)$$
-
-$$\overline{OB} = \overline{OP} \cdot \sin(\theta) = r\sin(\theta)$$
-
-That is, $a = r\cos(\theta)$ and $b = r\sin(\theta)$. Substituting these into the algebraic form of a complex number gives its trigonometric representation:
+Substituting the coordinate expressions given in $(4)$ into the algebraic form $(1)$ yields the trigonometric form $(2):$
 
 $$
 \begin{align}
@@ -41,112 +47,106 @@ z = (a, b) &= a + ib \\[6pt]
 \end{align}
 $$
 
-The trigonometric form is closely related with the [exponential form](../complex-numbers-exponential-form/) of a complex number. By [Euler's formula](../eulers-formula/), the identity $e^{i\theta} = \cos(\theta) + i\sin(\theta)$ shows that the two representations are equivalent, so the same complex number can be written equivalently as:
+An equivalent form of $(2)$ is the [exponential representation](../complex-numbers-exponential-form/), expressed by the following identity:
 
-$$z = re^{i\theta}$$
+$$z = re^{i\theta} \tag{5}$$
+
+As discussed in the dedicated entry, $(5)$ follows from [Euler's formula](../euler-formula/), which allows the expression in parentheses in $(2)$ to be written as a complex exponential and is given by the following identity:
+
+$$e^{i\theta} = \cos(\theta) + i\sin(\theta) \tag{6}$$
 
 - - -
 
-The complex [conjugate](../complex-numbers/) $\overline{z}$ of a complex number $z$ in trigonometric form is obtained by replacing $\theta$ with $-\theta$, which geometrically corresponds to reflecting $z$ across the real axis. Since [cosine](../cosine-function/) is an even function and [sine](../sine-function/) is odd, we obtain:
+We have seen that the [conjugate](../complex-numbers/) of a complex number in algebraic form is given by the following identity:
 
-$$\overline{z} = r(\cos\theta - i\sin\theta)$$
+$$\overline{z} = a-ib \tag{7}$$
 
-Translating the same parity argument to the exponential representation via [Euler's formula](../eulers-formula/), yields the analogous identity $\overline{z} = re^{-i\theta}$ for the conjugate in exponential form.
+The same characterization of the conjugate can be obtained in trigonometric form by replacing $\theta$ with $-\theta$ in $(2).$ Geometrically, this corresponds to reflecting $z$ across the real axis, and since cosine is an [even function](../even-and-odd-functions/) and sine is [odd](../even-and-odd-functions/), the conjugate is given by:
+
+$$\overline{z} = r(\cos\theta - i\sin\theta) \tag{8}$$
+
+Applying the same reasoning about parity to the exponential representation through Euler's formula yields the analogous identity for the conjugate in exponential form, written as:
+
+$$\overline{z} = re^{-i\theta} \tag{9}$$
 
 ## Operations
 
-Given two complex numbers in trigonometric form:
+The main [operations on complex numbers](../complex-number-operations/) expressed in trigonometric form are presented below, beginning with multiplication. Consider two numbers $z_1$ and $z_2,$ both in trigonometric form:
 
-$$z_1 = r_1[\cos(\theta_1) + i\sin(\theta_1)]$$
+$$
+\begin{align}
+z_1 &= r_1[\cos(\theta_1) + i\sin(\theta_1)] \\[6pt]
+z_2 &= r_2[\cos(\theta_2) + i\sin(\theta_2)]
+\end{align}
+$$
 
-$$z_2 = r_2[\cos(\theta_2) + i\sin(\theta_2)]$$
+Their product is a complex number whose modulus is the product of their moduli and whose argument is the sum of their arguments:
 
-their product is another complex number whose modulus is the product of the moduli and whose argument is the sum of the arguments. The multiplication formula is the following.
+$$z_1 \cdot z_2 = r_1 r_2[\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2)] \tag{10}$$
 
-$$z_1 z_2 = r_1 r_2[\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2)]$$
+Geometrically, multiplying $z_1$ by a nonzero complex number $z_2$ means multiplying its distance from the origin by $r_2$ and rotating the vector representing it through an angle $\theta_2.$ This rotation is counterclockwise if $\theta_2 > 0$ and clockwise if $\theta_2 < 0.$ The resulting complex number has modulus $r_1r_2$ and argument $\theta_1 + \theta_2,$ as expressed in $(10).$
 
-Geometrically, [multiplying two complex numbers](../complex-number-operations/) corresponds to scaling their distances from the origin by the product of their moduli and rotating the result by the sum of their arguments, combining a dilation and a rotation in a single operation.
+For the [quotient](../complex-number-operations/), with $z_2 \neq 0,$ the product rule $(10)$ is modified by replacing the product of the moduli with their ratio and the sum of the arguments with their difference. The modulus of $z_1/z_2$ is therefore $r_1/r_2$ and its argument is $\theta_1 - \theta_2:$
 
-> This interpretation extends to integer powers through [De Moivre's theorem](../de-moivre-theorem/), and becomes algebraically transparent in the [exponential form](../complex-numbers-exponential-form/), where the rule $e^{i\theta_1} \cdot e^{i\theta_2} = e^{i(\theta_1 + \theta_2)}$ reduces multiplication to the addition of arguments.
+$$\frac{z_1}{z_2} = \frac{r_1}{r_2}\left[\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)\right] \tag{11}$$
 
-- - -
+For [addition](../complex-number-operations/), there is no rule as simple as those for the product $(10)$ and quotient $(11),$ and we generally switch to algebraic form and add the real and imaginary parts separately. First, we write the sum as:
 
-The quotient of two complex numbers in trigonometric form, defined for $z_2 \neq 0$, follows a symmetric rule: the modulus of the result is the ratio of the moduli, and the argument is the difference of the arguments.
+$$z_1 + z_2 = x + iy \tag{12}$$
 
-$$\frac{z_1}{z_2} = \frac{r_1}{r_2}\left[\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)\right]$$
+The components $x$ and $y$ in $(12)$ are given by:
 
-- - -
+$$
+\begin{align}
+x &= r_1\cos\theta_1 + r_2\cos\theta_2 \\[6pt]
+y &= r_1\sin\theta_1 + r_2\sin\theta_2
+\end{align}
+$$
 
-Addition does not admit a comparably compact formula. The most direct approach is to convert both numbers to algebraic form, add their real and imaginary parts separately, and then convert the result back to trigonometric form if needed. The real and imaginary parts of the sum are the following.
-
-$$x = r_1\cos\theta_1 + r_2\cos\theta_2$$
-
-$$y = r_1\sin\theta_1 + r_2\sin\theta_2$$
-
-The sum $z_1 + z_2$ is then expressed in algebraic form as $x + iy$. To recover the trigonometric form, one computes the modulus and the argument of the result. The modulus is given by the following.
+To express $(12)$ in trigonometric form, we must first calculate the modulus and then the argument. For the modulus, we obtain:
 
 $$r = \sqrt{x^2 + y^2}$$
 
-The argument requires attention to the quadrant of the point $(x, y)$ in the complex plane. When $x > 0$, one has the following.
+To calculate the argument, we must consider the quadrant containing the point $(x, y)$ in the complex plane. As stated in the [introduction to complex numbers](../complex-numbers/), when $x > 0,$ the argument is given by:
 
 $$\theta = \arctan\left(\frac{y}{x}\right)$$
 
-When $x < 0$, a correction of $\pm\pi$ must be applied depending on the sign of $y$, and when $x = 0$ the argument is $\pm\pi/2$ according to the sign of $y$.
-
-## Modulus and argument
-
-The modulus $r$ of a complex number is its distance from the origin in the complex plane. It is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to the real and imaginary components, and its value is always non-negative.
-
-$$r = |z| = \sqrt{a^2 + b^2} \geq 0$$
-
-Since the modulus measures a geometric length, it cannot be negative. When $r = 0$, the only complex number satisfying this condition is $z = 0$, which corresponds to the origin of the complex plane. In that case, there is no directional component and the argument $\theta$ is undefined. For every nonzero complex number, the modulus is strictly positive, that is, $r > 0$.
-
-- - -
-
-The argument $\theta$ of a complex number describes its angular position in the complex plane, measured in radians from the positive real axis. Unlike the modulus, which is uniquely determined, the argument is not unique: two angles that differ by an [integer](../integers/) multiple of $2\pi$ describe the same direction, and therefore the same complex number. More precisely, for any $k \in \mathbb{Z}$, the angles $\theta$ and $\theta + 2k\pi$ correspond to the same point in the complex plane. This is often written in the following compact form:
-
-$$\arg(z) = \theta + 2k\pi, \quad k \in \mathbb{Z}$$
-
-To obtain a unique representative, one typically selects the principal argument, denoted $\mathrm{Arg}(z)$, which is the value of $\theta$ lying in the interval below.
-
-$$-\pi < \theta \leq \pi$$
-
-In this convention, angles are measured counterclockwise from the positive real axis, with negative values corresponding to directions below it. An alternative convention, common in engineering and applied mathematics, restricts the argument to the interval below.
-
-$$0 \leq \theta < 2\pi$$
-
-In this case all arguments are taken as non-negative. Both conventions are equally valid; the choice depends on the context. Regardless of the convention adopted, the argument of $z = 0$ remains undefined, since the origin carries no directional information.
-
-## How to express a complex number in trigonometric form
-
-The procedure consists of three steps, applied to a complex number $z = a + bi$ given in algebraic form.
-
-First, compute the modulus of $z$ using the following formula.
-
-$$r = \sqrt{a^2 + b^2}$$
-
-Next, determine the argument $\theta$ by identifying the quadrant of the point $(a, b)$ in the complex plane.
-
-+ When $a > 0$, the argument is given by $\theta = \arctan(b/a)$.
-+ When $a < 0$, a correction of $\pm\pi$ must be added depending on the sign of $b$.
-+ When $a = 0$, the argument is $\pi/2$ if $b > 0$ and $-\pi/2$ if $b < 0$.
-
-Finally, substitute $r$ and $\theta$ into the trigonometric form.
-
-$$z = r(\cos\theta + i\sin\theta)$$
+> When $x < 0,$ we add $\pi$ to the [arctangent](../arctangent-function/) value if $y \geq 0,$ or subtract $\pi$ if $y < 0.$ When $x = 0,$ the argument is $\pi/2$ if $y > 0$ and $-\pi/2$ if $y < 0.$ If $x = y = 0,$ the sum is zero and its argument is undefined.
 
 ## Example
 
-Consider the complex number $z = 1 + i$ and its conversion to trigonometric form. The modulus is computed by applying the definition directly. Since $a = 1$ and $b = 1$, one obtains the following:
+We rewrite the following complex number in trigonometric form:
+
+$$z = 1 + i \tag{13}$$
+
+First, we calculate the modulus. Since $a = 1$ and $b = 1,$ we obtain:
 
 $$r = \sqrt{a^2 + b^2} = \sqrt{1^2 + 1^2} = \sqrt{2}$$
 
-To determine the argument, observe that the point $(1, 1)$ lies in the first quadrant of the complex plane, where both components are positive. Since $a > 0$, the argument is given by the arctangent of the ratio $b/a$. Substituting the values yields the following:
+To determine the argument, we observe that the point $(1, 1)$ lies in the first quadrant of the complex plane, where both components are positive. Since $a > 0,$ the argument is given by the following chain of equalities:
 
-$$\theta = \arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{1}{1}\right) = \arctan(1) = \frac{\pi}{4}$$
+$$\theta = \arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{1}{1}\right) = \arctan(1) = \frac{\pi}{4} \tag{14}$$
 
-This result is consistent with the geometry of the situation: the complex number $1 + i$ lies along the bisector of the first quadrant, which forms an angle of $\pi/4$ radians with the positive real axis.
-
-Substituting $r = \sqrt{2}$ and $\theta = \dfrac{\pi}{4}$ into the trigonometric form gives the final result. The complex number $1 + i$ in its trigonometric form is the following.
+The result agrees with the geometric position of the number in $(13),$ which lies on the bisector of the first quadrant, at an angle of $\pi/4$ radians to the positive real axis. Substituting the values obtained from $(13)$ and $(14)$ into $(2)$ gives the trigonometric form of the number $(13):$
 
 $$z = \sqrt{2}\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right)$$
+
+- - -
+
+Now consider $z = -\sqrt{3} - i$ and write it in trigonometric form. Its modulus is:
+
+$$r = \sqrt{(-\sqrt{3})^2 + (-1)^2} = 2$$
+
+The ratio of the imaginary part to the real part is positive, so:
+
+$$\arctan\left(\frac{-1}{-\sqrt{3}}\right) = \arctan\left(\frac{1}{\sqrt{3}}\right) = \frac{\pi}{6}$$
+
+However, the angle $\pi/6$ lies in the first quadrant, whereas the point $(-\sqrt{3}, -1)$ lies in the third, so we subtract $\pi$ to obtain the [principal argument](../complex-numbers/):
+
+$$\theta = \frac{\pi}{6} - \pi = -\frac{5\pi}{6}$$
+
+The required trigonometric form is therefore:
+
+$$z = 2\left[\cos\left(-\frac{5\pi}{6}\right) + i\sin\left(-\frac{5\pi}{6}\right)\right]$$
+
+> If the determination of the argument is still unclear at this point, for an explanation of the corrections required when calculating the argument according to the quadrant, we refer to the entry on [complex numbers](../complex-numbers/), which explains how the argument is determined from the real and imaginary components.
