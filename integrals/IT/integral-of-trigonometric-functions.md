@@ -21,19 +21,19 @@ Prima di tutto, è necessario memorizzare le primitive delle funzioni trigonomet
 
 [class="table-1"]
 
-|     |                                                                              |
-| --- | ---------------------------------------------------------------------------- |
-| 1.  | $$\int \sin x \ dx = -\cos x + c$$                                           |
-| 2.  | $$\int \cos x \ dx = \sin x + c$$                                            |
-| 3.  | $$\int \tan x \ dx = -\ln \mid \cos x \mid + c$$                             |
-| 4.  | $$\int \cot x \ dx = \ln \mid \sin x \mid + c$$                              |
-| 5.  | $$\int \sec x \ dx = \ln \mid \sec x + \tan x \mid + c$$                     |
-| 6.  | $$\int \csc x \ dx = \ln \mid \csc x - \cot x  \mid + c$$                    |
-| 7.  | $$\int \sinh x \ dx = \cosh x + c$$                                          |
-| 8.  | $$\int \cosh x \ dx = \sinh x + c$$                                          |
-| 9.  | $$\int \tanh x \ dx = \ln \mid \cosh x \mid + c$$                            |
-| 10. | $$\int \coth x \ dx = \ln \mid \sinh x \mid + c$$                            |
-| 11. | $$\int \mathrm{sech} x \ dx = 2 \arctan\!\left(\tanh\frac{x}{2}\right) + c$$ |
+|     |                                                                                      |
+| --- | ------------------------------------------------------------------------------------ |
+| 1.  | $$\int \sin x \ dx = -\cos x + c$$                                                   |
+| 2.  | $$\int \cos x \ dx = \sin x + c$$                                                    |
+| 3.  | $$\int \tan x \ dx = -\ln \mid \cos x \mid + c$$                                     |
+| 4.  | $$\int \cot x \ dx = \ln \mid \sin x \mid + c$$                                      |
+| 5.  | $$\int \sec x \ dx = \ln \mid \sec x + \tan x \mid + c$$                             |
+| 6.  | $$\int \csc x \ dx = \ln \mid \csc x - \cot x  \mid + c$$                            |
+| 7.  | $$\int \sinh x \ dx = \cosh x + c$$                                                  |
+| 8.  | $$\int \cosh x \ dx = \sinh x + c$$                                                  |
+| 9.  | $$\int \tanh x \ dx = \ln \mid \cosh x \mid + c$$                                    |
+| 10. | $$\int \coth x \ dx = \ln \mid \sinh x \mid + c$$                                    |
+| 11. | $$\int \mathrm{sech} x \ dx = 2 \arctan\!\left(\tanh\frac{x}{2}\right) + c$$         |
 | 12. | $$\int \operatorname{csch} x \ dx = \ln\left\lvert\tanh\frac{x}{2}\right\rvert + c$$ |
 
 [/class]
