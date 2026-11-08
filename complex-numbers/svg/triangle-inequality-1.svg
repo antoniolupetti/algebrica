@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="227" viewBox="0 0 310 227" role="img" aria-labelledby="title description">
+  <title id="title">The triangle inequality for a sum</title>
+  <g fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14.5 182.5H291.5 M72.5 213.5V44.5" stroke="#BEB8B7"/>
+    <path d="M286.5 179.5L291.5 182.5 286.5 185.5 M69.5 49.5L72.5 44.5 75.5 49.5" stroke="#BEB8B7"/>
+    <path d="M72.5 182.5L126.5 106.5 253.5 69.5" stroke="#BEB8B7" stroke-dasharray="4 4"/>
+    <path d="M72.5 182.5L199.5 145.5 253.5 69.5 M191.5 144.5L199.5 145.5 193.5 150.5" stroke="#636060"/>
+    <path d="M72.5 182.5L253.5 69.5 M245.5 70.5L253.5 69.5 249.5 76.5" stroke="#312f2f" stroke-width="1.5"/>
+  </g>
+  <g font-weight="normal">
+    <g fill="#636060" font-size="12">
+      <text x="52.5" y="49.5">Im</text>
+      <text x="280.5" y="201.5">Re</text>
+      <text x="59.5" y="198.5">0</text>
+    </g>
+    <g fill="#312f2f" font-size="14">
+      <text x="111.5" y="98.5">z₂</text>
+      <text x="202.5" y="162.5">z₁</text>
+      <text x="259.5" y="66.5">z₁ + z₂</text>
+    </g>
+    <text id="description" fill="#636060" font-size="11">
+      <tspan x="100.5" y="15.5">The diagonal has length |z₁ + z₂|.</tspan>
+      <tspan x="100.5" y="28.5">The two sides along the path through z₁</tspan>
+      <tspan x="100.5" y="41.5">have total length |z₁| + |z₂|.</tspan>
+    </text>
+  </g>
+</svg>
