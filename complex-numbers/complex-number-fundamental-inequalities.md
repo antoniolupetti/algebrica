@@ -49,8 +49,9 @@ Taking square roots in $(6)$ gives $(5).$ Equality holds if and only if $|a||b| 
 
 [class="table-1 -right"]
 
-| $$\lvert z_1 + z_2\rvert \leq \lvert z_1\rvert + \lvert z_2\rvert$$                                                                                             | [Explore](../triangle-inequality/)       |
+|                                                                                                                                                                 |                                          |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| $$\lvert z_1 + z_2\rvert \leq \lvert z_1\rvert + \lvert z_2\rvert$$                                                                                             | [Explore](../triangle-inequality/)       |
 | $$\left\lvert\sum_{k=1}^{n} a_k\overline{b_k}\right\rvert^2 \leq \left(\sum_{k=1}^{n} \lvert a_k\rvert^2\right)\left(\sum_{k=1}^{n} \lvert b_k\rvert^2\right)$$ | [Explore](../cauchy-schwarz-inequality/) |
 
 [/class]
