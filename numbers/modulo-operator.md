@@ -24,7 +24,7 @@ tags:
 ---
 ## Definition
 
-The modulo operator returns the remainder of [Euclidean division](../euclidean-division/) and is useful when a count repeats at regular intervals and we want to know where we are in the cycle. For an intuitive example, if today is Monday and we want to know what day it will be in $17$ days, we count $14$ days (two weeks) plus the remaining 3 days to arrive at Thursday. Formally, given integers $a$ and $n$ with $n>0,$ the modulo operator is defined by the following equation.
+The modulo operator returns the remainder of [Euclidean division](../euclidean-division/) and is useful when a count repeats at regular intervals and we want to know where we are in the cycle. For an intuitive example, if today is Monday and we want to know what day it will be in $17$ days, we count $14$ days (two weeks) plus the remaining 3 days to arrive at Thursday. Formally, given integers $a$ and $n$ with $n\gt 0,$ the modulo operator is defined by the following equation.
 
 $$
 a \bmod n = r \tag{1}
@@ -36,7 +36,7 @@ $$
 a = qn + r \tag{2}
 $$
 
-The integer $q$ is the quotient. By the Euclidean division theorem, equation $(2)$ determines a unique pair of integers $(q,r)$ with $0\leq r<n.$ When $a$ is negative, the remainder in $(1)$ is still the unique integer in the range $0\leq r<n$ that satisfies the definition. For example, to find $-7\bmod5,$ the equation $-7=q\cdot5+r$ gives $q=-2$ and $r=3,$ since $-7=(-2)\cdot5+3.$ Hence $-7\bmod5=3.$
+The integer $q$ is the quotient. By the Euclidean division theorem, equation $(2)$ determines a unique pair of integers $(q,r)$ with $0\leq r\lt n.$ When $a$ is negative, the remainder in $(1)$ is still the unique integer in the range $0\leq r\lt n$ that satisfies the definition. For example, to find $-7\bmod5,$ the equation $-7=q\cdot5+r$ gives $q=-2$ and $r=3,$ since $-7=(-2)\cdot5+3.$ Hence $-7\bmod5=3.$
 
 ## Congruence
 
@@ -155,7 +155,7 @@ $$
 
 ## Linear congruences and inverses
 
-Given integers $a,$ $b,$ and $n$ with $n>0,$ we define a linear congruence in the unknown $x$ as follows.
+Given integers $a,$ $b,$ and $n$ with $n\gt 0,$ we define a linear congruence in the unknown $x$ as follows.
 
 $$
 ax\equiv b\pmod n \tag{13}
@@ -177,7 +177,7 @@ For $b=1,$ a solution of $(13)$ is an inverse of $a$ modulo $n,$ and it exists i
 
 For example, $7$ is its own inverse modulo $12$ because $7\cdot7=4\cdot12+1.$ Thus $7x\equiv5\pmod{12}$ is equivalent to $x\equiv7\cdot5\equiv11\pmod{12}.$
 
-If $g>1$ and $g$ divides $b,$ congruence $(13)$ is equivalent to the congruence obtained by dividing the coefficient of $x,$ the right-hand side, and the modulus by $g.$
+If $g\gt 1$ and $g$ divides $b,$ congruence $(13)$ is equivalent to the congruence obtained by dividing the coefficient of $x,$ the right-hand side, and the modulus by $g.$
 
 $$
 \frac{a}{g}x \equiv \frac{b}{g} \pmod{n/g} \tag{15}
@@ -189,7 +189,7 @@ Systems involving more than one modulus are covered in the entry on the [Chinese
 
 ## Fermat's little theorem and Euler's theorem
 
-Fermat's little theorem and Euler's theorem let us find the remainder of a power with a large exponent by using a power with a smaller exponent. The idea is to find an exponent $m$ for which $a^m$ leaves a remainder of $1$ modulo $n.$ If we write the exponent $k$ as $k=qm+r$ with $0\leq r<m,$ then $a^k=(a^m)^qa^r$ has the same remainder as $a^r.$ If the modulus $p$ is prime and $a$ is not divisible by $p,$ Fermat's little theorem lets us take $m=p-1$ and gives the following congruence.
+Fermat's little theorem and Euler's theorem let us find the remainder of a power with a large exponent by using a power with a smaller exponent. The idea is to find an exponent $m$ for which $a^m$ leaves a remainder of $1$ modulo $n.$ If we write the exponent $k$ as $k=qm+r$ with $0\leq r\lt m,$ then $a^k=(a^m)^qa^r$ has the same remainder as $a^r.$ If the modulus $p$ is prime and $a$ is not divisible by $p,$ Fermat's little theorem lets us take $m=p-1$ and gives the following congruence.
 
 $$
 a^{p-1} \equiv 1 \pmod p \tag{16}
@@ -197,7 +197,7 @@ $$
 
 An equivalent form of the theorem, valid for every integer $a,$ is $a^p\equiv a\pmod p.$ For example, to find the remainder of $3^{100}$ upon division by $7,$ we use $(16)$ with $p=7.$ Since $3^6\equiv1\pmod7$ and $100=16\cdot6+4,$ we need only find the remainder of $3^4=81$ upon division by $7,$ which is $4.$
 
-For any modulus $n>1,$ Euler's theorem lets us take $m=\varphi(n)$ when $a$ and $n$ are coprime, where $\varphi(n)$ counts the integers from $1$ to $n$ that are coprime to $n.$ Under this assumption, the following congruence holds.
+For any modulus $n\gt 1,$ Euler's theorem lets us take $m=\varphi(n)$ when $a$ and $n$ are coprime, where $\varphi(n)$ counts the integers from $1$ to $n$ that are coprime to $n.$ Under this assumption, the following congruence holds.
 
 $$
 a^{\varphi(n)} \equiv 1 \pmod n \tag{17}
@@ -231,7 +231,7 @@ Addition and multiplication are both associative and commutative, and multiplica
 
 A nonzero class $[a]_n$ is called a zero divisor if there is a nonzero class $[b]_n$ such that $[a]_n[b]_n=[0]_n.$
 
-The criterion for solving $(13)$ with $b=1$ shows that $[a]_n$ is invertible if and only if $\gcd(a,n)=1.$ If $[a]_n$ is invertible and $[a]_n[b]_n=[0]_n,$ multiplying by the inverse of $[a]_n$ gives $[b]_n=[0]_n.$ If instead $[a]_n$ is nonzero and $g=\gcd(a,n)>1,$ the class $[n/g]_n$ is nonzero and the product is zero because $a(n/g)=(a/g)n,$ which gives the following equation.
+The criterion for solving $(13)$ with $b=1$ shows that $[a]_n$ is invertible if and only if $\gcd(a,n)=1.$ If $[a]_n$ is invertible and $[a]_n[b]_n=[0]_n,$ multiplying by the inverse of $[a]_n$ gives $[b]_n=[0]_n.$ If instead $[a]_n$ is nonzero and $g=\gcd(a,n)\gt 1,$ the class $[n/g]_n$ is nonzero and the product is zero because $a(n/g)=(a/g)n,$ which gives the following equation.
 
 $$
 [a]_n[n/g]_n=[0]_n \tag{20}

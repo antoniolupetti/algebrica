@@ -76,15 +76,23 @@ $$\int \frac{\ln(x)}{\ln(a)} \ dx = \frac{x(\ln(x)-1)}{\ln(a)} + c$$
 
 ## Natural logarithm
 
-The natural logarithm admits a direct definition as an integral. For $x > 0$ it is given by:
+The natural logarithm admits a direct definition as an integral, independently of exponentiation. For $x > 0$ it is given by:
 
 $$\ln(x) = \int_{1}^{x} \frac{1}{t} \ dt$$
+
+The integrand $1/t$ is continuous on the interval between $1$ and any fixed $x > 0,$ so the integral is well-defined.
 
 The sign of the result follows from the definition. When $x > 1$ the integral runs over an interval of positive length with a positive integrand, so $\ln(x) > 0.$ When $0 < x < 1$ the orientation of the interval reverses the sign, so $\ln(x) < 0.$ At $x = 1$ the two limits coincide and $\ln(1) = 0.$
 
 The [fundamental theorem of calculus](../fundamental-theorem-of-calculus/) gives the derivative directly from this definition:
 
 $$\frac{d}{dx}\ln(x) = \frac{1}{x}$$
+
+Since its derivative is positive, the natural logarithm is strictly [increasing](../increasing-and-decreasing-functions/) on $(0,+\infty).$ It is also strictly concave, because its second derivative is negative throughout this interval:
+
+$$
+(\ln x)^{\prime\prime} = -\frac{1}{x^2} < 0 \qquad x > 0
+$$
 
 The additive property of the logarithm also follows from the integral form, by comparing derivatives and using the chain rule. Fix $y > 0$ and set $g(x) = \ln(xy).$ The [chain rule](../chain-rule/) gives:
 

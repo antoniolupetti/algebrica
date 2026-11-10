@@ -3,57 +3,57 @@
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-82.000000, -57.000000)">
             <g transform="translate(82.500000, 57.000000)">
-                <circle stroke="#BABABA" cx="150.5" cy="194" r="94.5"></circle>
+                <circle stroke="#BEB8B7" cx="150.5" cy="194" r="94.5"></circle>
                 <path d="M176.492773,195.112701 C176.494798,195.02751 176.496406,194.941239 176.497595,194.853877 C176.499196,194.736109 176.5,203.977309 176.5,194.5 C176.5,185.022691 171.32982,176.752943 163.656099,172.357393 L151.5,194" fill="#E3E3E3"></path>
-                <path d="M151,60.9801356 L151.435788,61.7548694 L155.935788,69.7548694 L156.180918,70.1906571 L155.309343,70.6809184 L155.064212,70.2451306 L151.499,63.906 L151.5,325 L150.5,325 L150.499,63.91 L146.935788,70.2451306 L146.690657,70.6809184 L145.819082,70.1906571 L146.064212,69.7548694 L150.564212,61.7548694 L151,60.9801356 Z" fill="#BABABA" fill-rule="nonzero"></path>
-                <path d="M293.309495,189.319082 L293.745283,189.564212 L301.745283,194.064212 L302.520016,194.5 L301.745283,194.935788 L293.745283,199.435788 L293.309495,199.680918 L292.819234,198.809343 L293.255021,198.564212 L299.592,195 L-0.5,195 L-0.5,194 L299.592,194 L293.255021,190.435788 L292.819234,190.190657 L293.309495,189.319082 Z" fill="#BABABA" fill-rule="nonzero"></path>
+                <path d="M151,60.9801356 L151.435788,61.7548694 L155.935788,69.7548694 L156.180918,70.1906571 L155.309343,70.6809184 L155.064212,70.2451306 L151.499,63.906 L151.5,325 L150.5,325 L150.499,63.91 L146.935788,70.2451306 L146.690657,70.6809184 L145.819082,70.1906571 L146.064212,69.7548694 L150.564212,61.7548694 L151,60.9801356 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
+                <path d="M293.309495,189.319082 L293.745283,189.564212 L301.745283,194.064212 L302.520016,194.5 L301.745283,194.935788 L293.745283,199.435788 L293.309495,199.680918 L292.819234,198.809343 L293.255021,198.564212 L299.592,195 L-0.5,195 L-0.5,194 L299.592,194 L293.255021,190.435788 L292.819234,190.190657 L293.309495,189.319082 Z" fill="#BEB8B7" fill-rule="nonzero"></path>
                 <path d="M196,193.5 L196,163 M196,147 L196,112.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></path>
                 <line x1="196" y1="111.5" x2="150.5" y2="111.5" stroke="#979797" stroke-linecap="square" stroke-dasharray="4"></line>
-                <text font-size="14" font-style="italic" font-weight="normal" fill="#BABABA">
+                <text font-size="14" font-style="italic" font-weight="normal" fill="#BEB8B7">
                     <tspan x="136.5" y="208">O</tspan>
                 </text>
-                <text font-size="14" font-weight="normal" fill="#BABABA">
+                <text font-size="14" font-weight="normal" fill="#BEB8B7">
                     <tspan x="126" y="69.5">Im</tspan>
                 </text>
-                <text font-size="14" font-weight="normal" fill="#BABABA">
+                <text font-size="14" font-weight="normal" fill="#BEB8B7">
                     <tspan x="287" y="214.5">Re</tspan>
                 </text>
-                <text font-size="14" font-weight="normal" fill="#333333">
+                <text font-size="14" font-weight="normal" fill="#312f2f">
                     <tspan x="195.5" y="206">x</tspan>
                 </text>
-                <text font-size="12" font-weight="normal" fill="#333333">
+                <text font-size="12" font-weight="normal" fill="#312f2f">
                     <tspan x="249.5" y="206">1</tspan>
                 </text>
-                <text font-size="12" font-weight="normal" fill="#333333">
+                <text font-size="12" font-weight="normal" fill="#312f2f">
                     <tspan x="144.5" y="95">i</tspan>
                 </text>
-                <text font-size="8" font-weight="normal" fill="#333333">
+                <text font-size="8" font-weight="normal" fill="#312f2f">
                     <tspan x="203.5" y="207">p</tspan>
                 </text>
-                <text font-family="Helvetica" font-size="14" font-weight="normal" fill="#333333">
+                <text font-size="14" font-weight="normal" fill="#312f2f">
                     <tspan x="167.5" y="187">θ</tspan>
                 </text>
-                <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                <text font-size="12" font-weight="normal" fill="#312f2f">
                     <tspan x="188.5" y="160">sinθ</tspan>
                 </text>
-                <text font-family="Helvetica" font-size="12" font-weight="normal" fill="#333333">
+                <text font-size="12" font-weight="normal" fill="#312f2f">
                     <tspan x="159.5" y="105">cosθ</tspan>
                 </text>
-                <path d="M196.731203,111.167585 L196.740521,112.056425 L196.836741,121.234701 L196.841982,121.734673 L195.842037,121.745156 L195.836796,121.245183 L195.76,113.975 L192.839531,119.298367 L151.438333,194.740549 L151.197785,195.178882 L150.321118,194.697785 L150.561667,194.259451 L191.962864,118.81727 L194.884,113.493 L188.710875,117.334617 L188.28632,117.598726 L187.758102,116.749617 L188.182657,116.485508 L195.97644,111.637112 L196.731203,111.167585 Z" fill="#333333" fill-rule="nonzero"></path>
-                <circle fill="#333333" cx="150.5" cy="112" r="2.5"></circle>
-                <circle fill="#333333" cx="150.5" cy="99" r="2.5"></circle>
-                <circle fill="#333333" cx="151" cy="194.5" r="2.5"></circle>
-                <circle fill="#333333" cx="246" cy="194.5" r="2.5"></circle>
-                <text font-size="14" font-weight="normal" fill="#333333">
+                <path d="M196.731203,111.167585 L196.740521,112.056425 L196.836741,121.234701 L196.841982,121.734673 L195.842037,121.745156 L195.836796,121.245183 L195.76,113.975 L192.839531,119.298367 L151.438333,194.740549 L151.197785,195.178882 L150.321118,194.697785 L150.561667,194.259451 L191.962864,118.81727 L194.884,113.493 L188.710875,117.334617 L188.28632,117.598726 L187.758102,116.749617 L188.182657,116.485508 L195.97644,111.637112 L196.731203,111.167585 Z" fill="#312f2f" fill-rule="nonzero"></path>
+                <circle fill="#312f2f" cx="150.5" cy="112" r="2.5"></circle>
+                <circle fill="#312f2f" cx="150.5" cy="99" r="2.5"></circle>
+                <circle fill="#312f2f" cx="151" cy="194.5" r="2.5"></circle>
+                <circle fill="#312f2f" cx="246" cy="194.5" r="2.5"></circle>
+                <text font-size="14" font-weight="normal" fill="#312f2f">
                     <tspan x="132.5" y="113">y</tspan>
                     <tspan x="140.018" y="113">ₚ</tspan>
                 </text>
-                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636363">
+                <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
                     <tspan x="80.5" y="11">Geometric interpretation of Euler’s formula </tspan>
                     <tspan x="80.5" y="24">on the complex unit circle, relating circular </tspan>
                     <tspan x="80.5" y="37">motion to sine and cosine projections.</tspan>
                 </text>
-                <line x1="198" y1="50.5" x2="198" y2="97.5" stroke="#BABABA" stroke-linecap="round"></line>
+                <line x1="198" y1="50.5" x2="198" y2="97.5" stroke="#BEB8B7" stroke-linecap="round"></line>
             </g>
         </g>
     </g>

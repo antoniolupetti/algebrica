@@ -11,58 +11,49 @@ tags:
   - taylor-series
   - trigonometric-identities
 ---
-## Introduction
-
-Euler's formula relates the exponential function and the trigonometric functions, and connects the algebraic and geometric viewpoints on [complex numbers](../complex-numbers-introduction/). The identity states that for every real number $\theta$ the following equality holds:
-
-$$e^{i\theta} = \cos\theta + i\sin\theta$$
-
-This relation underlies both the [exponential form](../complex-numbers-exponential-form/) and the [trigonometric form](../complex-numbers-trigonometric-form/) of a complex number, and it is the fact from which [De Moivre's theorem](../de-moivre-theorem/) and the description of the [roots of unity](../roots-of-unity/) follow. The status of the formula admits two readings.
-
-+ In the first, the complex exponential is defined through its [Taylor series](../taylor-series/) for an arbitrary complex argument, and Euler's identity is then established as a theorem.
-+ In the second, the formula is taken as the definition of $e^{i\theta}$, and what becomes a theorem is the consistency of this definition with the algebraic properties of the real exponential.
-
-> These viewpoints are equivalent and lead to the same object. In what follows we adopt the first reading, since it places the formula within the broader analytic framework already used in the construction of the [exponential function](../exponential-function/).
-
 ## Statement
 
-For every real number $\theta$ the following identity holds:
+Euler's formula relates the complex exponential function to [sine and cosine](../sine-and-cosine/) and is given by the following identity for every $\theta \in \mathbb{R}$:
 
-$$e^{i\theta} = \cos\theta + i\sin\theta$$
+$$e^{i\theta} = \cos\theta + i\sin\theta \tag{1}$$
 
-The left-hand side is the complex exponential evaluated at the imaginary argument $i\theta$. The right-hand side is a complex number whose real part is $\cos\theta$ and whose imaginary part is $\sin\theta$. The identity describes how the exponential function restricted to the imaginary axis parametrises the [unit circle](../unit-circle/) in the complex plane.
+The right-hand side of $(1)$ separates $e^{i\theta}$ into its [real and imaginary parts](../complex-numbers/), so we can calculate its modulus as follows:
+
+$$|e^{i\theta}|^2 = \cos^2\theta + \sin^2\theta = 1 \tag{2}$$
+
+By $(2),$ the values of $e^{i\theta}$ lie on the [unit circle](../unit-circle/). As $\theta$ increases, the point with coordinates $(\cos\theta,\sin\theta)$ moves counterclockwise around the circle and returns to its starting point after an increase of $2\pi.$
 
 ![IMG. 1](svg/euler-formula-1.svg)
 
-An immediate consequence concerns the modulus of $e^{i\theta}$. Computing directly from its algebraic form we obtain:
+Equation $(1)$ converts a complex number from [trigonometric form](../complex-numbers-trigonometric-form/) to [exponential form](../complex-numbers-exponential-form/) and also yields [De Moivre's theorem](../de-moivre-theorem/) and the representation of the [roots of unity](../roots-of-unity/).
 
-$$|e^{i\theta}|^2 = \cos^2\theta + \sin^2\theta = 1$$
+## Proof using Taylor series
 
-For every real $\theta$ the value $e^{i\theta}$ has unit modulus, and as $\theta$ varies over $\mathbb{R}$ the function traces the unit circle counterclockwise. The period of this motion is $2\pi$, the common period of [sine and cosine](../sine-and-cosine/).
+The direct proof of $(1)$ uses the [Taylor expansions](../taylor-series/) of the [exponential](../exponential-function/), sine, and cosine functions. In particular, for a real variable $x,$ the series for the three functions are as follows:
 
-## Proof via Taylor series
+$$ \tag{3}
+\begin{align}
+e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} \\[6pt]
+\cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} \\[6pt]
+\sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+\end{align}
+$$
 
-The most direct derivation of Euler's formula uses the [Taylor series](../taylor-series/) expansions of the exponential, sine, and cosine functions. These series converge for every real or complex argument, and the manipulations below are justified by absolute convergence, which allows us to rearrange terms without changing the value of the sum.
-
-For a real variable $x$, the series of the three functions are the following:
-
-$$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}$$
-
-$$\cos x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!}$$
-
-$$\sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}$$
-
-The extension of the exponential to complex arguments is obtained by inserting a complex variable in place of the real one. For every $z \in \mathbb{C}$ we define:
+To define $e^z$ for $z \in \mathbb{C},$ we take the first series in $(3),$ the one for $e^x,$ and replace $x^n$ with $z^n$ in each term.
 
 $$e^z := \sum_{n=0}^{\infty} \frac{z^n}{n!}$$
 
-This series converges absolutely for every $z$, because $\sum_{n=0}^{\infty} |z|^n / n!$ equals $e^{|z|}$, which is finite. With this definition, we evaluate $e^{i\theta}$ by substituting $z = i\theta$ into the series:
+This series converges absolutely for every $z$ by the following identity:
 
-$$e^{i\theta} = \sum_{n=0}^{\infty} \frac{(i\theta)^n}{n!} = \sum_{n=0}^{\infty} \frac{i^n \ \theta^n}{n!}$$
+$$\sum_{n=0}^{\infty} \frac{|z|^n}{n!} = e^{|z|} \tag{4}$$
 
-The behaviour of the series depends on the powers of the imaginary unit. By direct computation we obtain:
+Substituting $z = i\theta$ into the definition of $e^z$ gives the following series:
 
-$$
+$$e^{i\theta} = \sum_{n=0}^{\infty} \frac{(i\theta)^n}{n!} = \sum_{n=0}^{\infty} \frac{i^n \ \theta^n}{n!} \tag{5}$$
+
+The behavior of the series in $(5)$ depends on the powers of the imaginary unit, which we can calculate directly as follows:
+
+$$ \tag{6}
 \begin{align}
 i^0 &= 1 \\[6pt]
 i^1 &= i \\[6pt]
@@ -71,145 +62,79 @@ i^3 &= -i
 \end{align}
 $$
 
-Beyond the fourth power the cycle repeats, since $i^4 = (i^2)^2 = 1$, and consequently $i^{n+4} = i^n$ for every $n$. The value of $i^n$ depends therefore only on the residue of $n$ [modulo](../modules/) $4$.
+The pattern in $(6)$ repeats starting with the fourth power, since $i^4 = (i^2)^2 = 1$ and hence $i^{n+4} = i^n$ for every $n.$ The value of $i^n$ depends only on the remainder when $n$ is divided by $4.$ We now split the series into terms with $n = 2k$ and terms with $n = 2k+1$ and compute the corresponding powers of $i,$ which are $i^{2k} = (i^2)^k = (-1)^k$ and $i^{2k+1} = i \cdot (-1)^k.$ We can then group the two sets of terms separately to obtain the following equality:
 
-We now split the series according to the parity of the index. Writing $n = 2k$ for even terms and $n = 2k+1$ for odd terms, the corresponding powers of $i$ are $i^{2k} = (i^2)^k = (-1)^k$ and $i^{2k+1} = i \cdot (-1)^k$. The two contributions can be collected separately:
-
-$$
+$$ \tag{7}
 \begin{align}
 e^{i\theta} &= \sum_{k=0}^{\infty} \frac{i^{2k} \ \theta^{2k}}{(2k)!} + \sum_{k=0}^{\infty} \frac{i^{2k+1} \ \theta^{2k+1}}{(2k+1)!} \\[6pt]
 &= \sum_{k=0}^{\infty} (-1)^k \frac{\theta^{2k}}{(2k)!} + i \sum_{k=0}^{\infty} (-1)^k \frac{\theta^{2k+1}}{(2k+1)!}
 \end{align}
 $$
 
-The two series on the right-hand side are precisely the Taylor expansions of $\cos\theta$ and $\sin\theta$. Substituting these expressions yields Euler's formula:
+Setting $x = \theta$ in $(3),$ we see that the first sum in the last line of $(7)$ equals $\cos\theta$ and that the sum multiplying $i$ equals $\sin\theta.$ The final expression in $(7)$ is therefore $\cos\theta + i\sin\theta,$ which gives $(1).$
 
-$$e^{i\theta} = \cos\theta + i\sin\theta$$
+## Proof using a differential equation
 
-> The rearrangement used in the proof is legitimate because the series for $e^{i\theta}$ converges absolutely. For an absolutely convergent series of complex terms, any reordering of the summands yields the same sum. This is the property that justifies splitting the series into its even and odd indices.
+We can also prove $(1)$ using a [differential equation](../differential-equations/) by checking that both sides satisfy the same equation and take the same value at $\theta = 0.$ To do this, let $f : \mathbb{R} \to \mathbb{C}$ be the function given by the right-hand side of $(1):$
 
-## Proof via differential equation
+$$f(\theta) = \cos\theta + i\sin\theta \tag{8}$$
 
-A second derivation, conceptually independent of the series expansion, uses the characterization of the [exponential function](../exponential-function/) as the unique solution of a first-order linear differential equation with prescribed initial value. Let $f : \mathbb{R} \to \mathbb{C}$ be the function defined by:
+Differentiating the real and imaginary parts of $(8)$ separately gives an equation relating $f$ to its [derivative](../derivatives/):
 
-$$f(\theta) = \cos\theta + i\sin\theta$$
-
-The [derivative](../derivatives/) of $f$ is taken componentwise, by differentiating the real and imaginary parts separately. Applying the derivatives of cosine and sine we obtain:
-
-$$
+$$ \tag{9}
 \begin{align}
 f'(\theta) &= -\sin\theta + i\cos\theta \\[6pt]
-&= i\bigl(\cos\theta + i\sin\theta\bigr) \\[6pt]
-&= i f(\theta)
+&= i(\cos\theta + i\sin\theta) \\[6pt]
+&= if(\theta)
 \end{align}
 $$
 
-In the second line we factor out $i$ from the right-hand side, using the identity $-\sin\theta = i \cdot (i\sin\theta)$ which follows from $i^2 = -1$. Thus, $f$ satisfies the differential equation:
+Now let $g(\theta) = e^{i\theta}.$ The power series in $(5)$ has an infinite [radius of convergence](../power-series/), so we can differentiate it term by term. Simplifying $n/n! = 1/(n-1)!$ and setting $k = n-1$ gives the following calculation:
 
-$$f'(\theta) = if(\theta)$$
-
-with the initial value $f(0) = \cos 0 + i\sin 0 = 1$.
-
-Now consider the complex exponential $g(\theta) = e^{i\theta}$, defined through its Taylor series. Differentiating the series term by term, justified by uniform convergence on bounded intervals, gives:
-
-$$g'(\theta) = \sum_{n=1}^{\infty} \frac{i^n \ n \ \theta^{n-1}}{n!} = i \sum_{n=1}^{\infty} \frac{(i\theta)^{n-1}}{(n-1)!} = ig(\theta)$$
-
-and the initial value is $g(0) = 1$. Two solutions of the same first-order linear differential equation that share the same value at one point coincide everywhere. We conclude that $f(\theta) = g(\theta)$ for every real $\theta$, which is Euler's formula.
-
-> The uniqueness step can be made explicit by introducing the auxiliary function $h(\theta) = f(\theta) \ e^{-i\theta}$. Its derivative is identically zero, since $h'(\theta) = f'(\theta)e^{-i\theta} - i \ f(\theta)e^{-i\theta} = 0$, so $h$ is constant. The value $h(0) = 1$ then forces $f(\theta) = e^{i\theta}$ for every $\theta$.
-
-## Euler's identity
-
-Specialising Euler's formula at $\theta = \pi$ yields what is known as Euler's identity. Substituting the value of the argument and computing the trigonometric functions gives:
-
-$$e^{i\pi} = \cos\pi + i\sin\pi = -1$$
-
-Rearranging the equality produces the more familiar form:
-
-$$e^{i\pi} + 1 = 0$$
-
-This identity combines five fundamental constants of mathematics in a single equation:
-
-+ the additive identity $0$
-+ the multiplicative identity $1$
-+ the imaginary unit $i$
-+ the base of the natural exponential $e$
-+ the ratio $\pi$ between the [circumference](../circumference/) and the diameter of a circle.
-
-The identity states that the exponential of $i\pi$ produces the antipode of $1$ on the unit circle, that is, the rotation of the unit vector by an [angle of $\pi$ radians](../angles-and-angular-measure/).
-
-The formula can also be specialised at other notable values of $\theta$ to recover further identities. Setting $\theta = \pi/2$ gives $e^{i\pi/2} = i$, the rotation by a quarter turn that sends $1$ to the imaginary unit. Setting $\theta = 2\pi$ gives $e^{2\pi i} = 1$, the periodicity relation that underpins the theory of [roots of unity](../roots-of-unity/).
-
-## Trigonometric functions from the exponential
-
-Euler's formula admits an immediate inversion: cosine and sine can be written as [linear combinations](../linear-combinations/) of $e^{i\theta}$ and $e^{-i\theta}$. Replacing $\theta$ with $-\theta$ in the formula, and using the fact that cosine is even and sine is odd, one obtains the following relation:
-
-$$e^{-i\theta} = \cos\theta - i\sin\theta$$
-
-Adding the two expressions $e^{i\theta}$ and $e^{-i\theta}$ eliminates the imaginary part, while subtracting them eliminates the real part. This yields the following identities which express the trigonometric functions in terms of the complex exponential:
-
-$$\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}$$
-
-$$\sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$
-
-These formulas are the starting point for extending the trigonometric functions to complex arguments. Defining $\cos z$ and $\sin z$ for $z \in \mathbb{C}$ by the same expressions produces functions that agree with the real cosine and sine on $\mathbb{R}$ and inherit the algebraic identities of the exponential. This perspective relates the trigonometric functions to the hyperbolic cosine and [hyperbolic sine](../hyperbolic-sine-function/), since the substitution $\theta = iy$ gives $\cos(iy) = \cosh y$ and $\sin(iy) = i\sinh y$, a relation with no analogue in the [real setting](../real-numbers/).
-
-A consequence of Euler's formula is a derivation of the [addition formulas](../reduction-formulas-and-reference-angles/) for sine and cosine. The multiplicative law of the exponential gives:
-
-$$e^{i(\alpha + \beta)} = e^{i\alpha} \cdot e^{i\beta}$$
-
-Expanding both sides via Euler's formula produces:
-
-$$\cos(\alpha + \beta) + i\sin(\alpha + \beta) = (\cos\alpha + i\sin\alpha)(\cos\beta + i\sin\beta)$$
-
-Computing the product on the right and equating real and imaginary parts on the two sides of the equation yields the addition formulas:
-
-$$\cos(\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta$$
-
-$$\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$$
-
-The trigonometric identities become, in this perspective, consequences of the [homomorphism](../fields/) property of the exponential function, that is, of the rule $e^{a+b} = e^a e^b$.
-
-## Connection with the trigonometric and exponential forms
-
-Euler's formula underlies the equivalence between the [trigonometric form](../complex-numbers-trigonometric-form/) and the [exponential form](../complex-numbers-exponential-form/) of a complex number. A nonzero complex number $z = a + bi$, written in trigonometric form as $z = r(\cos\theta + i\sin\theta)$ with $r = |z|$ and $\theta = \arg(z)$, can be rewritten directly using Euler's formula. The resulting equality is:
-
-$$
+$$ \tag{10}
 \begin{align}
-z &= r(\cos\theta + i\sin\theta) \\[6pt]
-&= r \ e^{i\theta}
+g'(\theta) &= \sum_{n=1}^{\infty} \frac{i^n\theta^{n-1}}{(n-1)!} \\[6pt]
+&= i\sum_{k=0}^{\infty} \frac{(i\theta)^k}{k!} \\[6pt]
+&= ig(\theta)
 \end{align}
 $$
 
-This passage replaces a sum of two real terms, weighted by trigonometric coefficients, with a single complex exponential. The advantages are immediate in computations involving multiplication, division, and integer powers, where the exponential rules reduce these operations to simple manipulations of moduli and arguments.
+Equations $(9)$ and $(10)$ show that the derivative of each function equals the function itself multiplied by $i.$ The two functions have the same value at $\theta = 0$ because $f(0) = \cos 0 + i\sin 0 = 1$ and $g(0) = e^0 = 1.$ If $u$ denotes either function, we can write these conditions as follows:
 
-The identity also clarifies the effect of complex conjugation in the exponential representation. Since cosine is even and sine is odd, the conjugate of $e^{i\theta}$ is $e^{-i\theta}$. Consequently, the conjugate of $z = re^{i\theta}$ is given by the following expression:
-
-$$\overline{z} = re^{-i\theta}$$
-
-In exponential form, conjugation simply changes the sign of the argument, while the modulus is unchanged. This matches the geometric description of $\overline{z}$ as the reflection of $z$ across the real axis in the complex plane.
-
-
-## Periodicity and the complex exponential
-
-The periodicity of sine and cosine, both having common period $2\pi$, carries over via Euler's formula to a periodicity of $e^{i\theta}$ along the imaginary axis. For every $\theta \in \mathbb{R}$ and every integer $k$ one has the following identity:
-
-$$e^{i(\theta + 2k\pi)} = \cos(\theta + 2k\pi) + i\sin(\theta + 2k\pi) = e^{i\theta}$$
-
-Thus, the complex exponential, when restricted to purely imaginary arguments, is periodic with imaginary period $2\pi i$. This periodicity is the analytic source of the non-uniqueness of the [argument](../complex-numbers-introduction/) of a complex number, and it is what necessitates the introduction of branch cuts in the definition of the complex logarithm.
-
-When the argument is fully complex, the relation extends without difficulty. For $z = x + iy$ with $x, y \in \mathbb{R}$, the multiplicative property of the exponential combined with Euler's formula gives:
-
-$$
+$$ \tag{11}
 \begin{align}
-e^z &= e^{x + iy} \\[6pt]
-    &= e^x \cdot e^{iy} \\[6pt]
-    &= e^x\bigl(\cos y + i\sin y\bigr)
+u'(\theta) &= iu(\theta) \\[6pt]
+u(0) &= 1
 \end{align}
 $$
 
-The complex exponential is thus completely determined by two pieces of information: the real exponential $e^x$, which controls the modulus of the result, and the imaginary part $y$, which controls the argument. The modulus and argument of $e^z$ are given respectively by the following expressions:
+The problem in $(11)$ has a unique solution on $\mathbb{R},$ so $f(\theta) = g(\theta)$ for every $\theta \in \mathbb{R},$ as stated in $(1).$
 
-$$|e^z| = e^x \qquad \arg(e^z) = y + 2k\pi \quad k \in \mathbb{Z}$$
+## Consequences and Euler's identity
 
-This decomposition underlies the analytic theory of the complex exponential as an entire function on $\mathbb{C}$.
+From $(1)$ we can express sine and cosine in terms of exponential functions. We first replace $\theta$ with $-\theta$ to obtain the following identity:
+
+$$e^{-i\theta} = \cos\theta - i\sin\theta \tag{12}$$
+
+Adding $(12)$ to $(1)$ gives the exponential expression for cosine, while subtracting $(12)$ from $(1)$ gives the corresponding expression for sine:
+
+$$ \tag{13}
+\begin{align}
+\cos\theta &= \frac{e^{i\theta} + e^{-i\theta}}{2} \\[6pt]
+\sin\theta &= \frac{e^{i\theta} - e^{-i\theta}}{2i}
+\end{align}
+$$
+
+Equation $(13)$ lets us extend sine and cosine to complex arguments and relate them to the [hyperbolic functions](../hyperbolic-sine-and-cosine/). Multiplying both sides of $(1)$ by the modulus $r$ converts the trigonometric form to the exponential form $z = re^{i\theta}.$ In this form, we obtain the complex conjugate by reversing the sign of $\theta.$ More generally, for $x,y \in \mathbb{R}$ we can write $e^{x+iy} = e^xe^{iy}$ and apply $(1)$ to the second factor to obtain the following expression:
+
+$$e^{x+iy} = e^x(\cos y + i\sin y) \tag{14}$$
+
+Finally, substituting $\theta = \pi$ into $(1)$ and adding $1$ to both sides gives Euler's identity:
+
+$$ \tag{15}
+\begin{align}
+e^{i\pi} &= \cos\pi + i\sin\pi = -1 + i\cdot 0 = -1 \\[6pt]
+e^{i\pi} + 1 &= -1 + 1 \\[6pt]
+e^{i\pi} + 1 &= 0
+\end{align}
+$$

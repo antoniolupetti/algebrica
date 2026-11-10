@@ -14,7 +14,7 @@ We have previously introduced how to calculate the [derivative](../derivatives/)
 
 $$y = f(x)^{g(x)}$$
 
-The expression is defined for $f(x) > 0$. Since the variable appears both in the base and in the exponent, neither the derivative rule for [power functions](../power-function/) nor the rule for exponential functions applies directly. The standard technique, known as logarithmic differentiation, combines the properties of [logarithms](../logarithms/) with the chain rule. The general formula for the derivative of $f(x)^{g(x)}$, with $f$ and $g$ differentiable, is the following:
+The expression is defined for $f(x) > 0$. Since the variable appears both in the base and in the exponent, neither the derivative rule for [power functions](../power-function/) nor the rule for exponential functions applies directly. The standard technique, known as [logarithmic differentiation](../logarithmic-differentiation/), combines the properties of [logarithms](../logarithms/) with the chain rule. The general formula for the derivative of $f(x)^{g(x)}$, with $f$ and $g$ differentiable, is the following:
 
 $$D\left[f(x)^{g(x)}\right] = f(x)^{g(x)} \left[ g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)} \right]$$
 
