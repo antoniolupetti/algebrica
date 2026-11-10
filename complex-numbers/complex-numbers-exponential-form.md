@@ -14,88 +14,98 @@ tags:
   - principal-argument
   - roots-of-unity
 ---
-## Introduction
+## Definition
 
-The [algebraic form](../complex-numbers-introduction/) $z = a + bi$ is the most familiar representation of a complex number, but it is not the most convenient one for handling multiplication, powers, and roots. An alternative description, equivalent to the algebraic one and especially suited to these operations, is the exponential form:
+As we saw in the [definition](../complex-numbers/), the [algebraic form](../complex-numbers/) of a complex number expresses a number $z$ by specifying its real and imaginary components and is given by the following expression:
 
-$$z = re^{i\theta}$$
+$$z = a + bi \tag{1}$$
 
-The two quantities appearing in this expression have a direct geometric meaning:
+Every nonzero complex number of the form $(1)$ can also be described in terms of geometric quantities. If we view a general point $z$ as a pair of coordinates on the real and imaginary axes, we can consider its distance from the origin and its angular position in the complex plane. This gives the exponential form of a complex number, expressed by the following identity:
 
-+ $r = |z| = \sqrt{a^2 + b^2}$ is the [modulus](../complex-numbers-introduction/), representing the distance of $z$ from the origin in the complex plane.
-+ $\theta = \arg(z)$ is the argument, the [angle in radians](../angles-and-angular-measure/) between the positive real axis and the [vector](../vectors/) representing $z$.
+$$z = re^{i\theta} \tag{2}$$
 
+$r$ is the [modulus](../complex-numbers/), that is, the distance of $z$ from the origin in the complex plane, and is given by:
+
+$$r = |z| = \sqrt{a^2 + b^2} \tag{3}$$
+
+Geometrically, it is the length of the hypotenuse of the [right triangle](../right-triangle-trigonometry/) determined by the real and imaginary parts. $\theta = \arg(z)$ is the [argument](../complex-numbers/), that is, the [angle in radians](../angles-and-angular-measure/) between the positive real axis and the [vector](../vectors/) representing $z.$
 
 ![IMG. 1](svg/complex-numbers-trigonometric-form-1.svg)
 
+We now derive the exponential form $(2)$ from the algebraic form $(1).$ As discussed in the entry on [trigonometric form](../complex-numbers-trigonometric-form/), the real and imaginary components are given by $a = r\cos(\theta)$ and $b = r\sin(\theta).$ Substituting these expressions into $(1)$ gives:
 
-Both $r$ and $\theta$ retain the meaning they have in the [trigonometric form](../complex-numbers-trigonometric-form/) of a complex number.
+$$z = r[\cos(\theta) + i\sin(\theta)] \tag{4}$$
 
-> The point $P$ associated with $z$ can be described either by its rectangular coordinates $(a, b)$ or by its polar coordinates $(r, \theta)$. This duality is the bridge between the algebraic and the geometric descriptions of complex numbers.
+[Euler's formula](../euler-formula/) allows the expression in parentheses in $(4)$ to be written as a complex exponential and is given by the following identity:
 
-- - -
+$$e^{i\theta} = \cos(\theta) + i\sin(\theta) \tag{5}$$
 
-The equation $z = re^{i\theta}$ is a direct consequence of [Euler's formula](../eulers-formula/):
+Substituting $(5)$ into $(4)$ yields the exponential form $(2):$
 
-$$e^{i\theta} = \cos\theta + i\sin\theta$$
-
-Multiplying both sides by $r$ shows that the exponential representation coincides with the [trigonometric form](../complex-numbers-trigonometric-form/):
-
-$$z = r(\cos\theta + i\sin\theta)$$
-
-Euler's formula itself can be established by expanding $e^{ix}$, $\cos x$, and $\sin x$ as [Taylor series](../taylor-series/) and observing that the series for $e^{ix}$ splits into a real and an imaginary part:
-
-$$e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \cos x + i\sin x$$
-
-The inverse equation $e^w = z$ defines the multivalued [complex logarithm](../complex-logarithm/) of a nonzero complex number.
-
-> The formula involves Euler's number $e$, a fundamental constant of analysis. Its origin as the limit of a sequence is discussed in the entry on [Euler's number](../euler-number-limit-sequence/).
+$$
+\begin{align}
+z &= r[\cos(\theta) + i\sin(\theta)] \\[6pt]
+  &= re^{i\theta} \tag{6}
+\end{align}
+$$
 
 - - -
 
-Given the complex number $z = a + bi$, its complex conjugate is defined as:
+We have seen that the [conjugate](../complex-numbers/) of a complex number in algebraic form is given by the following identity:
 
-$$\overline{z} = a - bi$$
+$$\overline{z} = a-ib \tag{7}$$
 
-In exponential form, the conjugate of $z = re^{i\theta}$ is obtained by negating the argument:
+The same characterization of the conjugate can be obtained in exponential form by replacing $\theta$ with $-\theta$ in $(2).$ Geometrically, this corresponds to reflecting $z$ across the real axis. Since cosine is an [even function](../even-and-odd-functions/) and sine is [odd](../even-and-odd-functions/), Euler's formula $(5)$ gives:
 
-$$\overline{z} = re^{-i\theta}$$
+$$\overline{z} = re^{-i\theta} \tag{8}$$
 
-Geometrically, this corresponds to a reflection of $z$ across the real axis in the complex plane.
+## Operations
 
-## How to express a complex number in exponential form
+The main [operations on complex numbers](../complex-number-operations/) expressed in exponential form are presented below, beginning with multiplication. Consider two nonzero complex numbers:
 
-Given a complex number $z = a + bi$, the conversion to exponential form proceeds in three steps.
+$$
+\begin{align}
+z_1 &= r_1e^{i\theta_1} \\[6pt]
+z_2 &= r_2e^{i\theta_2}
+\tag{9}
+\end{align}
+$$
 
-+ Compute the modulus of $z$ according to its definition:
+The product of the numbers in $(9)$ is obtained by multiplying their moduli and adding their arguments:
 
-$$r = \sqrt{a^2 + b^2}$$
+$$z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)} \tag{10}$$
 
-+ Determine the argument $\theta$, that is, the angle that the [vector](../vectors/) representing $z$ forms with the positive real axis. When $a > 0$, the argument can be obtained directly from the arctangent formula:
+For example, we multiply the following numbers $z_1 = 2e^{i\pi/3}$ and $z_2 = 3e^{i\pi/6}.$ Applying $(10),$ the product is:
 
-$$\theta = \arctan\left(\frac{b}{a}\right)$$
+$$z_1 z_2 = 2 \cdot 3 \cdot e^{i(\pi/3 + \pi/6)} = 6e^{i\pi/2} \tag{11}$$
 
-When $a \leq 0$, the quadrant of $z$ in the complex plane must be taken into account in order to select the correct value of $\theta$.
+Geometrically, multiplying $z_1$ by a nonzero complex number $z_2$ means multiplying its distance from the origin by $r_2$ and rotating the vector representing it through an angle $\theta_2.$ This rotation is counterclockwise if $\theta_2 > 0$ and clockwise if $\theta_2 < 0.$ In a similar way to $(10),$ the quotient is obtained by dividing the moduli and subtracting the arguments:
 
-+ Substitute $r$ and $\theta$ into the exponential representation:
+$$\frac{z_1}{z_2} = \frac{r_1}{r_2}e^{i(\theta_1 - \theta_2)} \tag{12}$$
 
-$$z = re^{i\theta}$$
+In $(12),$ $z_2$ must be different from $0.$ In addition to products and quotients, [integer powers](../powers/) can also be calculated directly. For every integer $n,$ with a nonzero base when $n \leq 0,$ we have:
 
-- - -
+$$z^n = (re^{i\theta})^n = r^n e^{in\theta} \tag{13}$$
 
-The argument of a complex number is not uniquely determined. If $\theta$ is an argument of $z$, then so is $\theta + 2k\pi$ for every integer $k$, and one has:
+Applying Euler's formula to $e^{in\theta},$ $(13)$ is equivalent to [De Moivre's theorem](../de-moivre-theorem/) and gives:
 
-$$z = re^{i(\theta + 2k\pi)} \qquad k \in \mathbb{Z}$$
+$$(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta) \tag{14}$$
 
-The exponential representation is therefore defined modulo $2\pi$. To remove this ambiguity, one conventionally selects the principal argument, denoted $\mathrm{Arg}(z)$, which satisfies:
+For example, applying $(13)$ with $n = 2$ gives:
 
-$$-\pi < \mathrm{Arg}(z) \leq \pi$$
+$$z^2 = r^2 e^{i2\theta} \tag{15}$$
 
-Unless otherwise stated, the argument $\theta$ is understood to be the principal argument.
+![IMG. 2](svg/complex-numbers-exponential-form-1.svg)
 
-## Example 1
+The complex number in $(15)$ has modulus $r^2$ and argument $2\theta.$ Geometrically, the length of the vector representing $z$ is multiplied by $r$ and its angle is doubled.
 
-Consider the complex number $z = 2 + 3i$ and its conversion to exponential form. The modulus is computed by applying the definition directly. With $a = 2$ and $b = 3$, one obtains:
+## Examples
+
+We now give a couple of examples to illustrate how to convert from algebraic to exponential form. Consider the following complex number and rewrite it in exponential form:
+
+$$z = 2 + 3i$$
+
+Using $(3),$ we calculate the modulus by setting $a = 2$ and $b = 3:$
 
 $$
 \begin{align}
@@ -103,97 +113,66 @@ r = |z| &= \sqrt{a^2 + b^2} \\[6pt]
         &= \sqrt{2^2 + 3^2} \\[6pt]
         &= \sqrt{4 + 9} \\[6pt]
         &= \sqrt{13}
+\tag{16}
 \end{align}
 $$
 
-The argument $\theta$ is the angle that the vector representing $z$ forms with the positive real axis. Since $a = 2 > 0$, the number lies in the first quadrant and the arctangent formula applies without any correction:
+To calculate the argument, since $a = 2 > 0$ and $b = 3 > 0,$ the number lies in the first quadrant, and the [arctangent](../arctangent-function/) formula gives:
 
-$$\theta = \arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{3}{2}\right) \approx 0.98 \text{ rad}$$
+$$\theta = \arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{3}{2}\right) \approx 0.98 \text{ rad} \tag{17}$$
 
-Substituting $r = \sqrt{13}$ and $\theta \approx 0.98$ into the exponential form, the result is:
+Substituting the values from $(16)$ and $(17)$ into $(2)$ then gives:
 
-$$z = \sqrt{13}e^{i\cdot 0.98}$$
+$$z \approx \sqrt{13}e^{i\cdot 0.98} \tag{18}$$
 
-## Example 2
+- - -
 
-Consider the complex number $z = -1 + i$ and its conversion to exponential form. The modulus is again obtained by direct application of the definition. With $a = -1$ and $b = 1$, one has:
+For another example, consider the number:
+
+$$z = -1 + i$$
+
+To convert it to exponential form, we must calculate the modulus again with $a = -1$ and $b = 1,$ obtaining:
 
 $$
 \begin{align}
 r = |z| &= \sqrt{(-1)^2 + 1^2} \\[6pt]
         &= \sqrt{1 + 1} \\[6pt]
         &= \sqrt{2}
+\tag{19}
 \end{align}
 $$
 
-The argument requires more care. Since $a = -1 < 0$ and $b = 1 > 0$, the number lies in the second quadrant. The arctangent formula taken in isolation would give:
+For the argument, since $a = -1 < 0$ and $b = 1 > 0,$ the number lies in the second quadrant. Applying the arctangent formula in this case also gives:
 
-$$\arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{1}{-1}\right) = \arctan(-1) = -\frac{\pi}{4}$$
+$$\arctan\left(\frac{b}{a}\right) = \arctan\left(\frac{1}{-1}\right) = \arctan(-1) = -\frac{\pi}{4} \tag{20}$$
 
-This value corresponds to the fourth quadrant and is therefore not the correct argument of $z$. The actual argument is obtained by adding $\pi$ to compensate for the sign of $a$:
+However, the value in $(20)$ corresponds to the fourth quadrant and is therefore not the correct argument of $z,$ so we must add a correction of $\pi$ to account for the sign of $a,$ obtaining:
 
-$$\theta = -\frac{\pi}{4} + \pi = \frac{3\pi}{4}$$
+$$\theta = -\frac{\pi}{4} + \pi = \frac{3\pi}{4} \tag{21}$$
 
-Substituting $r = \sqrt{2}$ and $\theta = \dfrac{3\pi}{4}$ into the exponential form, the result is:
+Finally, substituting the values from $(19)$ and $(21)$ into $(2)$ gives:
 
-$$z = \sqrt{2}e^{i\frac{3\pi}{4}}$$
-
-## Properties of the exponential form
-
-One of the principal advantages of the exponential form is the simplicity it confers on multiplication, division, and exponentiation of complex numbers. Given two complex numbers $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$, their product is obtained by multiplying the moduli and adding the arguments:
-
-$$z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$$
-
-As a concrete illustration, consider $z_1 = 2e^{i\pi/3}$ and $z_2 = 3e^{i\pi/6}$. Their product is:
-
-$$z_1 z_2 = 2 \cdot 3 \cdot e^{i(\pi/3 + \pi/6)} = 6e^{i\pi/2}$$
-
-The modulus of the product is $6$ and its argument is $\pi/2$, corresponding to the imaginary unit direction in the complex plane.
-
-- - -
-
-Similarly, provided $z_2 \neq 0$, the quotient is obtained by dividing the moduli and subtracting the arguments:
-
-$$\frac{z_1}{z_2} = \frac{r_1}{r_2}e^{i(\theta_1 - \theta_2)}$$
-
-Both operations correspond to elementary geometric transformations in the complex plane: a dilation by the ratio of the moduli and a rotation by the sum or difference of the arguments. Integer [powers](../powers/) are handled with equal efficiency. For any integer $n$, the usual rules of exponentiation give the formula:
-
-$$z^n = (re^{i\theta})^n = r^n e^{in\theta}$$
-
-The modulus is raised to the $n$-th power and the argument is scaled by $n$. Applying [Euler's formula](../eulers-formula/) to $e^{in\theta}$, this identity is equivalent to [De Moivre's theorem](../de-moivre-theorem/):
-
-$$(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)$$
-
-As an illustration, squaring $z = re^{i\theta}$ gives:
-
-$$z^2 = r^2 e^{i2\theta}$$
-
-![IMG. 2](svg/complex-numbers-exponential-form-1.svg)
-
-The resulting complex number has modulus $r^2$ and argument $2\theta$. Geometrically, the vector representing $z$ is stretched by a factor of $r$ in length and rotated to twice its original angle.
+$$z = \sqrt{2}e^{i\frac{3\pi}{4}} \tag{22}$$
 
 ## Roots in exponential form
 
-The exponential form provides a natural framework for computing the $n$-th roots of a complex number. Given $z = re^{i\theta}$ and an integer $n \geq 1$, the equation $w^n = z$ has exactly $n$ distinct solutions in $\mathbb{C}$, given by:
+The exponential form also allows us to calculate the $n$th roots of a complex number. For example, consider $z = re^{i\theta}$ with $r > 0$ and an integer $n \geq 1.$ The equation $w^n = z$ has exactly $n$ distinct solutions in $\mathbb{C},$ given by the following equality:
 
-$$w_k = \sqrt[n]{r}e^{i(\theta + 2k\pi)/n} \qquad k = 0, 1, \ldots, n-1$$
+$$w_k = \sqrt[n]{r}e^{i(\theta + 2k\pi)/n} \tag{23}$$
 
-The modulus of each root is $\sqrt[n]{r}$, while the arguments are equally spaced by $2\pi/n$. Geometrically, the $n$ roots correspond to the vertices of a regular polygon inscribed in a [circle](../circumference/) of radius $\sqrt[n]{r}$ centered at the origin. The case $r = 1$ and $\theta = 0$ recovers the [roots of unity](../roots-of-unity/), whose vertices lie on the unit circle.
+In $(23),$ the modulus of each root is $\sqrt[n]{r}$ and $k$ is an integer taking the values $0, 1, \ldots, n-1,$ each of which identifies one of the $n$ distinct roots. The arguments are equally spaced, with a separation of $2\pi/n.$ For $n \geq 3,$ the roots correspond geometrically to the vertices of a regular polygon inscribed in a [circle](../circumference/) of radius $\sqrt[n]{r}$ centered at the origin. When $r = 1$ and $\theta = 0,$ we obtain the [roots of unity](../roots-of-unity/) on the unit circle. As an example, consider the cube roots of $z = 8.$ Writing $z = 8e^{i\cdot 0},$ we have $r = 8$ and $\theta = 0,$ so $(23)$ gives the three roots:
 
-- - -
+$$w_k = \sqrt[3]{8}e^{i\cdot 2k\pi/3} = 2e^{i\cdot 2k\pi/3} \qquad k = 0, 1, 2 \tag{24}$$
 
-As an illustration, consider the cube roots of $z = 8$. Writing $z = 8e^{i\cdot 0}$, one has $r = 8$ and $\theta = 0$, so the three roots are:
-
-$$w_k = \sqrt[3]{8}e^{i\cdot 2k\pi/3} = 2e^{i\cdot 2k\pi/3} \qquad k = 0, 1, 2$$
-
-Computing each root explicitly via [Euler's formula](../eulers-formula/) gives the following.
+We can calculate each root in $(24)$ using Euler's formula, obtaining:
 
 $$
 \begin{align}
 w_0 &= 2e^{i\cdot 0} = 2 \\[6pt]
 w_1 &= 2e^{i\cdot 2\pi/3} = 2\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = -1 + i\sqrt{3} \\[6pt]
 w_2 &= 2e^{i\cdot 4\pi/3} = 2\left(-\frac{1}{2} - i\frac{\sqrt{3}}{2}\right) = -1 - i\sqrt{3}
+\tag{25}
 \end{align}
 $$
 
-> The three roots have equal modulus $2$ and are separated by angles of $2\pi/3$, forming the vertices of an equilateral triangle inscribed in the circle of radius $2$ centered at the origin.
+The roots we have found all have the same modulus and are separated by angles of $2\pi/3,$ and they form the vertices of an equilateral triangle inscribed in a circle of radius $2$ centered at the origin.

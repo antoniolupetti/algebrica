@@ -15,187 +15,145 @@ tags:
   - trigonometric-form
   - trigonometric-identities
 ---
-## Motivation
+## Statement
 
-To compute a power of a complex number, the most direct approach is to start from its [algebraic form](../complex-numbers-introduction/) and expand the expression term by term. For $z = a + ib$, squaring gives:
+De Moivre's theorem uses [trigonometric form](../complex-numbers-trigonometric-form/) to simplify the calculation of powers of [complex numbers](../complex-numbers/). Squaring a complex number $z$ in algebraic form is straightforward using the formula for the [square of a binomial](../binomials/).
 
-$$
+$$ \tag{1}
 \begin{align}
 z^2 &= (a + ib)^2 \\[6pt]
-    &= a^2 + i2ab - b^2
+    &= a^2 + 2iab - b^2
 \end{align}
 $$
 
-The procedure is valid for any integer exponent, but it becomes increasingly cumbersome as $n$ grows. The number of terms produced by the [binomial expansion](../binomial-theorem/) of $(a+ib)^n$ grows with $n$, and the separation into real and imaginary parts requires repeated application of the identity $i^2 = -1$. Beyond the third or fourth power, the direct expansion is impractical. De Moivre's theorem provides a procedure based on the [trigonometric form](../complex-numbers-trigonometric-form/) of $z$ that bypasses these manipulations entirely.
+As the exponent increases, however, the calculation becomes impractical because the number of terms in the [binomial expansion](../binomial-theorem/) of $(a+ib)^n$ grows with $n,$ so De Moivre's theorem provides a simpler way to compute the power. Consider a nonzero complex number $z$ with modulus $r$ and argument $\theta$ and write it in trigonometric form.
 
-## Statement and exponential reformulation
+$$z = r(\cos\theta + i\sin\theta) \tag{2}$$
 
-Consider a complex number $z$ raised to an integer power $n \in \mathbb{Z}$, that is the expression:
+De Moivre's theorem states that for every integer $n,$ the power $z^n$ of the number in $(2)$ has modulus $r^n$ and argument $n\theta,$ so it can be written as follows.
 
-$$z^n \qquad n \in \mathbb{Z}$$
+$$z^n = r^n(\cos(n\theta) + i\sin(n\theta)) \tag{3}$$
 
-Writing $z$ in trigonometric form gives:
+If the exponent is a [rational number](../rational-numbers/) $p/q$ in lowest terms with $q > 0,$ the values of $z^{p/q}$ are the solutions of the equation $w^q = z^p.$ By $(3),$ the number $z^p$ has modulus $r^p$ and arguments $p\theta + 2k\pi,$ where $k \in \mathbb{Z}.$ Applying $(3)$ to $w^q$ as well, we find the modulus of $w$ by taking the $q$th root of $r^p$ and its arguments by dividing the arguments of $z^p$ by $q.$ This gives $q$ distinct values for $k = 0, 1, \ldots, q-1.$
 
-$$z = r(\cos\theta + i\sin\theta)$$
+$$w_k = r^{p/q}\left(\cos\left(\frac{p\theta + 2k\pi}{q}\right) + i\sin\left(\frac{p\theta + 2k\pi}{q}\right)\right) \tag{4}$$
 
-For any [integer](../integers/) $n$, the power $z^n$ is obtained by raising the modulus to the $n$-th power and multiplying the argument by $n$. The result is a new complex number in trigonometric form:
+De Moivre's theorem also applies when a complex number is written in [exponential form](../complex-numbers-exponential-form/).
 
-$$z^n = r^n(\cos(n\theta) + i\sin(n\theta))$$
+$$z = re^{i\theta} \tag{5}$$
 
-The identity holds for every integer $n$, both positive and negative. When $n$ is a rational number $n = p/q$, the same expression continues to make sense, but the right-hand side produces only one of the $q$ distinct values of $z^{p/q}$. The full set of values is recovered by replacing $\theta$ with $\theta + 2k\pi$ for $k = 0, 1, \ldots, q-1$.
+In this form, the theorem gives the following identity.
 
-- - -
-
-The trigonometric form admits an equivalent exponential reformulation. By [Euler's formula](../eulers-formula/) the identity:
-
-$$e^{i\theta} = \cos\theta + i\sin\theta$$
-
-gives the exponential representation of $z$:
-
-$$z = re^{i\theta}$$
-
-In this form, De Moivre's theorem reduces to a direct application of the usual rules of exponentiation. Raising both sides to the integer power $n$ gives:
-
-$$z^n = (re^{i\theta})^n = r^n e^{in\theta}$$
-
-The modulus is raised to the $n$-th power and the argument is multiplied by $n$, with no algebraic expansion or trigonometric manipulation required.
-
-## A proof by induction
-
-De Moivre's theorem asserts that for every integer $n$ and every complex number $z = r(\cos\theta + i\sin\theta)$, the following identity holds.
-
-$$z^n = r^n(\cos(n\theta) + i\sin(n\theta))$$
-
-The formula is proved by [induction](../principle-of-mathematical-induction/) on $n$. The argument has two parts:
-
-+ verifying the base case
-+ showing that validity at step $n$ forces validity at step $n+1$
+$$z^n = (re^{i\theta})^n = r^n e^{in\theta} \tag{6}$$
 
 - - -
 
-For the base case, setting $n = 1$ reduces the formula to $z = r(\cos\theta + i\sin\theta)$, which is the trigonometric form of $z$ by definition. For the inductive step, suppose the formula holds for some integer $n \geq 1$:
+To prove the theorem, we establish $(3)$ by [induction](../principle-of-mathematical-induction/), first verifying the base case and then showing that the result for $n$ implies the result for $n+1.$ We start with the base case by setting $n = 1.$ In this case, $(3)$ reduces directly to the standard trigonometric form given in $(2).$ Now suppose $(3)$ holds for an integer $n \geq 1.$ To pass from $z^n$ to $z^{n+1},$ we use the following identity.
 
-$$z^n = r^n(\cos(n\theta) + i\sin(n\theta))$$
+$$z^{n+1} = z^n z \tag{7}$$
 
-Multiplying both sides by $z = r(\cos\theta + i\sin\theta)$ and expanding the product gives:
+We then multiply both sides of $(3)$ by $z = r(\cos\theta + i\sin\theta)$ and expand the product.
 
-$$z^{n+1} = r^{n+1}\bigl[(\cos(n\theta)\cos\theta - \sin(n\theta)\sin\theta) + i(\sin(n\theta)\cos\theta + \cos(n\theta)\sin\theta)\bigr]$$
+$$z^{n+1} = r^{n+1}\bigl[(\cos(n\theta)\cos\theta - \sin(n\theta)\sin\theta) + i(\sin(n\theta)\cos\theta + \cos(n\theta)\sin\theta)\bigr] \tag{8}$$
 
-The two expressions in brackets are the addition formulas for [cosine and sine](../sine-and-cosine/). Applying these [trigonometric identities](../trigonometric-identities/) collapses them to a single cosine and a single sine, and yields:
+The two expressions in parentheses in $(8)$ are the [addition formulas for cosine and sine](../trigonometric-identities/), which allow us to rewrite $(8)$ as follows.
 
-$$z^{n+1} = r^{n+1}(\cos((n+1)\theta) + i\sin((n+1)\theta))$$
+$$z^{n+1} = r^{n+1}(\cos((n+1)\theta) + i\sin((n+1)\theta)) \tag{9}$$
 
-The identity holds at step $n+1$, which completes the induction. The extension to negative integers follows from the formula $z^{-n} = 1/z^n$ combined with the identity $1/(\cos\alpha + i\sin\alpha) = \cos(-\alpha) + i\sin(-\alpha)$, which is a direct consequence of the parity of cosine and sine.
+Equation $(9)$ is $(3)$ with exponent $n+1.$ This completes the induction for positive integers. When $n=0,$ the left-hand side of $(3)$ is $z^0=1$ and the right-hand side is also $1.$ For a [negative exponent](../powers/), we apply $(3)$ to $z^n$ and take its reciprocal.
+
+$$
+\begin{aligned}
+z^{-n} &= \frac{1}{z^n} \\[6pt]
+       &= r^{-n}(\cos(n\theta) - i\sin(n\theta)) \\[6pt]
+       &= r^{-n}(\cos(-n\theta) + i\sin(-n\theta))
+\end{aligned}
+\tag{10}
+$$
+
+The last expression in $(10)$ agrees with the right-hand side of $(3)$ for exponent $-n.$
 
 - - -
 
-As a first illustration, squaring the complex number $z = re^{i\theta}$ gives:
+To show the effect of squaring a complex number in the complex plane, we write $z$ in exponential form. Applying $(6)$ with $n=2$ changes the modulus from $r$ to $r^2$ and the argument from $\theta$ to $2\theta,$ as shown in the figure.
 
-$$z^2 = (re^{i\theta})^2 = r^2 e^{i2\theta}$$
+$$z^2 = (re^{i\theta})^2 = r^2 e^{2i\theta}$$
 
 ![IMG. 2](svg/complex-numbers-exponential-form-1.svg)
 
-The result is a complex number whose modulus is $r^2$ and whose argument is $2\theta$. Geometrically, the [vector](../vectors/) representing $z$ is stretched by a factor of $r$ in length and rotated to twice its original angle in the complex plane.
+For another example, we calculate the fourth power of $z=2+2i.$ Here $z$ lies on the bisector of the first quadrant, so recall that its [principal argument](../complex-numbers/) is $\pi/4.$ We first write $z$ in trigonometric form and apply $(3)$ with $n=4.$
+
+$$
+\begin{align}
+|z| &= \sqrt{2^2 + 2^2} = 2\sqrt{2} \\[6pt]
+z &= 2\sqrt{2}\bigl(\cos(\pi/4) + i\sin(\pi/4)\bigr) \\[6pt]
+z^4 &= (2\sqrt{2})^4(\cos\pi + i\sin\pi) \\[6pt]
+    &= -64
+\end{align}
+$$
+
+## Applications
+
+One application of De Moivre's theorem is to derive formulas for the sine and cosine of multiple angles. For example, setting $n = 3$ in the theorem gives the following identity.
+
+$$(\cos\theta + i\sin\theta)^3 = \cos(3\theta) + i\sin(3\theta) \tag{11}$$
+
+We expand the left-hand side using the binomial theorem and separate the resulting expression into its real and imaginary parts.
+
+$$
+\begin{align}
+\cos(3\theta) + i\sin(3\theta)
+&= (\cos\theta + i\sin\theta)^3 \\[6pt]
+&= \cos^3\theta + 3i\cos^2\theta\sin\theta + 3i^2\cos\theta\sin^2\theta + i^3\sin^3\theta \\[6pt]
+&= (\cos^3\theta - 3\cos\theta\sin^2\theta) + i(3\cos^2\theta\sin\theta - \sin^3\theta)
+\end{align}
+$$
+
+Equating the real and imaginary parts with their counterparts on the right-hand side of the identity gives the [triple-angle formulas](../trigonometric-identities/).
+
+$$
+\begin{align}
+\cos(3\theta) &= \cos^3\theta - 3\cos\theta\sin^2\theta \\[6pt]
+\sin(3\theta) &= 3\cos^2\theta\sin\theta - \sin^3\theta
+\end{align}
+$$
 
 - - -
 
-Consider the complex number $z = 2 + 2i$ and compute $z^4$. The modulus of $z$ is obtained by direct application of its definition:
+For every positive integer $n,$ De Moivre's theorem allows us to compute the $n$th roots of a complex number by solving the following equation.
 
-$$|z| = \sqrt{2^2 + 2^2} = \sqrt{8} = 2\sqrt{2}$$
+$$z^n = w \tag{12}$$
 
-> The modulus of a complex number is its distance from the origin in the complex plane and is computed via the [Pythagorean theorem](../pythagorean-theorem/) applied to its real and imaginary parts.
+Suppose $w \neq 0$ has modulus $r$ and argument $\theta.$ Since all its arguments have the form $\theta + 2k\pi,$ where $k \in \mathbb{Z},$ we can write $w$ in exponential form.
 
-- - -
+$$w = re^{i(\theta + 2k\pi)} \tag{13}$$
 
-The argument of $z$ is determined by the arctangent of the ratio between imaginary and real parts:
+To solve $(12),$ we write $z$ in exponential form and apply $(6)$ to $z^n.$ Comparing the result with $(13),$ we find the modulus of $z$ by taking the $n$th root of $r$ and the arguments of the solutions by dividing the arguments of $w$ by $n.$ This gives the $n$th roots of $w$ for $k = 0, 1, \ldots, n-1.$
 
-$$\theta = \arg(z) = \arctan\left(\frac{2}{2}\right) = \frac{\pi}{4}$$
+$$z_k = \sqrt[n]{r}\cdot e^{i\left(\frac{\theta + 2k\pi}{n}\right)} \tag{14}$$
 
-> Since real and imaginary parts are equal and both positive, $z$ lies on the bisector of the first quadrant, and the argument is exactly $45^\circ$, or $\pi/4$ radians.
-
-- - -
-
-Writing $z$ in exponential form gives:
-
-$$z = 2\sqrt{2}e^{i\frac{\pi}{4}}$$
-
-Applying De Moivre's theorem to compute $z^4$ produces:
-
-$$z^4 = (2\sqrt{2})^4 \cdot e^{i \cdot 4 \cdot \frac{\pi}{4}} = (2\sqrt{2})^4 \cdot e^{i\pi}$$
-
-The modulus is simplified using the rules for [powers](../powers/):
-
-$$(2\sqrt{2})^4 = (2^1 \cdot 2^{1/2})^4 = (2^{3/2})^4 = 2^6 = 64$$
-
-- - -
-
-By [Euler's formula](../eulers-formula/) evaluated at $\theta = \pi$ one has $e^{i\pi} = -1$, and the fourth power becomes:
-
-$$z^4 = 64 \cdot (-1) = -64$$
-
-> The same result can be verified by expanding $(2 + 2i)^4$ algebraically with the [binomial theorem](../binomial-theorem/) and simplifying.
-
-Hence the fourth power of $z = 2 + 2i$ is the real number $-64$.
-
-## Deriving trigonometric identities
-
-One of the practical applications of De Moivre's theorem is the derivation of explicit formulas for [sine and cosine](../sine-and-cosine/) of multiple [angles](../angles-and-angular-measure/). The procedure expands the left-hand side of the theorem using the [binomial theorem](../binomial-theorem/) and then separates the result into real and imaginary parts.
-
-For $n = 3$, the theorem gives:
-
-$$(\cos\theta + i\sin\theta)^3 = \cos(3\theta) + i\sin(3\theta)$$
-
-Expanding the left-hand side with the binomial formula produces four terms:
-
-$$(\cos\theta + i\sin\theta)^3 = \cos^3\theta + 3i\cos^2\theta\sin\theta + 3i^2\cos\theta\sin^2\theta + i^3\sin^3\theta$$
-
-Using the identities $i^2 = -1$ and $i^3 = -i$, the expression collapses into a real and an imaginary part:
-
-$$= (\cos^3\theta - 3\cos\theta\sin^2\theta) + i(3\cos^2\theta\sin\theta - \sin^3\theta)$$
-
-Equating real and imaginary parts with the right-hand side of the theorem yields the triple-angle formulas:
-
-$$\cos(3\theta) = \cos^3\theta - 3\cos\theta\sin^2\theta$$
-
-$$\sin(3\theta) = 3\cos^2\theta\sin\theta - \sin^3\theta$$
-
-Both follow from a single application of the binomial expansion, with no need for repeated use of the angle-sum [trigonometric identities](../trigonometric-identities/). The procedure extends to any integer $n$: the binomial expansion of $(\cos\theta + i\sin\theta)^n$ always yields $\cos(n\theta)$ as its real part and $\sin(n\theta)$ as its imaginary part.
-
-## Finding complex roots with De Moivre's theorem
-
-De Moivre's theorem also produces the $n$-th roots of a complex number. Consider the equation:
-
-$$z^n = w$$
-
-where $w \in \mathbb{C}$. The unknowns are the complex numbers $z$ whose $n$-th power equals $w$. Since the argument of a complex number is defined modulo $2\pi$, the number $w$ is written in exponential form as:
-
-$$w = re^{i(\theta + 2k\pi)} \qquad k \in \mathbb{Z}$$
-
-Applying De Moivre's theorem to the equation $z^n = w$ and taking the $n$-th root of both sides gives the general formula for the $n$-th roots of $w$:
-
-$$z_k = \sqrt[n]{r}\cdot e^{i\left(\frac{\theta + 2k\pi}{n}\right)} \qquad k = 0, 1, \ldots, n-1$$
-
-The values $z_0, z_1, \ldots, z_{n-1}$ are exactly the $n$ distinct complex roots. They lie on a [circle](../circumference/) of radius $\sqrt[n]{r}$ centered at the origin, equally spaced by an angle of $2\pi/n$. Geometrically, the roots are the vertices of a regular polygon with $n$ sides inscribed in that circle. The case $w = 1$ recovers the [roots of unity](../roots-of-unity/), and is treated in detail in the next example.
-
-## Example 1
-
-Consider the equation:
+By $(14),$ the values $z_0, z_1, \ldots, z_{n-1}$ are the $n$ complex roots we sought. Geometrically, these roots are equally spaced on a circle of radius $\sqrt[n]{r}$ centered at the origin, with an angular separation of $2\pi/n.$ For $n \geq 3,$ they are the vertices of a regular $n$-sided polygon inscribed in that circle, as the next example shows. Suppose we want to solve the following equation.
 
 $$z^3 = 1$$
 
-The real solution $z = 1$ is immediate, but in $\mathbb{C}$ the equation has three distinct solutions, equally spaced around the [unit circle](../unit-circle/). 
+The real solution $z = 1$ is immediate, but in $\mathbb{C}$ the equation has three distinct solutions, equally spaced on the [unit circle](../unit-circle/) as shown in the figure.
 
 ![IMG. 1](svg/roots-of-unity-1.svg)
 
-Since the argument of $1$ is defined modulo $2\pi$, the number is written in exponential form as:
+Since the argument of $1$ is defined modulo $2\pi,$ we can write the number in exponential form.
 
 $$1 = e^{i \cdot 2k\pi} \qquad k \in \mathbb{Z}$$
 
-Applying the general root formula with $r = 1$ and $\theta = 0$ gives:
+We apply the general formula for the roots with $r = 1,$ $\theta = 0,$ and $k = 0, 1, 2.$
 
-$$z_k = \sqrt[3]{1}\cdot e^{i\left(\frac{2k\pi}{3}\right)} = e^{i \cdot \frac{2k\pi}{3}} \qquad k = 0, 1, 2$$
+$$ \tag{15}
+\begin{align}
+z_k &= \sqrt[3]{1}\cdot e^{i\left(\frac{2k\pi}{3}\right)} \\[6pt]
+    &= e^{i \cdot \frac{2k\pi}{3}}
+\end{align}
+$$
 
-Evaluating the three roots explicitly via [Euler's formula](../eulers-formula/) produces:
+Substituting these values of $k$ into $(15)$ gives the [three complex roots](../roots-of-unity/).
 
 $$
 \begin{align}
@@ -204,5 +162,3 @@ z_1 &= e^{i \cdot \frac{2\pi}{3}} = \cos\left(\frac{2\pi}{3}\right) + i\sin\left
 z_2 &= e^{i \cdot \frac{4\pi}{3}} = \cos\left(\frac{4\pi}{3}\right) + i\sin\left(\frac{4\pi}{3}\right) = -\frac{1}{2} - i\frac{\sqrt{3}}{2}
 \end{align}
 $$
-
-These are the three cube [roots of unity](../roots-of-unity/), arranged in the complex plane as the vertices of an equilateral triangle inscribed in the unit circle.
