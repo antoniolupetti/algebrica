@@ -52,7 +52,7 @@ Moreover, their decimal expansions are infinite and non-repeating. Formally, if 
 
 ## Why is $\sqrt{2}$ irrational?
 
-We now consider a familiar case and prove that $\sqrt{2}$ is not a [rational number](../rational-numbers/). The proof is by contradiction, so we assume that $\sqrt{2}$ is rational. If it were rational, it could be expressed as a ratio of two integers in lowest terms, so there would be $a, b \in \mathbb{Z},$ with $b \neq 0$ and $\gcd(a,b) = 1,$ such that:
+We now consider a familiar case and prove that $\sqrt{2}$ is not a [rational number](../rational-numbers/). The proof is by contradiction, so we assume that $\sqrt{2}$ is rational. If it were rational, it could be expressed as a ratio of two integers [in lowest terms](../greatest-common-divisor/), so there would be $a, b \in \mathbb{Z},$ with $b \neq 0$ and $\gcd(a,b) = 1,$ such that:
 
 $$ \tag{6}
 \sqrt{2} = \frac{a}{b}
