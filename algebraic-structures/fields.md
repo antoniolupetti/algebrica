@@ -84,7 +84,7 @@ Both degrees must be zero. A polynomial of positive degree cannot have a multipl
 
 - - -
 
-For any prime $p,$ the set $\mathbb{Z}/p\mathbb{Z} = \{\ [0], [1], \ldots, [p - 1] \ \}$ equipped with addition and multiplication [modulo](../modulo-operator/) $p$ is the field $\mathbb{F}_p.$ It has $p$ elements. If $[a]$ is nonzero, then $p$ does not divide $a,$ so $\gcd(a,p) = 1.$ Bezout's identity gives integers $r$ and $s$ such that $ar + ps = 1.$ Reducing this equation modulo $p$ gives $[a][r] = [1],$ so $[r]$ is the inverse of $[a].$ A composite modulus need not give a field. In $\mathbb{Z}/6\mathbb{Z},$ the elements $[2]$ and $[3]$ satisfy $[2][3] = [0],$ so neither is invertible and $\mathbb{Z}/6\mathbb{Z}$ is not a field.
+For any prime $p,$ the set $\mathbb{Z}/p\mathbb{Z} = \{\ [0], [1], \ldots, [p - 1] \ \}$ equipped with addition and multiplication [modulo](../modulo-operator/) $p$ is the field $\mathbb{F}_p.$ It has $p$ elements. If $[a]$ is nonzero, then $p$ does not divide $a,$ so $\gcd(a,p) = 1.$ [Bezout's identity](../greatest-common-divisor/) gives integers $r$ and $s$ such that $ar + ps = 1.$ Reducing this equation modulo $p$ gives $[a][r] = [1],$ so $[r]$ is the inverse of $[a].$ A composite modulus need not give a field. In $\mathbb{Z}/6\mathbb{Z},$ the elements $[2]$ and $[3]$ satisfy $[2][3] = [0],$ so neither is invertible and $\mathbb{Z}/6\mathbb{Z}$ is not a field.
 
 > Finite fields exist only when the number of elements is a prime power $p^n,$ for some prime $p$ and positive integer $n.$ For every such prime power there exists, up to isomorphism, exactly one finite field, denoted $\mathbb{F}_{p^n}$ or $\mathrm{GF}(p^n).$
 
