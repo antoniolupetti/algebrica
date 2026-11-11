@@ -140,7 +140,7 @@ $$
 M = \{\ 1, 2, 3, 6\ \} \qquad a^{\mathcal{M}} = 1 \qquad b^{\mathcal{M}} = 6
 $$
 
-Interpret $g^{\mathcal{M}}$ as the greatest common divisor and $l^{\mathcal{M}}$ as the least common multiple. The predicate $D$ is interpreted by:
+Interpret $g^{\mathcal{M}}$ as the [greatest common divisor](../greatest-common-divisor/) and $l^{\mathcal{M}}$ as the least common multiple. The predicate $D$ is interpreted by:
 
 $$
 D^{\mathcal{M}} = \{\ (m, n) \in M^2 \mid m \ \text{divides} \ n\ \}
