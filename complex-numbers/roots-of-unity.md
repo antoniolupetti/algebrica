@@ -95,7 +95,7 @@ Successive applications of the rotation in $(13)$ give all $n$ rotational symmet
 
 Equation $(11)$ shows that every root in $\mu_n$ is a power of $z_1,$ which is what it means for $z_1$ to generate $\mu_n.$ A root $z_k$ is called primitive if it also generates $\mu_n,$ meaning that its powers, starting at $z_k^0 = 1,$ give all $n$ roots before returning to $1.$ In this case, its order is $n.$
 
-To find the order of $z_k,$ note that $(11)$ gives $z_k^m = z_1^{km}.$ Since $z_1$ has order $n,$ we have $z_k^m = 1$ if and only if $n$ divides $km.$ Setting $d = \gcd(k,n),$ we can write this condition equivalently as requiring $n/d$ to divide $m,$ since $k/d$ and $n/d$ are [coprime](../integers/). The smallest positive integer satisfying the condition is therefore $n/d,$ and the order of $z_k$ is given by:
+To find the order of $z_k,$ note that $(11)$ gives $z_k^m = z_1^{km}.$ Since $z_1$ has order $n,$ we have $z_k^m = 1$ if and only if $n$ divides $km.$ Setting $d = \gcd(k,n),$ we can write this condition equivalently as requiring $n/d$ to divide $m,$ since $k/d$ and $n/d$ are [coprime](../greatest-common-divisor/). The smallest positive integer satisfying the condition is therefore $n/d,$ and the order of $z_k$ is given by:
 
 $$\mathrm{ord}(z_k) = \frac{n}{\gcd(k,n)} \tag{14}$$
 

@@ -43,7 +43,7 @@ v_k(a)=v_j(a) &\quad\Longleftrightarrow\quad e^{2\pi i(k-j)a}=1 \\[6pt]
 \end{aligned} \tag{5}
 $$
 
-If the exponent is [rational](../rational-numbers/), we write $a=p/q$ in lowest terms, with $q>0,$ and apply $(5),$ which states that $v_k(a)$ and $v_j(a)$ coincide if and only if $(k-j)p/q$ is an integer. Since $p$ and $q$ are coprime, this happens when $k-j$ is a multiple of $q,$ so the values repeat every $q$ indices, and the indices from $0$ to $q-1$ give all $q$ distinct values of the power because no two distinct indices in this range differ by a multiple of $q.$
+If the exponent is [rational](../rational-numbers/), we write $a=p/q$ in lowest terms, with $q>0,$ and apply $(5),$ which states that $v_k(a)$ and $v_j(a)$ coincide if and only if $(k-j)p/q$ is an integer. Since $p$ and $q$ are [coprime](../greatest-common-divisor/), this happens when $k-j$ is a multiple of $q,$ so the values repeat every $q$ indices, and the indices from $0$ to $q-1$ give all $q$ distinct values of the power because no two distinct indices in this range differ by a multiple of $q.$
 
 For an integer exponent $a=n,$ the denominator is $q=1,$ so there is a single value and it agrees with the usual [integer power](../de-moivre-theorem/) because $e^{nw}=(e^w)^n=z^n$ for every logarithm $w$ of $z.$ For $a=1/q,$ on the other hand, we obtain all the $q$th [roots](../complex-numbers-exponential-form/) of $z.$ Indeed, for every logarithm $w$ of $z,$ raising $e^{w/q}$ to the power $q$ gives $e^w=z.$
 
