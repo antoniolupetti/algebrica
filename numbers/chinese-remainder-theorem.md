@@ -50,7 +50,7 @@ There are infinitely many integer solutions, but they all have the same remainde
 
 - - -
 
-The proof of the theorem has two parts. We first show that system $(3)$ has at least one solution, and then that all solutions have the same remainder upon division by $mn.$ For the first part, we construct a solution using [Bézout's identity](../integers/), which states that for any two positive integers $m$ and $n,$ there are integers $s$ and $t$ satisfying the following relation:
+The proof of the theorem has two parts. We first show that system $(3)$ has at least one solution, and then that all solutions have the same remainder upon division by $mn.$ For the first part, we construct a solution using [Bézout's identity](../greatest-common-divisor/), which states that for any two positive integers $m$ and $n,$ there are integers $s$ and $t$ satisfying the following relation:
 
 $$
 sm+tn=\gcd(m,n) \tag{5}

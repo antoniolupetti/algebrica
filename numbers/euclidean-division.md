@@ -137,7 +137,7 @@ The division of $-25$ by $5$ therefore has quotient $-5$ and remainder $0,$ and 
 
 ## Euclidean algorithm
 
-The Euclidean algorithm is a recursive algorithm for computing the [greatest common divisor](../integers/) of two positive integers by repeatedly applying Euclidean division. Suppose that $a$ and $d$ are two positive integers with $a\geq d,$ so that $(1)$ holds. The pairs $(a,d)$ and $(d,r)$ have the same common divisors, because every integer that divides $a$ and $d$ also divides $r=a-dq,$ and conversely, every integer that divides $d$ and $r$ also divides $a=dq+r.$ We can therefore replace the dividend with the divisor and the divisor with the remainder without changing the greatest common divisor, obtaining:
+The Euclidean algorithm is a recursive algorithm for computing the [greatest common divisor](../greatest-common-divisor/) of two positive integers by repeatedly applying Euclidean division. Suppose that $a$ and $d$ are two positive integers with $a\geq d,$ so that $(1)$ holds. The pairs $(a,d)$ and $(d,r)$ have the same common divisors, because every integer that divides $a$ and $d$ also divides $r=a-dq,$ and conversely, every integer that divides $d$ and $r$ also divides $a=dq+r.$ We can therefore replace the dividend with the divisor and the divisor with the remainder without changing the greatest common divisor, obtaining:
 
 $$
 \gcd(a,d)=\gcd(d,r)

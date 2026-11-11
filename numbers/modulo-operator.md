@@ -163,7 +163,7 @@ $$
 
 The solutions of $(13)$ are the integers $x$ that satisfy the relation, grouped into residue classes modulo $n.$ Congruence $(13)$ has a solution if and only if $\gcd(a,n)$ divides $b,$ in which case the solutions form one class modulo $n/\gcd(a,n)$ corresponding to $\gcd(a,n)$ distinct classes modulo $n.$
 
-To justify the criterion for the existence of solutions to $(13),$ let $g=\gcd(a,n).$ By $(5),$ if $x$ is a solution, then $ax-b$ is a multiple of $n.$ Since $g$ divides both $a$ and $n,$ it must also divide $b.$ For the converse, we use [Bézout's identity](../integers/), which states that there are integers $u$ and $v$ satisfying the following equation.
+To justify the criterion for the existence of solutions to $(13),$ let $g=\gcd(a,n).$ By $(5),$ if $x$ is a solution, then $ax-b$ is a multiple of $n.$ Since $g$ divides both $a$ and $n,$ it must also divide $b.$ For the converse, we use [Bézout's identity](../greatest-common-divisor/), which states that there are integers $u$ and $v$ satisfying the following equation.
 
 $$
 au + nv = g \tag{14}
