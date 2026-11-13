@@ -137,7 +137,7 @@ $$
 \frac{p}{q} \lt \frac{r}{s} \quad \longleftrightarrow \quad ps \lt rq \qquad (q,s \gt 0) \tag{12}
 $$
 
-Equation $(12)$ shows that the order is total and that adding the same rational number to both sides of an inequality or multiplying both sides by the same positive rational number preserves the inequality, so $\mathbb{Q}$ is called an [ordered field](../properties-of-real-numbers/).
+Equation $(12)$ shows that the order is total and that adding the same rational number to both sides of an inequality or multiplying both sides by the same positive rational number preserves the inequality, so $\mathbb{Q}$ is called an [ordered field](../real-numbers/).
 
 ## Decimal representation
 

@@ -3,234 +3,184 @@ title: Real Numbers
 source: https://algebrica.org/real-numbers/
 license: CC BY-NC 4.0
 tags:
-  - archimedean-property
-  - bolzano-weierstrass
   - cauchy-sequence
   - completeness
   - dedekind-cut
   - density
-  - floor-function
-  - nested-intervals
-  - nth-root
   - ordered-field
-  - rational-exponentiation
   - real-line
   - real-numbers
-  - uncountability
 ---
 
-## Field and order structure
+## Definition
 
-The real numbers form a [field](../fields/) under addition and multiplication. Both operations are associative and commutative, multiplication distributes over addition, and every nonzero real number has a multiplicative inverse. The additive identity is $0$ and the multiplicative identity is $1.$ These axioms are discussed in [properties of real numbers](../properties-of-real-numbers/). The field $\mathbb{R}$ also has a total order relation, denoted $<.$ For any two elements $x,y\in\mathbb{R},$ exactly one of the following three relations holds:
+Real numbers are the numbers we use to express quantities that vary continuously. Their set is denoted by $\mathbb{R}.$ Each real number $x$ corresponds to a point on the real line, to the right or left of the origin depending on whether $x$ is positive or negative, and the [absolute value](../absolute-value/) $|x|$ gives its distance from the origin.
 
-$$
-x < y \qquad x = y \qquad y < x
-$$
-
-The order is compatible with the field operations:
-
-+ If $x < y,$ then $x + z < y + z$ for every $z \in \mathbb{R}.$
-+ If $x < y$ and $z > 0,$ then $xz < yz.$
-
-An ordered field is a field with a total order satisfying these compatibility conditions. Both $\mathbb{Q}$ and $\mathbb{R}$ are ordered fields. What separates the two is the completeness property introduced below.
-
-## The real line
-
-The real numbers have a geometric representation on a line. Fix an arbitrary point and label it $0,$ then fix a point to its right and label it $1.$ Every real number $x$ corresponds to a unique point. Positive numbers lie to the right of $0,$ negative numbers lie to the left, and their distance from the origin is the [absolute value](../absolute-value/) $|x|.$
 
 ![IMG. 1](svg/real-numbers-1.svg)
 
-This correspondence is a bijection between $\mathbb{R}$ and the points of the line, and it preserves the order. The relation $x < y$ holds if and only if the point corresponding to $x$ lies to the left of the point corresponding to $y.$
 
-## The completeness axiom
+Each point has exactly one real coordinate, and its position reflects the order of the numbers, so if two real numbers $x$ and $y$ satisfy $x\lt y,$ the point with coordinate $x$ lies to the left of the point with coordinate $y.$ The real line can be described using [intervals](../intervals/), which specify portions of the line and their extent. The following familiar chain of inclusions holds among the [sets of numbers](../types-of-numbers/):
 
-The property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$ is completeness. Every [Cauchy sequence](../cauchy-sequence/) of [rational numbers](../rational-numbers/) converges to a real number, although its limit need not be rational. The missing rational limits are [irrational numbers](../irrational-numbers/).
-
-The formulation relies on the notion of an upper bound. A subset $S \subseteq \mathbb{R}$ is bounded above if some real number $M$ satisfies $x \leq M$ for every $x \in S.$ Such a number $M$ is an upper bound of $S.$ Its least upper bound, when it exists, is the supremum $\sup S.$
-
-The completeness axiom of the real numbers can be stated as follows: every non-empty subset of $\mathbb{R}$ that is bounded above has a [supremum](../supremum-and-infimum/) in $\mathbb{R}.$ The statement is known as the least upper bound property. The rational numbers fail to satisfy it. To see why, consider the following [set](../sets/):
 
 $$
-S = \{q \in \mathbb{Q} \mid q^2 < 2\}
+\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}, \qquad \mathbb{I} \subset \mathbb{R} \tag{1}
 $$
 
-This set is non-empty and bounded above within $\mathbb{Q},$ yet it has no least upper bound in $\mathbb{Q}.$ Its supremum in $\mathbb{R}$ is the irrational number $\sqrt{2}.$
-
-The number $\sqrt{2}$ exists by completeness. Formed inside $\mathbb{R},$ the set $\{x \in \mathbb{R} \mid x \geq 0 \text{ and } x^2 \leq 2\}$ is non-empty and bounded above, so it has a supremum $r.$ If $r^2<2,$ there is a positive $h$ such that $h<1$ and $h<(2-r^2)/(2r+1).$ Then $(r+h)^2<2,$ contradicting the fact that $r$ is an upper bound. If $r^2>2,$ there is a positive $h$ such that $h<r$ and $h<(r^2-2)/(2r).$ Then $(r-h)^2>2,$ so $r-h$ is still an upper bound, contradicting the minimality of $r.$ Hence $r^2=2.$
-
-The same construction defines the [$n$-th root](../radicals/) of every non-negative real number $c$ by:
+In $(1),$ both $\mathbb{Q}$ and $\mathbb{I}$ are subsets of $\mathbb{R}.$ Since $\mathbb{I}$ is the set of real numbers that do not belong to $\mathbb{Q},$ the two sets are disjoint and their union is $\mathbb{R}:$
 
 $$
-c^{1/n}:=\sup\{x\in\mathbb{R}\mid x\geq0\text{ and }x^n\leq c\}
+\mathbb{R} = \mathbb{Q}\cup\mathbb{I}, \qquad \mathbb{Q}\cap\mathbb{I} = \emptyset \tag{2}
 $$
 
-For each positive [natural number](../natural-numbers/) $n,$ this supremum is the unique non-negative real whose $n$-th power is $c.$ If $x>0$ and $q=a/b$ with $a\in\mathbb{Z}$ and $b\in\mathbb{N}$ positive, [rational exponentiation](../powers/) is defined by $x^q=(x^{1/b})^a.$ If $a/b=c/d$ is another representation with $c\in\mathbb{Z}$ and $d\in\mathbb{N}$ positive, then the two candidate values have the same $bd$-th power because $ad=bc,$ so uniqueness of positive roots makes the definition independent of the chosen fraction. It satisfies $x^{q+r}=x^qx^r,$ $(x^q)^r=x^{qr},$ and $x^{-q}=1/x^q$ for rational $q,r.$
+Starting from $\mathbb{Q},$ we can construct $\mathbb{R}$ using Dedekind cuts or [Cauchy sequences](../cauchy-sequence/). The entry on the construction of the real numbers presents both methods and shows that the resulting complete ordered fields are [isomorphic](../homomorphisms-and-isomorphisms/).
 
-A symmetric notion applies to sets bounded below. A subset $S \subseteq \mathbb{R}$ is bounded below if there exists $m \in \mathbb{R}$ such that $x \geq m$ for all $x \in S.$ The greatest lower bound, or [infimum](../supremum-and-infimum/), is denoted $\inf S.$ The completeness axiom implies that every non-empty subset of $\mathbb{R}$ bounded below has an infimum in $\mathbb{R}.$
+- - -
 
-A least upper bound is unique. If $s$ and $t$ were both least upper bounds of the same set, the minimality of $s$ would give $s\leq t,$ while the minimality of $t$ would give $t\leq s.$ Antisymmetry then gives $s=t.$
-
-In the Cauchy construction below, the least upper bound property follows from rational approximation. Bounded rational representatives show directly that the constructed field is Archimedean. If $x=[(x_j)]$ and $|x_j|\leq B$ for every $j,$ then every integer $N>B$ satisfies $x<N.$ Let $E\subseteq\mathbb{R}$ be non-empty and bounded above. For each positive integer $n,$ the integers $k$ for which $k/n$ is an upper bound of $E$ form a non-empty set bounded below. This set has a least element $m_n,$ so $m_n/n$ is an upper bound while $(m_n-1)/n$ is not. For positive integers $n,n',$ the defining inequalities give:
+Equation $(2)$ partitions $\mathbb{R}$ into rational and [irrational numbers](../irrational-numbers/), and to describe how these two sets are distributed along the real line, we consider an interval with endpoints $x\lt y.$ No matter how close $x$ and $y$ are, there is always a [rational number](../rational-numbers/) $q \in \mathbb{Q}$ such that:
 
 $$
--\frac{1}{n'}<\frac{m_n}{n}-\frac{m_{n'}}{n'}\leq\frac{1}{n}
+x\lt q\lt y\tag{3}
 $$
 
-Thus $(m_n/n)$ is a Cauchy sequence. Its real limit $s$ is an upper bound of $E,$ since every element of $E$ is at most $m_n/n$ for every $n.$ Any upper bound of $E$ is at least $(m_n-1)/n$ for every $n,$ and this second sequence has the same limit $s.$ Hence every upper bound is at least $s,$ so $s=\sup E.$
-
-## The Archimedean property
-
-A consequence of completeness is the Archimedean property of $\mathbb{R}.$ For every real number $x,$ there exists a [natural number](../natural-numbers/) $n$ such that $n > x.$ Equivalently, the set of natural numbers $\mathbb{N}$ is not bounded above in $\mathbb{R}.$ The argument runs as follows:
-
-+ Suppose, for contradiction, that $\mathbb{N}$ were bounded above in $\mathbb{R}.$
-+ By the completeness axiom, $\mathbb{N}$ would then have a supremum that we call $s = \sup \mathbb{N}.$
-+ Since $s - 1 < s,$ the number $s - 1$ is not an upper bound of $\mathbb{N},$ so there exists $n \in \mathbb{N}$ with $n > s - 1.$
-+ It follows that $n + 1 > s.$ Since $n + 1 \in \mathbb{N},$ this contradicts $s$ being an upper bound of $\mathbb{N}.$
-
-For $x = 7.4,$ the smallest natural number greater than $x$ is $8.$ The existence of such a natural number depends on the Archimedean property and fails in some ordered fields.
-
-An equivalent quantitative form states that for all positive real numbers $x$ and $\varepsilon,$ there exists a positive integer $M$ such that $M\varepsilon>x.$ Applying the preceding form to $x/\varepsilon$ gives an integer $M>x/\varepsilon.$ Thus repeated addition of any fixed positive quantity eventually exceeds any prescribed real number.
-
-Every real number also has a unique [integer part](../floor-and-ceiling-functions/). For each $x\in\mathbb{R},$ the Archimedean property bounds $x$ between two integers, and the integers not exceeding $x$ have a greatest element. Denoting this integer by $\lfloor x\rfloor,$ one has:
+This property is called the density of $\mathbb{Q}$ in $\mathbb{R},$ so by choosing successively smaller intervals around a point on the line, we can approximate its real coordinate by rational numbers as closely as we wish. For example, applying $(3)$ to the interval $(x-\sqrt{2},y-\sqrt{2})$ gives a rational number $q$ such that $q+\sqrt{2}$ lies between $x$ and $y.$ This sum is irrational because if it were rational, the difference $(q+\sqrt{2})-q=\sqrt{2}$ would be rational as well, so the irrational numbers are also dense in $\mathbb{R}.$ Equation $(3)$ allows us, for example, to approximate $\sqrt{2}$ from below by positive rational numbers in a sequence of approximations belonging to the set:
 
 $$
-\lfloor x\rfloor\leq x<\lfloor x\rfloor+1
+S = \{\ q\in\mathbb{Q}\mid q^2\lt 2\ \} \tag{4}
 $$
 
-No two integers satisfy these inequalities, since two distinct integers differ by at least $1.$
+The set $S$ in $(4)$ contains $1,$ and all its elements are less than $\sqrt{2},$ so $\sqrt{2}$ is an upper bound of $S.$ A set is bounded above if it has an upper bound, and its [least upper bound](../supremum-and-infimum/), when it exists, is called the supremum. For $S,$ no real number $m\lt\sqrt{2}$ can be an upper bound, since by $(3)$ there is a rational number between $\max\{m,0\}$ and $\sqrt{2}$ that belongs to $S$ and is greater than $m.$ Thus the supremum of $S$ in $\mathbb{R}$ is $\sqrt{2}.$
 
-## Dedekind cuts
+Every rational upper bound $M$ of $S$ is greater than the irrational number $\sqrt{2},$ and by $(3)$ there is a smaller rational upper bound between them. Thus $S$ is bounded above in $\mathbb{Q}$ and has no supremum in $\mathbb{Q}.$ The completeness axiom guarantees that every nonempty subset of $\mathbb{R}$ that is bounded above has a supremum in $\mathbb{R}.$
 
-A Dedekind cut is a subset $A \subseteq \mathbb{Q}$ satisfying three conditions: $A$ is non-empty and $A \neq \mathbb{Q};$ if $q \in A$ and $p < q$ then $p \in A;$ and $A$ has no greatest element. The set $\mathbb{R}$ is then defined as the collection of all Dedekind cuts of $\mathbb{Q}.$
+The truncations $1.4,1.41,1.414,\ldots$ of the decimal expansion of $\sqrt{2}$ belong to $S$ and form a Cauchy sequence of rational numbers with irrational limit $\sqrt{2}.$ More generally, the completeness of $\mathbb{R}$ ensures that every Cauchy sequence of real numbers converges in $\mathbb{R}.$
 
-To illustrate, the rational number $r \in \mathbb{Q}$ corresponds to the cut $A_r = \{q \in \mathbb{Q} \mid q<r\}.$ An irrational number such as $\sqrt{2}$ corresponds instead to the cut:
+## Properties
 
-$$
-A = \{q \in \mathbb{Q} \mid q\leq0\} \cup \{q \in \mathbb{Q} \mid q>0 \text{ and } q^2<2\}
-$$
-
-This set satisfies all three conditions and has no rational supremum. The construction defines the cut $A$ itself as the real number that fills this gap in the rational order.
-
-The algebraic structure of $\mathbb{R}$ is then built directly from set-theoretic operations on cuts. Addition is defined by setting:
+The set $\mathbb{R}$ has a number of properties, listed below, the first of which is closure under addition and multiplication. Thus, for every $a,b\in\mathbb{R},$ the following relations hold:
 
 $$
-A + B = \{p+q \mid p\in A,q\in B\}
+\begin{align}
+a + b &\in \mathbb{R} \notag \\[6pt]
+a \cdot b &\in \mathbb{R} \tag{5}
+\end{align}
 $$
 
-The order is given by inclusion, so $A \leq B$ if and only if $A \subseteq B.$ These definitions make $\mathbb{R}$ a totally ordered field. If a non-empty collection $S$ of cuts is bounded above, its supremum is the union $\bigcup_{A \in S}A.$ This union is a cut and is the least upper bound of $S.$
-
-> The Dedekind construction uses only the order structure of $\mathbb{Q}.$ Its definition of real numbers makes every non-empty bounded collection of cuts have a least upper bound.
-
-## Cauchy sequence construction
-
-A second construction of $\mathbb{R}$ starts from a limitation of $\mathbb{Q}.$ Not every [Cauchy sequence](../cauchy-sequence/) of rational numbers converges to a rational number. A sequence $(x_n)_{n \in \mathbb{N}}$ in $\mathbb{Q}$ is a Cauchy sequence if for every $\varepsilon \in \mathbb{Q}^+$ there exists $N \in \mathbb{N}$ such that:
+By $(5),$ addition and multiplication are binary operations on $\mathbb{R},$ since each assigns a unique real result to every pair $(a,b)$ of real numbers. Both operations are also commutative, since interchanging the two summands or the two factors leaves the result unchanged:
 
 $$
-m, n \geq N \implies |x_m - x_n| < \varepsilon
+\begin{align}
+a + b &= b + a \notag \\[6pt]
+a \cdot b &= b \cdot a \tag{6}
+\end{align}
 $$
 
-The definition does not refer to a [limit](../limits/), which may not exist in $\mathbb{Q}.$ Every Cauchy sequence is bounded. Choose $N$ such that $|x_n-x_N|<1$ for all $n\geq N.$ The tail is bounded by $|x_N|+1,$ and the finitely many preceding terms also have a common bound. One sequence of rational approximations to $\sqrt{2}$ is:
+This is why the real numbers are said to form a [commutative field](../fields/). Subtraction and division generally fail to satisfy the commutative laws in $(6),$ as the following examples show:
 
 $$
-\left(1,\frac{3}{2},\frac{7}{5},\frac{17}{12},\ldots\right)
+5-2\neq2-5 \qquad \text{and} \qquad \frac{2}{5}\neq\frac{5}{2}
 $$
 
-The sequence is Cauchy in $\mathbb{Q},$ yet its limit lies outside $\mathbb{Q}.$ Two Cauchy sequences $(x_n)$ and $(y_n)$ in $\mathbb{Q}$ are declared equivalent when, for every rational $\varepsilon>0,$ some $N\in\mathbb{N}$ satisfies $|x_n-y_n|<\varepsilon$ for all $n\geq N.$ In the notation introduced after limits have been defined, this condition is:
+Another property is associativity, which allows the terms in a sum or the factors in a product to be grouped in different ways without changing its value, so for any three numbers $a,b,c\in\mathbb{R},$ the following equalities hold:
 
 $$
-(x_n) \sim (y_n) \iff \lim_{n \to \infty} |x_n - y_n| = 0
+\begin{align}
+a + (b + c) &= (a + b) + c \notag \\[6pt]
+a \cdot (b \cdot c) &= (a \cdot b) \cdot c \tag{7}
+\end{align}
 $$
 
-The relation $\sim$ is reflexive and symmetric, and the triangle inequality proves transitivity. The real numbers are then defined as the set of equivalence classes:
+As with commutativity, subtraction and division are not associative operations on $\mathbb{R}.$ Indeed:
 
 $$
-\mathbb{R} := C/{\sim}
+\begin{align*}
+8-(4-2) &= 6 \neq 2 = (8-4)-2 \\[6pt]
+16\div(8\div2) &= 4 \neq 1 = (16\div8)\div2
+\end{align*}
 $$
 
-Here $C$ denotes the collection of all Cauchy sequences in $\mathbb{Q}.$ Addition and multiplication are defined termwise:
+Finally, the distributive property holds for all $a,b,c\in\mathbb{R}:$
 
 $$
-[(x_n)] + [(y_n)] = [(x_n + y_n)]
+\begin{align}
+a \cdot (b + c) &= a \cdot b + a \cdot c \notag \\[6pt]
+(b + c) \cdot a &= b \cdot a + c \cdot a \tag{8}
+\end{align}
 $$
 
-$$
-[(x_n)] \cdot [(y_n)] = [(x_n y_n)]
-$$
+- - -
 
-The sum of two Cauchy sequences is Cauchy by the triangle inequality. The product is Cauchy because both sequences are bounded. Choose $M>0$ such that $|x_n|,|y_n|\leq M.$ Then:
+The real numbers have an additive identity, namely $0,$ which satisfies the following identities for every $a\in\mathbb{R}:$
 
 $$
-|x_ny_n-x_my_m|\leq |x_n||y_n-y_m|+|y_m||x_n-x_m|
+\begin{align}
+a + 0 &= a \notag \\[6pt]
+0 + a &= a \tag{9}
+\end{align}
 $$
 
-Choosing both differences smaller than $\varepsilon/(2M)$ makes the product difference smaller than $\varepsilon.$ The same estimates prove independence from the representatives. If $(x_n)\sim(x_n')$ and $(y_n)\sim(y_n'),$ then:
+It follows from $(9)$ that if $a+n=a$ for every $a\in\mathbb{R},$ then $n=0.$ There is also a multiplicative identity, equal to $1,$ which satisfies the following equalities for every $a\in\mathbb{R}:$
 
 $$
-|(x_n+y_n)-(x_n'+y_n')|\leq|x_n-x_n'|+|y_n-y_n'|
+\begin{align}
+a \cdot 1 &= a \notag \\[6pt]
+1 \cdot a &= a \tag{10}
+\end{align}
 $$
 
-and, after choosing a common bound $M$ for the four sequences:
+By $(10),$ if $an=a$ for every $a\in\mathbb{R},$ then $n=1.$ Every real number $a$ also has an additive inverse $-a$ that satisfies the following identity:
 
 $$
-|x_ny_n-x_n'y_n'|\leq M|x_n-x_n'|+M|y_n-y_n'|
+a + (-a) = 0 \tag{11}
 $$
 
-Thus addition and multiplication are well-defined on equivalence classes.
-
-Reciprocation requires a further argument. The positive sequence $10^{-n}$ represents $0,$ while its termwise reciprocals form the unbounded sequence $10^n.$ A nonzero real can also have a representative containing zero, such as $(0,0.9,0.99,0.999,\ldots)$ for $1.$ Termwise inversion therefore requires a representative bounded away from zero.
-
-Every nonzero class has such a representative. If $(x_n)$ is not equivalent to the zero sequence, some $\varepsilon>0$ has the property that $|x_n|\geq\varepsilon$ occurs arbitrarily far along the sequence. Once the Cauchy condition gives $|x_n-x_m|<\varepsilon/2$ for sufficiently large $m,n,$ one such term forces $|x_n|\geq\varepsilon/2$ throughout the tail. Changing finitely many initial terms gives an equivalent sequence with $|x_n|\geq c>0$ for every $n.$ Its reciprocal sequence is Cauchy, since:
+By $(11),$ if $a+b=0,$ then $b=-a.$ Finally, every nonzero $a\in\mathbb{R}$ has a multiplicative inverse $1/a,$ defined for $a$ different from $0$, that satisfies the following equality:
 
 $$
-\left|\frac{1}{x_n}-\frac{1}{x_m}\right|=\frac{|x_m-x_n|}{|x_nx_m|}\leq\frac{|x_m-x_n|}{c^2}
+a \cdot \frac{1}{a} = 1
 $$
 
-The estimate also shows that equivalent representatives bounded away from zero have equivalent reciprocal sequences. Hence the formula $[(x_n)]^{-1}=[(x_n^{-1})]$ is well-defined for every nonzero class.
+Closure and associativity, together with the existence of an identity and additive inverses, make $(\mathbb{R},+)$ an [abelian group](../groups/), and the corresponding axioms for multiplication on the nonzero elements, together with distributivity, make $\mathbb{R}$ a field.
 
-Positivity also requires separation from zero. A class is positive if it has a representative $(x_n)$ for which $x_n\geq c>0$ for every $n,$ and it is negative if it has a representative satisfying $x_n\leq-c<0.$ A positive sequence such as $10^{-n}$ does not meet this condition and represents zero. The Cauchy property shows that every nonzero class is either positive or negative, but not both. The strict order is then defined by $x<y$ when $y-x$ is positive, and $x\leq y$ when $x<y$ or $x=y.$ These definitions are independent of representatives.
+## Order relation
 
-The rational numbers embed into $\mathbb{R}$ via $q\mapsto[(q,q,q,\ldots)],$ preserving addition, multiplication, reciprocals, and order.
-
-This construction is complete. Let $(X_m)$ be a Cauchy sequence of real numbers. For each positive integer $m,$ choose $q_m\in\mathbb{Q}$ such that $|X_m-q_m|<1/m.$ Such a rational exists because a representative of $X_m$ is a rational Cauchy sequence. Taking one of its terms after the tail differences are smaller than $1/(2m)$ gives a class distance at most $1/(2m),$ and hence less than $1/m.$ The sequence $(q_m)$ is Cauchy, since:
+As noted at the beginning, on the real line $a\lt b$ means that the point with coordinate $a$ lies to the left of the point with coordinate $b.$ We write $a\gt b$ if $b\lt a,$ and the symbols $a\leq b$ and $a\geq b$ also allow equality. Comparing a real number with zero distinguishes positive numbers from negative ones, and the absolute value $|a|$ gives the distance from $a$ to the origin. The order is total and compatible with addition and multiplication, so $\mathbb{R}$ is a totally ordered field. By trichotomy, exactly one of the following relations holds for any two real numbers $a$ and $b:$
 
 $$
-|q_m-q_n|\leq|q_m-X_m|+|X_m-X_n|+|X_n-q_n|
+a\lt b,\qquad a=b,\qquad a\gt b \tag{12}
 $$
 
-Let $X=[(q_m)].$ Given $\varepsilon>0,$ take $N$ such that $1/m<\varepsilon/2$ and $|q_n-q_m|<\varepsilon/2$ whenever $m,n\geq N.$ For each $m\geq N,$ the sequence $(q_n-q_m)_n$ represents $X-q_m$ and is eventually bounded in absolute value by $\varepsilon/2.$ Hence $|X-q_m|\leq\varepsilon/2,$ and the triangle inequality gives $|X-X_m|<\varepsilon.$ Thus $X_m\to X,$ so every Cauchy sequence of real numbers has a real limit.
-
-The real number $\sqrt{2},$ for instance, is the equivalence class of any Cauchy sequence of rationals converging to it, such as $(1, 1.4, 1.41, 1.414, \ldots).$ Two such sequences satisfy $(x_n) \sim (y_n)$ and therefore define the same real number. Completeness in this construction means that every Cauchy sequence of real numbers converges to a real number. The Dedekind and Cauchy constructions are [isomorphic](../homomorphisms-and-isomorphisms/) as complete ordered fields, and they describe exactly the same mathematical object.
-
-## Consequences of completeness
-
-The rational numbers are dense in $\mathbb{R}.$ For every $x,y\in\mathbb{R}$ with $x<y,$ some $q\in\mathbb{Q}$ satisfies $x<q<y.$ The Archimedean property gives a natural number $n$ such that $n(y-x)>1.$ Choosing the least integer $m>nx$ then gives $x<m/n<y.$
-
-If a real number $x$ satisfies $x\leq\varepsilon$ for every $\varepsilon>0,$ then $x\leq0,$ since a positive $x$ would exceed the choice $\varepsilon=x/2.$ Similarly, $|x|\leq\varepsilon$ for all $\varepsilon>0$ implies $x=0.$ This criterion proves an equality by bounding the absolute value of the difference below every positive threshold, and it recurs in the study of [limits](../limits/).
-
-Despite the density of $\mathbb{Q}$ in $\mathbb{R},$ the two sets differ in cardinality. The rational numbers are countable, whereas the real numbers are uncountable. These results and their relation to Cantor's diagonal argument are developed in [cardinality and countable sets](../cardinality-and-countable-sets/). Therefore the [irrational numbers](../irrational-numbers/) $\mathbb{R}\setminus\mathbb{Q}$ are uncountable.
-
-The following proof of uncountability uses the nested interval theorem. A sequence of closed intervals $I_n = [a_n, b_n]$ is nested when $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots.$ Completeness guarantees that their intersection contains at least one point:
+By transitivity, the following implication holds for any three real numbers $a,b,c:$
 
 $$
-\bigcap_{n=1}^{\infty} I_n \neq \emptyset
+a\lt b \quad \text{and} \quad b\lt c \quad \Longrightarrow \quad a\lt c \tag{13}
 $$
 
-The left endpoints form a non-decreasing sequence bounded above by every $b_m,$ so they have a supremum $x = \sup_n a_n$ satisfying $a_n \leq x \leq b_n$ for all $n.$ The point $x$ lies in every interval. When the lengths $b_n-a_n$ tend to zero, the intersection is the singleton $\{x\}.$ The rational numbers fail this property. A sequence of nested intervals with rational endpoints shrinking around $\sqrt{2}$ has empty intersection in $\mathbb{Q}.$
+Equation $(12)$ ensures that any two real numbers can be compared, and $(13)$ allows comparisons to be chained in the form $a\lt b\lt c.$ Addition also preserves order, since adding the same real number $c$ to both sides of an [inequality](../inequalities/) gives:
 
-Suppose, for contradiction, that the real numbers in $[0,1]$ could be arranged in a list $x_1,x_2,x_3,\ldots.$ Choose a closed interval $I_1\subseteq[0,1]$ that excludes $x_1,$ then a closed interval $I_2\subseteq I_1$ that excludes $x_2,$ and continue so that $x_n\notin I_n$ at every step. The nested interval theorem gives a point $x\in\bigcap_n I_n.$ This point differs from every $x_n$ and is absent from the list, a contradiction.
+$$
+a\lt b \quad \Longrightarrow \quad a+c\lt b+c \tag{14}
+$$
 
-A second proof, Cantor's diagonal argument, works directly with decimal expansions. Write each number of the supposed list as $x_k=0.d_{k1}d_{k2}d_{k3}\ldots,$ and define $y=0.e_1e_2e_3\ldots$ by choosing $e_k\neq d_{kk}.$ For example, take $e_k=1$ when $d_{kk}\neq1$ and $e_k=2$ when $d_{kk}=1.$ The number $y$ differs from $x_k$ in its $k$-th digit for every $k,$ so it is absent from the list. Choosing digits from $\{1,2\}$ avoids the two decimal expansions of numbers such as $0.4999\ldots=0.5000\ldots.$
+Equation $(14)$ also holds for non-strict inequalities and allows the same quantity to be subtracted from both sides by adding its opposite. Two inequalities in the same direction can also be added term by term:
 
-The Bolzano-Weierstrass theorem is another consequence of completeness. Every bounded sequence of real numbers has a convergent subsequence. Equivalently, every bounded infinite subset of $\mathbb{R}$ has an [accumulation point](../topology-of-the-real-line/).
+$$
+a\lt b \quad \text{and} \quad c\lt d \quad \Longrightarrow \quad a+c\lt b+d \tag{15}
+$$
 
-## Uniqueness of $\mathbb{R}$
+Equation $(15)$ follows from $(14),$ which gives $a+c\lt b+c\lt b+d,$ and from transitivity in $(13).$ When multiplying an inequality, its direction depends on the sign of the factor $c:$
 
-The real number system is the unique complete ordered field. Any two complete ordered fields are isomorphic as ordered fields, and the isomorphism between them is unique. Up to a structure-preserving bijection, $\mathbb{R}$ is the unique completion of $\mathbb{Q}.$
+$$
+\begin{align}
+a\lt b \ \text{and}\ c\gt 0 &\quad \Longrightarrow \quad ac\lt bc \notag \\[6pt]
+a\lt b \ \text{and}\ c\lt 0 &\quad \Longrightarrow \quad ac\gt bc \tag{16}
+\end{align}
+$$
 
-> The Euclidean spaces $\mathbb{R}^n$ are [vector spaces](../vector-spaces/) over $\mathbb{R}.$ Other fields can also be scalar fields, but the analytic properties discussed here depend on the order and completeness of $\mathbb{R}.$
+Equation $(16)$ also applies to non-strict inequalities and to division, since dividing by a nonzero number is equivalent to multiplying by its reciprocal, which has the same sign. If $0\lt a\lt b,$ the first line of $(16)$ with $c=1/(ab)$ gives $0\lt 1/b\lt 1/a.$
 
-## Intervals
+Applying $(16)$ to a comparison between one factor and zero shows that the product of two nonzero real numbers is positive when the factors have the same sign and negative when they have opposite signs, and the product is zero if at least one factor is zero. It follows that the square of a real number is always nonnegative and is zero only at zero. The factorization in $(17)$ also shows that squaring is [strictly increasing](../increasing-and-decreasing-functions/) on the nonnegative real numbers, because if $0\leq a\lt b,$ both factors $b-a$ and $b+a$ are positive:
 
-An [interval](../intervals/) is a subset $I\subseteq\mathbb{R}$ such that, whenever two points belong to $I,$ every point between them also belongs to $I.$ Intervals may be bounded, such as $(a,b)$ and $[a,b],$ or unbounded, such as $[a,+\infty)$ and $(-\infty,b).$ The real line is the interval $(-\infty,+\infty).$
-
-Intervals of different lengths can have the same cardinality. The map $x\mapsto2x$ is a bijection from $[0,1]$ to $[0,2],$ and the [tangent function](../tangent-function/) is a bijection from $(-\pi/2,\pi/2)$ to $\mathbb{R}.$ The intervals $[0,1]$ and $(0,1)$ also have the same cardinality. Length distinguishes these intervals, whereas cardinality does not.
+$$
+b^2-a^2 = (b-a)(b+a) \gt 0 \qquad (0\leq a\lt b) \tag{17}
+$$

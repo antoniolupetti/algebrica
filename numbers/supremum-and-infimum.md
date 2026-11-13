@@ -16,7 +16,7 @@ tags:
 
 ## Upper and lower bounds
 
-Before introducing the concepts of supremum and infimum, we need to define what are known as the upper and lower bounds of a set, namely the values that bound it from above and below. As we will see in detail below, the supremum is the least upper bound, while the infimum is the greatest lower bound. In this discussion, we will consider only subsets of the set of [real numbers](../real-numbers/) $\mathbb{R},$ which satisfies the [completeness axiom](../properties-of-real-numbers/), according to which every non-empty subset of $\mathbb{R}$ bounded above and below has, respectively, a supremum and an infimum in $\mathbb{R}.$ We therefore begin by considering a non-empty [set](../sets/) $A \subseteq \mathbb{R}.$ A real number $M$ is said to be an upper bound of $A$ if the following condition holds:
+Before introducing the concepts of supremum and infimum, we need to define what are known as the upper and lower bounds of a set, namely the values that bound it from above and below. As we will see in detail below, the supremum is the least upper bound, while the infimum is the greatest lower bound. In this discussion, we will consider only subsets of the set of [real numbers](../real-numbers/) $\mathbb{R},$ which satisfies the [completeness axiom](../real-numbers/), according to which every non-empty subset of $\mathbb{R}$ bounded above and below has, respectively, a supremum and an infimum in $\mathbb{R}.$ We therefore begin by considering a non-empty [set](../sets/) $A \subseteq \mathbb{R}.$ A real number $M$ is said to be an upper bound of $A$ if the following condition holds:
 
 $$
 a \leq M \quad \forall \ a \in A \tag{1}

@@ -68,7 +68,7 @@ We now turn to multiplication, again using two complex numbers in the form given
 
 $$(a + bi)(c + di) = (ac - bd) + (ad + bc)i \tag{3}$$
 
-To derive $(3),$ we use the [distributive law](../properties-of-real-numbers/) to multiply each term of the first factor by each term of the second. By commutativity, $(bi)(di) = bdi^2,$ which equals $-bd$ because $i^2 = -1.$ Carrying out the calculation gives $(3).$
+To derive $(3),$ we use the [distributive law](../real-numbers/) to multiply each term of the first factor by each term of the second. By commutativity, $(bi)(di) = bdi^2,$ which equals $-bd$ because $i^2 = -1.$ Carrying out the calculation gives $(3).$
 
 $$
 \begin{align}

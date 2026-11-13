@@ -77,7 +77,7 @@ $$ \tag{8}
 \pm m.\alpha_0 \ \alpha_1 \ \alpha_2 \ \alpha_3 \ldots
 $$
 
-In $(8),$ $m\in\mathbb{N}_0$ is the integer part of the [absolute value](../absolute-value/), $\alpha_0,\alpha_1,\alpha_2,\ldots$ are the decimal digits, and the sign applies to the entire decimal representation. The set $\mathbb{R}$ has several properties. The first is that it is [totally ordered](../properties-of-real-numbers/), meaning that for any two real numbers $x$ and $y,$ exactly one of the following relations holds:
+In $(8),$ $m\in\mathbb{N}_0$ is the integer part of the [absolute value](../absolute-value/), $\alpha_0,\alpha_1,\alpha_2,\ldots$ are the decimal digits, and the sign applies to the entire decimal representation. The set $\mathbb{R}$ has several properties. The first is that it is [totally ordered](../real-numbers/), meaning that for any two real numbers $x$ and $y,$ exactly one of the following relations holds:
 
 $$ \tag{9}
 \begin{align}
