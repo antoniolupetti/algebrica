@@ -18,18 +18,20 @@ tags:
 
 ## Definizione
 
-Un intervallo è un sottoinsieme della retta reale che, con due qualunque dei suoi punti, contiene anche tutti i punti compresi fra essi. Più precisamente, un sottoinsieme $I \subseteq \mathbb{R}$ è un intervallo se e solo se, per ogni coppia di punti $a, b \in I$ con $a < b,$ tutto l'insieme $\{x \in \mathbb{R} : a \leq x \leq b\}$ è contenuto in $I.$ Questa proprietà, detta convessità sulla retta reale, distingue gli intervalli da sottoinsiemi arbitrari di $\mathbb{R},$ quali gli insiemi finiti e le unioni di parti disgiunte separate da un vuoto.
-
-Gli intervalli ricorrono in analisi matematica come domini di funzioni, come regioni di integrazione nella teoria degli [integrali definiti](../definite-integrals/) e come insiemi su cui studiare la continuità e la derivabilità. Servono inoltre a descrivere sottoinsiemi più complessi della [retta reale](../real-numbers/).
-
-Gli intervalli si classificano in base all'inclusione o all'esclusione degli estremi e al fatto che siano limitati oppure si estendano indefinitamente in una o in entrambe le direzioni.
-
-## Intervalli limitati
-
-Un intervallo è limitato se è contenuto in una porzione finita della retta reale, ossia se esistono due numeri reali $a$ e $b$ con $a \leq b$ tali che l'intervallo sia contenuto in $[a,b].$ L'intervallo aperto di estremi $a$ e $b$ è l'insieme dei numeri reali strettamente compresi tra $a$ e $b.$ La definizione è la seguente.
+Un sottoinsieme $I \subseteq \mathbb{R}$ è un intervallo se e solo se per ogni coppia di numeri reali $a,b$ vale la seguente implicazione:
 
 $$
-(a, b) = \{x \in \mathbb{R} : a < x < b\}
+\begin{align}
+a,b \in I,\quad a \lt b &\implies \{x \in \mathbb{R} : a \leq x \leq b\} \subseteq I \tag{1}
+\end{align}
+$$
+
+La $(1)$ dice che, se $a$ e $b$ appartengono a $I,$ anche ogni punto compreso tra $a$ e $b$ appartiene a $I.$ Questa proprietà si chiama convessità. Per esempio, l'insieme $\{0,2\}$ non è un intervallo perché contiene $0$ e $2,$ ma non il punto $1$ compreso tra loro. Un intervallo $I$ è limitato se esistono due numeri reali $m \leq M$ tali che ogni punto di $I$ sia maggiore o uguale a $m$ e minore o uguale a $M.$ Dati due numeri reali $a \lt b,$ l'intervallo aperto di estremi $a$ e $b$ si definisce come:
+
+$$
+\begin{align}
+(a,b) &= \{x \in \mathbb{R} : a \lt x \lt b\} \tag{2}
+\end{align}
 $$
 
 [shortcode="intervals"]
@@ -38,10 +40,12 @@ $$
 |     | sign+l-in-o | sign+r-in-o |     |
 [/shortcode]
 
-L'intervallo chiuso di estremi $a$ e $b$ è l'insieme dei numeri reali compresi tra $a$ e $b,$ estremi inclusi. La definizione è la seguente.
+Dati due numeri reali $a \leq b,$ l'intervallo chiuso di estremi $a$ e $b$ è definito dalla seguente identità:
 
 $$
-[a, b] = \{x \in \mathbb{R} : a \leq x \leq b\}
+\begin{align}
+[a,b] &= \{x \in \mathbb{R} : a \leq x \leq b\} \tag{3}
+\end{align}
 $$
 
 [shortcode="intervals"]
@@ -50,11 +54,14 @@ $$
 |     | sign+l-in-c | sign+r-in-c |     |
 [/shortcode]
 
-Ciascuno dei due intervalli semiaperti di estremi $a$ e $b$ include un estremo ed esclude l'altro. Le definizioni sono le seguenti.
+Dati due numeri reali $a \lt b,$ entrambi gli intervalli semiaperti di estremi $a$ e $b$ contengono tutti i punti strettamente compresi tra $a$ e $b$ e uno solo dei due estremi. Il primo si definisce così:
 
 $$
-[a, b) = \{x \in \mathbb{R} : a \leq x < b\}
+\begin{align}
+[a,b) &= \{x \in \mathbb{R} : a \leq x \lt b\} \tag{4}
+\end{align}
 $$
+
 
 [shortcode="intervals"]
 |     | $a$ | $b$ |     |
@@ -62,8 +69,12 @@ $$
 |     | sign+l-in-c | sign+r-in-o |     |
 [/shortcode]
 
+Il secondo intervallo semiaperto si definisce nel seguente modo:
+
 $$
-(a, b] = \{x \in \mathbb{R} : a < x \leq b\}
+\begin{align}
+(a,b] &= \{x \in \mathbb{R} : a \lt x \leq b\} \tag{5}
+\end{align}
 $$
 
 [shortcode="intervals"]
@@ -72,14 +83,10 @@ $$
 |     | sign+l-in-o | sign+r-in-c |     |
 [/shortcode]
 
-L'intervallo degenere $[a,a]=\{a\}$ contiene un solo punto. Soddisfa la definizione di intervallo perché non contiene due punti distinti tra i quali occorra includerne altri.
-
-## Intervalli illimitati
-
-Un intervallo illimitato si estende indefinitamente in almeno una direzione. I simboli $+\infty$ e $-\infty$ indicano per convenzione che l'intervallo non ha un estremo finito nella direzione corrispondente. Poiché tali simboli non rappresentano numeri reali, sono sempre accompagnati da una parentesi tonda. Si ottengono così i quattro tipi di intervalli illimitati in una sola direzione.
+Esiste poi l'intervallo degenere $[a,a]=\{a\}$ che contiene un solo punto, e soddisfa la definizione di intervallo perché non contiene due punti distinti tra i quali occorra includerne altri. Passiamo ora agli intervalli illimitati che si estendono indefinitamente in almeno una direzione. Tali intervalli sono dati dalle seguenti identità:
 
 $$
-[a, +\infty) = \{x \in \mathbb{R} : x \geq a\}
+[a, +\infty) = \{x \in \mathbb{R} : x \geq a\} \tag{6}
 $$
 
 [shortcode="intervals"]
@@ -89,7 +96,7 @@ $$
 [/shortcode]
 
 $$
-(a, +\infty) = \{x \in \mathbb{R} : x > a\}
+(a, +\infty) = \{x \in \mathbb{R} : x > a\} \tag{7}
 $$
 
 [shortcode="intervals"]
@@ -99,7 +106,7 @@ $$
 [/shortcode]
 
 $$
-(-\infty, b] = \{x \in \mathbb{R} : x \leq b\}
+(-\infty, b] = \{x \in \mathbb{R} : x \leq b\} \tag{8}
 $$
 
 [shortcode="intervals"]
@@ -109,7 +116,7 @@ $$
 [/shortcode]
 
 $$
-(-\infty, b) = \{x \in \mathbb{R} : x < b\}
+(-\infty, b) = \{x \in \mathbb{R} : x < b\} \tag{9}
 $$
 
 [shortcode="intervals"]
@@ -118,11 +125,17 @@ $$
 |     | sign+r-o |     |
 [/shortcode]
 
-Anche l'intera retta reale è un intervallo. Si scrive $(-\infty,+\infty)=\mathbb{R}$ e comprende tutti i numeri reali.
+Nello specifico, anche la retta reale è un intervallo che si può scrivere come $(-\infty,+\infty)=\mathbb{R}$ e comprende tutti i numeri reali.
 
 ## Operazioni sugli intervalli
 
-Da due intervalli si possono ottenere nuovi insiemi mediante le operazioni di intersezione e unione definite nella voce sugli [insiemi](../sets/). L'intersezione $I \cap J$ è l'insieme dei punti che appartengono a entrambi gli intervalli. L'intersezione di due intervalli è sempre un intervallo, eventualmente vuoto o degenere. Se $I=(1,5)$ e $J=(3,7),$ i punti comuni sono esattamente quelli di $(3,5).$
+Definiamo ora alcune operazioni sugli intervalli, partendo dall'[intersezione](../sets/) $I \cap J$ che rappresenta l'insieme dei punti che appartengono sia a $I$ sia a $J.$ Se due punti appartengono a entrambi gli intervalli, per la $(1)$ anche tutti i punti compresi tra loro appartengono a entrambi. L'intersezione quindi soddisfa la stessa condizione ed è un intervallo che può essere anche vuoto o degenere. Per esempio, un punto di $(1,5)$ appartiene anche a $(3,7)$ se è maggiore di $3$ e possiamo scrivere come risultato della loro intersezione la seguente uguaglianza:
+
+$$
+\begin{align}
+(1,5) \cap (3,7) &= (3,5) \tag{10}
+\end{align}
+$$
 
 [shortcode="intervals"]
 |     | $1$ | $3$ | $5$ | $7$ |     |
@@ -132,11 +145,11 @@ Da due intervalli si possono ottenere nuovi insiemi mediante le operazioni di in
 |     |             | sign+l-in-o-h | sign+r-in-o-h |           |     |
 [/shortcode]
 
-La terza riga mostra l'intersezione $(3,5),$ la parte comune ai due intervalli.
+La terza riga del diagramma mostra l'intervallo ottenuto nella $(10).$
 
 - - -
 
-L'unione $I \cup J$ è l'insieme dei punti che appartengono ad almeno uno dei due intervalli. L'unione di due intervalli non vuoti è un intervallo se i due intervalli si intersecano oppure se si toccano in un estremo che appartiene ad almeno uno dei due. Nell'esempio precedente, $I=(1,5)$ e $J=(3,7)$ si intersecano, perciò la loro unione è $(1,7).$
+L'unione $I \cup J$ è invece data dall'insieme dei punti che appartengono ad almeno uno dei due intervalli. Quindi, l'unione di due intervalli non vuoti è un intervallo se i due intervalli si intersecano oppure se si toccano in un estremo che appartiene ad almeno uno dei due. Nell'esempio precedente l'unione dà l'intervallo $(1,7).$
 
 [shortcode="intervals"]
 |     | $1$ | $3$ | $5$ | $7$ |     |
@@ -148,15 +161,15 @@ L'unione $I \cup J$ è l'insieme dei punti che appartengono ad almeno uno dei du
 
 La terza riga mostra l'unione $(1,7).$ L'unione $(1,3)\cup(5,7)$ non è invece un intervallo, perché i punti fra $3$ e $5$ non appartengono a nessuno dei due insiemi.
 
-## Intervalli e intorni
+## Intorni
 
-A ogni punto $x_0 \in \mathbb{R}$ e a ogni numero reale $\varepsilon>0$ si associa il seguente intervallo aperto.
+Dalla definizione di intervallo possiamo ricavare quella di intorno e, in particolare, di un $\varepsilon$-intorno di un punto $x_0 \in \mathbb{R}$ è l'intervallo aperto con centro $x_0$ e raggio $\varepsilon \gt 0.$ Questo intorno contiene tutti i punti la cui distanza da $x_0$ è strettamente minore di $\varepsilon$ e questa distanza, come sappiamo, corrisponde al [valore assoluto](../absolute-value/) di $x-x_0.$ Possiamo scrivere l'intorno in questo modo:
 
 $$
-(x_0 - \varepsilon, \ x_0 + \varepsilon)
+\begin{align}
+(x_0 - \varepsilon, \ x_0 + \varepsilon) &= \{x \in \mathbb{R} : |x-x_0| \lt \varepsilon\} \tag{11}
+\end{align}
 $$
-
-Questo intervallo è detto $\varepsilon$-intorno di $x_0,$ o semplicemente intorno di $x_0.$ Comprende tutti i punti la cui distanza da $x_0$ è strettamente minore di $\varepsilon,$ ossia tutti gli $x$ tali che $|x-x_0|<\varepsilon,$ dove $|\cdot|$ indica il [valore assoluto](../absolute-value/).
 
 [shortcode="intervals"]
 |     | $x_0 - \varepsilon$ | $x_0$ | $x_0 + \varepsilon$ |     |
@@ -164,35 +177,28 @@ Questo intervallo è detto $\varepsilon$-intorno di $x_0,$ o semplicemente intor
 |     | sign+l-in-o-h | sign+s-h | sign+r-in-o-h |     |
 [/shortcode]
 
-Gli intorni permettono di formulare le definizioni di [limite](../limits/), continuità e derivabilità. Il loro legame con i punti interni, gli insiemi aperti e chiusi e la compattezza è sviluppato nella voce sulla [topologia della retta reale](../topology-of-the-real-line/). Una funzione $f$ è continua in $x_0$ se, per ogni intorno di $f(x_0),$ esiste un intorno di $x_0$ la cui immagine mediante $f$ è contenuta nel primo. Questa formulazione equivale alla definizione classica con $\varepsilon$ e $\delta$ ed esplicita il ruolo degli intervalli.
+Gli intorni sono utili perché si usano nelle definizioni di [limite](../limits/) e della continuità. Ad esempio, una funzione $f\colon D\to\mathbb{R},$ con $D\subseteq\mathbb{R},$ si dice continua in $x_0\in D$ se, per ogni intorno $\varepsilon\gt 0,$ esiste un $\delta\gt 0$ tale che per ogni $x\in D$ valga la seguente implicazione:
 
-Un punto $x_0$ è interno a un insieme $S\subseteq\mathbb{R}$ se un suo intorno è interamente contenuto in $S.$ Ogni punto di un intervallo aperto è interno all'intervallo. Gli estremi di un intervallo chiuso non sono punti interni, perché ogni loro intorno contiene punti esterni all'intervallo.
+$$
+\begin{align}
+|x-x_0| \lt \delta &\implies |f(x)-f(x_0)| \lt \varepsilon \tag{12}
+\end{align}
+$$
+
+Nella $(12)$ scegliamo il raggio $\delta$ in modo che le immagini dei punti del dominio vicini a $x_0$ rimangano nell'intorno di $f(x_0).$ Per stabilire se $x_0$ è interno a un insieme $S\subseteq\mathbb{R},$ cerchiamo invece un raggio $\varepsilon\gt 0$ per cui tutti i punti dell'intorno di $x_0$ nella $(11)$ appartengano a $S.$
+
+Ogni punto di $(a,b)$ è interno, perché si può scegliere un raggio minore della sua distanza da entrambi gli estremi. Ogni intorno di $a$ contiene punti minori di $a$ e ogni intorno di $b$ contiene punti maggiori di $b.$ Per questo gli estremi di $[a,b]$ non sono punti interni. La relazione tra intorni, punti interni e insiemi aperti e chiusi è sviluppata nella voce sulla [topologia della retta reale](../topology-of-the-real-line/).
 
 ## Lunghezza di un intervallo
 
-La lunghezza di un intervallo limitato di estremi $a$ e $b$ è $b-a,$ indipendentemente dall'inclusione degli estremi. I quattro intervalli $(a,b),$ $[a,b),$ $(a,b]$ e $[a,b]$ hanno quindi la stessa lunghezza.
+La lunghezza di un intervallo limitato non vuoto $I$ è la distanza tra il suo estremo inferiore $a$ e il suo estremo superiore $b$ e possiamo indicarla come: 
 
 $$
-\ell(I) = b - a
+\begin{align}
+\ell(I) &= b-a \tag{13}
+\end{align}
 $$
 
-Un singolo punto ha lunghezza nulla, perciò aggiungere o togliere un numero finito di punti da un intervallo non ne altera la misura. L'intervallo degenere $[a,a]$ ha lunghezza $\ell([a,a])=0.$ Gli intervalli illimitati hanno lunghezza infinita. Per ogni $M>0$ contengono infatti due punti a distanza maggiore di $M,$ quindi nessun valore finito può rappresentarne la lunghezza.
+Poiché nella $(13)$ compaiono solo i valori degli estremi, per $a\lt b$ gli intervalli $(a,b),$ $[a,b),$ $(a,b]$ e $[a,b]$ hanno tutti la stessa lunghezza. Se i due estremi coincidono, la $(13)$ dà $\ell([a,a])=0,$ quindi l'intervallo degenere visto poco prima. Un intervallo illimitato ha lunghezza infinita, perché per ogni $M\gt 0$ contiene due punti a distanza maggiore di $M$ e dunque un intervallo chiuso di lunghezza maggiore di $M.$
 
-Lunghezza e cardinalità esprimono due nozioni diverse di grandezza. Ogni intervallo non degenere ha la stessa cardinalità di $\mathbb{R},$ indipendentemente dalla sua lunghezza e dall'inclusione degli estremi. Il risultato è dimostrato nella voce su [cardinalità e insiemi numerabili](../cardinality-and-countable-sets/).
-
-La nozione di lunghezza è alla base della teoria della misura sulla retta reale, che estende questa nozione di grandezza a sottoinsiemi di $\mathbb{R}.$ La misura di $[a,b]$ coincide con la sua lunghezza $b-a.$ L'estensione della misura a insiemi più complessi, mediante le nozioni di misura esterna e misurabilità, è alla base dell'[integrale di Lebesgue](../riemann-integrability-criteria/).
-
-## Caratterizzazione degli intervalli
-
-Un sottoinsieme della retta reale è connesso se non si può esprimere come unione di due insiemi disgiunti, non vuoti e aperti nella sua topologia relativa. Un sottoinsieme $S\subseteq\mathbb{R}$ è un intervallo se e solo se è connesso.
-
-Il risultato precisa l'idea che un intervallo sia una porzione di retta priva di lacune. Un insieme come $(1,2)\cup(3,4)$ non è connesso perché si può separare in due parti aperte e disgiunte.
-
-[shortcode="intervals"]
-|     | $1$ | $2$ | $3$ | $4$ |     |
-|:----|-----|-----|-----|-----|-----|
-|     | sign+l-in-o-h | sign+r-in-o-h |  |  |     |
-|     |  |  | sign+l-in-o-h | sign+r-in-o-h |     |
-[/shortcode]
-
-> I due intervalli occupano porzioni separate della retta reale. La loro unione non è connessa e quindi non è un intervallo.
+Intervalli di lunghezze diverse possono avere la stessa cardinalità. Infatti ogni intervallo che contiene almeno due punti ha la stessa cardinalità di $\mathbb{R},$ sia che abbia lunghezza finita sia che abbia lunghezza infinita. La misura di Lebesgue estende la lunghezza degli intervalli a una classe più ampia di sottoinsiemi della retta reale e assegna a ogni intervallo limitato non vuoto la lunghezza data dalla $(13).$ In generale, ogni insieme finito ha [misura nulla](../riemann-integrability-criteria/), perciò aggiungere o togliere un numero finito di punti lascia invariata la misura anche quando l'insieme risultante non è più un intervallo (questa misura è alla base dell'integrale di Lebesgue).
