@@ -74,6 +74,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Advanced Calculus](https://people.math.harvard.edu/~shlomo/docs/Advanced_Calculus.pdf), Lynn H. Loomis, Shlomo Sternberg
 + [Advanced Calculus](https://sites.math.washington.edu/~folland/AdvCalc24.pdf), Gerald B. Folland
 + [Analysis of Functions of a Single Variable](https://spot.colorado.edu/~baggett/book.pdf), Lawrence W. Baggett
++ [APEX Calculus](https://www.apexcalculus.com/downloads), Gregory Hartman
 + [Basic Real Analysis](https://www.math.stonybrook.edu/~aknapp/download/b2-realanal-inside.pdf), Anthony W. Knapp
 + [Calculus](https://ia800204.us.archive.org/28/items/CalculusSpivak/Calculus%20-%20Spivak_text.pdf), Michael Spivak
 + [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf), Gilbert Strang
@@ -105,7 +106,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 
 + [Differential Equations I](https://www.math.toronto.edu/selick/B44.pdf), Paul Selick
 + [Elementary Differential Equations with Boundary Value Problems](https://digitalcommons.trinity.edu/mono/9/), William F. Trench
-+ [Notes on Diffy Qs](https://www.jirka.org/diffyqs/diffyqs.pdf), Jiří Lebl
++ [Notes on Diffy Qs](https://jirilebl.github.io/diffyqs/diffyqs.pdf), Jiří Lebl
 
 ## Probability and statistics
 
