@@ -192,7 +192,7 @@ Tutte le proprietà descritte sopra sono valide solo quando i limiti coinvolti e
 
 $$\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad \infty - \infty$$
 
-Queste espressioni sono note come forme indeterminate e per risolverle occorrono tecniche specifiche, come la scomposizione in fattori, il confronto asintotico, la regola di de l'Hôpital, l'uso degli sviluppi di Taylor e il ricorso alla notazione di o piccolo. Uno degli esempi più noti è il limite della seguente funzione:
+Queste espressioni sono note come forme indeterminate e per risolverle occorrono tecniche specifiche, come la scomposizione in fattori, il [confronto asintotico](../hierarchy-of-growth-rates/), la regola di de l'Hôpital, l'uso degli sviluppi di Taylor e il ricorso alla notazione di o piccolo. Uno degli esempi più noti è il limite della seguente funzione:
 
 $$\lim_{x \to 0} \frac{\sin x}{x} \tag{13}$$
 

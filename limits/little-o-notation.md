@@ -83,7 +83,7 @@ For a final example, we evaluate the following limit:
 
 $$\lim_{x \to \infty} \frac{\log x}{x} = 0$$
 
-Since this ratio has limit zero, $(1)$ implies that, as $x \to \infty,$ $\log x = o(x).$ This result is useful in practice, particularly in algorithm design, because [logarithmic growth](../logarithmic-function/) is negligible compared to linear growth.
+Since this ratio has limit zero, $(1)$ implies that, as $x \to \infty,$ $\log x = o(x).$ This result is useful in practice, particularly in algorithm design, because [logarithmic growth](../logarithmic-function/) is negligible compared to [linear growth](../hierarchy-of-growth-rates/).
 
 ## The meaning of $o(1)$
 

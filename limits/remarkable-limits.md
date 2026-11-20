@@ -195,7 +195,7 @@ This result may be derived from the [binomial expansion](../binomial-theorem/) w
 
 ## Comparison of growth rates
 
-When evaluating quotients of functions that diverge to infinity, the indeterminate form $\infty/\infty$ is resolved by knowing which factor grows faster. The principal classes of elementary functions arrange themselves into a strict hierarchy of growth at infinity. For positive constants $\alpha > 0$ and $a > 1$, the chain is:
+When evaluating quotients of functions that diverge to infinity, the indeterminate form $\infty/\infty$ is resolved by knowing which factor grows faster. The principal classes of elementary functions arrange themselves into a [strict hierarchy of growth at infinity](../hierarchy-of-growth-rates/). For positive constants $\alpha > 0$ and $a > 1$, the chain is:
 
 $$\ln x \ \ll \ x^{\alpha} \ \ll \ a^{x} \ \ll \ x! \ \ll \ x^{x} \qquad \text{as } x \to +\infty$$
 

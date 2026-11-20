@@ -11,7 +11,7 @@ tags:
 ---
 ## Definition
 
-The logarithm of a number is the exponent to which a given base must be raised to obtain that number. For example, $\log_2 8 = 3$ because $2^3 = 8.$ Formally, if $a$ and $b$ are positive [real numbers](../properties-of-real-numbers/), the logarithm of $b$ to base $a$ is the real number $c$ such that $a^c = b.$ We can express this relationship as follows:
+The logarithm of a number is the exponent to which a given base must be raised to obtain that number. For example, $\log_2 8 = 3$ because $2^3 = 8.$ Formally, if $a$ and $b$ are positive [real numbers](../real-numbers/), the logarithm of $b$ to base $a$ is the real number $c$ such that $a^c = b.$ We can express this relationship as follows:
 
 $$\log_a b = c \iff a^c = b \tag{1}$$
 

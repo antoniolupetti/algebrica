@@ -12,110 +12,118 @@ tags:
 
 ## What are indeterminate forms
 
-When working with limits, expressions of the following type occur repeatedly:
+When calculating [limits](../limits/), we often encounter expressions whose limit cannot be determined directly, known as indeterminate forms; the complete list of these forms is given below:
 
-$$\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad 0 \cdot \infty \qquad \infty - \infty$$
+$$
+\begin{align}
+&\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad 0 \cdot \infty \qquad \infty - \infty \notag \\[6pt]
+&1^{\infty} \qquad 0^{0} \qquad \infty^{0} \tag{1}
+\end{align}
+$$
 
-$$1^{\infty} \qquad 0^{0} \qquad \infty^{0}$$
+In very simple terms, a form such as those in $(1)$ does not denote a specific number but indicates that direct substitution is not useful for calculating the limit in question. Suppose, for example, that we have two [functions](../functions/) $f(x)$ and $g(x)$ that both tend to zero as $x$ approaches $a$:
 
-These are called indeterminate forms, because the value of the limit cannot be determined from the symbol alone. Different [functions](../functions/) can produce the same symbolic form yet lead to completely different values. The following sections review what these forms mean, why they are called indeterminate, and how to handle them in practice.
+$$
+\begin{align}
+\lim_{x \to a} f(x) &= 0 \notag \\[6pt]
+\lim_{x \to a} g(x) &= 0 \tag{2}
+\end{align}
+$$
 
-In simple terms, an indeterminate form does not stand for a specific number. It signals that direct substitution is insufficient to find the limit. Suppose, for example, that two functions $f(x)$ and $g(x)$ both tend to zero as $x$ approaches some value $a$:
+If we tried to calculate the limit of their ratio by direct substitution, we would obtain an indeterminate result that tells us nothing about the behaviour of the limit:
 
-$$\lim_{x \to a} f(x) = 0 \qquad \lim_{x \to a} g(x) = 0$$
+$$\lim_{x \to a} \frac{f(x)}{g(x)} \to \frac{0}{0} \tag{3}$$
 
-If we try to find the limit of their ratio, direct substitution gives:
-
-$$\lim_{x \to a} \frac{f(x)}{g(x)} \to \frac{0}{0}$$
-
-This notation alone does not tell us how the ratio will behave. Depending on how $f(x)$ and $g(x)$ approach zero, the limit could be any finite number, zero, infinity, or it might not exist at all. The indeterminate form does not resolve the problem; it signals that further analysis is required.
-
-Three considerations should be kept in mind before analysing each form:
-
-+ An indeterminate form does not represent a specific number.
-+ It does not stand for an equality.
-+ It serves as a label describing the limiting behaviour of the expressions involved.
+In $(3),$ the limit could be any finite number, zero, infinity, or might not exist at all, so when we encounter these forms we need to take a different approach, using the techniques listed below. Before analysing each form, remember that an indeterminate form such as those in $(1)$ neither represents a number nor expresses an equality, but is simply an indication that the behaviour of the limit needs to be investigated in another way.
 
 ## The form $\frac{0}{0}$
 
-This is the indeterminate form encountered most frequently. It typically appears when both numerator and denominator vanish at the same point. Often the expression can be simplified by algebraic manipulation before taking the limit. As an example, consider:
+This is the indeterminate form most frequently encountered in exercises and typically appears when the numerator and denominator vanish at the same point. Sometimes it can be resolved by simplifying the expression through a few algebraic steps before calculating the limit. Consider, for example, the following limit:
 
-$$\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$$
+$$\lim_{x \to 2} \frac{x^2 - 4}{x - 2} \tag{4}$$
 
-Direct substitution gives $\dfrac{0}{0}$. Factoring the numerator:
+In $(4),$ direct substitution of $x=2$ gives precisely $0/0,$ so we cannot draw any conclusion about the behaviour of the limit. We can, however, overcome this problem by factoring the numerator as a difference of two squares:
 
-$$x^2 - 4 = (x - 2)(x + 2)$$
+$$x^2 - 4 = (x - 2)(x + 2) \tag{5}$$
 
-so that, for $x \neq 2$:
+Substituting $(5)$ into $(4)$ and requiring $x \neq 2,$ we obtain:
 
-$$\frac{x^2 - 4}{x - 2} = x + 2$$
+$$
+\begin{align}
+&\lim_{x \to 2} \frac{(x - 2)(x + 2)}{x - 2} \notag \\[6pt]
+& \lim_{x \to 2} (x + 2) = 2 + 2 = 4 \tag{6}
+\end{align}
+$$
 
-We therefore obtain:
-
-$$\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4$$
-
-> Once the simplification is carried out, the underlying structure of the expression becomes visible and the indeterminate form disappears. In more advanced problems, [L'Hôpital's rule](../hopital-rule/) provides a systematic way to resolve this type of limit, provided that its hypotheses are satisfied. A complementary approach uses [Taylor expansions](../taylor-series/) with [little-o notation](../little-o-notation/) to isolate the leading term of numerator and denominator.
+In more advanced problems, [L'Hôpital's rule](../hopital-rule/) provides a systematic method for evaluating this type of limit, while other cases require [Taylor expansions](../taylor-series/) or [little-o notation](../little-o-notation/) to isolate the leading term of the numerator and denominator. These techniques are developed in detail in their respective entries.
 
 ## The form $\dfrac{\infty}{\infty}$
 
-This form arises when both numerator and denominator diverge. Consider, for example:
+We now examine how to handle this form, which arises when the numerator and denominator of a ratio diverge. Consider, for example, the following limit:
 
-$$\lim_{x \to \infty} \frac{3 x^2 + 1}{2 x^2 - 5}$$
+$$\lim_{x \to \infty} \frac{3 x^2 + 1}{2 x^2 - 5} \tag{7}$$
 
-Direct substitution gives $\dfrac{\infty}{\infty}$. To resolve the indeterminacy, we factor out the highest power of $x$ in both numerator and denominator:
+Here too, direct substitution leads to the indeterminate form $\infty/\infty,$ and, as in the previous example, we cannot say anything about the value of the limit. We can, however, try to evaluate $(7)$ through algebraic transformations, for example by factoring out the highest power of $x$ from the numerator and denominator, obtaining:
 
 $$
 \begin{align}
 \frac{3 x^2 + 1}{2 x^2 - 5}
-&= \frac{x^2 (3 + 1/x^2)}{x^2 (2 - 5/x^2)} \\[6pt]
-&= \frac{3 + 1/x^2}{2 - 5/x^2}
+&= \frac{x^2 (3 + 1/x^2)}{x^2 (2 - 5/x^2)} \notag \\[6pt]
+&= \frac{3 + 1/x^2}{2 - 5/x^2} \tag{8}
 \end{align}
 $$
 
-As $x \to \infty$, the terms $1/x^2$ and $5/x^2$ vanish, so the limit becomes:
+As $x \to \infty,$ the terms $1/x^2$ and $5/x^2$ tend to zero, so the limit becomes:
 
 $$\lim_{x \to \infty} \frac{3 x^2 + 1}{2 x^2 - 5} = \frac{3}{2}$$
 
-> Symbolic appearance alone is not enough. The way the dominant terms behave for large $x$ determines the answer, and the procedure of factoring out the leading power formalises this idea. The same conclusion can be reached by applying [L'Hôpital's rule](../hopital-rule/) twice, since the form $\dfrac{\infty}{\infty}$ is also covered by the theorem.
+In some circumstances, the same result can be obtained more quickly by applying L'Hôpital's rule repeatedly, but remember that once the method has been mastered, the procedure for evaluating the limit becomes fairly mechanical and reduces to a few straightforward steps.
 
 ## The form $0 \cdot \infty$
 
-This form arises when one factor approaches zero while the other increases without bound. For example:
+This form arises when the limit involves a product of two factors, one of which tends to zero while the other grows without bound. For example, consider the following limit:
 
-$$\lim_{x \to 0^+} x \ln x$$
+$$\lim_{x \to +\infty} x\left(\sqrt{x^2 + 1} - x\right) \tag{9}$$
 
-As $x$ approaches zero from the right, $\ln x$ becomes increasingly negative, so the product takes the form $0 \cdot (-\infty)$. To resolve the indeterminacy, we rewrite the expression as a ratio:
+In $(9),$ the factor $x$ tends to $+\infty,$ while $\sqrt{x^2 + 1} - x$ tends to zero, because rationalising this difference gives $1/(\sqrt{x^2 + 1} + x).$ The product therefore has the form $0 \cdot \infty.$ Here too, we can use a simple algebraic trick, writing $x = 1/(1/x)$ and expressing $(9)$ as a quotient:
 
-$$x \ln x = \frac{\ln x}{1/x}$$
+$$x\left(\sqrt{x^2 + 1} - x\right) = \frac{\sqrt{x^2 + 1} - x}{1/x} \tag{10}$$
 
-Now, as $x \to 0^+$, we have:
+In $(10),$ the numerator and denominator both tend to zero, so we obtain the form $0/0$ encountered earlier. In this case, we can rationalise the numerator and factor out $x$ from the denominator, bearing in mind that $x \gt 0,$ to obtain:
 
-$$\ln x \to -\infty \qquad \frac{1}{x} \to +\infty$$
+$$
+\begin{align}
+\frac{\sqrt{x^2 + 1} - x}{1/x}
+&= \frac{(x^2 + 1) - x^2}{(1/x)\left(\sqrt{x^2 + 1} + x\right)} \notag \\[6pt]
+&= \frac{1}{(1/x)x\left(\sqrt{1 + 1/x^2} + 1\right)} \notag \\[6pt]
+&= \frac{1}{\sqrt{1 + 1/x^2} + 1} \tag{11}
+\end{align}
+$$
 
-The expression takes the form $\dfrac{-\infty}{+\infty}$, which can be resolved by asymptotic comparison between the [logarithm](../logarithms/) and a power, or by [L'Hôpital's rule](../hopital-rule/). The result is:
+In $(11),$ the term $1/x^2$ tends to zero and the denominator tends to $2,$ allowing us finally to calculate the limit as follows:
 
-$$\lim_{x \to 0^+} x \ln x = 0$$
+$$\lim_{x \to +\infty} \frac{1}{\sqrt{1 + 1/x^2} + 1} = \frac{1}{2} \tag{12}$$
 
-> The key step is to transform the product into a quotient, which reduces the problem to one of the more familiar forms $0/0$ or $\infty/\infty$.
+Cases such as this are resolved simply by transforming the product into a quotient and, with luck, calculating the limit after just one step. If, as in $(10),$ the manipulation produces another indeterminate form, we can continue rewriting the expression using the methods appropriate to the resulting case in order to resolve the indeterminacy.
 
 ## The form $\infty - \infty$
 
-This form can conceal the fact that two divergent quantities partially cancel each other out. Consider, for instance:
+This form arises when the limit can be expressed as the difference of two divergent quantities. For example, let us try to evaluate the following limit:
 
-$$\lim_{x \to \infty} \left( \sqrt{x^2 + x} - x \right)$$
+$$\lim_{x \to \infty} \left( \sqrt{x^2 + x} - x \right) \tag{13}$$
 
-Both terms grow without bound, which gives the form $\infty - \infty$. To resolve the indeterminacy, we rationalise the expression by multiplying and dividing by the conjugate:
+Direct substitution gives the form $\infty - \infty,$ which can be resolved by rationalising the numerator, that is, multiplying and dividing by the conjugate of the expression inside the limit (obtained by changing the sign between the terms). This eliminates the square root from the numerator and gives:
 
 $$
 \begin{align}
 \sqrt{x^2 + x} - x
-&= \frac{\left( \sqrt{x^2 + x} - x \right) \left( \sqrt{x^2 + x} + x \right)}{\sqrt{x^2 + x} + x} \\[6pt]
-&= \frac{x^2 + x - x^2}{\sqrt{x^2 + x} + x} \\[6pt]
-&= \frac{x}{\sqrt{x^2 + x} + x}
+&= \frac{\left( \sqrt{x^2 + x} - x \right) \left( \sqrt{x^2 + x} + x \right)}{\sqrt{x^2 + x} + x} \notag \\[6pt]
+&= \frac{x^2 + x - x^2}{\sqrt{x^2 + x} + x} \notag \\[6pt]
+&= \frac{x}{\sqrt{x^2 + x} + x} \tag{14}
 \end{align}
 $$
 
-Next, we factor $x$ from the denominator:
+We can now factor out $x$ from the denominator and, with a few algebraic steps, obtain the following expression:
 
 $$
 \begin{align}
@@ -125,19 +133,15 @@ $$
 \end{align}
 $$
 
-Taking the limit as $x \to \infty$:
+We have now obtained a form whose limit can be evaluated, and indeed, taking the limit as $x \to \infty,$ we obtain:
 
 $$\lim_{x \to \infty} \frac{1}{\sqrt{1 + 1/x} + 1} = \frac{1}{\sqrt{1} + 1} = \frac{1}{2}$$
 
-> After the simplification, the apparent divergence disappears and the limit is finite.
+We have seen that the technique applied in $(14)$ uses the conjugate of the original expression, and to understand why, we consider another example:
 
-## Rationale for using the conjugate
+$$\lim_{x \to \infty} \left( \sqrt{x^2 + 2 x + 3} - x \right) \tag{15}$$
 
-The technique applied to the form $\infty - \infty$ relies on the conjugate, that is, an expression identical to the original except for the sign between the two terms. The rationale behind this choice is examined below. Consider the limit:
-
-$$\lim_{x \to \infty} \left( \sqrt{x^2 + 2 x + 3} - x \right)$$
-
-Both terms increase without bound, so direct substitution yields the indeterminate form $\infty - \infty$. The fundamental issue is not divergence itself, but the fact that the two quantities grow at the same leading order. Their subtraction conceals a cancellation of dominant terms, and the expression in its present form does not reveal what remains after this cancellation takes place. Multiplying and dividing by the conjugate makes the cancellation explicit:
+Direct substitution in $(15)$ gives the indeterminate form $\infty - \infty$ because the two quantities have the same leading term $x,$ so we need to determine what remains of their difference. Multiplying and dividing by the conjugate gives the difference of the squares of the two quantities in the numerator, where the $x^2$ terms cancel:
 
 $$
 \begin{align}
@@ -147,7 +151,7 @@ $$
 \end{align}
 $$
 
-The original difference is now expressed as a quotient. The leading $x^2$ term is removed, and the remaining expression can be analysed further by factoring $x$ from both numerator and denominator:
+We have thus rewritten the original difference as a quotient and eliminated the leading term $x^2.$ We now obtain:
 
 $$
 \begin{align}
@@ -157,104 +161,71 @@ $$
 \end{align}
 $$
 
-As $x \to \infty$, the terms $3/x$, $2/x$, and $3/x^2$ all approach zero, and the limit simplifies to:
+As $x \to \infty,$ the terms with $x$ in the denominator tend to zero, so we obtain:
 
-$$\lim_{x \to \infty} \left( \sqrt{x^2 + 2 x + 3} - x \right) = \frac{2}{1 + 1} = 1$$
+$$\lim_{x \to \infty} \frac{2 + 3/x}{\sqrt{1 + 2/x + 3/x^2} + 1} = \frac{2}{1 + 1} = 1$$
 
-> The use of the conjugate makes the cancellation of dominant terms explicit and reveals the true order of growth. The leading $x^2$ terms cancel, and the behaviour is governed by lower-order terms. This perspective connects naturally with [Big O](../big-o-notation/) and [little-o notation](../little-o-notation/), where limits are understood by comparing relative growth rates.
+The same limit can also be calculated using [asymptotic expansions](../asymptotic-expansion/), with [big-O](../big-o-notation/) and little-o notation to control the remainder terms after the leading terms cancel.
 
-## Exponential indeterminate forms
+## Exponential forms
 
-When working with limits that involve exponential expressions, three further indeterminate forms can appear:
+We now turn to the cases in $(1)$ involving exponential indeterminate forms of the following types:
 
-$$1^{\infty} \qquad 0^{0} \qquad \infty^{0}$$
+$$1^{\infty} \qquad 0^{0} \qquad \infty^{0} \tag{16}$$
 
-These arise in expressions of the form:
+These expressions typically arise when the limit is reduced to an expression of the following form:
 
-$$\lim_{x \to a} F(x)^{G(x)}$$
+$$\lim_{x \to a} F(x)^{G(x)} \tag{17}$$
 
-in which base and exponent behave in conflicting ways. As with the other indeterminate forms, the symbolic appearance alone is not enough to determine the outcome.
+Suppose that $F(x) \gt 0$ for $x$ sufficiently close to $a$ within the domain under consideration, possibly excluding $a$ itself. The standard procedure for handling expressions such as $(17)$ is to take the [logarithm of the power](../logarithms/), giving $\ln(F(x)^{G(x)}) = G(x)\ln F(x).$ The product can then be rewritten as a ratio and studied using L'Hôpital's rule or a Taylor expansion. Let $L$ denote the limit to be calculated, if it exists:
 
-The standard procedure is the logarithmic transformation. Taking the [logarithm](../logarithms/) converts the exponential structure into a product, which can then be rewritten as a ratio and resolved by L'Hôpital's rule or by Taylor expansion. The general scheme is the following. Suppose we want to compute:
+$$L = \lim_{x \to a} F(x)^{G(x)} \tag{18}$$
 
-$$L = \lim_{x \to a} F(x)^{G(x)}$$
+We first calculate the limit of the logarithm of the expression in $(18)$:
 
-Taking the natural logarithm of both sides:
+$$\ell = \lim_{x \to a} G(x) \ln F(x) \tag{19}$$
 
-$$\ln L = \lim_{x \to a} G(x) \ln F(x)$$
+This reduces the problem to a limit of the form $0 \cdot \infty,$ which may be rewritten as $0/0$ and studied using the techniques already discussed. If the limit $\ell$ exists and is finite, continuity of the [exponential function](../exponential-function/) ensures that the original limit also exists and satisfies:
 
-This reduces the problem to a limit of the form $0 \cdot \infty$ or $\dfrac{0}{0}$, both of which can be handled by the techniques already discussed. Once $\ln L$ is determined, the original limit is recovered as $L = e^{\ln L}$.
+$$L = e^{\ell} \tag{20}$$
 
-As a concrete example, consider:
+If instead $\ell = -\infty,$ the original limit is $0;$ if $\ell = +\infty,$ it is $+\infty.$
 
-$$\lim_{x \to 0} (1 + x)^{1/x}$$
+Consider, for example, the following limit, for which direct substitution gives the indeterminate form $1^{\infty}:$
 
-This has the form $1^{\infty}$. Setting $L$ equal to the limit and taking the logarithm:
+$$\lim_{x \to 0} (1 + x)^{1/x} \tag{21}$$
 
-$$\ln L = \lim_{x \to 0} \frac{\ln(1 + x)}{x}$$
+Applying the transformation in $(19)$ to $(21),$ we obtain:
 
-This is now a $\dfrac{0}{0}$ form. Applying [L'Hôpital's rule](../hopital-rule/), we differentiate numerator and denominator separately:
+$$\ell = \lim_{x \to 0} \frac{\ln(1 + x)}{x}$$
+
+We have now obtained the form $0/0,$ which in this case can be resolved using L'Hôpital's rule, differentiating the numerator and denominator separately. The rule is discussed in its own entry, but for our purposes it is enough to know that the limit becomes:
 
 $$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = \lim_{x \to 0} \frac{1/(1+x)}{1} = 1$$
 
-Hence:
+Applying $(20),$ we therefore obtain:
 
 $$L = e^{1} = e$$
 
-This value coincides with the [remarkable limit](../remarkable-limits/) that defines the [number $e$](../euler-number-limit-sequence/).
+## A strategy for calculation
 
-> The exponential form conceals a hidden quotient structure. Applying a logarithmic transformation exposes this structure and reduces the problem to a familiar one.
+In general, beyond the methods illustrated here, each indeterminate form may admit several techniques for resolving it, and the choice between them affects how quickly the calculation reaches a determinate expression that can be evaluated. In practice, the best strategy for tackling these problems is to recognise the indeterminate form and apply a technique that yields the result as quickly and with as little calculation as possible. If, for example, an attempt becomes too algebraically involved or repeatedly leads to further indeterminate forms, the chosen method is probably not the best one for that limit.
 
-All seven indeterminate forms share a common feature: the symbolic expression alone does not determine the value of the limit. The decisive factor is always the relative rate at which the quantities involved grow or vanish. Recognising the indeterminate form is only the first step; computing the limit requires a closer analysis of the functions involved.
+My suggestion for the form $0/0$ is that the first attempt should often be algebraic simplification by factoring the numerator and denominator and cancelling the factor that tends to zero. In some cases, [standard limits](../remarkable-limits/) can be used, particularly when trigonometric, exponential, or logarithmic expressions are involved. If neither approach is feasible, asymptotic expansions with little-o notation can be used to isolate the leading behaviour of the numerator and denominator. In other cases, L'Hôpital's rule can be used, especially when the preceding methods become laborious.
 
-## A strategy for computing limits
+For the form $\infty/\infty,$ the standard procedure is to factor out the leading term from the numerator and denominator and determine the limit from the remaining ratio. When the leading term is not immediately identifiable, [logarithms, powers, and exponentials can be compared](../hierarchy-of-growth-rates/). In some cases, L'Hôpital's rule may apply, but the leading-term method is typically quicker and simpler.
 
-Each indeterminate form admits more than one resolution technique, and the choice between them affects how quickly the calculation reaches a determinate expression. A working strategy starts from the recognition of the form, proceeds with the application of a primary technique chosen for its directness on that specific case, and turns to an alternative whenever the first attempt becomes algebraically heavy or fails to produce a conclusion.
-
-For a quotient that reduces to $\dfrac{0}{0}$, the first attempt is algebraic simplification through factoring of numerator and denominator and cancellation of the common vanishing factor. When the simplification is not transparent, [remarkable limits](../remarkable-limits/) provide a direct shortcut, especially in the presence of trigonometric, exponential, or logarithmic expressions near the origin. If neither route is available, [asymptotic expansions](../asymptotic-expansion/) with [little-o notation](../little-o-notation/) isolate the leading behaviour of numerator and denominator. [L'Hôpital's rule](../hopital-rule/) is reserved for situations in which the preceding methods are inconvenient, since it can hide structural information about the limit.
-
-For a quotient that reduces to $\dfrac{\infty}{\infty}$, the standard move is to factor the dominant term from numerator and denominator and to read the limit from the surviving ratio. When the dominant term is not immediately identifiable, the comparison between growth rates of logarithms, powers, exponentials, and factorials provides the answer. L'Hôpital's rule remains available, but the dominant-term approach is usually faster.
-
-For a product of the form $0 \cdot \infty$, the resolution proceeds by rewriting the product as a quotient. The transformed expression takes either the form $\dfrac{0}{0}$ or the form $\dfrac{\infty}{\infty}$, and the techniques listed above apply.
-
-For a difference of the form $\infty - \infty$, the appropriate step depends on the algebraic structure of the two divergent quantities. When they share a common dominant term, the conjugate produces a cancellation that exposes lower-order behaviour. When the two terms admit a common denominator, the difference reduces to a quotient. In both cases the indeterminacy is converted into a $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ form.
-
-For an exponential form $1^{\infty}$, $0^{0}$, or $\infty^{0}$, the logarithmic transformation reduces the calculation to a product $0 \cdot \infty$, which is then handled by the techniques already listed.
-
-## Resolution techniques
-
-A compact list of the recurring techniques, together with the form on which each is typically deployed, keeps the strategy organised.
-
-+ Factoring and cancellation, effective for $\dfrac{0}{0}$ when numerator and denominator share a vanishing factor.
-+ Rationalisation by the conjugate, used in $\infty - \infty$ and in $\dfrac{0}{0}$ expressions containing square roots, where the conjugate makes the dominant-term cancellation explicit.
-+ Division by the dominant term, the primary tool for $\dfrac{\infty}{\infty}$ involving polynomials, rational functions, or sums of monomials of mixed degree.
-+ Substitution, in which a change of variable such as $t = 1/x$ or $t = x - a$ transports the limit into a form where another technique applies more naturally.
-+ Remarkable limits, applied through algebraic manipulation of the expression to match a known pattern from the standard catalogue.
-+ Taylor expansions with little-o notation, indispensable when numerator and denominator must be compared at higher orders, or when several remarkable limits would otherwise have to be combined.
-+ L'Hôpital's rule, a last-resort method for $\dfrac{0}{0}$ and $\dfrac{\infty}{\infty}$, subject to verification of its hypotheses.
-
-The following table associates each indeterminate form with a primary technique and a typical alternative.
+The techniques listed above apply to the form $0 \cdot \infty,$ while for the form $\infty - \infty,$ the appropriate step depends on the algebraic structure of the two divergent quantities. Finally, for exponential forms and the product $0 \cdot \infty,$ the techniques illustrated above are used. The following table summarises the main techniques to apply to each form:
 
 [class="table-1"]
 
 |                          |                                                                                                                  |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| $\dfrac{0}{0}$           | Factor and simplify, apply [L'Hôpital's rule](../hopital-rule/), or expand by [Taylor series](../taylor-series/) |
-| $\dfrac{\infty}{\infty}$ | Factor out the dominant term, or apply L'Hôpital's rule                                                          |
-| $0 \cdot \infty$         | Rewrite as $\dfrac{0}{1/\infty}$ or $\dfrac{\infty}{1/0}$ to obtain $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$   |
-| $\infty - \infty$        | Multiply by the conjugate, or find a common denominator                                                          |
-| $1^{\infty}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
-| $0^{0}$                  | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
-| $\infty^{0}$             | Take the logarithm and reduce to $0 \cdot \infty$                                                                |
+| $\dfrac{0}{0}$           | Factor and simplify, apply L'Hôpital's rule, or use a [Taylor series expansion](../taylor-series/) |
+| $\dfrac{\infty}{\infty}$ | Factor out the leading term or apply L'Hôpital's rule |
+| $0 \cdot \infty$         | Rewrite as $\dfrac{0}{1/\infty}$ or $\dfrac{\infty}{1/0}$ to obtain $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ |
+| $\infty - \infty$        | Multiply and divide by the conjugate or use a common denominator |
+| $1^{\infty}$             | Take the logarithm and reduce to $0 \cdot \infty$ |
+| $0^{0}$                  | Take the logarithm and reduce to $0 \cdot \infty$ |
+| $\infty^{0}$             | Take the logarithm and reduce to $0 \cdot \infty$ |
 [/class]
-
-The techniques summarised here build on the [algebra of limits](../algebra-of-limits/) and connect with the [squeeze theorem](../squeeze-theorem/) whenever the function under study can be bounded between two functions with a common limit.
-
-
-## Cautions on L'Hôpital and Taylor
-
-L'Hôpital's rule requires that the limit reduce to $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$, that numerator and denominator be differentiable in a neighbourhood of the point, that the derivative of the denominator be non-zero there, and that the limit of the ratio of the derivatives exist. Applying the rule when the hypotheses fail produces results that are formally derived but logically unjustified. A frequent error is the application of L'Hôpital to a quotient that has already become determinate after a previous algebraic step, with the consequence of reintroducing a spurious indeterminate form into a calculation that no longer required one.
-
-Taylor expansions resolve a limit when the expansions of numerator and denominator are pushed to sufficient order to make the leading non-zero terms visible. Truncating too early produces an apparent cancellation that does not reflect the true behaviour of the function. The order of expansion must therefore be chosen by inspecting the order of vanishing of the dominant term, and not by reflex.
-
-> The choice between L'Hôpital and Taylor often reduces to a matter of perspective. L'Hôpital is procedural and almost mechanical, but it blurs the structure of the functions involved. Taylor exposes that structure and reveals at which order the limit is determined, at the cost of slightly heavier algebra.

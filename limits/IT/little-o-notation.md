@@ -87,7 +87,7 @@ Vediamo un ultimo esempio, andando a calcolare questo limite:
 
 $$\lim_{x \to \infty} \frac{\log x}{x} = 0$$
 
-Poiché il rapporto è pari a zero, dalla $(1)$ segue che per $x \to \infty,$ $\log x = o(x).$ Questo risultato è molto utile perché ha una sua applicabilità pratica soprattutto nella costruzione degli algoritmi, in quanto la crescita logaritmica è trascurabile rispetto a quella lineare.
+Poiché il rapporto è pari a zero, dalla $(1)$ segue che per $x \to \infty,$ $\log x = o(x).$ Questo risultato è molto utile perché ha una sua applicabilità pratica soprattutto nella costruzione degli algoritmi, in quanto la [crescita logaritmica](../hierarchy-of-growth-rates/) è trascurabile rispetto a quella lineare.
 
 ## Il significato di $o(1)$
 
