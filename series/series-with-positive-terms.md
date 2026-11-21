@@ -59,15 +59,15 @@ $$
 S_n = \sum_{k=1}^{n} a_k, \quad T_n = \sum_{k=1}^{n} b_k
 $$
 
-Since both sequences $a_k$ and $b_k$ are made of non-negative terms, both $S_n$ and $T_n$ are non-decreasing. Because $a_k \leq b_k$ for all $k \geq N$, we have:
+Since both sequences $a_k$ and $b_k$ are made of non-negative terms, both $S_n$ and $T_n$ are non-decreasing. Because $a_k \leq b_k$ for all $k \geq N,$ the tails satisfy
 
 $$
-S_n \leq T_n \quad \text{for all } n \geq N
+\sum_{k=N}^{n} a_k \leq \sum_{k=N}^{n} b_k \quad \text{for all } n \geq N.
 $$
 
-If the series $\sum b_k$ converges, then $T_n$ has a finite limit and is bounded above. Since $S_n \leq T_n$, the sequence of partial sums $S_n$ is also bounded above. A non-decreasing and bounded [sequence converges](../monotone-sequences/), so $\sum a_k$ also converges.
+Adding the fixed initial sums gives $S_n \leq T_n + C,$ where $C = \sum_{k=1}^{N-1}(a_k - b_k).$ If the series $\sum b_k$ converges, then $T_n$ has a finite limit and is bounded above. Since $S_n \leq T_n + C,$ the sequence of partial sums $S_n$ is also bounded above. A non-decreasing and bounded [sequence converges](../monotone-sequences/), so $\sum a_k$ also converges.
 
-If $\sum a_k$ diverges, then $S_n \to \infty$. But since $S_n \leq T_n$, the only way this inequality can hold is if $T_n$ also grows without bound. Therefore, $\sum b_k$ also diverges.
+If $\sum a_k$ diverges, then $S_n \to \infty$. Since $T_n \geq S_n - C,$ the sequence $T_n$ also grows without bound. Therefore, $\sum b_k$ also diverges.
 
 
 ## Example

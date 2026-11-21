@@ -28,9 +28,7 @@ $$
 \tag{2}
 $$
 
-Tutti gli elementi di $\mathcal{P}(A)$ sono quindi insiemi e il teorema di Cantor, in termini molto semplici, confronta la cardinalità di $A$ con quella di $\mathcal{P}(A).$ Prima di procedere ricordiamo anche che due insiemi sono equipotenti se esiste una biiezione fra loro che indichiamo come $A\sim B.$ Per ogni insieme $A$ l'applicazione $x\mapsto\{x\}$ è un'iniezione da $A$ in $\mathcal{P}(A),$ quindi $|A|\leq|\mathcal{P}(A)|.$ 
-
-Il teorema di Cantor afferma che l'insieme delle parti ha cardinalità strettamente maggiore di quella di $A,$ cioè vale la seguente relazione:
+Tutti gli elementi di $\mathcal{P}(A)$ sono quindi insiemi e il teorema di Cantor, in termini molto semplici, confronta la cardinalità di $A$ con quella di $\mathcal{P}(A).$ Prima di procedere ricordiamo che due insiemi sono equipotenti se esiste una biiezione fra loro, che indichiamo come $A\sim B.$ Per ogni insieme $A$ l'applicazione $x\mapsto\{x\}$ è un'iniezione da $A$ in $\mathcal{P}(A),$ quindi $|A|\leq|\mathcal{P}(A)|.$ Il teorema di Cantor afferma che l'uguaglianza non può valere, cioè che l'insieme delle parti ha cardinalità strettamente maggiore di quella di $A:$
 
 $$|A|\lt|\mathcal{P}(A)| \tag{3}$$ 
 
@@ -41,7 +39,7 @@ D=\{\ x\in A\mid x\notin f(x)\ \}
 \tag{4}
 $$
 
-L'insieme $D$ appartiene a $\mathcal{P}(A).$ Se fosse $D=f(z)$ per qualche $z\in A,$ avremmo due casi. Se $z\in D,$ per la $(4)$ avremmo $z\notin f(z),$ cioè $z\notin D$ mentre se $z\notin D,$ poiché $D=f(z),$ avremmo $z\notin f(z)$ e quindi, per la $(4),$ $z\in D$ e in entrambi i casi otteniamo una contraddizione. Dunque $D$ non è immagine di alcun elemento di $A,$ perciò $f$ non è suriettiva e, poiché è arbitraria, non esiste alcuna biiezione fra $A$ e $\mathcal{P}(A).$
+L'insieme $D$ appartiene a $\mathcal{P}(A).$ Se fosse $D=f(z)$ per qualche $z\in A,$ avremmo due casi. Se $z\in D,$ per la $(4)$ avremmo $z\notin f(z),$ cioè $z\notin D,$ mentre se $z\notin D,$ per la $(4)$ si ha $z\in f(z)$ e, poiché $f(z)=D,$ avremmo $z\in D,$ di nuovo una contraddizione. Dunque $D$ non è immagine di alcun elemento di $A,$ perciò $f$ non è suriettiva e, poiché è arbitraria, non esiste alcuna biiezione fra $A$ e $\mathcal{P}(A).$
 
 Per $A=\mathbb{N},$ il teorema mostra che l'insieme delle parti dei naturali non è numerabile. Indicando con $2^{|A|}$ la cardinalità di $\mathcal{P}(A)$ e ricordando che $|\mathbb{N}|=\aleph_0,$ otteniamo:
 
