@@ -65,13 +65,15 @@ $$
 \lim_{k \to \infty} a_k = 0.
 $$
 
-If this condition is not satisfied, that is, if $\lim_{k \to \infty} a_k \neq 0$, then the series diverges. For the generalized harmonic series with exponent $a \leq 1$, this condition fails. For example, when $a = 0$, the terms become constant $a_k = 1$, and:
+If this condition is not satisfied, that is, if $\lim_{k \to \infty} a_k \neq 0$, then the series diverges. For the generalized harmonic series with exponent $a \leq 0$, this condition fails. For example, when $a = 0$, the terms become constant $a_k = 1$, and:
 
 $$
 \lim_{k \to \infty} \frac{1}{k^0} = \lim_{k \to \infty} 1 = 1 \neq 0.
 $$
 
 Hence, the series diverges because its general term does not tend to zero.
+
+When $0 < a \leq 1$, the terms do tend to zero, but the series still diverges. In this range $1/k^a \geq 1/k$, so the generalized harmonic series dominates the harmonic series term by term. Since the harmonic series diverges, the [comparison test](../series-with-positive-terms/) gives divergence.
 
 - - -
 

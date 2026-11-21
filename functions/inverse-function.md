@@ -51,10 +51,10 @@ The graph of a function and that of its inverse are symmetric about the line $y 
 
 The same symmetry shows that the inverse keeps the direction of variation. Reflecting an increasing graph across the line $y = x$ produces another increasing graph, so the inverse of an increasing function is increasing, and the inverse of a decreasing function is decreasing.
 
-If a function $f$ is [composed](../composite-functions/) with its inverse $f^{-1},$ the result is the identity function, which maps each element of a set to itself:
+If a function $f\colon X \to Y$ is [composed](../composite-functions/) with its inverse $f^{-1},$ the result is the identity function on the appropriate set:
 
 $$
-f(f^{-1}(x)) = f^{-1}(f(x)) = x
+f^{-1}(f(x)) = x \quad \text{for every } x \in X, \qquad f(f^{-1}(y)) = y \quad \text{for every } y \in Y
 $$
 
 Reversing the correspondence between input and output a second time restores the original function. The inverse of $f^{-1}$ is again $f,$ so:
@@ -63,7 +63,7 @@ $$
 \bigl(f^{-1}\bigr)^{-1} = f
 $$
 
-This equation also shows that $f^{-1}$ is itself bijective, since it has an inverse.
+These identities also show that $f^{-1}$ is itself bijective, since it has an inverse.
 
 ## How to find the inverse of a general function
 
@@ -77,7 +77,7 @@ This equation also shows that $f^{-1}$ is itself bijective, since it has an inve
 
 We want to find the inverse of the function $f(x) = \dfrac{2x - 1}{x + 3}.$
 
-> The function $f$ is bijective on its domain $\mathbb{R} \setminus \{-3\},$ because it is [strictly increasing](../increasing-and-decreasing-functions/), since its [derivative](../derivatives/) is always positive. This ensures that $f$ is injective, and since the image of $f$ covers all real numbers except a single point, it is also surjective onto its codomain.
+> The function $f$ maps $\mathbb{R} \setminus \{-3\}$ bijectively onto $\mathbb{R} \setminus \{2\}.$ To verify injectivity, suppose $f(u)=f(v)$ for $u,v\ne -3$. Cross-multiplying gives $(2u-1)(v+3)=(2v-1)(u+3),$ hence $7u=7v$ and therefore $u=v.$ Its image is $\mathbb{R} \setminus \{2\},$ so it is surjective onto that codomain.
 
 - - -
 

@@ -28,9 +28,7 @@ $$
 \tag{2}
 $$
 
-Every element of $\mathcal{P}(A)$ is therefore a set, and Cantor's theorem, in simple terms, compares the cardinality of $A$ with that of $\mathcal{P}(A).$ Before proceeding, recall also that two sets are [equipotent](../cardinality-and-countable-sets/) if there is a [bijection](../injective-surjective-and-bijective-functions/) between them, a relation denoted by $A\sim B,$ and that no set is equipotent to its own power set. Indeed, for every set $A,$ the map $x\mapsto\{x\}$ is an [injection](../injective-surjective-and-bijective-functions/) from $A$ into $\mathcal{P}(A),$ so $|A|\leq|\mathcal{P}(A)|.$ 
-
-Cantor's theorem states that the power set has strictly greater cardinality than $A,$ that is, the following relation holds:
+Every element of $\mathcal{P}(A)$ is therefore a set, and Cantor's theorem, in simple terms, compares the cardinality of $A$ with that of $\mathcal{P}(A).$ Before proceeding, recall that two sets are [equipotent](../cardinality-and-countable-sets/) if there is a [bijection](../injective-surjective-and-bijective-functions/) between them, a relation denoted by $A\sim B.$ For every set $A,$ the map $x\mapsto\{x\}$ is an [injection](../injective-surjective-and-bijective-functions/) from $A$ into $\mathcal{P}(A),$ so $|A|\leq|\mathcal{P}(A)|.$ Cantor's theorem states that equality cannot occur, so the power set has strictly greater cardinality than $A:$
 
 $$|A|\lt|\mathcal{P}(A)| \tag{3}$$ 
 
@@ -41,7 +39,7 @@ D=\{\ x\in A\mid x\notin f(x)\ \}
 \tag{4}
 $$
 
-The set $D$ belongs to $\mathcal{P}(A).$ If $D=f(z)$ for some $z\in A,$ there would be two cases. If $z\in D,$ then by $(4)$ we would have $z\notin f(z),$ that is, $z\notin D,$ whereas if $z\notin D,$ we would have $z\notin f(z)$ and hence, by $(4),$ $z\in D,$ giving a contradiction in either case. Thus $D$ is not the image of any element of $A,$ so $f$ is not surjective and, since it is arbitrary, there is no bijection between $A$ and $\mathcal{P}(A).$
+The set $D$ belongs to $\mathcal{P}(A).$ If $D=f(z)$ for some $z\in A,$ there would be two cases. If $z\in D,$ then by $(4)$ we would have $z\notin f(z),$ that is, $z\notin D,$ whereas if $z\notin D,$ then $(4)$ gives $z\in f(z),$ and since $f(z)=D$ we would have $z\in D,$ again a contradiction. Thus $D$ is not the image of any element of $A,$ so $f$ is not surjective and, since it is arbitrary, there is no bijection between $A$ and $\mathcal{P}(A).$
 
 For $A=\mathbb{N},$ the theorem shows that the power set of the [natural numbers](../natural-numbers/) is [uncountable](../cardinality-and-countable-sets/). Denoting the cardinality of $\mathcal{P}(A)$ by $2^{|A|}$ and recalling that $|\mathbb{N}|=\aleph_0,$ we obtain:
 
