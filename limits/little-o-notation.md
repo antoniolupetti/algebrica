@@ -181,7 +181,7 @@ The symbol $o((x - x_0)^n)$ denotes the remainder and provides asymptotic inform
 
 [/class]
 
-These expansions are useful for evaluating limits involving [indeterminate forms](../indeterminate-forms/), since substituting a function's Taylor expansion gives an expression in which the contribution of the remainder tends to zero. For example:
+These expansions are useful for [evaluating limits](../limits-using-taylor-expansions/) involving [indeterminate forms](../indeterminate-forms/), since substituting a function's Taylor expansion gives an expression in which the contribution of the remainder tends to zero. For example:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{\dfrac{x^2}{2} + o(x^2)}{x^2} = \frac{1}{2}$$
 
