@@ -156,6 +156,7 @@ The bibliography below is my attempt to reconstruct the books, lecture notes, an
 + [Everything You Always Wanted to Know About Mathematics (But Didn't Even Know to Ask)](https://www.math.cmu.edu/~jmackey/151_128/bws_book.pdf), Brendan W. Sullivan
 + [Handbook of Mathematical Functions](https://personal.math.ubc.ca/~cbm/aands/abramowitz_and_stegun.pdf), Milton Abramowitz, Irene A. Stegun
 + [An Introduction to Formal Logic](https://forallx.openlogicproject.org), Richard Zach
++ [Introduction to University Mathematics](https://people.maths.ox.ac.uk/hewitt/publications/introduction.pdf), Ian Hewitt
 + [Introduction to University Mathematics](https://courses.maths.ox.ac.uk/course/view.php?id=6023), James Munro
 + [Klotz Online Math Notes](https://www.univmathnotes.com), Richard G. Klotz
 + [Maths 1](https://people.bath.ac.uk/ensdasr/ME10304.bho/maths1.pdf), Andrew Rees
