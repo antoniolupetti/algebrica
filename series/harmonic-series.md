@@ -144,7 +144,13 @@ $$
 f(x) = \frac{1}{x (\log x)^q}
 $$
 
-which is positive, [continuous](../continuous-functions/), and [decreasing](../increasing-and-decreasing-functions/) for $x \geq 2$. Using the [substitution](../integration-by-substitution/) $u = \log x$, the improper integral becomes:
+which is positive and [continuous](../continuous-functions/) for $x \geq 2.$ Its derivative is
+
+$$
+f'(x) = -\frac{1 + q/\log x}{x^2 (\log x)^q}.
+$$
+
+For every fixed real $q,$ this derivative is negative for all sufficiently large $x.$ The [integral test](../integral-test-for-series-convergence/) therefore applies to the tail; the finite initial interval does not affect convergence. Using the [substitution](../integration-by-substitution/) $u = \log x,$ the improper integral becomes:
 
 $$
 \int_2^{\infty} \frac{1}{x (\log x)^q} \ dx = \int_{\log 2}^{\infty} \frac{1}{u^q} \ du

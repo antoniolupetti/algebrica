@@ -78,7 +78,7 @@ $$
 
 ![!IMG. 6](../integrals/svg/definite-integrals-6.svg)
 
-If instead we measure the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a],$ we integrate the absolute value. Since $|f|$ is even whenever $f$ is odd, the two halves contribute equally:
+If instead we measure the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over the symmetric interval $[-a, a]$ with $a \geq 0,$ we integrate the absolute value. Since $|f|$ is even whenever $f$ is odd, the two halves contribute equally:
 
 $$
 S = \int_{-a}^{a} |f(x)| \ dx = 2\int_{0}^{a} |f(x)| \ dx

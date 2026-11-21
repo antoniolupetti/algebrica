@@ -77,7 +77,7 @@ These identities also show that $f^{-1}$ is itself bijective, since it has an in
 
 We want to find the inverse of the function $f(x) = \dfrac{2x - 1}{x + 3}.$
 
-> The function $f$ maps $\mathbb{R} \setminus \{-3\}$ bijectively onto $\mathbb{R} \setminus \{2\}.$ To verify injectivity, suppose $f(u)=f(v)$ for $u,v\ne -3$. Cross-multiplying gives $(2u-1)(v+3)=(2v-1)(u+3),$ hence $7u=7v$ and therefore $u=v.$ Its image is $\mathbb{R} \setminus \{2\},$ so it is surjective onto that codomain.
+> The function $f$ maps $\mathbb{R} \setminus \{-3\}$ bijectively onto $\mathbb{R} \setminus \{2\}.$ To verify injectivity, suppose $f(u)=f(v)$ for $u,v\ne -3$. Cross-multiplying gives $(2u-1)(v+3)=(2v-1)(u+3),$ hence $7u=7v$ and therefore $u=v.$ To determine the image, solve $y=f(x)$ for $x$: for $y\ne 2,$ this gives $x=(3y+1)/(2-y),$ which is never $-3.$ For $y=2,$ the equation has no solution. Thus the image is $\mathbb{R} \setminus \{2\},$ so $f$ is surjective onto that codomain.
 
 - - -
 
