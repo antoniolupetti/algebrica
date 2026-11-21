@@ -198,7 +198,7 @@ The symbol $O((x - x_0)^{n+1})$ indicates that the absolute value of the remaind
 
 [/class]
 
-These expansions are useful for evaluating limits involving [indeterminate forms](../indeterminate-forms/). Consider, for example, the following limit, which cannot be evaluated by direct substitution:
+These expansions are useful for [evaluating limits](../limits-using-taylor-expansions/) involving [indeterminate forms](../indeterminate-forms/). Consider, for example, the following limit, which cannot be evaluated by direct substitution:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$$
 

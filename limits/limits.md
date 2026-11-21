@@ -192,7 +192,7 @@ All the properties stated above hold when the limits involved exist and are fini
 
 $$\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad \infty - \infty$$
 
-These expressions are known as [indeterminate forms](../indeterminate-forms/). Resolving them requires specific techniques, such as factorisation, [asymptotic comparison](../hierarchy-of-growth-rates/), [L'Hôpital's rule](../hopital-rule/), [Taylor expansions](../taylor-series/), and [little-o notation](../little-o-notation/). One of the best-known examples is the following limit:
+These expressions are known as [indeterminate forms](../indeterminate-forms/). Resolving them requires specific techniques, such as factorisation, [asymptotic comparison](../hierarchy-of-growth-rates/), [L'Hôpital's rule](../hopital-rule/), [Taylor expansions](../limits-using-taylor-expansions/), and [little-o notation](../little-o-notation/). One of the best-known examples is the following limit:
 
 $$\lim_{x \to 0} \frac{\sin x}{x} \tag{13}$$
 

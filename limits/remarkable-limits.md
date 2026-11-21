@@ -245,7 +245,7 @@ From a more advanced viewpoint, remarkable limits are expressions of differentia
 
 $$\lim_{x \to 0} \frac{f(x) - f(0)}{x}$$
 
-coincides with the definition of the [derivative](../derivatives/) of $f$ at the origin. The classical remarkable limits are exactly those particular cases in which this derivative can be computed explicitly. They then serve as a starting point for resolving more complex [indeterminate forms](../indeterminate-forms/), often in combination with [L'Hôpital's rule](../hopital-rule/) or with [little-o notation](../little-o-notation/) inside Taylor expansions.
+coincides with the definition of the [derivative](../derivatives/) of $f$ at the origin. The classical remarkable limits are exactly those particular cases in which this derivative can be computed explicitly. They then serve as a starting point for resolving more complex [indeterminate forms](../indeterminate-forms/), often in combination with [L'Hôpital's rule](../hopital-rule/) or with [little-o notation](../little-o-notation/) inside [Taylor expansions](../limits-using-taylor-expansions/).
 
 ## Summary
 

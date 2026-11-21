@@ -55,7 +55,7 @@ $$
 \end{align}
 $$
 
-In more advanced problems, [L'Hôpital's rule](../hopital-rule/) provides a systematic method for evaluating this type of limit, while other cases require [Taylor expansions](../taylor-series/) or [little-o notation](../little-o-notation/) to isolate the leading term of the numerator and denominator. These techniques are developed in detail in their respective entries.
+In more advanced problems, [L'Hôpital's rule](../hopital-rule/) provides a systematic method for evaluating this type of limit, while other cases require [Taylor expansions](../limits-using-taylor-expansions/) or [little-o notation](../little-o-notation/) to isolate the leading term of the numerator and denominator. These techniques are developed in detail in their respective entries.
 
 ## The form $\dfrac{\infty}{\infty}$
 
