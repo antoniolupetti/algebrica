@@ -12,263 +12,308 @@ tags:
   - remarkable-limits
   - taylor-series
 ---
-## Introduction
 
-A small collection of [limits](../limits/) plays a central role throughout mathematical analysis. They appear in routine calculations and capture both the local behaviour of [functions](../functions/) near a regular point and their behaviour at infinity. The most important cases are collected below. 
+## Remarkable limits of the sine function
 
-They include trigonometric, exponential, and logarithmic expressions, as well as standard comparisons between quantities that grow without bound and those that tend to zero.
+Remarkable [limits](../limits/) are limits of [functions](../functions/) that yield [indeterminate forms](../indeterminate-forms/) and whose values are known; they allow us to evaluate more complex limits by recognising familiar expressions or reducing them to such expressions through suitable transformations. We begin with the remarkable limit of the [sine function](../sine-and-cosine/), one of the most significant limits in trigonometry, whose value is given by the following expression:
 
-## The trigonometric fundamental limit
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1 \tag{1}
+$$
 
-The most structurally significant trigonometric limit is:
+Equation $(1)$ shows that $\sin x$ can be approximated by $x,$ and in this sense the sine function has what is called locally linear behaviour at the origin, where its graph is tangent to the line $y = x.$ Since $\sin 0 = 0,$ the limit in $(1)$ is the same as the limit defining the [derivative](../derivatives/) of the sine function at zero, so the following relation holds:
 
-$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+$$
+\left.\frac{d}{dx}\sin x\right|_{x=0}
+= \lim_{x \to 0}\frac{\sin x-\sin 0}{x-0}
+= 1 \tag{2}
+$$
 
-This result characterises the local linearity of the [sine function](../sine-and-cosine/) at the origin and is equivalent to the statement that the [derivative](../derivatives/) of $\sin x$ at zero equals one:
+The following relations are consequences of $(2)$:
 
-$$\left. \frac{d}{dx} \sin x \right|_{x = 0} = 1$$
+$$
+\begin{align}
+\lim_{x \to 0} \frac{\sin(a x)}{a x} &= 1 \\[6pt]
+\lim_{x \to 0} \frac{\sin(a x)}{x} &= a
+\end{align}
+$$
 
-From this limit, it follows directly that for any real constant $a$:
+To prove $(1),$ we compare three areas in the [unit disk](../unit-circle/). First, we fix an [angle](../angles-and-angular-measure/) $x \in (0, \pi/2)$ and define $O = (0, 0),$ $A = (1, 0)$ and $P = (\cos x, \sin x).$ The line $OP$ meets the tangent to the circle at $A$ at the point $Q = (1, \tan x).$
 
-$$\lim_{x \to 0} \frac{\sin(a x)}{a x} = 1$$
+![IMG. 1](svg/remarkable-limits-1.svg)
 
-$$\lim_{x \to 0} \frac{\sin(a x)}{x} = a$$
 
-## Geometric proof of the trigonometric fundamental limit
+The triangle $OPA$ is contained in the circular sector bounded by the radii $OA$ and $OP,$ which in turn is contained in the triangle $OQA.$ Their areas are $\sin x/2,$ $x/2$ and $\tan x/2,$ respectively. Comparing them and multiplying by $2$ gives the following chain of inequalities:
 
-The classical justification of this limit relies on a comparison of areas on the unit circle. Fix an [angle](../angles-and-angular-measure/) $x \in (0, \pi/2)$ and consider three regions sharing the vertex at the origin $O$: the triangle $OPA$, where $A = (1, 0)$ and $P = (\cos x, \sin x)$; the circular sector $OPA$; and the triangle $OQA$, where $Q$ is the intersection of the line through $O$ and $P$ with the vertical tangent to the circle at $A$, so that $Q = (1, \tan x)$.
+$$
+\sin x \lt x \lt \tan x \tag{3}
+$$
 
-The three regions are nested, with the triangle $OPA$ contained in the sector and the sector contained in the larger triangle $OQA$. Computing the corresponding areas one obtains the inequality:
+Since $\sin x \gt 0,$ we can divide $(3)$ by $\sin x$ and then take reciprocals to obtain:
 
-$$\frac{1}{2}\sin x < \frac{1}{2} x < \frac{1}{2}\tan x$$
+$$
+\begin{align}
+\cos x &\lt \frac{\sin x}{x} \lt 1 \tag{4}
+\end{align}
+$$
 
-Multiplying through by $2$ gives the fundamental geometric inequality:
+As $x \to 0^+,$ both bounds in the last inequality in $(4)$ tend to $1,$ and since the middle expression lies between these values, the [squeeze theorem](../squeeze-theorem/) gives:
 
-$$\sin x < x < \tan x \qquad \text{for } x \in (0, \pi/2)$$
+$$
+\lim_{x \to 0^+} \frac{\sin x}{x} = 1 \tag{5}
+$$
 
-Since $\sin x > 0$ on this interval, dividing each term by $\sin x$ preserves the inequalities and yields:
+Since $\sin x/x$ is an [even function](../even-and-odd-functions/), the left-hand limit also equals $1.$ The two one-sided limits coincide, so $(1)$ is proved.
 
-$$1 < \frac{x}{\sin x} < \frac{1}{\cos x}$$
+For the [inverse sine function](../arcsine-function/), another remarkable limit is:
 
-Taking reciprocals reverses the inequalities and produces a two-sided bound for $\sin(x)/x$:
+$$
+\lim_{x \to 0}\frac{\arcsin x}{x} = 1 \tag{6}
+$$
 
-$$\cos x < \frac{\sin x}{x} < 1$$
+## Remarkable limits of the cosine function
 
-As $x \to 0^+$, the lower bound $\cos x$ tends to $1$ by continuity of the cosine function at the origin, while the upper bound is the constant $1$. Applying the [squeeze theorem](../squeeze-theorem/) gives:
+We now consider a remarkable limit of the [cosine function](../sine-and-cosine/), given by the following relation:
 
-$$\lim_{x \to 0^+} \frac{\sin x}{x} = 1$$
+$$
+\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \tag{7}
+$$
 
-The function $\sin(x)/x$ is even, so the same value is obtained as $x \to 0^-$. The two one-sided limits coincide, hence the two-sided limit exists and equals $1$.
+Whereas the sine function in $(1)$ behaves like $x$ near zero, $(7)$ shows that $1 - \cos x$ behaves like $x^2/2,$ which means that the deviation of the cosine function from $1$ is quadratic, as can also be seen from its [Taylor expansion](../taylor-series/) at the origin:
 
-## The tangent limit
+$$
+\cos x = 1 - \frac{x^2}{2} + o(x^2) \tag{8}
+$$
 
-To evaluate the [tangent](../tangent-and-cotangent/) limit, consider the identity:
+In $(8),$ the term $o(x^2)$ is negligible compared with $x^2,$ meaning that $o(x^2)/x^2 \to 0$ as $x \to 0,$ and indeed the linear term is absent because the derivative of the cosine function at zero vanishes. To evaluate the limit in $(7),$ we use $(8)$ to rewrite the numerator and divide each term by $x^2,$ obtaining:
 
-$$\frac{\tan x}{x} = \frac{\sin x}{x} \cdot \frac{1}{\cos x}$$
+$$
+\frac{1 - \cos x}{x^2}
+= \frac{x^2/2 - o(x^2)}{x^2}
+= \frac{1}{2} - \frac{o(x^2)}{x^2}
+$$
 
-Applying the continuity of the cosine function at the origin yields:
+The last term tends to zero by the definition of $o(x^2),$ so the quotient tends to $1/2,$ as shown in $(7).$ More generally, for every real constant $a,$ we have:
 
-$$\lim_{x \to 0} \frac{\tan x}{x} = 1$$
+$$
+\lim_{x \to 0} \frac{1 - \cos(ax)}{x^2} = \frac{a^2}{2} \tag{9}
+$$
 
-More generally, for any real constant $a$:
+To derive $(9)$ from $(1),$ we use the [half-angle formula](../trigonometric-identities/) to obtain:
 
-$$\lim_{x \to 0} \frac{\tan(a x)}{x} = a$$
+$$
+1 - \cos(ax) = 2\sin^2\left(\frac{ax}{2}\right) \tag{10}
+$$
 
-## The cosine limit
+If $a \neq 0,$ dividing $(10)$ by $x^2$ and rearranging gives:
 
-Quadratic, or second-order, behaviour emerges in the evaluation of this limit:
+$$
+\frac{1 - \cos(ax)}{x^2}
+= \frac{a^2}{2}\left(\frac{\sin(ax/2)}{ax/2}\right)^2 \tag{11}
+$$
 
-$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$$
+As $x \to 0,$ the ratio in parentheses tends to $1$ by $(1),$ so $(11)$ gives $(9).$ Finally, setting $a = 1$ recovers $(7).$ For the [inverse cosine function](../arccosine-function/), another remarkable limit is:
 
-In this case the numerator vanishes quadratically in $x$, rather than linearly. The [cosine function](../sine-and-cosine/) is tangent to the horizontal line $y = 1$ at the origin: its first derivative at $x = 0$ is zero, and the first non-vanishing term in its [Taylor expansion](../taylor-series/) is of order $x^2$. Indeed:
+$$
+\lim_{x \to 1^-}\frac{\arccos x}{\sqrt{2(1-x)}} = 1 \tag{12}
+$$
 
-$$\cos x = 1 - \frac{x^2}{2} + o(x^2)$$
+## Remarkable limits of the tangent function
 
-> Here $o(x^2)$ denotes a [little-o term](../little-o-notation/), that is, a quantity that becomes negligible compared to $x^2$ as $x \to 0$.
+We now consider another case, starting from the remarkable limit of the sine function in $(1),$ from which we derive the [tangent limit](../tangent-and-cotangent/) using the following identity:
 
-Dividing by $x^2$ isolates the leading quadratic term and yields the limit. More generally:
+$$
+\frac{\tan x}{x} = \frac{\sin x}{x} \cdot \frac{1}{\cos x} \tag{13}
+$$
 
-$$\lim_{x \to 0} \frac{1 - \cos(a x)}{x^2} = \frac{a^2}{2}$$
+The first factor in $(13)$ tends to $1$ by $(1),$ while the second tends to $1$ because $\cos 0 = 1,$ so the limit of the product is:
 
-## Proof of the cosine limit
+$$
+\lim_{x \to 0} \frac{\tan x}{x} = 1 \tag{14}
+$$
 
-The result can be derived from the trigonometric fundamental limit through the half-angle identity:
+For $a \neq 0,$ setting $u = ax$ gives $\tan(ax)/x = a\tan u/u,$ and $(14)$ yields:
 
-$$1 - \cos x = 2 \sin^2\!\left(\frac{x}{2}\right)$$
+$$
+\lim_{x \to 0} \frac{\tan(a x)}{x} = a \tag{15}
+$$
 
-Substituting this expression into the original quotient and rewriting the denominator in a form that matches the half-angle gives:
+## Remarkable limits of the exponential function
 
-$$\frac{1 - \cos x}{x^2} = \frac{2 \sin^2(x/2)}{x^2} = \frac{1}{2}\left(\frac{\sin(x/2)}{x/2}\right)^{\!2}$$
+After the trigonometric limits, we now consider a remarkable limit of the [exponential function](../exponential-function/), given by the following expression:
 
-As $x \to 0$, the argument $x/2$ also tends to $0$, so the factor inside the parentheses tends to $1$ by the trigonometric fundamental limit. Taking the square preserves the limit, and the prefactor $1/2$ remains. The result follows:
+$$
+\lim_{x \to 0} \frac{e^x - 1}{x} = 1 \tag{16}
+$$
 
-$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$$
+Since $e^0 = 1$ in $(16),$ the quotient is the one defining the derivative of the exponential function at zero:
 
-## The exponential fundamental limit
+$$
+\left.\frac{d}{dx}e^x\right|_{x=0}
+= \lim_{x \to 0}\frac{e^x-e^0}{x-0}
+= 1 \tag{17}
+$$
 
-The [exponential function](../exponential-function/) exhibits first-order behaviour near the origin: the deviation from the constant $1$ is linear in $x$:
+As with the cosine function in $(8),$ we can derive the limit from the Taylor expansion of the exponential function at the origin, obtaining:
 
-$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
+$$
+e^x = 1 + x + \frac{x^2}{2!} + o(x^2) \tag{18}
+$$
 
-This limit reflects the fact that the derivative of $e^x$ at the origin equals one:
+Subtracting $1$ in $(18)$ and dividing by $x$ gives:
 
-$$\left. \frac{d}{dx} e^x \right|_{x = 0} = 1$$
+$$
+\frac{e^x - 1}{x} = 1 + \frac{x}{2!} + \frac{o(x^2)}{x} \tag{19}
+$$
 
-The result follows directly from the [Taylor expansion](../taylor-series/) of $e^x$ near the origin:
+The last two terms tend to zero, so $(19)$ gives $(16).$ In particular, $o(x^2)/x = x\bigl(o(x^2)/x^2\bigr)$ tends to zero by the definition of [little-o notation](../little-o-notation/). For $a \neq 0,$ the substitution $u = ax$ gives:
 
-$$e^x = 1 + x + \frac{x^2}{2!} + o(x^2)$$
+$$\frac{e^{ax}-1}{x} = a\frac{e^u-1}{u}$$ 
+Applying $(16)$ gives:
 
-Dividing by $x$ and taking the limit immediately yields $1$, since all higher-order terms vanish. More generally, for any real constant $a$:
+$$
+\lim_{x \to 0} \frac{e^{ax} - 1}{x} = a \tag{20}
+$$
 
-$$\lim_{x \to 0} \frac{e^{a x} - 1}{x} = a$$
+Another remarkable limit of the exponential function, for a real base $a \gt 0,$ is:
 
-which follows by the substitution $u = a x$ and reduction to the standard form.
+$$
+\lim_{x \to 0}\frac{a^x-1}{x} = \ln a \tag{21}
+$$
 
-> Here $n!$ denotes the [factorial](../factorial/) of $n$, defined as the product of all positive integers up to $n$; in particular, $2! = 2$.
+A proof of $(16)$ can also be obtained from the full [Taylor series](../taylor-series/) of the exponential function, whose first terms appear in $(18)$:
 
-## Proof of the exponential fundamental limit
+$$
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \tag{22}
+$$
 
-A self-contained proof can be obtained directly from the Taylor expansion of the exponential function at the origin:
+Subtracting $1$ in $(22)$ and dividing by $x \neq 0$ gives:
 
-$$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$$
+$$
+\frac{e^x - 1}{x}
+= \sum_{n=0}^{\infty} \frac{x^n}{(n+1)!}
+= 1 + \frac{x}{2!} + \frac{x^2}{3!} + \cdots \tag{23}
+$$
 
-Subtracting $1$ and dividing by $x$ produces:
+The series in $(23)$ converges uniformly on every bounded interval, so we can take the limit term by term. As $x \to 0,$ all terms containing positive powers of $x$ tend to zero, leaving the constant term:
 
-$$\frac{e^x - 1}{x} = 1 + \frac{x}{2!} + \frac{x^2}{3!} + \frac{x^3}{4!} + \cdots$$
+$$
+\lim_{x \to 0} \frac{e^x - 1}{x} = 1 \tag{24}
+$$
+- - -
 
-Every term except the first is a polynomial in $x$ vanishing at the origin. Taking the limit as $x \to 0$ leaves only the constant term:
+A classical limit involving the exponential function defines $e$ and is given by the following expression:
 
-$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
+$$
+\lim_{x \to 0} (1+x)^{\frac{1}{x}} = e \tag{25}
+$$
 
-> The interchange of limit and series in this argument is justified by the fact that the Taylor series of $e^x$ converges uniformly on every bounded interval, so each term may be evaluated separately at $x = 0$.
+The discrete form of this limit concerns a [sequence](../sequences/) and is obtained from $(25)$ by setting $x = 1/n,$ so that $1/x = n$ and $x \to 0^+$ as $n \to \infty$:
 
-## The logarithmic fundamental limit
+$$
+\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n = e \tag{26}
+$$
 
-For the natural [logarithm](../logarithms/), the following limit holds:
+A self-contained treatment of this sequence is provided on the page devoted to [deriving Euler's number as the limit of a sequence](../euler-number-limit-sequence/). Finally, for $a \neq 0,$ the substitution $u = ax$ in $(25)$ yields the general form:
 
-$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+$$
+\lim_{x \to 0} (1+ax)^{\frac{1}{x}} = e^a \tag{27}
+$$
 
-This result corresponds to the [derivative](../derivatives/) of $\ln x$ evaluated at $x = 1$:
+## Remarkable limits of the logarithm
 
-$$\left. \frac{d}{dx} \ln x \right|_{x = 1} = 1$$
+From the exponential limit in $(16)$ we obtain the [natural logarithm](../logarithms/) limit, given by the following expression:
 
-More generally, for any real constant $a$:
+$$
+\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1 \tag{28}
+$$
 
-$$\lim_{x \to 0} \frac{\ln(1 + a x)}{x} = a$$
+To prove $(28),$ we set:
 
-## Proof of the logarithmic fundamental limit
+$$
+y = \ln(1+x) \quad \Longleftrightarrow \quad x = e^y-1 \tag{29}
+$$
 
-The logarithmic limit reduces to the exponential one through a change of variable. Set:
+By [continuity](../continuous-functions/) of the logarithm at $1$ and since $\ln 1 = 0,$ we have $y \to 0$ as $x \to 0,$ and substituting the expressions in $(29)$ gives:
 
-$$y = \ln(1 + x) \quad \Longleftrightarrow \quad x = e^{y} - 1$$
+$$
+\frac{\ln(1+x)}{x} = \frac{y}{e^y-1} \tag{30}
+$$
 
-The natural logarithm is continuous at $1$ with $\ln 1 = 0$, so $y \to 0$ as $x \to 0$, and the map $x \mapsto y$ is a bijection between two neighbourhoods of the origin. Rewriting the quotient in terms of $y$ gives:
+The reciprocal of the ratio on the right-hand side of $(30)$ tends to $1$ by $(16),$ so its reciprocal also tends to $1,$ proving $(28).$ As with the sine function in $(2)$ and the exponential function in $(17),$ the limit corresponds to a derivative, and setting $t = 1+x$ in $(28)$ gives:
 
-$$\frac{\ln(1 + x)}{x} = \frac{y}{e^{y} - 1} = \left(\frac{e^{y} - 1}{y}\right)^{\!-1}$$
+$$
+\left.\frac{d}{dt}\ln t\right|_{t=1}
+= \lim_{t \to 1}\frac{\ln t-\ln 1}{t-1}
+= 1 \tag{31}
+$$
 
-The denominator inside the parentheses tends to $1$ by the exponential fundamental limit, so the reciprocal also tends to $1$:
+For $a \neq 0,$ the substitution $u = ax$ gives:
 
-$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+$$\frac{\ln(1+ax)}{x} = a\frac{\ln(1+u)}{u}$$
 
-## Limits defining the exponential function
+We can therefore write:
 
-A standard limit defines Euler's number $e$:
+$$
+\lim_{x \to 0} \frac{\ln(1+ax)}{x} = a \tag{32}
+$$
 
-$$\lim_{x \to 0} (1 + x)^{\frac{1}{x}} = e$$
 
-or, equivalently, in its discrete form:
+Another remarkable limit of the logarithm, for a real base $a \gt 0$ with $a \neq 1,$ is:
 
-$$\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e$$
+$$
+\lim_{x \to 0}\frac{\log_a(1+x)}{x} = \frac{1}{\ln a} \tag{33}
+$$
 
-> The discrete form is obtained by restricting $x$ to values of the form $\frac{1}{n}$, where $n$ is a positive integer, so that $x \to 0$ corresponds to $n \to \infty$. Substituting yields the [sequence](../sequences/) $\left( 1 + \frac{1}{n} \right)^n$, whose limit as $n \to \infty$ coincides with that of the continuous form. A self-contained treatment of this sequence is developed in the page on the [Euler number as a limit](../euler-number-limit-sequence/).
+## Limits of power functions
 
-More generally, for any real constant $a$:
+Finally, we consider the remarkable limit of a [power function](../power-function/) with real exponent $\alpha,$ which is:
 
-$$\lim_{x \to 0} (1 + a x)^{\frac{1}{x}} = e^{a}$$
-## Limits involving power functions
+$$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = \alpha \tag{34}$$
 
-For the [power function](../power-function/) with real exponent $\alpha,$ the following limit holds:
+We prove $(34)$ using the exponential limit in $(16)$ and the logarithmic limit in $(28),$ both already established. For $\alpha \neq 0,$ we set $u=\alpha\ln(1+x),$ so that $(1+x)^\alpha=e^u,$ and obtain:
 
-$$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = \alpha$$
+$$
+\frac{(1+x)^\alpha-1}{x}
+= \frac{e^u-1}{u}\cdot\alpha\frac{\ln(1+x)}{x} \tag{35}
+$$
 
-This result may be derived from the [binomial expansion](../binomial-theorem/) when $\alpha$ is rational, or by logarithmic differentiation in the general case.
-
-## Comparison of growth rates
-
-When evaluating quotients of functions that diverge to infinity, the indeterminate form $\infty/\infty$ is resolved by knowing which factor grows faster. The principal classes of elementary functions arrange themselves into a [strict hierarchy of growth at infinity](../hierarchy-of-growth-rates/). For positive constants $\alpha > 0$ and $a > 1$, the chain is:
-
-$$\ln x \ \ll \ x^{\alpha} \ \ll \ a^{x} \ \ll \ x! \ \ll \ x^{x} \qquad \text{as } x \to +\infty$$
-
-The symbol $f \ll g$, equivalent to the [little-o relation](../little-o-notation/) $f = o(g)$, means that the quotient $f/g$ tends to zero in the limit:
-
-$$f \ll g \quad \Longleftrightarrow \quad \lim_{x \to +\infty} \frac{f(x)}{g(x)} = 0$$
-
-Each link in the chain corresponds to a standard limit that is verified directly or by repeated application of [L'Hôpital's rule](../hopital-rule/). The most frequently used cases are collected here.
-
-Logarithms grow more slowly than every positive power:
-
-$$\lim_{x \to +\infty} \frac{\ln x}{x^{\alpha}} = 0 \qquad \alpha > 0$$
-
-Polynomials grow more slowly than every exponential with base greater than one:
-
-$$\lim_{x \to +\infty} \frac{x^{n}}{a^{x}} = 0 \qquad n \in \mathbb{N}, \ a > 1$$
-
-In the discrete setting, exponentials grow more slowly than the factorial:
-
-$$\lim_{n \to +\infty} \frac{a^{n}}{n!} = 0 \qquad a > 0$$
-
-Finally, the factorial itself is dominated by the self-power $n^{n}$:
-
-$$\lim_{n \to +\infty} \frac{n!}{n^{n}} = 0$$
-
-These comparisons govern the asymptotic behaviour of expressions encountered throughout calculus. They are decisive in the study of the convergence of [series](../series/), where the term being summed must decrease quickly enough, and they play an equally central role in the analysis of algorithms, where the running time of a procedure is classified according to the same hierarchy.
-
-> The notation $f \ll g$ used here is the strict-domination version of [little-o notation](../little-o-notation/) as $x \to +\infty$. The reciprocal hierarchy $g \gg f$ describes the same situation from the perspective of the dominant function.
+As $x \to 0,$ we also have $u \to 0,$ and the two ratios in $(35)$ tend to $1$ by $(16)$ and $(28),$ so the product tends to $\alpha,$ proving $(34).$ For $\alpha=0,$ the quotient is zero and the result remains valid.
 
 ## Asymptotic equivalence
 
-The remarkable limits collected above can be reformulated as local asymptotic equivalences near the origin:
+Two functions $f$ and $g$ are asymptotically equivalent, written $f(x) \sim g(x),$ if the following relation holds:
 
-$$\sin x \sim x \qquad \tan x \sim x \qquad 1 - \cos x \sim \frac{x^2}{2}$$
+$$
+f(x) \sim g(x) \quad \Longleftrightarrow \quad \lim_{x \to 0}\frac{f(x)}{g(x)} = 1 \tag{36}
+$$
 
-$$e^x - 1 \sim x \qquad \ln(1 + x) \sim x$$
+Using $(36),$ we can express the remarkable limits above as equivalences of this kind. Again by $(36),$ the sine limit in $(1),$ the tangent limit in $(14)$ and the cosine limit in $(7)$ can be rewritten, for $x \to 0,$ in the form:
 
-The notation $f(x) \sim g(x)$ as $x \to 0$ means that the two functions are asymptotically equivalent near the origin:
+$$
+\begin{align}
+\sin x &\sim x \notag \\[6pt]
+\tan x &\sim x \notag \\[0pt]
+1-\cos x &\sim \frac{x^2}{2} \tag{37}
+\end{align}
+$$
 
-$$\lim_{x \to 0} \frac{f(x)}{g(x)} = 1$$
+Similarly, $(16)$ and $(28)$ give:
 
-Each of these relationships corresponds to the first nonzero term in the local [Taylor expansion](../taylor-series/) of a smooth function near a regular point. As a consequence, these equivalences can be used to replace more complex expressions with simpler ones when evaluating limits and to resolve [indeterminate forms](../indeterminate-forms/).
+$$
+\begin{align}
+e^x-1 &\sim x \notag \\[6pt]
+\ln(1+x) &\sim x \tag{38}
+\end{align}
+$$
 
-## Structural interpretation
+The equivalences in $(37)$ and $(38)$ allow us to simplify [products and quotients](../algebra-of-limits/) when evaluating limits simply by substitution. For example, substituting $x^2/2$ for $1-\cos x$ and $x$ for $\sin x$ gives:
 
-From a more advanced viewpoint, remarkable limits are expressions of differentiability and local linearisation. Every limit of the form:
+$$
+\lim_{x \to 0}\frac{1-\cos x}{x\sin x}
+= \lim_{x \to 0}\frac{x^2/2}{x^2}
+= \frac{1}{2} \tag{39}
+$$
 
-$$\lim_{x \to 0} \frac{f(x) - f(0)}{x}$$
-
-coincides with the definition of the [derivative](../derivatives/) of $f$ at the origin. The classical remarkable limits are exactly those particular cases in which this derivative can be computed explicitly. They then serve as a starting point for resolving more complex [indeterminate forms](../indeterminate-forms/), often in combination with [L'Hôpital's rule](../hopital-rule/) or with [little-o notation](../little-o-notation/) inside [Taylor expansions](../limits-using-taylor-expansions/).
-
-## Summary
-
-The following table summarizes the most common remarkable limits. These results play a fundamental role in differential and integral calculus and frequently serve as the starting point for evaluating more complicated limits through algebraic manipulations, substitutions, asymptotic equivalence, or [L’Hôpital’s rule](../hopital-rule/).
-
-[class="table-1"]
-
-|                                                         |                  |
-| ------------------------------------------------------- | ---------------- |
-| $\lim_{x \to 0} \dfrac{\sin x}{x}$                      | $1$              |
-| $\lim_{x \to 0} \dfrac{\sin(a x)}{a x}$                 | $1$              |
-| $\lim_{x \to 0} \dfrac{\sin(a x)}{x}$                   | $a$              |
-| $\lim_{x \to 0} \dfrac{\tan x}{x}$                      | $1$              |
-| $\lim_{x \to 0} \dfrac{\tan(a x)}{x}$                   | $a$              |
-| $\lim_{x \to 0} \dfrac{1 - \cos x}{x^2}$                | $\dfrac{1}{2}$   |
-| $\lim_{x \to 0} \dfrac{1 - \cos(a x)}{x^2}$             | $\dfrac{a^2}{2}$ |
-| $\lim_{x \to 0} \dfrac{e^x - 1}{x}$                     | $1$              |
-| $\lim_{x \to 0} \dfrac{e^{a x} - 1}{x}$                 | $a$              |
-| $\lim_{x \to 0} \dfrac{\ln(1 + x)}{x}$                  | $1$              |
-| $\lim_{x \to 0} \dfrac{\ln(1 + a x)}{x}$                | $a$              |
-| $\lim_{x \to 0} (1 + x)^{1/x}$                          | $e$              |
-| $\lim_{n \to \infty} \left( 1 + \dfrac{1}{n} \right)^n$ | $e$              |
-| $\lim_{x \to 0} (1 + a x)^{1/x}$                        | $e^a$            |
-| $\lim_{x \to 0} \dfrac{(1 + x)^\alpha - 1}{x}$          | $\alpha$         |
-
-[/class]
+This substitution is always valid, but when dealing with sums and differences we must first check that the terms do not cancel each other. For example, in $\sin x-x,$ the substitution $\sin x \sim x$ would eliminate both terms and therefore tell us nothing about the behaviour of the difference.
