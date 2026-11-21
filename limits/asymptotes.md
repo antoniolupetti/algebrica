@@ -11,139 +11,221 @@ tags:
 ---
 ## Horizontal asymptotes
 
-An asymptote of a [function](../functions/) is a line that its graph approaches arbitrarily closely, either as the variable tends to infinity or near a point of discontinuity. The definition relies entirely on the notion of [limit](../limits/).
+An asymptote of a [function](../functions/) $f(x)$ is a [line](../lines/) that its graph approaches arbitrarily closely as the variable tends to infinity or approaches a point of [discontinuity](../discontinuities-of-real-functions/). There are three main types of asymptotes, horizontal, vertical, and oblique. We begin with horizontal asymptotes, considering a real-valued function $y = f(x)$ defined on an [interval](../intervals/) of the form $[a, +\infty),$ $(-\infty, b]$ or on all of $\mathbb{R}.$ The line with [equation](../equations/) $y = L$ is a horizontal asymptote of $f(x)$ if the following [limit](../limits/) holds:
 
-Let $y = f(x)$ be a real-valued function defined on an interval of the form $[a, +\infty)$, $(-\infty, b]$, or on $\mathbb{R}$. The line with [equation](../equations/) $y = L$ is a horizontal asymptote of $f$ if:
+$$
+\begin{align}
+\lim_{x \to \pm\infty} f(x) = L &\tag{1}
+\end{align}
+$$
 
-$$\lim_{x \to +\infty} f(x) = L \quad \text{or} \quad \lim_{x \to -\infty} f(x) = L$$
+To illustrate the meaning of $(1),$ we consider the following [rational function](../rational-functions/), defined for $x \neq 0,$ and determine its asymptotes:
 
-Consider the function:
+$$y = \frac{x + 1}{x} \tag{3}$$
 
-$$y = \frac{x + 1}{x}$$
+Applying $(1),$ we calculate the limit as $x \to \pm\infty,$ obtaining:
+
+$$\lim_{x \to \pm\infty} \frac{x + 1}{x} = \lim_{x \to \pm\infty} \left( 1 + \frac{1}{x} \right) = 1 \tag{2}$$
+
+By $(2),$ there is therefore a horizontal asymptote at $y=1$ that describes the behaviour of the graph of the function, shown below:
 
 ![IMG. 1](svg/asymptotes-1.svg)
 
-By computing the limit as $x \to \pm\infty$, we obtain:
 
-$$\lim_{x \to \pm\infty} \frac{x + 1}{x} = \lim_{x \to \pm\infty} \left( 1 + \frac{1}{x} \right) = 1$$
 
-The function therefore admits the horizontal asymptote $y = 1$, which both branches of the graph approach as $x \to +\infty$ and $x \to -\infty$.
+As described in the entry on [curve sketching](../analyzing-the-graphs-of-functions/), asymptotes help us sketch the graph of a general function qualitatively by indicating which lines it approaches under the specified conditions.
 
 ## Vertical asymptotes
 
-Let $y = f(x)$ be a real-valued function defined on $[a, b] \setminus \\{ x_0 \\}$, where $x_0 \in [a, b]$. The line with equation $x = x_0$ is a vertical asymptote of $f$ if:
+We now turn to vertical asymptotes, which occur when a function diverges near a point $x_0.$ We again consider a real-valued function $y = f(x)$ defined in a neighbourhood of $x_0,$ possibly excluding the point itself, or only on one side, and define the line with equation $x = x_0$ to be a vertical asymptote when the following limit holds:
 
-$$\lim_{x \to x_0^-} f(x) = \pm \infty \quad \text{or} \quad \lim_{x \to x_0^+} f(x) = \pm \infty$$
+$$
+\begin{align}
+\lim_{x \to x_0^\pm} f(x) = \pm\infty &\tag{5}
+\end{align}
+$$
 
-A standard example is the function:
+To apply $(5),$ we consider another rational function, defined for $x\neq 1,$ and check whether it has any vertical asymptotes:
 
-$$y = \frac{1}{x - 1}$$
+$$y = \frac{1}{x - 1} \tag{6}$$
+
+To check $(5),$ we examine the left-hand and right-hand limits separately, obtaining:
+$$
+\begin{align}
+\lim_{x \to 1^-} \frac{1}{x - 1} = -\infty &\notag \\[6pt]
+\lim_{x \to 1^+} \frac{1}{x - 1} = +\infty &\tag{7}
+\end{align}
+$$
+
+By $(7),$ the function diverges on both sides, so we can conclude that the line $x = 1$ is a vertical asymptote of $f.$
 
 ![IMG. 2](svg/asymptotes-2.svg)
 
-This rational expression is undefined at $x = 1$, since the denominator becomes zero. To analyse the behaviour of $f(x)$ near $x = 1$, we compute the one-sided limits:
 
-$$\lim_{x \to 1^-} \frac{1}{x - 1} = -\infty \qquad \lim_{x \to 1^+} \frac{1}{x - 1} = +\infty$$
 
-The function diverges to $-\infty$ when approaching $1$ from the left, and to $+\infty$ when approaching from the right. The line $x = 1$ is therefore a vertical asymptote of $f$.
+> In general, it is worth noting that a rational function may often have vertical asymptotes at points where it is undefined.
 
-> A [rational function](../rational-functions/) often has vertical asymptotes where its denominator vanishes and the function is undefined. Such points are non-removable discontinuities, where the function fails to be [continuous](../continuous-functions/).
+- - -
+
+The presence of a vertical asymptote does not rule out a horizontal asymptote, and to check whether the function $(6)$ has one, we apply $(1),$ obtaining:
+
+$$
+\begin{align}
+\lim_{x \to \pm\infty} \frac{1}{x - 1} = \lim_{x \to \pm\infty} \frac{1/x}{1 - 1/x} = 0 &\tag{8}
+\end{align}
+$$
+
+By $(8),$ the line $y = 0$ is a horizontal asymptote.
 
 ## Oblique asymptotes
 
-Let $y = f(x)$ be a real-valued function defined on a half-line of the form $(-\infty, a]$ or $[a, +\infty)$. The line with equation $y = p x + q$ is an oblique asymptote of $f$ if:
+Oblique asymptotes are lines with nonzero slope, unlike horizontal asymptotes. We again consider a real-valued function $f(x)$ and define the line with equation $y = px + q,$ where $p,q \in \mathbb{R}$ and $p \neq 0,$ to be an oblique asymptote if the following limit holds:
 
 $$
 \begin{align}
-\lim_{x \to -\infty} \big[ f(x) - (p x + q) \big] &= 0 \\[6pt]
-\lim_{x \to +\infty} \big[ f(x) - (p x + q) \big] &= 0
+\lim_{x \to \pm\infty} \big[ f(x) - (px + q) \big] = 0 &\tag{9}
 \end{align}
 $$
 
-The graph of $f$ therefore approaches the line $y = p x + q$ for large values of $|x|$.
+Condition $(9)$ allows us to determine the coefficients of the line, starting with its slope, which is given by the following formula:
 
-- - -
+$$
+\begin{align}
+p = \lim_{x \to \pm\infty} \frac{f(x)}{x} &\tag{10}
+\end{align}
+$$
 
-The equation of the oblique asymptote $y = p x + q$ associated with a function $f(x)$ is determined by computing two specific limits. The slope $p$ is found by evaluating:
+If $(10)$ gives a finite, nonzero value, we use that value to calculate the intercept $q.$ Indeed, by $(9),$ the difference $f(x) - px$ must tend to $q,$ so we have:
 
-$$p = \lim_{x \to \pm\infty} \frac{f(x)}{x}$$
+$$
+\begin{align}
+q = \lim_{x \to \pm\infty} \big[ f(x) - px \big] &\tag{11}
+\end{align}
+$$
 
-Once the slope is known, the vertical offset $q$ is obtained from:
+If the limit in $(11)$ is also finite, the line $y = px + q$ satisfies $(9)$ and is therefore an oblique asymptote of the function. As an example, consider the following function:
 
-$$q = \lim_{x \to \pm\infty} \big[ f(x) - p x \big]$$
+$$f(x) = \frac{x^2 + 1}{x} \tag{12}$$
 
-If both limits exist and are finite, then the line $y = p x + q$ is the oblique asymptote of the function.
+Applying $(10)$ to $(12),$ we calculate the slope and obtain:
 
-- - -
+$$
+\begin{align}
+p = \lim_{x \to \pm\infty} \frac{x^2 + 1}{x^2} = \lim_{x \to \pm\infty} \left(1 + \frac{1}{x^2}\right) = 1 &\tag{13}
+\end{align}
+$$
 
-Consider the function:
+The value $p = 1$ is finite and nonzero, so we can apply $(11)$ to determine $q:$
 
-$$f(x) = \frac{x^2 + 1}{x}$$
+$$
+\begin{align}
+q &= \lim_{x \to \pm\infty} \left(\frac{x^2 + 1}{x} - x\right) \notag \\[6pt]
+  &= \lim_{x \to \pm\infty} \frac{1}{x} \notag \\[6pt]
+  &= 0 \tag{14}
+\end{align}
+$$
+
+The function $(12)$ therefore has an oblique asymptote both as $x \to +\infty$ and as $x \to -\infty,$ with equation:
+
+$$
+\begin{align}
+y = x &\tag{15}
+\end{align}
+$$
 
 ![IMG. 3](svg/asymptotes-3.svg)
 
-To determine whether this function admits an oblique asymptote as $x \to \pm\infty$, we begin with the limit of $f(x)/x$:
 
-$$\frac{f(x)}{x} = \frac{x^2 + 1}{x^2} = 1 + \frac{1}{x^2}$$
-
-As $x \to \pm\infty$, the term $\dfrac{1}{x^2}$ tends to zero, so:
-
-$$\lim_{x \to \pm\infty} \frac{f(x)}{x} = 1$$
-
-The slope of the asymptote is therefore $p = 1$. Next, we compute the limit of the difference $f(x) - p x$:
-
-$$f(x) - x = \frac{x^2 + 1}{x} - x = \frac{x^2 + 1 - x^2}{x} = \frac{1}{x}$$
-
-Since $\frac{1}{x} \to 0$ as $x \to \pm\infty$, we obtain:
-
-$$\lim_{x \to \pm\infty} [f(x) - x] = 0$$
-
-The function therefore admits an oblique asymptote with equation:
-
-$$y = x$$
-
-> In this case the oblique asymptote passes through the origin, which gives $q = 0$, a degenerate configuration. In general, the vertical offset $q$ need not be zero.
-
-## Example 1
-
-Here the vertical offset $q$ is nonzero, unlike the previous case. Take the function:
-
-$$f(x) = \frac{2 x^2 - x + 3}{2 x}$$
-
-To determine the oblique asymptote, we first compute the slope $p$:
+In this case the oblique asymptote passes through the origin and we have $q = 0,$ but in general $q$ need not be zero. For example, we can write:
 
 $$
 \begin{align}
-p &= \lim_{x \to \pm\infty} \frac{f(x)}{x} \\[6pt]
-  &= \lim_{x \to \pm\infty} \frac{2 x^2 - x + 3}{2 x^2} \\[6pt]
-  &= 1
+f(x) = \frac{2x^2 - x + 3}{2x} = x - \frac{1}{2} + \frac{3}{2x} &\tag{16}
 \end{align}
 $$
 
-Next, we evaluate the vertical offset $q$:
+Since the term $3/(2x)$ tends to zero as $x \to \pm\infty,$ the difference between the function $(16)$ and the line $y = x - 1/2$ tends to zero, as required by $(9),$ so the oblique asymptote is:
 
 $$
 \begin{align}
-q &= \lim_{x \to \pm\infty} \big( f(x) - x \big) \\[6pt]
-  &= \lim_{x \to \pm\infty} \frac{2 x^2 - x + 3 - 2 x^2}{2 x} \\[6pt]
-  &= \lim_{x \to \pm\infty} \frac{- x + 3}{2 x} \\[6pt]
-  &= -\frac{1}{2}
+y = x - \frac{1}{2} &\tag{17}
 \end{align}
 $$
 
-The equation of the oblique asymptote is therefore:
+Every rational function whose numerator has degree $n+1$ and whose denominator has degree $n$ has an oblique asymptote. In this case, then, you already know what to expect. We now return to $(12)$ and check whether the function also has vertical and horizontal asymptotes. We can first rewrite it as $f(x) = x + 1/x$ and readily calculate the limits that determine the vertical asymptote:
 
-$$y = x - \frac{1}{2}$$
+$$
+\begin{align}
+\lim_{x \to 0^-} \left(x + \frac{1}{x}\right) = -\infty &\notag \\[6pt]
+\lim_{x \to 0^+} \left(x + \frac{1}{x}\right) = +\infty &\tag{18}
+\end{align}
+$$
 
-## Properties of asymptotes
+By $(5)$ and $(18),$ the line $x = 0$ is therefore a vertical asymptote. A function can have more than one vertical asymptote, but in this case $x = 0$ is the only one, because the function is [continuous](../continuous-functions/) for every $x \neq 0$ and zero is the only point excluded from its [domain](../determining-the-domain-of-a-function/). We now check whether the function also has a horizontal asymptote by calculating the following limits:
 
-Several properties follow from these definitions:
+$$
+\begin{align}
+\lim_{x \to -\infty} \left(x + \frac{1}{x}\right) = -\infty &\notag \\[6pt]
+\lim_{x \to +\infty} \left(x + \frac{1}{x}\right) = +\infty &\tag{19}
+\end{align}
+$$
 
-+ Not every function admits asymptotes.
-+ For horizontal asymptotes, several configurations are possible: a function may have none, it may approach the same horizontal line as $x \to +\infty$ and $x \to -\infty$, or it may approach two distinct horizontal lines in the two directions.
-+ Different types of asymptotes can coexist. A single function may simultaneously exhibit horizontal, vertical, and oblique asymptotes, depending on its behaviour near discontinuities and at infinity.
-+ Vertical asymptotes are not confined to rational functions: the logarithm $\ln x$ has one at $x = 0$, and $\tan x$ has infinitely many.
-+ A graph may cross its horizontal asymptote rather than only approach it, as $\frac{\sin x}{x}$ does infinitely often near $y = 0$.
-+ For a [rational function](../rational-functions/), an oblique asymptote occurs when the degree of the numerator exceeds that of the denominator by exactly one.
+Since the limits in $(19)$ are infinite, condition $(1)$ is not satisfied, so the function $(12)$ has no horizontal asymptotes.
 
-The asymptote condition $f(x) - (p x + q) \to 0$ can be written $f(x) = p x + q + o(1)$ in [little-o notation](../little-o-notation/). [Landau symbols](../big-o-notation/) more generally compare the growth rates of functions.
+## Concluding remarks
+
+Before concluding, it is useful to list some general properties of asymptotes. First, not every function has asymptotes. For example, $f(x) = x^2$ has no vertical asymptotes because it is continuous on all of $\mathbb{R},$ no horizontal asymptotes because it tends to $+\infty$ in both directions, and no oblique asymptotes because the ratio $f(x)/x = x$ does not tend to a finite value, as required by $(10).$
+
+Conversely, a single function may have several asymptotes at once, as in $(12),$ which has the vertical asymptote $x = 0$ and the oblique asymptote $y = x.$
+
+A further clarification concerns horizontal asymptotes, which are not barriers that the graph cannot cross. Condition $(1)$ only requires the difference $f(x) - L$ to tend to zero, without requiring it to keep the same sign. For example, the function $f(x) = \sin x/x,$ defined for $x \neq 0,$ satisfies:
+
+$$
+\begin{align}
+\left|\frac{\sin x}{x}\right| \leq \frac{1}{|x|} &\notag \\[6pt]
+\lim_{x \to \pm\infty} \frac{1}{|x|} = 0 &\tag{20}
+\end{align}
+$$
+
+Applying the [squeeze theorem](../squeeze-theorem/) to $(20)$ shows that $f(x)$ tends to zero and hence that $y = 0$ is a horizontal asymptote. However, the function is zero at $x = k\pi,$ for every integer $k \neq 0,$ and changes sign at each of these points. The graph therefore crosses the asymptote infinitely many times, while the amplitude of the oscillations tends to zero.
+
+- - -
+
+Condition $(9)$ can also be expressed using [little-o notation](../little-o-notation/). We first define $r(x)$ to be the error incurred when approximating the function by the line:
+
+$$
+\begin{align}
+r(x) = f(x) - (px + q) &\tag{21}
+\end{align}
+$$
+
+From $(21)$ and condition $(9),$ we obtain:
+
+$$
+\begin{align}
+&f(x) = px + q + r(x) \notag \\[6pt]
+&\lim_{x \to \pm\infty} r(x) = 0 \tag{22}
+\end{align}
+$$
+
+The notation $r(x) = o(1)$ means precisely that $r(x)$ tends to zero, so $(22)$ can be written in the following abbreviated form as $x \to \pm\infty$:
+
+$$
+\begin{align}
+f(x) = px + q + o(1) &\tag{23}
+\end{align}
+$$
+
+Equation $(23)$ separates the line that approximates the function from the approximation error, whose absolute value becomes arbitrarily small. To see a practical application, we return to the function $(12),$ obtaining the following identity as $x \to \pm\infty$:
+
+$$
+\begin{align}
+f(x) = x + \frac{1}{x} = x + o(1)\tag{24}
+\end{align}
+$$
+
+In $(24),$ by $(21),$ the error is $r(x) = 1/x,$ and $o(1)$ indicates that this error tends to zero without specifying how quickly. This form is useful in [asymptotic expansions](../asymptotic-expansion/) because it allows us to retain the terms that describe the approximation and collect those that tend to zero into a remainder. Equation $(23)$ can also describe a horizontal asymptote by setting $p = 0$ and $q = L,$ which gives the following identity from $(1)$:
+
+$$f(x) = L + o(1) \tag{25}$$
+
+In $(25),$ $o(1)$ is the error $f(x)-L$ relative to the horizontal asymptote, while in $(23),$ with $p\neq0,$ it is the error $f(x)-(px+q)$ relative to the oblique asymptote. These forms do not describe vertical asymptotes, which are governed by the infinite limit in $(5).$
