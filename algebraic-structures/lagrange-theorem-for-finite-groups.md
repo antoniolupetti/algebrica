@@ -17,7 +17,7 @@ Lagrange's theorem for finite groups states that for any [finite group](../group
 
 $$aH = \{ah \mid h \in H\} \tag{1}$$
 
-For example, in the additive group $\mathbb{Z}/6\mathbb{Z},$ the subgroup $H = \{0, 2, 4\}$ has two cosets. The first is $H$ itself, and the second is $1 + H = \{1, 3, 5\}.$ Lagrange's theorem thus gives the following identity:
+In additive notation the coset $aH$ is written $a+H.$ For example, in the additive group $\mathbb{Z}/6\mathbb{Z},$ the subgroup $H = \{0, 2, 4\}$ has two cosets. The first is $H$ itself, and the second is $1 + H = \{1, 3, 5\}.$ Lagrange's theorem thus gives the following identity:
 
 $$|G| = [G : H]|H| \tag{2}$$
 
@@ -33,7 +33,7 @@ In particular, $(4)$ holds if $aH = bH,$ since both cosets then contain $a.$ Con
 
 $$aH = bH \iff b^{-1}a \in H \tag{5}$$
 
-If two cosets have an element in common, they satisfy $(4)$ and hence are equal by $(5).$ Distinct cosets are therefore disjoint, and since there are $[G : H]$ of them by definition of the index and each contains $|H|$ elements by $(3),$ counting the elements of $G$ gives $(2)$ and completes the proof.
+If two cosets have an element in common, they satisfy $(4)$ and hence are equal by $(5).$ Distinct cosets are therefore disjoint, and since there are $[G : H]$ of them by definition of the index and each contains $|H|$ elements by $(3),$ counting the elements of $G$ gives $(2)$ and completes the proof. There are equally many left and right cosets, even when $aH \ne Ha,$ because inversion induces the bijection $aH \mapsto Ha^{-1}.$
 
 By $(2),$ if $G$ contains a subgroup of order $d,$ then $d$ divides $|G|.$ Conversely, one may ask whether every [divisor](../integers/) of $|G|$ is the order of a subgroup of $G.$ The [alternating group](../symmetric-group/) $A_4,$ consisting of the even permutations of four elements, provides a counterexample. It has order $12,$ and although $6$ divides $12,$ none of its subgroups has order $6.$
 

@@ -17,7 +17,7 @@ Il teorema di Lagrange per i gruppi finiti afferma che, dato un generico gruppo 
 
 $$aH = \{ah \mid h \in H\} \tag{1}$$
 
-Per esempio, nel gruppo additivo $\mathbb{Z}/6\mathbb{Z}$ il sottogruppo $H = \{0, 2, 4\}$ ha due laterali. Il primo è $H$ stesso, mentre il secondo è $1 + H = \{1, 3, 5\}.$ Per Lagrange, vale quindi la seguente identità:
+In notazione additiva il laterale $aH$ si scrive $a+H.$ Per esempio, nel gruppo additivo $\mathbb{Z}/6\mathbb{Z}$ il sottogruppo $H = \{0, 2, 4\}$ ha due laterali. Il primo è $H$ stesso, mentre il secondo è $1 + H = \{1, 3, 5\}.$ Per Lagrange, vale quindi la seguente identità:
 
 $$|G| = [G : H]|H| \tag{2}$$
 
@@ -33,7 +33,7 @@ La $(4)$ vale in particolare se $aH = bH,$ perché in tal caso entrambi i latera
 
 $$aH = bH \iff b^{-1}a \in H \tag{5}$$
 
-Se due laterali hanno un elemento in comune, soddisfano la $(4)$ e quindi per la $(5)$ coincidono. I laterali distinti sono quindi disgiunti e poiché il loro numero è $[G : H]$ per definizione di indice e ciascuno contiene $|H|$ elementi per la $(3)$, contando gli elementi di $G$ si ottiene proprio la $(2)$ e il teorema è dimostrato.
+Se due laterali hanno un elemento in comune, soddisfano la $(4)$ e quindi per la $(5)$ coincidono. I laterali distinti sono quindi disgiunti e poiché il loro numero è $[G : H]$ per definizione di indice e ciascuno contiene $|H|$ elementi per la $(3)$, contando gli elementi di $G$ si ottiene proprio la $(2)$ e il teorema è dimostrato. I laterali sinistri e destri sono ugualmente numerosi, anche quando $aH \ne Ha,$ perché l'inversione induce la biiezione $aH \mapsto Ha^{-1}.$
 
 Per la $(2),$ se $G$ contiene un sottogruppo di ordine $d,$ allora $d$ divide $|G|.$ Ci si può chiedere se, viceversa, ogni divisore di $|G|$ sia l'ordine di un sottogruppo di $G.$ Il gruppo alterno $A_4,$ formato dalle permutazioni pari di quattro elementi, fornisce un controesempio. Ha ordine $12$ e, sebbene $6$ divida $12,$ nessuno dei suoi sottogruppi ha ordine $6.$
 
