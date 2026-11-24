@@ -4,23 +4,23 @@
         <ellipse id="path-1" cx="131.5" cy="100" rx="49.5" ry="50"></ellipse>
     </defs>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2">
+        <g>
             <rect  stroke="#C9C9C9" x="0.5" y="0.5" width="199" height="199" rx="9"></rect>
-            <ellipse id="Oval" stroke="#BFBFBF" fill="#EAEAEA" cx="68.5" cy="100" rx="49" ry="49.5"></ellipse>
-            <g id="Oval">
-                <use fill="#EAEAEA" fill-rule="evenodd" style="mix-blend-mode: darken;" xlink:href="#path-1"></use>
+            <ellipse stroke="#BFBFBF" fill="#E9E3E2" cx="68.5" cy="100" rx="49" ry="49.5"></ellipse>
+            <g>
+                <use fill="#E9E3E2" fill-rule="evenodd" style="mix-blend-mode: darken;" xlink:href="#path-1"></use>
                 <ellipse stroke="#BFBFBF" stroke-width="1" stroke-linejoin="square" cx="131.5" cy="100" rx="49" ry="49.5"></ellipse>
             </g>
-            <text ifont-size="12" font-weight="normal" fill="#333333">
+            <text ifont-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="58" y="104">A</tspan>
             </text>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="132" y="104">B</tspan>
             </text>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="177" y="26">U</tspan>
             </text>
-            <text font-size="12" font-weight="normal" fill="#333333">
+            <text font-size="12" font-weight="normal" fill="#312f2f">
                 <tspan x="82" y="182">A ∪ B</tspan>
             </text>
         </g>

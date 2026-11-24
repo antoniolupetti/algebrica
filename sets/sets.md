@@ -17,321 +17,272 @@ tags:
   - subset
   - universal-set
 ---
-
 ## Introduction
 
-A set is a collection of objects called elements and is determined entirely by which objects belong to it. Two sets are equal precisely when they have the same elements. The order used to list the elements and any repetitions in the list do not change the set. For example, the following three descriptions define the same set:
+A set is a collection of elements and is entirely determined by the objects that belong to it. Sets are usually denoted by uppercase letters such as $A,$ $B,$ and $C,$ and their elements by lowercase letters. Neither the order in which the elements are listed nor any repetitions in the list affect the set. For example, the following three descriptions define the same set $A$:
 
 $$
-\{1,2,3\}=\{3,1,2\}=\{1,1,2,3,3\}
+A = \{1,2,3\}=\{3,1,2\}=\{1,1,2,3,3\} \tag{1}
 $$
 
-A set with exactly one element is a singleton. Thus $\{a\}$ is a singleton, while $\{a,b\}$ has two elements when $a\neq b.$ Sets are usually represented by uppercase letters $A,$ $B,$ $C,$ and their elements by lowercase letters. The notation $x\in A$ indicates that $x$ belongs to $A,$ while $x\notin A$ indicates that $x$ does not belong to $A.$ Membership must have an unambiguous truth value for every object under consideration.
+The empty set contains no elements, is denoted by $\emptyset$ or $\{\ \},$ and plays a role in set theory analogous to that of zero in arithmetic. Two sets are equal when they have the same elements, while a set with exactly one element is called a singleton and, if $a$ is its only element, can be written as follows:
 
-A set can be described by enumeration or by set-builder notation. Enumeration consists in explicitly listing each element of the set, and is practical when the cardinality of the set is finite and small:
+$$\{a\} \tag{2}$$
 
-$$
-A = \{a_1, a_2, a_3, a_4\}
-$$
-
-When the elements are numerous or infinite, set-builder notation is usually shorter. It selects from a previously specified set the elements that satisfy a given condition. For example, we define a subset of the [integers](../integers/) by writing:
+The notation $x\in A$ means that $x$ belongs to $A,$ while $x\notin A$ means that $x$ does not belong to $A.$ A set can be described by listing its elements, as in $(1),$ or by specifying a defining property, as we shall see below. Listing means writing out every element of the set and is useful when the cardinality of the set, that is, the number of its elements, is finite and small:
 
 $$
-A = \{\ x \in \mathbb{Z} \mid x > 4, \ x \leq 8 \ \}
+A = \{a_1, a_2, a_3, a_4\} \tag{3}
 $$
 
-The ambient set $\mathbb{Z}$ limits the candidates for membership. The two inequalities then select the following four integers:
+When the elements are numerous or infinite in number, listing them as in $(3)$ is impractical, and a defining property gives a more concise description. For example, a subset of the [integers](../integers/) consisting of those from $5$ through $8$ can be written as follows:
 
 $$
-A = \{5, 6, 7, 8\}
+A = \{\ x \in \mathbb{Z} \mid x \gt 4, \ x \leq 8 \ \} \tag{4}
 $$
 
-> In naive set theory, an arbitrary condition does not necessarily define a set. An expression of the form $\{\ x\in S\mid P(x)\ \}$ extracts elements from a set $S$ that is already available. Without such an ambient set, a condition may describe a collection that cannot be a set. Russell's paradox arises from an unrestricted definition of this kind.
-
-The empty set contains no elements, is denoted by $\emptyset$ or $\{\ \},$ and plays a role in set theory analogous to that of zero in arithmetic.
-
-## The universal set
-
-A main collection containing all objects under consideration is called the universal set and is written as $U.$ All sets in a given context are subsets of $U.$ The choice of $U$ depends on the situation. In elementary number theory one often works with $U = \mathbb{Z},$ whereas in real analysis the usual choice is $U = \mathbb{R}.$
-
-> The universal set is the tool that makes the notion of set complement unambiguous, as discussed in the section on set operations.
-
-## Cardinality of finite sets
-
-The cardinality of a finite set $A,$ denoted $|A|,$ is the number of elements in $A.$ Cardinality can also be compared through [functions](../functions/). Two sets $A$ and $B$ have the same cardinality when a [bijection](../injective-surjective-and-bijective-functions/) from $A$ to $B$ exists. This condition is written as follows:
+Since the set $A$ in $(4)$ has only a few elements, we can also list them as in $(3)$ to obtain the following equivalent description:
 
 $$
-|A|=|B| \iff \text{there is a bijection } f\colon A\to B
+A = \{5, 6, 7, 8\} \tag{5}
 $$
 
-For finite sets this condition is equivalent to equality between their numbers of elements. The empty set has cardinality $|\emptyset|=0.$
+The universal set, denoted by $U,$ is the set from which the elements of the sets under consideration are drawn. Each of these sets is therefore a subset of $U.$
 
-For infinite sets, bijections define equality of cardinality even when neither set has a finite number of elements. [Cardinality and countable sets](../cardinality-and-countable-sets/) extends this definition to infinite sets and includes the comparison with power sets.
+## Cardinality
 
-The cardinality of the [Cartesian product](../cartesian-product/) of two finite sets $A$ and $B$ is given by:
+The [cardinality](../cardinality-and-countable-sets/) of a finite set $A$ is the number of its elements and is denoted by $|A|.$ Two sets $A$ and $B$ have the same cardinality if and only if there is a [bijection](../injective-surjective-and-bijective-functions/) $f\colon A\to B,$ in which case we write $|A|=|B|.$ The cardinality of the empty set is $|\emptyset|=0.$ The same criterion extends the concept of cardinality to infinite sets. For example, pairing each [natural number](../natural-numbers/) $n$ with its double $2n$ gives every even natural number exactly once. The natural numbers and the even natural numbers therefore have the same cardinality.
 
-$$
-|A \times B| = |A| \cdot |B|
-$$
-
-In this case each element of $A$ can be paired with every element of $B,$ producing $|A| \cdot |B|$ ordered pairs.
-
-The cardinality of the union of two sets $A$ and $B$ is given by:
+To find the cardinality of the [Cartesian product](../cartesian-product/) of two finite sets $A$ and $B,$ we use the following formula:
 
 $$
-|A \cup B| = |A| + |B| - |A \cap B|
+	|A \times B| = |A| \cdot |B| \tag{6}
 $$
 
-The previous expression is the inclusion-exclusion principle, which ensures that elements common to both sets are counted once. Every element of $A \cup B$ appears in the sum $|A| + |B|.$ Elements lying in $A \cap B$ are counted twice, so the term is subtracted to guarantee the correct count.
-
-The principle extends to three sets, as expressed by:
+In $(6),$ each element of $A$ can be paired with each element of $B,$ giving $|A| \cdot |B|$ ordered pairs. For the union of the two sets, the cardinality is given by:
 
 $$
-|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+|A \cup B| = |A| + |B| - |A \cap B| \tag{7}
 $$
 
-The structure of the formula can be read as follows:
-
-+ Elements belonging to one set are counted only once.
-+ Elements shared by two sets are counted twice and subtracted once, yielding a net contribution of $1.$
-+ Elements lying in all three sets are added three times, subtracted three times, and added back once through the triple intersection, again producing a net contribution of one.
-
-## Subsets and power sets
-
-The notions of subset and power set are introduced together. Subsets are sets whose elements all belong to another set, while power sets are sets whose elements are themselves subsets of a given set. A set $A$ is a subset of $B$ if every element of $A$ is also an element of $B$:
+Equation $(7)$ expresses the [inclusion-exclusion principle](../inclusion-exclusion-principle/). The sum $|A|+|B|$ counts each element of $A\cap B$ twice, once in $A$ and once in $B.$ Subtracting $|A\cap B|$ ensures that each element of the union is counted exactly once. The principle extends to any finite family of finite sets. For three sets, for example, $(7)$ takes the following form:
 
 $$
-A \subseteq B \iff \forall \ x, \ x \in A \rightarrow x \in B
+|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C| \tag{8}
 $$
 
-Two sets are equal if and only if each is contained in the other, which is the standard way to establish set equality in mathematics:
+## Subsets and the power set
+
+A set $A$ is a subset of $B$ if every element of $A$ is also an element of $B,$ so we can write:
 
 $$
-A = B \iff A \subseteq B \text{ and } B \subseteq A
+A \subseteq B \iff \forall \ x, \ x \in A \rightarrow x \in B \tag{9}
 $$
 
-If $A \subseteq B$ and $A \neq B,$ then $A$ is a proper subset of $B,$ denoted $A \subsetneq B,$ and in this case there exists at least one element in $B$ that does not belong to $A.$ The empty set is a subset of every set. The inclusion $\emptyset \subseteq A$ holds for any set $A,$ because the implication $x \in \emptyset \Rightarrow x \in A$ is vacuously true.
-
-The power set of a set $A$ is the set of all subsets of $A,$ denoted $\mathcal{P}(A).$ It includes the empty set $\emptyset$ and the set $A$ itself. If $A$ has $n$ elements, then $\mathcal{P}(A)$ has $2^n$ elements. For example, if $A=\{a,b,c\},$ then the power set contains $2^3=8$ elements:
+Two sets are equal if and only if each is a subset of the other, which gives the usual way to prove that two sets are equal:
 
 $$
-\mathcal{P}(A) = \{\emptyset, \ \{a\}, \ \{b\}, \ \{c\}, \ \{a,b\}, \ \{a,c\}, \ \{b,c\}, \ \{a,b,c\}\}
+A = B \iff (A \subseteq B) \land (B \subseteq A) \tag{10}
 $$
 
-The exponent $2^n$ comes from a correspondence with functions. Every subset $E\subseteq A$ has a characteristic function $\chi_E\colon A\to\{0,1\}$ defined by:
+If $A \subseteq B$ and $A \neq B,$ then $A$ is a proper subset of $B,$ written $A \subsetneq B.$ In this case, at least one element of $B$ does not belong to $A.$ The empty set is a subset of every set $A.$ Indeed, if the inclusion $\emptyset \subseteq A$ were false, some element of $\emptyset$ would have to lie outside $A,$ but the empty set has no elements, so the inclusion holds by definition.
+
+We now introduce the [power set](../cantor-theorem/) of a set $A,$ denoted by $\mathcal{P}(A),$ which is the set of all subsets of $A$ and includes both the empty set $\emptyset$ and $A$ itself. Thus, if $A$ has $n$ elements, $\mathcal{P}(A)$ has $2^n$ elements. For example, if $A=\{a,b,c\},$ its power set has $2^3=8$ elements. For any set $A,$ the function that records these choices is called the characteristic function of $E$ and is denoted by $\chi_E\colon A\to\{0,1\}.$ For each $x\in A,$ its value is given by:
 
 $$
-\chi_E(a)=
+\chi_E(x)=
 \begin{cases}
-1 & \text{if } a\in E \\[6pt]
-0 & \text{if } a\notin E
+1 & x\in E \\[6pt]
+0 & x\notin E
 \end{cases}
+\tag{11}
 $$
 
-Conversely, a function $\chi\colon A\to\{0,1\}$ determines the subset $\{\ a\in A\mid \chi(a)=1\ \}.$ These two constructions are inverse to each other. When $A$ has $n$ elements, the value of $\chi$ has two independent possibilities at each element of $A,$ so there are $2^n$ characteristic functions and therefore $2^n$ subsets.
+Using $(11),$ we can also recover the subset from the values of the function by taking precisely those elements assigned the value $1.$ Each assignment of $0$ and $1$ thus determines a unique subset of $A,$ and each subset corresponds to exactly one assignment.
 
+## Families and partitions
 
-## Indexed families of sets
+A family of sets indexed by a set $I$ assigns a set $A_i$ to each index $i\in I$ and is written as follows:
 
-When several sets are considered together, labeling them by an index keeps the notation compact. A family of sets indexed by a set $I$ assigns a set $A_i$ to each index $i\in I$ and is written $(A_i)_{i\in I}.$ Formally, the family is a function whose domain is $I$ and whose value at $i$ is $A_i.$ The indices remain distinct even when two values coincide, so $A_i=A_j$ does not imply $i=j.$ The index set can be finite, countable, or uncountable.
-
-The union of the family is the set of elements that belong to at least one of its members, and the intersection is the set of elements that belong to every member:
-
-$$
-\bigcup_{i\in I} A_i = \{\ x \mid x\in A_i \text{ for some } i\in I \ \}
-$$
+$$(A_i)_{i\in I} \tag{12}$$ 
+A family is a [function](../functions/) with domain $I$ whose value at $i$ is $A_i.$ Distinct indices remain distinct even when the corresponding values coincide, so $A_i=A_j$ does not imply $i=j.$ The union of the family consists of the elements that belong to at least one of the sets $A_i$ and is defined by:
 
 $$
-\bigcap_{i\in I} A_i = \{\ x \mid x\in A_i \text{ for every } i\in I \ \}
+\bigcup_{i\in I} A_i = \{\ x \mid \exists \ i\in I,\ x\in A_i \ \} \tag{13}
 $$
 
-An element belongs to the union as soon as one member of the family contains it, and belongs to the intersection only when every member contains it.
-
-A family $(A_i)_{i\in I}$ is pairwise disjoint when any two members with distinct indices share no elements:
+Given a universal set $U$ of which all the sets $A_i$ are subsets, the intersection of the family consists of the elements of $U$ that belong to every $A_i:$
 
 $$
-A_i \cap A_j = \emptyset \quad \forall \ i \neq j
+\bigcap_{i\in I} A_i = \{\ x\in U \mid \forall \ i\in I,\ x\in A_i \ \} \tag{14}
 $$
 
-For each $n\in\mathbb{N}$ the singletons $\{n\}$ form a pairwise disjoint family, and their union is the set $\mathbb{N}.$
+If $I=\emptyset,$ every element of $U$ satisfies the condition in $(14),$ so the intersection of the empty family is $U.$
 
+A family $(A_i)_{i\in I}$ consists of pairwise disjoint sets when any two members with distinct indices have no elements in common:
 
-## Partitions
+$$
+A_i \cap A_j = \emptyset \quad \forall \ i \neq j \tag{15}
+$$
 
-A partition of a set $A$ is a family of non-empty subsets $(A_i)_{i\in I}$ that are pairwise disjoint and cover the whole of $A.$ The following conditions must hold:
+The singletons $\{n\},$ one for each $n\in\mathbb{N},$ form a family of pairwise disjoint sets whose union is $\mathbb{N}.$ This example illustrates the concept of a partition, which we can define as follows. A family $(A_i)_{i\in I}$ of subsets of $A$ is a partition of $A$ if each $A_i$ contains at least one element and each element of $A$ belongs to exactly one $A_i.$ The subsets $A_i$ are called the blocks of the partition. Formally, the conditions are:
 
 $$
 \begin{align}
-&A_i \neq \emptyset \quad \forall \ i \in I \\[6pt]
-&A_i \cap A_j = \emptyset \quad \forall \ i \neq j \\[6pt]
-& \bigcup_{i \in I} A_i = A
+A_i &\neq \emptyset \quad (\forall \ i\in I) \tag{16}\\[6pt]
+A_i \cap A_j &= \emptyset \quad (\forall \ i,j\in I,\ i\neq j) \tag{17}\\[6pt]
+\bigcup_{i\in I} A_i &= A \tag{18}
 \end{align}
 $$
 
-The subsets $A_i$ are called the blocks of the partition, and each element of $A$ belongs to exactly one of them. A simple example is the set of [integers](../integers/) $\mathbb{Z},$ which can be partitioned into the set of even integers and the set of odd integers, since these two blocks are non-empty, disjoint, and together cover the whole of $\mathbb{Z}.$
-
-Partitions are related to equivalence relations. Given an equivalence relation on $A$:
-
-+ The equivalence classes it induces form a partition of $A.$
-+ Any partition of $A$ defines an equivalence relation by declaring two elements equivalent whenever they belong to the same block.
-
+Condition $(16)$ rules out empty blocks, $(18)$ says that each element of $A$ belongs to at least one block, and $(17)$ ensures that it cannot belong to two distinct blocks. The even integers and the odd integers satisfy these three conditions and thus form the two blocks of a partition of $\mathbb{Z}.$ Two integers belong to the same block if and only if they have the same parity. In general, every partition of $A$ defines an equivalence relation in which two elements are equivalent if and only if they belong to the same block. Conversely, the classes of any equivalence relation on $A$ form a partition of $A.$
 
 ## Set operations
 
-Set operations generate new sets by combining the elements of different sets. The main operations are union, intersection, complement, and difference.
-
-The union of $A$ and $B$ is the set of all elements that belong to at least one of the two sets. Elements common to $A$ and $B$ are listed only once, since sets do not allow repetitions.
+We now consider operations on sets that form new sets by combining their elements. We begin with the union of $A$ and $B,$ the set of all elements that belong to at least one of the two sets. Elements common to $A$ and $B$ are listed only once because sets have no repeated elements.
 
 ![IMG. 1](svg/sets-1.svg)
 
 $$
-A \cup B = \{x \mid x \in A \text{ or } x \in B\}
+A \cup B = \{x \mid x \in A \text{ or } x \in B\} \tag{19}
 $$
-- - - 
 
-The intersection of $A$ and $B$ is the set of elements that belong to both sets:
+The intersection of $A$ and $B$ consists of the elements common to both sets:
 
 ![IMG. 2](svg/sets-2.svg)
 
 $$
-A \cap B = \{x \mid x \in A \text{ and } x \in B\}
+A \cap B = \{x \mid x \in A \text{ and } x \in B\} \tag{20}
 $$
 
-If $A \cap B = \emptyset,$ the two sets are disjoint and share no elements.
+If $A \cap B = \emptyset,$ the two sets are disjoint and have no elements in common. Another operation gives the complement of a set $A$ relative to a universal set $U,$ that is, the set of all elements of $U$ that do not belong to $A:$
 
-- - -
-
-The complement of $A$ with respect to a universal set $U$ is the set of all elements in $U$ that do not belong to $A.$ It is written as:
-
-$$
-A^c = \{x \in U \mid x \notin A\}
-$$
 
 ![IMG. 3](svg/sets-3.svg)
 
-Another way to represent the complement of $A$ is $\overline{A}$ or $U \setminus A.$ A single set may yield different complements when $U$ changes, since the elements of the complement vary with the universal set we pick.
+$$
+A^c = \{x \in U \mid x \notin A\} \tag{21}
+$$
 
-- - -
-
-The difference of $A$ and $B,$ written $A \setminus B,$ is the set of elements that belong to $A$ but not to $B$:
+The complement of $A$ can also be written as $\overline{A}$ or $U \setminus A.$ The same set $A$ can have different complements depending on the choice of $U.$ We now consider the difference of $A$ and $B,$ denoted by $A \setminus B,$ which consists of the elements that belong to $A$ but not to $B:$
 
 ![IMG. 4](svg/sets-4.svg)
 
 $$
-A \setminus B = \{x \mid x \in A \text{ and } x \notin B\}
+	A \setminus B = \{x \mid x \in A \text{ and } x \notin B\} \tag{22}
 $$
 
-The relation $A \setminus B \neq B \setminus A$ holds in general, since the difference of two sets is not a commutative operation. For any universal set that contains both $A$ and $B$ the identity $A \setminus B = A \cap B^c$ holds, which expresses the difference through the complement.
+If the two sets coincide, both differences are empty. If they are distinct, at least one element belongs to just one of them and therefore appears in only one of the two differences. This gives the equivalence:
 
-The symmetric difference of $A$ and $B,$ written $A \triangle B,$ is the set of elements that belong to one of the two sets but not to both:
+$$A \setminus B \neq B \setminus A \iff A \neq B \tag{23}$$
+
+For any universal set containing both $A$ and $B$ as subsets, the following identity expresses set difference in terms of the complement:
+ 
+$$A \setminus B = A \cap B^c\tag{24}$$
+
+The symmetric difference of $A$ and $B,$ denoted by $A \triangle B,$ is the set of elements that belong to one of the two sets but not to both:
 
 ![IMG. 5](svg/sets-5.svg)
 
 $$
-A \triangle B = (A \setminus B) \cup (B \setminus A)
+A \triangle B = (A \setminus B) \cup (B \setminus A) \tag{24}
 $$
 
-An equivalent representation is given by the following expression:
+Equation $(24)$ can also be written in the equivalent form:
 
 $$
-A \triangle B = (A \cup B) \setminus (A \cap B)
+A \triangle B = (A \cup B) \setminus (A \cap B) \tag{25}
 $$
 
-The symmetric difference is commutative and associative, and satisfies $A \triangle A = \emptyset$ and $A \triangle \emptyset = A.$ Together with intersection, it gives the collection of all subsets of a given set the structure of a Boolean [ring](../rings/).
+Symmetric difference is commutative and associative and satisfies the following identities:
 
-## Properties of set operations
-
-The set operations satisfy a series of identities that form the foundation of Boolean algebra and hold for any sets $A,$ $B,$ and $C$ within a universal set $U.$ Union and intersection are commutative operations. The order in which two sets are combined does not affect the result.
-
+$$\tag{26} 
+\begin{align}
+A \triangle A &= \emptyset \\[6pt]
+A \triangle \emptyset &= A
+\end{align}
 $$
+
+The subsets of a given set form a [ring](../rings/) in which addition is symmetric difference and multiplication is intersection. The ring is called Boolean because each element equals its own square, that is, $E\cap E=E$ for every subset $E.$
+
+- - -
+
+The operations just described satisfy a collection of identities that form the basis of Boolean algebra and hold for any subsets $A,$ $B,$ and $C$ of a universal set $U.$ Union and intersection are commutative, so the order in which two sets are combined does not affect the result.
+
+$$ \tag{27}
 \begin{align}
 A \cup B &= B \cup A \\[6pt]
 A \cap B &= B \cap A
 \end{align}
 $$
 
-Both operations are also associative, meaning that when three sets are combined, the grouping of the operands is irrelevant.
+Both operations are also associative, so we have:
 
-$$
+$$ \tag{28}
 \begin{align}
 (A \cup B) \cup C &= A \cup (B \cup C) \\[6pt]
 (A \cap B) \cap C &= A \cap (B \cap C)
 \end{align}
 $$
 
-Union and intersection distribute over each other, in a manner analogous to the distributive law of arithmetic.
+The definitions of union in $(19)$ and intersection in $(20)$ give the two distributive laws in $(29).$ In the first, intersection distributes over union, and in the second, union distributes over intersection:
 
 $$
 \begin{align}
 A \cap (B \cup C) &= (A \cap B) \cup (A \cap C) \\[6pt]
-A \cup (B \cap C) &= (A \cup B) \cap (A \cup C)
+A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) \tag{29}
 \end{align}
 $$
 
-The empty set and the universal set act as the identity element for union and intersection respectively. Combining any set with either of them returns the original set.
+The empty set and the universal set are the identity elements for union and intersection, respectively, so the following identities hold:
 
-$$
+$$ \tag{30}
 \begin{align}
 A \cup \emptyset &= A \\[6pt]
 A \cap U &= A
 \end{align}
 $$
 
-The empty set annihilates intersection and the universal set annihilates union. Combining any set with these elements returns the absorbing element rather than the original set:
+The empty set is an absorbing element for intersection, while the universal set is an absorbing element for union, so the following equalities hold for every set under consideration:
 
-$$
+$$ \tag{31}
 \begin{align}
 A \cap \emptyset &= \emptyset \\[6pt]
 A \cup U &= U
 \end{align}
 $$
 
-Each element of $U$ lies either in $A$ or in its complement, never in both. Applying the complement operation a second time in succession returns the original set:
+By $(21),$ each element of $U$ belongs to exactly one of the two sets $A$ and $A^c.$ Their union is therefore all of $U,$ and their intersection is empty. Taking the complement of $A^c$ relative to the same universal set gives precisely the elements of $A,$ yielding the identities:
 
 $$
 \begin{align}
 A \cup A^c &= U \\[6pt]
-A \cap A^c &= \emptyset \\[6pt]
+A \cap A^c &= \emptyset \tag{32} \\[6pt]
 (A^c)^c &= A
 \end{align}
 $$
 
 ## Disjoint union
 
-The ordinary union has only one occurrence of an element that belongs to both $A$ and $B.$ The disjoint union has two labeled versions of such an element, one for each source set. One construction is given by:
+We have seen that if an element $x$ belongs to both $A$ and $B,$ it appears only once in the union $A\cup B.$ The disjoint union distinguishes the copy of $x$ from $A$ and the copy from $B$ by attaching a label, for example $0$ for elements of $A$ and $1$ for elements of $B.$ With this choice of labels, the disjoint union is defined as follows:
 
 $$
-A\sqcup B=(\{0\}\times A)\cup(\{1\}\times B)
+A\sqcup B=(\{0\}\times A)\cup(\{1\}\times B) \tag{33}
 $$
 
-The sets $\{0\}\times A$ and $\{1\}\times B$ are disjoint because their ordered pairs have different first components. The functions $i_A\colon A\to A\sqcup B$ and $i_B\colon B\to A\sqcup B$ defined by $i_A(a)=(0,a)$ and $i_B(b)=(1,b)$ are injective. Their images are disjoint and their union is $A\sqcup B.$ Thus every element of the disjoint union comes from exactly one of the two source sets.
+In $(33),$ each element of $A$ or $B$ is mapped to its labeled copy by one of two functions:
 
-If $A$ and $B$ are finite, the two tagged copies have $|A|$ and $|B|$ elements, respectively. Their disjointness gives the formula:
-
-$$
-|A\sqcup B|=|A|+|B|
-$$
-
-When $A\cap B=\emptyset,$ removing the labels defines a bijection from $A\sqcup B$ to $A\cup B.$ If $A\cap B\neq\emptyset,$ the same rule is not injective. For an element $x\in A\cap B,$ the distinct elements $(0,x)$ and $(1,x)$ of $A\sqcup B$ would both map to $x.$
-
-## The ordered pair
-
-The discussion so far has treated the ordered pair $(a, b)$ as an intuitive notion, namely a pair of objects in which the first component is $a$ and the second is $b.$ In formal terms, the ordered pair can be defined set-theoretically as a set containing two elements:
-
-$$
-(a, b) = \{\{a\}, \ \{a, b\}\}
+$$\tag{34}
+\begin{align}
+i_A\colon A &\to A\sqcup B, & a &\mapsto (0,a) \\[6pt]
+i_B\colon B &\to A\sqcup B, & b &\mapsto (1,b) 
+\end{align}
 $$
 
-The term $a$ is the singleton, and $\{a, b\}$ is the unordered pair. The element $a$ appears in both, whereas $b$ appears only in one. This definition is justified by the following result:
+Two ordered pairs are equal if and only if their first components are equal and their second components are equal. The functions in $(34)$ are injective because the second component retains the original element, and their images are disjoint because the first components differ. Since the union of their images is all of $A\sqcup B,$ in the finite case we need only add the sizes of the two images:
 
 $$
-(a, b) = (c, d) \implies a = c \text{ and } b = d
+|A\sqcup B|=|A|+|B| \tag{35}
 $$
 
-To verify this property, suppose $\{\{a\}, \{a, b\}\} = \{\{c\}, \{c, d\}\}.$ There are two cases, depending on whether $a = b$ or $a \neq b.$
-
-In the first case, when $a = b,$ we have $\{a, b\} = \{a\},$ so the left-hand side becomes $\{\{a\}\},$ a singleton set. For equality, the right-hand side must also be a singleton, which requires $\{c\} = \{c, d\}$ and so $c = d.$ The single element on each side must coincide, so $\{a\} = \{c\},$ and therefore $a = c.$ Since $b = a = c = d,$ it follows that $a = c$ and $b = d.$
-
-If $a \neq b,$ then the left-hand side contains two distinct elements: $\{a\}$ and $\{a, b\}.$ The singleton $\{a\}$ must correspond either to $\{c\}$ or to $\{c, d\}$ on the right-hand side. If $\{a\} = \{c, d\},$ then $c = d = a,$ which would make $\{c\} = \{c, d\},$ resulting in a singleton on the right, contradicting the presence of two distinct elements on the left. Therefore $\{a\} = \{c\},$ so $a = c.$ It follows that $\{a, b\} = \{c, d\} = \{a, d\},$ and since $a \neq b,$ it must be that $b = d.$
-
-In both cases, $a = c$ and $b = d,$ as required. The converse is straightforward, since if $a = c$ and $b = d$ then the two sets are identical by substitution.
+Equation $(35)$ holds even when $A$ and $B$ have elements in common. Dropping the labels sends each pair in $(33)$ to its second component and gives all of $A\cup B.$ This map is a bijection if and only if $A\cap B=\emptyset,$ since a common element $x$ has two distinct copies, $(0,x)$ and $(1,x),$ both of which map to $x.$
