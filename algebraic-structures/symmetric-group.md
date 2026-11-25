@@ -6,7 +6,6 @@ tags:
   - algebraic-structures
   - alternating-group
   - cycle-notation
-  - dihedral-group
   - group-theory
   - parity-of-permutations
   - permutation
@@ -14,112 +13,188 @@ tags:
   - symmetric-group
   - transposition
 ---
+
 ## Definition
 
-Let $X_n = \{\ 1, 2, \ldots, n \ \}.$ A permutation of $X_n$ is a [bijection](../injective-surjective-and-bijective-functions/) $\sigma : X_n \to X_n.$ The set of all permutations of $X_n,$ equipped with [composition of functions](../composite-functions/), is the symmetric group on $n$ elements and is denoted $S_n.$
+Consider the set $X_n = \{1, 2, \ldots, n\},$ where $n \geq 1,$ and define the symmetric group $S_n$ to be the group of all permutations of $X_n$ under composition. Since a permutation is a bijection from $X_n$ to itself, the product of two permutations and the inverse of any permutation are again permutations of $X_n.$ Composition is associative, and its identity element is the identity map on $X_n.$
 
-The group axioms follow from the properties of functions. The composite of two bijections of $X_n$ is a bijection of $X_n,$ so composition is an operation on $S_n.$ Composition is associative, the identity map is the identity element, and every bijection has an inverse that is also a bijection of $X_n.$ Hence $S_n$ is a [group](../groups/). Cayley's theorem states that every finite group of order $n$ is [isomorphic](../homomorphisms-and-isomorphisms/) to a subgroup of $S_n.$
+To count the elements of $S_n,$ we can write each permutation of $X_n$ as follows:
 
-The two-row notation for a permutation has the arguments in the first row and their images in the second:
+$$
+\begin{align}
+\sigma &= \begin{pmatrix}
+1 & 2 & \cdots & n \\[6pt]
+\sigma(1) & \sigma(2) & \cdots & \sigma(n)
+\end{pmatrix} \tag{1}
+\end{align}
+$$
 
-$$\sigma = \begin{pmatrix} 1 & 2 & \cdots & n \\[6pt] \sigma(1) & \sigma(2) & \cdots & \sigma(n) \end{pmatrix}$$
+In $(1),$ the second row determines the permutation and can list the $n$ elements in any order. There are $n$ choices for $\sigma(1),$ then $n-1$ choices left for $\sigma(2),$ and so on until only one choice remains for the last image. The order of $S_n$ is therefore the factorial of $n:$
 
-The second row is a rearrangement of the first, and every such rearrangement determines a permutation. The image of $1$ has $n$ possible choices. Once that image is fixed, the image of $2$ has $n - 1$ choices, and the number of choices decreases by one at each step. Thus the order of the group is the [factorial](../factorial/):
+$$
+\begin{align}
+|S_n| &= n(n-1)\cdots 1 = n! \tag{2}
+\end{align}
+$$
 
-$$|S_n| = n!$$
+By $(2),$ the groups $S_1$ and $S_2$ have one and two elements, respectively, and composition is commutative in both because each has at most one element other than the identity. To see whether the same property holds in $S_3,$ we compare the two orders of composition for the following permutations, written in the notation of $(1):$
 
-## Composition and non-commutativity
+$$
+\begin{align}
+\sigma &= \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 3 & 1 \end{pmatrix} \tag{3a} \\[6pt]
+\tau &= \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 1 & 3 \end{pmatrix} \tag{3b}
+\end{align}
+$$
 
-Composition is read from right to left, so $\sigma \circ \tau$ means that $\tau$ acts first and $\sigma$ acts on the result. The order of the two factors matters. The smallest non-abelian symmetric group is $S_3,$ which has order $6.$ Let $\sigma$ send $1 \mapsto 2,$ $2 \mapsto 3,$ $3 \mapsto 1,$ and let $\tau$ exchange $1$ and $2$ while fixing $3:$
+Composing the permutations in $(3a)$ and $(3b)$ in the two possible orders gives $(\sigma \circ \tau)(1) = \sigma(2) = 3$ and $(\tau \circ \sigma)(1) = \tau(2) = 1.$ Computing the images of $2$ and $3$ in the same way gives the two products in full:
 
-$$\sigma = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 3 & 1 \end{pmatrix} \qquad \tau = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 2 & 1 & 3 \end{pmatrix}$$
+$$
+\begin{align}
+\sigma \circ \tau &= \begin{pmatrix} 1 & 2 & 3 \\[6pt] 3 & 2 & 1 \end{pmatrix} \tag{4a} \\[6pt]
+\tau \circ \sigma &= \begin{pmatrix} 1 & 2 & 3 \\[6pt] 1 & 3 & 2 \end{pmatrix} \tag{4b}
+\end{align}
+$$
 
-To compute $\sigma \circ \tau,$ we track each element first under $\tau$ and then under $\sigma.$ The element $1$ is sent by $\tau$ to $2,$ and $\sigma$ sends $2$ to $3,$ so $1 \mapsto 3.$ The element $2$ is sent by $\tau$ to $1,$ and $\sigma$ sends $1$ to $2,$ so $2 \mapsto 2.$ The element $3$ is fixed by $\tau,$ and $\sigma$ sends $3$ to $1,$ so $3 \mapsto 1.$ Therefore:
+Since the two products send $1$ to different elements, the permutations $\sigma$ and $\tau$ do not commute. Thus $S_3$ is nonabelian. For $n \gt 3,$ the same counterexample extends to $S_n$ by fixing the elements from $4$ to $n,$ so $S_n$ is nonabelian for every $n \geq 3.$
 
-$$\sigma \circ \tau = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 3 & 2 & 1 \end{pmatrix}$$
+## Cycle notation and the order of a permutation
 
-Reversing the order changes the result. Now $1$ is sent by $\sigma$ to $2,$ and $\tau$ sends $2$ to $1,$ so $1 \mapsto 1.$ The element $2$ is sent by $\sigma$ to $3,$ which $\tau$ fixes, so $2 \mapsto 3.$ The element $3$ is sent by $\sigma$ to $1,$ and $\tau$ sends $1$ to $2,$ so $3 \mapsto 2:$
+Cycle notation expresses a permutation in terms of cycles. To write a cycle, choose an element and list the elements encountered before returning to the starting point. For example, in $(3a)$ we can write $\sigma = (1\ 2\ 3)$ because the successive images of $1$ follow this sequence:
 
-$$\tau \circ \sigma = \begin{pmatrix} 1 & 2 & 3 \\[6pt] 1 & 3 & 2 \end{pmatrix}$$
+$$1 \mapsto 2 \mapsto 3 \mapsto 1$$
 
-The two results differ, so $S_3$ is not abelian. For $n \geq 3,$ define the two permutations above to fix all elements from $4$ to $n.$ Their composites still differ, so $S_n$ is non-abelian. The groups $S_1$ and $S_2$ are abelian, of orders $1$ and $2.$
+In general, given $k$ distinct elements of $X_n,$ the cycle $(a_1\ a_2\ \cdots\ a_k)$ sends each element in the list to the next and the last to the first, fixing all other elements. The length of the cycle is $k.$ Any of its elements can be chosen as the starting point, so the following expressions denote the same cycle:
 
-## Cycle notation
+$$
+\begin{align}
+\sigma &= (1\ 2\ 3) \notag \\[6pt]
+       &= (2\ 3\ 1) \notag \\[6pt]
+       &= (3\ 1\ 2) \notag
+\end{align}
+$$
 
-The two-row display lists every image of a permutation. Cycle notation records the sequence obtained by applying the permutation repeatedly to a single element.
+A transposition is a cycle of length $2$ that interchanges two elements. In $(3b),$ the permutation $\tau$ interchanges $1$ and $2$ and fixes $3,$ so we write it as $(1\ 2).$ Both products are also transpositions, since $\sigma \circ \tau$ interchanges $1$ and $3$ in $(4a),$ while $\tau \circ \sigma$ interchanges $2$ and $3$ in $(4b).$
 
-Let $a_1, a_2, \ldots, a_k$ be distinct elements of $X_n.$ The cycle $(a_1\ a_2\ \cdots\ a_k)$ is the permutation sending $a_1$ to $a_2,$ $a_2$ to $a_3,$ and so on until $a_k,$ which is sent back to $a_1,$ while every element outside the list is fixed. Such a permutation is a $k$-cycle, and $k$ is its length. A $2$-cycle is a transposition. In this notation the permutations of the previous section are $\sigma = (1\ 2\ 3)$ and $\tau = (1\ 2),$ and their composites are $\sigma \circ \tau = (1\ 3)$ and $\tau \circ \sigma = (2\ 3).$
+$$
+\begin{align}
+\sigma &= (1\ 2\ 3) & \tau &= (1\ 2) \tag{6a} \\[6pt]
+\sigma \circ \tau &= (1\ 3) & \tau \circ \sigma &= (2\ 3) \tag{6b}
+\end{align}
+$$
 
-The same cycle can be written in $k$ ways, since any of its elements can be the starting point: $(1\ 2\ 3),$ $(2\ 3\ 1),$ and $(3\ 1\ 2)$ denote the same permutation.
+For any permutation $\pi \in S_n,$ repeatedly applying it to an element eventually brings that element back to its starting point because $X_n$ is finite and $\pi$ is injective. Once a cycle is complete, we start again with an element not yet listed and continue until every element of $X_n$ has been listed. The resulting cycles are disjoint, and their product equals $\pi$ because the two agree on every element. The decomposition into disjoint cycles is therefore unique up to the order of the factors, which commute because each fixes the elements moved by the others. In the following permutation of $X_6,$ we can therefore write the two transpositions in either order:
 
-Two cycles are disjoint when no element appears in both. Disjoint cycles commute, because each moves only elements that the other fixes, so applying them in either order gives the same values.
+$$
+\begin{align}
+\rho &= \begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 \\[6pt]
+3 & 5 & 1 & 4 & 2 & 6
+\end{pmatrix} \notag \\[6pt]
+&= (1\ 3)(2\ 5) = (2\ 5)(1\ 3) \tag{7}
+\end{align}
+$$
 
-Every permutation decomposes into disjoint cycles. Start from any element $a,$ and form the sequence $a, \sigma(a), \sigma^2(a), \ldots$ Since $X_n$ is finite the sequence must repeat, and the first repetition returns to $a,$ because $\sigma$ is injective. The terms before this repetition form a cycle. Removing its elements from $X_n$ leaves a smaller set that $\sigma$ maps to itself, and repeating the argument exhausts $X_n.$ The decomposition is unique up to the order of the factors and the choice of starting point inside each cycle. Fixed points correspond to cycles of length $1$ and are usually omitted.
+By convention, the cycle notation in $(7)$ omits cycles of length $1,$ in this case $(4)$ and $(6).$
 
-As an example, consider the permutation of $X_6$ given by:
+- - -
 
-$$\rho = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\[6pt] 3 & 5 & 1 & 4 & 2 & 6 \end{pmatrix}$$
+In $(2)$ we found the order of $S_n$ by counting its permutations. In general, the order of an individual permutation $\sigma \in S_n$ is the least integer $j \geq 1$ for which $\sigma^j$ is the identity. To find this minimum, we must determine how many applications of $\sigma$ it takes for all elements to return to their starting points. In a cycle of length $k,$ each element advances one position with each application, so after $j$ steps it is back at its starting point if and only if $k$ divides $j.$ If the disjoint cycles of $\sigma$ have lengths $k_1, \ldots, k_m,$ the smallest positive exponent for which all elements return to their starting points simultaneously is the least common multiple of the cycle lengths:
 
-Following $1$ gives $1 \mapsto 3 \mapsto 1,$ which closes the cycle $(1\ 3).$ Following $2$ gives $2 \mapsto 5 \mapsto 2,$ which closes the cycle $(2\ 5).$ The elements $4$ and $6$ are fixed. Therefore $\rho = (1\ 3)(2\ 5),$ a product of two disjoint transpositions.
+$$
+\begin{align}
+\mathrm{ord}(\sigma) &= \mathrm{lcm}(k_1, \ldots, k_m) \tag{8}
+\end{align}
+$$
 
-Cycle notation also describes the subgroups of $S_n$ that come from geometry. Label the vertices of a regular $n$-gon with $1, 2, \ldots, n$ in cyclic order. Each symmetry of the polygon permutes the labels, the $n$-cycle $(1\ 2\ \cdots\ n)$ corresponds to the rotation through $2\pi/n,$ and the permutation fixing $1$ and reversing the order of the remaining labels corresponds to the reflection in the axis through the first vertex. These two permutations generate the [dihedral group](../dihedral-groups/) $D_n,$ a subgroup of $S_n$ of order $2n.$ For $n = 3$ the subgroup is all of $S_3,$ while for $n \geq 4$ it is proper, because $n!$ exceeds $2n$ in that range.
+Applying $(8)$ to the permutation $(1\ 2)(3\ 4\ 5) \in S_5$ gives:
 
-## Order of a permutation
+$$
+\begin{align}
+\mathrm{ord}\bigl((1\ 2)(3\ 4\ 5)\bigr) &= \mathrm{lcm}(2,3) = 6 \tag{8a}
+\end{align}
+$$
 
-The cycle decomposition determines the [order](../groups/) of a permutation as an element of $S_n.$ Applying a $k$-cycle $j$ times moves each of its elements $j$ places forward along the cycle. The smallest positive value of $j$ that returns every element to its starting position is $k,$ so a $k$-cycle has order $k.$
+In six steps, the first cycle completes three full turns and the second completes two.
 
-For a general permutation $\sigma$ with disjoint cycles of lengths $k_1, k_2, \ldots, k_m,$ the power $\sigma^j$ acts on each cycle independently, because disjoint cycles commute. So $\sigma^j$ is the identity exactly when $j$ is a multiple of every $k_i,$ which gives the order as the least common multiple:
+## The sign of a permutation and the alternating group
 
-$$\mathrm{ord}(\sigma) = \mathrm{lcm}(k_1, k_2, \ldots, k_m)$$
+The permutation $(1\ 2)(3\ 4\ 5)$ in $(8a)$ can be written as $(1\ 2)(3\ 5)(3\ 4).$ Can it also be written as a product of an even number of transpositions? To answer this question, we start by expressing a cycle of length $k \geq 2$ as a product of $k-1$ transpositions:
 
-The permutation $\rho = (1\ 3)(2\ 5)$ has order $2.$ A permutation of $X_5$ with a disjoint $2$-cycle and $3$-cycle has order $6,$ which exceeds the length of either cycle.
+$$
+\begin{align}
+(a_1\ a_2\ \cdots\ a_k) &= (a_1\ a_k) \cdots (a_1\ a_2) \tag{9}
+\end{align}
+$$
 
-## Transpositions and the sign homomorphism
+To determine the parity, let $c(\pi)$ denote the number of disjoint cycles of $\pi,$ including those of length $1.$ In the product $\pi \circ (a\ b),$ the images of $a$ and $b$ are interchanged. If the two elements belong to different cycles, those cycles merge, whereas a cycle containing both elements splits in two. The number of cycles therefore changes parity at each step. Since the identity has $n$ cycles, the following holds for any product $\sigma$ of $m$ transpositions:
 
-Every permutation is a product of transpositions. For a single cycle, the required identity is:
+$$
+\begin{align}
+m &\equiv n-c(\sigma) \pmod{2} \tag{10}
+\end{align}
+$$
 
-$$(a_1\ a_2\ \cdots\ a_k) = (a_1\ a_k)(a_1\ a_{k-1}) \cdots (a_1\ a_2)$$
+By $(10),$ the parity of $m$ depends only on $\sigma,$ so we can define the sign of $\sigma$ by setting $\mathrm{sgn}(\sigma)=(-1)^m,$ so that a permutation is even if its sign is $1$ and odd if its sign is $-1.$ Every decomposition of the permutation in $(8a)$ into transpositions therefore has an odd number of factors, while by $(9)$ a cycle of length $k$ has sign $(-1)^{k-1}.$
 
-The right side contains $k - 1$ transpositions. It sends $a_1$ to $a_2,$ since only the rightmost factor moves $a_1$ and the others leave $a_2$ fixed. For $2 \leq i \leq k - 1,$ the factors send $a_i$ to $a_1$ and then $a_1$ to $a_{i+1}.$ They send $a_k$ to $a_1.$ Since every permutation is a product of disjoint cycles, every permutation is a product of transpositions.
+If $\sigma$ and $\tau$ are products of $p$ and $q$ transpositions, respectively, their decompositions give $p+q$ factors for $\sigma \circ \tau,$ so the sign function $\mathrm{sgn}$ is a homomorphism:
 
-A factorisation into transpositions need not be unique, and different factorisations can have different numbers of factors. The parity of the number depends only on the permutation. To prove this without choosing a factorisation, consider the [polynomial](../polynomials/) in $n$ variables:
+$$
+\begin{align}
+\mathrm{sgn}(\sigma \circ \tau) &= (-1)^{p+q} \notag \\[6pt]
+&= \mathrm{sgn}(\sigma)\mathrm{sgn}(\tau) \tag{11}
+\end{align}
+$$
 
-$$\Delta = \prod_{1 \leq i < j \leq n} (x_i - x_j)$$
+For $n \geq 2,$ this homomorphism from $S_n$ to the multiplicative group $\{1,-1\}$ is surjective because the identity has sign $1$ and a transposition has sign $-1.$
 
-For a permutation $\sigma,$ let $\sigma \cdot \Delta$ be the polynomial obtained by replacing each variable $x_i$ with $x_{\sigma(i)}.$ Every factor $x_{\sigma(i)} - x_{\sigma(j)}$ of the result equals $\pm(x_k - x_l)$ for exactly one pair $k < l,$ and distinct pairs $(i, j)$ give distinct pairs $(k, l)$ because $\sigma$ is injective. The factors of $\sigma \cdot \Delta$ are therefore the factors of $\Delta$ up to sign and up to order, which gives $\sigma \cdot \Delta = \pm\Delta.$ Define:
+- - -
 
-$$\mathrm{sgn}(\sigma) = \frac{\sigma \cdot \Delta}{\Delta} \in \{\ 1, -1 \ \}$$
+We now turn to the alternating group $A_n,$ which consists of the even permutations in $S_n.$ Since these are precisely the permutations that the sign homomorphism in $(11)$ sends to $1,$ the alternating group is its kernel and hence a normal subgroup of $S_n.$ For $n \geq 2,$ fix the transposition $\tau = (1\ 2).$ For every $\sigma \in S_n,$ the sign of the product $\tau \circ \sigma$ is the opposite of the sign of $\sigma$ because the factor $\mathrm{sgn}(\tau)$ in $(11)$ equals $-1.$ Composing on the left with $\tau$ a second time gives back $\sigma.$ The odd permutations therefore form the coset $\tau A_n,$ and there are as many odd permutations as even ones. This coset is not a subgroup because the identity is even. Since $A_n$ and $\tau A_n$ together make up $S_n,$ we obtain the following from $(2):$
 
-The substitution rule satisfies $\sigma \cdot (\tau \cdot \Delta) = (\sigma \circ \tau) \cdot \Delta.$ Since $\tau \cdot \Delta$ is a scalar multiple of $\Delta,$ that scalar is unchanged by the substitution. Hence $\mathrm{sgn}(\sigma \circ \tau) = \mathrm{sgn}(\sigma)\mathrm{sgn}(\tau),$ so $\mathrm{sgn}$ is a [homomorphism](../homomorphisms-and-isomorphisms/) from $S_n$ to the multiplicative group $\{\ 1, -1 \ \}.$ This homomorphism is the sign homomorphism, and it is surjective for $n \geq 2.$
+$$
+\begin{align}
+[S_n : A_n] &= 2 \tag{12a} \\[6pt]
+|A_n| &= \frac{|S_n|}{2} = \frac{n!}{2} \tag{12b}
+\end{align}
+$$
 
-A transposition has sign $-1.$ Suppose that it exchanges $k$ and $l.$ Every factor involving neither $x_k$ nor $x_l$ is fixed. For each $r \notin \{\ k, l \ \},$ the two factors associated with the pairs $\{\ r, k \ \}$ and $\{\ r, l \ \}$ have a product that is unchanged by the exchange. The factor associated with $\{\ k, l \ \}$ changes sign. Hence the whole polynomial changes sign. Combining this result with a factorisation into transpositions gives $\mathrm{sgn}(\sigma) = (-1)^m$ whenever $\sigma$ is a product of $m$ transpositions.
+By $(12b),$ the group $A_3$ has order $3.$ The cycle $(1\ 2\ 3)$ in $(6a)$ is even and has order $3,$ so it generates all of $A_3:$
 
-A permutation is even when its sign is $1$ and odd when its sign is $-1.$ Since $\mathrm{sgn}(\sigma)$ depends on $\sigma$ alone, any two factorisations of the same permutation into transpositions have numbers of factors with the same parity.
+$$
+\begin{align}
+A_3 &= \langle (1\ 2\ 3) \rangle = \{\mathrm{id}, (1\ 2\ 3), (1\ 3\ 2)\} \tag{13}
+\end{align}
+$$
 
-> A $k$-cycle is a product of $k - 1$ transpositions, so it is even when $k$ is odd and odd when $k$ is even. The parity of a cycle is opposite to the parity of its length, and the $3$-cycle $(1\ 2\ 3)$ is an even permutation.
+## Conjugation and cycle type
 
-## The alternating group
+Fix a permutation $\pi \in S_n$ and define conjugation by $\pi$ to be the map that sends each $\sigma \in S_n$ to the following permutation:
 
-The [kernel](../homomorphisms-and-isomorphisms/) of the sign homomorphism is the set of even permutations. This kernel is a normal subgroup of $S_n$ called the alternating group on $n$ elements and denoted $A_n.$
+$$\pi\sigma\pi^{-1} \tag{14}$$
 
-For $n \geq 2$ the sign homomorphism is surjective onto a group of order $2,$ so $A_n$ has index $2$ in $S_n.$ [Lagrange's theorem](../groups/) gives its order:
+Two permutations $\sigma$ and $\tau$ are conjugate in $S_n$ if there is a permutation $\pi \in S_n$ for which the following relation holds:
 
-$$|A_n| = \frac{n!}{2}$$
+$$\tau = \pi\sigma\pi^{-1} \tag{15}$$
 
-The odd permutations form the other coset, which is $(1\ 2)A_n.$ If $\pi$ is odd, then $(1\ 2) \circ \pi$ is even, so $\pi$ belongs to $(1\ 2)A_n,$ and conversely every element of that coset is odd. The set of odd permutations is therefore not a subgroup, since it does not contain the identity.
+If $\sigma(a)=b,$ it follows that $\tau(\pi(a))=\pi(\sigma(a))=\pi(b).$ Thus, in a cycle $c=(a_1\ a_2\ \cdots\ a_k),$ conjugation replaces each label $a_i$ with $\pi(a_i),$ as shown in $(14a).$
 
-As an example, $A_3$ has order $3$ and consists of the identity together with the two $3$-cycles $(1\ 2\ 3)$ and $(1\ 3\ 2),$ so it is cyclic. The group $A_4$ has order $12$ and is a counterexample to the converse of Lagrange's theorem, since it has no subgroup of order $6.$
+$$
+\begin{align}
+\pi c\pi^{-1} &= (\pi(a_1)\ \pi(a_2)\ \cdots\ \pi(a_k)) \tag{14a} \\[6pt]
+(2\ 3)(1\ 2\ 3)(2\ 3) &= (1\ 3\ 2) \tag{14b}
+\end{align}
+$$
 
-## Conjugacy and cycle type
+We now introduce the cycle type of a permutation, the list of the lengths of its disjoint cycles in decreasing order, counting fixed points as cycles of length $1.$ By $(14a),$ conjugation preserves cycle type. Conversely, if two permutations have the same cycle type, we pair up cycles of equal length, including the fixed points. After choosing a starting point in each cycle, we map its elements in order to the corresponding elements of the paired cycle. Together these assignments define a permutation $\pi$ on all of $X_n$ that conjugates the first permutation to the second by $(14a).$
 
-[Conjugation](../groups/) in $S_n$ relabels the entries of each cycle. For a permutation $\pi$ and a cycle $(a_1\ a_2\ \cdots\ a_k),$ the conjugate is obtained by applying $\pi$ to each entry:
+The conjugacy classes of $S_n$ therefore correspond to the partitions of $n,$ since the cycle lengths sum to $n$ and every partition can be realized by disjoint cycles of those lengths. In $S_4,$ the five classes contain a total of $24$ permutations.
 
-$$\pi (a_1\ a_2\ \cdots\ a_k) \pi^{-1} = (\pi(a_1)\ \pi(a_2)\ \cdots\ \pi(a_k))$$
+| Cycle type | Permutations | Number |
+| --- | --- | ---: |
+| $(4)$ | Cycles of length $4$ | $6$ |
+| $(3,1)$ | Cycles of length $3$ | $8$ |
+| $(2,2)$ | Products of two disjoint transpositions | $3$ |
+| $(2,1,1)$ | Transpositions | $6$ |
+| $(1,1,1,1)$ | Identity | $1$ |
 
-To verify this, apply the left side to $\pi(a_i).$ First $\pi^{-1}$ returns $a_i,$ then the cycle sends it to $a_{i+1},$ and finally $\pi$ sends $a_{i+1}$ to $\pi(a_{i+1}),$ which is the value of the right side. An element outside the cycle on the right is sent by $\pi^{-1}$ outside the original cycle, fixed by that cycle, and returned to its starting point by $\pi.$
-
-The cycle type of a permutation is the list of the lengths of its disjoint cycles, written in decreasing order. Conjugation replaces each cycle by a cycle of the same length, so it preserves the cycle type. Conversely two permutations with the same cycle type are conjugate. Define $\pi$ by mapping each entry of the first cycle decomposition to the corresponding entry of the second. The formula above then shows that $\pi$ conjugates the first permutation into the second. The conjugacy classes of $S_n$ are therefore in bijection with the cycle types, that is, with the partitions of the integer $n.$
-
-The five partitions of $4$ correspond to the five conjugacy classes of $S_4:$ the identity, the six transpositions, the three products of two disjoint transpositions, the eight $3$-cycles, and the six $4$-cycles. Their total is $24,$ the order of the group.
-
-> Every normal subgroup of $S_n$ is a union of conjugacy classes, although not every union of conjugacy classes is a subgroup. In $S_4,$ the identity and the three products of two disjoint transpositions form a subgroup of order $4.$ This subgroup is normal and isomorphic to the Klein four-group.
+By $(8),$ the permutations $(1\ 2)$ and $(1\ 2)(3\ 4)$ in $S_4$ both have order $2.$ Their cycle types are $(2,1,1)$ and $(2,2),$ respectively, so the two permutations are not conjugate.
