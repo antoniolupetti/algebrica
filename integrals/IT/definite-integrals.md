@@ -16,57 +16,35 @@ tags:
   - riemann-integral
   - riemann-sum
 ---
-## Non abbiate fretta
+## Definizione
 
-Adrien-Marie Legendre è uno dei matematici più noti e influenti del Settecento. Nacque a Parigi, nel 1752 e intorno ai trent'anni iniziò ad interessarsi della teoria degli integrali ellittici, oggetti matematici utilizzati per il calcolo della lunghezza di un arco di [ellisse](../ellipse/).
+Un integrale definito rappresenta l'accumulazione di una quantità data da una funzione $y=f(x)$ all'interno di un intervallo. In termini un po' meno precisi, ma comunque validi, l'integrale definito misura l'area con segno tra una certa curva e l'asse delle $x,$ dove le porzioni sopra l'asse 𝑥 si sommano e quelle sotto si sottraggono. Vediamo come questo ragionamento si traduce a livello più formale, considerando una funzione $f(x)$ definita su un intervallo chiuso $[a, b]$, con $a < b$. Se $f(x)$ è continua e non negativa nell'intervallo si ha che il suo grafico, l'asse delle $x$ e le rette $x = a$ e $x = b$ delimitano un cosiddetto trapezoide curvilineo la cui area è data dal seguente integrale definito:
 
-Il problema non è banale, soprattutto non lo era all'epoca, quando non esisteva ancora una teoria consolidata per la sua risoluzione. Per un'ellisse con semiasse maggiore $a$ ed eccentricità $e\in[0,1),$ il perimetro è espresso dal seguente integrale ellittico completo di seconda specie:
+$$\int_{a}^{b} f(x) \ dx \tag{1}$$
 
-$$
-L=4aE(e)=4a\int_{0}^{\pi/2}\sqrt{1-e^2\sin^2\theta} \ d\theta
-$$
+Nella $(1),$ $a$ e $b$ sono gli estremi di integrazione, $f$ è la funzione integranda e $dx$ indica che si integra rispetto a $x.$ In generale, per l'area di un trapezoide curvilineo come quello in figura non si dispone di una formula geometrica elementare:
 
-Non affronteremo questi oggetti complessi nella nostra esposizione, ma ci focalizzeremo sulle tipologie di integrali definiti tipicamente trattate nelle scuole superiori e nei corsi di calcolo dei primi anni universitari. Sappiate però che certi mostri esistono e che richiedono metodi risolutivi tutt'altro che banali.
+![Img. 1](../svg/definite-integrals-1.svg)
 
-Nella formula $\pi/2$ e $0$ sono gli estremi di integrazione che differenziano, quantomeno in termini di rappresentazione, gli integrali definiti da quelli [indefiniti](../indefinite-integrals/).
+Per capire come si arriva alla $(1),$ partiamo dalla considerazione che l'area del trapezoide può essere approssimata suddividendo l'intervallo $[a, b]$ in $n$ sottointervalli di uguale ampiezza che definiamo in questo modo::
 
-Tornando alla nostra storia, le fonti indicano il 1786 come l'anno delle prime pubblicazioni di Legendre sulla teoria degli integrali ellittici. Le sue ricerche, tra il 1811 e il 1819, portarono alla pubblicazione di ulteriori volumi dedicati allo sviluppo della teoria e alle relative applicazioni. Non soddisfatto del proprio lavoro, qualche anno più tardi finì per riscrivere daccapo l'intero corpus, tenendolo aggiornato fino agli ultimi anni di vita. 
+$$\Delta x = \frac{b - a}{n}\tag{2}$$
 
-In una mattina d'inizio agosto, Legendre ricevette una lettera da Carl Gustav Jacobi, all'epoca ventiduenne, che offriva un cambio di prospettiva sull'argomento e proponeva una nuova teoria che rendeva obsoleta quella a cui Legendre aveva lavorato per quasi quarant'anni. Agli stessi risultati giunse il giovane norvegese Niels Henrik Abel.
+Ciascun sottointervallo approssima la regione con un rettangolo, la cui area è semplice da calcolare, e la somma delle aree di questi rettangoli fornisce una stima dell'area totale. Se indichiamo i punti della partizione con $x_i = a + i\Delta x,$ per $i=0,\ldots,n,$ si ha che $x_0=a$ e $x_n=b,$ e l'$i$-esimo sottointervallo è $[x_{i-1},x_i].$ Indicando con $m_i$ e $M_i$ l'estremo inferiore e l'estremo superiore di $f(x)$ su questo sottointervallo, la somma inferiore $s_n^{-}$ che approssima l'area del trapezionide per difetto:
 
-Le fonti riferiscono che Legendre sostenne apertamente il lavoro dei due giovani, nonostante questo vanificasse quasi del tutto quattro decenni di ricerche. Abel morì a 26 anni. Jacobi a 46. Legendre arrivò, invece, ad ottant'anni.
+$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \tag{3}$$
 
-Per tornare in argomento, a noi non serviranno quarant'anni per imparare a risolvere gli integrali definiti. Impiegheremo molto meno. Se avete già compreso cos'è un integrale indefinito e memorizzato le sue principali proprietà con le primitive fondamentali, siete già a buon punto. Altrimenti vi consiglio di fermarvi qui e di fare un necessario passo indietro.
+![Img. 2](../svg/definite-integrals-2.svg)
 
-In estrema sintesi un integrale definito rappresenta l'accumulazione di una quantità data da una funzione $y=f(x)$ all'interno di un intervallo $[a, b]$. In termini meno precisi, ma comunque validi, misura l'area con segno tra una certa curva e l'asse delle $x,$ dove le porzioni che si trovano sopra l'asse $x$ si sommano mentre quelle sotto si sottraggono.
 
-In questa entry saranno trattate le principali definizioni e proprietà degli integrali definiti, mentre i metodi e le [strategie di integrazione](../integration-strategies/), che rappresentano il fulcro risolutivo del calcolo integrale, saranno trattati nelle apposite sezioni.
 
-## Area sotto il grafico di una funzione: dalla curva all'integrale
+Allo stesso modo possiamo definire la somma superiore $s_n^{+}$ che invece l'approssima per eccesso:
 
-Consideriamo una [funzione](../functions/) $f(x)$ definita su un [intervallo chiuso](../intervals/) $[a, b]$, con $a < b$. Se $f(x)$ è [continua](../continuous-functions/) e non negativa su $[a, b]$, il suo grafico, l'asse delle $x$ e le rette verticali $x = a$ e $x = b$ delimitano un trapezoide. L'area di questa regione è data dall'integrale definito:
+$$s_n^{+} = \sum_{i=1}^{n} M_i \Delta x \tag{4}$$
 
-$$\int_{a}^{b} f(x) \ dx$$
+![Img. 3](../svg/definite-integrals-3.svg)
 
-![Img. 1](svg/definite-integrals-1.svg)
-
-Le formule usuali della geometria elementare non si applicano direttamente a un trapezoide generico, perché uno dei suoi contorni è una curva anziché un segmento rettilineo. L'area del trapezoide può essere approssimata suddividendo l'intervallo $[a, b]$ in $n$ sottointervalli di uguale ampiezza:
-
-$$\Delta x = \frac{b - a}{n}$$
-
-Su ciascun sottointervallo, la regione viene approssimata mediante un rettangolo e la somma delle aree di questi rettangoli fornisce una stima dell'area totale.
-
-![Img. 2](svg/definite-integrals-2.svg)
-
-Indichiamo i punti della partizione con $x_i = a + i\Delta x,$ per $i=0,\ldots,n.$ Si ha quindi $x_0=a$ e $x_n=b,$ e l'$i$-esimo sottointervallo è $[x_{i-1},x_i].$ Indicando con $m_i$ e $M_i$ l'estremo inferiore e l'estremo superiore di $f(x)$ su questo sottointervallo, definiamo le somme inferiori e superiori come:
-
-$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x$$
-
-La somma inferiore $s_n^{-}$ approssima l'area per difetto, mentre la somma superiore $s_n^{+}$ la approssima per eccesso.
-
-![Img. 3](svg/definite-integrals-3.svg)
-
-I dati dei rettangoli inferiori e superiori seguono lo stesso schema su ogni sottointervallo:
+Possiamo schematizzare questo ragionamento nella seguente tabella:
 
 | Rettangolo | Sottointervallo | Altezza inferiore | Altezza superiore | Area inferiore | Area superiore |
 | :-------: | :-------------: | :----------: | :----------: | :-----------: | :-----------: |
@@ -77,283 +55,273 @@ I dati dei rettangoli inferiori e superiori seguono lo stesso schema su ogni sot
 |    $n$    | $[x_{n-1},x_n]$ |    $m_n$     |    $M_n$     | $m_n\Delta x$ | $M_n\Delta x$ |
 
 
-La costruzione con sottointervalli di uguale ampiezza è un caso particolare di una partizione i cui sottointervalli possono avere ampiezze diverse. Per una partizione arbitraria $P$ data da $a = x_0 < x_1 < \cdots < x_n = b,$ le somme inferiori e superiori sono:
+Le formule $(3)$ e $(4)$ si estendono a una partizione arbitraria $P$ di $[a,b]$ con punti di suddivisione del tipo:
+
+$$a=x_0<x_1<\cdots<x_n=b$$
+
+In questo caso, in ciascun termine, all'ampiezza comune $\Delta x$ si sostituisce la lunghezza $x_i-x_{i-1}$ del sottointervallo su cui si calcolano $m_i$ e $M_i,$ ottenendo così la somma inferiore e la somma superiore associate a $P.$
 
 $$
 \begin{align}
-L(f, P) &= \sum_{i=1}^{n} m_i(x_i - x_{i-1}) \\[6pt]
-U(f, P) &= \sum_{i=1}^{n} M_i(x_i - x_{i-1})
+L(f,P) &= \sum_{i=1}^{n} m_i(x_i-x_{i-1}) \tag{5} \\[6pt]
+U(f,P) &= \sum_{i=1}^{n} M_i(x_i-x_{i-1}) \tag{6}
 \end{align}
 $$
 
-Se una partizione $P'$ raffina $P$ aggiungendo punti di suddivisione, la somma inferiore non può diminuire e la somma superiore non può aumentare. Di conseguenza:
+Se a $P$ aggiungiamo dei punti di suddivisione, possiamo ottenere una partizione $P'$ più fine. In questo modo, su ciascuna porzione di un sottointervallo suddiviso, l'estremo inferiore di $f$ è almeno pari a quello sull'intero sottointervallo, mentre l'estremo superiore è al più pari al precedente. Poiché le lunghezze delle porzioni hanno per somma la lunghezza del sottointervallo originario, dalle formule $(5)$ e $(6)$ otteniamo la seguente catena di disuguaglianze:
 
-$$L(f, P) \leq L(f, P') \leq U(f, P') \leq U(f, P)$$
+$$
+L(f,P) \leq L(f,P') \leq U(f,P') \leq U(f,P) \tag{7}
+$$
 
-Per una funzione $f(x)$ limitata su $[a, b],$ gli integrali inferiore e superiore forniscono le migliori stime ottenute considerando tutte le possibili partizioni:
+Per la $(7),$ passando a un raffinamento comune di due partizioni si deduce che ogni somma inferiore è minore o uguale a ogni somma superiore. Per $f$ limitata su $[a,b],$ si definiscono gli integrali inferiore e superiore al variare di $P$ tra tutte le partizioni di $[a,b]$ mediante le seguenti formule:
+
+$$\tag{9}
+\begin{align}
+L(f,[a,b]) &= \sup_P L(f,P)\\[6pt]
+U(f,[a,b]) &= \inf_P U(f,P) 
+\end{align}
+$$
+
+Dalla $(9)$ segue che:
+
+$$L(f,[a,b])\leq U(f,[a,b]) \tag{10}$$
+
+La funzione $f$ si dice integrabile secondo Riemann se e solo se nella $(10) $vale l'uguaglianza e in quel caso si ha:
+
+$$
+\int_a^b f(x) \ dx = L(f,[a,b]) = U(f,[a,b]) \tag{11}
+$$
+
+La $(11)$ ammette una formulazione equivalente mediante le somme di Riemann. In ciascun sottointervallo di ampiezza $\Delta x_i=x_i-x_{i-1}$ scegliamo un punto campione vosì indicato:
+
+$$\xi_i\in[x_{i-1},x_i] \tag{12}$$
+
+Poiché $m_i\leq f(\xi_i)\leq M_i,$ la somma di Riemann è compresa tra le somme di Darboux per cui si ha:
+
+$$
+L(f,P)\leq \sum_{i=1}^{n} f(\xi_i)\Delta x_i \leq U(f,P) \tag{13}
+$$
+
+Definiamo norma della partizione, $\|P\|=\max_{1\leq i\leq n}\Delta x_i,$ la lunghezza del sottointervallo più ampio. La funzione limitata $f$ è integrabile se e solo se, al tendere di $\|P\|$ a zero, le somme di Riemann della $(13)$ convergono a uno stesso valore per ogni scelta delle partizioni e dei punti campione. In questo modo, il limite coincide con l'integrale della $(11)$ e si ha:
+
+$$
+\lim_{\|P\|\to 0}\sum_{i=1}^{n} f(\xi_i)\Delta x_i = \int_a^b f(x) \ dx \tag{14}
+$$
+
+Quando $f$ è continua su $[a,b],$ la continuità uniforme garantisce che $\max_i(M_i-m_i)$ tende a zero con $\|P\|.$ Anche la differenza tra le somme superiore e inferiore della $(13)$ tende quindi a zero, poiché
 
 $$
 \begin{align}
-L(f, [a, b]) &= \sup_P L(f, P) \\[6pt]
-U(f, [a, b]) &= \inf_P U(f, P)
+U(f,P)-L(f,P) &= \sum_{i=1}^{n}(M_i-m_i)\Delta x_i \\[6pt]
+&\leq (b-a)\max_i(M_i-m_i) \tag{15}
 \end{align}
 $$
 
-Ogni somma inferiore è minore o uguale a ogni somma superiore, quindi $L(f, [a, b]) \leq U(f, [a, b]).$ La funzione $f(x)$ è [integrabile secondo Riemann](../riemann-integrability-criteria/) se e solo se questi due valori coincidono. Il loro valore comune è l'integrale definito:
+La differenza tra l'integrale superiore e quello inferiore è compresa tra zero e $U(f,P)-L(f,P).$ Per la $(15)$ deve quindi essere nulla, perciò $f$ è integrabile secondo Riemann su $[a,b].$
 
-$$L(f, [a, b]) = U(f, [a, b]) = \int_{a}^{b} f(x) \ dx$$
+## Modalità di calcolo e proprietà
 
-Una definizione equivalente dell'integrale definito utilizza le somme di Riemann con punti campione. Per una partizione $P$ data da $a = x_0 < x_1 < \cdots < x_n = b,$ scegliamo un punto $\xi_i \in [x_{i-1},x_i]$ in ciascun sottointervallo e poniamo $\Delta x_i = x_i - x_{i-1}.$ Il punto $\xi_i$ è detto punto campione dell'$i$-esimo sottointervallo e la norma di $P$ è definita da:
-
-$$
-\|P\| = \max_{1 \leq i \leq n} \Delta x_i
-$$
-
-Una funzione limitata $f$ è integrabile secondo Riemann con integrale $I$ se, per ogni $\varepsilon>0,$ esiste $\delta>0$ tale che ogni partizione $P$ e ogni scelta dei punti campione soddisfino:
+Per prima cosa vediamo qual è il metodo generale per il calcolo di un integrale definito, partendo dal fatto che la continuità di $f$ su $[a,b]$ garantisce l'esistenza dell'integrale anche su ogni sottointervallo $[a,x].$ Lasciando variare $x$ si ottiene la funzione integrale:
 
 $$
-\|P\|<\delta
-\implies
-\left|\sum_{i=1}^{n}f(\xi_i)\Delta x_i-I\right|<\varepsilon
+A(x)=\int_a^x f(t) \ dt \tag{16}
 $$
 
-Questa condizione richiede che tutte le somme di Riemann con punti campione, relative a partizioni di norma sufficientemente piccola, si avvicinino allo stesso valore. Si esprime comunemente con la notazione abbreviata:
+Per il teorema fondamentale del calcolo integrale, $A'(x)=f(x)$ per ogni $x\in(a,b)$ e se $F$ è una primitiva di $f$ su $(a,b)$ ed è continua su $[a,b],$ la differenza $F-A$ è costante, perché ha derivata nulla. Dalla $(16)$ si ha $A(a)=0,$ quindi la costante è $F(a).$ Valutando $A$ in $b$ si ottiene la formula di calcolo data da:
 
 $$
-\int_a^b f(x) \ dx
-=
-\lim_{\|P\| \to 0}
-\sum_{i=1}^{n} f(\xi_i)\Delta x_i
+\int_a^b f(x) \ dx = F(b)-F(a) \tag{17}
 $$
 
-Il limite indicato considera quindi tutte le partizioni con punti campione, anziché un'unica successione prefissata. In questa voce utilizzeremo la formulazione di Darboux mediante $L(f,P)$ e $U(f,P).$ Ogni somma di Riemann con punti campione è compresa tra le corrispondenti somme inferiore e superiore. Insieme alle stime per partizioni sufficientemente fini, questa disuguaglianza dimostra che una funzione limitata su $[a,b]$ è integrabile secondo una definizione se e solo se lo è secondo l'altra, e che entrambe le definizioni assegnano lo stesso valore.
+Vediamo ora alcune proprietà utili nella risoluzione dei problemi con gli integrali definiti. Partiamo dal caso semplice in cui i due estremi di integrazione coincidono e l'integrale si annulla:
 
-> John K. Hunter presenta la formulazione mediante partizioni con punti campione e ne dimostra l'equivalenza con la definizione di Darboux in Introduction to Analysis, riportato nella [bibliografia](../bibliography/).
+$$\int_{a}^{a} f(x) \ dx = 0 \tag{18}$$
 
-- - -
-
-Ogni funzione continua a valori reali su $[a, b]$ è integrabile secondo Riemann. La continuità su questo intervallo implica la continuità uniforme, che rende l'oscillazione $M_i - m_i$ uniformemente piccola quando i sottointervalli sono sufficientemente corti. I valori $a$ e $b$ sono gli estremi inferiore e superiore di integrazione, e $f(x)$ è la funzione integranda. La notazione $f(x) \ dx$ è suggerita dall'area $f(x)\Delta x$ di ciascun rettangolo usato nell'approssimazione. Il simbolo $dx$ identifica $x$ come variabile di integrazione e richiama il ruolo delle ampiezze dei sottointervalli nel passaggio al limite.
-
-## Calcolo degli integrali definiti
-
-Se $f(x)$ è continua su $[a, b]$ e $F(x)$ è una qualsiasi [primitiva](../indefinite-integrals/) di $f(x)$, l'integrale definito è dato dalla differenza dei valori della primitiva agli estremi:
-
-$$\int_{a}^{b} f(x) \ dx = F(b) - F(a)$$
-
-Le quantità che compaiono in questa espressione hanno il seguente significato:
-
-+ $F(x)$ è continua su $[a, b]$, derivabile su $(a, b)$ e soddisfa $F'(x) = f(x)$ per ogni $x \in (a, b)$.
-+ $F(b)$ e $F(a)$ sono i valori della primitiva calcolati rispettivamente agli estremi superiore e inferiore di integrazione.
-
-Questa formula è la conclusione del secondo [teorema fondamentale del calcolo integrale](../fundamental-theorem-of-calculus/). La prima parte del teorema stabilisce che la funzione ottenuta integrando da un punto fisso a un estremo variabile è derivabile, con derivata uguale alla funzione integranda. Definiamo la funzione integrale mediante:
-
-$$F(x) = \int_{a}^{x} f(t) \ dt$$
-
-Per ogni $x \in (a, b)$, questa funzione soddisfa $F'(x) = f(x)$, per cui derivazione e integrazione sono operazioni inverse in un senso preciso. Entrambi i risultati sono trattati in dettaglio nella pagina dedicata al [teorema fondamentale del calcolo integrale](../fundamental-theorem-of-calculus/).
-
-## Proprietà
-
-Quando i due estremi di integrazione coincidono, l'integrale si annulla:
-
-$$\int_{a}^{a} f(x) \ dx = 0$$
-
-L'identità segue direttamente dalla definizione, poiché un intervallo di ampiezza nulla non contribuisce all'area. Scambiando gli estremi di integrazione, l'integrale cambia segno:
-
-$$\int_{a}^{b} f(x) \ dx = -\int_{b}^{a} f(x) \ dx$$
-
-Questo riflette la natura orientata dell'integrale definito, poiché percorrere l'intervallo in senso opposto inverte il segno dell'area accumulata. Se $f(x) = k$ è costante su $[a, b]$, il suo integrale è il valore costante moltiplicato per la lunghezza dell'intervallo:
-
-$$\int_{a}^{b} k \ dx = k(b - a)$$
-
-Un fattore costante può essere portato fuori dal segno di integrale:
-
-$$\int_{a}^{b} kf(x) \ dx = k \int_{a}^{b} f(x) \ dx$$
-
-L'integrale è additivo rispetto alla somma di funzioni:
-
-$$\int_{a}^{b} (f(x) + g(x)) \ dx = \int_{a}^{b} f(x) \ dx + \int_{a}^{b} g(x) \ dx$$
-
-Le due proprietà precedenti rendono l'integrale definito un operatore lineare. L'integrale è additivo anche rispetto a intervalli adiacenti. Per tre punti qualsiasi $a$, $b$, $c$ nel dominio di $f$, vale la seguente identità:
-
-$$\int_{a}^{c} f(x) \ dx = \int_{a}^{b} f(x) \ dx + \int_{b}^{c} f(x) \ dx$$
-
-Questa additività consente di [integrare una funzione definita a tratti](../piecewise-functions/) suddividendo l'intervallo nei punti di raccordo.
-
-Se $f(x) \leq g(x)$ per ogni $x \in [a, b]$, la stessa disuguaglianza vale per gli integrali:
-
-$$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$
-
-> Questa è la proprietà di confronto degli integrali. La differenza verticale $g(x) - f(x)$ è non negativa su tutto l'intervallo, quindi anche il suo integrale è non negativo.
-
-- - -
-
-Per una funzione limitata $f(x)$ integrabile secondo Riemann su $[a, b],$ applicando la proprietà di confronto alle funzioni costanti uguali al suo estremo inferiore e al suo estremo superiore si ottengono le stime:
+Nella $(18)$ la differenza tra i valori della primitiva si riduce a $F(a)-F(a)=0$ mentre se si scambiano gli estremi nella $(17),$ la differenza diventa $F(a)-F(b)$ e l'integrale cambia segno:
 
 $$
-(b - a)\inf_{x \in [a, b]} f(x)
-\leq \int_{a}^{b} f(x) \ dx
-\leq (b - a)\sup_{x \in [a, b]} f(x)
+\int_b^a f(x) \ dx = -\int_a^b f(x) \ dx \tag{19}
 $$
 
-Se $f(x)$ è integrabile secondo Riemann, anche $|f(x)|$ è integrabile secondo Riemann. Le disuguaglianze $-|f(x)| \leq f(x) \leq |f(x)|$ e la proprietà di confronto implicano:
+Un'altra proprietà riguarda il prodotto per una costante. Se $f(x) = k$ è costante su $[a, b]$, il suo integrale è dato da:
 
-$$\left|\int_{a}^{b} f(x) \ dx\right| \leq \int_{a}^{b} |f(x)| \ dx$$
+$$\int_{a}^{b} k \ dx = k(b - a) \tag{20}$$
+
+Un fattore costante può essere portato fuori dal segno di integrale ottenendo:
+
+$$\int_{a}^{b} kf(x) \ dx = k \int_{a}^{b} f(x) \ dx \tag{21}$$
+
+Se $f$ e $g$ sono integrabili su $[a,b],$ anche la loro somma è integrabile e vale la proprietà di additività:
+
+$$
+\int_a^b (f(x)+g(x)) \ dx = \int_a^b f(x) \ dx + \int_a^b g(x) \ dx \tag{22}
+$$
+
+Come per l'integrale indefinito, l'additività e la regola del fattore costante $(21)$ esprimono la linearità dell'integrale. L'additività vale anche rispetto all'intervallo di integrazione. Se $f$ è integrabile su $[a,c]$ e $b\in[a,c],$ possiamo dividere l'intervallo in $b$ e sommare gli integrali sui due sottointervalli, ottenendo:
+
+$$
+\int_a^c f(x) \ dx = \int_a^b f(x) \ dx + \int_b^c f(x) \ dx \tag{23}
+$$
+
+Per la regola $(19)$ la $(23)$ vale in qualunque ordine si presentino i tre punti, purché $f$ sia integrabile sull'intervallo che li comprende. Per una funzione definita a tratti conviene scegliere come punti di suddivisione i punti di raccordo.
+
+Se $f$ e $g$ sono integrabili su $[a,b]$ e $f(x)\leq g(x)$ per ogni $x\in[a,b],$ la differenza $g-f$ è non negativa e ha quindi integrale non negativo. Per la linearità espressa dalle $(21)$ e $(22),$ l'integrale di $g-f$ è la differenza dei rispettivi integrali. Si ottiene così la proprietà di confronto:
+
+$$
+\int_a^b f(x) \ dx \leq \int_a^b g(x) \ dx \tag{24}
+$$
+
+Dalla proprietà di confronto $(24)$ si ricavano due stime per l'integrale di una funzione integrabile $f$ su $[a,b].$ La prima si usa quando si conoscono l'estremo inferiore $m$ e l'estremo superiore $M$ di $f$ sull'intervallo. Confrontando $f$ con le costanti $m$ e $M$ e calcolandone gli integrali mediante la $(20),$ si ottiene:
+
+$$
+m(b-a) \leq \int_a^b f(x) \ dx \leq M(b-a) \tag{25}
+$$
+
+La seconda stima riguarda il valore assoluto dell'integrale. Poiché anche $|f|$ è integrabile, possiamo applicare la $(24)$ alle disuguaglianze $-|f(x)|\leq f(x)\leq |f(x)|.$ Ne segue la disuguaglianza triangolare per l'integrale:
+
+$$
+\left|\int_a^b f(x) \ dx\right| \leq \int_a^b |f(x)| \ dx \tag{26}
+$$
+
+## Esempi
+
+Vediamo ora alcuni esempi per il calcolo degli integrali definiti e partiamo dal seguente integrale:
+
+$$
+\int_0^3 (3x-x^2) \ dx
+$$
+
+Per linearità, integriamo separatamente i due termini e valutiamo la primitiva agli estremi mediante la $(17):$
+
+$$
+\begin{align}
+\int_0^3 (3x-x^2) \ dx
+&= \left[\frac{3x^2}{2}-\frac{x^3}{3}\right]_0^3 \\[6pt]
+&= \frac{27}{2}-9 = \frac{9}{2} \tag{27}
+\end{align}
+$$
+
+Poiché $3x-x^2=x(3-x)$ è non negativo su $[0,3],$ il valore della $(27)$ è l'area compresa tra la parabola e l'asse delle $x$ su questo intervallo. Consideriamo ora il secondo integrale:
+
+$$
+\int_0^\pi (x+\sin x) \ dx
+$$
+
+Una primitiva è $F(x)=x^2/2-\cos x.$ In questo caso $F(0)=-1,$ quindi anche l'estremo inferiore contribuisce al risultato:
+
+$$
+\begin{align}
+\int_0^\pi (x+\sin x) \ dx
+&= \left[\frac{x^2}{2}-\cos x\right]_0^\pi \\[6pt]
+&= \left(\frac{\pi^2}{2}+1\right)-(-1)
+ = \frac{\pi^2}{2}+2 \tag{28}
+\end{align}
+$$
+
+Anche nella $(28)$ l'integrale coincide con l'area sotto il grafico, perché $x$ e $\sin x$ sono entrambi non negativi su $[0,\pi].$ Calcoliamo infine l'integrale dell'esponenziale:
+
+$$
+\int_0^2 e^{2x} \ dx
+$$
+
+Per calcolarlo usiamo le somme di Riemann della $(14).$ Dividiamo l'intervallo in $n$ parti di ampiezza $2/n$ e scegliamo come punti campione gli estremi destri $x_k=2k/n.$ Poiché $f$ è crescente, la somma così ottenuta è una somma superiore. Le altezze dei rettangoli sono $e^{4k/n}=q_n^k,$ dove $q_n=e^{4/n}.$ Sommando la progressione geometrica e osservando che $q_n^n=e^4,$ otteniamo:
+
+$$
+\begin{align}
+R_n &= \frac{2}{n}\sum_{k=1}^n q_n^k \\[6pt]
+    &= \frac{2}{n}\frac{q_n(q_n^n-1)}{q_n-1} \\[6pt]
+    &= \frac{2q_n(e^4-1)}{n(q_n-1)} \tag{29}
+\end{align}
+$$
+
+Quando $n$ tende all'infinito, $q_n$ tende a $1$ e il limite notevole $(e^t-1)/t\to 1$ per $t\to 0$ dà $n(q_n-1)=4\frac{e^{4/n}-1}{4/n}\to 4.$ Passando al limite nella $(29)$ si ricava l'area richiesta:
+
+$$
+\int_0^2 e^{2x} \ dx = \lim_{n\to\infty} R_n = \frac{e^4-1}{2}\tag{30}
+$$
+
+> Tenete a mente che negli esercizi di calcolo si cerca di solito una primitiva, ricorrendo quando serve alla sostituzione o all'integrazione per parti, e la si valuta agli estremi mediante la $(17).$ Per la $(30)$ basta la primitiva $F(x)=e^{2x}/2.$ Il calcolo con le somme di Riemann nella $(29)$ mostra solo come si ottiene lo stesso valore direttamente dalla definizione.
 
 ## Teorema della media integrale
 
-Il [teorema della media integrale](../mean-value-theorem-for-integrals/) afferma che, se $f(x)$ è continua su $[a, b]$, esiste almeno un punto $c \in (a, b)$ tale che:
+Il teorema della media integrale è l'analogo, nel calcolo integrale, del teorema di Lagrange e si ottiene applicando quest'ultimo alla funzione integrale $A$ definita nella $(16).$ Dividendo la $(25)$ per $b-a>0,$ si ottiene una stima per il valore medio di $f$ su $[a,b],$ definito da:
 
-$$\int_{a}^{b} f(x) \ dx = f(c)(b - a)$$
+$$
+\frac{1}{b-a}\int_a^b f(x) \ dx \tag{31}
+$$
 
-Il valore $f(c)$ è il valore medio della funzione sull'intervallo. Geometricamente, il teorema afferma l'esistenza di un rettangolo di base $b - a$ e altezza $f(c)$ la cui area orientata è uguale all'integrale definito. Il teorema garantisce l'esistenza di un tale punto senza fornire un metodo per individuarlo. Ricavando $f(c)$, il valore medio di $f$ su $[a, b]$ si può scrivere come:
-
-$$f(c) = \frac{1}{b - a} \int_{a}^{b} f(x) \ dx$$
-
-> Il teorema della media integrale è l'analogo, nel calcolo integrale, del [teorema di Lagrange](../lagrange-theorem/). L'enunciato differenziale garantisce un punto in cui il tasso di variazione istantaneo è uguale al tasso di variazione medio, mentre l'enunciato integrale garantisce un punto in cui il valore della funzione è uguale al valore medio sull'intervallo.
-
-## Esempio 1
-
-Calcoliamo il seguente integrale definito:
-
-$$\int_{0}^{3} (3x - x^2) \ dx$$
-
-Applicando la linearità e portando il fattore costante fuori dal primo integrale si ottiene:
-
-$$3\int_{0}^{3} x \ dx - \int_{0}^{3} x^2 \ dx$$
-
-La primitiva di ciascun termine si ricava dalla regola di integrazione delle potenze discussa nella pagina sugli [integrali indefiniti](../indefinite-integrals/):
-
-$$F(x) = \frac{3x^2}{2} - \frac{x^3}{3}$$
-
-Calcolando $F(3) - F(0)$ si ottiene:
+Questo valore è compreso tra $m$ e $M,$ quindi se $f$ è continua su $[a,b],$ assume questo valore in almeno un punto interno all'intervallo $[a,b]$. Infatti, per il teorema di Lagrange esiste $c\in(a,b)$ tale che
 
 $$
 \begin{align}
-F(3) - F(0) &= \left(\frac{3 \cdot 9}{2} - \frac{27}{3}\right) - \left(\frac{3 \cdot 0}{2} - \frac{0}{3}\right) \\[6pt]
-            &= \frac{27}{2} - 9 \\[6pt]
-            &= \frac{27 - 18}{2} \\[6pt]
-            &= \frac{9}{2}
+f(c)=A'(c) &= \frac{A(b)-A(a)}{b-a} \\[6pt]
+&= \frac{1}{b-a}\int_a^b f(x) \ dx \tag{32}
 \end{align}
 $$
 
-L'area della regione delimitata dal grafico di $f(x) = 3x - x^2$ e dall'asse delle $x$ su $[0, 3]$ è quindi:
+Dalla $(32)$ segue che il rettangolo di base $b-a$ e altezza $|f(c)|$ ha area con segno $(b-a)f(c),$ uguale all'integrale di $f$ su $[a,b].$
 
-$$\int_{0}^{3} (3x - x^2) \ dx = \frac{9}{2}$$
-
-> Quando una primitiva non è immediatamente riconoscibile, tecniche come l'[integrazione per sostituzione](../integration-by-substitution/) e l'[integrazione per parti](../integration-by-parts/) possono permettere di determinarla. Se non esiste una primitiva elementare, il calcolo dell'integrale definito può richiedere metodi numerici o funzioni speciali.
-
-## Esempio 2
-
-Calcoliamo il seguente integrale definito:
-
-$$\int_{0}^{\pi} (x + \sin x) \ dx$$
-
-> La funzione integranda combina un termine polinomiale con una funzione trigonometrica. Le primitive necessarie sono raccolte nella pagina sugli [integrali delle funzioni trigonometriche](../integral-of-trigonometric-functions/).
-
-Applicando la linearità, l'integrale si scompone come segue:
-
-$$\int_{0}^{\pi} x \ dx + \int_{0}^{\pi} \sin x \ dx$$
-
-Determinando la primitiva di ciascun termine si ottiene:
-
-$$F(x) = \frac{x^2}{2} - \cos x$$
-
-Calcolando $F(\pi) - F(0)$ si ottiene:
-
-$$
-\begin{align}
-F(\pi) - F(0) &= \left(\frac{\pi^2}{2} - \cos\pi\right) - \left(\frac{0}{2} - \cos 0\right) \\[6pt]
-              &= \left(\frac{\pi^2}{2} + 1\right) - (0 - 1) \\[6pt]
-              &= \frac{\pi^2}{2} + 2
-\end{align}
-$$
-
-L'area della regione delimitata dal grafico di $f(x) = x + \sin x$ e dall'asse delle $x$ su $[0, \pi]$ è:
-
-$$\int_{0}^{\pi} (x + \sin x) \ dx = \frac{\pi^2}{2} + 2$$
-
-## Esempio 3
-
-Calcoliamo l'area sotto la curva esponenziale $f(x)=e^{2x}$ su $[0,2]$ direttamente dalle somme di Riemann con punti campione negli estremi destri. Suddividiamo $[0,2]$ in $n$ sottointervalli di uguale ampiezza. L'ampiezza e l'estremo destro del $k$-esimo sottointervallo sono:
-
-$$\Delta x = \frac{2}{n} \qquad x_k = \frac{2k}{n}$$
-
-La funzione $f(x)=e^{2x}$ è crescente, quindi i rettangoli costruiti usando gli estremi destri forniscono somme superiori. L'altezza del $k$-esimo rettangolo è:
-
-$$f(x_k) = e^{2x_k} = e^{4k/n}$$
-
-La somma delle aree dei rettangoli è quindi:
-
-$$R_n = \sum_{k=1}^{n} f(x_k)\Delta x = \frac{2}{n}\sum_{k=1}^{n} e^{4k/n}$$
-
-Poniamo $q_n=e^{4/n}.$ I termini $e^{4k/n}=q_n^k$ formano una [progressione geometrica](../geometric-sequence/) finita, con $q_n^n=e^4.$ La formula per la somma finita fornisce:
-
-$$
-\begin{align}
-R_n &= \frac{2}{n}\sum_{k=1}^{n}q_n^k \\[6pt]
-    &= \frac{2}{n}\frac{q_n(q_n^n-1)}{q_n-1} \\[6pt]
-    &= \frac{2q_n(e^4-1)}{n(q_n-1)}
-\end{align}
-$$
-
-Quando $n$ tende all'infinito, $q_n$ tende a $1.$ Applicando il [limite notevole](../remarkable-limits/) per la funzione esponenziale si ottiene:
-
-$$
-\lim_{n \to \infty}n(q_n-1)
-= \lim_{n \to \infty}4\left(\frac{e^{4/n}-1}{4/n}\right)
-= 4
-$$
-
-Passando al limite nelle somme superiori si ottiene l'integrale definito:
-
-$$
-\int_{0}^{2}e^{2x} \ dx
-= \lim_{n \to \infty}R_n
-= \frac{e^4-1}{2}
-$$
-
-Poiché $e^{2x}$ è positiva su $[0,2],$ questo integrale è l'area geometrica sotto la curva, pari a circa $26.799.$
 
 ## Integrali definiti con aree positive e negative
 
-L'interpretazione dell'integrale definito come area vale quando $f(x) \geq 0$ su tutto $[a, b]$. Quando $f(x)$ cambia segno all'interno dell'intervallo, l'integrale assegna un valore negativo alle porzioni della regione che si trovano sotto l'asse delle $x$, e il risultato è un'area orientata anziché un'area puramente geometrica.
+Negli esempi $(27)$ e $(28)$ la funzione era non negativa, quindi l'integrale coincideva con l'area tra il grafico e l'asse delle $x$ ma se la funzione cambia segno, l'integrale misura l'area orientata, ottenuta sottraendo dall'area sopra l'asse quella sotto l'asse. A livello grafico, una situazione del genere si ha quando una funzione ha un comportamento simile a questo:
 
-![Img. 4](svg/definite-integrals-4.svg)
+![Img. 4](../svg/definite-integrals-4.svg)
 
-Per ricavare l'area geometrica, si suddivide l'intervallo $[a, b]$ in sottointervalli sui quali $f(x)$ mantiene segno costante. Se $f(x) \geq 0$ su $[a, c]$ e $f(x) \leq 0$ su $[c, b]$, l'additività fornisce l'integrale orientato:
+Supponiamo quindi, come nel caso dell'immagine, che $f(x)\geq 0$ su $[a,c]$ e $f(x)\leq 0$ su $[c,b].$ Dividendo l'intervallo in $c$ e applicando l'additività $(23)$ otteniamo:
 
-$$\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx$$
+$$
+\int_a^b f(x) \ dx = \int_a^c f(x) \ dx + \int_c^b f(x) \ dx \tag{33}
+$$
 
-L'area geometrica si ottiene cambiando il segno del contributo negativo:
+Il secondo integrale nella $(33)$ è non positivo e quindi per sommare le due aree geometriche prendiamo l'opposto di quel termine, il che equivale a integrare $|f|$ su tutto l'intervallo:
 
-$$S = \int_{a}^{c} f(x) \ dx - \int_{c}^{b} f(x) \ dx = \int_{a}^{b} |f(x)| \ dx$$
+$$
+\begin{align}
+S &= \int_a^c f(x) \ dx - \int_c^b f(x) \ dx \\[6pt]
+  &= \int_a^b |f(x)| \ dx \tag{34}
+\end{align}
+$$
 
-Per una [funzione pari](../even-and-odd-functions/), la simmetria rispetto all'asse delle $y$ implica che i contributi di $[-a, 0]$ e $[0, a]$ siano uguali. Pertanto:
+Su un intervallo simmetrico $[-a,a]$ con $a>0$ conviene dividere l'integrale nell'origine. Se $f$ è pari, i valori in $x$ e in $-x$ coincidono, quindi le due metà danno lo stesso contributo all'integrale:
 
-$$\int_{-a}^{a} f(x) \ dx = 2\int_{0}^{a} f(x) \ dx$$
+$$
+\int_{-a}^a f(x) \ dx = 2\int_0^a f(x) \ dx \tag{35}
+$$
 
-![Img. 5](svg/definite-integrals-5.svg)
+![Img. 5](../svg/definite-integrals-5.svg)
 
-Per una [funzione dispari](../even-and-odd-functions/), la simmetria rispetto all'origine implica che i contributi di $[-a, 0]$ e $[0, a]$ siano uguali in valore assoluto ma di segno opposto. Pertanto:
+Se invece $f$ è dispari, nei punti simmetrici $x$ e $-x$ assume valori opposti. I due integrali su $[-a,0]$ e $[0,a]$ sono quindi l'uno l'opposto dell'altro e la loro somma è nulla:
 
-$$\int_{-a}^{a} f(x) \ dx = 0$$
+$$
+\int_{-a}^a f(x) \ dx = 0 \tag{36}
+$$
 
-![Img. 6](svg/definite-integrals-6.svg)
+![Img. 6](../svg/definite-integrals-6.svg)
 
-In entrambi i casi, l'area geometrica compresa tra il grafico di $f(x)$ e l'asse delle $x$ su $[-a, a]$ si ottiene integrando il [valore assoluto](../absolute-value/) della funzione. Poiché $|f(x)|$ è pari quando $f(x)$ è pari o dispari, l'area è:
+Per calcolare l'area geometrica usiamo la $(34).$ Sia per $f$ pari sia per $f$ dispari vale $|f(-x)|=|f(x)|,$ quindi possiamo applicare la $(35)$ alla funzione pari $|f|$ e raddoppiare l'area su $[0,a],$ ottenendo:
 
-$$S = 2\int_{0}^{a} |f(x)| \ dx$$
+$$
+S = \int_{-a}^a |f(x)| \ dx = 2\int_0^a |f(x)| \ dx \tag{37}
+$$
 
-Se $f(x)$ è pari e non negativa su $[0, a]$, questa formula si riduce a:
+In entrambi i casi, se $f(x)\geq 0$ su $[0,a],$ in questo intervallo si ha $|f(x)|=f(x)$ e la $(37)$ si riduce a:
 
-$$S = 2\int_{0}^{a} f(x) \ dx$$
+$$
+S = 2\int_0^a f(x) \ dx \tag{38}
+$$
 
-Ulteriori esempi di calcolo di aree geometriche sono riportati nella pagina sul [calcolo delle aree mediante integrazione](../finding-areas-by-integration/).
+La voce sul calcolo delle aree mediante integrazione raccoglie altri esempi.
 
-## Integrali impropri
+- - -
 
-L'integrale di Riemann considerato sopra richiede un intervallo limitato e una funzione integranda limitata. Se l'intervallo è illimitato o la funzione integranda è illimitata in prossimità di un estremo o di un punto interno, si può definire un [integrale improprio](../improper-integrals/) sostituendo l'estremo problematico con un parametro e passando al limite. Per esempio, se $f(x)$ è integrabile secondo Riemann su ogni intervallo $[a,t]$ con $t>a,$ si ha:
+Vale la pena fare una breve introduzione agli integrali impropri. Finora abbiamo integrato funzioni limitate su intervalli limitati. Per estendere l'integrazione a $[a,+\infty),$ supponiamo che $f$ sia integrabile secondo Riemann su ogni $[a,t]$ con $t>a.$ Calcoliamo l'integrale fino a $t$ e facciamo tendere $t$ a $+\infty:$
 
-$$\int_a^{+\infty}f(x) \ dx:=\lim_{t\to+\infty}\int_a^t f(x) \ dx$$
+$$
+\int_a^{+\infty} f(x) \ dx := \lim_{t\to+\infty}\int_a^t f(x) \ dx \tag{39}
+$$
 
-L'integrale converge soltanto quando il limite che lo definisce esiste ed è finito. La pagina dedicata presenta le definizioni degli altri tipi di integrale improprio, i criteri di convergenza e alcuni esempi svolti.
+L'integrale della $(39)$ è detto improprio e converge se il limite esiste ed è finito. Per una trattazione completa di questi integrali vi rimando alla voce dedicata.
+
+

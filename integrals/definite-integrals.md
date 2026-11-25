@@ -16,59 +16,37 @@ tags:
   - riemann-integral
   - riemann-sum
 ---
-## Don’t rush things
+## Definition
 
-Adrien-Marie Legendre is one of the best-known and most influential mathematicians of the eighteenth century. He was born in Paris in 1752, and around the age of thirty he began to take an interest in the theory of elliptic integrals, mathematical objects used to compute the length of an arc of an [ellipse](../ellipse/).
+A definite integral represents the accumulation over an interval of a quantity described by a function $y=f(x)$. In less formal terms, the definite integral measures the signed area between a curve and the $x$-axis, with the areas above the axis added and those below it subtracted. To make this idea more precise, consider a function $f(x)$ defined on a [closed interval](../intervals/) $[a, b]$ with $a \lt b$. If $f(x)$ is [continuous](../continuous-functions/) and nonnegative on the interval, its graph, the $x$-axis, and the lines $x = a$ and $x = b$ bound a region called a curvilinear trapezoid, whose area is given by the following definite integral:
 
-The problem is not trivial, and it was even less so at the time, when no established theory for solving it yet existed. For an ellipse with semi-major axis $a$ and eccentricity $e\in[0,1),$ the perimeter is given by the following complete elliptic integral of the second kind:
+$$\int_{a}^{b} f(x) \ dx \tag{1}$$
 
-$$
-L=4aE(e)=4a\int_{0}^{\pi/2}\sqrt{1-e^2\sin^2\theta} \ d\theta
-$$
-
-We will not deal with such complicated objects in our exposition, but will focus on the kinds of definite integrals normally covered in secondary school and in calculus courses during the first years of university. Be aware, though, that monsters of this sort exist, and that they call for methods of solution that are anything but trivial.
-
-In the formula, $\pi/2$ and $0$ are the limits of integration, which distinguish definite integrals from [indefinite](../indefinite-integrals/) ones, at least as far as notation goes.
-
-Returning to our story, the sources give 1786 as the year of Legendre's first publications on the theory of elliptic integrals. His research between 1811 and 1819 led to the publication of further volumes devoted to the development of the theory and to its applications. Dissatisfied with his own work, a few years later he ended up rewriting the entire corpus from scratch, and he kept it up to date until the last years of his life.
-
-One morning in early August, Legendre received a letter from Carl Gustav Jacobi, then twenty-two years old, which offered a new perspective on the subject and put forward a new theory that made the one Legendre had worked on for nearly forty years obsolete. The young Norwegian Niels Henrik Abel arrived at the same results.
-
-The sources report that Legendre openly supported the work of the two young men, even though their work had rendered four decades of his research almost entirely obsolete. Abel died at 26. Jacobi at 46. Legendre, on the other hand, lived to be eighty.
-
-To come back to our subject, we will not need forty years to learn how to evaluate definite integrals. It will take us far less. If you have already understood what an indefinite integral is and have memorised its main properties together with the basic antiderivatives, you are well on your way. Otherwise, I advise you to stop here and take the necessary step back.
-
-In short, a definite integral represents the accumulation of a quantity given by a function $y=f(x)$ over an interval $[a, b]$. In less precise but still valid terms, it measures the signed area between a given curve and the $x$-axis, where the portions lying above the $x$-axis are added and those below are subtracted.
-
-This entry deals with the main definitions and properties of definite integrals, while the methods and [integration strategies](../integration-strategies/), which form the problem-solving core of integral calculus, are covered in their own sections.
-
-## Area under a function: from curve to integral
-
-Consider a [function](../functions/) $f(x)$ defined on a [closed interval](../intervals/) $[a, b]$, with $a < b$. If $f(x)$ is [continuous](../continuous-functions/) and nonnegative on $[a, b]$, its graph, the $x$-axis, and the vertical lines $x = a$ and $x = b$ bound a curvilinear trapezoid. The area of this region is given by the definite integral:
-
-$$\int_{a}^{b} f(x) \ dx$$
+In $(1)$, $a$ and $b$ are the limits of integration, $f$ is the integrand, and $dx$ indicates that we integrate with respect to $x$. In general, there is no elementary geometric formula for the area of a curvilinear trapezoid like the one shown here:
 
 ![Img. 1](svg/definite-integrals-1.svg)
 
-The standard formulas of elementary geometry do not apply directly to a general curvilinear trapezoid, because one of its boundaries is a curve rather than a straight segment. The area of the curvilinear trapezoid can be approximated by dividing the interval $[a, b]$ into $n$ subintervals of equal width:
+To see how we arrive at $(1)$, we can approximate the area of the curvilinear trapezoid by dividing the interval $[a, b]$ into $n$ subintervals of equal width, where the width is given by:
 
-$$\Delta x = \frac{b - a}{n}$$
+$$\Delta x = \frac{b - a}{n}\tag{2}$$
 
-Over each subinterval, the region is approximated by a rectangle, and the sum of the areas of these rectangles provides an estimate of the total area.
+On each subinterval, we approximate the corresponding part of the region by a rectangle whose area is easy to calculate, and the sum of these areas gives an estimate of the total area. If we write the partition points as $x_i = a + i\Delta x$ for $i=0,\ldots,n$, then $x_0=a$, $x_n=b$, and the $i$th subinterval is $[x_{i-1},x_i]$. Denoting the [infimum and supremum](../supremum-and-infimum/) of $f(x)$ on this subinterval by $m_i$ and $M_i$, respectively, we obtain the lower sum $s_n^{-}$, which approximates the area of the curvilinear trapezoid from below:
+
+$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \tag{3}$$
 
 ![Img. 2](svg/definite-integrals-2.svg)
 
-Write the partition points as $x_i = a + i\Delta x,$ for $i=0,\ldots,n.$ Then $x_0=a$ and $x_n=b,$ and the $i$-th subinterval is $[x_{i-1},x_i].$ Denoting by $m_i$ and $M_i$ the infimum and supremum of $f(x)$ on this subinterval, the lower and upper sums are defined as:
 
-$$s_n^{-} = \sum_{i=1}^{n} m_i \Delta x \qquad s_n^{+} = \sum_{i=1}^{n} M_i \Delta x$$
 
-The lower sum $s_n^{-}$ approximates the area from below, while the upper sum $s_n^{+}$ approximates it from above.
+Similarly, we can define the upper sum $s_n^{+}$, which approximates the area from above:
+
+$$s_n^{+} = \sum_{i=1}^{n} M_i \Delta x \tag{4}$$
 
 ![Img. 3](svg/definite-integrals-3.svg)
 
-The data for the lower and upper rectangles follow the same pattern on every subinterval:
+The following table summarizes the construction:
 
-| Rectangle |   Subinterval   | Lower height | Upper height |  Lower area   |  Upper area   |
+| Rectangle | Subinterval | Lower height | Upper height | Lower area estimate | Upper area estimate |
 | :-------: | :-------------: | :----------: | :----------: | :-----------: | :-----------: |
 |    $1$    |   $[x_0,x_1]$   |    $m_1$     |    $M_1$     | $m_1\Delta x$ | $M_1\Delta x$ |
 |    $2$    |   $[x_1,x_2]$   |    $m_2$     |    $M_2$     | $m_2\Delta x$ | $M_2\Delta x$ |
@@ -77,283 +55,273 @@ The data for the lower and upper rectangles follow the same pattern on every sub
 |    $n$    | $[x_{n-1},x_n]$ |    $m_n$     |    $M_n$     | $m_n\Delta x$ | $M_n\Delta x$ |
 
 
-The equal-width construction is a special case of a partition whose subintervals need not have equal widths. For an arbitrary partition $P$ given by $a = x_0 < x_1 < \cdots < x_n = b,$ the lower and upper sums are:
+Formulas $(3)$ and $(4)$ extend to an arbitrary partition $P$ of $[a,b]$ with partition points of the form:
+
+$$a=x_0 \lt x_1 \lt \cdots \lt x_n=b$$
+
+In each term we replace the common width $\Delta x$ by the length $x_i-x_{i-1}$ of the subinterval on which $m_i$ and $M_i$ are calculated, obtaining the lower and upper sums associated with $P$.
 
 $$
 \begin{align}
-L(f, P) &= \sum_{i=1}^{n} m_i(x_i - x_{i-1}) \\[6pt]
-U(f, P) &= \sum_{i=1}^{n} M_i(x_i - x_{i-1})
+L(f,P) &= \sum_{i=1}^{n} m_i(x_i-x_{i-1}) \tag{5} \\[6pt]
+U(f,P) &= \sum_{i=1}^{n} M_i(x_i-x_{i-1}) \tag{6}
 \end{align}
 $$
 
-If a partition $P'$ refines $P$ by adding division points, the lower sum cannot decrease and the upper sum cannot increase. Consequently:
+Adding partition points to $P$ gives a finer partition $P'$. On each part of a subdivided interval, the infimum of $f$ is at least as large as on the whole subinterval, and the supremum is at most as large. Since the lengths of the parts add up to the length of the original subinterval, formulas $(5)$ and $(6)$ give the following chain of inequalities:
 
-$$L(f, P) \leq L(f, P') \leq U(f, P') \leq U(f, P)$$
+$$
+L(f,P) \leq L(f,P') \leq U(f,P') \leq U(f,P) \tag{7}
+$$
 
-For a bounded function $f(x)$ on $[a, b],$ the lower and upper integrals collect the best estimates obtained from all possible partitions:
+Applying $(7)$ to a common refinement of two partitions shows that every lower sum is less than or equal to every upper sum. For a bounded function $f$ on $[a,b]$, the lower and upper integrals are defined by the following formulas, where $P$ ranges over all partitions of $[a,b]$:
+
+$$\tag{9}
+\begin{align}
+L(f,[a,b]) &= \sup_P L(f,P)\\[6pt]
+U(f,[a,b]) &= \inf_P U(f,P) 
+\end{align}
+$$
+
+It follows from $(9)$ that:
+
+$$L(f,[a,b])\leq U(f,[a,b]) \tag{10}$$
+
+A function $f$ is [Riemann integrable](../riemann-integrability-criteria/) if and only if equality holds in $(10)$, in which case:
+
+$$
+\int_a^b f(x) \ dx = L(f,[a,b]) = U(f,[a,b]) \tag{11}
+$$
+
+An equivalent formulation of $(11)$ uses Riemann sums. In each subinterval of width $\Delta x_i=x_i-x_{i-1}$, we choose a sample point as follows:
+
+$$\xi_i\in[x_{i-1},x_i] \tag{12}$$
+
+Since $m_i\leq f(\xi_i)\leq M_i$, the Riemann sum lies between the lower and upper Darboux sums:
+
+$$
+L(f,P)\leq \sum_{i=1}^{n} f(\xi_i)\Delta x_i \leq U(f,P) \tag{13}
+$$
+
+The mesh of the partition, $\|P\|=\max_{1\leq i\leq n}\Delta x_i$, is the length of its widest subinterval. A bounded function $f$ is integrable if and only if, as $\|P\|$ tends to zero, the Riemann sums in $(13)$ converge to the same value for every choice of partitions and sample points. This limit is the integral in $(11)$, so:
+
+$$
+\lim_{\|P\|\to 0}\sum_{i=1}^{n} f(\xi_i)\Delta x_i = \int_a^b f(x) \ dx \tag{14}
+$$
+
+When $f$ is continuous on $[a,b]$, [uniform continuity](../uniform-continuity/) ensures that $\max_i(M_i-m_i)$ tends to zero as $\|P\|$ tends to zero. The difference between the upper and lower sums in $(13)$ therefore tends to zero as well, since
 
 $$
 \begin{align}
-L(f, [a, b]) &= \sup_P L(f, P) \\[6pt]
-U(f, [a, b]) &= \inf_P U(f, P)
+U(f,P)-L(f,P) &= \sum_{i=1}^{n}(M_i-m_i)\Delta x_i \\[6pt]
+&\leq (b-a)\max_i(M_i-m_i) \tag{15}
 \end{align}
 $$
 
-Every lower sum is no greater than every upper sum, so $L(f, [a, b]) \leq U(f, [a, b]).$ The function $f(x)$ is [Riemann integrable](../riemann-integrability-criteria/) precisely when these two values coincide. Their common value is the definite integral:
+The difference between the upper and lower integrals lies between zero and $U(f,P)-L(f,P)$. By $(15)$ this difference must be zero, so $f$ is Riemann integrable on $[a,b]$.
 
-$$L(f, [a, b]) = U(f, [a, b]) = \int_{a}^{b} f(x) \ dx$$
+## Evaluation and properties
 
-An equivalent definition of the definite integral uses tagged Riemann sums. For a partition $P$ given by $a = x_0 < x_1 < \cdots < x_n = b,$ choose a point $\xi_i \in [x_{i-1},x_i]$ in each subinterval and set $\Delta x_i = x_i - x_{i-1}.$ The point $\xi_i$ is called the tag of the $i$-th subinterval, and the mesh of $P$ is defined by:
-
-$$
-\|P\| = \max_{1 \leq i \leq n} \Delta x_i
-$$
-
-A bounded function $f$ is Riemann integrable with integral $I$ if, for every $\varepsilon>0,$ there exists $\delta>0$ such that every partition $P$ and every choice of tags satisfy:
+To derive the general method for evaluating a definite integral, we begin by observing that if $f$ is continuous on $[a,b]$, its integral exists on each subinterval $[a,x]$. Allowing $x$ to vary gives the accumulation function:
 
 $$
-\|P\|<\delta
-\implies
-\left|\sum_{i=1}^{n}f(\xi_i)\Delta x_i-I\right|<\varepsilon
+A(x)=\int_a^x f(t) \ dt \tag{16}
 $$
 
-This condition requires all tagged Riemann sums with sufficiently small mesh to approach the same value. It is commonly abbreviated by the notation:
+By the [fundamental theorem of calculus](../fundamental-theorem-of-calculus/), $A'(x)=f(x)$ for every $x\in(a,b)$, and if $F$ is an antiderivative of $f$ on $(a,b)$ and is continuous on $[a,b]$, then $F-A$ is constant because its derivative is zero. By $(16)$, $A(a)=0$, so the constant is $F(a)$. Evaluating $A$ at $b$ gives the formula:
 
 $$
-\int_a^b f(x) \ dx
-=
-\lim_{\|P\| \to 0}
-\sum_{i=1}^{n} f(\xi_i)\Delta x_i
+\int_a^b f(x) \ dx = F(b)-F(a) \tag{17}
 $$
 
-The displayed limit therefore ranges over all tagged partitions rather than over a single prescribed sequence. This entry will use the Darboux formulation through $L(f,P)$ and $U(f,P).$ Every tagged Riemann sum lies between the corresponding lower and upper sums. Together with estimates for sufficiently fine partitions, this bound proves that a bounded function on $[a,b]$ is integrable under one definition if and only if it is integrable under the other, and both definitions assign the same value.
+We now consider some properties that are useful in problems involving definite integrals. We begin with the simple case in which the two limits of integration coincide and the integral is zero:
 
-> John K. Hunter presents the formulation through tagged partitions and proves its equivalence with the Darboux definition in Introduction to Analysis, listed in the [bibliography](../bibliography/).
+$$\int_{a}^{a} f(x) \ dx = 0 \tag{18}$$
 
-- - -
-
-Every continuous real-valued function on $[a, b]$ is Riemann integrable. Continuity on this interval implies uniform continuity, which makes the oscillation $M_i - m_i$ uniformly small when the subintervals are sufficiently short. The values $a$ and $b$ are the lower and upper limits of integration, and $f(x)$ is the integrand. The notation $f(x) \ dx$ is suggested by the area $f(x)\Delta x$ of each approximating rectangle. The symbol $dx$ identifies $x$ as the integration variable and records the limiting role of the subinterval widths.
-
-## Computing definite integrals
-
-If $f(x)$ is continuous on $[a, b]$ and $F(x)$ is any [antiderivative](../indefinite-integrals/) of $f(x)$, then the definite integral is given by the difference of the antiderivative at the endpoints:
-
-$$\int_{a}^{b} f(x) \ dx = F(b) - F(a)$$
-
-The two quantities appearing in this expression have the following meaning:
-
-+ $F(x)$ is continuous on $[a, b]$, differentiable on $(a, b)$, and satisfies $F'(x) = f(x)$ for every $x \in (a, b)$.
-+ $F(b)$ and $F(a)$ are the values of the antiderivative evaluated at the upper and lower limits of integration.
-
-This formula is the conclusion of the second [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/). The first part of the theorem establishes that the function obtained by integrating from a fixed point to a variable endpoint is differentiable, with derivative equal to the integrand. Define the accumulation function by:
-
-$$F(x) = \int_{a}^{x} f(t) \ dt$$
-
-For every $x \in (a, b)$, this function satisfies $F'(x) = f(x)$, which makes differentiation and integration mutually inverse operations in a precise sense. Both results are treated in detail on the dedicated page on the [Fundamental Theorem of Calculus](../fundamental-theorem-of-calculus/).
-
-## Properties
-
-When the two endpoints of integration coincide, the integral vanishes:
-
-$$\int_{a}^{a} f(x) \ dx = 0$$
-
-The identity follows directly from the definition: an interval of zero width contributes no area. Reversing the limits of integration changes the sign of the integral:
-
-$$\int_{a}^{b} f(x) \ dx = -\int_{b}^{a} f(x) \ dx$$
-
-This reflects the oriented nature of the definite integral: traversing the interval in the opposite direction reverses the sign of the accumulated area. If $f(x) = k$ is constant on $[a, b]$, its integral is the constant value multiplied by the length of the interval:
-
-$$\int_{a}^{b} k \ dx = k(b - a)$$
-
-A constant factor can be moved outside the integral sign:
-
-$$\int_{a}^{b} kf(x) \ dx = k \int_{a}^{b} f(x) \ dx$$
-
-The integral is additive over sums of functions:
-
-$$\int_{a}^{b} (f(x) + g(x)) \ dx = \int_{a}^{b} f(x) \ dx + \int_{a}^{b} g(x) \ dx$$
-
-Together, the previous two properties make the definite integral a linear operator. The integral is also additive over adjacent intervals: for any three points $a$, $b$, $c$ in the domain of $f$, the following identity holds:
-
-$$\int_{a}^{c} f(x) \ dx = \int_{a}^{b} f(x) \ dx + \int_{b}^{c} f(x) \ dx$$
-
-This additivity allows us to [integrate a piecewise function](../piecewise-functions/) by splitting the interval at its junction points.
-
-If $f(x) \leq g(x)$ for every $x \in [a, b]$, the same inequality propagates to the integrals:
-
-$$\int_{a}^{b} f(x) \ dx \leq \int_{a}^{b} g(x) \ dx$$
-
-> This is the comparison property of integrals. The vertical difference $g(x) - f(x)$ is nonnegative throughout the interval, so its integral is also nonnegative.
-
-- - -
-
-For a bounded function $f(x)$ that is Riemann integrable on $[a, b],$ applying the comparison property to the constant functions equal to its infimum and supremum gives the bounds:
+In $(18)$ the difference between the values of the antiderivative reduces to $F(a)-F(a)=0$, whereas reversing the limits in $(17)$ gives $F(a)-F(b)$ and changes the sign of the integral:
 
 $$
-(b - a)\inf_{x \in [a, b]} f(x)
-\leq \int_{a}^{b} f(x) \ dx
-\leq (b - a)\sup_{x \in [a, b]} f(x)
+\int_b^a f(x) \ dx = -\int_a^b f(x) \ dx \tag{19}
 $$
 
-If $f(x)$ is Riemann integrable, then $|f(x)|$ is also Riemann integrable. The inequalities $-|f(x)| \leq f(x) \leq |f(x)|$ and the comparison property imply:
+Another property concerns multiplication by a constant. If $f(x) = k$ is constant on $[a, b]$, its integral is given by:
 
-$$\left|\int_{a}^{b} f(x) \ dx\right| \leq \int_{a}^{b} |f(x)| \ dx$$
+$$\int_{a}^{b} k \ dx = k(b - a) \tag{20}$$
+
+A constant factor can be taken outside the integral sign, giving:
+
+$$\int_{a}^{b} kf(x) \ dx = k \int_{a}^{b} f(x) \ dx \tag{21}$$
+
+If $f$ and $g$ are integrable on $[a,b]$, their sum is also integrable and the following additivity property holds:
+
+$$
+\int_a^b (f(x)+g(x)) \ dx = \int_a^b f(x) \ dx + \int_a^b g(x) \ dx \tag{22}
+$$
+
+As with the [indefinite integral](../indefinite-integrals/), additivity and the constant multiple rule $(21)$ express the linearity of integration. The integral is also additive over intervals. If $f$ is integrable on $[a,c]$ and $b\in[a,c]$, we can split the interval at $b$ and add the integrals over the two subintervals:
+
+$$
+\int_a^c f(x) \ dx = \int_a^b f(x) \ dx + \int_b^c f(x) \ dx \tag{23}
+$$
+
+By $(19)$, identity $(23)$ holds for any ordering of the three points, provided $f$ is integrable on the interval containing them. For a [piecewise-defined function](../piecewise-functions/), it is convenient to split the interval where the pieces meet.
+
+If $f$ and $g$ are integrable on $[a,b]$ and $f(x)\leq g(x)$ for every $x\in[a,b]$, then $g-f$ is nonnegative and therefore has a nonnegative integral. By linearity, as expressed in $(21)$ and $(22)$, the integral of $g-f$ equals the difference of their integrals. This gives the comparison property:
+
+$$
+\int_a^b f(x) \ dx \leq \int_a^b g(x) \ dx \tag{24}
+$$
+
+The comparison property $(24)$ gives two estimates for the integral of an integrable function $f$ on $[a,b]$. The first applies when we know the infimum $m$ and the supremum $M$ of $f$ on the interval. Comparing $f$ with the constants $m$ and $M$ and evaluating their integrals using $(20)$ gives:
+
+$$
+m(b-a) \leq \int_a^b f(x) \ dx \leq M(b-a) \tag{25}
+$$
+
+The second estimate concerns the [absolute value](../absolute-value/) of the integral. Since $|f|$ is also integrable, we can apply $(24)$ to the inequalities $-|f(x)|\leq f(x)\leq |f(x)|$. This gives the triangle inequality for integrals:
+
+$$
+\left|\int_a^b f(x) \ dx\right| \leq \int_a^b |f(x)| \ dx \tag{26}
+$$
+
+## Examples
+
+As a first example of how to evaluate definite integrals, consider the following integral:
+
+$$
+\int_0^3 (3x-x^2) \ dx
+$$
+
+By linearity, we integrate the two terms separately and use $(17)$ to evaluate the antiderivative at the endpoints:
+
+$$
+\begin{align}
+\int_0^3 (3x-x^2) \ dx
+&= \left[\frac{3x^2}{2}-\frac{x^3}{3}\right]_0^3 \\[6pt]
+&= \frac{27}{2}-9 = \frac{9}{2} \tag{27}
+\end{align}
+$$
+
+Since $3x-x^2=x(3-x)$ is nonnegative on $[0,3]$, the value in $(27)$ is the area between the [parabola](../parabola/) and the $x$-axis over this interval. Now consider the second integral:
+
+$$
+\int_0^\pi (x+\sin x) \ dx
+$$
+
+One antiderivative is $F(x)=x^2/2-\cos x$. Here $F(0)=-1$, so the lower limit of integration also contributes to the result:
+
+$$
+\begin{align}
+\int_0^\pi (x+\sin x) \ dx
+&= \left[\frac{x^2}{2}-\cos x\right]_0^\pi \\[6pt]
+&= \left(\frac{\pi^2}{2}+1\right)-(-1)
+ = \frac{\pi^2}{2}+2 \tag{28}
+\end{align}
+$$
+
+In $(28)$ the integral again equals the area under the graph, since both $x$ and $\sin x$ are nonnegative on $[0,\pi]$. Finally, consider the [integral of the exponential function](../integral-of-the-exponential-function/):
+
+$$
+\int_0^2 e^{2x} \ dx
+$$
+
+To evaluate it, we use the Riemann sums in $(14)$. We divide the interval into $n$ parts of width $2/n$ and take the right endpoints $x_k=2k/n$ as the sample points. Since $f$ is [increasing](../increasing-and-decreasing-functions/), this choice gives an upper sum. The heights of the rectangles are $e^{4k/n}=q_n^k$, where $q_n=e^{4/n}$. Summing the [geometric progression](../geometric-sequence/) and using $q_n^n=e^4$, we obtain:
+
+$$
+\begin{align}
+R_n &= \frac{2}{n}\sum_{k=1}^n q_n^k \\[6pt]
+    &= \frac{2}{n}\frac{q_n(q_n^n-1)}{q_n-1} \\[6pt]
+    &= \frac{2q_n(e^4-1)}{n(q_n-1)} \tag{29}
+\end{align}
+$$
+
+As $n$ tends to infinity, $q_n$ tends to $1$, and the [standard limit](../remarkable-limits/) $(e^t-1)/t\to 1$ as $t\to 0$ gives $n(q_n-1)=4\frac{e^{4/n}-1}{4/n}\to 4$. Taking the limit in $(29)$ gives the required area:
+
+$$
+\int_0^2 e^{2x} \ dx = \lim_{n\to\infty} R_n = \frac{e^4-1}{2}\tag{30}
+$$
+
+> Keep in mind that in exercises on evaluating integrals, we usually find an antiderivative, using [substitution](../integration-by-substitution/) or [integration by parts](../integration-by-parts/) as needed, and evaluate it at the endpoints using $(17)$. For $(30)$, the antiderivative $F(x)=e^{2x}/2$ suffices. The Riemann sum calculation in $(29)$ simply shows how to obtain the same value directly from the definition.
 
 ## Mean value theorem for integrals
 
-The [mean value theorem for integrals](../mean-value-theorem-for-integrals/) states that if $f(x)$ is continuous on $[a, b]$, then there exists at least one point $c \in (a, b)$ such that:
+The [mean value theorem for integrals](../mean-value-theorem-for-integrals/) is the integral counterpart of the [mean value theorem for derivatives](../lagrange-theorem/) and follows by applying the latter to the accumulation function $A$ defined in $(16)$. Dividing $(25)$ by $b-a \gt 0$ gives bounds on the average value of $f$ over $[a,b]$, which is defined by:
 
-$$\int_{a}^{b} f(x) \ dx = f(c)(b - a)$$
+$$
+\frac{1}{b-a}\int_a^b f(x) \ dx \tag{31}
+$$
 
-The value $f(c)$ is the average value of the function over the interval. Geometrically, the theorem asserts the existence of a rectangle with base $b - a$ and height $f(c)$ whose oriented area equals the definite integral. The theorem guarantees the existence of such a point without providing a method to locate it. Solving for $f(c)$, the average value of $f$ over $[a, b]$ can be written as:
-
-$$f(c) = \frac{1}{b - a} \int_{a}^{b} f(x) \ dx$$
-
-> The mean value theorem for integrals is the integral counterpart of [Lagrange's mean value theorem](../lagrange-theorem/). The differential statement guarantees a point where the instantaneous rate of change equals the average rate of change, while the integral statement guarantees a point where the function value equals the average value over the interval.
-
-## Example 1
-
-Compute the following definite integral:
-
-$$\int_{0}^{3} (3x - x^2) \ dx$$
-
-Applying linearity and moving the constant factor outside the first integral gives:
-
-$$3\int_{0}^{3} x \ dx - \int_{0}^{3} x^2 \ dx$$
-
-The antiderivative of each term follows from the power rule discussed in the page on [indefinite integrals](../indefinite-integrals/):
-
-$$F(x) = \frac{3x^2}{2} - \frac{x^3}{3}$$
-
-Evaluating $F(3) - F(0)$ yields:
+This value lies between $m$ and $M$, so if $f$ is continuous on $[a,b]$, it attains its average value at some point in the interior of $[a,b]$. Indeed, by the mean value theorem for derivatives, there is a point $c\in(a,b)$ such that
 
 $$
 \begin{align}
-F(3) - F(0) &= \left(\frac{3 \cdot 9}{2} - \frac{27}{3}\right) - \left(\frac{3 \cdot 0}{2} - \frac{0}{3}\right) \\[6pt]
-            &= \frac{27}{2} - 9 \\[6pt]
-            &= \frac{27 - 18}{2} \\[6pt]
-            &= \frac{9}{2}
+f(c)=A'(c) &= \frac{A(b)-A(a)}{b-a} \\[6pt]
+&= \frac{1}{b-a}\int_a^b f(x) \ dx \tag{32}
 \end{align}
 $$
 
-The area of the region bounded by the graph of $f(x) = 3x - x^2$ and the $x$-axis over $[0, 3]$ is therefore:
+It follows from $(32)$ that the rectangle with base $b-a$ and height $|f(c)|$ has signed area $(b-a)f(c)$, equal to the integral of $f$ over $[a,b]$.
 
-$$\int_{0}^{3} (3x - x^2) \ dx = \frac{9}{2}$$
 
-> When an antiderivative is not immediately recognizable, techniques such as [integration by substitution](../integration-by-substitution/) and [integration by parts](../integration-by-parts/) may produce it. If no elementary antiderivative exists, the definite integral may require numerical methods or special functions.
+## Definite integrals and signed area
 
-## Example 2
-
-Compute the following definite integral:
-
-$$\int_{0}^{\pi} (x + \sin x) \ dx$$
-
-> The integrand combines a polynomial term with a trigonometric function. The relevant antiderivatives are collected on the page on [integrals of trigonometric functions](../integral-of-trigonometric-functions/).
-
-Applying linearity, the integral splits as:
-
-$$\int_{0}^{\pi} x \ dx + \int_{0}^{\pi} \sin x \ dx$$
-
-The antiderivative of each term gives:
-
-$$F(x) = \frac{x^2}{2} - \cos x$$
-
-Evaluating $F(\pi) - F(0)$ yields:
-
-$$
-\begin{align}
-F(\pi) - F(0) &= \left(\frac{\pi^2}{2} - \cos\pi\right) - \left(\frac{0}{2} - \cos 0\right) \\[6pt]
-              &= \left(\frac{\pi^2}{2} + 1\right) - (0 - 1) \\[6pt]
-              &= \frac{\pi^2}{2} + 2
-\end{align}
-$$
-
-The area of the region bounded by the graph of $f(x) = x + \sin x$ and the $x$-axis over $[0, \pi]$ is:
-
-$$\int_{0}^{\pi} (x + \sin x) \ dx = \frac{\pi^2}{2} + 2$$
-
-## Example 3
-
-Compute the area under the exponential curve $f(x)=e^{2x}$ over $[0,2]$ directly from right-endpoint Riemann sums. Divide $[0,2]$ into $n$ subintervals of equal width. The width and the right endpoint of the $k$-th subinterval are:
-
-$$\Delta x = \frac{2}{n} \qquad x_k = \frac{2k}{n}$$
-
-The function $f(x)=e^{2x}$ is increasing, so the right-endpoint rectangles give upper sums. The height of the $k$-th rectangle is:
-
-$$f(x_k) = e^{2x_k} = e^{4k/n}$$
-
-Hence the sum of the rectangle areas is:
-
-$$R_n = \sum_{k=1}^{n} f(x_k)\Delta x = \frac{2}{n}\sum_{k=1}^{n} e^{4k/n}$$
-
-Set $q_n=e^{4/n}.$ The terms $e^{4k/n}=q_n^k$ form a finite [geometric progression](../geometric-sequence/), with $q_n^n=e^4.$ The finite-sum formula gives:
-
-$$
-\begin{align}
-R_n &= \frac{2}{n}\sum_{k=1}^{n}q_n^k \\[6pt]
-    &= \frac{2}{n}\frac{q_n(q_n^n-1)}{q_n-1} \\[6pt]
-    &= \frac{2q_n(e^4-1)}{n(q_n-1)}
-\end{align}
-$$
-
-As $n$ tends to infinity, $q_n$ tends to $1.$ Applying the [remarkable limit](../remarkable-limits/) for the exponential function gives:
-
-$$
-\lim_{n \to \infty}n(q_n-1)
-= \lim_{n \to \infty}4\left(\frac{e^{4/n}-1}{4/n}\right)
-= 4
-$$
-
-Taking the limit of the upper sums gives the definite integral:
-
-$$
-\int_{0}^{2}e^{2x} \ dx
-= \lim_{n \to \infty}R_n
-= \frac{e^4-1}{2}
-$$
-
-Since $e^{2x}$ is positive on $[0,2],$ this integral is the geometric area under the curve, approximately $26.799.$
-
-## Handling definite integrals with positive and negative areas
-
-The interpretation of the definite integral as an area holds when $f(x) \geq 0$ throughout $[a, b]$. When $f(x)$ changes sign within the interval, the integral assigns a negative value to the portions of the region lying below the $x$-axis, and the result is an oriented area rather than a purely geometric one.
+In examples $(27)$ and $(28)$, the function was nonnegative, so the integral equaled the area between the graph and the $x$-axis, but when the function changes sign, the integral gives the signed area, obtained by subtracting the area below the axis from the area above it. The following figure shows a function with this behavior:
 
 ![Img. 4](svg/definite-integrals-4.svg)
 
-To recover the geometric area, the interval $[a, b]$ is divided into subintervals over which $f(x)$ maintains constant sign. If $f(x) \geq 0$ on $[a, c]$ and $f(x) \leq 0$ on $[c, b]$, additivity gives the oriented integral:
+Suppose, as in the figure, that $f(x)\geq 0$ on $[a,c]$ and $f(x)\leq 0$ on $[c,b]$. Splitting the interval at $c$ and applying additivity $(23)$ gives:
 
-$$\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx$$
+$$
+\int_a^b f(x) \ dx = \int_a^c f(x) \ dx + \int_c^b f(x) \ dx \tag{33}
+$$
 
-The geometric area is obtained by changing the sign of the negative contribution:
+The second integral in $(33)$ is nonpositive, so to add the two geometric areas we reverse the sign of that term, which amounts to integrating $|f|$ over the whole interval:
 
-$$S = \int_{a}^{c} f(x) \ dx - \int_{c}^{b} f(x) \ dx = \int_{a}^{b} |f(x)| \ dx$$
+$$
+\begin{align}
+S &= \int_a^c f(x) \ dx - \int_c^b f(x) \ dx \\[6pt]
+  &= \int_a^b |f(x)| \ dx \tag{34}
+\end{align}
+$$
 
-For an [even function](../even-and-odd-functions/), symmetry about the $y$-axis implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal. Hence:
+On a symmetric interval $[-a,a]$ with $a \gt 0$, it is convenient to split the integral at the origin. If $f$ is even, its values at $x$ and $-x$ are equal, so the two halves contribute equally to the integral:
 
-$$\int_{-a}^{a} f(x) \ dx = 2\int_{0}^{a} f(x) \ dx$$
+$$
+\int_{-a}^a f(x) \ dx = 2\int_0^a f(x) \ dx \tag{35}
+$$
 
 ![Img. 5](svg/definite-integrals-5.svg)
 
-For an [odd function](../even-and-odd-functions/), symmetry about the origin implies that the contributions from $[-a, 0]$ and $[0, a]$ are equal in magnitude but opposite in sign. Hence:
+If $f$ is odd, its values at the symmetric points $x$ and $-x$ are opposites. The integrals over $[-a,0]$ and $[0,a]$ are therefore opposites and their sum is zero:
 
-$$\int_{-a}^{a} f(x) \ dx = 0$$
+$$
+\int_{-a}^a f(x) \ dx = 0 \tag{36}
+$$
 
 ![Img. 6](svg/definite-integrals-6.svg)
 
-In both cases, the geometric area enclosed between the graph of $f(x)$ and the $x$-axis over $[-a, a]$ is obtained by integrating the [absolute value](../absolute-value/) of the function. Since $|f(x)|$ is even whenever $f(x)$ is even or odd, the area is:
+To find the geometric area, we use $(34)$. Whether $f$ is [even or odd](../even-and-odd-functions/), we have $|f(-x)|=|f(x)|$, so we can apply $(35)$ to the even function $|f|$ and double the area over $[0,a]$:
 
-$$S = 2\int_{0}^{a} |f(x)| \ dx$$
+$$
+S = \int_{-a}^a |f(x)| \ dx = 2\int_0^a |f(x)| \ dx \tag{37}
+$$
 
-If $f(x)$ is even and nonnegative on $[0, a]$, this formula reduces to:
+In either case, if $f(x)\geq 0$ on $[0,a]$, then $|f(x)|=f(x)$ throughout that interval, and $(37)$ reduces to:
 
-$$S = 2\int_{0}^{a} f(x) \ dx$$
+$$
+S = 2\int_0^a f(x) \ dx \tag{38}
+$$
 
-Further examples of geometric area calculations are given on the page on [finding areas by integration](../finding-areas-by-integration/).
+The entry on [finding areas by integration](../finding-areas-by-integration/) gives further examples.
 
-## Improper integrals
+- - -
 
-The Riemann integral considered above requires a bounded interval and a bounded integrand. If the interval is unbounded or the integrand becomes unbounded near an endpoint or an interior point, an [improper integral](../improper-integrals/) may be defined by replacing the problematic bound with a parameter and taking a limit. For example, if $f(x)$ is Riemann integrable on every interval $[a,t]$ with $t>a,$ then:
+We conclude with a brief introduction to improper integrals. So far we have integrated bounded functions over bounded intervals. To extend integration to $[a,+\infty)$, suppose that $f$ is Riemann integrable on every interval $[a,t]$ with $t \gt a$. We evaluate the integral up to $t$ and let $t$ tend to $+\infty$:
 
-$$\int_a^{+\infty}f(x) \ dx:=\lim_{t\to+\infty}\int_a^t f(x) \ dx$$
+$$
+\int_a^{+\infty} f(x) \ dx := \lim_{t\to+\infty}\int_a^t f(x) \ dx \tag{39}
+$$
 
-The integral converges only when its defining limit exists and is finite. The dedicated page gives the definitions for the other types of improper integral, the convergence criteria, and worked examples.
+The integral in $(39)$ is called an improper integral and converges if the limit exists and is finite. For a full treatment of [improper integrals](../improper-integrals/), see the entry on that topic.
+
+

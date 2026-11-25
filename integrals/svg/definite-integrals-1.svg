@@ -3,14 +3,14 @@
     <defs>
         <path d="M0,103 L0,45 L19,28 L39,14 L62,3 C74.6666667,1 81,0 81,0 C90.3333333,1.33333333 95,2 95,2 C103,4.66666667 107,6 107,6 C115,10.6666667 119,13 119,13 L132,25 L136,29 L136,103 L0,103 Z" id="path-1"></path>
     </defs>
-    <g id="NEW---Integrals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-14" transform="translate(1.000000, 0.000000)">
-            <g id="Group-13" transform="translate(141.500000, 50.500000)">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)">
+            <g transform="translate(141.500000, 50.500000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <g id="Mask"></g>
-                <g mask="url(#mask-2)" id="Line-13" stroke="#E2DFDD" stroke-linecap="square">
+                <g></g>
+                <g mask="url(#mask-2)" stroke="#E2DFDD" stroke-linecap="square">
                     <g transform="translate(-198.722871, -17.722871)">
                         <line x1="-45.2771286" y1="111.722871" x2="268.722871" y2="111.722871" transform="translate(111.722871, 111.722871) rotate(-45.000000) translate(-111.722871, -111.722871) "></line>
                         <line x1="-35.0542571" y1="111.722871" x2="278.945743" y2="111.722871" transform="translate(121.945743, 111.722871) rotate(-45.000000) translate(-121.945743, -111.722871) "></line>
@@ -79,38 +79,38 @@
                     </g>
                 </g>
             </g>
-            <path id="Line" d="M106.882134,5.67699263 L106.935788,5.75486938 L111.435788,13.7548694 C111.57117,13.9955483 111.48581,14.3004059 111.245131,14.4357878 C111.031194,14.5561272 110.766548,14.5020533 110.615296,14.3195146 L110.564212,14.2451306 L106.999,7.906 L107,191.5 C107,191.776142 106.776142,192 106.5,192 C106.25454,192 106.050392,191.823125 106.008056,191.589876 L106,191.5 L105.999,7.91 L102.435788,14.2451306 C102.315448,14.4590675 102.061202,14.5502832 101.837152,14.4728292 L101.754869,14.4357878 C101.540933,14.3154483 101.449717,14.0612021 101.527171,13.8371522 L101.564212,13.7548694 L106.064212,5.75486938 C106.239435,5.44336236 106.665161,5.41740344 106.882134,5.67699263 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-            <path id="Line-2" d="M295.162848,148.527171 L295.245131,148.564212 L303.245131,153.064212 C303.556638,153.239435 303.582597,153.665161 303.323007,153.882134 L303.245131,153.935788 L295.245131,158.435788 C295.004452,158.57117 294.699594,158.48581 294.564212,158.245131 C294.443873,158.031194 294.497947,157.766548 294.680485,157.615296 L294.754869,157.564212 L301.091,154 L3.85379111e-16,154 C-0.276142375,154 -0.5,153.776142 -0.5,153.5 C-0.5,153.25454 -0.323124839,153.050392 -0.0898756324,153.008056 L-3.85379111e-16,153 L301.091,153 L294.754869,149.435788 C294.540933,149.315448 294.449717,149.061202 294.527171,148.837152 L294.564212,148.754869 C294.684552,148.540933 294.938798,148.449717 295.162848,148.527171 Z" fill="#beb8b7" fill-rule="nonzero"></path>
-            <text id="x" font-size="14" font-weight="normal" fill="#beb8b7">
+            <path d="M106.882134,5.67699263 L106.935788,5.75486938 L111.435788,13.7548694 C111.57117,13.9955483 111.48581,14.3004059 111.245131,14.4357878 C111.031194,14.5561272 110.766548,14.5020533 110.615296,14.3195146 L110.564212,14.2451306 L106.999,7.906 L107,191.5 C107,191.776142 106.776142,192 106.5,192 C106.25454,192 106.050392,191.823125 106.008056,191.589876 L106,191.5 L105.999,7.91 L102.435788,14.2451306 C102.315448,14.4590675 102.061202,14.5502832 101.837152,14.4728292 L101.754869,14.4357878 C101.540933,14.3154483 101.449717,14.0612021 101.527171,13.8371522 L101.564212,13.7548694 L106.064212,5.75486938 C106.239435,5.44336236 106.665161,5.41740344 106.882134,5.67699263 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <path d="M295.162848,148.527171 L295.245131,148.564212 L303.245131,153.064212 C303.556638,153.239435 303.582597,153.665161 303.323007,153.882134 L303.245131,153.935788 L295.245131,158.435788 C295.004452,158.57117 294.699594,158.48581 294.564212,158.245131 C294.443873,158.031194 294.497947,157.766548 294.680485,157.615296 L294.754869,157.564212 L301.091,154 L3.85379111e-16,154 C-0.276142375,154 -0.5,153.776142 -0.5,153.5 C-0.5,153.25454 -0.323124839,153.050392 -0.0898756324,153.008056 L-3.85379111e-16,153 L301.091,153 L294.754869,149.435788 C294.540933,149.315448 294.449717,149.061202 294.527171,148.837152 L294.564212,148.754869 C294.684552,148.540933 294.938798,148.449717 295.162848,148.527171 Z" fill="#beb8b7" fill-rule="nonzero"></path>
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
                 <tspan x="296.5" y="174">x</tspan>
             </text>
-            <text id="y" font-size="14" font-weight="normal" fill="#beb8b7">
+            <text font-size="14" font-weight="normal" fill="#beb8b7">
                 <tspan x="88.5" y="14">y</tspan>
             </text>
-            <ellipse id="Oval" fill="#312f2f" cx="141.495446" cy="153.5" rx="2.49544627" ry="2.5"></ellipse>
-            <text id="The-curvilinear-trap" font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
+            <ellipse fill="#312f2f" cx="141.495446" cy="153.5" rx="2.49544627" ry="2.5"></ellipse>
+            <text font-size="11" font-weight="normal" line-spacing="13" fill="#636060">
                 <tspan x="145" y="215">The curvilinear trapezoid is the </tspan>
                 <tspan x="145" y="228">region under the curve bounded </tspan>
                 <tspan x="145" y="241">by the graph of the function, the </tspan>
                 <tspan x="145" y="254">x-axis, and the vertical lines x=a </tspan>
                 <tspan x="145" y="267">and x=b.</tspan>
             </text>
-            <line x1="213.4" y1="137" x2="213.6" y2="199.5" id="Line-3" stroke="#beb8b7" stroke-linecap="round"></line>
-            <path d="M25,126 C35.7913694,130.358316 43.9916844,132.902421 49.600945,133.632314 M94.1761945,126.729216 C112.279105,119.175 131.220374,105.931928 151,87 C221,20 270,58 296,108" id="Shape" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <text id="y=f(x)" font-size="13" font-weight="normal" fill="#312f2f">
+            <line x1="213.4" y1="137" x2="213.6" y2="199.5" stroke="#beb8b7" stroke-linecap="round"></line>
+            <path d="M25,126 C35.7913694,130.358316 43.9916844,132.902421 49.600945,133.632314 M94.1761945,126.729216 C112.279105,119.175 131.220374,105.931928 151,87 C221,20 270,58 296,108" stroke="#312f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="56.5" y="135">y=f(x)</tspan>
             </text>
-            <line x1="141.5" y1="96.5" x2="141.5" y2="153.5" id="Line-5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <line x1="277.5" y1="83.521978" x2="277.5" y2="153.5" id="Line-5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
-            <text id="a" font-size="13" font-weight="normal" fill="#312f2f">
+            <line x1="141.5" y1="96.5" x2="141.5" y2="153.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <line x1="277.5" y1="83.521978" x2="277.5" y2="153.5" stroke="#312f2f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></line>
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="136" y="175">a</tspan>
             </text>
-            <text id="b" font-size="13" font-weight="normal" fill="#312f2f">
+            <text font-size="13" font-weight="normal" fill="#312f2f">
                 <tspan x="273" y="173">b</tspan>
             </text>
-            <ellipse id="Oval" fill="#312f2f" cx="277.495446" cy="153.5" rx="2.49544627" ry="2.5"></ellipse>
-            <circle id="Oval" fill="#312f2f" cx="141.5" cy="95.5" r="2.5"></circle>
-            <circle id="Oval" fill="#312f2f" cx="277.5" cy="80.5" r="2.5"></circle>
+            <ellipse fill="#312f2f" cx="277.495446" cy="153.5" rx="2.49544627" ry="2.5"></ellipse>
+            <circle fill="#312f2f" cx="141.5" cy="95.5" r="2.5"></circle>
+            <circle fill="#312f2f" cx="277.5" cy="80.5" r="2.5"></circle>
         </g>
     </g>
 </svg>
