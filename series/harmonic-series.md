@@ -65,13 +65,15 @@ $$
 \lim_{k \to \infty} a_k = 0.
 $$
 
-If this condition is not satisfied, that is, if $\lim_{k \to \infty} a_k \neq 0$, then the series diverges. For the generalized harmonic series with exponent $a \leq 1$, this condition fails. For example, when $a = 0$, the terms become constant $a_k = 1$, and:
+If this condition is not satisfied, that is, if $\lim_{k \to \infty} a_k \neq 0$, then the series diverges. For the generalized harmonic series with exponent $a \leq 0$, this condition fails. For example, when $a = 0$, the terms become constant $a_k = 1$, and:
 
 $$
 \lim_{k \to \infty} \frac{1}{k^0} = \lim_{k \to \infty} 1 = 1 \neq 0.
 $$
 
 Hence, the series diverges because its general term does not tend to zero.
+
+When $0 < a \leq 1$, the terms do tend to zero, but the series still diverges. In this range $1/k^a \geq 1/k$, so the generalized harmonic series dominates the harmonic series term by term. Since the harmonic series diverges, the [comparison test](../series-with-positive-terms/) gives divergence.
 
 - - -
 
@@ -142,7 +144,13 @@ $$
 f(x) = \frac{1}{x (\log x)^q}
 $$
 
-which is positive, [continuous](../continuous-functions/), and [decreasing](../increasing-and-decreasing-functions/) for $x \geq 2$. Using the [substitution](../integration-by-substitution/) $u = \log x$, the improper integral becomes:
+which is positive and [continuous](../continuous-functions/) for $x \geq 2.$ Its derivative is
+
+$$
+f'(x) = -\frac{1 + q/\log x}{x^2 (\log x)^q}.
+$$
+
+For every fixed real $q,$ this derivative is negative for all sufficiently large $x.$ The [integral test](../integral-test-for-series-convergence/) therefore applies to the tail; the finite initial interval does not affect convergence. Using the [substitution](../integration-by-substitution/) $u = \log x,$ the improper integral becomes:
 
 $$
 \int_2^{\infty} \frac{1}{x (\log x)^q} \ dx = \int_{\log 2}^{\infty} \frac{1}{u^q} \ du
