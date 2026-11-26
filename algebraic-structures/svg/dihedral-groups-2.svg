@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="320" height="374" viewBox="0 0 320 374" role="img" aria-labelledby="title desc">
+  <title id="title">Le due immagini di tre vertici consecutivi</title>
+  <desc id="desc">In entrambi gli esagoni il vertice in alto è l'immagine di v₀. Nel primo le frecce proseguono verso sinistra, da vₖ a vₖ₊₁ e a vₖ₊₂. Nel secondo proseguono verso destra, da vₖ a vₖ₋₁ e a vₖ₋₂.</desc>
+  <defs>
+    <g id="hexagon" fill="#BEB8B7">
+      <path d="M0,-64 55.426,-32 55.426,32 0,64 -55.426,32 -55.426,-32 Z"
+            fill="none" stroke="#BEB8B7" stroke-width="1.4" stroke-linejoin="round"/>
+      <circle cy="-64" r="2.6"/><circle cx="55.426" cy="-32" r="2.6"/>
+      <circle cx="55.426" cy="32" r="2.6"/><circle cy="64" r="2.6"/>
+      <circle cx="-55.426" cy="32" r="2.6"/><circle cx="-55.426" cy="-32" r="2.6"/>
+    </g>
+    <g id="walk" fill="#312f2f">
+      <path d="M0,-64 -55.426,-32 -55.426,32" fill="none" stroke="#312f2f" stroke-width="2.2"/>
+      <path d="M5,0 -4,-3.5 -4,3.5 Z" transform="translate(-27.713 -48) rotate(150)"/>
+      <path d="M5,0 -4,-3.5 -4,3.5 Z" transform="translate(-55.426 0) rotate(90)"/>
+      <circle cy="-64" r="3.8"/><circle cx="-55.426" cy="-32" r="3.8"/>
+      <circle cx="-55.426" cy="32" r="3.8"/>
+    </g>
+  </defs>
+  <g transform="translate(160 98)" fill="#312f2f" font-size="12">
+    <use xlink:href="#hexagon"/>
+    <use xlink:href="#walk"/>
+    <text x="0" y="-77" text-anchor="middle">v<tspan dy="3" font-size="9">0</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k</tspan></text>
+    <text x="-68" y="-28" text-anchor="end">v<tspan dy="3" font-size="9">1</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k+1</tspan></text>
+    <text x="-68" y="36" text-anchor="end">v<tspan dy="3" font-size="9">2</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k+2</tspan></text>
+    <text y="7" text-anchor="middle" font-size="12" font-style="italic">r<tspan dy="-4" font-size="9">k</tspan></text>
+  </g>
+  <g transform="translate(160 294)" fill="#312f2f" font-size="12">
+    <use xlink:href="#hexagon"/>
+    <use xlink:href="#walk" transform="scale(-1 1)"/>
+    <text x="0" y="-77" text-anchor="middle">v<tspan dy="3" font-size="9">0</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k</tspan></text>
+    <text x="68" y="-28" text-anchor="start">v<tspan dy="3" font-size="9">1</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k−1</tspan></text>
+    <text x="68" y="36" text-anchor="start">v<tspan dy="3" font-size="9">2</tspan><tspan dy="-3"> ↦ v</tspan><tspan dy="3" font-size="9">k−2</tspan></text>
+    <text y="7" text-anchor="middle" font-size="12" font-style="italic">r<tspan dy="-4" font-size="9">k</tspan><tspan dy="4">s</tspan></text>
+  </g>
+</svg>

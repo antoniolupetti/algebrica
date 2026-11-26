@@ -9,182 +9,123 @@ tags:
   - dihedral-group
   - group-presentation
   - group-theory
-  - orthogonal-group
   - reflection
   - regular-polygon
   - rotation
   - symmetry-group
 ---
-## Symmetries of a regular polygon
 
-A regular polygon has congruent sides and congruent interior angles. Fix an integer $n \geq 3$ and let $P_n$ be the regular $n$-gon whose vertices lie on the [unit circle](../unit-circle/):
+## Definition
 
-$$v_k = \left( \cos\frac{2\pi k}{n}, \ \sin\frac{2\pi k}{n} \right) \qquad k = 0, 1, \ldots, n - 1$$
+A dihedral group is the symmetry group of a regular polygon. For a polygon $P_n$ with $n\geq 3$ sides, this group is denoted by $D_n$ and consists of all isometries of the plane that map $P_n$ onto itself. The rotations and reflections are thus the elements of the group, and we combine two of them by composition, applying one symmetry and then the other to obtain another symmetry of the polygon. Composition is associative, the identity $e$ is its neutral element, and the inverse of each symmetry is the transformation that undoes it. We label the vertices of $P_n$ counterclockwise, taking the indices modulo $n:$
 
-A symmetry of $P_n$ is an isometry of the plane that maps $P_n$ onto itself, where an isometry is a [bijection](../inverse-function/) preserving distances. The composite of two symmetries is a symmetry, [composition of maps](../composite-functions/) is associative, the identity map is a symmetry, and the inverse of a symmetry is again a symmetry. The symmetries of $P_n$ are therefore a [group](../groups/) under composition, the dihedral group of the $n$-gon, written $D_n.$
+$$v_0,v_1,\ldots,v_{n-1}$$
 
-Every symmetry fixes the centre of the polygon. A vertex is a point of $P_n$ that is not interior to any segment contained in $P_n,$ and an isometry preserves this property, so a symmetry permutes the $n$ vertices. Every Euclidean isometry is affine and therefore preserves arithmetic means. The centre is the arithmetic mean of the vertices, so a symmetry fixes the origin. An affine map that fixes the origin is linear.
+A symmetry sends consecutive vertices to consecutive vertices, so if it sends $v_0$ to $v_k,$ the two possible images of $v_1$ are $v_{k+1}$ and $v_{k-1}.$ In the first case, $v_2$ must go to $v_{k+2}$ because the other neighbor of $v_{k+1}$ is $v_k,$ already the image of $v_0,$ while in the second case $v_2$ must go to $v_{k-2}.$ To see this concretely, consider a symmetry of a hexagon that moves its vertices as shown in the figure:
 
-The group has at most $2n$ elements. The vectors $v_0$ and $v_1$ are linearly independent, because the angle between them satisfies $0 < 2\pi/n < \pi$ for $n \geq 3,$ so they are a basis of the plane and a [linear map](../linear-maps/) is determined by their images. A symmetry preserves the distance between vertices, so the image of the adjacent pair $v_0, v_1$ is again an adjacent pair. The image of $v_0$ has $n$ possible values, and once it is fixed the image of $v_1$ has two, one for each vertex adjacent to it.
+![IMG. 1](svg/dihedral-groups-2.svg)
 
-All $2n$ possibilities occur. Let $r$ be the rotation about the origin through the [angle](../angles-and-angular-measure/) $2\pi/n$ and let $s$ be the reflection in the $x$-axis. The rotation $r^k$ sends $v_j$ to $v_{j+k},$ with indices read [modulo](../modulo-operator/) $n,$ and $s$ sends $v_j$ to $v_{-j},$ so both maps are symmetries. The $n$ rotations $e, r, \ldots, r^{n-1}$ are distinct, and so are the $n$ maps $s, rs, \ldots, r^{n-1}s.$ Rotations preserve orientation while the maps in the second list reverse it, so the two lists share no element:
-
-$$D_n = \{\ e, r, \ldots, r^{n-1}, s, rs, \ldots, r^{n-1}s \ \} \qquad |D_n| = 2n$$
-
-> The subscript convention is not uniform. Here $D_n$ is the symmetry group of the $n$-gon, a group of order $2n,$ so the subscript counts the sides of the polygon, just as the subscript of $S_n$ counts the permuted symbols. Several texts write $D_{2n}$ for the same group, with the subscript equal to the order.
-
-## Generators and defining relations
-
-Identify the point $(x, y)$ with the [complex number](../complex-numbers/) $x + iy,$ and write $\zeta = e^{2\pi i/n}$ in [exponential form](../complex-numbers-exponential-form/) for the primitive $n$-th [root of unity](../roots-of-unity/). Multiplication by $\zeta$ is the rotation through $2\pi/n,$ and [conjugation](../complex-number-operations/) is the reflection in the real axis:
-
-$$r(z) = \zeta z \qquad s(z) = \overline{z}$$
-
-The vertices are the powers $\zeta^k,$ and each generator permutes them. Two relations are immediate. Since $\zeta^n = 1,$ we have $r^n = e,$ and conjugating twice returns $z,$ so $s^2 = e.$ The third relation involves both generators:
-
-$$s(r(s(z))) = \overline{\zeta\overline{z}} = \overline{\zeta}z = \zeta^{-1}z$$
-
-Hence $srs = r^{-1},$ and since $s = s^{-1}$ this can be written $sr = r^{-1}s.$ Moving a rotation across a reflection inverts it. Repeated use of the relation gives $sr^k = r^{-k}s$ for every integer $k.$
-
-The relation reduces every product to the normal form $r^a s^i$ with $0 \leq a < n$ and $i \in \{\ 0, 1 \ \}.$ For two elements in this form:
-
-$$(r^a s^i)(r^b s^j) = r^{a + (-1)^i b}s^{i+j}$$
-
-The exponent of $r$ is read modulo $n$ and the exponent of $s$ modulo $2.$ The $2n$ expressions $r^a s^i$ are pairwise distinct and are precisely the elements of $D_n,$ so this rule computes every product in the group. Taking $i = j = 0$ recovers multiplication in the rotation subgroup, and taking $i = j = 1$ shows that the product of two reflections is a rotation.
-
-Each of the $n$ elements $r^ks$ has order $2,$ since:
-
-$$(r^ks)(r^ks) = r^k(sr^k)s = r^kr^{-k}ss = e$$
-
-A group generated by two elements subject to $r^n = s^2 = e$ and $srs = r^{-1}$ has at most $2n$ elements, by the normal form above, and $D_n$ has exactly $2n.$ These relations are therefore a presentation:
-
-$$D_n = \langle\ r, s \mid r^n = s^2 = e, \ srs = r^{-1}\ \rangle$$
-
-For $n = 6,$ the Cayley graph for the generating set $\{\ r, s \ \}$ has one vertex for each element of $D_6.$ A solid arrow from $g$ to $gr$ records right multiplication by $r,$ while a dashed edge joins $g$ to $gs.$
-
-![IMG. 1](svg/dihedral-groups-1.svg)
-
-The outer cycle contains the rotations $e, r, \ldots, r^5,$ while the inner cycle contains the reflections $s, rs, \ldots, r^5s.$ The solid arrows run in opposite directions on the two cycles because $(r^ks)r = r^{k-1}s.$ Each dashed edge joins $r^k$ to $r^ks,$ and traversing it twice returns to the initial vertex, as $s^2 = e.$
-
-- - -
-
-A second presentation uses two reflections. Put $t = rs,$ which is a reflection, and compute $st = s(rs) = (sr)s = r^{-1}ss = r^{-1}.$ The subgroup $\langle s, t \rangle$ contains $r^{-1},$ hence contains $r$ and all of $D_n.$ In terms of these generators the relations read:
-
-$$s^2 = t^2 = (st)^n = e$$
-
-Thus $D_n$ is generated by two elements of order $2$ whose product has order $n.$ This is the Coxeter presentation of rank $2,$ with two reflections as generators. Geometrically, the axes of $s$ and $t$ meet at the angle $\pi/n,$ and the composite of two reflections is the rotation through twice the angle between their axes.
-
-## Matrix realisation
-
-Symmetries of the polygon are linear maps, so each has a matrix in the standard basis. With $\theta = 2\pi/n,$ the generators correspond to:
-
-$$R = \begin{pmatrix} \cos\theta & -\sin\theta \\[6pt] \sin\theta & \cos\theta \end{pmatrix} \qquad J = \begin{pmatrix} 1 & 0 \\[6pt] 0 & -1 \end{pmatrix}$$
-
-The [addition formulas](../trigonometric-identities/) for sine and cosine show that $R^k$ is the rotation through $k\theta.$ Hence $R^n = I,$ while $J^2 = I$ follows directly from the matrix. For the third relation, compute the product in two steps:
+We can now identify the symmetries that realize these two possibilities. To send $v_0$ to $v_k$ and $v_1$ to $v_{k+1},$ it suffices to rotate the polygon counterclockwise about its center by $k$ steps. If $r$ denotes a rotation by one step, that is, through an angle of $2\pi/n,$ then this rotation is $r^k.$ To send $v_1$ to $v_{k-1}$ while keeping $v_k$ as the image of $v_0,$ we first apply the reflection $s$ across the line through the center and $v_0.$ This reflection fixes $v_0$ and sends $v_1$ to the preceding vertex, $v_{-1}.$ The rotation $r^k$ then takes the two vertices to the desired positions, so writing $r^ks$ for the reflection followed by the rotation, we obtain:
 
 $$
-\begin{align}
-JR &= \begin{pmatrix} \cos\theta & -\sin\theta \\[6pt] -\sin\theta & -\cos\theta \end{pmatrix} \\[6pt]
-JRJ &= \begin{pmatrix} \cos\theta & \sin\theta \\[6pt] -\sin\theta & \cos\theta \end{pmatrix} \\[6pt]
-    &= R^{-1}
-\end{align}
+\begin{aligned}
+r^k  &\colon (v_0,v_1)\longmapsto(v_k,v_{k+1})\\[6pt]
+r^ks &\colon (v_0,v_1)\longmapsto(v_k,v_{k-1})
+\end{aligned}\tag{1}
 $$
 
-The [matrices](../matrices/) $R^kJ^l$ with $0 \leq k \leq n-1$ and $0 \leq l \leq 1$ form a group of order $2n$ that satisfies the defining relations of $D_n.$ Hence this matrix group is isomorphic to $D_n.$ Both $R$ and $J$ are orthogonal, so it is a subgroup of the orthogonal group $\mathrm{O}(2),$ the group of real $2 \times 2$ matrices $A$ with $A^{\mathrm{T}}A = I.$
+As $k$ ranges from $0$ to $n-1,$ equation $(1)$ gives all $n$ rotations and all $n$ reflections of the dihedral group:
 
-The [determinant](../determinant-of-a-square-matrix/) separates the two kinds of element. A rotation has determinant $1$ and a reflection has determinant $-1,$ as $\det R = \cos^2\theta + \sin^2\theta = 1$ and $\det J = -1.$ Restricted to $D_n,$ the determinant is a [homomorphism](../homomorphisms-and-isomorphisms/) onto the multiplicative group $\{\ 1, -1 \ \},$ and its kernel is the set of rotations:
+$$D_n=\{\ e,r,\ldots,r^{n-1},s,rs,\ldots,r^{n-1}s\ \} \tag{2}$$
 
-$$\langle r \rangle = \{\ e, r, \ldots, r^{n-1} \ \} \cong \mathbb{Z}/n\mathbb{Z}$$
+> Note that every permutation of the vertices of an equilateral triangle is induced by one of its $3!=6$ symmetries, so $D_3\cong S_3.$ Of the $4!=24$ permutations of the vertices of a square, only the eight that preserve adjacency are induced by symmetries.
 
-The rotation subgroup is cyclic of order $n$ and has index $2,$ so it is a normal subgroup, and the reflections form its single nontrivial coset. In the [symmetric group](../symmetric-group/), the sign homomorphism similarly has an index-$2$ kernel, the alternating group.
+## Generators and relations
 
-The matrix of a reflection has trace $0$ and determinant $-1,$ so its characteristic polynomial is $\lambda^2 - 1$ and its [eigenvalues](../eigenvalues-and-eigenvectors/) are $1$ and $-1.$ The eigenspace for $1$ is the axis of the reflection, and the eigenspace for $-1$ is the line perpendicular to it.
+Equation $(2)$ shows that every symmetry has the form $r^k$ or $r^ks,$ so $r$ and $s$ generate the group $D_n$ and are called generators. To calculate with them, we use the following relations. We have $r^n=e$ because $n$ one-step rotations make a full turn, and $s^2=e$ because reflecting twice across the same axis returns every point to its original position. To derive another relation, observe that $r$ sends $v_j$ to $v_{j+1}$ and $s$ sends it to $v_{-j}.$ We can therefore compare $sr$ and $r^{-1}s$ by applying the rightmost transformation first in each case:
 
-> The two subgroups $\langle r \rangle$ and $\langle s \rangle$ intersect in the identity, their orders multiply to $2n,$ and the first is normal. The group is therefore an internal semidirect product of $\langle r \rangle$ by $\langle s \rangle,$ written $D_n \cong \mathbb{Z}/n\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z},$ where the nonidentity element of the second factor acts on the first by inversion.
+$$
+\begin{aligned}
+sr(v_j) &= s(v_{j+1}) = v_{-j-1}\\[6pt]
+r^{-1}s(v_j) &= r^{-1}(v_{-j}) = v_{-j-1}
+\end{aligned}\tag{3}
+$$
 
-## The axes of the reflections
+Since the two compositions in $(3)$ agree on every vertex, it follows that:
 
-Each reflection in $D_n$ has a line of fixed points through the centre, and the complex form of the map gives the angle of that line. The reflection in the line through the origin making the angle $\varphi$ with the $x$-axis is the map $z \mapsto e^{2i\varphi}\overline{z}.$ To check this, note that $e^{i\varphi}$ is fixed, since $e^{2i\varphi}\overline{e^{i\varphi}} = e^{i\varphi},$ while the perpendicular direction $ie^{i\varphi}$ is sent to its opposite, since $e^{2i\varphi}\overline{ie^{i\varphi}} = -ie^{i\varphi}.$ A map fixing one direction and reversing the perpendicular one is the reflection in the fixed line.
+$$sr=r^{-1}s \tag{4}$$
 
-For the reflection $r^ks,$ the complex formula is $r^ks(z) = \zeta^k\overline{z} = e^{2\pi ik/n}\overline{z},$ so its axis makes the angle:
+Multiplying on the right by $s$ and using $s^2=e,$ we obtain:
 
-$$\varphi_k = \frac{\pi k}{n} \qquad k = 0, 1, \ldots, n-1$$
+$$srs=r^{-1} \tag{5}$$
+Geometrically, a reflection reverses the direction of a rotation, and since $r$ has order $n\geq 3,$ the rotations $r$ and $r^{-1}$ are distinct. It follows that $sr\neq rs$ and that $D_n$ is nonabelian. Equation $(4)$ allows us to move each factor $s$ to the right of the rotations, and whenever $s$ moves past a factor $r,$ that factor becomes $r^{-1}.$ Thus the following relation holds for every integer $k:$
 
-A line is determined by its angle modulo $\pi,$ and the $n$ values $\varphi_k$ are distinct modulo $\pi,$ so the $n$ reflections have $n$ distinct axes. The vertex $v_j$ lies in the direction $2\pi j/n,$ and the midpoint of the edge joining $v_j$ to $v_{j+1}$ lies in the direction $\pi(2j+1)/n,$ halfway between the two vertices. The ray of direction $\varphi_k = \pi k/n$ points at a vertex when $k$ is even and at an edge midpoint when $k$ is odd. Each axis has two opposite rays, of directions $\varphi_k$ and $\varphi_{k+n},$ and the parity of $n$ decides what they meet:
+$$sr^k=r^{-k}s \tag{6}$$
 
-+ For odd $n,$ the integers $k$ and $k+n$ have opposite parities. Every axis meets a vertex on one side and the midpoint of the opposite edge on the other, which gives $n$ axes of a single kind.
-+ For even $n$ and even $k,$ both rays point at vertices, and the axis joins the opposite vertices $v_{k/2}$ and $v_{k/2 + n/2}.$
-+ For even $n$ and odd $k,$ both rays point at edge midpoints, and the axis joins the midpoints of two opposite edges.
+Using $(6)$ to move the factors $s$ to the right and the relations $r^n=s^2=e$ to reduce the exponents, we obtain the normal form $r^a s^i,$ with $0\leq a\lt n$ and $i\in\{\ 0,1\ \}.$ This expression is unique because the $2n$ forms correspond to the distinct elements in $(2).$ When we multiply two elements in this form, $r^a s^i$ and $r^b s^j,$ the exponent $b$ retains its sign if $i=0$ and changes sign if $i=1.$ We can therefore express both cases in a single formula:
 
-For even $n$ the axes split into two families of $n/2$ each, one through pairs of opposite vertices and one through pairs of opposite edge midpoints, while for odd $n$ they form a single family. The equilateral triangle has three axes of that single kind, and the square has two diagonals together with two axes through opposite edges. This parity distinction also determines the conjugacy classes of the reflections.
+$$
+\begin{aligned}
+(r^a s^i)(r^b s^j) &= r^a(s^i r^b)s^j\\[6pt]
+                    &= r^{a+(-1)^i b}s^{i+j}
+\end{aligned}\tag{7}
+$$
 
-> Treating the polygon as a thin plate free to move in space replaces each reflection by a rotation. The rotation through $\pi$ about an axis lying in the plane of the plate sends $(x, y, z)$ to the reflection of $(x, y)$ in that axis with $z$ replaced by $-z,$ so on the plate itself it acts as the reflection while exchanging the two faces. The rotational symmetries of the plate consist of the $n$ rotations about the perpendicular axis and these $n$ half-turns about axes in the plane. Restriction to the plane is an isomorphism from this group onto $D_n.$
+In $(7)$ the exponent of $r$ is taken modulo $n$ and that of $s$ modulo $2.$ In particular, the product of two reflections $r^as$ and $r^bs$ is the rotation $r^{a-b},$ and setting $a=b$ shows that every reflection has order $2.$
 
-## Element orders and the centre
+The generators $r$ and $s$ and the relations just derived therefore give the following presentation of $D_n:$
 
-The rotation $r^k$ generates the same subgroup as $r^{\gcd(n,k)},$ so it has [order](../groups/) $n/\gcd(n,k),$ and it generates the whole rotation subgroup exactly when $\gcd(n,k) = 1.$ Every reflection has order $2.$ The elements of order $2$ are the $n$ reflections together with the half-turn $r^{n/2}$ when $n$ is even, so their number is $n$ for odd $n$ and $n+1$ for even $n.$
+$$D_n = \langle\ r,s \mid r^n=s^2=e,\ srs=r^{-1}\ \rangle \tag{8}$$
 
-The [centre](../groups/) contains at most one element besides the identity. A rotation $r^k$ commutes with $s$ only if $r^k = sr^ks^{-1} = r^{-k},$ which requires $r^{2k} = e,$ that is $n \mid 2k.$ For $0 \leq k < n$ this leaves $k = 0$ and, when $n$ is even, $k = n/2.$ A reflection $r^ks$ is never central for $n \geq 3,$ because conjugating it by $r$ gives:
+For $n=6,$ the generators $r$ and $s$ in $(8)$ can be used to construct the Cayley graph of $D_6.$ Each symmetry of the hexagon corresponds to a vertex $g,$ from which a solid arrow leads to $gr$ and a dashed edge leads to $gs.$
 
-$$r(r^ks)r^{-1} = r^{k+1}(sr^{-1}) = r^{k+1}rs = r^{k+2}s$$
+![IMG. 2](svg/dihedral-groups-1.svg)
 
-and $r^{k+2}s \neq r^ks$ since $r^2 \neq e$ for $n \geq 3.$ Therefore:
+Following a solid arrow takes us from the rotation $r^k$ to $r^{k+1}$ on the outer cycle and from the reflection $r^ks$ to $r^{k-1}s$ on the inner cycle, since $(r^ks)r=r^{k-1}s$ by $(4).$ The arrows thus run in opposite directions around the two cycles, while each dashed edge can be traversed in either direction because right multiplication by $s$ interchanges $r^k$ and $r^ks.$ The two reflections $s$ and $t=rs$ therefore generate $D_n$ for every $n\geq 3,$ since their product $ts=rs^2=r$ recovers the rotation in $(8).$ In the reverse order, $(5)$ gives $st=srs=r^{-1},$ so $st$ has order $n.$ Substituting $r=ts$ in $(8)$ gives the Coxeter presentation, which describes $D_n$ in terms of two reflections of order $2$ whose product has order $n:$
+
+$$D_n = \langle\ s,t \mid s^2=t^2=(st)^n=e\ \rangle \tag{9}$$
+
+## Element orders and the center
+
+The order of an element $g$ is the smallest positive integer $m$ such that $g^m=e,$ that is, the least number of times the same symmetry must be applied for every vertex of the polygon to return to its original position. If we set $d=\gcd(n,k),$ the rotation $r^k$ generates the same subgroup as $r^d$ and therefore has order $n/d.$ In particular, $r^k$ generates all the rotations if and only if $d=1.$ For odd $n,$ the elements of order $2$ are the $n$ reflections, while for even $n$ the half-turn $r^{n/2}$ brings the total to $n+1.$
+
+To determine the center of the dihedral group $D_n,$ we find the elements that commute with both generators $r$ and $s.$ A rotation $r^k$ always commutes with $r$ and, by $(6),$ commutes with $s$ if and only if $r^k=r^{-k}.$ This is equivalent to $r^{2k}=e,$ so the central rotations are the identity and, for even $n,$ the half-turn $r^{n/2}$ that sends each vertex to the opposite vertex.
+
+It remains to determine whether a reflection $r^ks$ can also belong to the center. To commute with $r,$ it would have to satisfy $r(r^ks)r^{-1}=r^ks.$ We calculate the left-hand side using $sr^{-1}=rs,$ which follows from $(6)$ with exponent $-1:$
+
+$$
+\begin{aligned}
+r(r^ks)r^{-1} &= r^{k+1}(sr^{-1})\\[6pt]
+              &= r^{k+1}rs = r^{k+2}s
+\end{aligned}\tag{10}
+$$
+
+Since $r$ has order $n\geq 3,$ we have $r^2\neq e$ and hence $r^{k+2}s\neq r^ks.$ Equation $(10)$ thus rules out all reflections, leaving only the rotations identified above in the center:
 
 $$Z(D_n) = \begin{cases} \{\ e \ \} & n \ \text{odd} \\[6pt] \{\ e, r^{n/2} \ \} & n \ \text{even} \end{cases}$$
 
-The centre is a proper subgroup in both cases, so $D_n$ is non-abelian for every $n \geq 3.$ For even $n$ the central half-turn $r^{n/2}$ is the map $z \mapsto -z,$ which sends every point of the polygon to the antipodal point.
+## Reflection axes and conjugacy classes
 
-- - -
+A quarter-turn of a square takes one diagonal to the other, while no symmetry takes a diagonal to the line joining the midpoints of two opposite sides. To see the connection with conjugation, observe that if $s_L$ has axis $L,$ then its conjugate $gs_Lg^{-1}$ has axis $g(L).$ Two reflections are therefore conjugate in $D_n$ if and only if a symmetry of the polygon takes one axis to the other.
 
-The presentation makes sense for $n = 1$ and $n = 2.$ With $n = 1$ the rotation is trivial and $D_1 = \{\ e, s \ \} \cong \mathbb{Z}/2\mathbb{Z},$ the group of a figure with a single axis of symmetry. With $n = 2$ the relation $r^{-1} = r$ makes the group abelian, and $D_2 = \{\ e, r, s, rs \ \}$ has three elements of order $2.$ It is therefore the [Klein four-group](../groups/), realised by the symmetries of a rectangle with unequal sides: the identity, the half-turn about the centre, and the reflections in the two axes through the midpoints of opposite sides. These two degenerate cases are the only abelian dihedral groups.
+The reflection $r^ks$ sends $v_j$ to $v_{k-j}.$ Thus the vertex $v_j$ is fixed, and lies on the axis, precisely when $j$ and $k-j$ are congruent modulo $n,$ that is, when the following congruence holds:
+
+$$2j\equiv k\pmod n \tag{11}$$
+
+If $n$ is odd, $2$ is invertible modulo $n$ and $(11)$ has a unique solution, so each axis passes through exactly one vertex and the midpoint of the opposite side. If $n$ is even, $(11)$ has two solutions for even $k$ and none for odd $k.$
+
+![IMG. 3. Reflection axes of the pentagon and the reflections associated with the fixed vertices. Successive conjugations by the rotation take the exponent through 0, 2, 4, 1, and 3.](svg/dihedral-groups-3.svg)
+
+Since every symmetry sends vertices to vertices, the two types of axes remain distinct. Equation $(10)$ connects all the even exponents and, separately, all the odd exponents, giving two classes of $n/2$ reflections each.
 
 ## Subgroups
 
-Every subgroup of $D_n$ is either contained in the rotation subgroup or contains a reflection. If $H$ consists of rotations, then it is a subgroup of the cyclic group $\langle r \rangle$ of order $n.$ Subgroups of a cyclic group of order $n$ correspond to the divisors of $n,$ so $H = \langle r^d \rangle$ for exactly one divisor $d$ of $n,$ and this subgroup has order $n/d.$ The number of such subgroups is the number of divisors of $n,$ written $\tau(n).$
+The distinction between rotations and reflections in $(2)$ also allows us to describe the subgroups of $D_n.$ For any subgroup $H$ of $D_n,$ the rotations in $H$ form a subgroup of the cyclic group $\langle r\rangle,$ so they are precisely the powers of $r^d$ for a unique positive divisor $d$ of $n.$ If $H$ contains only rotations, then $H=\langle r^d\rangle$ and has order $n/d.$
 
-Suppose instead that $H$ contains a reflection. The intersection $H \cap \langle r \rangle$ is a subgroup of $\langle r \rangle,$ hence equal to $\langle r^d \rangle$ for a divisor $d$ of $n.$ If $r^is$ and $r^js$ both belong to $H,$ then their product $r^is r^js = r^{i-j}$ lies in $H \cap \langle r \rangle,$ so $i \equiv j \pmod{d}.$ Conversely, multiplying $r^is$ by the elements of $\langle r^d \rangle$ produces every reflection whose exponent is congruent to $i$ modulo $d.$ Consequently:
+If $H$ contains a reflection $t=r^is,$ then $r^d$ and $t$ generate all of $H.$ Indeed, for any reflection $u=r^js$ in $H,$ equation $(7)$ gives:
 
-$$H = \langle r^d \rangle \cup \langle r^d \rangle r^is = \langle\ r^d, r^is\ \rangle$$
+$$ut=(r^js)(r^is)=r^{j-i}\in\langle r^d\rangle \tag{12}$$
 
-The generators satisfy the dihedral relations with $n/d$ in place of $n,$ so $H$ has order $2n/d$ and is isomorphic to $D_{n/d}.$ For each divisor $d$ the exponent $i$ ranges over the $d$ residues modulo $d,$ so the count for this type is $\sigma(n),$ the sum of the divisors of $n.$ With the rotation subgroups, $D_n$ has $\tau(n) + \sigma(n)$ subgroups.
+Since $t^2=e,$ multiplying $(12)$ on the right by $t$ gives $u=r^{j-i}t.$ Right multiplication by $t$ sends the $n/d$ rotations in $H$ to the same number of distinct reflections. By $(12),$ these are all the reflections in $H,$ so $H=\langle r^d,t\rangle$ has order $2n/d.$ If $n/d\geq 3,$ the two generators satisfy the relations in $(8)$ with $n/d$ in place of $n,$ so $H\cong D_{n/d}.$
 
-Every rotation subgroup $\langle r^d \rangle$ is normal, since conjugation by $r$ fixes each of its elements and conjugation by $s$ inverts them. For a subgroup containing reflections, conjugating $r^is$ by $r$ gives $r^{i+2}s,$ which lies in $\langle r^d, r^is \rangle$ only when $d$ divides $2.$ Thus $D_n$ itself and, for even $n,$ the two subgroups $\langle r^2, s \rangle$ and $\langle r^2, rs \rangle$ of index $2$ are the only normal subgroups containing a reflection. For odd $n$ the normal subgroups are exactly the rotation subgroups and the whole group.
-
-Both types occur in the hexagon. Here $n = 6,$ with $\tau(6) = 4$ and $\sigma(6) = 12,$ so $D_6$ has $16$ subgroups. The subgroup $\langle r^2, s \rangle$ has order $6$ and is isomorphic to $D_3,$ the symmetry group of the equilateral triangle formed by alternate vertices of the hexagon. The subgroup $\langle r^3, s \rangle$ has order $4$ and is isomorphic to $D_2,$ the symmetry group of a rectangle inscribed in the hexagon. For the square the count is $\tau(4) + \sigma(4) = 3 + 7 = 10.$
-
-## Conjugacy classes
-
-The rotation subgroup is abelian, so conjugating a rotation by another rotation leaves it fixed, while conjugating it by a reflection inverts it:
-
-$$(r^js)r^k(r^js)^{-1} = r^j(sr^ks)r^{-j} = r^jr^{-k}r^{-j} = r^{-k}$$
-
-The conjugacy class of $r^k$ is therefore $\{\ r^k, r^{-k} \ \},$ which has two elements unless $r^k = r^{-k}.$ The exceptions are $k = 0$ and, for even $n,$ $k = n/2,$ the two central elements.
-
-For reflections, conjugation by $r$ raises the exponent by $2,$ as computed above, and conjugation by $r^js$ replaces the exponent $k$ with $2j - k$:
-
-$$(r^js)(r^ks)(r^js)^{-1} = r^jsr^k(ss)r^{-j} = r^jsr^{k-j} = r^{2j-k}s$$
-
-When $n$ is odd, $2$ generates the additive group of residues modulo $n,$ so repeated conjugation by $r$ reaches every exponent and all $n$ reflections are conjugate. When $n$ is even, both $k+2$ and $2j-k$ have the same parity as $k,$ so the reflections split into two classes of $n/2$ elements each. These two classes are the two geometric families found earlier, the reflections in axes through opposite vertices and the reflections in axes through opposite edge midpoints. No symmetry of the polygon carries one family to the other.
-
-The number of classes is $1 + (n-1)/2 + 1 = (n+3)/2$ for odd $n,$ where the three terms count the identity, the pairs of inverse rotations, and the reflections. For even $n$ it is $2 + (n/2 - 1) + 2 = n/2 + 3,$ where the terms count the two central elements, the pairs of inverse rotations, and the two classes of reflections. The triangle has $3$ classes and the square has $5.$
-
-## Dihedral groups inside the symmetric group
-
-Label the vertices of $P_n$ with $1, 2, \ldots, n$ in cyclic order. Each symmetry permutes the labels, and composing symmetries composes the corresponding permutations, so the labelling gives a homomorphism from $D_n$ to the [symmetric group](../symmetric-group/) $S_n.$ The map is injective, because a symmetry fixing every vertex fixes two linearly independent vectors and is the identity linear map. The image is a subgroup of $S_n$ of order $2n$ generated by the $n$-cycle coming from $r$ and the involution coming from $s$:
-
-$$r \mapsto (1\ 2\ \cdots\ n) \qquad s \mapsto (2\ n)(3\ n-1) \cdots$$
-
-The second permutation fixes the label $1$ and reverses the cyclic order of the others, which is the effect of the reflection in the axis through $v_0.$
-
-For $n = 3$ the image has order $6 = 3!,$ so it is all of $S_3$ and $D_3 \cong S_3.$ Every permutation of three vertices is realised by a symmetry of the equilateral triangle, with the two $3$-cycles as the nontrivial rotations and the three transpositions as the reflections. For $n = 4$ the image has order $8$ and index $3$ in $S_4,$ generated by $(1\ 2\ 3\ 4)$ and $(2\ 4).$ Since $8$ is the largest power of $2$ dividing $24,$ this copy of $D_4$ is a Sylow $2$-subgroup of $S_4.$ For $n \geq 4$ the [factorial](../factorial/) satisfies $2n < n!,$ so the embedding is proper and most permutations of the vertices do not preserve adjacency.
-
-> Cayley's theorem embeds a group of order $m$ into $S_m,$ which would place $D_n$ inside $S_{2n}.$ The action on the vertices embeds $D_n$ into $S_n$ instead. Other geometric sets give further [homomorphisms](../homomorphisms-and-isomorphisms/). The action on the $n$ edges is again injective, because a symmetry fixing every edge fixes every edge midpoint, while for even $n$ the action on the $n/2$ diagonals through the centre has the half-turn $r^{n/2}$ in its kernel. The page on homomorphisms works out both actions for the square.
-
-## The disk and the finite symmetry groups of the plane
-
-The closed disk of radius $1$ has the same two families of symmetries, with a rotation for every angle. Every rotation $r_t$ about the centre through an angle $t$ is a symmetry, and $r_tr_u = r_{t+u},$ so the rotations are a subgroup isomorphic to the additive group of [real numbers](../real-numbers/) modulo $2\pi.$ Every reflection in a line through the centre is also a symmetry. In complex notation the two families are $r_t(z) = e^{it}z$ and $z \mapsto e^{2i\varphi}\overline{z}.$ For $s(z) = \overline{z},$ direct calculation gives $sr_ts = r_{-t}.$ The symmetry group of the disk is the union of the rotation subgroup and its coset, which is the orthogonal group $\mathrm{O}(2),$ with the rotation subgroup $\mathrm{SO}(2)$ normal of index $2.$
-
-Each $D_n$ sits inside $\mathrm{O}(2)$ as the subgroup generated by $r_{2\pi/n}$ and $s.$ Conversely, every finite subgroup of $\mathrm{O}(2)$ is cyclic or dihedral. Let $G$ be such a subgroup and let $G_0 = G \cap \mathrm{SO}(2)$ be its rotations. Suppose first that $G_0$ is nontrivial and let $t$ be the smallest positive angle occurring in it. For any angle $u$ of $G_0,$ division with remainder gives $u = qt + v$ with $0 \leq v < t,$ and $r_v = r_ur_t^{-q}$ belongs to $G_0,$ which forces $v = 0$ by minimality of $t.$ Thus every angle of $G_0$ is a multiple of $t.$ Applying the same argument to $2\pi$ gives $2\pi = mt$ for a positive integer $m,$ so $t = 2\pi/m$ and $G_0$ is cyclic of order $m.$ The trivial case $G_0 = \{\ e \ \}$ is cyclic of order $1.$ If $G$ contains no reflection, then $G = G_0$ is cyclic. Otherwise the reflections of $G$ form a single coset of $G_0,$ which therefore has index $2,$ and $G$ is generated by $r_{2\pi/m}$ together with one reflection, hence isomorphic to $D_m.$
-
-A figure whose symmetry group is cyclic of order $n$ has the $n$ rotations and no reflection, as happens for a pinwheel with $n$ identical blades all curved in the same sense. Its mirror image cannot be brought into coincidence with it by any rotation. If the rotations of a figure form a cyclic group of order $n$ and the figure has one reflection, composing that reflection with the rotations produces $n$ reflections, and its symmetry group is $D_n.$
-
-> The symmetry group of the disk contains every $D_n,$ but it is uncountable and is not itself called a dihedral group. The name infinite dihedral group, written $D_\infty,$ is reserved for the group presented by $s^2 = e$ and $srs = r^{-1}$ with $r$ of infinite order. It is realised by the isometries of the real line that map the set of integers onto itself, generated by the reflections $x \mapsto -x$ and $x \mapsto 1-x,$ whose composite is the translation $x \mapsto x+1.$
+If we take the alternate vertices $v_0,v_2,v_4$ of a regular hexagon, they form an equilateral triangle, and the rotation $r^2$ sends each of these vertices to the next. This gives the three rotations and three reflections of $D_3$ on the triangle, all realized by the six elements of the subgroup $\langle r^2,s\rangle$ of $D_6.$
