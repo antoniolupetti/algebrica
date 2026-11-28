@@ -16,110 +16,114 @@ tags:
   - real-numbers
   - subfield
 ---
+
 ## Definition
 
-A field is a set equipped with addition and multiplication in which every element has an additive inverse and every nonzero element has a multiplicative inverse. The [rational numbers](../rational-numbers/), the [real numbers](../real-numbers/), and the [complex numbers](../complex-numbers/) are fields. In each case, addition and multiplication satisfy the field axioms, while subtraction and division by a nonzero element remain in the same set.
+A field $F$ is a [commutative ring](../rings/) whose multiplicative identity $1$ is distinct from its additive identity $0$ and in which every element $a \neq 0$ has an inverse $a^{-1} \in F$ satisfying:
 
-Formally, a field is a set $F$ together with two binary operations $+$ and $\cdot$ satisfying the following axioms:
+$$
+\begin{align}
+a \cdot a^{-1} &= 1 \tag{1}
+\end{align}
+$$
 
-+ $(F, +)$ is an abelian group. The additive identity is denoted $0,$ and the additive inverse of an element $a \in F$ is denoted $-a.$
-+ $(F \setminus \{\ 0 \ \}, \cdot)$ is an abelian group. The multiplicative identity is denoted $1,$ and the multiplicative inverse of a nonzero element $a$ is denoted $a^{-1}.$
-+ Multiplication distributes over addition: for all $a, b, c \in F,$ the identities $a \cdot (b + c) = a \cdot b + a \cdot c$ and $(a + b) \cdot c = a \cdot c + b \cdot c$ hold.
+For any $a,b \in F$ with $b \neq 0$, the quotient $a/b$ is the element $a \cdot b^{-1}$ of $F$. Under addition, $F$ is an [abelian group](../groups/) with identity $0$, so for every $a \in F$:
 
-In a ring $R$ with a multiplicative identity, a unit, or invertible element, is an element $u \in R$ for which some $v \in R$ satisfies $u \cdot v = v \cdot u = 1.$ This inverse is unique by associativity and is denoted by $u^{-1}.$ The units of a field $F$ are its nonzero elements. The additive identity cannot be a unit when $0 \neq 1,$ since $0 \cdot a = 0$ for every $a \in F.$
+$$a+0=a \tag{2}$$
 
-> The multiplicative group $F \setminus \{\ 0 \ \}$ has identity $1,$ so the axioms require $0 \neq 1.$ Thus the zero ring is not a field. Equivalently, a field is a commutative [ring](../rings/) with unity in which every nonzero element is invertible. Every field is a ring, but not every ring is a field.
+Each element $a$ also has an additive inverse $-a$ satisfying:
 
-## Properties
+$$a+(-a)=0\tag{3}$$
 
-For any $a \in F,$ multiplication by zero satisfies $a \cdot 0 = 0.$ Distributivity gives:
+Under multiplication, the nonzero elements of $F$ form an abelian group with identity $1$. Multiplication also distributes over addition, so for all $a,b,c \in F$:
 
-$$a \cdot 0 = a \cdot (0 + 0) = a \cdot 0 + a \cdot 0$$
+$$a(b+c)=ab+ac\tag{4}$$ 
+Equation $(4)$ gives the following identities:
 
-The cancellation law in the additive group then gives $a \cdot 0 = 0.$
+$$
+\begin{align}
+a \cdot 0 &= 0 \notag\\[6pt]
+(-a)b &= a(-b) = -(ab) \notag\\[6pt]
+(-a)(-b) &= ab \notag
+\end{align}
+$$
 
-A field contains no zero divisors. If $a \cdot b = 0$ and $a \neq 0,$ then $a$ is invertible and:
+The existence of inverses allows us to cancel any nonzero factor. If $ab=ac$ and $a \neq 0$, multiplying both sides by $a^{-1}$ and applying $(1)$ gives:
 
-$$b = a^{-1} \cdot (a \cdot b) = a^{-1} \cdot 0 = 0$$
+$$
+\begin{align}
+(a^{-1}a)b &= (a^{-1}a)c \notag\\[6pt]
+b &= c \tag{5}
+\end{align}
+$$
 
-In a field the product of two nonzero elements is nonzero, so nonzero factors may be cancelled. The additive and multiplicative structures satisfy:
+In particular, if $ab=0$ and $a \neq 0$, we can write $ab=a \cdot 0$ and apply $(5)$ with $c=0$ to obtain $b=0$. Thus a field has no zero divisors and, by the definition given in the entry on rings, is an integral domain.
 
-$$(-a) \cdot b = a \cdot (-b) = -(a \cdot b)$$
+As an example, consider the ring of [integers](../integers/) $\mathbb{Z}$ and why any field containing it must also contain the [rational numbers](../rational-numbers/). Only $1$ and $-1$ have multiplicative inverses in $\mathbb{Z}$, since if two integers $a,b$ satisfy $ab=1$, then $|a||b|=1$ and each has [absolute value](../absolute-value/) $1$. For example, the equation $2x=1$ has the solution $x=1/2$ in $\mathbb{Q}$. More generally, a field containing the integers must contain the inverse $1/q$ of every integer $q \neq 0$ and hence the product $p \cdot (1/q)=p/q$ for every integer $p$. These fractions form the field $\mathbb{Q}$, in which each nonzero element $p/q$ has inverse $q/p$, so $\mathbb{Q}$ is the smallest field containing the integers.
 
-The expression holds for all $a, b \in F.$ Multiplying two additive inverses gives:
+Now consider the equations $x^2=2$ and $x^2=-1$: which of them can we solve over the rationals, [the reals](../real-numbers/), or the [complex numbers](../complex-numbers/)? The equation $x^2=2$ has no rational solutions and has two real solutions, $x=\pm\sqrt{2}$. The equation $x^2=-1$ has no real solutions because the square of a real number is always greater than or equal to zero. Over $\mathbb{C}$, the factorization $x^2+1=(x-i)(x+i)$ gives the two solutions $x=\pm i$.
 
-$$(-a) \cdot (-b) = a \cdot b$$
+As a final example, consider [polynomials](../polynomials/) with coefficients in an arbitrary field $K$ and ask whether the ring $K[x]$ is itself a field. If $x$ had an inverse in $K[x]$, there would be a polynomial $g$ such that $xg=1$. This is impossible because for every nonzero $g$ the product $xg$ has degree $\deg(g)+1$, whereas the constant polynomial $1$ has degree zero. The same reasoning applies to every polynomial of positive degree, so the only invertible polynomials are the nonzero constants $c$, each with inverse $1/c$. Since $x$ is nonzero and has no inverse, we conclude that $K[x]$ is not a field.
 
-This follows from the previous identity after replacing $b$ by $-b.$
+We now define the characteristic of a field $F$ as the smallest positive integer $n$ for which the sum of $n$ copies of $1$ is $0$. Writing $n \cdot 1$ for this sum, we can express the condition as follows:
 
-## Algebraic hierarchy
+$$
+\begin{align}
+n \cdot 1 &= \underbrace{1+\cdots+1}_{n \text{ terms}} = 0 \tag{6}
+\end{align}
+$$
 
-A [group](../groups/) is a set equipped with a single binary operation satisfying closure, associativity, the existence of an identity element, and the existence of inverses.
+If no positive integer satisfies $(6)$, then $F$ is said to have characteristic zero, as is the case for $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$. In $\mathbb{R}$, for example, the sum of $n$ copies of $1$ is $n$, which is positive for every integer $n \geq 1$. To see why a positive characteristic is always prime, observe that the smallest $n$ satisfying $(6)$ is greater than $1$, since $1 \neq 0$. If $n$ were composite, we could write $n=uv$ with $1 \lt u,v \lt n$. Since $n$ is the first positive integer for which the sum is zero and both $u$ and $v$ are positive integers smaller than $n$, the elements $u \cdot 1$ and $v \cdot 1$ would both be nonzero, yet distributivity and $(6)$ would give a product of zero:
 
-A [ring](../rings/) has addition and multiplication. Addition makes the set an abelian group, while multiplication is associative and distributes over addition on both sides. Multiplication need not be commutative, as the multiplication of [matrices](../matrices/) in $\mathrm{M}_n(\mathbb{R})$ shows when $n \geq 2,$ and a ring need not have a multiplicative identity under the convention used here. The integers $\mathbb{Z}$ are a commutative ring with identity. Every [integer](../integers/) has an additive inverse, yet most integers lack a multiplicative inverse in $\mathbb{Z},$ since $2^{-1}$ does not belong to $\mathbb{Z}.$
+$$
+\begin{align}
+(u \cdot 1)(v \cdot 1) &= (uv) \cdot 1 \notag\\[6pt]
+&= n \cdot 1 = 0 \notag
+\end{align}
+$$
 
-A field is a commutative ring with unity in which every nonzero element has a multiplicative inverse. This gives the following hierarchy:
+Since the product of two nonzero elements of a field is nonzero, $n$ cannot be composite and must therefore be prime.
 
-+ A group has one operation, and every element has an inverse.
-+ A ring has two operations, and every element has an additive inverse.
-+ A field has two operations, and every nonzero element also has a multiplicative inverse.
+## Finite fields and subfields
 
-> The rational numbers $\mathbb{Q},$ the real numbers $\mathbb{R},$ and the complex numbers $\mathbb{C}$ are fields. The integers $\mathbb{Z}$ are a ring but not a field, since division does not close within them. A [vector space](../vector-spaces/) has scalars in a field, whereas a [module](../modules/) has scalars in a ring.
+We now turn to finite fields, which, as the name suggests, are fields with finitely many elements. For example, consider the residue classes [modulo](../modulo-operator/) $3$, written as follows:
 
-## Examples
+$$
+\begin{align}
+\mathbb{Z}/3\mathbb{Z} &= \{[0], [1], [2]\} \tag{7}
+\end{align}
+$$
 
-The set $\mathbb{Q}$ of rational numbers, equipped with ordinary addition and multiplication, is the smallest field containing the integers. Every nonzero rational number $p/q$ has a multiplicative inverse $q/p,$ and all field axioms are satisfied.
+Recall that to add or multiply two residue classes, we perform the operation on their representatives and take the class of the result. Each of the two nonzero classes in $(7)$ is its own inverse. Indeed, for $[1]$ we have $[1]\cdot[1]=[1]$, and for $[2]$ we have $[2]\cdot[2]=[4]=[1]$, so the ring in $(7)$ is a finite field with three elements. More generally, for every prime $p$, each nonzero class modulo $p$ has an inverse. Indeed, if $[a]$ is a nonzero class modulo $p$, then $a$ and $p$ are relatively prime, so by Bézout's identity there are integers $r$ and $s$ such that:
 
-The set $\mathbb{R}$ of real numbers is a field extending $\mathbb{Q}.$ It has an order compatible with the field operations and is complete, so every nonempty subset bounded above has a [least upper bound](../supremum-and-infimum/). The page on the [properties of real numbers](../properties-of-real-numbers/) lists the field axioms for $\mathbb{R}$ and gives concrete examples.
+$$
+\begin{align}
+ar+ps &= 1 \tag{8}
+\end{align}
+$$
 
-The set $\mathbb{C}$ of complex numbers is a field extending $\mathbb{R}.$ It is algebraically closed, whereas $\mathbb{R}$ is not. The [fundamental theorem of algebra](../roots-of-a-polynomial/) states that every nonconstant polynomial with coefficients in $\mathbb{C}$ has a root in $\mathbb{C}.$
-
-The ring $\mathbb{Z}$ has identity $1,$ but not every nonzero integer has an inverse. If integers $a$ and $b$ satisfy $ab = 1,$ then $|a||b| = 1,$ so $|a| = |b| = 1.$ Thus $1$ and $-1$ are the only units in $\mathbb{Z},$ and $\mathbb{Z}$ is not a field.
-
-For any field $K,$ the [polynomial ring](../polynomials/) $K[x]$ is another commutative ring with identity that is not a field. Its units are exactly the nonzero constant polynomials. If nonzero polynomials $f$ and $g$ satisfied $fg = 1,$ then:
-
-$$\deg(fg) = \deg(f) + \deg(g) = 0$$
-
-Both degrees must be zero. A polynomial of positive degree cannot have a multiplicative inverse in $K[x].$
-
-- - -
-
-For any prime $p,$ the set $\mathbb{Z}/p\mathbb{Z} = \{\ [0], [1], \ldots, [p - 1] \ \}$ equipped with addition and multiplication [modulo](../modulo-operator/) $p$ is the field $\mathbb{F}_p.$ It has $p$ elements. If $[a]$ is nonzero, then $p$ does not divide $a,$ so $\gcd(a,p) = 1.$ [Bezout's identity](../greatest-common-divisor/) gives integers $r$ and $s$ such that $ar + ps = 1.$ Reducing this equation modulo $p$ gives $[a][r] = [1],$ so $[r]$ is the inverse of $[a].$ A composite modulus need not give a field. In $\mathbb{Z}/6\mathbb{Z},$ the elements $[2]$ and $[3]$ satisfy $[2][3] = [0],$ so neither is invertible and $\mathbb{Z}/6\mathbb{Z}$ is not a field.
-
-> Finite fields exist only when the number of elements is a prime power $p^n,$ for some prime $p$ and positive integer $n.$ For every such prime power there exists, up to isomorphism, exactly one finite field, denoted $\mathbb{F}_{p^n}$ or $\mathrm{GF}(p^n).$
+Reducing $(8)$ modulo $p$ gives $[a][r]=[1]$, since $ps$ has remainder zero. Since $[a]$ was an arbitrary nonzero class, we have found an inverse for every class other than $[0]$. The ring $\mathbb{Z}/p\mathbb{Z}$ is therefore a finite field with $p$ elements, denoted by $\mathbb{F}_p$. Its characteristic is $p$, since the sum of $n$ copies of $[1]$ is $[n]$, and the smallest positive integer for which $[n]=[0]$ is $p$. If we replace the prime modulus $p$ with a composite modulus $n=uv$, where $1 \lt u,v \lt n$, some nonzero classes have no inverse. For example, $[u]$ and $[v]$ are both distinct from $[0]$, but their product is $[uv]=[n]=[0]$, so they are zero divisors and $\mathbb{Z}/n\mathbb{Z}$ is therefore not a field. Thus, for the residue classes modulo $n$ to form a field, $n$ must be prime.
 
 ## Subfields and field extensions
 
-A subset $K \subseteq F$ is a subfield of $F$ when $K$ is itself a field under the operations inherited from $F.$ Equivalently, $K$ is a subfield of $F$ when it contains $0$ and $1$ and is closed under addition, negation, multiplication, and taking multiplicative inverses of nonzero elements. The rational numbers $\mathbb{Q}$ form a subfield of $\mathbb{R},$ which is itself a subfield of $\mathbb{C}.$ These inclusions define a chain of fields:
+A [subset](../sets/) $K$ of a field $F$ is a subfield if it is itself a field under the operations of $F$. To verify this, it suffices to check the following conditions:
 
-$$\mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}$$
+$$
+\begin{align}
+0,1 &\in K \notag\\[6pt]
+a-b &\in K &&\forall \ a,b \in K \notag\\[6pt]
+\frac{a}{b} &\in K &&\forall \ a,b \in K \text{ with } b \neq 0 \tag{9}
+\end{align}
+$$
 
-When $K$ is a subfield of $F,$ the field $F$ is a field extension of $K,$ written $F/K.$ The extension $\mathbb{C}/\mathbb{R}$ is a two-dimensional [vector space](../vector-spaces/) over $\mathbb{R}$ with basis $\{\ 1, i \ \}.$ The degree $[F : K]$ of an extension is the dimension of $F$ as a vector space over $K.$ Thus $[\mathbb{C} : \mathbb{R}] = 2.$
+For example, the rational numbers satisfy the conditions in $(9)$ under the usual operations on the real numbers, so $\mathbb{Q}$ is a subfield of $\mathbb{R}$, and similarly $\mathbb{R}$ is a subfield of $\mathbb{C}$, giving the following inclusions:
 
-## Characteristic of a field
+$$
+\begin{align}
+\mathbb{Q} \subsetneq \mathbb{R} \subsetneq \mathbb{C} \tag{10}
+\end{align}
+$$
 
-Every field $F$ has a characteristic, a non-negative integer determined by repeated addition of the multiplicative identity. If a positive number of copies of $1$ sums to zero, the characteristic is the smallest such number $n$:
+When $K$ is a subfield of $F$, we say that $F$ is an extension of $K$ and write $F/K$. Taking the elements of $K$ as scalars, we can view $F$ as a [vector space](../vector-spaces/) over $K$ whose dimension is called the degree of the extension and is denoted by $[F:K]$.
 
-$$\underbrace{1 + 1 + \cdots + 1}_{n} = 0$$
-
-When no such $n$ exists, the characteristic is defined to be $0.$ The characteristic of a field is always either zero or a prime number. If the characteristic were a composite number $n = ab$ with $1 < a, b < n,$ one could write:
-
-$$0 = \underbrace{1 + \cdots + 1}_{n} = \left(\underbrace{1 + \cdots + 1}_{a}\right) \cdot \left(\underbrace{1 + \cdots + 1}_{b}\right)$$
-
-Since a field has no zero divisors, one of the two factors would have to be zero, contradicting the minimality of $n.$ The fields $\mathbb{Q},$ $\mathbb{R},$ and $\mathbb{C}$ all have characteristic zero. The finite field $\mathbb{F}_p$ has characteristic $p.$
-
-## Field homomorphisms
-
-A field homomorphism is a [function](../functions/) $\varphi : F \to K$ between two fields that preserves both operations: for all $a, b \in F$:
-
-$$\varphi(a + b) = \varphi(a) + \varphi(b)$$
-
-$$\varphi(a \cdot b) = \varphi(a) \cdot \varphi(b)$$
-
-The definition also requires $\varphi(1_F) = 1_K.$ Every field homomorphism is injective. To see this, the [kernel](../homomorphisms-and-isomorphisms/):
-
-$$\ker(\varphi) = \{\ a \in F : \varphi(a) = 0 \ \}$$
-
-is an [ideal](../rings/) of $F.$ Since $F$ is a field, its only ideals are $\{\ 0 \ \}$ and $F$ itself, and the condition $\varphi(1) = 1 \neq 0$ rules out the second possibility. A bijective field homomorphism is a field isomorphism. Two fields are isomorphic, written $F \cong K,$ when an isomorphism between them exists. Isomorphic fields have the same algebraic properties.
-
-> A function is injective, or one-to-one, when $\varphi(a) = \varphi(b)$ implies $a = b.$ A function is bijective when it is injective and surjective. Thus every element of the codomain has exactly one preimage. The page on [homomorphisms and isomorphisms](../homomorphisms-and-isomorphisms/) gives the corresponding definitions for [groups](../groups/), [rings](../rings/), and [modules](../modules/).
+To find the degree of the extension $\mathbb{C}/\mathbb{R}$ in $(10)$, we look for a basis of $\mathbb{C}$ as a vector space over $\mathbb{R}$. The elements $1$ and $i$ form a basis because every complex number can be written uniquely as a [linear combination](../linear-combinations/) $a\cdot 1+b\cdot i$ with real coefficients $a,b\in\mathbb{R}$. Since this basis has two elements, the degree of the extension is $[\mathbb{C}:\mathbb{R}]=2$.
